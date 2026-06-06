@@ -1,0 +1,34 @@
+LOCUS       pSH71_ori                813 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Origin of replication from Lactococcus plasmid pSH71 (also in
+            pLZ12/pWV01 family). Rolling-circle replication, requires RepA..
+ACCESSION   pSH71_ori
+VERSION     pSH71_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..813
+                     /label="pSH71 ori"
+                     /synonym="pSH71 ori"
+                     /synonym="pLZ12 ori"
+                     /synonym="pSH71 origin"
+                     /note="Origin of replication from Lactococcus plasmid pSH71
+                     (also in pLZ12/pWV01 family). Rolling-circle replication,
+                     requires RepA."
+ORIGIN
+        1 tcgatttttt attaaaacgt ctcaaaatcg tttctgagac gttttagcgt ttatttcgtt
+       61 tagttatcgg cataatcgtt aaaacaggcg ttatcgtagc gtaaaagccc ttgagcgtag
+      121 cgtggctttg cagcgaagat gttgtctgtt agattatgaa agccgatgac tgaatgaaat
+      181 aataagcgca gcgtccttct atttcggttg gaggaggctc aagggagttt gagggaatga
+      241 aattccctca tgggtttgat tttaaaaatt gcttgcaatt ttgccgagcg gtagcgctgg
+      301 aaaatttttg aaaaaaattt ggaatttgga aaaaaatggg gggaaaggaa gcgaattttg
+      361 cttccgtact acgacccccc attaagtgcc gagtgccaat ttttgtgcca aaaacgctct
+      421 atcccaactg gctcaagggt ttgaggggtt tttcaatcgc caacgaatcg ccaacgtttt
+      481 cgccaacgtt ttttataaat ctatatttaa gtagctttat tgttgttttt atgattacaa
+      541 agtgatacac taattttata aaattatttg attggagttt tttaaatggt gatttcagaa
+      601 tcgaaaaaaa gagttatgat ttctctgaca aaagagcaag ataaaaaatt aacagatatg
+      661 gcgaaacaaa aaggtttttc aaaatctgcg gttgcggcgt tagctataga agaatatgca
+      721 agaaaggaat cagaacaaaa aaaataagcg aaagctcgcg tttttagaag gatacgagtt
+      781 ttcgctactt gtttttgata aggtaattat atc
+//

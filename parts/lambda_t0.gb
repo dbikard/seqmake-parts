@@ -1,0 +1,17 @@
+LOCUS       lambda_t0                 95 bp    DNA              UNK 01-JAN-1980
+DEFINITION  lambda t0.
+ACCESSION   lambda_t0
+VERSION     lambda_t0
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..95
+                     /label="lambda t0"
+                     /synonym="lambda t0"
+                     /synonym="lambda t0 terminator"
+ORIGIN
+        1 attctcacca ataaaaaacg cccggcggca accgagcgtt ctgaacaaat ccagatggag
+       61 ttctgaggtc attactggat ctatcaacag gagtc
+//

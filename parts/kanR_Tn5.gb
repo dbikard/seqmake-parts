@@ -1,0 +1,38 @@
+LOCUS       kanR_Tn5                 792 bp    DNA              UNK 01-JAN-1980
+DEFINITION  kanR (Tn5).
+ACCESSION   kanR_Tn5
+VERSION     kanR_Tn5
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..792
+                     /label="kanR (Tn5)"
+                     /synonym="NeoR/KanR"
+                     /synonym="kanR"
+                     /synonym="nptII"
+                     /synonym="NeoR"
+                     /synonym="APH(3')-II"
+                     /synonym="neo"
+                     /translation="MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRP
+                     VLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLS
+                     SHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQ
+                     GLAPAELFARLKARMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIA
+                     LATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF"
+ORIGIN
+        1 atgattgaac aggatggcct gcatgcgggt agcccggccg catgggtgga gcgtttattt
+       61 ggatatgact gggcgcaaca gaccatcggc tgctcggatg ccgcagtttt ccgcttgtcc
+      121 gcgcaaggtc gtccagtcct gtttgtgaaa acggacttat ctggagcctt gaacgaactg
+      181 caggatgagg cagcgcgctt aagctggttg gccactaccg gcgttccgtg tgcagcggtc
+      241 ctggacgtgg ttacggaagc cggtcgtgat tggttattgc tgggagaggt cccaggccaa
+      301 gacttattgt cgtcccacct ggcaccggcg gaaaaggtgt ctattatggc cgatgcaatg
+      361 cgccgtttac atactttgga cccagcgacc tgcccgttcg atcaccaggc caaacatcgc
+      421 atcgagcgtg cacgcacgcg tatggaagcg ggtctggttg accaagatga cttagatgag
+      481 gaacaccagg gattggcccc agcagagctg tttgcgcgct taaaggcccg tatgccggac
+      541 ggcgaagatt tggtcgtgac tcatggtgac gcatgtctgc caaatattat ggttgagaac
+      601 ggacgcttca gcggctttat cgattgcggt cgtttaggag tcgcggaccg ctaccaagat
+      661 attgccttgg caacccgtga catcgcggaa gagctgggcg gtgaatgggc cgatcgcttc
+      721 ttagtgttgt atggaattgc agcgccggac tcgcagcgta tcgcctttta ccgcctgtta
+      781 gatgagttct tt
+//

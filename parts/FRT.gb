@@ -1,0 +1,17 @@
+LOCUS       FRT                       34 bp    DNA              UNK 01-JAN-1980
+DEFINITION  FRT.
+ACCESSION   FRT
+VERSION     FRT
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..34
+                     /label="FRT"
+                     /synonym="FRT"
+                     /synonym="FRT site"
+                     /synonym="FRT site sequence"
+ORIGIN
+        1 gaagttccta ttctctagaa agtataggaa cttc
+//

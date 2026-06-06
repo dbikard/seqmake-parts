@@ -1,0 +1,92 @@
+LOCUS       PT5_lacO                  81 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two
+            lac operators, giving lacI-repressible, IPTG-inducible transcription
+            (the pQE/Bujard expression module)..
+ACCESSION   PT5_lacO
+VERSION     PT5_lacO
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Bujard H, Gentz R, Lanzer M, Stueber D, Mueller M, Ibrahimi I,
+            Haeuptle MT, Dobberstein B
+  TITLE     A T5 promoter-based transcription-translation system for the
+            analysis of proteins in vitro and in vivo
+  JOURNAL   Methods in Enzymology 155:416-433
+   PUBMED   2828874
+  REMARK    doi:10.1016/0076-6879(87)55028-5
+REFERENCE   2
+  AUTHORS   Gentz R, Bujard H
+  TITLE     Promoters recognized by Escherichia coli RNA polymerase selected by
+            function: highly efficient promoters from bacteriophage T5
+  JOURNAL   Journal of Bacteriology 164(1):70-77
+   PUBMED   3900050
+  REMARK    doi:10.1128/jb.164.1.70-77.1985
+REFERENCE   3
+  AUTHORS   Gilbert W, Maxam A
+  TITLE     The Nucleotide Sequence of the lac Operator
+  JOURNAL   Proc Natl Acad Sci USA 70(12):3581-3584
+   PUBMED   4587255
+  REMARK    doi:10.1073/pnas.70.12.3581
+REFERENCE   4
+  AUTHORS   Simons A, Tils D, von Wilcken-Bergmann B, Mueller-Hill B
+  TITLE     Possible ideal lac operator: Escherichia coli lac operator-like
+            sequences from eukaryotic genomes lack the central G X C pair
+  JOURNAL   Proc Natl Acad Sci USA 81(6):1624-1628
+   PUBMED   6369330
+  REMARK    doi:10.1073/pnas.81.6.1624
+REFERENCE   5
+  AUTHORS   Besse M, von Wilcken-Bergmann B, Mueller-Hill B
+  TITLE     Synthetic lac operator mediates repression through lac repressor
+            when introduced upstream and downstream from the lac promoter
+  JOURNAL   EMBO Journal 5(6):1377-1381
+   PUBMED   3015603
+  REMARK    doi:10.1002/j.1460-2075.1986.tb04369.x
+FEATURES             Location/Qualifiers
+     promoter        1..81
+                     /label="PT5/lacO"
+                     /synonym="PT5/lacO"
+                     /synonym="T5 promoter"
+                     /synonym="T5/lacO promoter"
+                     /synonym="T5 lac operator promoter"
+                     /note="PT5/lacO is the bacteriophage-T5 sigma-70 promoter
+                     flanked by two lac operators, giving lacI-repressible,
+                     IPTG-inducible transcription (the pQE/Bujard expression
+                     module)."
+                     /citation=[1]
+     regulatory      19..24
+                     /label="-35"
+                     /parent="PT5/lacO"
+                     /regulatory_class="minus_35_signal"
+                     /note="Sigma-70 -35 hexamer of the bacteriophage T5
+                     promoter (seq[18:24]=TTGCTT)."
+                     /citation=[2]
+     regulatory      42..47
+                     /label="-10"
+                     /parent="PT5/lacO"
+                     /regulatory_class="minus_10_signal"
+                     /note="Sigma-70 -10 hexamer, perfect match to the TATAAT
+                     consensus (seq[41:47]=TATAAT), 17 bp downstream of the -35
+                     box (canonical spacer)."
+                     /citation=[2]
+     protein_bind    25..41
+                     /label="lac operator"
+                     /parent="PT5/lacO"
+                     /note="lac repressor (lacI) binding site, core
+                     TGTGAGCGGATAACAAT (seq[24:41])."
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+     protein_bind    57..73
+                     /label="lac operator (downstream)"
+                     /parent="PT5/lacO"
+                     /note="Second lac repressor (lacI) binding site, core
+                     TGTGAGCGGATAACAAT (seq[56:73]), positioned 3' of the
+                     transcription start."
+                     /citation=[3]
+                     /citation=[5]
+ORIGIN
+        1 aaatcataaa aaatttattt gctttgtgag cggataacaa ttataataga ttcaattgtg
+       61 agcggataac aatttcacac a
+//

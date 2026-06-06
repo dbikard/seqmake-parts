@@ -1,0 +1,41 @@
+LOCUS       sopA                    1173 bp    DNA              UNK 01-JAN-1980
+DEFINITION  sopA.
+ACCESSION   sopA
+VERSION     sopA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..1173
+                     /label="sopA"
+                     /synonym="sopA"
+                     /translation="MFRMKLMETLNQCINAGHEMTKAIAIAQFNDDSPEARKITRRWRI
+                     GEAADLVGVSSQAIRDAEKAGRLPHPDMEIRGRVEQRVGYTIEQINHMRDVFGTRLRRA
+                     EDVFPPVIGVAAHKGGVYKTSVSVHLAQDLALKGLRVLLVEGNDPQGTASMYHGWVPDL
+                     HIHAEDTLLPFYLGEKDDVTYAIKPTCWPGLDIIPSCLALHRIETELMGKFDEGKLPTD
+                     PHLMLRLAIETVAHDYDVIVIDSAPNLGIGTINVVCAADVLIVPTPAELFDYTSALQFF
+                     DMLRDLLKNVDLKGFEPDVRILLTKYSNSNGSQSPWMEEQIRDAWGSMVLKNVVRETDE
+                     VGKGQIRMRTVFEQAIDQRSSTGAWRNALSIWEPVCNEIFDRLIKPRWEIR"
+ORIGIN
+        1 atgtttcgta tgaaactgat ggaaacctta aaccagtgca ttaatgcggg ccatgagatg
+       61 acgaaggcca tcgcaattgc gcaattcaac gatgacagcc cggaagcccg caaaatcact
+      121 cgtcgctggc gtattggtga ggcagcggat ttggtgggag tttcgtccca ggccatccgc
+      181 gacgcagaaa aggcgggccg tctgccacac ccggatatgg agattcgcgg tcgtgtcgaa
+      241 caacgcgtgg gatataccat cgagcagatt aatcatatgc gtgacgtttt tggcacgcgc
+      301 ttacgtcgcg ccgaagatgt cttcccaccg gtgatcggtg ttgcagcgca caaaggaggc
+      361 gtctacaaga cttctgtgag cgttcatttg gcccaagacc tggcattaaa aggtttgcgt
+      421 gtcctgttag tggagggaaa cgatccacag ggcaccgcgt cgatgtatca cggttgggtt
+      481 ccggacttgc atattcacgc cgaagatacg ctgttaccat tttacttggg agagaaggac
+      541 gatgtcactt atgcaatcaa accgacctgt tggccaggcc tggacattat cccgtcctgc
+      601 ttagcgttgc atcgcattga aacggagctg atgggtaagt tcgatgaagg aaaattacca
+      661 actgacccgc acttgatgct gcgtttagcc atcgagaccg tggcacatga ttacgacgtt
+      721 attgtcatcg attctgcgcc aaatttgggc attggtacga tcaacgtggt ttgtgccgca
+      781 gacgtcctga ttgtgccgac tccagcggaa ttatttgatt ataccagcgc cttgcaattc
+      841 tttgacatgc tgcgcgattt attgaagaat gttgacctga aaggattcga gccggatgtc
+      901 cgtatcttat tgacgaagta ctcgaactcc aatggctctc agagcccatg gatggaagag
+      961 caaattcgcg acgcatgggg ttcgatggtg ctgaaaaacg ttgtccgtga aactgatgag
+     1021 gtgggaaagg gccagatccg catgcgtacc gtttttgaac aagcgattga ccagcgctcc
+     1081 tctacgggtg cctggcgtaa tgcattaagc atctgggagc cggtctgcaa cgaaattttc
+     1141 gatcgcttga tcaaaccacg ttgggagatt cgc
+//

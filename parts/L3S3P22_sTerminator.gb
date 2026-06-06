@@ -1,0 +1,15 @@
+LOCUS       L3S3P22_sTermina          49 bp    DNA              UNK 01-JAN-1980
+DEFINITION  L3S3P22 sTerminator.
+ACCESSION   L3S3P22_sTermina
+VERSION     L3S3P22_sTermina
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..49
+                     /label="L3S3P22 sTerminator"
+                     /synonym="L3S3P22 sTerminator"
+ORIGIN
+        1 ccaattattg aaggccgcta acgcggcctt tttttgtttc tggtctgcc
+//

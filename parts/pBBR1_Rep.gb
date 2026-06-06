@@ -1,0 +1,29 @@
+LOCUS       pBBR1_Rep                660 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pBBR1 Rep.
+ACCESSION   pBBR1_Rep
+VERSION     pBBR1_Rep
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..660
+                     /label="pBBR1 Rep"
+                     /synonym="pBBR1 Rep"
+                     /translation="MATQSREIGIQAKNKPGHWVQTERKAHEAWAGLIARKPTAAMLLH
+                     HLVAQMGHQNAVVVSQKTLSKLIGRSLRTVQYAVKDLVAERWISVVKLNGPGTVSAYVV
+                     NDRVAWGQPRDQLRLSVFSAAVVVDHDDQDESLLGHGDLRRIPTLYPGEQQLPTGPGEE
+                     PPSQPGIPGMEPDLPALTETEEWERRGQQRLPMPDEPCFLDDGEPLEPPTRVTLPRR"
+ORIGIN
+        1 atggcgaccc agagccgtga aattggcatc caagccaaaa acaagccggg tcattgggtg
+       61 cagacggagc gcaaagcaca cgaagcgtgg gccggactga ttgcacgtaa gccaactgcg
+      121 gccatgttat tgcatcacct ggttgcacaa atgggccatc agaatgcggt cgtggtttcg
+      181 caaaaaacct tatccaagtt gatcggtcgc tctctgcgta cggtccagta tgccgtgaaa
+      241 gatttagttg cagagcgctg gattagcgtc gtgaagttga acggaccggg cactgtttcg
+      301 gcgtacgtcg tgaatgaccg tgttgcctgg ggtcaaccac gcgatcagct gcgtttatcc
+      361 gtcttttctg cagcggtggt tgtcgaccac gatgaccaag atgaaagctt gctgggacat
+      421 ggcgacttac gccgtatccc gaccttgtat ccaggtgagc agcaactgcc gacgggacca
+      481 ggcgaagagc cgccatcgca gccgggtatt ccaggaatgg aaccggattt accagccttg
+      541 actgagaccg aagagtggga acgccgtggc caacagcgcc tgccgatgcc agacgagccg
+      601 tgcttcttag atgacggtga accattggag ccgccaacgc gtgtgactct gccgcgccgt
+//

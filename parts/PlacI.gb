@@ -1,0 +1,17 @@
+LOCUS       PlacI                     78 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PlacI.
+ACCESSION   PlacI
+VERSION     PlacI
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..78
+                     /label="PlacI"
+                     /synonym="PlacI"
+                     /synonym="lacI promoter"
+ORIGIN
+        1 gacaccatcg aatggcgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
+       61 caattcaggg tggtgaat
+//

@@ -1,0 +1,35 @@
+LOCUS       SpecR                    672 bp    DNA              UNK 01-JAN-1980
+DEFINITION  SpecR.
+ACCESSION   SpecR
+VERSION     SpecR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..672
+                     /label="SpecR"
+                     /synonym="SpecR"
+                     /synonym="SmR"
+                     /synonym="spec"
+                     /synonym="aad9"
+                     /synonym="spectinomycin adenyltransferase"
+                     /translation="MFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKI
+                     GDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLY
+                     QAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILT
+                     MDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLK
+                     KL"
+ORIGIN
+        1 atgtttggca gcggtgtgga atcgggactg aaaccgaact ccgatttaga cttcttggtt
+       61 gtcgtgtctg agccactgac cgatcagagc aaggaaattt taatccaaaa aattcgtccg
+      121 atctcgaaga aaattggcga caagtccaat ttgcgctata tcgagctgac gattatcatt
+      181 cagcaagaaa tggttccatg gaaccatccg ccaaaacagg agtttatcta cggtgaatgg
+      241 ttacaagagt tgtatgaaca gggatacatt ccgcaaaagg agctgaattc tgatttaact
+      301 atcatgttgt atcaggcgaa acgtaagaac aaacgcattt acggcaatta tgacctggaa
+      361 gagttattgc cagatatccc gttcagcgac gtccgtcgcg ccattatgga ttcgtccgaa
+      421 gagctgatcg acaactacca agatgacgaa accaattcta ttttaacgtt gtgccgtatg
+      481 atcctgacta tggataccgg taagattatc ccaaaagaca ttgcaggaaa cgcggtggcc
+      541 gagagctcgc cgttagaaca ccgcgagcgt atcttgctgg cagttcgctc ctatttaggc
+      601 gaaaatattg agtggacgaa cgaaaatgtc aacttgacta tcaattacct gaacaatcgt
+      661 ttaaagaaat tg
+//

@@ -1,0 +1,33 @@
+LOCUS       mTurquoise2              717 bp    DNA              UNK 01-JAN-1980
+DEFINITION  mTurquoise2.
+ACCESSION   mTurquoise2
+VERSION     mTurquoise2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..717
+                     /label="mTurquoise2"
+                     /synonym="mTurquoise2"
+                     /synonym="mturquoise2"
+                     /synonym="cyan fluorescent protein (mTurquoise2)"
+                     /translation="MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTL
+                     KFICTTGKLPVPWPTLVTTLSWGVQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDD
+                     GNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYFSDNVYITADKQKNGIK
+                     ANFKIRHNIEDGGVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLL
+                     EFVTAAGITLGMDELYK"
+ORIGIN
+        1 atggtgagca aaggcgaaga gctgtttacc ggtgttgtcc cgattttagt ggaattggat
+       61 ggagacgtta acggccataa gttctcggtc tccggtgagg gagaaggcga tgcgacgtat
+      121 ggtaaactga ctttaaagtt tatctgcacc acgggaaaat tgccagtgcc gtggccaact
+      181 ctggttacca cgttatcttg gggcgtccag tgtttcgccc gttacccgga ccacatgaag
+      241 caacatgatt ttttcaaaag cgcaatgcca gagggttatg tgcaggaacg cactattttt
+      301 ttcaaggacg atggaaatta caaaacccgt gcggaggtta agtttgaagg cgacacgttg
+      361 gtcaaccgca tcgagctgaa aggtattgat ttcaaggaag acggaaatat cttaggccac
+      421 aaattggagt ataactactt ttcggataat gtgtatatta ctgccgacaa gcaaaaaaac
+      481 ggtatcaagg caaatttcaa aattcgtcat aacatcgaag atggaggcgt tcagctggcg
+      541 gaccactacc aacagaatac cccgattggt gatggaccag tcttattgcc ggacaaccat
+      601 tatctgtcca cgcaatctaa gttaagcaaa gatccaaatg agaagcgcga ccacatggtg
+      661 ttgctggaat ttgttactgc cgcaggcatc accttaggta tggatgagtt gtacaaa
+//

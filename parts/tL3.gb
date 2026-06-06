@@ -1,0 +1,20 @@
+LOCUS       tL3                      272 bp    DNA              UNK 01-JAN-1980
+DEFINITION  tL3.
+ACCESSION   tL3
+VERSION     tL3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..272
+                     /label="tL3"
+                     /synonym="tL3"
+                     /synonym="tL3 terminator"
+ORIGIN
+        1 aatggcgatg acgcatcctc acgataatat ccgggtaggc gcaatcactt tcgtctctac
+       61 tccgttacaa agcgaggctg ggtatttccc ggcctttctg ttatccgaaa tccactgaaa
+      121 gcacagcggc tggctgagga gataaataat aaacgagggg ctgtatgcac aaagcatctt
+      181 ctgttgagtt aagaacgagt atcgagatgg cacatagcct tgctcaaatt ggaatcaggt
+      241 ttgtgccaat accagtagaa acagacgaag aa
+//

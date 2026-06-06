@@ -1,0 +1,15 @@
+LOCUS       B0030_RBS                 15 bp    DNA              UNK 01-JAN-1980
+DEFINITION  B0030 RBS.
+ACCESSION   B0030_RBS
+VERSION     B0030_RBS
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..15
+                     /label="B0030 RBS"
+                     /synonym="B0030 RBS"
+ORIGIN
+        1 attaaagagg agaaa
+//

@@ -1,0 +1,32 @@
+LOCUS       pSC101_ori_SEVA          951 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pSC101 ori (SEVA).
+ACCESSION   pSC101_ori_SEVA
+VERSION     pSC101_ori_SEVA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..951
+                     /label="pSC101 ori (SEVA)"
+                     /synonym="pSC101"
+                     /synonym="pSC101 ori (SEVA)"
+                     /synonym="pSC101 origin"
+ORIGIN
+        1 atgtctgaat tagttgtttt caaagcaaat gaactagcga ttagtcgcta tgacttaacg
+       61 gagcatgaaa ccaagctaat tttatgctgt gtggcactac tcaaccccac gattgaaaac
+      121 cctacaagga aagaacggac ggtatcgttc acttataacc aatacgctca gatgatgaac
+      181 atcagtaggg aaaatgctta tggtgtatta gctaaagcaa ccagagagct gatgacgaga
+      241 actgtggaaa tcaggaatcc tttggttaaa ggctttgaga ttttccagtg gacaaactat
+      301 gccaagttct caagcgaaaa attagaatta gtttttagtg aagagatatt gccttatctt
+      361 ttccagttaa aaaaattcat aaaatataat ctggaacatg ttaagtcttt tgaaaacaaa
+      421 tactctatga ggatttatga gtggttatta aaagaactaa cacaaaagaa aactcacaag
+      481 gcaaatatag agattagcct tgatgaattt aagttcatgt taatgcttga aaataactac
+      541 catgagttta aaaggcttaa ccaatgggtt ttgaaaccaa taagtaaaga tttaaacact
+      601 tacagcaata tgaaattggt ggttgataag cgaggccgcc cgactgatac gttgattttc
+      661 caagttgaac tagatagaca aatggatctc gtaaccgaac ttgagaacaa ccagataaaa
+      721 atgaatggtg acaaaatacc aacaaccatt acatcagatt cctacctaca taacggacta
+      781 agaaaaacac tacacgatgc tttaactgca aaaattcagc tcaccagttt tgaggcaaaa
+      841 tttttgagtg acatgcaaag taagtatgat ctcaatggtt cgttctcatg gctcacgcaa
+      901 aaacaacgaa ccacactaga gaacatactg gctaaatacg gaaggatctg a
+//

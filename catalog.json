@@ -1,0 +1,4644 @@
+{
+  "schema_version": "1.0",
+  "n_parts": 211,
+  "n_documented": 16,
+  "parts": [
+    {
+      "name": "186 attP",
+      "slug": "186_attP",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "186 attP",
+        "phage 186 att",
+        "186 att"
+      ],
+      "description": "",
+      "length": 307,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "186 integrase",
+      "slug": "186_integrase",
+      "feature_type": "CDS",
+      "synonyms": [
+        "186 integrase"
+      ],
+      "description": "",
+      "length": 1008,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "6xHis",
+      "slug": "6xHis",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "6xHis",
+        "6xHis (fragment)",
+        "His tag",
+        "His-tag",
+        "8xHis",
+        "8xHis (fragment)",
+        "10xHis",
+        "polyhistidine tag"
+      ],
+      "description": "",
+      "length": 18,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "aadA",
+      "slug": "aadA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "aadA",
+        "SpecR",
+        "SmR",
+        "spectinomycin adenyltransferase"
+      ],
+      "description": "",
+      "length": 789,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "AadA (SEVA)",
+      "slug": "AadA_SEVA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "AadA",
+        "aadA",
+        "streptomycin 3''-adenylyltransferase",
+        "SmR/SpR"
+      ],
+      "description": "",
+      "length": 903,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "AAV deg tag",
+      "slug": "AAV_deg_tag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "AAV deg tag",
+        "AAVDeg_Tag(medium speed)",
+        "AAV degradation tag"
+      ],
+      "description": "",
+      "length": 33,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Acc3",
+      "slug": "Acc3",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Acc3",
+        "acc3",
+        "gentamicin 3-N-acetyltransferase",
+        "GmR (SEVA)"
+      ],
+      "description": "",
+      "length": 531,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "acrII4A",
+      "slug": "acrII4A",
+      "feature_type": "CDS",
+      "synonyms": [
+        "acrII4A"
+      ],
+      "description": "",
+      "length": 261,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "AID",
+      "slug": "AID",
+      "feature_type": "CDS",
+      "synonyms": [
+        "AID",
+        "AICDA",
+        "activation-induced cytidine deaminase"
+      ],
+      "description": "",
+      "length": 597,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "AlkS",
+      "slug": "AlkS",
+      "feature_type": "CDS",
+      "synonyms": [
+        "AlkS",
+        "alkS",
+        "alkane-responsive regulator",
+        "alkS crc-mut"
+      ],
+      "description": "",
+      "length": 2655,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "APH-3",
+      "slug": "APH-3",
+      "feature_type": "CDS",
+      "synonyms": [
+        "APH-3"
+      ],
+      "description": "",
+      "length": 792,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "araC",
+      "slug": "araC",
+      "feature_type": "CDS",
+      "synonyms": [
+        "araC",
+        "arabinose operon regulatory protein"
+      ],
+      "description": "",
+      "length": 876,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "attP",
+      "slug": "attP",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "attP"
+      ],
+      "description": "",
+      "length": 417,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "attP1",
+      "slug": "attP1",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "attP1"
+      ],
+      "description": "",
+      "length": 25,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "attP2",
+      "slug": "attP2",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "attP2"
+      ],
+      "description": "",
+      "length": 25,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "AviTag\u2122",
+      "slug": "AviTag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "AviTag\u2122"
+      ],
+      "description": "",
+      "length": 45,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "B0030 RBS",
+      "slug": "B0030_RBS",
+      "feature_type": "RBS",
+      "synonyms": [
+        "B0030 RBS"
+      ],
+      "description": "",
+      "length": 15,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "bet",
+      "slug": "bet",
+      "feature_type": "CDS",
+      "synonyms": [
+        "bet",
+        "bet protein"
+      ],
+      "description": "",
+      "length": 783,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "birA",
+      "slug": "birA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "BirA",
+        "biotin--protein ligase"
+      ],
+      "description": "",
+      "length": 963,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "bla",
+      "slug": "bla",
+      "feature_type": "CDS",
+      "synonyms": [
+        "AmpR",
+        "amp",
+        "bla",
+        "beta-lactamase",
+        "TEM-1",
+        "penicillinase"
+      ],
+      "description": "",
+      "length": 858,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "bom",
+      "slug": "bom",
+      "feature_type": "misc_feature",
+      "synonyms": [
+        "bom"
+      ],
+      "description": "",
+      "length": 143,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CAG",
+      "slug": "CAG",
+      "feature_type": "promoter",
+      "synonyms": [
+        "CAG",
+        "chicken \u03b2-actin promoter",
+        "chicken beta-actin promoter"
+      ],
+      "description": "",
+      "length": 276,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cas1",
+      "slug": "cas1",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Cas1"
+      ],
+      "description": "",
+      "length": 867,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cas1 (Nme)",
+      "slug": "cas1_Nme",
+      "feature_type": "CDS",
+      "synonyms": [
+        "cas1 (Nme)",
+        "cas1 NMV_RS09840"
+      ],
+      "description": "",
+      "length": 912,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cas2",
+      "slug": "cas2",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Cas2"
+      ],
+      "description": "",
+      "length": 339,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cas2 (Nme)",
+      "slug": "cas2_Nme",
+      "feature_type": "CDS",
+      "synonyms": [
+        "cas2 (Nme)",
+        "cas2 NMV_RS09845"
+      ],
+      "description": "",
+      "length": 324,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cas9",
+      "slug": "cas9",
+      "feature_type": "CDS",
+      "synonyms": [
+        "SpCas9",
+        "Cas9",
+        "SpyCas9",
+        "csn1"
+      ],
+      "description": "",
+      "length": 4104,
+      "documented": false,
+      "children": [
+        {
+          "label": "RuvC-I",
+          "feature_type": "protein_domain",
+          "start": 0,
+          "end": 174,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Bridge helix",
+          "feature_type": "protein_domain",
+          "start": 177,
+          "end": 279,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC1",
+          "feature_type": "protein_domain",
+          "start": 279,
+          "end": 537,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC2",
+          "feature_type": "protein_domain",
+          "start": 537,
+          "end": 921,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC3",
+          "feature_type": "protein_domain",
+          "start": 921,
+          "end": 2139,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "RuvC-II",
+          "feature_type": "protein_domain",
+          "start": 2151,
+          "end": 2295,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "HNH",
+          "feature_type": "protein_domain",
+          "start": 2322,
+          "end": 2724,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "RuvC-III",
+          "feature_type": "protein_domain",
+          "start": 2724,
+          "end": 3294,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "PI",
+          "feature_type": "protein_domain",
+          "start": 3294,
+          "end": 4104,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "cat (Gram+)",
+      "slug": "cat_Gram",
+      "feature_type": "CDS",
+      "synonyms": [
+        "cat (Gram+)",
+        "chloramphenicol acetyltransferase (Gram+)"
+      ],
+      "description": "",
+      "length": 648,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "catP",
+      "slug": "catP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "catP"
+      ],
+      "description": "",
+      "length": 621,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ccdB",
+      "slug": "ccdB",
+      "feature_type": "CDS",
+      "synonyms": [
+        "ccdB",
+        "toxin CcdB"
+      ],
+      "description": "",
+      "length": 303,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CEN6-ARS209",
+      "slug": "CEN6-ARS209",
+      "feature_type": "misc_feature",
+      "synonyms": [
+        "CEN6-ARS209",
+        "yeast centromere/ARS",
+        "CEN6 ARS209",
+        "S. cerevisiae CEN6-ARS209"
+      ],
+      "description": "",
+      "length": 510,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CFP",
+      "slug": "CFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "CFP",
+        "cyan fluorescent protein",
+        "ECFP"
+      ],
+      "description": "",
+      "length": 717,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ChnR",
+      "slug": "ChnR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "chnR",
+        "ChnR activator"
+      ],
+      "description": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
+      "length": 942,
+      "documented": true,
+      "children": [],
+      "references": [
+        {
+          "authors": "Chen YC, Peoples OP, Walsh CT",
+          "title": "Acinetobacter cyclohexanone monooxygenase: gene cloning and sequence determination",
+          "journal": "J Bacteriol 170(2):781-789 (1988)",
+          "pmid": "3338974",
+          "doi": "10.1128/jb.170.2.781-789.1988",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3338974/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
+    },
+    {
+      "name": "cI857",
+      "slug": "cI857",
+      "feature_type": "CDS",
+      "synonyms": [
+        "cI857",
+        "lambda cI857",
+        "cI857 repressor",
+        "temperature-sensitive lambda repressor"
+      ],
+      "description": "",
+      "length": 711,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CloDF13 ori",
+      "slug": "CloDF13_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "CloDF13 ori"
+      ],
+      "description": "",
+      "length": 739,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CmR",
+      "slug": "CmR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "CmR",
+        "CAT",
+        "cat",
+        "chloramphenicol acetyltransferase"
+      ],
+      "description": "",
+      "length": 657,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ColE1",
+      "slug": "ColE1",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "ColE1"
+      ],
+      "description": "",
+      "length": 792,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "CspRecT",
+      "slug": "CspRecT",
+      "feature_type": "CDS",
+      "synonyms": [
+        "CspRecT"
+      ],
+      "description": "",
+      "length": 810,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "dCas9",
+      "slug": "dCas9",
+      "feature_type": "CDS",
+      "synonyms": [
+        "dCas9",
+        "SpdCas9",
+        "S. pyogenes dCas9",
+        "dead Cas9",
+        "nuclease-dead Cas9"
+      ],
+      "description": "",
+      "length": 4104,
+      "documented": false,
+      "children": [
+        {
+          "label": "RuvC-I",
+          "feature_type": "protein_domain",
+          "start": 0,
+          "end": 174,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Bridge helix",
+          "feature_type": "protein_domain",
+          "start": 177,
+          "end": 279,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC1",
+          "feature_type": "protein_domain",
+          "start": 279,
+          "end": 537,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC2",
+          "feature_type": "protein_domain",
+          "start": 537,
+          "end": 921,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "REC3",
+          "feature_type": "protein_domain",
+          "start": 921,
+          "end": 2139,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "RuvC-II",
+          "feature_type": "protein_domain",
+          "start": 2151,
+          "end": 2295,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "HNH",
+          "feature_type": "protein_domain",
+          "start": 2322,
+          "end": 2724,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "RuvC-III",
+          "feature_type": "protein_domain",
+          "start": 2724,
+          "end": 3294,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "PI",
+          "feature_type": "protein_domain",
+          "start": 3294,
+          "end": 4104,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "D10A",
+          "feature_type": "misc_feature",
+          "start": 27,
+          "end": 30,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "H840A",
+          "feature_type": "misc_feature",
+          "start": 2517,
+          "end": 2520,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "DhfR",
+      "slug": "DhfR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "DhfR",
+        "dhfR",
+        "DHFR",
+        "dihydrofolate reductase",
+        "trimethoprim resistance",
+        "TmpR",
+        "DfrA"
+      ],
+      "description": "",
+      "length": 471,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "DsRed2",
+      "slug": "DsRed2",
+      "feature_type": "CDS",
+      "synonyms": [
+        "DsRed2",
+        "dsred2",
+        "red fluorescent protein (DsRed2)"
+      ],
+      "description": "",
+      "length": 675,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "E-tag",
+      "slug": "E-tag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "E-tag",
+        "E tag"
+      ],
+      "description": "",
+      "length": 39,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "EcFbFP",
+      "slug": "EcFbFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "EcFbFP",
+        "FbFP",
+        "flavin-based fluorescent protein",
+        "LOV-domain fluorescent protein"
+      ],
+      "description": "",
+      "length": 408,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ECK120010818",
+      "slug": "ECK120010818",
+      "feature_type": "terminator",
+      "synonyms": [
+        "ECK120010818",
+        "Terminator ECK120010818"
+      ],
+      "description": "",
+      "length": 54,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ECK120033736",
+      "slug": "ECK120033736",
+      "feature_type": "terminator",
+      "synonyms": [
+        "ECK120033736",
+        "Terminator ECK120033736"
+      ],
+      "description": "",
+      "length": 52,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ECK120033737",
+      "slug": "ECK120033737",
+      "feature_type": "terminator",
+      "synonyms": [
+        "ECK120033737",
+        "Terminator ECK120033737"
+      ],
+      "description": "",
+      "length": 57,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "EGFP",
+      "slug": "EGFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "EGFP",
+        "eGFP",
+        "Enhanced GFP",
+        "GFP"
+      ],
+      "description": "",
+      "length": 717,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ermAM",
+      "slug": "ermAM",
+      "feature_type": "CDS",
+      "synonyms": [
+        "ermAM",
+        "ermB"
+      ],
+      "description": "",
+      "length": 735,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ermR",
+      "slug": "ermR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "ErmR",
+        "ErmC",
+        "ermR",
+        "erythromycin methylase",
+        "rRNA adenine N-6-methyltransferase"
+      ],
+      "description": "",
+      "length": 732,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "exo",
+      "slug": "exo",
+      "feature_type": "CDS",
+      "synonyms": [
+        "exo",
+        "exonuclease"
+      ],
+      "description": "",
+      "length": 678,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "f1 ori",
+      "slug": "f1_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "M13 origin",
+        "M13 ori",
+        "f1 ori"
+      ],
+      "description": "",
+      "length": 456,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "fd",
+      "slug": "fd",
+      "feature_type": "terminator",
+      "synonyms": [
+        "fd",
+        "fd terminator"
+      ],
+      "description": "",
+      "length": 40,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "FLAG",
+      "slug": "FLAG",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "FLAG",
+        "FLAG tag",
+        "FLAG-tag"
+      ],
+      "description": "",
+      "length": 24,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "FRT",
+      "slug": "FRT",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "FRT",
+        "FRT site",
+        "FRT site sequence"
+      ],
+      "description": "",
+      "length": 34,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "gam",
+      "slug": "gam",
+      "feature_type": "CDS",
+      "synonyms": [
+        "gam",
+        "gam protein"
+      ],
+      "description": "",
+      "length": 414,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "GFP",
+      "slug": "GFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "GFP",
+        "gfpmut2",
+        "green fluorescent protein"
+      ],
+      "description": "",
+      "length": 714,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "GmR",
+      "slug": "GmR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "GmR",
+        "GentR",
+        "Gentamicin R",
+        "gentamicin acetyltransferase",
+        "aacC1"
+      ],
+      "description": "",
+      "length": 531,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "GST",
+      "slug": "GST",
+      "feature_type": "CDS",
+      "synonyms": [
+        "GST",
+        "GST tag",
+        "glutathione S-transferase"
+      ],
+      "description": "",
+      "length": 654,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "HA",
+      "slug": "HA",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "HA",
+        "HA tag",
+        "HA-tag",
+        "hemagglutinin tag"
+      ],
+      "description": "",
+      "length": 27,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "HaloTag",
+      "slug": "HaloTag",
+      "feature_type": "CDS",
+      "synonyms": [
+        "HaloTag",
+        "HaloTag H7",
+        "Halo tag"
+      ],
+      "description": "",
+      "length": 894,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "HK022 attB",
+      "slug": "HK022_attB",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "HK022 attB"
+      ],
+      "description": "",
+      "length": 258,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "HK022 integrase",
+      "slug": "HK022_integrase",
+      "feature_type": "CDS",
+      "synonyms": [
+        "HK022 integrase"
+      ],
+      "description": "",
+      "length": 1071,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "hU6",
+      "slug": "hU6",
+      "feature_type": "promoter",
+      "synonyms": [
+        "hU6",
+        "hU6_promoter",
+        "U6 promoter"
+      ],
+      "description": "",
+      "length": 257,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "I-SceI site",
+      "slug": "I-SceI_site",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "I-SceI",
+        "I-SceI recognition site",
+        "I-SceI site",
+        "I-SceI cut site"
+      ],
+      "description": "",
+      "length": 18,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23104",
+      "slug": "J23104",
+      "feature_type": "promoter",
+      "synonyms": [
+        "J23104",
+        "BBa_J23104",
+        "BBa_J23104 Promoter (strong)",
+        "J23104 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23107",
+      "slug": "J23107",
+      "feature_type": "promoter",
+      "synonyms": [
+        "J23107",
+        "BBa_J23107",
+        "BBa_J23107 Promoter (medium)",
+        "J23107 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23108",
+      "slug": "J23108",
+      "feature_type": "promoter",
+      "synonyms": [
+        "J23108",
+        "J23108 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23110",
+      "slug": "J23110",
+      "feature_type": "promoter",
+      "synonyms": [
+        "J23110",
+        "J23110 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23119",
+      "slug": "J23119",
+      "feature_type": "promoter",
+      "synonyms": [
+        "J23119",
+        "J23119 promoter",
+        "J23119(SpeI) promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "kanR (Tn5)",
+      "slug": "kanR_Tn5",
+      "feature_type": "CDS",
+      "synonyms": [
+        "NeoR/KanR",
+        "kanR",
+        "nptII",
+        "NeoR",
+        "APH(3')-II",
+        "neo"
+      ],
+      "description": "",
+      "length": 792,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "kanR (Tn903)",
+      "slug": "kanR_Tn903",
+      "feature_type": "CDS",
+      "synonyms": [
+        "KanR",
+        "KmR",
+        "KanR2",
+        "APH(3')-Ia",
+        "aphA1",
+        "nptI"
+      ],
+      "description": "",
+      "length": 813,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "L3S1P13",
+      "slug": "L3S1P13",
+      "feature_type": "terminator",
+      "synonyms": [
+        "L3S1P13"
+      ],
+      "description": "",
+      "length": 51,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "L3S2P11",
+      "slug": "L3S2P11",
+      "feature_type": "terminator",
+      "synonyms": [
+        "L3S2P11",
+        "(modified) RF L3S2P11 terminator"
+      ],
+      "description": "",
+      "length": 57,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "L3S3P22 sTerminator",
+      "slug": "L3S3P22_sTerminator",
+      "feature_type": "terminator",
+      "synonyms": [
+        "L3S3P22 sTerminator"
+      ],
+      "description": "",
+      "length": 49,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LAA deg tag",
+      "slug": "LAA_deg_tag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "LAA deg tag",
+        "LAAdegradation tag(high speed)",
+        "LAA degradation tag"
+      ],
+      "description": "",
+      "length": 33,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacI",
+      "slug": "lacI",
+      "feature_type": "CDS",
+      "synonyms": [
+        "lacI",
+        "lac repressor"
+      ],
+      "description": "",
+      "length": 1080,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacO",
+      "slug": "lacO",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "lacO"
+      ],
+      "description": "",
+      "length": 17,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacO3",
+      "slug": "lacO3",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "lacO3",
+        "Lac O3 operator",
+        "Lac O3"
+      ],
+      "description": "",
+      "length": 21,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacZ",
+      "slug": "lacZ_1",
+      "feature_type": "CDS",
+      "synonyms": [
+        "lacZ",
+        "beta-galactosidase"
+      ],
+      "description": "",
+      "length": 3072,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacZ alpha",
+      "slug": "lacZ_alpha",
+      "feature_type": "CDS",
+      "synonyms": [
+        "lacZ alpha",
+        "lacZa",
+        "beta-galactosidase alpha subunit"
+      ],
+      "description": "",
+      "length": 261,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lacZ\u03b1",
+      "slug": "lacZ",
+      "feature_type": "CDS",
+      "synonyms": [
+        "lacZ\u03b1"
+      ],
+      "description": "",
+      "length": 291,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lambda attB",
+      "slug": "lambda_attB",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "lambda attB"
+      ],
+      "description": "",
+      "length": 387,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lambda cos",
+      "slug": "lambda_cos",
+      "feature_type": "misc_feature",
+      "synonyms": [
+        "lambda cos",
+        "Minimal lambda cos sequence",
+        "cos site"
+      ],
+      "description": "",
+      "length": 224,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lambda cos",
+      "slug": "lambda_cos_1",
+      "feature_type": "misc_feature",
+      "synonyms": [
+        "cos",
+        "lambda cos region",
+        "cos site (SEVA)"
+      ],
+      "description": "",
+      "length": 403,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lambda integrase",
+      "slug": "lambda_integrase",
+      "feature_type": "CDS",
+      "synonyms": [
+        "lambda integrase"
+      ],
+      "description": "",
+      "length": 1068,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "lambda t0",
+      "slug": "lambda_t0",
+      "feature_type": "terminator",
+      "synonyms": [
+        "lambda t0",
+        "lambda t0 terminator"
+      ],
+      "description": "",
+      "length": 95,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxA",
+      "slug": "LuxA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "LuxA",
+        "luciferase alpha chain"
+      ],
+      "description": "",
+      "length": 1080,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxB",
+      "slug": "LuxB",
+      "feature_type": "CDS",
+      "synonyms": [
+        "LuxB",
+        "luciferase beta chain"
+      ],
+      "description": "",
+      "length": 981,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxC",
+      "slug": "LuxC",
+      "feature_type": "CDS",
+      "synonyms": [
+        "LuxC",
+        "acyl-CoA reductase"
+      ],
+      "description": "",
+      "length": 1446,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxD",
+      "slug": "LuxD",
+      "feature_type": "CDS",
+      "synonyms": [
+        "LuxD",
+        "acyl transferase"
+      ],
+      "description": "",
+      "length": 921,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxE",
+      "slug": "LuxE",
+      "feature_type": "CDS",
+      "synonyms": [
+        "LuxE",
+        "long-chain-fatty-acid ligase"
+      ],
+      "description": "",
+      "length": 1182,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LuxIA terminator",
+      "slug": "LuxIA_terminator",
+      "feature_type": "terminator",
+      "synonyms": [
+        "LuxIA terminator",
+        "LuxIA Dual Terminator"
+      ],
+      "description": "",
+      "length": 55,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "mCherry",
+      "slug": "mCherry",
+      "feature_type": "CDS",
+      "synonyms": [
+        "mCherry",
+        "mCherry E"
+      ],
+      "description": "",
+      "length": 708,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "mRFP1",
+      "slug": "mRFP1",
+      "feature_type": "CDS",
+      "synonyms": [
+        "mRFP1",
+        "RFP",
+        "red fluorescent protein"
+      ],
+      "description": "",
+      "length": 675,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "mTurquoise2",
+      "slug": "mTurquoise2",
+      "feature_type": "CDS",
+      "synonyms": [
+        "mTurquoise2",
+        "mturquoise2",
+        "cyan fluorescent protein (mTurquoise2)"
+      ],
+      "description": "",
+      "length": 717,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Myc",
+      "slug": "Myc",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "Myc",
+        "c-Myc tag",
+        "Myc tag",
+        "Myc-tag"
+      ],
+      "description": "",
+      "length": 30,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "NLS (nucleoplasmin)",
+      "slug": "NLS_nucleoplasmin",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "NLS (nucleoplasmin)",
+        "nucleoplasmin NLS"
+      ],
+      "description": "",
+      "length": 48,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Nme2Cas9",
+      "slug": "Nme2Cas9",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Nme2Cas9",
+        "cas9 NMV_RS09835",
+        "NmeCas9"
+      ],
+      "description": "",
+      "length": 3246,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ori2",
+      "slug": "ori2",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "ori2"
+      ],
+      "description": "",
+      "length": 305,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "oriT",
+      "slug": "oriT",
+      "feature_type": "oriT",
+      "synonyms": [
+        "OriT"
+      ],
+      "description": "",
+      "length": 228,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "p15A",
+      "slug": "p15A",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "p15A"
+      ],
+      "description": "",
+      "length": 562,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "p15A ori",
+      "slug": "p15A_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "origin",
+        "p15A ori"
+      ],
+      "description": "",
+      "length": 546,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "p15A ori (pSU38)",
+      "slug": "p15A_ori_pSU38",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "p15A ori",
+        "P15A rep",
+        "p15A origin (pSU38)"
+      ],
+      "description": "p15A origin variant from pSU38 family; differs from canonical p15A ori by several point mutations and extended flanking sequence.",
+      "length": 789,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "P2A",
+      "slug": "P2A",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "P2A"
+      ],
+      "description": "",
+      "length": 57,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PA1/O4/O3",
+      "slug": "PA1_O4_O3",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PA1/O4/O3",
+        "PA1_04_03",
+        "PA1/O4/O3 constitutive promoter"
+      ],
+      "description": "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream).",
+      "length": 56,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "lac operator O4",
+          "feature_type": "protein_bind",
+          "start": 6,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "lac operator O3",
+          "feature_type": "protein_bind",
+          "start": 39,
+          "end": 56,
+          "strand": 1,
+          "citations": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Lanzer M, Bujard H",
+          "title": "Promoters largely determine the efficiency of repressor action",
+          "journal": "Proc Natl Acad Sci USA 85(23):8973-8977 (1988)",
+          "pmid": "3057497",
+          "doi": "10.1073/pnas.85.23.8973",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3057497/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Res 25(6):1203-1210 (1997)",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        },
+        {
+          "authors": "Gilbert W, Maxam A",
+          "title": "The nucleotide sequence of the lac operator",
+          "journal": "Proc Natl Acad Sci USA 70(12):3581-3584 (1973)",
+          "pmid": "4587255",
+          "doi": "10.1073/pnas.70.12.3581",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "ParaBAD",
+      "slug": "ParaBAD",
+      "feature_type": "promoter",
+      "synonyms": [
+        "araBAD promoter"
+      ],
+      "description": "",
+      "length": 285,
+      "documented": false,
+      "children": [
+        {
+          "label": "O2",
+          "feature_type": "protein_bind",
+          "start": 2,
+          "end": 20,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Pc",
+          "feature_type": "promoter",
+          "start": 124,
+          "end": 153,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "O1",
+          "feature_type": "protein_bind",
+          "start": 160,
+          "end": 182,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "CAP",
+          "feature_type": "protein_bind",
+          "start": 203,
+          "end": 217,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "I1+I2",
+          "feature_type": "protein_bind",
+          "start": 212,
+          "end": 251,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "pBAD",
+          "feature_type": "regulatory",
+          "start": 249,
+          "end": 277,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pBBR1 oriV",
+      "slug": "pBBR1_oriV",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pBBR1 oriV"
+      ],
+      "description": "",
+      "length": 772,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pBBR1 Rep",
+      "slug": "pBBR1_Rep",
+      "feature_type": "CDS",
+      "synonyms": [
+        "pBBR1 Rep"
+      ],
+      "description": "",
+      "length": 660,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pbla",
+      "slug": "Pbla",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pbla",
+        "AmpR promoter",
+        "bla promoter"
+      ],
+      "description": "",
+      "length": 105,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pcat",
+      "slug": "Pcat",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pcat",
+        "cat promoter"
+      ],
+      "description": "",
+      "length": 103,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PchnB",
+      "slug": "PchnB",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PchnB",
+        "chnB promoter",
+        "cyclohexanone-inducible promoter",
+        "chnB promoter region"
+      ],
+      "description": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
+      "length": 396,
+      "documented": true,
+      "children": [
+        {
+          "label": "ChnR-responsive element",
+          "feature_type": "protein_bind",
+          "start": 14,
+          "end": 25,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Iwaki H, Hasegawa Y, Wang S, Kayser MM, Lau PCK",
+          "title": "Identification of a Transcriptional Activator (ChnR) and a 6-Oxohexanoate Dehydrogenase (ChnE) in the Cyclohexanol Catabolic Pathway in Acinetobacter sp. Strain NCIMB 9871 and Localization of the Genes That Encode Them",
+          "journal": "Applied and Environmental Microbiology 65(11):5158-5162 (1999)",
+          "pmid": "10543838",
+          "doi": "10.1128/AEM.65.11.5158-5162.1999",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10543838/"
+        },
+        {
+          "authors": "Benedetti I, Nikel PI, de Lorenzo V",
+          "title": "Data on the standardization of a cyclohexanone-responsive expression system for Gram-negative bacteria",
+          "journal": "Data in Brief 6:738-744 (2016)",
+          "pmid": "26870759",
+          "doi": "10.1016/j.dib.2016.01.022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26870759/"
+        },
+        {
+          "authors": "Cheng Q, Thomas SM, Kostichka K, Valentine JR, Nagarajan V",
+          "title": "Genetic Analysis of a Gene Cluster for Cyclohexanol Oxidation in Acinetobacter sp. Strain SE19 by In Vitro Transposition",
+          "journal": "Journal of Bacteriology 182(17):4744-4751 (2000)",
+          "pmid": "10940013",
+          "doi": "10.1128/JB.182.17.4744-4751.2000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10940013/"
+        },
+        {
+          "authors": "Steigedal M, Valla S",
+          "title": "The Acinetobacter sp. chnB promoter together with its cognate positive regulator ChnR is an attractive new candidate for metabolic engineering applications in bacteria",
+          "journal": "Metabolic Engineering 10(2):121-129 (2008)",
+          "pmid": "17950643",
+          "doi": "10.1016/j.ymben.2007.08.002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17950643/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "PD/E20",
+      "slug": "PD_E20",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PD/E20",
+        "PD_E20",
+        "PD/E20 (T5) constitutive promoter",
+        "T5 core promoter"
+      ],
+      "description": "",
+      "length": 75,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PEM7",
+      "slug": "PEM7",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PEM7",
+        "PEM7 promoter",
+        "Pem7",
+        "EM7 promoter",
+        "synthetic constitutive promoter"
+      ],
+      "description": "",
+      "length": 67,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "phi80 attB",
+      "slug": "phi80_attB",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "phi80 attB"
+      ],
+      "description": "",
+      "length": 480,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "phiC31 attP",
+      "slug": "phiC31_attP",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "phiC31 attP",
+        "phi-C31 attP",
+        "phiC31 attachment site"
+      ],
+      "description": "",
+      "length": 100,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PhlF",
+      "slug": "PhlF",
+      "feature_type": "CDS",
+      "synonyms": [
+        "PhlF"
+      ],
+      "description": "",
+      "length": 600,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pIJ101 ori",
+      "slug": "pIJ101_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pIJ101",
+        "pIJ101 ori",
+        "Streptomyces ori",
+        "pIJ101 origin"
+      ],
+      "description": "",
+      "length": 2239,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pkan",
+      "slug": "Pkan",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pkan",
+        "PKan",
+        "kanamycin promoter",
+        "Km promoter"
+      ],
+      "description": "",
+      "length": 106,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PL",
+      "slug": "PL",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PL",
+        "lambda PL",
+        "PL promoter",
+        "lambda PL promoter"
+      ],
+      "description": "",
+      "length": 382,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Plac",
+      "slug": "Plac",
+      "feature_type": "promoter",
+      "synonyms": [
+        "lac promoter"
+      ],
+      "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+      "length": 55,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "-35/-10 spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 24,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 24,
+          "end": 30,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1 TSS",
+          "feature_type": "misc_feature",
+          "start": 36,
+          "end": 37,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "lac operator O1",
+          "feature_type": "protein_bind",
+          "start": 33,
+          "end": 55,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Dickson RC, Abelson J, Barnes WM, Reznikoff WS",
+          "title": "Genetic regulation: the Lac control region",
+          "journal": "Science",
+          "pmid": "1088926",
+          "doi": "10.1126/science.1088926",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1088926/"
+        },
+        {
+          "authors": "Gilbert W, Maxam A",
+          "title": "The nucleotide sequence of the lac operator",
+          "journal": "Proc Natl Acad Sci USA",
+          "pmid": "4587255",
+          "doi": "10.1073/pnas.70.12.3581",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "PlacI",
+      "slug": "PlacI",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PlacI",
+        "lacI promoter"
+      ],
+      "description": "",
+      "length": 78,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PlacIq",
+      "slug": "PlacIq",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PlacIq",
+        "lacIq promoter"
+      ],
+      "description": "",
+      "length": 78,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PlacUV5",
+      "slug": "PlacUV5",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PlacUV5",
+        "lacUV5 promoter",
+        "lacUV5"
+      ],
+      "description": "PlacUV5 \u2014 the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
+      "length": 30,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 24,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 24,
+          "end": 30,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Dickson RC, Abelson J, Barnes WM, Reznikoff WS",
+          "title": "Genetic regulation: the lac control region",
+          "journal": "Science 187(4171):27-35",
+          "pmid": "1088926",
+          "doi": "10.1126/science.1088926",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1088926/"
+        },
+        {
+          "authors": "Silverstone AE, Arditti RR, Magasanik B",
+          "title": "Catabolite-insensitive revertants of lac promoter mutants",
+          "journal": "Proc. Natl. Acad. Sci. USA 66(3):773-779",
+          "pmid": "4913210",
+          "doi": "10.1073/pnas.66.3.773",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4913210/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar1",
+      "slug": "Pliar1",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar1",
+        "synthetic Pliar1 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar15",
+      "slug": "Pliar15",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar15",
+        "synthetic Pliar15 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar17",
+      "slug": "Pliar17",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar17",
+        "synthetic Pliar17 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar51",
+      "slug": "Pliar51",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar51",
+        "synthetic Pliar51 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar53",
+      "slug": "Pliar53",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar53",
+        "synthetic Pliar53 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pliar70",
+      "slug": "Pliar70",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pliar70",
+        "synthetic Pliar70 promoter"
+      ],
+      "description": "",
+      "length": 42,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PLtetO-1",
+      "slug": "PLtetO-1",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PLtetO-1",
+        "PLtetO-1 promoter"
+      ],
+      "description": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
+      "length": 74,
+      "documented": true,
+      "children": [
+        {
+          "label": "tetO2 operator",
+          "feature_type": "protein_bind",
+          "start": 0,
+          "end": 19,
+          "strand": 1,
+          "citations": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 19,
+          "end": 25,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "tetO2 operator (proximal)",
+          "feature_type": "protein_bind",
+          "start": 25,
+          "end": 44,
+          "strand": 1,
+          "citations": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 42,
+          "end": 48,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        },
+        {
+          "authors": "Kleinschmidt C, Tovar K, Hillen W, Porschke D",
+          "title": "Dynamics of repressor-operator recognition: the Tn10-encoded tetracycline resistance control",
+          "journal": "Biochemistry 1988;27(4):1094-1104",
+          "pmid": "2835082",
+          "doi": "10.1021/bi00404a003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2835082/"
+        },
+        {
+          "authors": "Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger W",
+          "title": "Structure of the Tet repressor-tetracycline complex and regulation of antibiotic resistance",
+          "journal": "Science 1994;264(5157):418-420",
+          "pmid": "8153629",
+          "doi": "10.1126/science.8153629",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8153629/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "Pm",
+      "slug": "Pm",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pm",
+        "Pm promoter"
+      ],
+      "description": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
+      "length": 81,
+      "documented": true,
+      "children": [
+        {
+          "label": "XylS operator",
+          "feature_type": "protein_bind",
+          "start": 10,
+          "end": 25,
+          "strand": 1,
+          "citations": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "label": "XylS operator (proximal)",
+          "feature_type": "protein_bind",
+          "start": 31,
+          "end": 46,
+          "strand": 1,
+          "citations": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 40,
+          "end": 46,
+          "strand": 1,
+          "citations": [
+            3,
+            6,
+            7
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 67,
+          "end": 73,
+          "strand": 1,
+          "citations": [
+            6
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Gawin A, Valla S, Brautaset T",
+          "title": "The XylS/Pm regulator/promoter system and its use in fundamental studies of bacterial gene expression, recombinant protein production and metabolic engineering",
+          "journal": "Microbial Biotechnology, 2017;10(4):702-718",
+          "pmid": "28276630",
+          "doi": "10.1111/1751-7915.12701",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28276630/"
+        },
+        {
+          "authors": "Blatny JM, Brautaset T, Winther-Larsen HC, Haugan K, Valla S",
+          "title": "Construction and use of versatile broad-host-range RK2-based vectors (pJB653) for regulated gene expression with the Pm/XylS system (GenBank U75327.1)",
+          "journal": "Applied and Environmental Microbiology, 1997;63(2):370-379",
+          "pmid": "9097427",
+          "doi": "10.1128/aem.63.2.370-379.1997",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9097427/"
+        },
+        {
+          "authors": "Gonz\u00e1lez-P\u00e9rez MM, Marqu\u00e9s S, Dom\u00ednguez-Cuevas P, Ramos JL",
+          "title": "XylS activator and RNA polymerase binding sites at the Pm promoter overlap",
+          "journal": "FEBS Letters, 2002;519(1-3):117-122",
+          "pmid": "12023029",
+          "doi": "10.1016/s0014-5793(02)02635-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12023029/"
+        },
+        {
+          "authors": "Kessler B, Timmis KN, de Lorenzo V",
+          "title": "The organization of the Pm promoter of the TOL plasmid reflects the structure of its cognate activator protein XylS",
+          "journal": "Molecular and General Genetics, 1994;244(6):596-605",
+          "pmid": "7969028",
+          "doi": "10.1007/BF00282749",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7969028/"
+        },
+        {
+          "authors": "Dom\u00ednguez-Cuevas P, Mar\u00edn P, Ramos JL, Marqu\u00e9s S",
+          "title": "Sequential XylS-CTD binding to the Pm promoter induces DNA bending prior to activation",
+          "journal": "Journal of Bacteriology, 2010;192(11):2682-2690",
+          "pmid": "20382764",
+          "doi": "10.1128/JB.01433-09",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20382764/"
+        },
+        {
+          "authors": "Bakke I, Berg L, Aune TE, Brautaset T, Sletta H, T\u00f8ndervik A, Valla S",
+          "title": "Random mutagenesis of the Pm promoter as a powerful strategy for improvement of recombinant-gene expression",
+          "journal": "Applied and Environmental Microbiology, 2009;75(7):2002-2011",
+          "pmid": "19201967",
+          "doi": "10.1128/AEM.02315-08",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19201967/"
+        },
+        {
+          "authors": "Marqu\u00e9s S, Manzanera M, Gonz\u00e1lez-P\u00e9rez MM, Gallegos MT, Ramos JL",
+          "title": "The XylS-dependent Pm promoter is transcribed in vivo by RNA polymerase with sigma 32 or sigma 38 depending on the growth phase",
+          "journal": "Molecular Microbiology, 1999;31(4):1105-1113",
+          "pmid": "10096078",
+          "doi": "10.1046/j.1365-2958.1999.01249.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10096078/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "pMB1",
+      "slug": "pMB1",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pMB1",
+        "ori",
+        "pBR322 ori",
+        "ColE1-derived ori"
+      ],
+      "description": "",
+      "length": 589,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pneo",
+      "slug": "Pneo",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Pneo",
+        "neo promoter",
+        "neomycin promoter",
+        "kanamycin promoter (SEVA)"
+      ],
+      "description": "",
+      "length": 170,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PpflB",
+      "slug": "PpflB",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PpflB",
+        "Promoter PpflB",
+        "pflB promoter"
+      ],
+      "description": "",
+      "length": 180,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PphlF",
+      "slug": "PphlF",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PphlF",
+        "PhlF promoter"
+      ],
+      "description": "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription.",
+      "length": 51,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 16,
+          "end": 22,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 39,
+          "end": 45,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "phO",
+          "feature_type": "protein_bind",
+          "start": 21,
+          "end": 51,
+          "strand": 1,
+          "citations": [
+            3,
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Stanton BC, Nielsen AA, Tamsir A, Clancy K, Peterson T, Voigt CA",
+          "title": "Genomic mining of prokaryotic repressors for orthogonal logic gates",
+          "journal": "Nat Chem Biol 10(2):99-105 (2014)",
+          "pmid": "24316737",
+          "doi": "10.1038/nchembio.1411",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24316737/"
+        },
+        {
+          "authors": "Nielsen AA, Der BS, Shin J, Vaidyanathan P, Paralanov V, Strychalski EA, Ross D, Densmore D, Voigt CA",
+          "title": "Genetic circuit design automation",
+          "journal": "Science 352(6281):aac7341 (2016)",
+          "pmid": "27034378",
+          "doi": "10.1126/science.aac7341",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27034378/"
+        },
+        {
+          "authors": "Abbas A, Morrissey JP, Marquez PC, Sheehan MM, Delany IR, O'Gara F",
+          "title": "Characterization of interactions between the transcriptional repressor PhlF and its binding site at the phlA promoter in Pseudomonas fluorescens F113",
+          "journal": "J Bacteriol 184(11):3008-3016 (2002)",
+          "pmid": "12003942",
+          "doi": "10.1128/JB.184.11.3008-3016.2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12003942/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "pR",
+      "slug": "pR",
+      "feature_type": "promoter",
+      "synonyms": [
+        "pR",
+        "pR promoter"
+      ],
+      "description": "",
+      "length": 29,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pRM",
+      "slug": "pRM",
+      "feature_type": "promoter",
+      "synonyms": [
+        "pRM",
+        "pRM promoter"
+      ],
+      "description": "",
+      "length": 29,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pRO1600 oriV",
+      "slug": "pRO1600_oriV",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pRO1600 oriV"
+      ],
+      "description": "",
+      "length": 352,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pSC101 ori",
+      "slug": "pSC101_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pSC101 ori"
+      ],
+      "description": "",
+      "length": 223,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pSC101 ori (SEVA)",
+      "slug": "pSC101_ori_SEVA",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pSC101",
+        "pSC101 ori (SEVA)",
+        "pSC101 origin"
+      ],
+      "description": "",
+      "length": 951,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pSH71 ori",
+      "slug": "pSH71_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pSH71 ori",
+        "pLZ12 ori",
+        "pSH71 origin"
+      ],
+      "description": "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA.",
+      "length": 813,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "pSH71 ori (core)",
+      "slug": "pSH71_ori_core",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "pSH71 ori core",
+        "pLZ12 ori core"
+      ],
+      "description": "Core origin of replication from pSH71/pLZ12. Minimal conserved region upstream of repA, shared across variants.",
+      "length": 513,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PSV40",
+      "slug": "PSV40",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PSV40",
+        "SV40 promoter"
+      ],
+      "description": "",
+      "length": 330,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PT3",
+      "slug": "PT3",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PT3",
+        "T3 promoter"
+      ],
+      "description": "",
+      "length": 20,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PT5/lacO",
+      "slug": "PT5_lacO",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PT5/lacO",
+        "T5 promoter",
+        "T5/lacO promoter",
+        "T5 lac operator promoter"
+      ],
+      "description": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
+      "length": 81,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 18,
+          "end": 24,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 41,
+          "end": 47,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "lac operator",
+          "feature_type": "protein_bind",
+          "start": 24,
+          "end": 41,
+          "strand": 1,
+          "citations": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "label": "lac operator (downstream)",
+          "feature_type": "protein_bind",
+          "start": 56,
+          "end": 73,
+          "strand": 1,
+          "citations": [
+            3,
+            5
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Bujard H, Gentz R, Lanzer M, Stueber D, Mueller M, Ibrahimi I, Haeuptle MT, Dobberstein B",
+          "title": "A T5 promoter-based transcription-translation system for the analysis of proteins in vitro and in vivo",
+          "journal": "Methods in Enzymology 155:416-433",
+          "pmid": "2828874",
+          "doi": "10.1016/0076-6879(87)55028-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2828874/"
+        },
+        {
+          "authors": "Gentz R, Bujard H",
+          "title": "Promoters recognized by Escherichia coli RNA polymerase selected by function: highly efficient promoters from bacteriophage T5",
+          "journal": "Journal of Bacteriology 164(1):70-77",
+          "pmid": "3900050",
+          "doi": "10.1128/jb.164.1.70-77.1985",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3900050/"
+        },
+        {
+          "authors": "Gilbert W, Maxam A",
+          "title": "The Nucleotide Sequence of the lac Operator",
+          "journal": "Proc Natl Acad Sci USA 70(12):3581-3584",
+          "pmid": "4587255",
+          "doi": "10.1073/pnas.70.12.3581",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
+        },
+        {
+          "authors": "Simons A, Tils D, von Wilcken-Bergmann B, Mueller-Hill B",
+          "title": "Possible ideal lac operator: Escherichia coli lac operator-like sequences from eukaryotic genomes lack the central G X C pair",
+          "journal": "Proc Natl Acad Sci USA 81(6):1624-1628",
+          "pmid": "6369330",
+          "doi": "10.1073/pnas.81.6.1624",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6369330/"
+        },
+        {
+          "authors": "Besse M, von Wilcken-Bergmann B, Mueller-Hill B",
+          "title": "Synthetic lac operator mediates repression through lac repressor when introduced upstream and downstream from the lac promoter",
+          "journal": "EMBO Journal 5(6):1377-1381",
+          "pmid": "3015603",
+          "doi": "10.1002/j.1460-2075.1986.tb04369.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3015603/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
+    },
+    {
+      "name": "PT7",
+      "slug": "PT7",
+      "feature_type": "promoter",
+      "synonyms": [
+        "T7 promoter"
+      ],
+      "description": "",
+      "length": 20,
+      "documented": false,
+      "children": [
+        {
+          "label": "+1",
+          "feature_type": "misc_feature",
+          "start": 17,
+          "end": 18,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Ptac",
+      "slug": "Ptac",
+      "feature_type": "promoter",
+      "synonyms": [
+        "tac promoter"
+      ],
+      "description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
+      "length": 53,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 22,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 22,
+          "end": 28,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "discriminator",
+          "feature_type": "misc_feature",
+          "start": 28,
+          "end": 34,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1",
+          "feature_type": "misc_feature",
+          "start": 34,
+          "end": 35,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "lac operator",
+          "feature_type": "protein_bind",
+          "start": 34,
+          "end": 53,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "de Boer HA, Comstock LJ, Vasser M",
+          "title": "The tac promoter: a functional hybrid derived from the trp and lac promoters",
+          "journal": "Proc Natl Acad Sci U S A 80(1):21-25",
+          "pmid": "6337371",
+          "doi": "10.1073/pnas.80.1.21",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6337371/"
+        },
+        {
+          "authors": "Brosius J, Erfle M, Storella J",
+          "title": "Spacing of the -10 and -35 regions in the tac promoter. Effect on its in vivo activity",
+          "journal": "J Biol Chem 260(6):3539-3541",
+          "pmid": "2579077",
+          "doi": "10.1016/S0021-9258(19)83655-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2579077/"
+        },
+        {
+          "authors": "Amann E, Ochs B, Abel KJ",
+          "title": "Tightly regulated tac promoter vectors useful for the expression of unfused and fused proteins in Escherichia coli",
+          "journal": "Gene 69(2):301-315",
+          "pmid": "3069586",
+          "doi": "10.1016/0378-1119(88)90440-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3069586/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "Ptet2",
+      "slug": "Ptet2",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Ptet2",
+        "tet promoter"
+      ],
+      "description": "Ptet2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+      "length": 29,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "minus_35_signal",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "minus_10_signal",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            4
+          ]
+        },
+        {
+          "label": "ClaI",
+          "feature_type": "misc_feature",
+          "start": 13,
+          "end": 19,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "HindIII",
+          "feature_type": "misc_feature",
+          "start": 19,
+          "end": 25,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+          "journal": "Cold Spring Harbor Symposia on Quantitative Biology 1979;43:77-90",
+          "pmid": "383387",
+          "doi": "10.1101/sqb.1979.043.01.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
+        },
+        {
+          "authors": "Hillen W, Berens C",
+          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
+          "journal": "Annual Review of Microbiology 1994;48:345-369",
+          "pmid": "7826010",
+          "doi": "10.1146/annurev.mi.48.100194.002021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
+        },
+        {
+          "authors": "Harley CB, Lawrie J, Betlach M, Crea R, Boyer HW, Hedgpeth J",
+          "title": "Transcription initiation at the tet promoter and effect of mutations",
+          "journal": "Nucleic Acids Research 1988;16(15):7269-7285",
+          "pmid": "3045754",
+          "doi": "10.1093/nar/16.15.7269",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3045754/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "ptet_full",
+      "slug": "ptet_full",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Tn10 tetA promoter"
+      ],
+      "description": "Synthetic PLtetO-1-family two-operator, anhydrotetracycline (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter carrying one Tn10 tet operator in the spacer and a second downstream of t...",
+      "length": 58,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "tetO1",
+          "feature_type": "protein_bind",
+          "start": 4,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            2,
+            3,
+            1,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1",
+          "feature_type": "misc_feature",
+          "start": 36,
+          "end": 37,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "tetO2",
+          "feature_type": "protein_bind",
+          "start": 39,
+          "end": 58,
+          "strand": 1,
+          "citations": [
+            5,
+            1,
+            6,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        },
+        {
+          "authors": "Hillen W, Schollmeier K",
+          "title": "Nucleotide sequence of the Tn10 encoded tetracycline resistance gene",
+          "journal": "Nucleic Acids Research 11(2):525-540",
+          "pmid": "6298728",
+          "doi": "10.1093/nar/11.2.525",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6298728/"
+        },
+        {
+          "authors": "Meier I, Wray LV Jr, Hillen W",
+          "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+          "journal": "EMBO Journal 7(2):567-572",
+          "pmid": "2835235",
+          "doi": "10.1002/j.1460-2075.1988.tb02846.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2835235/"
+        },
+        {
+          "authors": "Bertram R, Neumann B, Schuster CF",
+          "title": "Status quo of tet regulation in bacteria",
+          "journal": "Microbial Biotechnology 15(4):1101-1119",
+          "pmid": "34713957",
+          "doi": "10.1111/1751-7915.13926",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34713957/"
+        },
+        {
+          "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+          "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
+          "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
+          "pmid": "21921101",
+          "doi": "10.1099/mic.0.052548-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21921101/"
+        },
+        {
+          "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
+          "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
+          "journal": "Nucleic Acids Research 14(10):4253-4266",
+          "pmid": "3086838",
+          "doi": "10.1093/nar/14.10.4253",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3086838/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "PtetA",
+      "slug": "PtetA",
+      "feature_type": "promoter",
+      "synonyms": [
+        "ptet",
+        "tet promoter"
+      ],
+      "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
+      "length": 29,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "tetO1",
+          "feature_type": "protein_bind",
+          "start": 6,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Bertrand KP, Postle K, Wray LV Jr, Reznikoff WS",
+          "title": "Overlapping divergent promoters control expression of Tn10 tetracycline resistance",
+          "journal": "Gene 1983;23(2):149-156",
+          "pmid": "6311683",
+          "doi": "10.1016/0378-1119(83)90046-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6311683/"
+        },
+        {
+          "authors": "Bertram R, Hillen W",
+          "title": "The application of Tet repressor in prokaryotic gene regulation and expression",
+          "journal": "Microbial Biotechnology 2008;1(1):2-16",
+          "pmid": "21261817",
+          "doi": "10.1111/j.1751-7915.2007.00001.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21261817/"
+        },
+        {
+          "authors": "Meier I, Wray LV, Hillen W",
+          "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+          "journal": "EMBO J 1988;7(2):567-572",
+          "pmid": "2835235",
+          "doi": "10.1002/j.1460-2075.1988.tb02846.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2835235/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "Ptrc",
+      "slug": "Ptrc",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Ptrc",
+        "trc promoter"
+      ],
+      "description": "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer.",
+      "length": 30,
+      "documented": true,
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "-35/-10 spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Amann E, Ochs B, Abel KJ",
+          "title": "Tightly regulated tac promoter vectors useful for the expression of unfused and fused proteins in Escherichia coli",
+          "journal": "Gene. 1988 Sep 30;69(2):301-315",
+          "pmid": "3069586",
+          "doi": "10.1016/0378-1119(88)90440-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3069586/"
+        },
+        {
+          "authors": "de Boer HA, Comstock LJ, Vasser M",
+          "title": "The tac promoter: a functional hybrid derived from the trp and lac promoters",
+          "journal": "Proc Natl Acad Sci U S A. 1983 Jan;80(1):21-25",
+          "pmid": "6337371",
+          "doi": "10.1073/pnas.80.1.21",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6337371/"
+        },
+        {
+          "authors": "Amann E, Brosius J",
+          "title": "'ATG vectors' for regulated high-level expression of cloned genes in Escherichia coli",
+          "journal": "Gene. 1985;40(2-3):183-190",
+          "pmid": "3007288",
+          "doi": "10.1016/0378-1119(85)90041-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3007288/"
+        },
+        {
+          "authors": "Brosius J, Erfle M, Storella J",
+          "title": "Spacing of the -10 and -35 regions in the tac promoter. Effect on its in vivo activity",
+          "journal": "J Biol Chem. 1985 Mar 25;260(6):3539-3541",
+          "pmid": "2579077",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2579077/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
+    },
+    {
+      "name": "PURA3",
+      "slug": "PURA3",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PURA3",
+        "URA3 promoter"
+      ],
+      "description": "",
+      "length": 216,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PVeg",
+      "slug": "PVeg",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PVeg",
+        "PVeg promoter",
+        "Bacillus PVeg",
+        "vegetative promoter"
+      ],
+      "description": "",
+      "length": 36,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "R6Kgamma ori",
+      "slug": "R6Kgamma_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "R6Kgamma ori"
+      ],
+      "description": "",
+      "length": 430,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RBS 23400",
+      "slug": "RBS_23400",
+      "feature_type": "RBS",
+      "synonyms": [
+        "RBS 23400",
+        "Synthetic RBS 23",
+        "400 TIR (NEQ)"
+      ],
+      "description": "",
+      "length": 25,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RBS 7300",
+      "slug": "RBS_7300",
+      "feature_type": "RBS",
+      "synonyms": [
+        "RBS 7300",
+        "Synthetic RBS7 7300 TIR NEQ"
+      ],
+      "description": "",
+      "length": 25,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "recE",
+      "slug": "recE",
+      "feature_type": "CDS",
+      "synonyms": [
+        "recE"
+      ],
+      "description": "",
+      "length": 2598,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "recT",
+      "slug": "recT",
+      "feature_type": "CDS",
+      "synonyms": [
+        "recT"
+      ],
+      "description": "",
+      "length": 864,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "rep pSC101",
+      "slug": "rep_pSC101",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Replication protein",
+        "rep pSC101",
+        "repA101 ts"
+      ],
+      "description": "",
+      "length": 948,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repA",
+      "slug": "repA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repA"
+      ],
+      "description": "",
+      "length": 696,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repA (IncFII)",
+      "slug": "repA_IncFII",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repA"
+      ],
+      "description": "",
+      "length": 1635,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repA (R6K)",
+      "slug": "repA_R6K",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repA"
+      ],
+      "description": "",
+      "length": 1053,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RepC",
+      "slug": "RepC",
+      "feature_type": "CDS",
+      "synonyms": [
+        "RepC",
+        "RepC protein"
+      ],
+      "description": "",
+      "length": 942,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RepC (RSF1010)",
+      "slug": "RepC_RSF1010",
+      "feature_type": "CDS",
+      "synonyms": [
+        "RepC",
+        "repC (RSF1010)",
+        "RSF1010 RepC",
+        "replication protein C"
+      ],
+      "description": "",
+      "length": 948,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repE",
+      "slug": "repE",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repE"
+      ],
+      "description": "",
+      "length": 753,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repH",
+      "slug": "repH",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repH"
+      ],
+      "description": "",
+      "length": 315,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "repL",
+      "slug": "repL",
+      "feature_type": "CDS",
+      "synonyms": [
+        "repL"
+      ],
+      "description": "",
+      "length": 438,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RK2 oriV",
+      "slug": "RK2_oriV",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "RK2 oriV",
+        "oriV RK2",
+        "oriV"
+      ],
+      "description": "",
+      "length": 532,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RP4 oriT",
+      "slug": "RP4_oriT",
+      "feature_type": "oriT",
+      "synonyms": [
+        "RP4 oriT",
+        "RP4 transfer origin",
+        "oriT RP4"
+      ],
+      "description": "",
+      "length": 257,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "rrnBT1",
+      "slug": "rrnBT1",
+      "feature_type": "terminator",
+      "synonyms": [
+        "rrnBT1",
+        "rrnBT1 terminator"
+      ],
+      "description": "",
+      "length": 169,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "rrnBT2",
+      "slug": "rrnBT2",
+      "feature_type": "terminator",
+      "synonyms": [
+        "rrnBT2",
+        "rrn BT2 terminator"
+      ],
+      "description": "",
+      "length": 63,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RSF ori",
+      "slug": "RSF_ori",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "RSF ori"
+      ],
+      "description": "",
+      "length": 750,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RSF1010 oriV",
+      "slug": "RSF1010_oriV",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "RSF1010 oriV"
+      ],
+      "description": "",
+      "length": 395,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RSF1010 RepA",
+      "slug": "RSF1010_RepA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "RSF1010 RepA"
+      ],
+      "description": "",
+      "length": 837,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "RSF1010 RepB",
+      "slug": "RSF1010_RepB",
+      "feature_type": "CDS",
+      "synonyms": [
+        "RSF1010 RepB"
+      ],
+      "description": "",
+      "length": 969,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SacB",
+      "slug": "SacB",
+      "feature_type": "CDS",
+      "synonyms": [
+        "SacB",
+        "levansucrase"
+      ],
+      "description": "",
+      "length": 1419,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SEVA tir",
+      "slug": "SEVA_tir",
+      "feature_type": "RBS",
+      "synonyms": [
+        "SEVA tir",
+        "tir region",
+        "SEVA translation initiation region"
+      ],
+      "description": "",
+      "length": 24,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "sfGFP",
+      "slug": "sfGFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "Superfolder GFP",
+        "Superfolder",
+        "sfGFP",
+        "msfGFP",
+        "GFP (superfolder)",
+        "GFP"
+      ],
+      "description": "",
+      "length": 714,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "sgRNA scaffold",
+      "slug": "sgRNA_scaffold",
+      "feature_type": "misc_RNA",
+      "synonyms": [
+        "sgRNA scaffold",
+        "gRNA scaffold",
+        "guide RNA scaffold",
+        "chimeric RNA scaffold",
+        "sgRNA scaffold (SpCas9)"
+      ],
+      "description": "",
+      "length": 76,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "sopA",
+      "slug": "sopA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "sopA"
+      ],
+      "description": "",
+      "length": 1173,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "sopB",
+      "slug": "sopB",
+      "feature_type": "CDS",
+      "synonyms": [
+        "sopB"
+      ],
+      "description": "",
+      "length": 969,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SpecR",
+      "slug": "SpecR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "SpecR",
+        "SmR",
+        "spec",
+        "aad9",
+        "spectinomycin adenyltransferase"
+      ],
+      "description": "",
+      "length": 672,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "St1Cas9",
+      "slug": "St1Cas9",
+      "feature_type": "CDS",
+      "synonyms": [
+        "St1Cas9",
+        "cas9 (St1)",
+        "SthCas9"
+      ],
+      "description": "",
+      "length": 4164,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Strep tag",
+      "slug": "Strep_tag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "Strep tag",
+        "Strep-Tag II",
+        "StrepTag",
+        "Strep-tag"
+      ],
+      "description": "",
+      "length": 24,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SUMO",
+      "slug": "SUMO",
+      "feature_type": "CDS",
+      "synonyms": [
+        "SUMO",
+        "SMT3"
+      ],
+      "description": "",
+      "length": 291,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SV40 NLS",
+      "slug": "SV40_NLS",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "SV40 NLS",
+        "NLS",
+        "nuclear localization signal"
+      ],
+      "description": "",
+      "length": 21,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "SV40_PA_terminator",
+      "slug": "SV40_PA_terminator",
+      "feature_type": "terminator",
+      "synonyms": [
+        "SV40_PA_terminator"
+      ],
+      "description": "",
+      "length": 120,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T2A",
+      "slug": "T2A",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "T2A"
+      ],
+      "description": "",
+      "length": 54,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T7 RNAP",
+      "slug": "T7_RNAP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "T7 RNAP",
+        "T7 RNApolymerase",
+        "T7 RNA polymerase",
+        "DNA-directed RNA polymerase"
+      ],
+      "description": "",
+      "length": 2649,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T7 tag",
+      "slug": "T7_tag",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "T7 tag",
+        "T7-tag",
+        "T7 tag (gene 10 leader)",
+        "gene 10 leader"
+      ],
+      "description": "",
+      "length": 33,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T7 terminator",
+      "slug": "T7_terminator",
+      "feature_type": "terminator",
+      "synonyms": [
+        "T7 terminator",
+        "T7 Terminator"
+      ],
+      "description": "",
+      "length": 48,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T7-Ocr",
+      "slug": "T7-Ocr",
+      "feature_type": "CDS",
+      "synonyms": [
+        "T7-Ocr",
+        "T7p01",
+        "Ocr",
+        "gene 0.3 protein"
+      ],
+      "description": "",
+      "length": 351,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "T7lac",
+      "slug": "T7lac",
+      "feature_type": "promoter",
+      "synonyms": [
+        "PT7/lacO",
+        "T7/lacO promoter",
+        "T7 lac operator promoter"
+      ],
+      "description": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
+      "length": 67,
+      "documented": true,
+      "children": [
+        {
+          "label": "T7 promoter",
+          "feature_type": "regulatory",
+          "start": 24,
+          "end": 42,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "T7 RNAP binding domain",
+          "feature_type": "regulatory",
+          "start": 24,
+          "end": 37,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1 transcription start",
+          "feature_type": "misc_feature",
+          "start": 41,
+          "end": 44,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "lac operator O1",
+          "feature_type": "protein_bind",
+          "start": 45,
+          "end": 66,
+          "strand": 1,
+          "citations": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "D Imburgio, M Rong, K Ma, W T McAllister",
+          "title": "Studies of promoter recognition and start site selection by T7 RNA polymerase using a comprehensive collection of promoter variants",
+          "journal": "Biochemistry",
+          "pmid": "10956032",
+          "doi": "10.1021/bi000365w",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10956032/"
+        },
+        {
+          "authors": "J W Dubendorff, F W Studier",
+          "title": "Controlling basal expression in an inducible T7 expression system by blocking the target T7 promoter with lac repressor",
+          "journal": "Journal of Molecular Biology",
+          "pmid": "1902522",
+          "doi": "10.1016/0022-2836(91)90856-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1902522/"
+        },
+        {
+          "authors": "W Gilbert, A Maxam",
+          "title": "The nucleotide sequence of the lac operator",
+          "journal": "Proceedings of the National Academy of Sciences USA",
+          "pmid": "4587255",
+          "doi": "10.1073/pnas.70.12.3581",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
+        },
+        {
+          "authors": "M Lewis, G Chang, N C Horton, M A Kercher, H C Pace, M A Schumacher, R G Brennan, P Lu",
+          "title": "Crystal structure of the lactose operon repressor and its complexes with DNA and inducer",
+          "journal": "Science",
+          "pmid": "8638105",
+          "doi": "10.1126/science.271.5253.1247",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8638105/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "T7Te",
+      "slug": "T7Te",
+      "feature_type": "terminator",
+      "synonyms": [
+        "T7Te",
+        "T7Te Terminator"
+      ],
+      "description": "",
+      "length": 40,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "TetA",
+      "slug": "TetA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "TetA",
+        "tetA",
+        "tetracycline efflux pump",
+        "tetracycline resistance protein"
+      ],
+      "description": "",
+      "length": 1188,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tetAC",
+      "slug": "tetAC",
+      "feature_type": "CDS",
+      "synonyms": [
+        "tetAC"
+      ],
+      "description": "",
+      "length": 1188,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tetO",
+      "slug": "tetO",
+      "feature_type": "protein_bind",
+      "synonyms": [
+        "tetO"
+      ],
+      "description": "",
+      "length": 19,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tetR",
+      "slug": "tetR",
+      "feature_type": "CDS",
+      "synonyms": [
+        "TetR",
+        "tetR",
+        "tet repressor",
+        "tetracycline repressor"
+      ],
+      "description": "",
+      "length": 624,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tetR/tetA promoters",
+      "slug": "tetR_tetA_promoters",
+      "feature_type": "promoter",
+      "synonyms": [
+        "tetR/tetA promoters"
+      ],
+      "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+      "length": 56,
+      "documented": true,
+      "children": [
+        {
+          "label": "PtetA -35",
+          "feature_type": "regulatory",
+          "start": 1,
+          "end": 7,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "PtetA -10",
+          "feature_type": "regulatory",
+          "start": 24,
+          "end": 30,
+          "strand": 1,
+          "citations": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "tetO1",
+          "feature_type": "protein_bind",
+          "start": 5,
+          "end": 24,
+          "strand": 1,
+          "citations": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "label": "tetO2",
+          "feature_type": "protein_bind",
+          "start": 36,
+          "end": 55,
+          "strand": 1,
+          "citations": [
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Bertrand KP, Postle K, Wray LV Jr, Reznikoff WS",
+          "title": "Overlapping divergent promoters control expression of Tn10 tetracycline resistance",
+          "journal": "Gene",
+          "pmid": "6311683",
+          "doi": "10.1016/0378-1119(83)90046-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6311683/"
+        },
+        {
+          "authors": "Daniels DW, Bertrand KP",
+          "title": "Promoter mutations affecting divergent transcription in the Tn10 tetracycline resistance determinant",
+          "journal": "J Mol Biol",
+          "pmid": "2995683",
+          "doi": "10.1016/0022-2836(85)90306-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2995683/"
+        },
+        {
+          "authors": "Hillen W, Berens C",
+          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
+          "journal": "Annu Rev Microbiol",
+          "pmid": "7826010",
+          "doi": "10.1146/annurev.mi.48.100194.002021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
+        },
+        {
+          "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
+          "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
+          "journal": "Nucleic Acids Res",
+          "pmid": "3086838",
+          "doi": "10.1093/nar/14.10.4253",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3086838/"
+        },
+        {
+          "authors": "Meier I, Wray LV Jr, Hillen W",
+          "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+          "journal": "EMBO J",
+          "pmid": "2835235",
+          "doi": "10.1002/j.1460-2075.1988.tb02846.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2835235/"
+        },
+        {
+          "authors": "Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger W",
+          "title": "Structure of the Tet repressor-tetracycline complex and regulation of antibiotic resistance",
+          "journal": "Science",
+          "pmid": "8153629",
+          "doi": "10.1126/science.8153629",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8153629/"
+        }
+      ],
+      "main_citations": []
+    },
+    {
+      "name": "TEV site",
+      "slug": "TEV_site",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "TEV site",
+        "TEV",
+        "TEV cleavage site"
+      ],
+      "description": "",
+      "length": 21,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "thrombin site",
+      "slug": "thrombin_site",
+      "feature_type": "protein_domain",
+      "synonyms": [
+        "thrombin site",
+        "thrombin",
+        "thrombin cleavage site"
+      ],
+      "description": "",
+      "length": 18,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tL3",
+      "slug": "tL3",
+      "feature_type": "terminator",
+      "synonyms": [
+        "tL3",
+        "tL3 terminator"
+      ],
+      "description": "",
+      "length": 272,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "tonB",
+      "slug": "tonB",
+      "feature_type": "terminator",
+      "synonyms": [
+        "tonB",
+        "tonB terminator"
+      ],
+      "description": "",
+      "length": 93,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "TRE3GV",
+      "slug": "TRE3GV",
+      "feature_type": "promoter",
+      "synonyms": [
+        "TRE3GV",
+        "TRE3GV promoter"
+      ],
+      "description": "",
+      "length": 350,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "trfA",
+      "slug": "trfA",
+      "feature_type": "CDS",
+      "synonyms": [
+        "trfA"
+      ],
+      "description": "",
+      "length": 1146,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "ts ori101",
+      "slug": "ts_ori101",
+      "feature_type": "rep_origin",
+      "synonyms": [
+        "oriR101",
+        "ts ori101"
+      ],
+      "description": "",
+      "length": 741,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "UGI",
+      "slug": "UGI",
+      "feature_type": "CDS",
+      "synonyms": [
+        "UGI",
+        "uracil-DNA glycosylase inhibitor"
+      ],
+      "description": "",
+      "length": 252,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "UnaG",
+      "slug": "UnaG",
+      "feature_type": "CDS",
+      "synonyms": [
+        "UnaG"
+      ],
+      "description": "",
+      "length": 417,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "URA3",
+      "slug": "URA3",
+      "feature_type": "CDS",
+      "synonyms": [
+        "URA3",
+        "orotidine-5'-phosphate decarboxylase"
+      ],
+      "description": "",
+      "length": 801,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "XylS",
+      "slug": "XylS",
+      "feature_type": "CDS",
+      "synonyms": [
+        "XylS"
+      ],
+      "description": "",
+      "length": 963,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "YFP",
+      "slug": "YFP",
+      "feature_type": "CDS",
+      "synonyms": [
+        "YFP",
+        "yellow fluorescent protein",
+        "EYFP"
+      ],
+      "description": "",
+      "length": 717,
+      "documented": false,
+      "children": [],
+      "references": [],
+      "main_citations": []
+    }
+  ]
+}

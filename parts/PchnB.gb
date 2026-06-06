@@ -1,0 +1,69 @@
+LOCUS       PchnB                    396 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Cyclohexanone-inducible promoter (PchnB) from Acinetobacter
+            johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family
+            regulator ChnR..
+ACCESSION   PchnB
+VERSION     PchnB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Iwaki H, Hasegawa Y, Wang S, Kayser MM, Lau PCK
+  TITLE     Identification of a Transcriptional Activator (ChnR) and a
+            6-Oxohexanoate Dehydrogenase (ChnE) in the Cyclohexanol Catabolic
+            Pathway in Acinetobacter sp. Strain NCIMB 9871 and Localization of
+            the Genes That Encode Them
+  JOURNAL   Applied and Environmental Microbiology 65(11):5158-5162 (1999)
+   PUBMED   10543838
+  REMARK    doi:10.1128/AEM.65.11.5158-5162.1999
+REFERENCE   2
+  AUTHORS   Benedetti I, Nikel PI, de Lorenzo V
+  TITLE     Data on the standardization of a cyclohexanone-responsive expression
+            system for Gram-negative bacteria
+  JOURNAL   Data in Brief 6:738-744 (2016)
+   PUBMED   26870759
+  REMARK    doi:10.1016/j.dib.2016.01.022
+REFERENCE   3
+  AUTHORS   Cheng Q, Thomas SM, Kostichka K, Valentine JR, Nagarajan V
+  TITLE     Genetic Analysis of a Gene Cluster for Cyclohexanol Oxidation in
+            Acinetobacter sp. Strain SE19 by In Vitro Transposition
+  JOURNAL   Journal of Bacteriology 182(17):4744-4751 (2000)
+   PUBMED   10940013
+  REMARK    doi:10.1128/JB.182.17.4744-4751.2000
+REFERENCE   4
+  AUTHORS   Steigedal M, Valla S
+  TITLE     The Acinetobacter sp. chnB promoter together with its cognate
+            positive regulator ChnR is an attractive new candidate for metabolic
+            engineering applications in bacteria
+  JOURNAL   Metabolic Engineering 10(2):121-129 (2008)
+   PUBMED   17950643
+  REMARK    doi:10.1016/j.ymben.2007.08.002
+FEATURES             Location/Qualifiers
+     promoter        1..396
+                     /label="PchnB"
+                     /synonym="PchnB"
+                     /synonym="chnB promoter"
+                     /synonym="cyclohexanone-inducible promoter"
+                     /synonym="chnB promoter region"
+                     /note="Cyclohexanone-inducible promoter (PchnB) from
+                     Acinetobacter johnsonii NCIMB 9871, activated in trans by
+                     the AraC/XylS-family regulator ChnR."
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    15..25
+                     /label="ChnR-responsive element"
+                     /parent="PchnB"
+                     /note="Candidate ChnR (AraC/XylS-family activator) binding
+                     region."
+                     /citation=[3]
+                     /citation=[4]
+ORIGIN
+        1 gcaactaaaa gagattgttt ggatcagtta cccaaaatcg ttgaaaagat tttaactctt
+       61 cgatttttat tttttaggta atcctagccc tctcgggggc taggattaaa aattttaagt
+      121 tattccaaca cgaatgacaa attgttcaat gcaaaataaa aacatacaat atataaatat
+      181 attttttaaa taaaacataa gattacaata aaataagaat ttttatttgg agtttgtttt
+      241 ttttctacaa tgatcattat gtacaatttt taggttcacc ccatccaagc cttgtgattg
+      301 cattcctgcg attctttatt caatgaataa gcaatgctat taatcagcaa tgaataacca
+      361 gcagtgcaga ttttgaataa attcacatgt cgtaat
+//

@@ -1,0 +1,23 @@
+LOCUS       cas2                     339 bp    DNA              UNK 01-JAN-1980
+DEFINITION  cas2.
+ACCESSION   cas2
+VERSION     cas2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..339
+                     /label="cas2"
+                     /synonym="Cas2"
+                     /translation="MSYRYMRMILMFDMPTDTAEERKAYRKFRKFLLSEGFIMHQFSIY
+                     SKLLLNNTANNAMIGRLREHNPNKGNITLLTVTEKQFARMIYLHGERNNCIANSDERLV
+                     FLGEAFDES"
+ORIGIN
+        1 atgagctatc gttacatgcg catgattctg atgtttgata tgccgaccga cacggcggaa
+       61 gagcgtaaag cctatcgcaa gttccgtaaa tttttattgt cggaaggctt catcatgcat
+      121 cagttttcca tttactctaa gctgttattg aacaatactg caaacaatgc gatgatcggt
+      181 cgcctgcgtg agcacaaccc aaataaagga aacattacct tattgacggt gactgaaaag
+      241 caattcgccc gcatgatcta tctgcatggc gagcgtaata actgcattgc aaatagcgat
+      301 gaacgcttag tttttttggg tgaggcgttc gacgaatcg
+//

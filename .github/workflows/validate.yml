@@ -1,0 +1,24 @@
+name: Validate catalog
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install biopython
+      - name: Rebuild manifest (parses every .gb)
+        run: python tools/build_catalog.py
+      - name: catalog.json must be up to date
+        run: |
+          if ! git diff --exit-code catalog.json; then
+            echo "::error::catalog.json is stale. Run 'python tools/build_catalog.py' and commit catalog.json."
+            exit 1
+          fi

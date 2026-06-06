@@ -1,0 +1,16 @@
+LOCUS       L3S2P11                   57 bp    DNA              UNK 01-JAN-1980
+DEFINITION  L3S2P11.
+ACCESSION   L3S2P11
+VERSION     L3S2P11
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..57
+                     /label="L3S2P11"
+                     /synonym="L3S2P11"
+                     /synonym="(modified) RF L3S2P11 terminator"
+ORIGIN
+        1 atcgctacca aattccagaa aacagacgct ttcgagcgtc ttttttcgtt ttggtca
+//

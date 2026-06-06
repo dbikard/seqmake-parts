@@ -1,0 +1,21 @@
+LOCUS       attP                     417 bp    DNA              UNK 01-JAN-1980
+DEFINITION  attP.
+ACCESSION   attP
+VERSION     attP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..417
+                     /label="attP"
+                     /synonym="attP"
+ORIGIN
+        1 aaatcaaata atgattttat tttgactgat agtgacctgt tcgttgcaac aaattgataa
+       61 gcaatgcttt tttataatgc caacttagta taaaaaagct gaacgagaaa cgtaaaatga
+      121 tataaatatc aatatattaa attagatttt gcataaaaaa cagactacat aatactgtaa
+      181 aacacaacat atgcagtcac tatgaatcaa ctacttagat ggtattagtg acctgtaaca
+      241 gagcattagc gcaaggtgat ttttgtcttc ttgcgctaat tttttggtac ctctagggcg
+      301 gcggatttgt cctactcagg agagcgttca ccgacaaaca acagataaaa cgaaaggccc
+      361 agtctttcga ctgagccttt cgttttattt gatgcctcta gcacgcgtac catggag
+//

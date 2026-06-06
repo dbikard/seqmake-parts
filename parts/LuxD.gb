@@ -1,0 +1,37 @@
+LOCUS       LuxD                     921 bp    DNA              UNK 01-JAN-1980
+DEFINITION  LuxD.
+ACCESSION   LuxD
+VERSION     LuxD
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..921
+                     /label="LuxD"
+                     /synonym="LuxD"
+                     /synonym="acyl transferase"
+                     /translation="MENESKYKTIDHVICVEGNKKIHVWETLPEENSPKRKNAIIIASG
+                     FARRMDHFAGLAEYLSRNGFHVIRYDSLHHVGLSSGTIDEFTMSIGKQSLLAVVDWLTT
+                     RKINNFGMLASSLSARIAYASLSEINASFLITAVGVVNLRYSLERALGFDYLSLPINEL
+                     PDNLDFEGHKLGAEVFARDCLDFGWEDLASTINNMMYLDIPFIAFTANNDNWVKQDEVI
+                     TLLSNIRSNRCKIYSLLGSSHDLSENLVVLRNFYQSVTKAAIAMDNDHLDIDVDITEPS
+                     FEHLTIATVNERRMRIEIENQAISLS"
+ORIGIN
+        1 atggaaaacg agagcaaata taagaccatt gatcatgtga tctgcgttga aggcaataaa
+       61 aagattcacg tctgggagac gctgccggaa gagaactcgc caaaacgtaa gaatgcgatc
+      121 attatcgcct ccggttttgc acgccgtatg gaccatttcg cgggattagc cgaatacttg
+      181 tctcgcaacg gctttcacgt gattcgttat gatagcctgc atcacgttgg tttatcgtcc
+      241 ggaactatcg acgagttcac catgtctatt ggcaaacaga gcttgctggc agtcgtggat
+      301 tggttaacga ctcgcaagat caataacttt ggtatgttgg cgtcgtccct gtctgcccgt
+      361 attgcatacg cgagcttatc ggaaatcaat gcctccttct tgattaccgc agttggagtc
+      421 gtgaacctgc gctattcttt agagcgtgcg ttgggctttg actacctgag cttaccgatc
+      481 aatgaattgc cagataacct ggacttcgag ggtcataaat taggagccga agtttttgca
+      541 cgcgattgtt tggacttcgg ctgggaggat ctggcgtcga cgattaataa catgatgtat
+      601 ttagacatcc cgtttattgc cttcactgca aataacgata attgggtcaa gcaagacgaa
+      661 gtgatcacct tgctgtccaa cattcgttct aatcgctgca aaatctacag cttattgggt
+      721 tcgtcccacg atctgtctga gaacttagtt gtcttgcgta atttttatca gagcgtgacg
+      781 aaggcggcca ttgcaatgga caacgatcat ctggacatcg atgttgacat tactgaacca
+      841 tcgttcgagc acttaaccat cgcgacggtc aatgaacgcc gtatgcgcat tgagatcgaa
+      901 aaccaagcca tttccttgtc t
+//

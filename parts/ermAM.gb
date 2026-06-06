@@ -1,0 +1,33 @@
+LOCUS       ermAM                    735 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ermAM.
+ACCESSION   ermAM
+VERSION     ermAM
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..735
+                     /label="ermAM"
+                     /synonym="ermAM"
+                     /synonym="ermB"
+                     /translation="MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTT
+                     KLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYH
+                     LSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFH
+                     PKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNN
+                     LSTVTYEQVLSIFNSYLLFNGRK"
+ORIGIN
+        1 atgaacaaaa atattaagta tagccagaac tttctgacct cggaaaaagt gttaaatcaa
+       61 atcattaagc agttgaacct gaaagagacg gatactgttt acgaaatcgg caccggtaag
+      121 ggacatttaa cgactaaatt ggcgaagatt tccaaacaag tcacctctat cgagctggac
+      181 agccacttat tcaatttgtc gtccgaaaag ctgaaattaa acacgcgtgt gactttgatt
+      241 catcaggata tcctgcaatt tcagttcccg aataagcaac gctataaaat tgttggctct
+      301 atcccatacc acttaagcac ccagattatc aagaaagtcg tgtttgagtc gcatgcctcc
+      361 gacatttatt tgatcgttga agagggtttc tacaagcgta cgctggatat tcaccgcact
+      421 ttaggattgc tgttacatac ccaagtctct atccagcaat tgctgaaatt accggcagaa
+      481 tgctttcacc caaagccgaa agtgaacagc gttttgatta agctgacgcg tcatactacc
+      541 gacgtcccag ataaatattg gaagttatac acgtatttcg tgtcgaaatg ggttaatcgc
+      601 gagtaccgtc agttgtttac taagaaccaa ttccaccagg cgatgaaaca tgccaaggtc
+      661 aataacctgt ccaccgtgac gtatgaacaa gttttatcta tctttaatag ctacttgctg
+      721 ttcaacggcc gcaaa
+//

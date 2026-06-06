@@ -1,0 +1,27 @@
+LOCUS       CloDF13_ori              739 bp    DNA              UNK 01-JAN-1980
+DEFINITION  CloDF13 ori.
+ACCESSION   CloDF13_ori
+VERSION     CloDF13_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..739
+                     /label="CloDF13 ori"
+                     /synonym="CloDF13 ori"
+ORIGIN
+        1 gatcaaagga tcttcttgag atcctttttt tctgcgcgta atcttttgcc ctgtaaacga
+       61 aaaaaccacc tggggaggtg gtttgatcga aggttaagtc agttggggaa ctgcttaacc
+      121 gtggtaactg gctttcgcag agcacagcaa ccaaatctgt ccttccagtg tagccggact
+      181 ttggcgcaca cttcaagagc aaccgcgtgt ttagctaaac aaatcctctg cgaactccca
+      241 gttaccaatg gctgctgcca gtggcgtttt accgtgcttt tccgggttgg actcaagtga
+      301 acagttaccg gataaggcgc agcagtcggg ctgaacgggg agttcttgct tacagcccag
+      361 cttggagcga acgacctaca ccgagccgag ataccagtgt gtgagctatg agaaagcgcc
+      421 acacttcccg taagggagaa aggcggaaca ggtatccggt aaacggcagg gtcggaacag
+      481 gagagcgcaa gagggagcga cccgccggaa acggtgggga tctttaagtc ctgtcgggtt
+      541 tcgcccgtac tgtcagattc atggttgagc ctcacggctc ccacagatgc accggaaaag
+      601 cgtctgttta tgtgaactct ggcaggaggg cggagcctat ggaaaaacgc caccggcgcg
+      661 gccctgctgt tttgcctcac atgttagtcc cctgcttatc cacggaatct gtgggtaact
+      721 ttgtatgtgt ccgcagcgc
+//

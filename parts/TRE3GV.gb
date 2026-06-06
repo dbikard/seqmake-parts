@@ -1,0 +1,21 @@
+LOCUS       TRE3GV                   350 bp    DNA              UNK 01-JAN-1980
+DEFINITION  TRE3GV.
+ACCESSION   TRE3GV
+VERSION     TRE3GV
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..350
+                     /label="TRE3GV"
+                     /synonym="TRE3GV"
+                     /synonym="TRE3GV promoter"
+ORIGIN
+        1 gagtttactc cctatcagtg atagagaacg tatgaagagt ttactcccta tcagtgatag
+       61 agaacgtatg cagactttac tccctatcag tgatagagaa cgtataagga gtttactccc
+      121 tatcagtgat agagaacgta tgaccagttt actccctatc agtgatagag aacgtatcta
+      181 cagtttactc cctatcagtg atagagaacg tatatccagt ttactcccta tcagtgatag
+      241 agaacgtatg tcgaggtagg cgtgtacggt gggcgcctat aaaagcagag ctcgtttagt
+      301 gaaccgtcag atcgcctgga gcaattccac aacacttttg tcttatactt
+//

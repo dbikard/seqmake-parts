@@ -1,0 +1,28 @@
+LOCUS       ts_ori101                741 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ts ori101.
+ACCESSION   ts_ori101
+VERSION     ts_ori101
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..741
+                     /label="ts ori101"
+                     /synonym="oriR101"
+                     /synonym="ts ori101"
+ORIGIN
+        1 tctcaattgg tctaggtgat tttaatcact ataccaattg agatgggcta gtcaatgata
+       61 attactagtc cttttccttt gagttgtggg tatctgtaaa ttctgctaga cctttgctgg
+      121 aaaacttgta aattctgcta gaccctctgt aaattccgct agacctttgt gtgttttttt
+      181 tgtttatatt caagtggtta taatttatag aataaagaaa gaataaaaaa agataaaaag
+      241 aatagatccc agccctgtgt ataactcact actttagtca gttccgcagt attacaaaag
+      301 gatgtcgcaa acgctgtttg ctcctctaca aaacagacct taaaacccta aaggcttaag
+      361 tagcaccctc gcaagctcgg ttgcggccgc aatcgggcaa atcgctgaat attccttttg
+      421 tctccgacca tcaggcacct gagtcgctgt ctttttcgtg acattcagtt cgctgcgctc
+      481 acggctctgg cagtgaatgg gggtaaatgg cactacaggc gccttttatg gattcatgca
+      541 aggaaactac ccataataca agaaaagccc gtcacgggct tctcagggcg ttttatggcg
+      601 ggtctgctat gtggtgctat ctgacttttt gctgttcagc agttcctgcc ctctgatttt
+      661 ccagtctgac cacttcggat tatcccgtga caggtcattc agactggcta atgcacccag
+      721 taaggcagcg gtatcatcaa c
+//

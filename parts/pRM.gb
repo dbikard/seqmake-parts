@@ -1,0 +1,16 @@
+LOCUS       pRM                       29 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pRM.
+ACCESSION   pRM
+VERSION     pRM
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..29
+                     /label="pRM"
+                     /synonym="pRM"
+                     /synonym="pRM promoter"
+ORIGIN
+        1 tagatattta tcccttgcgg tgatagatt
+//

@@ -1,0 +1,18 @@
+LOCUS       J23104                    35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  J23104.
+ACCESSION   J23104
+VERSION     J23104
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+                     /label="J23104"
+                     /synonym="J23104"
+                     /synonym="BBa_J23104"
+                     /synonym="BBa_J23104 Promoter (strong)"
+                     /synonym="J23104 promoter"
+ORIGIN
+        1 ttgacagcta gctcagtcct aggtattgtg ctagc
+//

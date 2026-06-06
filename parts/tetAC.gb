@@ -1,0 +1,41 @@
+LOCUS       tetAC                   1188 bp    DNA              UNK 01-JAN-1980
+DEFINITION  tetAC.
+ACCESSION   tetAC
+VERSION     tetAC
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..1188
+                     /label="tetAC"
+                     /synonym="tetAC"
+                     /translation="MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHY
+                     GVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRI
+                     VAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPF
+                     LAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIM
+                     QLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAII
+                     AGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSL
+                     AALTSLTSIIGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST"
+ORIGIN
+        1 atgaaaagca acaatgcgct gattgtgatc ttaggcaccg ttacgttgga tgccgtcggt
+       61 attggactgg tgatgccggt tttaccaggc ttgctgcgtg acatcgtcca ttcggattcc
+      121 attgcatctc actatggtgt gttattggcg ctgtacgcct taatgcagtt tttgtgcgca
+      181 ccggttctgg gagcgttaag cgaccgcttc ggccgtcgcc cagtcttgct ggcctcgtta
+      241 ttgggtgcaa ctatcgatta tgcgattatg gccaccacgc cggtgctgtg gatcttatac
+      301 gcaggacgta ttgttgcggg catcactggt gccaccggag cagtcgcggg cgcctatatt
+      361 gcagacatca cggatggtga agaccgcgcg cgtcattttg gattgatgtc cgcctgtttc
+      421 ggcgtgggta tggttgcagg accagtcgcg ggcggtctgt taggagccat ttctttgcac
+      481 gcaccgtttc tggcggccgc agtgttaaac ggcttgaatc tgttattggg ttgcttcctg
+      541 atgcaagaga gccataaggg agaacgccgt ccaatgccgt tacgcgcgtt taacccagtt
+      601 tcgtccttcc gttgggcccg cggcatgact atcgtcgcag cgttgatgac cgtgtttttc
+      661 attatgcagc tggttggtca agtcccggcc gcattatggg tgatctttgg agaggatcgt
+      721 ttccgctggt ctgcgacgat gattggcttg agcctggccg tttttggtat cttacacgca
+      781 ttggcgcagg ccttcgtcac tggaccagca accaaacgtt ttggcgaaaa gcaagcgatt
+      841 atcgccggta tggcagcgga cgccctggga tacgtgttat tggcattcgc gacgcgcggc
+      901 tggatggcct ttccgattat gatcctgtta gcatcgggtg gaattggcat gccagcgttg
+      961 caggccatgc tgtcccgtca agttgatgac gatcatcagg gtcaattaca gggatctttg
+     1021 gcagcgctga ctagcttaac ctcgatcatt ggcccgttga tcgtcacggc catttatgca
+     1081 gcgtccgcct ctacttggaa tggtctggca tggatcgtgg gagcggcctt atacttggtt
+     1141 tgtctgccag cattacgccg tggcgcgtgg agccgcgcca cctcgacg
+//

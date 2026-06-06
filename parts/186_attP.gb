@@ -1,0 +1,22 @@
+LOCUS       186_attP                 307 bp    DNA              UNK 01-JAN-1980
+DEFINITION  186 attP.
+ACCESSION   186_attP
+VERSION     186_attP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..307
+                     /label="186 attP"
+                     /synonym="186 attP"
+                     /synonym="phage 186 att"
+                     /synonym="186 att"
+ORIGIN
+        1 atgcactcag gaaagtggcg gtaaaaaatc caccgccatt ctatcgccac tcgaaaacga
+       61 ggcaacaaaa aggccactcg agagagtggc ctaactgtat gtatttacta cttaaatttg
+      121 gtggcccctg ctggacttga accagcgacc aagcgattat gagttcctac aagaacaacc
+      181 gaaaatcaat agtatgcgtt atttatcatt gacatagatt gccattgttt gccaataatt
+      241 acctattatt cgccatttct accgccactt tatcgccatt ctattatctg ttactcagaa
+      301 ccatcgc
+//

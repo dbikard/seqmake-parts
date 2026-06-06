@@ -1,0 +1,24 @@
+LOCUS       PL                       382 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PL.
+ACCESSION   PL
+VERSION     PL
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..382
+                     /label="PL"
+                     /synonym="PL"
+                     /synonym="lambda PL"
+                     /synonym="PL promoter"
+                     /synonym="lambda PL promoter"
+ORIGIN
+        1 taacccggcc tcagcgccgg gttttctttg cctcacgatc gcccccaaaa cacataacca
+       61 attgtattta ttgaaaaata aatagataca actcactaaa catagcaatt cagatctctc
+      121 acctaccaaa caatgccccc ctgcaaaaaa taaattcata taaaaaacat acagataacc
+      181 atctgcggtg ataaattatc tctggcggtg ttgacataaa taccactggc ggtgatactg
+      241 agcacatcag caggacgcac tgaccaccat gaaggtgacg ctcttaaaaa ttaagccctg
+      301 aagaagggca gcattcaaag cagaaggctt tggggtgtgt gatacgaaac gaagcattgg
+      361 ccgtaagtgc gattccggat ta
+//

@@ -1,0 +1,16 @@
+LOCUS       T2A                       54 bp    DNA              UNK 01-JAN-1980
+DEFINITION  T2A.
+ACCESSION   T2A
+VERSION     T2A
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..54
+                     /label="T2A"
+                     /synonym="T2A"
+                     /translation="EGRGSLLTCGDVEENPGP"
+ORIGIN
+        1 gaaggccgtg gtagcctgtt aacctgcgga gatgtggagg aaaacccggg ccca
+//

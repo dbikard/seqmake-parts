@@ -1,0 +1,21 @@
+LOCUS       PSV40                    330 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PSV40.
+ACCESSION   PSV40
+VERSION     PSV40
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..330
+                     /label="PSV40"
+                     /synonym="PSV40"
+                     /synonym="SV40 promoter"
+ORIGIN
+        1 gtgtgtcagt tagggtgtgg aaagtcccca ggctccccag caggcagaag tatgcaaagc
+       61 atgcatctca attagtcagc aaccaggtgt ggaaagtccc caggctcccc agcaggcaga
+      121 agtatgcaaa gcatgcatct caattagtca gcaaccatag tcccgcccct aactccgccc
+      181 atcccgcccc taactccgcc cagttccgcc cattctccgc cccatggctg actaattttt
+      241 tttatttatg cagaggccga ggccgcctcg gcctctgagc tattccagaa gtagtgagga
+      301 ggcttttttg gaggcctagg cttttgcaaa
+//

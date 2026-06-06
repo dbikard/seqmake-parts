@@ -1,0 +1,34 @@
+LOCUS       bet                      783 bp    DNA              UNK 01-JAN-1980
+DEFINITION  bet.
+ACCESSION   bet
+VERSION     bet
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..783
+                     /label="bet"
+                     /synonym="bet"
+                     /synonym="bet protein"
+                     /translation="MSTALATLAGKLAERVGMDSVDPQELITTLRQTAFKGDASDAQFI
+                     ALLIVANQYGLNPWTKEIYAFPDKQNGIVPVVGVDGWSRIINENQQFDGMDFEQDNESC
+                     TCRIYRKDRNHPICVTEWMDECRREPFKTREGREITGPWQSHPKRMLRHKAMIQCARLA
+                     FGFAGIYDKDEAERIVENTAYTAERQPERDITPVNDETMQEINTLLIALDKTWDDDLLP
+                     LCSQIFRRDIRASSELTQAEAVKALGFLKQKAAEQKVAA"
+ORIGIN
+        1 atgagcaccg cgctggccac gttagcaggc aaattggcgg aacgtgtggg tatggattcg
+       61 gttgacccgc aggagctgat tactacctta cgccaaacgg cctttaaggg agatgcatcc
+      121 gacgcgcagt tcatcgcctt gctgattgtc gcaaaccaat atggcttaaa tccatggact
+      181 aaagaaatct acgcgtttcc ggataagcag aacggtattg tgccagttgt cggagtggac
+      241 ggctggtctc gtatcattaa tgagaaccaa cagttcgatg gtatggactt tgaacaagat
+      301 aatgagagct gcacctgtcg catctatcgt aaagaccgca accatccgat ttgcgttacg
+      361 gaatggatgg atgagtgtcg tcgcgaacca ttcaagactc gtgagggacg cgaaatcacc
+      421 ggcccgtggc agtcgcaccc aaaacgtatg ttgcgccata aggccatgat tcaatgcgca
+      481 cgtctggcgt ttggtttcgc cggaatctac gacaaagatg aggcagaacg cattgtcgag
+      541 aatacggcgt atactgccga acgtcagccg gagcgcgaca tcaccccagt gaacgatgaa
+      601 acgatgcaag agattaatac tttattgatc gcactggaca agacctggga tgacgattta
+      661 ttgccgctgt gttcccagat ttttcgtcgc gacatccgtg cgtctagcga attaacgcaa
+      721 gccgaggcag ttaaagcgtt gggcttcctg aagcagaaag ccgcagaaca aaaggtcgcg
+      781 gcc
+//

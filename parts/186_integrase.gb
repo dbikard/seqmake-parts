@@ -1,0 +1,37 @@
+LOCUS       186_integrase           1008 bp    DNA              UNK 01-JAN-1980
+DEFINITION  186 integrase.
+ACCESSION   186_integrase
+VERSION     186_integrase
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..1008
+                     /label="186 integrase"
+                     /synonym="186 integrase"
+                     /translation="MTVRKNPAGGWICELYPNGAKGKRIRKKFATKGEALAFEQYTVQN
+                     PWQEEKEDRRTLKELVDSWYSAHGITLKDGLKRQLAMHHAFECMGEPLARDFDAQMFSR
+                     YREKRLKGEYARSNRVKEVSPRTLNLELAYFRAVFNELNRLGEWKGENPLKNMRPFRTE
+                     EMEMTWLTHDQISQLLGECNRHDHPDLETVVRICLATGARWSEAESLRKSQLAKYKITY
+                     TNTKGRKNRTVPISKELYESLPDDKKGRLFSDCYGAFRSALERTGIELPAGQLTHVLRH
+                     TFASHFMMNGGNILVLQRVLGHTDIKMTMRYAHFAPDHLEDAVKLNPLVHITNSK"
+ORIGIN
+        1 atgaccgtgc gtaaaaaccc ggcgggcggt tggatttgcg aactgtatcc aaatggagcc
+       61 aagggcaaac gcatccgtaa gaaatttgca acgaagggtg aggcgttagc cttcgaacag
+      121 tacactgttc aaaacccgtg gcaggaggaa aaagaggatc gccgtacctt gaaggaactg
+      181 gtcgacagct ggtattcggc acatggaatt acgttaaaag atggcttgaa gcgccaactg
+      241 gcgatgcacc atgcctttga gtgtatgggt gaaccattag cacgtgactt cgatgcgcag
+      301 atgttttccc gctaccgtga gaaacgcttg aagggagaat atgcccgttc taatcgcgtg
+      361 aaagaggtta gcccgcgtac tctgaactta gaattggcat acttccgcgc ggtctttaat
+      421 gagctgaacc gtttaggcga atggaagggt gagaatccat tgaaaaacat gcgcccgttc
+      481 cgtaccgaag agatggaaat gacgtggctg actcacgacc aaatctcgca gttattggga
+      541 gagtgcaatc gccatgatca cccagacctg gaaaccgtgg ttcgtatttg tttagccacg
+      601 ggcgcacgct ggtccgaggc ggaatctttg cgtaagagcc aactggccaa atataagatc
+      661 acttacacca acacgaaagg tcgcaagaat cgtactgtcc cgatttcgaa agagttatat
+      721 gaatccttgc cagatgacaa gaaaggacgc ctgttttctg attgctacgg cgcattccgt
+      781 agcgcgttag agcgcaccgg tatcgaattg ccggccggac agctgacgca tgtgttacgt
+      841 cacacttttg catcgcattt catgatgaac ggcggtaata ttttggttct gcaacgcgtc
+      901 ttaggacaca ccgacatcaa gatgacgatg cgttatgcgc attttgcccc agatcacttg
+      961 gaggacgcag tgaaactgaa cccgttagtt catattacta attccaag
+//

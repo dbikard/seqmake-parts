@@ -1,0 +1,33 @@
+LOCUS       YFP                      717 bp    DNA              UNK 01-JAN-1980
+DEFINITION  YFP.
+ACCESSION   YFP
+VERSION     YFP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..717
+                     /label="YFP"
+                     /synonym="YFP"
+                     /synonym="yellow fluorescent protein"
+                     /synonym="EYFP"
+                     /translation="MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTL
+                     KFICTTGKLPVPWPTLVTTFGYGLQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDD
+                     GNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIK
+                     VNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSYQSALSKDPNEKRDHMVLL
+                     EFVTAAGITLGMDELYK"
+ORIGIN
+        1 atggtgagca aaggcgaaga gctgtttacc ggtgttgtcc cgattttagt ggaattggat
+       61 ggagacgtta acggccataa gttctcggtc tccggtgagg gagaaggcga tgcgacgtat
+      121 ggtaaactga ctttaaagtt tatctgcacc acgggaaaat tgccagtgcc gtggccaact
+      181 ctggttacca cgttcggcta cggtttacag tgttttgccc gttatccgga ccacatgaag
+      241 caacatgatt tctttaaatc tgcaatgcca gagggatacg tccaggaacg cactattttc
+      301 tttaaggacg atggcaatta taaaacccgt gcggaggtga agttcgaagg tgacacgttg
+      361 gttaaccgca tcgagctgaa aggaattgat tttaaggaag acggcaatat cttaggtcac
+      421 aaattggagt acaactataa tagccataac gtctacatta tggccgataa gcaaaaaaat
+      481 ggaatcaagg tgaacttcaa aattcgtcac aatatcgaag acggctcggt tcagctggca
+      541 gatcattatc aacagaacac tccgattggt gacggaccag tcttattgcc ggataatcac
+      601 tacctgtcct atcaatctgc gttaagcaag gacccaaacg agaaacgcga tcatatggtg
+      661 ttgctggaat ttgttaccgc cgcaggcatc acgttaggta tggacgagtt gtacaag
+//

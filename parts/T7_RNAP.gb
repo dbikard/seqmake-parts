@@ -1,0 +1,78 @@
+LOCUS       T7_RNAP                 2649 bp    DNA              UNK 01-JAN-1980
+DEFINITION  T7 RNAP.
+ACCESSION   T7_RNAP
+VERSION     T7_RNAP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..2649
+                     /label="T7 RNAP"
+                     /synonym="T7 RNAP"
+                     /synonym="T7 RNApolymerase"
+                     /synonym="T7 RNA polymerase"
+                     /synonym="DNA-directed RNA polymerase"
+                     /translation="MNTINIAKNDFSDIELAAIPFNTLADHYGERLAREQLALEHESYE
+                     MGEARFRKMFERQLKAGEVADNAAAKPLITTLLPKMIARINDWFEEVKAKRGKRPTAFQ
+                     FLQEIKPEAVAYITIKTTLACLTSADNTTVQAVASAIGRAIEDEARFGRIRDLEAKHFK
+                     KNVEEQLNKRVGHVYKKAFMQVVEADMLSKGLLGGEAWSSWHKEDSIHVGVRCIEMLIE
+                     STGMVSLHRQNAGVVGQDSETIELAPEYAEAIATRAGALAGISPMFQPCVVPPKPWTGI
+                     TGGGYWANGRRPLALVRTHSKKALMRYEDVYMPEVYKAINIAQNTAWKINKKVLAVANV
+                     ITKWKHCPVEDIPAIEREELPMKPEDIDMNPEALTAWKRAAAAVYRKDKARKSRRISLE
+                     FMLEQANKFANHKAIWFPYNMDWRGRVYAVSMFNPQGNDMTKGLLTLAKGKPIGKEGYY
+                     WLKIHGANCAGVDKVPFPERIKFIEENHENIMACAKSPLENTWWAEQDSPFCFLAFCFE
+                     YAGVQHHGLSYNCSLPLAFDGSCSGIQHFSAMLRDEVGGRAVNLLPSETVQDIYGIVAK
+                     KVNEILQADAINGTDNEVVTVTDENTGEISEKVKLGTKALAGQWLAYGVTRSVTKRSVM
+                     TLAYGSKEFGFRQQVLEDTIQPAIDSGKGLMFTQPNQAAGYMAKLIWESVSVTVVAAVE
+                     AMNWLKSAAKLLAAEVKDKKTGEILRKRCAVHWVTPDGFPVWQEYKKPIQTRLNLMFLG
+                     QFRLQPTINTNKDSEIDAHKQESGIAPNFVHSQDGSHLRKTVVWAHEKYGIESFALIHD
+                     SFGTIPADAANLFKAVRETMVDTYESCDVLADFYDQFADQLHESQLDKMPALPAKGNLN
+                     LRDILESDFAFA"
+ORIGIN
+        1 atgaacacca ttaatatcgc gaaaaacgat tttagcgaca ttgaactggc cgcaatcccg
+       61 ttcaatacgt tagcggatca ttatggcgag cgtttggccc gcgaacagct ggcattagag
+      121 cacgaatcgt acgagatggg tgaagcgcgt tttcgcaaga tgttcgagcg tcaattgaaa
+      181 gccggagaag tggcagacaa cgcggccgca aagccactga ttactacctt attgccgaaa
+      241 atgatcgcgc gcattaatga ttggtttgag gaagttaagg ccaaacgtgg caagcgccca
+      301 acggcattcc agtttctgca agagatcaaa ccggaagcgg tcgcctatat tactatcaag
+      361 accacgttag catgcttgac ttccgcggac aacaccacgg tgcaggccgt tgcatctgcg
+      421 attggtcgtg ccatcgagga tgaagcacgc ttcggacgta ttcgcgacct ggaggcgaaa
+      481 cattttaaga aaaatgtcga agagcaatta aacaagcgtg tgggccacgt ttacaaaaag
+      541 gccttcatgc aggtcgtgga agcagatatg ttgagcaaag gtctgttagg aggcgaggcg
+      601 tggtcgtcct ggcataagga agactctatc cacgttggtg tccgctgtat tgagatgttg
+      661 atcgaaagca ctggaatggt gtcgctgcat cgtcaaaatg ccggcgttgt cggtcaggat
+      721 tccgagacca ttgaattagc accagagtat gcggaagcca tcgcaacgcg cgcgggagcc
+      781 ttggcaggca tttctccgat gtttcaacca tgcgtggttc cgccaaaacc gtggactggt
+      841 atcaccggag gcggttactg ggcgaacgga cgtcgcccac tggccttagt ccgtacgcac
+      901 agcaagaaag cattgatgcg ctatgaggac gtgtacatgc cggaagttta taaggcgatt
+      961 aatatcgccc agaacactgc atggaaaatt aataagaaag tcctggcggt ggccaacgtt
+     1021 atcaccaagt ggaaacattg tccagtcgag gatattccgg caatcgaacg tgaggaatta
+     1081 ccaatgaagc cggaggacat tgatatgaat ccagaagcgt tgacggcctg gaaacgcgca
+     1141 gcggccgcag tgtaccgtaa ggacaaagcg cgcaagtcgc gtcgcatctc cctggagttc
+     1201 atgttagaac aagccaacaa atttgcaaat cacaaggcga tttggttccc gtataacatg
+     1261 gattggcgtg gccgcgttta cgccgtctct atgtttaatc cacagggtaa cgacatgact
+     1321 aaaggattgc tgaccttagc aaagggcaaa ccgatcggta aggagggata ttactggttg
+     1381 aaaattcatg gcgcgaattg cgccggtgtg gataaggttc cattcccgga acgtatcaaa
+     1441 tttattgagg aaaaccacga gaatatcatg gcatgtgcga agagcccact ggaaaacacg
+     1501 tggtgggccg agcaagactc gccgttctgc tttttagcat tctgttttga atatgcggga
+     1561 gtccagcatc acggcttgtc ctacaattgc tctctgccat tagccttcga tggtagctgt
+     1621 tcgggaattc aacatttttc cgcaatgttg cgcgacgagg tgggcggtcg tgcggttaac
+     1681 ctgttaccgt ctgaaactgt ccaggatatc tatggaattg tggccaaaaa ggttaatgag
+     1741 atcttgcaag cagacgcgat taacggcacc gataatgaag tcgtgacggt tactgacgag
+     1801 aacaccggtg aaatcagcga gaaagtcaag ctgggaacga aagccttagc aggccagtgg
+     1861 ttggcgtacg gtgtgactcg ctcggttacc aagcgttccg tcatgacgct ggcctatgga
+     1921 tctaaagaat tcggctttcg ccaacaggtg ttagaggata ctattcaacc agcaatcgac
+     1981 agcggtaagg gattgatgtt cacccagccg aatcaagcgg ccggctacat ggcaaaactg
+     2041 atttgggaat cggtttccgt cacggtggtt gcggccgtcg aggcaatgaa ctggttaaag
+     2101 tctgcggcca aattgctggc agcggaagtg aaggataaaa agactggtga gatcttacgt
+     2161 aaacgctgcg ccgttcactg ggtcacccca gacggatttc cggtgtggca ggaatataag
+     2221 aaaccaattc aaacgcgttt gaatctgatg ttcttaggcc agtttcgctt gcaaccgact
+     2281 atcaacacca ataaggatag cgagattgac gcacataaac aggaatcggg tatcgcgcca
+     2341 aacttcgttc actcccaaga tggatctcat ctgcgtaaga cggtcgtgtg ggcccacgag
+     2401 aaatacggca ttgaaagctt tgcattaatc catgactcgt tcggtactat tccggcggat
+     2461 gccgcaaatt tgtttaaggc ggttcgcgag accatggtcg acacgtatga atcctgtgat
+     2521 gtgctggccg acttctacga tcagtttgca gaccaattac acgagtctca gttggataaa
+     2581 atgccagcgc tgccggccaa gggaaactta aatttgcgtg acatcctgga aagcgatttc
+     2641 gcatttgcg
+//

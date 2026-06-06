@@ -1,0 +1,27 @@
+LOCUS       RSF_ori                  750 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RSF ori.
+ACCESSION   RSF_ori
+VERSION     RSF_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..750
+                     /label="RSF ori"
+                     /synonym="RSF ori"
+ORIGIN
+        1 cttccgcttc ctcgctcact gactcgctac gctcggtcgt tcgactgcgg cgagcggtgt
+       61 cagctcactc aaaagcggta atacggttat ccacagaatc aggggataaa gccggaaaga
+      121 acatgtgagc aaaaagcaaa gcaccggaag aagccaacgc cgcaggcgtt tttccatagg
+      181 ctccgccccc ctgacgagca tcacaaaaat cgacgctcaa gccagaggtg gcgaaacccg
+      241 acaggactat aaagatacca ggcgtttccc cctggaagct ccctcgtgcg ctctcctgtt
+      301 ccgaccctgc cgcttaccgg atacctgtcc gcctttctcc cttcgggaag cgtggcgctt
+      361 tctcatagct cacgctgttg gtatctcagt tcggtgtagg tcgttcgctc caagctgggc
+      421 tgtgtgcacg aaccccccgt tcagcccgac cgctgcgcct tatccggtaa ctatcgtctt
+      481 gagtccaacc cggtaagaca cgacttatcg ccactggcag cagccattgg taactgattt
+      541 agaggacttt gtcttgaagt tatgcacctg ttaaggctaa actgaaagaa cagattttgg
+      601 tgagtgcggt cctccaaccc acttaccttg gttcaaagag ttggtagctc agcgaacctt
+      661 gagaaaacca ccgttggtag cggtggtttt tctttattta tgagatgatg aatcaatcgg
+      721 tctatcaagt caacgaacag ctattccgtt
+//

@@ -1,0 +1,107 @@
+LOCUS       ptet_full                 58 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Synthetic PLtetO-1-family two-operator, anhydrotetracycline
+            (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter
+            carrying one Tn10 tet operator in the spacer and a second downstream
+            of t....
+ACCESSION   ptet_full
+VERSION     ptet_full
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Lutz R, Bujard H
+  TITLE     Independent and tight regulation of transcriptional units in
+            Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2
+            regulatory elements
+  JOURNAL   Nucleic Acids Research 25(6):1203-1210
+   PUBMED   9092630
+  REMARK    doi:10.1093/nar/25.6.1203
+REFERENCE   2
+  AUTHORS   Hillen W, Schollmeier K
+  TITLE     Nucleotide sequence of the Tn10 encoded tetracycline resistance gene
+  JOURNAL   Nucleic Acids Research 11(2):525-540
+   PUBMED   6298728
+  REMARK    doi:10.1093/nar/11.2.525
+REFERENCE   3
+  AUTHORS   Meier I, Wray LV Jr, Hillen W
+  TITLE     Differential regulation of the Tn10-encoded tetracycline resistance
+            genes tetA and tetR by the tandem tet operators O1 and O2
+  JOURNAL   EMBO Journal 7(2):567-572
+   PUBMED   2835235
+  REMARK    doi:10.1002/j.1460-2075.1988.tb02846.x
+REFERENCE   4
+  AUTHORS   Bertram R, Neumann B, Schuster CF
+  TITLE     Status quo of tet regulation in bacteria
+  JOURNAL   Microbial Biotechnology 15(4):1101-1119
+   PUBMED   34713957
+  REMARK    doi:10.1111/1751-7915.13926
+REFERENCE   5
+  AUTHORS   Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C,
+            Bertram R
+  TITLE     Vectors for improved Tet repressor-dependent gradual gene induction
+            or silencing in Staphylococcus aureus
+  JOURNAL   Microbiology (Reading) 157(Pt 12):3314-3323
+   PUBMED   21921101
+  REMARK    doi:10.1099/mic.0.052548-0
+REFERENCE   6
+  AUTHORS   Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W
+  TITLE     Tn10 tet operator mutations affecting Tet repressor recognition
+  JOURNAL   Nucleic Acids Research 14(10):4253-4266
+   PUBMED   3086838
+  REMARK    doi:10.1093/nar/14.10.4253
+FEATURES             Location/Qualifiers
+     promoter        1..58
+                     /label="ptet_full"
+                     /synonym="Tn10 tetA promoter"
+                     /note="Synthetic PLtetO-1-family two-operator,
+                     anhydrotetracycline (aTc)-inducible sigma-70 promoter: a
+                     consensus -35/-10 promoter carrying one Tn10 tet operator
+                     in the spacer and a second downstream of t..."
+     regulatory      1..6
+                     /label="-35"
+                     /parent="ptet_full"
+                     /regulatory_class="minus_35_signal"
+                     /note="Canonical sigma-70/sigma-A -35 hexamer (TTGACA,
+                     perfect consensus) at the 5' edge of the part, separated
+                     from the -10 by a 17-bp spacer."
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    5..23
+                     /label="tetO1"
+                     /parent="ptet_full"
+                     /note="Upstream (promoter-proximal) Tn10 tet operator:
+                     19-bp dyad (CACTCTATCATTGATAGAG) dropped into the -35/-10
+                     spacer so bound TetR homodimer occludes RNA polymer..."
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[1]
+                     /citation=[4]
+     regulatory      24..29
+                     /label="-10"
+                     /parent="ptet_full"
+                     /regulatory_class="minus_10_signal"
+                     /note="Near-consensus sigma-70/sigma-A -10 hexamer (CATAAT,
+                     5/6 vs TATAAT), 17-bp spacer to the -35, with tetO1 ending
+                     at its 5' edge and the +1 ~7 nt downstream."
+                     /citation=[1]
+     misc_feature    37
+                     /label="+1"
+                     /parent="ptet_full"
+                     /note="Inferred transcription start site, placed ~7 nt 3'
+                     of the -10 per standard sigma-70/sigma-A geometry (6-8 nt
+                     spacing), between the -10 box and tetO2."
+                     /citation=[1]
+     protein_bind    40..58
+                     /label="tetO2"
+                     /parent="ptet_full"
+                     /note="Downstream (second) Tn10 tet operator at the 3' end:
+                     19-bp dyad (TCTCTATCATTGATAGAGT) with the same core
+                     CTCTATCATTGATAGAG as tetO1."
+                     /citation=[5]
+                     /citation=[1]
+                     /citation=[6]
+                     /citation=[3]
+ORIGIN
+        1 ttgacactct atcattgata gagcataatt aaaataagct ctctatcatt gatagagt
+//

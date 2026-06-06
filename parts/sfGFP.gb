@@ -1,0 +1,36 @@
+LOCUS       sfGFP                    714 bp    DNA              UNK 01-JAN-1980
+DEFINITION  sfGFP.
+ACCESSION   sfGFP
+VERSION     sfGFP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..714
+                     /label="sfGFP"
+                     /synonym="Superfolder GFP"
+                     /synonym="Superfolder"
+                     /synonym="sfGFP"
+                     /synonym="msfGFP"
+                     /synonym="GFP (superfolder)"
+                     /synonym="GFP"
+                     /translation="MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLK
+                     FICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDG
+                     TYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKA
+                     NFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLE
+                     FVTAAGITHGMDELYK"
+ORIGIN
+        1 atgagcaaag gcgaagagct gtttaccggt gtggttccga ttttagtcga attggatgga
+       61 gacgtgaacg gccataagtt ctcggttcgt ggtgagggag aaggcgatgc gacgaatggt
+      121 aaactgactt taaagtttat ctgcaccacg ggaaaattgc cagtcccgtg gccaactctg
+      181 gtgaccacgt taacttatgg cgttcagtgt ttctcccgct acccggacca catgaagcaa
+      241 catgattttt tcaaatctgc catgccagag ggttatgtcc aggaacgtac cattagcttt
+      301 aaggacgatg gaacgtacaa aactcgcgca gaggtgaagt tcgaaggcga caccttggtt
+      361 aaccgtatcg agctgaaagg tattgatttt aaggaagacg gaaatatctt aggccacaaa
+      421 ttggagtata acttcaattc gcataacgtc tacattacgg cggataagca aaaaaatggt
+      481 atcaaggcca actttaaaat tcgccacaat gtggaagacg gatccgttca gctggcagat
+      541 cattatcaac agaacactcc gatcggcgac ggtccagtct tattgccgga taatcactac
+      601 ctgtctaccc aaagcaagtt atcgaaagac ccaaacgaga agcgtgatca tatggtgttg
+      661 ctggaattcg ttacggcggc cggaattact cacggcatgg acgagttata taaa
+//

@@ -1,0 +1,16 @@
+LOCUS       ECK120033736              52 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ECK120033736.
+ACCESSION   ECK120033736
+VERSION     ECK120033736
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..52
+                     /label="ECK120033736"
+                     /synonym="ECK120033736"
+                     /synonym="Terminator ECK120033736"
+ORIGIN
+        1 gcgcaataaa aaagcccccg gaaggtgatc ttccgggggc tttctcatgc gt
+//

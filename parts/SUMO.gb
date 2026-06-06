@@ -1,0 +1,22 @@
+LOCUS       SUMO                     291 bp    DNA              UNK 01-JAN-1980
+DEFINITION  SUMO.
+ACCESSION   SUMO
+VERSION     SUMO
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..291
+                     /label="SUMO"
+                     /synonym="SUMO"
+                     /synonym="SMT3"
+                     /translation="MSDSEVNQEAKPEVKPEVKPETHINLKVSDGSSEIFFKIKKTTPL
+                     RRLMEAFAKRQGKEMDSLRFLYDGIRIQADQTPEDLDMEDNDIIEAHREQIG"
+ORIGIN
+        1 atgagcgatt cggaagtgaa ccaggaggcg aaaccggaag ttaagccaga ggtcaaaccg
+       61 gaaacccata ttaatctgaa ggtgtccgac ggctctagcg agatcttttt caaaattaag
+      121 aaaacgactc cattacgtcg cttgatggaa gcctttgcaa agcgtcaagg taaagagatg
+      181 gattcgctgc gcttcttata tgacggaatc cgtattcagg cggatcaaac cccggaagac
+      241 ttggatatgg aggacaacga tatcattgaa gcccaccgcg agcagatcgg c
+//

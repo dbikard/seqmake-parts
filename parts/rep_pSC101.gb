@@ -1,0 +1,38 @@
+LOCUS       rep_pSC101               948 bp    DNA              UNK 01-JAN-1980
+DEFINITION  rep pSC101.
+ACCESSION   rep_pSC101
+VERSION     rep_pSC101
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..948
+                     /label="rep pSC101"
+                     /synonym="Replication protein"
+                     /synonym="rep pSC101"
+                     /synonym="repA101 ts"
+                     /translation="MSELVVFKANELAISRYDLTEHETKLILCCVALLNPTIENPTRKE
+                     RTVSFTYNQYAQMMNISRENAYGVLAKATRELMTRTVEIRNPLVKGFEIFQWTNYAKFS
+                     SEKLELVFSEEILPYLFQLKKFIKYNLEHVKSFENKYSMRIYEWLLKELTQKKTHKANI
+                     EISLDEFKFMLMLENNYHEFKRLNQWVLKPISKDLNTYSNMKLVVDKRGRPTDTLIFQV
+                     ELDRQMDLVTELENNQIKMNGDKIPTTITSDSYLRNGLRKTLHDALTAKIQLTSFEAKF
+                     LSDMQSKHDLNGSFSWLTQKQRTTLENILAKYGRI"
+ORIGIN
+        1 atgagcgaac tggtggtttt taaagcgaac gagttagcca tttcgcgtta tgatttgacc
+       61 gaacatgaga cgaagctgat cttatgctgt gtcgcattgc tgaatccgac tattgaaaac
+      121 ccaacccgca aagagcgtac ggtgtccttc acttacaatc agtatgcgca aatgatgaac
+      181 atctctcgcg aaaatgccta cggcgtttta gcaaaggcga cccgtgagtt gatgacgcgc
+      241 actgtcgaaa ttcgtaaccc gctggtgaaa ggttttgaga tcttccagtg gaccaattat
+      301 gccaagttta gctcggaaaa attagagttg gttttctccg aagagattct gccatactta
+      361 tttcaattga agaaattcat caagtataac ctggaacacg tcaaatcttt tgagaataag
+      421 tacagcatgc gcatttatga atggttattg aaagagctga cgcagaagaa aactcataag
+      481 gcaaacatcg aaatttcgtt agacgagttc aaatttatgt tgatgctgga aaataactac
+      541 cacgagttca agcgtttaaa tcaatgggtg ttgaaaccga tctccaagga tctgaacacc
+      601 tattctaata tgaaattagt tgtcgacaag cgcggacgtc caacggatac tttgattttt
+      661 caggtggaac tggaccgcca aatggattta gttaccgagt tggaaaacaa tcagatcaaa
+      721 atgaacggcg acaagattcc gacgactatc accagcgatt cgtacctgcg taatggttta
+      781 cgcaaaacgt tgcatgacgc gctgactgcc aagattcaat taacctcctt cgaggcaaaa
+      841 tttttgtctg atatgcagag caagcacgac ctgaacggat cgttctcctg gttaacgcaa
+      901 aaacagcgta ctaccttgga aaatatcctg gcgaagtatg gccgcatt
+//

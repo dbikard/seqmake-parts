@@ -1,0 +1,31 @@
+LOCUS       repA                     696 bp    DNA              UNK 01-JAN-1980
+DEFINITION  repA.
+ACCESSION   repA
+VERSION     repA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..696
+                     /label="repA"
+                     /synonym="repA"
+                     /translation="MAIKNTKARNFGFLLYPDSIPNDWKEKLESLGVSMAVSPLHDMDE
+                     KKDKDTWNSSDVIRNGKHYKKPHYHVIYIARNPVTIESVRNKIKRKLGNSSVAHVEILD
+                     YIKGSYEYLTHESKDAIAKNKHIYDKKDILNINDFDIDRYITLDESQKRKLKNLLLDIV
+                     DDYNLVNTKDLMAFIRLRGAEFGILNTNDVKDIVSTNSSAFRLWFEGNYQCGYRASYAK
+                     VLDAETGEIK"
+ORIGIN
+        1 atggcgatta aaaacaccaa ggcccgtaat tttggcttcc tgttatatcc ggatagcatc
+       61 ccaaacgact ggaaagaaaa gttggagtcg ctgggtgtgt ccatggcagt ttctccgtta
+      121 catgatatgg acgaaaaaaa ggataaagac acgtggaata gctcggatgt cattcgcaac
+      181 ggaaagcact acaaaaagcc acattatcac gtgatctaca ttgcgcgtaa tccggttact
+      241 atcgagtccg tccgcaacaa aattaagcgt aaattgggca attctagcgt ggcccatgtt
+      301 gaaatcctgg actatattaa gggttcgtac gagtatttaa cccacgaatc caaagatgca
+      361 atcgcgaaga acaaacatat ttacgacaag aaagatatct tgaatattaa cgactttgat
+      421 atcgaccgct atattacgct ggatgagtct cagaagcgta aattaaagaa tttgctgtta
+      481 gacatcgtcg atgactacaa cttggtgaat actaaagatc tgatggcctt cattcgctta
+      541 cgtggagcag aatttggcat cttgaacacc aatgacgtta aggatattgt cagcacgaac
+      601 tcgtccgcgt tccgcctgtg gtttgagggt aattatcaat gcggataccg tgcctcttat
+      661 gcaaaagtgt tagacgcgga aactggcgag atcaag
+//

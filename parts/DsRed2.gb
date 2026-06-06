@@ -1,0 +1,33 @@
+LOCUS       DsRed2                   675 bp    DNA              UNK 01-JAN-1980
+DEFINITION  DsRed2.
+ACCESSION   DsRed2
+VERSION     DsRed2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..675
+                     /label="DsRed2"
+                     /synonym="DsRed2"
+                     /synonym="dsred2"
+                     /synonym="red fluorescent protein (DsRed2)"
+                     /translation="MASSENVITEFMRFKVRMEGTVNGHEFEIEGEGEGRPYEGHNTVK
+                     LKVTKGGPLPFAWDILSPQFQYGSKVYVKHPADIPDYKKLSFPEGFKWERVMNFEDGGV
+                     ATVTQDSSLQDGCFIYKVKFIGVNFPSDGPVMQKKTMGWEASTERLYPRDGVLKGETHK
+                     ALKLKDGGHYLVEFKSIYMAKKPVQLPGYYYVDAKLDITSHNEDYTIVEQYERTEGRHH
+                     LFL"
+ORIGIN
+        1 atggcgagct cggaaaacgt gattaccgag tttatgcgtt tcaaagttcg catggaaggc
+       61 acggtcaatg gtcatgagtt tgaaatcgag ggagaaggcg agggtcgtcc gtatgaagga
+      121 cacaacactg tgaagctgaa agttaccaag ggcggtccat taccgttcgc ctgggatatt
+      181 ttgtccccac agtttcaata cggatctaaa gtctatgtga agcatccggc agacatccca
+      241 gattacaaaa agctgagctt cccggagggc tttaaatggg aacgcgttat gaatttcgag
+      301 gacggtggag tcgcgacggt gactcaggat tcgtccttac aagacggctg ctttatttat
+      361 aaggttaaat tcatcggtgt caactttcca tctgatggac cggtgatgca gaagaaaacc
+      421 atgggctggg aagccagcac ggagcgtttg tacccacgcg acggtgttct gaagggagaa
+      481 actcacaaag cattaaagtt gaaagatggc ggtcattatc tggtcgagtt caagtcgatt
+      541 tacatggcga aaaagccggt gcaattacca ggatattact atgttgacgc caaattggat
+      601 atcacctccc acaatgaaga ctacacgatt gtcgagcagt atgaacgtac tgagggccgc
+      661 catcacctgt tttta
+//

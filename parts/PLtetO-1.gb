@@ -1,0 +1,80 @@
+LOCUS       PLtetO-1                  74 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter
+            of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators
+            into the bacteriophage lambda PL scaffold..
+ACCESSION   PLtetO-1
+VERSION     PLtetO-1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Lutz R, Bujard H
+  TITLE     Independent and tight regulation of transcriptional units in
+            Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2
+            regulatory elements
+  JOURNAL   Nucleic Acids Research 1997;25(6):1203-1210
+   PUBMED   9092630
+  REMARK    doi:10.1093/nar/25.6.1203
+REFERENCE   2
+  AUTHORS   Kleinschmidt C, Tovar K, Hillen W, Porschke D
+  TITLE     Dynamics of repressor-operator recognition: the Tn10-encoded
+            tetracycline resistance control
+  JOURNAL   Biochemistry 1988;27(4):1094-1104
+   PUBMED   2835082
+  REMARK    doi:10.1021/bi00404a003
+REFERENCE   3
+  AUTHORS   Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger
+            W
+  TITLE     Structure of the Tet repressor-tetracycline complex and regulation
+            of antibiotic resistance
+  JOURNAL   Science 1994;264(5157):418-420
+   PUBMED   8153629
+  REMARK    doi:10.1126/science.8153629
+FEATURES             Location/Qualifiers
+     promoter        1..74
+                     /label="PLtetO-1"
+                     /synonym="PLtetO-1"
+                     /synonym="PLtetO-1 promoter"
+                     /note="PLtetO-1 is the synthetic TetR-repressible /
+                     aTc-inducible promoter of Lutz & Bujard (1997), built by
+                     inserting two Tn10 tetO2 operators into the bacteriophage
+                     lambda PL scaffold."
+     protein_bind    1..19
+                     /label="tetO2 operator"
+                     /parent="PLtetO-1"
+                     /note="Upstream Tn10 tetO2 operator (19 bp consensus
+                     TCCCTATCAGTGATAGAGA) that replaced lambda PL's upstream
+                     cI/OL site; bound by the TetR dimer."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+     regulatory      20..25
+                     /label="-35"
+                     /parent="PLtetO-1"
+                     /regulatory_class="minus_35_signal"
+                     /note="Canonical sigma-70 -35 hexamer TTGACA from the
+                     lambda PL scaffold, flanked by the two tetO2 operators
+                     (abuts the distal operator at 19, the spacer operator a..."
+                     /citation=[1]
+     protein_bind    26..44
+                     /label="tetO2 operator (proximal)"
+                     /parent="PLtetO-1"
+                     /note="Second Tn10 tetO2 operator (identical 19 bp
+                     consensus) placed in the -35/-10 spacer; TetR binding here
+                     sterically occludes RNA polymerase."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+     regulatory      43..48
+                     /label="-10"
+                     /parent="PLtetO-1"
+                     /regulatory_class="minus_10_signal"
+                     /note="Lambda PL -10 hexamer GATACT, 17 bp downstream of
+                     the -35 (canonical spacer), overlapping the 3' end of the
+                     spacer tetO2 by 2 bp."
+                     /citation=[1]
+ORIGIN
+        1 tccctatcag tgatagagat tgacatccct atcagtgata gagatactga gcacatcagc
+       61 aggacgcact gacc
+//

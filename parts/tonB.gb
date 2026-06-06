@@ -1,0 +1,17 @@
+LOCUS       tonB                      93 bp    DNA              UNK 01-JAN-1980
+DEFINITION  tonB.
+ACCESSION   tonB
+VERSION     tonB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..93
+                     /label="tonB"
+                     /synonym="tonB"
+                     /synonym="tonB terminator"
+ORIGIN
+        1 ttaacggcac caccgaaatt cagtaagcag aaagtcaaaa gcctccgacc ggaggctttt
+       61 gactattact caacaggtaa ggcgcgaggt ttt
+//

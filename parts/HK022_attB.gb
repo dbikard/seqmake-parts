@@ -1,0 +1,19 @@
+LOCUS       HK022_attB               258 bp    DNA              UNK 01-JAN-1980
+DEFINITION  HK022 attB.
+ACCESSION   HK022_attB
+VERSION     HK022_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..258
+                     /label="HK022 attB"
+                     /synonym="HK022 attB"
+ORIGIN
+        1 gacaaaattg aaatcgacaa atgattttat tttgactaat aatgacctac ttacattaat
+       61 ttactgataa ttaaagagat tttaaatata caacttattc acctaaagga tgacaaaata
+      121 acattaatca cttaaaaatc atcgcattac actaatctgt ggttaaatga tagactacat
+      181 aatgcgacaa aacgcaacat atccagtcac tatgaatcaa ctacttagat agtattagtg
+      241 acctgagaca gagcatta
+//

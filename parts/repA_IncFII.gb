@@ -1,0 +1,52 @@
+LOCUS       repA_IncFII             1635 bp    DNA              UNK 01-JAN-1980
+DEFINITION  repA (IncFII).
+ACCESSION   repA_IncFII
+VERSION     repA_IncFII
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..1635
+                     /label="repA (IncFII)"
+                     /synonym="repA"
+                     /translation="MEQLDSKYKLKKFLMAVFRDGIGQGNNLIDNEYVRVFQNNKSNSK
+                     QLELGEEFKEYSKTTFFKNIDDIVEFTFAKNIYYENTFFNLCTTDGKAGTNENLINRYA
+                     LGFDFDKKELGQGFNYKDIINLFTKIGLHYHILVDSGNGFHVYVLINKTNNIKLVSEVT
+                     NTLINKLGADKQANLSTQVLRVPYTYNIKNTTKQVKIIHQDKNIYRYDIEKLAKKYCKD
+                     VKTVGNTNTKYILDSKLPNCIVDILKNGSKDGHKNLDLQKIVVTLRLRNKSLSQVISVA
+                     REWNYISQNSLSNSELEYQVKYMYEKLKTVNFGCTGCEFNSDCWNKIESDFIYSDEDTL
+                     FNMPHKHSKDLKYKNRKGVKIMTGNQLFIYNVLLNNKDRELNIDDIMELITYKRKKKVK
+                     NIVMSEKTLRETLKELQHNDYITKTKGVTKLGIKDTYNVKEVRCNIDKQYTISYFVTMA
+                     VIWGIISTEELRLYTHMRYKQDLLVKDDKIKGNILRINQEELAKDLGVTQQRISNMIES
+                     LLDTKILDVWETKINDRGFMYYTYRLNK"
+ORIGIN
+        1 atggaacagc tggatagcaa atataagtta aaaaagtttt tgatggcggt gttccgtgac
+       61 ggcattggtc aaggaaacaa tctgatcgat aacgagtacg ttcgcgtctt tcagaataac
+      121 aaatcgaatt ccaagcaatt agaattgggc gaggaattca aagagtattc taagaccacg
+      181 tttttcaaaa acattgacga tatcgtggaa tttactttcg ccaagaatat ttactatgag
+      241 aacacctttt tcaatctgtg cacgactgac ggtaaagcag gaaccaacga aaatttaatc
+      301 aaccgttacg cgttgggctt tgatttcgac aagaaagagc tgggtcaggg atttaattat
+      361 aaggatatta tcaacttatt cacgaaaatt ggcttgcatt accacatcct ggttgacagc
+      421 ggtaatggat ttcatgtcta tgtgttaatt aacaagacta ataacatcaa attggtttcg
+      481 gaagtcacca atacgctgat taacaagtta ggcgccgata aacaagcaaa tttgtccact
+      541 caggtgctgc gcgttccgta cacctataac atcaagaata cgactaaaca agtcaagatt
+      601 atccaccagg acaaaaacat ttaccgttat gatatcgaga agttagcgaa aaagtactgt
+      661 aaagacgtga agaccgttgg taatacgaac actaaatata ttttggattc taagctgcca
+      721 aattgcatcg tcgacatttt aaaaaacgga agcaaggatg gccataaaaa tttggacctg
+      781 caaaagatcg tggttacctt acgcttgcgt aacaaatcgc tgtcccaggt catttctgtg
+      841 gcccgcgaat ggaattacat cagccaaaac tcgttatcca attctgagtt ggaatatcag
+      901 gttaagtaca tgtatgagaa actgaagacg gtcaacttcg gttgtactgg atgcgaattt
+      961 aatagcgatt gttggaacaa aattgagtcg gacttcatct actccgatga agacacctta
+     1021 tttaatatgc cgcacaagca ttctaaagat ttgaagtata aaaaccgtaa gggcgtgaaa
+     1081 attatgacgg gtaatcaact gttcatctac aacgttttat tgaataacaa ggaccgcgag
+     1141 ctgaatattg atgacatcat ggaattaatt acttataaac gtaagaaaaa ggtcaaaaac
+     1201 atcgtgatga gcgagaagac cttgcgcgaa acgctgaaag agttacagca caatgattac
+     1261 attactaaga ccaaaggagt tacgaagttg ggcatcaaag acacttataa cgtcaaggaa
+     1321 gtgcgttgca atattgataa acaatacacc atctcgtatt ttgttacgat ggcagtcatt
+     1381 tggggtatca tttccactga ggaactgcgc ttatacaccc atatgcgtta taagcaggac
+     1441 ttgctggtga aagatgacaa gatcaaagga aacattttac gcatcaatca agaggaattg
+     1501 gcgaaggatc tgggcgttac gcagcaacgt atttctaaca tgatcgagag cttattggac
+     1561 actaaaattc tggatgtctg ggaaaccaag atcaatgacc gcggtttcat gtactatacg
+     1621 taccgtttaa acaaa
+//

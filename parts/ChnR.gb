@@ -1,0 +1,50 @@
+LOCUS       ChnR                     942 bp    DNA              UNK 01-JAN-1980
+DEFINITION  AraC/XylS-family transcriptional activator ChnR;
+            cyclohexanone-responsive regulator cognate to the PchnB promoter
+            (Acinetobacter johnsonii chn cluster)..
+ACCESSION   ChnR
+VERSION     ChnR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Chen YC, Peoples OP, Walsh CT
+  TITLE     Acinetobacter cyclohexanone monooxygenase: gene cloning and sequence
+            determination
+  JOURNAL   J Bacteriol 170(2):781-789 (1988)
+   PUBMED   3338974
+  REMARK    doi:10.1128/jb.170.2.781-789.1988
+FEATURES             Location/Qualifiers
+     CDS             1..942
+                     /label="ChnR"
+                     /synonym="chnR"
+                     /synonym="ChnR activator"
+                     /note="AraC/XylS-family transcriptional activator ChnR;
+                     cyclohexanone-responsive regulator cognate to the PchnB
+                     promoter (Acinetobacter johnsonii chn cluster)."
+                     /translation="MSTDKANTLIKPEDVVLWIPGNVTIDSMNAGWENIAIRGYEYTNL
+                     DVHIPAMRDYMIVNYKKSAAEMRRKGDASWDTQVVKPGYVSLLTCGEDSRWAWNDHIAV
+                     THVYISHDSITSMANKVFDYDIASIRIRDEVGVEDHVLPALTSLLELELKQGGLGGNLY
+                     LESIKNQIALHLLRQYAKLDFKEGQCRSGFTPLQRRLLLEFINENMSIKITLEDLAGLV
+                     KMSVPHLMRKFKVDFGNSPAAYIMNLRVQFAKRLLTSKKEIPLKVIASEAGFCDQSHMT
+                     RVFQKFFGKTPIEIRQEHTNLVSENSVSSIVF"
+                     /citation=[1]
+ORIGIN
+        1 atgagcacag acaaagcaaa tacgctgatc aaacccgaag atgtcgtgtt atggattccg
+       61 ggtaatgtca caattgacag catgaatgcc ggttgggaaa acattgcaat cagagggtac
+      121 gaatatacca acctcgatgt gcatattcct gccatgcgtg actacatgat cgtcaactat
+      181 aaaaaaagtg cggcggaaat gcgtagaaaa ggcgatgcct cttgggatac ccaagtggtt
+      241 aagccgggtt atgtctcctt gttgacctgt ggtgaagatt cccgctgggc gtggaatgac
+      301 catattgccg tcacccatgt ctacatttcg catgactcca tcacctcaat ggcgaataag
+      361 gtgtttgatt atgatatcgc ttcgatccga atcagagacg aagtcggtgt ggaagatcat
+      421 gttttacctg ctctgacttc acttttagaa ctagaattaa agcaaggtgg tttaggtgga
+      481 aacctgtatt tagagagcat taaaaaccag atcgccctgc atttactccg tcagtatgcc
+      541 aaattagatt ttaaggaagg acagtgccgt tctggtttta ctcccctaca acgcagactg
+      601 ttattagaat ttatcaatga aaacatgagc attaaaatta ccctcgaaga tttagcggga
+      661 ttagtcaaga tgagcgtgcc tcatttaatg agaaaattta aagtcgattt tggtaattcc
+      721 cctgctgcct acatcatgaa tctcagggtg caatttgcta aacgtttgct cacttcaaaa
+      781 aaagaaattc cactgaaagt gattgccagt gaagccggtt tttgcgatca gagccatatg
+      841 acccgagtat ttcaaaaatt ttttgggaaa acacccatcg aaatcagaca ggaacacacc
+      901 aatctcgtgt ctgaaaattc agtctcctct attgtttttt ga
+//

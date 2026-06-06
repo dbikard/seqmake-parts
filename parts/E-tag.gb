@@ -1,0 +1,17 @@
+LOCUS       E-tag                     39 bp    DNA              UNK 01-JAN-1980
+DEFINITION  E-tag.
+ACCESSION   E-tag
+VERSION     E-tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..39
+                     /label="E-tag"
+                     /synonym="E-tag"
+                     /synonym="E tag"
+                     /translation="GAPVPYPDPLEPA"
+ORIGIN
+        1 ggcgcgccgg tgccatatcc ggatccactg gaaccggcc
+//

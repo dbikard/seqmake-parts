@@ -1,0 +1,19 @@
+LOCUS       PURA3                    216 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PURA3.
+ACCESSION   PURA3
+VERSION     PURA3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..216
+                     /label="PURA3"
+                     /synonym="PURA3"
+                     /synonym="URA3 promoter"
+ORIGIN
+        1 ttcaattcat catttttttt ttattctttt ttttgatttc ggtttctttg aaattttttt
+       61 gattcggtaa tctccgaaca gaaggaagaa cgaaggaagg agcacagact tagattggta
+      121 tatatacgca tatgtagtgt tgaagaaaca tgaaattgcc cagtattctt aacccaactg
+      181 cacagaacaa aaacctgcag gaaacgaaga taaatc
+//

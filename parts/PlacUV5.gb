@@ -1,0 +1,55 @@
+LOCUS       PlacUV5                   30 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a
+            point-mutant derivative of the natural E. coli lac promoter carrying
+            the catabolite-insensitive, promoter-up UV5 allele..
+ACCESSION   PlacUV5
+VERSION     PlacUV5
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Dickson RC, Abelson J, Barnes WM, Reznikoff WS
+  TITLE     Genetic regulation: the lac control region
+  JOURNAL   Science 187(4171):27-35
+   PUBMED   1088926
+  REMARK    doi:10.1126/science.1088926
+REFERENCE   2
+  AUTHORS   Silverstone AE, Arditti RR, Magasanik B
+  TITLE     Catabolite-insensitive revertants of lac promoter mutants
+  JOURNAL   Proc. Natl. Acad. Sci. USA 66(3):773-779
+   PUBMED   4913210
+  REMARK    doi:10.1073/pnas.66.3.773
+FEATURES             Location/Qualifiers
+     promoter        1..30
+                     /label="PlacUV5"
+                     /synonym="PlacUV5"
+                     /synonym="lacUV5 promoter"
+                     /synonym="lacUV5"
+                     /note="PlacUV5 — the 30 bp core lacUV5 promoter (-35
+                     through -10), a point-mutant derivative of the natural E.
+                     coli lac promoter carrying the catabolite-insensitive,
+                     promoter-up UV5 allele."
+     regulatory      1..6
+                     /label="-35"
+                     /parent="PlacUV5"
+                     /regulatory_class="minus_35_signal"
+                     /note="lac/lacUV5 -35 hexamer TTTACA."
+                     /citation=[1]
+     misc_feature    7..24
+                     /label="spacer"
+                     /parent="PlacUV5"
+                     /note="18 bp interbox spacer separating the -35 box (ends
+                     pos 6) from the -10 box (starts pos 24)."
+                     /citation=[1]
+     regulatory      25..30
+                     /label="-10"
+                     /parent="PlacUV5"
+                     /regulatory_class="minus_10_signal"
+                     /note="lacUV5 -10 box, the perfect sigma70 consensus
+                     TATAAT."
+                     /citation=[2]
+                     /citation=[1]
+ORIGIN
+        1 tttacacttt atgcttccgg ctcgtataat
+//

@@ -1,0 +1,31 @@
+LOCUS       GST                      654 bp    DNA              UNK 01-JAN-1980
+DEFINITION  GST.
+ACCESSION   GST
+VERSION     GST
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..654
+                     /label="GST"
+                     /synonym="GST"
+                     /synonym="GST tag"
+                     /synonym="glutathione S-transferase"
+                     /translation="MSPILGYWKIKGLVQPTRLLLEYLEEKYEEHLYERDEGDKWRNKK
+                     FELGLEFPNLPYYIDGDVKLTQSMAIIRYIADKHNMLGGCPKERAEISMLEGAVLDIRY
+                     GVSRIAYSKDFETLKVDFLSKLPEMLKMFEDRLCHKTYLNGDHVTHPDFMLYDALDVVL
+                     YMDPMCLDAFPKLVCFKKRIEAIPQIDKYLKSSKYIAWPLQGWQATFGGGDHPPK"
+ORIGIN
+        1 atgagcccga ttctgggcta ttggaaaatc aagggtttag tgcagccaac ccgtttgctg
+       61 ttagaatact tggaggaaaa atatgaggaa catctgtacg agcgcgatga aggagacaag
+      121 tggcgtaaca aaaagtttga gttaggcttg gaattcccga atctgccata ttacattgat
+      181 ggtgacgtta aattaacgca atcgatggcg atcattcgct atatcgccga taagcacaac
+      241 atgttgggag gctgcccgaa agagcgtgca gaaatttcca tgctggaggg tgcggtctta
+      301 gacatccgct acggagtgtc tcgtattgcc tatagcaagg attttgaaac tttgaaagtt
+      361 gacttcctgt cgaagttacc agagatgttg aaaatgtttg aagatcgcct gtgtcataag
+      421 acctacttaa atggcgacca cgtcacgcat ccggatttca tgttgtatga cgcactggat
+      481 gtggttttat acatggaccc aatgtgcttg gatgcgtttc cgaaactggt ctgtttcaag
+      541 aaacgtatcg aggccattcc acagatcgac aagtatttaa aatcctctaa gtacattgca
+      601 tggccgttgc aaggttggca ggcgactttt ggaggcggtg atcacccacc gaaa
+//

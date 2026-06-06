@@ -1,0 +1,62 @@
+LOCUS       Plac                      55 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a
+            3'-truncated LacI operator O1, in 55 bp..
+ACCESSION   Plac
+VERSION     Plac
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Dickson RC, Abelson J, Barnes WM, Reznikoff WS
+  TITLE     Genetic regulation: the Lac control region
+  JOURNAL   Science
+   PUBMED   1088926
+  REMARK    doi:10.1126/science.1088926
+REFERENCE   2
+  AUTHORS   Gilbert W, Maxam A
+  TITLE     The nucleotide sequence of the lac operator
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   4587255
+  REMARK    doi:10.1073/pnas.70.12.3581
+FEATURES             Location/Qualifiers
+     promoter        1..55
+                     /label="Plac"
+                     /synonym="lac promoter"
+                     /note="The wild-type E. coli lac core promoter (Plac):
+                     -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp."
+     regulatory      1..6
+                     /label="-35"
+                     /parent="Plac"
+                     /regulatory_class="minus_35_signal"
+                     /note="Wild-type lac -35 hexamer TTTACA."
+                     /citation=[1]
+     misc_feature    7..24
+                     /label="-35/-10 spacer"
+                     /parent="Plac"
+                     /note="18-bp spacer between -35 and -10 (canonical lac WT
+                     geometry)."
+                     /citation=[1]
+     regulatory      25..30
+                     /label="-10"
+                     /parent="Plac"
+                     /regulatory_class="minus_10_signal"
+                     /note="Wild-type lac -10 (Pribnow) box TATGTT,
+                     weak/non-consensus."
+                     /citation=[1]
+     misc_feature    37
+                     /label="+1 TSS"
+                     /parent="Plac"
+                     /note="Transcription start site, predominant +1A, lying 6-8
+                     bp downstream of the -10 box (index 36 = 7 bp past the last
+                     -10 base)."
+                     /citation=[1]
+     protein_bind    34..55
+                     /label="lac operator O1"
+                     /parent="Plac"
+                     /note="LacI operator O1, pseudo-palindromic."
+                     /citation=[2]
+                     /citation=[1]
+ORIGIN
+        1 tttacacttt atgcttccgg ctcgtatgtt gtgtggaatt gtgagcggat aacaa
+//

@@ -1,0 +1,16 @@
+LOCUS       LuxIA_terminator          55 bp    DNA              UNK 01-JAN-1980
+DEFINITION  LuxIA terminator.
+ACCESSION   LuxIA_terminator
+VERSION     LuxIA_terminator
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..55
+                     /label="LuxIA terminator"
+                     /synonym="LuxIA terminator"
+                     /synonym="LuxIA Dual Terminator"
+ORIGIN
+        1 atactagaga gagaatataa aaagccagat tattaatccg gcttttttat tattt
+//

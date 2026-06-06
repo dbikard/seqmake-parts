@@ -1,0 +1,16 @@
+LOCUS       ECK120033737              57 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ECK120033737.
+ACCESSION   ECK120033737
+VERSION     ECK120033737
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..57
+                     /label="ECK120033737"
+                     /synonym="ECK120033737"
+                     /synonym="Terminator ECK120033737"
+ORIGIN
+        1 ggaaacactg aaaaaagccc gcacctgaca gtgcgggctt tttttttcga ccaaagg
+//

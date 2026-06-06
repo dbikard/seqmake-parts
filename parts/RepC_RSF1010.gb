@@ -1,0 +1,39 @@
+LOCUS       RepC_RSF1010             948 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RepC (RSF1010).
+ACCESSION   RepC_RSF1010
+VERSION     RepC_RSF1010
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..948
+                     /label="RepC (RSF1010)"
+                     /synonym="RepC"
+                     /synonym="repC (RSF1010)"
+                     /synonym="RSF1010 RepC"
+                     /synonym="replication protein C"
+                     /translation="MAHRSLIGGSGGMTAGCSSPPCWRGSARARGCPVVKPKNKHSLSH
+                     VRHDPAHCLAPGLFRALKRGERKRSKLDVTYDYGDGKRIEFSGPEPLGADDLRILQGLV
+                     AMAGPNGLVLGPEPKTEGGRQLRLFLEPKWEAVTAECHVVKGSYRALAKEIGAEVDSGG
+                     ALKHIQDCIERLWKVSIIAQNGRKRQGFRLLSEYASDEADGRLYVALNPLIAQAVMGGG
+                     QHVRISMDEVRALDSETARLLHQRLCGWIDPGKTGKASIDTLCGYVWPSEASGSTMRKR
+                     RQRVREALPELVALGWTVTEFAAGKYDITRPKAAG"
+ORIGIN
+        1 atggcgcatc gtagcctgat tggcggttcg ggaggcatga ccgccggttg ctcctctccg
+       61 ccatgttggc gcggaagcgc acgtgcgcgc ggctgcccgg tggttaaacc aaagaacaaa
+      121 cactcgttat cccatgtccg tcacgatccg gcccattgtt tggcaccagg tctgtttcgc
+      181 gcgttaaagc gtggagaacg caaacgttct aagttggacg tgacgtatga ttacggcgac
+      241 ggtaaacgca tcgagttcag cggaccggaa ccactgggcg ccgatgactt acgtattttg
+      301 cagggtctgg ttgcaatggc gggaccgaat ggcttagtct tgggtccaga gccgaagact
+      361 gaaggaggcc gccaactgcg tttatttttg gagccaaaat gggaagccgt gaccgcagag
+      421 tgccacgttg tcaagggttc gtatcgcgcg ctggccaaag aaatcggagc agaggtggat
+      481 tccggcggtg cgttaaagca tattcaggac tgtatcgaac gtttgtggaa agtttctatt
+      541 atcgcccaaa acggacgcaa gcgtcagggc ttccgcctgt taagcgagta cgcatcggat
+      601 gaagcggacg gtcgtttgta tgtcgccctg aatccgttaa ttgcacaagc ggtgatggga
+      661 ggcggtcagc acgttcgcat ctccatggat gaggtccgtg ccttggactc tgaaacggca
+      721 cgcctgttac atcaacgttt gtgcggatgg attgatccag gcaaaactgg taaggcgagc
+      781 atcgacaccc tgtgtggata cgtgtggccg tcggaggcct ccggctctac gatgcgcaaa
+      841 cgtcgccagc gtgttcgcga agcattacca gagttggtcg cgctgggttg gactgtgacc
+      901 gaatttgccg caggaaagta tgatattacg cgtccgaaag cggccggc
+//

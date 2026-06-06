@@ -1,0 +1,19 @@
+LOCUS       Pkan                     106 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pkan.
+ACCESSION   Pkan
+VERSION     Pkan
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..106
+                     /label="Pkan"
+                     /synonym="Pkan"
+                     /synonym="PKan"
+                     /synonym="kanamycin promoter"
+                     /synonym="Km promoter"
+ORIGIN
+        1 aacacccctt gtattactgt ttatgtaagc agacagtttt attgttcatg atgatatatt
+       61 tttatcttgt gcaatgtaac atcagagatt ttgagacaca agacgt
+//

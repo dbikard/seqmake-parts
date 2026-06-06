@@ -1,0 +1,23 @@
+LOCUS       lambda_cos               403 bp    DNA              UNK 01-JAN-1980
+DEFINITION  lambda cos.
+ACCESSION   lambda_cos
+VERSION     lambda_cos
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     misc_feature    1..403
+                     /label="lambda cos"
+                     /synonym="cos"
+                     /synonym="lambda cos region"
+                     /synonym="cos site (SEVA)"
+ORIGIN
+        1 gacatgaggt tgccccgtat tcagtgtcgc tgatttgtat tgtctgaagt tgtttttacg
+       61 ttaagttgat gcagatcaat taatacgata cctgcgtcat aattgattat ttgacgtggt
+      121 ttgatggcct ccacgcacgt tgtgatatgt agatgataat cattatcact ttacgggtcc
+      181 tttccggtga tccgacaggt tacggggcgg cgacctcgcg ggttttcgct atttatgaaa
+      241 attttccggt ttaaggcgtt tccgttcttc ttcgtcataa cttaatgttt ttatttaaaa
+      301 taccctctga aaagaaagga aacgacaggt gctgaaagcg aggctttttg gcctctgtcg
+      361 tttcctttct ctgtttttgt ccgtggaatg aacaatggaa gtc
+//

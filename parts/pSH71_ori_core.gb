@@ -1,0 +1,27 @@
+LOCUS       pSH71_ori_core           513 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Core origin of replication from pSH71/pLZ12. Minimal conserved
+            region upstream of repA, shared across variants..
+ACCESSION   pSH71_ori_core
+VERSION     pSH71_ori_core
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..513
+                     /label="pSH71 ori (core)"
+                     /synonym="pSH71 ori core"
+                     /synonym="pLZ12 ori core"
+                     /note="Core origin of replication from pSH71/pLZ12. Minimal
+                     conserved region upstream of repA, shared across variants."
+ORIGIN
+        1 aaaatttttg aaaaaaattt ggaatttgga aaaaaatggg gggaaaggaa gcgaattttg
+       61 cttccgtact acgacccccc attaagtgcc gagtgccaat ttttgtgcca aaaacgctct
+      121 atcccaactg gctcaagggt ttgaggggtt tttcaatcgc caacgaatcg ccaacgtttt
+      181 cgccaacgtt ttttataaat ctatatttaa gtagctttat tgttgttttt atgattacaa
+      241 agtgatacac taattttata aaattatttg attggagttt tttaaatggt gatttcagaa
+      301 tcgaaaaaaa gagttatgat ttctctgaca aaagagcaag ataaaaaatt aacagatatg
+      361 gcgaaacaaa aaggtttttc aaaatctgcg gttgcggcgt tagctataga agaatatgca
+      421 agaaaggaat cagaacaaaa aaaataagcg aaagctcgcg tttttagaag gatacgagtt
+      481 ttcgctactt gtttttgata aggtaattat atc
+//

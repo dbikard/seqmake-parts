@@ -1,0 +1,36 @@
+LOCUS       araC                     876 bp    DNA              UNK 01-JAN-1980
+DEFINITION  araC.
+ACCESSION   araC
+VERSION     araC
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..876
+                     /label="araC"
+                     /synonym="araC"
+                     /synonym="arabinose operon regulatory protein"
+                     /translation="MAEAQNDPLLPGYSFNAHLVAGLTPIEANGYLDFFIDRPLGMKGY
+                     ILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHYGRHPEAREWYHQWVYFRPRAYW
+                     HEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQIINAGQGEGRYSELLAINLLEQLLLRR
+                     MEAINESLHPPMDNRVREACQYISDHLADSNFDIASVAQHVCLSPSRLSHLFRQQLGIS
+                     VLSWREDQRISQAKLLLSTTRMPIATVGRNVGFDDQLYFSRVFKKCTGASPSEFRAGCE
+                     EKVNDVAVKLS"
+ORIGIN
+        1 atggctgaag cgcaaaatga tcccctgctg ccgggatact cgtttaacgc ccatctggtg
+       61 gcgggtttaa cgccgattga ggccaacggt tatctcgatt tttttatcga ccgaccgctg
+      121 ggaatgaaag gttatattct caatctcacc attcgcggtc agggggtggt gaaaaatcag
+      181 ggacgagaat ttgtctgccg accgggtgat attttgctgt tcccgccagg agagattcat
+      241 cactacggtc gtcatccgga ggctcgcgaa tggtatcacc agtgggttta ctttcgtccg
+      301 cgcgcctact ggcatgaatg gcttaactgg ccgtcaatat ttgccaatac gggtttcttt
+      361 cgcccggatg aagcgcacca gccgcatttc agcgacctgt ttgggcaaat cattaacgcc
+      421 gggcaagggg aagggcgcta ttcggagctg ctggcgataa atctgcttga gcaattgtta
+      481 ctgcggcgca tggaagcgat taacgagtcg ctccatccac cgatggataa tcgggtacgc
+      541 gaggcttgtc agtacatcag cgatcacctg gcagacagca attttgatat cgccagcgtc
+      601 gcacagcatg tttgcttgtc gccgtcgcgt ctgtcacatc ttttccgcca gcagttaggg
+      661 attagcgtct taagctggcg cgaggaccaa cgcattagtc aggcgaagct gcttttgagc
+      721 actacccgga tgcctatcgc caccgtcggt cgcaatgttg gttttgacga tcaactctat
+      781 ttctcgcgag tatttaaaaa atgcaccggg gccagcccga gcgagtttcg tgccggttgt
+      841 gaagaaaaag tgaatgatgt agccgtcaag ttgtca
+//

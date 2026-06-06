@@ -1,0 +1,30 @@
+LOCUS       cat_Gram                 648 bp    DNA              UNK 01-JAN-1980
+DEFINITION  cat (Gram+).
+ACCESSION   cat_Gram
+VERSION     cat_Gram
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..648
+                     /label="cat (Gram+)"
+                     /synonym="cat (Gram+)"
+                     /synonym="chloramphenicol acetyltransferase (Gram+)"
+                     /translation="MNFNKIDLDNWKRKEIFNHYLNQQTTFSITTEIDISVLYRNIKQE
+                     GYKFYPAFIFLVTRVINSNTAFRTGYNSDGELGYWDKLEPLYTIFDGVSKTFSGIWTPV
+                     KNDFKEFYDLYLSDVEKYNGSGKLFPKTPIPENAFSLSIIPWTSFTGFNLNINNNSNYL
+                     LPIITAGKFINKGNSIYLPLSLQVHHSVCDGYHAGLFMNSIQELSDRPNDWLL"
+ORIGIN
+        1 atgaacttta ataaaattga tctggacaac tggaagcgta aagaaatctt caatcattat
+       61 ttaaaccagc aaaccacgtt tagcattact accgagatcg atatttcggt gttgtaccgc
+      121 aatatcaagc aggaaggcta taaattctac ccggcgttta ttttcctggt tacgcgtgtc
+      181 atcaactcca atactgcctt tcgcaccggt tataactctg acggagagtt aggctactgg
+      241 gataagttgg aaccactgta tacgattttc gacggtgtga gcaaaacttt ttcgggaatc
+      301 tggaccccgg ttaagaatga tttcaaagag ttttacgact tatatttgtc cgatgtcgaa
+      361 aagtacaacg gctctggtaa actgttccca aagacgccga ttccagagaa tgcatttagc
+      421 ttatcgatca ttccgtggac ttccttcacc ggatttaact tgaatatcaa caataactct
+      481 aattatctgt taccaattat cacggcgggc aaattcatta acaagggtaa tagcatctac
+      541 ttgccgctgt cgttacaagt gcaccattcc gtttgcgacg gatatcacgc cggcttgttt
+      601 atgaactcta ttcaggaact gagcgatcgt ccaaatgact ggttattg
+//

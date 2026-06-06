@@ -1,0 +1,15 @@
+LOCUS       lacO                      17 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  lacO.
+ACCESSION   lacO
+VERSION     lacO
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..17
+                     /label="lacO"
+                     /synonym="lacO"
+ORIGIN
+        1 ttgtgagcgg ataacaa
+//

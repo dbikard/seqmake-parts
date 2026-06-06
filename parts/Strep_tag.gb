@@ -1,0 +1,19 @@
+LOCUS       Strep_tag                 24 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Strep tag.
+ACCESSION   Strep_tag
+VERSION     Strep_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..24
+                     /label="Strep tag"
+                     /synonym="Strep tag"
+                     /synonym="Strep-Tag II"
+                     /synonym="StrepTag"
+                     /synonym="Strep-tag"
+                     /translation="WSHPQFEK"
+ORIGIN
+        1 tggagccatc cgcagtttga aaaa
+//

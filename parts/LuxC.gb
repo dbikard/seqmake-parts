@@ -1,0 +1,49 @@
+LOCUS       LuxC                    1446 bp    DNA              UNK 01-JAN-1980
+DEFINITION  LuxC.
+ACCESSION   LuxC
+VERSION     LuxC
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..1446
+                     /label="LuxC"
+                     /synonym="LuxC"
+                     /synonym="acyl-CoA reductase"
+                     /translation="MSMTKKISFIINGQVEIFPESDDLVQSINFGDNSVYLPILNDSHV
+                     KNIIDCNGNNELRLHNIVNFLYTVGQRWKNEEYSRRRTYIRDLKKYMGYSEEMAKLEAN
+                     WISMILCSKGGLYDVVENELGSRHIMDEWLPQDESYVRAFPKGKSVHLLAGNVPLSGIM
+                     SILRAILTKNQCIIKTSSTDPFTANALALSFIDVDPNHPITRSLSVIYWPHQGDTSLAK
+                     EIMRHADVIVAWGGPDAINWAVEHAPSYADVIKFGSKKSLCIIDNPVDLTSAATGAAHD
+                     VCFYDQRACFSAQNIYYMGNHYEEFKLALIEKLNLYAHILPNAKKDFDEKAAYSLVQKE
+                     SLFAGLKVEVDIHQRWMIIESNAGVEFNQPLGRCVYLHHVDNIEQILPYVQKNKTQTIS
+                     IFPWESSFKYRDALALKGAERIVEAGMNNIFRVGGSHDGMRPLQRLVTYISHERPSNYT
+                     AKDVAVEIEQTRFLEEDKFLVFVP"
+ORIGIN
+        1 atgagcatga ccaaaaagat ttcgtttatc attaacggcc aggtggaaat cttcccggag
+       61 tccgatgacc tggttcaatc tattaatttt ggtgataaca gcgtctattt accaatcttg
+      121 aatgactcgc atgtgaaaaa cattatcgat tgcaatggaa acaatgaact gcgtttacac
+      181 aacattgtta atttcttgta cacggtcggc cagcgctgga agaacgagga atattcccgt
+      241 cgccgtactt acatccgcga cctgaaaaag tatatgggtt actctgagga aatggcgaaa
+      301 ttagaggcca attggattag catgatcttg tgttcgaagg gaggcctgta tgatgtggtt
+      361 gaaaacgagt taggttcccg tcatattatg gacgaatggt tgccgcaaga tgagtcttac
+      421 gtccgcgcat ttccaaaagg aaagagcgtg cacctgttag cgggcaatgt tccgttgtcg
+      481 ggtatcatgt ccattctgcg tgccatctta accaaaaacc agtgcattat caagacgtct
+      541 agcactgacc cattcaccgc aaatgcgttg gccctgtcgt ttattgatgt cgacccgaac
+      601 catccaatca cgcgctcctt atctgtgatt tattggccgc accaaggaga tactagcttg
+      661 gcaaaagaaa tcatgcgtca tgcggacgtt attgtcgcct ggggcggtcc agatgcaatc
+      721 aattgggcgg tggagcacgc cccgtcgtac gcagacgtta ttaagttcgg atccaaaaag
+      781 tctctgtgta tcattgataa cccagtcgac ttaaccagcg cggccacggg cgcagcgcat
+      841 gatgtgtgct tttatgacca gcgcgcctgt ttctcggcac aaaatatcta ctatatgggt
+      901 aaccactacg aagagtttaa attggcgctg attgaaaagt taaatttgta tgcccatatc
+      961 ctgccgaacg caaaaaagga tttcgacgag aaagcggcct actccttagt tcagaaggaa
+     1021 tctttgtttg caggactgaa agtcgaggtg gatattcacc aacgttggat gatcattgaa
+     1081 agcaatgcgg gcgttgagtt caaccagcca ttaggtcgct gcgtctattt gcatcacgtg
+     1141 gacaatatcg aacaaattct gccgtacgtt cagaagaaca aaactcaaac catctcgatt
+     1201 tttccatggg agtcctcttt caagtatcgt gatgccttag cattgaaagg agcggaacgc
+     1261 atcgtcgagg ccggcatgaa taacattttt cgtgtgggtg gaagccatga cggcatgcgc
+     1321 ccgctgcagc gtttagttac gtacatctcg cacgaacgcc catccaatta tactgcaaag
+     1381 gatgtcgcgg tggagattga acaaacccgt ttcttggagg aagacaaatt tctggttttc
+     1441 gtcccg
+//

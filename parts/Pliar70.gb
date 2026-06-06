@@ -1,0 +1,16 @@
+LOCUS       Pliar70                   42 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pliar70.
+ACCESSION   Pliar70
+VERSION     Pliar70
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..42
+                     /label="Pliar70"
+                     /synonym="Pliar70"
+                     /synonym="synthetic Pliar70 promoter"
+ORIGIN
+        1 gttgtcacat ttttttaatc gcggccaggt ataattgcac ga
+//

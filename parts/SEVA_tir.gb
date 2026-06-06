@@ -1,0 +1,17 @@
+LOCUS       SEVA_tir                  24 bp    DNA              UNK 01-JAN-1980
+DEFINITION  SEVA tir.
+ACCESSION   SEVA_tir
+VERSION     SEVA_tir
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..24
+                     /label="SEVA tir"
+                     /synonym="SEVA tir"
+                     /synonym="tir region"
+                     /synonym="SEVA translation initiation region"
+ORIGIN
+        1 gattaacttt ataaggagga aaaa
+//

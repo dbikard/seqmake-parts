@@ -1,0 +1,27 @@
+LOCUS       pBBR1_oriV               772 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pBBR1 oriV.
+ACCESSION   pBBR1_oriV
+VERSION     pBBR1_oriV
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..772
+                     /label="pBBR1 oriV"
+                     /synonym="pBBR1 oriV"
+ORIGIN
+        1 gcttatctcc atgcggtagg ggtgccgcac ggttgcggca ccatgcgcaa tcagctgcaa
+       61 cttttcggca gcgcgacaac aattatgcgt tgcgtaaaag tggcagtcaa ttacagattt
+      121 tctttaacct acgcaatgag ctattgcggg gggtgccgca atgagctgtt gcgtaccccc
+      181 cttttttaag ttgttgattt ttaagtcttt cgcatttcgc cctatatcta gttctttggt
+      241 gcccaaagaa gggcacccct gcggggttcc cccacgcctt cggcgcggct ccccctccgg
+      301 caaaaagtgg cccctccggg gcttgttgat cgactgcgcg gccttcggcc ttgcccaagg
+      361 tggcgctgcc cccttggaac ccccgcactc gccgccgtga ggctcggggg gcaggcgggc
+      421 gggcttcgcc cttcgactgc ccccactcgc ataggcttgg gtcgttccag gcgcgtcaag
+      481 gccaagccgc tgcgcggtcg ctgcgcgagc cttgacccgc cttccacttg gtgtccaacc
+      541 ggcaagcgaa gcgcgcaggc cgcaggccgg aggcttttcc ccagagaaaa ttaaaaaaat
+      601 tgatggggca aggccgcagg ccgcgcagtt ggagccggtg ggtatgtggt cgaaggctgg
+      661 gtagccggtg ggcaatccct gtggtcaagc tcgtgggcag gcgcagcctg tccatcagct
+      721 tgtccagcag ggttgtccac gggccgagcg aagcgagcca gccggtggcc gc
+//

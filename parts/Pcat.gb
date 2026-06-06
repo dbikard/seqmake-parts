@@ -1,0 +1,17 @@
+LOCUS       Pcat                     103 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pcat.
+ACCESSION   Pcat
+VERSION     Pcat
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..103
+                     /label="Pcat"
+                     /synonym="Pcat"
+                     /synonym="cat promoter"
+ORIGIN
+        1 tgatcggcac gtaagaggtt ccaactttca ccataatgaa ataagatcac taccgggcgt
+       61 attttttgag ttatcgagat tttcaggagc taaggaagct aaa
+//

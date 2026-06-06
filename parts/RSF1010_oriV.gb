@@ -1,0 +1,21 @@
+LOCUS       RSF1010_oriV             395 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RSF1010 oriV.
+ACCESSION   RSF1010_oriV
+VERSION     RSF1010_oriV
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..395
+                     /label="RSF1010 oriV"
+                     /synonym="RSF1010 oriV"
+ORIGIN
+        1 ggctgcacac gcgcccccac ccttcgggta gggggaaagg ccgctaaagc ggctaaaagc
+       61 gctccagcgt atttctgcgg ggtttggtgt ggggtttagc gggctttgcc cgcctttccc
+      121 cctgccgcgc agcggtgggg cggtgtgtag cctagcgcag cgaatagacc agctatccgg
+      181 cctctggccg ggcatattgg gcaagggcag cagcgcccca caagggcgct gataaccgcg
+      241 cctagtggat tattcttaga taatcatgga tggatttttc caacaccccg ccagcccccg
+      301 cccctgctgg gtttgcaggt ttgggggcgt gacagttatt gcaggggttc gtgacagtta
+      361 ttgcaggggg gcgtgacagt tattgcaggg gttcg
+//

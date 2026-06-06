@@ -1,0 +1,19 @@
+LOCUS       PD_E20                    75 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PD/E20.
+ACCESSION   PD_E20
+VERSION     PD_E20
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..75
+                     /label="PD/E20"
+                     /synonym="PD/E20"
+                     /synonym="PD_E20"
+                     /synonym="PD/E20 (T5) constitutive promoter"
+                     /synonym="T5 core promoter"
+ORIGIN
+        1 aaaaaactgc aaaaaatagt ttgacaccct agccgatagg ctttaagatg tacccagttc
+       61 gatgagagcg ataac
+//

@@ -1,0 +1,25 @@
+LOCUS       repL                     438 bp    DNA              UNK 01-JAN-1980
+DEFINITION  repL.
+ACCESSION   repL
+VERSION     repL
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..438
+                     /label="repL"
+                     /synonym="repL"
+                     /translation="MKERYGTVYKGSQRLIDEESGEVIEVDKLYRKQTSGNFVKAYIVQ
+                     LISMLDMIGGKKLKIVNYILDNVHLSNNTMIATTREIAKATGTSLQTVITTLKILEEGN
+                     IIKRKTGVLMLNPELLMRGDDQKQKYLLLEFGNFEQEANEID"
+ORIGIN
+        1 atgaaagaac gttatggcac cgtgtacaag ggtagccagc gcctgattga tgaggaatcg
+       61 ggagaggtta tcgaagtcga caaattatat cgtaagcaaa cgtccggcaa ctttgtgaaa
+      121 gcgtacattg ttcagttgat ctctatgctg gatatgattg gtggaaagaa attaaagatc
+      181 gtcaattata ttttggacaa cgtgcatctg agcaataaca ctatgatcgc caccacgcgc
+      241 gagattgcaa aagcgactgg cacctcgtta caaacggtta tcactacctt gaagattctg
+      301 gaagagggta atatcattaa acgtaagacg ggagtcttaa tgttgaaccc ggaactgtta
+      361 atgcgcggcg atgaccagaa acaaaagtac ttgctgttag agttcggtaa ttttgaacag
+      421 gaggccaacg aaatcgat
+//

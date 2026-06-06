@@ -1,0 +1,55 @@
+LOCUS       pIJ101_ori              2239 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pIJ101 ori.
+ACCESSION   pIJ101_ori
+VERSION     pIJ101_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..2239
+                     /label="pIJ101 ori"
+                     /synonym="pIJ101"
+                     /synonym="pIJ101 ori"
+                     /synonym="Streptomyces ori"
+                     /synonym="pIJ101 origin"
+ORIGIN
+        1 ggagcgagtt agtgcgaagt gggcccactt gcgagccggg cgatgtgccg ggcggcccgc
+       61 tcctggcggt cgtcggcgtc gtcgtcctgg tcgtcgtcct gctctcgccg tcggcgtgca
+      121 gttgcttcct cgcggcgctg ggcgagggcg gcgagcatgt cggcgtacgc ctcggccacc
+      181 tcccccgccg tgagcaccac cactgtgtcg gccgcgtccg ccagcgccag gacctcccgc
+      241 acccgttcgc ccacggccgc cgggtcctcg ttgccgtcct tgccttcggc ggcccgcgtc
+      301 gcctcgaggt cgagggcgcg gcgggtgacc gcgtgccatc cgtcctcggt cacggcgacc
+      361 ccggcccgca gctccccgcc gtcggcgtcg gccgccagga gcagatcgag gtcgtcggcc
+      421 tcggtgtcgc cgccgtcgag cccgagcatc tgccgcaggt agcgggtcca ttcgatggcc
+      481 cggcgtcccc gcgttgcccg ctcgtactcg tgccagcgcg agaggttcca ctccagcgag
+      541 ccgaccccgg cggcgtcgtc ctcggtcatg ccgccggtca ggtccccgat ccgtccgagg
+      601 agttcgaacg gggcgacgtt cccgccggtc gccgtcttga ggtcggcgcg ggcgagttcg
+      661 agggcgggcg ccttcccgtc ctgggtcttg gcgatgtact cggcgaggtc gttggcgtcg
+      721 cgctcggtct ccagccgctt gaagtccacg ccgtgccggt cgtcgggcgt gaaggcgggg
+      781 ttgaccttgc gcagggcggc ggtccacacg gaccgccagt gcccctgcca ctcgtcgagc
+      841 gcggcgccgg tcggctcgaa ggtggcgacg atctgcttcg cggaccgctc cccctcggtc
+      901 cggccgccga ccaggacgat cgcgtggatg tgcgggtgcc agccgttgat ctgccccacg
+      961 gtcacctcgg tcgcgcggat catgccgacg tacccgatcc ggtctcggat gccctcgcgg
+     1021 tcggcggccc ggtgcccgtc cttggcccgg cgtccggccc acgtgccgcc cgtgatcagt
+     1081 cgctggtagg cgcccggccg ccgggggctg tccggcgtct tccgggtgcc ctggagggcg
+     1141 tccatgaggt ccgcgagccg gtccgtgtgc ccatggcggg ccgtgaaggt gaccaggtag
+     1201 gcggtccccc cgcgcttgat ccactcgacc acggcggcgg tgatctcctc ggcccgcttg
+     1261 tgccggatcg tggcggcgca gaccgggcag agccagatcc gcccgcaccg catcaggccc
+     1321 aggaccacgg acgttccggc cgccgtctgg gcgacgatca cgccggaggc agggtccatc
+     1381 agggcccggc cgcagccctt gcacgcggcg tccccgctga tccgccacag cgtccggcgg
+     1441 cggctgtacc gggcggcttt ccgcagtcgg gcagcctcgg tccgcgacgt gcttcctact
+     1501 tcccagaggc tgtcgcctct cgggctctcc ccatccaccc cgtccggaga aaccgcaggt
+     1561 cggaggggtg cgggaaactc tgttgtttct ttcccaaggt gttcgctttt gcctcgggcg
+     1621 gcatctcgcg tcacacgcgc gttcgcccgc ttcgctgcca tccggcagcg gtctgagcag
+     1681 tagatacgcg gccgtttgcc cggtgtgtgg gcaattgcgg tcccgcagtg gcagcggggc
+     1741 ccggcggccc gatctggcaa tgcctcggca tcgctccgta ctctgggcac gagcaacgtt
+     1801 cctgtctcgc ccggctaagg ggcgcgagtc tgggagcgga cgggtcggag gtgcgaagtc
+     1861 cggcccgttg ctctttggtc tggtgggaat cctggcacca atcgggccag aggttccctc
+     1921 cgccactccc gacgcccctt ggggctggtg tgacttggag ggccgaagag agccccgccg
+     1981 ggtatccggc ggggctttga cgtgcggtca gtgcgtgtgt cggcgagcga tggccacgag
+     2041 gccctggaag ccgagcggtc cggcgaagtc ggcccagtcg caaccgggct cagcgcagtg
+     2101 ggcggaccag ccaccgccgt tggggtcctg gaccaggttc acggtcccct cggtcaggcg
+     2161 tccgtcgaag tcggtcatgg tcggtctcct ggtgggtggg ggcggggcgc cagcacgaag
+     2221 tgccggcgcc ccgcggggg
+//

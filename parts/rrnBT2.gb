@@ -1,0 +1,17 @@
+LOCUS       rrnBT2                    63 bp    DNA              UNK 01-JAN-1980
+DEFINITION  rrnBT2.
+ACCESSION   rrnBT2
+VERSION     rrnBT2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..63
+                     /label="rrnBT2"
+                     /synonym="rrnBT2"
+                     /synonym="rrn BT2 terminator"
+ORIGIN
+        1 taacctaaac tgacaggcat caaattaagc agaaggccat cctgacggat ggcctttttg
+       61 cgt
+//

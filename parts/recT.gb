@@ -1,0 +1,35 @@
+LOCUS       recT                     864 bp    DNA              UNK 01-JAN-1980
+DEFINITION  recT.
+ACCESSION   recT
+VERSION     recT
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..864
+                     /label="recT"
+                     /synonym="recT"
+                     /translation="MNGQLLRHYHCPAGLRNMQMTKQPPIAKADLQKTQGNRAPAAVKN
+                     SDVISFINQPSMKEQLAAALPRHMTAERMIRIATTEIRKVPALGNCDTMSFVSAIVQCS
+                     QLGLEPGSALGHAYLLPFGNKNEKSGKKNVQLIIGYRGMIDLARRSGQIASLSARVVRE
+                     GDEFSFEFGLDEKLIHRPGENEDAPVTHVYAVARLKDGGTQFEVMTRKQIELVRSLSKA
+                     GNNGPWVTHWEEMAKKTAIRRLFKYLPVSIEIQRAVSMDEKEPLTIDPADSSVLTGEYS
+                     VIDNSEE"
+ORIGIN
+        1 atgaacggcc agctgttacg tcattatcac tgcccggcgg gtttgcgcaa tatgcaaatg
+       61 accaaacagc caccgattgc caaggcagat ctgcaaaaaa cgcagggaaa ccgtgcgcca
+      121 gccgcagtga agaatagcga cgttatctcg tttattaacc aaccgtccat gaaagaacag
+      181 ttagcggccg cattgccacg ccatatgact gcggagcgta tgatccgcat tgccaccacg
+      241 gaaatccgta aggtcccggc actgggcaat tgtgatacta tgtctttcgt gagcgcgatt
+      301 gttcaatgct cgcagttagg tttggagcca ggatccgccc tgggccacgc atacttattg
+      361 ccgtttggta acaaaaatga aaagtctgga aaaaagaacg tccaactgat cattggctat
+      421 cgcggtatga tcgacttagc gcgtcgcagc ggacagattg cctcgttgtc cgcacgtgtg
+      481 gttcgcgagg gcgatgaatt ctcttttgag ttcggtctgg acgaaaaatt aatccatcgt
+      541 ccaggagaga atgaagatgc gccggtcacc cacgtgtacg ccgttgcacg cttgaaggac
+      601 ggcggtacgc aatttgaggt catgactcgt aaacagattg aactggtgcg cagcttatcg
+      661 aaggcgggaa acaatggccc atgggttacc cattgggagg aaatggccaa aaagacggca
+      721 atccgtcgct tgttcaaata tctgccggtc tccattgaga tccaacgtgc ggtgtctatg
+      781 gatgaaaagg agccattaac tattgacccg gccgatagct cggttttgac cggtgaatac
+      841 tccgtcatcg acaactctga ggaa
+//

@@ -1,0 +1,18 @@
+LOCUS       pSC101_ori               223 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pSC101 ori.
+ACCESSION   pSC101_ori
+VERSION     pSC101_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..223
+                     /label="pSC101 ori"
+                     /synonym="pSC101 ori"
+ORIGIN
+        1 gggctagtca atgataatta ctagtccttt tcccgggaga tctgggtatc tgtaaattct
+       61 gctagacctt tgctggaaaa cttgtaaatt ctgctagacc ctctgtaaat tccgctagac
+      121 ctttgtgtgt tttttttgtt tatattcaag tggttataat ttatagaata aagaaagaat
+      181 aaaaaaagat aaaaagaata gatcccagcc ctgtgtataa ctc
+//

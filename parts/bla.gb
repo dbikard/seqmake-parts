@@ -1,0 +1,40 @@
+LOCUS       bla                      858 bp    DNA              UNK 01-JAN-1980
+DEFINITION  bla.
+ACCESSION   bla
+VERSION     bla
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..858
+                     /label="bla"
+                     /synonym="AmpR"
+                     /synonym="amp"
+                     /synonym="bla"
+                     /synonym="beta-lactamase"
+                     /synonym="TEM-1"
+                     /synonym="penicillinase"
+                     /translation="MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYI
+                     ELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYS
+                     PVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRW
+                     EPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSA
+                     LPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGAS
+                     LIKHW"
+ORIGIN
+        1 atgagcattc agcattttcg tgtggcgctg atcccgttct ttgccgcatt ctgcttacca
+       61 gtttttgcgc acccggaaac cttggtcaaa gtgaaggatg ccgaggacca actgggcgca
+      121 cgcgttggtt atattgaatt agatttgaac tcgggaaaaa tcctggagtc cttccgtcca
+      181 gaagagcgct ttccgatgat gtctacgttc aaggtcttat tgtgtggcgc ggtgctgagc
+      241 cgtgttgacg ccggtcagga acaattagga cgccgtattc attactcgca gaatgatttg
+      301 gtcgagtatt ccccagtgac tgaaaaacac ctgaccgacg gcatgacggt tcgcgagtta
+      361 tgctctgcag cgatcactat gagcgataac accgccgcaa atttgctgtt aacgactatt
+      421 ggtggaccga aggaattgac cgcgtttctg cataacatgg gcgaccacgt cacgcgttta
+      481 gatcgctggg agccagaatt gaatgaggcc atcccgaacg acgaacgtga tactaccatg
+      541 ccagtggcaa tggcgacgac tctgcgcaaa ttattgaccg gtgagctgtt aacgttggcc
+      601 tcgcgtcaac agctgattga ctggatggaa gcagataagg ttgcgggacc gttattgcgc
+      661 tccgccctgc cagcaggctg gttcatcgcg gacaaatctg gtgccggaga gcgtggcagc
+      721 cgcggtatta tcgcagcgtt aggaccggat ggcaagccat cgcgtattgt cgtgatctac
+      781 actaccggtt cccaagccac gatggacgaa cgcaatcgtc agattgcaga gatcggagcg
+      841 tctttgatta aacattgg
+//

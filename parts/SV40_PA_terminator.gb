@@ -1,0 +1,16 @@
+LOCUS       SV40_PA_terminat         120 bp    DNA              UNK 01-JAN-1980
+DEFINITION  SV40_PA_terminator.
+ACCESSION   SV40_PA_terminat
+VERSION     SV40_PA_terminat
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..120
+                     /label="SV40_PA_terminator"
+                     /synonym="SV40_PA_terminator"
+ORIGIN
+        1 ttgtttattg cagcttataa tggttacaaa taaagcaata gcatcacaaa tttcacaaat
+       61 aaagcatttt tttcactgca ttctagttgt ggtttgtcca aactcatcaa tgtatcttat
+//

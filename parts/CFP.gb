@@ -1,0 +1,33 @@
+LOCUS       CFP                      717 bp    DNA              UNK 01-JAN-1980
+DEFINITION  CFP.
+ACCESSION   CFP
+VERSION     CFP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..717
+                     /label="CFP"
+                     /synonym="CFP"
+                     /synonym="cyan fluorescent protein"
+                     /synonym="ECFP"
+                     /translation="MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTL
+                     KFICTTGKLPVPWPTLVTTLTWGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDD
+                     GNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYISHNVYITADKQKNGIK
+                     ANFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLL
+                     EFVTAAGITLGMDELYK"
+ORIGIN
+        1 atggtgagca aaggcgaaga gctgtttacc ggtgttgtcc cgattttagt ggaattggat
+       61 ggagacgtta acggccataa gttctcggtc tccggtgagg gagaaggcga tgcgacgtat
+      121 ggtaaactga ctttaaagtt tatctgcacc acgggaaaat tgccagtgcc gtggccaact
+      181 ctggttacca cgttaacttg gggcgtccag tgtttctctc gttacccgga ccacatgaag
+      241 caacatgatt ttttcaaaag cgccatgcca gagggttatg tgcaggaacg caccattttt
+      301 ttcaaggacg atggaaatta caaaacgcgt gcagaggtta agtttgaagg cgacactttg
+      361 gtcaaccgca tcgagctgaa aggtattgat ttcaaggaag acggaaatat cttaggccac
+      421 aaattggagt ataactacat ttcgcataat gtgtatatca ccgcggataa gcaaaaaaac
+      481 ggtattaagg ccaattttaa aatccgtcac aacattgaag acggatccgt tcagctggca
+      541 gatcattacc aacagaatac gccgatcggc gacggtccag tcttattgcc ggataaccac
+      601 tatctgtcta ctcaaagcgc gttatcgaag gacccaaatg agaaacgcga tcatatggtg
+      661 ttgctggaat tcgttaccgc cgcaggaatt acgttaggca tggacgagtt gtacaag
+//

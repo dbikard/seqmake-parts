@@ -1,0 +1,18 @@
+LOCUS       TEV_site                  21 bp    DNA              UNK 01-JAN-1980
+DEFINITION  TEV site.
+ACCESSION   TEV_site
+VERSION     TEV_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..21
+                     /label="TEV site"
+                     /synonym="TEV site"
+                     /synonym="TEV"
+                     /synonym="TEV cleavage site"
+                     /translation="ENLYFQG"
+ORIGIN
+        1 gaaaacctgt attttcaggg c
+//

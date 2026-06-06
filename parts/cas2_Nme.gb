@@ -1,0 +1,24 @@
+LOCUS       cas2_Nme                 324 bp    DNA              UNK 01-JAN-1980
+DEFINITION  cas2 (Nme).
+ACCESSION   cas2_Nme
+VERSION     cas2_Nme
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..324
+                     /label="cas2 (Nme)"
+                     /synonym="cas2 (Nme)"
+                     /synonym="cas2 NMV_RS09845"
+                     /translation="MSEAKFMRIIVFFDLPVITAAKRKAANQFRQFLLKDGYQMLQLSV
+                     YSRIVKGRDSLQKHHNRLCANLPQEGSIRCLEITEKQYAAMKLLLGELKTQEKKVNSDQ
+                     LLLF"
+ORIGIN
+        1 atgagcgaag cgaaatttat gcgtattatc gtgttctttg atctgccggt tattaccgcc
+       61 gcaaagcgca aagcggccaa ccagttccgt caatttttat tgaaggacgg ctatcagatg
+      121 ctgcaattat cggtctactc ccgcatcgtg aaaggtcgtg attctttgca gaagcatcac
+      181 aatcgcctgt gcgcaaactt accacaagag ggaagcattc gttgtttgga aatcacggag
+      241 aaacagtatg cggccatgaa gctgttattg ggcgaactga aaactcaaga gaagaaagtt
+      301 aattcggacc agttattgct gttc
+//

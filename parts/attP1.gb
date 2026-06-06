@@ -1,0 +1,15 @@
+LOCUS       attP1                     25 bp    DNA              UNK 01-JAN-1980
+DEFINITION  attP1.
+ACCESSION   attP1
+VERSION     attP1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..25
+                     /label="attP1"
+                     /synonym="attP1"
+ORIGIN
+        1 gttcagcttt tttgtacaaa gttgg
+//

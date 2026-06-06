@@ -1,0 +1,42 @@
+site_name: DNA Parts Catalog
+site_description: An open, community-curated catalog of annotated DNA parts.
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+validation:
+  nav:
+    omitted_files: ignore
+  not_found: warn
+
+nav:
+  - Catalog: index.md

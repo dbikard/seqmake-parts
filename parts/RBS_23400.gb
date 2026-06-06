@@ -1,0 +1,17 @@
+LOCUS       RBS_23400                 25 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RBS 23400.
+ACCESSION   RBS_23400
+VERSION     RBS_23400
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..25
+                     /label="RBS 23400"
+                     /synonym="RBS 23400"
+                     /synonym="Synthetic RBS 23"
+                     /synonym="400 TIR (NEQ)"
+ORIGIN
+        1 gatttcgcaa gctaaggaag ctaaa
+//

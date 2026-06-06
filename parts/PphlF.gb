@@ -1,0 +1,65 @@
+LOCUS       PphlF                     51 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  PhlF-repressible promoter: J23119-derived core with the phO operator
+            overlapping the -10, so PhlF binding blocks transcription.
+ACCESSION   PphlF
+VERSION     PphlF
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Stanton BC, Nielsen AA, Tamsir A, Clancy K, Peterson T, Voigt CA
+  TITLE     Genomic mining of prokaryotic repressors for orthogonal logic gates
+  JOURNAL   Nat Chem Biol 10(2):99-105 (2014)
+   PUBMED   24316737
+  REMARK    doi:10.1038/nchembio.1411
+REFERENCE   2
+  AUTHORS   Nielsen AA, Der BS, Shin J, Vaidyanathan P, Paralanov V, Strychalski
+            EA, Ross D, Densmore D, Voigt CA
+  TITLE     Genetic circuit design automation
+  JOURNAL   Science 352(6281):aac7341 (2016)
+   PUBMED   27034378
+  REMARK    doi:10.1126/science.aac7341
+REFERENCE   3
+  AUTHORS   Abbas A, Morrissey JP, Marquez PC, Sheehan MM, Delany IR, O'Gara F
+  TITLE     Characterization of interactions between the transcriptional
+            repressor PhlF and its binding site at the phlA promoter in
+            Pseudomonas fluorescens F113
+  JOURNAL   J Bacteriol 184(11):3008-3016 (2002)
+   PUBMED   12003942
+  REMARK    doi:10.1128/JB.184.11.3008-3016.2002
+FEATURES             Location/Qualifiers
+     promoter        1..51
+                     /label="PphlF"
+                     /synonym="PphlF"
+                     /synonym="PhlF promoter"
+                     /note="PhlF-repressible promoter: J23119-derived core with
+                     the phO operator overlapping the -10, so PhlF binding
+                     blocks transcription."
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      17..22
+                     /label="-35"
+                     /parent="PphlF"
+                     /regulatory_class="minus_35_signal"
+                     /note="J23119-derived -35 box (TTGACA)"
+                     /citation=[1]
+     regulatory      40..45
+                     /label="-10"
+                     /parent="PphlF"
+                     /regulatory_class="minus_10_signal"
+                     /note="-10 box (TATCGT); overlapped by the phO operator"
+                     /citation=[1]
+     protein_bind    22..51
+                     /label="phO"
+                     /parent="PphlF"
+                     /note="PhlF operator (phO): 30-bp PhlF-dimer binding site
+                     (inverted repeat). Native operator defined by Abbas 2002
+                     (downstream of the phlA TSS); overlaid onto the -10 in the
+                     synthetic PphlF (Stanton 2014) so PhlF binding occludes
+                     transcription."
+                     /citation=[3]
+                     /citation=[1]
+ORIGIN
+        1 tctgattcgt taccaattga catgatacga aacgtaccgt atcgttaagg t
+//

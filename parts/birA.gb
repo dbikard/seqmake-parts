@@ -1,0 +1,38 @@
+LOCUS       birA                     963 bp    DNA              UNK 01-JAN-1980
+DEFINITION  birA.
+ACCESSION   birA
+VERSION     birA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..963
+                     /label="birA"
+                     /synonym="BirA"
+                     /synonym="biotin--protein ligase"
+                     /translation="MKDNTVPLKLIALLANGEFHSGEQLGETLGMSRAAINKHIQTLRD
+                     WGVDVFTVPGKGYSLPEPIQLLNAKQILGQLDGGSVAVLPVIDSTNQYLLDRIGELKSG
+                     DACIAEYQQAGRGRRGRKWFSPFGANLYLSMFWRLEQGPAAAIGLSLVIGIVMAEVLRK
+                     LGADKVRVKWPNDLYLQDRKLAGILVELTGKTGDAAQIVIGAGINMAMRRVEESVVNQG
+                     WITLQEAGINLDRNTLAAMLIRELRAALELFEQEGLAPYLSRWEKLDNFINRPVKLIIG
+                     DKEIFGISRGIDKQGALLLEQDGIIKPWMGGEISLRSAEK"
+ORIGIN
+        1 atgaaagata acaccgtgcc gctgaagtta attgcgttgc tggccaatgg cgaatttcat
+       61 agcggtgagc agttaggaga aacgttgggc atgtcgcgtg cagcgatcaa caaacacatt
+      121 caaactctgc gcgactgggg tgttgatgtc ttcaccgtgc caggaaaggg ctattcctta
+      181 ccggagccaa tccagttgct gaatgccaaa caaattttag gtcagttgga cggaggctct
+      241 gttgcagtcc tgccggtgat cgatagcacg aaccaatact tattggaccg tattggtgaa
+      301 ctgaagtcgg gagatgcgtg catcgccgag tatcagcaag caggccgcgg tcgtcgcgga
+      361 cgtaaatggt tttccccatt cggcgcgaat ttatacttgt ctatgttttg gcgcctggaa
+      421 cagggtccgg ccgcagcgat tggattaagc ttggttatcg gcattgtcat ggccgaggtg
+      481 ctgcgtaagt taggtgcaga caaagttcgc gtcaagtggc caaacgattt gtatctgcaa
+      541 gaccgtaaat tagcgggaat cttggtggaa ctgactggca agaccggtga tgccgcacag
+      601 attgttatcg gagcgggcat taatatggcc atgcgccgtg tcgaggaatc ggtggttaac
+      661 caaggttgga tcacgttaca ggaggcagga attaatttgg accgcaacac tctggcggcc
+      721 atgttaatcc gtgaattgcg cgcagcgctg gagttattcg aacaagaggg cttggccccg
+      781 tacctgtccc gttgggaaaa attagataat tttattaacc gcccagtcaa gttgatcatt
+      841 ggtgacaaag agatcttcgg aatttctcgt ggcatcgata agcagggtgc actgttattg
+      901 gaacaagacg gaattatcaa accgtggatg ggcggtgaga ttagcctgcg ctcggcggaa
+      961 aag
+//

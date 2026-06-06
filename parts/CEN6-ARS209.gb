@@ -1,0 +1,26 @@
+LOCUS       CEN6-ARS209              510 bp    DNA              UNK 01-JAN-1980
+DEFINITION  CEN6-ARS209.
+ACCESSION   CEN6-ARS209
+VERSION     CEN6-ARS209
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     misc_feature    1..510
+                     /label="CEN6-ARS209"
+                     /synonym="CEN6-ARS209"
+                     /synonym="yeast centromere/ARS"
+                     /synonym="CEN6 ARS209"
+                     /synonym="S. cerevisiae CEN6-ARS209"
+ORIGIN
+        1 cttttcatca cgtgctataa aaataattat aatttaaaat ttttaatata aatatataaa
+       61 ttaaaaatag aaagtaaaaa aagaaattaa agaaaaaata gtttttgttt tccgaagatg
+      121 taaaagactc tagggggatc gccaacaaat actacctttt atcttgctct tcctgctctc
+      181 aggtattaat gccgaattgt ttcatcttgt ctgtgtagaa gaccacacac gaaaatcctg
+      241 tgattttaca ttttacttat cgttaatcga atgtatatct atttaatctg cttttcttgt
+      301 ctaataaata tatatgtaaa gtacgctttt tgttgaaatt ttttaaacct ttgtttattt
+      361 ttttttcttc attccgtaac tcttctacct tctttattta ctttctaaaa tccaaataca
+      421 aaacataaaa ataaataaac acagagtaaa ttcccaaatt attccatcat taaaagatac
+      481 gaggcgcgtg taagttacag gcaagcgatc
+//

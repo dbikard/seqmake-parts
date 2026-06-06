@@ -1,0 +1,33 @@
+LOCUS       mRFP1                    675 bp    DNA              UNK 01-JAN-1980
+DEFINITION  mRFP1.
+ACCESSION   mRFP1
+VERSION     mRFP1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..675
+                     /label="mRFP1"
+                     /synonym="mRFP1"
+                     /synonym="RFP"
+                     /synonym="red fluorescent protein"
+                     /translation="MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAK
+                     LKVTKGGPLPFAWDILSPQFQYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGV
+                     VTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASTERMYPEDGALKGEIKM
+                     RLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHS
+                     TGA"
+ORIGIN
+        1 atggcgagct cggaagatgt gattaaagag tttatgcgtt tcaaggttcg catggaaggc
+       61 tccgtcaacg gtcatgagtt tgaaatcgag ggagaaggcg agggtcgtcc gtatgaagga
+      121 acccagacgg ccaaactgaa ggtgactaaa ggcggtccat taccgttcgc atgggacatt
+      181 ttgtctccac aatttcagta cggaagcaag gcgtatgtta aacacccggc cgatatccca
+      241 gactacctga agttatcgtt cccggagggc tttaaatggg aacgcgtcat gaatttcgag
+      301 gatggtggag tggttaccgt cacgcaagac tcctctttgc aggatggcga atttatttat
+      361 aaggtgaaac tgcgtggtac taacttccca agcgacggac cggttatgca aaagaaaacc
+      421 atgggctggg aggcatcgac ggaacgcatg tacccagagg atggtgcgtt aaagggagaa
+      481 atcaaaatgc gtttgaagct gaaagacggc ggtcattatg atgccgaggt caagactacc
+      541 tacatggcaa aaaagccggt gcagttacca ggagcgtata aaacggacat taagttggat
+      601 atcacttccc acaatgaaga ctacaccatt gttgagcaat atgaacgcgc cgagggccgt
+      661 cattctacgg gtgca
+//

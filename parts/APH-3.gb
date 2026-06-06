@@ -1,0 +1,33 @@
+LOCUS       APH-3                    792 bp    DNA              UNK 01-JAN-1980
+DEFINITION  APH-3.
+ACCESSION   APH-3
+VERSION     APH-3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..792
+                     /label="APH-3"
+                     /synonym="APH-3"
+                     /translation="MAKMRISPELKKLIEKYRCVKDTEGMSPAKVYKLVGENENLYLKM
+                     TDSRYKGTTYDVEREKDMMLWLEGKLPVPKVLHFERHDGWSNLLMSEADGVLCSEEYED
+                     EQSPEKIIELYAECIRLFHSIDISDCPYTNSLDSRLAELDYLLNNDLADVDCENWEEDT
+                     PFKDPRELYDFLKTEKPEEELVFSHGDLGDSNIFVKDGKVSGFIDLGRSGRADKWYDIA
+                     FCVRSIREDIGEEQYVELFFDLLGIKPDWEKIKYYILLDELF"
+ORIGIN
+        1 atggcgaaaa tgcgtattag cccggaactg aagaaattaa tcgagaagta tcgctgcgtg
+       61 aaagataccg aaggcatgtc gccagccaag gtttacaaat tggtcggtga gaacgaaaat
+      121 ctgtatttaa agatgacgga ctcccgttac aaaggaacta cctatgatgt ggagcgcgaa
+      181 aaggacatga tgttgtggct ggagggcaaa ttaccggttc caaaggtctt gcattttgaa
+      241 cgtcacgatg gttggtctaa cctgttaatg agcgaggcag acggagtgtt gtgttcggaa
+      301 gagtacgaag atgagcagtc cccggaaaaa attatcgagc tgtatgcgga atgcattcgc
+      361 ttattccatt ctatcgacat tagcgattgt ccatacacga attcgttgga ctcccgtctg
+      421 gccgagttag attatttgct gaacaatgac ttagcagatg ttgactgcga aaactgggag
+      481 gaagatactc cgtttaagga cccacgcgag ttgtacgatt tcctgaaaac cgaaaagccg
+      541 gaggaagagt tagtcttttc tcacggcgac ttgggtgata gcaatatctt cgtgaaagac
+      601 ggaaaggttt cgggctttat tgatctgggt cgttccggac gcgcggacaa atggtatgat
+      661 atcgccttct gtgtccgttc tattcgcgaa gacatcggcg aggaacaata cgtggagtta
+      721 tttttcgatt tgctgggtat taagccagac tgggaaaaaa tcaagtatta cattttattg
+      781 gatgagctgt tt
+//

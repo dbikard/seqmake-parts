@@ -1,0 +1,36 @@
+LOCUS       aadA                     789 bp    DNA              UNK 01-JAN-1980
+DEFINITION  aadA.
+ACCESSION   aadA
+VERSION     aadA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..789
+                     /label="aadA"
+                     /synonym="aadA"
+                     /synonym="SpecR"
+                     /synonym="SmR"
+                     /synonym="spectinomycin adenyltransferase"
+                     /translation="MREAVIAEVSTQLSEVVGVIERHLEPTLLAVHLYGSAVDGGLKPH
+                     SDIDLLVTVTVRLDETTRRALINDLLETSASPGESEILRAVEVTIVVHDDIIPWRYPAK
+                     RELQFGEWQRNDILAGIFEPATIDIDLAILLTKAREHSVALVGPAAEELFDPVPEQDLF
+                     EALNETLTLWNSPPDWAGDERNVVLTLSRIWYSAVTGKIAPKDVAADWAMERLPAQYQP
+                     VILEARQAYLGQEEDRLASRADQLEEFVHYVKGEITKVVGK"
+ORIGIN
+        1 atgcgtgaag cggtgattgc cgaggttagc acccagctgt cggaagtcgt gggcgttatc
+       61 gagcgccatt tagaaccgac gttgctggca gtccacttat atggttccgc ggtggatgga
+      121 ggcttgaaac cacattctga cattgatctg ttagttactg tcaccgtgcg tttggacgag
+      181 acgactcgcc gtgccctgat caacgattta ttggaaacca gcgcatcgcc gggtgagtcc
+      241 gaaattctgc gcgcggttga ggtcacgatc gtggttcacg acgatattat cccatggcgt
+      301 tacccggcca agcgcgaatt acaatttgga gagtggcagc gtaatgacat tttggcaggc
+      361 atcttcgaac cagcgactat tgatatcgac ctggccattt tattgaccaa agcacgcgag
+      421 cattctgtcg cgctggtggg tccggccgca gaagagttat ttgatccagt tccggaacaa
+      481 gacttgttcg aggcgctgaa cgaaacgtta actttgtgga atagcccacc ggattgggcc
+      541 ggagacgagc gtaacgtcgt gctgacctta tcgcgcatct ggtattccgc agttacgggc
+      601 aagattgcgc caaaagatgt cgccgcagac tgggcgatgg aacgtttgcc ggcccagtac
+      661 caaccagtga tcctggaggc acgccaggcg tatttaggtc aagaagagga tcgtttggcc
+      721 tctcgcgcag accagctgga agagtttgtt cactacgtca agggagaaat tactaaagtg
+      781 gttggcaag
+//

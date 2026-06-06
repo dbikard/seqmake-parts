@@ -1,0 +1,15 @@
+LOCUS       tetO                      19 bp    DNA              UNK 01-JAN-1980
+DEFINITION  tetO.
+ACCESSION   tetO
+VERSION     tetO
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..19
+                     /label="tetO"
+                     /synonym="tetO"
+ORIGIN
+        1 tctctatcat tgatagagt
+//

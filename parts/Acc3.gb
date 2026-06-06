@@ -1,0 +1,30 @@
+LOCUS       Acc3                     531 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Acc3.
+ACCESSION   Acc3
+VERSION     Acc3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..531
+                     /label="Acc3"
+                     /synonym="Acc3"
+                     /synonym="acc3"
+                     /synonym="gentamicin 3-N-acetyltransferase"
+                     /synonym="GmR (SEVA)"
+                     /translation="MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALD
+                     LFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRS
+                     EIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIR
+                     EEVMHFDIDPSTAT"
+ORIGIN
+        1 atgctgcgta gctcgaacga tgtgacccag caaggctccc gcccgaaaac gaagttaggt
+       61 ggatctagca tgggcattat ccgtacttgc cgcttgggtc cagaccaggt taaatcgatg
+      121 cgtgcggccc tggatttatt tggacgcgaa ttcggcgacg tcgcaaccta ttcccaacat
+      181 cagccggatt ctgactactt gggtaatctg ttacgtagca agacgtttat tgcgttggcc
+      241 gcattcgatc aagaggcggt ggttggagcc ctggcagcgt atgtcttacc aaaatttgaa
+      301 cagccgcgct cggagatcta catttatgac ttggccgtgt ccggcgaaca ccgtcgccaa
+      361 ggtatcgcaa ctgcgctgat taacttattg aagcatgagg ccaatgcact gggagcgtac
+      421 gttatctatg tccaggccga ttacggcgac gatccagcag tggcgttata taccaaattg
+      481 ggtattcgtg aagaggttat gcacttcgac atcgatccgt ctacggccac t
+//

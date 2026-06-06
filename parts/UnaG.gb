@@ -1,0 +1,24 @@
+LOCUS       UnaG                     417 bp    DNA              UNK 01-JAN-1980
+DEFINITION  UnaG.
+ACCESSION   UnaG
+VERSION     UnaG
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..417
+                     /label="UnaG"
+                     /synonym="UnaG"
+                     /translation="MVEKFVGTWKIADSHNFGEYLKAIGAPKELSDGGDATTPTLYISQ
+                     KDGDKMTVKIENGPPTFLDTQVKFKLGEEFDEFPSDRRKGVKSVVNLVGEKLVYVQKWD
+                     GKETTYVREIKDGKLVVTLTMGDVVAVRSYRRATE"
+ORIGIN
+        1 atggtggaaa aatttgttgg cacctggaag attgcggata gccataactt cggtgagtat
+       61 ctgaaagcca tcggagcacc gaaggaatta tcggacggcg gtgatgcgac gactccaacc
+      121 ttgtacattt cccagaaaga cggagataag atgacggtca aaatcgagaa tggcccgcca
+      181 acttttctgg acacccaagt gaagttcaaa ttaggtgaag agtttgatga attcccgtct
+      241 gaccgtcgca agggagttaa aagcgtcgtg aacttggttg gcgagaagct ggtctatgtg
+      301 cagaaatggg atggtaagga aacgacttac gttcgtgaga ttaaagacgg aaagttagtc
+      361 gtgaccttga cgatgggcga tgttgtcgcc gtgcgctcgt atcgtcgcgc aactgaa
+//

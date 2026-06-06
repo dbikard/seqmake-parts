@@ -1,0 +1,30 @@
+LOCUS       AID                      597 bp    DNA              UNK 01-JAN-1980
+DEFINITION  AID.
+ACCESSION   AID
+VERSION     AID
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..597
+                     /label="AID"
+                     /synonym="AID"
+                     /synonym="AICDA"
+                     /synonym="activation-induced cytidine deaminase"
+                     /translation="MGDSLLMNRRKFLYQFKNVRWAKGRRETYLCYVVKRRDSATSFSL
+                     DFGYLRNKNGCHVELLFLRYISDWDLDPGRCYRVTWFTSWSPCYDCARHVADFLRGNPN
+                     LSLRIFTARLYFCEDRKAEPEGLRRLHRAGVQIAIMTFKDYFYCWNTFVENHERTFKAW
+                     EGLHENSVRLSRQLRRILLPLYEVDDLRDAFRTLGL"
+ORIGIN
+        1 atgggcgata gcctgttaat gaaccgtcgc aaatttttgt atcagttcaa gaatgtgcgt
+       61 tgggcgaaag gtcgccgtga aacctacctg tgctatgttg tcaagcgccg tgactcggcc
+      121 acgtcctttt ctttagattt cggatacttg cgcaacaaaa atggctgtca tgtggagctg
+      181 ttatttttgc gttatattag cgactgggat ctggacccgg gtcgctgcta ccgtgttact
+      241 tggttcacct cgtggtcccc atgttatgat tgcgcacgcc acgtcgcgga ctttttacgt
+      301 ggaaacccga atttgtctct gcgcatcttc acggcccgtt tatacttttg tgaagatcgc
+      361 aaggcagagc cagaaggctt gcgtcgcctg catcgtgcgg gtgtgcaaat tgccatcatg
+      421 actttcaaag actattttta ctgctggaac accttcgttg agaatcacga acgcacgttt
+      481 aaggcatggg agggattaca tgaaaacagc gtccgtttgt cgcgccagct gcgtcgcatt
+      541 ttattgccgc tgtatgaggt ggatgactta cgtgatgcgt tccgcacttt gggcctg
+//

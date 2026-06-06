@@ -1,0 +1,18 @@
+LOCUS       oriT                     228 bp    DNA              UNK 01-JAN-1980
+DEFINITION  oriT.
+ACCESSION   oriT
+VERSION     oriT
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     oriT            1..228
+                     /label="oriT"
+                     /synonym="OriT"
+ORIGIN
+        1 tctgttacgc cggcggtagc cggccagcct cgcagagcag gattcccgtt gagcaccgcc
+       61 aggtgcgaat aagggacagt gaagaaggaa cacccgctcg cgggtgggcc tacttcacct
+      121 atcctgcccg gctgacgccg ttggatacac caaggaaagt ctacacgaac cctttggcaa
+      181 aatcctgtat atcgtgcgaa aaaggatgga tataccgaaa aaatcgct
+//

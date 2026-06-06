@@ -1,0 +1,15 @@
+LOCUS       L3S1P13                   51 bp    DNA              UNK 01-JAN-1980
+DEFINITION  L3S1P13.
+ACCESSION   L3S1P13
+VERSION     L3S1P13
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..51
+                     /label="L3S1P13"
+                     /synonym="L3S1P13"
+ORIGIN
+        1 gacgaacaat aaggcctccc taacgggggg ccttttttat tgataacaaa a
+//

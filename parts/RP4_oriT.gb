@@ -1,0 +1,21 @@
+LOCUS       RP4_oriT                 257 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RP4 oriT.
+ACCESSION   RP4_oriT
+VERSION     RP4_oriT
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     oriT            1..257
+                     /label="RP4 oriT"
+                     /synonym="RP4 oriT"
+                     /synonym="RP4 transfer origin"
+                     /synonym="oriT RP4"
+ORIGIN
+        1 ggtaccagcg cttttccgct gcataaccct gcttcggggt cattatagcg attttttcgg
+       61 tatatccatc ctttttcgca cgatatacag gattttgcca aagggttcgt gtagactttc
+      121 cttggtgtat ccaacggcgt cagccgggca ggataggtga agtaggccca cccgcgagcg
+      181 ggtgttcctt cttcactgtc ccttattcgc acctggcggt gctcaacggg aatcctgctc
+      241 tgcgaggctg gccggcg
+//

@@ -1,0 +1,28 @@
+LOCUS       ColE1                    792 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ColE1.
+ACCESSION   ColE1
+VERSION     ColE1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..792
+                     /label="ColE1"
+                     /synonym="ColE1"
+ORIGIN
+        1 gaaaagatca aaggatcttc ttgagatcct ttttttctgc gcgtaatctg ctgcttgcaa
+       61 acaaaaaaac caccgctacc agcggtggtt tgtttgccgg atcaagagct accaactctt
+      121 tttccgaagg taactggctt cagcagagcg cagataccaa atactgtcct tctagtgtag
+      181 ccgtagttag gccaccactt caagaactct gtagcaccgc ctacatacct cgctctgcta
+      241 atcctgttac cagtggctgc tgccagtggc gataagtcgt gtcttaccgg gttggactca
+      301 agacgatagt taccggataa ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag
+      361 cccagcttgg agcgaacgac ctacaccgaa ctgagatacc tacagcgtga gcattgagaa
+      421 agcgccacgc ttcccgaagg gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga
+      481 acaggagagc gcacgaggga gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc
+      541 gggtttcgcc acctctgact tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc
+      601 ctatggaaaa acgccagcaa cgcggccttt ttacggttcc tggccttttg ctggcctttt
+      661 gctcacatgt tctttcctgc gttatcccct gattctgtgg ataaccgtat taccgccttt
+      721 gagtgagctg ataccgctcg ccgcagccga acgaccgagc gcagcgagtc agtgagcgag
+      781 gaagcggaag ag
+//

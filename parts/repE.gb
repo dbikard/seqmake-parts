@@ -1,0 +1,32 @@
+LOCUS       repE                     753 bp    DNA              UNK 01-JAN-1980
+DEFINITION  repE.
+ACCESSION   repE
+VERSION     repE
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..753
+                     /label="repE"
+                     /synonym="repE"
+                     /translation="MAETAVINHKKRKNSPRIVQSNDLTEAAYSLSRDQKRMLYLFVDQ
+                     IRKSDGTLQEHDGICEIHVAKYAEIFGLTSAEASKDIRQALKSFAGKEVVFYRPEEDAG
+                     DEKGYESFPWFIKRAHSPSRGLYSVHINPYLIPFFIGLQNRFTQFRLSETKEITNPYAM
+                     RLYESLCQYRKPDGSGIVSLKIDWIIERYQLPQSYQRMPDFRRRFLQVCVNEINSRTPM
+                     RLSYIEKKKGRQTTHIVFSFRDITSMTTG"
+ORIGIN
+        1 atggcggaaa ccgccgtgat taaccataaa aagcgtaaaa atagcccgcg catcgttcag
+       61 tcgaacgatc tgacggaggc agcgtattcc ttatctcgtg accaaaagcg catgttgtac
+      121 ctgtttgtcg atcagattcg taaaagcgac ggcactttac aagaacacga tggtatctgc
+      181 gagattcatg tggccaagta tgcagaaatc ttcggattga cctcggcgga ggcctccaaa
+      241 gacattcgcc aggcactgaa gtcttttgcg ggcaaagaag ttgtcttcta ccgtccagag
+      301 gaagatgccg gtgacgagaa gggatatgaa agctttccgt ggttcatcaa acgcgcacac
+      361 tcgccatccc gtggcttata ctctgtgcat attaatccgt atttgatccc atttttcatt
+      421 ggtctgcaaa accgctttac gcagttccgt ttaagcgaga ctaaggaaat caccaatccg
+      481 tacgcgatgc gcttgtatga gtcgctgtgt caataccgta aaccagatgg atccggcatt
+      541 gtttctttaa agatcgactg gattatcgaa cgctatcagt tgccgcaaag ctaccagcgt
+      601 atgccagatt ttcgccgtcg cttcctgcaa gtctgcgtga acgagattaa ttcgcgtacg
+      661 ccgatgcgct tatcctatat cgaaaaaaag aaaggtcgtc agactaccca cattgttttt
+      721 tctttccgcg acatcacgag catgactacc gga
+//

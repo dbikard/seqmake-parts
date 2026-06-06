@@ -1,0 +1,32 @@
+LOCUS       tetR                     624 bp    DNA              UNK 01-JAN-1980
+DEFINITION  tetR.
+ACCESSION   tetR
+VERSION     tetR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..624
+                     /label="tetR"
+                     /synonym="TetR"
+                     /synonym="tetR"
+                     /synonym="tet repressor"
+                     /synonym="tetracycline repressor"
+                     /translation="MMSRLDKSKVINSALELLNEVGIEGLTTRKLAQKLGVEQPTLYWH
+                     VKNKRALLDALAIEMLDRHHTHFCPLEGESWQDFLRNNAKSFRCALLSHRDGAKVHLGT
+                     RPTEKQYETLENQLAFLCQQGFSLENALYALSAVGHFTLGCVLEDQEHQVAKEERETPT
+                     TDSMPPLLRQAIELFDHQGAEPAFLFGLELIICGLEKQLKCESGS"
+ORIGIN
+        1 atgatgagcc gtctggataa atcgaaggtg attaactccg cgttagaatt gctgaatgag
+       61 gttggcatcg aaggtttaac cacgcgcaaa ttggcccaga agctgggagt cgagcaaccg
+      121 actttatatt ggcatgtgaa aaacaagcgt gcattgctgg acgcgttagc cattgaaatg
+      181 ttggatcgcc accataccca cttttgccca ctggagggcg aatcttggca ggacttctta
+      241 cgtaataacg caaaaagctt tcgctgtgcg ttgctgtcgc atcgtgatgg tgccaaggtt
+      301 cacttaggaa cgcgcccgac tgagaaacaa tacgaaacct tggagaatca gctggcattc
+      361 ttatgccaac agggcttttc cttggaaaac gcgctgtatg ccttatctgc agtcggtcat
+      421 ttcacgttgg gatgtgtgct ggaggaccaa gaacaccagg ttgcgaagga ggaacgtgag
+      481 actccaacca cggatagcat gccgccatta ttgcgccaag ccatcgaact gtttgaccat
+      541 cagggcgcag agccggcgtt cttatttggt ttggaactga ttatctgcgg attagagaaa
+      601 caattgaagt gtgaatcggg ctcc
+//

@@ -1,0 +1,22 @@
+LOCUS       R6Kgamma_ori             430 bp    DNA              UNK 01-JAN-1980
+DEFINITION  R6Kgamma ori.
+ACCESSION   R6Kgamma_ori
+VERSION     R6Kgamma_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..430
+                     /label="R6Kgamma ori"
+                     /synonym="R6Kgamma ori"
+ORIGIN
+        1 aagatccggc cacgatgcgt ccggcgtaga ggatctgaag atcagcagtt caacctgttg
+       61 atagtacgta ctaagctctc atgtttcacg tactaagctc tcatgtttaa cgtactaagc
+      121 tctcatgttt aacgaactaa accctcatgg ctaacgtact aagctctcat ggctaacgta
+      181 ctaagctctc atgtttcacg tactaagctc tcatgtttga acaataaaat taatataaat
+      241 cagcaactta aatagcctct aaggttttaa gttttataag aaaaaaaaga atatataagg
+      301 cttttaaagc ttttaaggtt taacggttgt ggacaacaag ccagggatgt aacgcactga
+      361 gaagccctta gagcctctca aagcaatttt gagtgacaca ggaacactta acggctgaca
+      421 tgggaattag
+//

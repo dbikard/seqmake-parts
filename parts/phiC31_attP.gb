@@ -1,0 +1,18 @@
+LOCUS       phiC31_attP              100 bp    DNA              UNK 01-JAN-1980
+DEFINITION  phiC31 attP.
+ACCESSION   phiC31_attP
+VERSION     phiC31_attP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..100
+                     /label="phiC31 attP"
+                     /synonym="phiC31 attP"
+                     /synonym="phi-C31 attP"
+                     /synonym="phiC31 attachment site"
+ORIGIN
+        1 aaccccttgt gtcatgtcgg cgaccctacg cccccaactg agagaactca aaggttaccc
+       61 cagttggggc actactcccg aaaaccgctt ctgacctggg
+//

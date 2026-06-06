@@ -1,0 +1,20 @@
+LOCUS       PEM7                      67 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PEM7.
+ACCESSION   PEM7
+VERSION     PEM7
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..67
+                     /label="PEM7"
+                     /synonym="PEM7"
+                     /synonym="PEM7 promoter"
+                     /synonym="Pem7"
+                     /synonym="EM7 promoter"
+                     /synonym="synthetic constitutive promoter"
+ORIGIN
+        1 tgttgacaat taatcatcgg catagtatat cggcatagta taatacgaca aggtgaggaa
+       61 ctaaacc
+//

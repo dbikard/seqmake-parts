@@ -1,0 +1,16 @@
+LOCUS       pR                        29 bp    DNA              UNK 01-JAN-1980
+DEFINITION  pR.
+ACCESSION   pR
+VERSION     pR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..29
+                     /label="pR"
+                     /synonym="pR"
+                     /synonym="pR promoter"
+ORIGIN
+        1 ttgactattt tacctctggc ggtgataat
+//

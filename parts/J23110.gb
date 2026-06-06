@@ -1,0 +1,16 @@
+LOCUS       J23110                    35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  J23110.
+ACCESSION   J23110
+VERSION     J23110
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+                     /label="J23110"
+                     /synonym="J23110"
+                     /synonym="J23110 promoter"
+ORIGIN
+        1 tttacggcta gctcagtcct aggtacaatg ctagc
+//

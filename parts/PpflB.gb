@@ -1,0 +1,19 @@
+LOCUS       PpflB                    180 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PpflB.
+ACCESSION   PpflB
+VERSION     PpflB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..180
+                     /label="PpflB"
+                     /synonym="PpflB"
+                     /synonym="Promoter PpflB"
+                     /synonym="pflB promoter"
+ORIGIN
+        1 atatactcct aaattaactt ttaaagcaat gaaaatagtg aacattataa ctgttgtgta
+       61 acagaatgca attagcatat tactgttaca caaattagta cagtttctat gttttgacat
+      121 acatttgatg aaaattgtac ataatttatg tgaaaaaaat cacaacaaac atgctacaat
+//

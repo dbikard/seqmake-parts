@@ -1,0 +1,98 @@
+LOCUS       tetR_tetA_promot          56 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The Tn10 divergent tetA/tetR control region: 56 bp carrying the
+            PtetA promoter, the overlapping PtetR promoter, and the two TetR
+            operators tetO1 and tetO2..
+ACCESSION   tetR_tetA_promot
+VERSION     tetR_tetA_promot
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Bertrand KP, Postle K, Wray LV Jr, Reznikoff WS
+  TITLE     Overlapping divergent promoters control expression of Tn10
+            tetracycline resistance
+  JOURNAL   Gene
+   PUBMED   6311683
+  REMARK    doi:10.1016/0378-1119(83)90046-x
+REFERENCE   2
+  AUTHORS   Daniels DW, Bertrand KP
+  TITLE     Promoter mutations affecting divergent transcription in the Tn10
+            tetracycline resistance determinant
+  JOURNAL   J Mol Biol
+   PUBMED   2995683
+  REMARK    doi:10.1016/0022-2836(85)90306-7
+REFERENCE   3
+  AUTHORS   Hillen W, Berens C
+  TITLE     Mechanisms underlying expression of Tn10 encoded tetracycline
+            resistance
+  JOURNAL   Annu Rev Microbiol
+   PUBMED   7826010
+  REMARK    doi:10.1146/annurev.mi.48.100194.002021
+REFERENCE   4
+  AUTHORS   Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W
+  TITLE     Tn10 tet operator mutations affecting Tet repressor recognition
+  JOURNAL   Nucleic Acids Res
+   PUBMED   3086838
+  REMARK    doi:10.1093/nar/14.10.4253
+REFERENCE   5
+  AUTHORS   Meier I, Wray LV Jr, Hillen W
+  TITLE     Differential regulation of the Tn10-encoded tetracycline resistance
+            genes tetA and tetR by the tandem tet operators O1 and O2
+  JOURNAL   EMBO J
+   PUBMED   2835235
+  REMARK    doi:10.1002/j.1460-2075.1988.tb02846.x
+REFERENCE   6
+  AUTHORS   Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger
+            W
+  TITLE     Structure of the Tet repressor-tetracycline complex and regulation
+            of antibiotic resistance
+  JOURNAL   Science
+   PUBMED   8153629
+  REMARK    doi:10.1126/science.8153629
+FEATURES             Location/Qualifiers
+     promoter        1..56
+                     /label="tetR/tetA promoters"
+                     /synonym="tetR/tetA promoters"
+                     /note="The Tn10 divergent tetA/tetR control region: 56 bp
+                     carrying the PtetA promoter, the overlapping PtetR
+                     promoter, and the two TetR operators tetO1 and tetO2."
+     regulatory      2..7
+                     /label="PtetA -35"
+                     /parent="tetR/tetA promoters"
+                     /regulatory_class="other"
+                     /note="Canonical sigma70 -35 hexamer (TTGACA) of the tetA
+                     promoter (PtetA), reading 5'->3' into tetA."
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      25..30
+                     /label="PtetA -10"
+                     /parent="tetR/tetA promoters"
+                     /regulatory_class="other"
+                     /note="Degenerate sigma70 -10 hexamer (TTATTT) of PtetA,
+                     positioned with a canonical 17 bp -35/-10 spacer
+                     (sequence[7:24] = CTCTATCATTGATAGAG)."
+                     /citation=[3]
+                     /citation=[2]
+     protein_bind    6..24
+                     /label="tetO1"
+                     /parent="tetR/tetA promoters"
+                     /note="19 bp near-dyad TetR operator O1
+                     (CACTCTATCATTGATAGAG), superimposed on the PtetA
+                     -10/spacer."
+                     /citation=[1]
+                     /citation=[4]
+                     /citation=[5]
+     protein_bind    37..55
+                     /label="tetO2"
+                     /parent="tetR/tetA promoters"
+                     /note="19 bp non-palindromic TetR operator O2
+                     (TCCCTATCAGTGATAGAGA), the higher-affinity wild-type
+                     operator, superimposed on the divergent PtetR -10 region;
+                     O2 main..."
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+ORIGIN
+        1 gttgacactc tatcattgat agagttattt taccactccc tatcagtgat agagaa
+//

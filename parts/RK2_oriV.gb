@@ -1,0 +1,25 @@
+LOCUS       RK2_oriV                 532 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RK2 oriV.
+ACCESSION   RK2_oriV
+VERSION     RK2_oriV
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..532
+                     /label="RK2 oriV"
+                     /synonym="RK2 oriV"
+                     /synonym="oriV RK2"
+                     /synonym="oriV"
+ORIGIN
+        1 agcgggccgg gagggttcga gaaggggggg cacccccctt cggcgtgcgc ggtcacgcgc
+       61 acagggcgca gccctggtta aaaacaaggt ttataaatat tggtttaaaa gcaggttaaa
+      121 agacaggtta gcggtggccg aaaaacgggc ggaaaccctt gcaaatgctg gattttctgc
+      181 ctgtggacag cccctcaaat gtcaataggt gcgcccctca tctgtcagca ctctgcccct
+      241 caagtgtcaa ggatcgcgcc cctcatctgt cagtagtcgc gcccctcaag tgtcaatacc
+      301 gcagggcact tatccccagg cttgtccaca tcatctgtgg gaaactcgcg taaaatcagg
+      361 cgttttcgcc gatttgcgag gctggccagc tccacgtcgc cggccgaaat cgagcctgcc
+      421 cctcatctgt caacgccgcg ccgggtgagt cggcccctca agtgtcaacg tccgcccctc
+      481 atctgtcagt gagggccaag ttttccgcga ggtatccaca acgccggcgg cc
+//

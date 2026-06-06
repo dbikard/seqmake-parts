@@ -1,0 +1,20 @@
+LOCUS       sgRNA_scaffold            76 bp    DNA              UNK 01-JAN-1980
+DEFINITION  sgRNA scaffold.
+ACCESSION   sgRNA_scaffold
+VERSION     sgRNA_scaffold
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     misc_RNA        1..76
+                     /label="sgRNA scaffold"
+                     /synonym="sgRNA scaffold"
+                     /synonym="gRNA scaffold"
+                     /synonym="guide RNA scaffold"
+                     /synonym="chimeric RNA scaffold"
+                     /synonym="sgRNA scaffold (SpCas9)"
+ORIGIN
+        1 gttttagagc tagaaatagc aagttaaaat aaggctagtc cgttatcaac ttgaaaaagt
+       61 ggcaccgagt cggtgc
+//

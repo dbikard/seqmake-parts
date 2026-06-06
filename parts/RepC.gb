@@ -1,0 +1,37 @@
+LOCUS       RepC                     942 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RepC.
+ACCESSION   RepC
+VERSION     RepC
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..942
+                     /label="RepC"
+                     /synonym="RepC"
+                     /synonym="RepC protein"
+                     /translation="MYKNNHANHSNHLENHDLDNFSKTGYSNSRLDAHTVCISDPKLSF
+                     DAMTIVGNLNRDNAQALSKFMSVEPQIRLWDILQTKFKAKALQEKVYIEYDKVKADSWD
+                     RRNMRIEFNPNKLTRDEMIWLKQNIISYMEDDGFTRLDLAFDFEDDLSDYYAMSDKAVK
+                     KTIFYGRNGKPETKYFGVRDSNRFIRIYNKKQERKDNADAEVMSEHLWRVEIELKRDMV
+                     DYWNDCFSDLHILQPDWKTIQRTADRAIVFMLLSDEEEWGKLHRNSRTKYKNLIKEISP
+                     VDLTDLMKSTLKANEKQLQKQIDFWQHEFKFWK"
+ORIGIN
+        1 atgtataaaa acaatcatgc gaaccacagc aatcatctgg aaaaccacga tttagacaat
+       61 ttttcgaaga ccggctactc caactctcgt ttggatgccc atacggtgtg cattagcgac
+      121 ccgaaactgt cgttcgatgc aatgactatc gttggtaatt taaaccgcga caatgcgcag
+      181 gccttgtcca agtttatgtc tgtcgagcca caaattcgtc tgtgggatat cttacagacc
+      241 aaattcaagg caaaagcgtt gcaagaaaag gtgtatattg agtacgacaa agttaaggcc
+      301 gatagctggg accgccgtaa catgcgcatc gaatttaatc cgaacaaact gacgcgtgat
+      361 gagatgattt ggttaaagca gaatatcatt tcgtatatgg aagacgatgg attcactcgc
+      421 ttggacctgg catttgattt cgaggacgat ttatccgact actatgcgat gtctgataaa
+      481 gccgtcaaga aaaccatctt ttacggccgt aacggtaagc cagaaacgaa atatttcgga
+      541 gtgcgcgaca gcaatcgttt tattcgcatc tacaacaaga aacaagagcg taaggataat
+      601 gcagacgcgg aagttatgtc ggagcacttg tggcgcgtcg aaattgagct gaaacgtgat
+      661 atggtggact attggaacga ttgtttctcc gacttacata tcttgcagcc ggattggaag
+      721 actattcaac gcaccgccga ccgtgcaatc gtttttatgc tgttatctga tgaagaggaa
+      781 tggggcaaat tgcaccgcaa tagccgtacg aagtacaaaa acctgattaa ggagatctcg
+      841 ccagtcgact taactgattt gatgaaatcc accctgaagg cgaatgaaaa acagttacaa
+      901 aagcagattg acttctggca acatgagttt aaattctgga ag
+//

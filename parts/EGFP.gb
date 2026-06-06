@@ -1,0 +1,34 @@
+LOCUS       EGFP                     717 bp    DNA              UNK 01-JAN-1980
+DEFINITION  EGFP.
+ACCESSION   EGFP
+VERSION     EGFP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..717
+                     /label="EGFP"
+                     /synonym="EGFP"
+                     /synonym="eGFP"
+                     /synonym="Enhanced GFP"
+                     /synonym="GFP"
+                     /translation="MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTL
+                     KFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDD
+                     GNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIK
+                     VNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLL
+                     EFVTAAGITLGMDELYK"
+ORIGIN
+        1 atggtgagca aaggcgaaga gctgtttacc ggtgttgtcc cgattttagt ggaattggat
+       61 ggagacgtta acggccataa gttctcggtc tccggtgagg gagaaggcga tgcgacgtat
+      121 ggtaaactga ctttaaagtt tatctgcacc acgggaaaat tgccagtgcc gtggccaact
+      181 ctggttacca cgttaactta cggcgtccag tgtttctctc gttatccgga ccacatgaag
+      241 caacatgatt ttttcaaaag cgccatgcca gagggttacg tgcaggaacg caccattttt
+      301 ttcaaggacg atggaaatta taaaacgcgt gcagaggtta agtttgaagg cgacactttg
+      361 gtcaaccgca tcgagctgaa aggtattgat ttcaaggaag acggaaatat cttaggccac
+      421 aaattggagt acaactataa ttcgcataac gtgtacatta tggcggataa gcaaaaaaat
+      481 ggtatcaagg ttaactttaa aattcgtcac aatatcgaag acggatccgt ccagctggcc
+      541 gatcattatc aacagaacac cccgattggc gacggtccag tgttattgcc ggataatcac
+      601 tacctgtcta cgcaaagcgc attatcgaag gacccaaacg agaaacgcga tcatatggtt
+      661 ttgctggaat tcgtcactgc ggccggaatc accttaggca tggacgagtt gtataag
+//

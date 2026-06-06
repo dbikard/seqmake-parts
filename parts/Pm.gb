@@ -1,0 +1,110 @@
+LOCUS       Pm                        81 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of
+            the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying
+            two tandem XylS operator repeats, a non-canonical -35, and an ....
+ACCESSION   Pm
+VERSION     Pm
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Gawin A, Valla S, Brautaset T
+  TITLE     The XylS/Pm regulator/promoter system and its use in fundamental
+            studies of bacterial gene expression, recombinant protein production
+            and metabolic engineering
+  JOURNAL   Microbial Biotechnology, 2017;10(4):702-718
+   PUBMED   28276630
+  REMARK    doi:10.1111/1751-7915.12701
+REFERENCE   2
+  AUTHORS   Blatny JM, Brautaset T, Winther-Larsen HC, Haugan K, Valla S
+  TITLE     Construction and use of versatile broad-host-range RK2-based vectors
+            (pJB653) for regulated gene expression with the Pm/XylS system
+            (GenBank U75327.1)
+  JOURNAL   Applied and Environmental Microbiology, 1997;63(2):370-379
+   PUBMED   9097427
+  REMARK    doi:10.1128/aem.63.2.370-379.1997
+REFERENCE   3
+  AUTHORS   González-Pérez MM, Marqués S, Domínguez-Cuevas P, Ramos JL
+  TITLE     XylS activator and RNA polymerase binding sites at the Pm promoter
+            overlap
+  JOURNAL   FEBS Letters, 2002;519(1-3):117-122
+   PUBMED   12023029
+  REMARK    doi:10.1016/s0014-5793(02)02635-2
+REFERENCE   4
+  AUTHORS   Kessler B, Timmis KN, de Lorenzo V
+  TITLE     The organization of the Pm promoter of the TOL plasmid reflects the
+            structure of its cognate activator protein XylS
+  JOURNAL   Molecular and General Genetics, 1994;244(6):596-605
+   PUBMED   7969028
+  REMARK    doi:10.1007/BF00282749
+REFERENCE   5
+  AUTHORS   Domínguez-Cuevas P, Marín P, Ramos JL, Marqués S
+  TITLE     Sequential XylS-CTD binding to the Pm promoter induces DNA bending
+            prior to activation
+  JOURNAL   Journal of Bacteriology, 2010;192(11):2682-2690
+   PUBMED   20382764
+  REMARK    doi:10.1128/JB.01433-09
+REFERENCE   6
+  AUTHORS   Bakke I, Berg L, Aune TE, Brautaset T, Sletta H, Tøndervik A, Valla
+            S
+  TITLE     Random mutagenesis of the Pm promoter as a powerful strategy for
+            improvement of recombinant-gene expression
+  JOURNAL   Applied and Environmental Microbiology, 2009;75(7):2002-2011
+   PUBMED   19201967
+  REMARK    doi:10.1128/AEM.02315-08
+REFERENCE   7
+  AUTHORS   Marqués S, Manzanera M, González-Pérez MM, Gallegos MT, Ramos JL
+  TITLE     The XylS-dependent Pm promoter is transcribed in vivo by RNA
+            polymerase with sigma 32 or sigma 38 depending on the growth phase
+  JOURNAL   Molecular Microbiology, 1999;31(4):1105-1113
+   PUBMED   10096078
+  REMARK    doi:10.1046/j.1365-2958.1999.01249.x
+FEATURES             Location/Qualifiers
+     promoter        1..81
+                     /label="Pm"
+                     /synonym="Pm"
+                     /synonym="Pm promoter"
+                     /note="Pm is the XylS-dependent,
+                     benzoate/m-toluate-inducible promoter of the TOL (pWW0)
+                     plasmid meta-operon, here an 81-bp fragment carrying two
+                     tandem XylS operator repeats, a non-canonical -35, and an
+                     ..."
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    11..25
+                     /label="XylS operator"
+                     /parent="Pm"
+                     /note="Verified seq[10:25] == TGCAAGAAGCGGATA (15 bp,
+                     strand +1, no off-by-one)."
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+     protein_bind    32..46
+                     /label="XylS operator (proximal)"
+                     /parent="Pm"
+                     /note="Verified seq[31:46] == TGCAAAAAATGGCTA (15 bp,
+                     strand +1, no off-by-one)."
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+     regulatory      41..46
+                     /label="-35"
+                     /parent="Pm"
+                     /regulatory_class="minus_35_signal"
+                     /note="Verified seq[40:46] == TGGCTA (6 bp, strand +1, no
+                     off-by-one)."
+                     /citation=[3]
+                     /citation=[6]
+                     /citation=[7]
+     regulatory      68..73
+                     /label="-10"
+                     /parent="Pm"
+                     /regulatory_class="minus_10_signal"
+                     /note="Verified seq[67:73] == TAGGCT (6 bp, strand +1, no
+                     off-by-one)."
+                     /citation=[6]
+ORIGIN
+        1 agtccagcct tgcaagaagc ggatacagga gtgcaaaaaa tggctatctc tagtaaggcc
+       61 taccccttag gctttatgca a
+//

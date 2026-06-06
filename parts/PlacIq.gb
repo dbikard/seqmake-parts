@@ -1,0 +1,17 @@
+LOCUS       PlacIq                    78 bp    DNA              UNK 01-JAN-1980
+DEFINITION  PlacIq.
+ACCESSION   PlacIq
+VERSION     PlacIq
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..78
+                     /label="PlacIq"
+                     /synonym="PlacIq"
+                     /synonym="lacIq promoter"
+ORIGIN
+        1 gacaccatcg aatggtgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
+       61 caattcaggg tggtgaat
+//

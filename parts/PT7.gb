@@ -1,0 +1,19 @@
+LOCUS       PT7                       20 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  PT7.
+ACCESSION   PT7
+VERSION     PT7
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..20
+                     /label="PT7"
+                     /synonym="T7 promoter"
+     misc_feature    18
+                     /label="+1"
+                     /parent="PT7"
+                     /note="T7 transcription start site"
+ORIGIN
+        1 taatacgact cactataggg
+//

@@ -1,0 +1,24 @@
+LOCUS       f1_ori                   456 bp    DNA              UNK 01-JAN-1980
+DEFINITION  f1 ori.
+ACCESSION   f1_ori
+VERSION     f1_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..456
+                     /label="f1 ori"
+                     /synonym="M13 origin"
+                     /synonym="M13 ori"
+                     /synonym="f1 ori"
+ORIGIN
+        1 acgcgccctg tagcggcgca ttaagcgcgg cgggtgtggt ggttacgcgc agcgtgaccg
+       61 ctacacttgc cagcgcctta gcgcccgctc ctttcgcttt cttcccttcc tttctcgcca
+      121 cgttcgccgg ctttccccgt caagctctaa atcgggggct ccctttaggg ttccgattta
+      181 gtgctttacg gcacctcgac cccaaaaaac ttgatttggg tgatggttca cgtagtgggc
+      241 catcgccctg atagacggtt tttcgccctt tgacgttgga gtccacgttc tttaatagtg
+      301 gactcttgtt caaaactgga acaacactca actctatctc gggctattct tttgatttat
+      361 aagggatttt gccgatttcg gtctattggt taaaaaatga gctgatttaa caaaaattta
+      421 acgcgaattt taacaaaata ttaacgttta caattt
+//

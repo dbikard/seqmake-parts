@@ -1,0 +1,71 @@
+LOCUS       Ptrc                      30 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac
+            hybrid with perfect-consensus -35 and -10 boxes separated by a
+            consensus-optimal 17-bp spacer..
+ACCESSION   Ptrc
+VERSION     Ptrc
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Amann E, Ochs B, Abel KJ
+  TITLE     Tightly regulated tac promoter vectors useful for the expression of
+            unfused and fused proteins in Escherichia coli
+  JOURNAL   Gene. 1988 Sep 30;69(2):301-315
+   PUBMED   3069586
+  REMARK    doi:10.1016/0378-1119(88)90440-4
+REFERENCE   2
+  AUTHORS   de Boer HA, Comstock LJ, Vasser M
+  TITLE     The tac promoter: a functional hybrid derived from the trp and lac
+            promoters
+  JOURNAL   Proc Natl Acad Sci U S A. 1983 Jan;80(1):21-25
+   PUBMED   6337371
+  REMARK    doi:10.1073/pnas.80.1.21
+REFERENCE   3
+  AUTHORS   Amann E, Brosius J
+  TITLE     'ATG vectors' for regulated high-level expression of cloned genes in
+            Escherichia coli
+  JOURNAL   Gene. 1985;40(2-3):183-190
+   PUBMED   3007288
+  REMARK    doi:10.1016/0378-1119(85)90041-1
+REFERENCE   4
+  AUTHORS   Brosius J, Erfle M, Storella J
+  TITLE     Spacing of the -10 and -35 regions in the tac promoter. Effect on
+            its in vivo activity
+  JOURNAL   J Biol Chem. 1985 Mar 25;260(6):3539-3541
+   PUBMED   2579077
+FEATURES             Location/Qualifiers
+     promoter        1..30
+                     /label="Ptrc"
+                     /synonym="Ptrc"
+                     /synonym="trc promoter"
+                     /note="Ptrc is the 30-bp core of the trc promoter, a
+                     synthetic trp/lac hybrid with perfect-consensus -35 and -10
+                     boxes separated by a consensus-optimal 17-bp spacer."
+                     /citation=[1]
+     regulatory      1..6
+                     /label="-35"
+                     /parent="Ptrc"
+                     /regulatory_class="minus_35_signal"
+                     /note="Perfect-consensus -35 hexamer (TTGACA) opening the
+                     trc promoter core, derived from the trp promoter in the
+                     tac/trc hybrid."
+                     /citation=[2]
+     misc_feature    7..23
+                     /label="-35/-10 spacer"
+                     /parent="Ptrc"
+                     /note="17-bp spacer between the -35 and -10 boxes."
+                     /citation=[3]
+                     /citation=[4]
+     regulatory      24..29
+                     /label="-10"
+                     /parent="Ptrc"
+                     /regulatory_class="minus_10_signal"
+                     /note="Perfect-consensus Pribnow (-10) box (TATAAT),
+                     derived from the lac UV5 promoter in the trc/tac hybrid,
+                     located 17 bp downstream of the -35 box."
+                     /citation=[2]
+ORIGIN
+        1 ttgacaatta atcatccggc tcgtataatg
+//

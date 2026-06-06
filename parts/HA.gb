@@ -1,0 +1,19 @@
+LOCUS       HA                        27 bp    DNA              UNK 01-JAN-1980
+DEFINITION  HA.
+ACCESSION   HA
+VERSION     HA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..27
+                     /label="HA"
+                     /synonym="HA"
+                     /synonym="HA tag"
+                     /synonym="HA-tag"
+                     /synonym="hemagglutinin tag"
+                     /translation="YPYDVPDYA"
+ORIGIN
+        1 tatccgtacg atgtgccaga ctatgcg
+//

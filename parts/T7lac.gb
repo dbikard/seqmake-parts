@@ -1,0 +1,85 @@
+LOCUS       T7lac                     67 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Engineered T7lac regulatory region: the bacteriophage T7 phi10
+            (class III) promoter immediately followed by a lac operator O1,
+            giving LacI-controllable, low-basal expression from T7 RNA
+            polymerase..
+ACCESSION   T7lac
+VERSION     T7lac
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   D Imburgio, M Rong, K Ma, W T McAllister
+  TITLE     Studies of promoter recognition and start site selection by T7 RNA
+            polymerase using a comprehensive collection of promoter variants
+  JOURNAL   Biochemistry
+   PUBMED   10956032
+  REMARK    doi:10.1021/bi000365w
+REFERENCE   2
+  AUTHORS   J W Dubendorff, F W Studier
+  TITLE     Controlling basal expression in an inducible T7 expression system by
+            blocking the target T7 promoter with lac repressor
+  JOURNAL   Journal of Molecular Biology
+   PUBMED   1902522
+  REMARK    doi:10.1016/0022-2836(91)90856-2
+REFERENCE   3
+  AUTHORS   W Gilbert, A Maxam
+  TITLE     The nucleotide sequence of the lac operator
+  JOURNAL   Proceedings of the National Academy of Sciences USA
+   PUBMED   4587255
+  REMARK    doi:10.1073/pnas.70.12.3581
+REFERENCE   4
+  AUTHORS   M Lewis, G Chang, N C Horton, M A Kercher, H C Pace, M A Schumacher,
+            R G Brennan, P Lu
+  TITLE     Crystal structure of the lactose operon repressor and its complexes
+            with DNA and inducer
+  JOURNAL   Science
+   PUBMED   8638105
+  REMARK    doi:10.1126/science.271.5253.1247
+FEATURES             Location/Qualifiers
+     promoter        1..67
+                     /label="T7lac"
+                     /synonym="PT7/lacO"
+                     /synonym="T7/lacO promoter"
+                     /synonym="T7 lac operator promoter"
+                     /note="Engineered T7lac regulatory region: the
+                     bacteriophage T7 phi10 (class III) promoter immediately
+                     followed by a lac operator O1, giving LacI-controllable,
+                     low-basal expression from T7 RNA polymerase."
+     regulatory      25..42
+                     /label="T7 promoter"
+                     /parent="T7lac"
+                     /regulatory_class="promoter"
+                     /note="Canonical bacteriophage T7 phi10 class III promoter
+                     consensus TAATACGACTCACTATAG (18 bp)."
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      25..37
+                     /label="T7 RNAP binding domain"
+                     /parent="T7lac"
+                     /regulatory_class="other"
+                     /note="Upstream binding/recognition domain of the T7
+                     promoter (TAATACGACTCAC, 13 bp, approx -17..-5), the
+                     functional analog of the -35/-10 region for the
+                     single-sub..."
+                     /citation=[1]
+     misc_feature    42..44
+                     /label="+1 transcription start"
+                     /parent="T7lac"
+                     /note="Class III T7 promoters initiate at +1 with a
+                     G/poly(G) run and a purine/GTP preference."
+                     /citation=[1]
+     protein_bind    46..66
+                     /label="lac operator O1"
+                     /parent="T7lac"
+                     /note="Natural 21 bp lac operator O1, AATTGTGAGCGGATAACAATT
+                     (the standard T7lac/lacUV5 operator form; the central GCGG
+                     is contacted by the LacI hinge helices in the..."
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+ORIGIN
+        1 agatcgatct cgatcccgcg aaattaatac gactcactat aggggaattg tgagcggata
+       61 acaattc
+//

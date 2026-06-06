@@ -1,0 +1,34 @@
+LOCUS       p15A_ori_pSU38           789 bp    DNA              UNK 01-JAN-1980
+DEFINITION  p15A origin variant from pSU38 family; differs from canonical p15A
+            ori by several point mutations and extended flanking sequence..
+ACCESSION   p15A_ori_pSU38
+VERSION     p15A_ori_pSU38
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..789
+                     /label="p15A ori (pSU38)"
+                     /synonym="p15A ori"
+                     /synonym="P15A rep"
+                     /synonym="p15A origin (pSU38)"
+                     /note="p15A origin variant from pSU38 family; differs from
+                     canonical p15A ori by several point mutations and extended
+                     flanking sequence."
+ORIGIN
+        1 cgtaatctct tgctctgaaa acgaaaaaac cgccttgcag ggcggttttt cgaaggttct
+       61 ctgagctacc aactctttga accgaggtaa ctggcttgga ggagcgcagt caccaaaact
+      121 tgtcctttca gtttagcctt aaccggcgca tgacttcaag actaactcct ctaaatcaat
+      181 taccagtggc tgctgccagt ggtgcttttg catgtctttc cgggttggac tcaagacgat
+      241 agttaccgga taaggcgcag cggtcggact gaacgggggg ttcgtgcata cagtccagct
+      301 tggagcgaac tgcctacccg gaactgagtg tcaggcgtgg aatgagacaa acgcggccat
+      361 aacagcggaa tgacaccggt aaaccgaaag gcaggaacag gagagcgcac gagggagccg
+      421 ccaggggaaa cgcctggtat ctttatagtc ctgtcgggtt tcgccaccac tgatttgagc
+      481 gtcagatttc gtgatgcttg tcaggggggc ggagcctatg gaaaaacggc tttgccgcgg
+      541 ccctctcact tccctgttaa gtatcttcct ggcatcttcc aggaaatctc cgccccgttc
+      601 gtaagccatt tccgctcgcc gcagtcgaac gaccgagcgt agcgagtcag tgagcgagga
+      661 agcggaatat atcctgtatc acatattctg ctgacgcacc ggtgcagcct tttttctcct
+      721 gccacatgaa gcacttcact gacaccctca tcagtgccaa catagtaagc cagtatatac
+      781 actccgcta
+//

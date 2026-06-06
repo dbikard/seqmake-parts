@@ -1,0 +1,16 @@
+LOCUS       T7_terminator             48 bp    DNA              UNK 01-JAN-1980
+DEFINITION  T7 terminator.
+ACCESSION   T7_terminator
+VERSION     T7_terminator
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..48
+                     /label="T7 terminator"
+                     /synonym="T7 terminator"
+                     /synonym="T7 Terminator"
+ORIGIN
+        1 ctagcataac cccttggggc ctctaaacgg gtcttgaggg gttttttg
+//

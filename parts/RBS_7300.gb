@@ -1,0 +1,16 @@
+LOCUS       RBS_7300                  25 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RBS 7300.
+ACCESSION   RBS_7300
+VERSION     RBS_7300
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..25
+                     /label="RBS 7300"
+                     /synonym="RBS 7300"
+                     /synonym="Synthetic RBS7 7300 TIR NEQ"
+ORIGIN
+        1 ggagcttaaa aaggagaaag tttct
+//

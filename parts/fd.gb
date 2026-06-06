@@ -1,0 +1,16 @@
+LOCUS       fd                        40 bp    DNA              UNK 01-JAN-1980
+DEFINITION  fd.
+ACCESSION   fd
+VERSION     fd
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..40
+                     /label="fd"
+                     /synonym="fd"
+                     /synonym="fd terminator"
+ORIGIN
+        1 gatacaatta aaggctcctt ttggagcctt tttttttgga
+//

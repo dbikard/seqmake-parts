@@ -1,0 +1,80 @@
+LOCUS       PA1_O4_O3                 56 bp    DNA              UNK 01-JAN-1980
+DEFINITION  A 56-bp synthetic constitutive/IPTG-regulatable promoter combining
+            the phage T7 A1 (PA1) core with two natural lac O1 operators placed
+            at positions 4 (spacer) and 3 (downstream)..
+ACCESSION   PA1_O4_O3
+VERSION     PA1_O4_O3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Lanzer M, Bujard H
+  TITLE     Promoters largely determine the efficiency of repressor action
+  JOURNAL   Proc Natl Acad Sci USA 85(23):8973-8977 (1988)
+   PUBMED   3057497
+  REMARK    doi:10.1073/pnas.85.23.8973
+REFERENCE   2
+  AUTHORS   Lutz R, Bujard H
+  TITLE     Independent and tight regulation of transcriptional units in
+            Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2
+            regulatory elements
+  JOURNAL   Nucleic Acids Res 25(6):1203-1210 (1997)
+   PUBMED   9092630
+  REMARK    doi:10.1093/nar/25.6.1203
+REFERENCE   3
+  AUTHORS   Gilbert W, Maxam A
+  TITLE     The nucleotide sequence of the lac operator
+  JOURNAL   Proc Natl Acad Sci USA 70(12):3581-3584 (1973)
+   PUBMED   4587255
+  REMARK    doi:10.1073/pnas.70.12.3581
+FEATURES             Location/Qualifiers
+     promoter        1..56
+                     /label="PA1/O4/O3"
+                     /synonym="PA1/O4/O3"
+                     /synonym="PA1_04_03"
+                     /synonym="PA1/O4/O3 constitutive promoter"
+                     /note="A 56-bp synthetic constitutive/IPTG-regulatable
+                     promoter combining the phage T7 A1 (PA1) core with two
+                     natural lac O1 operators placed at positions 4 (spacer) and
+                     3 (downstream)."
+     regulatory      1..6
+                     /label="-35"
+                     /parent="PA1/O4/O3"
+                     /regulatory_class="minus_35_signal"
+                     /note="Native phage T7 A1 -35 hexamer (TTGACT) at the 5'
+                     end of the part; differs from the sigma-70 consensus TTGACA
+                     only at the final base."
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    7..23
+                     /label="lac operator O4"
+                     /parent="PA1/O4/O3"
+                     /note="Natural lac O1 core (5'-TGTGAGCGGATAACAAT) inserted
+                     into the -35/-10 spacer; this is the upstream
+                     spacer-embedded operator (Lanzer & Bujard position 4,
+                     'O4';..."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+     regulatory      24..29
+                     /label="-10"
+                     /parent="PA1/O4/O3"
+                     /regulatory_class="minus_10_signal"
+                     /note="Native phage T7 A1 -10 hexamer (GATACT) immediately
+                     downstream of the spacer-embedded O4 operator; conserved TA
+                     dinucleotide shifted relative to consensus TA..."
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    40..56
+                     /label="lac operator O3"
+                     /parent="PA1/O4/O3"
+                     /note="Second exact copy of the natural lac O1 core at the
+                     3' end, downstream of the -10 (Lanzer & Bujard position 3,
+                     'O3'; Lutz & Bujard position III)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+ORIGIN
+        1 ttgacttgtg agcggataac aatgatactt agattcaatt gtgagcggat aacaat
+//

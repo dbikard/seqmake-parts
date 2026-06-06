@@ -1,0 +1,20 @@
+LOCUS       lambda_cos               224 bp    DNA              UNK 01-JAN-1980
+DEFINITION  lambda cos.
+ACCESSION   lambda_cos
+VERSION     lambda_cos
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     misc_feature    1..224
+                     /label="lambda cos"
+                     /synonym="lambda cos"
+                     /synonym="Minimal lambda cos sequence"
+                     /synonym="cos site"
+ORIGIN
+        1 cctccacgca cgttgtgata tgtagatgat aatcattatc actttacggg tcctttccgg
+       61 tgatccgaca ggttacgggg cggcgacctc gcgggttttc gctatttatg aaaattttcc
+      121 ggtttaaggc gtttccgttc ttcttcgtca taacttaatg tttttattta aaataccctc
+      181 tgaaaagaaa ggaaacgaca ggtgctgaaa gcgaggcttt ttgg
+//

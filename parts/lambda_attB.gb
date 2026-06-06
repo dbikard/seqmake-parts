@@ -1,0 +1,21 @@
+LOCUS       lambda_attB              387 bp    DNA              UNK 01-JAN-1980
+DEFINITION  lambda attB.
+ACCESSION   lambda_attB
+VERSION     lambda_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..387
+                     /label="lambda attB"
+                     /synonym="lambda attB"
+ORIGIN
+        1 catcacagta tcgtgatgac agaggcaggg agtgggacaa aattgaaatc aaataatgat
+       61 tttattttga ctgatagtga cctgttcgtt gcaacaaatt gataagcaat gcttttttat
+      121 aatgccaact tagtataaaa aagctgaacg agaaacgtaa aatgatataa atatcaatat
+      181 attaaattag attttgcata aaaaacagac tacataatac tgtaaaacac aacatatatg
+      241 cagtcactat gaatcaacta cttagatggt attagtgacc tgtaacagag cattagcgca
+      301 aggtgatttt tgtcttcttg cgctaatttt ttgtcatcaa acctgtcgca ctccagagaa
+      361 gcacaaagcc tcgcaatcca gtgcaaa
+//

@@ -1,0 +1,22 @@
+LOCUS       phi80_attB               480 bp    DNA              UNK 01-JAN-1980
+DEFINITION  phi80 attB.
+ACCESSION   phi80_attB
+VERSION     phi80_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    1..480
+                     /label="phi80 attB"
+                     /synonym="phi80 attB"
+ORIGIN
+        1 gcccgtgcga atcagaaata atctcgatat catctctttt cttgccgagc gccttcctga
+       61 gctttgtgtc ggtgatcatt gaatgggtac acatttttgt ttttgggtac acaaaagtgt
+      121 acacaaagtt gcccactcaa agctacacgc aatgtaacac tagttcgcag agtgttatgg
+      181 tttacatcct tgaaagcctg ctggataagg gtttagcgta acagaacgtt tttacgcgga
+      241 attgttcgta atatgccaaa tgacaattta agaaagtgtt ctaatttatt agaaatttgc
+      301 acttaaatca aaaagttacg gacaattcaa ccaccaatca ataaattaaa gggcacatta
+      361 aagtacacaa tatttgtgcc cttctctgtt tctttcccgt tatcagctag ctggaaactt
+      421 tttatacaga gtttagagcc ctactccata cgtttttgat acgctttgtc gtgattcacc
+//
