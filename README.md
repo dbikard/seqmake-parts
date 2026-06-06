@@ -1,5 +1,12 @@
 # DNA Parts Catalog
 
+> [!WARNING]
+> **Work in progress — largely AI-generated content.** This catalog is under
+> active development and much of its content (part annotations and
+> documentation pages) is **largely AI-generated**. It may contain errors and
+> has not been fully expert-reviewed — verify any part against the cited
+> primary literature before relying on it.
+
 An open, community-curated catalog of **standard DNA parts** for molecular
 cloning and synthetic biology — promoters, CDSs, terminators, ribosome binding
 sites, operators, and more — each stored as an **annotated GenBank file** with

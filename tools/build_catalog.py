@@ -20,6 +20,18 @@ from pathlib import Path
 from Bio import SeqIO
 
 SCHEMA_VERSION = "1.0"
+
+# Shown at the top of the site index and every part page. The catalog is a
+# work in progress and much of its content (annotations, documentation prose)
+# is AI-generated, so flag it prominently for anyone browsing.
+AI_WIP_WARNING = (
+    '!!! warning "Work in progress — AI-generated content"\n\n'
+    "    This catalog is a **work in progress** and much of its content "
+    "(part annotations and documentation pages) is **largely AI-generated**. "
+    "It may contain errors and has not been fully expert-reviewed — verify "
+    "any part against the cited primary literature before relying on it.\n"
+)
+
 ROOT = Path(__file__).resolve().parent.parent
 PARTS_DIR = ROOT / "parts"
 DOCS_DIR = ROOT / "docs"
@@ -171,11 +183,12 @@ def render_part_page(part: dict) -> str:
         body = md_path.read_text(encoding="utf-8").strip() + "\n"
         # Structured feature table up top, then the curated prose (which carries
         # its own References section).
-        return "\n".join(head) + "\n" + _feature_table(part) + "\n" + body
+        return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
+                + _feature_table(part) + "\n" + body)
     note = part["description"] or "_No curated documentation page yet._"
     note += (f"\n\n*This part has no curated documentation yet — "
              f"[contribute one]({contrib}).*\n")
-    return ("\n".join(head) + "\n" + note + "\n"
+    return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 
@@ -183,6 +196,7 @@ def render_index(parts: list[dict]) -> str:
     n_doc = sum(p["documented"] for p in parts)
     lines = [
         "# DNA parts catalog\n",
+        AI_WIP_WARNING,
         f"An open, community-curated catalog of **{len(parts)}** standard DNA "
         f"parts (promoters, CDSs, terminators, RBSs, …) as annotated GenBank "
         f"files, **{n_doc}** with a curated documentation page. "
