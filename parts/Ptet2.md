@@ -4,7 +4,7 @@ Ptet2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR32
 The 29-bp sequence is an exact substring of the *E. coli* plasmid pBR322 tet promoter region (pBR322 positions ~1-38; Sutcliffe 1979 [PMID 383387](https://pubmed.ncbi.nlm.nih.gov/383387/)). Its -35/-10 elements and transcription start were characterized as a sigma70 promoter by Harley et al. 1988 ([PMID 3045754](https://pubmed.ncbi.nlm.nih.gov/3045754/)). The -35 (TTGACA) is also the shared prefix of the J23119/Anderson constitutive promoter scaffold, and the overall consensus-promoter architecture follows the design discussed by Lutz & Bujard 1997 ([PMID 9092630](https://pubmed.ncbi.nlm.nih.gov/9092630/)). This is the pBR322 tetA(C) lineage, distinct from the Tn10 TetR/tetO inducible system (Hillen & Berens 1994 [PMID 7826010](https://pubmed.ncbi.nlm.nih.gov/7826010/)).
 
 ## Properties
-- **-35 box** [0:6] TTGACA — perfect sigma70 -35 consensus (seqmake minus35_score = 1.0).
+- **-35 box** [0:6] TTGACA — perfect sigma70 -35 consensus.
 - **Spacer** [6:23] — 17 bp, optimal sigma70 spacing; carries the cloning sites below.
 - **-10 box** [23:29] TTTAAT — strong -10 variant (5/6 to TATAAT).
 - **ClaI site** [13:19] ATCGAT and **HindIII site** [19:25] AAGCTT — restriction-cloning scars in the spacer; the HindIII site overlaps the -10 at positions 23-24.

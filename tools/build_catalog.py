@@ -2,7 +2,7 @@
 """Build the catalog manifest (catalog.json) and the mkdocs site pages from
 the GenBank parts in ``parts/``.
 
-Standalone: depends only on BioPython, never on seqmake — the catalog repo is
+Standalone: depends only on BioPython — the catalog repo is
 self-contained. A part is one ``.gb`` file (a single main feature with no
 ``/parent`` qualifier, plus optional sub-features carrying ``/parent``) and an
 optional sibling ``<stem>.md`` documentation page.

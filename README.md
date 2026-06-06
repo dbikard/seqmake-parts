@@ -28,9 +28,7 @@ docs/               generated website source (mkdocs Material)
 - **Programmatic access:** read `catalog.json` (schema in
   [`CONTRIBUTING.md`](CONTRIBUTING.md)) or parse the `.gb` files with any GenBank
   reader (e.g. BioPython).
-- This catalog is the upstream source consumed by the
-  [seqmake](https://github.com/dbikard/seqmake) auto-annotator and toolkit, but
-  it has **no dependency on seqmake** — it is a standalone, reusable dataset.
+- This catalog is a standalone, reusable dataset with no external dependencies.
 
 ## Contributing
 
