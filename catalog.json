@@ -1,6 +1,8 @@
 {
   "schema_version": "1.0",
   "n_parts": 211,
+  "n_validated": 16,
+  "n_candidate": 195,
   "n_documented": 16,
   "parts": [
     {
@@ -15,6 +17,7 @@
       "description": "",
       "length": 307,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -29,6 +32,7 @@
       "description": "",
       "length": 1008,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -50,6 +54,7 @@
       "description": "",
       "length": 18,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -67,6 +72,7 @@
       "description": "",
       "length": 789,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -84,6 +90,7 @@
       "description": "",
       "length": 903,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -100,6 +107,7 @@
       "description": "",
       "length": 33,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -117,6 +125,7 @@
       "description": "",
       "length": 531,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -131,6 +140,7 @@
       "description": "",
       "length": 261,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -147,6 +157,7 @@
       "description": "",
       "length": 597,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -164,6 +175,7 @@
       "description": "",
       "length": 2655,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -178,6 +190,7 @@
       "description": "",
       "length": 792,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -193,6 +206,7 @@
       "description": "",
       "length": 876,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -207,6 +221,7 @@
       "description": "",
       "length": 417,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -221,6 +236,7 @@
       "description": "",
       "length": 25,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -235,6 +251,7 @@
       "description": "",
       "length": 25,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -249,6 +266,7 @@
       "description": "",
       "length": 45,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -263,6 +281,7 @@
       "description": "",
       "length": 15,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -278,6 +297,7 @@
       "description": "",
       "length": 783,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -293,6 +313,7 @@
       "description": "",
       "length": 963,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -312,6 +333,7 @@
       "description": "",
       "length": 858,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -326,6 +348,7 @@
       "description": "",
       "length": 143,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -342,6 +365,7 @@
       "description": "",
       "length": 276,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -356,6 +380,7 @@
       "description": "",
       "length": 867,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -371,6 +396,7 @@
       "description": "",
       "length": 912,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -385,6 +411,7 @@
       "description": "",
       "length": 339,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -400,6 +427,7 @@
       "description": "",
       "length": 324,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -417,6 +445,7 @@
       "description": "",
       "length": 4104,
       "documented": false,
+      "status": "candidate",
       "children": [
         {
           "label": "RuvC-I",
@@ -505,6 +534,7 @@
       "description": "",
       "length": 648,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -519,6 +549,7 @@
       "description": "",
       "length": 621,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -534,6 +565,7 @@
       "description": "",
       "length": 303,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -551,6 +583,7 @@
       "description": "",
       "length": 510,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -567,6 +600,7 @@
       "description": "",
       "length": 717,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -582,6 +616,7 @@
       "description": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
       "length": 942,
       "documented": true,
+      "status": "validated",
       "children": [],
       "references": [
         {
@@ -610,6 +645,7 @@
       "description": "",
       "length": 711,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -624,6 +660,7 @@
       "description": "",
       "length": 739,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -641,6 +678,7 @@
       "description": "",
       "length": 657,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -655,6 +693,7 @@
       "description": "",
       "length": 792,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -669,6 +708,7 @@
       "description": "",
       "length": 810,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -687,6 +727,7 @@
       "description": "",
       "length": 4104,
       "documented": false,
+      "status": "candidate",
       "children": [
         {
           "label": "RuvC-I",
@@ -796,6 +837,7 @@
       "description": "",
       "length": 471,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -812,6 +854,7 @@
       "description": "",
       "length": 675,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -827,6 +870,7 @@
       "description": "",
       "length": 39,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -844,6 +888,7 @@
       "description": "",
       "length": 408,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -859,6 +904,7 @@
       "description": "",
       "length": 54,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -874,6 +920,7 @@
       "description": "",
       "length": 52,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -889,6 +936,7 @@
       "description": "",
       "length": 57,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -906,6 +954,7 @@
       "description": "",
       "length": 717,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -921,6 +970,7 @@
       "description": "",
       "length": 735,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -939,6 +989,7 @@
       "description": "",
       "length": 732,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -954,6 +1005,7 @@
       "description": "",
       "length": 678,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -970,6 +1022,7 @@
       "description": "",
       "length": 456,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -985,6 +1038,7 @@
       "description": "",
       "length": 40,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1001,6 +1055,7 @@
       "description": "",
       "length": 24,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1017,6 +1072,7 @@
       "description": "",
       "length": 34,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1032,6 +1088,7 @@
       "description": "",
       "length": 414,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1048,6 +1105,7 @@
       "description": "",
       "length": 714,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1066,6 +1124,7 @@
       "description": "",
       "length": 531,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1082,6 +1141,7 @@
       "description": "",
       "length": 654,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1099,6 +1159,7 @@
       "description": "",
       "length": 27,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1115,6 +1176,7 @@
       "description": "",
       "length": 894,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1129,6 +1191,7 @@
       "description": "",
       "length": 258,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1143,6 +1206,7 @@
       "description": "",
       "length": 1071,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1159,6 +1223,7 @@
       "description": "",
       "length": 257,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1176,6 +1241,7 @@
       "description": "",
       "length": 18,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1193,6 +1259,7 @@
       "description": "",
       "length": 35,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1210,6 +1277,7 @@
       "description": "",
       "length": 35,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1225,6 +1293,7 @@
       "description": "",
       "length": 35,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1240,6 +1309,7 @@
       "description": "",
       "length": 35,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1256,6 +1326,7 @@
       "description": "",
       "length": 35,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1275,6 +1346,7 @@
       "description": "",
       "length": 792,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1294,6 +1366,7 @@
       "description": "",
       "length": 813,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1308,6 +1381,7 @@
       "description": "",
       "length": 51,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1323,6 +1397,7 @@
       "description": "",
       "length": 57,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1337,6 +1412,7 @@
       "description": "",
       "length": 49,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1353,6 +1429,7 @@
       "description": "",
       "length": 33,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1368,6 +1445,7 @@
       "description": "",
       "length": 1080,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1382,6 +1460,7 @@
       "description": "",
       "length": 17,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1398,6 +1477,7 @@
       "description": "",
       "length": 21,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1413,6 +1493,7 @@
       "description": "",
       "length": 3072,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1429,6 +1510,7 @@
       "description": "",
       "length": 261,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1443,6 +1525,7 @@
       "description": "",
       "length": 291,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1457,6 +1540,7 @@
       "description": "",
       "length": 387,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1473,6 +1557,7 @@
       "description": "",
       "length": 224,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1489,6 +1574,7 @@
       "description": "",
       "length": 403,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1503,6 +1589,7 @@
       "description": "",
       "length": 1068,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1518,6 +1605,7 @@
       "description": "",
       "length": 95,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1533,6 +1621,7 @@
       "description": "",
       "length": 1080,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1548,6 +1637,7 @@
       "description": "",
       "length": 981,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1563,6 +1653,7 @@
       "description": "",
       "length": 1446,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1578,6 +1669,7 @@
       "description": "",
       "length": 921,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1593,6 +1685,7 @@
       "description": "",
       "length": 1182,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1608,6 +1701,7 @@
       "description": "",
       "length": 55,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1623,6 +1717,7 @@
       "description": "",
       "length": 708,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1639,6 +1734,7 @@
       "description": "",
       "length": 675,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1655,6 +1751,7 @@
       "description": "",
       "length": 717,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1672,6 +1769,7 @@
       "description": "",
       "length": 30,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1687,6 +1785,7 @@
       "description": "",
       "length": 48,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1703,6 +1802,7 @@
       "description": "",
       "length": 3246,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1717,6 +1817,7 @@
       "description": "",
       "length": 305,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1731,6 +1832,7 @@
       "description": "",
       "length": 228,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1745,6 +1847,7 @@
       "description": "",
       "length": 562,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1760,6 +1863,7 @@
       "description": "",
       "length": 546,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1776,6 +1880,7 @@
       "description": "p15A origin variant from pSU38 family; differs from canonical p15A ori by several point mutations and extended flanking sequence.",
       "length": 789,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1790,6 +1895,7 @@
       "description": "",
       "length": 57,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1806,6 +1912,7 @@
       "description": "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream).",
       "length": 56,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -1892,6 +1999,7 @@
       "description": "",
       "length": 285,
       "documented": false,
+      "status": "candidate",
       "children": [
         {
           "label": "O2",
@@ -1955,6 +2063,7 @@
       "description": "",
       "length": 772,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1969,6 +2078,7 @@
       "description": "",
       "length": 660,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -1985,6 +2095,7 @@
       "description": "",
       "length": 105,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2000,6 +2111,7 @@
       "description": "",
       "length": 103,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2017,6 +2129,7 @@
       "description": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
       "length": 396,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "ChnR-responsive element",
@@ -2082,6 +2195,7 @@
       "description": "",
       "length": 75,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2100,6 +2214,7 @@
       "description": "",
       "length": 67,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2114,6 +2229,7 @@
       "description": "",
       "length": 480,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2130,6 +2246,7 @@
       "description": "",
       "length": 100,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2144,6 +2261,7 @@
       "description": "",
       "length": 600,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2161,6 +2279,7 @@
       "description": "",
       "length": 2239,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2178,6 +2297,7 @@
       "description": "",
       "length": 106,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2195,6 +2315,7 @@
       "description": "",
       "length": 382,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2209,6 +2330,7 @@
       "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
       "length": 55,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -2293,6 +2415,7 @@
       "description": "",
       "length": 78,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2308,6 +2431,7 @@
       "description": "",
       "length": 78,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2324,6 +2448,7 @@
       "description": "PlacUV5 \u2014 the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
       "length": 30,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -2388,6 +2513,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2403,6 +2529,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2418,6 +2545,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2433,6 +2561,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2448,6 +2577,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2463,6 +2593,7 @@
       "description": "",
       "length": 42,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2478,6 +2609,7 @@
       "description": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
       "length": 74,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "tetO2 operator",
@@ -2563,6 +2695,7 @@
       "description": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
       "length": 81,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "XylS operator",
@@ -2687,6 +2820,7 @@
       "description": "",
       "length": 589,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2704,6 +2838,7 @@
       "description": "",
       "length": 170,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2720,6 +2855,7 @@
       "description": "",
       "length": 180,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2735,6 +2871,7 @@
       "description": "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription.",
       "length": 51,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -2810,6 +2947,7 @@
       "description": "",
       "length": 29,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2825,6 +2963,7 @@
       "description": "",
       "length": 29,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2839,6 +2978,7 @@
       "description": "",
       "length": 352,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2853,6 +2993,7 @@
       "description": "",
       "length": 223,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2869,6 +3010,7 @@
       "description": "",
       "length": 951,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2885,6 +3027,7 @@
       "description": "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA.",
       "length": 813,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2900,6 +3043,7 @@
       "description": "Core origin of replication from pSH71/pLZ12. Minimal conserved region upstream of repA, shared across variants.",
       "length": 513,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2915,6 +3059,7 @@
       "description": "",
       "length": 330,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2930,6 +3075,7 @@
       "description": "",
       "length": 20,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -2947,6 +3093,7 @@
       "description": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
       "length": 81,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3048,6 +3195,7 @@
       "description": "",
       "length": 20,
       "documented": false,
+      "status": "candidate",
       "children": [
         {
           "label": "+1",
@@ -3071,6 +3219,7 @@
       "description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
       "length": 53,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3174,6 +3323,7 @@
       "description": "Ptet2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
       "length": 29,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3277,6 +3427,7 @@
       "description": "Synthetic PLtetO-1-family two-operator, anhydrotetracycline (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter carrying one Tn10 tet operator in the spacer and a second downstream of t...",
       "length": 58,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3399,6 +3550,7 @@
       "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
       "length": 29,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3482,6 +3634,7 @@
       "description": "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer.",
       "length": 30,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "-35",
@@ -3564,6 +3717,7 @@
       "description": "",
       "length": 216,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3581,6 +3735,7 @@
       "description": "",
       "length": 36,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3595,6 +3750,7 @@
       "description": "",
       "length": 430,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3611,6 +3767,7 @@
       "description": "",
       "length": 25,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3626,6 +3783,7 @@
       "description": "",
       "length": 25,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3640,6 +3798,7 @@
       "description": "",
       "length": 2598,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3654,6 +3813,7 @@
       "description": "",
       "length": 864,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3670,6 +3830,7 @@
       "description": "",
       "length": 948,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3684,6 +3845,7 @@
       "description": "",
       "length": 696,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3698,6 +3860,7 @@
       "description": "",
       "length": 1635,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3712,6 +3875,7 @@
       "description": "",
       "length": 1053,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3727,6 +3891,7 @@
       "description": "",
       "length": 942,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3744,6 +3909,7 @@
       "description": "",
       "length": 948,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3758,6 +3924,7 @@
       "description": "",
       "length": 753,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3772,6 +3939,7 @@
       "description": "",
       "length": 315,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3786,6 +3954,7 @@
       "description": "",
       "length": 438,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3802,6 +3971,7 @@
       "description": "",
       "length": 532,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3818,6 +3988,7 @@
       "description": "",
       "length": 257,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3833,6 +4004,7 @@
       "description": "",
       "length": 169,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3848,6 +4020,7 @@
       "description": "",
       "length": 63,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3862,6 +4035,7 @@
       "description": "",
       "length": 750,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3876,6 +4050,7 @@
       "description": "",
       "length": 395,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3890,6 +4065,7 @@
       "description": "",
       "length": 837,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3904,6 +4080,7 @@
       "description": "",
       "length": 969,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3919,6 +4096,7 @@
       "description": "",
       "length": 1419,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3935,6 +4113,7 @@
       "description": "",
       "length": 24,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3954,6 +4133,7 @@
       "description": "",
       "length": 714,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3972,6 +4152,7 @@
       "description": "",
       "length": 76,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -3986,6 +4167,7 @@
       "description": "",
       "length": 1173,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4000,6 +4182,7 @@
       "description": "",
       "length": 969,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4018,6 +4201,7 @@
       "description": "",
       "length": 672,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4034,6 +4218,7 @@
       "description": "",
       "length": 4164,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4051,6 +4236,7 @@
       "description": "",
       "length": 24,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4066,6 +4252,7 @@
       "description": "",
       "length": 291,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4082,6 +4269,7 @@
       "description": "",
       "length": 21,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4096,6 +4284,7 @@
       "description": "",
       "length": 120,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4110,6 +4299,7 @@
       "description": "",
       "length": 54,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4127,6 +4317,7 @@
       "description": "",
       "length": 2649,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4144,6 +4335,7 @@
       "description": "",
       "length": 33,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4159,6 +4351,7 @@
       "description": "",
       "length": 48,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4176,6 +4369,7 @@
       "description": "",
       "length": 351,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4192,6 +4386,7 @@
       "description": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
       "length": 67,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "T7 promoter",
@@ -4284,6 +4479,7 @@
       "description": "",
       "length": 40,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4301,6 +4497,7 @@
       "description": "",
       "length": 1188,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4315,6 +4512,7 @@
       "description": "",
       "length": 1188,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4329,6 +4527,7 @@
       "description": "",
       "length": 19,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4346,6 +4545,7 @@
       "description": "",
       "length": 624,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4360,6 +4560,7 @@
       "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
       "length": 56,
       "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "PtetA -35",
@@ -4472,6 +4673,7 @@
       "description": "",
       "length": 21,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4488,6 +4690,7 @@
       "description": "",
       "length": 18,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4503,6 +4706,7 @@
       "description": "",
       "length": 272,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4518,6 +4722,7 @@
       "description": "",
       "length": 93,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4533,6 +4738,7 @@
       "description": "",
       "length": 350,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4547,6 +4753,7 @@
       "description": "",
       "length": 1146,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4562,6 +4769,7 @@
       "description": "",
       "length": 741,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4577,6 +4785,7 @@
       "description": "",
       "length": 252,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4591,6 +4800,7 @@
       "description": "",
       "length": 417,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4606,6 +4816,7 @@
       "description": "",
       "length": 801,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4620,6 +4831,7 @@
       "description": "",
       "length": 963,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
@@ -4636,6 +4848,7 @@
       "description": "",
       "length": 717,
       "documented": false,
+      "status": "candidate",
       "children": [],
       "references": [],
       "main_citations": []
