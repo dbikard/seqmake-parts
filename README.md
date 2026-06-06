@@ -1,5 +1,12 @@
 # DNA Parts Catalog
 
+> [!WARNING]
+> **Work in progress — largely AI-generated content.** This catalog is under
+> active development and much of its content (part annotations and
+> documentation pages) is **largely AI-generated**. It may contain errors and
+> has not been fully expert-reviewed — verify any part against the cited
+> primary literature before relying on it.
+
 An open, community-curated catalog of **standard DNA parts** for molecular
 cloning and synthetic biology — promoters, CDSs, terminators, ribosome binding
 sites, operators, and more — each stored as an **annotated GenBank file** with
@@ -28,9 +35,7 @@ docs/               generated website source (mkdocs Material)
 - **Programmatic access:** read `catalog.json` (schema in
   [`CONTRIBUTING.md`](CONTRIBUTING.md)) or parse the `.gb` files with any GenBank
   reader (e.g. BioPython).
-- This catalog is the upstream source consumed by the
-  [seqmake](https://github.com/dbikard/seqmake) auto-annotator and toolkit, but
-  it has **no dependency on seqmake** — it is a standalone, reusable dataset.
+- This catalog is a standalone, reusable dataset with no external dependencies.
 
 ## Contributing
 

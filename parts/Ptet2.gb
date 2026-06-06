@@ -51,15 +51,14 @@ FEATURES             Location/Qualifiers
                      /label="-35"
                      /parent="Ptet2"
                      /note="Perfect match to the canonical sigma70 -35 consensus
-                     TTGACA (seqmake detect_promoters minus35_score=1.0 at pos
-                     0)."
+                     TTGACA (minus35_score=1.0 at pos 0)."
                      /citation=[3]
                      /citation=[4]
      minus_10_signal 24..29
                      /label="-10"
                      /parent="Ptet2"
                      /note="TTTAAT, a strong sigma70 -10 variant (5/6 to TATAAT
-                     consensus; seqmake minus10_pos=23, spacer_len=17, optimal
+                     consensus; minus10_pos=23, spacer_len=17, optimal
                      spacing)."
                      /citation=[3]
                      /citation=[4]
