@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 
 from Bio import SeqIO
@@ -34,6 +35,11 @@ AI_WIP_WARNING = (
 
 ROOT = Path(__file__).resolve().parent.parent
 PARTS_DIR = ROOT / "parts"
+# Parts are split by curation status: ``validated`` parts carry a ``.md``
+# documentation page and are published to the website; ``candidate`` parts are
+# ``.gb``-only and live in the repo / catalog.json but are not on the site.
+VALIDATED_DIR = PARTS_DIR / "validated"
+CANDIDATE_DIR = PARTS_DIR / "candidate"
 DOCS_DIR = ROOT / "docs"
 PARTS_PAGES = DOCS_DIR / "parts"
 FILES_DIR = PARTS_PAGES / "files"
@@ -99,6 +105,7 @@ def parse_part(gb_path: Path) -> dict | None:
             "citations": _citation_indices(f.qualifiers),
         })
     md_path = gb_path.with_suffix(".md")
+    documented = md_path.exists()
     return {
         "name": name,
         "slug": gb_path.stem,
@@ -106,7 +113,8 @@ def parse_part(gb_path: Path) -> dict | None:
         "synonyms": list(q.get("synonym", [])),
         "description": (q.get("note") or [""])[0],
         "length": len(seq),
-        "documented": md_path.exists(),
+        "documented": documented,
+        "status": "validated" if documented else "candidate",
         "children": children,
         "references": refs,
         "main_citations": _citation_indices(q),
@@ -177,7 +185,7 @@ def render_part_page(part: dict) -> str:
         f"[Download FASTA](files/{slug}.fasta){{ .md-button }}\n",
         f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n',
     ]
-    md_path = PARTS_DIR / f"{slug}.md"
+    md_path = VALIDATED_DIR / f"{slug}.md"
     contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
     if part["documented"]:
         body = md_path.read_text(encoding="utf-8").strip() + "\n"
@@ -192,38 +200,54 @@ def render_part_page(part: dict) -> str:
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 
-def render_index(parts: list[dict]) -> str:
-    n_doc = sum(p["documented"] for p in parts)
+def render_index(validated: list[dict], n_candidate: int) -> str:
+    repo = "https://github.com/dbikard/dna-parts-catalog"
     lines = [
         "# DNA parts catalog\n",
         AI_WIP_WARNING,
-        f"An open, community-curated catalog of **{len(parts)}** standard DNA "
-        f"parts (promoters, CDSs, terminators, RBSs, …) as annotated GenBank "
-        f"files, **{n_doc}** with a curated documentation page. "
-        "Use the search box to find a part.\n",
-        "| Part | Type | Length | Docs |",
-        "|---|---|---|---|",
+        f"An open, community-curated catalog of standard DNA parts (promoters, "
+        f"CDSs, terminators, RBSs, …) as annotated GenBank files. The "
+        f"**{len(validated)}** *validated* parts below each carry a curated "
+        f"documentation page; use the search box to find one.\n",
+        f"A further **{n_candidate}** *candidate* parts (annotated GenBank, "
+        f"awaiting a curated documentation page) are available in "
+        f"[`catalog.json`]({repo}/blob/main/catalog.json) and the "
+        f"[`parts/candidate/`]({repo}/tree/main/parts/candidate) directory.\n",
+        "| Part | Type | Length |",
+        "|---|---|---|",
     ]
-    for p in sorted(parts, key=lambda x: x["name"].lower()):
-        doc = "✓" if p["documented"] else "—"
+    for p in sorted(validated, key=lambda x: x["name"].lower()):
         lines.append(f"| [{p['name']}](parts/{p['slug']}.md) | "
-                     f"{p['feature_type']} | {p['length']} bp | {doc} |")
+                     f"{p['feature_type']} | {p['length']} bp |")
     return "\n".join(lines) + "\n"
 
 
 def main() -> None:
     parts, skipped = [], []
-    for gb in sorted(PARTS_DIR.glob("*.gb")):
-        try:
-            p = parse_part(gb)
-            (parts if p else skipped).append(p or gb.name)
-        except Exception as exc:  # noqa: BLE001 - report and continue
-            skipped.append(f"{gb.name}: {exc}")
+    # ``validated/`` parts must carry a .md; ``candidate/`` parts must not.
+    for status_dir, expect_doc in ((VALIDATED_DIR, True), (CANDIDATE_DIR, False)):
+        for gb in sorted(status_dir.glob("*.gb")):
+            try:
+                p = parse_part(gb)
+            except Exception as exc:  # noqa: BLE001 - report and continue
+                skipped.append(f"{gb.name}: {exc}")
+                continue
+            if p is None:
+                skipped.append(gb.name)
+                continue
+            if p["documented"] != expect_doc:
+                want = "validated/ (needs a .md)" if expect_doc else "candidate/ (no .md)"
+                skipped.append(f"{gb.name}: misplaced — {p['status']} part in {want}")
+                continue
+            parts.append(p)
 
-    # Manifest (strip the internal sequence field).
+    # Manifest covers every part (validated + candidate), with the internal
+    # sequence field stripped.
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "n_parts": len(parts),
+        "n_validated": sum(p["status"] == "validated" for p in parts),
+        "n_candidate": sum(p["status"] == "candidate" for p in parts),
         "n_documented": sum(p["documented"] for p in parts),
         "parts": [{k: v for k, v in p.items() if k != "_seq"}
                   for p in sorted(parts, key=lambda x: x["name"].lower())],
@@ -231,22 +255,29 @@ def main() -> None:
     (ROOT / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n",
                                        encoding="utf-8")
 
-    # Site pages + downloadable files.
+    # Website publishes validated parts only (pages + downloadable files).
+    validated = [p for p in parts if p["status"] == "validated"]
+    n_candidate = manifest["n_candidate"]
     if PARTS_PAGES.exists():
         shutil.rmtree(PARTS_PAGES)
     FILES_DIR.mkdir(parents=True, exist_ok=True)
-    (DOCS_DIR / "index.md").write_text(render_index(parts), encoding="utf-8")
-    for p in parts:
+    (DOCS_DIR / "index.md").write_text(render_index(validated, n_candidate),
+                                       encoding="utf-8")
+    for p in validated:
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")
-        shutil.copyfile(PARTS_DIR / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
+        shutil.copyfile(VALIDATED_DIR / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
         (FILES_DIR / f"{p['slug']}.fasta").write_text(
             _fasta(p["name"], p["_seq"]), encoding="utf-8")
 
-    print(f"catalog: {len(parts)} parts ({manifest['n_documented']} documented); "
+    print(f"catalog: {len(parts)} parts "
+          f"({manifest['n_validated']} validated, {n_candidate} candidate); "
           f"skipped {len(skipped)}")
     for s in skipped:
         print("  skipped:", s)
+    # A skipped part means an unparseable or misplaced .gb — fail so CI catches it.
+    if skipped:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

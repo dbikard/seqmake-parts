@@ -20,12 +20,21 @@ A growing subset of parts also carries a **curated documentation page**
 
 ## What's here
 
+Parts are split by curation status:
+
+- **Validated** parts (`parts/validated/`) carry a curated `.md` documentation
+  page and are published to the website.
+- **Candidate** parts (`parts/candidate/`) are annotated GenBank files awaiting
+  a documentation page — present in the repo and `catalog.json`, but not yet on
+  the site.
+
 ```
-parts/<name>.gb     annotated GenBank part (one main feature + sub-features)
-parts/<name>.md     optional curated documentation page (origin / properties / use)
-catalog.json        machine-readable manifest (every part + its metadata)
-tools/build_catalog.py   regenerates catalog.json + the website pages
-docs/               generated website source (mkdocs Material)
+parts/validated/<name>.gb   annotated GenBank part (one main feature + sub-features)
+parts/validated/<name>.md   curated documentation page (origin / properties / use)
+parts/candidate/<name>.gb   annotated GenBank part awaiting a documentation page
+catalog.json                machine-readable manifest (every part + its metadata)
+tools/build_catalog.py      regenerates catalog.json + the website pages
+docs/                       generated website source (mkdocs Material)
 ```
 
 ## Using the catalog
@@ -40,8 +49,9 @@ docs/               generated website source (mkdocs Material)
 ## Contributing
 
 New parts and documentation pages are welcome — see
-[`CONTRIBUTING.md`](CONTRIBUTING.md). Adding a part is a single `.gb` file (plus
-an optional `.md`); CI validates it and rebuilds the manifest.
+[`CONTRIBUTING.md`](CONTRIBUTING.md). Adding a candidate part is a single `.gb`
+file in `parts/candidate/`; adding a `.md` page promotes it to a validated part
+in `parts/validated/`. CI validates it and rebuilds the manifest.
 
 ## License
 
