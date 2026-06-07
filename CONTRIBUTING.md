@@ -43,6 +43,11 @@ Parts are split by curation status:
   Common terms: promoter `SO:0000167`, ribosome_entry_site `SO:0000139`,
   terminator `SO:0000141`, CDS `SO:0000316`, operator `SO:0000057`,
   origin_of_replication `SO:0000296`, `-35` `SO:0000175`, `-10` `SO:0000176`.
+  Type at the **functional-class level** for consistency — e.g. an RBS is
+  `ribosome_entry_site` `SO:0000139` (just as a promoter is `SO:0000167`, not the
+  more specific `bacterial_RNApol_promoter`). A finer sub-element term such as
+  `Shine_Dalgarno_sequence` `SO:0000552` is used only as an explicit `/db_xref`
+  on a dedicated sub-feature, never inferred from a part's label.
 
 ## Regenerate locally
 

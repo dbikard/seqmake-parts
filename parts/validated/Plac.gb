@@ -1,4 +1,4 @@
-LOCUS       Plac                      55 bp    DNA              UNK 01-JAN-1980
+LOCUS       Plac                      57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a
             3'-truncated LacI operator O1, in 55 bp..
 ACCESSION   Plac
@@ -20,7 +20,7 @@ REFERENCE   2
    PUBMED   4587255
   REMARK    doi:10.1073/pnas.70.12.3581
 FEATURES             Location/Qualifiers
-     promoter        1..55
+     promoter        1..57
                      /label="Plac"
                      /synonym="lac promoter"
                      /note="The wild-type E. coli lac core promoter (Plac):
@@ -56,7 +56,7 @@ FEATURES             Location/Qualifiers
                      -10 base)."
                      /citation=[1]
                      /db_xref="SO:0000315"
-     protein_bind    34..55
+     protein_bind    34..57
                      /label="lac operator O1"
                      /parent="Plac"
                      /note="LacI operator O1, pseudo-palindromic."
@@ -64,5 +64,5 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /db_xref="SO:0000057"
 ORIGIN
-        1 tttacacttt atgcttccgg ctcgtatgtt gtgtggaatt gtgagcggat aacaa
+        1 tttacacttt atgcttccgg ctcgtatgtt gtgtggaatt gtgagcggat aacaatt
 //

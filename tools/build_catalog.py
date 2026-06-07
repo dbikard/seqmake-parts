@@ -83,8 +83,8 @@ def _so_derive(feature_type, regulatory_class=None, label=None):
     if feature_type == "protein_bind" and (
             "operator" in lab or any(t in lab for t in ("teto", "laco", "arao", "pho"))):
         return ("SO:0000057", "operator")
-    if feature_type == "RBS" and ("shine" in lab or "dalgarno" in lab or lab.strip() == "sd"):
-        return ("SO:0000552", "Shine_Dalgarno_sequence")
+    # Class-level typing: an RBS is ribosome_entry_site (SO:0000139);
+    # Shine_Dalgarno_sequence (SO:0000552) only via an explicit /db_xref.
     return _SO_BY_TYPE.get(feature_type)
 
 

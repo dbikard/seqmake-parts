@@ -1,4 +1,4 @@
-LOCUS       Ptac                      53 bp    DNA              UNK 01-JAN-1980
+LOCUS       Ptac                      55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  Ptac is a synthetic sigma70 promoter combining the trp -35 with the
             lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible
             promoter for E. coli expression..
@@ -30,7 +30,7 @@ REFERENCE   3
    PUBMED   3069586
   REMARK    doi:10.1016/0378-1119(88)90440-4
 FEATURES             Location/Qualifiers
-     promoter        1..53
+     promoter        1..55
                      /label="Ptac"
                      /synonym="tac promoter"
                      /note="Ptac is a synthetic sigma70 promoter combining the
@@ -77,7 +77,7 @@ FEATURES             Location/Qualifiers
                      operator, 7 nt downstream of the -10 hexamer."
                      /citation=[1]
                      /db_xref="SO:0000315"
-     protein_bind    35..53
+     protein_bind    35..55
                      /label="lac operator"
                      /parent="Ptac"
                      /note="Native lac operator O1 retained from lacUV5
@@ -87,5 +87,5 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
                      /db_xref="SO:0000057"
 ORIGIN
-        1 ttgacaatta atcatcggct cgtataatgt gtggaattgt gagcggataa caa
+        1 ttgacaatta atcatcggct cgtataatgt gtggaattgt gagcggataa caatt
 //

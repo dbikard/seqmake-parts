@@ -8,10 +8,10 @@ Ptac (the tac promoter) is a functional hybrid first built by de Boer, Comstock 
 - **Spacer**: 16 bp (ATTAATCATCGGCTCG), positions 6-22. This is the canonical *tac* spacing; it is 1 bp shorter than the 17 bp consensus, and inserting that 1 bp yields the related *trc* promoter ([PMID 2579077](https://pubmed.ncbi.nlm.nih.gov/2579077/)).
 - **-10**: TATAAT (consensus Pribnow box), positions 22-28 — lacUV5-derived.
 - **Discriminator / +1**: a 6 bp discriminator (GTGTGG) places the transcription start (+1) at the first A of the lac operator (position 34).
-- **lac operator O1**: positions 34-53, AATTGTGAGCGGATAACAA — the natural 21 bp O1 (AATTGTGAGCGGATAACAATT) truncated of its terminal TT by the part boundary. It binds LacI to give IPTG-inducible repression ([PMID 3069586](https://pubmed.ncbi.nlm.nih.gov/3069586/)).
+- **lac operator O1**: positions 34-55, AATTGTGAGCGGATAACAATT — the complete natural 21 bp O1 (the part was extended 2 bp to restore the terminal TT). It binds LacI to give IPTG-inducible repression ([PMID 3069586](https://pubmed.ncbi.nlm.nih.gov/3069586/)).
 
 ## Use
-Ptac drives strong, tunable transcription in E. coli that is repressed by LacI and de-repressed (induced) by IPTG, making it a standard choice for inducible recombinant protein expression on tac/lacIq vectors ([PMID 3069586](https://pubmed.ncbi.nlm.nih.gov/3069586/)). Note that the operator in this 53 bp part is truncated by 2 bp; for a fully canonical repressible element, extend the 3' end to restore the complete O1 (see curation recommendation), and pair with a LacI source for IPTG control.
+Ptac drives strong, tunable transcription in E. coli that is repressed by LacI and de-repressed (induced) by IPTG, making it a standard choice for inducible recombinant protein expression on tac/lacIq vectors ([PMID 3069586](https://pubmed.ncbi.nlm.nih.gov/3069586/)). The operator is the complete O1 (the 55 bp part was extended 2 bp to include the terminal TT, which the registry confirms is universally present downstream). Pair with a LacI source for IPTG control.
 
 ## References
 - [PMID 6337371](https://pubmed.ncbi.nlm.nih.gov/6337371/) — de Boer, Comstock, Vasser (1983) *Proc Natl Acad Sci U S A* 80(1):21-25. The tac promoter: a functional hybrid derived from the trp and lac promoters.

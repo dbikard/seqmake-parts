@@ -2801,7 +2801,7 @@
         "lac promoter"
       ],
       "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
-      "length": 55,
+      "length": 57,
       "documented": true,
       "status": "validated",
       "children": [
@@ -2859,7 +2859,7 @@
           "so_term": "SO:0000057",
           "so_name": "operator",
           "start": 33,
-          "end": 55,
+          "end": 57,
           "strand": 1,
           "citations": [
             2,
@@ -3792,7 +3792,7 @@
         "tac promoter"
       ],
       "description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
-      "length": 53,
+      "length": 55,
       "documented": true,
       "status": "validated",
       "children": [
@@ -3863,7 +3863,7 @@
           "so_term": "SO:0000057",
           "so_name": "operator",
           "start": 34,
-          "end": 53,
+          "end": 55,
           "strand": 1,
           "citations": [
             1,
