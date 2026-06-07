@@ -1,4 +1,4 @@
-LOCUS       CspRecT                  810 bp    DNA              UNK 01-JAN-1980
+LOCUS       CspRecT                  270 aa                     UNK 01-JAN-1980
 DEFINITION  CspRecT.
 ACCESSION   CspRecT
 VERSION     CspRecT
@@ -7,27 +7,13 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..810
+     CDS             1..270
                      /label="CspRecT"
                      /synonym="CspRecT"
-                     /translation="MNQIVKFTDDSGLAVQVTPDDVRRYICENATEKEVGLFLQLCQTQ
-                     RLNPFVKDAYLVKYGGAPASMITSYQVFNRRACRDANYDGIKSGVVVLRDGDVVHKRGA
-                     ACYKKAGEELIGGWAEVRFKDGRETAYAEVALDDYSTGKSNWAKMPGVMIEKCAKAAAW
-                     RLAFPDTFQGMYAAEEMDQAQQPEQVRAQAEQPVDLQPIRELFKPYCEHFGITPAEGMT
-                     AVCGAVGAEGMHSMTEQQARRARAWMEEEMAAPAVEAEYEVVDEGEVF"
 ORIGIN
-        1 atgaaccaga ttgtgaaatt taccgatgac agcggcctgg cggttcaagt cacgccggat
-       61 gacgtgcgtc gctatatctg cgaaaatgcc actgagaagg aagttggttt attcttgcag
-      121 ctgtgtcaaa cccagcgttt aaacccattt gtcaaagatg catacttggt gaagtatgga
-      181 ggcgcgccgg cctcgatgat tacgtcctac caagttttca atcgccgtgc atgccgcgac
-      241 gcgaactatg atggtatcaa atctggagtc gtggttctgc gtgacggcga tgtcgtgcat
-      301 aagcgcggtg ccgcatgtta caaaaaggcg ggagaggaat taattggcgg ttgggccgag
-      361 gttcgtttta aagacggacg cgaaactgca tatgcggagg tcgccttgga tgactacagc
-      421 accggcaagt cgaattgggc aaaaatgcca ggtgtgatga tcgaaaagtg cgcgaaagcc
-      481 gcagcgtggc gtctggcctt cccggatacg tttcagggaa tgtatgcagc ggaggaaatg
-      541 gaccaagccc agcaaccaga gcaggttcgc gcacaagcgg aacagccggt cgatttacaa
-      601 ccaattcgtg agttgttcaa gccgtactgt gaacactttg gcatcactcc agccgagggt
-      661 atgaccgcag tgtgcggagc ggttggcgcc gaaggtatgc attccatgac ggagcagcaa
-      721 gcacgccgtg cgcgcgcctg gatggaagag gaaatggcag cgccggccgt cgaggcagaa
-      781 tatgaggtgg ttgacgaagg agaggtcttc
+        1 mnqivkftdd sglavqvtpd dvrryicena tekevglflq lcqtqrlnpf vkdaylvkyg
+       61 gapasmitsy qvfnrracrd anydgiksgv vvlrdgdvvh krgaacykka geeliggwae
+      121 vrfkdgreta yaevalddys tgksnwakmp gvmiekcaka aawrlafpdt fqgmyaaeem
+      181 dqaqqpeqvr aqaeqpvdlq pirelfkpyc ehfgitpaeg mtavcgavga egmhsmteqq
+      241 arrarawmee emaapaveae yevvdegevf
 //

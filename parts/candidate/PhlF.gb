@@ -1,4 +1,4 @@
-LOCUS       PhlF                     600 bp    DNA              UNK 01-JAN-1980
+LOCUS       PhlF                     200 aa                     UNK 01-JAN-1980
 DEFINITION  PhlF.
 ACCESSION   PhlF
 VERSION     PhlF
@@ -7,22 +7,12 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..600
+     CDS             1..200
                      /label="PhlF"
                      /synonym="PhlF"
-                     /translation="MARTPSRSSIGSLRSPHTHKAILTSTIEILKECGYSGLSIESVAR
-                     RAGASKPTIYRWWTNKAALIAEVYENESEQVRKFPDLGSFKADLDFLLRNLWKVWRETI
-                     CGEAFRCVIAEAQLDPATLTQLKDQFMERRREMPKKLVENAISNGELPKDTNRELLLDM
-                     IFGFCWYRLLTEQLTVEQDIEEFTFLLINGVCPGTQR"
 ORIGIN
-        1 atggcgcgta ccccgagccg ctcgtccatt ggctctctgc gtagcccaca tacgcacaaa
-       61 gccatcttaa cttcgaccat tgaaatcttg aaggagtgcg gttattccgg actgtctatt
-      121 gaaagcgtgg cacgccgtgc gggcgcctcg aaaccgacga tctaccgctg gtggactaac
-      181 aaggcagcgt taattgccga ggtttatgaa aatgagtccg aacaggtccg taaatttcca
-      241 gatttgggtt ctttcaaggc agacctggat tttttattgc gcaacctgtg gaaagtgtgg
-      301 cgtgagacca tctgtggaga agcgttccgc tgcgttattg ccgaggcaca attagacccg
-      361 gcgacgttga ctcagctgaa ggatcaattt atggaacgtc gccgtgagat gccaaaaaag
-      421 ttagtcgaaa atgccatcag caacggcgag ttgccgaaag acaccaatcg cgaactgtta
-      481 ttggatatga ttttcggttt ttgttggtac cgtctgttaa cggagcagtt gactgtggaa
-      541 caagacatcg aggaattcac ctttctgtta attaacggag tttgcccagg cacgcagcgc
+        1 martpsrssi gslrsphthk ailtstieil kecgysglsi esvarragas kptiyrwwtn
+       61 kaaliaevye neseqvrkfp dlgsfkadld fllrnlwkvw reticgeafr cviaeaqldp
+      121 atltqlkdqf merrrempkk lvenaisnge lpkdtnrell ldmifgfcwy rllteqltve
+      181 qdieeftfll ingvcpgtqr
 //

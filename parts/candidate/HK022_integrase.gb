@@ -1,4 +1,4 @@
-LOCUS       HK022_integrase         1071 bp    DNA              UNK 01-JAN-1980
+LOCUS       HK022_integrase          357 aa                     UNK 01-JAN-1980
 DEFINITION  HK022 integrase.
 ACCESSION   HK022_integrase
 VERSION     HK022_integrase
@@ -7,33 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1071
+     CDS             1..357
                      /label="HK022 integrase"
                      /synonym="HK022 integrase"
-                     /translation="MGRRRSHERRDLPPNLYIRNNGYYCYRDPRTGKEFGLGRDRRIAI
-                     TEAIQANIELLSGNRRESLIDRIKGADAITLHAWLDRYETILSERGIRPKTLLDYASKI
-                     RAIRRKLPDKPLADISTKEVAAMLNTYVAEGKSASAKLIRSTLVDVFREAIAEGHVATN
-                     PVTATRTAKSEVRRSRLTANEYVAIYHAAEPLPIWLRLAMDLAVVTGQRVGDLCRMKWS
-                     DINDNHLHIEQSKTGAKLAIPLTLTIDALNISLADTLQQCREASSSETIIASKHHDPLS
-                     PKTVSKYFTKARNASGLSFDGNPPTFHELRSLSARLYRNQIGDKFAQRLLGHKSDSMAA
-                     RYRDSRGREWDKIEIDK"
 ORIGIN
-        1 atgggccgtc gccgtagcca tgaacgccgt gatctgccgc caaacttata tattcgcaat
-       61 aacggttact attgctaccg tgacccgcgc accggaaaag agtttggctt gggtcgtgat
-      121 cgccgtatcg cgattacgga agccatccag gcaaatattg agctgttatc gggaaaccgc
-      181 cgtgaatcct tgatcgaccg cattaagggc gcggatgcca tcactctgca cgcatggtta
-      241 gaccgttatg agaccatttt gtctgaacgc ggtatccgtc caaaaacgct gttagattac
-      301 gcgagcaaga ttcgcgccat ccgtcgcaaa ttgccggaca agccactggc agatatttcg
-      361 actaaagagg tggcggccat gttaaatacc tatgttgcag aaggaaagtc cgcgtctgcc
-      421 aaattgatcc gtagcacgct ggtcgacgtg ttccgcgagg caattgcgga aggccatgtt
-      481 gccactaacc cggtcaccgc aacgcgtact gcgaagtcgg aggtgcgccg ttcccgctta
-      541 accgccaatg aatacgttgc aatctatcac gcggccgagc cattgccgat ttggctgcgt
-      601 ttagcaatgg atttggcggt cgtgacgggt caacgcgttg gagacctgtg tcgtatgaaa
-      661 tggtctgata tcaacgacaa tcatttacac attgaacaga gcaagactgg cgccaaattg
-      721 gcaatcccac tgaccttaac gattgatgcg ttgaacatct cgctggccga cactttacaa
-      781 cagtgccgcg aggcatcctc tagcgaaacc attatcgcgt cgaagcatca cgatccgttg
-      841 tccccaaaaa cggtctctaa gtactttact aaagcccgta atgcaagcgg tctgtcgttc
-      901 gacggaaacc cgccaacctt tcatgagtta cgctccttgt ctgcgcgtct gtatcgcaat
-      961 caaattggcg ataagttcgc ccagcgttta ttgggtcaca aaagcgactc gatggcagcg
-     1021 cgctaccgtg attcccgcgg acgtgaatgg gacaagatcg agattgataa a
+        1 mgrrrsherr dlppnlyirn ngyycyrdpr tgkefglgrd rriaiteaiq aniellsgnr
+       61 reslidrikg adaitlhawl dryetilser girpktlldy askirairrk lpdkpladis
+      121 tkevaamlnt yvaegksasa klirstlvdv freaiaeghv atnpvtatrt aksevrrsrl
+      181 taneyvaiyh aaeplpiwlr lamdlavvtg qrvgdlcrmk wsdindnhlh ieqsktgakl
+      241 aipltltida lnisladtlq qcreassset iiaskhhdpl spktvskyft karnasglsf
+      301 dgnpptfhel rslsarlyrn qigdkfaqrl lghksdsmaa ryrdsrgrew dkieidk
 //

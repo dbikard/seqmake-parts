@@ -1,4 +1,4 @@
-LOCUS       mCherry                  708 bp    DNA              UNK 01-JAN-1980
+LOCUS       mCherry                  236 aa                     UNK 01-JAN-1980
 DEFINITION  mCherry.
 ACCESSION   mCherry
 VERSION     mCherry
@@ -7,26 +7,13 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..708
+     CDS             1..236
                      /label="mCherry"
                      /synonym="mCherry"
                      /synonym="mCherry E"
-                     /translation="MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEG
-                     TQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNF
-                     EDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALK
-                     GEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERA
-                     EGRHSTGGMDELYK"
 ORIGIN
-        1 atggtgagca aaggcgaaga ggataacatg gcgattatca aggaatttat gcgtttcaaa
-       61 gttcatatgg agggttcggt caatggacac gaatttgaga ttgaaggcga gggtgaagga
-      121 cgcccgtatg agggcaccca gacggccaag ctgaaagtga ctaagggtgg accattaccg
-      181 ttcgcatggg acatcttgtc cccacaattt atgtacggct ctaaagcgta tgttaagcat
-      241 ccggccgata ttccagacta cctgaaatta agcttcccgg aaggttttaa gtgggagcgt
-      301 gtcatgaact tcgaagatgg aggcgtggtt accgtcacgc aggactcgtc cttgcaagat
-      361 ggtgagttta tctataaagt gaagctgcgc ggaactaatt tcccatctga cggcccggtt
-      421 atgcagaaaa agaccatggg ttgggaagca agctcggagc gtatgtaccc agaagatgga
-      481 gcgttaaaag gcgagattaa gcaacgcttg aaactgaagg acggtggaca ctatgatgcc
-      541 gaagtcaaaa cgacttacaa ggcaaaaaag ccggtgcagt taccaggcgc gtataacgtt
-      601 aatatcaaat tggacattac ctcccataac gaggattaca cgatcgtcga acaatatgag
-      661 cgtgccgaag gtcgccactc tactggaggc atggacgagc tgtacaag
+        1 mvskgeednm aiikefmrfk vhmegsvngh efeiegegeg rpyegtqtak lkvtkggplp
+       61 fawdilspqf mygskayvkh padipdylkl sfpegfkwer vmnfedggvv tvtqdsslqd
+      121 gefiykvklr gtnfpsdgpv mqkktmgwea ssermypedg alkgeikqrl klkdgghyda
+      181 evkttykakk pvqlpgaynv niklditshn edytiveqye raegrhstgg mdelyk
 //

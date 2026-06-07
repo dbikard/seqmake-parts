@@ -1,4 +1,4 @@
-LOCUS       AadA_SEVA                903 bp    DNA              UNK 01-JAN-1980
+LOCUS       AadA_SEVA                301 aa                     UNK 01-JAN-1980
 DEFINITION  AadA (SEVA).
 ACCESSION   AadA_SEVA
 VERSION     AadA_SEVA
@@ -7,33 +7,17 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..903
+     CDS             1..301
                      /label="AadA (SEVA)"
                      /synonym="AadA"
                      /synonym="aadA"
                      /synonym="streptomycin 3''-adenylyltransferase"
                      /synonym="SmR/SpR"
-                     /translation="MPRASKQQARYAVGRCLMLWSSNDVTQQGSRPKTKLNIMREAVIA
-                     EVSTQLSEVVGVIERHLEPTLLAVHLYGSAVDGGLKPHSDIDLLVTVTVRLDETTRRAL
-                     INDLLETSASPGESEILRAVEVTIVVHDDIIPWRYPAKRELQFGEWQRNDILAGIFEPA
-                     TIDIDLAILLTKAREHSVALVGPAAEELFDPVPEQDLFEALNETLTLWNSPPDWAGDER
-                     NVVLTLSRIWYSAVTGKIAPKDVAADWAMERLPAQYQPVILEARQAYLGQEEDRLASRA
-                     DQLEEFVHYVKGEITKVVGK"
 ORIGIN
-        1 atgccgcgtg cgagcaaaca gcaagcccgc tatgcagtgg gccgttgcct gatgttatgg
-       61 tcgtccaacg atgttaccca gcaaggttct cgcccaaaga cgaaattgaa tattatgcgt
-      121 gaagcggtca tcgccgaggt gagcactcag ctgtcggaag ttgtcggagt gattgagcgc
-      181 catttagaac cgaccttgct ggcagttcac ttatacggct ccgcggtcga cggtggattg
-      241 aagccacatt ctgatatcga cctgttagtg acggttactg tccgtttgga tgagaccacg
-      301 cgccgtgccc tgattaacga cttattggaa actagcgcat cgccgggcga gtccgaaatc
-      361 ctgcgcgcgg tggaggttac cattgtcgtg cacgatgaca tcattccatg gcgttatccg
-      421 gccaaacgcg aattacaatt tggtgagtgg cagcgtaatg atatcttggc aggaattttc
-      481 gaaccagcga cgatcgacat tgatctggcc atcttattga ctaaggcacg cgagcattct
-      541 gttgcgctgg tcggcccggc cgcagaagag ttatttgacc cagtgccgga acaagatttg
-      601 ttcgaggcgc tgaacgaaac cttaacgttg tggaatagcc caccggactg ggccggtgat
-      661 gagcgtaacg ttgtcctgac tttatcgcgc atttggtact ccgcagtgac cggaaaaatc
-      721 gcgccaaagg acgttgccgc agattgggcg atggaacgtt tgccggccca gtatcaacca
-      781 gtcattctgg aggcacgcca ggcgtactta ggccaagaag aggaccgttt ggcctctcgc
-      841 gcagatcagc tggaagagtt tgtgcactat gttaaaggtg aaatcacgaa ggtcgtggga
-      901 aaa
+        1 mpraskqqar yavgrclmlw ssndvtqqgs rpktklnimr eaviaevstq lsevvgvier
+       61 hleptllavh lygsavdggl kphsdidllv tvtvrldett rralindlle tsaspgesei
+      121 lravevtivv hddiipwryp akrelqfgew qrndilagif epatididla illtkarehs
+      181 valvgpaaee lfdpvpeqdl fealnetltl wnsppdwagd ernvvltlsr iwysavtgki
+      241 apkdvaadwa merlpaqyqp vilearqayl gqeedrlasr adqleefvhy vkgeitkvvg
+      301 k
 //

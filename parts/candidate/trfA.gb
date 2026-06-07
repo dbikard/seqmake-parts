@@ -1,4 +1,4 @@
-LOCUS       trfA                    1146 bp    DNA              UNK 01-JAN-1980
+LOCUS       trfA                     382 aa                     UNK 01-JAN-1980
 DEFINITION  trfA.
 ACCESSION   trfA
 VERSION     trfA
@@ -7,35 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1146
+     CDS             1..382
                      /label="trfA"
                      /synonym="trfA"
-                     /translation="MNRTFDRKAYRQELIDAGFSAEDAETIASRTVMRAPRETFQSVGS
-                     IVQQATAKIERDSVQLAPPALPAPSAAVERSRRLEQEAAGLAKSMTIDTRGTMTTKKRK
-                     TAGEDLAKQVSEAKQAALLKHTKQQIKEMQLSLFDIAPWPDTMRAMPNDTARSALFTTR
-                     NKKIPREALQNKVIFHVNKDVKITYTGVELRADDDELVWQQVLEYAKRTPIGEPITFTF
-                     YELCQDLGWSINGRYYTKAEECLSRLQATAMGFTSDRVGHLESVSLLHRFRVLDRGKKT
-                     SRCQVLIDEEIVVLFAGDHYTKFIWEKYRKLSPTARRMFDYFSSHREPYPLKLETFRLM
-                     CGSDSTRVKKWREQVGEACEELRGSGLVEHAWVNDDLVHCKR"
 ORIGIN
-        1 atgaaccgta cctttgatcg caaagcgtat cgtcaggaac tgattgacgc cggcttcagc
-       61 gcagaggatg cggaaacgat cgcctcgcgc actgtgatgc gtgcaccgcg cgagaccttt
-      121 caatccgttg gttctattgt ccagcaagcg acggccaaga tcgaacgtga cagcgtgcag
-      181 ttagcaccac cggcgttgcc agccccgtcg gcagcggttg agcgctcccg tcgcctggaa
-      241 caagaggccg caggattagc gaaatctatg actattgata cccgtggcac gatgactacc
-      301 aagaaacgca agacggccgg tgaagacttg gcaaaacagg tcagcgaggc gaagcaagcc
-      361 gcactgttaa aacatactaa gcagcaaatc aaagaaatgc agttgtcgct gttcgatatt
-      421 gcgccatggc cggacaccat gcgtgccatg ccaaatgata cggcacgctc cgcgttattt
-      481 actacccgta acaagaaaat cccgcgcgag gccttgcaaa ataaggtgat tttccacgtt
-      541 aacaaagacg tcaagatcac gtacactgga gtggaactgc gtgcagatga cgatgagtta
-      601 gtttggcagc aagtcttgga atatgcgaaa cgcaccccaa ttggcgagcc gatcacgttt
-      661 actttctacg aactgtgcca ggacttaggt tggtctatta atggacgtta ttacaccaag
-      721 gccgaggaat gtttgagccg cctgcaagca acggcgatgg gctttacttc ggatcgtgtg
-      781 ggtcatttag agtccgtttc tttgctgcac cgcttccgtg tcttagaccg cggaaaaaag
-      841 accagccgtt gccaggtgtt gatcgatgaa gagattgttg tcctgtttgc cggcgaccat
-      901 tatacgaaat tcatctggga aaagtaccgc aaattatcgc caactgcacg tcgcatgttt
-      961 gattatttct cctctcaccg tgagccgtac ccattgaagc tggaaacctt tcgcttaatg
-     1021 tgtggtagcg actcgacgcg tgtgaaaaag tggcgcgagc aagttggaga agcgtgcgag
-     1081 gaattgcgtg gctccggtct ggtcgagcat gcctgggtga acgatgactt agttcactgt
-     1141 aaacgc
+        1 mnrtfdrkay rqelidagfs aedaetiasr tvmrapretf qsvgsivqqa takierdsvq
+       61 lappalpaps aaversrrle qeaaglaksm tidtrgtmtt kkrktagedl akqvseakqa
+      121 allkhtkqqi kemqlslfdi apwpdtmram pndtarsalf ttrnkkipre alqnkvifhv
+      181 nkdvkitytg velradddel vwqqvleyak rtpigepitf tfyelcqdlg wsingryytk
+      241 aeeclsrlqa tamgftsdrv ghlesvsllh rfrvldrgkk tsrcqvlide eivvlfagdh
+      301 ytkfiwekyr klsptarrmf dyfsshrepy plkletfrlm cgsdstrvkk wreqvgeace
+      361 elrgsglveh awvnddlvhc kr
 //

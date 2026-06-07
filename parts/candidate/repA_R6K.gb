@@ -1,4 +1,4 @@
-LOCUS       repA_R6K                1053 bp    DNA              UNK 01-JAN-1980
+LOCUS       repA_R6K                 351 aa                     UNK 01-JAN-1980
 DEFINITION  repA (R6K).
 ACCESSION   repA_R6K
 VERSION     repA_R6K
@@ -7,33 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1053
+     CDS             1..351
                      /label="repA (R6K)"
                      /synonym="repA"
-                     /translation="MTNYNQKNENKQEVKTALEKCTDKKRKNPRFTSYIAPLTTKKNIE
-                     RTSTCGDYLFMLSDADLEHFKLHKGNFCGNRFCPMCSWRLACKDSLEISILMEHLRKEE
-                     NKEFIFLTLTTPNVKSYDLNYSIKQYNKSFKKLMERKEVKDITKGYIRKLEVTYQKEKY
-                     ITKDLWKIKKDYYQKKGLEIGDLEPNFDTYNPHFHVVIAVNKSYFTDKNYYINRERWLE
-                     LWKFATKDDSITQVDVRKAKINDYKEVYELAKYSAKDTDYLISRPVFEIFYKALKGKQV
-                     LVFSGFFKDAHKLYKQGKLDVYKKKDEIKYVYIVYYNWCKKQYEKTRIRELTEDEKEEL
-                     NQDLIDEIEID"
 ORIGIN
-        1 atgaccaact ataatcagaa aaacgaaaat aagcaagagg tgaaaacggc gctggaaaag
-       61 tgcactgata aaaagcgtaa aaacccgcgc tttaccagct acattgcccc attaacgact
-      121 aagaaaaata tcgagcgtac ctcgacgtgt ggcgactatt tgttcatgct gtccgatgca
-      181 gacttagaac attttaagtt gcacaaaggt aacttctgcg gaaatcgctt ttgtccgatg
-      241 tgctcttggc gtctggcgtg taaggatagc ttagagattt cgatcttgat ggaacatctg
-      301 cgcaaagagg aaaacaagga gttcattttt ttaactttga ccacgccaaa tgttaaatcc
-      361 tacgacctga actattctat caagcagtac aataaaagct tcaagaaatt aatggaacgt
-      421 aaggaggtca aagatattac taagggctat atccgcaaat tggaagtgac ctaccaaaag
-      481 gagaaatata ttacgaagga cctgtggaaa atcaagaaag attactatca gaagaaaggt
-      541 ttagaaattg gagacttgga gccgaacttt gatacttaca atccacactt ccatgttgtc
-      601 atcgccgtga acaagtcgta ttttaccgac aaaaattact atattaaccg tgaacgctgg
-      661 ctggagttat ggaagttcgc aacgaaagat gactccatca ctcaagttga tgtccgtaag
-      721 gcgaaaatta atgactacaa ggaagtgtat gagttggcca aatactctgc aaaggatacc
-      781 gactatctga tcagccgccc ggtttttgaa attttctaca aagcgttaaa gggcaaacag
-      841 gtcttggtgt tttcgggttt ctttaaggat gcccacaaac tgtataagca aggaaaatta
-      901 gacgtttaca agaaaaagga tgagatcaaa tatgtctaca ttgtgtatta caactggtgc
-      961 aagaaacagt atgaaaagac gcgtatccgc gagttgactg aagacgagaa agaagagctg
-     1021 aatcaagatt taattgacga aatcgagatt gat
+        1 mtnynqknen kqevktalek ctdkkrknpr ftsyiapltt kkniertstc gdylfmlsda
+       61 dlehfklhkg nfcgnrfcpm cswrlackds leisilmehl rkeenkefif ltlttpnvks
+      121 ydlnysikqy nksfkklmer kevkditkgy irklevtyqk ekyitkdlwk ikkdyyqkkg
+      181 leigdlepnf dtynphfhvv iavnksyftd knyyinrerw lelwkfatkd dsitqvdvrk
+      241 akindykevy elakysakdt dylisrpvfe ifykalkgkq vlvfsgffkd ahklykqgkl
+      301 dvykkkdeik yvyivyynwc kkqyektrir eltedekeel nqdlideiei d
 //

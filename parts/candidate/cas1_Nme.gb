@@ -1,4 +1,4 @@
-LOCUS       cas1_Nme                 912 bp    DNA              UNK 01-JAN-1980
+LOCUS       cas1_Nme                 304 aa                     UNK 01-JAN-1980
 DEFINITION  cas1 (Nme).
 ACCESSION   cas1_Nme
 VERSION     cas1_Nme
@@ -7,31 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..912
+     CDS             1..304
                      /label="cas1 (Nme)"
                      /synonym="cas1 (Nme)"
                      /synonym="cas1 NMV_RS09840"
-                     /translation="MTWRSLLIQNGGKLSLQRRQLLIQQNGESHTVPLEDIAVIIIENR
-                     ETLITAPLLSALAEHGATLLTCDEQFLPCGQWLPYAQYHRQLKILKLQLNISEPLKKQL
-                     WQHIVRQKILNQAFVADETGNDLAAKRLRTLASEVRSGDTGNREAQAAALYFQALFGEK
-                     FTRNDNNAVNAALNYTYAVLRAAVARTLTLYGWLPALGLFHRSELNPFNLADDFIEPLR
-                     PLADLTVIHLYEQGRLKAELTPGIKQHLIKTLHYQISIERQHFSTLAAIDKMVSSFQAG
-                     VTDKNAKQLKLPEILPLKEYQYE"
 ORIGIN
-        1 atgacctggc gtagcctgtt aattcagaac ggcggtaaat tgtcgctgca acgccgtcag
-       61 ttattgatcc aacagaatgg agaatcccat acggtgccgc tggaggatat tgcggttatc
-      121 attatcgaaa accgcgagac tttaattacc gccccattgc tgtctgcatt agcggaacac
-      181 ggcgccacgt tgctgacttg cgacgagcaa tttttaccgt gtggtcagtg gttgccatat
-      241 gcacaatacc atcgtcagct gaagatctta aaattgcaac tgaatattag cgaaccgtta
-      301 aagaaacagt tgtggcaaca catcgtccgc cagaagattc tgaaccaagc gttcgtggcc
-      361 gatgagaccg gaaatgactt agcagcgaaa cgtttgcgca cgctggcctc ggaagttcgt
-      421 tccggcgata ctggtaaccg cgaggcacag gcggccgcat tatattttca agcgttgttc
-      481 ggagaaaagt ttacccgtaa tgacaacaat gccgtcaacg cagcgctgaa ttacacgtat
-      541 gccgtgttac gcgcagcggt tgcccgtact ttgaccctgt acggctggtt accagcattg
-      601 ggtctgttcc atcgctctga gttaaacccg tttaatttgg cggatgactt catcgaacca
-      661 ctgcgtccgt tagccgattt gacggtcatt cacctgtatg agcagggacg cttaaaagca
-      721 gaattgactc caggcatcaa gcaacatctg attaaaacct tacactacca gatcagcatt
-      781 gagcgtcaac atttttcgac gttggcggcc atcgacaaga tggtgtcctc tttccaggca
-      841 ggtgttactg ataaaaacgc gaagcaactg aaattaccgg aaattttgcc actgaaggag
-      901 tatcagtacg aa
+        1 mtwrslliqn ggklslqrrq lliqqngesh tvplediavi iienretlit apllsalaeh
+       61 gatlltcdeq flpcgqwlpy aqyhrqlkil klqlnisepl kkqlwqhivr qkilnqafva
+      121 detgndlaak rlrtlasevr sgdtgnreaq aaalyfqalf gekftrndnn avnaalnyty
+      181 avlraavart ltlygwlpal glfhrselnp fnladdfiep lrpladltvi hlyeqgrlka
+      241 eltpgikqhl iktlhyqisi erqhfstlaa idkmvssfqa gvtdknakql klpeilplke
+      301 yqye
 //

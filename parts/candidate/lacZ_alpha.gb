@@ -1,4 +1,4 @@
-LOCUS       lacZ_alpha               261 bp    DNA              UNK 01-JAN-1980
+LOCUS       lacZ_alpha                87 aa                     UNK 01-JAN-1980
 DEFINITION  lacZ alpha.
 ACCESSION   lacZ_alpha
 VERSION     lacZ_alpha
@@ -7,17 +7,12 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..261
+     CDS             1..87
                      /label="lacZ alpha"
                      /synonym="lacZ alpha"
                      /synonym="lacZa"
                      /synonym="beta-galactosidase alpha subunit"
-                     /translation="MTMITNSSSVPGDPLESTSRVHGDLEACRHASLALAVVLQRRDWE
-                     NPGVTQLNRLAAHPPFASWRNSEEARTDRPSQQLRSLNGEWR"
 ORIGIN
-        1 atgaccatga ttacgaacag ctcgtccgtg ccgggcgatc cactggaatc tactagccgt
-       61 gttcatggtg acttagaggc gtgccgccac gcctcgttgg cactggcggt cgtgttacag
-      121 cgtcgcgatt gggaaaatcc gggagttacc caattgaacc gtctggccgc acatccaccg
-      181 tttgcgtcct ggcgcaattc tgaggaagcc cgtacggacc gcccaagcca gcaattacgt
-      241 tcgttgaacg gcgagtggcg c
+        1 mtmitnsssv pgdplestsr vhgdleacrh aslalavvlq rrdwenpgvt qlnrlaahpp
+       61 faswrnseea rtdrpsqqlr slngewr
 //

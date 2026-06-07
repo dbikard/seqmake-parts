@@ -1,4 +1,4 @@
-LOCUS       CmR                      657 bp    DNA              UNK 01-JAN-1980
+LOCUS       CmR                      219 aa                     UNK 01-JAN-1980
 DEFINITION  CmR.
 ACCESSION   CmR
 VERSION     CmR
@@ -7,26 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..657
+     CDS             1..219
                      /label="CmR"
                      /synonym="CmR"
                      /synonym="CAT"
                      /synonym="cat"
                      /synonym="chloramphenicol acetyltransferase"
-                     /translation="MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFL
-                     KTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSS
-                     LWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANM
-                     DNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA"
 ORIGIN
-        1 atggaaaaaa agattaccgg ctatacgact gtggatatca gccagtggca tcgtaaagag
-       61 cactttgaag cgttccaatc ggttgcccag tgcacctaca accaaacggt ccagctggac
-      121 attactgcat ttttaaagac cgtgaaaaag aataaacata agttctatcc ggcgtttatc
-      181 cacattttgg cccgcctgat gaacgcacat ccagagttcc gtatggcgat gaaagatggt
-      241 gaattagtta tctgggactc cgtccacccg tgttacacgg tgtttcatga gcaaactgaa
-      301 accttctcta gcttgtggtc ggagtatcac gatgactttc gccagttcct gcatatttac
-      361 tcccaagatg ttgcctgcta tggagaaaat ttagcatact ttccaaaggg cttcatcgag
-      421 aacatgtttt tcgtctctgc gaatccgtgg gtgagcttta cgtcgttcga cttgaacgtt
-      481 gccaatatgg ataacttttt cgcaccagtc tttactatgg gtaaatatta cacccaggga
-      541 gacaaggtgc tgatgccgtt agcgattcaa gttcaccatg ccgtctgtga tggcttccac
-      601 gtgggtcgta tgttgaatga actgcagcaa tattgcgacg agtggcaggg aggcgca
+        1 mekkitgytt vdisqwhrke hfeafqsvaq ctynqtvqld itaflktvkk nkhkfypafi
+       61 hilarlmnah pefrmamkdg elviwdsvhp cytvfheqte tfsslwseyh ddfrqflhiy
+      121 sqdvacygen layfpkgfie nmffvsanpw vsftsfdlnv anmdnffapv ftmgkyytqg
+      181 dkvlmplaiq vhhavcdgfh vgrmlnelqq ycdewqgga
 //

@@ -1,4 +1,4 @@
-LOCUS       exo                      678 bp    DNA              UNK 01-JAN-1980
+LOCUS       exo                      226 aa                     UNK 01-JAN-1980
 DEFINITION  exo.
 ACCESSION   exo
 VERSION     exo
@@ -7,26 +7,13 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..678
+     CDS             1..226
                      /label="exo"
                      /synonym="exo"
                      /synonym="exonuclease"
-                     /translation="MTPDIILQRTGIDVRAVEQGDDAWHKLRLGVITASEVHNVIAKPR
-                     SGKKWPDMKMSYFHTLLAEVCTGVAPEVNAKALAWGKQYENDARTLFEFTSGVNVTESP
-                     IIYRDESMRTACSPDGLCSDGNGLELKCPFTSRDFMKFRLGGFEAIKSAYMAQVQYSMW
-                     VTRKNAWYFANYDPRMKREGLHYVVIERDEKYMASFDEIVPEFIEKMDEALAEIGFVFG
-                     EQWR"
 ORIGIN
-        1 atgaccccgg atattatcct gcagcgtacg ggcattgacg tgcgcgcggt tgaacaaggt
-       61 gatgacgcct ggcataaatt acgtttggga gtcatcactg caagcgaggt gcacaacgtt
-      121 attgcgaagc cacgctcggg caaaaagtgg ccggatatga aaatgtccta ttttcatacc
-      181 ctgttagccg aagtctgcac gggtgtggca ccagaggtta atgcgaaggc cttggcatgg
-      241 ggaaaacagt acgaaaacga cgcgcgtact ctgttcgagt ttacctctgg cgtcaatgtg
-      301 acggaaagcc cgatcattta tcgcgatgag tcgatgcgta ctgcctgttc cccagacggt
-      361 ttatgctctg atggaaacgg cttggaactg aagtgtccgt tcaccagccg cgactttatg
-      421 aaattccgtt taggtggatt tgaggcaatc aagtcggcgt acatggccca agttcagtat
-      481 tccatgtggg tcacgcgcaa aaatgcatgg tacttcgcga actatgatcc acgtatgaag
-      541 cgcgaaggct tgcactacgt ggttattgag cgtgacgaaa aatatatggc ctcttttgat
-      601 gagatcgtcc cggaattcat tgagaagatg gacgaagcac tggcggagat cggttttgtg
-      661 ttcggagaac aatggcgc
+        1 mtpdiilqrt gidvraveqg ddawhklrlg vitasevhnv iakprsgkkw pdmkmsyfht
+       61 llaevctgva pevnakalaw gkqyendart lfeftsgvnv tespiiyrde smrtacspdg
+      121 lcsdgnglel kcpftsrdfm kfrlggfeai ksaymaqvqy smwvtrknaw yfanydprmk
+      181 reglhyvvie rdekymasfd eivpefiekm dealaeigfv fgeqwr
 //

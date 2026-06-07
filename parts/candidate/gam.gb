@@ -1,4 +1,4 @@
-LOCUS       gam                      414 bp    DNA              UNK 01-JAN-1980
+LOCUS       gam                      138 aa                     UNK 01-JAN-1980
 DEFINITION  gam.
 ACCESSION   gam
 VERSION     gam
@@ -7,19 +7,12 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..414
+     CDS             1..138
                      /label="gam"
                      /synonym="gam"
                      /synonym="gam protein"
-                     /translation="MDINTETEIKQKHSLTPFPVFLISPAFRGRYFHSYFRSSAMNAYY
-                     IQDRLEAQSWARHYQQLAREEKEAELADDMEKGLPQHLFESLCIDHLQRHGASKKSITR
-                     AFDDDVEFQERMAEHIRYMVETIAHHQVDIDSEV"
 ORIGIN
-        1 atggatatta acaccgaaac ggagatcaaa cagaagcata gcctgactcc gtttccagtg
-       61 ttcttaattt cgccggcgtt tcgtggccgc tatttccact cctactttcg ttctagcgcc
-      121 atgaatgcat attacatcca agaccgcttg gaagcgcagt cgtgggcccg tcattatcaa
-      181 cagctggcac gcgaggaaaa agaggcggaa ttagccgatg acatggagaa gggtttgcca
-      241 caacacctgt tcgaatcctt atgcattgat catttgcagc gtcacggagc atctaaaaag
-      301 agcatcaccc gcgcgtttga cgatgacgtt gagttccaag aacgtatggc cgagcatatt
-      361 cgctacatgg tcgaaacgat cgcacaccat caggtggata ttgactcgga ggtt
+        1 mdinteteik qkhsltpfpv flispafrgr yfhsyfrssa mnayyiqdrl eaqswarhyq
+       61 qlareekeae laddmekglp qhlfeslcid hlqrhgaskk sitrafdddv efqermaehi
+      121 rymvetiahh qvdidsev
 //

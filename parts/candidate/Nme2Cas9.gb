@@ -1,4 +1,4 @@
-LOCUS       Nme2Cas9                3246 bp    DNA              UNK 01-JAN-1980
+LOCUS       Nme2Cas9                1082 aa                     UNK 01-JAN-1980
 DEFINITION  Nme2Cas9.
 ACCESSION   Nme2Cas9
 VERSION     Nme2Cas9
@@ -7,84 +7,29 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..3246
+     CDS             1..1082
                      /label="Nme2Cas9"
                      /synonym="Nme2Cas9"
                      /synonym="cas9 NMV_RS09835"
                      /synonym="NmeCas9"
-                     /translation="MAAFKPNSINYILGLDIGIASVGWAMVEIDEEENPIRLIDLGVRV
-                     FERAEVPKTGDSLAMARRLARSVRRLTRRRAHRLLRTRRLLKREGVLQAANFDENGLIK
-                     SLPNTPWQLRAAALDRKLTPLEWSAVLLHLIKHRGYLSQRKNEGETADKELGALLKGVA
-                     GNAHALQTGDFRTPAELALNKFEKESGHIRNQRSDYSHTFSRKDLQAELILLFEKQKEF
-                     GNPHVSGGLKEGIETLLMTQRPALSGDAVQKMLGHCTFEPAEPKAAKNTYTAERFIWLT
-                     KLNNLRILEQGSERPLTDTERATLMDEPYRKSKLTYAQARKLLGLEDTAFFKGLRYGKD
-                     NAEASTLMEMKAYHAISRALEKEGLKDKKSPLNLSPELQDEIGTAFSLFKTDEDITGRL
-                     KDRIQPEILEALLKHISFDKFVQISLKALRRIVPLMEQGKRYDEACAEIYGDHYGKKNT
-                     EEKIYLPPIPADEIRNPVVLRALSQARKVINGVVRRYGSPARIHIETAREVGKSFKDRK
-                     EIEKRQEENRKDREKAAAKFREYFPNFVGEPKSKDILKLRLYEQQHGKCLYSGKEINLG
-                     RLNEKGYVEIDHALPFSRTWDDSFNNKVLVLGSENQNKGNQTPYEYFNGKDNSREWQEF
-                     KARVETSRFPRSKKQRILLQKFDEDGFKERNLNDTRYVNRFLCQFVADRMRLTGKGKKR
-                     VFASNGQITNLLRGFWGLRKVRAENDRHHALDAVVVACSTVAMQQKITRFVRYKEMNAF
-                     DGKTIDKETGEVLHQKTHFPQPWEFFAQEVMIRVFGKPDGKPEFEEADTLEKLRTLLAE
-                     KLSSRPEAVHEYVTPLFVSRAPNRKMSGQGHMETVKSAKRLDEGVSVLRVPLTQLKLKD
-                     LEKMVNREREPKLYEALKARLEAHKDDPAKAFAEPFYKYDKAGNRTQQVKAVRVEQVQK
-                     TGVWVRNHNGIADNATMVRVDVFEKGDKYYLVPIYSWQVAKGILPDRAVVQGKDEEDWQ
-                     LIDDSFNFKFSLHPNDLVEVITKKARMFGYFASCHRGTGNINIRIHDLDHKIGKNGILE
-                     GIGVKTALSFQKYQIDELGKEIRPCRLKKRPPVR"
 ORIGIN
-        1 atggcggcct ttaaaccgaa cagcattaat tatatcctgg gcttagatat tggtatcgca
-       61 tcggtgggat gggcgatggt tgaaattgac gaggaagaga acccaatccg tttgattgat
-      121 ctgggcgtcc gcgtgttcga acgtgccgag gttccgaaga ccggtgactc cttagcaatg
-      181 gcgcgccgtt tggcccgctc tgtccgtcgc ctgacgcgtc gccgtgcaca tcgcttattg
-      241 cgtactcgcc gtctgttaaa acgcgaagga gtgttgcagg cggccaattt tgatgagaac
-      301 ggcctgatca agagcttacc aaataccccg tggcaattgc gtgcagcggc cctggaccgc
-      361 aaattaacgc cattggaatg gtcggcagtt ctgttacact tgattaagca tcgtggttac
-      421 ctgtcccagc gcaaaaacga gggagaaact gcggataagg agttaggcgc cttgctgaaa
-      481 ggtgtcgcag gaaatgcgca cgccttacaa accggcgact tccgtacgcc ggcagaattg
-      541 gcgctgaaca agtttgagaa agaatctggt catatccgca atcagcgtag cgattattcg
-      601 cacactttct cccgcaagga cttacaagcc gagttgattc tgttatttga aaaacagaag
-      661 gagttcggaa acccacatgt gtctggcggt ttgaaagaag gaatcgagac cctgttaatg
-      721 acgcaacgtc cggcattgag cggcgatgcg gttcagaaga tgctgggtca ctgcactttt
-      781 gaaccagccg agccgaaagc agcgaagaat acctacacgg ccgaacgctt catttggtta
-      841 actaaattga acaatctgcg tatcttagag caaggatcgg aacgcccatt gaccgacacg
-      901 gagcgtgcaa ctctgatgga tgaaccgtat cgcaagtcca aattaaccta cgcgcaggcc
-      961 cgtaagttgc tgggcttaga ggacacggca tttttcaaag gtttgcgcta tggaaaggat
-     1021 aacgcggaag cctctactct gatggagatg aaagcatacc atgcgattag ccgtgcctta
-     1081 gaaaaggagg gcttgaaaga caagaaatcg ccactgaatt tatccccgga attgcaagat
-     1141 gagatcggta ccgcattttc tctgttcaag acggacgaag atattactgg acgcttaaaa
-     1201 gaccgtatcc agccagagat tttggaagcg ctgttaaagc acatcagctt tgataaattc
-     1261 gtccaaattt cgttgaaggc cctgcgccgt atcgtgccgt taatggagca gggcaaacgc
-     1321 tatgacgaag catgtgcgga gatttacggt gatcattatg gaaagaaaaa caccgaagag
-     1381 aagatctact tgccaccgat tccagccgac gaaatccgta atccggttgt cctgcgcgca
-     1441 ttatcccaag cgcgtaaagt gattaacggc gttgtccgcc gttatggttc tccagcccgc
-     1501 atccacattg agacggcacg tgaagtggga aagagcttta aagatcgcaa ggagatcgaa
-     1561 aaacgtcagg aggaaaatcg caaggaccgt gagaaagcgg ccgcaaagtt ccgcgaatac
-     1621 tttccgaact tcgttggcga gccaaaatcg aaggatattt tgaaactgcg tttatatgaa
-     1681 caacagcatg gtaagtgctt gtactccgga aaagagatca atctgggccg cttaaacgaa
-     1741 aagggttatg tcgagattga ccacgcgttg ccgttttctc gtacttggga tgacagcttc
-     1801 aataacaaag tgctggtttt aggatcggaa aatcaaaaca agggcaatca gaccccatac
-     1861 gagtatttta acggtaaaga taattcccgc gaatggcaag agttcaaggc ccgtgtcgaa
-     1921 acgtctcgct ttccgcgtag caaaaagcag cgcatcttgc tgcaaaaatt cgacgaggat
-     1981 ggatttaagg aacgtaactt aaatgacact cgctacgtga accgtttctt gtgtcagttt
-     2041 gttgcagatc gcatgcgtct gaccggcaaa ggtaagaaac gcgtcttcgc gtcgaatgga
-     2101 caaattacga acttattgcg tggcttttgg ggtctgcgca aggtgcgtgc cgagaatgac
-     2161 cgccatcacg cattagatgc ggttgtcgtg gcctgctcca ctgttgcaat gcagcaaaaa
-     2221 atcacccgtt tcgtccgcta taaggaaatg aacgcgtttg acggaaaaac gattgataag
-     2281 gagactggcg aagtgttgca tcagaaaacc cacttcccac aaccgtggga gtttttcgcc
-     2341 caggaagtta tgatccgtgt ctttggtaag ccagacggaa aaccggagtt cgaagaggca
-     2401 gatacgctgg aaaagttacg cactttgctg gcggagaaat tatctagccg tccagaagcc
-     2461 gtgcatgagt acgttacccc gttgtttgtc tcgcgcgcac caaatcgtaa gatgtccggc
-     2521 caaggtcaca tggaaacggt gaaatctgcg aagcgcctgg acgagggagt tagcgtctta
-     2581 cgtgtgccgt tgactcagct gaaattaaag gatttggaaa aaatggttaa ccgcgagcgt
-     2641 gaaccaaagc tgtatgaggc cttaaaagca cgcttggaag cgcataagga cgatccggcc
-     2701 aaagcattcg cggagccatt ttacaagtat gacaaagccg gcaatcgtac ccaacaggtc
-     2761 aaggcagtgc gcgttgaaca agtccagaaa acgggtgtgt gggttcgtaa ccacaatgga
-     2821 attgcggata acgccactat ggtccgcgtg gacgttttcg agaagggcga taaatactat
-     2881 ctggtcccga tctactcgtg gcaagtggca aagggtattt taccagaccg tgcggttgtc
-     2941 cagggaaaag atgaagagga ctggcaattg atcgatgact cctttaattt caagttttct
-     3001 ctgcatccga acgatttagt ggaagttatt accaaaaagg cccgcatgtt cggctatttt
-     3061 gcaagctgtc accgtggtac gggaaatatc aacattcgca tccatgactt ggatcacaaa
-     3121 attggcaaga atggtatcct ggagggaatt ggcgtcaaaa ctgcgttatc gttccagaag
-     3181 taccaaatcg acgaattggg taaagagatt cgtccatgcc gcctgaagaa acgtccgcca
-     3241 gtgcgc
+        1 maafkpnsin yilgldigia svgwamveid eeenpirlid lgvrvferae vpktgdslam
+       61 arrlarsvrr ltrrrahrll rtrrllkreg vlqaanfden glikslpntp wqlraaaldr
+      121 kltplewsav llhlikhrgy lsqrkneget adkelgallk gvagnahalq tgdfrtpael
+      181 alnkfekesg hirnqrsdys htfsrkdlqa elillfekqk efgnphvsgg lkegietllm
+      241 tqrpalsgda vqkmlghctf epaepkaakn tytaerfiwl tklnnlrile qgserpltdt
+      301 eratlmdepy rkskltyaqa rkllgledta ffkglrygkd naeastlmem kayhaisral
+      361 ekeglkdkks plnlspelqd eigtafslfk tdeditgrlk driqpeilea llkhisfdkf
+      421 vqislkalrr ivplmeqgkr ydeacaeiyg dhygkkntee kiylppipad eirnpvvlra
+      481 lsqarkving vvrrygspar ihietarevg ksfkdrkeie krqeenrkdr ekaaakfrey
+      541 fpnfvgepks kdilklrlye qqhgkclysg keinlgrlne kgyveidhal pfsrtwddsf
+      601 nnkvlvlgse nqnkgnqtpy eyfngkdnsr ewqefkarve tsrfprskkq rillqkfded
+      661 gfkernlndt ryvnrflcqf vadrmrltgk gkkrvfasng qitnllrgfw glrkvraend
+      721 rhhaldavvv acstvamqqk itrfvrykem nafdgktidk etgevlhqkt hfpqpweffa
+      781 qevmirvfgk pdgkpefeea dtleklrtll aeklssrpea vheyvtplfv srapnrkmsg
+      841 qghmetvksa krldegvsvl rvpltqlklk dlekmvnrer epklyealka rleahkddpa
+      901 kafaepfyky dkagnrtqqv kavrveqvqk tgvwvrnhng iadnatmvrv dvfekgdkyy
+      961 lvpiyswqva kgilpdravv qgkdeedwql iddsfnfkfs lhpndlvevi tkkarmfgyf
+     1021 aschrgtgni nirihdldhk igkngilegi gvktalsfqk yqidelgkei rpcrlkkrpp
+     1081 vr
 //

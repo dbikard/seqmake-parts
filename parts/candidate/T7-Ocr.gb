@@ -1,4 +1,4 @@
-LOCUS       T7-Ocr                   351 bp    DNA              UNK 01-JAN-1980
+LOCUS       T7-Ocr                   117 aa                     UNK 01-JAN-1980
 DEFINITION  T7-Ocr.
 ACCESSION   T7-Ocr
 VERSION     T7-Ocr
@@ -7,20 +7,13 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..351
+     CDS             1..117
                      /label="T7-Ocr"
                      /synonym="T7-Ocr"
                      /synonym="T7p01"
                      /synonym="Ocr"
                      /synonym="gene 0.3 protein"
-                     /translation="MAMSNMTYNNVFDHAYEMLKENIRYDDIRDTDDLHDAIHMAADNA
-                     VPHYYADIFSVMASEGIDLEFEDSGLMPDTKDVIRILQARIYEQLTIDLWEDAEDLLNE
-                     YLEEVEEYEEDEE"
 ORIGIN
-        1 atggcgatga gcaacatgac ctataataac gtgtttgatc atgcctacga aatgctgaaa
-       61 gagaatattc gttatgacga tatccgcgac acggatgact tacacgatgc aattcatatg
-      121 gcggccgaca acgcagttcc gcactactat gcggatatct tctcggtcat ggcctccgaa
-      181 ggcattgact tggagtttga agattctggt ctgatgccag acactaagga tgtgatccgt
-      241 attttacagg cacgcatcta cgagcaattg accattgacc tgtgggaaga tgcggaggac
-      301 ttattgaatg aatatctgga ggaagttgag gaatacgagg aagatgagga a
+        1 mamsnmtynn vfdhayemlk eniryddird tddlhdaihm aadnavphyy adifsvmase
+       61 gidlefedsg lmpdtkdvir ilqariyeql tidlwedaed llneyleeve eyeedee
 //

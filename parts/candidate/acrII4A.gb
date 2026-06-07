@@ -1,4 +1,4 @@
-LOCUS       acrII4A                  261 bp    DNA              UNK 01-JAN-1980
+LOCUS       acrII4A                   87 aa                     UNK 01-JAN-1980
 DEFINITION  acrII4A.
 ACCESSION   acrII4A
 VERSION     acrII4A
@@ -7,15 +7,10 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..261
+     CDS             1..87
                      /label="acrII4A"
                      /synonym="acrII4A"
-                     /translation="MNINDLIREIKNKDYTVKLSGTDSNSITQLIIRVNNDGNEYVISE
-                     SENESIVEKFISAFKNGWNQEYEDEEEFYNDMQTITLKSELN"
 ORIGIN
-        1 atgaacatta atgatctgat ccgtgaaatt aaaaacaagg actataccgt gaaattaagc
-       61 ggcacggatt cgaattccat cactcagttg attatccgcg ttaacaatga cggtaacgag
-      121 tacgtcattt ctgaaagcga gaatgaatcg atcgtggaga agtttatttc cgcgttcaaa
-      181 aacggatgga atcaagaata tgaggatgaa gaggaatttt acaacgacat gcagaccatc
-      241 acgctgaagt ctgagttaaa t
+        1 mnindlirei knkdytvkls gtdsnsitql iirvnndgne yvisesenes ivekfisafk
+       61 ngwnqeyede eefyndmqti tlkseln
 //

@@ -1,4 +1,4 @@
-LOCUS       repH                     315 bp    DNA              UNK 01-JAN-1980
+LOCUS       repH                     105 aa                     UNK 01-JAN-1980
 DEFINITION  repH.
 ACCESSION   repH
 VERSION     repH
@@ -7,17 +7,10 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..315
+     CDS             1..105
                      /label="repH"
                      /synonym="repH"
-                     /translation="MKRRAYMKTCKNCKEFIKDTEICKIHSLMIHDKTVATYCSKYNES
-                     RCLHKGKVQCINCSKMNRYGWCAIKMRCFTEEEQKKERTCIKYYARSFKKAHVKKSKKK
-                     K"
 ORIGIN
-        1 atgaaacgtc gcgcgtatat gaagacctgc aaaaactgta aggaatttat taaagatacg
-       61 gagatctgca agattcatag cctgatgatc cacgacaaaa ctgtggccac ctactgttcg
-      121 aagtataatg aatcccgttg cttacataaa ggcaaggttc agtgtattaa ctgctctaaa
-      181 atgaatcgct acggttggtg tgcaatcaag atgcgttgct tcacggagga agagcaaaaa
-      241 aaggaacgca cttgtattaa atattacgcg cgtagcttta agaaagccca cgtcaagaaa
-      301 tcgaagaaaa agaaa
+        1 mkrraymktc knckefikdt eickihslmi hdktvatycs kynesrclhk gkvqcincsk
+       61 mnrygwcaik mrcfteeeqk kertcikyya rsfkkahvkk skkkk
 //

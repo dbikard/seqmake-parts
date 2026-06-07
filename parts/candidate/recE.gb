@@ -1,4 +1,4 @@
-LOCUS       recE                    2598 bp    DNA              UNK 01-JAN-1980
+LOCUS       recE                     866 aa                     UNK 01-JAN-1980
 DEFINITION  recE.
 ACCESSION   recE
 VERSION     recE
@@ -7,67 +7,23 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..2598
+     CDS             1..866
                      /label="recE"
                      /synonym="recE"
-                     /translation="MSTKPLFLLRKAKKSSGEPDVVLWASNDFESTCATLDYLIVKSGK
-                     KLSSYFKAVATNFPVVNDLPAEGEIDFTWSERYQLSKDSMTWELKPGAAPDNAHYQGNT
-                     NVNGEDMTEIEENMLLPISGQELPIRWLAQHGSEKPVTHVSRDGLQALHIARAEELPAV
-                     TALAVSHKTSLLDPLEIRELHKLVRDTDKVFPNPGNSNLGLITAFFEAYLNADYTDRGL
-                     LTKEWMKGNRVSHITRTASGANAGGGNLTDRGEGFVHDLTSLARDVATGVLARSMDLDI
-                     YNLHPAHAKRIEEIIAENKPPFSVFRDKFITMPGGLDYSRAIVVASVKEAPIGIEVIPA
-                     HVTEYLNKVLTETDHANPDPEIVDIACGRSSAPMPQRVTEEGKQDDEEKPQPSGTTAVE
-                     QGEAETMEPDATEHHQDTQPLDAQSQVNSVDAKYQELRAELHEARKNIPSKNPVDDDKL
-                     LAASRGEFVDGISDPNDPKWVKGIQTRDCVYQNQPETEKTSPDMNQPEPVVQQEPEIAC
-                     NACGQTGGDNCPDCGAVMGDATYQETFDEESQVEAKENDPEEMEGAEHPHNENAGSDPH
-                     RDCSDETGEVADPVIVEDIEPGIYYGISNENYHAGPGISKSQLDDIADTPALYLWRKNA
-                     PVDTTKTKTLDLGTAFHCRVLEPEEFSNRFIVAPEFNRRTNAGKEEEKAFLMECASTGK
-                     TVITAEEGRKIELMYQSVMALPLGQWLVESAGHAESSIYWEDPETGILCRCRPDKIIPE
-                     FHWIMDVKTTADIQRFKTAYYDYRYHVQDAFYSDGYEAQFGVQPTFVFLVASTTIECGR
-                     YPVEIFMMGEEAKLAGQQEYHRNLRTLSDCLNTDEWPAIKTLSLPRWAKEYAND"
 ORIGIN
-        1 atgagcacca aaccgctgtt tttattgcgt aaggcgaaaa agtcgtccgg cgaaccagat
-       61 gtggttctgt gggcctctaa cgacttcgag agcacgtgcg caactttaga ttatttgatt
-      121 gtcaaatcgg gtaagaaact gtcctcttac tttaaggcgg tggccaccaa tttcccggtt
-      181 gtcaacgact taccagcaga aggagagatc gattttacgt ggagcgaacg ctatcagttg
-      241 tcgaaagact ccatgacttg ggagctgaag ccgggcgcgg ccccagataa tgcacattac
-      301 caaggtaaca ccaatgtgaa cggagaagac atgacggaga ttgaagagaa tatgttattg
-      361 ccgatctctg gccaggaact gccaattcgt tggttagcgc aacacggtag cgagaaaccg
-      421 gttactcatg tctcgcgcga tggattgcag gccctgcaca tcgcacgtgc ggaagagtta
-      481 ccagccgtga ccgcattggc ggtttcccat aagacgtctc tgttagaccc gttggaaatt
-      541 cgcgagctgc acaaattagt ccgtgatact gacaaggtgt tcccaaaccc gggcaatagc
-      601 aacttgggtc tgatcaccgc ctttttcgaa gcatatttaa atgcggatta cacggaccgc
-      661 ggattgctga ctaaagagtg gatgaagggc aaccgtgttt cgcatattac ccgcacggcc
-      721 tccggtgcaa atgcgggagg cggtaactta actgatcgtg gagaaggctt tgtccacgac
-      781 ttgacctctc tggcccgcga tgtggcaacg ggtgttttag cgcgtagcat ggacttggat
-      841 atctataatc tgcatccagc ccacgcaaaa cgcattgagg aaatcattgc ggagaacaag
-      901 ccgccattct cggtctttcg tgacaaattc atcactatgc cgggaggctt agattactcc
-      961 cgcgccattg tggttgcatc tgtcaaggaa gcgccaatcg gtattgaggt gatcccggcc
-     1021 catgttaccg aatatttgaa taaagtcctg acggagactg accacgcaaa cccagatccg
-     1081 gaaattgtgg acatcgcgtg tggacgtagc tcggccccaa tgccgcaacg cgttaccgag
-     1141 gaaggcaagc aggatgacga ggaaaaacca caaccgtccg gtacgactgc agtcgagcag
-     1201 ggagaagcgg agaccatgga accagatgcc acggagcatc accaagacac tcagccgtta
-     1261 gatgcacaat ctcaggtgaa tagcgttgac gcgaagtacc aagaattgcg tgccgagctg
-     1321 catgaagcac gcaaaaacat tccatcgaag aatccggtcg atgacgataa attattggcg
-     1381 gcctcccgtg gcgagtttgt ggacggtatc tctgatccaa acgacccgaa gtgggttaaa
-     1441 ggaattcaga cccgcgattg cgtctatcaa aatcagccag aaacggagaa gactagcccg
-     1501 gacatgaacc aaccagaacc ggtggttcag caagagccag aaatcgcatg taatgcgtgc
-     1561 ggccagaccg gtggagataa ctgtccggac tgcggcgccg tcatgggtga tgcaacgtac
-     1621 caagagactt tcgacgaaga gtcgcaggtg gaagcgaaag agaatgatcc agaagagatg
-     1681 gaaggagccg agcacccgca taacgaaaat gcaggctccg acccacaccg tgattgttct
-     1741 gacgagaccg gtgaagttgc ggatccggtc attgtggagg acatcgaacc aggaatttat
-     1801 tacggcatca gcaacgagaa ttatcatgcc ggtccgggaa tttcgaagtc ccaactggat
-     1861 gacatcgcag atacgccagc gttatacttg tggcgcaaaa acgccccggt tgacactacc
-     1921 aagacgaaaa ctctggattt aggcaccgca tttcactgcc gtgtcttgga accagaggaa
-     1981 ttctctaatc gctttattgt ggcgccggag ttcaaccgtc gcacgaatgc cggtaaggaa
-     2041 gaggaaaaag catttctgat ggagtgtgcg agcactggaa agaccgttat cacggccgaa
-     2101 gagggccgta aaattgaatt aatgtatcag tcggtcatgg cattgccact gggtcaatgg
-     2161 ttagtggagt ccgcgggaca tgccgaatct agcatctact gggaggaccc ggaaactggc
-     2221 attttgtgcc gctgtcgtcc agataagatc attccggagt tccactggat catggacgtt
-     2281 aaaaccacgg cagatattca gcgctttaag actgcgtatt acgactatcg ttaccatgtc
-     2341 caagatgcct tctattcgga cggttacgaa gcacagtttg gagtgcaacc aaccttcgtt
-     2401 tttctggtcg cgtccacgac tatcgagtgc ggccgctatc cggtggaaat tttcatgatg
-     2461 ggtgaggaag ccaaattagc aggacagcaa gagtaccacc gtaacttgcg caccctgtct
-     2521 gattgtttaa atacggacga atggccagcg atcaagactt tgagcctgcc gcgttgggcc
-     2581 aaagagtatg caaacgat
+        1 mstkplfllr kakkssgepd vvlwasndfe stcatldyli vksgkklssy fkavatnfpv
+       61 vndlpaegei dftwseryql skdsmtwelk pgaapdnahy qgntnvnged mteieenmll
+      121 pisgqelpir wlaqhgsekp vthvsrdglq alhiaraeel pavtalavsh ktslldplei
+      181 relhklvrdt dkvfpnpgns nlglitaffe aylnadytdr glltkewmkg nrvshitrta
+      241 sganagggnl tdrgegfvhd ltslardvat gvlarsmdld iynlhpahak rieeiiaenk
+      301 ppfsvfrdkf itmpggldys raivvasvke apigievipa hvteylnkvl tetdhanpdp
+      361 eivdiacgrs sapmpqrvte egkqddeekp qpsgttaveq geaetmepda tehhqdtqpl
+      421 daqsqvnsvd akyqelrael hearknipsk npvdddklla asrgefvdgi sdpndpkwvk
+      481 giqtrdcvyq nqpetektsp dmnqpepvvq qepeiacnac gqtggdncpd cgavmgdaty
+      541 qetfdeesqv eakendpeem egaehphnen agsdphrdcs detgevadpv ivediepgiy
+      601 ygisnenyha gpgisksqld diadtpalyl wrknapvdtt ktktldlgta fhcrvlepee
+      661 fsnrfivape fnrrtnagke eekaflmeca stgktvitae egrkielmyq svmalplgqw
+      721 lvesaghaes siywedpetg ilcrcrpdki ipefhwimdv kttadiqrfk tayydyryhv
+      781 qdafysdgye aqfgvqptfv flvasttiec grypveifmm geeaklagqq eyhrnlrtls
+      841 dclntdewpa iktlslprwa keyand
 //

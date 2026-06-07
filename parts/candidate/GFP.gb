@@ -1,4 +1,4 @@
-LOCUS       GFP                      714 bp    DNA              UNK 01-JAN-1980
+LOCUS       GFP                      238 aa                     UNK 01-JAN-1980
 DEFINITION  GFP.
 ACCESSION   GFP
 VERSION     GFP
@@ -7,27 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..714
+     CDS             1..238
                      /label="GFP"
                      /synonym="GFP"
                      /synonym="gfpmut2"
                      /synonym="green fluorescent protein"
-                     /translation="MSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLK
-                     FICTTGKLPVPWPTLVTTFAYGLQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDDG
-                     NYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKV
-                     NFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLE
-                     FVTAAGITHGMDELYK"
 ORIGIN
-        1 atgagcaaag gcgaagagct gtttaccggt gtggttccga ttttagtcga attggatgga
-       61 gacgtgaacg gccataagtt ctcggtttcc ggtgagggag aaggcgatgc gacgtatggt
-      121 aaactgactt taaagtttat ctgcaccacg ggaaaattgc cagtcccgtg gccaactctg
-      181 gtgaccacgt tcgcctacgg cttacagtgt tttgcacgtt atccggacca catgaagcaa
-      241 catgatttct ttaaatctgc gatgccagag ggttacgttc aggaacgcac tattttcttt
-      301 aaggacgatg gaaattataa aacccgtgcc gaggtcaagt tcgaaggcga cacgttggtg
-      361 aaccgcatcg agctgaaagg tattgatttt aaggaagacg gaaatatctt aggccacaaa
-      421 ttggagtaca actataatag ccataacgtt tacattatgg cagataagca aaaaaatggt
-      481 atcaaggtca acttcaaaat tcgtcacaat atcgaagacg gatcggtgca gctggcggat
-      541 cattatcaac agaacactcc gattggcgac ggtccagttt tattgccgga taatcactac
-      601 ctgtccaccc aatctgcctt aagcaaggac ccaaacgaga aacgcgatca tatggtcttg
-      661 ctggaatttg tgacggcagc gggaatcact cacggcatgg acgagttata taag
+        1 mskgeelftg vvpilveldg dvnghkfsvs gegegdatyg kltlkfictt gklpvpwptl
+       61 vttfayglqc farypdhmkq hdffksampe gyvqertiff kddgnyktra evkfegdtlv
+      121 nrielkgidf kedgnilghk leynynshnv yimadkqkng ikvnfkirhn iedgsvqlad
+      181 hyqqntpigd gpvllpdnhy lstqsalskd pnekrdhmvl lefvtaagit hgmdelyk
 //

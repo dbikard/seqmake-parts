@@ -1,4 +1,4 @@
-LOCUS       UGI                      252 bp    DNA              UNK 01-JAN-1980
+LOCUS       UGI                       84 aa                     UNK 01-JAN-1980
 DEFINITION  UGI.
 ACCESSION   UGI
 VERSION     UGI
@@ -7,16 +7,11 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..252
+     CDS             1..84
                      /label="UGI"
                      /synonym="UGI"
                      /synonym="uracil-DNA glycosylase inhibitor"
-                     /translation="MTNLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHT
-                     AYDESTDENVMLLTSDAPEYKPWALVIQDSNGENKIKML"
 ORIGIN
-        1 atgaccaacc tgagcgatat tatcgaaaaa gagacgggca agcagttagt gattcaagaa
-       61 tcgatcttga tgctgccgga ggaagttgag gaagtcattg gtaataaacc agagtccgac
-      121 atcttagtgc atactgcgta tgatgaatct accgacgaga acgttatgtt gctgacgagc
-      181 gatgccccgg aatacaagcc atgggcatta gtcattcagg actcgaatgg agagaacaaa
-      241 atcaagatgt tg
+        1 mtnlsdiiek etgkqlviqe silmlpeeve evignkpesd ilvhtaydes tdenvmllts
+       61 dapeykpwal viqdsngenk ikml
 //

@@ -1,4 +1,4 @@
-LOCUS       sopB                     969 bp    DNA              UNK 01-JAN-1980
+LOCUS       sopB                     323 aa                     UNK 01-JAN-1980
 DEFINITION  sopB.
 ACCESSION   sopB
 VERSION     sopB
@@ -7,31 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..969
+     CDS             1..323
                      /label="sopB"
                      /synonym="sopB"
-                     /translation="MKRAPVIPKHTLNTQPVEDTSLSTPAAPMVDSLIARVGVMARGNA
-                     ITLPVCGRDVKFTLEVLRGDSVEKTSRVWSGNERDQELLTEDALDDLIPSFLLTGQQTP
-                     AFGRRVSGVIEIADGSRRRKAAALTESDYRVLVGELDDEQMAALSRLGNDYRPTSAYER
-                     GQRYASRLQNEFAGNISALADAENISRKIITRCINTAKLPKSVVALFSHPGELSARSGD
-                     ALQKAFTDKEELLKQQASNLHEQKKAGVIFEAEEVITLLTSVLKTSSASRTSLSSRHQF
-                     APGATVLYKGDKMVLNLDRSRVPTECIEKIEAILKELEKPAP"
 ORIGIN
-        1 atgaaacgtg cgccggtgat tccaaagcat accctgaaca cgcagccggt tgaagatact
-       61 agcttatcga ccccagccgc accgatggtc gactccttga tcgcgcgcgt gggcgttatg
-      121 gcccgtggta atgcaattac gctgccagtc tgcggacgcg atgtgaaatt tactttagag
-      181 gttttgcgtg gcgactctgt cgaaaagacc agccgcgtgt ggtcgggtaa cgagcgtgat
-      241 caagaactgt taacggagga cgcgttggat gacctgatcc cgtccttctt attgactgga
-      301 cagcaaaccc cagcctttgg ccgccgtgtt tctggtgtca ttgaaatcgc agatggaagc
-      361 cgccgtcgca aagcggccgc actgacggag tcggactatc gtgtgttagt tggcgaattg
-      421 gatgacgagc agatggcggc cctgtcccgc ttaggtaatg attaccgtcc gacttctgca
-      481 tatgaacgcg gacaacgtta cgcgagccgc ttgcagaacg agttcgccgg caatatttcg
-      541 gcactggcgg acgccgaaaa catctcccgt aagattatca cccgctgtat taatacggca
-      601 aaattaccaa agtctgtcgt ggcgttgttt agccacccgg gtgagctgtc ggcccgttcc
-      661 ggagatgcat tacaaaaagc gttcactgac aaggaagagt tgctgaaaca gcaagcctct
-      721 aacttacatg aacagaagaa agcaggcgtt atctttgagg cggaagaggt cattaccttg
-      781 ctgacgagcg tgttaaagac ttcgtccgcc tctcgcacca gcttgtcgtc ccgtcaccaa
-      841 ttcgcaccag gtgcgacggt tctgtataaa ggagataaga tggtcttaaa tttggaccgc
-      901 tctcgtgtgc cgactgaatg catcgagaaa attgaagcca tcctgaagga gttagaaaaa
-      961 ccagcaccg
+        1 mkrapvipkh tlntqpvedt slstpaapmv dsliarvgvm argnaitlpv cgrdvkftle
+       61 vlrgdsvekt srvwsgnerd qelltedald dlipsflltg qqtpafgrrv sgvieiadgs
+      121 rrrkaaalte sdyrvlvgel ddeqmaalsr lgndyrptsa yergqryasr lqnefagnis
+      181 aladaenisr kiitrcinta klpksvvalf shpgelsars gdalqkaftd keellkqqas
+      241 nlheqkkagv ifeaeevitl ltsvlktssa srtslssrhq fapgatvlyk gdkmvlnldr
+      301 srvpteciek ieailkelek pap
 //

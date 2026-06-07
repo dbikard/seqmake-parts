@@ -1,4 +1,4 @@
-LOCUS       ermR                     732 bp    DNA              UNK 01-JAN-1980
+LOCUS       ermR                     244 aa                     UNK 01-JAN-1980
 DEFINITION  ermR.
 ACCESSION   ermR
 VERSION     ermR
@@ -7,30 +7,17 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..732
+     CDS             1..244
                      /label="ermR"
                      /synonym="ErmR"
                      /synonym="ErmC"
                      /synonym="ermR"
                      /synonym="erythromycin methylase"
                      /synonym="rRNA adenine N-6-methyltransferase"
-                     /translation="MNEKNIKHSQNFITSKHNIDKIMTNIRLNEHDNIFEIGSGKGHFT
-                     LELVKRCNFVTAIEIDHKLCKTTENKLVDHDNFQVLNKDILQFKFPKNQSYKIYGNIPY
-                     NISTDIIRKIVFDSIANEIYLIVEYGFAKRLLNTKRSLALLLMAEVDISILSMVPREYF
-                     HPKPKVNSSLIRLSRKKSRISHKDKQKYNYFVMKWVNKEYKKIFTKNQFNNSLKHAGID
-                     DLNNISFEQFLSLFNSYKLFNK"
 ORIGIN
-        1 atgaacgaaa aaaatattaa gcatagccag aactttatca cctcgaaaca caatattgat
-       61 aagatcatga cgaacattcg tctgaatgag catgacaaca tcttcgaaat tggctccggt
-      121 aaaggacact ttactttaga gttggtgaag cgctgcaatt tcgttaccgc gatcgaaatt
-      181 gatcataaac tgtgtaagac gactgagaac aaattagtcg accacgataa ttttcaagtg
-      241 ttgaacaagg acatcctgca gttcaaattt ccgaagaatc aatcttataa aatttacggc
-      301 aacatcccat ataatattag caccgatatc attcgtaaga tcgttttcga ctcgattgcc
-      361 aacgaaatct acttaattgt cgagtatggt tttgcaaaac gcttgctgaa tacgaagcgt
-      421 tccttagcgt tgctgttaat ggccgaagtg gatatctcta ttttgagcat ggttccgcgc
-      481 gagtacttcc atccaaaacc gaaggtcaac tcgtccctga tccgtttatc tcgcaaaaag
-      541 agccgtattt cgcacaaaga caagcagaaa tataattact ttgtgatgaa gtgggttaac
-      601 aaagaatata agaaaatctt cactaagaat caatttaaca attccttgaa acatgcagga
-      661 attgatgacc tgaacaatat ctctttcgag cagtttttaa gcttgttcaa ctcgtacaag
-      721 ctgtttaata aa
+        1 mneknikhsq nfitskhnid kimtnirlne hdnifeigsg kghftlelvk rcnfvtaiei
+       61 dhklcktten klvdhdnfqv lnkdilqfkf pknqsykiyg nipynistdi irkivfdsia
+      121 neiyliveyg fakrllntkr slalllmaev disilsmvpr eyfhpkpkvn sslirlsrkk
+      181 srishkdkqk ynyfvmkwvn keykkiftkn qfnnslkhag iddlnnisfe qflslfnsyk
+      241 lfnk
 //

@@ -1,4 +1,4 @@
-LOCUS       lacZ                     291 bp    DNA              UNK 01-JAN-1980
+LOCUS       lacZ                      97 aa                     UNK 01-JAN-1980
 DEFINITION  lacZα.
 ACCESSION   lacZ
 VERSION     lacZ
@@ -7,15 +7,10 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..291
+     CDS             1..97
                      /label="lacZα"
                      /synonym="lacZα"
-                     /translation="MTMITPSYLGDTIEYSSLHACRSTLEDPRVPSSNSPYSESYYNSL
-                     AVVLQRRDWENPGVTQLNRLAAHPPFASWRNSEEARTDRPSQQLRSLNGEWR"
 ORIGIN
-        1 atgaccatga ttacgccgag ctatctgggc gatactatcg aatactcgtc cttacatgcg
-       61 tgccgttcta ccttggagga cccacgcgtg ccgagctcga actccccata ttctgaaagc
-      121 tactataatt cgctggccgt tgtcttacag cgtcgcgatt gggagaaccc gggtgtgacg
-      181 caattgaatc gtctggcagc gcacccaccg tttgcctcct ggcgcaactc tgaagaggca
-      241 cgtactgacc gcccaagcca gcaattacgt tcgttgaatg gagaatggcg c
+        1 mtmitpsylg dtieysslha crstledprv pssnspyses yynslavvlq rrdwenpgvt
+       61 qlnrlaahpp faswrnseea rtdrpsqqlr slngewr
 //

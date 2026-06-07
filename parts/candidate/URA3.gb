@@ -1,4 +1,4 @@
-LOCUS       URA3                     801 bp    DNA              UNK 01-JAN-1980
+LOCUS       URA3                     267 aa                     UNK 01-JAN-1980
 DEFINITION  URA3.
 ACCESSION   URA3
 VERSION     URA3
@@ -7,28 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..801
+     CDS             1..267
                      /label="URA3"
                      /synonym="URA3"
                      /synonym="orotidine-5'-phosphate decarboxylase"
-                     /translation="MSKATYKERAATHPSPVAAKLFNIMHEKQTNLCASLDVRTTKELL
-                     ELVEALGPKICLLKTHVDILTDFSMEGTVKPLKALSAKYNFLLFEDRKFADIGNTVKLQ
-                     YSAGVYRIAEWADITNAHGVVGPGIVSGLKQAAEEVTKEPRGLLMLAELSCKGSLSTGE
-                     YTKGTVDIAKSDKDFVIGFIAQRDMGGRDEGYDWLIMTPGVGLDDKGDALGQQYRTVDD
-                     VVSTGSDIIIVGRGLFAKGRDAKVEGERYRKAGWEAYLRRCGQQN"
 ORIGIN
-        1 atgagcaaag cgacctataa ggaacgtgcc gcaacgcatc cgtcgccagt ggcggccaaa
-       61 ctgtttaaca ttatgcacga gaagcagact aatttatgcg catccttgga tgttcgcacc
-      121 acgaaagaac tgttagagtt ggtcgaagcg ctgggcccga agatctgttt attgaaaact
-      181 catgtggaca ttctgaccga tttctctatg gagggtacgg ttaagccatt aaaagccttg
-      241 agcgcaaagt acaactttct gttattcgaa gaccgtaaat ttgcggatat cggaaatact
-      301 gtcaagttgc aatattcggc cggcgtgtac cgcattgcag agtgggcgga catcaccaac
-      361 gcccacggtg ttgtcggacc gggcattgtg tccggtctga aacaggcagc ggaagaggtt
-      421 acgaaggaac cacgtggatt attgatgctg gccgagttat cttgcaaagg cagcttgtcg
-      481 actggtgaat ataccaaggg aacggtcgat atcgcaaaat ccgacaagga tttcgtgatt
-      541 ggctttatcg cgcaacgcga catgggtgga cgtgatgagg gctacgactg gctgattatg
-      601 actccgggtg ttggattaga tgacaaaggc gatgccttgg gtcagcaata tcgcaccgtc
-      661 gacgatgtgg tttctacggg aagcgacatc attatcgtcg gccgtggtct gttcgcaaag
-      721 ggacgcgatg cgaaagtgga aggcgagcgt taccgcaagg ccggttggga agcatattta
-      781 cgtcgctgtg gacagcaaaa t
+        1 mskatykera athpspvaak lfnimhekqt nlcasldvrt tkellelvea lgpkicllkt
+       61 hvdiltdfsm egtvkplkal sakynfllfe drkfadignt vklqysagvy riaewaditn
+      121 ahgvvgpgiv sglkqaaeev tkeprgllml aelsckgsls tgeytkgtvd iaksdkdfvi
+      181 gfiaqrdmgg rdegydwlim tpgvglddkg dalgqqyrtv ddvvstgsdi iivgrglfak
+      241 grdakveger yrkagweayl rrcgqqn
 //

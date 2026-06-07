@@ -1,4 +1,4 @@
-LOCUS       RSF1010_RepB             969 bp    DNA              UNK 01-JAN-1980
+LOCUS       RSF1010_RepB             323 aa                     UNK 01-JAN-1980
 DEFINITION  RSF1010 RepB.
 ACCESSION   RSF1010_RepB
 VERSION     RSF1010_RepB
@@ -7,31 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..969
+     CDS             1..323
                      /label="RSF1010 RepB"
                      /synonym="RSF1010 RepB"
-                     /translation="MKNDRTLQAIGRQLKAMGCERFDIGVRDATTGQMMNREWSAAEVL
-                     QNTPWLKRMNAQGNDVYIRPAEQERHGLVLVDDLSEFDLDDMKAEGREPALVVETSPKN
-                     YQAWVKVADAAGGELRGQIARTLASEYDADPASADSRHYGRLAGFTNRKDKHTTRAGYQ
-                     PWVLLRESKGKTATAGPALVQQAGQQIEQAQRQQEKARRLASLELPERQLSRHRRTALD
-                     EYRSEMAGLVKRFGDDLSKCDFIAAQKLASRGRSAEEIGKAMAEASPALAERKPGHEAD
-                     YIERTVSKVMGLPSVQLARAELARAPAPRQRGMDRGGPDFSM"
 ORIGIN
-        1 atgaaaaacg atcgtaccct gcaggcgatt ggccgccaat taaaggccat gggttgcgaa
-       61 cgttttgaca tcggagtgcg cgatgcaacg actggccaga tgatgaatcg tgagtggagc
-      121 gcggccgaag ttttgcaaaa caccccgtgg ctgaaacgca tgaatgcaca gggtaacgac
-      181 gtctatattc gtccagcgga gcaagaacgc catggattag tgttggttga tgacctgtcg
-      241 gagttcgatt tagacgatat gaaggccgaa ggccgtgagc cggcattggt cgtggaaacg
-      301 tccccaaaaa attaccaggc gtgggttaag gtcgccgacg cagcgggtgg agagctgcgc
-      361 ggccaaatcg cccgtacttt agcatctgaa tatgatgcgg acccggccag cgcagattcg
-      421 cgccactacg gtcgtttggc gggatttacc aaccgcaaag acaagcatac gactcgtgcc
-      481 ggctatcagc catgggtgct gttacgcgag tccaaaggta agaccgcaac ggcgggaccg
-      541 gccttggttc aacaggcagg ccaacagatt gaacaagcgc agcgtcaaca ggagaaagcc
-      601 cgccgtctgg catctttaga attgccagag cgccaactga gccgtcaccg ccgtactgcg
-      661 ttagatgaat accgctcgga gatggccggt ttggtcaagc gtttcggaga cgatctgtcc
-      721 aaatgtgact ttatcgcagc gcagaagtta gcctctcgcg gccgtagcgc agaagagatt
-      781 ggtaaagcga tggccgaagc atcgccggcg ttggccgagc gcaagccagg acatgaagca
-      841 gattatatcg agcgtaccgt gtccaaagtt atgggcctgc cgtctgtcca attagcgcgc
-      901 gccgaattgg cacgtgcgcc agccccgcgc cagcgtggta tggaccgcgg aggcccagat
-      961 ttcagcatg
+        1 mkndrtlqai grqlkamgce rfdigvrdat tgqmmnrews aaevlqntpw lkrmnaqgnd
+       61 vyirpaeqer hglvlvddls efdlddmkae grepalvvet spknyqawvk vadaaggelr
+      121 gqiartlase ydadpasads rhygrlagft nrkdkhttra gyqpwvllre skgktatagp
+      181 alvqqagqqi eqaqrqqeka rrlaslelpe rqlsrhrrta ldeyrsemag lvkrfgddls
+      241 kcdfiaaqkl asrgrsaeei gkamaeaspa laerkpghea dyiertvskv mglpsvqlar
+      301 aelarapapr qrgmdrggpd fsm
 //

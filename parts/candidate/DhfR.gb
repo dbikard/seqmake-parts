@@ -1,4 +1,4 @@
-LOCUS       DhfR                     471 bp    DNA              UNK 01-JAN-1980
+LOCUS       DhfR                     157 aa                     UNK 01-JAN-1980
 DEFINITION  DhfR.
 ACCESSION   DhfR
 VERSION     DhfR
@@ -7,7 +7,7 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..471
+     CDS             1..157
                      /label="DhfR"
                      /synonym="DhfR"
                      /synonym="dhfR"
@@ -16,16 +16,8 @@ FEATURES             Location/Qualifiers
                      /synonym="trimethoprim resistance"
                      /synonym="TmpR"
                      /synonym="DfrA"
-                     /translation="VKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGR
-                     KTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYK
-                     SLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG"
 ORIGIN
-        1 gtgaaactga gcttaatggt tgcgatttcg aagaacggcg tcatcggtaa tggaccggat
-       61 attccatggt ccgccaaagg cgaacagttg ctgtttaagg caatcaccta taaccaatgg
-      121 ttattggtgg gtcgtaaaac gttcgagtct atgggagcgc tgccgaatcg caagtacgcc
-      181 gttgtcactc gtagctcgtt tacctccgac aacgaagatg tgttaatttt cccatctatc
-      241 aaagacgcat tgacgaatct gaagaaaatt actgatcatg ttatcgtcag cggcggtgga
-      301 gagatttata agtcgttaat cgaccaggtg gataccttgc acatttccac gatcgacatt
-      361 gaaccggagg gcgatgttta ctttccagaa atcccgtcta acttccgccc agtctttact
-      421 caagacttcg cgagcaatat taactattcg taccagatct ggcaaaaagg t
+        1 vklslmvais kngvigngpd ipwsakgeql lfkaitynqw llvgrktfes mgalpnrkya
+       61 vvtrssftsd nedvlifpsi kdaltnlkki tdhvivsggg eiykslidqv dtlhistidi
+      121 epegdvyfpe ipsnfrpvft qdfasninys yqiwqkg
 //

@@ -1,4 +1,4 @@
-LOCUS       catP                     621 bp    DNA              UNK 01-JAN-1980
+LOCUS       catP                     207 aa                     UNK 01-JAN-1980
 DEFINITION  catP.
 ACCESSION   catP
 VERSION     catP
@@ -7,23 +7,12 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..621
+     CDS             1..207
                      /label="catP"
                      /synonym="catP"
-                     /translation="MVFEKIDKNSWNRKEYFDHYFASVPCTYSMTVKVDITQIKEKGMK
-                     LYPAMLYYIAMIVNRHSEFRTAINQDGELGIYDEMIPSYTIFHNDTETFSSLWTECKSD
-                     FKSFLADYESDTQRYGNNHRMEGKPNAPENIFNVSMIPWSTFDGFNLNLQKGYDYLIPI
-                     FTMGKYYKEDNKIILPLAIQVHHAVCDGFHICRFVNELQELINS"
 ORIGIN
-        1 atggtgtttg aaaaaattga taagaacagc tggaatcgta aagagtattt cgaccattac
-       61 tttgcgtcgg ttccgtgcac ctattccatg acggtcaagg tggatatcac tcagattaaa
-      121 gaaaagggca tgaaactgta cccagccatg ttatattaca tcgcaatgat tgttaaccgc
-      181 cactctgagt tccgtaccgc gatcaatcaa gacggtgaat tgggaattta tgatgagatg
-      241 atcccgagct acacgatttt tcataacgac actgaaacct tctcgtccct gtggacggag
-      301 tgtaagtctg attttaaaag cttcttagcc gactatgaat cggatactca gcgctacggc
-      361 aataaccacc gtatggaggg taagccaaat gcaccggaaa acatctttaa tgtctccatg
-      421 attccatggt ctaccttcga cggatttaac ttgaatctgc aaaaaggcta tgattactta
-      481 atcccgattt tcacgatggg taagtattac aaagaggaca acaagatcat tttgccactg
-      541 gcgatccagg tgcatcacgc cgtttgcgat ggatttcata tttgtcgctt cgtcaatgaa
-      601 ttacaagagt tgatcaacag c
+        1 mvfekidkns wnrkeyfdhy fasvpctysm tvkvditqik ekgmklypam lyyiamivnr
+       61 hsefrtainq dgelgiydem ipsytifhnd tetfsslwte cksdfksfla dyesdtqryg
+      121 nnhrmegkpn apenifnvsm ipwstfdgfn lnlqkgydyl ipiftmgkyy kednkiilpl
+      181 aiqvhhavcd gfhicrfvne lqelins
 //

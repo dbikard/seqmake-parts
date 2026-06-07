@@ -1,4 +1,4 @@
-LOCUS       SacB                    1419 bp    DNA              UNK 01-JAN-1980
+LOCUS       SacB                     473 aa                     UNK 01-JAN-1980
 DEFINITION  SacB.
 ACCESSION   SacB
 VERSION     SacB
@@ -7,42 +7,17 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1419
+     CDS             1..473
                      /label="SacB"
                      /synonym="SacB"
                      /synonym="levansucrase"
-                     /translation="MNIKKFAKQATVLTFTTALLAGGATQAFAKETNQKPYKETYGISH
-                     ITRHDMLQIPEQQKNEKYQVPEFDSSTIKNISSAKGLDVWDSWPLQNADGTVANYHGYH
-                     IVFALAGDPKNADDTSIYMFYQKVGETSIDSWKNAGRVFKDSDKFDANDSILKDQTQEW
-                     SGSATFTSDGKIRLFYTDFSGKHYGKQTLTTAQVNVSASDSSLNINGVEDYKSIFDGDG
-                     KTYQNVQQFIDEGNYSSGDNHTLRDPHYVEDKGHKYLVFEANTGTEDGYQGEESLFNKA
-                     YYGKSTSFFRQESQKLLQSDKKRTAELANGALGMIELNDDYTLKKVMKPLIASNTVTDE
-                     IERANVFKMNGKWYLFTDSRGSKMTIDGITSNDIYMLGYVSNSLTGPYKPLNKTGLVLK
-                     MDLDPNDVTFTYSHFAVPQAKGNNVVITSYMTNRGFYADKQSTFAPSFLLNIKGKKTSV
-                     VKDSILEQGQLTVNK"
 ORIGIN
-        1 atgaacatta aaaagtttgc gaaacaggcc accgtgctga cgttcactac cgcattattg
-       61 gcgggcggtg ccacgcaagc atttgcgaag gaaactaatc agaaaccgta taaggagacc
-      121 tacggaatca gccatattac gcgtcacgat atgctgcaaa tcccagaaca gcaaaaaaac
-      181 gagaagtatc aggttccgga attcgactcg tccactatta aaaatatctc tagcgccaag
-      241 ggcttagatg tctgggactc gtggccattg caaaacgcag atggtaccgt ggcgaattac
-      301 catggatatc acattgtttt tgccctggca ggcgacccga aaaacgcgga tgacacgtcc
-      361 atctacatgt tctatcagaa ggtcggtgag acttctattg atagctggaa aaatgccgga
-      421 cgcgtgttta aggactcgga taaattcgac gcaaacgatt ccatcttaaa ggaccaaacc
-      481 caggaatggt ctggcagcgc gacgtttact tcggatggta aaattcgttt gttctacacc
-      541 gacttttccg gaaagcatta tggcaaacaa acgctgacta ccgcccaggt taatgtctct
-      601 gcaagcgatt cgtccttaaa catcaatggt gtggaggact acaagtctat tttcgatgga
-      661 gacggcaaaa cgtatcaaaa cgttcagcaa tttatcgatg aaggtaatta cagctcggga
-      721 gacaaccaca ctttgcgcga tccacattat gtcgaggaca agggccacaa atacctggtg
-      781 ttcgaagcga ataccggtac ggaggatgga tatcagggcg aagagtcctt atttaacaag
-      841 gcctactatg gtaaatctac tagcttcttt cgtcaagaat cgcagaagtt gctgcaatcc
-      901 gacaaaaagc gcaccgcaga gttagcgaat ggagccttgg gcatgattga actgaacgat
-      961 gactacacgt taaaaaaggt tatgaaaccg ttgatcgcat ctaatactgt caccgatgag
-     1021 attgaacgtg cgaacgtgtt caagatgaat ggtaaatggt atctgtttac ggacagccgc
-     1081 ggatcgaaga tgactatcga tggcattacc tccaacgaca tctacatgtt aggttatgtt
-     1141 tctaatagct tgacgggacc atacaaaccg ctgaacaaga ctggcttagt cttgaaaatg
-     1201 gatctggacc caaatgatgt gaccttcacg tattcgcatt ttgccgttcc gcaggcaaag
-     1261 ggtaacaatg tcgtgattac ttcctacatg accaaccgtg gattctatgc ggacaaacaa
-     1321 tctacgtttg ccccaagctt cttattgaat atcaagggca aaaagacttc ggttgtcaaa
-     1381 gattccattc tggagcaggg tcaattaacc gtgaacaag
+        1 mnikkfakqa tvltfttall aggatqafak etnqkpyket ygishitrhd mlqipeqqkn
+       61 ekyqvpefds stiknissak gldvwdswpl qnadgtvany hgyhivfala gdpknaddts
+      121 iymfyqkvge tsidswknag rvfkdsdkfd andsilkdqt qewsgsatft sdgkirlfyt
+      181 dfsgkhygkq tlttaqvnvs asdsslning vedyksifdg dgktyqnvqq fidegnyssg
+      241 dnhtlrdphy vedkghkylv feantgtedg yqgeeslfnk ayygkstsff rqesqkllqs
+      301 dkkrtaelan galgmielnd dytlkkvmkp liasntvtde ieranvfkmn gkwylftdsr
+      361 gskmtidgit sndiymlgyv snsltgpykp lnktglvlkm dldpndvtft yshfavpqak
+      421 gnnvvitsym tnrgfyadkq stfapsflln ikgkktsvvk dsileqgqlt vnk
 //

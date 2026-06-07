@@ -1,4 +1,4 @@
-LOCUS       LuxB                     981 bp    DNA              UNK 01-JAN-1980
+LOCUS       LuxB                     327 aa                     UNK 01-JAN-1980
 DEFINITION  LuxB.
 ACCESSION   LuxB
 VERSION     LuxB
@@ -7,32 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..981
+     CDS             1..327
                      /label="LuxB"
                      /synonym="LuxB"
                      /synonym="luciferase beta chain"
-                     /translation="MKFGLFFLNFINSTTVQEQSIVRMQEITEYVDKLNFEQILVYENH
-                     FSDNGVVGAPLTVSGFLLGLTEKIKIGSLNHIITTHHPVAIAEEACLLDQLSEGRFILG
-                     FSDCEKKDEMHFFNRPVEYQQQLFEECYEIINDALTTGYCNPDNDFYSFPKISVNPHAY
-                     TPGGPRKYVTATSHHIVEWAAKKGIPLIFKWDDSNDVRYEYAERYKAVADKYDVDLSEI
-                     DHQLMILVNYNEDSNKAKQETRAFISDYVLEMHPNENFENKLEEIIAENAVGNYTECIT
-                     AAKLAIEKCGAKSVLLSFEPMNDLMSQKNVINIVDDNIKKYHMEYT"
 ORIGIN
-        1 atgaaatttg gcctgttctt tttaaacttc attaatagca ccacggtgca ggaacaatcg
-       61 atcgttcgta tgcaggagat tactgaatat gtcgataagt tgaactttga gcaaatcctg
-      121 gtgtacgaaa atcatttctc cgacaacggt gttgtcggag cgccgttaac cgtgtctggc
-      181 tttttgctgg gtttaacgga gaaaattaag atcggaagct tgaatcacat tatcactacc
-      241 catcacccag ttgccattgc agaagaggcg tgcctgttag atcagttgtc ggaaggccgc
-      301 ttcatcctgg gtttttccga ctgtgagaaa aaggatgaaa tgcatttctt taaccgtccg
-      361 gtcgagtatc aacagcaatt attcgaagag tgctacgaaa ttatcaatga cgccttgacg
-      421 actggatatt gtaacccaga taatgacttt tactctttcc cgaaaattag cgtgaaccca
-      481 cacgcatata ccccgggcgg tccacgcaag tacgttacgg cgacttcgca tcacatcgtc
-      541 gagtgggccg caaaaaaggg aattccgctg atctttaaat gggatgactc caatgatgtg
-      601 cgttatgaat acgcggagcg ctataaggcc gttgcagaca aatacgatgt cgacttatct
-      661 gaaattgatc atcagttgat gatcctggtg aactataatg aggacagcaa caaggcgaaa
-      721 caagaaaccc gtgccttcat ttcggattac gttttagaga tgcacccaaa tgaaaacttt
-      781 gagaataagt tggaagagat cattgcagaa aacgcggtcg gcaattatac ggagtgcatc
-      841 actgccgcaa aactggcgat tgaaaagtgt ggtgccaaat ccgtgttatt gtctttcgag
-      901 ccgatgaacg acctgatgag ccagaagaat gttatcaaca ttgtcgatga caatatcaaa
-      961 aagtaccata tggaatatac c
+        1 mkfglfflnf insttvqeqs ivrmqeitey vdklnfeqil vyenhfsdng vvgapltvsg
+       61 fllgltekik igslnhiitt hhpvaiaeea clldqlsegr filgfsdcek kdemhffnrp
+      121 veyqqqlfee cyeiindalt tgycnpdndf ysfpkisvnp haytpggprk yvtatshhiv
+      181 ewaakkgipl ifkwddsndv ryeyaeryka vadkydvdls eidhqlmilv nynedsnkak
+      241 qetrafisdy vlemhpnenf enkleeiiae navgnyteci taaklaiekc gaksvllsfe
+      301 pmndlmsqkn vinivddnik kyhmeyt
 //

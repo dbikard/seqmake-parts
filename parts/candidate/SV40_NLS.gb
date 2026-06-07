@@ -1,4 +1,4 @@
-LOCUS       SV40_NLS                  21 bp    DNA              UNK 01-JAN-1980
+LOCUS       SV40_NLS                   7 aa                     UNK 01-JAN-1980
 DEFINITION  SV40 NLS.
 ACCESSION   SV40_NLS
 VERSION     SV40_NLS
@@ -7,12 +7,11 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     protein_domain  1..21
+     protein_domain  1..7
                      /label="SV40 NLS"
                      /synonym="SV40 NLS"
                      /synonym="NLS"
                      /synonym="nuclear localization signal"
-                     /translation="PKKKRKV"
 ORIGIN
-        1 ccgaaaaaga aacgtaaggt g
+        1 pkkkrkv
 //

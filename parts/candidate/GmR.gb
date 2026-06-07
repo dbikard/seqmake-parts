@@ -1,4 +1,4 @@
-LOCUS       GmR                      531 bp    DNA              UNK 01-JAN-1980
+LOCUS       GmR                      177 aa                     UNK 01-JAN-1980
 DEFINITION  GmR.
 ACCESSION   GmR
 VERSION     GmR
@@ -7,25 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..531
+     CDS             1..177
                      /label="GmR"
                      /synonym="GmR"
                      /synonym="GentR"
                      /synonym="Gentamicin R"
                      /synonym="gentamicin acetyltransferase"
                      /synonym="aacC1"
-                     /translation="MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALD
-                     LFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRS
-                     EIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIR
-                     EEVMHFDIDPSTAT"
 ORIGIN
-        1 atgctgcgta gctcgaacga tgtgacccag caaggctccc gcccgaaaac gaagttaggt
-       61 ggatctagca tgggcattat ccgtacttgc cgcttgggtc cagaccaggt taaatcgatg
-      121 cgtgcggccc tggatttatt tggacgcgaa ttcggcgacg tcgcaaccta ttcccaacat
-      181 cagccggatt ctgactactt gggtaatctg ttacgtagca agacgtttat tgcgttggcc
-      241 gcattcgatc aagaggcggt ggttggagcc ctggcagcgt atgtcttacc acgctttgaa
-      301 cagccgcgtt cggagatcta catttatgac ttggccgtgt ccggcgaaca ccgccgtcaa
-      361 ggtatcgcaa ctgcgctgat taacttattg aaacatgagg ccaatgcact gggagcgtac
-      421 gttatctatg tccaggccga ttacggcgac gatccagcag tggcgttata taccaagttg
-      481 ggtattcgcg aagaggttat gcacttcgac atcgatccgt ctacggccac t
+        1 mlrssndvtq qgsrpktklg gssmgiirtc rlgpdqvksm raaldlfgre fgdvatysqh
+       61 qpdsdylgnl lrsktfiala afdqeavvga laayvlprfe qprseiyiyd lavsgehrrq
+      121 giatalinll kheanalgay viyvqadygd dpavalytkl gireevmhfd idpstat
 //

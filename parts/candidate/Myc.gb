@@ -1,4 +1,4 @@
-LOCUS       Myc                       30 bp    DNA              UNK 01-JAN-1980
+LOCUS       Myc                       10 aa                     UNK 01-JAN-1980
 DEFINITION  Myc.
 ACCESSION   Myc
 VERSION     Myc
@@ -7,13 +7,12 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     protein_domain  1..30
+     protein_domain  1..10
                      /label="Myc"
                      /synonym="Myc"
                      /synonym="c-Myc tag"
                      /synonym="Myc tag"
                      /synonym="Myc-tag"
-                     /translation="EQKLISEEDL"
 ORIGIN
-        1 gaacagaaac tgattagcga ggaagattta
+        1 eqkliseedl
 //

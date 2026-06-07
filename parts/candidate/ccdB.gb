@@ -1,4 +1,4 @@
-LOCUS       ccdB                     303 bp    DNA              UNK 01-JAN-1980
+LOCUS       ccdB                     101 aa                     UNK 01-JAN-1980
 DEFINITION  ccdB.
 ACCESSION   ccdB
 VERSION     ccdB
@@ -7,17 +7,11 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..303
+     CDS             1..101
                      /label="ccdB"
                      /synonym="ccdB"
                      /synonym="toxin CcdB"
-                     /translation="MQFKVYTYKRESRYRLFVDVQSDIIDTPGRRMVIPLASARLLSDK
-                     VSRELYPVVHIGDESWRMMTTDMASVPVSVIGEEVADLSHRENDIKNAINLMFWGI"
 ORIGIN
-        1 atgcagttta aagtgtatac ctacaagcgt gaaagccgct atcgtctgtt cgttgatgtc
-       61 caatcggaca ttatcgatac gccgggccgc cgtatggtga ttccattagc gtccgcccgc
-      121 ttgctgtctg acaaagttag ccgtgagtta tacccggtcg tgcatatcgg tgatgaatcg
-      181 tggcgcatga tgactaccga catggcatcc gttccagtct ctgtgattgg agaggaagtt
-      241 gcggatttga gccaccgtga gaacgacatc aagaatgcca ttaacctgat gttttggggc
-      301 atc
+        1 mqfkvytykr esryrlfvdv qsdiidtpgr rmviplasar llsdkvsrel ypvvhigdes
+       61 wrmmttdmas vpvsvigeev adlshrendi knainlmfwg i
 //

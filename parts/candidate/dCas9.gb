@@ -1,158 +1,88 @@
-LOCUS       dCas9                   4104 bp    DNA              UNK 01-JAN-1980
+LOCUS       dCas9                   1368 aa                     UNK 01-JAN-1980
 DEFINITION  dCas9.
 ACCESSION   dCas9
 VERSION     dCas9
 KEYWORDS    .
-SOURCE      
+SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..4104
+     CDS             1..1368
                      /label="dCas9"
                      /synonym="dCas9"
                      /synonym="SpdCas9"
                      /synonym="S. pyogenes dCas9"
                      /synonym="dead Cas9"
                      /synonym="nuclease-dead Cas9"
-                     /translation="MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKK
-                     NLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEES
-                     FLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIK
-                     FRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRL
-                     ENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQ
-                     IGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVR
-                     QQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLL
-                     RKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARG
-                     NSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEY
-                     FTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFD
-                     SVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEER
-                     LKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFM
-                     QLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGR
-                     HKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLY
-                     LYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVP
-                     SEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKH
-                     VAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYL
-                     NAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKT
-                     EITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSK
-                     ESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGI
-                     TIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNE
-                     LALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILAD
-                     ANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVL
-                     DATLIHQSITGLYETRIDLSQLGGD"
-     protein_domain  1..174
+     protein_domain  1..58
                      /label="RuvC-I"
                      /parent="dCas9"
                      /note="RuvC nuclease domain, N-terminal segment (contains
                      D10 catalytic residue)"
-     protein_domain  178..279
+     protein_domain  60..93
                      /label="Bridge helix"
                      /parent="dCas9"
                      /note="arginine-rich helix bridging the REC and NUC lobes"
-     protein_domain  280..537
+     protein_domain  94..179
                      /label="REC1"
                      /parent="dCas9"
                      /note="recognition lobe segment 1"
-     protein_domain  538..921
+     protein_domain  180..307
                      /label="REC2"
                      /parent="dCas9"
                      /note="recognition lobe segment 2"
-     protein_domain  922..2139
+     protein_domain  308..713
                      /label="REC3"
                      /parent="dCas9"
                      /note="recognition lobe, continuation of REC1 after the
                      REC2 insertion"
-     protein_domain  2152..2295
+     protein_domain  718..765
                      /label="RuvC-II"
                      /parent="dCas9"
                      /note="RuvC nuclease domain, middle segment"
-     protein_domain  2323..2724
+     protein_domain  775..908
                      /label="HNH"
                      /parent="dCas9"
                      /note="HNH nuclease domain (contains H840 catalytic
                      residue)"
-     protein_domain  2725..3294
+     protein_domain  909..1098
                      /label="RuvC-III"
                      /parent="dCas9"
                      /note="RuvC nuclease domain, C-terminal segment"
-     protein_domain  3295..4104
+     protein_domain  1099..1368
                      /label="PI"
                      /parent="dCas9"
                      /note="PAM-Interacting domain"
-     misc_feature    28..30
+     misc_feature    10
                      /label="D10A"
                      /parent="dCas9"
                      /note="nuclease-deactivating mutation in RuvC-I"
-     misc_feature    2518..2520
+     misc_feature    840
                      /label="H840A"
                      /parent="dCas9"
                      /note="nuclease-deactivating mutation in HNH"
 ORIGIN
-        1 atggataaaa agtatagcat tggcctggcg atcggtacca actcggtggg atgggccgtt
-       61 attacggacg aatacaaagt cccgtccaag aaatttaagg tgttaggcaa tactgatcgt
-      121 cattctatca aaaagaactt gattggtgca ctgttattcg acagcggaga gaccgcggaa
-      181 gccacgcgct tgaaacgtac tgcacgccgt cgctataccc gtcgcaagaa tcgtatctgc
-      241 tacctgcagg agattttttc gaacgaaatg gcgaaagttg atgactcctt ctttcaccgc
-      301 ttagaggaat ctttcttggt cgaggaagat aagaaacatg agcgtcaccc aatctttggc
-      361 aatattgtgg acgaagttgc ctatcatgag aagtacccga cgatctatca cctgcgcaaa
-      421 aagttagtcg atagcactga caaagcagat ttgcgtctga tttacttagc gttggcccat
-      481 atgatcaagt tccgcggtca ctttctgatt gaaggagact taaacccaga taattcggac
-      541 gtggataaat tgttcatcca actggttcag acctataacc aattatttga ggaaaatccg
-      601 attaacgcat ccggcgtcga cgcgaaggcc atcttgtctg cacgtctgag caaatcgcgc
-      661 cgtttagaga atttgattgc gcagctgcca ggtgaaaaga aaaacggatt attcggcaat
-      721 ttgatcgccc tgtccttagg tttgacgccg aactttaagt ctaatttcga tctggcagag
-      781 gacgcgaaat tacaattgag caaggatact tacgacgatg acctggataa cttattggcc
-      841 cagattggag accaatatgc agatctgttt ttagcggcca aaaatttgtc ggacgcaatc
-      901 ctgttatccg atattttgcg cgtgaacacc gaaatcacga aggcgccact gtctgccagc
-      961 atgattaaac gttacgacga gcatcaccag gatttaactt tgctgaaggc attagttcgc
-     1021 caacagttgc cggaaaaata taaggagatc ttctttgacc aatcgaaaaa tggctacgcg
-     1081 ggttatattg atggaggcgc ctcccaggaa gagttctaca agtttatcaa accaattctg
-     1141 gaaaagatgg acggtaccga ggaattattg gtcaaactga accgtgagga tttattgcgc
-     1201 aagcaacgta cgttcgacaa tggatctatc ccgcatcaga ttcacctggg cgaattacat
-     1261 gcaatcttgc gccgtcaaga ggatttttat ccattcctga aagacaaccg cgaaaagatt
-     1321 gagaaaatct taacttttcg tattccgtac tatgtgggtc cattggcgcg cggaaatagc
-     1381 cgtttcgcct ggatgacccg caagtcggaa gagacgatca ctccgtggaa ctttgaagag
-     1441 gttgtcgata aaggcgcatc cgcgcagtct ttcattgaac gtatgaccaa ttttgacaag
-     1501 aacctgccaa atgagaaagt gttaccgaag cacagcttgc tgtacgaata tttcacggtt
-     1561 tacaacgagt taactaaagt caagtatgtg accgaaggta tgcgcaaacc agcctttttg
-     1621 tcgggagagc aaaagaaagc aatcgttgat ctgttattca agacgaatcg taaagtcact
-     1681 gtgaagcagt tgaaagaaga ctactttaag aaaattgagt gtttcgattc cgttgaaatc
-     1741 tctggcgtcg aggaccgctt taacgcgagc ctgggtacct atcatgattt attgaagatt
-     1801 atcaaagaca aggatttcct ggacaatgaa gagaacgaag atattttaga ggacatcgtg
-     1861 ttgacgctga ctttatttga agatcgtgag atgattgaag agcgcttgaa aacctacgcc
-     1921 cacctgttcg acgataaggt tatgaaacaa ttaaagcgtc gccgttatac gggatggggc
-     1981 cgcttgtcgc gtaaactgat caatggtatt cgcgacaagc agtccggaaa aactatctta
-     2041 gattttttga agtctgacgg cttcgcaaac cgtaatttta tgcaactgat tcatgatgac
-     2101 agcttaacct tcaaagaaga tatccagaag gcgcaagtct cgggtcaggg agactccttg
-     2161 cacgagcata ttgccaacct ggcaggctct ccggcgatca aaaagggtat tttacaaacg
-     2221 gtgaaagttg tcgatgaatt ggtgaaggtt atgggacgcc acaaaccaga gaatatcgtc
-     2281 attgaaatgg cccgtgagaa ccagactacc caaaagggcc agaaaaatag ccgcgaacgt
-     2341 atgaagcgca tcgaggaagg tattaaagag ctgggatcgc aaatcttaaa ggaacatccg
-     2401 gtggagaaca cgcagttgca aaatgaaaaa ctgtacttat attacttgca gaacggccgt
-     2461 gacatgtatg ttgatcaaga gctggacatt aatcgcttat ccgattacga cgtcgatgca
-     2521 atcgtgccac agtctttttt gaaggacgat agcattgaca acaaagttct gactcgttcg
-     2581 gataagaatc gcggtaaatc cgacaacgtc ccgtctgaag aggtggttaa gaaaatgaag
-     2641 aattattggc gtcaattatt gaacgcgaaa ctgatcaccc agcgcaagtt cgataattta
-     2701 acgaaagccg aacgtggagg cttgagcgag ctggacaagg caggttttat taaacgccaa
-     2761 ttagtcgaaa ctcgtcagat caccaagcac gtggcgcaaa ttttggattc gcgcatgaac
-     2821 acgaaatacg acgagaatga taagctgatc cgtgaagtta aagtcattac tttaaagtcc
-     2881 aaattggtgt ctgacttccg caaggatttt cagttctata aagttcgtga gatcaacaat
-     2941 taccatcacg cccatgacgc atatctgaac gcggtcgtgg gaaccgcctt aattaagaaa
-     3001 tacccaaagt tggaaagcga gtttgtttat ggcgattaca aagtctatga cgtgcgcaag
-     3061 atgatcgcaa aatcggaaca agagattggt aaggcgacgg ccaaatactt cttttattcc
-     3121 aatatcatga acttctttaa gactgaaatt accctggcaa atggagagat ccgtaaacgc
-     3181 ccgttaattg aaacgaacgg cgagactggt gaaatcgttt gggataaggg acgtgacttc
-     3241 gcgaccgtcc gcaaagtgtt gtctatgcca caggttaata ttgtcaagaa aacggaggtg
-     3301 caaactggcg gttttagcaa ggaatcgatc ctgccgaaac gtaactccga taagttaatt
-     3361 gcccgcaaaa aggactggga tccaaaaaag tacggaggct tcgactctcc gaccgttgca
-     3421 tatagcgtct tggtggttgc gaaagtcgag aagggtaaat cgaagaaact gaagtccgtg
-     3481 aaagaattat tgggaatcac gattatggag cgttctagct ttgaaaagaa tccaatcgat
-     3541 ttcctggagg ccaaaggcta caaggaagtt aaaaaggact taattatcaa attgccgaag
-     3601 tattcgctgt ttgagttaga aaacggtcgc aaacgtatgt tggcatccgc gggagagctg
-     3661 cagaagggca atgaattagc cttgccatct aaatacgtca acttcctgta tttagcaagc
-     3721 cactacgaga agttgaaagg ttcgccggaa gataatgagc aaaagcagct gtttgtggaa
-     3781 caacataaac actatttaga cgagattatc gaacagattt ccgagttctc taagcgcgtt
-     3841 atcttggcgg atgccaacct ggacaaagtc ttaagcgcat acaataagca tcgtgataaa
-     3901 ccaattcgcg aacaagcgga gaacatcatt cacttgttta ctctgaccaa tttaggagcc
-     3961 ccggcagcgt tcaagtattt tgacacgact atcgatcgta aacgctacac ctcgacgaag
-     4021 gaagtgttgg acgccactct gattcatcag tccatcaccg gcttatatga gacgcgtatt
-     4081 gatttgtctc aactgggtgg agac
+        1 mdkkysigla igtnsvgwav itdeykvpsk kfkvlgntdr hsikknliga llfdsgetae
+       61 atrlkrtarr rytrrknric ylqeifsnem akvddsffhr leesflveed kkherhpifg
+      121 nivdevayhe kyptiyhlrk klvdstdkad lrliylalah mikfrghfli egdlnpdnsd
+      181 vdklfiqlvq tynqlfeenp inasgvdaka ilsarlsksr rlenliaqlp gekknglfgn
+      241 lialslgltp nfksnfdlae daklqlskdt ydddldnlla qigdqyadlf laaknlsdai
+      301 llsdilrvnt eitkaplsas mikrydehhq dltllkalvr qqlpekykei ffdqskngya
+      361 gyidggasqe efykfikpil ekmdgteell vklnredllr kqrtfdngsi phqihlgelh
+      421 ailrrqedfy pflkdnreki ekiltfripy yvgplargns rfawmtrkse etitpwnfee
+      481 vvdkgasaqs fiermtnfdk nlpnekvlpk hsllyeyftv yneltkvkyv tegmrkpafl
+      541 sgeqkkaivd llfktnrkvt vkqlkedyfk kiecfdsvei sgvedrfnas lgtyhdllki
+      601 ikdkdfldne enedilediv ltltlfedre mieerlktya hlfddkvmkq lkrrrytgwg
+      661 rlsrklingi rdkqsgktil dflksdgfan rnfmqlihdd sltfkediqk aqvsgqgdsl
+      721 hehianlags paikkgilqt vkvvdelvkv mgrhkpeniv iemarenqtt qkgqknsrer
+      781 mkrieegike lgsqilkehp ventqlqnek lylyylqngr dmyvdqeldi nrlsdydvda
+      841 ivpqsflkdd sidnkvltrs dknrgksdnv pseevvkkmk nywrqllnak litqrkfdnl
+      901 tkaergglse ldkagfikrq lvetrqitkh vaqildsrmn tkydendkli revkvitlks
+      961 klvsdfrkdf qfykvreinn yhhahdayln avvgtalikk ypklesefvy gdykvydvrk
+     1021 miakseqeig katakyffys nimnffktei tlangeirkr plietngetg eivwdkgrdf
+     1081 atvrkvlsmp qvnivkktev qtggfskesi lpkrnsdkli arkkdwdpkk yggfdsptva
+     1141 ysvlvvakve kgkskklksv kellgitime rssfeknpid fleakgykev kkdliiklpk
+     1201 yslfelengr krmlasagel qkgnelalps kyvnflylas hyeklkgspe dneqkqlfve
+     1261 qhkhyldeii eqisefskrv iladanldkv lsaynkhrdk pireqaenii hlftltnlga
+     1321 paafkyfdtt idrkrytstk evldatlihq sitglyetri dlsqlggd
 //

@@ -1,4 +1,4 @@
-LOCUS       LuxE                    1182 bp    DNA              UNK 01-JAN-1980
+LOCUS       LuxE                     394 aa                     UNK 01-JAN-1980
 DEFINITION  LuxE.
 ACCESSION   LuxE
 VERSION     LuxE
@@ -7,36 +7,16 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1182
+     CDS             1..394
                      /label="LuxE"
                      /synonym="LuxE"
                      /synonym="long-chain-fatty-acid ligase"
-                     /translation="MKGIKEYDSSAAILSNIILRSKTGMTSYVDKQEITASSEIDDLIF
-                     SSDPLVWSYDEQEKIRKKLVLDAFRNHYKHCREYRHYCQAHKVDDNITEIDDIPVFPTS
-                     VFKFTRLLTSQENEIESWFTSSGTNGLKSQVARDRLSIERLLGSVSYGMKYVGSWFDHQ
-                     IELVNLGPDRFNAHNIWFKYVMSLVELLYPTTFTVTEERIDFVKTLNSLERIKNQGKDL
-                     CLIGSPYFIYLLCHYMKDKKISFSGDKSLYIITGGGWKSYEKESLKRDDFNHLLFDTFN
-                     LSDISQIRDIFNQVELNTCFFEDEMQRKHVPPWVYARALDPETLKPVPDGTPGLMSYMD
-                     ASATSYPAFIVTDDVGIISREYGKYPGVLVEILRRVNTRTQKGCALSLTEAFDS"
 ORIGIN
-        1 atgaaaggca ttaaggaata tgatagctcg gcggccatcc tgtccaacat tatcttacgt
-       61 tctaaaaccg gtatgacgag ctacgtggac aagcaggaga ttactgcatc gtccgaaatc
-      121 gatgacttga ttttttctag cgatccgctg gtttggtcgt atgacgagca agaaaaaatc
-      181 cgcaagaaat tagtcttgga tgcgttccgt aatcattaca agcactgccg cgagtatcgt
-      241 cattactgtc aggcccacaa agtggacgat aacattaccg aaatcgacga tattccagtt
-      301 tttccgacgt ccgtcttcaa gtttactcgc ctgttaacct ctcaagagaa tgaaatcgag
-      361 agctggttca cgtcgtccgg aactaacggc ttgaaatctc aggtggcacg tgaccgcctg
-      421 agcattgaac gtttattggg ttcggtttcc tatggaatga agtacgtcgg ctcttggttt
-      481 gatcatcaaa tcgagctggt gaatttaggt ccagaccgct tcaacgcgca caatatttgg
-      541 tttaaatatg ttatgagctt ggtcgaactg ttatacccga ccacgttcac tgtgaccgag
-      601 gaacgtatcg attttgttaa gacgttgaac tcgctggagc gcattaaaaa tcagggaaag
-      661 gacttatgct tgatcggctc cccatatttc atttacctgt tatgtcatta tatgaaagat
-      721 aagaaaatct cttttagcgg tgacaagtcg ttgtacatta tcactggagg cggttggaaa
-      781 tcctatgaaa aggagtctct gaaacgtgat gacttcaacc acttattgtt tgataccttc
-      841 aatctgagcg acatttcgca aatccgcgat atttttaacc aggtcgaatt aaatacgtgc
-      901 ttctttgagg acgaaatgca acgtaagcat gtgccgccat gggtttacgc ccgcgcattg
-      961 gatccggaga ctctgaaacc agtcccggac ggaaccccag gcttaatgtc ctatatggat
-     1021 gcgtctgcca cgagctaccc ggcattcatc gtgactgacg atgttggtat tatctcgcgt
-     1081 gaatatggaa agtacccagg cgtcttggtg gagattctgc gccgtgttaa cacccgcacg
-     1141 cagaaaggtt gtgcgttatc cttgactgaa gcctttgact ct
+        1 mkgikeydss aailsniilr sktgmtsyvd kqeitassei ddlifssdpl vwsydeqeki
+       61 rkklvldafr nhykhcreyr hycqahkvdd niteiddipv fptsvfkftr lltsqeneie
+      121 swftssgtng lksqvardrl sierllgsvs ygmkyvgswf dhqielvnlg pdrfnahniw
+      181 fkyvmslvel lypttftvte eridfvktln sleriknqgk dlcligspyf iyllchymkd
+      241 kkisfsgdks lyiitgggwk syekeslkrd dfnhllfdtf nlsdisqird ifnqvelntc
+      301 ffedemqrkh vppwvyaral dpetlkpvpd gtpglmsymd asatsypafi vtddvgiisr
+      361 eygkypgvlv eilrrvntrt qkgcalslte afds
 //

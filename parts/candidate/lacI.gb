@@ -1,4 +1,4 @@
-LOCUS       lacI                    1080 bp    DNA              UNK 01-JAN-1980
+LOCUS       lacI                     360 aa                     UNK 01-JAN-1980
 DEFINITION  lacI.
 ACCESSION   lacI
 VERSION     lacI
@@ -7,34 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1080
+     CDS             1..360
                      /label="lacI"
                      /synonym="lacI"
                      /synonym="lac repressor"
-                     /translation="MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAEL
-                     NYIPNRVAQQLAGKQSLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERSGV
-                     EACKAAVHNLLAQRVSGLIINYPLDDQDAIAVEAACTNVPALFLDVSDQTPINSIIFSH
-                     EDGTRLGVEHLVALGHQQIALLAGPLSSVSARLRLAGWHKYLTRNQIQPIAEREGDWSA
-                     MSGFQQTMQMLNEGIVPTAMLVANDQMALGAMRAITESGLRVGADISVVGYDDTEDSSC
-                     YIPPSTTIKQDFRLLGQTSVDRLLQLSQGQAVKGNQLLPVSLVKRKTTLAPNTQTASPR
-                     ALADSLMQLARQVSRLESGQ"
 ORIGIN
-        1 atgaaaccgg tgaccctgta tgatgttgcg gaatacgccg gcgtcagcta tcagacggtg
-       61 tcgcgtgttg tcaaccaagc atcccatgtg tctgcgaaga ctcgcgagaa agttgaagcc
-      121 gcaatggcgg agttaaatta cattccaaac cgtgtcgccc agcaattggc aggtaagcag
-      181 agcctgttaa tcggagtggc gacctcgtcc ttggccctgc acgcaccgtc tcaaattgtt
-      241 gcggccatca aaagccgcgc agaccagtta ggcgcgtcgg tcgtggtttc catggtcgaa
-      301 cgttctggtg tggaggcctg caaggcagcg gttcataatt tgctggccca acgcgtcagc
-      361 ggattaatta tcaactatcc attggatgac caggatgcaa ttgcggtgga agccgcatgt
-      421 acgaatgttc cggcgctgtt tttagacgtc tcggatcaaa ctccaatcaa ctccattatc
-      481 ttctctcacg aggacggcac ccgtttgggt gtggaacatc tggttgcctt aggacaccag
-      541 caaattgcat tgctggcggg cccgttaagc tcggtctccg cccgcttgcg tctggcaggt
-      601 tggcataaat acttaacgcg caatcagatc caaccaattg cggagcgtga aggagattgg
-      661 tctgccatga gcggctttca gcaaactatg cagatgttga acgagggtat cgtgccgacc
-      721 gcaatgctgg ttgcgaatga ccaaatggcc ttaggagcaa tgcgcgcgat tacggaatcg
-      781 ggcttgcgtg tcggtgccga tatctccgtg gttggatatg acgatactga ggactctagc
-      841 tgctacattc caccgtcgac cacgatcaag caggatttcc gcctgttagg ccaaacttcc
-      901 gtcgaccgtt tgctgcagtt atctcaaggt caggcagtga aaggaaacca attgctgcca
-      961 gttagcttag tcaagcgcaa aaccacgttg gcgccgaata ctcagaccgc ctcgccacgt
-     1021 gcactggcgg attccttaat gcaattggcc cgccaggtgt ctcgtctgga aagcggccaa
+        1 mkpvtlydva eyagvsyqtv srvvnqashv saktrekvea amaelnyipn rvaqqlagkq
+       61 slligvatss lalhapsqiv aaiksradql gasvvvsmve rsgveackaa vhnllaqrvs
+      121 gliinypldd qdaiaveaac tnvpalfldv sdqtpinsii fshedgtrlg vehlvalghq
+      181 qiallagpls svsarlrlag whkyltrnqi qpiaeregdw samsgfqqtm qmlnegivpt
+      241 amlvandqma lgamraites glrvgadisv vgyddtedss cyippsttik qdfrllgqts
+      301 vdrllqlsqg qavkgnqllp vslvkrkttl apntqtaspr aladslmqla rqvsrlesgq
 //

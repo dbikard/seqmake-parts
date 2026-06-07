@@ -1,4 +1,4 @@
-LOCUS       NLS_nucleoplasmi          48 bp    DNA              UNK 01-JAN-1980
+LOCUS       NLS_nucleoplasmi          16 aa                     UNK 01-JAN-1980
 DEFINITION  NLS (nucleoplasmin).
 ACCESSION   NLS_nucleoplasmi
 VERSION     NLS_nucleoplasmi
@@ -7,11 +7,10 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     protein_domain  1..48
+     protein_domain  1..16
                      /label="NLS (nucleoplasmin)"
                      /synonym="NLS (nucleoplasmin)"
                      /synonym="nucleoplasmin NLS"
-                     /translation="KRPAATKKAGQAKKKK"
 ORIGIN
-        1 aaacgtccgg cggccaccaa gaaagcaggc caggcgaaga aaaagaaa
+        1 krpaatkkag qakkkk
 //

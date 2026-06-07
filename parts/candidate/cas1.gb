@@ -1,4 +1,4 @@
-LOCUS       cas1                     867 bp    DNA              UNK 01-JAN-1980
+LOCUS       cas1                     289 aa                     UNK 01-JAN-1980
 DEFINITION  cas1.
 ACCESSION   cas1
 VERSION     cas1
@@ -7,29 +7,13 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..867
+     CDS             1..289
                      /label="cas1"
                      /synonym="Cas1"
-                     /translation="MAGWRTVVVNTHSKLSYKNNHLIFKDAYKTELIHLSEIDILLLET
-                     TDIVLSTMLVKRLVDENVLVIFCDDKRLPTAMLMPFYGRHDSSLQLGKQMSWSETVKSQ
-                     VWTTIIAQKILNQSCYLGACSYFEKSQSIMDLYHGLENFDPSNREGHAARIYFNTLFGN
-                     DFSRDLEHPINAGLDYGYTLLLSMFAREVVVSGCMTQFGLKHANQFNQFNFASDIMEPF
-                     RPLVDKIVYENRNQPFPKIKRELFTLFSDTFSYNGKEMYLTNIISDYTKKVVKALNNEG
-                     KGVPEFRI"
 ORIGIN
-        1 atggcgggct ggcgtaccgt ggttgtcaac acgcatagca aactgtcgta taagaataac
-       61 cacttaattt ttaaagatgc ctacaagact gaattgatcc atctgtccga gattgacatc
-      121 ttattgctgg aaaccacgga tattgtgtta tctactatgt tggttaaacg cctggtcgac
-      181 gagaatgtgt tagttatctt ctgcgatgac aagcgtttgc cgaccgcaat gctgatgcca
-      241 ttttatggtc gccacgatag ctcgttacag ttgggaaaac aaatgtcctg gtctgaaacg
-      301 gtcaagagcc aggtgtggac taccattatc gcgcaaaaaa ttctgaacca gtcgtgttac
-      361 ttaggcgcct gctcctattt cgagaagtct caaagcatca tggacttgta ccatggtctg
-      421 gaaaattttg atccgtcgaa ccgtgaggga cacgcagcgc gcatttattt caatacgtta
-      481 tttggcaacg acttctcccg tgatttggaa catccaatca atgccggtct ggactacgga
-      541 tatactttat tgctgtctat gtttgcacgc gaggttgtcg tgagcggctg tatgacccag
-      601 ttcggtttaa aacacgcgaa ccaatttaat cagttcaact ttgcctcgga tattatggaa
-      661 ccgttccgtc cattggttga caagatcgtc tacgagaatc gcaaccaacc gtttccaaaa
-      721 attaagcgtg aactgttcac gttattttcc gatactttct cttataatgg aaaagagatg
-      781 tacttgacca acatcattag cgactatacg aagaaagtgg ttaaggcact gaataacgaa
-      841 ggcaaaggtg tcccggagtt tcgcatc
+        1 magwrtvvvn thsklsyknn hlifkdaykt elihlseidi lllettdivl stmlvkrlvd
+       61 envlvifcdd krlptamlmp fygrhdsslq lgkqmswset vksqvwttii aqkilnqscy
+      121 lgacsyfeks qsimdlyhgl enfdpsnreg haariyfntl fgndfsrdle hpinagldyg
+      181 ytlllsmfar evvvsgcmtq fglkhanqfn qfnfasdime pfrplvdkiv yenrnqpfpk
+      241 ikrelftlfs dtfsyngkem yltniisdyt kkvvkalnne gkgvpefri
 //

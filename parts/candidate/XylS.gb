@@ -1,4 +1,4 @@
-LOCUS       XylS                     963 bp    DNA              UNK 01-JAN-1980
+LOCUS       XylS                     321 aa                     UNK 01-JAN-1980
 DEFINITION  XylS.
 ACCESSION   XylS
 VERSION     XylS
@@ -7,31 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..963
+     CDS             1..321
                      /label="XylS"
                      /synonym="XylS"
-                     /translation="MDFCLLNEKSQIFVHAEPYAVSDYVNQYVGTHSIRLPKGGRPAGR
-                     LHHRIFGCLDLCRISYGGSVRVISPGLETCYHLQIILKGHCLWRGHGQEHYFAPGELLL
-                     LNPDDQADLTYSEDCEKFIVKLPSVVLDRACSDNNWHKPREGIRFAARHNLQQLDGFIN
-                     LLGLVCDEAEHTKSMPRVQEHYAGIIASKLLEMLGSNVSREIFSKGNPSFERVVQFIEE
-                     NLKRNISLERLAELAMMSPRSLYNLFEKHAGTTPKNYIRNRKLESIRACLNDPSANVRS
-                     ITEIALDYGFLHLGRFAENYRSAFGELPSDTLRQCKKEVA"
 ORIGIN
-        1 atggattttt gcctgttaaa cgaaaaaagc cagattttcg tgcatgcgga gccgtatgcc
-       61 gtttcggact acgtcaatca atatgtgggc acccactcca tccgtttgcc aaagggtgga
-      121 cgcccggcag gccgtctgca tcaccgcatt tttggttgtt tagatttgtg ccgtatctct
-      181 tacggaggca gcgttcgcgt catttcgcca ggtctggaaa cgtgttatca tttacagatc
-      241 attttgaaag gacactgcct gtggcgtggc catggtcaag agcactactt cgcgccggga
-      301 gaattattgc tgttaaaccc agacgatcag gccgacttga cttattccga ggattgtgaa
-      361 aagtttatcg tgaaactgcc gtctgttgtc ttagaccgcg catgcagcga taataactgg
-      421 cataagccac gtgagggcat tcgcttcgcg gcccgtcaca atttgcaaca gctggacggt
-      481 tttatcaact tattgggact ggtgtgtgat gaagcagagc ataccaaatc gatgccgcgc
-      541 gttcaagaac actacgcggg cattatcgcc tccaagttat tggagatgct gggttctaat
-      601 gtcagccgtg aaattttctc gaaaggaaac ccatcctttg agcgcgtggt tcagttcatc
-      661 gaagagaatt taaagcgtaa catttctttg gaacgcctgg cagagttagc gatgatgagc
-      721 ccgcgttcgt tgtataatct gtttgaaaaa catgccggca cgactccaaa gaactacatc
-      781 cgcaatcgta aattagagtc cattcgcgca tgcttgaacg acccgtctgc gaatgtccgt
-      841 agcatcaccg aaattgccct ggattatggt ttcttacact tgggacgctt tgcagagaac
-      901 taccgttcgg cgttcggcga actgccatcc gacacgttac gccaatgtaa gaaagaggtg
-      961 gcc
+        1 mdfcllneks qifvhaepya vsdyvnqyvg thsirlpkgg rpagrlhhri fgcldlcris
+       61 yggsvrvisp gletcyhlqi ilkghclwrg hgqehyfapg ellllnpddq adltysedce
+      121 kfivklpsvv ldracsdnnw hkpregirfa arhnlqqldg finllglvcd eaehtksmpr
+      181 vqehyagiia skllemlgsn vsreifskgn psfervvqfi eenlkrnisl erlaelamms
+      241 prslynlfek hagttpknyi rnrklesira clndpsanvr siteialdyg flhlgrfaen
+      301 yrsafgelps dtlrqckkev a
 //

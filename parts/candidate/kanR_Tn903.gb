@@ -1,4 +1,4 @@
-LOCUS       kanR_Tn903               813 bp    DNA              UNK 01-JAN-1980
+LOCUS       kanR_Tn903               271 aa                     UNK 01-JAN-1980
 DEFINITION  kanR (Tn903).
 ACCESSION   kanR_Tn903
 VERSION     kanR_Tn903
@@ -7,7 +7,7 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..813
+     CDS             1..271
                      /label="kanR (Tn903)"
                      /synonym="KanR"
                      /synonym="KmR"
@@ -15,24 +15,10 @@ FEATURES             Location/Qualifiers
                      /synonym="APH(3')-Ia"
                      /synonym="aphA1"
                      /synonym="nptI"
-                     /translation="MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYG
-                     KPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGK
-                     TAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDA
-                     SDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGI
-                     ADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF"
 ORIGIN
-        1 atgagccata ttcagcgtga aacctcgtgc tcccgcccgc gtctgaactc taatatggat
-       61 gcggacttat atggctacaa atgggcccgc gataacgtgg gtcaaagcgg agcaacgatc
-      121 tatcgtttgt acggcaagcc agacgcgccg gagctgtttt taaaacacgg taagggatcg
-      181 gttgccaatg atgtcactga cgaaatggtg cgcttgaact ggctgaccga gttcatgcca
-      241 ttaccgacga ttaaacattt tatccgtact ccagatgacg catggttgct gaccacggcg
-      301 attccgggca agactgcctt ccaggtttta gaagagtatc cagattccgg tgaaaatatc
-      361 gtcgacgcat tggcggtgtt tctgcgccgt ttacactcta ttccggtttg taactgccca
-      421 ttcaatagcg atcgcgtctt tcgtttggcc caagcacagt cgcgcatgaa caatggactg
-      481 gtggacgcgt ccgatttcga cgatgagcgt aacggctggc cggttgaaca agtctggaaa
-      541 gagatgcata agttattgcc attttctccg gacagcgtgg ttacccacgg tgatttctcg
-      601 ctggacaatt taatctttga tgaaggaaaa ttgattggct gtatcgacgt cggtcgcgtg
-      661 ggaattgccg atcgttacca ggacctggca atcttatgga actgcttggg cgagttctcc
-      721 ccatctctgc aaaagcgctt atttcagaaa tatggtattg ataatccgga catgaacaag
-      781 ttgcaattcc atctgatgtt agatgaattt ttc
+        1 mshiqretsc srprlnsnmd adlygykwar dnvgqsgati yrlygkpdap elflkhgkgs
+       61 vandvtdemv rlnwltefmp lptikhfirt pddawlltta ipgktafqvl eeypdsgeni
+      121 vdalavflrr lhsipvcncp fnsdrvfrla qaqsrmnngl vdasdfdder ngwpveqvwk
+      181 emhkllpfsp dsvvthgdfs ldnlifdegk ligcidvgrv giadryqdla ilwnclgefs
+      241 pslqkrlfqk ygidnpdmnk lqfhlmldef f
 //

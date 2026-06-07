@@ -1,4 +1,4 @@
-LOCUS       cI857                    711 bp    DNA              UNK 01-JAN-1980
+LOCUS       cI857                    237 aa                     UNK 01-JAN-1980
 DEFINITION  cI857.
 ACCESSION   cI857
 VERSION     cI857
@@ -7,28 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..711
+     CDS             1..237
                      /label="cI857"
                      /synonym="cI857"
                      /synonym="lambda cI857"
                      /synonym="cI857 repressor"
                      /synonym="temperature-sensitive lambda repressor"
-                     /translation="MSTKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQ
-                     SGVGALFNGINALNAYNAALLTKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSEYEY
-                     PVFSHVQAGMFSPKLRTFTKGDAERWVSTTKKASDSAFWLEVEGNSMTAPTGSKPSFPD
-                     GMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRDSGQVFLQPLNPQYPMIPCNESCSV
-                     VGKVIASQWPEETFG"
 ORIGIN
-        1 atgagcacca aaaagaaacc gctgacgcag gaacaattag aggatgcgcg tcgcttgaag
-       61 gccatttatg aaaaaaagaa aaacgagctg ggcttatcgc aggaatccgt ggcagacaag
-      121 atgggtatgg gacaatctgg cgttggtgcg ttgtttaatg gaatcaacgc cctgaatgca
-      181 tacaacgcgg ccttattgac taaaattctg aaggtcagcg tggaggaatt ctcgccatcc
-      241 atcgcacgtg agatttatga aatgtacgag gcggtttcta tgcagccgag cttacgctcg
-      301 gaatatgagt acccagtctt ttcccatgtg caagccggca tgttctctcc gaaattgcgt
-      361 acctttacga agggtgatgc agaacgctgg gttagcacta ccaaaaaggc gtcggactcc
-      421 gccttctggc tggaggtcga aggaaattct atgacggcac caactggcag caaaccgtcg
-      481 tttccagatg gtatgttaat cttggtggac ccggagcagg cggttgaacc aggagatttc
-      541 tgcattgccc gtctgggcgg tgacgagttt accttcaaga aattaatccg cgattccgga
-      601 caagtctttt tgcagccgct gaacccacaa tatccgatga ttccatgtaa tgaatcttgc
-      661 agcgtggttg gcaaggtcat cgcatcgcag tggccggagg aaacgttcgg t
+        1 mstkkkpltq eqledarrlk aiyekkknel glsqesvadk mgmgqsgvga lfnginalna
+       61 ynaalltkil kvsveefsps iareiyemye avsmqpslrs eyeypvfshv qagmfspklr
+      121 tftkgdaerw vsttkkasds afwlevegns mtaptgskps fpdgmlilvd peqavepgdf
+      181 ciarlggdef tfkklirdsg qvflqplnpq ypmipcnesc svvgkviasq wpeetfg
 //

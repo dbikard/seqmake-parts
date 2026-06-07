@@ -1,4 +1,4 @@
-LOCUS       lambda_integrase        1068 bp    DNA              UNK 01-JAN-1980
+LOCUS       lambda_integrase         356 aa                     UNK 01-JAN-1980
 DEFINITION  lambda integrase.
 ACCESSION   lambda_integrase
 VERSION     lambda_integrase
@@ -7,33 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1068
+     CDS             1..356
                      /label="lambda integrase"
                      /synonym="lambda integrase"
-                     /translation="MGRRRSHERRDLPPNLYIRNNGYYCYRDPRTGKEFGLGRDRRIAI
-                     TEAIQANIELFSGHKHKPLTARINSDNSVTLHSWLDRYEKILASRGIKQKTLINYMSKI
-                     KAIRRGLPDAPLEDITTKEIAAMLNGYIDEGKAASAKLIRSTLSDAFREAIAEGHITTN
-                     HVAATRAAKSEVRRSRLTADEYLKIYQAAESSPCWLRLAMELAVVTGQRVGDLCEMKWS
-                     DIVDGYLYVEQSKTGVKIAIPTALHIDALGISMKETLDKCKEILGGETIIASTRREPLS
-                     SGTVSRYFMRARKASGLSFEGDPPTFHELRSLSARLYEKQISDKFAQHLLGHKSDTMAS
-                     QYRDDRGREWDKIEIK"
 ORIGIN
-        1 atgggccgtc gccgtagcca tgaacgccgt gatctgccgc caaacttata tattcgcaat
-       61 aacggttact attgctaccg tgacccgcgc accggaaaag agtttggctt gggtcgtgat
-      121 cgccgtatcg cgattacgga agccatccag gcaaatattg agctgttctc gggacacaag
-      181 cataaaccat taactgcgcg catcaactcc gacaattctg tgaccttgca cagctggctg
-      241 gatcgttatg aaaagatttt agcctcgcgc ggcatcaaac aaaagacgtt gattaactac
-      301 atgtccaaaa tcaaggcaat tcgtcgcggt ctgccggacg cgccattaga ggatatcact
-      361 accaaagaaa ttgccgcaat gttgaatgga tatatcgacg agggcaaggc ggcctctgca
-      421 aaactgattc gtagcacgtt atcggatgcg tttcgcgaag ccatcgcaga gggtcatatt
-      481 actaccaacc acgttgcggc cacgcgtgca gcgaagtccg aagtccgccg ttctcgcttg
-      541 actgccgacg agtacctgaa aatctatcag gcagcggaaa gctcgccgtg ttggttacgt
-      601 ttggccatgg agctggcagt ggttaccgga caacgcgtcg gcgatttatg cgaaatgaag
-      661 tggtccgaca ttgtggatgg ttacttgtat gttgagcagt ctaaaacggg agtcaagatc
-      721 gcgattccaa ctgccctgca tatcgacgca ttaggcatta gcatgaaaga aaccttggat
-      781 aagtgtaaag agatcctggg tggagaaacg attatcgcgt cgactcgtcg cgagccgtta
-      841 tcctctggca ccgtgagccg ttacttcatg cgcgcccgta aggcatcggg tttgtccttt
-      901 gaaggagacc caccgacgtt ccacgagctg cgctctttaa gcgcgcgttt gtatgaaaaa
-      961 caaatttcgg ataagtttgc ccagcatctg ttaggccaca aatccgacac tatggcatct
-     1021 caataccgcg atgaccgtgg tcgcgagtgg gataagatcg aaattaaa
+        1 mgrrrsherr dlppnlyirn ngyycyrdpr tgkefglgrd rriaiteaiq anielfsghk
+       61 hkpltarins dnsvtlhswl dryekilasr gikqktliny mskikairrg lpdapledit
+      121 tkeiaamlng yidegkaasa klirstlsda freaiaeghi ttnhvaatra aksevrrsrl
+      181 tadeylkiyq aaesspcwlr lamelavvtg qrvgdlcemk wsdivdgyly veqsktgvki
+      241 aiptalhida lgismketld kckeilgget iiastrrepl ssgtvsryfm rarkasglsf
+      301 egdpptfhel rslsarlyek qisdkfaqhl lghksdtmas qyrddrgrew dkieik
 //

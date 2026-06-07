@@ -1,4 +1,4 @@
-LOCUS       EcFbFP                   408 bp    DNA              UNK 01-JAN-1980
+LOCUS       EcFbFP                   136 aa                     UNK 01-JAN-1980
 DEFINITION  EcFbFP.
 ACCESSION   EcFbFP
 VERSION     EcFbFP
@@ -7,21 +7,14 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..408
+     CDS             1..136
                      /label="EcFbFP"
                      /synonym="EcFbFP"
                      /synonym="FbFP"
                      /synonym="flavin-based fluorescent protein"
                      /synonym="LOV-domain fluorescent protein"
-                     /translation="MASFQSFGIPGQLEVIKKALDHVRVGVVITDPALEDNPIVYVNQG
-                     FVQMTGYETEEILGKNARFLQGKHTDPAEVDNIRTALQNKEPVTVQIQNYKKDGTMFWN
-                     ELNIDPMEIEDKTYFVGIQNDITKQKEYEKLL"
 ORIGIN
-        1 atggcgagct ttcagtcgtt cggcattccg ggtcaactgg aagtgatcaa aaaggcctta
-       61 gatcatgttc gtgtcggagt ggttattacc gacccagcat tggaggataa cccgatcgtc
-      121 tatgtgaatc agggctttgt tcaaatgacg ggttacgaaa ctgaggaaat tctgggaaaa
-      181 aacgcgcgct tcttacaggg caagcacacc gacccagccg aggtcgataa tatccgtacg
-      241 gcattgcaaa acaaagaacc ggtgactgtt cagattcaaa attataagaa agacggtacc
-      301 atgttttgga acgagctgaa tatcgatcca atggaaattg aggacaagac gtacttcgtc
-      361 ggaatccaga acgatattac taaacaaaag gaatatgaga aattattg
+        1 masfqsfgip gqlevikkal dhvrvgvvit dpalednpiv yvnqgfvqmt gyeteeilgk
+       61 narflqgkht dpaevdnirt alqnkepvtv qiqnykkdgt mfwnelnidp meiedktyfv
+      121 giqnditkqk eyekll
 //

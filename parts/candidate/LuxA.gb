@@ -1,4 +1,4 @@
-LOCUS       LuxA                    1080 bp    DNA              UNK 01-JAN-1980
+LOCUS       LuxA                     360 aa                     UNK 01-JAN-1980
 DEFINITION  LuxA.
 ACCESSION   LuxA
 VERSION     LuxA
@@ -7,34 +7,15 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     CDS             1..1080
+     CDS             1..360
                      /label="LuxA"
                      /synonym="LuxA"
                      /synonym="luciferase alpha chain"
-                     /translation="MKFGNFLLTYQPPQFSQTEVMKRLVKLGRISEECGFDTVWLLEHH
-                     FTEFGLLGNPYVAAAYLLGATKKLNVGTAAIVLPTAHPVRQLEDVNLLDQMSKGRFRFG
-                     ICRGLYNKDFRVFGTDMNNSRALAECWYGLIKNGMTEGYMEADNEHIKFHKVKVNPAAY
-                     SRGGAPVYVVAESASTTEWAAQFGLPMILSWIINTNEKKAQLELYNEVAQEYGHDIHNI
-                     DHCLSYITSVDHDSIKAKEICRKFLGHWYDSYVNATTIFDDSDQTRGYDFNKGQWRDFV
-                     LKGHKDTNRRIDYSYEINPVGTPQECIDIIQKDIDATGISNICCGFEANGTVDEIIASM
-                     KLFQSDVMPFLKEKQRSLLY"
 ORIGIN
-        1 atgaaatttg gcaacttcct gttaacctat cagccgccac aatttagcca gacggaagtg
-       61 atgaagcgtt tggttaaact gggtcgcatt tcggaggaat gcggattcga tactgtctgg
-      121 ttattggagc atcactttac cgaattcggc ctgttaggta atccgtacgt ggcggccgca
-      181 tatttgctgg gagcgacgaa gaaattaaac gttggcactg ccgcaatcgt cttgccaacc
-      241 gcgcatccgg tgcgtcaact ggaggacgtt aatttattgg atcagatgtc caagggtcgc
-      301 tttcgtttcg gaatttgtcg cggcctgtac aacaaagact ttcgtgtctt cggtacggat
-      361 atgaataact ctcgcgcctt agcagaatgc tggtatggat tgatcaagaa tggcatgact
-      421 gagggttaca tggaagcgga caacgagcac attaaatttc ataaggtgaa agttaatcca
-      481 gccgcatata gccgtggagg cgcgccggtc tacgtggttg ccgaatcggc atccaccacg
-      541 gagtgggcgg cccaattcgg tctgccaatg atcttatctt ggattatcaa cactaatgaa
-      601 aagaaagcac agttggagct gtataacgaa gtcgcgcaag agtacggaca cgatattcat
-      661 aatatcgacc actgtttaag ctatattacc tcggtggatc atgactccat caaggccaaa
-      721 gaaatttgcc gcaagttttt gggccactgg tacgattctt atgttaacgc aacgactatc
-      781 ttcgacgata gcgaccagac ccgtggttac gattttaata aaggacaatg gcgcgacttc
-      841 gtcctgaagg gccataaaga tacgaaccgt cgcattgact attcgtacga gatcaatccg
-      901 gtgggtactc cacaggaatg tattgatatc attcaaaagg acatcgatgc gaccggaatt
-      961 tccaacatct gctgtggctt tgaggccaat ggtacggttg acgaaattat cgcatctatg
-     1021 aaattattcc agagcgatgt catgccgttt ttgaaggaga aacaacgttc gctgttatat
+        1 mkfgnfllty qppqfsqtev mkrlvklgri seecgfdtvw llehhftefg llgnpyvaaa
+       61 yllgatkkln vgtaaivlpt ahpvrqledv nlldqmskgr frfgicrgly nkdfrvfgtd
+      121 mnnsralaec wyglikngmt egymeadneh ikfhkvkvnp aaysrggapv yvvaesastt
+      181 ewaaqfglpm ilswiintne kkaqlelyne vaqeyghdih nidhclsyit svdhdsikak
+      241 eicrkflghw ydsyvnatti fddsdqtrgy dfnkgqwrdf vlkghkdtnr ridysyeinp
+      301 vgtpqecidi iqkdidatgi sniccgfean gtvdeiiasm klfqsdvmpf lkekqrslly
 //
