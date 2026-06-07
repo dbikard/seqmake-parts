@@ -9,6 +9,8 @@
       "name": "186 attP",
       "slug": "186_attP",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "186 attP",
         "phage 186 att",
@@ -26,6 +28,8 @@
       "name": "186 integrase",
       "slug": "186_integrase",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "186 integrase"
       ],
@@ -41,6 +45,8 @@
       "name": "6xHis",
       "slug": "6xHis",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "6xHis",
         "6xHis (fragment)",
@@ -63,6 +69,8 @@
       "name": "aadA",
       "slug": "aadA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "aadA",
         "SpecR",
@@ -81,6 +89,8 @@
       "name": "AadA (SEVA)",
       "slug": "AadA_SEVA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "AadA",
         "aadA",
@@ -99,6 +109,8 @@
       "name": "AAV deg tag",
       "slug": "AAV_deg_tag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "AAV deg tag",
         "AAVDeg_Tag(medium speed)",
@@ -116,6 +128,8 @@
       "name": "Acc3",
       "slug": "Acc3",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Acc3",
         "acc3",
@@ -134,6 +148,8 @@
       "name": "acrII4A",
       "slug": "acrII4A",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "acrII4A"
       ],
@@ -149,6 +165,8 @@
       "name": "AID",
       "slug": "AID",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "AID",
         "AICDA",
@@ -166,6 +184,8 @@
       "name": "AlkS",
       "slug": "AlkS",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "AlkS",
         "alkS",
@@ -184,6 +204,8 @@
       "name": "APH-3",
       "slug": "APH-3",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "APH-3"
       ],
@@ -199,6 +221,8 @@
       "name": "araC",
       "slug": "araC",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "araC",
         "arabinose operon regulatory protein"
@@ -215,6 +239,8 @@
       "name": "attP",
       "slug": "attP",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "attP"
       ],
@@ -230,6 +256,8 @@
       "name": "attP1",
       "slug": "attP1",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "attP1"
       ],
@@ -245,6 +273,8 @@
       "name": "attP2",
       "slug": "attP2",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "attP2"
       ],
@@ -260,6 +290,8 @@
       "name": "AviTag\u2122",
       "slug": "AviTag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "AviTag\u2122"
       ],
@@ -275,6 +307,8 @@
       "name": "B0030 RBS",
       "slug": "B0030_RBS",
       "feature_type": "RBS",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
       "synonyms": [
         "B0030 RBS"
       ],
@@ -290,6 +324,8 @@
       "name": "bet",
       "slug": "bet",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "bet",
         "bet protein"
@@ -306,6 +342,8 @@
       "name": "birA",
       "slug": "birA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "BirA",
         "biotin--protein ligase"
@@ -322,6 +360,8 @@
       "name": "bla",
       "slug": "bla",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "AmpR",
         "amp",
@@ -342,6 +382,8 @@
       "name": "bom",
       "slug": "bom",
       "feature_type": "misc_feature",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
       "synonyms": [
         "bom"
       ],
@@ -357,6 +399,8 @@
       "name": "CAG",
       "slug": "CAG",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "CAG",
         "chicken \u03b2-actin promoter",
@@ -374,6 +418,8 @@
       "name": "cas1",
       "slug": "cas1",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Cas1"
       ],
@@ -389,6 +435,8 @@
       "name": "cas1 (Nme)",
       "slug": "cas1_Nme",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "cas1 (Nme)",
         "cas1 NMV_RS09840"
@@ -405,6 +453,8 @@
       "name": "cas2",
       "slug": "cas2",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Cas2"
       ],
@@ -420,6 +470,8 @@
       "name": "cas2 (Nme)",
       "slug": "cas2_Nme",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "cas2 (Nme)",
         "cas2 NMV_RS09845"
@@ -436,6 +488,8 @@
       "name": "cas9",
       "slug": "cas9",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "SpCas9",
         "Cas9",
@@ -450,6 +504,8 @@
         {
           "label": "RuvC-I",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 0,
           "end": 174,
           "strand": 1,
@@ -458,6 +514,8 @@
         {
           "label": "Bridge helix",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 177,
           "end": 279,
           "strand": 1,
@@ -466,6 +524,8 @@
         {
           "label": "REC1",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 279,
           "end": 537,
           "strand": 1,
@@ -474,6 +534,8 @@
         {
           "label": "REC2",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 537,
           "end": 921,
           "strand": 1,
@@ -482,6 +544,8 @@
         {
           "label": "REC3",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 921,
           "end": 2139,
           "strand": 1,
@@ -490,6 +554,8 @@
         {
           "label": "RuvC-II",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2151,
           "end": 2295,
           "strand": 1,
@@ -498,6 +564,8 @@
         {
           "label": "HNH",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2322,
           "end": 2724,
           "strand": 1,
@@ -506,6 +574,8 @@
         {
           "label": "RuvC-III",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2724,
           "end": 3294,
           "strand": 1,
@@ -514,6 +584,8 @@
         {
           "label": "PI",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 3294,
           "end": 4104,
           "strand": 1,
@@ -527,6 +599,8 @@
       "name": "cat (Gram+)",
       "slug": "cat_Gram",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "cat (Gram+)",
         "chloramphenicol acetyltransferase (Gram+)"
@@ -543,6 +617,8 @@
       "name": "catP",
       "slug": "catP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "catP"
       ],
@@ -558,6 +634,8 @@
       "name": "ccdB",
       "slug": "ccdB",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "ccdB",
         "toxin CcdB"
@@ -574,6 +652,8 @@
       "name": "CEN6-ARS209",
       "slug": "CEN6-ARS209",
       "feature_type": "misc_feature",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
       "synonyms": [
         "CEN6-ARS209",
         "yeast centromere/ARS",
@@ -592,6 +672,8 @@
       "name": "CFP",
       "slug": "CFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "CFP",
         "cyan fluorescent protein",
@@ -609,6 +691,8 @@
       "name": "ChnR",
       "slug": "ChnR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "chnR",
         "ChnR activator"
@@ -636,6 +720,8 @@
       "name": "cI857",
       "slug": "cI857",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "cI857",
         "lambda cI857",
@@ -654,6 +740,8 @@
       "name": "CloDF13 ori",
       "slug": "CloDF13_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "CloDF13 ori"
       ],
@@ -669,6 +757,8 @@
       "name": "CmR",
       "slug": "CmR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "CmR",
         "CAT",
@@ -687,6 +777,8 @@
       "name": "ColE1",
       "slug": "ColE1",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "ColE1"
       ],
@@ -702,6 +794,8 @@
       "name": "CspRecT",
       "slug": "CspRecT",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "CspRecT"
       ],
@@ -717,6 +811,8 @@
       "name": "dCas9",
       "slug": "dCas9",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "dCas9",
         "SpdCas9",
@@ -732,6 +828,8 @@
         {
           "label": "RuvC-I",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 0,
           "end": 174,
           "strand": 1,
@@ -740,6 +838,8 @@
         {
           "label": "Bridge helix",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 177,
           "end": 279,
           "strand": 1,
@@ -748,6 +848,8 @@
         {
           "label": "REC1",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 279,
           "end": 537,
           "strand": 1,
@@ -756,6 +858,8 @@
         {
           "label": "REC2",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 537,
           "end": 921,
           "strand": 1,
@@ -764,6 +868,8 @@
         {
           "label": "REC3",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 921,
           "end": 2139,
           "strand": 1,
@@ -772,6 +878,8 @@
         {
           "label": "RuvC-II",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2151,
           "end": 2295,
           "strand": 1,
@@ -780,6 +888,8 @@
         {
           "label": "HNH",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2322,
           "end": 2724,
           "strand": 1,
@@ -788,6 +898,8 @@
         {
           "label": "RuvC-III",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 2724,
           "end": 3294,
           "strand": 1,
@@ -796,6 +908,8 @@
         {
           "label": "PI",
           "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
           "start": 3294,
           "end": 4104,
           "strand": 1,
@@ -804,6 +918,8 @@
         {
           "label": "D10A",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 27,
           "end": 30,
           "strand": 1,
@@ -812,6 +928,8 @@
         {
           "label": "H840A",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 2517,
           "end": 2520,
           "strand": 1,
@@ -825,6 +943,8 @@
       "name": "DhfR",
       "slug": "DhfR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "DhfR",
         "dhfR",
@@ -846,6 +966,8 @@
       "name": "DsRed2",
       "slug": "DsRed2",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "DsRed2",
         "dsred2",
@@ -863,6 +985,8 @@
       "name": "E-tag",
       "slug": "E-tag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "E-tag",
         "E tag"
@@ -879,6 +1003,8 @@
       "name": "EcFbFP",
       "slug": "EcFbFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "EcFbFP",
         "FbFP",
@@ -897,6 +1023,8 @@
       "name": "ECK120010818",
       "slug": "ECK120010818",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "ECK120010818",
         "Terminator ECK120010818"
@@ -913,6 +1041,8 @@
       "name": "ECK120033736",
       "slug": "ECK120033736",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "ECK120033736",
         "Terminator ECK120033736"
@@ -929,6 +1059,8 @@
       "name": "ECK120033737",
       "slug": "ECK120033737",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "ECK120033737",
         "Terminator ECK120033737"
@@ -945,6 +1077,8 @@
       "name": "EGFP",
       "slug": "EGFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "EGFP",
         "eGFP",
@@ -963,6 +1097,8 @@
       "name": "ermAM",
       "slug": "ermAM",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "ermAM",
         "ermB"
@@ -979,6 +1115,8 @@
       "name": "ermR",
       "slug": "ermR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "ErmR",
         "ErmC",
@@ -998,6 +1136,8 @@
       "name": "exo",
       "slug": "exo",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "exo",
         "exonuclease"
@@ -1014,6 +1154,8 @@
       "name": "f1 ori",
       "slug": "f1_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "M13 origin",
         "M13 ori",
@@ -1031,6 +1173,8 @@
       "name": "fd",
       "slug": "fd",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "fd",
         "fd terminator"
@@ -1047,6 +1191,8 @@
       "name": "FLAG",
       "slug": "FLAG",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "FLAG",
         "FLAG tag",
@@ -1064,6 +1210,8 @@
       "name": "FRT",
       "slug": "FRT",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "FRT",
         "FRT site",
@@ -1081,6 +1229,8 @@
       "name": "gam",
       "slug": "gam",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "gam",
         "gam protein"
@@ -1097,6 +1247,8 @@
       "name": "GFP",
       "slug": "GFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "GFP",
         "gfpmut2",
@@ -1114,6 +1266,8 @@
       "name": "GmR",
       "slug": "GmR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "GmR",
         "GentR",
@@ -1133,6 +1287,8 @@
       "name": "GST",
       "slug": "GST",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "GST",
         "GST tag",
@@ -1150,6 +1306,8 @@
       "name": "HA",
       "slug": "HA",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "HA",
         "HA tag",
@@ -1168,6 +1326,8 @@
       "name": "HaloTag",
       "slug": "HaloTag",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "HaloTag",
         "HaloTag H7",
@@ -1185,6 +1345,8 @@
       "name": "HK022 attB",
       "slug": "HK022_attB",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "HK022 attB"
       ],
@@ -1200,6 +1362,8 @@
       "name": "HK022 integrase",
       "slug": "HK022_integrase",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "HK022 integrase"
       ],
@@ -1215,6 +1379,8 @@
       "name": "hU6",
       "slug": "hU6",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "hU6",
         "hU6_promoter",
@@ -1232,6 +1398,8 @@
       "name": "I-SceI site",
       "slug": "I-SceI_site",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "I-SceI",
         "I-SceI recognition site",
@@ -1250,6 +1418,8 @@
       "name": "J23104",
       "slug": "J23104",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "J23104",
         "BBa_J23104",
@@ -1268,6 +1438,8 @@
       "name": "J23107",
       "slug": "J23107",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "J23107",
         "BBa_J23107",
@@ -1286,6 +1458,8 @@
       "name": "J23108",
       "slug": "J23108",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "J23108",
         "J23108 promoter"
@@ -1302,6 +1476,8 @@
       "name": "J23110",
       "slug": "J23110",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "J23110",
         "J23110 promoter"
@@ -1318,6 +1494,8 @@
       "name": "J23119",
       "slug": "J23119",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "J23119",
         "J23119 promoter",
@@ -1335,6 +1513,8 @@
       "name": "kanR (Tn5)",
       "slug": "kanR_Tn5",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "NeoR/KanR",
         "kanR",
@@ -1355,6 +1535,8 @@
       "name": "kanR (Tn903)",
       "slug": "kanR_Tn903",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "KanR",
         "KmR",
@@ -1375,6 +1557,8 @@
       "name": "L3S1P13",
       "slug": "L3S1P13",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "L3S1P13"
       ],
@@ -1390,6 +1574,8 @@
       "name": "L3S2P11",
       "slug": "L3S2P11",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "L3S2P11",
         "(modified) RF L3S2P11 terminator"
@@ -1406,6 +1592,8 @@
       "name": "L3S3P22 sTerminator",
       "slug": "L3S3P22_sTerminator",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "L3S3P22 sTerminator"
       ],
@@ -1421,6 +1609,8 @@
       "name": "LAA deg tag",
       "slug": "LAA_deg_tag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "LAA deg tag",
         "LAAdegradation tag(high speed)",
@@ -1438,6 +1628,8 @@
       "name": "lacI",
       "slug": "lacI",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "lacI",
         "lac repressor"
@@ -1454,6 +1646,8 @@
       "name": "lacO",
       "slug": "lacO",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
       "synonyms": [
         "lacO"
       ],
@@ -1469,6 +1663,8 @@
       "name": "lacO3",
       "slug": "lacO3",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
       "synonyms": [
         "lacO3",
         "Lac O3 operator",
@@ -1486,6 +1682,8 @@
       "name": "lacZ",
       "slug": "lacZ_1",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "lacZ",
         "beta-galactosidase"
@@ -1502,6 +1700,8 @@
       "name": "lacZ alpha",
       "slug": "lacZ_alpha",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "lacZ alpha",
         "lacZa",
@@ -1519,6 +1719,8 @@
       "name": "lacZ\u03b1",
       "slug": "lacZ",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "lacZ\u03b1"
       ],
@@ -1534,6 +1736,8 @@
       "name": "lambda attB",
       "slug": "lambda_attB",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "lambda attB"
       ],
@@ -1549,6 +1753,8 @@
       "name": "lambda cos",
       "slug": "lambda_cos",
       "feature_type": "misc_feature",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
       "synonyms": [
         "lambda cos",
         "Minimal lambda cos sequence",
@@ -1566,6 +1772,8 @@
       "name": "lambda cos",
       "slug": "lambda_cos_1",
       "feature_type": "misc_feature",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
       "synonyms": [
         "cos",
         "lambda cos region",
@@ -1583,6 +1791,8 @@
       "name": "lambda integrase",
       "slug": "lambda_integrase",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "lambda integrase"
       ],
@@ -1598,6 +1808,8 @@
       "name": "lambda t0",
       "slug": "lambda_t0",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "lambda t0",
         "lambda t0 terminator"
@@ -1614,6 +1826,8 @@
       "name": "LuxA",
       "slug": "LuxA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "LuxA",
         "luciferase alpha chain"
@@ -1630,6 +1844,8 @@
       "name": "LuxB",
       "slug": "LuxB",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "LuxB",
         "luciferase beta chain"
@@ -1646,6 +1862,8 @@
       "name": "LuxC",
       "slug": "LuxC",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "LuxC",
         "acyl-CoA reductase"
@@ -1662,6 +1880,8 @@
       "name": "LuxD",
       "slug": "LuxD",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "LuxD",
         "acyl transferase"
@@ -1678,6 +1898,8 @@
       "name": "LuxE",
       "slug": "LuxE",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "LuxE",
         "long-chain-fatty-acid ligase"
@@ -1694,6 +1916,8 @@
       "name": "LuxIA terminator",
       "slug": "LuxIA_terminator",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "LuxIA terminator",
         "LuxIA Dual Terminator"
@@ -1710,6 +1934,8 @@
       "name": "mCherry",
       "slug": "mCherry",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "mCherry",
         "mCherry E"
@@ -1726,6 +1952,8 @@
       "name": "mRFP1",
       "slug": "mRFP1",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "mRFP1",
         "RFP",
@@ -1743,6 +1971,8 @@
       "name": "mTurquoise2",
       "slug": "mTurquoise2",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "mTurquoise2",
         "mturquoise2",
@@ -1760,6 +1990,8 @@
       "name": "Myc",
       "slug": "Myc",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "Myc",
         "c-Myc tag",
@@ -1778,6 +2010,8 @@
       "name": "NLS (nucleoplasmin)",
       "slug": "NLS_nucleoplasmin",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "NLS (nucleoplasmin)",
         "nucleoplasmin NLS"
@@ -1794,6 +2028,8 @@
       "name": "Nme2Cas9",
       "slug": "Nme2Cas9",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Nme2Cas9",
         "cas9 NMV_RS09835",
@@ -1811,6 +2047,8 @@
       "name": "ori2",
       "slug": "ori2",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "ori2"
       ],
@@ -1826,6 +2064,8 @@
       "name": "oriT",
       "slug": "oriT",
       "feature_type": "oriT",
+      "so_term": "SO:0000724",
+      "so_name": "oriT",
       "synonyms": [
         "OriT"
       ],
@@ -1841,6 +2081,8 @@
       "name": "p15A",
       "slug": "p15A",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "p15A"
       ],
@@ -1856,6 +2098,8 @@
       "name": "p15A ori",
       "slug": "p15A_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "origin",
         "p15A ori"
@@ -1872,6 +2116,8 @@
       "name": "p15A ori (pSU38)",
       "slug": "p15A_ori_pSU38",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "p15A ori",
         "P15A rep",
@@ -1889,6 +2135,8 @@
       "name": "P2",
       "slug": "P2",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Ptet2",
         "tet promoter"
@@ -1901,6 +2149,8 @@
         {
           "label": "-35",
           "feature_type": "minus_35_signal",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -1912,6 +2162,8 @@
         {
           "label": "-10",
           "feature_type": "minus_10_signal",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 23,
           "end": 29,
           "strand": 1,
@@ -1923,6 +2175,8 @@
         {
           "label": "spacer",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 6,
           "end": 23,
           "strand": 1,
@@ -1933,6 +2187,8 @@
         {
           "label": "ClaI",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 13,
           "end": 19,
           "strand": 1,
@@ -1943,6 +2199,8 @@
         {
           "label": "HindIII",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 19,
           "end": 25,
           "strand": 1,
@@ -1994,6 +2252,8 @@
       "name": "P2A",
       "slug": "P2A",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "P2A"
       ],
@@ -2009,6 +2269,8 @@
       "name": "PA1/O4/O3",
       "slug": "PA1_O4_O3",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PA1/O4/O3",
         "PA1_04_03",
@@ -2022,6 +2284,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -2033,6 +2297,8 @@
         {
           "label": "lac operator O4",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 6,
           "end": 23,
           "strand": 1,
@@ -2045,6 +2311,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 23,
           "end": 29,
           "strand": 1,
@@ -2056,6 +2324,8 @@
         {
           "label": "lac operator O3",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 39,
           "end": 56,
           "strand": 1,
@@ -2098,6 +2368,8 @@
       "name": "ParaBAD",
       "slug": "ParaBAD",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "araBAD promoter"
       ],
@@ -2109,6 +2381,8 @@
         {
           "label": "O2",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
           "start": 2,
           "end": 20,
           "strand": 1,
@@ -2117,6 +2391,8 @@
         {
           "label": "Pc",
           "feature_type": "promoter",
+          "so_term": "SO:0000167",
+          "so_name": "promoter",
           "start": 124,
           "end": 153,
           "strand": 1,
@@ -2125,6 +2401,8 @@
         {
           "label": "O1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
           "start": 160,
           "end": 182,
           "strand": 1,
@@ -2133,6 +2411,8 @@
         {
           "label": "CAP",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
           "start": 203,
           "end": 217,
           "strand": 1,
@@ -2141,6 +2421,8 @@
         {
           "label": "I1+I2",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
           "start": 212,
           "end": 251,
           "strand": 1,
@@ -2149,6 +2431,8 @@
         {
           "label": "pBAD",
           "feature_type": "regulatory",
+          "so_term": "SO:0000167",
+          "so_name": "promoter",
           "start": 249,
           "end": 277,
           "strand": 1,
@@ -2162,6 +2446,8 @@
       "name": "pBBR1 oriV",
       "slug": "pBBR1_oriV",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pBBR1 oriV"
       ],
@@ -2177,6 +2463,8 @@
       "name": "pBBR1 Rep",
       "slug": "pBBR1_Rep",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "pBBR1 Rep"
       ],
@@ -2192,50 +2480,54 @@
       "name": "Pbla",
       "slug": "Pbla",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pbla",
         "AmpR promoter",
         "bla promoter"
       ],
-      "description": "The constitutive P3 promoter region of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene, carrying the sigma-70 -35/-10 pair and the native Shine-Dalgarno leader.",
-      "length": 105,
+      "description": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter \u2014 the native 5'UTR and ribosome binding site are a distinct fun...",
+      "length": 70,
       "documented": true,
       "status": "validated",
       "children": [
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 35,
           "end": 41,
           "strand": 1,
           "citations": [
-            1,
-            2
+            2,
+            3
           ]
         },
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 58,
           "end": 64,
           "strand": 1,
           "citations": [
-            1,
-            2
-          ]
-        },
-        {
-          "label": "RBS",
-          "feature_type": "RBS",
-          "start": 95,
-          "end": 100,
-          "strand": 1,
-          "citations": [
+            2,
             3
           ]
         }
       ],
       "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Nucleotide sequence of the ampicillin resistance gene of Escherichia coli plasmid pBR322",
+          "journal": "Proceedings of the National Academy of Sciences USA",
+          "pmid": "358200",
+          "doi": "10.1073/pnas.75.8.3737",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/358200/"
+        },
         {
           "authors": "Brosius J, Cate RL, Perlmutter AP",
           "title": "Precise location of two promoters for the beta-lactamase gene of pBR322. S1 mapping of ribonucleic acid isolated from Escherichia coli or synthesized in vitro",
@@ -2251,22 +2543,18 @@
           "pmid": "6269053",
           "doi": "10.1093/nar/9.11.2517",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6269053/"
-        },
-        {
-          "authors": "Sutcliffe JG",
-          "title": "Nucleotide sequence of the ampicillin resistance gene of Escherichia coli plasmid pBR322",
-          "journal": "Proceedings of the National Academy of Sciences USA",
-          "pmid": "358200",
-          "doi": "10.1073/pnas.75.8.3737",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/358200/"
         }
       ],
-      "main_citations": []
+      "main_citations": [
+        1
+      ]
     },
     {
       "name": "Pcat",
       "slug": "Pcat",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pcat",
         "cat promoter"
@@ -2283,6 +2571,8 @@
       "name": "PchnB",
       "slug": "PchnB",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PchnB",
         "chnB promoter",
@@ -2297,6 +2587,8 @@
         {
           "label": "ChnR-responsive element",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
           "start": 14,
           "end": 25,
           "strand": 1,
@@ -2349,6 +2641,8 @@
       "name": "PD/E20",
       "slug": "PD_E20",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PD/E20",
         "PD_E20",
@@ -2367,6 +2661,8 @@
       "name": "PEM7",
       "slug": "PEM7",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PEM7",
         "PEM7 promoter",
@@ -2386,6 +2682,8 @@
       "name": "phi80 attB",
       "slug": "phi80_attB",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "phi80 attB"
       ],
@@ -2401,6 +2699,8 @@
       "name": "phiC31 attP",
       "slug": "phiC31_attP",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
       "synonyms": [
         "phiC31 attP",
         "phi-C31 attP",
@@ -2418,6 +2718,8 @@
       "name": "PhlF",
       "slug": "PhlF",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "PhlF"
       ],
@@ -2433,6 +2735,8 @@
       "name": "pIJ101 ori",
       "slug": "pIJ101_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pIJ101",
         "pIJ101 ori",
@@ -2451,6 +2755,8 @@
       "name": "Pkan",
       "slug": "Pkan",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pkan",
         "PKan",
@@ -2469,6 +2775,8 @@
       "name": "PL",
       "slug": "PL",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PL",
         "lambda PL",
@@ -2487,6 +2795,8 @@
       "name": "Plac",
       "slug": "Plac",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "lac promoter"
       ],
@@ -2498,6 +2808,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -2508,6 +2820,8 @@
         {
           "label": "-35/-10 spacer",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 6,
           "end": 24,
           "strand": 1,
@@ -2518,6 +2832,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 24,
           "end": 30,
           "strand": 1,
@@ -2528,6 +2844,8 @@
         {
           "label": "+1 TSS",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
           "start": 36,
           "end": 37,
           "strand": 1,
@@ -2538,6 +2856,8 @@
         {
           "label": "lac operator O1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 33,
           "end": 55,
           "strand": 1,
@@ -2571,6 +2891,8 @@
       "name": "PlacI",
       "slug": "PlacI",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PlacI",
         "lacI promoter"
@@ -2587,6 +2909,8 @@
       "name": "PlacIq",
       "slug": "PlacIq",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PlacIq",
         "lacIq promoter"
@@ -2603,6 +2927,8 @@
       "name": "PlacUV5",
       "slug": "PlacUV5",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PlacUV5",
         "lacUV5 promoter",
@@ -2616,6 +2942,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -2626,6 +2954,8 @@
         {
           "label": "spacer",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 6,
           "end": 24,
           "strand": 1,
@@ -2636,6 +2966,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 24,
           "end": 30,
           "strand": 1,
@@ -2669,6 +3001,8 @@
       "name": "Pliar1",
       "slug": "Pliar1",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar1",
         "synthetic Pliar1 promoter"
@@ -2685,6 +3019,8 @@
       "name": "Pliar15",
       "slug": "Pliar15",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar15",
         "synthetic Pliar15 promoter"
@@ -2701,6 +3037,8 @@
       "name": "Pliar17",
       "slug": "Pliar17",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar17",
         "synthetic Pliar17 promoter"
@@ -2717,6 +3055,8 @@
       "name": "Pliar51",
       "slug": "Pliar51",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar51",
         "synthetic Pliar51 promoter"
@@ -2733,6 +3073,8 @@
       "name": "Pliar53",
       "slug": "Pliar53",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar53",
         "synthetic Pliar53 promoter"
@@ -2749,6 +3091,8 @@
       "name": "Pliar70",
       "slug": "Pliar70",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pliar70",
         "synthetic Pliar70 promoter"
@@ -2765,6 +3109,8 @@
       "name": "PLtetO-1",
       "slug": "PLtetO-1",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PLtetO-1",
         "PLtetO-1 promoter"
@@ -2777,6 +3123,8 @@
         {
           "label": "tetO2 operator",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 0,
           "end": 19,
           "strand": 1,
@@ -2789,6 +3137,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 19,
           "end": 25,
           "strand": 1,
@@ -2799,6 +3149,8 @@
         {
           "label": "tetO2 operator (proximal)",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 25,
           "end": 44,
           "strand": 1,
@@ -2811,6 +3163,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 42,
           "end": 48,
           "strand": 1,
@@ -2851,6 +3205,8 @@
       "name": "Pm",
       "slug": "Pm",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pm",
         "Pm promoter"
@@ -2863,6 +3219,8 @@
         {
           "label": "XylS operator",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 10,
           "end": 25,
           "strand": 1,
@@ -2875,6 +3233,8 @@
         {
           "label": "XylS operator (proximal)",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 31,
           "end": 46,
           "strand": 1,
@@ -2887,6 +3247,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 40,
           "end": 46,
           "strand": 1,
@@ -2899,6 +3261,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 67,
           "end": 73,
           "strand": 1,
@@ -2974,6 +3338,8 @@
       "name": "pMB1",
       "slug": "pMB1",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pMB1",
         "ori",
@@ -2992,6 +3358,8 @@
       "name": "Pneo",
       "slug": "Pneo",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Pneo",
         "neo promoter",
@@ -3010,6 +3378,8 @@
       "name": "PpflB",
       "slug": "PpflB",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PpflB",
         "Promoter PpflB",
@@ -3027,6 +3397,8 @@
       "name": "PphlF",
       "slug": "PphlF",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PphlF",
         "PhlF promoter"
@@ -3039,6 +3411,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 16,
           "end": 22,
           "strand": 1,
@@ -3049,6 +3423,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 39,
           "end": 45,
           "strand": 1,
@@ -3059,6 +3435,8 @@
         {
           "label": "phO",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 21,
           "end": 51,
           "strand": 1,
@@ -3103,6 +3481,8 @@
       "name": "pR",
       "slug": "pR",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "pR",
         "pR promoter"
@@ -3119,6 +3499,8 @@
       "name": "pRM",
       "slug": "pRM",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "pRM",
         "pRM promoter"
@@ -3135,6 +3517,8 @@
       "name": "pRO1600 oriV",
       "slug": "pRO1600_oriV",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pRO1600 oriV"
       ],
@@ -3150,6 +3534,8 @@
       "name": "pSC101 ori",
       "slug": "pSC101_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pSC101 ori"
       ],
@@ -3165,6 +3551,8 @@
       "name": "pSC101 ori (SEVA)",
       "slug": "pSC101_ori_SEVA",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pSC101",
         "pSC101 ori (SEVA)",
@@ -3182,6 +3570,8 @@
       "name": "pSH71 ori",
       "slug": "pSH71_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pSH71 ori",
         "pLZ12 ori",
@@ -3199,6 +3589,8 @@
       "name": "pSH71 ori (core)",
       "slug": "pSH71_ori_core",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "pSH71 ori core",
         "pLZ12 ori core"
@@ -3215,6 +3607,8 @@
       "name": "PSV40",
       "slug": "PSV40",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PSV40",
         "SV40 promoter"
@@ -3231,6 +3625,8 @@
       "name": "PT3",
       "slug": "PT3",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PT3",
         "T3 promoter"
@@ -3247,6 +3643,8 @@
       "name": "PT5/lacO",
       "slug": "PT5_lacO",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PT5/lacO",
         "T5 promoter",
@@ -3261,6 +3659,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 18,
           "end": 24,
           "strand": 1,
@@ -3271,6 +3671,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 41,
           "end": 47,
           "strand": 1,
@@ -3281,6 +3683,8 @@
         {
           "label": "lac operator",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 24,
           "end": 41,
           "strand": 1,
@@ -3293,6 +3697,8 @@
         {
           "label": "lac operator (downstream)",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 56,
           "end": 73,
           "strand": 1,
@@ -3352,6 +3758,8 @@
       "name": "PT7",
       "slug": "PT7",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "T7 promoter"
       ],
@@ -3363,6 +3771,8 @@
         {
           "label": "+1",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
           "start": 17,
           "end": 18,
           "strand": 1,
@@ -3376,6 +3786,8 @@
       "name": "Ptac",
       "slug": "Ptac",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "tac promoter"
       ],
@@ -3387,6 +3799,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -3397,6 +3811,8 @@
         {
           "label": "spacer",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 6,
           "end": 22,
           "strand": 1,
@@ -3408,6 +3824,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 22,
           "end": 28,
           "strand": 1,
@@ -3418,6 +3836,8 @@
         {
           "label": "discriminator",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 28,
           "end": 34,
           "strand": 1,
@@ -3428,6 +3848,8 @@
         {
           "label": "+1",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
           "start": 34,
           "end": 35,
           "strand": 1,
@@ -3438,6 +3860,8 @@
         {
           "label": "lac operator",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 34,
           "end": 53,
           "strand": 1,
@@ -3479,6 +3903,8 @@
       "name": "ptet_full",
       "slug": "ptet_full",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Tn10 tetA promoter"
       ],
@@ -3490,6 +3916,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -3501,6 +3929,8 @@
         {
           "label": "tetO1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 4,
           "end": 23,
           "strand": 1,
@@ -3514,6 +3944,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 23,
           "end": 29,
           "strand": 1,
@@ -3524,6 +3956,8 @@
         {
           "label": "+1",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
           "start": 36,
           "end": 37,
           "strand": 1,
@@ -3534,6 +3968,8 @@
         {
           "label": "tetO2",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 39,
           "end": 58,
           "strand": 1,
@@ -3601,6 +4037,8 @@
       "name": "PtetA",
       "slug": "PtetA",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "ptet",
         "tet promoter"
@@ -3613,6 +4051,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -3624,6 +4064,8 @@
         {
           "label": "tetO1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 6,
           "end": 23,
           "strand": 1,
@@ -3636,6 +4078,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 23,
           "end": 29,
           "strand": 1,
@@ -3685,6 +4129,8 @@
       "name": "Ptrc",
       "slug": "Ptrc",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "Ptrc",
         "trc promoter"
@@ -3697,6 +4143,8 @@
         {
           "label": "-35",
           "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
           "strand": 1,
@@ -3707,6 +4155,8 @@
         {
           "label": "-35/-10 spacer",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
           "start": 6,
           "end": 23,
           "strand": 1,
@@ -3718,6 +4168,8 @@
         {
           "label": "-10",
           "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
           "start": 23,
           "end": 29,
           "strand": 1,
@@ -3768,6 +4220,8 @@
       "name": "PURA3",
       "slug": "PURA3",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PURA3",
         "URA3 promoter"
@@ -3784,6 +4238,8 @@
       "name": "PVeg",
       "slug": "PVeg",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PVeg",
         "PVeg promoter",
@@ -3802,6 +4258,8 @@
       "name": "R6Kgamma ori",
       "slug": "R6Kgamma_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "R6Kgamma ori"
       ],
@@ -3817,6 +4275,8 @@
       "name": "RBS 23400",
       "slug": "RBS_23400",
       "feature_type": "RBS",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
       "synonyms": [
         "RBS 23400",
         "Synthetic RBS 23",
@@ -3834,6 +4294,8 @@
       "name": "RBS 7300",
       "slug": "RBS_7300",
       "feature_type": "RBS",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
       "synonyms": [
         "RBS 7300",
         "Synthetic RBS7 7300 TIR NEQ"
@@ -3850,6 +4312,8 @@
       "name": "recE",
       "slug": "recE",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "recE"
       ],
@@ -3865,6 +4329,8 @@
       "name": "recT",
       "slug": "recT",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "recT"
       ],
@@ -3880,6 +4346,8 @@
       "name": "rep pSC101",
       "slug": "rep_pSC101",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Replication protein",
         "rep pSC101",
@@ -3897,6 +4365,8 @@
       "name": "repA",
       "slug": "repA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repA"
       ],
@@ -3912,6 +4382,8 @@
       "name": "repA (IncFII)",
       "slug": "repA_IncFII",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repA"
       ],
@@ -3927,6 +4399,8 @@
       "name": "repA (R6K)",
       "slug": "repA_R6K",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repA"
       ],
@@ -3942,6 +4416,8 @@
       "name": "RepC",
       "slug": "RepC",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "RepC",
         "RepC protein"
@@ -3958,6 +4434,8 @@
       "name": "RepC (RSF1010)",
       "slug": "RepC_RSF1010",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "RepC",
         "repC (RSF1010)",
@@ -3976,6 +4454,8 @@
       "name": "repE",
       "slug": "repE",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repE"
       ],
@@ -3991,6 +4471,8 @@
       "name": "repH",
       "slug": "repH",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repH"
       ],
@@ -4006,6 +4488,8 @@
       "name": "repL",
       "slug": "repL",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "repL"
       ],
@@ -4021,6 +4505,8 @@
       "name": "RK2 oriV",
       "slug": "RK2_oriV",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "RK2 oriV",
         "oriV RK2",
@@ -4038,6 +4524,8 @@
       "name": "RP4 oriT",
       "slug": "RP4_oriT",
       "feature_type": "oriT",
+      "so_term": "SO:0000724",
+      "so_name": "oriT",
       "synonyms": [
         "RP4 oriT",
         "RP4 transfer origin",
@@ -4055,6 +4543,8 @@
       "name": "rrnBT1",
       "slug": "rrnBT1",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "rrnBT1",
         "rrnBT1 terminator"
@@ -4071,6 +4561,8 @@
       "name": "rrnBT2",
       "slug": "rrnBT2",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "rrnBT2",
         "rrn BT2 terminator"
@@ -4087,6 +4579,8 @@
       "name": "RSF ori",
       "slug": "RSF_ori",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "RSF ori"
       ],
@@ -4102,6 +4596,8 @@
       "name": "RSF1010 oriV",
       "slug": "RSF1010_oriV",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "RSF1010 oriV"
       ],
@@ -4117,6 +4613,8 @@
       "name": "RSF1010 RepA",
       "slug": "RSF1010_RepA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "RSF1010 RepA"
       ],
@@ -4132,6 +4630,8 @@
       "name": "RSF1010 RepB",
       "slug": "RSF1010_RepB",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "RSF1010 RepB"
       ],
@@ -4147,6 +4647,8 @@
       "name": "SacB",
       "slug": "SacB",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "SacB",
         "levansucrase"
@@ -4163,6 +4665,8 @@
       "name": "SEVA tir",
       "slug": "SEVA_tir",
       "feature_type": "RBS",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
       "synonyms": [
         "SEVA tir",
         "tir region",
@@ -4180,6 +4684,8 @@
       "name": "sfGFP",
       "slug": "sfGFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "Superfolder GFP",
         "Superfolder",
@@ -4200,6 +4706,8 @@
       "name": "sgRNA scaffold",
       "slug": "sgRNA_scaffold",
       "feature_type": "misc_RNA",
+      "so_term": "SO:0000655",
+      "so_name": "ncRNA",
       "synonyms": [
         "sgRNA scaffold",
         "gRNA scaffold",
@@ -4219,6 +4727,8 @@
       "name": "sopA",
       "slug": "sopA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "sopA"
       ],
@@ -4234,6 +4744,8 @@
       "name": "sopB",
       "slug": "sopB",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "sopB"
       ],
@@ -4249,6 +4761,8 @@
       "name": "SpecR",
       "slug": "SpecR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "SpecR",
         "SmR",
@@ -4268,6 +4782,8 @@
       "name": "St1Cas9",
       "slug": "St1Cas9",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "St1Cas9",
         "cas9 (St1)",
@@ -4285,6 +4801,8 @@
       "name": "Strep tag",
       "slug": "Strep_tag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "Strep tag",
         "Strep-Tag II",
@@ -4303,6 +4821,8 @@
       "name": "SUMO",
       "slug": "SUMO",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "SUMO",
         "SMT3"
@@ -4319,6 +4839,8 @@
       "name": "SV40 NLS",
       "slug": "SV40_NLS",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "SV40 NLS",
         "NLS",
@@ -4336,6 +4858,8 @@
       "name": "SV40_PA_terminator",
       "slug": "SV40_PA_terminator",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "SV40_PA_terminator"
       ],
@@ -4351,6 +4875,8 @@
       "name": "T2A",
       "slug": "T2A",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "T2A"
       ],
@@ -4366,6 +4892,8 @@
       "name": "T7 RNAP",
       "slug": "T7_RNAP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "T7 RNAP",
         "T7 RNApolymerase",
@@ -4384,6 +4912,8 @@
       "name": "T7 tag",
       "slug": "T7_tag",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "T7 tag",
         "T7-tag",
@@ -4402,6 +4932,8 @@
       "name": "T7 terminator",
       "slug": "T7_terminator",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "T7 terminator",
         "T7 Terminator"
@@ -4418,6 +4950,8 @@
       "name": "T7-Ocr",
       "slug": "T7-Ocr",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "T7-Ocr",
         "T7p01",
@@ -4436,6 +4970,8 @@
       "name": "T7lac",
       "slug": "T7lac",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "PT7/lacO",
         "T7/lacO promoter",
@@ -4449,6 +4985,8 @@
         {
           "label": "T7 promoter",
           "feature_type": "regulatory",
+          "so_term": "SO:0000167",
+          "so_name": "promoter",
           "start": 24,
           "end": 42,
           "strand": 1,
@@ -4460,6 +4998,8 @@
         {
           "label": "T7 RNAP binding domain",
           "feature_type": "regulatory",
+          "so_term": "SO:0005836",
+          "so_name": "regulatory_region",
           "start": 24,
           "end": 37,
           "strand": 1,
@@ -4470,6 +5010,8 @@
         {
           "label": "+1 transcription start",
           "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
           "start": 41,
           "end": 44,
           "strand": 1,
@@ -4480,6 +5022,8 @@
         {
           "label": "lac operator O1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 45,
           "end": 66,
           "strand": 1,
@@ -4530,6 +5074,8 @@
       "name": "T7Te",
       "slug": "T7Te",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "T7Te",
         "T7Te Terminator"
@@ -4546,6 +5092,8 @@
       "name": "TetA",
       "slug": "TetA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "TetA",
         "tetA",
@@ -4564,6 +5112,8 @@
       "name": "tetAC",
       "slug": "tetAC",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "tetAC"
       ],
@@ -4579,6 +5129,8 @@
       "name": "tetO",
       "slug": "tetO",
       "feature_type": "protein_bind",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
       "synonyms": [
         "tetO"
       ],
@@ -4594,6 +5146,8 @@
       "name": "tetR",
       "slug": "tetR",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "TetR",
         "tetR",
@@ -4612,6 +5166,8 @@
       "name": "tetR/tetA promoters",
       "slug": "tetR_tetA_promoters",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "tetR/tetA promoters"
       ],
@@ -4623,6 +5179,8 @@
         {
           "label": "PtetA -35",
           "feature_type": "regulatory",
+          "so_term": "SO:0005836",
+          "so_name": "regulatory_region",
           "start": 1,
           "end": 7,
           "strand": 1,
@@ -4634,6 +5192,8 @@
         {
           "label": "PtetA -10",
           "feature_type": "regulatory",
+          "so_term": "SO:0005836",
+          "so_name": "regulatory_region",
           "start": 24,
           "end": 30,
           "strand": 1,
@@ -4645,6 +5205,8 @@
         {
           "label": "tetO1",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 5,
           "end": 24,
           "strand": 1,
@@ -4657,6 +5219,8 @@
         {
           "label": "tetO2",
           "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
           "start": 36,
           "end": 55,
           "strand": 1,
@@ -4723,6 +5287,8 @@
       "name": "TEV site",
       "slug": "TEV_site",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "TEV site",
         "TEV",
@@ -4740,6 +5306,8 @@
       "name": "thrombin site",
       "slug": "thrombin_site",
       "feature_type": "protein_domain",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
         "thrombin site",
         "thrombin",
@@ -4757,6 +5325,8 @@
       "name": "tL3",
       "slug": "tL3",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "tL3",
         "tL3 terminator"
@@ -4773,6 +5343,8 @@
       "name": "tonB",
       "slug": "tonB",
       "feature_type": "terminator",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
       "synonyms": [
         "tonB",
         "tonB terminator"
@@ -4789,6 +5361,8 @@
       "name": "TRE3GV",
       "slug": "TRE3GV",
       "feature_type": "promoter",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
       "synonyms": [
         "TRE3GV",
         "TRE3GV promoter"
@@ -4805,6 +5379,8 @@
       "name": "trfA",
       "slug": "trfA",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "trfA"
       ],
@@ -4820,6 +5396,8 @@
       "name": "ts ori101",
       "slug": "ts_ori101",
       "feature_type": "rep_origin",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
       "synonyms": [
         "oriR101",
         "ts ori101"
@@ -4836,6 +5414,8 @@
       "name": "UGI",
       "slug": "UGI",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "UGI",
         "uracil-DNA glycosylase inhibitor"
@@ -4852,6 +5432,8 @@
       "name": "UnaG",
       "slug": "UnaG",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "UnaG"
       ],
@@ -4867,6 +5449,8 @@
       "name": "URA3",
       "slug": "URA3",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "URA3",
         "orotidine-5'-phosphate decarboxylase"
@@ -4883,6 +5467,8 @@
       "name": "XylS",
       "slug": "XylS",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "XylS"
       ],
@@ -4898,6 +5484,8 @@
       "name": "YFP",
       "slug": "YFP",
       "feature_type": "CDS",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "YFP",
         "yellow fluorescent protein",

@@ -1,7 +1,7 @@
-LOCUS       Pbla                     105 bp    DNA              UNK 01-JAN-1980
-DEFINITION  The constitutive P3 promoter region of the pBR322 bla (TEM-1
-            beta-lactamase / AmpR) gene, carrying the sigma-70 -35/-10 pair and
-            the native Shine-Dalgarno leader..
+LOCUS       Pbla                      70 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase
+            / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter —
+            the native 5'UTR and ribosome binding site are a distinct fun....
 ACCESSION   Pbla
 VERSION     Pbla
 KEYWORDS    .
@@ -9,6 +9,13 @@ SOURCE      .
   ORGANISM  .
             .
 REFERENCE   1
+  AUTHORS   Sutcliffe JG
+  TITLE     Nucleotide sequence of the ampicillin resistance gene of Escherichia
+            coli plasmid pBR322
+  JOURNAL   Proceedings of the National Academy of Sciences USA
+   PUBMED   358200
+  REMARK    doi:10.1073/pnas.75.8.3737
+REFERENCE   2
   AUTHORS   Brosius J, Cate RL, Perlmutter AP
   TITLE     Precise location of two promoters for the beta-lactamase gene of
             pBR322. S1 mapping of ribonucleic acid isolated from Escherichia
@@ -16,53 +23,44 @@ REFERENCE   1
   JOURNAL   Journal of Biological Chemistry
    PUBMED   6178738
   REMARK    doi:10.1016/S0021-9258(18)34261-3
-REFERENCE   2
+REFERENCE   3
   AUTHORS   Russell DR, Bennett GN
   TITLE     Characterization of the beta-lactamase promoter of pBR322
   JOURNAL   Nucleic Acids Research
    PUBMED   6269053
   REMARK    doi:10.1093/nar/9.11.2517
-REFERENCE   3
-  AUTHORS   Sutcliffe JG
-  TITLE     Nucleotide sequence of the ampicillin resistance gene of Escherichia
-            coli plasmid pBR322
-  JOURNAL   Proceedings of the National Academy of Sciences USA
-   PUBMED   358200
-  REMARK    doi:10.1073/pnas.75.8.3737
 FEATURES             Location/Qualifiers
-     promoter        1..105
+     promoter        1..70
                      /label="Pbla"
                      /synonym="Pbla"
                      /synonym="AmpR promoter"
                      /synonym="bla promoter"
-                     /note="The constitutive P3 promoter region of the pBR322
-                     bla (TEM-1 beta-lactamase / AmpR) gene, carrying the
-                     sigma-70 -35/-10 pair and the native Shine-Dalgarno
-                     leader."
+                     /note="The constitutive P3 promoter of the pBR322 bla
+                     (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10
+                     pair. Trimmed to the promoter — the native 5'UTR and
+                     ribosome binding site are a distinct fun..."
+                     /db_xref="SO:0000167"
+                     /citation=[1]
      regulatory      36..41
                      /label="-35"
                      /parent="Pbla"
                      /regulatory_class="minus_35_signal"
-                     /note="Sigma-70 -35 hexamer (TTCAAA) of the pBR322 bla
-                     (TEM-1 beta-lactamase) P3 promoter; matches sigma-70
-                     consensus TTGACA at 4/6."
-                     /citation=[1]
+                     /note="Sigma-70 -35 hexamer TTCAAA of the pBR322 bla P3
+                     promoter (4/6 to consensus TTGACA), 17 bp upstream of the
+                     -10."
+                     /db_xref="SO:0000175"
                      /citation=[2]
+                     /citation=[3]
      regulatory      59..64
                      /label="-10"
                      /parent="Pbla"
                      /regulatory_class="minus_10_signal"
-                     /note="Sigma-70 -10/Pribnow box of the bla P3 promoter, 17
-                     bp downstream of the -35 box (optimal spacing)."
-                     /citation=[1]
+                     /note="Sigma-70 -10 hexamer GACAAT (4/6 to TATAAT), 17 bp
+                     downstream of the -35 (optimal spacing)."
+                     /db_xref="SO:0000176"
                      /citation=[2]
-     RBS             96..100
-                     /label="RBS"
-                     /parent="Pbla"
-                     /note="Native bla (TEM-1 beta-lactamase) Shine-Dalgarno
-                     motif AAGGA (core SD AGGA) at the 3' end of the part."
                      /citation=[3]
 ORIGIN
         1 cgcggaaccc ctatttgttt atttttctaa atacattcaa atatgtatcc gctcatgaga
-       61 caataaccct gataaatgct tcaataatat tgaaaaagga agagt
+       61 caataaccct
 //

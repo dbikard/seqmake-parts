@@ -44,6 +44,60 @@ DOCS_DIR = ROOT / "docs"
 PARTS_PAGES = DOCS_DIR / "parts"
 FILES_DIR = PARTS_PAGES / "files"
 
+# Sequence Ontology accessions for GenBank feature types (verified against OLS4).
+# A feature carries its SO term in catalog.json (read from a /db_xref="SO:..."
+# if present, else derived here from the feature type / regulatory_class).
+_SO_BY_REG = {
+    "minus_35_signal": ("SO:0000175", "minus_35_signal"),
+    "minus_10_signal": ("SO:0000176", "minus_10_signal"),
+    "ribosome_binding_site": ("SO:0000139", "ribosome_entry_site"),
+    "promoter": ("SO:0000167", "promoter"), "terminator": ("SO:0000141", "terminator"),
+    "TATA_box": ("SO:0000174", "TATA_box"), "operator": ("SO:0000057", "operator"),
+    "enhancer": ("SO:0000165", "enhancer"), "silencer": ("SO:0000625", "silencer"),
+    "attenuator": ("SO:0000140", "attenuator"),
+    "polyA_signal_sequence": ("SO:0000551", "polyA_signal_sequence"),
+}
+_SO_BY_TYPE = {
+    "promoter": ("SO:0000167", "promoter"), "CDS": ("SO:0000316", "CDS"),
+    "terminator": ("SO:0000141", "terminator"), "RBS": ("SO:0000139", "ribosome_entry_site"),
+    "rep_origin": ("SO:0000296", "origin_of_replication"), "oriT": ("SO:0000724", "oriT"),
+    "protein_bind": ("SO:0000410", "protein_binding_site"),
+    "protein_domain": ("SO:0000417", "polypeptide_domain"),
+    "misc_RNA": ("SO:0000655", "ncRNA"), "regulatory": ("SO:0005836", "regulatory_region"),
+    "minus_35_signal": ("SO:0000175", "minus_35_signal"),
+    "minus_10_signal": ("SO:0000176", "minus_10_signal"),
+    "sig_peptide": ("SO:0000418", "signal_peptide"),
+    "mat_peptide": ("SO:0000419", "mature_protein_region"),
+    "gene": ("SO:0000704", "gene"), "misc_feature": ("SO:0000110", "sequence_feature"),
+}
+_SO_NAMES = {acc: name for d in (_SO_BY_REG, _SO_BY_TYPE) for acc, name in d.values()}
+_SO_NAMES.update({"SO:0000315": "TSS", "SO:0000552": "Shine_Dalgarno_sequence"})
+
+
+def _so_derive(feature_type, regulatory_class=None, label=None):
+    if regulatory_class and regulatory_class in _SO_BY_REG:
+        return _SO_BY_REG[regulatory_class]
+    lab = (label or "").lower()
+    if lab.startswith("+1") or "transcription start" in lab or lab.strip() == "tss":
+        return ("SO:0000315", "TSS")
+    if feature_type == "protein_bind" and (
+            "operator" in lab or any(t in lab for t in ("teto", "laco", "arao", "pho"))):
+        return ("SO:0000057", "operator")
+    if feature_type == "RBS" and ("shine" in lab or "dalgarno" in lab or lab.strip() == "sd"):
+        return ("SO:0000552", "Shine_Dalgarno_sequence")
+    return _SO_BY_TYPE.get(feature_type)
+
+
+def _so_term(feature):
+    """(SO accession, SO name) for a feature: an explicit /db_xref="SO:..." wins,
+    else derive from the feature type / regulatory_class / label."""
+    for x in feature.qualifiers.get("db_xref", []):
+        if str(x).startswith("SO:"):
+            return str(x), _SO_NAMES.get(str(x), "")
+    rc = (feature.qualifiers.get("regulatory_class") or [None])[0]
+    label = (feature.qualifiers.get("label") or [""])[0]
+    return _so_derive(feature.type, rc, label) or (None, None)
+
 
 def _pmid_url(pmid: str) -> str:
     return f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
@@ -96,9 +150,12 @@ def parse_part(gb_path: Path) -> dict | None:
     for f in record.features:
         if "parent" not in f.qualifiers:
             continue
+        so_id, so_name = _so_term(f)
         children.append({
             "label": (f.qualifiers.get("label") or [""])[0],
             "feature_type": f.type,
+            "so_term": so_id,
+            "so_name": so_name,
             "start": int(f.location.start),
             "end": int(f.location.end),
             "strand": 1 if f.location.strand in (None, 1) else -1,
@@ -106,10 +163,13 @@ def parse_part(gb_path: Path) -> dict | None:
         })
     md_path = gb_path.with_suffix(".md")
     documented = md_path.exists()
+    main_so_id, main_so_name = _so_term(main)
     return {
         "name": name,
         "slug": gb_path.stem,
         "feature_type": main.type,
+        "so_term": main_so_id,
+        "so_name": main_so_name,
         "synonyms": list(q.get("synonym", [])),
         "description": (q.get("note") or [""])[0],
         "length": len(seq),
@@ -145,20 +205,28 @@ def _revcomp(s: str) -> str:
     return s.translate(str.maketrans("ACGTacgt", "TGCAtgca"))[::-1]
 
 
+def _so_link(so_id, so_name) -> str:
+    if not so_id:
+        return "—"
+    url = f"http://sequenceontology.org/browser/current_release/term/{so_id}"
+    return f"[{so_name or so_id}]({url})"
+
+
 def _feature_table(part: dict) -> str:
     if not part["children"]:
         return ""
     seq, refs = part["_seq"], part["references"]
     lines = ["## Sub-features\n",
-             "| Element | Type | Position | Strand | Sequence | Citations |",
-             "|---|---|---|---|---|---|"]
+             "| Element | Type | SO | Position | Strand | Sequence | Citations |",
+             "|---|---|---|---|---|---|---|"]
     for c in part["children"]:
         s, e = c["start"], c["end"]
         sub = seq[s:e]
         if c["strand"] == -1:
             sub = _revcomp(sub)
         strand = "+" if c["strand"] == 1 else "−"
-        lines.append(f"| {c['label']} | `{c['feature_type']}` | {s + 1}..{e} | "
+        lines.append(f"| {c['label']} | `{c['feature_type']}` | "
+                     f"{_so_link(c.get('so_term'), c.get('so_name'))} | {s + 1}..{e} | "
                      f"{strand} | `{sub}` | {_cite_links(c['citations'], refs)} |")
     return "\n".join(lines) + "\n"
 
@@ -178,9 +246,11 @@ def _reference_list(refs: list[dict]) -> str:
 def render_part_page(part: dict) -> str:
     slug, name = part["slug"], part["name"]
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
+    so = part.get("so_term")
+    so_part = f" · {_so_link(so, part.get('so_name'))}" if so else ""
     head = [
         f"# {name}\n",
-        f"`{part['feature_type']}` · {part['length']} bp{syn}\n",
+        f"`{part['feature_type']}`{so_part} · {part['length']} bp{syn}\n",
         f"[Download GenBank](files/{slug}.gb){{ .md-button }} "
         f"[Download FASTA](files/{slug}.fasta){{ .md-button }}\n",
         f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n',

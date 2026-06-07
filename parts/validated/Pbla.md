@@ -1,17 +1,15 @@
-The constitutive P3 promoter region of the pBR322 *bla* (TEM-1 beta-lactamase / AmpR) gene, carrying the sigma-70 -35/-10 pair and the native Shine-Dalgarno leader.
+The constitutive **P3 promoter** of the pBR322 *bla* (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct functional part and are **not** included.
 
 ## Origin
-This 105-bp part is the promoter/leader region immediately upstream of the pBR322 *bla* (TEM-1 beta-lactamase) coding sequence. The two *bla* promoters, P3 and P1, were precisely located by S1 mapping in Brosius et al. 1982 ([PMID 6178738](https://pubmed.ncbi.nlm.nih.gov/6178738/)); the promoter was independently footprinted and characterized by Russell & Bennett 1981 ([PMID 6269053](https://pubmed.ncbi.nlm.nih.gov/6269053/)). The complete *bla* gene plus its flanking leader (...AAGGAAGAGT-ATG...) was defined by Sutcliffe 1978 ([PMID 358200](https://pubmed.ncbi.nlm.nih.gov/358200/)).
+This part is the P3 core promoter immediately upstream of the pBR322 *bla* coding sequence. The two *bla* promoters, P3 and P1, were precisely located by S1 mapping (Brosius et al. 1982, [PMID 6178738](https://pubmed.ncbi.nlm.nih.gov/6178738/)) and the promoter independently characterized by Russell & Bennett 1981 ([PMID 6269053](https://pubmed.ncbi.nlm.nih.gov/6269053/)). The *bla* locus sequence is from Sutcliffe 1978 ([PMID 358200](https://pubmed.ncbi.nlm.nih.gov/358200/)).
 
 ## Properties
-- **-35 box** (sequence[35:41], `TTCAAA`): sigma-70 -35 hexamer, 4/6 to consensus TTGACA.
-- **-10 box (Pribnow box)** (sequence[58:64], `GACAAT`): sigma-70 -10 hexamer (4/6 to consensus TATAAT), separated from the -35 by an optimal 17-bp spacer (`TATGTATCCGCTCATGA`).
-- **RBS (Shine-Dalgarno)** (sequence[95:100], `AAGGA`, core SD AGGA): native *bla* ribosome-binding site; followed by 5 nt before the fragment ends and the *bla* ATG begins, giving ~5-7 nt SD-to-ATG spacing.
-
-All three elements are on the sense (bla) strand and reproduce exactly from the part sequence. This is the strong, constitutive P3 promoter; no AmpR/operator element is present (AmpR-type regulation applies to *ampC*-class beta-lactamases, not the Tn3/TEM-1 *bla* promoter).
+- **-35 box** (`TTCAAA`): sigma-70 -35 hexamer, 4/6 to consensus TTGACA.
+- **-10 box** (`GACAAT`): sigma-70 -10 hexamer (4/6 to TATAAT), an optimal 17-bp spacer downstream of the -35.
+- Constitutive; no operator (the Tn3/TEM-1 *bla* promoter is unregulated, unlike *ampC*-class beta-lactamases).
 
 ## Use
-Drives constitutive expression of an ampicillin-resistance marker (or any downstream ORF placed after the SD/ATG) in *E. coli*. Commonly used as the native promoter+RBS context for *bla*/AmpR cassettes derived from pBR322.
+Drives constitutive expression in *E. coli*. Supply a **separate** ribosome binding site part for translation: a promoter and an RBS are functionally distinct parts, so the native *bla* RBS is not bundled here.
 
 ## References
 - [PMID 6178738](https://pubmed.ncbi.nlm.nih.gov/6178738/) — Brosius J, Cate RL, Perlmutter AP. Precise location of two promoters for the beta-lactamase gene of pBR322. *J Biol Chem* (1982).
