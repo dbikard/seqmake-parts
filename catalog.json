@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "n_parts": 211,
-  "n_validated": 16,
-  "n_candidate": 195,
-  "n_documented": 16,
+  "n_validated": 17,
+  "n_candidate": 194,
+  "n_documented": 17,
   "parts": [
     {
       "name": "186 attP",
@@ -2197,12 +2197,70 @@
         "AmpR promoter",
         "bla promoter"
       ],
-      "description": "",
+      "description": "The constitutive P3 promoter region of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene, carrying the sigma-70 -35/-10 pair and the native Shine-Dalgarno leader.",
       "length": 105,
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "start": 35,
+          "end": 41,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "start": 58,
+          "end": 64,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RBS",
+          "feature_type": "RBS",
+          "start": 95,
+          "end": 100,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Brosius J, Cate RL, Perlmutter AP",
+          "title": "Precise location of two promoters for the beta-lactamase gene of pBR322. S1 mapping of ribonucleic acid isolated from Escherichia coli or synthesized in vitro",
+          "journal": "Journal of Biological Chemistry",
+          "pmid": "6178738",
+          "doi": "10.1016/S0021-9258(18)34261-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6178738/"
+        },
+        {
+          "authors": "Russell DR, Bennett GN",
+          "title": "Characterization of the beta-lactamase promoter of pBR322",
+          "journal": "Nucleic Acids Research",
+          "pmid": "6269053",
+          "doi": "10.1093/nar/9.11.2517",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6269053/"
+        },
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Nucleotide sequence of the ampicillin resistance gene of Escherichia coli plasmid pBR322",
+          "journal": "Proceedings of the National Academy of Sciences USA",
+          "pmid": "358200",
+          "doi": "10.1073/pnas.75.8.3737",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/358200/"
+        }
+      ],
       "main_citations": []
     },
     {
