@@ -26,6 +26,7 @@ FEATURES             Location/Qualifiers
                      /note="The wild-type E. coli lac core promoter (Plac):
                      -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp."
                      /db_xref="SO:0000167"
+                     /regulated_by="LacI"
      regulatory      1..6
                      /label="-35"
                      /parent="Plac"

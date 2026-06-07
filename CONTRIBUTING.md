@@ -44,6 +44,11 @@ Parts are split by curation status:
   feature. Convert an existing DNA `.gb` with `tools/migrate_to_protein.py
   <part.gb> --accession UniProt:…`. Regulatory parts (promoter / terminator /
   operator / RBS / origin) stay DNA.
+- **Cross-links.** A promoter names its cognate transcription-factor part(s) with
+  a `/regulated_by="<TF name>"` qualifier (repeatable) on its main feature. The
+  build resolves each name to that part and derives the inverse on the TF's page
+  ("regulates"), so the link is authored once but shown both ways (and lands in
+  `catalog.json`). Use a name (or synonym) that already exists in the catalog.
 - **Sequence Ontology typing.** Each part + sub-feature is typed with a
   [Sequence Ontology](https://www.ebi.ac.uk/ols4/ontologies/so) accession in
   `catalog.json` (`so_term`). It is derived from the GenBank feature type /

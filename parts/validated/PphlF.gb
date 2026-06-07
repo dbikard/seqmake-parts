@@ -39,6 +39,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0000167"
+                     /regulated_by="PhlF"
      regulatory      17..22
                      /label="-35"
                      /parent="PphlF"

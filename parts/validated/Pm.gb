@@ -73,6 +73,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0000167"
+                     /regulated_by="XylS"
      protein_bind    11..25
                      /label="XylS operator"
                      /parent="Pm"

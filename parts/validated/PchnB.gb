@@ -52,6 +52,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0000167"
+                     /regulated_by="ChnR"
      protein_bind    15..25
                      /label="ChnR-responsive element"
                      /parent="PchnB"

@@ -37,6 +37,7 @@ FEATURES             Location/Qualifiers
                      trp -35 with the lacUV5 -10 and operator, giving a strong,
                      LacI/IPTG-inducible promoter for E. coli expression."
                      /db_xref="SO:0000167"
+                     /regulated_by="LacI"
      regulatory      1..6
                      /label="-35"
                      /parent="Ptac"

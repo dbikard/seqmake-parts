@@ -47,6 +47,7 @@ FEATURES             Location/Qualifiers
                      the tetO1 operator, making transcription
                      TetR/anhydrotetracycline-controllable."
                      /db_xref="SO:0000167"
+                     /regulated_by="TetR"
      regulatory      1..6
                      /label="-35"
                      /parent="PtetA"

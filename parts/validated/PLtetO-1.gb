@@ -41,6 +41,7 @@ FEATURES             Location/Qualifiers
                      inserting two Tn10 tetO2 operators into the bacteriophage
                      lambda PL scaffold."
                      /db_xref="SO:0000167"
+                     /regulated_by="TetR"
      protein_bind    1..19
                      /label="tetO2 operator"
                      /parent="PLtetO-1"

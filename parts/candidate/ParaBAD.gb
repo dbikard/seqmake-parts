@@ -3,13 +3,14 @@ DEFINITION  ParaBAD.
 ACCESSION   ParaBAD
 VERSION     ParaBAD
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
      promoter        1..285
                      /label="ParaBAD"
                      /synonym="araBAD promoter"
+                     /regulated_by="AraC"
      protein_bind    3..20
                      /label="O2"
                      /parent="ParaBAD"

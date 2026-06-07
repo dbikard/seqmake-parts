@@ -48,6 +48,7 @@ FEATURES             Location/Qualifiers
                      followed by a lac operator O1, giving LacI-controllable,
                      low-basal expression from T7 RNA polymerase."
                      /db_xref="SO:0000167"
+                     /regulated_by="LacI"
      regulatory      25..42
                      /label="T7 promoter"
                      /parent="T7lac"

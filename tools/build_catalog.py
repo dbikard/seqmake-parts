@@ -181,6 +181,11 @@ def parse_part(gb_path: Path) -> dict | None:
         "description": (q.get("note") or [""])[0],
         "length": len(seq),
         "protein_length_aa": len(seq) if is_protein else None,
+        # Cognate regulator(s): a promoter names the TF part(s) that control it
+        # via /regulated_by; build_catalog resolves these + derives the inverse
+        # ("regulates") on the TF's entry. Raw names here; resolved in main().
+        "regulated_by": list(q.get("regulated_by", [])),
+        "regulates": [],
         "documented": documented,
         "status": "validated" if documented else "candidate",
         "children": children,
@@ -279,6 +284,48 @@ def _reference_list(refs: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _crosslink_parts(parts: list[dict]) -> None:
+    """Resolve each part's /regulated_by names to catalog parts and derive the
+    inverse ("regulates") on the named regulator. Modifies parts in place; an
+    unresolved name is kept (rendered as plain text, not a link)."""
+    by_name: dict[str, dict] = {}
+    for p in parts:
+        by_name.setdefault(p["name"].lower(), p)
+        for s in p["synonyms"]:
+            by_name.setdefault(s.lower(), p)
+    for p in parts:
+        resolved = []
+        for tf in p["regulated_by"]:
+            t = by_name.get(tf.lower())
+            resolved.append({"name": tf, "slug": t["slug"] if t else None,
+                             "documented": bool(t and t["documented"])})
+            if t:
+                t["regulates"].append({"name": p["name"], "slug": p["slug"],
+                                       "documented": p["documented"]})
+        p["regulated_by"] = resolved
+
+
+def _xlink(item: dict) -> str:
+    """Link to a related part's page when it is validated (has a page), else
+    show its name as plain text."""
+    if item.get("slug") and item.get("documented"):
+        return f"[{item['name']}]({item['slug']}.md)"
+    return item["name"]
+
+
+def _related_section(part: dict) -> str:
+    rb, rg = part.get("regulated_by") or [], part.get("regulates") or []
+    if not rb and not rg:
+        return ""
+    lines = ["## Related parts\n"]
+    if rb:
+        lines.append("**Regulated by:** " + " · ".join(_xlink(x) for x in rb) + "\n")
+    if rg:
+        rgs = sorted(rg, key=lambda i: i["name"].lower())
+        lines.append("**Regulates:** " + " · ".join(_xlink(x) for x in rgs) + "\n")
+    return "\n".join(lines) + "\n"
+
+
 def render_part_page(part: dict) -> str:
     slug, name = part["slug"], part["name"]
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
@@ -306,11 +353,13 @@ def render_part_page(part: dict) -> str:
         # Structured feature table up top, then the curated prose (which carries
         # its own References section).
         return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
+                + _related_section(part) + "\n"
                 + _feature_table(part) + "\n" + body)
     note = part["description"] or "_No curated documentation page yet._"
     note += (f"\n\n*This part has no curated documentation yet — "
              f"[contribute one]({contrib}).*\n")
     return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
+            + _related_section(part) + "\n"
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 
@@ -354,6 +403,9 @@ def main() -> None:
                 skipped.append(f"{gb.name}: misplaced — {p['status']} part in {want}")
                 continue
             parts.append(p)
+
+    # Resolve promoter<->TF cross-links + derive the inverse across all parts.
+    _crosslink_parts(parts)
 
     # Manifest covers every part (validated + candidate), with the internal
     # sequence field stripped.

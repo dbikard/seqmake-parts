@@ -31,6 +31,7 @@ FEATURES             Location/Qualifiers
                      coli lac promoter carrying the catabolite-insensitive,
                      promoter-up UV5 allele."
                      /db_xref="SO:0000167"
+                     /regulated_by="LacI"
      regulatory      1..6
                      /label="-35"
                      /parent="PlacUV5"

@@ -45,6 +45,7 @@ FEATURES             Location/Qualifiers
                      boxes separated by a consensus-optimal 17-bp spacer."
                      /citation=[1]
                      /db_xref="SO:0000167"
+                     /regulated_by="LacI"
      regulatory      1..6
                      /label="-35"
                      /parent="Ptrc"
