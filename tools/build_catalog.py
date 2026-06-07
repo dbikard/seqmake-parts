@@ -225,16 +225,27 @@ def _len_label(part: dict) -> str:
     return f"{part['length']} {'aa' if part.get('kind') == 'protein' else 'bp'}"
 
 
-def _accession_link(acc: str | None) -> str | None:
-    """Markdown link for a source accession ("UniProt:P..." / "NCBI:..."), or None."""
+def _resource_links(acc: str | None) -> str:
+    """External-resource links derived from a coding part's source accession.
+
+    A UniProt accession links to UniProt + the AlphaFold structure + the
+    InterPro family; an NCBI accession links to NCBI Protein. Empty if no
+    accession.
+    """
     if not acc:
-        return None
+        return ""
     db, _, ident = acc.partition(":")
     if not ident:
         ident, db = db, ""
     if db.lower() == "uniprot":
-        return f"[{acc}](https://www.uniprot.org/uniprotkb/{ident})"
-    return f"[{acc}](https://www.ncbi.nlm.nih.gov/protein/{ident})"
+        links = [
+            f"[UniProt](https://www.uniprot.org/uniprotkb/{ident})",
+            f"[AlphaFold](https://alphafold.ebi.ac.uk/entry/{ident})",
+            f"[InterPro](https://www.ebi.ac.uk/interpro/protein/UniProt/{ident}/)",
+        ]
+    else:
+        links = [f"[NCBI Protein](https://www.ncbi.nlm.nih.gov/protein/{ident})"]
+    return " · ".join(links)
 
 
 def _feature_table(part: dict) -> str:
@@ -273,15 +284,16 @@ def render_part_page(part: dict) -> str:
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
     so = part.get("so_term")
     so_part = f" · {_so_link(so, part.get('so_name'))}" if so else ""
-    acc = _accession_link(part.get("source_accession"))
-    acc_part = f" · {acc}" if acc else ""
     fasta_label = "Download protein FASTA" if part.get("kind") == "protein" else "Download FASTA"
     head = [
         f"# {name}\n",
-        f"`{part['feature_type']}`{so_part} · {_len_label(part)}{acc_part}{syn}\n",
+        f"`{part['feature_type']}`{so_part} · {_len_label(part)}{syn}\n",
         f"[Download GenBank](files/{slug}.gb){{ .md-button }} "
         f"[{fasta_label}](files/{slug}.fasta){{ .md-button }}\n",
     ]
+    res = _resource_links(part.get("source_accession"))
+    if res:
+        head.append(f"**{part['source_accession']}** · {res}\n")
     # The interactive mini-map renders DNA; protein parts rely on the feature
     # table below for their domain layout.
     if part.get("kind") != "protein":
