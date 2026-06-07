@@ -5,7 +5,7 @@ DEFINITION  AraC/XylS-family transcriptional activator ChnR;
 ACCESSION   ChnR
 VERSION     ChnR
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -30,6 +30,7 @@ FEATURES             Location/Qualifiers
                      KMSVPHLMRKFKVDFGNSPAAYIMNLRVQFAKRLLTSKKEIPLKVIASEAGFCDQSHMT
                      RVFQKFFGKTPIEIRQEHTNLVSENSVSSIVF"
                      /citation=[1]
+                     /db_xref="SO:0000316"
 ORIGIN
         1 atgagcacag acaaagcaaa tacgctgatc aaacccgaag atgtcgtgtt atggattccg
        61 ggtaatgtca caattgacag catgaatgcc ggttgggaaa acattgcaat cagagggtac

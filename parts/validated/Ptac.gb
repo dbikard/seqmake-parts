@@ -5,7 +5,7 @@ DEFINITION  Ptac is a synthetic sigma70 promoter combining the trp -35 with the
 ACCESSION   Ptac
 VERSION     Ptac
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -36,6 +36,7 @@ FEATURES             Location/Qualifiers
                      /note="Ptac is a synthetic sigma70 promoter combining the
                      trp -35 with the lacUV5 -10 and operator, giving a strong,
                      LacI/IPTG-inducible promoter for E. coli expression."
+                     /db_xref="SO:0000167"
      regulatory      1..6
                      /label="-35"
                      /parent="Ptac"
@@ -43,6 +44,7 @@ FEATURES             Location/Qualifiers
                      /note="sigma70 consensus -35 hexamer TTGACA at the 5' end;
                      trp-derived in the tac hybrid."
                      /citation=[1]
+                     /db_xref="SO:0000175"
      misc_feature    7..22
                      /label="spacer"
                      /parent="Ptac"
@@ -50,6 +52,7 @@ FEATURES             Location/Qualifiers
                      trp-derived."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000110"
      regulatory      23..28
                      /label="-10"
                      /parent="Ptac"
@@ -58,6 +61,7 @@ FEATURES             Location/Qualifiers
                      register), derived from lacUV5 (the UV5/L8 mutation
                      converts the wild-type lac -10 to consensus)."
                      /citation=[1]
+                     /db_xref="SO:0000176"
      misc_feature    29..34
                      /label="discriminator"
                      /parent="Ptac"
@@ -65,12 +69,14 @@ FEATURES             Location/Qualifiers
                      (position -7) and the +1, lacUV5-derived; places +1 at the
                      first base of the lac operator."
                      /citation=[1]
+                     /db_xref="SO:0000110"
      misc_feature    35
                      /label="+1"
                      /parent="Ptac"
                      /note="Transcription start site: the first A of the lac
                      operator, 7 nt downstream of the -10 hexamer."
                      /citation=[1]
+                     /db_xref="SO:0000315"
      protein_bind    35..53
                      /label="lac operator"
                      /parent="Ptac"
@@ -79,6 +85,7 @@ FEATURES             Location/Qualifiers
                      repression."
                      /citation=[1]
                      /citation=[3]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 ttgacaatta atcatcggct cgtataatgt gtggaattgt gagcggataa caa
 //

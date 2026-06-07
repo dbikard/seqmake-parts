@@ -5,7 +5,7 @@ DEFINITION  The Tn10 divergent tetA/tetR control region: 56 bp carrying the
 ACCESSION   tetR_tetA_promot
 VERSION     tetR_tetA_promot
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -57,6 +57,7 @@ FEATURES             Location/Qualifiers
                      /note="The Tn10 divergent tetA/tetR control region: 56 bp
                      carrying the PtetA promoter, the overlapping PtetR
                      promoter, and the two TetR operators tetO1 and tetO2."
+                     /db_xref="SO:0000167"
      regulatory      2..7
                      /label="PtetA -35"
                      /parent="tetR/tetA promoters"
@@ -65,6 +66,7 @@ FEATURES             Location/Qualifiers
                      promoter (PtetA), reading 5'->3' into tetA."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0005836"
      regulatory      25..30
                      /label="PtetA -10"
                      /parent="tetR/tetA promoters"
@@ -74,6 +76,7 @@ FEATURES             Location/Qualifiers
                      (sequence[7:24] = CTCTATCATTGATAGAG)."
                      /citation=[3]
                      /citation=[2]
+                     /db_xref="SO:0005836"
      protein_bind    6..24
                      /label="tetO1"
                      /parent="tetR/tetA promoters"
@@ -83,6 +86,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[4]
                      /citation=[5]
+                     /db_xref="SO:0000057"
      protein_bind    37..55
                      /label="tetO2"
                      /parent="tetR/tetA promoters"
@@ -93,6 +97,7 @@ FEATURES             Location/Qualifiers
                      /citation=[4]
                      /citation=[5]
                      /citation=[6]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 gttgacactc tatcattgat agagttattt taccactccc tatcagtgat agagaa
 //

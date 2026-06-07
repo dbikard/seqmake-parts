@@ -6,7 +6,7 @@ DEFINITION  Engineered T7lac regulatory region: the bacteriophage T7 phi10
 ACCESSION   T7lac
 VERSION     T7lac
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -47,6 +47,7 @@ FEATURES             Location/Qualifiers
                      bacteriophage T7 phi10 (class III) promoter immediately
                      followed by a lac operator O1, giving LacI-controllable,
                      low-basal expression from T7 RNA polymerase."
+                     /db_xref="SO:0000167"
      regulatory      25..42
                      /label="T7 promoter"
                      /parent="T7lac"
@@ -55,6 +56,7 @@ FEATURES             Location/Qualifiers
                      consensus TAATACGACTCACTATAG (18 bp)."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000167"
      regulatory      25..37
                      /label="T7 RNAP binding domain"
                      /parent="T7lac"
@@ -64,12 +66,14 @@ FEATURES             Location/Qualifiers
                      functional analog of the -35/-10 region for the
                      single-sub..."
                      /citation=[1]
+                     /db_xref="SO:0005836"
      misc_feature    42..44
                      /label="+1 transcription start"
                      /parent="T7lac"
                      /note="Class III T7 promoters initiate at +1 with a
                      G/poly(G) run and a purine/GTP preference."
                      /citation=[1]
+                     /db_xref="SO:0000315"
      protein_bind    46..66
                      /label="lac operator O1"
                      /parent="T7lac"
@@ -79,6 +83,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /citation=[3]
                      /citation=[4]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 agatcgatct cgatcccgcg aaattaatac gactcactat aggggaattg tgagcggata
        61 acaattc

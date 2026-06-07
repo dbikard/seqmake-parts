@@ -46,6 +46,7 @@ FEATURES             Location/Qualifiers
                      sites in the spacer and no..."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000167"
      minus_35_signal 1..6
                      /label="-35"
                      /parent="P2"
@@ -53,6 +54,7 @@ FEATURES             Location/Qualifiers
                      TTGACA (minus35_score=1.0 at pos 0)."
                      /citation=[3]
                      /citation=[4]
+                     /db_xref="SO:0000175"
      minus_10_signal 24..29
                      /label="-10"
                      /parent="P2"
@@ -61,12 +63,14 @@ FEATURES             Location/Qualifiers
                      spacing)."
                      /citation=[3]
                      /citation=[4]
+                     /db_xref="SO:0000176"
      misc_feature    7..23
                      /label="spacer"
                      /parent="P2"
                      /note="17-bp -35/-10 spacer (GCTTATCATCGATAAGC), the
                      optimal sigma70 spacing."
                      /citation=[4]
+                     /db_xref="SO:0000110"
      misc_feature    14..19
                      /label="ClaI"
                      /parent="P2"
@@ -74,6 +78,7 @@ FEATURES             Location/Qualifiers
                      spacer at pBR322 positions 16-21; a signature of the
                      synthetic restriction-cloned pBR322 tet promoter frag..."
                      /citation=[3]
+                     /db_xref="SO:0000110"
      misc_feature    20..25
                      /label="HindIII"
                      /parent="P2"
@@ -81,6 +86,7 @@ FEATURES             Location/Qualifiers
                      positions 22-27 spanning the spacer/-10 boundary (overlaps
                      the -10 at positions 23-24)."
                      /citation=[3]
+                     /db_xref="SO:0000110"
 ORIGIN
         1 ttgacagctt atcatcgata agctttaat
 //

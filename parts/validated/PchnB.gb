@@ -5,7 +5,7 @@ DEFINITION  Cyclohexanone-inducible promoter (PchnB) from Acinetobacter
 ACCESSION   PchnB
 VERSION     PchnB
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -51,6 +51,7 @@ FEATURES             Location/Qualifiers
                      the AraC/XylS-family regulator ChnR."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000167"
      protein_bind    15..25
                      /label="ChnR-responsive element"
                      /parent="PchnB"
@@ -58,6 +59,7 @@ FEATURES             Location/Qualifiers
                      region."
                      /citation=[3]
                      /citation=[4]
+                     /db_xref="SO:0000410"
 ORIGIN
         1 gcaactaaaa gagattgttt ggatcagtta cccaaaatcg ttgaaaagat tttaactctt
        61 cgatttttat tttttaggta atcctagccc tctcgggggc taggattaaa aattttaagt

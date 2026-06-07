@@ -5,7 +5,7 @@ DEFINITION  PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter
 ACCESSION   PLtetO-1
 VERSION     PLtetO-1
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -40,6 +40,7 @@ FEATURES             Location/Qualifiers
                      aTc-inducible promoter of Lutz & Bujard (1997), built by
                      inserting two Tn10 tetO2 operators into the bacteriophage
                      lambda PL scaffold."
+                     /db_xref="SO:0000167"
      protein_bind    1..19
                      /label="tetO2 operator"
                      /parent="PLtetO-1"
@@ -49,6 +50,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /citation=[3]
+                     /db_xref="SO:0000057"
      regulatory      20..25
                      /label="-35"
                      /parent="PLtetO-1"
@@ -57,6 +59,7 @@ FEATURES             Location/Qualifiers
                      lambda PL scaffold, flanked by the two tetO2 operators
                      (abuts the distal operator at 19, the spacer operator a..."
                      /citation=[1]
+                     /db_xref="SO:0000175"
      protein_bind    26..44
                      /label="tetO2 operator (proximal)"
                      /parent="PLtetO-1"
@@ -66,6 +69,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /citation=[3]
+                     /db_xref="SO:0000057"
      regulatory      43..48
                      /label="-10"
                      /parent="PLtetO-1"
@@ -74,6 +78,7 @@ FEATURES             Location/Qualifiers
                      the -35 (canonical spacer), overlapping the 3' end of the
                      spacer tetO2 by 2 bp."
                      /citation=[1]
+                     /db_xref="SO:0000176"
 ORIGIN
         1 tccctatcag tgatagagat tgacatccct atcagtgata gagatactga gcacatcagc
        61 aggacgcact gacc

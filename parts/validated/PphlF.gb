@@ -4,7 +4,7 @@ DEFINITION  PhlF-repressible promoter: J23119-derived core with the phO operator
 ACCESSION   PphlF
 VERSION     PphlF
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -38,18 +38,21 @@ FEATURES             Location/Qualifiers
                      blocks transcription."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000167"
      regulatory      17..22
                      /label="-35"
                      /parent="PphlF"
                      /regulatory_class="minus_35_signal"
                      /note="J23119-derived -35 box (TTGACA)"
                      /citation=[1]
+                     /db_xref="SO:0000175"
      regulatory      40..45
                      /label="-10"
                      /parent="PphlF"
                      /regulatory_class="minus_10_signal"
                      /note="-10 box (TATCGT); overlapped by the phO operator"
                      /citation=[1]
+                     /db_xref="SO:0000176"
      protein_bind    22..51
                      /label="phO"
                      /parent="PphlF"
@@ -60,6 +63,7 @@ FEATURES             Location/Qualifiers
                      transcription."
                      /citation=[3]
                      /citation=[1]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 tctgattcgt taccaattga catgatacga aacgtaccgt atcgttaagg t
 //

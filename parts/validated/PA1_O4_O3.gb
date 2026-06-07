@@ -5,7 +5,7 @@ DEFINITION  A 56-bp synthetic constitutive/IPTG-regulatable promoter combining
 ACCESSION   PA1_O4_O3
 VERSION     PA1_O4_O3
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -38,6 +38,7 @@ FEATURES             Location/Qualifiers
                      promoter combining the phage T7 A1 (PA1) core with two
                      natural lac O1 operators placed at positions 4 (spacer) and
                      3 (downstream)."
+                     /db_xref="SO:0000167"
      regulatory      1..6
                      /label="-35"
                      /parent="PA1/O4/O3"
@@ -47,6 +48,7 @@ FEATURES             Location/Qualifiers
                      only at the final base."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000175"
      protein_bind    7..23
                      /label="lac operator O4"
                      /parent="PA1/O4/O3"
@@ -57,6 +59,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /citation=[3]
+                     /db_xref="SO:0000057"
      regulatory      24..29
                      /label="-10"
                      /parent="PA1/O4/O3"
@@ -66,6 +69,7 @@ FEATURES             Location/Qualifiers
                      dinucleotide shifted relative to consensus TA..."
                      /citation=[1]
                      /citation=[2]
+                     /db_xref="SO:0000176"
      protein_bind    40..56
                      /label="lac operator O3"
                      /parent="PA1/O4/O3"
@@ -75,6 +79,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /citation=[3]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 ttgacttgtg agcggataac aatgatactt agattcaatt gtgagcggat aacaat
 //

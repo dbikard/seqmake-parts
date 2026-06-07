@@ -5,7 +5,7 @@ DEFINITION  PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two
 ACCESSION   PT5_lacO
 VERSION     PT5_lacO
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -55,6 +55,7 @@ FEATURES             Location/Qualifiers
                      IPTG-inducible transcription (the pQE/Bujard expression
                      module)."
                      /citation=[1]
+                     /db_xref="SO:0000167"
      regulatory      19..24
                      /label="-35"
                      /parent="PT5/lacO"
@@ -62,6 +63,7 @@ FEATURES             Location/Qualifiers
                      /note="Sigma-70 -35 hexamer of the bacteriophage T5
                      promoter (seq[18:24]=TTGCTT)."
                      /citation=[2]
+                     /db_xref="SO:0000175"
      regulatory      42..47
                      /label="-10"
                      /parent="PT5/lacO"
@@ -70,6 +72,7 @@ FEATURES             Location/Qualifiers
                      consensus (seq[41:47]=TATAAT), 17 bp downstream of the -35
                      box (canonical spacer)."
                      /citation=[2]
+                     /db_xref="SO:0000176"
      protein_bind    25..41
                      /label="lac operator"
                      /parent="PT5/lacO"
@@ -78,6 +81,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
                      /citation=[4]
                      /citation=[5]
+                     /db_xref="SO:0000057"
      protein_bind    57..73
                      /label="lac operator (downstream)"
                      /parent="PT5/lacO"
@@ -86,6 +90,7 @@ FEATURES             Location/Qualifiers
                      transcription start."
                      /citation=[3]
                      /citation=[5]
+                     /db_xref="SO:0000057"
 ORIGIN
         1 aaatcataaa aaatttattt gctttgtgag cggataacaa ttataataga ttcaattgtg
        61 agcggataac aatttcacac a
