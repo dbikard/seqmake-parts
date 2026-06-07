@@ -1,12 +1,11 @@
-LOCUS       Ptet2                     29 bp    DNA              UNK 01-JAN-1980
-DEFINITION  Ptet2 is a 29-bp sigma70 promoter fragment that is, by exact
-            sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp
-            spacer + -10), with ClaI and HindIII cloning sites in the spacer and
-            no....
-ACCESSION   Ptet2
-VERSION     Ptet2
+LOCUS       P2                        29 bp    DNA              UNK 01-JAN-1980
+DEFINITION  P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence,
+            the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer +
+            -10), with ClaI and HindIII cloning sites in the spacer and no....
+ACCESSION   P2
+VERSION     P2
 KEYWORDS    .
-SOURCE      .
+SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
@@ -38,25 +37,25 @@ REFERENCE   4
   REMARK    doi:10.1093/nar/25.6.1203
 FEATURES             Location/Qualifiers
      promoter        1..29
-                     /label="Ptet2"
+                     /label="P2"
                      /synonym="Ptet2"
                      /synonym="tet promoter"
-                     /note="Ptet2 is a 29-bp sigma70 promoter fragment that is,
-                     by exact sequence, the pBR322 tet (P2) constitutive
-                     promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII
-                     cloning sites in the spacer and no..."
+                     /note="P2 is a 29-bp sigma70 promoter fragment that is, by
+                     exact sequence, the pBR322 tet (P2) constitutive promoter
+                     (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning
+                     sites in the spacer and no..."
                      /citation=[1]
                      /citation=[2]
      minus_35_signal 1..6
                      /label="-35"
-                     /parent="Ptet2"
+                     /parent="P2"
                      /note="Perfect match to the canonical sigma70 -35 consensus
                      TTGACA (minus35_score=1.0 at pos 0)."
                      /citation=[3]
                      /citation=[4]
      minus_10_signal 24..29
                      /label="-10"
-                     /parent="Ptet2"
+                     /parent="P2"
                      /note="TTTAAT, a strong sigma70 -10 variant (5/6 to TATAAT
                      consensus; minus10_pos=23, spacer_len=17, optimal
                      spacing)."
@@ -64,20 +63,20 @@ FEATURES             Location/Qualifiers
                      /citation=[4]
      misc_feature    7..23
                      /label="spacer"
-                     /parent="Ptet2"
+                     /parent="P2"
                      /note="17-bp -35/-10 spacer (GCTTATCATCGATAAGC), the
                      optimal sigma70 spacing."
                      /citation=[4]
      misc_feature    14..19
                      /label="ClaI"
-                     /parent="Ptet2"
+                     /parent="P2"
                      /note="ATCGAT, a ClaI restriction site inside the -35/-10
                      spacer at pBR322 positions 16-21; a signature of the
                      synthetic restriction-cloned pBR322 tet promoter frag..."
                      /citation=[3]
      misc_feature    20..25
                      /label="HindIII"
-                     /parent="Ptet2"
+                     /parent="P2"
                      /note="AAGCTT, a HindIII restriction site at pBR322
                      positions 22-27 spanning the spacer/-10 boundary (overlaps
                      the -10 at positions 23-24)."

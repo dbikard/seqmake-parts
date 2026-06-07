@@ -1886,6 +1886,111 @@
       "main_citations": []
     },
     {
+      "name": "P2",
+      "slug": "P2",
+      "feature_type": "promoter",
+      "synonyms": [
+        "Ptet2",
+        "tet promoter"
+      ],
+      "description": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+      "length": 29,
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "minus_35_signal",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "minus_10_signal",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "spacer",
+          "feature_type": "misc_feature",
+          "start": 6,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            4
+          ]
+        },
+        {
+          "label": "ClaI",
+          "feature_type": "misc_feature",
+          "start": 13,
+          "end": 19,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "HindIII",
+          "feature_type": "misc_feature",
+          "start": 19,
+          "end": 25,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+          "journal": "Cold Spring Harbor Symposia on Quantitative Biology 1979;43:77-90",
+          "pmid": "383387",
+          "doi": "10.1101/sqb.1979.043.01.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
+        },
+        {
+          "authors": "Hillen W, Berens C",
+          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
+          "journal": "Annual Review of Microbiology 1994;48:345-369",
+          "pmid": "7826010",
+          "doi": "10.1146/annurev.mi.48.100194.002021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
+        },
+        {
+          "authors": "Harley CB, Lawrie J, Betlach M, Crea R, Boyer HW, Hedgpeth J",
+          "title": "Transcription initiation at the tet promoter and effect of mutations",
+          "journal": "Nucleic Acids Research 1988;16(15):7269-7285",
+          "pmid": "3045754",
+          "doi": "10.1093/nar/16.15.7269",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3045754/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
       "name": "P2A",
       "slug": "P2A",
       "feature_type": "protein_domain",
@@ -3311,111 +3416,6 @@
         }
       ],
       "main_citations": []
-    },
-    {
-      "name": "Ptet2",
-      "slug": "Ptet2",
-      "feature_type": "promoter",
-      "synonyms": [
-        "Ptet2",
-        "tet promoter"
-      ],
-      "description": "Ptet2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
-      "length": 29,
-      "documented": true,
-      "status": "validated",
-      "children": [
-        {
-          "label": "-35",
-          "feature_type": "minus_35_signal",
-          "start": 0,
-          "end": 6,
-          "strand": 1,
-          "citations": [
-            3,
-            4
-          ]
-        },
-        {
-          "label": "-10",
-          "feature_type": "minus_10_signal",
-          "start": 23,
-          "end": 29,
-          "strand": 1,
-          "citations": [
-            3,
-            4
-          ]
-        },
-        {
-          "label": "spacer",
-          "feature_type": "misc_feature",
-          "start": 6,
-          "end": 23,
-          "strand": 1,
-          "citations": [
-            4
-          ]
-        },
-        {
-          "label": "ClaI",
-          "feature_type": "misc_feature",
-          "start": 13,
-          "end": 19,
-          "strand": 1,
-          "citations": [
-            3
-          ]
-        },
-        {
-          "label": "HindIII",
-          "feature_type": "misc_feature",
-          "start": 19,
-          "end": 25,
-          "strand": 1,
-          "citations": [
-            3
-          ]
-        }
-      ],
-      "references": [
-        {
-          "authors": "Sutcliffe JG",
-          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
-          "journal": "Cold Spring Harbor Symposia on Quantitative Biology 1979;43:77-90",
-          "pmid": "383387",
-          "doi": "10.1101/sqb.1979.043.01.013",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
-        },
-        {
-          "authors": "Hillen W, Berens C",
-          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
-          "journal": "Annual Review of Microbiology 1994;48:345-369",
-          "pmid": "7826010",
-          "doi": "10.1146/annurev.mi.48.100194.002021",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
-        },
-        {
-          "authors": "Harley CB, Lawrie J, Betlach M, Crea R, Boyer HW, Hedgpeth J",
-          "title": "Transcription initiation at the tet promoter and effect of mutations",
-          "journal": "Nucleic Acids Research 1988;16(15):7269-7285",
-          "pmid": "3045754",
-          "doi": "10.1093/nar/16.15.7269",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/3045754/"
-        },
-        {
-          "authors": "Lutz R, Bujard H",
-          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
-          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
-          "pmid": "9092630",
-          "doi": "10.1093/nar/25.6.1203",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
-        }
-      ],
-      "main_citations": [
-        1,
-        2
-      ]
     },
     {
       "name": "ptet_full",
