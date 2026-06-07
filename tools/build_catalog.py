@@ -145,6 +145,11 @@ def parse_part(gb_path: Path) -> dict | None:
         return None
     q = main.qualifiers
     name = (q.get("label") or [record.name or gb_path.stem])[0]
+    # A protein-only coding part stores its amino-acid sequence directly; its
+    # sub-feature coords are residues, and length is reported in aa.
+    is_protein = bool(seq) and bool(set(seq) - set("ACGTUN"))
+    source_accession = next(
+        (str(x) for x in q.get("db_xref", []) if not str(x).startswith("SO:")), None)
     refs = _parse_references(record)
     children = []
     for f in record.features:
@@ -168,11 +173,14 @@ def parse_part(gb_path: Path) -> dict | None:
         "name": name,
         "slug": gb_path.stem,
         "feature_type": main.type,
+        "kind": "protein" if is_protein else "dna",
+        "source_accession": source_accession,
         "so_term": main_so_id,
         "so_name": main_so_name,
         "synonyms": list(q.get("synonym", [])),
         "description": (q.get("note") or [""])[0],
         "length": len(seq),
+        "protein_length_aa": len(seq) if is_protein else None,
         "documented": documented,
         "status": "validated" if documented else "candidate",
         "children": children,
@@ -212,6 +220,23 @@ def _so_link(so_id, so_name) -> str:
     return f"[{so_name or so_id}]({url})"
 
 
+def _len_label(part: dict) -> str:
+    """"NNN aa" for a protein part, "NNN bp" for a DNA part."""
+    return f"{part['length']} {'aa' if part.get('kind') == 'protein' else 'bp'}"
+
+
+def _accession_link(acc: str | None) -> str | None:
+    """Markdown link for a source accession ("UniProt:P..." / "NCBI:..."), or None."""
+    if not acc:
+        return None
+    db, _, ident = acc.partition(":")
+    if not ident:
+        ident, db = db, ""
+    if db.lower() == "uniprot":
+        return f"[{acc}](https://www.uniprot.org/uniprotkb/{ident})"
+    return f"[{acc}](https://www.ncbi.nlm.nih.gov/protein/{ident})"
+
+
 def _feature_table(part: dict) -> str:
     if not part["children"]:
         return ""
@@ -248,13 +273,20 @@ def render_part_page(part: dict) -> str:
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
     so = part.get("so_term")
     so_part = f" · {_so_link(so, part.get('so_name'))}" if so else ""
+    acc = _accession_link(part.get("source_accession"))
+    acc_part = f" · {acc}" if acc else ""
+    fasta_label = "Download protein FASTA" if part.get("kind") == "protein" else "Download FASTA"
     head = [
         f"# {name}\n",
-        f"`{part['feature_type']}`{so_part} · {part['length']} bp{syn}\n",
+        f"`{part['feature_type']}`{so_part} · {_len_label(part)}{acc_part}{syn}\n",
         f"[Download GenBank](files/{slug}.gb){{ .md-button }} "
-        f"[Download FASTA](files/{slug}.fasta){{ .md-button }}\n",
-        f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n',
+        f"[{fasta_label}](files/{slug}.fasta){{ .md-button }}\n",
     ]
+    # The interactive mini-map renders DNA; protein parts rely on the feature
+    # table below for their domain layout.
+    if part.get("kind") != "protein":
+        head.append(
+            f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n')
     md_path = VALIDATED_DIR / f"{slug}.md"
     contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
     if part["documented"]:
@@ -288,7 +320,7 @@ def render_index(validated: list[dict], n_candidate: int) -> str:
     ]
     for p in sorted(validated, key=lambda x: x["name"].lower()):
         lines.append(f"| [{p['name']}](parts/{p['slug']}.md) | "
-                     f"{p['feature_type']} | {p['length']} bp |")
+                     f"{p['feature_type']} | {_len_label(p)} |")
     return "\n".join(lines) + "\n"
 
 

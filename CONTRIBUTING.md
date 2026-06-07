@@ -35,6 +35,15 @@ Parts are split by curation status:
   (different Sequence Ontology types) — don't bundle them into one "promoter"
   that includes an RBS; make two parts that compose. Likewise promoter + terminator,
   CDS + terminator, etc.
+- **Coding parts are protein-canonical.** A `CDS` / `protein_domain` part is
+  stored as a **protein** GenBank record (`LOCUS … aa`): the amino-acid sequence
+  is the part, its sub-features (domains/tags) are in **residue (aa)** coordinates,
+  and no DNA is stored — a gene is just one codon realization, and parts are
+  matched/identified at the protein level. Record provenance with a
+  `/db_xref="UniProt:Pxxxxx"` (preferred) or `NCBI:…` accession on the main
+  feature. Convert an existing DNA `.gb` with `tools/migrate_to_protein.py
+  <part.gb> --accession UniProt:…`. Regulatory parts (promoter / terminator /
+  operator / RBS / origin) stay DNA.
 - **Sequence Ontology typing.** Each part + sub-feature is typed with a
   [Sequence Ontology](https://www.ebi.ac.uk/ols4/ontologies/so) accession in
   `catalog.json` (`so_term`). It is derived from the GenBank feature type /
