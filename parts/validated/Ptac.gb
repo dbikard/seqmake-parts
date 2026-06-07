@@ -45,14 +45,6 @@ FEATURES             Location/Qualifiers
                      trp-derived in the tac hybrid."
                      /citation=[1]
                      /db_xref="SO:0000175"
-     misc_feature    7..22
-                     /label="spacer"
-                     /parent="Ptac"
-                     /note="16 bp spacer between the -35 and -10 hexamers,
-                     trp-derived."
-                     /citation=[1]
-                     /citation=[2]
-                     /db_xref="SO:0000110"
      regulatory      23..28
                      /label="-10"
                      /parent="Ptac"
@@ -62,14 +54,6 @@ FEATURES             Location/Qualifiers
                      converts the wild-type lac -10 to consensus)."
                      /citation=[1]
                      /db_xref="SO:0000176"
-     misc_feature    29..34
-                     /label="discriminator"
-                     /parent="Ptac"
-                     /note="Six bases between the end of the -10 hexamer
-                     (position -7) and the +1, lacUV5-derived; places +1 at the
-                     first base of the lac operator."
-                     /citation=[1]
-                     /db_xref="SO:0000110"
      misc_feature    35
                      /label="+1"
                      /parent="Ptac"

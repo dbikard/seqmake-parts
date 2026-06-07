@@ -38,13 +38,6 @@ FEATURES             Location/Qualifiers
                      /note="lac/lacUV5 -35 hexamer TTTACA."
                      /citation=[1]
                      /db_xref="SO:0000175"
-     misc_feature    7..24
-                     /label="spacer"
-                     /parent="PlacUV5"
-                     /note="18 bp interbox spacer separating the -35 box (ends
-                     pos 6) from the -10 box (starts pos 24)."
-                     /citation=[1]
-                     /db_xref="SO:0000110"
      regulatory      25..30
                      /label="-10"
                      /parent="PlacUV5"

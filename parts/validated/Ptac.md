@@ -5,9 +5,9 @@ Ptac (the tac promoter) is a functional hybrid first built by de Boer, Comstock 
 
 ## Properties
 - **-35**: TTGACA (consensus), positions 0-6 — trp-derived.
-- **Spacer**: 16 bp (ATTAATCATCGGCTCG), positions 6-22. This is the canonical *tac* spacing; it is 1 bp shorter than the 17 bp consensus, and inserting that 1 bp yields the related *trc* promoter ([PMID 2579077](https://pubmed.ncbi.nlm.nih.gov/2579077/)).
+- **16-bp −35/−10 spacing**: the canonical *tac* spacing — 1 bp shorter than the 17-bp consensus; inserting that bp yields the related *trc* promoter ([PMID 2579077](https://pubmed.ncbi.nlm.nih.gov/2579077/)).
 - **-10**: TATAAT (consensus Pribnow box), positions 22-28 — lacUV5-derived.
-- **Discriminator / +1**: a 6 bp discriminator (GTGTGG) places the transcription start (+1) at the first A of the lac operator (position 34).
+- **+1 (TSS)**: the transcription start is at the first A of the lac operator (position 34).
 - **lac operator O1**: positions 34-55, AATTGTGAGCGGATAACAATT — the complete natural 21 bp O1 (the part was extended 2 bp to restore the terminal TT). It binds LacI to give IPTG-inducible repression ([PMID 3069586](https://pubmed.ncbi.nlm.nih.gov/3069586/)).
 
 ## Use

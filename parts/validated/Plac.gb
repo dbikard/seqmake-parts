@@ -33,13 +33,6 @@ FEATURES             Location/Qualifiers
                      /note="Wild-type lac -35 hexamer TTTACA."
                      /citation=[1]
                      /db_xref="SO:0000175"
-     misc_feature    7..24
-                     /label="-35/-10 spacer"
-                     /parent="Plac"
-                     /note="18-bp spacer between -35 and -10 (canonical lac WT
-                     geometry)."
-                     /citation=[1]
-                     /db_xref="SO:0000110"
      regulatory      25..30
                      /label="-10"
                      /parent="Plac"

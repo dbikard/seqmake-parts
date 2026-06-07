@@ -54,13 +54,6 @@ FEATURES             Location/Qualifiers
                      tac/trc hybrid."
                      /citation=[2]
                      /db_xref="SO:0000175"
-     misc_feature    7..23
-                     /label="-35/-10 spacer"
-                     /parent="Ptrc"
-                     /note="17-bp spacer between the -35 and -10 boxes."
-                     /citation=[3]
-                     /citation=[4]
-                     /db_xref="SO:0000110"
      regulatory      24..29
                      /label="-10"
                      /parent="Ptrc"

@@ -6,7 +6,6 @@ lacUV5 is not a synthetic design but a mutant derivative of the wild-type *lac* 
 ## Properties
 This 30 bp part tiles exactly into three contiguous elements:
 - **-35 box** ([0,6) `TTTACA`) — the *lac* -35 hexamer, deviating from the sigma70 consensus TTGACA at position 3; unchanged by the UV5 allele.
-- **Spacer** ([6,24) `CTTTATGCTTCCGGCTCG`, 18 bp) — the -35/-10 interbox separation.
 - **-10 box** ([24,30) `TATAAT`) — the perfect sigma70 consensus Pribnow box. This is the defining UV5 mutation: the WT *lac* -10 (TATGTT) is converted to consensus TATAAT (-9 G->A, -8 T->A).
 
 The consensus -10 box makes lacUV5 a strong, constitutively active sigma70 promoter that, unlike the WT *lac* promoter, does not require CAP/cAMP activation.

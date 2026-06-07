@@ -5,7 +5,6 @@ Plac is the natural *E. coli* lac control region. This 55-bp part spans the lac 
 
 ## Properties
 - **-35** TTTACA (seq[0:6]), wild-type lac hexamer.
-- **-35/-10 spacer** 18 bp, CTTTATGCTTCCGGCTCG (seq[6:24]) — normal lac WT spacing.
 - **-10** TATGTT (seq[24:30]), weak/non-consensus Pribnow box; the WT-vs-lacUV5 diagnostic.
 - **+1 TSS** A at index 36, 7 bp downstream of the -10 box (within the documented 6-8 bp window).
 - **lac operator O1** TGGAATTGTGAGCGGATAACAATT (seq[33:57]) — the complete O1 ([PMID 4587255](https://pubmed.ncbi.nlm.nih.gov/4587255/)); the part was extended 2 bp at the 3' end to include the operator's terminal TT (universally present downstream in lac-region plasmids). O1 overlaps the +1, as expected.

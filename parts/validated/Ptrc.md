@@ -5,7 +5,7 @@ Ptrc is a synthetic hybrid promoter derived from the *trp* and *lac* promoters o
 
 ## Properties
 - **-35 box** (positions 0-6, TTGACA): perfect-consensus -35 hexamer, *trp*-derived.
-- **-35/-10 spacer** (positions 6-23, 17 bp): consensus-optimal spacing; the defining trc-vs-tac feature.
+- **17-bp −35/−10 spacing**: consensus-optimal; the trc-defining difference from tac (16 bp).
 - **-10 box** (positions 23-29, TATAAT): perfect-consensus Pribnow box, *lac* UV5-derived.
 
 The dual perfect-consensus boxes with optimal spacing make Ptrc one of the strongest constitutive sigma-70 promoter cores; the trailing G (position 29) is the start of the lac-UV5-derived downstream region. This part is the promoter core only — it does not include the +1 transcription start, the lac operator, or an RBS.

@@ -2171,42 +2171,6 @@
             3,
             4
           ]
-        },
-        {
-          "label": "spacer",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 6,
-          "end": 23,
-          "strand": 1,
-          "citations": [
-            4
-          ]
-        },
-        {
-          "label": "ClaI",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 13,
-          "end": 19,
-          "strand": 1,
-          "citations": [
-            3
-          ]
-        },
-        {
-          "label": "HindIII",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 19,
-          "end": 25,
-          "strand": 1,
-          "citations": [
-            3
-          ]
         }
       ],
       "references": [
@@ -2818,18 +2782,6 @@
           ]
         },
         {
-          "label": "-35/-10 spacer",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 6,
-          "end": 24,
-          "strand": 1,
-          "citations": [
-            1
-          ]
-        },
-        {
           "label": "-10",
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
@@ -2946,18 +2898,6 @@
           "so_name": "minus_35_signal",
           "start": 0,
           "end": 6,
-          "strand": 1,
-          "citations": [
-            1
-          ]
-        },
-        {
-          "label": "spacer",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 6,
-          "end": 24,
           "strand": 1,
           "citations": [
             1
@@ -3809,37 +3749,12 @@
           ]
         },
         {
-          "label": "spacer",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 6,
-          "end": 22,
-          "strand": 1,
-          "citations": [
-            1,
-            2
-          ]
-        },
-        {
           "label": "-10",
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
           "start": 22,
           "end": 28,
-          "strand": 1,
-          "citations": [
-            1
-          ]
-        },
-        {
-          "label": "discriminator",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 28,
-          "end": 34,
           "strand": 1,
           "citations": [
             1
@@ -4150,19 +4065,6 @@
           "strand": 1,
           "citations": [
             2
-          ]
-        },
-        {
-          "label": "-35/-10 spacer",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 6,
-          "end": 23,
-          "strand": 1,
-          "citations": [
-            3,
-            4
           ]
         },
         {
