@@ -363,25 +363,85 @@ def render_part_page(part: dict) -> str:
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 
+# The index groups parts by type, keyed on the SO accession (a controlled
+# vocabulary — normalises inconsistent GenBank feature_type strings). This is
+# the canonical display order + friendly plural label per SO term; unlisted SO
+# terms fall back to their SO name and sort after these, alphabetically.
+_TYPE_DISPLAY: list[tuple[str, str]] = [
+    ("SO:0000167", "Promoters"),
+    ("SO:0000057", "Operators"),
+    ("SO:0000139", "Ribosome binding sites"),
+    ("SO:0000316", "Coding sequences"),
+    ("SO:0000417", "Protein domains"),
+    ("SO:0000141", "Terminators"),
+    ("SO:0000296", "Origins of replication"),
+    ("SO:0000724", "Origins of transfer (oriT)"),
+    ("SO:0000410", "Protein binding sites"),
+    ("SO:0000655", "Non-coding RNAs"),
+    ("SO:0000110", "Other features"),
+]
+_TYPE_ORDER = {so: i for i, (so, _) in enumerate(_TYPE_DISPLAY)}
+_TYPE_LABEL = dict(_TYPE_DISPLAY)
+
+
+def _group_key(part: dict) -> tuple[str, str]:
+    """(grouping key, display label) for a part: group on the SO accession when
+    present (canonical), else on the raw feature type."""
+    so = part.get("so_term")
+    if so:
+        label = _TYPE_LABEL.get(so) or (part.get("so_name") or "Other").replace("_", " ").capitalize()
+        return so, label
+    ft = part.get("feature_type") or "other"
+    return f"ft:{ft}", ft.replace("_", " ").capitalize()
+
+
+def _anchor(text: str) -> str:
+    """Slugify a heading the way python-markdown's toc does, so in-page jump
+    links resolve."""
+    s = re.sub(r"[^\w\s-]", "", text).strip().lower()
+    return re.sub(r"[-\s]+", "-", s)
+
+
+def _short(text: str, n: int = 80) -> str:
+    text = (text or "").replace("|", "\\|").strip()
+    return text if len(text) <= n else text[: n - 1].rstrip() + "…"
+
+
 def render_index(validated: list[dict], n_candidate: int) -> str:
     repo = "https://github.com/dbikard/dna-parts-catalog"
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for p in validated:
+        groups.setdefault(_group_key(p), []).append(p)
+    ordered = sorted(
+        groups.items(),
+        key=lambda kv: (_TYPE_ORDER.get(kv[0][0], len(_TYPE_ORDER)), kv[0][1].lower()),
+    )
     lines = [
         "# DNA parts catalog\n",
         AI_WIP_WARNING,
         f"An open, community-curated catalog of standard DNA parts (promoters, "
-        f"CDSs, terminators, RBSs, …) as annotated GenBank files. The "
-        f"**{len(validated)}** *validated* parts below each carry a curated "
-        f"documentation page; use the search box to find one.\n",
+        f"CDSs, terminators, RBSs, …) as annotated GenBank files, organised by "
+        f"type below. The **{len(validated)}** *validated* parts each carry a "
+        f"curated documentation page; use the search box to find one by name.\n",
         f"A further **{n_candidate}** *candidate* parts (annotated GenBank, "
         f"awaiting a curated documentation page) are available in "
         f"[`catalog.json`]({repo}/blob/main/catalog.json) and the "
         f"[`parts/candidate/`]({repo}/tree/main/parts/candidate) directory.\n",
-        "| Part | Type | Length |",
-        "|---|---|---|",
     ]
-    for p in sorted(validated, key=lambda x: x["name"].lower()):
-        lines.append(f"| [{p['name']}](parts/{p['slug']}.md) | "
-                     f"{p['feature_type']} | {_len_label(p)} |")
+    if ordered:
+        jump = " · ".join(
+            f"[{label} ({len(ps)})](#{_anchor(label)})" for (_, label), ps in ordered)
+        lines.append("**Jump to:** " + jump + "\n")
+    for (so, label), ps in ordered:
+        lines.append(f"## {label}\n")
+        so_note = (f"{_so_link(so, _SO_NAMES.get(so) or label)} · " if so.startswith("SO:") else "")
+        lines.append(f"*{so_note}{len(ps)} part{'s' if len(ps) != 1 else ''}*\n")
+        lines.append("| Part | Description | Length |")
+        lines.append("|---|---|---|")
+        for p in sorted(ps, key=lambda x: x["name"].lower()):
+            lines.append(f"| [{p['name']}](parts/{p['slug']}.md) | "
+                         f"{_short(p.get('description', ''))} | {_len_label(p)} |")
+        lines.append("")
     return "\n".join(lines) + "\n"
 
 

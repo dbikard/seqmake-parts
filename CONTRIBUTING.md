@@ -61,7 +61,9 @@ Parts are split by curation status:
   `ribosome_entry_site` `SO:0000139` (just as a promoter is `SO:0000167`, not the
   more specific `bacterial_RNApol_promoter`). A finer sub-element term such as
   `Shine_Dalgarno_sequence` `SO:0000552` is used only as an explicit `/db_xref`
-  on a dedicated sub-feature, never inferred from a part's label.
+  on a dedicated sub-feature, never inferred from a part's label. The website's
+  index groups validated parts **by their main feature's `so_term`**, so accurate
+  typing also determines which section a part appears under on the catalog site.
 
 ## Regenerate locally
 
