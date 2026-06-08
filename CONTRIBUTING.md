@@ -76,6 +76,19 @@ mkdocs serve                      # preview the site at http://127.0.0.1:8000
 Commit the updated `catalog.json` along with your part. The `docs/` tree is
 generated (git-ignored) and rebuilt by CI.
 
+## Interactive part viewer
+
+Each validated part page embeds an interactive feature/sequence view. It is a
+self-contained, shadow-DOM-isolated widget at
+[`docs/assets/seqmake-part-view.js`](docs/assets/seqmake-part-view.js) — a
+**vendored build** from seqmake's viewer core, not hand-edited. `build_catalog.py`
+inlines each part's `MoleculeInfo` (sequence + features) into the page as a
+`<script type="application/json">` child of a `<div data-part-view>`, which the
+widget hydrates on load. To refresh the widget, rebuild it in the seqmake repo
+(`cd viewer && npm run build:widget`) and copy `dist-widget/seqmake-part-view.js`
+over the vendored file. (When the viewer ships as an npm package this becomes a
+CDN/package reference instead of a vendored file.)
+
 ## `catalog.json` schema (v1.0)
 
 ```jsonc

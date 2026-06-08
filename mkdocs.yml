@@ -30,6 +30,17 @@ markdown_extensions:
   - md_in_html
   - pymdownx.superfences
 
+# Interactive part-view widget: a self-contained, shadow-DOM-isolated bundle
+# (built from seqmake's viewer core, vendored into docs/assets/) that hydrates
+# the `<div data-part-view data-mol=...>` placeholder on each part page from
+# its MoleculeInfo sidecar. The fonts are loaded at document level so the
+# widget's shadow DOM can use them.
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
+
+extra_javascript:
+  - assets/seqmake-part-view.js
+
 plugins:
   - search
   - tags

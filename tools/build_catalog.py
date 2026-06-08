@@ -222,6 +222,45 @@ def _revcomp(s: str) -> str:
     return s.translate(str.maketrans("ACGTacgt", "TGCAtgca"))[::-1]
 
 
+def build_molecule_json(gb_path: Path) -> dict:
+    """Serialize a part's GenBank record into the viewer's ``MoleculeInfo``
+    shape — the contract the embedded part-view widget renders (sequence +
+    features in feature coordinates). A protein part carries ``kind:
+    'protein'`` and no crick strand; a DNA part gets the reverse-complement
+    crick. Feature colors are omitted (the widget derives them from the type).
+    """
+    record = SeqIO.read(str(gb_path), "genbank")
+    seq = str(record.seq).upper()
+    is_protein = bool(seq) and bool(set(seq) - set("ACGTUN"))
+    features = []
+    for f in record.features:
+        if f.type == "source":
+            continue
+        feat = {
+            "type": f.type,
+            "start": int(f.location.start),
+            "end": int(f.location.end),
+            "strand": -1 if f.location.strand == -1 else 1,
+            "label": (f.qualifiers.get("label") or [f.type])[0],
+            "qualifiers": {k: [str(x) for x in v] for k, v in f.qualifiers.items()},
+        }
+        parent = (f.qualifiers.get("parent") or [None])[0]
+        if parent:
+            feat["parent"] = parent  # main feature stays parent-less
+        features.append(feat)
+    main = next((f for f in features if "parent" not in f), None)
+    return {
+        "name": main["label"] if main else (record.name or gb_path.stem),
+        "kind": "protein" if is_protein else "dna",
+        "topology": "linear",
+        "watson": seq,
+        "crick": "" if is_protein else _revcomp(seq),
+        "length_bp": len(seq),
+        "strand_state": "single" if is_protein else "double",
+        "features": features,
+    }
+
+
 def _so_link(so_id, so_name) -> str:
     if not so_id:
         return "—"
@@ -366,11 +405,16 @@ def render_part_page(part: dict) -> str:
     res = _resource_links(part.get("source_accession"))
     if res:
         head.append(f"**{part['source_accession']}** · {res}\n")
-    # The interactive mini-map renders DNA; protein parts rely on the feature
-    # table below for their domain layout.
-    if part.get("kind") != "protein":
-        head.append(
-            f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n')
+    # Interactive feature/sequence view, hydrated by the embedded part-view
+    # widget. The MoleculeInfo is inlined as a JSON child (parts are small) so
+    # it needs no fetch and is robust to the site's base path / directory URLs.
+    # `<` is escaped so a qualifier can never break out of the script tag.
+    # Renders DNA and protein parts alike.
+    mol_json = json.dumps(
+        build_molecule_json(VALIDATED_DIR / f"{slug}.gb")).replace("<", "\\u003c")
+    head.append(
+        f'<div data-part-view data-height="360">'
+        f'<script type="application/json">{mol_json}</script></div>\n')
     fm = _frontmatter(_tags_for(part))
     md_path = VALIDATED_DIR / f"{slug}.md"
     contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
