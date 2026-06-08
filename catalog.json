@@ -1804,11 +1804,11 @@
     {
       "name": "DhfR",
       "slug": "DhfR",
-      "feature_type": "protein_domain",
+      "feature_type": "CDS",
       "kind": "protein",
       "source_accession": "UniProt:P00382",
-      "so_term": "SO:0000417",
-      "so_name": "polypeptide_domain",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
       "synonyms": [
         "DHFR",
         "DfrA",
@@ -1817,7 +1817,7 @@
         "dihydrofolate reductase",
         "trimethoprim resistance"
       ],
-      "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a single FolA-fold catalytic domain (UniProt P00382), here carrying the M1V and N73D variants.",
+      "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
       "length": 157,
       "protein_length_aa": 157,
       "regulated_by": [],

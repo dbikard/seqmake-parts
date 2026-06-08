@@ -1,7 +1,8 @@
 LOCUS       DhfR                     157 aa                     UNK 01-JAN-1980
 DEFINITION  Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from
-            transposon Tn7 — a single FolA-fold catalytic domain (UniProt
-            P00382), here carrying the M1V and N73D variants..
+            transposon Tn7 — a 157-aa enzyme - a single FolA-fold catalytic
+            domain (UniProt P00382); the catalogued allele carries an N73D
+            sub....
 ACCESSION   DhfR
 VERSION     DhfR
 KEYWORDS    .
@@ -32,7 +33,7 @@ REFERENCE   3
    PUBMED   6308574
   REMARK    doi:10.1093/nar/11.15.5147
 FEATURES             Location/Qualifiers
-     protein_domain  1..157
+     CDS             1..157
                      /label="DhfR"
                      /synonym="DHFR"
                      /synonym="DfrA"
@@ -41,10 +42,10 @@ FEATURES             Location/Qualifiers
                      /synonym="dihydrofolate reductase"
                      /synonym="trimethoprim resistance"
                      /note="Type I (DfrA1) trimethoprim-resistant dihydrofolate
-                     reductase from transposon Tn7 — a single FolA-fold
-                     catalytic domain (UniProt P00382), here carrying the M1V
-                     and N73D variants."
-                     /db_xref="SO:0000417"
+                     reductase from transposon Tn7 — a 157-aa enzyme - a single
+                     FolA-fold catalytic domain (UniProt P00382); the catalogued
+                     allele carries an N73D sub..."
+                     /db_xref="SO:0000316"
                      /db_xref="UniProt:P00382"
      misc_feature    16..31
                      /label="DHFR conserved-site signature"
@@ -105,7 +106,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000110"
                      /citation=[1]
 ORIGIN
-        1 vklslmvais kngvigngpd ipwsakgeql lfkaitynqw llvgrktfes mgalpnrkya
+        1 mklslmvais kngvigngpd ipwsakgeql lfkaitynqw llvgrktfes mgalpnrkya
        61 vvtrssftsd nedvlifpsi kdaltnlkki tdhvivsggg eiykslidqv dtlhistidi
       121 epegdvyfpe ipsnfrpvft qdfasninys yqiwqkg
 //
