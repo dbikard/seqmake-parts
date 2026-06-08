@@ -20,6 +20,9 @@ from pathlib import Path
 
 from Bio import SeqIO
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from so_terms import SO_BY_REG, SO_BY_TYPE, so_for  # noqa: E402
+
 SCHEMA_VERSION = "1.0"
 
 # Shown at the top of the site index and every part page. The catalog is a
@@ -48,48 +51,13 @@ FILES_DIR = PARTS_PAGES / "files"
 TYPES_PAGES = DOCS_DIR / "types"
 TAGS_FILE = DOCS_DIR / "tags.md"
 
-# Sequence Ontology accessions for GenBank feature types (verified against OLS4).
-# A feature carries its SO term in catalog.json (read from a /db_xref="SO:..."
-# if present, else derived here from the feature type / regulatory_class).
-_SO_BY_REG = {
-    "minus_35_signal": ("SO:0000175", "minus_35_signal"),
-    "minus_10_signal": ("SO:0000176", "minus_10_signal"),
-    "ribosome_binding_site": ("SO:0000139", "ribosome_entry_site"),
-    "promoter": ("SO:0000167", "promoter"), "terminator": ("SO:0000141", "terminator"),
-    "TATA_box": ("SO:0000174", "TATA_box"), "operator": ("SO:0000057", "operator"),
-    "enhancer": ("SO:0000165", "enhancer"), "silencer": ("SO:0000625", "silencer"),
-    "attenuator": ("SO:0000140", "attenuator"),
-    "polyA_signal_sequence": ("SO:0000551", "polyA_signal_sequence"),
-}
-_SO_BY_TYPE = {
-    "promoter": ("SO:0000167", "promoter"), "CDS": ("SO:0000316", "CDS"),
-    "terminator": ("SO:0000141", "terminator"), "RBS": ("SO:0000139", "ribosome_entry_site"),
-    "rep_origin": ("SO:0000296", "origin_of_replication"), "oriT": ("SO:0000724", "oriT"),
-    "protein_bind": ("SO:0000410", "protein_binding_site"),
-    "protein_domain": ("SO:0000417", "polypeptide_domain"),
-    "misc_RNA": ("SO:0000655", "ncRNA"), "regulatory": ("SO:0005836", "regulatory_region"),
-    "minus_35_signal": ("SO:0000175", "minus_35_signal"),
-    "minus_10_signal": ("SO:0000176", "minus_10_signal"),
-    "sig_peptide": ("SO:0000418", "signal_peptide"),
-    "mat_peptide": ("SO:0000419", "mature_protein_region"),
-    "gene": ("SO:0000704", "gene"), "misc_feature": ("SO:0000110", "sequence_feature"),
-}
-_SO_NAMES = {acc: name for d in (_SO_BY_REG, _SO_BY_TYPE) for acc, name in d.values()}
+# SO accession -> name, for reverse lookup when a feature carries an explicit
+# /db_xref="SO:...". The type/regulatory_class -> SO mapping itself lives in
+# so_terms (shared with publish_part so the read and write sides can't drift);
+# +1/TSS and Shine-Dalgarno are derive-only / explicit-only and added here only
+# for the reverse lookup.
+_SO_NAMES = {acc: name for d in (SO_BY_REG, SO_BY_TYPE) for acc, name in d.values()}
 _SO_NAMES.update({"SO:0000315": "TSS", "SO:0000552": "Shine_Dalgarno_sequence"})
-
-
-def _so_derive(feature_type, regulatory_class=None, label=None):
-    if regulatory_class and regulatory_class in _SO_BY_REG:
-        return _SO_BY_REG[regulatory_class]
-    lab = (label or "").lower()
-    if lab.startswith("+1") or "transcription start" in lab or lab.strip() == "tss":
-        return ("SO:0000315", "TSS")
-    if feature_type == "protein_bind" and (
-            "operator" in lab or any(t in lab for t in ("teto", "laco", "arao", "pho"))):
-        return ("SO:0000057", "operator")
-    # Class-level typing: an RBS is ribosome_entry_site (SO:0000139);
-    # Shine_Dalgarno_sequence (SO:0000552) only via an explicit /db_xref.
-    return _SO_BY_TYPE.get(feature_type)
 
 
 def _so_term(feature):
@@ -100,7 +68,7 @@ def _so_term(feature):
             return str(x), _SO_NAMES.get(str(x), "")
     rc = (feature.qualifiers.get("regulatory_class") or [None])[0]
     label = (feature.qualifiers.get("label") or [""])[0]
-    return _so_derive(feature.type, rc, label) or (None, None)
+    return so_for(feature.type, rc, label) or (None, None)
 
 
 def _pmid_url(pmid: str) -> str:
