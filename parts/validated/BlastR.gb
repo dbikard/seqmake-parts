@@ -56,15 +56,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P0C2P0"
                      /citation=[1]
-     protein_domain  1..129
-                     /label="CMP/dCMP-type deaminase domain"
-                     /parent="BlastR"
-                     /note="Single CMP/dCMP-type cytidine-deaminase domain
-                     (cytidine/deoxycytidylate deaminase family, Pfam PF00383)
-                     spanning the chain per UniProt P0C2P0."
-                     /db_xref="SO:0000417"
-                     /citation=[2]
-                     /citation=[3]
      misc_feature    56
                      /label="Active site Glu56"
                      /parent="BlastR"

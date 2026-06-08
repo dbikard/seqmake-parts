@@ -812,19 +812,6 @@
       "status": "validated",
       "children": [
         {
-          "label": "CMP/dCMP-type deaminase domain",
-          "feature_type": "protein_domain",
-          "so_term": "SO:0000417",
-          "so_name": "polypeptide_domain",
-          "start": 0,
-          "end": 129,
-          "strand": 1,
-          "citations": [
-            2,
-            3
-          ]
-        },
-        {
           "label": "Active site Glu56",
           "feature_type": "misc_feature",
           "so_term": "SO:0000110",
