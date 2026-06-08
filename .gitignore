@@ -1,6 +1,8 @@
 # Generated website (rebuilt by tools/build_catalog.py + CI)
 /docs/index.md
 /docs/parts/
+/docs/types/
+/docs/tags.md
 /site/
 
 # Python

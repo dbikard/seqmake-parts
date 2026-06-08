@@ -43,6 +43,10 @@ CANDIDATE_DIR = PARTS_DIR / "candidate"
 DOCS_DIR = ROOT / "docs"
 PARTS_PAGES = DOCS_DIR / "parts"
 FILES_DIR = PARTS_PAGES / "files"
+# One page per part type (grouped on SO accession), reached from the index and
+# the left nav; plus a faceted tag index (material/tags).
+TYPES_PAGES = DOCS_DIR / "types"
+TAGS_FILE = DOCS_DIR / "tags.md"
 
 # Sequence Ontology accessions for GenBank feature types (verified against OLS4).
 # A feature carries its SO term in catalog.json (read from a /db_xref="SO:..."
@@ -326,6 +330,27 @@ def _related_section(part: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _tags_for(part: dict) -> list[str]:
+    """Facet tags for a part page (material/tags): its type, plus — for a
+    promoter — one ``regulated by <TF>`` tag per cognate regulator, and a
+    ``Transcription factors`` tag for any part that regulates one."""
+    tags = [_group_key(part)[1]]
+    for x in part.get("regulated_by") or []:
+        nm = x["name"] if isinstance(x, dict) else x
+        tags.append(f"regulated by {nm}")
+    if part.get("regulates"):
+        tags.append("Transcription factors")
+    # de-dup, preserve order
+    seen: set[str] = set()
+    return [t for t in tags if not (t in seen or seen.add(t))]
+
+
+def _frontmatter(tags: list[str]) -> str:
+    if not tags:
+        return ""
+    return "---\ntags:\n" + "".join(f"  - {t}\n" for t in tags) + "---\n\n"
+
+
 def render_part_page(part: dict) -> str:
     slug, name = part["slug"], part["name"]
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
@@ -346,19 +371,20 @@ def render_part_page(part: dict) -> str:
     if part.get("kind") != "protein":
         head.append(
             f'<div class="part-map" data-part="{slug}" data-gb="files/{slug}.gb"></div>\n')
+    fm = _frontmatter(_tags_for(part))
     md_path = VALIDATED_DIR / f"{slug}.md"
     contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
     if part["documented"]:
         body = md_path.read_text(encoding="utf-8").strip() + "\n"
         # Structured feature table up top, then the curated prose (which carries
         # its own References section).
-        return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
+        return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
                 + _related_section(part) + "\n"
                 + _feature_table(part) + "\n" + body)
     note = part["description"] or "_No curated documentation page yet._"
     note += (f"\n\n*This part has no curated documentation yet — "
              f"[contribute one]({contrib}).*\n")
-    return ("\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
+    return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
             + _related_section(part) + "\n"
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
@@ -407,42 +433,79 @@ def _short(text: str, n: int = 80) -> str:
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
-def render_index(validated: list[dict], n_candidate: int) -> str:
-    repo = "https://github.com/dbikard/dna-parts-catalog"
+def _type_slug(label: str) -> str:
+    """Filename slug for a type page (``Origins of replication`` ->
+    ``origins-of-replication``), matching the index/nav links."""
+    return _anchor(label)
+
+
+def _grouped(validated: list[dict]) -> list[tuple[tuple[str, str], list[dict]]]:
+    """Validated parts grouped by type ((key, label) -> parts), in canonical
+    display order (known SO terms first, then unknowns alphabetically)."""
     groups: dict[tuple[str, str], list[dict]] = {}
     for p in validated:
         groups.setdefault(_group_key(p), []).append(p)
-    ordered = sorted(
+    return sorted(
         groups.items(),
         key=lambda kv: (_TYPE_ORDER.get(kv[0][0], len(_TYPE_ORDER)), kv[0][1].lower()),
     )
+
+
+def _so_caption(key: str, label: str, n: int) -> str:
+    so_note = f"{_so_link(key, _SO_NAMES.get(key) or label)} · " if key.startswith("SO:") else ""
+    return f"*{so_note}{n} part{'s' if n != 1 else ''}*"
+
+
+def render_index(grouped, n_validated: int, n_candidate: int) -> str:
+    """The catalog landing page: intro + a 'Browse by type' hub linking each
+    type's page, plus a pointer to the faceted tag index."""
+    repo = "https://github.com/dbikard/dna-parts-catalog"
     lines = [
         "# DNA parts catalog\n",
         AI_WIP_WARNING,
         f"An open, community-curated catalog of standard DNA parts (promoters, "
         f"CDSs, terminators, RBSs, …) as annotated GenBank files, organised by "
-        f"type below. The **{len(validated)}** *validated* parts each carry a "
-        f"curated documentation page; use the search box to find one by name.\n",
+        f"type. The **{n_validated}** *validated* parts each carry a curated "
+        f"documentation page; use the search box to find one by name.\n",
         f"A further **{n_candidate}** *candidate* parts (annotated GenBank, "
         f"awaiting a curated documentation page) are available in "
         f"[`catalog.json`]({repo}/blob/main/catalog.json) and the "
         f"[`parts/candidate/`]({repo}/tree/main/parts/candidate) directory.\n",
+        "## Browse by type\n",
     ]
-    if ordered:
-        jump = " · ".join(
-            f"[{label} ({len(ps)})](#{_anchor(label)})" for (_, label), ps in ordered)
-        lines.append("**Jump to:** " + jump + "\n")
-    for (so, label), ps in ordered:
-        lines.append(f"## {label}\n")
-        so_note = (f"{_so_link(so, _SO_NAMES.get(so) or label)} · " if so.startswith("SO:") else "")
-        lines.append(f"*{so_note}{len(ps)} part{'s' if len(ps) != 1 else ''}*\n")
-        lines.append("| Part | Description | Length |")
-        lines.append("|---|---|---|")
-        for p in sorted(ps, key=lambda x: x["name"].lower()):
-            lines.append(f"| [{p['name']}](parts/{p['slug']}.md) | "
-                         f"{_short(p.get('description', ''))} | {_len_label(p)} |")
-        lines.append("")
+    for (key, label), ps in grouped:
+        so_note = (f" · {_so_link(key, _SO_NAMES.get(key) or label)}"
+                   if key.startswith("SO:") else "")
+        lines.append(f"- **[{label}](types/{_type_slug(label)}.md)** — "
+                     f"{len(ps)} part{'s' if len(ps) != 1 else ''}{so_note}")
+    lines.append("")
+    lines.append("Looking for a specific property? Browse the [**tags**](tags.md) — "
+                 "for example, every promoter controlled by a given transcription "
+                 "factor.\n")
     return "\n".join(lines) + "\n"
+
+
+def render_type_page(key: str, label: str, parts: list[dict]) -> str:
+    """A page listing every validated part of one type, with descriptions."""
+    lines = [
+        f"# {label}\n",
+        f"{_so_caption(key, label, len(parts))} · [← all types](../index.md)\n",
+        "| Part | Description | Length |",
+        "|---|---|---|",
+    ]
+    for p in sorted(parts, key=lambda x: x["name"].lower()):
+        lines.append(f"| [{p['name']}](../parts/{p['slug']}.md) | "
+                     f"{_short(p.get('description', ''))} | {_len_label(p)} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_tags_page() -> str:
+    """The faceted tag index. The ``material/tags`` marker tells the plugin
+    where to render the per-tag listing."""
+    return ("# Tags\n\n"
+            "Browse parts by tag — the part **type**, and, for promoters, the "
+            "**transcription factor** that regulates them.\n\n"
+            "<!-- material/tags -->\n")
 
 
 def main() -> None:
@@ -481,14 +544,22 @@ def main() -> None:
     (ROOT / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n",
                                        encoding="utf-8")
 
-    # Website publishes validated parts only (pages + downloadable files).
+    # Website publishes validated parts only (pages + downloadable files):
+    # a landing hub, one page per type, one page per part, and a tag index.
     validated = [p for p in parts if p["status"] == "validated"]
     n_candidate = manifest["n_candidate"]
-    if PARTS_PAGES.exists():
-        shutil.rmtree(PARTS_PAGES)
+    grouped = _grouped(validated)
+    for d in (PARTS_PAGES, TYPES_PAGES):
+        if d.exists():
+            shutil.rmtree(d)
     FILES_DIR.mkdir(parents=True, exist_ok=True)
-    (DOCS_DIR / "index.md").write_text(render_index(validated, n_candidate),
-                                       encoding="utf-8")
+    TYPES_PAGES.mkdir(parents=True, exist_ok=True)
+    (DOCS_DIR / "index.md").write_text(
+        render_index(grouped, manifest["n_validated"], n_candidate), encoding="utf-8")
+    TAGS_FILE.write_text(render_tags_page(), encoding="utf-8")
+    for (key, label), ps in grouped:
+        (TYPES_PAGES / f"{_type_slug(label)}.md").write_text(
+            render_type_page(key, label, ps), encoding="utf-8")
     for p in validated:
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")
