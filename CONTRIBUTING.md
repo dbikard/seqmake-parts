@@ -79,7 +79,7 @@ generated (git-ignored) and rebuilt by CI.
 ## Interactive part viewer
 
 Each validated part page embeds an interactive feature/sequence view. It is a
-self-contained, shadow-DOM-isolated widget at
+self-contained, iframe-isolated widget at
 [`docs/assets/seqmake-part-view.js`](docs/assets/seqmake-part-view.js) — a
 **vendored build** from seqmake's viewer core, not hand-edited. `build_catalog.py`
 inlines each part's `MoleculeInfo` (sequence + features) into the page as a
