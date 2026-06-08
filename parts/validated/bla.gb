@@ -1,0 +1,135 @@
+LOCUS       bla                      286 aa                     UNK 01-JAN-1980
+DEFINITION  TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class
+            A serine beta-lactamase precursor that confers ampicillin
+            resistance, the canonical AmpR selection marker..
+ACCESSION   bla
+VERSION     bla
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Sutcliffe JG
+  TITLE     Complete nucleotide sequence of the Escherichia coli plasmid pBR322
+  JOURNAL   Cold Spring Harbor Symposia on Quantitative Biology
+   PUBMED   383387
+  REMARK    doi:10.1101/sqb.1979.043.01.013
+REFERENCE   2
+  AUTHORS   Ambler RP, Coulson AF, Frere JM, Ghuysen JM, Joris B, Forsman M,
+            Levesque RC, Tiraby G, Waley SG
+  TITLE     A standard numbering scheme for the class A beta-lactamases
+  JOURNAL   Biochemical Journal
+   PUBMED   2039479
+  REMARK    doi:10.1042/bj2760269
+REFERENCE   3
+  AUTHORS   Jelsch C, Mourey L, Masson JM, Samama JP
+  TITLE     Crystal structure of Escherichia coli TEM1 beta-lactamase at 1.8 A
+            resolution
+  JOURNAL   Proteins
+   PUBMED   8356032
+  REMARK    doi:10.1002/prot.340160406
+REFERENCE   4
+  AUTHORS   Egorov A, Rubtsova M, Grigorenko V, Uporov I, Veselovsky A
+  TITLE     The Role of the Omega-Loop in Regulation of the Catalytic Activity
+            of TEM-Type beta-Lactamases
+  JOURNAL   Biomolecules
+   PUBMED   31835662
+  REMARK    doi:10.3390/biom9120854
+REFERENCE   5
+  AUTHORS   Vanhove M, Guillaume G, Ledent P, Richards JH, Pain RH, Frere JM
+  TITLE     Kinetic and thermodynamic consequences of the removal of the
+            Cys-77-Cys-123 disulphide bond for the folding of TEM-1
+            beta-lactamase
+  JOURNAL   Biochemical Journal
+   PUBMED   9020874
+  REMARK    doi:10.1042/bj3210413
+FEATURES             Location/Qualifiers
+     CDS             1..286
+                     /label="bla"
+                     /synonym="AmpR"
+                     /synonym="TEM-1"
+                     /synonym="amp"
+                     /synonym="beta-lactamase"
+                     /synonym="penicillinase"
+                     /note="TEM-1 beta-lactamase (gene bla, UniProt P62593) --
+                     the 286-aa class A serine beta-lactamase precursor that
+                     confers ampicillin resistance, the canonical AmpR selection
+                     marker."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P62593"
+     signal_peptide  1..23
+                     /label="Signal peptide"
+                     /parent="bla"
+                     /note="23-aa Sec-dependent leader (UniProt P62593 SIGNAL
+                     1-23); cleaved between Ala23 and His24 so the mature
+                     periplasmic TEM-1 enzyme begins at His24 (Ambler posit..."
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    68
+                     /label="Catalytic nucleophile Ser"
+                     /parent="bla"
+                     /note="Active-site serine = Ambler Ser70, the acylating
+                     nucleophile that attacks the beta-lactam carbonyl."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    71
+                     /label="Catalytic general base Lys"
+                     /parent="bla"
+                     /note="Lys of the S-T-F-K box = Ambler Lys73 (proton
+                     acceptor); fourth residue of the STFK box
+                     (seq[70:71]='K')."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    128
+                     /label="SDN loop catalytic Ser"
+                     /parent="bla"
+                     /note="Ser of the class A signature S-D-N loop = Ambler
+                     Ser130 (proton donor); first residue of the SDN motif
+                     (seq[127:130]='SDN')."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    164
+                     /label="Omega-loop catalytic Glu"
+                     /parent="bla"
+                     /note="Omega-loop Glu = Ambler Glu166 (proton acceptor),
+                     the conserved omega-loop residue that, with Asn170, forms
+                     the H-bond network activating the catalytic water..."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+     binding         232..234
+                     /label="Substrate-binding K-S-G"
+                     /parent="bla"
+                     /note="Conserved class A K-T-G/K-S-G triad = Ambler
+                     Lys234-Ser235-Gly236; anchors the substrate carboxylate and
+                     helps orient substrate near the oxyanion hole."
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    75
+                     /label="Disulfide bond Cys-Cys"
+                     /parent="bla"
+                     /note="First partner of the single mature-protein disulfide
+                     = Ambler Cys77 (seq[74]='C'), bonded to Cys at index 120
+                     (Ambler Cys123)."
+                     /db_xref="SO:0000110"
+                     /citation=[5]
+                     /citation=[3]
+     misc_feature    121
+                     /label="Disulfide bond Cys-Cys (Cys123)"
+                     /parent="bla"
+                     /note="Second partner of the mature disulfide = Ambler
+                     Cys123 (seq[120]='C'), bonded to Cys77 (index 74)."
+                     /db_xref="SO:0000110"
+                     /citation=[5]
+                     /citation=[3]
+ORIGIN
+        1 msiqhfrval ipffaafclp vfahpetlvk vkdaedqlga rvgyieldln sgkilesfrp
+       61 eerfpmmstf kvllcgavls rvdagqeqlg rrihysqndl veyspvtekh ltdgmtvrel
+      121 csaaitmsdn taanllltti ggpkeltafl hnmgdhvtrl drwepelnea ipnderdttm
+      181 pvamattlrk lltgelltla srqqlidwme adkvagpllr salpagwfia dksgagergs
+      241 rgiiaalgpd gkpsrivviy ttgsqatmde rnrqiaeiga slikhw
+//

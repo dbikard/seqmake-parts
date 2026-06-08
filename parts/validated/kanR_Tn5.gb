@@ -1,0 +1,102 @@
+LOCUS       kanR_Tn5                 264 aa                     UNK 01-JAN-1980
+DEFINITION  Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II /
+            NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and
+            neomycin resistance by ATP-dependent phosphorylation of the
+            aminoglycos....
+ACCESSION   kanR_Tn5
+VERSION     kanR_Tn5
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Beck E, Ludwig G, Auerswald EA, Reiss B, Schaller H
+  TITLE     Nucleotide sequence and exact localization of the neomycin
+            phosphotransferase gene from transposon Tn5
+  JOURNAL   Gene
+   PUBMED   6295884
+  REMARK    doi:10.1016/0378-1119(82)90023-3
+REFERENCE   2
+  AUTHORS   UniProt Consortium
+  TITLE     UniProtKB P00552 (KKA2_KLEPN) - Aminoglycoside 3'-phosphotransferase
+  JOURNAL   UniProt Knowledgebase
+  REMARK    doi:10.1093/nar/gkac1052
+REFERENCE   3
+  AUTHORS   Nurizzo D, Shewry SC, Perlin MH, Brown SA, Dholakia JN, Fuchs RL,
+            Deva T, Baker EN, Smith CA
+  TITLE     The crystal structure of aminoglycoside-3'-phosphotransferase-IIa,
+            an enzyme responsible for antibiotic resistance
+  JOURNAL   J Mol Biol
+   PUBMED   12628253
+  REMARK    doi:10.1016/s0022-2836(03)00121-9
+REFERENCE   4
+  AUTHORS   Marcos-Alcalde I, Lopez-Canut V, Tunon I, et al.
+  TITLE     Role of Asp190 in the Phosphorylation of the Antibiotic Kanamycin
+            Catalyzed by the Aminoglycoside Phosphotransferase Enzyme: A
+            Combined QM:QM and MD Study
+  JOURNAL   J Phys Chem B
+   PUBMED   32250119
+  REMARK    doi:10.1021/acs.jpcb.0c01604
+FEATURES             Location/Qualifiers
+     CDS             1..264
+                     /label="kanR (Tn5)"
+                     /synonym="APH(3')-II"
+                     /synonym="NeoR"
+                     /synonym="NeoR/KanR"
+                     /synonym="kanR"
+                     /synonym="neo"
+                     /synonym="nptII"
+                     /note="Tn5 aminoglycoside 3'-phosphotransferase type II
+                     (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that
+                     confers kanamycin and neomycin resistance by ATP-dependent
+                     phosphorylation of the aminoglycos..."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P00552"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    190
+                     /label="Active site Asp190"
+                     /parent="kanR (Tn5)"
+                     /note="UniProt P00552 ACT_SITE 190 'Proton acceptor'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    188..195
+                     /label="Catalytic loop / Brenner motif"
+                     /parent="kanR (Tn5)"
+                     /note="Conserved aminoglycoside-phosphotransferase /
+                     protein-kinase-like catalytic loop
+                     (His188-Gly189-Asp190-Ala-Cys-Leu-Pro-Asn195)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    195
+                     /label="Mg2+ binding site Asn195"
+                     /parent="kanR (Tn5)"
+                     /note="UniProt P00552 BINDING 195 (Mg2+)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    208
+                     /label="Mg2+ binding site Asp208"
+                     /parent="kanR (Tn5)"
+                     /note="UniProt P00552 BINDING 208 (Mg2+)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    151..166
+                     /label="Acidic aminoglycoside-recognition loop"
+                     /parent="kanR (Tn5)"
+                     /note="Nurizzo et al."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    260..264
+                     /label="C-terminal aminoglycoside-recognition residues"
+                     /parent="kanR (Tn5)"
+                     /note="Nurizzo et al."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+ORIGIN
+        1 mieqdglhag spaawverlf gydwaqqtig csdaavfrls aqgrpvlfvk tdlsgalnel
+       61 qdeaarlswl attgvpcaav ldvvteagrd wlllgevpgq dllsshlapa ekvsimadam
+      121 rrlhtldpat cpfdhqakhr ierartrmea glvdqddlde ehqglapael farlkarmpd
+      181 gedlvvthgd aclpnimven grfsgfidcg rlgvadryqd ialatrdiae elggewadrf
+      241 lvlygiaapd sqriafyrll deff
+//

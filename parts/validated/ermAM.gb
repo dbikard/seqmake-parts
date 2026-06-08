@@ -1,0 +1,100 @@
+LOCUS       ermAM                    245 aa                     UNK 01-JAN-1980
+DEFINITION  ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA
+            adenine N6-methyltransferase: a 245-aa enzyme that dimethylates
+            A2058 of 23S rRNA to confer MLS-B
+            (macrolide-lincosamide-streptogram....
+ACCESSION   ermAM
+VERSION     ermAM
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Trieu-Cuot P., Poyart-Salmeron C., Carlier C., Courvalin P.
+  TITLE     Nucleotide sequence of the erythromycin resistance gene of the
+            conjugative transposon Tn1545.
+  JOURNAL   Nucleic Acids Res 18:3660 (1990)
+   PUBMED   2163525
+  REMARK    doi:10.1093/nar/18.12.3660
+REFERENCE   2
+  AUTHORS   Weisblum B.
+  TITLE     Erythromycin resistance by ribosome modification.
+  JOURNAL   Antimicrob Agents Chemother 39:577-585 (1995)
+   PUBMED   7793855
+  REMARK    doi:10.1128/AAC.39.3.577
+REFERENCE   3
+  AUTHORS   Yu L., Petros A.M., Schnuchel A., Zhong P., Severin J.M., Walter K.,
+            Holzman T.F., Fesik S.W.
+  TITLE     Solution structure of an rRNA methyltransferase (ErmAM) that confers
+            macrolide-lincosamide-streptogramin antibiotic resistance.
+  JOURNAL   Nat Struct Biol 4:483-489 (1997)
+   PUBMED   9187657
+  REMARK    doi:10.1038/nsb0697-483
+REFERENCE   4
+  AUTHORS   Farrow K.A., Lyras D., Polekhina G., Koutsis K., Parker M.W., Rood
+            J.I.
+  TITLE     Identification of essential residues in the Erm(B) rRNA
+            methyltransferase of Clostridium perfringens.
+  JOURNAL   Antimicrob Agents Chemother 46:1253-1261 (2002)
+   PUBMED   11959553
+  REMARK    doi:10.1128/AAC.46.5.1253-1261.2002
+REFERENCE   5
+  AUTHORS   Maravic G., Feder M., Pongor S., Flogel M., Bujnicki J.M.
+  TITLE     Mutational analysis defines the roles of conserved amino acid
+            residues in the predicted catalytic pocket of the rRNA:m6A
+            methyltransferase ErmC'.
+  JOURNAL   J Mol Biol 332:99-109 (2003)
+   PUBMED   12946350
+  REMARK    doi:10.1016/S0022-2836(03)00863-5
+FEATURES             Location/Qualifiers
+     CDS             1..245
+                     /label="ermAM"
+                     /synonym="ermB"
+                     /note="ermAM (ermB / erm(B)) is the Tn1545
+                     erythromycin-resistance rRNA adenine N6-methyltransferase:
+                     a 245-aa enzyme that dimethylates A2058 of 23S rRNA to
+                     confer MLS-B (macrolide-lincosamide-streptogram..."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P21236"
+                     /citation=[1]
+                     /citation=[2]
+     protein_domain  1..180
+                     /label="Catalytic / SAM-binding domain"
+                     /parent="ermAM"
+                     /note="N-terminal lobe of the bilobal ErmAM structure (NMR,
+                     Yu et al."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  181..245
+                     /label="Substrate / 23S rRNA-binding domain"
+                     /parent="ermAM"
+                     /note="C-terminal lobe of the bilobal ErmAM structure (Yu
+                     et al."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+     misc_feature    37..41
+                     /label="Motif I / G-loop"
+                     /parent="ermAM"
+                     /note="Canonical glycine-rich Motif I 'G-loop' (G-X-G-X-G),
+                     here GTGKG, in the beta1-alphaA loop of the catalytic
+                     domain; binds the methionine/ribose moiety of the ..."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    100..103
+                     /label="Motif IV catalytic motif"
+                     /parent="ermAM"
+                     /note="Conserved Motif IV of N6-adenine methyltransferases,
+                     (N/D/S)-(I/P)-P-(Y/F/W/H); in ErmAM the relaxed Erm-family
+                     form SIPY with the conserved Pro and an aroma..."
+                     /db_xref="SO:0000110"
+                     /citation=[4]
+                     /citation=[5]
+ORIGIN
+        1 mnknikysqn fltsekvlnq iikqlnlket dtvyeigtgk ghlttklaki skqvtsield
+       61 shlfnlssek lklntrvtli hqdilqfqfp nkqrykivgs ipyhlstqii kkvvfeshas
+      121 diyliveegf ykrtldihrt lglllhtqvs iqqllklpae cfhpkpkvns vlikltrhtt
+      181 dvpdkywkly tyfvskwvnr eyrqlftknq fhqamkhakv nnlstvtyeq vlsifnsyll
+      241 fngrk
+//

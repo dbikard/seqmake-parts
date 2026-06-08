@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "n_parts": 211,
-  "n_validated": 20,
-  "n_candidate": 191,
-  "n_documented": 20,
+  "n_parts": 214,
+  "n_validated": 32,
+  "n_candidate": 182,
+  "n_documented": 32,
   "parts": [
     {
       "name": "186 attP",
@@ -85,49 +85,209 @@
       "slug": "aadA",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P0AG05",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "aadA",
-        "SpecR",
+        "ANT(3'')(9)",
+        "AadA",
         "SmR",
-        "spectinomycin adenyltransferase"
+        "SpR",
+        "SpecR",
+        "aadA1",
+        "spectinomycin adenyltransferase",
+        "streptomycin 3''-adenylyltransferase"
       ],
-      "description": "",
+      "description": "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47.",
       "length": 263,
       "protein_length_aa": 263,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
-    },
-    {
-      "name": "AadA (SEVA)",
-      "slug": "AadA_SEVA",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "AadA",
-        "aadA",
-        "streptomycin 3''-adenylyltransferase",
-        "SmR/SpR"
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Nucleotidyltransferase domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 2,
+          "end": 157,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "AadA C-terminal domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 157,
+          "end": 263,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Catalytic base Glu",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 86,
+          "end": 87,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "Mg2+-coordinating residue Asp",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 46,
+          "end": 47,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "Mg2+-coordinating residue Asp (D49)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 48,
+          "end": 49,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "ATP ribose-binding residue Asp",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 129,
+          "end": 130,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "ATP phosphate-binding residue Arg",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 191,
+          "end": 192,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "ATP phosphate-binding residue Lys",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 204,
+          "end": 205,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "ATP phosphate-binding residue Tyr",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 230,
+          "end": 231,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Drug-binding residue Trp",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 111,
+          "end": 112,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Drug-binding residue Asp",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 181,
+          "end": 182,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Streptomycin-binding residue Trp",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 172,
+          "end": 173,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Streptomycin-binding residue Asp",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 177,
+          "end": 178,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        }
       ],
-      "description": "",
-      "length": 301,
-      "protein_length_aa": 301,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
+      "references": [
+        {
+          "authors": "Chen Y, Nasvall J, Wu S, Andersson DI, Selmer M",
+          "title": "Structure of AadA from Salmonella enterica: a monomeric aminoglycoside (3'')(9) adenyltransferase",
+          "journal": "Acta Crystallogr D Biol Crystallogr 71(Pt 11):2267-2277 (2015)",
+          "pmid": "26527143",
+          "doi": "10.1107/S1399004715016429",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26527143/"
+        },
+        {
+          "authors": "Stern AL, Van der Verren SE, Kanchugal P S, Nasvall J, Gutierrez-de-Teran H, Selmer M",
+          "title": "Structural mechanism of AadA, a dual-specificity aminoglycoside adenylyltransferase from Salmonella enterica",
+          "journal": "J Biol Chem 293(29):11481-11490 (2018)",
+          "pmid": "29871922",
+          "doi": "10.1074/jbc.RA118.003989",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29871922/"
+        }
+      ],
       "main_citations": []
     },
     {
@@ -462,27 +622,361 @@
       "slug": "bla",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P62593",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
         "AmpR",
-        "amp",
-        "bla",
-        "beta-lactamase",
         "TEM-1",
+        "amp",
+        "beta-lactamase",
         "penicillinase"
       ],
-      "description": "",
+      "description": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
       "length": 286,
       "protein_length_aa": 286,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Signal peptide",
+          "feature_type": "signal_peptide",
+          "so_term": null,
+          "so_name": null,
+          "start": 0,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Catalytic nucleophile Ser",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 67,
+          "end": 68,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Catalytic general base Lys",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 70,
+          "end": 71,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "SDN loop catalytic Ser",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Omega-loop catalytic Glu",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 163,
+          "end": 164,
+          "strand": 1,
+          "citations": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Substrate-binding K-S-G",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 231,
+          "end": 234,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Disulfide bond Cys-Cys",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 74,
+          "end": 75,
+          "strand": 1,
+          "citations": [
+            5,
+            3
+          ]
+        },
+        {
+          "label": "Disulfide bond Cys-Cys (Cys123)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 120,
+          "end": 121,
+          "strand": 1,
+          "citations": [
+            5,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+          "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
+          "pmid": "383387",
+          "doi": "10.1101/sqb.1979.043.01.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
+        },
+        {
+          "authors": "Ambler RP, Coulson AF, Frere JM, Ghuysen JM, Joris B, Forsman M, Levesque RC, Tiraby G, Waley SG",
+          "title": "A standard numbering scheme for the class A beta-lactamases",
+          "journal": "Biochemical Journal",
+          "pmid": "2039479",
+          "doi": "10.1042/bj2760269",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2039479/"
+        },
+        {
+          "authors": "Jelsch C, Mourey L, Masson JM, Samama JP",
+          "title": "Crystal structure of Escherichia coli TEM1 beta-lactamase at 1.8 A resolution",
+          "journal": "Proteins",
+          "pmid": "8356032",
+          "doi": "10.1002/prot.340160406",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8356032/"
+        },
+        {
+          "authors": "Egorov A, Rubtsova M, Grigorenko V, Uporov I, Veselovsky A",
+          "title": "The Role of the Omega-Loop in Regulation of the Catalytic Activity of TEM-Type beta-Lactamases",
+          "journal": "Biomolecules",
+          "pmid": "31835662",
+          "doi": "10.3390/biom9120854",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31835662/"
+        },
+        {
+          "authors": "Vanhove M, Guillaume G, Ledent P, Richards JH, Pain RH, Frere JM",
+          "title": "Kinetic and thermodynamic consequences of the removal of the Cys-77-Cys-123 disulphide bond for the folding of TEM-1 beta-lactamase",
+          "journal": "Biochemical Journal",
+          "pmid": "9020874",
+          "doi": "10.1042/bj3210413",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9020874/"
+        }
+      ],
       "main_citations": []
+    },
+    {
+      "name": "BlastR",
+      "slug": "BlastR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P0C2P0",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "BSD",
+        "blasticidin S deaminase",
+        "bsd"
+      ],
+      "description": "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d...",
+      "length": 130,
+      "protein_length_aa": 130,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "CMP/dCMP-type deaminase domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 0,
+          "end": 129,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Active site Glu56",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 55,
+          "end": 56,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Zinc-binding Cys54",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 53,
+          "end": 54,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Zinc-binding Cys88",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 87,
+          "end": 88,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Zinc-binding Cys91",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 90,
+          "end": 91,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Substrate-binding Ser28",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 27,
+          "end": 28,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Substrate-binding Arg82",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 81,
+          "end": 82,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Substrate-binding Tyr126",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 125,
+          "end": 126,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Substrate-binding Trp128",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Flexible C-terminal substrate-access region",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 125,
+          "end": 130,
+          "strand": 1,
+          "citations": [
+            4,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Kimura M, Kamakura T, Tao QZ, Kaneko I, Yamaguchi I",
+          "title": "Cloning of the blasticidin S deaminase gene (BSD) from Aspergillus terreus and its use as a selectable marker for Schizosaccharomyces pombe and Pyricularia oryzae",
+          "journal": "Molecular and General Genetics 242(2):121-129 (1994)",
+          "pmid": "8159161",
+          "doi": "10.1007/BF00391004",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8159161/"
+        },
+        {
+          "authors": "Kimura M, Sekido S, Isogai Y, Yamaguchi I",
+          "title": "Expression, purification, and characterization of blasticidin S deaminase (BSD) from Aspergillus terreus: the role of catalytic zinc in enzyme structure",
+          "journal": "Journal of Biochemistry 127(6):955-963 (2000)",
+          "pmid": "10833262",
+          "doi": "10.1093/oxfordjournals.jbchem.a022711",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10833262/"
+        },
+        {
+          "authors": "Kumasaka T, Yamamoto M, Furuichi M, Nakasako M, Teh AH, Kimura M, Yamaguchi I, Ueki T",
+          "title": "Crystal structures of blasticidin S deaminase (BSD): implications for dynamic properties of catalytic zinc",
+          "journal": "Journal of Biological Chemistry 282(51):37103-37111 (2007)",
+          "pmid": "17959604",
+          "doi": "10.1074/jbc.M704476200",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17959604/"
+        },
+        {
+          "authors": "Kimura M, Furuichi M, Yamamoto M, Kumasaka T, Mizuno H, Miyano M, Yamaguchi I",
+          "title": "The flexible C-terminal region of Aspergillus terreus blasticidin S deaminase: identification of its functional roles with deletion enzymes",
+          "journal": "Biochemical and Biophysical Research Communications 290(3):1057-1062 (2002)",
+          "pmid": "11779186",
+          "doi": "10.1006/bbrc.2001.6184",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11779186/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
     },
     {
       "name": "bom",
@@ -945,25 +1439,108 @@
       "slug": "CmR",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P62577",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "CmR",
         "CAT",
         "cat",
         "chloramphenicol acetyltransferase"
       ],
-      "description": "",
+      "description": "CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT) from E. coli transposon Tn9, conferring chloramphenicol resistance by O-acetylating the antibiotic.",
       "length": 219,
       "protein_length_aa": 219,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Active site His193",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 192,
+          "end": 193,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Oxyanion-hole stabilizing Ser146",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 145,
+          "end": 146,
+          "strand": 1,
+          "citations": [
+            5,
+            3
+          ]
+        },
+        {
+          "label": "His-positioning acidic residue Asp197",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 196,
+          "end": 197,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Alton N.K., Vapnek D.",
+          "title": "Nucleotide sequence analysis of the chloramphenicol resistance transposon Tn9",
+          "journal": "Nature 282:864-869 (1979)",
+          "pmid": "390403",
+          "doi": "10.1038/282864a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/390403/"
+        },
+        {
+          "authors": "Leslie A.G., Moody P.C., Shaw W.V.",
+          "title": "Structure of chloramphenicol acetyltransferase at 1.75-A resolution",
+          "journal": "Proc Natl Acad Sci USA 85(12):4133-4137 (1988)",
+          "pmid": "3288984",
+          "doi": "10.1073/pnas.85.12.4133",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3288984/"
+        },
+        {
+          "authors": "Biswas T., Houghton J.L., Garneau-Tsodikova S., Tsodikov O.V.",
+          "title": "The structural basis for substrate versatility of chloramphenicol acetyltransferase CATI",
+          "journal": "Protein Science 21(4):520-530 (2012)",
+          "pmid": "22294317",
+          "doi": "10.1002/pro.2036",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22294317/"
+        },
+        {
+          "authors": "Leslie A.G.W.",
+          "title": "Refined crystal structure of type III chloramphenicol acetyltransferase at 1.75 A resolution",
+          "journal": "Journal of Molecular Biology 213(1):167-186 (1990)",
+          "pmid": "2187098",
+          "doi": "10.1016/S0022-2836(05)80129-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2187098/"
+        },
+        {
+          "authors": "Lewendon A., Murray I.A., Shaw W.V., Gibbs M.R., Leslie A.G.",
+          "title": "Evidence for transition-state stabilization by serine-148 in the catalytic mechanism of chloramphenicol acetyltransferase",
+          "journal": "Biochemistry 29(8):2075-2080 (1990)",
+          "pmid": "2109633",
+          "doi": "10.1021/bi00460a016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2109633/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
     },
     {
       "name": "ColE1",
@@ -1227,29 +1804,144 @@
     {
       "name": "DhfR",
       "slug": "DhfR",
-      "feature_type": "CDS",
+      "feature_type": "protein_domain",
       "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
+      "source_accession": "UniProt:P00382",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
       "synonyms": [
-        "DhfR",
-        "dhfR",
         "DHFR",
-        "dihydrofolate reductase",
-        "trimethoprim resistance",
+        "DfrA",
         "TmpR",
-        "DfrA"
+        "dhfR",
+        "dihydrofolate reductase",
+        "trimethoprim resistance"
       ],
-      "description": "",
+      "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a single FolA-fold catalytic domain (UniProt P00382), here carrying the M1V and N73D variants.",
       "length": 157,
       "protein_length_aa": 157,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "DHFR conserved-site signature",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 15,
+          "end": 31,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Substrate/cofactor loop",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 15,
+          "end": 24,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "Catalytic acidic residue",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 27,
+          "end": 28,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Active-site residue",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 28,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Antifolate-stacking residue",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 31,
+          "end": 32,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "Hydrophobic inhibitor-pocket residues",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 50,
+          "end": 54,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "Conserved pteridine-binding glycine-rich turn",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 97,
+          "end": 101,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Krucinska J, Lombardo MN, Erlandsen H, Estrada A, Si D, Viswanathan K, Wright DL",
+          "title": "Structure-guided functional studies of plasmid-encoded dihydrofolate reductases reveal a common mechanism of trimethoprim resistance in Gram-negative pathogens.",
+          "journal": "Commun Biol 5:459 (2022)",
+          "pmid": "35562546",
+          "doi": "10.1038/s42003-022-03384-y",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35562546/"
+        },
+        {
+          "authors": "Lombardo MN, G-Dayanandan N, Wright DL, Anderson AC",
+          "title": "Crystal Structures of Trimethoprim-Resistant DfrA1 Rationalize Potent Inhibition by Propargyl-Linked Antifolates.",
+          "journal": "ACS Infect Dis 2(2):149-156 (2016)",
+          "pmid": "27624966",
+          "doi": "10.1021/acsinfecdis.5b00129",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27624966/"
+        },
+        {
+          "authors": "Fling ME, Richards C",
+          "title": "The nucleotide sequence of the trimethoprim-resistant dihydrofolate reductase gene harbored by Tn7.",
+          "journal": "Nucleic Acids Res 11(15):5147-5158 (1983)",
+          "pmid": "6308574",
+          "doi": "10.1093/nar/11.15.5147",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6308574/"
+        }
+      ],
       "main_citations": []
     },
     {
@@ -1423,23 +2115,118 @@
       "slug": "ermAM",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P21236",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "ermAM",
         "ermB"
       ],
-      "description": "",
+      "description": "ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA adenine N6-methyltransferase: a 245-aa enzyme that dimethylates A2058 of 23S rRNA to confer MLS-B (macrolide-lincosamide-streptogram...",
       "length": 245,
       "protein_length_aa": 245,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Catalytic / SAM-binding domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 0,
+          "end": 180,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Substrate / 23S rRNA-binding domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 180,
+          "end": 245,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Motif I / G-loop",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 36,
+          "end": 41,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Motif IV catalytic motif",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 99,
+          "end": 103,
+          "strand": 1,
+          "citations": [
+            4,
+            5
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Trieu-Cuot P., Poyart-Salmeron C., Carlier C., Courvalin P.",
+          "title": "Nucleotide sequence of the erythromycin resistance gene of the conjugative transposon Tn1545.",
+          "journal": "Nucleic Acids Res 18:3660 (1990)",
+          "pmid": "2163525",
+          "doi": "10.1093/nar/18.12.3660",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2163525/"
+        },
+        {
+          "authors": "Weisblum B.",
+          "title": "Erythromycin resistance by ribosome modification.",
+          "journal": "Antimicrob Agents Chemother 39:577-585 (1995)",
+          "pmid": "7793855",
+          "doi": "10.1128/AAC.39.3.577",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7793855/"
+        },
+        {
+          "authors": "Yu L., Petros A.M., Schnuchel A., Zhong P., Severin J.M., Walter K., Holzman T.F., Fesik S.W.",
+          "title": "Solution structure of an rRNA methyltransferase (ErmAM) that confers macrolide-lincosamide-streptogramin antibiotic resistance.",
+          "journal": "Nat Struct Biol 4:483-489 (1997)",
+          "pmid": "9187657",
+          "doi": "10.1038/nsb0697-483",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9187657/"
+        },
+        {
+          "authors": "Farrow K.A., Lyras D., Polekhina G., Koutsis K., Parker M.W., Rood J.I.",
+          "title": "Identification of essential residues in the Erm(B) rRNA methyltransferase of Clostridium perfringens.",
+          "journal": "Antimicrob Agents Chemother 46:1253-1261 (2002)",
+          "pmid": "11959553",
+          "doi": "10.1128/AAC.46.5.1253-1261.2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11959553/"
+        },
+        {
+          "authors": "Maravic G., Feder M., Pongor S., Flogel M., Bujnicki J.M.",
+          "title": "Mutational analysis defines the roles of conserved amino acid residues in the predicted catalytic pocket of the rRNA:m6A methyltransferase ErmC'.",
+          "journal": "J Mol Biol 332:99-109 (2003)",
+          "pmid": "12946350",
+          "doi": "10.1016/S0022-2836(03)00863-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12946350/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
     },
     {
       "name": "ermR",
@@ -1637,26 +2424,88 @@
       "slug": "GmR",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P23181",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "GmR",
         "GentR",
         "Gentamicin R",
-        "gentamicin acetyltransferase",
-        "aacC1"
+        "aacC1",
+        "gentamicin acetyltransferase"
       ],
-      "description": "",
+      "description": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
       "length": 177,
       "protein_length_aa": 177,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "N-acetyltransferase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 24,
+          "end": 177,
+          "strand": 1,
+          "citations": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "label": "GNAT motif A",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 117,
+          "end": 123,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Hsiang MW, White TJ, Davies JE",
+          "title": "NH2-terminal sequence of the aminoglycoside acetyltransferase (3)-I mediated by plasmid RIP 135",
+          "journal": "FEBS Lett 1978;92(1):97-99",
+          "pmid": "668926",
+          "doi": "10.1016/0014-5793(78)80730-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/668926/"
+        },
+        {
+          "authors": "Wolf E, Vassilev A, Makino Y, Sali A, Nakatani Y, Burley SK",
+          "title": "Crystal structure of a GCN5-related N-acetyltransferase: Serratia marcescens aminoglycoside 3-N-acetyltransferase",
+          "journal": "Cell 1998;94(4):439-449",
+          "pmid": "9727487",
+          "doi": "10.1016/s0092-8674(00)81585-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9727487/"
+        },
+        {
+          "authors": "Vetting MW, S de Carvalho LP, Yu M, Hegde SS, Magnet S, Roderick SL, Blanchard JS",
+          "title": "Structure and functions of the GNAT superfamily of acetyltransferases",
+          "journal": "Arch Biochem Biophys 2005;433(1):212-226",
+          "pmid": "15581578",
+          "doi": "10.1016/j.abb.2004.09.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15581578/"
+        },
+        {
+          "authors": "Wohlleben W, Arnold W, Bissonnette L, Pelletier A, Tanguay A, Roy PH, Gamboa GC, Barry GF, Aubert E, Davies J",
+          "title": "On the evolution of Tn21-like multiresistance transposons: sequence analysis of the gene (aacC1) for gentamicin acetyltransferase-3-I (AAC(3)-I), another member of the Tn21-based expression cassette",
+          "journal": "Mol Gen Genet 1989;217(2-3):202-208",
+          "pmid": "2549372",
+          "doi": "10.1007/BF02464882",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2549372/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
     },
     {
       "name": "GST",
@@ -1798,6 +2647,109 @@
       "children": [],
       "references": [],
       "main_citations": []
+    },
+    {
+      "name": "HygR",
+      "slug": "HygR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P00557",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "APH(4)-Ia",
+        "HPT",
+        "hph",
+        "hygromycin B phosphotransferase"
+      ],
+      "description": "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH.",
+      "length": 341,
+      "protein_length_aa": 341,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "N-terminal lobe",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 6,
+          "end": 92,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "C-terminal lobe",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 98,
+          "end": 301,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Catalytic loop",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 195,
+          "end": 203,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        },
+        {
+          "label": "Mg2+-binding aspartate",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 214,
+          "end": 218,
+          "strand": 1,
+          "citations": [
+            2,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Gritz L, Davies J",
+          "title": "Plasmid-encoded hygromycin B resistance: the sequence of hygromycin B phosphotransferase gene and its expression in Escherichia coli and Saccharomyces cerevisiae",
+          "journal": "Gene 25(2-3):179-188 (1983)",
+          "pmid": "6319235",
+          "doi": "10.1016/0378-1119(83)90223-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6319235/"
+        },
+        {
+          "authors": "Stogios PJ, Shakya T, Evdokimova E, Savchenko A, Wright GD",
+          "title": "Structure and function of APH(4)-Ia, a hygromycin B resistance enzyme",
+          "journal": "J Biol Chem 286(3):1966-1975 (2011)",
+          "pmid": "21084294",
+          "doi": "10.1074/jbc.M110.194266",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21084294/"
+        },
+        {
+          "authors": "Iino D, Takakura Y, Fukano K, Sasaki Y, Hoshino T, Ohsawa K, Nakamura A, Yajima S",
+          "title": "Crystal structures of the ternary complex of APH(4)-Ia/Hph with hygromycin B and an ATP analog using a thermostable mutant",
+          "journal": "J Struct Biol 183(1):76-85 (2013)",
+          "pmid": "23747390",
+          "doi": "10.1016/j.jsb.2013.05.023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23747390/"
+        }
+      ],
+      "main_citations": [
+        1
+      ]
     },
     {
       "name": "I-SceI site",
@@ -1949,27 +2901,137 @@
       "slug": "kanR_Tn5",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P00552",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
+        "APH(3')-II",
+        "NeoR",
         "NeoR/KanR",
         "kanR",
-        "nptII",
-        "NeoR",
-        "APH(3')-II",
-        "neo"
+        "neo",
+        "nptII"
       ],
-      "description": "",
+      "description": "Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and neomycin resistance by ATP-dependent phosphorylation of the aminoglycos...",
       "length": 264,
       "protein_length_aa": 264,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Active site Asp190",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 189,
+          "end": 190,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Catalytic loop / Brenner motif",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 187,
+          "end": 195,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Mg2+ binding site Asn195",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 194,
+          "end": 195,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Mg2+ binding site Asp208",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 207,
+          "end": 208,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Acidic aminoglycoside-recognition loop",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 150,
+          "end": 166,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "C-terminal aminoglycoside-recognition residues",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 259,
+          "end": 264,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Beck E, Ludwig G, Auerswald EA, Reiss B, Schaller H",
+          "title": "Nucleotide sequence and exact localization of the neomycin phosphotransferase gene from transposon Tn5",
+          "journal": "Gene",
+          "pmid": "6295884",
+          "doi": "10.1016/0378-1119(82)90023-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6295884/"
+        },
+        {
+          "authors": "UniProt Consortium",
+          "title": "UniProtKB P00552 (KKA2_KLEPN) - Aminoglycoside 3'-phosphotransferase",
+          "journal": "UniProt Knowledgebase",
+          "pmid": "",
+          "doi": "10.1093/nar/gkac1052",
+          "url": "https://doi.org/10.1093/nar/gkac1052"
+        },
+        {
+          "authors": "Nurizzo D, Shewry SC, Perlin MH, Brown SA, Dholakia JN, Fuchs RL, Deva T, Baker EN, Smith CA",
+          "title": "The crystal structure of aminoglycoside-3'-phosphotransferase-IIa, an enzyme responsible for antibiotic resistance",
+          "journal": "J Mol Biol",
+          "pmid": "12628253",
+          "doi": "10.1016/s0022-2836(03)00121-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12628253/"
+        },
+        {
+          "authors": "Marcos-Alcalde I, Lopez-Canut V, Tunon I, et al.",
+          "title": "Role of Asp190 in the Phosphorylation of the Antibiotic Kanamycin Catalyzed by the Aminoglycoside Phosphotransferase Enzyme: A Combined QM:QM and MD Study",
+          "journal": "J Phys Chem B",
+          "pmid": "32250119",
+          "doi": "10.1021/acs.jpcb.0c01604",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32250119/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
     },
     {
       "name": "kanR (Tn903)",
@@ -5226,6 +6288,143 @@
       "main_citations": []
     },
     {
+      "name": "PuroR",
+      "slug": "PuroR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P13249",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "PAC",
+        "pac",
+        "puromycin N-acetyltransferase"
+      ],
+      "description": "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker.",
+      "length": 199,
+      "protein_length_aa": 199,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "GNAT N-acetyltransferase domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 5,
+          "end": 198,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Acceptor-entry alpha-helical hairpin",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 83,
+          "end": 116,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "P-loop",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 134,
+          "end": 140,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Catalytic general acid Tyr171",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 170,
+          "end": 171,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Acetyl-CoA contact residue Asn167",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 166,
+          "end": 167,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Puromycin",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 76,
+          "end": 77,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Candidate distal general base Glu161",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 160,
+          "end": 161,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Lacalle RA, Pulido D, Vara J, Zalacain M, Jimenez A",
+          "title": "Molecular analysis of the pac gene encoding a puromycin N-acetyltransferase from Streptomyces alboniger",
+          "journal": "Gene 79(2):375-380 (1989)",
+          "pmid": "2676728",
+          "doi": "10.1016/0378-1119(89)90220-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2676728/"
+        },
+        {
+          "authors": "Vara J, Portela A, Ortin J, Jimenez A",
+          "title": "Expression in mammalian cells of a gene from Streptomyces alboniger conferring puromycin resistance",
+          "journal": "Nucleic Acids Research 14(11):4617-4624 (1986)",
+          "pmid": "3714487",
+          "doi": "10.1093/nar/14.11.4617",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3714487/"
+        },
+        {
+          "authors": "Caputo AT, Eder OM, Bereznakova H, Pothuis H, Ardevol A, Newman J, Nuttall S, Peat TS, Adams TE",
+          "title": "Structure-guided selection of puromycin N-acetyltransferase mutants with enhanced selection stringency for deriving mammalian cell lines expressing recombinant proteins",
+          "journal": "Scientific Reports 11:5247 (2021)",
+          "pmid": "33664348",
+          "doi": "10.1038/s41598-021-84551-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33664348/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
+    },
+    {
       "name": "PVeg",
       "slug": "PVeg",
       "feature_type": "promoter",
@@ -6300,25 +7499,329 @@
       "slug": "TetA",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P02981",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "TetA",
         "tetA",
         "tetracycline efflux pump",
         "tetracycline resistance protein"
       ],
-      "description": "",
+      "description": "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro...",
       "length": 396,
       "protein_length_aa": 396,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "TM1",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 6,
+          "end": 27,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM2",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 45,
+          "end": 66,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM3",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 79,
+          "end": 100,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM4",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 103,
+          "end": 124,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM5",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 138,
+          "end": 159,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM6",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 160,
+          "end": 181,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM7",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 210,
+          "end": 231,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM8",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 246,
+          "end": 267,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM9",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 277,
+          "end": 298,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM10",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 299,
+          "end": 320,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM11",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 339,
+          "end": 360,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "TM12",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 364,
+          "end": 385,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Tet-efflux/MFS Motif A",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 63,
+          "end": 73,
+          "strand": 1,
+          "citations": [
+            5
+          ]
+        },
+        {
+          "label": "Asp17",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 16,
+          "end": 17,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Asp86",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 85,
+          "end": 86,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Asp287",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 286,
+          "end": 287,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "Cys59",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 58,
+          "end": 59,
+          "strand": 1,
+          "citations": [
+            6
+          ]
+        },
+        {
+          "label": "Cys139",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 138,
+          "end": 139,
+          "strand": 1,
+          "citations": [
+            6
+          ]
+        },
+        {
+          "label": "Cys178",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 177,
+          "end": 178,
+          "strand": 1,
+          "citations": [
+            6
+          ]
+        },
+        {
+          "label": "Cys381",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 380,
+          "end": 381,
+          "strand": 1,
+          "citations": [
+            6
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "UniProt Consortium",
+          "title": "UniProtKB entry P02981 (TCR3_ECOLX), Tetracycline resistance protein class C, tetA, Escherichia coli; 12 TRANSMEM + TOPO_DOM annotations",
+          "journal": "UniProt Knowledgebase",
+          "pmid": "",
+          "doi": "10.1093/nar/gkac1052",
+          "url": "https://doi.org/10.1093/nar/gkac1052"
+        },
+        {
+          "authors": "Peden KWC",
+          "title": "Revised sequence of the tetracycline-resistance gene of pBR322",
+          "journal": "Gene 1983;22(2-3):277-280",
+          "pmid": "6307828",
+          "doi": "10.1016/0378-1119(83)90112-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6307828/"
+        },
+        {
+          "authors": "Allard JD, Bertrand KP",
+          "title": "Membrane topology of the pBR322 tetracycline resistance protein. TetA-PhoA gene fusions and implications for the mechanism of TetA membrane insertion",
+          "journal": "J Biol Chem 1992;267(25):17809-17819",
+          "pmid": "1517220",
+          "doi": "10.1016/S0021-9258(19)37116-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1517220/"
+        },
+        {
+          "authors": "Eckert B, Beck CF",
+          "title": "Topology of the transposon Tn10-encoded tetracycline resistance protein within the inner membrane of Escherichia coli",
+          "journal": "J Biol Chem 1989;264(20):11663-11670",
+          "pmid": "2545678",
+          "doi": "10.1016/S0021-9258(18)80116-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2545678/"
+        },
+        {
+          "authors": "Bannam TL, Johanesen PA, Salvado CL, Pidot SJ, Farrow KA, Rood JI",
+          "title": "The Clostridium perfringens TetA(P) efflux protein contains a functional variant of the Motif A region found in major facilitator superfamily transport proteins",
+          "journal": "Microbiology 2004;150(Pt 1):69-79",
+          "pmid": "14702405",
+          "doi": "10.1099/mic.0.26614-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14702405/"
+        },
+        {
+          "authors": "Jewell JE, Orwick J, Liu J, Miller KW",
+          "title": "Functional importance and local environments of the cysteines in the tetracycline resistance protein encoded by plasmid pBR322",
+          "journal": "J Bacteriol 1999;181(5):1689-1693",
+          "pmid": "10049405",
+          "doi": "10.1128/JB.181.5.1689-1693.1999",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10049405/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
     },
     {
       "name": "tetAC",
@@ -6807,6 +8310,84 @@
       "children": [],
       "references": [],
       "main_citations": []
+    },
+    {
+      "name": "ZeoR",
+      "slug": "ZeoR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P17493",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "BleoR",
+        "Sh ble",
+        "ble",
+        "bleomycin resistance protein"
+      ],
+      "description": "ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers resistance by stoichiometrically binding and sequestering the drug ...",
+      "length": 124,
+      "protein_length_aa": 124,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "VOC / glyoxalase-bleomycin-resistance fold domain",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 2,
+          "end": 121,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        },
+        {
+          "label": "N-terminal domain-swap dimerization arm",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 0,
+          "end": 8,
+          "strand": 1,
+          "citations": [
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Gatignol A, Durand H, Tiraby G",
+          "title": "Bleomycin resistance conferred by a drug-binding protein",
+          "journal": "FEBS Lett 1988;230(1-2):171-175",
+          "pmid": "2450783",
+          "doi": "10.1016/0014-5793(88)80665-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2450783/"
+        },
+        {
+          "authors": "Brouns SJJ, Wu H, Akerboom J, Turnbull AP, de Vos WM, van der Oost J",
+          "title": "Engineering a selectable marker for hyperthermophiles",
+          "journal": "J Biol Chem 2005;280(12):11422-11431",
+          "pmid": "15640151",
+          "doi": "10.1074/jbc.M413623200",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15640151/"
+        },
+        {
+          "authors": "Dumas P, Bergdoll M, Cagnon C, Masson JM",
+          "title": "Crystal structure and site-directed mutagenesis of a bleomycin resistance protein and their significance for drug sequestering",
+          "journal": "EMBO J 1994;13(11):2483-2492",
+          "pmid": "7516875",
+          "doi": "10.1002/j.1460-2075.1994.tb06535.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7516875/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ]
     }
   ]
 }

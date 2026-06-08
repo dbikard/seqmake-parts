@@ -1,0 +1,145 @@
+LOCUS       aadA                     263 aa                     UNK 01-JAN-1980
+DEFINITION  aadA is the streptomycin/spectinomycin resistance marker - an
+            aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) /
+            ANT(3'')-Ia, EC 2.7.7.47..
+ACCESSION   aadA
+VERSION     aadA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Chen Y, Nasvall J, Wu S, Andersson DI, Selmer M
+  TITLE     Structure of AadA from Salmonella enterica: a monomeric
+            aminoglycoside (3'')(9) adenyltransferase
+  JOURNAL   Acta Crystallogr D Biol Crystallogr 71(Pt 11):2267-2277 (2015)
+   PUBMED   26527143
+  REMARK    doi:10.1107/S1399004715016429
+REFERENCE   2
+  AUTHORS   Stern AL, Van der Verren SE, Kanchugal P S, Nasvall J,
+            Gutierrez-de-Teran H, Selmer M
+  TITLE     Structural mechanism of AadA, a dual-specificity aminoglycoside
+            adenylyltransferase from Salmonella enterica
+  JOURNAL   J Biol Chem 293(29):11481-11490 (2018)
+   PUBMED   29871922
+  REMARK    doi:10.1074/jbc.RA118.003989
+FEATURES             Location/Qualifiers
+     CDS             1..263
+                     /label="aadA"
+                     /synonym="ANT(3'')(9)"
+                     /synonym="AadA"
+                     /synonym="SmR"
+                     /synonym="SpR"
+                     /synonym="SpecR"
+                     /synonym="aadA1"
+                     /synonym="spectinomycin adenyltransferase"
+                     /synonym="streptomycin 3''-adenylyltransferase"
+                     /note="aadA is the streptomycin/spectinomycin resistance
+                     marker - an aminoglycoside (3'')(9) adenylyltransferase,
+                     ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0AG05"
+     protein_domain  3..157
+                     /label="Nucleotidyltransferase domain"
+                     /parent="aadA"
+                     /note="N-terminal polymerase-beta-like
+                     nucleotidyltransferase (adenylyltransferase) domain (Pfam
+                     PF01909 NTP_transf_2)."
+                     /db_xref="SO:0000417"
+                     /citation=[1]
+                     /citation=[2]
+     protein_domain  158..263
+                     /label="AadA C-terminal domain"
+                     /parent="aadA"
+                     /note="C-terminal alpha-helical bundle domain (Pfam PF13427
+                     AadA_C / DUF4111)."
+                     /db_xref="SO:0000417"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    87
+                     /label="Catalytic base Glu"
+                     /parent="aadA"
+                     /note="Catalytic base (Glu87)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     misc_feature    47
+                     /label="Mg2+-coordinating residue Asp"
+                     /parent="aadA"
+                     /note="Mg2+-coordinating aspartate of the two-metal-ion
+                     mechanism (Asp47)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     misc_feature    49
+                     /label="Mg2+-coordinating residue Asp (D49)"
+                     /parent="aadA"
+                     /note="Mg2+-coordinating aspartate of the two-metal-ion
+                     mechanism (Asp49); pairs with Asp47/Glu87 to bind the
+                     catalytic Mg2+ ions."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     misc_feature    130
+                     /label="ATP ribose-binding residue Asp"
+                     /parent="aadA"
+                     /note="Aspartate that hydrogen-bonds the ATP ribose
+                     hydroxyls (Asp130)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+     misc_feature    192
+                     /label="ATP phosphate-binding residue Arg"
+                     /parent="aadA"
+                     /note="C-terminal-domain arginine contacting ATP phosphates
+                     and enabling the Mg2+-coordinating ATP conformation
+                     (Arg192)."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    205
+                     /label="ATP phosphate-binding residue Lys"
+                     /parent="aadA"
+                     /note="C-terminal-domain lysine coordinating ATP phosphates
+                     and salt-bridging Asp47/Asp49 (Lys205)."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    231
+                     /label="ATP phosphate-binding residue Tyr"
+                     /parent="aadA"
+                     /note="Tyrosine coordinating ATP phosphates across the
+                     interdomain cleft (Tyr231)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+     binding         112
+                     /label="Drug-binding residue Trp"
+                     /parent="aadA"
+                     /note="Conserved tryptophan that stacks on the modified
+                     ring of both streptomycin and spectinomycin (Trp112);
+                     shared Sm/Sp determinant (Stern 2018)."
+                     /citation=[2]
+     binding         182
+                     /label="Drug-binding residue Asp"
+                     /parent="aadA"
+                     /note="Conserved aspartate hydrogen-bonding the
+                     streptomycin 6''-OH and contributing to the shared
+                     spectinomycin subsite (Asp182); shared Sm/Sp determinant
+                     (Stern 2..."
+                     /citation=[2]
+     binding         173
+                     /label="Streptomycin-binding residue Trp"
+                     /parent="aadA"
+                     /note="Streptomycin-specific contact (Trp173)."
+                     /citation=[2]
+     binding         178
+                     /label="Streptomycin-binding residue Asp"
+                     /parent="aadA"
+                     /note="Streptomycin-specific contact (Asp178)."
+                     /citation=[2]
+ORIGIN
+        1 mreaviaevs tqlsevvgvi erhleptlla vhlygsavdg glkphsdidl lvtvtvrlde
+       61 ttrralindl letsaspges eilravevti vvhddiipwr ypakrelqfg ewqrndilag
+      121 ifepatidid lailltkare hsvalvgpaa eelfdpvpeq dlfealnetl tlwnsppdwa
+      181 gdernvvltl sriwysavtg kiapkdvaad wamerlpaqy qpvilearqa ylgqeedrla
+      241 sradqleefv hyvkgeitkv vgk
+//

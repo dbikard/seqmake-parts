@@ -1,0 +1,111 @@
+LOCUS       DhfR                     157 aa                     UNK 01-JAN-1980
+DEFINITION  Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from
+            transposon Tn7 — a single FolA-fold catalytic domain (UniProt
+            P00382), here carrying the M1V and N73D variants..
+ACCESSION   DhfR
+VERSION     DhfR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Krucinska J, Lombardo MN, Erlandsen H, Estrada A, Si D, Viswanathan
+            K, Wright DL
+  TITLE     Structure-guided functional studies of plasmid-encoded dihydrofolate
+            reductases reveal a common mechanism of trimethoprim resistance in
+            Gram-negative pathogens.
+  JOURNAL   Commun Biol 5:459 (2022)
+   PUBMED   35562546
+  REMARK    doi:10.1038/s42003-022-03384-y
+REFERENCE   2
+  AUTHORS   Lombardo MN, G-Dayanandan N, Wright DL, Anderson AC
+  TITLE     Crystal Structures of Trimethoprim-Resistant DfrA1 Rationalize
+            Potent Inhibition by Propargyl-Linked Antifolates.
+  JOURNAL   ACS Infect Dis 2(2):149-156 (2016)
+   PUBMED   27624966
+  REMARK    doi:10.1021/acsinfecdis.5b00129
+REFERENCE   3
+  AUTHORS   Fling ME, Richards C
+  TITLE     The nucleotide sequence of the trimethoprim-resistant dihydrofolate
+            reductase gene harbored by Tn7.
+  JOURNAL   Nucleic Acids Res 11(15):5147-5158 (1983)
+   PUBMED   6308574
+  REMARK    doi:10.1093/nar/11.15.5147
+FEATURES             Location/Qualifiers
+     protein_domain  1..157
+                     /label="DhfR"
+                     /synonym="DHFR"
+                     /synonym="DfrA"
+                     /synonym="TmpR"
+                     /synonym="dhfR"
+                     /synonym="dihydrofolate reductase"
+                     /synonym="trimethoprim resistance"
+                     /note="Type I (DfrA1) trimethoprim-resistant dihydrofolate
+                     reductase from transposon Tn7 — a single FolA-fold
+                     catalytic domain (UniProt P00382), here carrying the M1V
+                     and N73D variants."
+                     /db_xref="SO:0000417"
+                     /db_xref="UniProt:P00382"
+     misc_feature    16..31
+                     /label="DHFR conserved-site signature"
+                     /parent="DhfR"
+                     /note="PROSITE PS00075 / InterPro IPR017925 'Dihydrofolate
+                     reductase conserved site'."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    16..24
+                     /label="Substrate/cofactor loop"
+                     /parent="DhfR"
+                     /note="N-terminal substrate/cofactor loop structurally
+                     equivalent to the catalytic Met20 loop of E."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[3]
+     misc_feature    28
+                     /label="Catalytic acidic residue"
+                     /parent="DhfR"
+                     /note="Catalytic Glu (context AKG-E-QLL) equivalent to the
+                     strictly conserved Asp27 of E."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    29
+                     /label="Active-site residue"
+                     /parent="DhfR"
+                     /note="Gln immediately downstream of the catalytic Glu (the
+                     'Q' of GEQLL), on helix B lining the trimethoprim
+                     subpocket."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    32
+                     /label="Antifolate-stacking residue"
+                     /parent="DhfR"
+                     /note="Phe on helix B (context EQLL-F-KAIT) packing against
+                     the trimethoxyphenyl/benzyl ring of trimethoprim and the
+                     propargyl linker of propargyl-linked antifolates."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     misc_feature    51..54
+                     /label="Hydrophobic inhibitor-pocket residues"
+                     /parent="DhfR"
+                     /note="Helix C hydrophobic wall of the
+                     dihydrofolate/trimethoprim binding pocket."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     misc_feature    98..101
+                     /label="Conserved pteridine-binding glycine-rich turn"
+                     /parent="DhfR"
+                     /note="Conserved DHFR glycine-rich turn (G-G-G-x, context
+                     IVS-GGGE-IY) of the FolA family that contributes to the
+                     pteridine/substrate pocket."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+ORIGIN
+        1 vklslmvais kngvigngpd ipwsakgeql lfkaitynqw llvgrktfes mgalpnrkya
+       61 vvtrssftsd nedvlifpsi kdaltnlkki tdhvivsggg eiykslidqv dtlhistidi
+      121 epegdvyfpe ipsnfrpvft qdfasninys yqiwqkg
+//

@@ -1,0 +1,133 @@
+LOCUS       BlastR                   130 aa                     UNK 01-JAN-1980
+DEFINITION  BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent
+            cytidine-deaminase-family enzyme from Aspergillus terreus that
+            confers resistance to the antibiotic blasticidin S and is widely
+            used as a d....
+ACCESSION   BlastR
+VERSION     BlastR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Kimura M, Kamakura T, Tao QZ, Kaneko I, Yamaguchi I
+  TITLE     Cloning of the blasticidin S deaminase gene (BSD) from Aspergillus
+            terreus and its use as a selectable marker for Schizosaccharomyces
+            pombe and Pyricularia oryzae
+  JOURNAL   Molecular and General Genetics 242(2):121-129 (1994)
+   PUBMED   8159161
+  REMARK    doi:10.1007/BF00391004
+REFERENCE   2
+  AUTHORS   Kimura M, Sekido S, Isogai Y, Yamaguchi I
+  TITLE     Expression, purification, and characterization of blasticidin S
+            deaminase (BSD) from Aspergillus terreus: the role of catalytic zinc
+            in enzyme structure
+  JOURNAL   Journal of Biochemistry 127(6):955-963 (2000)
+   PUBMED   10833262
+  REMARK    doi:10.1093/oxfordjournals.jbchem.a022711
+REFERENCE   3
+  AUTHORS   Kumasaka T, Yamamoto M, Furuichi M, Nakasako M, Teh AH, Kimura M,
+            Yamaguchi I, Ueki T
+  TITLE     Crystal structures of blasticidin S deaminase (BSD): implications
+            for dynamic properties of catalytic zinc
+  JOURNAL   Journal of Biological Chemistry 282(51):37103-37111 (2007)
+   PUBMED   17959604
+  REMARK    doi:10.1074/jbc.M704476200
+REFERENCE   4
+  AUTHORS   Kimura M, Furuichi M, Yamamoto M, Kumasaka T, Mizuno H, Miyano M,
+            Yamaguchi I
+  TITLE     The flexible C-terminal region of Aspergillus terreus blasticidin S
+            deaminase: identification of its functional roles with deletion
+            enzymes
+  JOURNAL   Biochemical and Biophysical Research Communications 290(3):1057-1062
+            (2002)
+   PUBMED   11779186
+  REMARK    doi:10.1006/bbrc.2001.6184
+FEATURES             Location/Qualifiers
+     CDS             1..130
+                     /label="BlastR"
+                     /synonym="BSD"
+                     /synonym="blasticidin S deaminase"
+                     /synonym="bsd"
+                     /note="BSD (blasticidin-S deaminase) is a 130-aa,
+                     zinc-dependent cytidine-deaminase-family enzyme from
+                     Aspergillus terreus that confers resistance to the
+                     antibiotic blasticidin S and is widely used as a d..."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0C2P0"
+                     /citation=[1]
+     protein_domain  1..129
+                     /label="CMP/dCMP-type deaminase domain"
+                     /parent="BlastR"
+                     /note="Single CMP/dCMP-type cytidine-deaminase domain
+                     (cytidine/deoxycytidylate deaminase family, Pfam PF00383)
+                     spanning the chain per UniProt P0C2P0."
+                     /db_xref="SO:0000417"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    56
+                     /label="Active site Glu56"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 ACT_SITE=56 'Proton donor'."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    54
+                     /label="Zinc-binding Cys54"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=54, ligand catalytic Zn(2+)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    88
+                     /label="Zinc-binding Cys88"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=88, ligand catalytic Zn(2+)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    91
+                     /label="Zinc-binding Cys91"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=91, ligand catalytic Zn(2+)."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    28
+                     /label="Substrate-binding Ser28"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=28 'substrate'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    82
+                     /label="Substrate-binding Arg82"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=82 'substrate'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    126
+                     /label="Substrate-binding Tyr126"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=126 'substrate'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    128
+                     /label="Substrate-binding Trp128"
+                     /parent="BlastR"
+                     /note="UniProt P0C2P0 BINDING=128 'substrate'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    126..130
+                     /label="Flexible C-terminal substrate-access region"
+                     /parent="BlastR"
+                     /note="Flexible C-terminal region (Tyr126-Gly130)."
+                     /db_xref="SO:0000110"
+                     /citation=[4]
+                     /citation=[3]
+ORIGIN
+        1 mplsqeestl ieratatins ipisedysva saalssdgri ftgvnvyhft ggpcaelvvl
+       61 gtaaaaaagn ltcivaigne nrgilspcgr crqvlldlhp gikaivkdsd gqptavgire
+      121 llpsgyvweg
+//

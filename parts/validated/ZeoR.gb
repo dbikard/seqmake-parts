@@ -1,0 +1,68 @@
+LOCUS       ZeoR                     124 aa                     UNK 01-JAN-1980
+DEFINITION  ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt
+            P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers
+            resistance by stoichiometrically binding and sequestering the drug
+            ....
+ACCESSION   ZeoR
+VERSION     ZeoR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Gatignol A, Durand H, Tiraby G
+  TITLE     Bleomycin resistance conferred by a drug-binding protein
+  JOURNAL   FEBS Lett 1988;230(1-2):171-175
+   PUBMED   2450783
+  REMARK    doi:10.1016/0014-5793(88)80665-3
+REFERENCE   2
+  AUTHORS   Brouns SJJ, Wu H, Akerboom J, Turnbull AP, de Vos WM, van der Oost J
+  TITLE     Engineering a selectable marker for hyperthermophiles
+  JOURNAL   J Biol Chem 2005;280(12):11422-11431
+   PUBMED   15640151
+  REMARK    doi:10.1074/jbc.M413623200
+REFERENCE   3
+  AUTHORS   Dumas P, Bergdoll M, Cagnon C, Masson JM
+  TITLE     Crystal structure and site-directed mutagenesis of a bleomycin
+            resistance protein and their significance for drug sequestering
+  JOURNAL   EMBO J 1994;13(11):2483-2492
+   PUBMED   7516875
+  REMARK    doi:10.1002/j.1460-2075.1994.tb06535.x
+FEATURES             Location/Qualifiers
+     CDS             1..124
+                     /label="ZeoR"
+                     /synonym="BleoR"
+                     /synonym="Sh ble"
+                     /synonym="ble"
+                     /synonym="bleomycin resistance protein"
+                     /note="ZeoR is the Streptoalloteichus hindustanus ble
+                     protein (UniProt P17493), a 124-aa
+                     bleomycin/Zeocin-resistance marker that confers resistance
+                     by stoichiometrically binding and sequestering the drug
+                     ..."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P17493"
+                     /citation=[1]
+                     /citation=[2]
+     protein_domain  3..121
+                     /label="VOC / glyoxalase-bleomycin-resistance fold domain"
+                     /parent="ZeoR"
+                     /note="Two-half alpha/beta fold of the
+                     VOC/glyoxalase-bleomycin-resistance superfamily (UniProt
+                     P17493 DOMAIN 3-121, PROSITE-ProRule PRU01163; Pfam
+                     PF19581; InterPr..."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+     misc_feature    1..8
+                     /label="N-terminal domain-swap dimerization arm"
+                     /parent="ZeoR"
+                     /note="The ~8 N-terminal residues form the swapped arm that
+                     crosses to the partner subunit in the functional Sh ble
+                     homodimer (mutual chain exchange; Dumas et al."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+ORIGIN
+        1 makltsavpv ltardvagav efwtdrlgfs rdfveddfag vvrddvtlfi savqdqvvpd
+       61 ntlawvwvrg ldelyaewse vvstnfrdas gpamteigeq pwgrefalrd pagncvhfva
+      121 eeqd
+//

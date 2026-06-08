@@ -1,0 +1,90 @@
+LOCUS       CmR                      219 aa                     UNK 01-JAN-1980
+DEFINITION  CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT)
+            from E. coli transposon Tn9, conferring chloramphenicol resistance
+            by O-acetylating the antibiotic..
+ACCESSION   CmR
+VERSION     CmR
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Alton N.K., Vapnek D.
+  TITLE     Nucleotide sequence analysis of the chloramphenicol resistance
+            transposon Tn9
+  JOURNAL   Nature 282:864-869 (1979)
+   PUBMED   390403
+  REMARK    doi:10.1038/282864a0
+REFERENCE   2
+  AUTHORS   Leslie A.G., Moody P.C., Shaw W.V.
+  TITLE     Structure of chloramphenicol acetyltransferase at 1.75-A resolution
+  JOURNAL   Proc Natl Acad Sci USA 85(12):4133-4137 (1988)
+   PUBMED   3288984
+  REMARK    doi:10.1073/pnas.85.12.4133
+REFERENCE   3
+  AUTHORS   Biswas T., Houghton J.L., Garneau-Tsodikova S., Tsodikov O.V.
+  TITLE     The structural basis for substrate versatility of chloramphenicol
+            acetyltransferase CATI
+  JOURNAL   Protein Science 21(4):520-530 (2012)
+   PUBMED   22294317
+  REMARK    doi:10.1002/pro.2036
+REFERENCE   4
+  AUTHORS   Leslie A.G.W.
+  TITLE     Refined crystal structure of type III chloramphenicol
+            acetyltransferase at 1.75 A resolution
+  JOURNAL   Journal of Molecular Biology 213(1):167-186 (1990)
+   PUBMED   2187098
+  REMARK    doi:10.1016/S0022-2836(05)80129-9
+REFERENCE   5
+  AUTHORS   Lewendon A., Murray I.A., Shaw W.V., Gibbs M.R., Leslie A.G.
+  TITLE     Evidence for transition-state stabilization by serine-148 in the
+            catalytic mechanism of chloramphenicol acetyltransferase
+  JOURNAL   Biochemistry 29(8):2075-2080 (1990)
+   PUBMED   2109633
+  REMARK    doi:10.1021/bi00460a016
+FEATURES             Location/Qualifiers
+     CDS             1..219
+                     /label="CmR"
+                     /synonym="CAT"
+                     /synonym="cat"
+                     /synonym="chloramphenicol acetyltransferase"
+                     /note="CmR is the 219-aa type I chloramphenicol
+                     acetyltransferase (CAT) from E. coli transposon Tn9,
+                     conferring chloramphenicol resistance by O-acetylating the
+                     antibiotic."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P62577"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    193
+                     /label="Active site His193"
+                     /parent="CmR"
+                     /note="UniProt P62577 FT ACT_SITE 193 'Proton acceptor'."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    146
+                     /label="Oxyanion-hole stabilizing Ser146"
+                     /parent="CmR"
+                     /note="Ser146 (= Ser148 in CATIII numbering) stabilizes the
+                     oxyanion of the tetrahedral transition state via a hydrogen
+                     bond."
+                     /db_xref="SO:0000110"
+                     /citation=[5]
+                     /citation=[3]
+     misc_feature    197
+                     /label="His-positioning acidic residue Asp197"
+                     /parent="CmR"
+                     /note="Asp197 (= Asp199 in CATIII) stabilizes the
+                     position/tautomer of catalytic His193, part of the
+                     arrangement that polarizes the imidazole and modifies its
+                     pKa (..."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+                     /citation=[4]
+ORIGIN
+        1 mekkitgytt vdisqwhrke hfeafqsvaq ctynqtvqld itaflktvkk nkhkfypafi
+       61 hilarlmnah pefrmamkdg elviwdsvhp cytvfheqte tfsslwseyh ddfrqflhiy
+      121 sqdvacygen layfpkgfie nmffvsanpw vsftsfdlnv anmdnffapv ftmgkyytqg
+      181 dkvlmplaiq vhhavcdgfh vgrmlnelqq ycdewqgga
+//

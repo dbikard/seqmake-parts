@@ -1,0 +1,240 @@
+LOCUS       TetA                     396 aa                     UNK 01-JAN-1980
+DEFINITION  TetA is the pBR322 class C tetracycline efflux pump, a 396-aa,
+            12-helix MFS antiporter that confers tetracycline resistance by
+            exporting a tetracycline-divalent-cation complex in exchange for a
+            pro....
+ACCESSION   TetA
+VERSION     TetA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   UniProt Consortium
+  TITLE     UniProtKB entry P02981 (TCR3_ECOLX), Tetracycline resistance protein
+            class C, tetA, Escherichia coli; 12 TRANSMEM + TOPO_DOM annotations
+  JOURNAL   UniProt Knowledgebase
+  REMARK    doi:10.1093/nar/gkac1052
+REFERENCE   2
+  AUTHORS   Peden KWC
+  TITLE     Revised sequence of the tetracycline-resistance gene of pBR322
+  JOURNAL   Gene 1983;22(2-3):277-280
+   PUBMED   6307828
+  REMARK    doi:10.1016/0378-1119(83)90112-9
+REFERENCE   3
+  AUTHORS   Allard JD, Bertrand KP
+  TITLE     Membrane topology of the pBR322 tetracycline resistance protein.
+            TetA-PhoA gene fusions and implications for the mechanism of TetA
+            membrane insertion
+  JOURNAL   J Biol Chem 1992;267(25):17809-17819
+   PUBMED   1517220
+  REMARK    doi:10.1016/S0021-9258(19)37116-9
+REFERENCE   4
+  AUTHORS   Eckert B, Beck CF
+  TITLE     Topology of the transposon Tn10-encoded tetracycline resistance
+            protein within the inner membrane of Escherichia coli
+  JOURNAL   J Biol Chem 1989;264(20):11663-11670
+   PUBMED   2545678
+  REMARK    doi:10.1016/S0021-9258(18)80116-8
+REFERENCE   5
+  AUTHORS   Bannam TL, Johanesen PA, Salvado CL, Pidot SJ, Farrow KA, Rood JI
+  TITLE     The Clostridium perfringens TetA(P) efflux protein contains a
+            functional variant of the Motif A region found in major facilitator
+            superfamily transport proteins
+  JOURNAL   Microbiology 2004;150(Pt 1):69-79
+   PUBMED   14702405
+  REMARK    doi:10.1099/mic.0.26614-0
+REFERENCE   6
+  AUTHORS   Jewell JE, Orwick J, Liu J, Miller KW
+  TITLE     Functional importance and local environments of the cysteines in the
+            tetracycline resistance protein encoded by plasmid pBR322
+  JOURNAL   J Bacteriol 1999;181(5):1689-1693
+   PUBMED   10049405
+  REMARK    doi:10.1128/JB.181.5.1689-1693.1999
+FEATURES             Location/Qualifiers
+     CDS             1..396
+                     /label="TetA"
+                     /synonym="tetA"
+                     /synonym="tetracycline efflux pump"
+                     /synonym="tetracycline resistance protein"
+                     /note="TetA is the pBR322 class C tetracycline efflux pump,
+                     a 396-aa, 12-helix MFS antiporter that confers tetracycline
+                     resistance by exporting a tetracycline-divalent-cation
+                     complex in exchange for a pro..."
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P02981"
+                     /citation=[1]
+                     /citation=[2]
+     protein_domain  7..27
+                     /label="TM1"
+                     /parent="TetA"
+                     /note="First of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 7-27, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  46..66
+                     /label="TM2"
+                     /parent="TetA"
+                     /note="Second of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 46-66, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  80..100
+                     /label="TM3"
+                     /parent="TetA"
+                     /note="Third of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 80-100, 1-based); harbors functional
+                     Asp86."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  104..124
+                     /label="TM4"
+                     /parent="TetA"
+                     /note="Fourth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 104-124, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  139..159
+                     /label="TM5"
+                     /parent="TetA"
+                     /note="Fifth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 139-159, 1-based); begins at native
+                     Cys139."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  161..181
+                     /label="TM6"
+                     /parent="TetA"
+                     /note="Sixth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 161-181, 1-based); end of the N-terminal
+                     6-TM bundle, contains native Cys178."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  211..231
+                     /label="TM7"
+                     /parent="TetA"
+                     /note="Seventh of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 211-231, 1-based); start of the C-terminal
+                     6-TM bundle, after the large central cytoplasmic ..."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  247..267
+                     /label="TM8"
+                     /parent="TetA"
+                     /note="Eighth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 247-267, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  278..298
+                     /label="TM9"
+                     /parent="TetA"
+                     /note="Ninth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 278-298, 1-based); harbors functional
+                     Asp287."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  300..320
+                     /label="TM10"
+                     /parent="TetA"
+                     /note="Tenth of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 300-320, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  340..360
+                     /label="TM11"
+                     /parent="TetA"
+                     /note="Eleventh of 12 MFS transmembrane helices (UniProt
+                     P02981 TRANSMEM 340-360, 1-based)."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     protein_domain  365..385
+                     /label="TM12"
+                     /parent="TetA"
+                     /note="Last of 12 MFS transmembrane helices (UniProt P02981
+                     TRANSMEM 365-385, 1-based); contains native Cys381; the
+                     C-terminus is cytoplasmic."
+                     /db_xref="SO:0000417"
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    64..73
+                     /label="Tet-efflux/MFS Motif A"
+                     /parent="TetA"
+                     /note="Diagnostic Motif-A loop (G-x-x-x-D-R-x-G-R-R) of
+                     MFS/tetracycline-efflux transporters, in the cytoplasmic
+                     loop between TM2 and TM3; subsequence GALSDRFGRR (r..."
+                     /db_xref="SO:0000110"
+                     /citation=[5]
+     misc_feature    17
+                     /label="Asp17"
+                     /parent="TetA"
+                     /note="Conserved Asp at the cytoplasmic edge of TM1; one of
+                     three critical aspartates (Asp17/Asp86/Asp287)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    86
+                     /label="Asp86"
+                     /parent="TetA"
+                     /note="Conserved Asp within TM3; Asp->Ala reduces or
+                     eliminates tetracycline resistance and is required for
+                     wild-type function (Allard & Bertrand 1992)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    287
+                     /label="Asp287"
+                     /parent="TetA"
+                     /note="Conserved Asp within TM9; Asp->Ala reduces or
+                     eliminates tetracycline resistance and is required for
+                     wild-type function (Allard & Bertrand 1992)."
+                     /db_xref="SO:0000110"
+                     /citation=[3]
+     misc_feature    59
+                     /label="Cys59"
+                     /parent="TetA"
+                     /note="Native Cys in TM2; one of four cysteines
+                     characterized as important but not essential for
+                     tetracycline transport (Cys-less mutant retains substantial
+                     activit..."
+                     /db_xref="SO:0000110"
+                     /citation=[6]
+     misc_feature    139
+                     /label="Cys139"
+                     /parent="TetA"
+                     /note="Native Cys at the cytoplasmic edge/start of TM5;
+                     important but not essential for tetracycline transport
+                     (Jewell et al."
+                     /db_xref="SO:0000110"
+                     /citation=[6]
+     misc_feature    178
+                     /label="Cys178"
+                     /parent="TetA"
+                     /note="Native Cys in TM6; important but not essential for
+                     tetracycline transport (Jewell et al."
+                     /db_xref="SO:0000110"
+                     /citation=[6]
+     misc_feature    381
+                     /label="Cys381"
+                     /parent="TetA"
+                     /note="Native Cys in TM12; important but not essential for
+                     tetracycline transport (Jewell et al."
+                     /db_xref="SO:0000110"
+                     /citation=[6]
+ORIGIN
+        1 mksnnalivi lgtvtldavg iglvmpvlpg llrdivhsds iashygvlla lyalmqflca
+       61 pvlgalsdrf grrpvllasl lgatidyaim attpvlwily agrivagitg atgavagayi
+      121 aditdgedra rhfglmsacf gvgmvagpva ggllgaislh apflaaavln glnlllgcfl
+      181 mqeshkgerr pmplrafnpv ssfrwargmt ivaalmtvff imqlvgqvpa alwvifgedr
+      241 frwsatmigl slavfgilha laqafvtgpa tkrfgekqai iagmaadalg yvllafatrg
+      301 wmafpimill asggigmpal qamlsrqvdd dhqgqlqgsl aaltsltsit gplivtaiya
+      361 asastwngla wivgaalylv clpalrrgaw sratst
+//
