@@ -1,0 +1,69 @@
+LOCUS       p15A                     562 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The p15A origin: a ~562 bp natural ColE1-type replication origin
+            whose copy number is controlled by the divergent RNA I / RNA II
+            antisense system..
+ACCESSION   p15A
+VERSION     p15A
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Selzer G, Som T, Itoh T, Tomizawa J
+  TITLE     The origin of replication of plasmid p15A and comparative studies on
+            the nucleotide sequences around the origin of related plasmids.
+  JOURNAL   Cell 32(1):119-129 (1983)
+   PUBMED   6186390
+  REMARK    doi:10.1016/0092-8674(83)90502-0
+REFERENCE   2
+  AUTHORS   Tomizawa J, Itoh T, Selzer G, Som T
+  TITLE     Inhibition of ColE1 RNA primer formation by a plasmid-specified
+            small RNA.
+  JOURNAL   Proc Natl Acad Sci USA 78(3):1421-1425 (1981)
+   PUBMED   6165011
+  REMARK    doi:10.1073/pnas.78.3.1421
+FEATURES             Location/Qualifiers
+     rep_origin      1..562
+                     /label="p15A"
+                     /synonym="p15A"
+                     /note="The p15A origin: a ~562 bp natural ColE1-type
+                     replication origin whose copy number is controlled by the
+                     divergent RNA I / RNA II antisense system."
+                     /db_xref="SO:0000296"
+     regulatory      complement(545..550)
+                     /label="RNA II primer promoter -35"
+                     /parent="p15A"
+                     /regulatory_class="minus_35_signal"
+                     /note="Sigma70 -35 hexamer of the RNA II primer promoter."
+                     /db_xref="SO:0000175"
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      complement(522..527)
+                     /label="RNA II primer promoter -10"
+                     /parent="p15A"
+                     /regulatory_class="minus_10_signal"
+                     /note="Sigma70 -10 hexamer of the RNA II primer promoter."
+                     /db_xref="SO:0000176"
+                     /citation=[1]
+                     /citation=[2]
+     misc_feature    485..506
+                     /label="RNA I terminator"
+                     /parent="p15A"
+                     /note="Rho-independent terminator on the plus (RNA I)
+                     strand: GC-rich inverted repeat (CCGCCCTGCAAGGCGG) forming
+                     a stem-loop, followed by a poly-T/poly-U tract (TTT..."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+ORIGIN
+        1 cgtttttcca taggctccgc ccccctgaca agcatcacga aatctgacgc tcaaatcagt
+       61 ggtggcgaaa cccgacagga ctataaagat accaggcgtt tccccctggc ggctccctcg
+      121 tgcgctctcc tgttcctgcc tttcggttta ccggtgtcat tccgctgtta tggccgcgtt
+      181 tgtctcattc cacgcctgac actcagttcc gggtaggcag ttcgctccaa gctggactgt
+      241 atgcacgaac cccccgttca gtccgaccgc tgcgccttat ccggtaacta tcgtcttgag
+      301 tccaacccgg aaagacatgc aaaagcacca ctggcagcag ccactggtaa ttgatttaga
+      361 ggagttagtc ttgaagtcat gcgccggtta aggctaaact gaaaggacaa gttttggtga
+      421 ctgcgctcct ccaagccagt tacctcggtt caaagagttg gtagctcaga gaaccttcga
+      481 aaaaccgccc tgcaaggcgg ttttttcgtt ttcagagcaa gagattacgc gcagaccaaa
+      541 acgatctcaa gaagatcatc tt
+//

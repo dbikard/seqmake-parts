@@ -46,5 +46,6 @@ nav:
   - Catalog: index.md
   - Browse by type:
       - Promoters: types/promoters.md
+      - Origins of replication: types/origins-of-replication.md
       - Coding sequences: types/coding-sequences.md
   - Tags: tags.md

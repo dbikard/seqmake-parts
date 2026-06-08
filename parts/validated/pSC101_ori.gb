@@ -1,0 +1,87 @@
+LOCUS       pSC101_ori               223 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The pSC101 origin of replication: the ~220 bp low-copy,
+            iteron-driven cis origin that controls RepA-initiated replication of
+            the broad-host-range plasmid pSC101..
+ACCESSION   pSC101_ori
+VERSION     pSC101_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Sugiura S, Ohkubo S, Yamaguchi K
+  TITLE     Minimal essential origin of plasmid pSC101 replication: requirement
+            of a region downstream of iterons
+  JOURNAL   J Bacteriol 175(18):5993-6001 (1993)
+   PUBMED   8376344
+  REMARK    doi:10.1128/jb.175.18.5993-6001.1993
+REFERENCE   2
+  AUTHORS   Murakami A, Sugiura S, Yamaguchi K
+  TITLE     DNA bending of pSC101 ori induced by Rep, a replication initiator
+            protein and IHF
+  JOURNAL   J Gen Appl Microbiol 43(4):189-197 (1997)
+   PUBMED   12501319
+  REMARK    doi:10.2323/jgam.43.189
+REFERENCE   3
+  AUTHORS   Manen D, Caro L
+  TITLE     The replication of plasmid pSC101
+  JOURNAL   Mol Microbiol 5(2):233-237 (1991)
+   PUBMED   2041467
+  REMARK    doi:10.1111/j.1365-2958.1991.tb02103.x
+FEATURES             Location/Qualifiers
+     rep_origin      1..223
+                     /label="pSC101 ori"
+                     /synonym="pSC101 ori"
+                     /note="The pSC101 origin of replication: the ~220 bp
+                     low-copy, iteron-driven cis origin that controls
+                     RepA-initiated replication of the broad-host-range plasmid
+                     pSC101."
+                     /db_xref="SO:0000296"
+     protein_bind    50..67
+                     /label="RepA iteron 1"
+                     /parent="pSC101 ori"
+                     /note="First of three tandem ~18 bp direct-repeat iterons
+                     (shared 17 bp core TGTAAATTCTGCTAGAC)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    82..99
+                     /label="RepA iteron 2"
+                     /parent="pSC101 ori"
+                     /note="Second RepA-binding iteron; identical 17 bp core
+                     (TGTAAATTCTGCTAGAC) to iteron 1, differing only in the
+                     leading base (C->T)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    103..120
+                     /label="RepA iteron 3"
+                     /parent="pSC101 ori"
+                     /note="Third (innermost) RepA-binding iteron; differs from
+                     iterons 1/2 by a single central base (T->C, core
+                     CCGCTAGAC)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+     misc_feature    150..183
+                     /label="AT-rich bending region"
+                     /parent="pSC101 ori"
+                     /note="AT-rich tract (82.4% AT) lying between the iterons
+                     and the DnaA box."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     protein_bind    complement(212..220)
+                     /label="DnaA"
+                     /parent="pSC101 ori"
+                     /note="DnaA-box-like motif on the reverse strand (revcomp
+                     of seq[211:220] = TTATACACA; near the DnaA consensus
+                     TTAT[C/A]CACA)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[3]
+ORIGIN
+        1 gggctagtca atgataatta ctagtccttt tcccgggaga tctgggtatc tgtaaattct
+       61 gctagacctt tgctggaaaa cttgtaaatt ctgctagacc ctctgtaaat tccgctagac
+      121 ctttgtgtgt tttttttgtt tatattcaag tggttataat ttatagaata aagaaagaat
+      181 aaaaaaagat aaaaagaata gatcccagcc ctgtgtataa ctc
+//

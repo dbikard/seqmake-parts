@@ -1,0 +1,91 @@
+LOCUS       ColE1                    792 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The ColE1/pMB1-family origin-of-replication control region: a 792 bp
+            fragment carrying the convergent RNA I / RNA II promoter pair that
+            sets plasmid copy number..
+ACCESSION   ColE1
+VERSION     ColE1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Itoh T, Tomizawa J
+  TITLE     Formation of an RNA primer for initiation of replication of ColE1
+            DNA by ribonuclease H.
+  JOURNAL   Proc Natl Acad Sci U S A. 1980;77(5):2450-4
+   PUBMED   6156450
+  REMARK    doi:10.1073/pnas.77.5.2450
+REFERENCE   2
+  AUTHORS   Lin-Chao S, Bremer H
+  TITLE     Activities of the RNAI and RNAII promoters of plasmid pBR322.
+  JOURNAL   J Bacteriol. 1987;169(3):1217-22
+   PUBMED   2434459
+  REMARK    doi:10.1128/jb.169.3.1217-1222.1987
+REFERENCE   3
+  AUTHORS   Tomizawa J, Itoh T, Selzer G, Som T
+  TITLE     Inhibition of ColE1 RNA primer formation by a plasmid-specified
+            small RNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1981;78(3):1421-5
+   PUBMED   6165011
+  REMARK    doi:10.1073/pnas.78.3.1421
+FEATURES             Location/Qualifiers
+     rep_origin      1..792
+                     /label="ColE1"
+                     /synonym="ColE1"
+                     /note="The ColE1/pMB1-family origin-of-replication control
+                     region: a 792 bp fragment carrying the convergent RNA I /
+                     RNA II promoter pair that sets plasmid copy number."
+                     /db_xref="SO:0000296"
+     regulatory      21..26
+                     /label="RNA II promoter -35"
+                     /parent="ColE1"
+                     /regulatory_class="minus_35_signal"
+                     /note="Top-strand -35 hexamer (TTGAGA) of the RNA II
+                     promoter, which drives the ColE1/pMB1 replication
+                     pre-primer transcript."
+                     /db_xref="SO:0000175"
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      42..47
+                     /label="RNA II promoter -10"
+                     /parent="ColE1"
+                     /regulatory_class="minus_10_signal"
+                     /note="Top-strand -10 hexamer (CGTAAT) of the RNA II
+                     promoter, 15 bp downstream of the -35."
+                     /db_xref="SO:0000176"
+                     /citation=[1]
+                     /citation=[2]
+     regulatory      complement(198..203)
+                     /label="RNA I promoter -35"
+                     /parent="ColE1"
+                     /regulatory_class="minus_35_signal"
+                     /note="-35 hexamer of the convergent RNA I promoter on the
+                     bottom strand."
+                     /db_xref="SO:0000175"
+                     /citation=[3]
+                     /citation=[2]
+     regulatory      complement(176..181)
+                     /label="RNA I promoter -10"
+                     /parent="ColE1"
+                     /regulatory_class="minus_10_signal"
+                     /note="-10 hexamer of the RNA I promoter on the bottom
+                     strand."
+                     /db_xref="SO:0000176"
+                     /citation=[3]
+                     /citation=[2]
+ORIGIN
+        1 gaaaagatca aaggatcttc ttgagatcct ttttttctgc gcgtaatctg ctgcttgcaa
+       61 acaaaaaaac caccgctacc agcggtggtt tgtttgccgg atcaagagct accaactctt
+      121 tttccgaagg taactggctt cagcagagcg cagataccaa atactgtcct tctagtgtag
+      181 ccgtagttag gccaccactt caagaactct gtagcaccgc ctacatacct cgctctgcta
+      241 atcctgttac cagtggctgc tgccagtggc gataagtcgt gtcttaccgg gttggactca
+      301 agacgatagt taccggataa ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag
+      361 cccagcttgg agcgaacgac ctacaccgaa ctgagatacc tacagcgtga gcattgagaa
+      421 agcgccacgc ttcccgaagg gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga
+      481 acaggagagc gcacgaggga gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc
+      541 gggtttcgcc acctctgact tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc
+      601 ctatggaaaa acgccagcaa cgcggccttt ttacggttcc tggccttttg ctggcctttt
+      661 gctcacatgt tctttcctgc gttatcccct gattctgtgg ataaccgtat taccgccttt
+      721 gagtgagctg ataccgctcg ccgcagccga acgaccgagc gcagcgagtc agtgagcgag
+      781 gaagcggaag ag
+//
