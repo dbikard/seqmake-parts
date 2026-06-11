@@ -1,0 +1,17 @@
+LOCUS       J23116                    35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  J23116.
+ACCESSION   J23116
+VERSION     J23116
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+                     /label="J23116"
+                     /synonym="BBa_J23116"
+                     /synonym="Anderson constitutive promoter"
+                     /synonym="J23116 promoter"
+ORIGIN
+        1 ttgacagcta gctcagtcct agggactatg ctagc
+//

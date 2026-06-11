@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 218,
+  "n_parts": 228,
   "n_validated": 32,
-  "n_candidate": 186,
+  "n_candidate": 196,
   "n_documented": 32,
   "parts": [
     {
@@ -550,6 +550,31 @@
       "main_citations": []
     },
     {
+      "name": "B0015_terminator",
+      "slug": "B0015_terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "synonyms": [
+        "BBa_B0015",
+        "B0015",
+        "double terminator",
+        "B0010-B0012"
+      ],
+      "description": "",
+      "length": 129,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "B0030 RBS",
       "slug": "B0030_RBS",
       "feature_type": "RBS",
@@ -562,6 +587,30 @@
       ],
       "description": "",
       "length": 15,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "B0034_RBS",
+      "slug": "B0034_RBS",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "synonyms": [
+        "BBa_B0034",
+        "B0034",
+        "BioBrick RBS"
+      ],
+      "description": "",
+      "length": 12,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
@@ -2788,6 +2837,78 @@
       "main_citations": []
     },
     {
+      "name": "J23100",
+      "slug": "J23100",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23100",
+        "Anderson constitutive promoter",
+        "J23100 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23101",
+      "slug": "J23101",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23101",
+        "Anderson constitutive promoter",
+        "J23101 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23102",
+      "slug": "J23102",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23102",
+        "Anderson constitutive promoter",
+        "J23102 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "J23104",
       "slug": "J23104",
       "feature_type": "promoter",
@@ -2800,6 +2921,30 @@
         "BBa_J23104",
         "BBa_J23104 Promoter (strong)",
         "J23104 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23106",
+      "slug": "J23106",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23106",
+        "Anderson constitutive promoter",
+        "J23106 promoter"
       ],
       "description": "",
       "length": 35,
@@ -2861,6 +3006,30 @@
       "main_citations": []
     },
     {
+      "name": "J23109",
+      "slug": "J23109",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23109",
+        "Anderson constitutive promoter",
+        "J23109 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "J23110",
       "slug": "J23110",
       "feature_type": "promoter",
@@ -2871,6 +3040,78 @@
       "synonyms": [
         "J23110",
         "J23110 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23114",
+      "slug": "J23114",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23114",
+        "Anderson constitutive promoter",
+        "J23114 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23116",
+      "slug": "J23116",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23116",
+        "Anderson constitutive promoter",
+        "J23116 promoter"
+      ],
+      "description": "",
+      "length": 35,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "J23117",
+      "slug": "J23117",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "BBa_J23117",
+        "Anderson constitutive promoter",
+        "J23117 promoter"
       ],
       "description": "",
       "length": 35,

@@ -1,0 +1,17 @@
+LOCUS       J23101                    35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  J23101.
+ACCESSION   J23101
+VERSION     J23101
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+                     /label="J23101"
+                     /synonym="BBa_J23101"
+                     /synonym="Anderson constitutive promoter"
+                     /synonym="J23101 promoter"
+ORIGIN
+        1 tttacagcta gctcagtcct aggtattatg ctagc
+//

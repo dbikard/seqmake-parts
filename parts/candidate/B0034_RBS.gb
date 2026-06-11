@@ -1,0 +1,17 @@
+LOCUS       B0034_RBS                 12 bp    DNA              UNK 01-JAN-1980
+DEFINITION  B0034_RBS.
+ACCESSION   B0034_RBS
+VERSION     B0034_RBS
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..12
+                     /label="B0034_RBS"
+                     /synonym="BBa_B0034"
+                     /synonym="B0034"
+                     /synonym="BioBrick RBS"
+ORIGIN
+        1 aaagaggaga aa
+//

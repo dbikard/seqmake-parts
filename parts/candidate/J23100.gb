@@ -1,0 +1,17 @@
+LOCUS       J23100                    35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  J23100.
+ACCESSION   J23100
+VERSION     J23100
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+                     /label="J23100"
+                     /synonym="BBa_J23100"
+                     /synonym="Anderson constitutive promoter"
+                     /synonym="J23100 promoter"
+ORIGIN
+        1 ttgacggcta gctcagtcct aggtacagtg ctagc
+//
