@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /synonym="BBa_J23107"
                      /synonym="BBa_J23107 Promoter (medium)"
                      /synonym="J23107 promoter"
+                     /collection="anderson-promoters"
 ORIGIN
         1 tttacggcta gctcagccct aggtattatg ctagc
 //

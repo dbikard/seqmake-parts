@@ -1,0 +1,7 @@
+{
+  "anderson-promoters": {
+    "name": "Anderson promoters",
+    "description": "The Anderson constitutive promoter library (BBa_J231xx): a family of short (35 bp) sigma-70 promoters that share one -35/-10 scaffold and differ at only a few positions, giving a graded series of constitutive strengths from the strong references (J23100, J23119) down to weak members. Widely used as a calibrated set of constitutive expression levels in bacteria.",
+    "source": "iGEM Registry (Anderson promoter collection)"
+  }
+}

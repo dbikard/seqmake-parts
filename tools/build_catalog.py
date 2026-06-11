@@ -50,6 +50,14 @@ FILES_DIR = PARTS_PAGES / "files"
 # the left nav; plus a faceted tag index (material/tags).
 TYPES_PAGES = DOCS_DIR / "types"
 TAGS_FILE = DOCS_DIR / "tags.md"
+# Collections group RELATED parts (a vector family, a promoter series, an
+# inducible-sensor set) across types. Membership is self-declared on each part
+# via a /collection qualifier on its main feature; collections.json supplies
+# each collection's display name + description + source (prose only — NOT
+# membership, which always lives with the parts).
+COLLECTIONS_PAGES = DOCS_DIR / "collections"
+COLLECTIONS_FILE = ROOT / "collections.json"
+REPO_URL = "https://github.com/dbikard/dna-parts-catalog"
 
 # SO accession -> name, for reverse lookup when a feature carries an explicit
 # /db_xref="SO:...". The type/regulatory_class -> SO mapping itself lives in
@@ -150,6 +158,10 @@ def parse_part(gb_path: Path) -> dict | None:
         "so_term": main_so_id,
         "so_name": main_so_name,
         "synonyms": list(q.get("synonym", [])),
+        # Collection membership is self-declared on the part's main feature
+        # (one /collection per family it belongs to); prose comes from
+        # collections.json. Resolved to display names in main().
+        "collections": [str(x) for x in q.get("collection", [])],
         "description": (q.get("note") or [""])[0],
         "length": len(seq),
         "protein_length_aa": len(seq) if is_protein else None,
@@ -347,6 +359,8 @@ def _tags_for(part: dict) -> list[str]:
         tags.append(f"regulated by {nm}")
     if part.get("regulates"):
         tags.append("Transcription factors")
+    for c in part.get("collections_resolved") or []:
+        tags.append(f"Collection: {c['name']}")
     # de-dup, preserve order
     seen: set[str] = set()
     return [t for t in tags if not (t in seen or seen.add(t))]
@@ -373,6 +387,10 @@ def render_part_page(part: dict) -> str:
     res = _resource_links(part.get("source_accession"))
     if res:
         head.append(f"**{part['source_accession']}** · {res}\n")
+    colls = part.get("collections_resolved") or []
+    if colls:
+        links = " · ".join(f"[{c['name']}](../collections/{c['id']}.md)" for c in colls)
+        head.append(f"**Collection{'s' if len(colls) != 1 else ''}:** {links}\n")
     # Interactive feature/sequence view, hydrated by the embedded part-view
     # widget. The MoleculeInfo is inlined as a JSON child (parts are small) so
     # it needs no fetch and is robust to the site's base path / directory URLs.
@@ -468,10 +486,11 @@ def _so_caption(key: str, label: str, n: int) -> str:
     return f"*{so_note}{n} part{'s' if n != 1 else ''}*"
 
 
-def render_index(grouped, n_validated: int, n_candidate: int) -> str:
+def render_index(grouped, n_validated: int, n_candidate: int,
+                 collections_summary: list[dict]) -> str:
     """The catalog landing page: intro + a 'Browse by type' hub linking each
-    type's page, plus a pointer to the faceted tag index."""
-    repo = "https://github.com/dbikard/dna-parts-catalog"
+    type's page, a 'Browse by collection' hub, plus a pointer to the tag index."""
+    repo = REPO_URL
     lines = [
         "# DNA parts catalog\n",
         AI_WIP_WARNING,
@@ -491,6 +510,15 @@ def render_index(grouped, n_validated: int, n_candidate: int) -> str:
         lines.append(f"- **[{label}](types/{_type_slug(label)}.md)** — "
                      f"{len(ps)} part{'s' if len(ps) != 1 else ''}{so_note}")
     lines.append("")
+    if collections_summary:
+        lines.append("## Browse by collection\n")
+        lines.append("Related parts grouped into families — vector series, "
+                     "promoter sets, inducible-sensor kits — typically used "
+                     "together (a collection may mix validated and candidate parts):\n")
+        for c in collections_summary:
+            lines.append(f"- **[{c['name']}](collections/{c['id']}.md)** — "
+                         f"{c['n']} part{'s' if c['n'] != 1 else ''}")
+        lines.append("")
     lines.append("Looking for a specific property? Browse the [**tags**](tags.md) — "
                  "for example, every promoter controlled by a given transcription "
                  "factor.\n")
@@ -520,6 +548,55 @@ def render_tags_page() -> str:
             "<!-- material/tags -->\n")
 
 
+def _collection_member_link(part: dict) -> str:
+    """Link a collection member to its part page when validated, else to its
+    GenBank file in the repo (candidates have no published page)."""
+    if part["status"] == "validated":
+        return f"[{part['name']}](../parts/{part['slug']}.md)"
+    url = f"{REPO_URL}/blob/main/parts/candidate/{part['slug']}.gb"
+    return f"[{part['name']}]({url})"
+
+
+def render_collection_page(cid: str, meta: dict, members: list[dict]) -> str:
+    """A page for one collection: intro prose + a table of every member part
+    (validated members link to their page, candidates to their .gb)."""
+    name = meta.get("name") or cid.replace("-", " ").capitalize()
+    source = meta.get("source")
+    n = len(members)
+    nval = sum(p["status"] == "validated" for p in members)
+    caption = f"{n} part{'s' if n != 1 else ''}"
+    if nval:
+        caption += f", {nval} validated"
+    if source:
+        caption += f" · {source}"
+    lines = [f"# {name}\n", f"*{caption}* · [← all collections](index.md)\n",
+             AI_WIP_WARNING]
+    if meta.get("description"):
+        lines.append(meta["description"] + "\n")
+    lines += ["## Parts in this collection\n",
+              "| Part | Type | Length | Status |", "|---|---|---|---|"]
+    for p in sorted(members, key=lambda x: x["name"].lower()):
+        lines.append(f"| {_collection_member_link(p)} | `{p['feature_type']}` | "
+                     f"{_len_label(p)} | {p['status']} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_collections_index(summary: list[dict], coll_meta: dict) -> str:
+    """The collections hub: every collection with its part count + a blurb."""
+    lines = ["# Collections\n",
+             "Related parts grouped into families — vector series, promoter "
+             "sets, inducible-sensor kits — that are typically used together. "
+             "A collection can mix validated and candidate parts.\n"]
+    for c in summary:
+        meta = coll_meta.get(c["id"]) or {}
+        src = f" · {meta['source']}" if meta.get("source") else ""
+        desc = _short(meta.get("description", ""), 140)
+        lines.append(f"- **[{c['name']}]({c['id']}.md)** — {c['n']} part"
+                     f"{'s' if c['n'] != 1 else ''}{src}"
+                     + (f"  \n  {desc}" if desc else ""))
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     parts, skipped = [], []
     # ``validated/`` parts must carry a .md; ``candidate/`` parts must not.
@@ -542,16 +619,43 @@ def main() -> None:
     # Resolve promoter<->TF cross-links + derive the inverse across all parts.
     _crosslink_parts(parts)
 
-    # Manifest covers every part (validated + candidate), with the internal
-    # sequence field stripped.
+    # Collections: group related parts (membership self-declared via the
+    # /collection qualifier); collections.json supplies display prose only.
+    coll_meta = json.loads(COLLECTIONS_FILE.read_text(encoding="utf-8")) \
+        if COLLECTIONS_FILE.exists() else {}
+    collections: dict[str, list[dict]] = {}
+    for p in parts:
+        for cid in p.get("collections", []):
+            collections.setdefault(cid, []).append(p)
+
+    def _coll_name(cid: str) -> str:
+        return (coll_meta.get(cid) or {}).get("name") or cid.replace("-", " ").capitalize()
+
+    # Attach resolved (id, name) to each member for back-links + tags on its page.
+    for cid, members in collections.items():
+        for p in members:
+            p.setdefault("collections_resolved", []).append(
+                {"id": cid, "name": _coll_name(cid)})
+    coll_summary = [{"id": cid, "name": _coll_name(cid), "n": len(ms)}
+                    for cid, ms in sorted(collections.items())]
+
+    # Manifest covers every part (validated + candidate); internal fields stripped.
+    _internal = {"_seq", "collections_resolved"}
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "n_parts": len(parts),
         "n_validated": sum(p["status"] == "validated" for p in parts),
         "n_candidate": sum(p["status"] == "candidate" for p in parts),
         "n_documented": sum(p["documented"] for p in parts),
-        "parts": [{k: v for k, v in p.items() if k != "_seq"}
+        "parts": [{k: v for k, v in p.items() if k not in _internal}
                   for p in sorted(parts, key=lambda x: x["name"].lower())],
+        "collections": [
+            {"id": cid, "name": _coll_name(cid),
+             "source": (coll_meta.get(cid) or {}).get("source", ""),
+             "n_parts": len(ms),
+             "n_validated": sum(p["status"] == "validated" for p in ms),
+             "members": [p["slug"] for p in sorted(ms, key=lambda x: x["name"].lower())]}
+            for cid, ms in sorted(collections.items())],
     }
     (ROOT / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n",
                                        encoding="utf-8")
@@ -561,17 +665,27 @@ def main() -> None:
     validated = [p for p in parts if p["status"] == "validated"]
     n_candidate = manifest["n_candidate"]
     grouped = _grouped(validated)
-    for d in (PARTS_PAGES, TYPES_PAGES):
+    for d in (PARTS_PAGES, TYPES_PAGES, COLLECTIONS_PAGES):
         if d.exists():
             shutil.rmtree(d)
     FILES_DIR.mkdir(parents=True, exist_ok=True)
     TYPES_PAGES.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "index.md").write_text(
-        render_index(grouped, manifest["n_validated"], n_candidate), encoding="utf-8")
+        render_index(grouped, manifest["n_validated"], n_candidate, coll_summary),
+        encoding="utf-8")
     TAGS_FILE.write_text(render_tags_page(), encoding="utf-8")
     for (key, label), ps in grouped:
         (TYPES_PAGES / f"{_type_slug(label)}.md").write_text(
             render_type_page(key, label, ps), encoding="utf-8")
+    # Collection pages (validated + candidate members) + a hub, when any exist.
+    if collections:
+        COLLECTIONS_PAGES.mkdir(parents=True, exist_ok=True)
+        for cid, ms in sorted(collections.items()):
+            (COLLECTIONS_PAGES / f"{cid}.md").write_text(
+                render_collection_page(cid, coll_meta.get(cid) or {}, ms),
+                encoding="utf-8")
+        (COLLECTIONS_PAGES / "index.md").write_text(
+            render_collections_index(coll_summary, coll_meta), encoding="utf-8")
     for p in validated:
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")

@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
                      /synonym="BBa_J23109"
                      /synonym="Anderson constitutive promoter"
                      /synonym="J23109 promoter"
+                     /collection="anderson-promoters"
 ORIGIN
         1 tttacagcta gctcagtcct agggactgtg ctagc
 //

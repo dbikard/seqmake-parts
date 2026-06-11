@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
                      /synonym="J23119"
                      /synonym="J23119 promoter"
                      /synonym="J23119(SpeI) promoter"
+                     /collection="anderson-promoters"
 ORIGIN
         1 ttgacagcta gctcagtcct aggtataata ctagt
 //

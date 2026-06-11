@@ -18,6 +18,7 @@
         "phage 186 att",
         "186 att"
       ],
+      "collections": [],
       "description": "",
       "length": 307,
       "protein_length_aa": null,
@@ -40,6 +41,7 @@
       "synonyms": [
         "186 integrase"
       ],
+      "collections": [],
       "description": "",
       "length": 336,
       "protein_length_aa": 336,
@@ -69,6 +71,7 @@
         "10xHis",
         "polyhistidine tag"
       ],
+      "collections": [],
       "description": "",
       "length": 6,
       "protein_length_aa": 6,
@@ -98,6 +101,7 @@
         "spectinomycin adenyltransferase",
         "streptomycin 3''-adenylyltransferase"
       ],
+      "collections": [],
       "description": "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47.",
       "length": 263,
       "protein_length_aa": 263,
@@ -303,6 +307,7 @@
         "AAVDeg_Tag(medium speed)",
         "AAV degradation tag"
       ],
+      "collections": [],
       "description": "",
       "length": 11,
       "protein_length_aa": 11,
@@ -328,6 +333,7 @@
         "gentamicin 3-N-acetyltransferase",
         "GmR (SEVA)"
       ],
+      "collections": [],
       "description": "",
       "length": 177,
       "protein_length_aa": 177,
@@ -350,6 +356,7 @@
       "synonyms": [
         "acrII4A"
       ],
+      "collections": [],
       "description": "",
       "length": 87,
       "protein_length_aa": 87,
@@ -374,6 +381,7 @@
         "AICDA",
         "activation-induced cytidine deaminase"
       ],
+      "collections": [],
       "description": "",
       "length": 199,
       "protein_length_aa": 199,
@@ -399,6 +407,7 @@
         "alkane-responsive regulator",
         "alkS crc-mut"
       ],
+      "collections": [],
       "description": "",
       "length": 885,
       "protein_length_aa": 885,
@@ -421,6 +430,7 @@
       "synonyms": [
         "APH-3"
       ],
+      "collections": [],
       "description": "",
       "length": 264,
       "protein_length_aa": 264,
@@ -444,6 +454,7 @@
         "araC",
         "arabinose operon regulatory protein"
       ],
+      "collections": [],
       "description": "",
       "length": 292,
       "protein_length_aa": 292,
@@ -472,6 +483,7 @@
       "synonyms": [
         "attP"
       ],
+      "collections": [],
       "description": "",
       "length": 417,
       "protein_length_aa": null,
@@ -494,6 +506,7 @@
       "synonyms": [
         "attP1"
       ],
+      "collections": [],
       "description": "",
       "length": 25,
       "protein_length_aa": null,
@@ -516,6 +529,7 @@
       "synonyms": [
         "attP2"
       ],
+      "collections": [],
       "description": "",
       "length": 25,
       "protein_length_aa": null,
@@ -538,6 +552,7 @@
       "synonyms": [
         "AviTag\u2122"
       ],
+      "collections": [],
       "description": "",
       "length": 15,
       "protein_length_aa": 15,
@@ -563,6 +578,7 @@
         "double terminator",
         "B0010-B0012"
       ],
+      "collections": [],
       "description": "",
       "length": 129,
       "protein_length_aa": null,
@@ -585,6 +601,7 @@
       "synonyms": [
         "B0030 RBS"
       ],
+      "collections": [],
       "description": "",
       "length": 15,
       "protein_length_aa": null,
@@ -609,6 +626,7 @@
         "B0034",
         "BioBrick RBS"
       ],
+      "collections": [],
       "description": "",
       "length": 12,
       "protein_length_aa": null,
@@ -632,6 +650,7 @@
         "bet",
         "bet protein"
       ],
+      "collections": [],
       "description": "",
       "length": 261,
       "protein_length_aa": 261,
@@ -655,6 +674,7 @@
         "BirA",
         "biotin--protein ligase"
       ],
+      "collections": [],
       "description": "",
       "length": 321,
       "protein_length_aa": 321,
@@ -681,6 +701,7 @@
         "beta-lactamase",
         "penicillinase"
       ],
+      "collections": [],
       "description": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
       "length": 286,
       "protein_length_aa": 286,
@@ -852,6 +873,7 @@
         "blasticidin S deaminase",
         "bsd"
       ],
+      "collections": [],
       "description": "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d...",
       "length": 130,
       "protein_length_aa": 130,
@@ -1025,6 +1047,7 @@
       "synonyms": [
         "bom"
       ],
+      "collections": [],
       "description": "",
       "length": 143,
       "protein_length_aa": null,
@@ -1049,6 +1072,7 @@
         "chicken \u03b2-actin promoter",
         "chicken beta-actin promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 276,
       "protein_length_aa": null,
@@ -1071,6 +1095,7 @@
       "synonyms": [
         "Cas1"
       ],
+      "collections": [],
       "description": "",
       "length": 289,
       "protein_length_aa": 289,
@@ -1094,6 +1119,7 @@
         "cas1 (Nme)",
         "cas1 NMV_RS09840"
       ],
+      "collections": [],
       "description": "",
       "length": 304,
       "protein_length_aa": 304,
@@ -1116,6 +1142,7 @@
       "synonyms": [
         "Cas2"
       ],
+      "collections": [],
       "description": "",
       "length": 113,
       "protein_length_aa": 113,
@@ -1139,6 +1166,7 @@
         "cas2 (Nme)",
         "cas2 NMV_RS09845"
       ],
+      "collections": [],
       "description": "",
       "length": 108,
       "protein_length_aa": 108,
@@ -1164,6 +1192,7 @@
         "SpyCas9",
         "csn1"
       ],
+      "collections": [],
       "description": "",
       "length": 1368,
       "protein_length_aa": 1368,
@@ -1278,6 +1307,7 @@
         "cat (Gram+)",
         "chloramphenicol acetyltransferase (Gram+)"
       ],
+      "collections": [],
       "description": "",
       "length": 216,
       "protein_length_aa": 216,
@@ -1300,6 +1330,7 @@
       "synonyms": [
         "catP"
       ],
+      "collections": [],
       "description": "",
       "length": 207,
       "protein_length_aa": 207,
@@ -1323,6 +1354,7 @@
         "ccdB",
         "toxin CcdB"
       ],
+      "collections": [],
       "description": "",
       "length": 101,
       "protein_length_aa": 101,
@@ -1348,6 +1380,7 @@
         "CEN6 ARS209",
         "S. cerevisiae CEN6-ARS209"
       ],
+      "collections": [],
       "description": "",
       "length": 510,
       "protein_length_aa": null,
@@ -1372,6 +1405,7 @@
         "cyan fluorescent protein",
         "ECFP"
       ],
+      "collections": [],
       "description": "",
       "length": 239,
       "protein_length_aa": 239,
@@ -1395,6 +1429,7 @@
         "chnR",
         "ChnR activator"
       ],
+      "collections": [],
       "description": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
       "length": 313,
       "protein_length_aa": 313,
@@ -1437,6 +1472,7 @@
         "cI857 repressor",
         "temperature-sensitive lambda repressor"
       ],
+      "collections": [],
       "description": "",
       "length": 237,
       "protein_length_aa": 237,
@@ -1459,6 +1495,7 @@
       "synonyms": [
         "CloDF13 ori"
       ],
+      "collections": [],
       "description": "",
       "length": 739,
       "protein_length_aa": null,
@@ -1483,6 +1520,7 @@
         "cat",
         "chloramphenicol acetyltransferase"
       ],
+      "collections": [],
       "description": "CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT) from E. coli transposon Tn9, conferring chloramphenicol resistance by O-acetylating the antibiotic.",
       "length": 219,
       "protein_length_aa": 219,
@@ -1589,6 +1627,7 @@
       "synonyms": [
         "ColE1"
       ],
+      "collections": [],
       "description": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
       "length": 792,
       "protein_length_aa": null,
@@ -1689,6 +1728,7 @@
       "synonyms": [
         "CspRecT"
       ],
+      "collections": [],
       "description": "",
       "length": 270,
       "protein_length_aa": 270,
@@ -1715,6 +1755,7 @@
         "dead Cas9",
         "nuclease-dead Cas9"
       ],
+      "collections": [],
       "description": "",
       "length": 1368,
       "protein_length_aa": 1368,
@@ -1853,6 +1894,7 @@
         "dihydrofolate reductase",
         "trimethoprim resistance"
       ],
+      "collections": [],
       "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
       "length": 157,
       "protein_length_aa": 157,
@@ -1993,6 +2035,7 @@
         "dsred2",
         "red fluorescent protein (DsRed2)"
       ],
+      "collections": [],
       "description": "",
       "length": 225,
       "protein_length_aa": 225,
@@ -2016,6 +2059,7 @@
         "E-tag",
         "E tag"
       ],
+      "collections": [],
       "description": "",
       "length": 13,
       "protein_length_aa": 13,
@@ -2041,6 +2085,7 @@
         "flavin-based fluorescent protein",
         "LOV-domain fluorescent protein"
       ],
+      "collections": [],
       "description": "",
       "length": 136,
       "protein_length_aa": 136,
@@ -2064,6 +2109,7 @@
         "ECK120010818",
         "Terminator ECK120010818"
       ],
+      "collections": [],
       "description": "",
       "length": 54,
       "protein_length_aa": null,
@@ -2087,6 +2133,7 @@
         "ECK120033736",
         "Terminator ECK120033736"
       ],
+      "collections": [],
       "description": "",
       "length": 52,
       "protein_length_aa": null,
@@ -2110,6 +2157,7 @@
         "ECK120033737",
         "Terminator ECK120033737"
       ],
+      "collections": [],
       "description": "",
       "length": 57,
       "protein_length_aa": null,
@@ -2135,6 +2183,7 @@
         "Enhanced GFP",
         "GFP"
       ],
+      "collections": [],
       "description": "",
       "length": 239,
       "protein_length_aa": 239,
@@ -2157,6 +2206,7 @@
       "synonyms": [
         "ermB"
       ],
+      "collections": [],
       "description": "ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA adenine N6-methyltransferase: a 245-aa enzyme that dimethylates A2058 of 23S rRNA to confer MLS-B (macrolide-lincosamide-streptogram...",
       "length": 245,
       "protein_length_aa": 245,
@@ -2279,6 +2329,7 @@
         "erythromycin methylase",
         "rRNA adenine N-6-methyltransferase"
       ],
+      "collections": [],
       "description": "",
       "length": 244,
       "protein_length_aa": 244,
@@ -2302,6 +2353,7 @@
         "exo",
         "exonuclease"
       ],
+      "collections": [],
       "description": "",
       "length": 226,
       "protein_length_aa": 226,
@@ -2326,6 +2378,7 @@
         "M13 ori",
         "f1 ori"
       ],
+      "collections": [],
       "description": "",
       "length": 456,
       "protein_length_aa": null,
@@ -2349,6 +2402,7 @@
         "fd",
         "fd terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 40,
       "protein_length_aa": null,
@@ -2373,6 +2427,7 @@
         "FLAG tag",
         "FLAG-tag"
       ],
+      "collections": [],
       "description": "",
       "length": 8,
       "protein_length_aa": 8,
@@ -2397,6 +2452,7 @@
         "FRT site",
         "FRT site sequence"
       ],
+      "collections": [],
       "description": "",
       "length": 34,
       "protein_length_aa": null,
@@ -2420,6 +2476,7 @@
         "gam",
         "gam protein"
       ],
+      "collections": [],
       "description": "",
       "length": 138,
       "protein_length_aa": 138,
@@ -2444,6 +2501,7 @@
         "gfpmut2",
         "green fluorescent protein"
       ],
+      "collections": [],
       "description": "",
       "length": 238,
       "protein_length_aa": 238,
@@ -2469,6 +2527,7 @@
         "aacC1",
         "gentamicin acetyltransferase"
       ],
+      "collections": [],
       "description": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
       "length": 177,
       "protein_length_aa": 177,
@@ -2556,6 +2615,7 @@
         "GST tag",
         "glutathione S-transferase"
       ],
+      "collections": [],
       "description": "",
       "length": 218,
       "protein_length_aa": 218,
@@ -2581,6 +2641,7 @@
         "HA-tag",
         "hemagglutinin tag"
       ],
+      "collections": [],
       "description": "",
       "length": 9,
       "protein_length_aa": 9,
@@ -2605,6 +2666,7 @@
         "HaloTag H7",
         "Halo tag"
       ],
+      "collections": [],
       "description": "",
       "length": 298,
       "protein_length_aa": 298,
@@ -2629,6 +2691,7 @@
         "imidazoleglycerol-phosphate dehydratase",
         "IGPD"
       ],
+      "collections": [],
       "description": "",
       "length": 220,
       "protein_length_aa": 220,
@@ -2651,6 +2714,7 @@
       "synonyms": [
         "HK022 attB"
       ],
+      "collections": [],
       "description": "",
       "length": 258,
       "protein_length_aa": null,
@@ -2673,6 +2737,7 @@
       "synonyms": [
         "HK022 integrase"
       ],
+      "collections": [],
       "description": "",
       "length": 357,
       "protein_length_aa": 357,
@@ -2697,6 +2762,7 @@
         "hU6_promoter",
         "U6 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 257,
       "protein_length_aa": null,
@@ -2722,6 +2788,7 @@
         "hph",
         "hygromycin B phosphotransferase"
       ],
+      "collections": [],
       "description": "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH.",
       "length": 341,
       "protein_length_aa": 341,
@@ -2825,6 +2892,7 @@
         "I-SceI site",
         "I-SceI cut site"
       ],
+      "collections": [],
       "description": "",
       "length": 18,
       "protein_length_aa": null,
@@ -2848,6 +2916,9 @@
         "BBa_J23100",
         "Anderson constitutive promoter",
         "J23100 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -2873,6 +2944,9 @@
         "Anderson constitutive promoter",
         "J23101 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -2896,6 +2970,9 @@
         "BBa_J23102",
         "Anderson constitutive promoter",
         "J23102 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -2922,6 +2999,9 @@
         "BBa_J23104 Promoter (strong)",
         "J23104 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -2945,6 +3025,9 @@
         "BBa_J23106",
         "Anderson constitutive promoter",
         "J23106 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -2971,6 +3054,9 @@
         "BBa_J23107 Promoter (medium)",
         "J23107 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -2993,6 +3079,9 @@
       "synonyms": [
         "J23108",
         "J23108 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -3018,6 +3107,9 @@
         "Anderson constitutive promoter",
         "J23109 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -3040,6 +3132,9 @@
       "synonyms": [
         "J23110",
         "J23110 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -3065,6 +3160,9 @@
         "Anderson constitutive promoter",
         "J23114 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -3088,6 +3186,9 @@
         "BBa_J23116",
         "Anderson constitutive promoter",
         "J23116 promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -3113,6 +3214,9 @@
         "Anderson constitutive promoter",
         "J23117 promoter"
       ],
+      "collections": [
+        "anderson-promoters"
+      ],
       "description": "",
       "length": 35,
       "protein_length_aa": null,
@@ -3136,6 +3240,9 @@
         "J23119",
         "J23119 promoter",
         "J23119(SpeI) promoter"
+      ],
+      "collections": [
+        "anderson-promoters"
       ],
       "description": "",
       "length": 35,
@@ -3164,6 +3271,7 @@
         "neo",
         "nptII"
       ],
+      "collections": [],
       "description": "Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and neomycin resistance by ATP-dependent phosphorylation of the aminoglycos...",
       "length": 264,
       "protein_length_aa": 264,
@@ -3301,6 +3409,7 @@
         "aphA1",
         "nptI"
       ],
+      "collections": [],
       "description": "",
       "length": 271,
       "protein_length_aa": 271,
@@ -3323,6 +3432,7 @@
       "synonyms": [
         "L3S1P13"
       ],
+      "collections": [],
       "description": "",
       "length": 51,
       "protein_length_aa": null,
@@ -3346,6 +3456,7 @@
         "L3S2P11",
         "(modified) RF L3S2P11 terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 57,
       "protein_length_aa": null,
@@ -3368,6 +3479,7 @@
       "synonyms": [
         "L3S3P22 sTerminator"
       ],
+      "collections": [],
       "description": "",
       "length": 49,
       "protein_length_aa": null,
@@ -3392,6 +3504,7 @@
         "LAAdegradation tag(high speed)",
         "LAA degradation tag"
       ],
+      "collections": [],
       "description": "",
       "length": 11,
       "protein_length_aa": 11,
@@ -3415,6 +3528,7 @@
         "lacI",
         "lac repressor"
       ],
+      "collections": [],
       "description": "",
       "length": 360,
       "protein_length_aa": 360,
@@ -3463,6 +3577,7 @@
       "synonyms": [
         "lacO"
       ],
+      "collections": [],
       "description": "",
       "length": 17,
       "protein_length_aa": null,
@@ -3487,6 +3602,7 @@
         "Lac O3 operator",
         "Lac O3"
       ],
+      "collections": [],
       "description": "",
       "length": 21,
       "protein_length_aa": null,
@@ -3510,6 +3626,7 @@
         "lacZ",
         "beta-galactosidase"
       ],
+      "collections": [],
       "description": "",
       "length": 1024,
       "protein_length_aa": 1024,
@@ -3534,6 +3651,7 @@
         "lacZa",
         "beta-galactosidase alpha subunit"
       ],
+      "collections": [],
       "description": "",
       "length": 87,
       "protein_length_aa": 87,
@@ -3556,6 +3674,7 @@
       "synonyms": [
         "lacZ\u03b1"
       ],
+      "collections": [],
       "description": "",
       "length": 97,
       "protein_length_aa": 97,
@@ -3578,6 +3697,7 @@
       "synonyms": [
         "lambda attB"
       ],
+      "collections": [],
       "description": "",
       "length": 387,
       "protein_length_aa": null,
@@ -3602,6 +3722,7 @@
         "Minimal lambda cos sequence",
         "cos site"
       ],
+      "collections": [],
       "description": "",
       "length": 224,
       "protein_length_aa": null,
@@ -3626,6 +3747,7 @@
         "lambda cos region",
         "cos site (SEVA)"
       ],
+      "collections": [],
       "description": "",
       "length": 403,
       "protein_length_aa": null,
@@ -3648,6 +3770,7 @@
       "synonyms": [
         "lambda integrase"
       ],
+      "collections": [],
       "description": "",
       "length": 356,
       "protein_length_aa": 356,
@@ -3671,6 +3794,7 @@
         "lambda t0",
         "lambda t0 terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 95,
       "protein_length_aa": null,
@@ -3695,6 +3819,7 @@
         "3-isopropylmalate dehydrogenase",
         "beta-IPM dehydrogenase"
       ],
+      "collections": [],
       "description": "",
       "length": 364,
       "protein_length_aa": 364,
@@ -3718,6 +3843,7 @@
         "LuxA",
         "luciferase alpha chain"
       ],
+      "collections": [],
       "description": "",
       "length": 360,
       "protein_length_aa": 360,
@@ -3741,6 +3867,7 @@
         "LuxB",
         "luciferase beta chain"
       ],
+      "collections": [],
       "description": "",
       "length": 327,
       "protein_length_aa": 327,
@@ -3764,6 +3891,7 @@
         "LuxC",
         "acyl-CoA reductase"
       ],
+      "collections": [],
       "description": "",
       "length": 482,
       "protein_length_aa": 482,
@@ -3787,6 +3915,7 @@
         "LuxD",
         "acyl transferase"
       ],
+      "collections": [],
       "description": "",
       "length": 307,
       "protein_length_aa": 307,
@@ -3810,6 +3939,7 @@
         "LuxE",
         "long-chain-fatty-acid ligase"
       ],
+      "collections": [],
       "description": "",
       "length": 394,
       "protein_length_aa": 394,
@@ -3833,6 +3963,7 @@
         "LuxIA terminator",
         "LuxIA Dual Terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 55,
       "protein_length_aa": null,
@@ -3856,6 +3987,7 @@
         "mCherry",
         "mCherry E"
       ],
+      "collections": [],
       "description": "",
       "length": 236,
       "protein_length_aa": 236,
@@ -3880,6 +4012,7 @@
         "RFP",
         "red fluorescent protein"
       ],
+      "collections": [],
       "description": "",
       "length": 225,
       "protein_length_aa": 225,
@@ -3904,6 +4037,7 @@
         "mturquoise2",
         "cyan fluorescent protein (mTurquoise2)"
       ],
+      "collections": [],
       "description": "",
       "length": 239,
       "protein_length_aa": 239,
@@ -3929,6 +4063,7 @@
         "Myc tag",
         "Myc-tag"
       ],
+      "collections": [],
       "description": "",
       "length": 10,
       "protein_length_aa": 10,
@@ -3952,6 +4087,7 @@
         "NLS (nucleoplasmin)",
         "nucleoplasmin NLS"
       ],
+      "collections": [],
       "description": "",
       "length": 16,
       "protein_length_aa": 16,
@@ -3976,6 +4112,7 @@
         "cas9 NMV_RS09835",
         "NmeCas9"
       ],
+      "collections": [],
       "description": "",
       "length": 1082,
       "protein_length_aa": 1082,
@@ -3998,6 +4135,7 @@
       "synonyms": [
         "ori2"
       ],
+      "collections": [],
       "description": "",
       "length": 305,
       "protein_length_aa": null,
@@ -4020,6 +4158,7 @@
       "synonyms": [
         "OriT"
       ],
+      "collections": [],
       "description": "",
       "length": 228,
       "protein_length_aa": null,
@@ -4042,6 +4181,7 @@
       "synonyms": [
         "p15A"
       ],
+      "collections": [],
       "description": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
       "length": 562,
       "protein_length_aa": null,
@@ -4122,6 +4262,7 @@
         "origin",
         "p15A ori"
       ],
+      "collections": [],
       "description": "",
       "length": 546,
       "protein_length_aa": null,
@@ -4146,6 +4287,7 @@
         "P15A rep",
         "p15A origin (pSU38)"
       ],
+      "collections": [],
       "description": "p15A origin variant from pSU38 family; differs from canonical p15A ori by several point mutations and extended flanking sequence.",
       "length": 789,
       "protein_length_aa": null,
@@ -4169,6 +4311,7 @@
         "Ptet2",
         "tet promoter"
       ],
+      "collections": [],
       "description": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
       "length": 29,
       "protein_length_aa": null,
@@ -4254,6 +4397,7 @@
       "synonyms": [
         "P2A"
       ],
+      "collections": [],
       "description": "",
       "length": 19,
       "protein_length_aa": 19,
@@ -4278,6 +4422,7 @@
         "PA1_04_03",
         "PA1/O4/O3 constitutive promoter"
       ],
+      "collections": [],
       "description": "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream).",
       "length": 56,
       "protein_length_aa": null,
@@ -4380,6 +4525,7 @@
       "synonyms": [
         "araBAD promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 285,
       "protein_length_aa": null,
@@ -4469,6 +4615,7 @@
       "synonyms": [
         "pBBR1 oriV"
       ],
+      "collections": [],
       "description": "",
       "length": 772,
       "protein_length_aa": null,
@@ -4491,6 +4638,7 @@
       "synonyms": [
         "pBBR1 Rep"
       ],
+      "collections": [],
       "description": "",
       "length": 220,
       "protein_length_aa": 220,
@@ -4515,6 +4663,7 @@
         "AmpR promoter",
         "bla promoter"
       ],
+      "collections": [],
       "description": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter \u2014 the native 5'UTR and ribosome binding site are a distinct fun...",
       "length": 70,
       "protein_length_aa": null,
@@ -4592,6 +4741,7 @@
         "Pcat",
         "cat promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 103,
       "protein_length_aa": null,
@@ -4617,6 +4767,7 @@
         "cyclohexanone-inducible promoter",
         "chnB promoter region"
       ],
+      "collections": [],
       "description": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
       "length": 396,
       "protein_length_aa": null,
@@ -4698,6 +4849,7 @@
         "PD/E20 (T5) constitutive promoter",
         "T5 core promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 75,
       "protein_length_aa": null,
@@ -4724,6 +4876,7 @@
         "EM7 promoter",
         "synthetic constitutive promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 67,
       "protein_length_aa": null,
@@ -4746,6 +4899,7 @@
       "synonyms": [
         "phi80 attB"
       ],
+      "collections": [],
       "description": "",
       "length": 480,
       "protein_length_aa": null,
@@ -4770,6 +4924,7 @@
         "phi-C31 attP",
         "phiC31 attachment site"
       ],
+      "collections": [],
       "description": "",
       "length": 100,
       "protein_length_aa": null,
@@ -4792,6 +4947,7 @@
       "synonyms": [
         "PhlF"
       ],
+      "collections": [],
       "description": "",
       "length": 200,
       "protein_length_aa": 200,
@@ -4823,6 +4979,7 @@
         "Streptomyces ori",
         "pIJ101 origin"
       ],
+      "collections": [],
       "description": "",
       "length": 2239,
       "protein_length_aa": null,
@@ -4848,6 +5005,7 @@
         "kanamycin promoter",
         "Km promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 106,
       "protein_length_aa": null,
@@ -4873,6 +5031,7 @@
         "PL promoter",
         "lambda PL promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 382,
       "protein_length_aa": null,
@@ -4895,6 +5054,7 @@
       "synonyms": [
         "lac promoter"
       ],
+      "collections": [],
       "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
       "length": 57,
       "protein_length_aa": null,
@@ -4991,6 +5151,7 @@
         "PlacI",
         "lacI promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 78,
       "protein_length_aa": null,
@@ -5014,6 +5175,7 @@
         "PlacIq",
         "lacIq promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 78,
       "protein_length_aa": null,
@@ -5038,6 +5200,7 @@
         "lacUV5 promoter",
         "lacUV5"
       ],
+      "collections": [],
       "description": "PlacUV5 \u2014 the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
       "length": 30,
       "protein_length_aa": null,
@@ -5110,6 +5273,7 @@
         "Pliar1",
         "synthetic Pliar1 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5133,6 +5297,7 @@
         "Pliar15",
         "synthetic Pliar15 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5156,6 +5321,7 @@
         "Pliar17",
         "synthetic Pliar17 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5179,6 +5345,7 @@
         "Pliar51",
         "synthetic Pliar51 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5202,6 +5369,7 @@
         "Pliar53",
         "synthetic Pliar53 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5225,6 +5393,7 @@
         "Pliar70",
         "synthetic Pliar70 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 42,
       "protein_length_aa": null,
@@ -5248,6 +5417,7 @@
         "PLtetO-1",
         "PLtetO-1 promoter"
       ],
+      "collections": [],
       "description": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
       "length": 74,
       "protein_length_aa": null,
@@ -5355,6 +5525,7 @@
         "Pm",
         "Pm promoter"
       ],
+      "collections": [],
       "description": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
       "length": 81,
       "protein_length_aa": null,
@@ -5501,6 +5672,7 @@
         "pBR322 ori",
         "ColE1-derived ori"
       ],
+      "collections": [],
       "description": "",
       "length": 589,
       "protein_length_aa": null,
@@ -5526,6 +5698,7 @@
         "neomycin promoter",
         "kanamycin promoter (SEVA)"
       ],
+      "collections": [],
       "description": "",
       "length": 170,
       "protein_length_aa": null,
@@ -5550,6 +5723,7 @@
         "Promoter PpflB",
         "pflB promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 180,
       "protein_length_aa": null,
@@ -5573,6 +5747,7 @@
         "PphlF",
         "PhlF promoter"
       ],
+      "collections": [],
       "description": "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription.",
       "length": 51,
       "protein_length_aa": null,
@@ -5668,6 +5843,7 @@
         "pR",
         "pR promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 29,
       "protein_length_aa": null,
@@ -5691,6 +5867,7 @@
         "pRM",
         "pRM promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 29,
       "protein_length_aa": null,
@@ -5713,6 +5890,7 @@
       "synonyms": [
         "pRO1600 oriV"
       ],
+      "collections": [],
       "description": "",
       "length": 352,
       "protein_length_aa": null,
@@ -5735,6 +5913,7 @@
       "synonyms": [
         "pSC101 ori"
       ],
+      "collections": [],
       "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
       "length": 223,
       "protein_length_aa": null,
@@ -5849,6 +6028,7 @@
         "pSC101 ori (SEVA)",
         "pSC101 origin"
       ],
+      "collections": [],
       "description": "",
       "length": 951,
       "protein_length_aa": null,
@@ -5873,6 +6053,7 @@
         "pLZ12 ori",
         "pSH71 origin"
       ],
+      "collections": [],
       "description": "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA.",
       "length": 813,
       "protein_length_aa": null,
@@ -5896,6 +6077,7 @@
         "pSH71 ori core",
         "pLZ12 ori core"
       ],
+      "collections": [],
       "description": "Core origin of replication from pSH71/pLZ12. Minimal conserved region upstream of repA, shared across variants.",
       "length": 513,
       "protein_length_aa": null,
@@ -5919,6 +6101,7 @@
         "PSV40",
         "SV40 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 330,
       "protein_length_aa": null,
@@ -5942,6 +6125,7 @@
         "PT3",
         "T3 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 20,
       "protein_length_aa": null,
@@ -5967,6 +6151,7 @@
         "T5/lacO promoter",
         "T5 lac operator promoter"
       ],
+      "collections": [],
       "description": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
       "length": 81,
       "protein_length_aa": null,
@@ -6084,6 +6269,7 @@
       "synonyms": [
         "T7 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 20,
       "protein_length_aa": null,
@@ -6117,6 +6303,7 @@
       "synonyms": [
         "tac promoter"
       ],
+      "collections": [],
       "description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
       "length": 55,
       "protein_length_aa": null,
@@ -6220,6 +6407,7 @@
       "synonyms": [
         "Tn10 tetA promoter"
       ],
+      "collections": [],
       "description": "Synthetic PLtetO-1-family two-operator, anhydrotetracycline (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter carrying one Tn10 tet operator in the spacer and a second downstream of t...",
       "length": 58,
       "protein_length_aa": null,
@@ -6360,6 +6548,7 @@
         "ptet",
         "tet promoter"
       ],
+      "collections": [],
       "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
       "length": 29,
       "protein_length_aa": null,
@@ -6463,6 +6652,7 @@
         "Ptrc",
         "trc promoter"
       ],
+      "collections": [],
       "description": "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer.",
       "length": 30,
       "protein_length_aa": null,
@@ -6552,6 +6742,7 @@
         "PURA3",
         "URA3 promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 216,
       "protein_length_aa": null,
@@ -6576,6 +6767,7 @@
         "pac",
         "puromycin N-acetyltransferase"
       ],
+      "collections": [],
       "description": "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker.",
       "length": 199,
       "protein_length_aa": 199,
@@ -6714,6 +6906,7 @@
         "Bacillus PVeg",
         "vegetative promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 36,
       "protein_length_aa": null,
@@ -6736,6 +6929,7 @@
       "synonyms": [
         "R6Kgamma ori"
       ],
+      "collections": [],
       "description": "",
       "length": 430,
       "protein_length_aa": null,
@@ -6760,6 +6954,7 @@
         "Synthetic RBS 23",
         "400 TIR (NEQ)"
       ],
+      "collections": [],
       "description": "",
       "length": 25,
       "protein_length_aa": null,
@@ -6783,6 +6978,7 @@
         "RBS 7300",
         "Synthetic RBS7 7300 TIR NEQ"
       ],
+      "collections": [],
       "description": "",
       "length": 25,
       "protein_length_aa": null,
@@ -6805,6 +7001,7 @@
       "synonyms": [
         "recE"
       ],
+      "collections": [],
       "description": "",
       "length": 866,
       "protein_length_aa": 866,
@@ -6827,6 +7024,7 @@
       "synonyms": [
         "recT"
       ],
+      "collections": [],
       "description": "",
       "length": 288,
       "protein_length_aa": 288,
@@ -6851,6 +7049,7 @@
         "rep pSC101",
         "repA101 ts"
       ],
+      "collections": [],
       "description": "",
       "length": 316,
       "protein_length_aa": 316,
@@ -6873,6 +7072,7 @@
       "synonyms": [
         "repA"
       ],
+      "collections": [],
       "description": "",
       "length": 232,
       "protein_length_aa": 232,
@@ -6895,6 +7095,7 @@
       "synonyms": [
         "repA"
       ],
+      "collections": [],
       "description": "",
       "length": 545,
       "protein_length_aa": 545,
@@ -6917,6 +7118,7 @@
       "synonyms": [
         "repA"
       ],
+      "collections": [],
       "description": "",
       "length": 351,
       "protein_length_aa": 351,
@@ -6940,6 +7142,7 @@
         "RepC",
         "RepC protein"
       ],
+      "collections": [],
       "description": "",
       "length": 314,
       "protein_length_aa": 314,
@@ -6965,6 +7168,7 @@
         "RSF1010 RepC",
         "replication protein C"
       ],
+      "collections": [],
       "description": "",
       "length": 316,
       "protein_length_aa": 316,
@@ -6987,6 +7191,7 @@
       "synonyms": [
         "repE"
       ],
+      "collections": [],
       "description": "",
       "length": 251,
       "protein_length_aa": 251,
@@ -7009,6 +7214,7 @@
       "synonyms": [
         "repH"
       ],
+      "collections": [],
       "description": "",
       "length": 105,
       "protein_length_aa": 105,
@@ -7031,6 +7237,7 @@
       "synonyms": [
         "repL"
       ],
+      "collections": [],
       "description": "",
       "length": 146,
       "protein_length_aa": 146,
@@ -7055,6 +7262,7 @@
         "oriV RK2",
         "oriV"
       ],
+      "collections": [],
       "description": "",
       "length": 532,
       "protein_length_aa": null,
@@ -7080,6 +7288,7 @@
         "ColE1 Rop",
         "RNA one modulator"
       ],
+      "collections": [],
       "description": "",
       "length": 63,
       "protein_length_aa": 63,
@@ -7104,6 +7313,7 @@
         "RP4 transfer origin",
         "oriT RP4"
       ],
+      "collections": [],
       "description": "",
       "length": 257,
       "protein_length_aa": null,
@@ -7127,6 +7337,7 @@
         "rrnBT1",
         "rrnBT1 terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 169,
       "protein_length_aa": null,
@@ -7150,6 +7361,7 @@
         "rrnBT2",
         "rrn BT2 terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 63,
       "protein_length_aa": null,
@@ -7172,6 +7384,7 @@
       "synonyms": [
         "RSF ori"
       ],
+      "collections": [],
       "description": "",
       "length": 750,
       "protein_length_aa": null,
@@ -7194,6 +7407,7 @@
       "synonyms": [
         "RSF1010 oriV"
       ],
+      "collections": [],
       "description": "",
       "length": 395,
       "protein_length_aa": null,
@@ -7216,6 +7430,7 @@
       "synonyms": [
         "RSF1010 RepA"
       ],
+      "collections": [],
       "description": "",
       "length": 279,
       "protein_length_aa": 279,
@@ -7238,6 +7453,7 @@
       "synonyms": [
         "RSF1010 RepB"
       ],
+      "collections": [],
       "description": "",
       "length": 323,
       "protein_length_aa": 323,
@@ -7261,6 +7477,7 @@
         "SacB",
         "levansucrase"
       ],
+      "collections": [],
       "description": "",
       "length": 473,
       "protein_length_aa": 473,
@@ -7285,6 +7502,7 @@
         "tir region",
         "SEVA translation initiation region"
       ],
+      "collections": [],
       "description": "",
       "length": 24,
       "protein_length_aa": null,
@@ -7312,6 +7530,7 @@
         "GFP (superfolder)",
         "GFP"
       ],
+      "collections": [],
       "description": "",
       "length": 238,
       "protein_length_aa": 238,
@@ -7338,6 +7557,7 @@
         "chimeric RNA scaffold",
         "sgRNA scaffold (SpCas9)"
       ],
+      "collections": [],
       "description": "",
       "length": 76,
       "protein_length_aa": null,
@@ -7360,6 +7580,7 @@
       "synonyms": [
         "sopA"
       ],
+      "collections": [],
       "description": "",
       "length": 391,
       "protein_length_aa": 391,
@@ -7382,6 +7603,7 @@
       "synonyms": [
         "sopB"
       ],
+      "collections": [],
       "description": "",
       "length": 323,
       "protein_length_aa": 323,
@@ -7408,6 +7630,7 @@
         "aad9",
         "spectinomycin adenyltransferase"
       ],
+      "collections": [],
       "description": "",
       "length": 224,
       "protein_length_aa": 224,
@@ -7432,6 +7655,7 @@
         "cas9 (St1)",
         "SthCas9"
       ],
+      "collections": [],
       "description": "",
       "length": 1388,
       "protein_length_aa": 1388,
@@ -7457,6 +7681,7 @@
         "StrepTag",
         "Strep-tag"
       ],
+      "collections": [],
       "description": "",
       "length": 8,
       "protein_length_aa": 8,
@@ -7480,6 +7705,7 @@
         "SUMO",
         "SMT3"
       ],
+      "collections": [],
       "description": "",
       "length": 97,
       "protein_length_aa": 97,
@@ -7504,6 +7730,7 @@
         "NLS",
         "nuclear localization signal"
       ],
+      "collections": [],
       "description": "",
       "length": 7,
       "protein_length_aa": 7,
@@ -7526,6 +7753,7 @@
       "synonyms": [
         "SV40_PA_terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 120,
       "protein_length_aa": null,
@@ -7548,6 +7776,7 @@
       "synonyms": [
         "T2A"
       ],
+      "collections": [],
       "description": "",
       "length": 18,
       "protein_length_aa": 18,
@@ -7573,6 +7802,7 @@
         "T7 RNA polymerase",
         "DNA-directed RNA polymerase"
       ],
+      "collections": [],
       "description": "",
       "length": 883,
       "protein_length_aa": 883,
@@ -7598,6 +7828,7 @@
         "T7 tag (gene 10 leader)",
         "gene 10 leader"
       ],
+      "collections": [],
       "description": "",
       "length": 11,
       "protein_length_aa": 11,
@@ -7621,6 +7852,7 @@
         "T7 terminator",
         "T7 Terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 48,
       "protein_length_aa": null,
@@ -7646,6 +7878,7 @@
         "Ocr",
         "gene 0.3 protein"
       ],
+      "collections": [],
       "description": "",
       "length": 117,
       "protein_length_aa": 117,
@@ -7670,6 +7903,7 @@
         "T7/lacO promoter",
         "T7 lac operator promoter"
       ],
+      "collections": [],
       "description": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
       "length": 67,
       "protein_length_aa": null,
@@ -7784,6 +8018,7 @@
         "T7Te",
         "T7Te Terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 40,
       "protein_length_aa": null,
@@ -7808,6 +8043,7 @@
         "tetracycline efflux pump",
         "tetracycline resistance protein"
       ],
+      "collections": [],
       "description": "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro...",
       "length": 396,
       "protein_length_aa": 396,
@@ -8135,6 +8371,7 @@
       "synonyms": [
         "tetAC"
       ],
+      "collections": [],
       "description": "",
       "length": 396,
       "protein_length_aa": 396,
@@ -8157,6 +8394,7 @@
       "synonyms": [
         "tetO"
       ],
+      "collections": [],
       "description": "",
       "length": 19,
       "protein_length_aa": null,
@@ -8182,6 +8420,7 @@
         "tet repressor",
         "tetracycline repressor"
       ],
+      "collections": [],
       "description": "",
       "length": 208,
       "protein_length_aa": 208,
@@ -8215,6 +8454,7 @@
       "synonyms": [
         "tetR/tetA promoters"
       ],
+      "collections": [],
       "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
       "length": 56,
       "protein_length_aa": null,
@@ -8343,6 +8583,7 @@
         "TEV",
         "TEV cleavage site"
       ],
+      "collections": [],
       "description": "",
       "length": 7,
       "protein_length_aa": 7,
@@ -8367,6 +8608,7 @@
         "thrombin",
         "thrombin cleavage site"
       ],
+      "collections": [],
       "description": "",
       "length": 6,
       "protein_length_aa": 6,
@@ -8390,6 +8632,7 @@
         "tL3",
         "tL3 terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 272,
       "protein_length_aa": null,
@@ -8413,6 +8656,7 @@
         "tonB",
         "tonB terminator"
       ],
+      "collections": [],
       "description": "",
       "length": 93,
       "protein_length_aa": null,
@@ -8436,6 +8680,7 @@
         "TRE3GV",
         "TRE3GV promoter"
       ],
+      "collections": [],
       "description": "",
       "length": 350,
       "protein_length_aa": null,
@@ -8458,6 +8703,7 @@
       "synonyms": [
         "trfA"
       ],
+      "collections": [],
       "description": "",
       "length": 382,
       "protein_length_aa": 382,
@@ -8482,6 +8728,7 @@
         "N-(5'-phosphoribosyl)anthranilate isomerase",
         "PRAI"
       ],
+      "collections": [],
       "description": "",
       "length": 224,
       "protein_length_aa": 224,
@@ -8505,6 +8752,7 @@
         "oriR101",
         "ts ori101"
       ],
+      "collections": [],
       "description": "",
       "length": 741,
       "protein_length_aa": null,
@@ -8528,6 +8776,7 @@
         "UGI",
         "uracil-DNA glycosylase inhibitor"
       ],
+      "collections": [],
       "description": "",
       "length": 84,
       "protein_length_aa": 84,
@@ -8550,6 +8799,7 @@
       "synonyms": [
         "UnaG"
       ],
+      "collections": [],
       "description": "",
       "length": 139,
       "protein_length_aa": 139,
@@ -8573,6 +8823,7 @@
         "URA3",
         "orotidine-5'-phosphate decarboxylase"
       ],
+      "collections": [],
       "description": "",
       "length": 267,
       "protein_length_aa": 267,
@@ -8595,6 +8846,7 @@
       "synonyms": [
         "XylS"
       ],
+      "collections": [],
       "description": "",
       "length": 321,
       "protein_length_aa": 321,
@@ -8625,6 +8877,7 @@
         "yellow fluorescent protein",
         "EYFP"
       ],
+      "collections": [],
       "description": "",
       "length": 239,
       "protein_length_aa": 239,
@@ -8650,6 +8903,7 @@
         "ble",
         "bleomycin resistance protein"
       ],
+      "collections": [],
       "description": "ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers resistance by stoichiometrically binding and sequestering the drug ...",
       "length": 124,
       "protein_length_aa": 124,
@@ -8712,6 +8966,30 @@
       "main_citations": [
         1,
         2
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "anderson-promoters",
+      "name": "Anderson promoters",
+      "source": "iGEM Registry (Anderson promoter collection)",
+      "n_parts": 13,
+      "n_validated": 0,
+      "members": [
+        "J23100",
+        "J23101",
+        "J23102",
+        "J23104",
+        "J23106",
+        "J23107",
+        "J23108",
+        "J23109",
+        "J23110",
+        "J23114",
+        "J23116",
+        "J23117",
+        "J23119"
       ]
     }
   ]

@@ -60,4 +60,5 @@ nav:
       - Promoters: types/promoters.md
       - Origins of replication: types/origins-of-replication.md
       - Coding sequences: types/coding-sequences.md
+  - Collections: collections/index.md
   - Tags: tags.md

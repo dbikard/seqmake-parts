@@ -11,6 +11,7 @@ FEATURES             Location/Qualifiers
                      /label="J23110"
                      /synonym="J23110"
                      /synonym="J23110 promoter"
+                     /collection="anderson-promoters"
 ORIGIN
         1 tttacggcta gctcagtcct aggtacaatg ctagc
 //

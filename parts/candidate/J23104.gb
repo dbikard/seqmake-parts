@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /synonym="BBa_J23104"
                      /synonym="BBa_J23104 Promoter (strong)"
                      /synonym="J23104 promoter"
+                     /collection="anderson-promoters"
 ORIGIN
         1 ttgacagcta gctcagtcct aggtattgtg ctagc
 //

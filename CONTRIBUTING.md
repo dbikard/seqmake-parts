@@ -53,6 +53,15 @@ Parts are split by curation status:
   build resolves each name to that part and derives the inverse on the TF's page
   ("regulates"), so the link is authored once but shown both ways (and lands in
   `catalog.json`). Use a name (or synonym) that already exists in the catalog.
+- **Collections.** Related parts that belong to a family — a vector series, a
+  promoter set, an inducible-sensor kit — declare membership on their main
+  feature with a `/collection="<id>"` qualifier (repeatable; a part may join
+  several). The build groups parts by that id into a dedicated **collection
+  page** (members validated or candidate alike) and a "Browse by collection" hub.
+  Give the collection display prose — `name`, `description`, `source` — in the
+  top-level `collections.json`, keyed by the same `<id>`; membership itself
+  always lives on the parts, never in that file. Example: each Anderson promoter
+  carries `/collection="anderson-promoters"`.
 - **Sequence Ontology typing.** Each part + sub-feature is typed with a
   [Sequence Ontology](https://www.ebi.ac.uk/ols4/ontologies/so) accession in
   `catalog.json` (`so_term`). It is derived from the GenBank feature type /
@@ -98,15 +107,15 @@ CDN/package reference instead of a vendored file.)
 ```jsonc
 {
   "schema_version": "1.0",
-  "n_parts": 211,
-  "n_validated": 16,
-  "n_candidate": 195,
-  "n_documented": 16,
+  "n_parts": 228,
+  "n_validated": 32,
+  "n_candidate": 196,
+  "n_documented": 32,
   "parts": [
     {
       "name": "PphlF", "slug": "PphlF",
       "feature_type": "promoter", "so_term": "SO:0000167", "so_name": "promoter",
-      "synonyms": ["PhlF promoter"],
+      "synonyms": ["PhlF promoter"], "collections": [],
       "description": "…", "length": 51,
       "documented": true, "status": "validated",
       "children": [
@@ -120,12 +129,21 @@ CDN/package reference instead of a vendored file.)
       ],
       "main_citations": [1, 2]
     }
+  ],
+  "collections": [
+    {"id": "anderson-promoters", "name": "Anderson promoters",
+     "source": "iGEM Registry (Anderson promoter collection)",
+     "n_parts": 13, "n_validated": 0,
+     "members": ["J23100", "J23101", "…"]}
   ]
 }
 ```
 
 `start`/`end` are 0-based, end-exclusive, part-relative. `citations` /
-`main_citations` are 1-based indices into that part's `references`.
+`main_citations` are 1-based indices into that part's `references`. A part's
+`collections` lists the family ids it declares via `/collection`; the top-level
+`collections` block resolves each id (prose from `collections.json`) to its
+members.
 
 ## Scope & licensing
 
