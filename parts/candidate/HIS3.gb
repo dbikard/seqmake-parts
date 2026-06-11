@@ -1,0 +1,21 @@
+LOCUS       HIS3                     220 aa                     UNK 01-JAN-1980
+DEFINITION  HIS3.
+ACCESSION   HIS3
+VERSION     HIS3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..220
+                     /label="HIS3"
+                     /synonym="His3"
+                     /synonym="imidazoleglycerol-phosphate dehydratase"
+                     /synonym="IGPD"
+                     /db_xref="UniProt:P06633"
+ORIGIN
+        1 mteqkalvkr itnetkiqia islkggplai ehsifpekea eavaeqatqs qvinvhtgig
+       61 fldhmihala khsgwslive cigdlhiddh httedcgial gqafkealga vrgvkrfgsg
+      121 fapldealsr avvdlsnrpy avvelglqre kvgdlscemi phflesfaea sritlhvdcl
+      181 rgkndhhrse safkalavai reatspngtn dvpstkgvlm
+//

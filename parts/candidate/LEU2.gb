@@ -1,0 +1,24 @@
+LOCUS       LEU2                     364 aa                     UNK 01-JAN-1980
+DEFINITION  LEU2.
+ACCESSION   LEU2
+VERSION     LEU2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     CDS             1..364
+                     /label="LEU2"
+                     /synonym="Leu2"
+                     /synonym="3-isopropylmalate dehydrogenase"
+                     /synonym="beta-IPM dehydrogenase"
+                     /db_xref="UniProt:P04173"
+ORIGIN
+        1 msapkkivvl pgdhvgqeit aeaikvlkai sdvrsnvkfd fenhliggaa idatgvplpd
+       61 ealeaskkad avllgavggp kwgtgsvrpe qgllkirkel qlyanlrpcn fasdslldls
+      121 pikpqfakgt dfvvvrelvg giyfgkrked dgdgvawdse qytvpevqri trmaafmalq
+      181 hepplpiwsl dkanvlassr lwrktveeti knefptlkvq hqlidsaami lvknpthlng
+      241 iiitsnmfgd iisdeasvip gslgllpsas laslpdknta fglyepchgs apdlpknkvn
+      301 piatilsaam mlklslnlpe egkaiedavk kvldagirtg dlggsnstte vgdavaeevk
+      361 kila
+//

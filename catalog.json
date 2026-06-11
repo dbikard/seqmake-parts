@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 214,
+  "n_parts": 218,
   "n_validated": 32,
-  "n_candidate": 182,
+  "n_candidate": 186,
   "n_documented": 32,
   "parts": [
     {
@@ -2568,6 +2568,30 @@
       "main_citations": []
     },
     {
+      "name": "HIS3",
+      "slug": "HIS3",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P06633",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "His3",
+        "imidazoleglycerol-phosphate dehydratase",
+        "IGPD"
+      ],
+      "description": "",
+      "length": 220,
+      "protein_length_aa": 220,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "HK022 attB",
       "slug": "HK022_attB",
       "feature_type": "protein_bind",
@@ -3409,6 +3433,30 @@
       "description": "",
       "length": 95,
       "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "LEU2",
+      "slug": "LEU2",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P04173",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "Leu2",
+        "3-isopropylmalate dehydrogenase",
+        "beta-IPM dehydrogenase"
+      ],
+      "description": "",
+      "length": 364,
+      "protein_length_aa": 364,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
@@ -6778,6 +6826,31 @@
       "main_citations": []
     },
     {
+      "name": "rop",
+      "slug": "rop",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P03051",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "rom",
+        "Rop/Rom",
+        "ColE1 Rop",
+        "RNA one modulator"
+      ],
+      "description": "",
+      "length": 63,
+      "protein_length_aa": 63,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "RP4 oriT",
       "slug": "RP4_oriT",
       "feature_type": "oriT",
@@ -8147,6 +8220,30 @@
       "description": "",
       "length": 382,
       "protein_length_aa": 382,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "TRP1",
+      "slug": "TRP1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P00912",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "Trp1",
+        "N-(5'-phosphoribosyl)anthranilate isomerase",
+        "PRAI"
+      ],
+      "description": "",
+      "length": 224,
+      "protein_length_aa": 224,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
