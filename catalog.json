@@ -6715,146 +6715,6 @@
       "main_citations": []
     },
     {
-      "name": "ptet_full",
-      "slug": "ptet_full",
-      "feature_type": "promoter",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000167",
-      "so_name": "promoter",
-      "synonyms": [
-        "Tn10 tetA promoter"
-      ],
-      "collections": [],
-      "description": "Synthetic PLtetO-1-family two-operator, anhydrotetracycline (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter carrying one Tn10 tet operator in the spacer and a second downstream of t...",
-      "length": 58,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": true,
-      "status": "validated",
-      "children": [
-        {
-          "label": "-35",
-          "feature_type": "regulatory",
-          "so_term": "SO:0000175",
-          "so_name": "minus_35_signal",
-          "start": 0,
-          "end": 6,
-          "strand": 1,
-          "citations": [
-            1,
-            2
-          ]
-        },
-        {
-          "label": "tetO1",
-          "feature_type": "protein_bind",
-          "so_term": "SO:0000057",
-          "so_name": "operator",
-          "start": 4,
-          "end": 23,
-          "strand": 1,
-          "citations": [
-            2,
-            3,
-            1,
-            4
-          ]
-        },
-        {
-          "label": "-10",
-          "feature_type": "regulatory",
-          "so_term": "SO:0000176",
-          "so_name": "minus_10_signal",
-          "start": 23,
-          "end": 29,
-          "strand": 1,
-          "citations": [
-            1
-          ]
-        },
-        {
-          "label": "+1",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000315",
-          "so_name": "TSS",
-          "start": 36,
-          "end": 37,
-          "strand": 1,
-          "citations": [
-            1
-          ]
-        },
-        {
-          "label": "tetO2",
-          "feature_type": "protein_bind",
-          "so_term": "SO:0000057",
-          "so_name": "operator",
-          "start": 39,
-          "end": 58,
-          "strand": 1,
-          "citations": [
-            5,
-            1,
-            6,
-            3
-          ]
-        }
-      ],
-      "references": [
-        {
-          "authors": "Lutz R, Bujard H",
-          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
-          "journal": "Nucleic Acids Research 25(6):1203-1210",
-          "pmid": "9092630",
-          "doi": "10.1093/nar/25.6.1203",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
-        },
-        {
-          "authors": "Hillen W, Schollmeier K",
-          "title": "Nucleotide sequence of the Tn10 encoded tetracycline resistance gene",
-          "journal": "Nucleic Acids Research 11(2):525-540",
-          "pmid": "6298728",
-          "doi": "10.1093/nar/11.2.525",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/6298728/"
-        },
-        {
-          "authors": "Meier I, Wray LV Jr, Hillen W",
-          "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
-          "journal": "EMBO Journal 7(2):567-572",
-          "pmid": "2835235",
-          "doi": "10.1002/j.1460-2075.1988.tb02846.x",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/2835235/"
-        },
-        {
-          "authors": "Bertram R, Neumann B, Schuster CF",
-          "title": "Status quo of tet regulation in bacteria",
-          "journal": "Microbial Biotechnology 15(4):1101-1119",
-          "pmid": "34713957",
-          "doi": "10.1111/1751-7915.13926",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/34713957/"
-        },
-        {
-          "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
-          "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
-          "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
-          "pmid": "21921101",
-          "doi": "10.1099/mic.0.052548-0",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/21921101/"
-        },
-        {
-          "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
-          "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
-          "journal": "Nucleic Acids Research 14(10):4253-4266",
-          "pmid": "3086838",
-          "doi": "10.1093/nar/14.10.4253",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/3086838/"
-        }
-      ],
-      "main_citations": []
-    },
-    {
       "name": "PtetA",
       "slug": "PtetA",
       "feature_type": "promoter",
@@ -7234,6 +7094,138 @@
       "status": "candidate",
       "children": [],
       "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "Pxyl/tet",
+      "slug": "Pxyl_tet",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": "GenBank:JN635500.1",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "Pxyl/tet",
+        "Pxyl/tetO",
+        "ptet_full",
+        "Tn10 tetA promoter"
+      ],
+      "collections": [],
+      "description": "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1). The Bikard-lab lineage carries a single-bp -10 variant (CATAAT), annotated by seqmake as Pxyl/tet [T24C].",
+      "length": 58,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "tetO1",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 4,
+          "end": 23,
+          "strand": 1,
+          "citations": [
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
+          "start": 36,
+          "end": 37,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "tetO2",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 39,
+          "end": 58,
+          "strand": 1,
+          "citations": [
+            1,
+            4,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+          "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
+          "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
+          "pmid": "21921101",
+          "doi": "10.1099/mic.0.052548-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21921101/"
+        },
+        {
+          "authors": "Hillen W, Schollmeier K",
+          "title": "Nucleotide sequence of the Tn10 encoded tetracycline resistance gene",
+          "journal": "Nucleic Acids Research 11(2):525-540",
+          "pmid": "6298728",
+          "doi": "10.1093/nar/11.2.525",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6298728/"
+        },
+        {
+          "authors": "Meier I, Wray LV Jr, Hillen W",
+          "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+          "journal": "EMBO Journal 7(2):567-572",
+          "pmid": "2835235",
+          "doi": "10.1002/j.1460-2075.1988.tb02846.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2835235/"
+        },
+        {
+          "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
+          "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
+          "journal": "Nucleic Acids Research 14(10):4253-4266",
+          "pmid": "3086838",
+          "doi": "10.1093/nar/14.10.4253",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3086838/"
+        },
+        {
+          "authors": "Bertram R, Neumann B, Schuster CF",
+          "title": "Status quo of tet regulation in bacteria",
+          "journal": "Microbial Biotechnology 15(4):1101-1119",
+          "pmid": "34713957",
+          "doi": "10.1111/1751-7915.13926",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34713957/"
+        }
+      ],
       "main_citations": []
     },
     {

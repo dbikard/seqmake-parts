@@ -1,22 +1,21 @@
-LOCUS       ptet_full                 58 bp    DNA              UNK 01-JAN-1980
-DEFINITION  Synthetic PLtetO-1-family two-operator, anhydrotetracycline
-            (aTc)-inducible sigma-70 promoter: a consensus -35/-10 promoter
-            carrying one Tn10 tet operator in the spacer and a second downstream
-            of t....
-ACCESSION   ptet_full
-VERSION     ptet_full
+LOCUS       Pxyl_tet                  58 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pxyl/tet: the TetR-repressible / anhydrotetracycline-inducible
+            promoter of the Staphylococcus aureus pRAB expression vectors (Helle
+            et al. 2011)..
+ACCESSION   Pxyl_tet
+VERSION     Pxyl_tet
 KEYWORDS    .
 SOURCE      
   ORGANISM  .
             .
 REFERENCE   1
-  AUTHORS   Lutz R, Bujard H
-  TITLE     Independent and tight regulation of transcriptional units in
-            Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2
-            regulatory elements
-  JOURNAL   Nucleic Acids Research 25(6):1203-1210
-   PUBMED   9092630
-  REMARK    doi:10.1093/nar/25.6.1203
+  AUTHORS   Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C,
+            Bertram R
+  TITLE     Vectors for improved Tet repressor-dependent gradual gene induction
+            or silencing in Staphylococcus aureus
+  JOURNAL   Microbiology (Reading) 157(Pt 12):3314-3323
+   PUBMED   21921101
+  REMARK    doi:10.1099/mic.0.052548-0
 REFERENCE   2
   AUTHORS   Hillen W, Schollmeier K
   TITLE     Nucleotide sequence of the Tn10 encoded tetracycline resistance gene
@@ -31,67 +30,69 @@ REFERENCE   3
    PUBMED   2835235
   REMARK    doi:10.1002/j.1460-2075.1988.tb02846.x
 REFERENCE   4
-  AUTHORS   Bertram R, Neumann B, Schuster CF
-  TITLE     Status quo of tet regulation in bacteria
-  JOURNAL   Microbial Biotechnology 15(4):1101-1119
-   PUBMED   34713957
-  REMARK    doi:10.1111/1751-7915.13926
-REFERENCE   5
-  AUTHORS   Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C,
-            Bertram R
-  TITLE     Vectors for improved Tet repressor-dependent gradual gene induction
-            or silencing in Staphylococcus aureus
-  JOURNAL   Microbiology (Reading) 157(Pt 12):3314-3323
-   PUBMED   21921101
-  REMARK    doi:10.1099/mic.0.052548-0
-REFERENCE   6
   AUTHORS   Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W
   TITLE     Tn10 tet operator mutations affecting Tet repressor recognition
   JOURNAL   Nucleic Acids Research 14(10):4253-4266
    PUBMED   3086838
   REMARK    doi:10.1093/nar/14.10.4253
+REFERENCE   5
+  AUTHORS   Bertram R, Neumann B, Schuster CF
+  TITLE     Status quo of tet regulation in bacteria
+  JOURNAL   Microbial Biotechnology 15(4):1101-1119
+   PUBMED   34713957
+  REMARK    doi:10.1111/1751-7915.13926
 FEATURES             Location/Qualifiers
      promoter        1..58
-                     /label="ptet_full"
+                     /label="Pxyl/tet"
+                     /synonym="Pxyl/tet"
+                     /synonym="Pxyl/tetO"
+                     /synonym="ptet_full"
                      /synonym="Tn10 tetA promoter"
-                     /note="Synthetic PLtetO-1-family two-operator,
-                     anhydrotetracycline (aTc)-inducible sigma-70 promoter: a
-                     consensus -35/-10 promoter carrying one Tn10 tet operator
-                     in the spacer and a second downstream of t..."
+                     /note="Pxyl/tet: the TetR-repressible / anhydrotetracycline
+                     (aTc)-inducible promoter of the Staphylococcus aureus pRAB
+                     expression vectors (Helle et al. 2011). A consensus
+                     sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter
+                     carrying two Tn10 tet operators (the O2/O1 tandem) - one in
+                     the -35/-10 spacer and one downstream of the -10 - so bound
+                     TetR occludes RNA polymerase until aTc relieves repression.
+                     Sequence of record: pRAB11 (GenBank JN635500.1). The
+                     Bikard-lab lineage carries a single-bp -10 variant
+                     (CATAAT), annotated by seqmake as Pxyl/tet [T24C]."
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:JN635500.1"
      regulatory      1..6
                      /label="-35"
-                     /parent="ptet_full"
+                     /parent="Pxyl/tet"
                      /regulatory_class="minus_35_signal"
                      /note="Canonical sigma-70/sigma-A -35 hexamer (TTGACA,
                      perfect consensus) at the 5' edge of the part, separated
                      from the -10 by a 17-bp spacer."
-                     /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0000175"
      protein_bind    5..23
                      /label="tetO1"
-                     /parent="ptet_full"
+                     /parent="Pxyl/tet"
                      /note="Upstream (promoter-proximal) Tn10 tet operator:
                      19-bp dyad (CACTCTATCATTGATAGAG) dropped into the -35/-10
                      spacer so bound TetR homodimer occludes RNA polymer..."
                      /citation=[2]
                      /citation=[3]
-                     /citation=[1]
-                     /citation=[4]
+                     /citation=[5]
                      /db_xref="SO:0000057"
      regulatory      24..29
                      /label="-10"
-                     /parent="ptet_full"
+                     /parent="Pxyl/tet"
                      /regulatory_class="minus_10_signal"
-                     /note="Near-consensus sigma-70/sigma-A -10 hexamer (CATAAT,
-                     5/6 vs TATAAT), 17-bp spacer to the -35, with tetO1 ending
-                     at its 5' edge and the +1 ~7 nt downstream."
+                     /note="Consensus sigma-70/sigma-A -10 hexamer TATAAT
+                     (perfect match), 17 bp downstream of the -35, with tetO1
+                     ending at its 5' edge and the +1 ~7 nt downstream. The
+                     Bikard-lab copy reads CATAAT here (the Pxyl/tet [T24C]
+                     variant)."
                      /citation=[1]
                      /db_xref="SO:0000176"
      misc_feature    37
                      /label="+1"
-                     /parent="ptet_full"
+                     /parent="Pxyl/tet"
                      /note="Inferred transcription start site, placed ~7 nt 3'
                      of the -10 per standard sigma-70/sigma-A geometry (6-8 nt
                      spacing), between the -10 box and tetO2."
@@ -99,15 +100,14 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000315"
      protein_bind    40..58
                      /label="tetO2"
-                     /parent="ptet_full"
+                     /parent="Pxyl/tet"
                      /note="Downstream (second) Tn10 tet operator at the 3' end:
                      19-bp dyad (TCTCTATCATTGATAGAGT) with the same core
                      CTCTATCATTGATAGAG as tetO1."
-                     /citation=[5]
                      /citation=[1]
-                     /citation=[6]
+                     /citation=[4]
                      /citation=[3]
                      /db_xref="SO:0000057"
 ORIGIN
-        1 ttgacactct atcattgata gagcataatt aaaataagct ctctatcatt gatagagt
+        1 ttgacactct atcattgata gagtataatt aaaataagct ctctatcatt gatagagt
 //
