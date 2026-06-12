@@ -1,0 +1,37 @@
+LOCUS       2micron_ori              878 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  2micron ori..
+ACCESSION   2micron_ori
+VERSION     2micron_ori
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     rep_origin      1..878
+                     /label="2micron ori"
+                     /synonym="2u ori"
+                     /synonym="2-micron origin"
+                     /synonym="2 micron ori"
+                     /synonym="yeast 2 micron plasmid origin"
+                     /synonym="2micron origin of replication"
+                     /note="Saccharomyces cerevisiae 2-micron (2u) plasmid
+                     origin of replication; confers high-copy episomal
+                     maintenance (vs low-copy CEN/ARS). Extracted from pYES2
+                     (Addgene 244550), 2u ori feature (878 bp)."
+ORIGIN
+        1 attgcgaata ccgcttccac aaacattgct caaaagtatc tctttgctat atatctctgt
+       61 gctatatccc tatataacct acccatccac ctttcgctcc ttgaacttgc atctaaactc
+      121 gacctctaca ttttttatgt ttatctctag tattactctt tagacaaaaa aattgtagta
+      181 agaactattc atagagtgaa tcgaaaacaa tacgaaaatg taaacatttc ctatacgtag
+      241 tatatagaga caaaatagaa gaaaccgttc ataattttct gaccaatgaa gaatcatcaa
+      301 cgctatcact ttctgttcac aaagtatgcg caatccacat cggtatagaa tataatcggg
+      361 gatgccttta tcttgaaaaa atgcacccgc agcttcgcta gtaatcagta aacgcgggaa
+      421 gtggagtcag gcttttttta tggaagagaa aatagacacc aaagtagcct tcttctaacc
+      481 ttaacggacc tacagtgcaa aaagttatca agagactgca ttatagagcg cacaaaggag
+      541 aaaaaaagta atctaagatg ctttgttaga aaaatagcgc tctcgggatg catttttgta
+      601 gaacaaaaaa gaagtataga ttctttgttg gtaaaatagc gctctcgcgt tgcatttctg
+      661 ttctgtaaaa atgcagctca gattctttgt ttgaaaaatt agcgctctcg cgttgcattt
+      721 ttgttttaca aaaatgaagc acagattctt cgttggtaaa atagcgcttt cgcgttgcat
+      781 ttctgttctg taaaaatgca gctcagattc tttgtttgaa aaattagcgc tctcgcgttg
+      841 catttttgtt ctacaaaatg aagcacagat gcttcgtt
+//

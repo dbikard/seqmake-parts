@@ -1,0 +1,30 @@
+LOCUS       GAL1                     442 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  GAL1..
+ACCESSION   GAL1
+VERSION     GAL1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..442
+                     /label="GAL1"
+                     /synonym="GAL1 promoter"
+                     /synonym="PGAL1"
+                     /synonym="pGAL1"
+                     /synonym="Sc GAL1 promoter"
+                     /note="Saccharomyces cerevisiae GAL1 promoter,
+                     galactose-inducible / glucose-repressible (the GAL1 arm of
+                     the divergent GAL1-10 promoter; includes the Gal4 UAS).
+                     Extracted from pYES2 (Addgene 244550), GAL1 promoter
+                     feature (442 bp)."
+ORIGIN
+        1 cggattagaa gccgccgagc gggtgacagc cctccgaagg aagactctcc tccgtgcgtc
+       61 ctcgtcttca ccggtcgcgt tcctgaaacg cagatgtgcc tcgcgccgca ctgctccgaa
+      121 caataaagat tctacaatac tagcttttat ggttatgaag aggaaaaatt ggcagtaacc
+      181 tggccccaca aaccttcaaa tgaacgaatc aaattaacaa ccataggatg ataatgcgat
+      241 tagtttttta gccttatttc tggggtaatt aatcagcgaa gcgatgattt ttgatctatt
+      301 aacagatata taaatgcaaa aactgcataa ccactttaac taatactttc aacattttcg
+      361 gtttgtatta cttcttattc aaatgtaata aaagtatcaa caaaaaattg ttaatatacc
+      421 tctatacttt aacgtcaagg ag
+//

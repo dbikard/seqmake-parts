@@ -1,0 +1,25 @@
+LOCUS       ADH1_terminator          188 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  ADH1 terminator..
+ACCESSION   ADH1_terminator
+VERSION     ADH1_terminator
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..188
+                     /label="ADH1 terminator"
+                     /synonym="ADH1 terminator"
+                     /synonym="tADH1"
+                     /synonym="ADH1t"
+                     /synonym="ADH1 transcription terminator"
+                     /note="S. cerevisiae ADH1 (alcohol dehydrogenase 1)
+                     transcription terminator; standard yeast terminator.
+                     Extracted from pGADT7 (Addgene 233529), ADH1 terminator
+                     feature (188 bp)."
+ORIGIN
+        1 gcgaatttct tatgatttat gatttttatt attaaataag ttataaaaaa aataagtgta
+       61 tacaaatttt aaagtgactc ttaggtttta aaacgaaaat tcttattctt gagtaactct
+      121 ttcctgtagg tcaggttgct ttctcaggta tagcatgagg tcgctcttat tgaccacacc
+      181 tctaccgg
+//

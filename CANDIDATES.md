@@ -45,17 +45,17 @@ Present: CEN6-ARS209✓, URA3✓.
 
 | Part | Type | What it is | Sequence source |
 |---|---|---|---|
-| GAL1 promoter | promoter | galactose-inducible | SGD / S. cerevisiae S288C |
-| TDH3 (GPD) promoter | promoter | strong constitutive | SGD |
-| TEF1 promoter | promoter | strong constitutive | SGD |
-| ADH1 promoter | promoter | medium constitutive | SGD |
-| CYC1 terminator | terminator | standard yeast terminator | SGD |
-| ADH1 terminator | terminator | standard yeast terminator | SGD |
+| GAL1 | promoter | galactose-inducible (442 bp) | pYES2 (Addgene 244550) ✓ stubbed |
+| TDH3 | promoter | GPD/GAP, strong constitutive (668 bp) | yeast vector (Addgene 239293) ✓ stubbed |
+| TEF1 | promoter | strong constitutive (414 bp) | pJF89 (Addgene 253756) ✓ stubbed |
+| ADH1 | promoter | medium constitutive (705 bp) | pGADT7 (Addgene 233529) ✓ stubbed |
+| CYC1 terminator | terminator | standard yeast terminator (248 bp) | pYES2 (Addgene 244550) ✓ stubbed |
+| ADH1 terminator | terminator | standard yeast terminator (188 bp) | pGADT7 (Addgene 233529) ✓ stubbed |
+| 2micron ori | origin_of_replication | high-copy yeast ori (878 bp; vs CEN/ARS) | pYES2 (Addgene 244550) ✓ stubbed |
 | HIS3 | CDS | auxotrophic marker | UniProt P06633 ✓ stubbed |
 | LEU2 | CDS | auxotrophic marker | UniProt P04173 ✓ stubbed |
 | TRP1 | CDS | auxotrophic marker | UniProt P00912 ✓ stubbed |
-| KanMX | CDS | G418 marker (kanr/Tn903 ORF; have kanR Tn903✓) | Wach et al. 1994 |
-| 2µ origin | origin_of_replication | high-copy yeast ori (vs CEN/ARS low-copy) | S. cerevisiae 2-micron plasmid |
+| ~~KanMX~~ | ~~CDS~~ | DROPPED — non-atomic: KanMX is a *cassette* (Ashbya TEF promoter + kanr ORF + TEF terminator), and its ORF = existing **kanR_Tn903**. The atomic split would be the Ashbya TEF promoter/terminator as their own parts (not requested). | — |
 
 ## Mammalian core
 Present: PSV40✓, CAG✓, TRE3GV✓, hU6✓, SV40 pA✓, IRES✓.
@@ -107,7 +107,7 @@ workflow run validates the trio; the figure pins the -35/-10/operator
 architecture. PN25/RBSII dropped — see the pZ table above.
 
 **G2 — yeast auxotrophic markers** · SGD / UniProt · ✓ stubs in (HIS3, LEU2, TRP1)
-HIS3 · LEU2 · TRP1 · KanMX
+HIS3 · LEU2 · TRP1  (KanMX dropped — non-atomic cassette / ORF = kanR_Tn903)
 Coding parts, protein-canonical; shared marker-gene framing.
 
 **G3 — iGEM Anderson + BioBrick** · parts.igem.org (Anderson promoter collection) · ✓ stubs in
@@ -120,8 +120,10 @@ CMV · EF1a · hPGK · WPRE
 All four extracted from standard reference vectors (pcDNA3.1, pCDH-EF1, PGK
 lenti) as cleanly-annotated single features.
 
-**G5 — yeast promoters / terminators** · Mumberg et al. 1995; SGD
-GAL1 · TDH3(GPD) · TEF1 · ADH1 promoters · CYC1 · ADH1 terminators · 2µ origin
+**G5 — yeast promoters / terminators** · Mumberg et al. 1995; SGD · ✓ stubs in
+GAL1 · TDH3(GPD) · TEF1 · ADH1 promoters · CYC1 · ADH1 terminators · 2micron ori
+All extracted as cleanly-annotated single features from standard yeast vectors
+(pYES2, pGADT7, pJF89, a TDH3 vector). KanMX dropped (non-atomic — see G2).
 
 **G6 — Marionette inducible sensors** · Meyer et al. 2019; Addgene kit #1000000137
 Pcym/CymR · Pvan/VanR · Psal/NahR · PttgR/TtgR · Pcin/CinR

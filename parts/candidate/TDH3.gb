@@ -1,0 +1,36 @@
+LOCUS       TDH3                     668 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  TDH3..
+ACCESSION   TDH3
+VERSION     TDH3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..668
+                     /label="TDH3"
+                     /synonym="GPD"
+                     /synonym="GPD promoter"
+                     /synonym="TDH3 promoter"
+                     /synonym="GAP promoter"
+                     /synonym="PGPD"
+                     /synonym="pTDH3"
+                     /synonym="pGPD"
+                     /note="S. cerevisiae TDH3 (glyceraldehyde-3-phosphate
+                     dehydrogenase 3) promoter, commonly called GPD or GAP;
+                     strong constitutive. Extracted from a TDH3-driven yeast
+                     vector (Addgene 239293), GAP promoter feature (668 bp)."
+ORIGIN
+        1 tcattatcaa tactgccatt tcaaagaata cgtaaataat taatagtagt gattttccta
+       61 actttattta gtcaaaaaat tagcctttta attctgctgt aacccgtaca tgcccaaaat
+      121 agggggcggg ttacacagaa tatataacat cgtaggtgtc tgggtgaaca gtttattcct
+      181 ggcatccact aaatataatg gagcccgctt tttaagctgg catccagaaa aaaaaaagaa
+      241 tcccagcacc aaaatattgt tttcttcacc aaccatcagt tcataggtcc attctcttag
+      301 cgcaactaca gagaacaggg gcacaaacag gcaaaaaacg ggcacaacct caatggagtg
+      361 atgcaacctg cctggagtaa atgatgacac aaggcaattg acccacgcat gtatctatct
+      421 cattttctta caccttctat taccttctgc tctctctgat ttggaaaaag ctgaaaaaaa
+      481 aggttgaaac cagttccctg aaattattcc cctacttgac taataagtat ataaagacgg
+      541 taggtattga ttgtaattct gtaaatctat ttcttaaact tcttaaattc tacttttata
+      601 gttagtcttt tttttagttt taaaacacca agaacttagt ttcgaataaa cacacataaa
+      661 caaacaaa
+//

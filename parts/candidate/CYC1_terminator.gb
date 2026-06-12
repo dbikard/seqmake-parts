@@ -1,0 +1,26 @@
+LOCUS       CYC1_terminator          248 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  CYC1 terminator..
+ACCESSION   CYC1_terminator
+VERSION     CYC1_terminator
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     terminator      1..248
+                     /label="CYC1 terminator"
+                     /synonym="CYC1 terminator"
+                     /synonym="tCYC1"
+                     /synonym="CYC1t"
+                     /synonym="CYC1 transcription terminator"
+                     /note="S. cerevisiae CYC1 (iso-1-cytochrome c)
+                     transcription terminator; the standard yeast terminator.
+                     Extracted from pYES2 (Addgene 244550), CYC1 terminator
+                     feature (248 bp)."
+ORIGIN
+        1 tcatgtaatt agttatgtca cgcttacatt cacgccctcc ccccacatcc gctctaaccg
+       61 aaaaggaagg agttagacaa cctgaagtct aggtccctat ttattttttt atagttatgt
+      121 tagtattaag aacgttattt atatttcaaa tttttctttt ttttctgtac agacgcgtgt
+      181 acgcatgtaa cattatactg aaaaccttgc ttgagaaggt tttgggacgc tcgaaggctt
+      241 taatttgc
+//
