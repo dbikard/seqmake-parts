@@ -5,10 +5,13 @@ standard vector families. These families are **combinatorial** — each is a men
 of origins / markers / regulated promoters / terminators / regulators / tags —
 so we add the *parts*, not the vectors.
 
-**Status of this list:** candidates to gather. Add each as a `parts/candidate/`
-stub first (sequence + main feature, no `.md`); annotate to `validated/` later
-per the priority queue at the bottom. **A part is only added once its sequence
-is sourced from the cited reference — never transcribed from memory.**
+**Status of this list:** stub-gathering is nearly complete. Groups G1–G5 and G7
+are all stubbed in `parts/candidate/` (PN25, RBSII, KanMX dropped as
+redundant/non-atomic — see their rows). **G6 (Marionette inducible sensors) is
+the only remaining TODO** — see the G6 entry in the queue below. Annotate each
+group to `validated/` later per the priority queue. **A part is only added once
+its sequence is sourced from the cited reference — never transcribed from
+memory.**
 
 Legend — type = Sequence Ontology class · ✓ = already in catalog (not a gap).
 
@@ -126,9 +129,13 @@ All extracted as cleanly-annotated single features from standard yeast vectors
 (pYES2, pGADT7, pJF89, a TDH3 vector). KanMX dropped (non-atomic — see G2).
 
 **G6 — Marionette inducible sensors** · Meyer et al. 2019; Addgene kit #1000000137
-Pcym/CymR · Pvan/VanR · Psal/NahR · PttgR/TtgR · Pcin/CinR
-Validate each **promoter + its cognate TF as a pair** (the TF is the promoter's
-regulator) — one paper covers the whole orthogonal set.
+**>>> TODO — the only group not yet stubbed <<<**
+Pcym/CymR · Pvan/VanR · Psal/NahR · PttgR/TtgR · Pcin/CinR  (~10 parts)
+Plan: 5 promoters (DNA, from the Marionette plasmids) + 5 cognate TFs
+(protein-canonical CDS, from UniProt). Wire each promoter to its regulator with
+`/regulated_by="<TF>"` so the build cross-links the pair. Validate each
+**promoter + its cognate TF as a pair** — one paper (Meyer 2019) covers the
+whole orthogonal set, so a single annotate-part cluster run does all five.
 
 **G7 — pET extras** · Studier; Novagen pET maps · ✓ stubs in
 T7 g10 leader · S-tag · enterokinase site · rop (ColE1)
@@ -136,5 +143,5 @@ T7 g10 leader from pET-28a; S-tag verified against RNase A (P61823) residues
 1-15; enterokinase = DDDDK motif (like the existing TEV/thrombin sites); rop
 already stubbed (UniProt P03051).
 
-Priority: **G1, G2, G3** first (workhorses; G2/G3 already stubbed) → **G4, G5**
-→ **G6, G7**.
+Priority: G1–G5 + G7 **stubbed** ✓. **Remaining TODO: G6 (Marionette)** — the
+last group to stub before the whole roadmap is candidate-complete.
