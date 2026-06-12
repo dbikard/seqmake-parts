@@ -35,9 +35,9 @@ Present: PT7✓, T7lac✓, T7 terminator✓, lacI/PlacIq✓, 6xHis/T7-tag/thromb
 
 | Part | Type | What it is | Sequence source |
 |---|---|---|---|
-| T7 g10 leader | ribosome_entry_site | T7 gene-10 translational enhancer/RBS | Olins & Rangwala 1989; pET map |
-| S-tag | polypeptide_domain | 15-aa S-peptide (KETAAAKFERQHMDS), RNase-S | Novagen pET; Kim & Raines |
-| enterokinase site | polypeptide_domain | DDDDK↓ protease cleavage site | pET maps |
+| T7 g10 leader | RBS | T7 gene-10 translational enhancer/RBS (35 bp) | pET-28a (Addgene 249430) ✓ stubbed |
+| S-tag | protein_domain | 15-aa S-peptide (KETAAAKFERQHMDS), RNase-S | RNase A 1-15 / UniProt P61823 ✓ stubbed |
+| enterokinase site | protein_domain | DDDDK protease cleavage site | pET maps (DDDDK motif) ✓ stubbed |
 | rop / rom | CDS | ColE1 Rop, ~63 aa copy-number repressor | UniProt P03051 ✓ stubbed |
 
 ## Yeast expression (pRS / pYES / pGAL; SGD)
@@ -130,8 +130,11 @@ Pcym/CymR · Pvan/VanR · Psal/NahR · PttgR/TtgR · Pcin/CinR
 Validate each **promoter + its cognate TF as a pair** (the TF is the promoter's
 regulator) — one paper covers the whole orthogonal set.
 
-**G7 — pET extras** · Studier; Novagen pET maps
+**G7 — pET extras** · Studier; Novagen pET maps · ✓ stubs in
 T7 g10 leader · S-tag · enterokinase site · rop (ColE1)
+T7 g10 leader from pET-28a; S-tag verified against RNase A (P61823) residues
+1-15; enterokinase = DDDDK motif (like the existing TEV/thrombin sites); rop
+already stubbed (UniProt P03051).
 
 Priority: **G1, G2, G3** first (workhorses; G2/G3 already stubbed) → **G4, G5**
 → **G6, G7**.

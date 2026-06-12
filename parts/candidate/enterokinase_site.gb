@@ -1,0 +1,22 @@
+LOCUS       enterokinase_sit           5 aa            linear   UNK 01-JAN-1980
+DEFINITION  enterokinase site..
+ACCESSION   enterokinase_site
+VERSION     enterokinase_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_domain  1..5
+                     /label="enterokinase site"
+                     /synonym="enterokinase"
+                     /synonym="enterokinase cleavage site"
+                     /synonym="EK site"
+                     /synonym="enteropeptidase site"
+                     /synonym="DDDDK"
+                     /note="Enterokinase (enteropeptidase) recognition site
+                     DDDDK; cleaves after the Lys, leaving no extra residues on
+                     the downstream protein. Standard pET fusion-removal site."
+ORIGIN
+        1 ddddk
+//

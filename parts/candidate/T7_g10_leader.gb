@@ -1,0 +1,25 @@
+LOCUS       T7_g10_leader             35 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  T7 g10 leader..
+ACCESSION   T7_g10_leader
+VERSION     T7_g10_leader
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     RBS             1..35
+                     /label="T7 g10 leader"
+                     /synonym="g10 leader RBS"
+                     /synonym="T7 gene 10 leader RBS"
+                     /synonym="g10-L"
+                     /synonym="T7 g10 RBS"
+                     /synonym="phi10 RBS"
+                     /note="T7 gene-10 (g10) translational leader / RBS: epsilon
+                     enhancer + Shine-Dalgarno (AAGGAG) + spacer; drives strong
+                     translation in the T7 expression system. Extracted from
+                     pET-28a (Addgene 249430), the RBS/leader between the XbaI
+                     site and the start ATG (35 bp). DNA 5'UTR element, distinct
+                     from the T7-tag peptide (see T7_tag)."
+ORIGIN
+        1 aataattttg tttaacttta agaaggagat atacc
+//
