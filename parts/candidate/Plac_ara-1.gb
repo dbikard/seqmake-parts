@@ -1,0 +1,25 @@
+LOCUS       Plac_ara-1               102 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  Plac/ara-1..
+ACCESSION   Plac_ara-1
+VERSION     Plac_ara-1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..102
+                     /label="Plac/ara-1"
+                     /synonym="Plac/ara-1 promoter"
+                     /synonym="Placara-1"
+                     /synonym="lac/ara-1 promoter"
+                     /synonym="lac/ara hybrid promoter"
+                     /note="Sequence from Lutz & Bujard 1997 (Nucleic Acids Res
+                     25:1203, PMID 9092630), Figure 1. lac/ara hybrid core:
+                     araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10
+                     (TATGAT), downstream lac operator. AraC- and
+                     LacI-controlled (arabinose + IPTG). Distal araC O1 operator
+                     (shown 5' of the // in Fig 1) not included."
+ORIGIN
+        1 catagcattt ttatccataa gattagcgga tcctaagctt tacaattgtg agcgctcaca
+       61 attatgatag attcaattgt gagcggataa caatttcaca ca
+//

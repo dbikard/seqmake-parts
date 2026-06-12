@@ -24,10 +24,14 @@ Present: PLtetO-1✓, PA1/O4/O3✓, origins pMB1/p15A/pSC101/ts-ori101✓, tetR/
 
 | Part | Type | What it is | Sequence source |
 |---|---|---|---|
-| PN25 | promoter | phage T5/N25 strong constitutive core (basis of the regulated derivatives) | Gentz & Bujard 1985; Lutz & Bujard 1997 |
-| PLlacO-1 | promoter | λ PL + 2× lacO; LacI-repressible (IPTG) | Lutz & Bujard 1997 |
-| Plac/ara-1 | promoter | lac/ara hybrid; AraC+LacI control (IPTG+arabinose) | Lutz & Bujard 1997 |
-| RBSII | ribosome_entry_site | strong synthetic RBS of the pQE/pZ system | Bujard pDS/pQE; Lutz & Bujard 1997 |
+| PLlacO-1 | promoter | λ PL + 2× lacO; LacI-repressible (IPTG) | Lutz & Bujard 1997 Fig 1 ✓ stubbed |
+| Plac/ara-1 | promoter | lac/ara hybrid; AraC+LacI control (IPTG+arabinose) | Lutz & Bujard 1997 Fig 1 ✓ stubbed |
+| PN25 | promoter | phage T5/N25 strong constitutive core (basis of the regulated derivatives) | Gentz & Bujard 1985 — NOT in L&B Fig 1 (regulated promoters only); pQE vectors carry PN25/O = existing PT5_lacO. Needs operator-free native source. |
+| RBSII | ribosome_entry_site | strong synthetic RBS of the pQE/pZ system | Bujard pDS/pQE — NOT in L&B Fig 1; SnapGene pQE annotation = B0034 consensus (likely redundant with B0034). Needs pDS/pQE primary. |
+
+Bonus available from the same Fig 1 (not in original list): **PA1lacO-1** (84 bp) —
+phage T7 A1 promoter (-35 TTGACT / -10 GATACT) with lac operators; distinct from
+the already-present PA1/O4/O3. Stub on request.
 
 ## pET (T7 system; Studier; Novagen pET maps)
 Present: PT7✓, T7lac✓, T7 terminator✓, lacI/PlacIq✓, 6xHis/T7-tag/thrombin/TEV✓.
@@ -95,10 +99,13 @@ that source once and maps the sub-features onto all of them — no duplicated
 research. Groups are ordered by priority. `✓ stubs in` = sequence stubs already
 sit in `parts/candidate/`; the rest still need stubs gathered first.
 
-**G1 — pZ regulated promoters** · Lutz & Bujard 1997, *NAR* 25:1203
-PN25 · PLlacO-1 · Plac/ara-1 · RBSII
-One paper defines the whole regulated-promoter + RBSII architecture (-35/-10,
-lac/tet operator placement, ribosome site) — research it once for all four.
+**G1 — pZ regulated promoters** · Lutz & Bujard 1997, *NAR* 25:1203 · ✓ stubs in (PLlacO-1, Plac/ara-1)
+PLlacO-1 · Plac/ara-1 [· PN25 · RBSII — deferred]
+PLlacO-1 + Plac/ara-1 sourced from L&B Fig 1 (canonical -35/-10/operator
+sequences). PN25 (native operator-free T5 core) and RBSII are NOT in Fig 1 and
+have no clean reference-plasmid source yet (pQE carries PN25/O = PT5_lacO; the
+pQE "RBS" call = B0034) — see the pZ table above. One workflow run validates the
+two stubbed promoters; the figure pins the -35/-10/operator architecture.
 
 **G2 — yeast auxotrophic markers** · SGD / UniProt · ✓ stubs in (HIS3, LEU2, TRP1)
 HIS3 · LEU2 · TRP1 · KanMX

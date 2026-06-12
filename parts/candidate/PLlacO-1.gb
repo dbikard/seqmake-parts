@@ -1,0 +1,23 @@
+LOCUS       PLlacO-1                  75 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  PLlacO-1..
+ACCESSION   PLlacO-1
+VERSION     PLlacO-1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..75
+                     /label="PLlacO-1"
+                     /synonym="PLlacO-1 promoter"
+                     /synonym="PllacO-1"
+                     /synonym="PLlacO1"
+                     /synonym="lac/PL hybrid promoter"
+                     /note="Sequence from Lutz & Bujard 1997 (Nucleic Acids Res
+                     25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35
+                     TTGACA / -10 GATACT) with two natural lac operators
+                     (LacI-repressible, IPTG-inducible)."
+ORIGIN
+        1 ataaatgtga gcggataaca ttgacattgt gagcggataa caagatactg agcacatcag
+       61 caggacgcac tgacc
+//

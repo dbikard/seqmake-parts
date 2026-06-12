@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 228,
+  "n_parts": 230,
   "n_validated": 32,
-  "n_candidate": 196,
+  "n_candidate": 198,
   "n_documented": 32,
   "parts": [
     {
@@ -5140,6 +5140,32 @@
       "main_citations": []
     },
     {
+      "name": "Plac/ara-1",
+      "slug": "Plac_ara-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "Plac/ara-1 promoter",
+        "Placara-1",
+        "lac/ara-1 promoter",
+        "lac/ara hybrid promoter"
+      ],
+      "collections": [],
+      "description": "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator. AraC- and LacI-controlled (arabinose + IPTG). Distal araC O1 operator (shown 5' of the // in Fig 1) not included.",
+      "length": 102,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
       "name": "PlacI",
       "slug": "PlacI",
       "feature_type": "promoter",
@@ -5396,6 +5422,32 @@
       "collections": [],
       "description": "",
       "length": 42,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": []
+    },
+    {
+      "name": "PLlacO-1",
+      "slug": "PLlacO-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "PLlacO-1 promoter",
+        "PllacO-1",
+        "PLlacO1",
+        "lac/PL hybrid promoter"
+      ],
+      "collections": [],
+      "description": "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35 TTGACA / -10 GATACT) with two natural lac operators (LacI-repressible, IPTG-inducible).",
+      "length": 75,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
