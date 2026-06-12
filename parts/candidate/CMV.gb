@@ -1,0 +1,33 @@
+LOCUS       CMV                      584 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  CMV..
+ACCESSION   CMV
+VERSION     CMV
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..584
+                     /label="CMV"
+                     /synonym="CMV promoter"
+                     /synonym="PCMV"
+                     /synonym="CMV IE promoter"
+                     /synonym="human cytomegalovirus immediate early promoter"
+                     /synonym="CMV enhancer/promoter"
+                     /note="Human cytomegalovirus (hCMV) immediate-early
+                     enhancer/promoter, the default strong constitutive
+                     mammalian promoter. Extracted from pcDNA3.1(+) (Addgene
+                     255272): CMV enhancer (1-380) + CMV core promoter
+                     (381-584)."
+ORIGIN
+        1 gacattgatt attgactagt tattaatagt aatcaattac ggggtcatta gttcatagcc
+       61 catatatgga gttccgcgtt acataactta cggtaaatgg cccgcctggc tgaccgccca
+      121 acgacccccg cccattgacg tcaataatga cgtatgttcc catagtaacg ccaataggga
+      181 ctttccattg acgtcaatgg gtggagtatt tacggtaaac tgcccacttg gcagtacatc
+      241 aagtgtatca tatgccaagt acgcccccta ttgacgtcaa tgacggtaaa tggcccgcct
+      301 ggcattatgc ccagtacatg accttatggg actttcctac ttggcagtac atctacgtat
+      361 tagtcatcgc tattaccatg gtgatgcggt tttggcagta catcaatggg cgtggatagc
+      421 ggtttgactc acggggattt ccaagtctcc accccattga cgtcaatggg agtttgtttt
+      481 ggcaccaaaa tcaacgggac tttccaaaat gtcgtaacaa ctccgcccca ttgacgcaaa
+      541 tgggcggtag gcgtgtacgg tgggaggtct atataagcag agct
+//

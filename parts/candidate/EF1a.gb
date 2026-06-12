@@ -1,0 +1,44 @@
+LOCUS       EF1a                    1179 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  EF1a..
+ACCESSION   EF1a
+VERSION     EF1a
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..1179
+                     /label="EF1a"
+                     /synonym="EF1alpha"
+                     /synonym="EF1a promoter"
+                     /synonym="EF-1alpha promoter"
+                     /synonym="EF-1a promoter"
+                     /synonym="EEF1A1 promoter"
+                     /synonym="human elongation factor 1 alpha promoter"
+                     /note="Human elongation factor 1-alpha (EEF1A1) promoter,
+                     full intron-containing form (includes EF-1a intron A;
+                     strong constitutive in most cell types). Extracted from
+                     pCDH-EF1 lentiviral vector (Addgene 207805), EF-1-alpha
+                     promoter feature (1179 bp)."
+ORIGIN
+        1 ggctccggtg cccgtcagtg ggcagagcgc acatcgccca cagtccccga gaagttgggg
+       61 ggaggggtcg gcaattgaac cggtgcctag agaaggtggc gcggggtaaa ctgggaaagt
+      121 gatgtcgtgt actggctccg cctttttccc gagggtgggg gagaaccgta tataagtgca
+      181 gtagtcgccg tgaacgttct ttttcgcaac gggtttgccg ccagaacaca ggtaagtgcc
+      241 gtgtgtggtt cccgcgggcc tggcctcttt acgggttatg gcccttgcgt gccttgaatt
+      301 acttccacct ggctgcagta cgtgattctt gatcccgagc ttcgggttgg aagtgggtgg
+      361 gagagttcga ggccttgcgc ttaaggagcc ccttcgcctc gtgcttgagt tgaggcctgg
+      421 cctgggcgct ggggccgccg cgtgcgaatc tggtggcacc ttcgcgcctg tctcgctgct
+      481 ttcgataagt ctctagccat ttaaaatttt tgatgacctg ctgcgacgct ttttttctgg
+      541 caagatagtc ttgtaaatgc gggccaagat ctgcacactg gtatttcggt ttttggggcc
+      601 gcgggcggcg acggggcccg tgcgtcccag cgcacatgtt cggcgaggcg gggcctgcga
+      661 gcgcggccac cgagaatcgg acgggggtag tctcaagctg gccggcctgc tctggtgcct
+      721 ggcctcgcgc cgccgtgtat cgccccgccc tgggcggcaa ggctggcccg gtcggcacca
+      781 gttgcgtgag cggaaagatg gccgcttccc ggccctgctg cagggagctc aaaatggagg
+      841 acgcggcgct cgggagagcg ggcgggtgag tcacccacac aaaggaaaag ggcctttccg
+      901 tcctcagccg tcgcttcatg tgactccacg gagtaccggg cgccgtccag gcacctcgat
+      961 tagttctcga gcttttggag tacgtcgtct ttaggttggg gggaggggtt ttatgcgatg
+     1021 gagtttcccc acactgagtg ggtggagact gaagttaggc cagcttggca cttgatgtaa
+     1081 ttctccttgg aatttgccct ttttgagttt ggatcttggt tcattctcaa gcctcagaca
+     1141 gtggttcaaa gtttttttct tccatttcag gtgtcgtga
+//

@@ -60,12 +60,16 @@ Present: CEN6-ARS209✓, URA3✓.
 ## Mammalian core
 Present: PSV40✓, CAG✓, TRE3GV✓, hU6✓, SV40 pA✓, IRES✓.
 
+All four are now **stubbed** in `parts/candidate/`, extracted as cleanly-annotated
+single features from standard reference vectors (the reference-plasmid approach
+works perfectly here — no boundary inference needed).
+
 | Part | Type | What it is | Sequence source |
 |---|---|---|---|
-| CMV promoter | promoter | CMV IE enhancer/promoter (the default) | hCMV; standard reference plasmid |
-| EF1α promoter | promoter | EF-1 alpha (full, intron-containing) | human EEF1A1 |
-| PGK promoter | promoter | mouse phosphoglycerate kinase | mouse Pgk1 |
-| WPRE | misc_feature | woodchuck post-transcriptional regulatory element | WHV; Zufferey 1999 |
+| CMV | promoter | CMV IE enhancer/promoter (584 bp; the default) | pcDNA3.1(+) (Addgene 255272) ✓ stubbed |
+| EF1a | promoter | EF-1 alpha, full intron-containing (1179 bp) | pCDH-EF1 lenti (Addgene 207805) ✓ stubbed |
+| hPGK | promoter | human PGK1, medium constitutive (511 bp) | PGK lenti (Addgene 253233) ✓ stubbed |
+| WPRE | misc_feature | woodchuck post-transcriptional regulatory element (589 bp) | pCDH-EF1 lenti (Addgene 207805) ✓ stubbed |
 
 ## iGEM / Anderson + BioBrick (parts.igem.org) — stubs in ✓
 Present (Anderson): J23104, J23107, J23108, J23110, J23119✓.
@@ -111,8 +115,10 @@ J23100/101/102/106/109/114/116/117 · B0034 RBS · B0015 terminator
 One constitutive-promoter family (shared -35/-10 scaffold, relative-strength
 table) + the two standard BioBrick parts — a single research pass covers all.
 
-**G4 — mammalian core** · standard expression-vector literature
-CMV promoter · EF1α promoter · PGK promoter · WPRE
+**G4 — mammalian core** · standard expression-vector literature · ✓ stubs in
+CMV · EF1a · hPGK · WPRE
+All four extracted from standard reference vectors (pcDNA3.1, pCDH-EF1, PGK
+lenti) as cleanly-annotated single features.
 
 **G5 — yeast promoters / terminators** · Mumberg et al. 1995; SGD
 GAL1 · TDH3(GPD) · TEF1 · ADH1 promoters · CYC1 · ADH1 terminators · 2µ origin
