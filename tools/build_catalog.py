@@ -557,9 +557,47 @@ def _collection_member_link(part: dict) -> str:
     return f"[{part['name']}]({url})"
 
 
+def _ref_url(r: dict) -> str | None:
+    """Best URL for a collection reference: explicit url, else PubMed/DOI."""
+    if r.get("url"):
+        return r["url"]
+    if r.get("pmid"):
+        return f"https://pubmed.ncbi.nlm.nih.gov/{r['pmid']}/"
+    if r.get("doi"):
+        return f"https://doi.org/{r['doi']}"
+    return None
+
+
+def _format_reference(r: dict) -> str:
+    """One collection reference as a markdown bullet: the title (linked to its
+    URL/PubMed/DOI when available) followed by an authors / journal / year tail."""
+    title = r.get("title") or r.get("doi") or r.get("pmid") or "reference"
+    url = _ref_url(r)
+    head = f"[{title}]({url})" if url else title
+    tail = " · ".join(str(r[k]) for k in ("authors", "journal", "year") if r.get(k))
+    return f"- {head}" + (f" — {tail}" if tail else "")
+
+
+def _collection_resource_lines(meta: dict) -> list[str]:
+    """`## References` (papers) and `## Resources` (external links) sections for
+    a collection page; each is emitted only when collections.json supplies it."""
+    out: list[str] = []
+    refs = meta.get("references") or []
+    if refs:
+        out += ["", "## References\n", *(_format_reference(r) for r in refs)]
+    res = meta.get("resources") or []
+    if res:
+        out += ["", "## Resources\n"]
+        for x in res:
+            url, title = x.get("url"), (x.get("title") or x.get("url"))
+            out.append(f"- [{title}]({url})" if url else f"- {title}")
+    return out
+
+
 def render_collection_page(cid: str, meta: dict, members: list[dict]) -> str:
     """A page for one collection: intro prose + a table of every member part
-    (validated members link to their page, candidates to their .gb)."""
+    (validated members link to their page, candidates to their .gb), then any
+    References (papers) and Resources (external links) from collections.json."""
     name = meta.get("name") or cid.replace("-", " ").capitalize()
     source = meta.get("source")
     n = len(members)
@@ -578,6 +616,7 @@ def render_collection_page(cid: str, meta: dict, members: list[dict]) -> str:
     for p in sorted(members, key=lambda x: x["name"].lower()):
         lines.append(f"| {_collection_member_link(p)} | `{p['feature_type']}` | "
                      f"{_len_label(p)} | {p['status']} |")
+    lines += _collection_resource_lines(meta)
     return "\n".join(lines) + "\n"
 
 
@@ -652,6 +691,8 @@ def main() -> None:
         "collections": [
             {"id": cid, "name": _coll_name(cid),
              "source": (coll_meta.get(cid) or {}).get("source", ""),
+             "references": (coll_meta.get(cid) or {}).get("references", []),
+             "resources": (coll_meta.get(cid) or {}).get("resources", []),
              "n_parts": len(ms),
              "n_validated": sum(p["status"] == "validated" for p in ms),
              "members": [p["slug"] for p in sorted(ms, key=lambda x: x["name"].lower())]}

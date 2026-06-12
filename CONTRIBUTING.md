@@ -60,8 +60,15 @@ Parts are split by curation status:
   page** (members validated or candidate alike) and a "Browse by collection" hub.
   Give the collection display prose — `name`, `description`, `source` — in the
   top-level `collections.json`, keyed by the same `<id>`; membership itself
-  always lives on the parts, never in that file. Example: each Anderson promoter
-  carries `/collection="anderson-promoters"`.
+  always lives on the parts, never in that file. A collection entry may also
+  carry **`references`** (a list of papers — each `{title, authors?, journal?,
+  year?, pmid?, doi?, url?}`; the title links to its `url`, else PubMed/DOI) and
+  **`resources`** (a list of external links — each `{title, url}`, e.g. a
+  registry catalog page or a kit page). Both render as `## References` /
+  `## Resources` sections at the foot of the collection page and land in
+  `catalog.json`. Example: each Anderson promoter carries
+  `/collection="anderson-promoters"`, and the collection cites the Kelly et al.
+  2009 RPU paper plus the iGEM Registry catalog page.
 - **Sequence Ontology typing.** Each part + sub-feature is typed with a
   [Sequence Ontology](https://www.ebi.ac.uk/ols4/ontologies/so) accession in
   `catalog.json` (`so_term`). It is derived from the GenBank feature type /
@@ -133,6 +140,12 @@ CDN/package reference instead of a vendored file.)
   "collections": [
     {"id": "anderson-promoters", "name": "Anderson promoters",
      "source": "iGEM Registry (Anderson promoter collection)",
+     "references": [
+       {"title": "…", "authors": "…", "journal": "…", "year": 2009,
+        "pmid": "19298678", "doi": "10.1186/1754-1611-3-4"}],
+     "resources": [
+       {"title": "iGEM Registry — Anderson promoter collection",
+        "url": "http://parts.igem.org/Promoters/Catalog/Anderson"}],
      "n_parts": 13, "n_validated": 0,
      "members": ["J23100", "J23101", "…"]}
   ]

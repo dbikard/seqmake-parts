@@ -9425,6 +9425,26 @@
       "id": "anderson-promoters",
       "name": "Anderson promoters",
       "source": "iGEM Registry (Anderson promoter collection)",
+      "references": [
+        {
+          "title": "Measuring the activity of BioBrick promoters using an in vivo reference standard",
+          "authors": "Kelly JR, Rubin AJ, Davis JH, et al.",
+          "journal": "J Biol Eng",
+          "year": 2009,
+          "pmid": "19298678",
+          "doi": "10.1186/1754-1611-3-4"
+        }
+      ],
+      "resources": [
+        {
+          "title": "iGEM Registry \u2014 Anderson promoter collection",
+          "url": "http://parts.igem.org/Promoters/Catalog/Anderson"
+        },
+        {
+          "title": "iGEM Registry \u2014 BBa_J23100 (family reference part)",
+          "url": "http://parts.igem.org/Part:BBa_J23100"
+        }
+      ],
       "n_parts": 13,
       "n_validated": 0,
       "members": [

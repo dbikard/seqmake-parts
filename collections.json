@@ -2,6 +2,26 @@
   "anderson-promoters": {
     "name": "Anderson promoters",
     "description": "The Anderson constitutive promoter library (BBa_J231xx): a family of short (35 bp) sigma-70 promoters that share one -35/-10 scaffold and differ at only a few positions, giving a graded series of constitutive strengths from the strong references (J23100, J23119) down to weak members. Widely used as a calibrated set of constitutive expression levels in bacteria.",
-    "source": "iGEM Registry (Anderson promoter collection)"
+    "source": "iGEM Registry (Anderson promoter collection)",
+    "references": [
+      {
+        "title": "Measuring the activity of BioBrick promoters using an in vivo reference standard",
+        "authors": "Kelly JR, Rubin AJ, Davis JH, et al.",
+        "journal": "J Biol Eng",
+        "year": 2009,
+        "pmid": "19298678",
+        "doi": "10.1186/1754-1611-3-4"
+      }
+    ],
+    "resources": [
+      {
+        "title": "iGEM Registry — Anderson promoter collection",
+        "url": "http://parts.igem.org/Promoters/Catalog/Anderson"
+      },
+      {
+        "title": "iGEM Registry — BBa_J23100 (family reference part)",
+        "url": "http://parts.igem.org/Part:BBa_J23100"
+      }
+    ]
   }
 }
