@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Block a push when the catalog content guard fails: part content must stay
+# lab-agnostic and tool-agnostic (no consuming-tool names, no internal-lab
+# lineage, no definition-by-negation). See tools/check_content.py.
+set -euo pipefail
+root="$(git rev-parse --show-toplevel)"
+if ! python3 "$root/tools/check_content.py"; then
+  echo "" >&2
+  echo "pre-push: content guard failed — fix the violations above before pushing." >&2
+  exit 1
+fi

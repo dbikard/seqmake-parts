@@ -101,13 +101,34 @@ generated (git-ignored) and rebuilt by CI.
 Each validated part page embeds an interactive feature/sequence view. It is a
 self-contained, iframe-isolated widget at
 [`docs/assets/seqmake-part-view.js`](docs/assets/seqmake-part-view.js) — a
-**vendored build** from seqmake's viewer core, not hand-edited. `build_catalog.py`
+**vendored build** of the upstream viewer widget, not hand-edited. `build_catalog.py`
 inlines each part's `MoleculeInfo` (sequence + features) into the page as a
 `<script type="application/json">` child of a `<div data-part-view>`, which the
-widget hydrates on load. To refresh the widget, rebuild it in the seqmake repo
-(`cd viewer && npm run build:widget`) and copy `dist-widget/seqmake-part-view.js`
-over the vendored file. (When the viewer ships as an npm package this becomes a
-CDN/package reference instead of a vendored file.)
+widget hydrates on load. To refresh the widget, rebuild it from the viewer
+source (`npm run build:widget`) and copy the resulting bundle over the vendored
+file. (When the viewer ships as an npm package this becomes a CDN/package
+reference instead of a vendored file.)
+
+## Content guard
+
+Part content is **lab-agnostic and tool-agnostic** — it describes what a part
+*is*. `tools/check_content.py` enforces this over every `parts/**/*.md` and
+`*.gb`, and it must pass before a push (it runs in CI and as a `pre-push` hook).
+A part file must not:
+
+- name a consuming tool;
+- reference a specific *using* lab, person, or internal/unpublished plasmid
+  lineage (naming the *originating* lab of a part — e.g. "the Bujard-lab pZ
+  system" — is fine, like citing an author);
+- define the part by negation/comparison ("this is not the …"). State what it
+  *is*. (Legitimate scientific negation — "RNA-based control, no protein
+  operator" — is fine.)
+
+Enable the local push guard once per clone:
+
+```bash
+git config core.hooksPath scripts/hooks   # runs tools/check_content.py on push
+```
 
 ## `catalog.json` schema (v1.0)
 

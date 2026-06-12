@@ -55,9 +55,7 @@ FEATURES             Location/Qualifiers
                      carrying two Tn10 tet operators (the O2/O1 tandem) - one in
                      the -35/-10 spacer and one downstream of the -10 - so bound
                      TetR occludes RNA polymerase until aTc relieves repression.
-                     Sequence of record: pRAB11 (GenBank JN635500.1). The
-                     Bikard-lab lineage carries a single-bp -10 variant
-                     (CATAAT), annotated by seqmake as Pxyl/tet [T24C]."
+                     Sequence of record: pRAB11 (GenBank JN635500.1)."
                      /db_xref="SO:0000167"
                      /db_xref="GenBank:JN635500.1"
      regulatory      1..6
@@ -85,9 +83,7 @@ FEATURES             Location/Qualifiers
                      /regulatory_class="minus_10_signal"
                      /note="Consensus sigma-70/sigma-A -10 hexamer TATAAT
                      (perfect match), 17 bp downstream of the -35, with tetO1
-                     ending at its 5' edge and the +1 ~7 nt downstream. The
-                     Bikard-lab copy reads CATAAT here (the Pxyl/tet [T24C]
-                     variant)."
+                     ending at its 5' edge and the +1 ~7 nt downstream."
                      /citation=[1]
                      /db_xref="SO:0000176"
      misc_feature    37

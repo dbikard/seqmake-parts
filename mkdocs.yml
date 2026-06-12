@@ -30,8 +30,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.superfences
 
-# Interactive part-view widget: a self-contained bundle (built from seqmake's
-# viewer core, vendored into docs/assets/) that hydrates each part page's
+# Interactive part-view widget: a self-contained bundle (a vendored build of the
+# upstream viewer widget, in docs/assets/) that hydrates each part page's
 # `<div data-part-view>` from its inlined MoleculeInfo, rendering inside an
 # iframe so the page's CSS / root font-size can't affect it. The fonts are
 # loaded here too: the iframe self-loads them for rendering, but the sequence

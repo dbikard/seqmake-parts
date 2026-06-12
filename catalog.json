@@ -5420,7 +5420,7 @@
         "lac/ara hybrid promoter"
       ],
       "collections": [],
-      "description": "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator. AraC- and LacI-controlled (arabinose + IPTG). Distal araC O1 operator (shown 5' of the // in Fig 1) not included.",
+      "description": "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator; AraC- and LacI-controlled (arabinose + IPTG).",
       "length": 102,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -7111,7 +7111,7 @@
         "Tn10 tetA promoter"
       ],
       "collections": [],
-      "description": "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1). The Bikard-lab lineage carries a single-bp -10 variant (CATAAT), annotated by seqmake as Pxyl/tet [T24C].",
+      "description": "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1).",
       "length": 58,
       "protein_length_aa": null,
       "regulated_by": [],

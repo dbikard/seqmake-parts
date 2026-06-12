@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Content guard (lab-agnostic, tool-agnostic part content)
+        run: python tools/check_content.py
       - run: pip install biopython pytest
       - name: Test the build + publish tooling
         run: pytest tests/ -q
