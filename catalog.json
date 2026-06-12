@@ -8934,6 +8934,59 @@
             5,
             6
           ]
+        },
+        {
+          "label": "PtetA +1",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
+          "start": 37,
+          "end": 38,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "PtetR -35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0005836",
+          "so_name": "regulatory_region",
+          "start": 50,
+          "end": 56,
+          "strand": -1,
+          "citations": [
+            2,
+            7
+          ]
+        },
+        {
+          "label": "PtetR -10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0005836",
+          "so_name": "regulatory_region",
+          "start": 26,
+          "end": 32,
+          "strand": -1,
+          "citations": [
+            2,
+            7
+          ]
+        },
+        {
+          "label": "PtetR +1",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
+          "start": 19,
+          "end": 20,
+          "strand": -1,
+          "citations": [
+            1,
+            2,
+            7
+          ]
         }
       ],
       "references": [
@@ -8984,6 +9037,14 @@
           "pmid": "8153629",
           "doi": "10.1126/science.8153629",
           "url": "https://pubmed.ncbi.nlm.nih.gov/8153629/"
+        },
+        {
+          "authors": "Gulland U, Hillen W",
+          "title": "The Tn10-encoded tetR mRNA has heterogeneous 5' ends in vivo and in vitro",
+          "journal": "Gene 114(1):97-101",
+          "pmid": "1316869",
+          "doi": "10.1016/0378-1119(92)90713-y",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1316869/"
         }
       ],
       "main_citations": []

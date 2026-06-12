@@ -50,6 +50,13 @@ REFERENCE   6
   JOURNAL   Science
    PUBMED   8153629
   REMARK    doi:10.1126/science.8153629
+REFERENCE   7
+  AUTHORS   Gulland U, Hillen W
+  TITLE     The Tn10-encoded tetR mRNA has heterogeneous 5' ends in vivo and in
+            vitro
+  JOURNAL   Gene 114(1):97-101
+   PUBMED   1316869
+  REMARK    doi:10.1016/0378-1119(92)90713-y
 FEATURES             Location/Qualifiers
      promoter        1..56
                      /label="tetR/tetA promoters"
@@ -98,6 +105,48 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
                      /citation=[6]
                      /db_xref="SO:0000057"
+     misc_feature    38
+                     /label="PtetA +1"
+                     /parent="tetR/tetA promoters"
+                     /note="tetA transcription start site (+1), ~7 nt downstream
+                     of the PtetA -10; the divergent tetA/tetR start sites were
+                     mapped by S1 analysis of tet mRNA 5' ends."
+                     /citation=[1]
+                     /citation=[2]
+                     /db_xref="SO:0000315"
+     regulatory      complement(51..56)
+                     /label="PtetR -35"
+                     /parent="tetR/tetA promoters"
+                     /regulatory_class="other"
+                     /note="Sigma-70 -35 hexamer of PtetR (bottom strand reads
+                     TTCTCT), the divergent promoter that transcribes tetR
+                     leftward; PtetR corresponds to the dominant tetR promoter
+                     (P_R2)."
+                     /citation=[2]
+                     /citation=[7]
+                     /db_xref="SO:0005836"
+     regulatory      complement(27..32)
+                     /label="PtetR -10"
+                     /parent="tetR/tetA promoters"
+                     /regulatory_class="other"
+                     /note="Sigma-70 -10 hexamer of PtetR (bottom strand reads
+                     TAAAAT), ~18 bp downstream of the PtetR -35; it overlaps
+                     the PtetA -10 on the opposite strand in the divergent
+                     arrangement."
+                     /citation=[2]
+                     /citation=[7]
+                     /db_xref="SO:0005836"
+     misc_feature    complement(20)
+                     /label="PtetR +1"
+                     /parent="tetR/tetA promoters"
+                     /note="tetR transcription start site (+1) of PtetR (P_R2),
+                     the promoter producing >95% of tetR mRNA in vivo; the start
+                     shows length heterogeneity from reiterative copying of a
+                     short run of A residues."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[7]
+                     /db_xref="SO:0000315"
 ORIGIN
         1 gttgacactc tatcattgat agagttattt taccactccc tatcagtgat agagaa
 //
