@@ -93,6 +93,26 @@ def _accession(data: dict) -> str | None:
     return None
 
 
+def classify_sequences(part: str, up: str) -> dict:
+    """Compare the part sequence to UniProt's canonical. A same-length difference
+    leaves UniProt's residue coordinates valid, so a small number of substitutions
+    is a *variant* whose features we still import (recording the substitutions); a
+    length change shifts coordinates, so we don't import. Pure / unit-testable."""
+    if part == up:
+        return {"status": "match"}
+    if len(part) == len(up):
+        diffs = [{"pos": i + 1, "part": part[i], "uniprot": up[i]}
+                 for i in range(len(part)) if part[i] != up[i]]
+        tol = max(3, int(0.02 * len(part)))   # tolerate ~2% substitutions
+        if len(diffs) <= tol:
+            return {"status": "variant", "variants": diffs}
+        return {"status": "mismatch", "n_substitutions": len(diffs)}
+    n = min(len(part), len(up))
+    first = next((i + 1 for i in range(n) if part[i] != up[i]), n + 1)
+    return {"status": "length_mismatch", "part_len": len(part),
+            "uniprot_len": len(up), "first_diff": first}
+
+
 def import_part(path: Path) -> str:
     data = json.loads(path.read_text(encoding="utf-8"))
     if data["molecule_type"] != "protein":
@@ -102,19 +122,33 @@ def import_part(path: Path) -> str:
         return "skip (no UniProt accession)"
     entry = _fetch(acc)
     up_seq = (entry.get("sequence") or {}).get("value", "")
-    if up_seq != data["sequence"]:
-        return (f"MISMATCH: part sequence != UniProt {acc} "
-                f"(len {len(data['sequence'])} vs {len(up_seq)}) -- not importing")
-    feats = features_from_uniprot(entry)
-    data["uniprot_features"] = feats
-    data["uniprot_import"] = {
+    cmp = classify_sequences(data["sequence"], up_seq)
+    prov = {
         "accession": f"UniProt:{acc}",
         "uniprot_release": entry.get("entryAudit", {}).get("entryVersion"),
         "fetched": _dt.date.today().isoformat(),
-        "sequence_match": True,
+        "status": cmp["status"],
     }
+    if cmp["status"] in ("match", "variant"):
+        feats = features_from_uniprot(entry)
+        data["uniprot_features"] = feats
+        prov["sequence_match"] = cmp["status"] == "match"
+        if cmp["status"] == "variant":
+            prov["variants"] = cmp["variants"]
+        data["uniprot_import"] = prov
+        path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        extra = f", {len(cmp['variants'])} variant residue(s)" if cmp["status"] == "variant" else ""
+        return f"imported {len(feats)} features [{cmp['status']}{extra}]"
+    # Coordinates can't be trusted -> record the mismatch (durable) and don't import.
+    data.pop("uniprot_features", None)
+    prov.update({k: v for k, v in cmp.items() if k != "status"})
+    data["uniprot_import"] = prov
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    return f"imported {len(feats)} features (UniProt:{acc})"
+    if cmp["status"] == "length_mismatch":
+        return (f"LENGTH-MISMATCH part {cmp['part_len']} vs UniProt {cmp['uniprot_len']} "
+                f"(first diff @ residue {cmp['first_diff']}) -- recorded, not imported")
+    return (f"MISMATCH {cmp['n_substitutions']} substitutions (> tolerance) "
+            "-- recorded, not imported")
 
 
 def main() -> None:
@@ -124,7 +158,7 @@ def main() -> None:
         for jf in sorted(d.glob("*.json")):
             if not slugs or jf.stem in slugs:
                 paths.append(jf)
-    imported = errored = 0
+    imported = mismatched = errored = 0
     for jf in paths:
         try:
             msg = import_part(jf)
@@ -132,14 +166,18 @@ def main() -> None:
             msg = f"ERROR: {exc}"
         if msg.startswith("imported"):
             imported += 1
-        elif msg.startswith(("ERROR", "MISMATCH")):
+        elif msg.startswith(("MISMATCH", "LENGTH-MISMATCH")):
+            mismatched += 1
+        elif msg.startswith("ERROR"):
             errored += 1
         if not msg.startswith("skip"):
             print(f"{jf.stem:18s} {msg}")
-    print(f"done -- {imported} imported, {errored} failed. "
+    print(f"done -- {imported} imported, {mismatched} sequence-mismatch (recorded), "
+          f"{errored} errors. "
           "Now run tools/build_gb.py + build_catalog.py + build_rdf.py and commit.")
-    # Fail loudly if nothing imported but attempts failed (e.g. no network), so a
-    # CI refresh doesn't proceed to an empty/broken commit.
+    # Fail loudly only on fetch/HTTP errors (e.g. no network) with nothing imported,
+    # so a refresh doesn't proceed to an empty/broken commit. Recorded sequence
+    # mismatches are legitimate findings, not failures.
     if imported == 0 and errored > 0:
         sys.exit(1)
 

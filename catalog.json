@@ -185,7 +185,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P0AG05",
+        "uniprot_release": 102,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "AAV deg tag",
@@ -916,7 +922,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P0C2P0",
+        "uniprot_release": 78,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "bom",
@@ -1212,7 +1224,13 @@
       ],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:Q99ZW2",
+        "uniprot_release": 147,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "cat (Gram+)",
@@ -1562,7 +1580,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P62577",
+        "uniprot_release": 117,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "CMV",
@@ -2533,7 +2557,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P23181",
+        "uniprot_release": 90,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "GST",
@@ -2789,7 +2819,13 @@
       ],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:P06633",
+        "uniprot_release": 186,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "HK022 attB",
@@ -2980,7 +3016,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P00557",
+        "uniprot_release": 123,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "I-SceI site",
@@ -3491,7 +3533,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P00552",
+        "uniprot_release": 119,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "kanR (Tn903)",
@@ -4057,7 +4105,13 @@
       ],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:P04173",
+        "uniprot_release": 199,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "LuxA",
@@ -7604,7 +7658,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P13249",
+        "uniprot_release": 93,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "PVeg",
@@ -8187,7 +8247,13 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:P03051",
+        "uniprot_release": 141,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "RP4 oriT",
@@ -9183,7 +9249,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P02981",
+        "uniprot_release": 104,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "tetAC",
@@ -9660,7 +9732,13 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:P00912",
+        "uniprot_release": 185,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     },
     {
       "name": "ts ori101",
@@ -9931,7 +10009,13 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P17493",
+        "uniprot_release": 91,
+        "fetched": "2026-06-14",
+        "sequence_match": true
+      }
     }
   ],
   "collections": [

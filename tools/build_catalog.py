@@ -278,16 +278,44 @@ def _resource_links(acc: str | None) -> str:
     return " · ".join(links)
 
 
+def _load_uniprot_import(part: dict) -> dict:
+    """A protein part's uniprot_import provenance block from its canonical JSON."""
+    json_path = PARTS_DIR / part["status"] / f"{part['slug']}.json"
+    if not json_path.exists():
+        return {}
+    return json.loads(json_path.read_text(encoding="utf-8")).get("uniprot_import") or {}
+
+
 def _protein_defer_note(part: dict) -> str:
     """For a protein part, point to UniProt for residue-level biology instead of
-    duplicating it: domains/active sites/structure live in the linked entry."""
-    if part.get("kind") == "protein" and part.get("source_accession"):
-        return ('!!! note "Protein features from UniProt"\n\n'
-                "    Any domains / sites below are **imported from the linked "
-                "UniProt entry** (a cached projection, not hand-authored); see "
-                "UniProt, InterPro and AlphaFold for the authoritative, complete "
-                "set and structure.\n")
-    return ""
+    duplicating it, and flag when the part's sequence diverges from UniProt's
+    canonical (so the imported coordinates' caveats are visible)."""
+    if part.get("kind") != "protein" or not part.get("source_accession"):
+        return ""
+    imp = _load_uniprot_import(part)
+    status = imp.get("status")
+    if status in ("length_mismatch", "mismatch"):
+        detail = (f"length {imp.get('part_len')} aa vs UniProt {imp.get('uniprot_len')} aa"
+                  if status == "length_mismatch"
+                  else f"{imp.get('n_substitutions')} differing residues")
+        return ('!!! warning "Sequence differs from UniProt"\n\n'
+                f"    This part's sequence diverges from {part['source_accession']} "
+                f"({detail}), so UniProt features were **not** imported (their "
+                "coordinates would not apply). See the linked UniProt entry.\n")
+    if status == "variant":
+        vs = imp.get("variants") or []
+        subs = ", ".join(f"{v['uniprot']}{v['pos']}{v['part']}" for v in vs[:6])
+        more = "…" if len(vs) > 6 else ""
+        return ('!!! note "Protein features from UniProt (variant)"\n\n'
+                "    Domains / sites below are **imported from the linked UniProt "
+                f"entry**; this part is a variant of {part['source_accession']} "
+                f"(substitutions: {subs}{more}). See UniProt / InterPro / AlphaFold "
+                "for the authoritative set.\n")
+    return ('!!! note "Protein features from UniProt"\n\n'
+            "    Any domains / sites below are **imported from the linked UniProt "
+            "entry** (a cached projection, not hand-authored); see UniProt, "
+            "InterPro and AlphaFold for the authoritative, complete set and "
+            "structure.\n")
 
 
 def _feature_table(part: dict) -> str:
@@ -779,6 +807,9 @@ def main() -> None:
     # programmatic consumers.
     for p in parts:
         p["functional_claims"] = _load_claims(p)
+        imp = _load_uniprot_import(p)
+        if imp:
+            p["uniprot_import"] = imp
 
     # Manifest covers every part (validated + candidate); internal fields stripped.
     _internal = {"_seq", "collections_resolved"}
