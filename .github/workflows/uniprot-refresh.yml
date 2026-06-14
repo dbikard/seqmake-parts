@@ -1,0 +1,66 @@
+name: Refresh UniProt features
+
+# Imports protein features (domains / active+binding sites / signal peptides) from
+# UniProt into the canonical part JSON, rebuilds the generated artifacts, and opens
+# a pull request with the diff for review. GitHub-hosted runners have the network
+# egress to rest.uniprot.org that the dev sandbox lacks. Scheduled monthly (UniProt
+# releases ~every 8 weeks) plus on-demand via "Run workflow".
+
+on:
+  schedule:
+    - cron: "0 4 1 * *"   # 04:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: uniprot-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pytest
+
+      - name: Import UniProt features (fails if the fetch fails)
+        run: python tools/import_uniprot_features.py
+
+      - name: Rebuild generated artifacts
+        run: |
+          python tools/build_gb.py
+          python tools/build_catalog.py
+          python tools/build_rdf.py
+
+      - name: Validate (schema + SHACL + tests) before proposing changes
+        run: |
+          python tools/validate_parts.py
+          pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl
+          pytest tests/ -q
+
+      - name: Open a pull request if anything changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "UniProt cache already up to date; nothing to propose."
+            exit 0
+          fi
+          branch="uniprot-refresh-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A
+          git commit -m "data: refresh UniProt protein features"
+          git push -u origin "$branch" --force-with-lease
+          if gh pr list --head "$branch" --state open --json number --jq 'length' | grep -qx 0; then
+            gh pr create --base main --head "$branch" \
+              --title "Refresh UniProt protein features" \
+              --body "Automated refresh of the cached \`uniprot_features\` from UniProt (then \`.gb\` / \`catalog.json\` / RDF regenerated). Each part's sequence was checked against UniProt's canonical sequence before importing. Review the diff and merge to update the catalog."
+          fi

@@ -124,14 +124,24 @@ def main() -> None:
         for jf in sorted(d.glob("*.json")):
             if not slugs or jf.stem in slugs:
                 paths.append(jf)
+    imported = errored = 0
     for jf in paths:
         try:
             msg = import_part(jf)
         except Exception as exc:  # noqa: BLE001 - report and continue
             msg = f"ERROR: {exc}"
+        if msg.startswith("imported"):
+            imported += 1
+        elif msg.startswith(("ERROR", "MISMATCH")):
+            errored += 1
         if not msg.startswith("skip"):
             print(f"{jf.stem:18s} {msg}")
-    print("done -- now run tools/build_gb.py + build_catalog.py + build_rdf.py and commit.")
+    print(f"done -- {imported} imported, {errored} failed. "
+          "Now run tools/build_gb.py + build_catalog.py + build_rdf.py and commit.")
+    # Fail loudly if nothing imported but attempts failed (e.g. no network), so a
+    # CI refresh doesn't proceed to an empty/broken commit.
+    if imported == 0 and errored > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
