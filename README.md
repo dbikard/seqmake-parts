@@ -53,15 +53,19 @@ docs/                       generated website source (mkdocs Material)
 - **Semantic / SPARQL access:** load `catalog.ttl` (or `catalog.jsonld`) into any
   RDF store — each part is an `sbol:Component` with its Sequence Ontology role,
   sequence, sub-features, citations, collections, and promoter↔TF regulation as
-  SBOL3 `Interaction`s. See [`RDF.md`](RDF.md) for the model.
+  SBOL3 `Interaction`s, plus prose-derived **functional claims** (inducer,
+  dynamic range, …) carried as nanopublication-shaped assertions with their
+  source quote/figure, confidence, and review status. See [`RDF.md`](RDF.md).
 - This catalog is a standalone, reusable dataset with no external dependencies.
 
 ## Contributing
 
 New parts and documentation pages are welcome — see
-[`CONTRIBUTING.md`](CONTRIBUTING.md). Adding a candidate part is a single `.gb`
-file in `parts/candidate/`; adding a `.md` page promotes it to a validated part
-in `parts/validated/`. CI validates it and rebuilds the manifest.
+[`CONTRIBUTING.md`](CONTRIBUTING.md). Each part's canonical record is a
+`<slug>.json` (validated against [`schema/part.schema.json`](schema/part.schema.json));
+the `.gb` is generated from it. Adding a `.md` page promotes a candidate to a
+validated part. CI validates the JSON, regenerates the `.gb`, and rebuilds the
+manifest + RDF.
 
 ## License
 
