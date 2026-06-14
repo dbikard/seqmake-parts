@@ -368,10 +368,14 @@ def _crosslink_parts(parts: list[dict]) -> None:
 
 
 def _xlink(item: dict) -> str:
-    """Link to a related part's page when it is validated (has a page), else
-    show its name as plain text."""
-    if item.get("slug") and item.get("documented"):
-        return f"[{item['name']}]({item['slug']}.md)"
+    """Link to a related part: its page when validated, else its GenBank file in
+    the repo when it is a candidate (no published page), else — when the named
+    part is not in the catalog at all (no slug) — plain text."""
+    if item.get("slug"):
+        if item.get("documented"):
+            return f"[{item['name']}]({item['slug']}.md)"
+        return (f"[{item['name']}]({REPO_URL}/blob/main/parts/candidate/"
+                f"{item['slug']}.gb)")
     return item["name"]
 
 
