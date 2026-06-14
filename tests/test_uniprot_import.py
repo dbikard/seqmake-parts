@@ -5,7 +5,16 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
-from import_uniprot_features import classify_sequences  # noqa: E402
+from import_uniprot_features import classify_sequences, variant_disposition  # noqa: E402
+
+
+def test_incidental_variant_is_normalized():
+    assert variant_disposition({}) == "normalize"
+    assert variant_disposition({"variant_rationale": "  "}) == "normalize"
+
+
+def test_intentional_variant_is_kept():
+    assert variant_disposition({"variant_rationale": "dCas9 D10A/H840A"}) == "keep"
 
 # A realistic-length base protein so identities are meaningful.
 BASE = ("MKVLAT" * 30)            # 180 aa

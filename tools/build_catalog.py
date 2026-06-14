@@ -312,15 +312,23 @@ def _protein_defer_note(part: dict) -> str:
                 f"    This part is a distant allele/homolog of {acc} ({idpct}); "
                 "features were **not** imported — review whether the accession is "
                 "right. See the linked UniProt entry.\n")
+    if status == "normalized_to_canonical":
+        n = len(imp.get("normalized_substitutions") or [])
+        return ('!!! note "Sequence normalized to UniProt"\n\n'
+                f"    This part's sequence was set to the {acc} canonical sequence "
+                f"(an incidental close variant, {n} residue(s) differed); domains / "
+                "sites below are imported from that entry.\n")
     if status == "variant":
         vs = imp.get("variants") or []
         subs = ", ".join(f"{v['uniprot']}{v['pos']}{v['part']}" for v in vs[:6])
         more = "…" if len(vs) > 6 else ""
-        return ('!!! note "Protein features from UniProt (variant)"\n\n'
+        rat = imp.get("variant_rationale")
+        rat_s = f" — *{rat}*" if rat else ""
+        return ('!!! note "Protein features from UniProt (kept variant)"\n\n'
                 "    Domains / sites below are **imported from the linked UniProt "
-                f"entry**; this part is a variant of {acc} ({idpct}; "
-                f"substitutions: {subs}{more}). See UniProt / InterPro / AlphaFold "
-                "for the authoritative set.\n")
+                f"entry**; this part is an intentional variant of {acc} ({idpct}; "
+                f"substitutions: {subs}{more}){rat_s}. See UniProt / InterPro / "
+                "AlphaFold for the authoritative set.\n")
     return ('!!! note "Protein features from UniProt"\n\n'
             "    Any domains / sites below are **imported from the linked UniProt "
             "entry** (a cached projection, not hand-authored); see UniProt, "

@@ -114,6 +114,10 @@
         }
       }
     },
+    "variant_rationale": {
+      "type": "string",
+      "description": "Why this protein is INTENTIONALLY a variant of its UniProt accession (e.g. dCas9 = catalytically-dead SpCas9 D10A/H840A). When set, the UniProt importer KEEPS the part's variant sequence; when absent, an incidental close variant (a few SNPs) is normalized to UniProt's canonical sequence."
+    },
     "uniprot_features": {
       "type": "array",
       "description": "Protein features imported from UniProt (domains, active/binding sites, signal peptides) -- a cached projection of the authoritative source, NOT hand-authored. Coordinates are 0-based, end-exclusive, in residue space. Regenerate with tools/import_uniprot_features.py; baked into the generated .gb so GenBank consumers get them.",

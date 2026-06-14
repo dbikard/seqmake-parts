@@ -168,6 +168,13 @@ def classify_sequences(part: str, up: str) -> dict:
     return {"status": "wrong_accession", **base}
 
 
+def variant_disposition(data: dict) -> str:
+    """For a close-variant part: 'keep' it when it declares a variant_rationale
+    (an intentional/functional variant like dCas9), else 'normalize' it to the
+    UniProt canonical sequence."""
+    return "keep" if (data.get("variant_rationale") or "").strip() else "normalize"
+
+
 def import_part(path: Path) -> str:
     data = json.loads(path.read_text(encoding="utf-8"))
     if data["molecule_type"] != "protein":
@@ -183,19 +190,34 @@ def import_part(path: Path) -> str:
         "uniprot_release": entry.get("entryAudit", {}).get("entryVersion"),
         "fetched": _dt.date.today().isoformat(),
         "status": cmp["status"],
+        "identity": cmp.get("identity"),
     }
     if cmp["status"] in ("match", "variant"):
+        # Policy: an incidental close variant adopts the UniProt canonical sequence
+        # (UniProt is the reference); an INTENTIONAL variant with a stated rationale
+        # (e.g. dCas9) is kept. A match is unchanged.
+        rationale = (data.get("variant_rationale") or "").strip()
+        if cmp["status"] == "variant" and not rationale:
+            data["sequence"] = up_seq          # normalize to canonical
+            prov["status"] = "normalized_to_canonical"
+            prov["sequence_match"] = True
+            prov["normalized_substitutions"] = cmp["variants"]
+            result = (f"normalized to canonical (replaced {len(cmp['variants'])} "
+                      f"residue(s), was {cmp['identity']*100:.1f}% id)")
+        elif cmp["status"] == "variant":
+            prov["sequence_match"] = False
+            prov["variants"] = cmp["variants"]
+            prov["variant_rationale"] = rationale
+            result = (f"variant KEPT ({len(cmp['variants'])} SNP(s), "
+                      f"{cmp['identity']*100:.1f}% id) -- {rationale[:50]}")
+        else:
+            prov["sequence_match"] = True
+            result = "match"
         feats = features_from_uniprot(entry)
         data["uniprot_features"] = feats
-        prov["sequence_match"] = cmp["status"] == "match"
-        if cmp["status"] == "variant":
-            prov["variants"] = cmp["variants"]
         data["uniprot_import"] = prov
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        if cmp["status"] == "variant":
-            return (f"imported {len(feats)} features [variant, "
-                    f"{len(cmp['variants'])} SNP(s), {cmp['identity']*100:.1f}% id]")
-        return f"imported {len(feats)} features [match]"
+        return f"imported {len(feats)} features [{result}]"
     # Coordinates can't be trusted -> record the finding (durable) and don't import.
     data.pop("uniprot_features", None)
     prov.update({k: v for k, v in cmp.items() if k != "status"})
@@ -220,8 +242,8 @@ def main() -> None:
         for jf in sorted(d.glob("*.json")):
             if not slugs or jf.stem in slugs:
                 paths.append(jf)
-    counts = {"imported": 0, "length_variant": 0, "divergent": 0,
-              "wrong_accession": 0, "error": 0}
+    counts = {"imported": 0, "normalized": 0, "variant_kept": 0,
+              "length_variant": 0, "divergent": 0, "wrong_accession": 0, "error": 0}
     wrong: list[str] = []
     for jf in paths:
         try:
@@ -230,6 +252,10 @@ def main() -> None:
             msg = f"ERROR: {exc}"
         if msg.startswith("imported"):
             counts["imported"] += 1
+            if "normalized to canonical" in msg:
+                counts["normalized"] += 1
+            elif "variant KEPT" in msg:
+                counts["variant_kept"] += 1
         elif msg.startswith("WRONG-ACCESSION"):
             counts["wrong_accession"] += 1
             wrong.append(jf.stem)
@@ -241,7 +267,8 @@ def main() -> None:
             counts["error"] += 1
         if not msg.startswith("skip"):
             print(f"{jf.stem:18s} {msg}")
-    print(f"\ndone -- imported {counts['imported']}, "
+    print(f"\ndone -- imported {counts['imported']} "
+          f"(normalized {counts['normalized']}, variant-kept {counts['variant_kept']}), "
           f"length-variant {counts['length_variant']}, divergent {counts['divergent']}, "
           f"WRONG-ACCESSION {counts['wrong_accession']}, errors {counts['error']}.")
     if wrong:

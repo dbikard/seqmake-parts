@@ -23,7 +23,10 @@ Work through the SOP and do not skip the hard rules — most importantly:
   active sites, binding residues, PTMs). Instead run
   `python tools/import_uniprot_features.py <slug>` to import them from UniProt
   (cached + provenance, baked into the `.gb`). Only hand-author the engineering
-  layer (role, functional_claims, cognate partners).
+  layer (role, functional_claims, cognate partners). If the sequence is only a
+  close variant of the accession, the importer normalizes it to UniProt's
+  canonical sequence — unless it's an intentional functional variant (e.g. dCas9),
+  in which case set `variant_rationale` to keep it.
 - Every `functional_claim` cites its evidence (PMID/DOI + a verbatim quote and,
   when you have actually read it, a figure/table locator). Never fabricate a
   figure number. Mark `quote_source: primary` vs `catalog-doc` honestly, and set

@@ -57,8 +57,10 @@ Parts are split by curation status:
   <slug>` to cache a provenance-tagged `uniprot_features` projection that is baked
   into the generated `.gb` (and emits `rdfs:seeAlso` to UniProt). Hand-author only
   the engineering layer (role, functional_claims, cognate partners, collections).
-  Regulatory DNA parts (promoter / terminator / operator / RBS / origin) keep
-  their hand-authored sub-features.
+  An incidental close variant of the accession is **normalized to UniProt's
+  canonical sequence**; an intentional functional variant (e.g. dCas9) is kept if
+  it declares a `variant_rationale`. Regulatory DNA parts (promoter / terminator /
+  operator / RBS / origin) keep their hand-authored sub-features.
 - **Cross-links.** A promoter names its cognate transcription-factor part(s) with
   a `/regulated_by="<TF name>"` qualifier (repeatable) on its main feature. The
   build resolves each name to that part and derives the inverse on the TF's page
