@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "lambda_t0",
+  "locus": "lambda_t0",
+  "id": "lambda_t0",
+  "description": "lambda t0",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATTCTCACCAATAAAAAACGCCCGGCGGCAACCGAGCGTTCTGAACAAATCCAGATGGAGTTCTGAGGTCATTACTGGATCTATCAACAGGAGTC",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 95,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lambda t0"
+        ],
+        "synonym": [
+          "lambda t0",
+          "lambda t0 terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

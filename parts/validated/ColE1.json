@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "slug": "ColE1",
+  "locus": "ColE1",
+  "id": "ColE1",
+  "description": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCATTGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG",
+  "references": [
+    {
+      "authors": "Itoh T, Tomizawa J",
+      "title": "Formation of an RNA primer for initiation of replication of ColE1 DNA by ribonuclease H.",
+      "journal": "Proc Natl Acad Sci U S A. 1980;77(5):2450-4",
+      "pubmed_id": "6156450",
+      "comment": "doi:10.1073/pnas.77.5.2450"
+    },
+    {
+      "authors": "Lin-Chao S, Bremer H",
+      "title": "Activities of the RNAI and RNAII promoters of plasmid pBR322.",
+      "journal": "J Bacteriol. 1987;169(3):1217-22",
+      "pubmed_id": "2434459",
+      "comment": "doi:10.1128/jb.169.3.1217-1222.1987"
+    },
+    {
+      "authors": "Tomizawa J, Itoh T, Selzer G, Som T",
+      "title": "Inhibition of ColE1 RNA primer formation by a plasmid-specified small RNA.",
+      "journal": "Proc Natl Acad Sci U S A. 1981;78(3):1421-5",
+      "pubmed_id": "6165011",
+      "comment": "doi:10.1073/pnas.78.3.1421"
+    }
+  ],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 792,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ColE1"
+        ],
+        "synonym": [
+          "ColE1"
+        ],
+        "note": [
+          "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number."
+        ],
+        "db_xref": [
+          "SO:0000296"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 20,
+      "end": 26,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RNA II promoter -35"
+        ],
+        "parent": [
+          "ColE1"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Top-strand -35 hexamer (TTGAGA) of the RNA II promoter, which drives the ColE1/pMB1 replication pre-primer transcript."
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 41,
+      "end": 47,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RNA II promoter -10"
+        ],
+        "parent": [
+          "ColE1"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Top-strand -10 hexamer (CGTAAT) of the RNA II promoter, 15 bp downstream of the -35."
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 197,
+      "end": 203,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "RNA I promoter -35"
+        ],
+        "parent": [
+          "ColE1"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "-35 hexamer of the convergent RNA I promoter on the bottom strand."
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ],
+        "citation": [
+          "[3]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 175,
+      "end": 181,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "RNA I promoter -10"
+        ],
+        "parent": [
+          "ColE1"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "-10 hexamer of the RNA I promoter on the bottom strand."
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ],
+        "citation": [
+          "[3]",
+          "[2]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pliar1",
+  "locus": "Pliar1",
+  "id": "Pliar1",
+  "description": "Pliar1",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GGTGTCACTAACCGGTCATCGCGGCCAGGTATAATTGCACGA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 42,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pliar1"
+        ],
+        "synonym": [
+          "Pliar1",
+          "synthetic Pliar1 promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

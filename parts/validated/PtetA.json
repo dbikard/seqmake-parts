@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "slug": "PtetA",
+  "locus": "PtetA",
+  "id": "PtetA",
+  "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGACACTCTATCATTGATAGAGCATAAT",
+  "references": [
+    {
+      "authors": "Bertrand KP, Postle K, Wray LV Jr, Reznikoff WS",
+      "title": "Overlapping divergent promoters control expression of Tn10 tetracycline resistance",
+      "journal": "Gene 1983;23(2):149-156",
+      "pubmed_id": "6311683",
+      "comment": "doi:10.1016/0378-1119(83)90046-x"
+    },
+    {
+      "authors": "Bertram R, Hillen W",
+      "title": "The application of Tet repressor in prokaryotic gene regulation and expression",
+      "journal": "Microbial Biotechnology 2008;1(1):2-16",
+      "pubmed_id": "21261817",
+      "comment": "doi:10.1111/j.1751-7915.2007.00001.x"
+    },
+    {
+      "authors": "Meier I, Wray LV, Hillen W",
+      "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+      "journal": "EMBO J 1988;7(2):567-572",
+      "pubmed_id": "2835235",
+      "comment": "doi:10.1002/j.1460-2075.1988.tb02846.x"
+    },
+    {
+      "authors": "Lutz R, Bujard H",
+      "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+      "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+      "pubmed_id": "9092630",
+      "comment": "doi:10.1093/nar/25.6.1203"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 29,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PtetA"
+        ],
+        "synonym": [
+          "ptet",
+          "tet promoter"
+        ],
+        "note": [
+          "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "TetR"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "PtetA"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "5' -35 hexamer of the natural Tn10 PtetA promoter; perfect sigma-70 -35 consensus TTGACA."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 6,
+      "end": 23,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO1"
+        ],
+        "parent": [
+          "PtetA"
+        ],
+        "note": [
+          "Tn10 tet operator (tetO1) occupying the -35/-10 spacer and abutting the -10."
+        ],
+        "citation": [
+          "[1]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 23,
+      "end": 29,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "PtetA"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "3' -10 (Pribnow) hexamer of the natural Tn10 PtetA promoter; non-consensus CATAAT, matching the sigma-70 -10 consensus TATAAT at 5/6 positions (C instead of ..."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

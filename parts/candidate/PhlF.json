@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "PhlF",
+  "locus": "PhlF",
+  "id": "PhlF",
+  "description": "PhlF",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MARTPSRSSIGSLRSPHTHKAILTSTIEILKECGYSGLSIESVARRAGASKPTIYRWWTNKAALIAEVYENESEQVRKFPDLGSFKADLDFLLRNLWKVWRETICGEAFRCVIAEAQLDPATLTQLKDQFMERRREMPKKLVENAISNGELPKDTNRELLLDMIFGFCWYRLLTEQLTVEQDIEEFTFLLINGVCPGTQR",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 200,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PhlF"
+        ],
+        "synonym": [
+          "PhlF"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

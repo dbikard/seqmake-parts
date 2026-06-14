@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "B0030_RBS",
+  "locus": "B0030_RBS",
+  "id": "B0030_RBS",
+  "description": "B0030 RBS",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATTAAAGAGGAGAAA",
+  "references": [],
+  "features": [
+    {
+      "type": "RBS",
+      "start": 0,
+      "end": 15,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "B0030 RBS"
+        ],
+        "synonym": [
+          "B0030 RBS"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

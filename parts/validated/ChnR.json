@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "slug": "ChnR",
+  "locus": "ChnR",
+  "id": "ChnR",
+  "description": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSTDKANTLIKPEDVVLWIPGNVTIDSMNAGWENIAIRGYEYTNLDVHIPAMRDYMIVNYKKSAAEMRRKGDASWDTQVVKPGYVSLLTCGEDSRWAWNDHIAVTHVYISHDSITSMANKVFDYDIASIRIRDEVGVEDHVLPALTSLLELELKQGGLGGNLYLESIKNQIALHLLRQYAKLDFKEGQCRSGFTPLQRRLLLEFINENMSIKITLEDLAGLVKMSVPHLMRKFKVDFGNSPAAYIMNLRVQFAKRLLTSKKEIPLKVIASEAGFCDQSHMTRVFQKFFGKTPIEIRQEHTNLVSENSVSSIVF",
+  "references": [
+    {
+      "authors": "Chen YC, Peoples OP, Walsh CT",
+      "title": "Acinetobacter cyclohexanone monooxygenase: gene cloning and sequence determination",
+      "journal": "J Bacteriol 170(2):781-789 (1988)",
+      "pubmed_id": "3338974",
+      "comment": "doi:10.1128/jb.170.2.781-789.1988"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 313,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ChnR"
+        ],
+        "synonym": [
+          "chnR",
+          "ChnR activator"
+        ],
+        "note": [
+          "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster)."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "NCBI:AB006902"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

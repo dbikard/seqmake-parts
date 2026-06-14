@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "RepC_RSF1010",
+  "locus": "RepC_RSF1010",
+  "id": "RepC_RSF1010",
+  "description": "RepC (RSF1010)",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MAHRSLIGGSGGMTAGCSSPPCWRGSARARGCPVVKPKNKHSLSHVRHDPAHCLAPGLFRALKRGERKRSKLDVTYDYGDGKRIEFSGPEPLGADDLRILQGLVAMAGPNGLVLGPEPKTEGGRQLRLFLEPKWEAVTAECHVVKGSYRALAKEIGAEVDSGGALKHIQDCIERLWKVSIIAQNGRKRQGFRLLSEYASDEADGRLYVALNPLIAQAVMGGGQHVRISMDEVRALDSETARLLHQRLCGWIDPGKTGKASIDTLCGYVWPSEASGSTMRKRRQRVREALPELVALGWTVTEFAAGKYDITRPKAAG",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 316,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RepC (RSF1010)"
+        ],
+        "synonym": [
+          "RepC",
+          "repC (RSF1010)",
+          "RSF1010 RepC",
+          "replication protein C"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

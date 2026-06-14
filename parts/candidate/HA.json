@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "HA",
+  "locus": "HA",
+  "id": "HA",
+  "description": "HA",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "YPYDVPDYA",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 9,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HA"
+        ],
+        "synonym": [
+          "HA",
+          "HA tag",
+          "HA-tag",
+          "hemagglutinin tag"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

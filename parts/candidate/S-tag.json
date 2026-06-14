@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "S-tag",
+  "locus": "S-tag",
+  "id": "S-tag",
+  "description": "S-tag.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "KETAAAKFERQHMDS",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 15,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "S-tag"
+        ],
+        "synonym": [
+          "S tag",
+          "S Tag",
+          "S-peptide",
+          "S peptide"
+        ],
+        "note": [
+          "15-aa S-peptide affinity/detection tag = bovine pancreatic RNase A mature residues 1-15 (UniProt P61823 positions 27-41); binds S-protein (RNase-S system). Standard Novagen pET tag."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

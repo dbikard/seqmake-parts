@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "AAV_deg_tag",
+  "locus": "AAV_deg_tag",
+  "id": "AAV_deg_tag",
+  "description": "AAV deg tag",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AANDENYAAAV",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 11,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "AAV deg tag"
+        ],
+        "synonym": [
+          "AAV deg tag",
+          "AAVDeg_Tag(medium speed)",
+          "AAV degradation tag"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

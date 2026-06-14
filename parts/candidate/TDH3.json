@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "slug": "TDH3",
+  "locus": "TDH3",
+  "id": "TDH3",
+  "description": "TDH3.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCATTATCAATACTGCCATTTCAAAGAATACGTAAATAATTAATAGTAGTGATTTTCCTAACTTTATTTAGTCAAAAAATTAGCCTTTTAATTCTGCTGTAACCCGTACATGCCCAAAATAGGGGGCGGGTTACACAGAATATATAACATCGTAGGTGTCTGGGTGAACAGTTTATTCCTGGCATCCACTAAATATAATGGAGCCCGCTTTTTAAGCTGGCATCCAGAAAAAAAAAAGAATCCCAGCACCAAAATATTGTTTTCTTCACCAACCATCAGTTCATAGGTCCATTCTCTTAGCGCAACTACAGAGAACAGGGGCACAAACAGGCAAAAAACGGGCACAACCTCAATGGAGTGATGCAACCTGCCTGGAGTAAATGATGACACAAGGCAATTGACCCACGCATGTATCTATCTCATTTTCTTACACCTTCTATTACCTTCTGCTCTCTCTGATTTGGAAAAAGCTGAAAAAAAAGGTTGAAACCAGTTCCCTGAAATTATTCCCCTACTTGACTAATAAGTATATAAAGACGGTAGGTATTGATTGTAATTCTGTAAATCTATTTCTTAAACTTCTTAAATTCTACTTTTATAGTTAGTCTTTTTTTTAGTTTTAAAACACCAAGAACTTAGTTTCGAATAAACACACATAAACAAACAAA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 668,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "TDH3"
+        ],
+        "synonym": [
+          "GPD",
+          "GPD promoter",
+          "TDH3 promoter",
+          "GAP promoter",
+          "PGPD",
+          "pTDH3",
+          "pGPD"
+        ],
+        "note": [
+          "S. cerevisiae TDH3 (glyceraldehyde-3-phosphate dehydrogenase 3) promoter, commonly called GPD or GAP; strong constitutive. Extracted from a TDH3-driven yeast vector (Addgene 239293), GAP promoter feature (668 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

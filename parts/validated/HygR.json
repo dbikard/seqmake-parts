@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "slug": "HygR",
+  "locus": "HygR",
+  "id": "HygR",
+  "description": "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKKPELTATSVEKFLIEKFDSVSDLMQLSEGEESRAFSFDVGGRGYVLRVNSCADGFYKDRYVYRHFASAALPIPEVLDIGEFSESLTYCISRRAQGVTLQDLPETELPAVLQPVAEAMDAIAAADLSQTSGFGPFGPQGIGQYTTWRDFICAIADPHVYHWQTVMDDTVSASVAQALDELMLWAEDCPEVRHLVHADFGSNNVLTDNGRITAVIDWSEAMFGDSQYEVANIFFWRPWLACMEQQTRYFERRHPELAGSPRLRAYMLRIGLDQLYQSLVDGNFDDAAWAQGRCDAIVRSGAGTVGRTQIARRSAAVWTDGCVEVLADSGNRRPSTRPRAKE",
+  "references": [
+    {
+      "authors": "Gritz L, Davies J",
+      "title": "Plasmid-encoded hygromycin B resistance: the sequence of hygromycin B phosphotransferase gene and its expression in Escherichia coli and Saccharomyces cerevisiae",
+      "journal": "Gene 25(2-3):179-188 (1983)",
+      "pubmed_id": "6319235",
+      "comment": "doi:10.1016/0378-1119(83)90223-8"
+    },
+    {
+      "authors": "Stogios PJ, Shakya T, Evdokimova E, Savchenko A, Wright GD",
+      "title": "Structure and function of APH(4)-Ia, a hygromycin B resistance enzyme",
+      "journal": "J Biol Chem 286(3):1966-1975 (2011)",
+      "pubmed_id": "21084294",
+      "comment": "doi:10.1074/jbc.M110.194266"
+    },
+    {
+      "authors": "Iino D, Takakura Y, Fukano K, Sasaki Y, Hoshino T, Ohsawa K, Nakamura A, Yajima S",
+      "title": "Crystal structures of the ternary complex of APH(4)-Ia/Hph with hygromycin B and an ATP analog using a thermostable mutant",
+      "journal": "J Struct Biol 183(1):76-85 (2013)",
+      "pubmed_id": "23747390",
+      "comment": "doi:10.1016/j.jsb.2013.05.023"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 341,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HygR"
+        ],
+        "synonym": [
+          "APH(4)-Ia",
+          "HPT",
+          "hph",
+          "hygromycin B phosphotransferase"
+        ],
+        "note": [
+          "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH."
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P00557"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "protein_domain",
+      "start": 6,
+      "end": 92,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "N-terminal lobe"
+        ],
+        "parent": [
+          "HygR"
+        ],
+        "note": [
+          "Beta-rich N-terminal lobe of the protein-kinase-like (APH) fold."
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "protein_domain",
+      "start": 98,
+      "end": 301,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "C-terminal lobe"
+        ],
+        "parent": [
+          "HygR"
+        ],
+        "note": [
+          "Predominantly alpha-helical C-terminal lobe (residues 99-301, 1-based; Stogios et al."
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 195,
+      "end": 203,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Catalytic loop"
+        ],
+        "parent": [
+          "HygR"
+        ],
+        "note": [
+          "Catalytic loop H196-A197-D198-F199-G200-S201-N202-N203 (1-based)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 214,
+      "end": 218,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Mg2+-binding aspartate"
+        ],
+        "parent": [
+          "HygR"
+        ],
+        "note": [
+          "Asp216 (in the I215-D216-W217-S218 loop) is the Mg2+-coordinating aspartate (DFG second-Asp equivalent of protein kinases): it contacts Mg2+ and a non-bridgi..."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "attP",
+  "locus": "attP",
+  "id": "attP",
+  "description": "attP",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AAATCAAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTTTTATAATGCCAACTTAGTATAAAAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATGCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTAACAGAGCATTAGCGCAAGGTGATTTTTGTCTTCTTGCGCTAATTTTTTGGTACCTCTAGGGCGGCGGATTTGTCCTACTCAGGAGAGCGTTCACCGACAAACAACAGATAAAACGAAAGGCCCAGTCTTTCGACTGAGCCTTTCGTTTTATTTGATGCCTCTAGCACGCGTACCATGGAG",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 417,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "attP"
+        ],
+        "synonym": [
+          "attP"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

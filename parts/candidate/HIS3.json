@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "HIS3",
+  "locus": "HIS3",
+  "id": "HIS3",
+  "description": "HIS3",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLRGKNDHHRSESAFKALAVAIREATSPNGTNDVPSTKGVLM",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 220,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HIS3"
+        ],
+        "synonym": [
+          "His3",
+          "imidazoleglycerol-phosphate dehydratase",
+          "IGPD"
+        ],
+        "db_xref": [
+          "UniProt:P06633"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

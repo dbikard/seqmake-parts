@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "APH-3",
+  "locus": "APH-3",
+  "id": "APH-3",
+  "description": "APH-3",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MAKMRISPELKKLIEKYRCVKDTEGMSPAKVYKLVGENENLYLKMTDSRYKGTTYDVEREKDMMLWLEGKLPVPKVLHFERHDGWSNLLMSEADGVLCSEEYEDEQSPEKIIELYAECIRLFHSIDISDCPYTNSLDSRLAELDYLLNNDLADVDCENWEEDTPFKDPRELYDFLKTEKPEEELVFSHGDLGDSNIFVKDGKVSGFIDLGRSGRADKWYDIAFCVRSIREDIGEEQYVELFFDLLGIKPDWEKIKYYILLDELF",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 264,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "APH-3"
+        ],
+        "synonym": [
+          "APH-3"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

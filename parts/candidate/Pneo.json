@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pneo",
+  "locus": "Pneo",
+  "id": "Pneo",
+  "description": "Pneo",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ACAGCAAGCGAACCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAAAGTAAACTGGATGGCTTTCTTGCCGCCAAGGATCTGATGGCGCAGGGGATCAAGATCGACGGATCGATCCGGGGAATTAATTCCGGGGCAATCCCGCAAGGAGGGTGA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 170,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pneo"
+        ],
+        "synonym": [
+          "Pneo",
+          "neo promoter",
+          "neomycin promoter",
+          "kanamycin promoter (SEVA)"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

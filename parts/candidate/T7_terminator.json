@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "T7_terminator",
+  "locus": "T7_terminator",
+  "id": "T7_terminator",
+  "description": "T7 terminator",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTAGCATAACCCCTTGGGGCCTCTAAACGGGTCTTGAGGGGTTTTTTG",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 48,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7 terminator"
+        ],
+        "synonym": [
+          "T7 terminator",
+          "T7 Terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

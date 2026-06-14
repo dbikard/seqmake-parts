@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "LEU2",
+  "locus": "LEU2",
+  "id": "LEU2",
+  "description": "LEU2",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSAPKKIVVLPGDHVGQEITAEAIKVLKAISDVRSNVKFDFENHLIGGAAIDATGVPLPDEALEASKKADAVLLGAVGGPKWGTGSVRPEQGLLKIRKELQLYANLRPCNFASDSLLDLSPIKPQFAKGTDFVVVRELVGGIYFGKRKEDDGDGVAWDSEQYTVPEVQRITRMAAFMALQHEPPLPIWSLDKANVLASSRLWRKTVEETIKNEFPTLKVQHQLIDSAAMILVKNPTHLNGIIITSNMFGDIISDEASVIPGSLGLLPSASLASLPDKNTAFGLYEPCHGSAPDLPKNKVNPIATILSAAMMLKLSLNLPEEGKAIEDAVKKVLDAGIRTGDLGGSNSTTEVGDAVAEEVKKILA",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 364,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "LEU2"
+        ],
+        "synonym": [
+          "Leu2",
+          "3-isopropylmalate dehydrogenase",
+          "beta-IPM dehydrogenase"
+        ],
+        "db_xref": [
+          "UniProt:P04173"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

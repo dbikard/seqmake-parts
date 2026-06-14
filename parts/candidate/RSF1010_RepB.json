@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "RSF1010_RepB",
+  "locus": "RSF1010_RepB",
+  "id": "RSF1010_RepB",
+  "description": "RSF1010 RepB",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKNDRTLQAIGRQLKAMGCERFDIGVRDATTGQMMNREWSAAEVLQNTPWLKRMNAQGNDVYIRPAEQERHGLVLVDDLSEFDLDDMKAEGREPALVVETSPKNYQAWVKVADAAGGELRGQIARTLASEYDADPASADSRHYGRLAGFTNRKDKHTTRAGYQPWVLLRESKGKTATAGPALVQQAGQQIEQAQRQQEKARRLASLELPERQLSRHRRTALDEYRSEMAGLVKRFGDDLSKCDFIAAQKLASRGRSAEEIGKAMAEASPALAERKPGHEADYIERTVSKVMGLPSVQLARAELARAPAPRQRGMDRGGPDFSM",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 323,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RSF1010 RepB"
+        ],
+        "synonym": [
+          "RSF1010 RepB"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

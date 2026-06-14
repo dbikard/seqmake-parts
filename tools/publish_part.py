@@ -32,6 +32,7 @@ from Bio.SeqFeature import FeatureLocation, Reference as BioReference, SeqFeatur
 from Bio.SeqRecord import SeqRecord
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from part_json import record_to_json, write_gb_from_json  # noqa: E402
 from so_terms import so_for  # noqa: E402
 
 CATALOG_ROOT = Path(__file__).resolve().parent.parent
@@ -313,7 +314,11 @@ def publish_part(proposal: dict, catalog_root: Path | str = CATALOG_ROOT, *,
 
     rec = build_part_record(proposal, name=name, synonyms=synonyms)
     validated.mkdir(parents=True, exist_ok=True)
-    SeqIO.write([rec], str(validated / f"{slug}.gb"), "genbank")
+    # JSON is the canonical authored record; the .gb is generated from it.
+    data = record_to_json(rec, slug)
+    (validated / f"{slug}.json").write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_gb_from_json(data, validated / f"{slug}.gb")
     (validated / f"{slug}.md").write_text(report.strip() + "\n", encoding="utf-8")
 
     promoted = False
@@ -321,6 +326,7 @@ def publish_part(proposal: dict, catalog_root: Path | str = CATALOG_ROOT, *,
     if cand_gb.exists():
         cand_gb.unlink()
         (candidate / f"{slug}.md").unlink(missing_ok=True)
+        (candidate / f"{slug}.json").unlink(missing_ok=True)
         promoted = True
 
     result = {

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pliar53",
+  "locus": "Pliar53",
+  "id": "Pliar53",
+  "description": "Pliar53",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GTTGTCACATATCTGTCATCGCGGCCAGGTATAATTGCACGA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 42,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pliar53"
+        ],
+        "synonym": [
+          "Pliar53",
+          "synthetic Pliar53 promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "rrnBT1",
+  "locus": "rrnBT1",
+  "id": "rrnBT1",
+  "description": "rrnBT1",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCA",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 169,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnBT1"
+        ],
+        "synonym": [
+          "rrnBT1",
+          "rrnBT1 terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

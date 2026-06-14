@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pxyl_tet",
+  "locus": "Pxyl_tet",
+  "id": "Pxyl_tet",
+  "description": "Pxyl/tet: the TetR-repressible / anhydrotetracycline-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011).",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGACACTCTATCATTGATAGAGTATAATTAAAATAAGCTCTCTATCATTGATAGAGT",
+  "references": [
+    {
+      "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+      "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
+      "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
+      "pubmed_id": "21921101",
+      "comment": "doi:10.1099/mic.0.052548-0"
+    },
+    {
+      "authors": "Hillen W, Schollmeier K",
+      "title": "Nucleotide sequence of the Tn10 encoded tetracycline resistance gene",
+      "journal": "Nucleic Acids Research 11(2):525-540",
+      "pubmed_id": "6298728",
+      "comment": "doi:10.1093/nar/11.2.525"
+    },
+    {
+      "authors": "Meier I, Wray LV Jr, Hillen W",
+      "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+      "journal": "EMBO Journal 7(2):567-572",
+      "pubmed_id": "2835235",
+      "comment": "doi:10.1002/j.1460-2075.1988.tb02846.x"
+    },
+    {
+      "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
+      "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
+      "journal": "Nucleic Acids Research 14(10):4253-4266",
+      "pubmed_id": "3086838",
+      "comment": "doi:10.1093/nar/14.10.4253"
+    },
+    {
+      "authors": "Bertram R, Neumann B, Schuster CF",
+      "title": "Status quo of tet regulation in bacteria",
+      "journal": "Microbial Biotechnology 15(4):1101-1119",
+      "pubmed_id": "34713957",
+      "comment": "doi:10.1111/1751-7915.13926"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 58,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pxyl/tet"
+        ],
+        "synonym": [
+          "Pxyl/tet",
+          "Pxyl/tetO",
+          "ptet_full",
+          "Tn10 tetA promoter"
+        ],
+        "note": [
+          "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1)."
+        ],
+        "db_xref": [
+          "SO:0000167",
+          "GenBank:JN635500.1"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "Pxyl/tet"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Canonical sigma-70/sigma-A -35 hexamer (TTGACA, perfect consensus) at the 5' edge of the part, separated from the -10 by a 17-bp spacer."
+        ],
+        "citation": [
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 4,
+      "end": 23,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO1"
+        ],
+        "parent": [
+          "Pxyl/tet"
+        ],
+        "note": [
+          "Upstream (promoter-proximal) Tn10 tet operator: 19-bp dyad (CACTCTATCATTGATAGAG) dropped into the -35/-10 spacer so bound TetR homodimer occludes RNA polymer..."
+        ],
+        "citation": [
+          "[2]",
+          "[3]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 23,
+      "end": 29,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "Pxyl/tet"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Consensus sigma-70/sigma-A -10 hexamer TATAAT (perfect match), 17 bp downstream of the -35, with tetO1 ending at its 5' edge and the +1 ~7 nt downstream."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 36,
+      "end": 37,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "+1"
+        ],
+        "parent": [
+          "Pxyl/tet"
+        ],
+        "note": [
+          "Inferred transcription start site, placed ~7 nt 3' of the -10 per standard sigma-70/sigma-A geometry (6-8 nt spacing), between the -10 box and tetO2."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 39,
+      "end": 58,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO2"
+        ],
+        "parent": [
+          "Pxyl/tet"
+        ],
+        "note": [
+          "Downstream (second) Tn10 tet operator at the 3' end: 19-bp dyad (TCTCTATCATTGATAGAGT) with the same core CTCTATCATTGATAGAG as tetO1."
+        ],
+        "citation": [
+          "[1]",
+          "[4]",
+          "[3]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

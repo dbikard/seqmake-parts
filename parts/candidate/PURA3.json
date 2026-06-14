@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "PURA3",
+  "locus": "PURA3",
+  "id": "PURA3",
+  "description": "PURA3",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTCAATTCATCATTTTTTTTTTATTCTTTTTTTTGATTTCGGTTTCTTTGAAATTTTTTTGATTCGGTAATCTCCGAACAGAAGGAAGAACGAAGGAAGGAGCACAGACTTAGATTGGTATATATACGCATATGTAGTGTTGAAGAAACATGAAATTGCCCAGTATTCTTAACCCAACTGCACAGAACAAAAACCTGCAGGAAACGAAGATAAATC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 216,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PURA3"
+        ],
+        "synonym": [
+          "PURA3",
+          "URA3 promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

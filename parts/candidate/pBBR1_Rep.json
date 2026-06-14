@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "pBBR1_Rep",
+  "locus": "pBBR1_Rep",
+  "id": "pBBR1_Rep",
+  "description": "pBBR1 Rep",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MATQSREIGIQAKNKPGHWVQTERKAHEAWAGLIARKPTAAMLLHHLVAQMGHQNAVVVSQKTLSKLIGRSLRTVQYAVKDLVAERWISVVKLNGPGTVSAYVVNDRVAWGQPRDQLRLSVFSAAVVVDHDDQDESLLGHGDLRRIPTLYPGEQQLPTGPGEEPPSQPGIPGMEPDLPALTETEEWERRGQQRLPMPDEPCFLDDGEPLEPPTRVTLPRR",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 220,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pBBR1 Rep"
+        ],
+        "synonym": [
+          "pBBR1 Rep"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

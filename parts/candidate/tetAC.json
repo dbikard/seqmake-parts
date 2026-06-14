@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "tetAC",
+  "locus": "tetAC",
+  "id": "tetAC",
+  "description": "tetAC",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHYGVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRIVAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPFLAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSIIGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 396,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetAC"
+        ],
+        "synonym": [
+          "tetAC"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

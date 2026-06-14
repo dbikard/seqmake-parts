@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "L3S3P22_sTerminator",
+  "locus": "L3S3P22_sTermina",
+  "id": "L3S3P22_sTermina",
+  "description": "L3S3P22 sTerminator",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTGCC",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 49,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "L3S3P22 sTerminator"
+        ],
+        "synonym": [
+          "L3S3P22 sTerminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

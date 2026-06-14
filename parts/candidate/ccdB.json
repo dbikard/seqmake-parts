@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "ccdB",
+  "locus": "ccdB",
+  "id": "ccdB",
+  "description": "ccdB",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MQFKVYTYKRESRYRLFVDVQSDIIDTPGRRMVIPLASARLLSDKVSRELYPVVHIGDESWRMMTTDMASVPVSVIGEEVADLSHRENDIKNAINLMFWGI",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 101,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ccdB"
+        ],
+        "synonym": [
+          "ccdB",
+          "toxin CcdB"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

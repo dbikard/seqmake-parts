@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "cas1_Nme",
+  "locus": "cas1_Nme",
+  "id": "cas1_Nme",
+  "description": "cas1 (Nme)",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MTWRSLLIQNGGKLSLQRRQLLIQQNGESHTVPLEDIAVIIIENRETLITAPLLSALAEHGATLLTCDEQFLPCGQWLPYAQYHRQLKILKLQLNISEPLKKQLWQHIVRQKILNQAFVADETGNDLAAKRLRTLASEVRSGDTGNREAQAAALYFQALFGEKFTRNDNNAVNAALNYTYAVLRAAVARTLTLYGWLPALGLFHRSELNPFNLADDFIEPLRPLADLTVIHLYEQGRLKAELTPGIKQHLIKTLHYQISIERQHFSTLAAIDKMVSSFQAGVTDKNAKQLKLPEILPLKEYQYE",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 304,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "cas1 (Nme)"
+        ],
+        "synonym": [
+          "cas1 (Nme)",
+          "cas1 NMV_RS09840"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

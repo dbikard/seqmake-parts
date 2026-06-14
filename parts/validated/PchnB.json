@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "slug": "PchnB",
+  "locus": "PchnB",
+  "id": "PchnB",
+  "description": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GCAACTAAAAGAGATTGTTTGGATCAGTTACCCAAAATCGTTGAAAAGATTTTAACTCTTCGATTTTTATTTTTTAGGTAATCCTAGCCCTCTCGGGGGCTAGGATTAAAAATTTTAAGTTATTCCAACACGAATGACAAATTGTTCAATGCAAAATAAAAACATACAATATATAAATATATTTTTTAAATAAAACATAAGATTACAATAAAATAAGAATTTTTATTTGGAGTTTGTTTTTTTTCTACAATGATCATTATGTACAATTTTTAGGTTCACCCCATCCAAGCCTTGTGATTGCATTCCTGCGATTCTTTATTCAATGAATAAGCAATGCTATTAATCAGCAATGAATAACCAGCAGTGCAGATTTTGAATAAATTCACATGTCGTAAT",
+  "references": [
+    {
+      "authors": "Iwaki H, Hasegawa Y, Wang S, Kayser MM, Lau PCK",
+      "title": "Identification of a Transcriptional Activator (ChnR) and a 6-Oxohexanoate Dehydrogenase (ChnE) in the Cyclohexanol Catabolic Pathway in Acinetobacter sp. Strain NCIMB 9871 and Localization of the Genes That Encode Them",
+      "journal": "Applied and Environmental Microbiology 65(11):5158-5162 (1999)",
+      "pubmed_id": "10543838",
+      "comment": "doi:10.1128/AEM.65.11.5158-5162.1999"
+    },
+    {
+      "authors": "Benedetti I, Nikel PI, de Lorenzo V",
+      "title": "Data on the standardization of a cyclohexanone-responsive expression system for Gram-negative bacteria",
+      "journal": "Data in Brief 6:738-744 (2016)",
+      "pubmed_id": "26870759",
+      "comment": "doi:10.1016/j.dib.2016.01.022"
+    },
+    {
+      "authors": "Cheng Q, Thomas SM, Kostichka K, Valentine JR, Nagarajan V",
+      "title": "Genetic Analysis of a Gene Cluster for Cyclohexanol Oxidation in Acinetobacter sp. Strain SE19 by In Vitro Transposition",
+      "journal": "Journal of Bacteriology 182(17):4744-4751 (2000)",
+      "pubmed_id": "10940013",
+      "comment": "doi:10.1128/JB.182.17.4744-4751.2000"
+    },
+    {
+      "authors": "Steigedal M, Valla S",
+      "title": "The Acinetobacter sp. chnB promoter together with its cognate positive regulator ChnR is an attractive new candidate for metabolic engineering applications in bacteria",
+      "journal": "Metabolic Engineering 10(2):121-129 (2008)",
+      "pubmed_id": "17950643",
+      "comment": "doi:10.1016/j.ymben.2007.08.002"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 396,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PchnB"
+        ],
+        "synonym": [
+          "PchnB",
+          "chnB promoter",
+          "cyclohexanone-inducible promoter",
+          "chnB promoter region"
+        ],
+        "note": [
+          "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "ChnR"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 14,
+      "end": 25,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ChnR-responsive element"
+        ],
+        "parent": [
+          "PchnB"
+        ],
+        "note": [
+          "Candidate ChnR (AraC/XylS-family activator) binding region."
+        ],
+        "citation": [
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000410"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

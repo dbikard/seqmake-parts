@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "SV40_NLS",
+  "locus": "SV40_NLS",
+  "id": "SV40_NLS",
+  "description": "SV40 NLS",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "PKKKRKV",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 7,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SV40 NLS"
+        ],
+        "synonym": [
+          "SV40 NLS",
+          "NLS",
+          "nuclear localization signal"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

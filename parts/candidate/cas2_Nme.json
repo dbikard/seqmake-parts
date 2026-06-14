@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "cas2_Nme",
+  "locus": "cas2_Nme",
+  "id": "cas2_Nme",
+  "description": "cas2 (Nme)",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSEAKFMRIIVFFDLPVITAAKRKAANQFRQFLLKDGYQMLQLSVYSRIVKGRDSLQKHHNRLCANLPQEGSIRCLEITEKQYAAMKLLLGELKTQEKKVNSDQLLLF",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 108,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "cas2 (Nme)"
+        ],
+        "synonym": [
+          "cas2 (Nme)",
+          "cas2 NMV_RS09845"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

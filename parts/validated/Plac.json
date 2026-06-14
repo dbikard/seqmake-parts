@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "slug": "Plac",
+  "locus": "Plac",
+  "id": "Plac",
+  "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTTACACTTTATGCTTCCGGCTCGTATGTTGTGTGGAATTGTGAGCGGATAACAATT",
+  "references": [
+    {
+      "authors": "Dickson RC, Abelson J, Barnes WM, Reznikoff WS",
+      "title": "Genetic regulation: the Lac control region",
+      "journal": "Science",
+      "pubmed_id": "1088926",
+      "comment": "doi:10.1126/science.1088926"
+    },
+    {
+      "authors": "Gilbert W, Maxam A",
+      "title": "The nucleotide sequence of the lac operator",
+      "journal": "Proc Natl Acad Sci USA",
+      "pubmed_id": "4587255",
+      "comment": "doi:10.1073/pnas.70.12.3581"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 57,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Plac"
+        ],
+        "synonym": [
+          "lac promoter"
+        ],
+        "note": [
+          "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "LacI"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "Plac"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Wild-type lac -35 hexamer TTTACA."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 24,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "Plac"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Wild-type lac -10 (Pribnow) box TATGTT, weak/non-consensus."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 36,
+      "end": 37,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "+1 TSS"
+        ],
+        "parent": [
+          "Plac"
+        ],
+        "note": [
+          "Transcription start site, predominant +1A, lying 6-8 bp downstream of the -10 box (index 36 = 7 bp past the last -10 base)."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 33,
+      "end": 57,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lac operator O1"
+        ],
+        "parent": [
+          "Plac"
+        ],
+        "note": [
+          "LacI operator O1, pseudo-palindromic."
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

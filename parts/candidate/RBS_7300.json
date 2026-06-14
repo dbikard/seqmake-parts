@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "RBS_7300",
+  "locus": "RBS_7300",
+  "id": "RBS_7300",
+  "description": "RBS 7300",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GGAGCTTAAAAAGGAGAAAGTTTCT",
+  "references": [],
+  "features": [
+    {
+      "type": "RBS",
+      "start": 0,
+      "end": 25,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RBS 7300"
+        ],
+        "synonym": [
+          "RBS 7300",
+          "Synthetic RBS7 7300 TIR NEQ"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

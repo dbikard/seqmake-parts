@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "I-SceI_site",
+  "locus": "I-SceI_site",
+  "id": "I-SceI_site",
+  "description": "I-SceI site",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATTACCCTGTTATCCCTA",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 18,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "I-SceI site"
+        ],
+        "synonym": [
+          "I-SceI",
+          "I-SceI recognition site",
+          "I-SceI site",
+          "I-SceI cut site"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

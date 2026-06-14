@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "slug": "BlastR",
+  "locus": "BlastR",
+  "id": "BlastR",
+  "description": "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d...",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MPLSQEESTLIERATATINSIPISEDYSVASAALSSDGRIFTGVNVYHFTGGPCAELVVLGTAAAAAAGNLTCIVAIGNENRGILSPCGRCRQVLLDLHPGIKAIVKDSDGQPTAVGIRELLPSGYVWEG",
+  "references": [
+    {
+      "authors": "Kimura M, Kamakura T, Tao QZ, Kaneko I, Yamaguchi I",
+      "title": "Cloning of the blasticidin S deaminase gene (BSD) from Aspergillus terreus and its use as a selectable marker for Schizosaccharomyces pombe and Pyricularia oryzae",
+      "journal": "Molecular and General Genetics 242(2):121-129 (1994)",
+      "pubmed_id": "8159161",
+      "comment": "doi:10.1007/BF00391004"
+    },
+    {
+      "authors": "Kimura M, Sekido S, Isogai Y, Yamaguchi I",
+      "title": "Expression, purification, and characterization of blasticidin S deaminase (BSD) from Aspergillus terreus: the role of catalytic zinc in enzyme structure",
+      "journal": "Journal of Biochemistry 127(6):955-963 (2000)",
+      "pubmed_id": "10833262",
+      "comment": "doi:10.1093/oxfordjournals.jbchem.a022711"
+    },
+    {
+      "authors": "Kumasaka T, Yamamoto M, Furuichi M, Nakasako M, Teh AH, Kimura M, Yamaguchi I, Ueki T",
+      "title": "Crystal structures of blasticidin S deaminase (BSD): implications for dynamic properties of catalytic zinc",
+      "journal": "Journal of Biological Chemistry 282(51):37103-37111 (2007)",
+      "pubmed_id": "17959604",
+      "comment": "doi:10.1074/jbc.M704476200"
+    },
+    {
+      "authors": "Kimura M, Furuichi M, Yamamoto M, Kumasaka T, Mizuno H, Miyano M, Yamaguchi I",
+      "title": "The flexible C-terminal region of Aspergillus terreus blasticidin S deaminase: identification of its functional roles with deletion enzymes",
+      "journal": "Biochemical and Biophysical Research Communications 290(3):1057-1062 (2002)",
+      "pubmed_id": "11779186",
+      "comment": "doi:10.1006/bbrc.2001.6184"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 130,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "BlastR"
+        ],
+        "synonym": [
+          "BSD",
+          "blasticidin S deaminase",
+          "bsd"
+        ],
+        "note": [
+          "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d..."
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P0C2P0"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 55,
+      "end": 56,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Active site Glu56"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 ACT_SITE=56 'Proton donor'."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 53,
+      "end": 54,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Zinc-binding Cys54"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=54, ligand catalytic Zn(2+)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 87,
+      "end": 88,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Zinc-binding Cys88"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=88, ligand catalytic Zn(2+)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 90,
+      "end": 91,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Zinc-binding Cys91"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=91, ligand catalytic Zn(2+)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 27,
+      "end": 28,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Substrate-binding Ser28"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=28 'substrate'."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 81,
+      "end": 82,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Substrate-binding Arg82"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=82 'substrate'."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 125,
+      "end": 126,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Substrate-binding Tyr126"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=126 'substrate'."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[3]",
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 127,
+      "end": 128,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Substrate-binding Trp128"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "UniProt P0C2P0 BINDING=128 'substrate'."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[3]",
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 125,
+      "end": 130,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Flexible C-terminal substrate-access region"
+        ],
+        "parent": [
+          "BlastR"
+        ],
+        "note": [
+          "Flexible C-terminal region (Tyr126-Gly130)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[4]",
+          "[3]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

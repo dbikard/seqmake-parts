@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "kanR_Tn903",
+  "locus": "kanR_Tn903",
+  "id": "kanR_Tn903",
+  "description": "kanR (Tn903)",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 271,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "kanR (Tn903)"
+        ],
+        "synonym": [
+          "KanR",
+          "KmR",
+          "KanR2",
+          "APH(3')-Ia",
+          "aphA1",
+          "nptI"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

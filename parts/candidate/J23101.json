@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "J23101",
+  "locus": "J23101",
+  "id": "J23101",
+  "description": "J23101",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTTACAGCTAGCTCAGTCCTAGGTATTATGCTAGC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "J23101"
+        ],
+        "synonym": [
+          "BBa_J23101",
+          "Anderson constitutive promoter",
+          "J23101 promoter"
+        ],
+        "collection": [
+          "anderson-promoters"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

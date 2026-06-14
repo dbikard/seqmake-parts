@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "T7-Ocr",
+  "locus": "T7-Ocr",
+  "id": "T7-Ocr",
+  "description": "T7-Ocr",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MAMSNMTYNNVFDHAYEMLKENIRYDDIRDTDDLHDAIHMAADNAVPHYYADIFSVMASEGIDLEFEDSGLMPDTKDVIRILQARIYEQLTIDLWEDAEDLLNEYLEEVEEYEEDEE",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 117,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7-Ocr"
+        ],
+        "synonym": [
+          "T7-Ocr",
+          "T7p01",
+          "Ocr",
+          "gene 0.3 protein"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

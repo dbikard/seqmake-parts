@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "lacZ_alpha",
+  "locus": "lacZ_alpha",
+  "id": "lacZ_alpha",
+  "description": "lacZ alpha",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MTMITNSSSVPGDPLESTSRVHGDLEACRHASLALAVVLQRRDWENPGVTQLNRLAAHPPFASWRNSEEARTDRPSQQLRSLNGEWR",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 87,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lacZ alpha"
+        ],
+        "synonym": [
+          "lacZ alpha",
+          "lacZa",
+          "beta-galactosidase alpha subunit"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

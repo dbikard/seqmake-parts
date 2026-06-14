@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "SacB",
+  "locus": "SacB",
+  "id": "SacB",
+  "description": "SacB",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MNIKKFAKQATVLTFTTALLAGGATQAFAKETNQKPYKETYGISHITRHDMLQIPEQQKNEKYQVPEFDSSTIKNISSAKGLDVWDSWPLQNADGTVANYHGYHIVFALAGDPKNADDTSIYMFYQKVGETSIDSWKNAGRVFKDSDKFDANDSILKDQTQEWSGSATFTSDGKIRLFYTDFSGKHYGKQTLTTAQVNVSASDSSLNINGVEDYKSIFDGDGKTYQNVQQFIDEGNYSSGDNHTLRDPHYVEDKGHKYLVFEANTGTEDGYQGEESLFNKAYYGKSTSFFRQESQKLLQSDKKRTAELANGALGMIELNDDYTLKKVMKPLIASNTVTDEIERANVFKMNGKWYLFTDSRGSKMTIDGITSNDIYMLGYVSNSLTGPYKPLNKTGLVLKMDLDPNDVTFTYSHFAVPQAKGNNVVITSYMTNRGFYADKQSTFAPSFLLNIKGKKTSVVKDSILEQGQLTVNK",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 473,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SacB"
+        ],
+        "synonym": [
+          "SacB",
+          "levansucrase"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

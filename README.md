@@ -29,11 +29,15 @@ Parts are split by curation status:
   the site.
 
 ```
-parts/validated/<name>.gb   annotated GenBank part (one main feature + sub-features)
+parts/validated/<name>.json canonical part record (authored source of truth)
+parts/validated/<name>.gb   annotated GenBank part, generated from the .json
 parts/validated/<name>.md   curated documentation page (origin / properties / use)
-parts/candidate/<name>.gb   annotated GenBank part awaiting a documentation page
+parts/candidate/<name>.json canonical record for a part awaiting a documentation page
+parts/candidate/<name>.gb   generated GenBank part awaiting a documentation page
 catalog.json                machine-readable manifest (every part + its metadata)
 catalog.ttl / .jsonld       RDF projection of the catalog (SBOL3 + Sequence Ontology + SBO)
+schema/part.schema.json     JSON Schema for a canonical part record
+tools/build_gb.py           regenerates the .gb files from the canonical .json
 tools/build_catalog.py      regenerates catalog.json + the website pages
 tools/build_rdf.py          regenerates catalog.ttl + catalog.jsonld
 docs/                       generated website source (mkdocs Material)

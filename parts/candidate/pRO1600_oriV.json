@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "pRO1600_oriV",
+  "locus": "pRO1600_oriV",
+  "id": "pRO1600_oriV",
+  "description": "pRO1600 oriV",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TGTGTATAAGGGGACACTGTATCTGCGTCCCACAATACAACAAATCCGTCCCTTTACAACAACAAATCCGTCCCTTCTTAACAACAAATCCGTCCCTTAATGGCAACAAATCCGTCCCTTTTTAAACTCTACAGGCCACGGATTACGTGGCCTGTAGACGTCCTAAAAGGTTTAAAAGGGAAAAGGAAGAAAAGGGTGGAAACGCAAAAAACGCACCACTACGTGGCCCCGTTGGGGCCGCATTTGTGCCCCTGAAGGGGCGGGGGAGGCGTCTGGGCAATCCCCGTTTTACCAGTCCCCTATCGCCGCCTGAGAGGGCGCAGGAAGCGAGTAATCAGGGTATCGAGGCGGA",
+  "references": [],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 352,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pRO1600 oriV"
+        ],
+        "synonym": [
+          "pRO1600 oriV"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

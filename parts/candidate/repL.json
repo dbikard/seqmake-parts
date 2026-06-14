@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "repL",
+  "locus": "repL",
+  "id": "repL",
+  "description": "repL",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKERYGTVYKGSQRLIDEESGEVIEVDKLYRKQTSGNFVKAYIVQLISMLDMIGGKKLKIVNYILDNVHLSNNTMIATTREIAKATGTSLQTVITTLKILEEGNIIKRKTGVLMLNPELLMRGDDQKQKYLLLEFGNFEQEANEID",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 146,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "repL"
+        ],
+        "synonym": [
+          "repL"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

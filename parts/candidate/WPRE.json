@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "slug": "WPRE",
+  "locus": "WPRE",
+  "id": "WPRE",
+  "description": "WPRE.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AATCAACCTCTGGATTACAAAATTTGTGAAAGATTGACTGGTATTCTTAACTATGTTGCTCCTTTTACGCTATGTGGATACGCTGCTTTAATGCCTTTGTATCATGCTATTGCTTCCCGTATGGCTTTCATTTTCTCCTCCTTGTATAAATCCTGGTTGCTGTCTCTTTATGAGGAGTTGTGGCCCGTTGTCAGGCAACGTGGCGTGGTGTGCACTGTGTTTGCTGACGCAACCCCCACTGGTTGGGGCATTGCCACCACCTGTCAGCTCCTTTCCGGGACTTTCGCTTTCCCCCTCCCTATTGCCACGGCGGAACTCATCGCCGCCTGCCTTGCCCGCTGCTGGACAGGGGCTCGGCTGTTGGGCACTGACAATTCCGTGGTGTTGTCGGGGAAATCATCGTCCTTTCCTTGGCTGCTCGCCTGTGTTGCCACCTGGATTCTGCGCGGGACGTCCTTCTGCTACGTCCCTTCGGCCCTCAATCCAGCGGACCTTCCTTCCCGCGGCCTGCTGCCGGCTCTGCGGCCTCTTCCGCGTCTTCGCCTTCGCCCTCAGACGAGTCGGATCTCCCTTTGGGCCGCCTCCCCGC",
+  "references": [],
+  "features": [
+    {
+      "type": "misc_feature",
+      "start": 0,
+      "end": 589,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "WPRE"
+        ],
+        "synonym": [
+          "woodchuck hepatitis virus posttranscriptional regulatory element",
+          "WHP posttranscriptional regulatory element",
+          "WPRE element"
+        ],
+        "note": [
+          "Woodchuck hepatitis virus posttranscriptional regulatory element; placed 3' of a transgene to boost mRNA stability and expression (Zufferey 1999). Extracted from pCDH-EF1 lentiviral vector (Addgene 207805), WPRE feature (589 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

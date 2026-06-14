@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "L3S1P13",
+  "locus": "L3S1P13",
+  "id": "L3S1P13",
+  "description": "L3S1P13",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GACGAACAATAAGGCCTCCCTAACGGGGGGCCTTTTTTATTGATAACAAAA",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 51,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "L3S1P13"
+        ],
+        "synonym": [
+          "L3S1P13"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

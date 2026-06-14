@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "pSH71_ori",
+  "locus": "pSH71_ori",
+  "id": "pSH71_ori",
+  "description": "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCGATTTTTTATTAAAACGTCTCAAAATCGTTTCTGAGACGTTTTAGCGTTTATTTCGTTTAGTTATCGGCATAATCGTTAAAACAGGCGTTATCGTAGCGTAAAAGCCCTTGAGCGTAGCGTGGCTTTGCAGCGAAGATGTTGTCTGTTAGATTATGAAAGCCGATGACTGAATGAAATAATAAGCGCAGCGTCCTTCTATTTCGGTTGGAGGAGGCTCAAGGGAGTTTGAGGGAATGAAATTCCCTCATGGGTTTGATTTTAAAAATTGCTTGCAATTTTGCCGAGCGGTAGCGCTGGAAAATTTTTGAAAAAAATTTGGAATTTGGAAAAAAATGGGGGGAAAGGAAGCGAATTTTGCTTCCGTACTACGACCCCCCATTAAGTGCCGAGTGCCAATTTTTGTGCCAAAAACGCTCTATCCCAACTGGCTCAAGGGTTTGAGGGGTTTTTCAATCGCCAACGAATCGCCAACGTTTTCGCCAACGTTTTTTATAAATCTATATTTAAGTAGCTTTATTGTTGTTTTTATGATTACAAAGTGATACACTAATTTTATAAAATTATTTGATTGGAGTTTTTTAAATGGTGATTTCAGAATCGAAAAAAAGAGTTATGATTTCTCTGACAAAAGAGCAAGATAAAAAATTAACAGATATGGCGAAACAAAAAGGTTTTTCAAAATCTGCGGTTGCGGCGTTAGCTATAGAAGAATATGCAAGAAAGGAATCAGAACAAAAAAAATAAGCGAAAGCTCGCGTTTTTAGAAGGATACGAGTTTTCGCTACTTGTTTTTGATAAGGTAATTATATC",
+  "references": [],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 813,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pSH71 ori"
+        ],
+        "synonym": [
+          "pSH71 ori",
+          "pLZ12 ori",
+          "pSH71 origin"
+        ],
+        "note": [
+          "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

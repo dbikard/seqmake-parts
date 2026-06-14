@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slug": "PEM7",
+  "locus": "PEM7",
+  "id": "PEM7",
+  "description": "PEM7",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TGTTGACAATTAATCATCGGCATAGTATATCGGCATAGTATAATACGACAAGGTGAGGAACTAAACC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 67,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PEM7"
+        ],
+        "synonym": [
+          "PEM7",
+          "PEM7 promoter",
+          "Pem7",
+          "EM7 promoter",
+          "synthetic constitutive promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

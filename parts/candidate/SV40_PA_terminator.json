@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "SV40_PA_terminator",
+  "locus": "SV40_PA_terminat",
+  "id": "SV40_PA_terminat",
+  "description": "SV40_PA_terminator",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGTTTATTGCAGCTTATAATGGTTACAAATAAAGCAATAGCATCACAAATTTCACAAATAAAGCATTTTTTTCACTGCATTCTAGTTGTGGTTTGTCCAAACTCATCAATGTATCTTAT",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 120,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SV40_PA_terminator"
+        ],
+        "synonym": [
+          "SV40_PA_terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

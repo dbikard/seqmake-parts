@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slug": "sgRNA_scaffold",
+  "locus": "sgRNA_scaffold",
+  "id": "sgRNA_scaffold",
+  "description": "sgRNA scaffold",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
+  "references": [],
+  "features": [
+    {
+      "type": "misc_RNA",
+      "start": 0,
+      "end": 76,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "sgRNA scaffold"
+        ],
+        "synonym": [
+          "sgRNA scaffold",
+          "gRNA scaffold",
+          "guide RNA scaffold",
+          "chimeric RNA scaffold",
+          "sgRNA scaffold (SpCas9)"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

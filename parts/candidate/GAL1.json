@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "GAL1",
+  "locus": "GAL1",
+  "id": "GAL1",
+  "description": "GAL1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CGGATTAGAAGCCGCCGAGCGGGTGACAGCCCTCCGAAGGAAGACTCTCCTCCGTGCGTCCTCGTCTTCACCGGTCGCGTTCCTGAAACGCAGATGTGCCTCGCGCCGCACTGCTCCGAACAATAAAGATTCTACAATACTAGCTTTTATGGTTATGAAGAGGAAAAATTGGCAGTAACCTGGCCCCACAAACCTTCAAATGAACGAATCAAATTAACAACCATAGGATGATAATGCGATTAGTTTTTTAGCCTTATTTCTGGGGTAATTAATCAGCGAAGCGATGATTTTTGATCTATTAACAGATATATAAATGCAAAAACTGCATAACCACTTTAACTAATACTTTCAACATTTTCGGTTTGTATTACTTCTTATTCAAATGTAATAAAAGTATCAACAAAAAATTGTTAATATACCTCTATACTTTAACGTCAAGGAG",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 442,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "GAL1"
+        ],
+        "synonym": [
+          "GAL1 promoter",
+          "PGAL1",
+          "pGAL1",
+          "Sc GAL1 promoter"
+        ],
+        "note": [
+          "Saccharomyces cerevisiae GAL1 promoter, galactose-inducible / glucose-repressible (the GAL1 arm of the divergent GAL1-10 promoter; includes the Gal4 UAS). Extracted from pYES2 (Addgene 244550), GAL1 promoter feature (442 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

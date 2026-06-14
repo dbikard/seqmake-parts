@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pbla",
+  "locus": "Pbla",
+  "id": "Pbla",
+  "description": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct fun...",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CGCGGAACCCCTATTTGTTTATTTTTCTAAATACATTCAAATATGTATCCGCTCATGAGACAATAACCCT",
+  "references": [
+    {
+      "authors": "Sutcliffe JG",
+      "title": "Nucleotide sequence of the ampicillin resistance gene of Escherichia coli plasmid pBR322",
+      "journal": "Proceedings of the National Academy of Sciences USA",
+      "pubmed_id": "358200",
+      "comment": "doi:10.1073/pnas.75.8.3737"
+    },
+    {
+      "authors": "Brosius J, Cate RL, Perlmutter AP",
+      "title": "Precise location of two promoters for the beta-lactamase gene of pBR322. S1 mapping of ribonucleic acid isolated from Escherichia coli or synthesized in vitro",
+      "journal": "Journal of Biological Chemistry",
+      "pubmed_id": "6178738",
+      "comment": "doi:10.1016/S0021-9258(18)34261-3"
+    },
+    {
+      "authors": "Russell DR, Bennett GN",
+      "title": "Characterization of the beta-lactamase promoter of pBR322",
+      "journal": "Nucleic Acids Research",
+      "pubmed_id": "6269053",
+      "comment": "doi:10.1093/nar/9.11.2517"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 70,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pbla"
+        ],
+        "synonym": [
+          "Pbla",
+          "AmpR promoter",
+          "bla promoter"
+        ],
+        "note": [
+          "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct fun..."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 35,
+      "end": 41,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "Pbla"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Sigma-70 -35 hexamer TTCAAA of the pBR322 bla P3 promoter (4/6 to consensus TTGACA), 17 bp upstream of the -10."
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 58,
+      "end": 64,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "Pbla"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Sigma-70 -10 hexamer GACAAT (4/6 to TATAAT), 17 bp downstream of the -35 (optimal spacing)."
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

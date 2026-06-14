@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "PA1lacO-1",
+  "locus": "PA1lacO-1",
+  "id": "PA1lacO-1",
+  "description": "PA1lacO-1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AAAATTTATCAAAAAGAGTGTTGACTTGTGAGCGGATAACAATGATACTTAGATTCAATTGTGAGCGGATAACAATTTCACACA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 84,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PA1lacO-1"
+        ],
+        "synonym": [
+          "PA1lacO-1 promoter",
+          "PA1/lacO-1",
+          "PA1lacO1",
+          "A1/lacO-1 promoter"
+        ],
+        "note": [
+          "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Coliphage T7 A1 promoter (-35 TTGACT / -10 GATACT) with two lac operators (O1 in the spacer + downstream O1); LacI-repressible, IPTG-inducible. Distinct from the already-present PA1/O4/O3 (different operator placement)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

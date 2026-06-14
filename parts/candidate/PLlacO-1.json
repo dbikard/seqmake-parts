@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "PLlacO-1",
+  "locus": "PLlacO-1",
+  "id": "PLlacO-1",
+  "description": "PLlacO-1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATAAATGTGAGCGGATAACATTGACATTGTGAGCGGATAACAAGATACTGAGCACATCAGCAGGACGCACTGACC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 75,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PLlacO-1"
+        ],
+        "synonym": [
+          "PLlacO-1 promoter",
+          "PllacO-1",
+          "PLlacO1",
+          "lac/PL hybrid promoter"
+        ],
+        "note": [
+          "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35 TTGACA / -10 GATACT) with two natural lac operators (LacI-repressible, IPTG-inducible)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

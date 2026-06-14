@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "rep_pSC101",
+  "locus": "rep_pSC101",
+  "id": "rep_pSC101",
+  "description": "rep pSC101",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSELVVFKANELAISRYDLTEHETKLILCCVALLNPTIENPTRKERTVSFTYNQYAQMMNISRENAYGVLAKATRELMTRTVEIRNPLVKGFEIFQWTNYAKFSSEKLELVFSEEILPYLFQLKKFIKYNLEHVKSFENKYSMRIYEWLLKELTQKKTHKANIEISLDEFKFMLMLENNYHEFKRLNQWVLKPISKDLNTYSNMKLVVDKRGRPTDTLIFQVELDRQMDLVTELENNQIKMNGDKIPTTITSDSYLRNGLRKTLHDALTAKIQLTSFEAKFLSDMQSKHDLNGSFSWLTQKQRTTLENILAKYGRI",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 316,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rep pSC101"
+        ],
+        "synonym": [
+          "Replication protein",
+          "rep pSC101",
+          "repA101 ts"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

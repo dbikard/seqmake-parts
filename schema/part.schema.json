@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dbikard.github.io/dna-parts-catalog/schema/part.schema.json",
+  "title": "DNA parts catalog -- canonical part record",
+  "description": "The canonical, authored representation of one part. The .gb file is generated from this by tools/build_gb.py; prose lives in the sibling <slug>.md.",
+  "type": "object",
+  "required": ["schema_version", "slug", "locus", "id", "description",
+               "molecule_type", "sequence", "features"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "slug": {"type": "string", "minLength": 1},
+    "locus": {"type": "string", "description": "GenBank LOCUS identifier (<=16 chars)"},
+    "id": {"type": "string"},
+    "description": {"type": "string", "description": "GenBank DEFINITION line"},
+    "molecule_type": {"type": "string", "enum": ["DNA", "RNA", "protein"]},
+    "locus_annotations": {
+      "type": "object",
+      "description": "LOCUS-line annotations carried for a faithful .gb (topology, division, date).",
+      "additionalProperties": {"type": "string"}
+    },
+    "sequence": {"type": "string", "minLength": 1},
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "authors": {"type": "string"},
+          "title": {"type": "string"},
+          "journal": {"type": "string"},
+          "pubmed_id": {"type": "string"},
+          "medline_id": {"type": "string"},
+          "consrtm": {"type": "string"},
+          "comment": {"type": "string", "description": "carries the DOI as 'doi:<id>'"}
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "minItems": 1,
+      "description": "GenBank features in file order; the first parent-less feature is the main part.",
+      "items": {
+        "type": "object",
+        "required": ["type", "start", "end", "strand", "qualifiers"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"type": "string"},
+          "start": {"type": "integer", "minimum": 0, "description": "0-based inclusive start"},
+          "end": {"type": "integer", "minimum": 1, "description": "0-based exclusive end"},
+          "strand": {"type": "integer", "enum": [1, -1]},
+          "qualifiers": {
+            "type": "object",
+            "additionalProperties": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "review_status": {
+      "type": "string",
+      "description": "Trust level of this record's content as it self-corrects over time.",
+      "enum": ["ai-generated", "ai-cross-checked", "expert-reviewed"]
+    },
+    "provenance": {
+      "type": "object",
+      "description": "How this record was produced (free-form; e.g. migrated_from, asserting agent/model).",
+      "additionalProperties": true
+    },
+    "functional_claims": {
+      "type": "array",
+      "description": "Phase 2: prose-derived functional knowledge (inducer, dynamic range, host range, ...), each with its own source + provenance + confidence + review_status. Empty until populated.",
+      "items": {"type": "object"}
+    }
+  }
+}

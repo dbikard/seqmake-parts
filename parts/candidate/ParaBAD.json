@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "slug": "ParaBAD",
+  "locus": "ParaBAD",
+  "id": "ParaBAD",
+  "description": "ParaBAD",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCAT",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 285,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ParaBAD"
+        ],
+        "synonym": [
+          "araBAD promoter"
+        ],
+        "regulated_by": [
+          "AraC"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 2,
+      "end": 20,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "O2"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "note": [
+          "AraC operator (upstream loop partner)"
+        ]
+      }
+    },
+    {
+      "type": "promoter",
+      "start": 124,
+      "end": 153,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pc"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "note": [
+          "divergent promoter for araC"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 160,
+      "end": 182,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "O1"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "note": [
+          "AraC operator (loop partner of O2)"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 203,
+      "end": 217,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "CAP"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "note": [
+          "cAMP receptor protein binding site"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 212,
+      "end": 251,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "I1+I2"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "note": [
+          "AraC activation half-sites"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 249,
+      "end": 277,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pBAD"
+        ],
+        "parent": [
+          "ParaBAD"
+        ],
+        "regulatory_class": [
+          "promoter"
+        ],
+        "note": [
+          "sigma70 -35/-10 core promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

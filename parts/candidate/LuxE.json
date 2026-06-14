@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "LuxE",
+  "locus": "LuxE",
+  "id": "LuxE",
+  "description": "LuxE",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKGIKEYDSSAAILSNIILRSKTGMTSYVDKQEITASSEIDDLIFSSDPLVWSYDEQEKIRKKLVLDAFRNHYKHCREYRHYCQAHKVDDNITEIDDIPVFPTSVFKFTRLLTSQENEIESWFTSSGTNGLKSQVARDRLSIERLLGSVSYGMKYVGSWFDHQIELVNLGPDRFNAHNIWFKYVMSLVELLYPTTFTVTEERIDFVKTLNSLERIKNQGKDLCLIGSPYFIYLLCHYMKDKKISFSGDKSLYIITGGGWKSYEKESLKRDDFNHLLFDTFNLSDISQIRDIFNQVELNTCFFEDEMQRKHVPPWVYARALDPETLKPVPDGTPGLMSYMDASATSYPAFIVTDDVGIISREYGKYPGVLVEILRRVNTRTQKGCALSLTEAFDS",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 394,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "LuxE"
+        ],
+        "synonym": [
+          "LuxE",
+          "long-chain-fatty-acid ligase"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

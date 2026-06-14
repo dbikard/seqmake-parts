@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "CspRecT",
+  "locus": "CspRecT",
+  "id": "CspRecT",
+  "description": "CspRecT",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MNQIVKFTDDSGLAVQVTPDDVRRYICENATEKEVGLFLQLCQTQRLNPFVKDAYLVKYGGAPASMITSYQVFNRRACRDANYDGIKSGVVVLRDGDVVHKRGAACYKKAGEELIGGWAEVRFKDGRETAYAEVALDDYSTGKSNWAKMPGVMIEKCAKAAAWRLAFPDTFQGMYAAEEMDQAQQPEQVRAQAEQPVDLQPIRELFKPYCEHFGITPAEGMTAVCGAVGAEGMHSMTEQQARRARAWMEEEMAAPAVEAEYEVVDEGEVF",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 270,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "CspRecT"
+        ],
+        "synonym": [
+          "CspRecT"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

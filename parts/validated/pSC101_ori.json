@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "slug": "pSC101_ori",
+  "locus": "pSC101_ori",
+  "id": "pSC101_ori",
+  "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GGGCTAGTCAATGATAATTACTAGTCCTTTTCCCGGGAGATCTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC",
+  "references": [
+    {
+      "authors": "Sugiura S, Ohkubo S, Yamaguchi K",
+      "title": "Minimal essential origin of plasmid pSC101 replication: requirement of a region downstream of iterons",
+      "journal": "J Bacteriol 175(18):5993-6001 (1993)",
+      "pubmed_id": "8376344",
+      "comment": "doi:10.1128/jb.175.18.5993-6001.1993"
+    },
+    {
+      "authors": "Murakami A, Sugiura S, Yamaguchi K",
+      "title": "DNA bending of pSC101 ori induced by Rep, a replication initiator protein and IHF",
+      "journal": "J Gen Appl Microbiol 43(4):189-197 (1997)",
+      "pubmed_id": "12501319",
+      "comment": "doi:10.2323/jgam.43.189"
+    },
+    {
+      "authors": "Manen D, Caro L",
+      "title": "The replication of plasmid pSC101",
+      "journal": "Mol Microbiol 5(2):233-237 (1991)",
+      "pubmed_id": "2041467",
+      "comment": "doi:10.1111/j.1365-2958.1991.tb02103.x"
+    }
+  ],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 223,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pSC101 ori"
+        ],
+        "synonym": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101."
+        ],
+        "db_xref": [
+          "SO:0000296"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 49,
+      "end": 67,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RepA iteron 1"
+        ],
+        "parent": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "First of three tandem ~18 bp direct-repeat iterons (shared 17 bp core TGTAAATTCTGCTAGAC)."
+        ],
+        "db_xref": [
+          "SO:0000410"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 81,
+      "end": 99,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RepA iteron 2"
+        ],
+        "parent": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "Second RepA-binding iteron; identical 17 bp core (TGTAAATTCTGCTAGAC) to iteron 1, differing only in the leading base (C->T)."
+        ],
+        "db_xref": [
+          "SO:0000410"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 102,
+      "end": 120,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RepA iteron 3"
+        ],
+        "parent": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "Third (innermost) RepA-binding iteron; differs from iterons 1/2 by a single central base (T->C, core CCGCTAGAC)."
+        ],
+        "db_xref": [
+          "SO:0000410"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 149,
+      "end": 183,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "AT-rich bending region"
+        ],
+        "parent": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "AT-rich tract (82.4% AT) lying between the iterons and the DnaA box."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 211,
+      "end": 220,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "DnaA"
+        ],
+        "parent": [
+          "pSC101 ori"
+        ],
+        "note": [
+          "DnaA-box-like motif on the reverse strand (revcomp of seq[211:220] = TTATACACA; near the DnaA consensus TTAT[C/A]CACA)."
+        ],
+        "db_xref": [
+          "SO:0000410"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

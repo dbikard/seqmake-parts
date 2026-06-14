@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "sopA",
+  "locus": "sopA",
+  "id": "sopA",
+  "description": "sopA",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MFRMKLMETLNQCINAGHEMTKAIAIAQFNDDSPEARKITRRWRIGEAADLVGVSSQAIRDAEKAGRLPHPDMEIRGRVEQRVGYTIEQINHMRDVFGTRLRRAEDVFPPVIGVAAHKGGVYKTSVSVHLAQDLALKGLRVLLVEGNDPQGTASMYHGWVPDLHIHAEDTLLPFYLGEKDDVTYAIKPTCWPGLDIIPSCLALHRIETELMGKFDEGKLPTDPHLMLRLAIETVAHDYDVIVIDSAPNLGIGTINVVCAADVLIVPTPAELFDYTSALQFFDMLRDLLKNVDLKGFEPDVRILLTKYSNSNGSQSPWMEEQIRDAWGSMVLKNVVRETDEVGKGQIRMRTVFEQAIDQRSSTGAWRNALSIWEPVCNEIFDRLIKPRWEIR",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 391,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "sopA"
+        ],
+        "synonym": [
+          "sopA"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

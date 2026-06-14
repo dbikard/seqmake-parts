@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "pRM",
+  "locus": "pRM",
+  "id": "pRM",
+  "description": "pRM",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TAGATATTTATCCCTTGCGGTGATAGATT",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 29,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pRM"
+        ],
+        "synonym": [
+          "pRM",
+          "pRM promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

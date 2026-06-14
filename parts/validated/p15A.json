@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "slug": "p15A",
+  "locus": "p15A",
+  "id": "p15A",
+  "description": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CGTTTTTCCATAGGCTCCGCCCCCCTGACAAGCATCACGAAATCTGACGCTCAAATCAGTGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGCGGCTCCCTCGTGCGCTCTCCTGTTCCTGCCTTTCGGTTTACCGGTGTCATTCCGCTGTTATGGCCGCGTTTGTCTCATTCCACGCCTGACACTCAGTTCCGGGTAGGCAGTTCGCTCCAAGCTGGACTGTATGCACGAACCCCCCGTTCAGTCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGAAAGACATGCAAAAGCACCACTGGCAGCAGCCACTGGTAATTGATTTAGAGGAGTTAGTCTTGAAGTCATGCGCCGGTTAAGGCTAAACTGAAAGGACAAGTTTTGGTGACTGCGCTCCTCCAAGCCAGTTACCTCGGTTCAAAGAGTTGGTAGCTCAGAGAACCTTCGAAAAACCGCCCTGCAAGGCGGTTTTTTCGTTTTCAGAGCAAGAGATTACGCGCAGACCAAAACGATCTCAAGAAGATCATCTT",
+  "references": [
+    {
+      "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+      "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+      "journal": "Cell 32(1):119-129 (1983)",
+      "pubmed_id": "6186390",
+      "comment": "doi:10.1016/0092-8674(83)90502-0"
+    },
+    {
+      "authors": "Tomizawa J, Itoh T, Selzer G, Som T",
+      "title": "Inhibition of ColE1 RNA primer formation by a plasmid-specified small RNA.",
+      "journal": "Proc Natl Acad Sci USA 78(3):1421-1425 (1981)",
+      "pubmed_id": "6165011",
+      "comment": "doi:10.1073/pnas.78.3.1421"
+    }
+  ],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 562,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "p15A"
+        ],
+        "synonym": [
+          "p15A"
+        ],
+        "note": [
+          "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system."
+        ],
+        "db_xref": [
+          "SO:0000296"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 544,
+      "end": 550,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "RNA II primer promoter -35"
+        ],
+        "parent": [
+          "p15A"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Sigma70 -35 hexamer of the RNA II primer promoter."
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 521,
+      "end": 527,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "RNA II primer promoter -10"
+        ],
+        "parent": [
+          "p15A"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Sigma70 -10 hexamer of the RNA II primer promoter."
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 484,
+      "end": 506,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RNA I terminator"
+        ],
+        "parent": [
+          "p15A"
+        ],
+        "note": [
+          "Rho-independent terminator on the plus (RNA I) strand: GC-rich inverted repeat (CCGCCCTGCAAGGCGG) forming a stem-loop, followed by a poly-T/poly-U tract (TTT..."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "PL",
+  "locus": "PL",
+  "id": "PL",
+  "description": "PL",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TAACCCGGCCTCAGCGCCGGGTTTTCTTTGCCTCACGATCGCCCCCAAAACACATAACCAATTGTATTTATTGAAAAATAAATAGATACAACTCACTAAACATAGCAATTCAGATCTCTCACCTACCAAACAATGCCCCCCTGCAAAAAATAAATTCATATAAAAAACATACAGATAACCATCTGCGGTGATAAATTATCTCTGGCGGTGTTGACATAAATACCACTGGCGGTGATACTGAGCACATCAGCAGGACGCACTGACCACCATGAAGGTGACGCTCTTAAAAATTAAGCCCTGAAGAAGGGCAGCATTCAAAGCAGAAGGCTTTGGGGTGTGTGATACGAAACGAAGCATTGGCCGTAAGTGCGATTCCGGATTA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 382,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PL"
+        ],
+        "synonym": [
+          "PL",
+          "lambda PL",
+          "PL promoter",
+          "lambda PL promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

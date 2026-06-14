@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "SEVA_tir",
+  "locus": "SEVA_tir",
+  "id": "SEVA_tir",
+  "description": "SEVA tir",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GATTAACTTTATAAGGAGGAAAAA",
+  "references": [],
+  "features": [
+    {
+      "type": "RBS",
+      "start": 0,
+      "end": 24,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SEVA tir"
+        ],
+        "synonym": [
+          "SEVA tir",
+          "tir region",
+          "SEVA translation initiation region"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

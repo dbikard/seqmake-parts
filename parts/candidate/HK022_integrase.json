@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "HK022_integrase",
+  "locus": "HK022_integrase",
+  "id": "HK022_integrase",
+  "description": "HK022 integrase",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MGRRRSHERRDLPPNLYIRNNGYYCYRDPRTGKEFGLGRDRRIAITEAIQANIELLSGNRRESLIDRIKGADAITLHAWLDRYETILSERGIRPKTLLDYASKIRAIRRKLPDKPLADISTKEVAAMLNTYVAEGKSASAKLIRSTLVDVFREAIAEGHVATNPVTATRTAKSEVRRSRLTANEYVAIYHAAEPLPIWLRLAMDLAVVTGQRVGDLCRMKWSDINDNHLHIEQSKTGAKLAIPLTLTIDALNISLADTLQQCREASSSETIIASKHHDPLSPKTVSKYFTKARNASGLSFDGNPPTFHELRSLSARLYRNQIGDKFAQRLLGHKSDSMAARYRDSRGREWDKIEIDK",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 357,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HK022 integrase"
+        ],
+        "synonym": [
+          "HK022 integrase"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

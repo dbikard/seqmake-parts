@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "slug": "PT5_lacO",
+  "locus": "PT5_lacO",
+  "id": "PT5_lacO",
+  "description": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AAATCATAAAAAATTTATTTGCTTTGTGAGCGGATAACAATTATAATAGATTCAATTGTGAGCGGATAACAATTTCACACA",
+  "references": [
+    {
+      "authors": "Bujard H, Gentz R, Lanzer M, Stueber D, Mueller M, Ibrahimi I, Haeuptle MT, Dobberstein B",
+      "title": "A T5 promoter-based transcription-translation system for the analysis of proteins in vitro and in vivo",
+      "journal": "Methods in Enzymology 155:416-433",
+      "pubmed_id": "2828874",
+      "comment": "doi:10.1016/0076-6879(87)55028-5"
+    },
+    {
+      "authors": "Gentz R, Bujard H",
+      "title": "Promoters recognized by Escherichia coli RNA polymerase selected by function: highly efficient promoters from bacteriophage T5",
+      "journal": "Journal of Bacteriology 164(1):70-77",
+      "pubmed_id": "3900050",
+      "comment": "doi:10.1128/jb.164.1.70-77.1985"
+    },
+    {
+      "authors": "Gilbert W, Maxam A",
+      "title": "The Nucleotide Sequence of the lac Operator",
+      "journal": "Proc Natl Acad Sci USA 70(12):3581-3584",
+      "pubmed_id": "4587255",
+      "comment": "doi:10.1073/pnas.70.12.3581"
+    },
+    {
+      "authors": "Simons A, Tils D, von Wilcken-Bergmann B, Mueller-Hill B",
+      "title": "Possible ideal lac operator: Escherichia coli lac operator-like sequences from eukaryotic genomes lack the central G X C pair",
+      "journal": "Proc Natl Acad Sci USA 81(6):1624-1628",
+      "pubmed_id": "6369330",
+      "comment": "doi:10.1073/pnas.81.6.1624"
+    },
+    {
+      "authors": "Besse M, von Wilcken-Bergmann B, Mueller-Hill B",
+      "title": "Synthetic lac operator mediates repression through lac repressor when introduced upstream and downstream from the lac promoter",
+      "journal": "EMBO Journal 5(6):1377-1381",
+      "pubmed_id": "3015603",
+      "comment": "doi:10.1002/j.1460-2075.1986.tb04369.x"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 81,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PT5/lacO"
+        ],
+        "synonym": [
+          "PT5/lacO",
+          "T5 promoter",
+          "T5/lacO promoter",
+          "T5 lac operator promoter"
+        ],
+        "note": [
+          "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module)."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 18,
+      "end": 24,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "PT5/lacO"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Sigma-70 -35 hexamer of the bacteriophage T5 promoter (seq[18:24]=TTGCTT)."
+        ],
+        "citation": [
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 41,
+      "end": 47,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "PT5/lacO"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Sigma-70 -10 hexamer, perfect match to the TATAAT consensus (seq[41:47]=TATAAT), 17 bp downstream of the -35 box (canonical spacer)."
+        ],
+        "citation": [
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 24,
+      "end": 41,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lac operator"
+        ],
+        "parent": [
+          "PT5/lacO"
+        ],
+        "note": [
+          "lac repressor (lacI) binding site, core TGTGAGCGGATAACAAT (seq[24:41])."
+        ],
+        "citation": [
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 56,
+      "end": 73,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lac operator (downstream)"
+        ],
+        "parent": [
+          "PT5/lacO"
+        ],
+        "note": [
+          "Second lac repressor (lacI) binding site, core TGTGAGCGGATAACAAT (seq[56:73]), positioned 3' of the transcription start."
+        ],
+        "citation": [
+          "[3]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

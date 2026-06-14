@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "tonB",
+  "locus": "tonB",
+  "id": "tonB",
+  "description": "tonB",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTAACGGCACCACCGAAATTCAGTAAGCAGAAAGTCAAAAGCCTCCGACCGGAGGCTTTTGACTATTACTCAACAGGTAAGGCGCGAGGTTTT",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 93,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tonB"
+        ],
+        "synonym": [
+          "tonB",
+          "tonB terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

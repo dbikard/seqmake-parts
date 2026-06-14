@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "XylS",
+  "locus": "XylS",
+  "id": "XylS",
+  "description": "XylS",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MDFCLLNEKSQIFVHAEPYAVSDYVNQYVGTHSIRLPKGGRPAGRLHHRIFGCLDLCRISYGGSVRVISPGLETCYHLQIILKGHCLWRGHGQEHYFAPGELLLLNPDDQADLTYSEDCEKFIVKLPSVVLDRACSDNNWHKPREGIRFAARHNLQQLDGFINLLGLVCDEAEHTKSMPRVQEHYAGIIASKLLEMLGSNVSREIFSKGNPSFERVVQFIEENLKRNISLERLAELAMMSPRSLYNLFEKHAGTTPKNYIRNRKLESIRACLNDPSANVRSITEIALDYGFLHLGRFAENYRSAFGELPSDTLRQCKKEVA",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 321,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "XylS"
+        ],
+        "synonym": [
+          "XylS"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

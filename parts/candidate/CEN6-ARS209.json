@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "CEN6-ARS209",
+  "locus": "CEN6-ARS209",
+  "id": "CEN6-ARS209",
+  "description": "CEN6-ARS209",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTTTTCATCACGTGCTATAAAAATAATTATAATTTAAAATTTTTAATATAAATATATAAATTAAAAATAGAAAGTAAAAAAAGAAATTAAAGAAAAAATAGTTTTTGTTTTCCGAAGATGTAAAAGACTCTAGGGGGATCGCCAACAAATACTACCTTTTATCTTGCTCTTCCTGCTCTCAGGTATTAATGCCGAATTGTTTCATCTTGTCTGTGTAGAAGACCACACACGAAAATCCTGTGATTTTACATTTTACTTATCGTTAATCGAATGTATATCTATTTAATCTGCTTTTCTTGTCTAATAAATATATATGTAAAGTACGCTTTTTGTTGAAATTTTTTAAACCTTTGTTTATTTTTTTTTCTTCATTCCGTAACTCTTCTACCTTCTTTATTTACTTTCTAAAATCCAAATACAAAACATAAAAATAAATAAACACAGAGTAAATTCCCAAATTATTCCATCATTAAAAGATACGAGGCGCGTGTAAGTTACAGGCAAGCGATC",
+  "references": [],
+  "features": [
+    {
+      "type": "misc_feature",
+      "start": 0,
+      "end": 510,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "CEN6-ARS209"
+        ],
+        "synonym": [
+          "CEN6-ARS209",
+          "yeast centromere/ARS",
+          "CEN6 ARS209",
+          "S. cerevisiae CEN6-ARS209"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

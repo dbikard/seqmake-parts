@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "slug": "bla",
+  "locus": "bla",
+  "id": "bla",
+  "description": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW",
+  "references": [
+    {
+      "authors": "Sutcliffe JG",
+      "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+      "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
+      "pubmed_id": "383387",
+      "comment": "doi:10.1101/sqb.1979.043.01.013"
+    },
+    {
+      "authors": "Ambler RP, Coulson AF, Frere JM, Ghuysen JM, Joris B, Forsman M, Levesque RC, Tiraby G, Waley SG",
+      "title": "A standard numbering scheme for the class A beta-lactamases",
+      "journal": "Biochemical Journal",
+      "pubmed_id": "2039479",
+      "comment": "doi:10.1042/bj2760269"
+    },
+    {
+      "authors": "Jelsch C, Mourey L, Masson JM, Samama JP",
+      "title": "Crystal structure of Escherichia coli TEM1 beta-lactamase at 1.8 A resolution",
+      "journal": "Proteins",
+      "pubmed_id": "8356032",
+      "comment": "doi:10.1002/prot.340160406"
+    },
+    {
+      "authors": "Egorov A, Rubtsova M, Grigorenko V, Uporov I, Veselovsky A",
+      "title": "The Role of the Omega-Loop in Regulation of the Catalytic Activity of TEM-Type beta-Lactamases",
+      "journal": "Biomolecules",
+      "pubmed_id": "31835662",
+      "comment": "doi:10.3390/biom9120854"
+    },
+    {
+      "authors": "Vanhove M, Guillaume G, Ledent P, Richards JH, Pain RH, Frere JM",
+      "title": "Kinetic and thermodynamic consequences of the removal of the Cys-77-Cys-123 disulphide bond for the folding of TEM-1 beta-lactamase",
+      "journal": "Biochemical Journal",
+      "pubmed_id": "9020874",
+      "comment": "doi:10.1042/bj3210413"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 286,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "bla"
+        ],
+        "synonym": [
+          "AmpR",
+          "TEM-1",
+          "amp",
+          "beta-lactamase",
+          "penicillinase"
+        ],
+        "note": [
+          "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker."
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P62593"
+        ]
+      }
+    },
+    {
+      "type": "signal_peptide",
+      "start": 0,
+      "end": 23,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Signal peptide"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "23-aa Sec-dependent leader (UniProt P62593 SIGNAL 1-23); cleaved between Ala23 and His24 so the mature periplasmic TEM-1 enzyme begins at His24 (Ambler posit..."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 67,
+      "end": 68,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Catalytic nucleophile Ser"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Active-site serine = Ambler Ser70, the acylating nucleophile that attacks the beta-lactam carbonyl."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 70,
+      "end": 71,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Catalytic general base Lys"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Lys of the S-T-F-K box = Ambler Lys73 (proton acceptor); fourth residue of the STFK box (seq[70:71]='K')."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 127,
+      "end": 128,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SDN loop catalytic Ser"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Ser of the class A signature S-D-N loop = Ambler Ser130 (proton donor); first residue of the SDN motif (seq[127:130]='SDN')."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 163,
+      "end": 164,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Omega-loop catalytic Glu"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Omega-loop Glu = Ambler Glu166 (proton acceptor), the conserved omega-loop residue that, with Asn170, forms the H-bond network activating the catalytic water..."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[3]",
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "binding",
+      "start": 231,
+      "end": 234,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Substrate-binding K-S-G"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Conserved class A K-T-G/K-S-G triad = Ambler Lys234-Ser235-Gly236; anchors the substrate carboxylate and helps orient substrate near the oxyanion hole."
+        ],
+        "citation": [
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 74,
+      "end": 75,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Disulfide bond Cys-Cys"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "First partner of the single mature-protein disulfide = Ambler Cys77 (seq[74]='C'), bonded to Cys at index 120 (Ambler Cys123)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[5]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 120,
+      "end": 121,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Disulfide bond Cys-Cys (Cys123)"
+        ],
+        "parent": [
+          "bla"
+        ],
+        "note": [
+          "Second partner of the mature disulfide = Ambler Cys123 (seq[120]='C'), bonded to Cys77 (index 74)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[5]",
+          "[3]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

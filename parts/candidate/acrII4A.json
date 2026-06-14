@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "acrII4A",
+  "locus": "acrII4A",
+  "id": "acrII4A",
+  "description": "acrII4A",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MNINDLIREIKNKDYTVKLSGTDSNSITQLIIRVNNDGNEYVISESENESIVEKFISAFKNGWNQEYEDEEEFYNDMQTITLKSELN",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 87,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "acrII4A"
+        ],
+        "synonym": [
+          "acrII4A"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

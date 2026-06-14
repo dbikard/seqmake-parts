@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "slug": "aadA",
+  "locus": "aadA",
+  "id": "aadA",
+  "description": "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MREAVIAEVSTQLSEVVGVIERHLEPTLLAVHLYGSAVDGGLKPHSDIDLLVTVTVRLDETTRRALINDLLETSASPGESEILRAVEVTIVVHDDIIPWRYPAKRELQFGEWQRNDILAGIFEPATIDIDLAILLTKAREHSVALVGPAAEELFDPVPEQDLFEALNETLTLWNSPPDWAGDERNVVLTLSRIWYSAVTGKIAPKDVAADWAMERLPAQYQPVILEARQAYLGQEEDRLASRADQLEEFVHYVKGEITKVVGK",
+  "references": [
+    {
+      "authors": "Chen Y, Nasvall J, Wu S, Andersson DI, Selmer M",
+      "title": "Structure of AadA from Salmonella enterica: a monomeric aminoglycoside (3'')(9) adenyltransferase",
+      "journal": "Acta Crystallogr D Biol Crystallogr 71(Pt 11):2267-2277 (2015)",
+      "pubmed_id": "26527143",
+      "comment": "doi:10.1107/S1399004715016429"
+    },
+    {
+      "authors": "Stern AL, Van der Verren SE, Kanchugal P S, Nasvall J, Gutierrez-de-Teran H, Selmer M",
+      "title": "Structural mechanism of AadA, a dual-specificity aminoglycoside adenylyltransferase from Salmonella enterica",
+      "journal": "J Biol Chem 293(29):11481-11490 (2018)",
+      "pubmed_id": "29871922",
+      "comment": "doi:10.1074/jbc.RA118.003989"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 263,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "aadA"
+        ],
+        "synonym": [
+          "ANT(3'')(9)",
+          "AadA",
+          "SmR",
+          "SpR",
+          "SpecR",
+          "aadA1",
+          "spectinomycin adenyltransferase",
+          "streptomycin 3''-adenylyltransferase"
+        ],
+        "note": [
+          "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47."
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P0AG05"
+        ]
+      }
+    },
+    {
+      "type": "protein_domain",
+      "start": 2,
+      "end": 157,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Nucleotidyltransferase domain"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "N-terminal polymerase-beta-like nucleotidyltransferase (adenylyltransferase) domain (Pfam PF01909 NTP_transf_2)."
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "protein_domain",
+      "start": 157,
+      "end": 263,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "AadA C-terminal domain"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "C-terminal alpha-helical bundle domain (Pfam PF13427 AadA_C / DUF4111)."
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 86,
+      "end": 87,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Catalytic base Glu"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Catalytic base (Glu87)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 46,
+      "end": 47,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Mg2+-coordinating residue Asp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Mg2+-coordinating aspartate of the two-metal-ion mechanism (Asp47)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 48,
+      "end": 49,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Mg2+-coordinating residue Asp (D49)"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Mg2+-coordinating aspartate of the two-metal-ion mechanism (Asp49); pairs with Asp47/Glu87 to bind the catalytic Mg2+ ions."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 129,
+      "end": 130,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ATP ribose-binding residue Asp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Aspartate that hydrogen-bonds the ATP ribose hydroxyls (Asp130)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 191,
+      "end": 192,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ATP phosphate-binding residue Arg"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "C-terminal-domain arginine contacting ATP phosphates and enabling the Mg2+-coordinating ATP conformation (Arg192)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 204,
+      "end": 205,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ATP phosphate-binding residue Lys"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "C-terminal-domain lysine coordinating ATP phosphates and salt-bridging Asp47/Asp49 (Lys205)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 230,
+      "end": 231,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ATP phosphate-binding residue Tyr"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Tyrosine coordinating ATP phosphates across the interdomain cleft (Tyr231)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "binding",
+      "start": 111,
+      "end": 112,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Drug-binding residue Trp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Conserved tryptophan that stacks on the modified ring of both streptomycin and spectinomycin (Trp112); shared Sm/Sp determinant (Stern 2018)."
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "binding",
+      "start": 181,
+      "end": 182,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Drug-binding residue Asp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Conserved aspartate hydrogen-bonding the streptomycin 6''-OH and contributing to the shared spectinomycin subsite (Asp182); shared Sm/Sp determinant (Stern 2..."
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "binding",
+      "start": 172,
+      "end": 173,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Streptomycin-binding residue Trp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Streptomycin-specific contact (Trp173)."
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    },
+    {
+      "type": "binding",
+      "start": 177,
+      "end": 178,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Streptomycin-binding residue Asp"
+        ],
+        "parent": [
+          "aadA"
+        ],
+        "note": [
+          "Streptomycin-specific contact (Asp178)."
+        ],
+        "citation": [
+          "[2]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

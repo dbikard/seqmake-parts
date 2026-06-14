@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slug": "SpecR",
+  "locus": "SpecR",
+  "id": "SpecR",
+  "description": "SpecR",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 224,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SpecR"
+        ],
+        "synonym": [
+          "SpecR",
+          "SmR",
+          "spec",
+          "aad9",
+          "spectinomycin adenyltransferase"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

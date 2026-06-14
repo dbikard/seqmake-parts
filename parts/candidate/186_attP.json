@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "186_attP",
+  "locus": "186_attP",
+  "id": "186_attP",
+  "description": "186 attP",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATGCACTCAGGAAAGTGGCGGTAAAAAATCCACCGCCATTCTATCGCCACTCGAAAACGAGGCAACAAAAAGGCCACTCGAGAGAGTGGCCTAACTGTATGTATTTACTACTTAAATTTGGTGGCCCCTGCTGGACTTGAACCAGCGACCAAGCGATTATGAGTTCCTACAAGAACAACCGAAAATCAATAGTATGCGTTATTTATCATTGACATAGATTGCCATTGTTTGCCAATAATTACCTATTATTCGCCATTTCTACCGCCACTTTATCGCCATTCTATTATCTGTTACTCAGAACCATCGC",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 307,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "186 attP"
+        ],
+        "synonym": [
+          "186 attP",
+          "phage 186 att",
+          "186 att"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pliar17",
+  "locus": "Pliar17",
+  "id": "Pliar17",
+  "description": "Pliar17",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GATGTCATTATATTGTCACCGCGGCCAGGTATAATTGCACGA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 42,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pliar17"
+        ],
+        "synonym": [
+          "Pliar17",
+          "synthetic Pliar17 promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

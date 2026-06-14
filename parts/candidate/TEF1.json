@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "TEF1",
+  "locus": "TEF1",
+  "id": "TEF1",
+  "description": "TEF1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GATCCCCCACACACCATAGCTTCAAAATGTTTCTACTCCTTTTTTACTCTTCCAGATTTTCTCGGACTCCGCGCATCGCCGTACCACTTCAAAACACCCAAGCACAGCATACTAAATTTCCCCTCTTTCTTCCTCTAGGGTGTCGTTAATTACCCGTACTAAAGGTTTGGAAAAGAAAAAAGACACCGCCTCGTTTCTTTTTCTTCGTCGAAAAAGGCAATAAAAATTTTTATCACGTTTCTTTTTCTTGAAAATTTTTTTTTTTGATTTTTTTCTCTTTCGATGACCTCCCATTGATATTTAAGTTAATAAACGGTCATCAATTTCTCAAGTTTCAGTTTCATTTTTCTTGTTCTATTACAACTTTTTTTACTTCTTGCTCATTAGAAAGAAAGCATAGCAATCTAATCTAAG",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 414,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "TEF1"
+        ],
+        "synonym": [
+          "TEF1 promoter",
+          "PTEF1",
+          "pTEF1",
+          "Sc TEF1 promoter"
+        ],
+        "note": [
+          "S. cerevisiae TEF1 (translation elongation factor EF-1 alpha) promoter; strong constitutive. Extracted from pJF89 (Addgene 253756), TEF1 promoter feature (414 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

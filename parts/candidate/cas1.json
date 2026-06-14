@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "cas1",
+  "locus": "cas1",
+  "id": "cas1",
+  "description": "cas1",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MAGWRTVVVNTHSKLSYKNNHLIFKDAYKTELIHLSEIDILLLETTDIVLSTMLVKRLVDENVLVIFCDDKRLPTAMLMPFYGRHDSSLQLGKQMSWSETVKSQVWTTIIAQKILNQSCYLGACSYFEKSQSIMDLYHGLENFDPSNREGHAARIYFNTLFGNDFSRDLEHPINAGLDYGYTLLLSMFAREVVVSGCMTQFGLKHANQFNQFNFASDIMEPFRPLVDKIVYENRNQPFPKIKRELFTLFSDTFSYNGKEMYLTNIISDYTKKVVKALNNEGKGVPEFRI",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 289,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "cas1"
+        ],
+        "synonym": [
+          "Cas1"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

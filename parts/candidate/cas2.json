@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "cas2",
+  "locus": "cas2",
+  "id": "cas2",
+  "description": "cas2",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSYRYMRMILMFDMPTDTAEERKAYRKFRKFLLSEGFIMHQFSIYSKLLLNNTANNAMIGRLREHNPNKGNITLLTVTEKQFARMIYLHGERNNCIANSDERLVFLGEAFDES",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 113,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "cas2"
+        ],
+        "synonym": [
+          "Cas2"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

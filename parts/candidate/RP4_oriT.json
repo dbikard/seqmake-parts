@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "RP4_oriT",
+  "locus": "RP4_oriT",
+  "id": "RP4_oriT",
+  "description": "RP4 oriT",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GGTACCAGCGCTTTTCCGCTGCATAACCCTGCTTCGGGGTCATTATAGCGATTTTTTCGGTATATCCATCCTTTTTCGCACGATATACAGGATTTTGCCAAAGGGTTCGTGTAGACTTTCCTTGGTGTATCCAACGGCGTCAGCCGGGCAGGATAGGTGAAGTAGGCCCACCCGCGAGCGGGTGTTCCTTCTTCACTGTCCCTTATTCGCACCTGGCGGTGCTCAACGGGAATCCTGCTCTGCGAGGCTGGCCGGCG",
+  "references": [],
+  "features": [
+    {
+      "type": "oriT",
+      "start": 0,
+      "end": 257,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "RP4 oriT"
+        ],
+        "synonym": [
+          "RP4 oriT",
+          "RP4 transfer origin",
+          "oriT RP4"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

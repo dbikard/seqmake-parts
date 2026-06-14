@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "PT3",
+  "locus": "PT3",
+  "id": "PT3",
+  "description": "PT3",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AATTAACCCTCACTAAAGGG",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 20,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PT3"
+        ],
+        "synonym": [
+          "PT3",
+          "T3 promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

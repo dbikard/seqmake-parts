@@ -15,7 +15,16 @@ jobs:
           python-version: "3.12"
       - name: Content guard (lab-agnostic, tool-agnostic part content)
         run: python tools/check_content.py
-      - run: pip install biopython pytest rdflib pyshacl
+      - run: pip install biopython pytest rdflib pyshacl jsonschema
+      - name: Validate canonical part JSON against the schema
+        run: python tools/validate_parts.py
+      - name: .gb must be regenerable from the canonical JSON
+        run: |
+          python tools/build_gb.py
+          if ! git diff --exit-code -- parts; then
+            echo "::error::.gb out of sync with canonical JSON. Run 'python tools/build_gb.py' and commit."
+            exit 1
+          fi
       - name: Test the build + publish tooling
         run: pytest tests/ -q
       - name: Rebuild manifest (parses every .gb)

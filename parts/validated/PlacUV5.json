@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "slug": "PlacUV5",
+  "locus": "PlacUV5",
+  "id": "PlacUV5",
+  "description": "PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTTACACTTTATGCTTCCGGCTCGTATAAT",
+  "references": [
+    {
+      "authors": "Dickson RC, Abelson J, Barnes WM, Reznikoff WS",
+      "title": "Genetic regulation: the lac control region",
+      "journal": "Science 187(4171):27-35",
+      "pubmed_id": "1088926",
+      "comment": "doi:10.1126/science.1088926"
+    },
+    {
+      "authors": "Silverstone AE, Arditti RR, Magasanik B",
+      "title": "Catabolite-insensitive revertants of lac promoter mutants",
+      "journal": "Proc. Natl. Acad. Sci. USA 66(3):773-779",
+      "pubmed_id": "4913210",
+      "comment": "doi:10.1073/pnas.66.3.773"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PlacUV5"
+        ],
+        "synonym": [
+          "PlacUV5",
+          "lacUV5 promoter",
+          "lacUV5"
+        ],
+        "note": [
+          "PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "LacI"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "PlacUV5"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "lac/lacUV5 -35 hexamer TTTACA."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 24,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "PlacUV5"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "lacUV5 -10 box, the perfect sigma70 consensus TATAAT."
+        ],
+        "citation": [
+          "[2]",
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "ECK120010818",
+  "locus": "ECK120010818",
+  "id": "ECK120010818",
+  "description": "ECK120010818",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GTCAGTTTCACCTGTTTTACGTTAAAACCCGCTTCGGCGGGTTTTTACTTTTGG",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 54,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ECK120010818"
+        ],
+        "synonym": [
+          "ECK120010818",
+          "Terminator ECK120010818"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

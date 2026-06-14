@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slug": "J23108",
+  "locus": "J23108",
+  "id": "J23108",
+  "description": "J23108",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTGACAGCTAGCTCAGTCCTAGGTATAATGCTAGC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "J23108"
+        ],
+        "synonym": [
+          "J23108",
+          "J23108 promoter"
+        ],
+        "collection": [
+          "anderson-promoters"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

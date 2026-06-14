@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "ori2",
+  "locus": "ori2",
+  "id": "ori2",
+  "description": "ori2",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTTCTTCTGAGGGCAATTTGTCACAGGGTTAAGGGCAATTTGTCACAGACAGGACTGTCATTTGAGGGTGATTTGTCACACTGAAAGGGCAATTTGTCACAACACCTTCTCTAGAACCAGCATGGATAAAGGCCTACAAGGCGCTCTAAAAAAGAAGATCTAAAAACTATAAAAAAAATAATTATAAAAATATCCCCGTGGATAAGTGGATAACCCCAAGGGAAGTTTTTTCAGGCATCGTGTGTAAGCAGAATATATAAGTGCTGTTCCCTGGTGCTTCCTCGCTCACTCGAGGGCTTCGCCCT",
+  "references": [],
+  "features": [
+    {
+      "type": "rep_origin",
+      "start": 0,
+      "end": 305,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ori2"
+        ],
+        "synonym": [
+          "ori2"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

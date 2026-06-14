@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "slug": "J23104",
+  "locus": "J23104",
+  "id": "J23104",
+  "description": "J23104",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGACAGCTAGCTCAGTCCTAGGTATTGTGCTAGC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "J23104"
+        ],
+        "synonym": [
+          "J23104",
+          "BBa_J23104",
+          "BBa_J23104 Promoter (strong)",
+          "J23104 promoter"
+        ],
+        "collection": [
+          "anderson-promoters"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

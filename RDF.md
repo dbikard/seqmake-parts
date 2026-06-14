@@ -1,8 +1,27 @@
 # RDF / semantic-web knowledge base
 
-> **Status:** Phase 1 (structural RDF projection) implemented. Phases 0, 2, 3
-> are designed below and tracked as follow-ups. This document is the design
-> narrative; the authoritative build is `tools/build_rdf.py`.
+> **Status:** Phases 0 (canonical JSON spine) and 1 (structural RDF projection)
+> implemented. Phases 2 and 3 are designed below and tracked as follow-ups. This
+> document is the design narrative; the authoritative builds are
+> `tools/build_gb.py` (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
+
+## Canonical record & build pipeline (Phase 0)
+
+The authored source of truth for each part is `parts/<status>/<slug>.json` — a
+full-fidelity record (every GenBank feature + qualifier verbatim, all references,
+the sequence) plus the home for the functional-knowledge layer
+(`functional_claims` / `provenance` / `review_status`). It is validated against
+`schema/part.schema.json`. The `.gb` is a *generated* projection (still a
+first-class, downloadable bench artifact); the existing readers consume it
+unchanged:
+
+```
+<slug>.json  ──build_gb──►  <slug>.gb  ──build_catalog/build_rdf──►  catalog.json · site · catalog.ttl/.jsonld
+   (canonical)              (generated)                              (generated)
+```
+
+Prose stays in the sibling `<slug>.md`. JSON↔GenBank is lossless (CI guards that
+`.gb` is regenerable from JSON, like the `catalog.json` staleness guard).
 
 The catalog is, underneath, already a semantic graph: every part carries a
 [Sequence Ontology](https://www.ebi.ac.uk/ols4/ontologies/so) accession, typed
@@ -168,6 +187,8 @@ for `catalog.json`).
 
 ```bash
 pip install -r requirements.txt
+python tools/validate_parts.py     # JSON spine vs schema/part.schema.json
+python tools/build_gb.py           # canonical JSON -> .gb
 python tools/build_catalog.py      # catalog.json + site
 python tools/build_rdf.py          # catalog.ttl + catalog.jsonld
 pyshacl -s tools/shapes.ttl catalog.ttl

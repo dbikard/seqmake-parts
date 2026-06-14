@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "Acc3",
+  "locus": "Acc3",
+  "id": "Acc3",
+  "description": "Acc3",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 177,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Acc3"
+        ],
+        "synonym": [
+          "Acc3",
+          "acc3",
+          "gentamicin 3-N-acetyltransferase",
+          "GmR (SEVA)"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

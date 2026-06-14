@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "ADH1_terminator",
+  "locus": "ADH1_terminator",
+  "id": "ADH1_terminator",
+  "description": "ADH1 terminator.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GCGAATTTCTTATGATTTATGATTTTTATTATTAAATAAGTTATAAAAAAAATAAGTGTATACAAATTTTAAAGTGACTCTTAGGTTTTAAAACGAAAATTCTTATTCTTGAGTAACTCTTTCCTGTAGGTCAGGTTGCTTTCTCAGGTATAGCATGAGGTCGCTCTTATTGACCACACCTCTACCGG",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 188,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ADH1 terminator"
+        ],
+        "synonym": [
+          "ADH1 terminator",
+          "tADH1",
+          "ADH1t",
+          "ADH1 transcription terminator"
+        ],
+        "note": [
+          "S. cerevisiae ADH1 (alcohol dehydrogenase 1) transcription terminator; standard yeast terminator. Extracted from pGADT7 (Addgene 233529), ADH1 terminator feature (188 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

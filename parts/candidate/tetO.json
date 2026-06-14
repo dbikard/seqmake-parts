@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "tetO",
+  "locus": "tetO",
+  "id": "tetO",
+  "description": "tetO",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCTCTATCATTGATAGAGT",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 19,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO"
+        ],
+        "synonym": [
+          "tetO"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

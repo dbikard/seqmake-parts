@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "slug": "Ptac",
+  "locus": "Ptac",
+  "id": "Ptac",
+  "description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGACAATTAATCATCGGCTCGTATAATGTGTGGAATTGTGAGCGGATAACAATT",
+  "references": [
+    {
+      "authors": "de Boer HA, Comstock LJ, Vasser M",
+      "title": "The tac promoter: a functional hybrid derived from the trp and lac promoters",
+      "journal": "Proc Natl Acad Sci U S A 80(1):21-25",
+      "pubmed_id": "6337371",
+      "comment": "doi:10.1073/pnas.80.1.21"
+    },
+    {
+      "authors": "Brosius J, Erfle M, Storella J",
+      "title": "Spacing of the -10 and -35 regions in the tac promoter. Effect on its in vivo activity",
+      "journal": "J Biol Chem 260(6):3539-3541",
+      "pubmed_id": "2579077",
+      "comment": "doi:10.1016/S0021-9258(19)83655-4"
+    },
+    {
+      "authors": "Amann E, Ochs B, Abel KJ",
+      "title": "Tightly regulated tac promoter vectors useful for the expression of unfused and fused proteins in Escherichia coli",
+      "journal": "Gene 69(2):301-315",
+      "pubmed_id": "3069586",
+      "comment": "doi:10.1016/0378-1119(88)90440-4"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 55,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Ptac"
+        ],
+        "synonym": [
+          "tac promoter"
+        ],
+        "note": [
+          "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "LacI"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "Ptac"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "sigma70 consensus -35 hexamer TTGACA at the 5' end; trp-derived in the tac hybrid."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 22,
+      "end": 28,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "Ptac"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "sigma70 consensus Pribnow box TATAAT (-12..-7 register), derived from lacUV5 (the UV5/L8 mutation converts the wild-type lac -10 to consensus)."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 34,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "+1"
+        ],
+        "parent": [
+          "Ptac"
+        ],
+        "note": [
+          "Transcription start site: the first A of the lac operator, 7 nt downstream of the -10 hexamer."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 34,
+      "end": 55,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lac operator"
+        ],
+        "parent": [
+          "Ptac"
+        ],
+        "note": [
+          "Native lac operator O1 retained from lacUV5 downstream of the -10; binds LacI for IPTG-inducible repression."
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

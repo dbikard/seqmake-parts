@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "ECK120033737",
+  "locus": "ECK120033737",
+  "id": "ECK120033737",
+  "description": "ECK120033737",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GGAAACACTGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 57,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ECK120033737"
+        ],
+        "synonym": [
+          "ECK120033737",
+          "Terminator ECK120033737"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

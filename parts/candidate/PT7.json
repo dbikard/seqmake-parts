@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "slug": "PT7",
+  "locus": "PT7",
+  "id": "PT7",
+  "description": "PT7",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TAATACGACTCACTATAGGG",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 20,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PT7"
+        ],
+        "synonym": [
+          "T7 promoter"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 17,
+      "end": 18,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "+1"
+        ],
+        "parent": [
+          "PT7"
+        ],
+        "note": [
+          "T7 transcription start site"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

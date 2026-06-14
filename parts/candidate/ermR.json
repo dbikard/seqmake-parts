@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slug": "ermR",
+  "locus": "ermR",
+  "id": "ermR",
+  "description": "ermR",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MNEKNIKHSQNFITSKHNIDKIMTNIRLNEHDNIFEIGSGKGHFTLELVKRCNFVTAIEIDHKLCKTTENKLVDHDNFQVLNKDILQFKFPKNQSYKIYGNIPYNISTDIIRKIVFDSIANEIYLIVEYGFAKRLLNTKRSLALLLMAEVDISILSMVPREYFHPKPKVNSSLIRLSRKKSRISHKDKQKYNYFVMKWVNKEYKKIFTKNQFNNSLKHAGIDDLNNISFEQFLSLFNSYKLFNK",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 244,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ermR"
+        ],
+        "synonym": [
+          "ErmR",
+          "ErmC",
+          "ermR",
+          "erythromycin methylase",
+          "rRNA adenine N-6-methyltransferase"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

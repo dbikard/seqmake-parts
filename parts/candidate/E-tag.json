@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "E-tag",
+  "locus": "E-tag",
+  "id": "E-tag",
+  "description": "E-tag",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GAPVPYPDPLEPA",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 13,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "E-tag"
+        ],
+        "synonym": [
+          "E-tag",
+          "E tag"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

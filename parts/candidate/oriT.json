@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "oriT",
+  "locus": "oriT",
+  "id": "oriT",
+  "description": "oriT",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCTGTTACGCCGGCGGTAGCCGGCCAGCCTCGCAGAGCAGGATTCCCGTTGAGCACCGCCAGGTGCGAATAAGGGACAGTGAAGAAGGAACACCCGCTCGCGGGTGGGCCTACTTCACCTATCCTGCCCGGCTGACGCCGTTGGATACACCAAGGAAAGTCTACACGAACCCTTTGGCAAAATCCTGTATATCGTGCGAAAAAGGATGGATATACCGAAAAAATCGCT",
+  "references": [],
+  "features": [
+    {
+      "type": "oriT",
+      "start": 0,
+      "end": 228,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "oriT"
+        ],
+        "synonym": [
+          "OriT"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

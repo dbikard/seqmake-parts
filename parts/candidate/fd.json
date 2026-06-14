@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "fd",
+  "locus": "fd",
+  "id": "fd",
+  "description": "fd",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GATACAATTAAAGGCTCCTTTTGGAGCCTTTTTTTTTGGA",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 40,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "fd"
+        ],
+        "synonym": [
+          "fd",
+          "fd terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

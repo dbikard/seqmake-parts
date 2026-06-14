@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "slug": "T7_g10_leader",
+  "locus": "T7_g10_leader",
+  "id": "T7_g10_leader",
+  "description": "T7 g10 leader.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AATAATTTTGTTTAACTTTAAGAAGGAGATATACC",
+  "references": [],
+  "features": [
+    {
+      "type": "RBS",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7 g10 leader"
+        ],
+        "synonym": [
+          "g10 leader RBS",
+          "T7 gene 10 leader RBS",
+          "g10-L",
+          "T7 g10 RBS",
+          "phi10 RBS"
+        ],
+        "note": [
+          "T7 gene-10 (g10) translational leader / RBS: epsilon enhancer + Shine-Dalgarno (AAGGAG) + spacer; drives strong translation in the T7 expression system. Extracted from pET-28a (Addgene 249430), the RBS/leader between the XbaI site and the start ATG (35 bp). DNA 5'UTR element, distinct from the T7-tag peptide (see T7_tag)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "sfGFP",
+  "locus": "sfGFP",
+  "id": "sfGFP",
+  "description": "sfGFP",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 238,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "sfGFP"
+        ],
+        "synonym": [
+          "Superfolder GFP",
+          "Superfolder",
+          "sfGFP",
+          "msfGFP",
+          "GFP (superfolder)",
+          "GFP"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "slug": "PphlF",
+  "locus": "PphlF",
+  "id": "PphlF",
+  "description": "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCTGATTCGTTACCAATTGACATGATACGAAACGTACCGTATCGTTAAGGT",
+  "references": [
+    {
+      "authors": "Stanton BC, Nielsen AA, Tamsir A, Clancy K, Peterson T, Voigt CA",
+      "title": "Genomic mining of prokaryotic repressors for orthogonal logic gates",
+      "journal": "Nat Chem Biol 10(2):99-105 (2014)",
+      "pubmed_id": "24316737",
+      "comment": "doi:10.1038/nchembio.1411"
+    },
+    {
+      "authors": "Nielsen AA, Der BS, Shin J, Vaidyanathan P, Paralanov V, Strychalski EA, Ross D, Densmore D, Voigt CA",
+      "title": "Genetic circuit design automation",
+      "journal": "Science 352(6281):aac7341 (2016)",
+      "pubmed_id": "27034378",
+      "comment": "doi:10.1126/science.aac7341"
+    },
+    {
+      "authors": "Abbas A, Morrissey JP, Marquez PC, Sheehan MM, Delany IR, O'Gara F",
+      "title": "Characterization of interactions between the transcriptional repressor PhlF and its binding site at the phlA promoter in Pseudomonas fluorescens F113",
+      "journal": "J Bacteriol 184(11):3008-3016 (2002)",
+      "pubmed_id": "12003942",
+      "comment": "doi:10.1128/JB.184.11.3008-3016.2002"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 51,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PphlF"
+        ],
+        "synonym": [
+          "PphlF",
+          "PhlF promoter"
+        ],
+        "note": [
+          "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "PhlF"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 16,
+      "end": 22,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "PphlF"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "J23119-derived -35 box (TTGACA)"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 39,
+      "end": 45,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "PphlF"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "-10 box (TATCGT); overlapped by the phO operator"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 21,
+      "end": 51,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phO"
+        ],
+        "parent": [
+          "PphlF"
+        ],
+        "note": [
+          "PhlF operator (phO): 30-bp PhlF-dimer binding site (inverted repeat). Native operator defined by Abbas 2002 (downstream of the phlA TSS); overlaid onto the -10 in the synthetic PphlF (Stanton 2014) so PhlF binding occludes transcription."
+        ],
+        "citation": [
+          "[3]",
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

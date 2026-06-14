@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "phiC31_attP",
+  "locus": "phiC31_attP",
+  "id": "phiC31_attP",
+  "description": "phiC31 attP",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AACCCCTTGTGTCATGTCGGCGACCCTACGCCCCCAACTGAGAGAACTCAAAGGTTACCCCAGTTGGGGCACTACTCCCGAAAACCGCTTCTGACCTGGG",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 100,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phiC31 attP"
+        ],
+        "synonym": [
+          "phiC31 attP",
+          "phi-C31 attP",
+          "phiC31 attachment site"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

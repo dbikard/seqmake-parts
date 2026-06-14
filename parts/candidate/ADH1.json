@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "ADH1",
+  "locus": "ADH1",
+  "id": "ADH1",
+  "description": "ADH1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATCCTTTTGTTGTTTCCGGGTGTACAATATGGACTTCCTCTTTTCTGGCAACCAAACCCATACATCGGGATTCCTATAATACCTTCGTTGGTCTCCCTAACATGTAGGTGGCGGAGGGGAGATATACAATAGAACAGATACCAGACAAGACATAATGGGCTAAACAAGACTACACCAATTACACTGCCTCATTGATGGTGGTACATAACGAACTAATACTGTAGCCCTAGACTTGATAGCCATCATCATATCGAAGTTTCACTACCCTTTTTCCATTTGCCATCTATTGAAGTAATAATAGGCGCATGCAACTTCTTTTCTTTTTTTTTCTTTTCTCTCTCCCCCGTTGTTGTCTCACCATATCCGCAATGACAAAAAAATGATGGAAGACACTAAAGGAAAAAATTAACGACAAAGACAGCACCAACAGATGTCGTTGTTCCAGAGCTGATGAGGGGTATCTCGAAGCACACGAAACTTTTTCCTTCCTTCATTCACGCACACTACTCTCTAATGAGCAACGGTATACGGCCTTCCTTCCAGTTACTTGAATTTGAAATAAAAAAAAGTTTGCTGTCTTGCTATCAAGTATAAATAGACCTGCAATTATTAATCTTTTGTTTCCTCGTCATTGTTCTCGTTCCCTTTCTTCCTTGTTTCTTTTTCTGCACAATATTTCAAGCTATACCAAGCATACAATCAACT",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 705,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ADH1"
+        ],
+        "synonym": [
+          "ADH1 promoter",
+          "PADH1",
+          "pADH1",
+          "Sc ADH1 promoter"
+        ],
+        "note": [
+          "S. cerevisiae ADH1 (alcohol dehydrogenase 1) promoter, ~700 bp form; medium-strong constitutive (the standard Y2H/expression ADH1 promoter). Extracted from pGADT7 (Addgene 233529), ADH1 promoter feature (705 bp)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

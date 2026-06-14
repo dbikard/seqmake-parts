@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "PVeg",
+  "locus": "PVeg",
+  "id": "PVeg",
+  "description": "PVeg",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTGACAAAAATGGGCTCGTGTTGTACAATAAATGTA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 36,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PVeg"
+        ],
+        "synonym": [
+          "PVeg",
+          "PVeg promoter",
+          "Bacillus PVeg",
+          "vegetative promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "slug": "T7lac",
+  "locus": "T7lac",
+  "id": "T7lac",
+  "description": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AGATCGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAACAATTC",
+  "references": [
+    {
+      "authors": "D Imburgio, M Rong, K Ma, W T McAllister",
+      "title": "Studies of promoter recognition and start site selection by T7 RNA polymerase using a comprehensive collection of promoter variants",
+      "journal": "Biochemistry",
+      "pubmed_id": "10956032",
+      "comment": "doi:10.1021/bi000365w"
+    },
+    {
+      "authors": "J W Dubendorff, F W Studier",
+      "title": "Controlling basal expression in an inducible T7 expression system by blocking the target T7 promoter with lac repressor",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "1902522",
+      "comment": "doi:10.1016/0022-2836(91)90856-2"
+    },
+    {
+      "authors": "W Gilbert, A Maxam",
+      "title": "The nucleotide sequence of the lac operator",
+      "journal": "Proceedings of the National Academy of Sciences USA",
+      "pubmed_id": "4587255",
+      "comment": "doi:10.1073/pnas.70.12.3581"
+    },
+    {
+      "authors": "M Lewis, G Chang, N C Horton, M A Kercher, H C Pace, M A Schumacher, R G Brennan, P Lu",
+      "title": "Crystal structure of the lactose operon repressor and its complexes with DNA and inducer",
+      "journal": "Science",
+      "pubmed_id": "8638105",
+      "comment": "doi:10.1126/science.271.5253.1247"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 67,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7lac"
+        ],
+        "synonym": [
+          "PT7/lacO",
+          "T7/lacO promoter",
+          "T7 lac operator promoter"
+        ],
+        "note": [
+          "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "LacI"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 24,
+      "end": 42,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7 promoter"
+        ],
+        "parent": [
+          "T7lac"
+        ],
+        "regulatory_class": [
+          "promoter"
+        ],
+        "note": [
+          "Canonical bacteriophage T7 phi10 class III promoter consensus TAATACGACTCACTATAG (18 bp)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 24,
+      "end": 37,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7 RNAP binding domain"
+        ],
+        "parent": [
+          "T7lac"
+        ],
+        "regulatory_class": [
+          "other"
+        ],
+        "note": [
+          "Upstream binding/recognition domain of the T7 promoter (TAATACGACTCAC, 13 bp, approx -17..-5), the functional analog of the -35/-10 region for the single-sub..."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0005836"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 41,
+      "end": 44,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "+1 transcription start"
+        ],
+        "parent": [
+          "T7lac"
+        ],
+        "note": [
+          "Class III T7 promoters initiate at +1 with a G/poly(G) run and a purine/GTP preference."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 45,
+      "end": 66,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lac operator O1"
+        ],
+        "parent": [
+          "T7lac"
+        ],
+        "note": [
+          "Natural 21 bp lac operator O1, AATTGTGAGCGGATAACAATT (the standard T7lac/lacUV5 operator form; the central GCGG is contacted by the LacI hinge helices in the..."
+        ],
+        "citation": [
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

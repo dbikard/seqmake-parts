@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "cI857",
+  "locus": "cI857",
+  "id": "cI857",
+  "description": "cI857",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSTKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGALFNGINALNAYNAALLTKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSEYEYPVFSHVQAGMFSPKLRTFTKGDAERWVSTTKKASDSAFWLEVEGNSMTAPTGSKPSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRDSGQVFLQPLNPQYPMIPCNESCSVVGKVIASQWPEETFG",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 237,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "cI857"
+        ],
+        "synonym": [
+          "cI857",
+          "lambda cI857",
+          "cI857 repressor",
+          "temperature-sensitive lambda repressor"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

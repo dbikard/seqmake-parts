@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "slug": "CMV",
+  "locus": "CMV",
+  "id": "CMV",
+  "description": "CMV.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GACATTGATTATTGACTAGTTATTAATAGTAATCAATTACGGGGTCATTAGTTCATAGCCCATATATGGAGTTCCGCGTTACATAACTTACGGTAAATGGCCCGCCTGGCTGACCGCCCAACGACCCCCGCCCATTGACGTCAATAATGACGTATGTTCCCATAGTAACGCCAATAGGGACTTTCCATTGACGTCAATGGGTGGAGTATTTACGGTAAACTGCCCACTTGGCAGTACATCAAGTGTATCATATGCCAAGTACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGCATTATGCCCAGTACATGACCTTATGGGACTTTCCTACTTGGCAGTACATCTACGTATTAGTCATCGCTATTACCATGGTGATGCGGTTTTGGCAGTACATCAATGGGCGTGGATAGCGGTTTGACTCACGGGGATTTCCAAGTCTCCACCCCATTGACGTCAATGGGAGTTTGTTTTGGCACCAAAATCAACGGGACTTTCCAAAATGTCGTAACAACTCCGCCCCATTGACGCAAATGGGCGGTAGGCGTGTACGGTGGGAGGTCTATATAAGCAGAGCT",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 584,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "CMV"
+        ],
+        "synonym": [
+          "CMV promoter",
+          "PCMV",
+          "CMV IE promoter",
+          "human cytomegalovirus immediate early promoter",
+          "CMV enhancer/promoter"
+        ],
+        "note": [
+          "Human cytomegalovirus (hCMV) immediate-early enhancer/promoter, the default strong constitutive mammalian promoter. Extracted from pcDNA3.1(+) (Addgene 255272): CMV enhancer (1-380) + CMV core promoter (381-584)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

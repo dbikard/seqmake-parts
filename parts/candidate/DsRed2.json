@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "slug": "DsRed2",
+  "locus": "DsRed2",
+  "id": "DsRed2",
+  "description": "DsRed2",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MASSENVITEFMRFKVRMEGTVNGHEFEIEGEGEGRPYEGHNTVKLKVTKGGPLPFAWDILSPQFQYGSKVYVKHPADIPDYKKLSFPEGFKWERVMNFEDGGVATVTQDSSLQDGCFIYKVKFIGVNFPSDGPVMQKKTMGWEASTERLYPRDGVLKGETHKALKLKDGGHYLVEFKSIYMAKKPVQLPGYYYVDAKLDITSHNEDYTIVEQYERTEGRHHLFL",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 225,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "DsRed2"
+        ],
+        "synonym": [
+          "DsRed2",
+          "dsred2",
+          "red fluorescent protein (DsRed2)"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

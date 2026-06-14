@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "NLS_nucleoplasmin",
+  "locus": "NLS_nucleoplasmi",
+  "id": "NLS_nucleoplasmi",
+  "description": "NLS (nucleoplasmin)",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "KRPAATKKAGQAKKKK",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 16,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "NLS (nucleoplasmin)"
+        ],
+        "synonym": [
+          "NLS (nucleoplasmin)",
+          "nucleoplasmin NLS"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

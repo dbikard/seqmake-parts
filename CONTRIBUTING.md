@@ -89,16 +89,23 @@ Parts are split by curation status:
 
 ```bash
 pip install -r requirements.txt
+python tools/migrate_to_json.py   # (if you authored a .gb) -> canonical <slug>.json
+python tools/build_gb.py          # regenerate every .gb from its canonical JSON
 python tools/build_catalog.py     # rebuilds catalog.json + docs/
 python tools/build_rdf.py         # rebuilds catalog.ttl + catalog.jsonld
 mkdocs serve                      # preview the site at http://127.0.0.1:8000
 ```
 
-Commit the updated `catalog.json` **and** `catalog.ttl` / `catalog.jsonld` along
-with your part — CI rebuilds both and fails if either is stale (and validates the
-RDF against `tools/shapes.ttl`). The RDF is a *generated projection* of the same
-`.gb` data — never hand-edit it; see [`RDF.md`](RDF.md) for the model. The
-`docs/` tree is generated (git-ignored) and rebuilt by CI.
+**The canonical record of each part is `parts/<status>/<slug>.json`** (validated
+against [`schema/part.schema.json`](schema/part.schema.json)); the `.gb` is a
+*generated* projection of it (`tools/build_gb.py`), and `catalog.json` /
+`catalog.ttl` / `catalog.jsonld` are generated in turn. You may author a part as
+JSON directly, or add a `.gb` and run `tools/migrate_to_json.py` to derive the
+JSON. Prose stays in the sibling `<slug>.md`. Commit the `<slug>.json`, the
+generated `.gb`, `catalog.json`, and `catalog.ttl` / `catalog.jsonld` together —
+CI fails if any is stale (and validates the JSON + the RDF SHACL shapes). Never
+hand-edit the generated files; see [`RDF.md`](RDF.md) for the model. The `docs/`
+tree is generated (git-ignored) and rebuilt by CI.
 
 ## Interactive part viewer
 

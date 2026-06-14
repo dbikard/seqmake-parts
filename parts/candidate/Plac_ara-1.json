@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "Plac_ara-1",
+  "locus": "Plac_ara-1",
+  "id": "Plac_ara-1",
+  "description": "Plac/ara-1.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CATAGCATTTTTATCCATAAGATTAGCGGATCCTAAGCTTTACAATTGTGAGCGCTCACAATTATGATAGATTCAATTGTGAGCGGATAACAATTTCACACA",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 102,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Plac/ara-1"
+        ],
+        "synonym": [
+          "Plac/ara-1 promoter",
+          "Placara-1",
+          "lac/ara-1 promoter",
+          "lac/ara hybrid promoter"
+        ],
+        "note": [
+          "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator; AraC- and LacI-controlled (arabinose + IPTG)."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": "1.0",
+  "slug": "tetR_tetA_promoters",
+  "locus": "tetR_tetA_promot",
+  "id": "tetR_tetA_promot",
+  "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA",
+  "references": [
+    {
+      "authors": "Bertrand KP, Postle K, Wray LV Jr, Reznikoff WS",
+      "title": "Overlapping divergent promoters control expression of Tn10 tetracycline resistance",
+      "journal": "Gene",
+      "pubmed_id": "6311683",
+      "comment": "doi:10.1016/0378-1119(83)90046-x"
+    },
+    {
+      "authors": "Daniels DW, Bertrand KP",
+      "title": "Promoter mutations affecting divergent transcription in the Tn10 tetracycline resistance determinant",
+      "journal": "J Mol Biol",
+      "pubmed_id": "2995683",
+      "comment": "doi:10.1016/0022-2836(85)90306-7"
+    },
+    {
+      "authors": "Hillen W, Berens C",
+      "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
+      "journal": "Annu Rev Microbiol",
+      "pubmed_id": "7826010",
+      "comment": "doi:10.1146/annurev.mi.48.100194.002021"
+    },
+    {
+      "authors": "Wissmann A, Meier I, Wray LV Jr, Geissendorfer M, Hillen W",
+      "title": "Tn10 tet operator mutations affecting Tet repressor recognition",
+      "journal": "Nucleic Acids Res",
+      "pubmed_id": "3086838",
+      "comment": "doi:10.1093/nar/14.10.4253"
+    },
+    {
+      "authors": "Meier I, Wray LV Jr, Hillen W",
+      "title": "Differential regulation of the Tn10-encoded tetracycline resistance genes tetA and tetR by the tandem tet operators O1 and O2",
+      "journal": "EMBO J",
+      "pubmed_id": "2835235",
+      "comment": "doi:10.1002/j.1460-2075.1988.tb02846.x"
+    },
+    {
+      "authors": "Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger W",
+      "title": "Structure of the Tet repressor-tetracycline complex and regulation of antibiotic resistance",
+      "journal": "Science",
+      "pubmed_id": "8153629",
+      "comment": "doi:10.1126/science.8153629"
+    },
+    {
+      "authors": "Gulland U, Hillen W",
+      "title": "The Tn10-encoded tetR mRNA has heterogeneous 5' ends in vivo and in vitro",
+      "journal": "Gene 114(1):97-101",
+      "pubmed_id": "1316869",
+      "comment": "doi:10.1016/0378-1119(92)90713-y"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 56,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetR/tetA promoters"
+        ],
+        "synonym": [
+          "tetR/tetA promoters"
+        ],
+        "note": [
+          "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 1,
+      "end": 7,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PtetA -35"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "regulatory_class": [
+          "other"
+        ],
+        "note": [
+          "Canonical sigma70 -35 hexamer (TTGACA) of the tetA promoter (PtetA), reading 5'->3' into tetA."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0005836"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 24,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PtetA -10"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "regulatory_class": [
+          "other"
+        ],
+        "note": [
+          "Degenerate sigma70 -10 hexamer (TTATTT) of PtetA, positioned with a canonical 17 bp -35/-10 spacer (sequence[7:24] = CTCTATCATTGATAGAG)."
+        ],
+        "citation": [
+          "[3]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0005836"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 5,
+      "end": 24,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO1"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "note": [
+          "19 bp near-dyad TetR operator O1 (CACTCTATCATTGATAGAG), superimposed on the PtetA -10/spacer."
+        ],
+        "citation": [
+          "[1]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 36,
+      "end": 55,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO2"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "note": [
+          "19 bp non-palindromic TetR operator O2 (TCCCTATCAGTGATAGAGA), the higher-affinity wild-type operator, superimposed on the divergent PtetR -10 region; O2 main..."
+        ],
+        "citation": [
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 37,
+      "end": 38,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PtetA +1"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "note": [
+          "tetA transcription start site (+1), ~7 nt downstream of the PtetA -10; the divergent tetA/tetR start sites were mapped by S1 analysis of tet mRNA 5' ends."
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 50,
+      "end": 56,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "PtetR -35"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "regulatory_class": [
+          "other"
+        ],
+        "note": [
+          "Sigma-70 -35 hexamer of PtetR (bottom strand reads TTCTCT), the divergent promoter that transcribes tetR leftward; PtetR corresponds to the dominant tetR promoter (P_R2)."
+        ],
+        "citation": [
+          "[2]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0005836"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 26,
+      "end": 32,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "PtetR -10"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "regulatory_class": [
+          "other"
+        ],
+        "note": [
+          "Sigma-70 -10 hexamer of PtetR (bottom strand reads TAAAAT), ~18 bp downstream of the PtetR -35; it overlaps the PtetA -10 on the opposite strand in the divergent arrangement."
+        ],
+        "citation": [
+          "[2]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0005836"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 19,
+      "end": 20,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "PtetR +1"
+        ],
+        "parent": [
+          "tetR/tetA promoters"
+        ],
+        "note": [
+          "tetR transcription start site (+1) of PtetR (P_R2), the promoter producing >95% of tetR mRNA in vivo; the start shows length heterogeneity from reiterative copying of a short run of A residues."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0000315"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

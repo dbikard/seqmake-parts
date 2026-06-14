@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "slug": "PLtetO-1",
+  "locus": "PLtetO-1",
+  "id": "PLtetO-1",
+  "description": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TCCCTATCAGTGATAGAGATTGACATCCCTATCAGTGATAGAGATACTGAGCACATCAGCAGGACGCACTGACC",
+  "references": [
+    {
+      "authors": "Lutz R, Bujard H",
+      "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+      "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+      "pubmed_id": "9092630",
+      "comment": "doi:10.1093/nar/25.6.1203"
+    },
+    {
+      "authors": "Kleinschmidt C, Tovar K, Hillen W, Porschke D",
+      "title": "Dynamics of repressor-operator recognition: the Tn10-encoded tetracycline resistance control",
+      "journal": "Biochemistry 1988;27(4):1094-1104",
+      "pubmed_id": "2835082",
+      "comment": "doi:10.1021/bi00404a003"
+    },
+    {
+      "authors": "Hinrichs W, Kisker C, Duvel M, Muller A, Tovar K, Hillen W, Saenger W",
+      "title": "Structure of the Tet repressor-tetracycline complex and regulation of antibiotic resistance",
+      "journal": "Science 1994;264(5157):418-420",
+      "pubmed_id": "8153629",
+      "comment": "doi:10.1126/science.8153629"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 74,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PLtetO-1"
+        ],
+        "synonym": [
+          "PLtetO-1",
+          "PLtetO-1 promoter"
+        ],
+        "note": [
+          "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold."
+        ],
+        "db_xref": [
+          "SO:0000167"
+        ],
+        "regulated_by": [
+          "TetR"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 19,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO2 operator"
+        ],
+        "parent": [
+          "PLtetO-1"
+        ],
+        "note": [
+          "Upstream Tn10 tetO2 operator (19 bp consensus TCCCTATCAGTGATAGAGA) that replaced lambda PL's upstream cI/OL site; bound by the TetR dimer."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 19,
+      "end": 25,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35"
+        ],
+        "parent": [
+          "PLtetO-1"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "note": [
+          "Canonical sigma-70 -35 hexamer TTGACA from the lambda PL scaffold, flanked by the two tetO2 operators (abuts the distal operator at 19, the spacer operator a..."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 25,
+      "end": 44,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tetO2 operator (proximal)"
+        ],
+        "parent": [
+          "PLtetO-1"
+        ],
+        "note": [
+          "Second Tn10 tetO2 operator (identical 19 bp consensus) placed in the -35/-10 spacer; TetR binding here sterically occludes RNA polymerase."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 42,
+      "end": 48,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10"
+        ],
+        "parent": [
+          "PLtetO-1"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "note": [
+          "Lambda PL -10 hexamer GATACT, 17 bp downstream of the -35 (canonical spacer), overlapping the 3' end of the spacer tetO2 by 2 bp."
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "J23106",
+  "locus": "J23106",
+  "id": "J23106",
+  "description": "J23106",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTTACGGCTAGCTCAGTCCTAGGTATAGTGCTAGC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "J23106"
+        ],
+        "synonym": [
+          "BBa_J23106",
+          "Anderson constitutive promoter",
+          "J23106 promoter"
+        ],
+        "collection": [
+          "anderson-promoters"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

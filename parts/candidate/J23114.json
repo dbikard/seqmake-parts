@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "slug": "J23114",
+  "locus": "J23114",
+  "id": "J23114",
+  "description": "J23114",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTTATGGCTAGCTCAGTCCTAGGTACAATGCTAGC",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 35,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "J23114"
+        ],
+        "synonym": [
+          "BBa_J23114",
+          "Anderson constitutive promoter",
+          "J23114 promoter"
+        ],
+        "collection": [
+          "anderson-promoters"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "slug": "Pkan",
+  "locus": "Pkan",
+  "id": "Pkan",
+  "description": "Pkan",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAAGACGT",
+  "references": [],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 106,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Pkan"
+        ],
+        "synonym": [
+          "Pkan",
+          "PKan",
+          "kanamycin promoter",
+          "Km promoter"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

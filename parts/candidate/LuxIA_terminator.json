@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "slug": "LuxIA_terminator",
+  "locus": "LuxIA_terminator",
+  "id": "LuxIA_terminator",
+  "description": "LuxIA terminator",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ATACTAGAGAGAGAATATAAAAAGCCAGATTATTAATCCGGCTTTTTTATTATTT",
+  "references": [],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 55,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "LuxIA terminator"
+        ],
+        "synonym": [
+          "LuxIA terminator",
+          "LuxIA Dual Terminator"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

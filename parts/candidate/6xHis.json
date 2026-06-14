@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "slug": "6xHis",
+  "locus": "6xHis",
+  "id": "6xHis",
+  "description": "6xHis",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "HHHHHH",
+  "references": [],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "6xHis"
+        ],
+        "synonym": [
+          "6xHis",
+          "6xHis (fragment)",
+          "His tag",
+          "His-tag",
+          "8xHis",
+          "8xHis (fragment)",
+          "10xHis",
+          "polyhistidine tag"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}

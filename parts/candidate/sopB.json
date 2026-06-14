@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "slug": "sopB",
+  "locus": "sopB",
+  "id": "sopB",
+  "description": "sopB",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKRAPVIPKHTLNTQPVEDTSLSTPAAPMVDSLIARVGVMARGNAITLPVCGRDVKFTLEVLRGDSVEKTSRVWSGNERDQELLTEDALDDLIPSFLLTGQQTPAFGRRVSGVIEIADGSRRRKAAALTESDYRVLVGELDDEQMAALSRLGNDYRPTSAYERGQRYASRLQNEFAGNISALADAENISRKIITRCINTAKLPKSVVALFSHPGELSARSGDALQKAFTDKEELLKQQASNLHEQKKAGVIFEAEEVITLLTSVLKTSSASRTSLSSRHQFAPGATVLYKGDKMVLNLDRSRVPTECIEKIEAILKELEKPAP",
+  "references": [],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 323,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "sopB"
+        ],
+        "synonym": [
+          "sopB"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank"
+  },
+  "functional_claims": []
+}
