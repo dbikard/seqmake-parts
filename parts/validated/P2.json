@@ -119,5 +119,28 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Constitutive sigma70 promoter (pBR322 tet P2).",
+      "value": {
+        "regulation": "constitutive"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "383387",
+        "quote": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "P2.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

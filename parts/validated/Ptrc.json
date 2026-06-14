@@ -124,5 +124,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Strong sigma70 promoter core (trc); this part is the core only (no lac operator).",
+      "value": {
+        "regulation": "constitutive",
+        "strength": "strong",
+        "note": "promoter core only; add a lac operator for IPTG control"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3069586",
+        "quote": "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "Ptrc.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

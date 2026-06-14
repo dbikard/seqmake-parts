@@ -152,5 +152,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers chloramphenicol resistance by O-acetylation (chloramphenicol acetyltransferase).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "chloramphenicol"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "390403",
+        "quote": "CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT) from E. coli transposon Tn9, conferring chloramphenicol resistance by O-acetylating the antibiotic.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "CmR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

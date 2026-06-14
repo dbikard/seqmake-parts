@@ -297,14 +297,19 @@ def _feature_table(part: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _load_claims(part: dict) -> list[dict]:
+    """A part's functional_claims from its canonical JSON (empty if none)."""
+    json_path = PARTS_DIR / part["status"] / f"{part['slug']}.json"
+    if not json_path.exists():
+        return []
+    return json.loads(json_path.read_text(encoding="utf-8")).get("functional_claims", [])
+
+
 def _functional_knowledge(part: dict) -> str:
     """The functional-knowledge section: prose-derived claims (from the canonical
     JSON), each shown with its granular source (quote/figure), confidence and
     review status -- the human view of the nanopublication-shaped layer."""
-    json_path = PARTS_DIR / part["status"] / f"{part['slug']}.json"
-    if not json_path.exists():
-        return ""
-    claims = json.loads(json_path.read_text(encoding="utf-8")).get("functional_claims", [])
+    claims = _load_claims(part)
     if not claims:
         return ""
     lines = ["## Functional knowledge\n",
@@ -389,10 +394,29 @@ def _related_section(part: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _function_tags(part: dict) -> list[str]:
+    """Browse-by-function facet tags derived from a part's functional_claims:
+    regulation mode, inducer, selection marker, and copy number."""
+    tags: list[str] = []
+    for c in _load_claims(part):
+        v = c.get("value") or {}
+        reg = v.get("regulation")
+        if reg:
+            tags.append(reg.capitalize())          # Inducible / Constitutive
+        if v.get("inducer"):
+            tags.append(f"Inducer: {v['inducer']}")
+        if v.get("function") == "antibiotic resistance" or c.get("type") == "function":
+            tags.append("Selection marker")
+        if v.get("copy_number"):
+            tags.append(f"Copy number: {v['copy_number']}")
+    return tags
+
+
 def _tags_for(part: dict) -> list[str]:
-    """Facet tags for a part page (material/tags): its type, plus — for a
-    promoter — one ``regulated by <TF>`` tag per cognate regulator, and a
-    ``Transcription factors`` tag for any part that regulates one."""
+    """Facet tags for a part page (material/tags): its type; for a promoter one
+    ``regulated by <TF>`` tag per cognate regulator and a ``Transcription
+    factors`` tag for any part that regulates one; its collections; and
+    browse-by-function tags from its functional claims."""
     tags = [_group_key(part)[1]]
     for x in part.get("regulated_by") or []:
         nm = x["name"] if isinstance(x, dict) else x
@@ -401,6 +425,7 @@ def _tags_for(part: dict) -> list[str]:
         tags.append("Transcription factors")
     for c in part.get("collections_resolved") or []:
         tags.append(f"Collection: {c['name']}")
+    tags += _function_tags(part)
     # de-dup, preserve order
     seen: set[str] = set()
     return [t for t in tags if not (t in seen or seen.add(t))]
@@ -601,8 +626,10 @@ def render_tags_page() -> str:
     """The faceted tag index. The ``material/tags`` marker tells the plugin
     where to render the per-tag listing."""
     return ("# Tags\n\n"
-            "Browse parts by tag — the part **type**, and, for promoters, the "
-            "**transcription factor** that regulates them.\n\n"
+            "Browse parts by tag — the part **type**; **function** (inducible / "
+            "constitutive, inducer, selection marker, copy number); the "
+            "**transcription factor** that regulates a promoter; and "
+            "**collection** membership.\n\n"
             "<!-- material/tags -->\n")
 
 

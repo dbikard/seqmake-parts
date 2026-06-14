@@ -110,5 +110,31 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "LacI-repressible / IPTG-inducible; catabolite (CAP)-insensitive UV5 allele.",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "IPTG",
+        "repressor": "LacI",
+        "note": "CAP-independent"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "1088926",
+        "quote": "PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PlacUV5.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

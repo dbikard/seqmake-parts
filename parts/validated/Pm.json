@@ -199,5 +199,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "XylS-dependent; benzoate / m-toluate-inducible (TOL meta-operon promoter).",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "m-toluate / benzoate",
+        "activator": "XylS"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "28276630",
+        "quote": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "Pm.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

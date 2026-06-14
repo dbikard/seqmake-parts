@@ -354,5 +354,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers streptomycin/spectinomycin resistance (aminoglycoside adenylyltransferase ANT(3'')(9)).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "streptomycin / spectinomycin"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "26527143",
+        "quote": "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "aadA.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

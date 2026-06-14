@@ -113,5 +113,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers Zeocin/bleomycin resistance by stoichiometric drug binding (Sh ble protein).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "Zeocin / bleomycin"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2450783",
+        "quote": "ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers resistance by stoichiometrically binding and sequestering the drug ...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "ZeoR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

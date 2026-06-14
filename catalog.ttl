@@ -289,6 +289,7 @@ part:BlastR a sbol:Component ;
         "bsd" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:BlastR_claim_function ;
     cat:slug "BlastR" ;
     cat:sourceAccession "UniProt:P0C2P0" .
 
@@ -408,6 +409,7 @@ part:CmR a sbol:Component ;
         "chloramphenicol acetyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:CmR_claim_function ;
     cat:slug "CmR" ;
     cat:sourceAccession "UniProt:P62577" .
 
@@ -430,6 +432,7 @@ part:ColE1 a sbol:Component ;
     skos:altLabel "ColE1" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:ColE1_claim_copy_number ;
     cat:slug "ColE1" .
 
 part:CspRecT a sbol:Component ;
@@ -472,6 +475,7 @@ part:DhfR a sbol:Component ;
         "trimethoprim resistance" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:DhfR_claim_function ;
     cat:slug "DhfR" ;
     cat:sourceAccession "UniProt:P00382" .
 
@@ -695,6 +699,7 @@ part:GmR a sbol:Component ;
         "gentamicin acetyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:GmR_claim_function ;
     cat:slug "GmR" ;
     cat:sourceAccession "UniProt:P23181" .
 
@@ -793,6 +798,7 @@ part:HygR a sbol:Component ;
         "hygromycin B phosphotransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:HygR_claim_function ;
     cat:slug "HygR" ;
     cat:sourceAccession "UniProt:P00557" .
 
@@ -1031,6 +1037,7 @@ part:P2 a sbol:Component ;
         "tet promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:P2_claim_regulation ;
     cat:slug "P2" .
 
 part:P2A a sbol:Component ;
@@ -1067,6 +1074,7 @@ part:PA1_O4_O3 a sbol:Component ;
         "PA1_04_03" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PA1_O4_O3_claim_regulation ;
     cat:slug "PA1_O4_O3" .
 
 part:PA1lacO-1 a sbol:Component ;
@@ -1204,6 +1212,7 @@ part:PT5_lacO a sbol:Component ;
         "T5/lacO promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PT5_lacO_claim_regulation ;
     cat:slug "PT5_lacO" .
 
 part:PT7 a sbol:Component ;
@@ -1269,6 +1278,7 @@ part:Pbla a sbol:Component ;
         "bla promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Pbla_claim_regulation ;
     cat:slug "Pbla" .
 
 part:Pcat a sbol:Component ;
@@ -1485,6 +1495,7 @@ part:PuroR a sbol:Component ;
         "puromycin N-acetyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PuroR_claim_function ;
     cat:slug "PuroR" ;
     cat:sourceAccession "UniProt:P13249" .
 
@@ -1513,6 +1524,7 @@ part:Pxyl_tet a sbol:Component ;
         "ptet_full" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Pxyl_tet_claim_regulation ;
     cat:slug "Pxyl_tet" ;
     cat:sourceAccession "GenBank:JN635500.1" .
 
@@ -2035,6 +2047,7 @@ part:TetA a sbol:Component ;
         "tetracycline resistance protein" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:TetA_claim_function ;
     cat:slug "TetA" ;
     cat:sourceAccession "UniProt:P02981" .
 
@@ -2130,6 +2143,7 @@ part:ZeoR a sbol:Component ;
         "bleomycin resistance protein" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:ZeoR_claim_function ;
     cat:slug "ZeoR" ;
     cat:sourceAccession "UniProt:P17493" .
 
@@ -2167,6 +2181,7 @@ part:aadA a sbol:Component ;
         "streptomycin 3''-adenylyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:aadA_claim_function ;
     cat:slug "aadA" ;
     cat:sourceAccession "UniProt:P0AG05" .
 
@@ -2279,6 +2294,7 @@ part:bla a sbol:Component ;
         "penicillinase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:bla_claim_function ;
     cat:slug "bla" ;
     cat:sourceAccession "UniProt:P62593" .
 
@@ -2499,6 +2515,7 @@ part:ermAM a sbol:Component ;
     skos:altLabel "ermB" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:ermAM_claim_function ;
     cat:slug "ermAM" ;
     cat:sourceAccession "UniProt:P21236" .
 
@@ -2636,6 +2653,7 @@ part:kanR_Tn5 a sbol:Component ;
         "nptII" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:kanR_Tn5_claim_function ;
     cat:slug "kanR_Tn5" ;
     cat:sourceAccession "UniProt:P00552" .
 
@@ -2884,6 +2902,7 @@ part:p15A a sbol:Component ;
     skos:altLabel "p15A" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:p15A_claim_copy_number ;
     cat:slug "p15A" .
 
 part:p15A_ori a sbol:Component ;
@@ -3035,6 +3054,7 @@ part:pSC101_ori a sbol:Component ;
     skos:altLabel "pSC101 ori" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:pSC101_ori_claim_copy_number ;
     cat:slug "pSC101_ori" .
 
 part:pSC101_ori_SEVA a sbol:Component ;
@@ -3403,6 +3423,7 @@ part:tetR_tetA_promoters a sbol:Component ;
     skos:altLabel "tetR/tetA promoters" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:tetR_tetA_promoters_claim_regulation ;
     cat:slug "tetR_tetA_promoters" .
 
 part:thrombin_site a sbol:Component ;
@@ -3550,6 +3571,23 @@ part:B0034_RBS_sequence a sbol:Sequence ;
     sbol:elements "AAAGAGGAGAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:BlastR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers blasticidin S resistance (blasticidin-S deaminase)." ;
+    dcterms:references pubmed:8159161 ;
+    prov:wasDerivedFrom pubmed:8159161 ;
+    prov:wasGeneratedBy part:BlastR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"blasticidin S\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:BlastR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "BlastR.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:BlastR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:10833262,
@@ -3705,6 +3743,23 @@ part:CYC1_terminator_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:ChnR_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Cyclohexanone-responsive AraC/XylS-family activator of the PchnB promoter." ;
+    dcterms:references pubmed:3338974 ;
+    prov:wasDerivedFrom pubmed:3338974 ;
+    prov:wasGeneratedBy part:ChnR_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"cyclohexanone\", \"role\": \"activator\", \"target\": \"PchnB\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster)." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ChnR_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "ChnR.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:ChnR_sequence a sbol:Sequence ;
     sbol:displayId "ChnR_sequence" ;
     sbol:elements "MSTDKANTLIKPEDVVLWIPGNVTIDSMNAGWENIAIRGYEYTNLDVHIPAMRDYMIVNYKKSAAEMRRKGDASWDTQVVKPGYVSLLTCGEDSRWAWNDHIAVTHVYISHDSITSMANKVFDYDIASIRIRDEVGVEDHVLPALTSLLELELKQGGLGGNLYLESIKNQIALHLLRQYAKLDFKEGQCRSGFTPLQRRLLLEFINENMSIKITLEDLAGLVKMSVPHLMRKFKVDFGNSPAAYIMNLRVQFAKRLLTSKKEIPLKVIASEAGFCDQSHMTRVFQKFFGKTPIEIRQEHTNLVSENSVSSIVF" ;
@@ -3716,6 +3771,23 @@ part:CloDF13_ori_sequence a sbol:Sequence ;
     sbol:elements "GATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTTTTGCCCTGTAAACGAAAAAACCACCTGGGGAGGTGGTTTGATCGAAGGTTAAGTCAGTTGGGGAACTGCTTAACCGTGGTAACTGGCTTTCGCAGAGCACAGCAACCAAATCTGTCCTTCCAGTGTAGCCGGACTTTGGCGCACACTTCAAGAGCAACCGCGTGTTTAGCTAAACAAATCCTCTGCGAACTCCCAGTTACCAATGGCTGCTGCCAGTGGCGTTTTACCGTGCTTTTCCGGGTTGGACTCAAGTGAACAGTTACCGGATAAGGCGCAGCAGTCGGGCTGAACGGGGAGTTCTTGCTTACAGCCCAGCTTGGAGCGAACGACCTACACCGAGCCGAGATACCAGTGTGTGAGCTATGAGAAAGCGCCACACTTCCCGTAAGGGAGAAAGGCGGAACAGGTATCCGGTAAACGGCAGGGTCGGAACAGGAGAGCGCAAGAGGGAGCGACCCGCCGGAAACGGTGGGGATCTTTAAGTCCTGTCGGGTTTCGCCCGTACTGTCAGATTCATGGTTGAGCCTCACGGCTCCCACAGATGCACCGGAAAAGCGTCTGTTTATGTGAACTCTGGCAGGAGGGCGGAGCCTATGGAAAAACGCCACCGGCGCGGCCCTGCTGTTTTGCCTCACATGTTAGTCCCCTGCTTATCCACGGAATCTGTGGGTAACTTTGTATGTGTCCGCAGCGC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:CmR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers chloramphenicol resistance by O-acetylation (chloramphenicol acetyltransferase)." ;
+    dcterms:references pubmed:390403 ;
+    prov:wasDerivedFrom pubmed:390403 ;
+    prov:wasGeneratedBy part:CmR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"chloramphenicol\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT) from E. coli transposon Tn9, conferring chloramphenicol resistance by O-acetylating the antibiotic." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:CmR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "CmR.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:CmR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2187098,
@@ -3758,6 +3830,23 @@ part:CmR_feature_2_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:CmR_sequence ;
     sbol:start 197 .
+
+part:ColE1_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
+    dcterms:references pubmed:6156450 ;
+    prov:wasDerivedFrom pubmed:6156450 ;
+    prov:wasGeneratedBy part:ColE1_claim_copy_number_provenance ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"high\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ColE1_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "ColE1.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:ColE1_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -3820,6 +3909,23 @@ part:CspRecT_sequence a sbol:Sequence ;
     sbol:elements "MNQIVKFTDDSGLAVQVTPDDVRRYICENATEKEVGLFLQLCQTQRLNPFVKDAYLVKYGGAPASMITSYQVFNRRACRDANYDGIKSGVVVLRDGDVVHKRGAACYKKAGEELIGGWAEVRFKDGRETAYAEVALDDYSTGKSNWAKMPGVMIEKCAKAAAWRLAFPDTFQGMYAAEEMDQAQQPEQVRAQAEQPVDLQPIRELFKPYCEHFGITPAEGMTAVCGAVGAEGMHSMTEQQARRARAWMEEEMAAPAVEAEYEVVDEGEVF" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:DhfR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers trimethoprim resistance (Tn7 type I dihydrofolate reductase, DfrA1)." ;
+    dcterms:references pubmed:35562546 ;
+    prov:wasDerivedFrom pubmed:35562546 ;
+    prov:wasGeneratedBy part:DhfR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"trimethoprim\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 — a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:DhfR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "DhfR.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:DhfR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:27624966,
@@ -3996,6 +4102,23 @@ part:GST_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:GmR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers gentamicin resistance by N-acetylation (AAC(3)-Ia)." ;
+    dcterms:references pubmed:668926 ;
+    prov:wasDerivedFrom pubmed:668926 ;
+    prov:wasGeneratedBy part:GmR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"gentamicin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:GmR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "GmR.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:GmR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:15581578,
         pubmed:2549372,
@@ -4054,6 +4177,23 @@ part:HaloTag_sequence a sbol:Sequence ;
     sbol:elements "MGSEIGTGFPFDPHYVEVLGERMHYVDVGPRDGTPVLFLHGNPTSSYVWRNIIPHVAPTHRCIAPDLIGMGKSDKPDLGYFFDDHVRFMDAFIEALGLEEVVLVIHDWGSALGFHWAKRNPERVKGIAFMEFIRPIPTWDEWPEFARETFQAFRTTDVGRKLIIDQNVFIEGTLPMGVVRPLTEVEMDHYREPFLNPVDREPLWRFPNELPIAGEPANIVALVEEYMDWLHQSPVPKLLFWGTPGVLIPPAEAARLAKSLPNCKAVDIGPGLNLLQEDNPDLIGSEIARWLSTLEISG" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:HygR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers hygromycin B resistance by phosphorylation (APH(4)-Ia)." ;
+    dcterms:references pubmed:6319235 ;
+    prov:wasDerivedFrom pubmed:6319235 ;
+    prov:wasGeneratedBy part:HygR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"hygromycin B\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:HygR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "HygR.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:HygR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:21084294 ;
@@ -4478,6 +4618,23 @@ part:P2A_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:P2_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Constitutive sigma70 promoter (pBR322 tet P2)." ;
+    dcterms:references pubmed:383387 ;
+    prov:wasDerivedFrom pubmed:383387 ;
+    prov:wasGeneratedBy part:P2_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"regulation\": \"constitutive\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:P2_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "P2.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:P2_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:3045754,
         pubmed:9092630 ;
@@ -4505,6 +4662,23 @@ part:P2_feature_1_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:P2_sequence ;
     sbol:start 24 .
+
+part:PA1_O4_O3_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "LacI-repressible / IPTG-inducible (T7 A1 core with two lac O1 operators)." ;
+    dcterms:references pubmed:3057497 ;
+    prov:wasDerivedFrom pubmed:3057497 ;
+    prov:wasGeneratedBy part:PA1_O4_O3_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream)." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PA1_O4_O3_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PA1_O4_O3.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PA1_O4_O3_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:3057497,
@@ -4616,8 +4790,26 @@ part:PLtetO-1 a sbol:Component ;
         "PLtetO-1 promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PLtetO-1_claim_regulation ;
     cat:regulatedBy part:tetR ;
     cat:slug "PLtetO-1" .
+
+part:PLtetO-1_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "TetR-repressible / anhydrotetracycline (aTc)-inducible (lambda PL with two tetO2)." ;
+    dcterms:references pubmed:9092630 ;
+    prov:wasDerivedFrom pubmed:9092630 ;
+    prov:wasGeneratedBy part:PLtetO-1_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PLtetO-1_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PLtetO-1.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PLtetO-1_feature_0_range a sbol:Range ;
     sbol:end 19 ;
@@ -4691,6 +4883,23 @@ part:PT3_sequence a sbol:Sequence ;
     sbol:elements "AATTAACCCTCACTAAAGGG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:PT5_lacO_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "LacI-repressible / IPTG-inducible (phage T5 promoter flanked by two lac operators)." ;
+    dcterms:references pubmed:2828874 ;
+    prov:wasDerivedFrom pubmed:2828874 ;
+    prov:wasGeneratedBy part:PT5_lacO_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module)." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PT5_lacO_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PT5_lacO.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PT5_lacO_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:3900050 ;
@@ -4880,6 +5089,23 @@ part:ParaBAD_interaction_araC_p_target a sbol:Participation ;
     sbol:participant part:ParaBAD_regulated_region ;
     sbol:role sbo:0000643 .
 
+part:Pbla_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Constitutive sigma70 promoter (pBR322 bla P3)." ;
+    dcterms:references pubmed:358200 ;
+    prov:wasDerivedFrom pubmed:358200 ;
+    prov:wasGeneratedBy part:Pbla_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"regulation\": \"constitutive\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct fun..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Pbla_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Pbla.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:Pbla_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6178738,
         pubmed:6269053 ;
@@ -4937,8 +5163,26 @@ part:PchnB a sbol:Component ;
         "cyclohexanone-inducible promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PchnB_claim_regulation ;
     cat:regulatedBy part:ChnR ;
     cat:slug "PchnB" .
+
+part:PchnB_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Cyclohexanone-inducible; activated in trans by ChnR." ;
+    dcterms:references pubmed:10543838 ;
+    prov:wasDerivedFrom pubmed:10543838 ;
+    prov:wasGeneratedBy part:PchnB_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"activator\": \"ChnR\", \"inducer\": \"cyclohexanone\", \"regulation\": \"inducible\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PchnB_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PchnB.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PchnB_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:10940013,
@@ -5000,6 +5244,7 @@ part:Plac a sbol:Component ;
     skos:altLabel "lac promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Plac_claim_regulation ;
     cat:regulatedBy part:lacI ;
     cat:slug "Plac" .
 
@@ -5036,8 +5281,26 @@ part:PlacUV5 a sbol:Component ;
         "lacUV5 promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PlacUV5_claim_regulation ;
     cat:regulatedBy part:lacI ;
     cat:slug "PlacUV5" .
+
+part:PlacUV5_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "LacI-repressible / IPTG-inducible; catabolite (CAP)-insensitive UV5 allele." ;
+    dcterms:references pubmed:1088926 ;
+    prov:wasDerivedFrom pubmed:1088926 ;
+    prov:wasGeneratedBy part:PlacUV5_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"note\": \"CAP-independent\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PlacUV5_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PlacUV5.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PlacUV5_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:1088926 ;
@@ -5085,6 +5348,23 @@ part:Plac_ara-1_sequence a sbol:Sequence ;
     sbol:elements "CATAGCATTTTTATCCATAAGATTAGCGGATCCTAAGCTTTACAATTGTGAGCGCTCACAATTATGATAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:Plac_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "LacI-repressible / IPTG-inducible lac core promoter." ;
+    dcterms:references pubmed:1088926 ;
+    prov:wasDerivedFrom pubmed:1088926 ;
+    prov:wasGeneratedBy part:Plac_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Plac_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Plac.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:Plac_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:1088926 ;
@@ -5207,8 +5487,26 @@ part:Pm a sbol:Component ;
         "Pm promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Pm_claim_regulation ;
     cat:regulatedBy part:XylS ;
     cat:slug "Pm" .
+
+part:Pm_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "XylS-dependent; benzoate / m-toluate-inducible (TOL meta-operon promoter)." ;
+    dcterms:references pubmed:28276630 ;
+    prov:wasDerivedFrom pubmed:28276630 ;
+    prov:wasGeneratedBy part:Pm_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"activator\": \"XylS\", \"inducer\": \"m-toluate / benzoate\", \"regulation\": \"inducible\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Pm_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Pm.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:Pm_feature_0_range a sbol:Range ;
     sbol:end 25 ;
@@ -5414,8 +5712,26 @@ part:Ptac a sbol:Component ;
     skos:altLabel "tac promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Ptac_claim_regulation ;
     cat:regulatedBy part:lacI ;
     cat:slug "Ptac" .
+
+part:Ptac_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Strong, LacI-repressible / IPTG-inducible synthetic trp/lacUV5 hybrid." ;
+    dcterms:references pubmed:6337371 ;
+    prov:wasDerivedFrom pubmed:6337371 ;
+    prov:wasGeneratedBy part:Ptac_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\", \"strength\": \"strong\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Ptac_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Ptac.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:Ptac_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6337371 ;
@@ -5590,8 +5906,26 @@ part:Ptrc a sbol:Component ;
         "trc promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:Ptrc_claim_regulation ;
     cat:regulatedBy part:lacI ;
     cat:slug "Ptrc" .
+
+part:Ptrc_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Strong sigma70 promoter core (trc); this part is the core only (no lac operator)." ;
+    dcterms:references pubmed:3069586 ;
+    prov:wasDerivedFrom pubmed:3069586 ;
+    prov:wasGeneratedBy part:Ptrc_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"note\": \"promoter core only; add a lac operator for IPTG control\", \"regulation\": \"constitutive\", \"strength\": \"strong\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Ptrc_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Ptrc.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:Ptrc_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6337371 ;
@@ -5632,6 +5966,23 @@ part:Ptrc_interaction_lacI_p_agent a sbol:Participation ;
 part:Ptrc_interaction_lacI_p_target a sbol:Participation ;
     sbol:participant part:Ptrc_regulated_region ;
     sbol:role sbo:0000642 .
+
+part:PuroR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers puromycin resistance by N-acetylation (puromycin N-acetyltransferase)." ;
+    dcterms:references pubmed:2676728 ;
+    prov:wasDerivedFrom pubmed:2676728 ;
+    prov:wasGeneratedBy part:PuroR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"puromycin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:PuroR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PuroR.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PuroR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:33664348 ;
@@ -5723,6 +6074,23 @@ part:PuroR_feature_6_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:PuroR_sequence ;
     sbol:start 161 .
+
+part:Pxyl_tet_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "TetR-repressible / anhydrotetracycline (aTc)-inducible (S. aureus pRAB)." ;
+    dcterms:references pubmed:21921101 ;
+    prov:wasDerivedFrom pubmed:21921101 ;
+    prov:wasGeneratedBy part:Pxyl_tet_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1)." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:Pxyl_tet_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "Pxyl_tet.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:Pxyl_tet_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6298728 ;
@@ -5979,8 +6347,26 @@ part:T7lac a sbol:Component ;
         "T7/lacO promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:T7lac_claim_regulation ;
     cat:regulatedBy part:lacI ;
     cat:slug "T7lac" .
+
+part:T7lac_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "LacI-controllable T7 phi10 promoter (requires T7 RNA polymerase)." ;
+    dcterms:references pubmed:10956032 ;
+    prov:wasDerivedFrom pubmed:10956032 ;
+    prov:wasGeneratedBy part:T7lac_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"IPTG\", \"note\": \"requires T7 RNA polymerase\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:T7lac_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "T7lac.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:T7lac_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:10956032,
@@ -6071,6 +6457,23 @@ part:TRP1_sequence a sbol:Sequence ;
     sbol:elements "MSVINFTGSSGPLVKVCGLQSTEAAECALDSDADLLGIICVPNRKRTIDPVIARKISSLVKAYKNSSGTPKYLVGVFRNQPKEDVLALVNDYGIDIVQLHGDESWQEYQEFLGLPVIKRLVFPKDCNILLSAASQKPHSFIPLFDSEAGGTGELLDWNSISDWVGRQESPESLHFMLAGGLTPENVGDALRLNGVIGVDVSGGVETNGVKDSNKIANFVKNAKK" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:TetA_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers tetracycline resistance by active efflux (class C MFS antiporter)." ;
+    dcterms:references pubmed:6307828 ;
+    prov:wasDerivedFrom pubmed:6307828 ;
+    prov:wasGeneratedBy part:TetA_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"tetracycline\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:TetA_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "TetA.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:TetA_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:1517220,
@@ -6380,6 +6783,23 @@ part:YFP_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:ZeoR_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers Zeocin/bleomycin resistance by stoichiometric drug binding (Sh ble protein)." ;
+    dcterms:references pubmed:2450783 ;
+    prov:wasDerivedFrom pubmed:2450783 ;
+    prov:wasGeneratedBy part:ZeoR_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"Zeocin / bleomycin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers resistance by stoichiometrically binding and sequestering the drug ..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ZeoR_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "ZeoR.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:ZeoR_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:7516875 ;
     dcterms:title "VOC / glyoxalase-bleomycin-resistance fold domain" ;
@@ -6405,6 +6825,23 @@ part:ZeoR_feature_1_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:ZeoR_sequence ;
     sbol:start 1 .
+
+part:aadA_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers streptomycin/spectinomycin resistance (aminoglycoside adenylyltransferase ANT(3'')(9))." ;
+    dcterms:references pubmed:26527143 ;
+    prov:wasDerivedFrom pubmed:26527143 ;
+    prov:wasGeneratedBy part:aadA_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"streptomycin / spectinomycin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:aadA_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "aadA.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:aadA_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:26527143,
@@ -6619,6 +7056,23 @@ part:birA_sequence a sbol:Sequence ;
     sbol:elements "MKDNTVPLKLIALLANGEFHSGEQLGETLGMSRAAINKHIQTLRDWGVDVFTVPGKGYSLPEPIQLLNAKQILGQLDGGSVAVLPVIDSTNQYLLDRIGELKSGDACIAEYQQAGRGRRGRKWFSPFGANLYLSMFWRLEQGPAAAIGLSLVIGIVMAEVLRKLGADKVRVKWPNDLYLQDRKLAGILVELTGKTGDAAQIVIGAGINMAMRRVEESVVNQGWITLQEAGINLDRNTLAAMLIRELRAALELFEQEGLAPYLSRWEKLDNFINRPVKLIIGDKEIFGISRGIDKQGALLLEQDGIIKPWMGGEISLRSAEK" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:bla_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers ampicillin (beta-lactam) resistance (TEM-1 class A serine beta-lactamase)." ;
+    dcterms:references pubmed:383387 ;
+    prov:wasDerivedFrom pubmed:383387 ;
+    prov:wasGeneratedBy part:bla_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"ampicillin / beta-lactams\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:bla_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "bla.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:bla_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2039479,
@@ -7031,6 +7485,23 @@ part:enterokinase_site_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:ermAM_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers macrolide-lincosamide-streptogramin B (MLS-B) resistance by 23S rRNA A2058 dimethylation." ;
+    dcterms:references pubmed:2163525 ;
+    prov:wasDerivedFrom pubmed:2163525 ;
+    prov:wasGeneratedBy part:ermAM_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"macrolides (erythromycin) / MLS-B\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA adenine N6-methyltransferase: a 245-aa enzyme that dimethylates A2058 of 23S rRNA to confer MLS-B (macrolide-lincosamide-streptogram..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ermAM_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "ermAM.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:ermAM_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:11959553,
         pubmed:9187657 ;
@@ -7127,6 +7598,23 @@ part:hU6_sequence a sbol:Sequence ;
     sbol:elements "AAGGTCGGGCAGGAAGAGGGCCTATTTCCCATGATTCCTTCATATTTGCATATACGATACAAGGCTGTTAGAGAGATAATTAGAATTAATTTGACTGTAAACACAAAGATATTAGTACAAAATACGTGACGTAGAAAGTAATAATTTCTTGGGTAGTTTGCAGTTTTAAAATTATGTTTTAAAATGGACTATCATATGCTTACCGTAACTTGAAAGTATTTCGATTTCTTGGCTTTATATATCTTGTGGAAAGGACG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:kanR_Tn5_claim_function a cat:FunctionalClaim ;
+    rdfs:label "Confers kanamycin/neomycin resistance by phosphorylation (APH(3')-II / NPTII)." ;
+    dcterms:references pubmed:6295884 ;
+    prov:wasDerivedFrom pubmed:6295884 ;
+    prov:wasGeneratedBy part:kanR_Tn5_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"function\": \"antibiotic resistance\", \"resists\": \"kanamycin / neomycin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and neomycin resistance by ATP-dependent phosphorylation of the aminoglycos..." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:kanR_Tn5_claim_function_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "kanR_Tn5.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:kanR_Tn5_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:12628253,
@@ -7309,6 +7797,23 @@ part:oriT_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:p15A_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Medium-copy ColE1-type (p15A) origin; copy number set by the RNA I/RNA II antisense system." ;
+    dcterms:references pubmed:6186390 ;
+    prov:wasDerivedFrom pubmed:6186390 ;
+    prov:wasGeneratedBy part:p15A_claim_copy_number_provenance ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"medium\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:p15A_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "p15A.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:p15A_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6165011,
         pubmed:6186390 ;
@@ -7410,6 +7915,23 @@ part:pSC101_ori_SEVA_sequence a sbol:Sequence ;
     sbol:elements "ATGTCTGAATTAGTTGTTTTCAAAGCAAATGAACTAGCGATTAGTCGCTATGACTTAACGGAGCATGAAACCAAGCTAATTTTATGCTGTGTGGCACTACTCAACCCCACGATTGAAAACCCTACAAGGAAAGAACGGACGGTATCGTTCACTTATAACCAATACGCTCAGATGATGAACATCAGTAGGGAAAATGCTTATGGTGTATTAGCTAAAGCAACCAGAGAGCTGATGACGAGAACTGTGGAAATCAGGAATCCTTTGGTTAAAGGCTTTGAGATTTTCCAGTGGACAAACTATGCCAAGTTCTCAAGCGAAAAATTAGAATTAGTTTTTAGTGAAGAGATATTGCCTTATCTTTTCCAGTTAAAAAAATTCATAAAATATAATCTGGAACATGTTAAGTCTTTTGAAAACAAATACTCTATGAGGATTTATGAGTGGTTATTAAAAGAACTAACACAAAAGAAAACTCACAAGGCAAATATAGAGATTAGCCTTGATGAATTTAAGTTCATGTTAATGCTTGAAAATAACTACCATGAGTTTAAAAGGCTTAACCAATGGGTTTTGAAACCAATAAGTAAAGATTTAAACACTTACAGCAATATGAAATTGGTGGTTGATAAGCGAGGCCGCCCGACTGATACGTTGATTTTCCAAGTTGAACTAGATAGACAAATGGATCTCGTAACCGAACTTGAGAACAACCAGATAAAAATGAATGGTGACAAAATACCAACAACCATTACATCAGATTCCTACCTACATAACGGACTAAGAAAAACACTACACGATGCTTTAACTGCAAAAATTCAGCTCACCAGTTTTGAGGCAAAATTTTTGAGTGACATGCAAAGTAAGTATGATCTCAATGGTTCGTTCTCATGGCTCACGCAAAAACAACGAACCACACTAGAGAACATACTGGCTAAATACGGAAGGATCTGA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:pSC101_ori_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
+    dcterms:references pubmed:8376344 ;
+    prov:wasDerivedFrom pubmed:8376344 ;
+    prov:wasGeneratedBy part:pSC101_ori_claim_copy_number_provenance ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:pSC101_ori_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pSC101_ori.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:pSC101_ori_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:12501319,
@@ -7624,6 +8146,23 @@ part:tetR_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:tetR_tetA_promoters_claim_regulation a cat:FunctionalClaim ;
+    rdfs:label "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible." ;
+    dcterms:references pubmed:6311683 ;
+    prov:wasDerivedFrom pubmed:6311683 ;
+    prov:wasGeneratedBy part:tetR_tetA_promoters_claim_regulation_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:tetR_tetA_promoters_claim_regulation_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "tetR_tetA_promoters.md" ;
+    cat:method "transcribed-from-doc" .
+
 part:tetR_tetA_promoters_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2995683,
         pubmed:6311683 ;
@@ -7777,6 +8316,7 @@ part:ChnR a sbol:Component ;
         "chnR" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:ChnR_claim_regulation ;
     cat:regulates part:PchnB ;
     cat:slug "ChnR" ;
     cat:sourceAccession "NCBI:AB006902" .

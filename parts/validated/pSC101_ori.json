@@ -178,5 +178,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "copy_number",
+      "type": "copy_number",
+      "label": "Low-copy origin; RepA/iteron-controlled replication.",
+      "value": {
+        "copy_number": "low",
+        "control": "RepA / iterons"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "8376344",
+        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "pSC101_ori.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -294,5 +294,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible.",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "anhydrotetracycline (aTc)",
+        "repressor": "TetR"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6311683",
+        "quote": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "tetR_tetA_promoters.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

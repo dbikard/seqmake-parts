@@ -165,5 +165,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "TetR-repressible / anhydrotetracycline (aTc)-inducible (lambda PL with two tetO2).",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "anhydrotetracycline (aTc)",
+        "repressor": "TetR"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "9092630",
+        "quote": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PLtetO-1.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -227,5 +227,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers puromycin resistance by N-acetylation (puromycin N-acetyltransferase).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "puromycin"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2676728",
+        "quote": "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PuroR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -130,5 +130,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "copy_number",
+      "type": "copy_number",
+      "label": "Medium-copy ColE1-type (p15A) origin; copy number set by the RNA I/RNA II antisense system.",
+      "value": {
+        "copy_number": "medium",
+        "control": "RNA I / RNA II antisense"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6186390",
+        "quote": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "p15A.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

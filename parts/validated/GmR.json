@@ -122,5 +122,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers gentamicin resistance by N-acetylation (AAC(3)-Ia).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "gentamicin"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "668926",
+        "quote": "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "GmR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

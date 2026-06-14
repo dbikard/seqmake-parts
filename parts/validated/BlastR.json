@@ -286,5 +286,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers blasticidin S resistance (blasticidin-S deaminase).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "blasticidin S"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "8159161",
+        "quote": "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "BlastR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -154,5 +154,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "LacI-repressible / IPTG-inducible lac core promoter.",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "IPTG",
+        "repressor": "LacI"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "1088926",
+        "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "Plac.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

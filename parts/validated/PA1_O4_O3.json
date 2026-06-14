@@ -165,5 +165,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "LacI-repressible / IPTG-inducible (T7 A1 core with two lac O1 operators).",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "IPTG",
+        "repressor": "LacI"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3057497",
+        "quote": "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream).",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PA1_O4_O3.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

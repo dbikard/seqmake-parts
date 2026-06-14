@@ -173,5 +173,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers macrolide-lincosamide-streptogramin B (MLS-B) resistance by 23S rRNA A2058 dimethylation.",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "macrolides (erythromycin) / MLS-B"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2163525",
+        "quote": "ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA adenine N6-methyltransferase: a 245-aa enzyme that dimethylates A2058 of 23S rRNA to confer MLS-B (macrolide-lincosamide-streptogram...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "ermAM.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

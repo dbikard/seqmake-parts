@@ -558,5 +558,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers tetracycline resistance by active efflux (class C MFS antiporter).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "tetracycline"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6307828",
+        "quote": "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "TetA.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

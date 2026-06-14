@@ -160,5 +160,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers hygromycin B resistance by phosphorylation (APH(4)-Ia).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "hygromycin B"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6319235",
+        "quote": "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "HygR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

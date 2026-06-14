@@ -214,5 +214,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers kanamycin/neomycin resistance by phosphorylation (APH(3')-II / NPTII).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "kanamycin / neomycin"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6295884",
+        "quote": "Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and neomycin resistance by ATP-dependent phosphorylation of the aminoglycos...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "kanR_Tn5.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

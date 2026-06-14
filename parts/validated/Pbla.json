@@ -118,5 +118,28 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Constitutive sigma70 promoter (pBR322 bla P3).",
+      "value": {
+        "regulation": "constitutive"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "358200",
+        "quote": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct fun...",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "Pbla.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

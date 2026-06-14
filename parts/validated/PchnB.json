@@ -100,5 +100,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Cyclohexanone-inducible; activated in trans by ChnR.",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "cyclohexanone",
+        "activator": "ChnR"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "10543838",
+        "quote": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PchnB.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -161,5 +161,31 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Strong, LacI-repressible / IPTG-inducible synthetic trp/lacUV5 hybrid.",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "IPTG",
+        "repressor": "LacI",
+        "strength": "strong"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6337371",
+        "quote": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "Ptac.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

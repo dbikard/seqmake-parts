@@ -180,5 +180,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "LacI-repressible / IPTG-inducible (phage T5 promoter flanked by two lac operators).",
+      "value": {
+        "regulation": "inducible",
+        "inducer": "IPTG",
+        "repressor": "LacI"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2828874",
+        "quote": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PT5_lacO.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

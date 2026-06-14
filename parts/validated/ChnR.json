@@ -50,5 +50,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Cyclohexanone-responsive AraC/XylS-family activator of the PchnB promoter.",
+      "value": {
+        "role": "activator",
+        "target": "PchnB",
+        "inducer": "cyclohexanone"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3338974",
+        "quote": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "ChnR.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

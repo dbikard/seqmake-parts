@@ -167,5 +167,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "copy_number",
+      "type": "copy_number",
+      "label": "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system.",
+      "value": {
+        "copy_number": "high",
+        "control": "RNA I / RNA II antisense"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6156450",
+        "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "ColE1.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

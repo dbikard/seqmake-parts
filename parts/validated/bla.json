@@ -265,5 +265,29 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Confers ampicillin (beta-lactam) resistance (TEM-1 class A serine beta-lactamase).",
+      "value": {
+        "function": "antibiotic resistance",
+        "resists": "ampicillin / beta-lactams"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "383387",
+        "quote": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "bla.md",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }
