@@ -40,8 +40,9 @@ AI_WIP_WARNING = (
 ROOT = Path(__file__).resolve().parent.parent
 PARTS_DIR = ROOT / "parts"
 # Parts are split by curation status: ``validated`` parts carry a ``.md``
-# documentation page and are published to the website; ``candidate`` parts are
-# ``.gb``-only and live in the repo / catalog.json but are not on the site.
+# documentation page; ``candidate`` parts await one. Both are published to the
+# website -- validated with their curated prose, candidates as a lightweight
+# auto-generated page (viewer + features + downloads).
 VALIDATED_DIR = PARTS_DIR / "validated"
 CANDIDATE_DIR = PARTS_DIR / "candidate"
 DOCS_DIR = ROOT / "docs"
@@ -368,14 +369,10 @@ def _crosslink_parts(parts: list[dict]) -> None:
 
 
 def _xlink(item: dict) -> str:
-    """Link to a related part: its page when validated, else its GenBank file in
-    the repo when it is a candidate (no published page), else — when the named
-    part is not in the catalog at all (no slug) — plain text."""
+    """Link to a related part's page (validated and candidate parts both have
+    one); a name not in the catalog at all (no slug) stays plain text."""
     if item.get("slug"):
-        if item.get("documented"):
-            return f"[{item['name']}]({item['slug']}.md)"
-        return (f"[{item['name']}]({REPO_URL}/blob/main/parts/candidate/"
-                f"{item['slug']}.gb)")
+        return f"[{item['name']}]({item['slug']}.md)"
     return item["name"]
 
 
@@ -412,18 +409,24 @@ def _tags_for(part: dict) -> list[str]:
 def _frontmatter(tags: list[str]) -> str:
     if not tags:
         return ""
-    return "---\ntags:\n" + "".join(f"  - {t}\n" for t in tags) + "---\n\n"
+    # Quote each tag so YAML-special characters (notably the ``:`` in a
+    # ``Collection: <name>`` tag) stay a plain string, not a nested mapping.
+    def _q(t: str) -> str:
+        return '"' + t.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    return "---\ntags:\n" + "".join(f"  - {_q(t)}\n" for t in tags) + "---\n\n"
 
 
 def render_part_page(part: dict) -> str:
     slug, name = part["slug"], part["name"]
+    part_dir = VALIDATED_DIR if part["status"] == "validated" else CANDIDATE_DIR
     syn = (" · synonyms: " + ", ".join(part["synonyms"])) if part["synonyms"] else ""
     so = part.get("so_term")
     so_part = f" · {_so_link(so, part.get('so_name'))}" if so else ""
+    status_note = "" if part["documented"] else " · _candidate_"
     fasta_label = "Download protein FASTA" if part.get("kind") == "protein" else "Download FASTA"
     head = [
         f"# {name}\n",
-        f"`{part['feature_type']}`{so_part} · {_len_label(part)}{syn}\n",
+        f"`{part['feature_type']}`{so_part} · {_len_label(part)}{status_note}{syn}\n",
         f"[Download GenBank](files/{slug}.gb){{ .md-button }} "
         f"[{fasta_label}](files/{slug}.fasta){{ .md-button }} "
         f"[Download RDF](files/{slug}.ttl){{ .md-button }}\n",
@@ -441,12 +444,12 @@ def render_part_page(part: dict) -> str:
     # `<` is escaped so a qualifier can never break out of the script tag.
     # Renders DNA and protein parts alike.
     mol_json = json.dumps(
-        build_molecule_json(VALIDATED_DIR / f"{slug}.gb")).replace("<", "\\u003c")
+        build_molecule_json(part_dir / f"{slug}.gb")).replace("<", "\\u003c")
     head.append(
         f'<div data-part-view data-height="360">'
         f'<script type="application/json">{mol_json}</script></div>\n')
     fm = _frontmatter(_tags_for(part))
-    md_path = VALIDATED_DIR / f"{slug}.md"
+    md_path = part_dir / f"{slug}.md"
     contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
     if part["documented"]:
         body = md_path.read_text(encoding="utf-8").strip() + "\n"
@@ -515,11 +518,11 @@ def _type_slug(label: str) -> str:
     return _anchor(label)
 
 
-def _grouped(validated: list[dict]) -> list[tuple[tuple[str, str], list[dict]]]:
-    """Validated parts grouped by type ((key, label) -> parts), in canonical
-    display order (known SO terms first, then unknowns alphabetically)."""
+def _grouped(parts: list[dict]) -> list[tuple[tuple[str, str], list[dict]]]:
+    """Parts grouped by type ((key, label) -> parts), in canonical display order
+    (known SO terms first, then unknowns alphabetically)."""
     groups: dict[tuple[str, str], list[dict]] = {}
-    for p in validated:
+    for p in parts:
         groups.setdefault(_group_key(p), []).append(p)
     return sorted(
         groups.items(),
@@ -541,20 +544,22 @@ def render_index(grouped, n_validated: int, n_candidate: int,
         "# DNA parts catalog\n",
         AI_WIP_WARNING,
         f"An open, community-curated catalog of standard DNA parts (promoters, "
-        f"CDSs, terminators, RBSs, …) as annotated GenBank files, organised by "
-        f"type. The **{n_validated}** *validated* parts each carry a curated "
-        f"documentation page; use the search box to find one by name.\n",
-        f"A further **{n_candidate}** *candidate* parts (annotated GenBank, "
-        f"awaiting a curated documentation page) are available in "
-        f"[`catalog.json`]({repo}/blob/main/catalog.json) and the "
-        f"[`parts/candidate/`]({repo}/tree/main/parts/candidate) directory.\n",
+        f"CDSs, terminators, RBSs, …), each an annotated, machine-readable record "
+        f"organised by type. **{n_validated}** parts carry a curated documentation "
+        f"page; a further **{n_candidate}** are *candidates* with an auto-generated "
+        f"page (annotated GenBank, awaiting curation). Use the search box to find a "
+        f"part by name, or browse by type below.\n",
+        f"Programmatic access: [`catalog.json`]({repo}/blob/main/catalog.json) "
+        f"(manifest) and `catalog.ttl` / `catalog.jsonld` (RDF graph).\n",
         "## Browse by type\n",
     ]
     for (key, label), ps in grouped:
         so_note = (f" · {_so_link(key, _SO_NAMES.get(key) or label)}"
                    if key.startswith("SO:") else "")
+        nval = sum(p["status"] == "validated" for p in ps)
+        extra = f" ({nval} validated)" if nval and nval != len(ps) else ""
         lines.append(f"- **[{label}](types/{_type_slug(label)}.md)** — "
-                     f"{len(ps)} part{'s' if len(ps) != 1 else ''}{so_note}")
+                     f"{len(ps)} part{'s' if len(ps) != 1 else ''}{extra}{so_note}")
     lines.append("")
     if collections_summary:
         lines.append("## Browse by collection\n")
@@ -572,16 +577,23 @@ def render_index(grouped, n_validated: int, n_candidate: int,
 
 
 def render_type_page(key: str, label: str, parts: list[dict]) -> str:
-    """A page listing every validated part of one type, with descriptions."""
+    """A page listing every part of one type (validated + candidate), with
+    descriptions and curation status. Validated parts sort first."""
+    nval = sum(p["status"] == "validated" for p in parts)
+    caption = _so_caption(key, label, len(parts))
+    if nval and nval != len(parts):
+        caption = caption[:-1] + f", {nval} validated*"
     lines = [
         f"# {label}\n",
-        f"{_so_caption(key, label, len(parts))} · [← all types](../index.md)\n",
-        "| Part | Description | Length |",
-        "|---|---|---|",
+        f"{caption} · [← all types](../index.md)\n",
+        "| Part | Description | Length | Status |",
+        "|---|---|---|---|",
     ]
-    for p in sorted(parts, key=lambda x: x["name"].lower()):
+    order = sorted(parts, key=lambda x: (x["status"] != "validated", x["name"].lower()))
+    for p in order:
         lines.append(f"| [{p['name']}](../parts/{p['slug']}.md) | "
-                     f"{_short(p.get('description', ''))} | {_len_label(p)} |")
+                     f"{_short(p.get('description', ''))} | {_len_label(p)} | "
+                     f"{p['status']} |")
     return "\n".join(lines) + "\n"
 
 
@@ -595,12 +607,9 @@ def render_tags_page() -> str:
 
 
 def _collection_member_link(part: dict) -> str:
-    """Link a collection member to its part page when validated, else to its
-    GenBank file in the repo (candidates have no published page)."""
-    if part["status"] == "validated":
-        return f"[{part['name']}](../parts/{part['slug']}.md)"
-    url = f"{REPO_URL}/blob/main/parts/candidate/{part['slug']}.gb"
-    return f"[{part['name']}]({url})"
+    """Link a collection member to its part page (validated and candidate parts
+    both have one)."""
+    return f"[{part['name']}](../parts/{part['slug']}.md)"
 
 
 def _ref_url(r: dict) -> str | None:
@@ -747,11 +756,11 @@ def main() -> None:
     (ROOT / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n",
                                        encoding="utf-8")
 
-    # Website publishes validated parts only (pages + downloadable files):
-    # a landing hub, one page per type, one page per part, and a tag index.
-    validated = [p for p in parts if p["status"] == "validated"]
+    # The website publishes every part: validated parts carry curated prose,
+    # candidates get a lightweight auto-generated page (viewer + features +
+    # downloads). A landing hub, one page per type, one page per part, a tag index.
     n_candidate = manifest["n_candidate"]
-    grouped = _grouped(validated)
+    grouped = _grouped(parts)
     for d in (PARTS_PAGES, TYPES_PAGES, COLLECTIONS_PAGES):
         if d.exists():
             shutil.rmtree(d)
@@ -777,10 +786,11 @@ def main() -> None:
     # (lazy import avoids a circular import — build_rdf imports from this module).
     from build_rdf import part_turtle  # noqa: E402
     by_slug = {p["slug"]: p for p in parts}
-    for p in validated:
+    for p in parts:
+        src_dir = VALIDATED_DIR if p["status"] == "validated" else CANDIDATE_DIR
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")
-        shutil.copyfile(VALIDATED_DIR / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
+        shutil.copyfile(src_dir / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
         (FILES_DIR / f"{p['slug']}.fasta").write_text(
             _fasta(p["name"], p["_seq"]), encoding="utf-8")
         (FILES_DIR / f"{p['slug']}.ttl").write_text(

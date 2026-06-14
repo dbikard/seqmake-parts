@@ -23,10 +23,13 @@ A growing subset of parts also carries a **curated documentation page**
 Parts are split by curation status:
 
 - **Validated** parts (`parts/validated/`) carry a curated `.md` documentation
-  page and are published to the website.
-- **Candidate** parts (`parts/candidate/`) are annotated GenBank files awaiting
-  a documentation page — present in the repo and `catalog.json`, but not yet on
-  the site.
+  page.
+- **Candidate** parts (`parts/candidate/`) are awaiting a curated documentation
+  page.
+
+Every part is browsable on the website: validated parts show their curated prose,
+candidates get a lightweight auto-generated page (sequence viewer, sub-features,
+and downloads).
 
 ```
 parts/validated/<name>.json canonical part record (authored source of truth)

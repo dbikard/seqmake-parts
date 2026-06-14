@@ -5,10 +5,11 @@ low-friction: one GenBank file, plus a documentation page once it's validated.
 
 Parts are split by curation status:
 
-- **Candidate** (`parts/candidate/`) — annotated GenBank only, no documentation
-  page yet. Not published to the website.
-- **Validated** (`parts/validated/`) — carries a curated `.md` page and is
-  published to the website.
+- **Candidate** (`parts/candidate/`) — no curated documentation page yet.
+  Published to the website as a lightweight auto-generated page (sequence viewer,
+  sub-features, downloads).
+- **Validated** (`parts/validated/`) — carries a curated `.md` page, shown on its
+  website page above the structured sections.
 
 ## Add a part
 
