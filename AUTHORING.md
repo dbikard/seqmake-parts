@@ -42,14 +42,15 @@ to `parts/validated/` and is **validated**. Independently, every
   emits a first-class `rdfs:seeAlso` to the UniProt entry. Author only the
   engineering layer — role, functional_claims, cognate partners, collections.
   (DNA parts keep their hand-authored sub-features: −35/−10/operator, etc.)
-- **Normalize incidental variants to the UniProt canonical sequence.** If the part
-  sequence is only a *close* variant of its accession (a few SNPs, no special
-  purpose), the importer replaces it with UniProt's canonical sequence — UniProt
-  is the reference. **Exception:** an *intentional* variant with a described
-  function (e.g. dCas9 = D10A/H840A nuclease-dead) belongs in the catalog as-is —
-  set **`variant_rationale`** to explain why, and the importer keeps the variant
-  sequence (and records the substitutions). A genuinely different sequence
-  (low identity) is flagged as a likely **wrong accession**, not imported.
+- **Resolve a non-exact sequence in this order.** When the part sequence isn't an
+  exact match to its accession, the importer: (1) if `variant_rationale` is set,
+  **keeps** the intentional variant (e.g. dCas9 = D10A/H840A); else (2) asks
+  **UniParc** whether the exact sequence exists under a *different* UniProt
+  accession and, if so, **re-points** the part to that accession (it's a real
+  protein, just mis-accessioned); else (3) for a close same-length variant,
+  **normalizes** to the assigned accession's canonical sequence (UniProt is the
+  reference); else (4) records it as **wrong accession** / divergent / isoform and
+  does not import. So normalization is a last resort, not the default.
 - **Lab- and tool-agnostic prose.** Describe what the part *is*; never name a
   consuming tool, a using lab, or an internal plasmid. `tools/check_content.py`
   enforces this.

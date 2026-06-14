@@ -5,7 +5,33 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
-from import_uniprot_features import classify_sequences, variant_disposition  # noqa: E402
+from import_uniprot_features import (  # noqa: E402
+    classify_sequences,
+    parse_uniparc,
+    variant_disposition,
+)
+
+
+def test_parse_uniparc_returns_exact_active_uniprotkb_accessions_reviewed_first():
+    seq = "MKVLAT" * 5
+    data = {"results": [{
+        "sequence": {"value": seq},
+        "uniParcCrossReferences": [
+            {"database": "UniProtKB/TrEMBL", "id": "A0A111", "active": True},
+            {"database": "UniProtKB/Swiss-Prot", "id": "P99999", "active": True},
+            {"database": "UniProtKB/Swiss-Prot", "id": "P00000", "active": False},
+            {"database": "EnsemblBacteria", "id": "X1", "active": True},
+        ],
+    }]}
+    assert parse_uniparc(data, seq) == [("P99999", True), ("A0A111", False)]
+
+
+def test_parse_uniparc_ignores_non_exact_sequences():
+    # a checksum hit whose sequence differs (collision) must be ignored
+    data = {"results": [{"sequence": {"value": "DIFFERENT"},
+                         "uniParcCrossReferences": [
+                             {"database": "UniProtKB/Swiss-Prot", "id": "P1", "active": True}]}]}
+    assert parse_uniparc(data, "MKVLAT" * 5) == []
 
 
 def test_incidental_variant_is_normalized():

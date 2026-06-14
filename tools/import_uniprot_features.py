@@ -25,6 +25,7 @@ import urllib.request
 from pathlib import Path
 
 from Bio.Align import PairwiseAligner
+from Bio.SeqUtils.CheckSum import crc64
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -47,11 +48,48 @@ _TYPE_MAP: dict[str, tuple[str, str | None]] = {
 }
 
 
-def _fetch(accession: str) -> dict:
-    url = f"https://rest.uniprot.org/uniprotkb/{accession}.json"
+def _get_json(url: str) -> dict:
     req = urllib.request.Request(url, headers={"User-Agent": "dna-parts-catalog/uniprot-import"})
     with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310
         return json.loads(r.read().decode("utf-8"))
+
+
+def _fetch(accession: str) -> dict:
+    return _get_json(f"https://rest.uniprot.org/uniprotkb/{accession}.json")
+
+
+def parse_uniparc(data: dict, seq: str) -> list[tuple[str, bool]]:
+    """From a UniParc search response, the active UniProtKB accessions whose
+    sequence is EXACTLY ``seq`` (reviewed/Swiss-Prot first). Pure / testable."""
+    out: list[tuple[str, bool]] = []
+    seen: set[str] = set()
+    for r in data.get("results", []):
+        if (r.get("sequence") or {}).get("value") != seq:   # guard checksum collisions
+            continue
+        for x in r.get("uniParcCrossReferences", []):
+            db, acc = x.get("database", ""), x.get("id", "")
+            if x.get("active") and db.startswith("UniProtKB") and acc not in seen:
+                seen.add(acc)
+                out.append((acc, "Swiss-Prot" in db))
+    out.sort(key=lambda t: (not t[1], t[0]))     # reviewed first, then by accession
+    return out
+
+
+def uniparc_exact_accessions(seq: str) -> list[tuple[str, bool]]:
+    """Active UniProtKB accessions whose sequence is exactly ``seq`` (via UniParc,
+    keyed on the CRC64 checksum). Empty if none -- network step."""
+    checksum = crc64(seq).removeprefix("CRC-")
+    url = ("https://rest.uniprot.org/uniparc/search?"
+           f"query=checksum:{checksum}&format=json&size=50")
+    return parse_uniparc(_get_json(url), seq)
+
+
+def _set_accession(data: dict, new_acc: str) -> None:
+    """Replace the part's UniProt db_xref on the main feature with ``new_acc``."""
+    main = next(f for f in data["features"] if "parent" not in f["qualifiers"])
+    xrefs = main["qualifiers"].get("db_xref", [])
+    main["qualifiers"]["db_xref"] = [x for x in xrefs if not x.startswith("UniProt:")] + \
+        [f"UniProt:{new_acc}"]
 
 
 def _label(uf: dict) -> str:
@@ -184,55 +222,75 @@ def import_part(path: Path) -> str:
         return "skip (no UniProt accession)"
     entry = _fetch(acc)
     up_seq = (entry.get("sequence") or {}).get("value", "")
-    cmp = classify_sequences(data["sequence"], up_seq)
-    prov = {
-        "accession": f"UniProt:{acc}",
-        "uniprot_release": entry.get("entryAudit", {}).get("entryVersion"),
-        "fetched": _dt.date.today().isoformat(),
-        "status": cmp["status"],
-        "identity": cmp.get("identity"),
-    }
-    if cmp["status"] in ("match", "variant"):
-        # Policy: an incidental close variant adopts the UniProt canonical sequence
-        # (UniProt is the reference); an INTENTIONAL variant with a stated rationale
-        # (e.g. dCas9) is kept. A match is unchanged.
-        rationale = (data.get("variant_rationale") or "").strip()
-        if cmp["status"] == "variant" and not rationale:
-            data["sequence"] = up_seq          # normalize to canonical
-            prov["status"] = "normalized_to_canonical"
-            prov["sequence_match"] = True
-            prov["normalized_substitutions"] = cmp["variants"]
-            result = (f"normalized to canonical (replaced {len(cmp['variants'])} "
-                      f"residue(s), was {cmp['identity']*100:.1f}% id)")
-        elif cmp["status"] == "variant":
-            prov["sequence_match"] = False
-            prov["variants"] = cmp["variants"]
-            prov["variant_rationale"] = rationale
-            result = (f"variant KEPT ({len(cmp['variants'])} SNP(s), "
-                      f"{cmp['identity']*100:.1f}% id) -- {rationale[:50]}")
-        else:
-            prov["sequence_match"] = True
-            result = "match"
-        feats = features_from_uniprot(entry)
+    seq = data["sequence"]
+    cmp = classify_sequences(seq, up_seq)
+    today = _dt.date.today().isoformat()
+
+    def do_import(entry2: dict, prov: dict, result: str) -> str:
+        feats = features_from_uniprot(entry2)
         data["uniprot_features"] = feats
-        data["uniprot_import"] = prov
+        data["uniprot_import"] = {"fetched": today, **prov}
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return f"imported {len(feats)} features [{result}]"
-    # Coordinates can't be trusted -> record the finding (durable) and don't import.
+
+    # 1) Exact match to the assigned accession.
+    if cmp["status"] == "match":
+        return do_import(entry, {"accession": f"UniProt:{acc}", "status": "match",
+                                 "identity": 1.0, "sequence_match": True,
+                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                         "match")
+
+    # 2) Intentional variant (declared) -> keep, import the reference's features.
+    rationale = (data.get("variant_rationale") or "").strip()
+    if cmp["status"] == "variant" and rationale:
+        return do_import(entry, {"accession": f"UniProt:{acc}", "status": "variant",
+                                 "identity": cmp["identity"], "sequence_match": False,
+                                 "variants": cmp["variants"], "variant_rationale": rationale,
+                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                         f"variant KEPT ({len(cmp['variants'])} SNP(s), "
+                         f"{cmp['identity']*100:.1f}% id) -- {rationale[:50]}")
+
+    # 3) Not exact & not intentional: is the sequence an EXACT match to a DIFFERENT
+    #    UniProt accession? If so the part is a real protein under that ID -> re-point
+    #    to it (don't overwrite the sequence).
+    hits = [h for h in uniparc_exact_accessions(seq) if h[0] != acc]
+    if hits:
+        new_acc, reviewed = hits[0]
+        entry2 = _fetch(new_acc)
+        _set_accession(data, new_acc)
+        tag = "" if reviewed else ", TrEMBL"
+        return do_import(entry2, {"accession": f"UniProt:{new_acc}", "status": "reaccessioned",
+                                  "identity": 1.0, "sequence_match": True,
+                                  "previous_accession": f"UniProt:{acc}", "reviewed": reviewed,
+                                  "uniprot_release": entry2.get("entryAudit", {}).get("entryVersion")},
+                         f"RE-ACCESSIONED {acc} -> {new_acc} (exact UniProt match{tag})")
+
+    # 4a) No exact match anywhere, but a close same-length variant -> normalize.
+    if cmp["status"] == "variant":
+        data["sequence"] = up_seq
+        return do_import(entry, {"accession": f"UniProt:{acc}", "status": "normalized_to_canonical",
+                                 "identity": cmp["identity"], "sequence_match": True,
+                                 "normalized_substitutions": cmp["variants"],
+                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                         f"normalized to canonical (no exact match; replaced "
+                         f"{len(cmp['variants'])} residue(s))")
+
+    # 4b) No exact match and not a close variant -> record the finding, don't import.
     data.pop("uniprot_features", None)
-    prov.update({k: v for k, v in cmp.items() if k != "status"})
+    prov = {"accession": f"UniProt:{acc}", "fetched": today,
+            "uniprot_release": entry.get("entryAudit", {}).get("entryVersion"), **cmp}
     data["uniprot_import"] = prov
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     idpct = f"{cmp['identity']*100:.1f}% id"
     if cmp["status"] == "wrong_accession":
-        return (f"WRONG-ACCESSION {acc}: only {idpct} to this part "
-                "-- likely the wrong UniProt ID; recorded, not imported")
+        return (f"WRONG-ACCESSION {acc}: only {idpct}, no exact match anywhere in "
+                "UniProt -- likely the wrong ID; recorded, not imported")
     if cmp["status"] == "length_variant":
         return (f"LENGTH-VARIANT vs {acc}: same protein, different length "
                 f"({cmp['part_len']} vs {cmp['uniprot_len']} aa, {idpct}) "
                 "-- recorded, not imported")
-    return (f"DIVERGENT from {acc}: {idpct} "
-            "-- distant allele/homolog, review; recorded, not imported")
+    return (f"DIVERGENT from {acc}: {idpct}, no exact match "
+            "-- review; recorded, not imported")
 
 
 def main() -> None:
@@ -242,7 +300,7 @@ def main() -> None:
         for jf in sorted(d.glob("*.json")):
             if not slugs or jf.stem in slugs:
                 paths.append(jf)
-    counts = {"imported": 0, "normalized": 0, "variant_kept": 0,
+    counts = {"imported": 0, "normalized": 0, "variant_kept": 0, "reaccessioned": 0,
               "length_variant": 0, "divergent": 0, "wrong_accession": 0, "error": 0}
     wrong: list[str] = []
     for jf in paths:
@@ -256,6 +314,8 @@ def main() -> None:
                 counts["normalized"] += 1
             elif "variant KEPT" in msg:
                 counts["variant_kept"] += 1
+            elif "RE-ACCESSIONED" in msg:
+                counts["reaccessioned"] += 1
         elif msg.startswith("WRONG-ACCESSION"):
             counts["wrong_accession"] += 1
             wrong.append(jf.stem)
@@ -268,7 +328,8 @@ def main() -> None:
         if not msg.startswith("skip"):
             print(f"{jf.stem:18s} {msg}")
     print(f"\ndone -- imported {counts['imported']} "
-          f"(normalized {counts['normalized']}, variant-kept {counts['variant_kept']}), "
+          f"(normalized {counts['normalized']}, variant-kept {counts['variant_kept']}, "
+          f"re-accessioned {counts['reaccessioned']}), "
           f"length-variant {counts['length_variant']}, divergent {counts['divergent']}, "
           f"WRONG-ACCESSION {counts['wrong_accession']}, errors {counts['error']}.")
     if wrong:

@@ -312,6 +312,12 @@ def _protein_defer_note(part: dict) -> str:
                 f"    This part is a distant allele/homolog of {acc} ({idpct}); "
                 "features were **not** imported — review whether the accession is "
                 "right. See the linked UniProt entry.\n")
+    if status == "reaccessioned":
+        prev = imp.get("previous_accession", "")
+        return ('!!! note "Accession corrected"\n\n'
+                f"    This part's sequence is an exact match to **{acc}**, so the "
+                f"accession was corrected from {prev}. Domains / sites below are "
+                "imported from the matching UniProt entry.\n")
     if status == "normalized_to_canonical":
         n = len(imp.get("normalized_substitutions") or [])
         return ('!!! note "Sequence normalized to UniProt"\n\n'
