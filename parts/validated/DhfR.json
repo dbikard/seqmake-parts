@@ -90,5 +90,30 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 1,
+      "end": 156,
+      "label": "DHFR",
+      "so_term": "SO:0000417",
+      "description": "DHFR",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P00382",
+    "uniprot_release": 145,
+    "fetched": "2026-06-14",
+    "status": "variant",
+    "sequence_match": false,
+    "variants": [
+      {
+        "pos": 73,
+        "part": "D",
+        "uniprot": "N"
+      }
+    ]
+  }
 }

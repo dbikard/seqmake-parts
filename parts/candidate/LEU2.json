@@ -142,6 +142,7 @@
     "accession": "UniProt:P04173",
     "uniprot_release": 199,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

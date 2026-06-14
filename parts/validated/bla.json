@@ -103,5 +103,84 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "sig_peptide",
+      "start": 0,
+      "end": 23,
+      "label": "Signal",
+      "so_term": "SO:0000418",
+      "description": "",
+      "uniprot_type": "Signal"
+    },
+    {
+      "type": "misc_feature",
+      "start": 67,
+      "end": 68,
+      "label": "Active site: Nucleophile; acyl-ester intermediate",
+      "so_term": "SO:0000110",
+      "description": "Nucleophile; acyl-ester intermediate",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 70,
+      "end": 71,
+      "label": "Active site: Proton acceptor",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 127,
+      "end": 128,
+      "label": "Active site: Proton donor",
+      "so_term": "SO:0000110",
+      "description": "Proton donor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 163,
+      "end": 164,
+      "label": "Active site: Proton acceptor",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "binding",
+      "start": 231,
+      "end": 234,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "disulfide_bond",
+      "start": 74,
+      "end": 121,
+      "label": "Disulfide bond",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Disulfide bond"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P62593",
+    "uniprot_release": 155,
+    "fetched": "2026-06-14",
+    "status": "variant",
+    "sequence_match": false,
+    "variants": [
+      {
+        "pos": 182,
+        "part": "V",
+        "uniprot": "A"
+      }
+    ]
+  }
 }

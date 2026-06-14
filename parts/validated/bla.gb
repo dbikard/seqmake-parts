@@ -57,6 +57,39 @@ FEATURES             Location/Qualifiers
                      marker."
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P62593"
+     sig_peptide     1..23
+                     /label="Signal"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+                     /db_xref="SO:0000418"
+     misc_feature    68
+                     /label="Active site: Nucleophile; acyl-ester intermediate"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+                     /db_xref="SO:0000110"
+     misc_feature    71
+                     /label="Active site: Proton acceptor"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+                     /db_xref="SO:0000110"
+     misc_feature    128
+                     /label="Active site: Proton donor"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+                     /db_xref="SO:0000110"
+     misc_feature    164
+                     /label="Active site: Proton acceptor"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+                     /db_xref="SO:0000110"
+     binding         232..234
+                     /label="Binding site"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
+     disulfide_bond  75..121
+                     /label="Disulfide bond"
+                     /parent="bla"
+                     /note="source: UniProt:P62593"
 ORIGIN
         1 msiqhfrval ipffaafclp vfahpetlvk vkdaedqlga rvgyieldln sgkilesfrp
        61 eerfpmmstf kvllcgavls rvdagqeqlg rrihysqndl veyspvtekh ltdgmtvrel

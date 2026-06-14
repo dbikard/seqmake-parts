@@ -58,6 +58,30 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P21236"
                      /citation=[1]
                      /citation=[2]
+     binding         10
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
+     binding         12
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
+     binding         37
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
+     binding         58
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
+     binding         83
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
+     binding         100
+                     /label="Binding site"
+                     /parent="ermAM"
+                     /note="source: UniProt:P21236"
 ORIGIN
         1 mnknikysqn fltsekvlnq iikqlnlket dtvyeigtgk ghlttklaki skqvtsield
        61 shlfnlssek lklntrvtli hqdilqfqfp nkqrykivgs ipyhlstqii kkvvfeshas

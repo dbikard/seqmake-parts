@@ -43,6 +43,7 @@
     "accession": "UniProt:P03051",
     "uniprot_release": 141,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

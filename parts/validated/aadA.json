@@ -91,6 +91,7 @@
     "accession": "UniProt:P0AG05",
     "uniprot_release": 102,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

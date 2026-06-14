@@ -153,6 +153,7 @@
     "accession": "UniProt:Q99ZW2",
     "uniprot_release": 147,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

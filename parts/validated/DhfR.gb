@@ -47,6 +47,11 @@ FEATURES             Location/Qualifiers
                      allele carries an N73D sub..."
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P00382"
+     protein_domain  2..156
+                     /label="DHFR"
+                     /parent="DhfR"
+                     /note="source: UniProt:P00382"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 mklslmvais kngvigngpd ipwsakgeql lfkaitynqw llvgrktfes mgalpnrkya
        61 vvtrssftsd nedvlifpsi kdaltnlkki tdhvivsggg eiykslidqv dtlhistidi

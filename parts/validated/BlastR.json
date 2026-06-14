@@ -185,6 +185,7 @@
     "accession": "UniProt:P0C2P0",
     "uniprot_release": 78,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

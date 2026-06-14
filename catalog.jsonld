@@ -1675,6 +1675,9 @@
         "@id": "http://purl.uniprot.org/uniprot/P00382"
       },
       "sbol:displayId": "DhfR",
+      "sbol:hasFeature": {
+        "@id": "part:DhfR_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://dbikard.github.io/dna-parts-catalog/"
       },
@@ -1722,6 +1725,30 @@
       "cat:agent": "ai-assistant",
       "cat:fromDoc": "DhfR.md",
       "cat:method": "transcribed-from-doc"
+    },
+    {
+      "@id": "part:DhfR_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "DHFR",
+      "sbol:displayId": "DhfR_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:DhfR_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:DhfR_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 156,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:DhfR_sequence"
+      },
+      "sbol:start": 2
     },
     {
       "@id": "part:DhfR_sequence",
@@ -11595,6 +11622,29 @@
         "@id": "http://purl.uniprot.org/uniprot/P62593"
       },
       "sbol:displayId": "bla",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:bla_feature_0"
+        },
+        {
+          "@id": "part:bla_feature_1"
+        },
+        {
+          "@id": "part:bla_feature_2"
+        },
+        {
+          "@id": "part:bla_feature_3"
+        },
+        {
+          "@id": "part:bla_feature_4"
+        },
+        {
+          "@id": "part:bla_feature_5"
+        },
+        {
+          "@id": "part:bla_feature_6"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://dbikard.github.io/dna-parts-catalog/"
       },
@@ -11641,6 +11691,168 @@
       "cat:agent": "ai-assistant",
       "cat:fromDoc": "bla.md",
       "cat:method": "transcribed-from-doc"
+    },
+    {
+      "@id": "part:bla_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Signal",
+      "sbol:displayId": "bla_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000418"
+      }
+    },
+    {
+      "@id": "part:bla_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 23,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 1
+    },
+    {
+      "@id": "part:bla_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Nucleophile; acyl-ester intermediate",
+      "sbol:displayId": "bla_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:bla_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 68,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 68
+    },
+    {
+      "@id": "part:bla_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Proton acceptor",
+      "sbol:displayId": "bla_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:bla_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 71,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 71
+    },
+    {
+      "@id": "part:bla_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Proton donor",
+      "sbol:displayId": "bla_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:bla_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 128,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 128
+    },
+    {
+      "@id": "part:bla_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Proton acceptor",
+      "sbol:displayId": "bla_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:bla_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 164,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 164
+    },
+    {
+      "@id": "part:bla_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "bla_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_5_range"
+      }
+    },
+    {
+      "@id": "part:bla_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 234,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 232
+    },
+    {
+      "@id": "part:bla_feature_6",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Disulfide bond",
+      "sbol:displayId": "bla_feature_6",
+      "sbol:hasLocation": {
+        "@id": "part:bla_feature_6_range"
+      }
+    },
+    {
+      "@id": "part:bla_feature_6_range",
+      "@type": "sbol:Range",
+      "sbol:end": 121,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:bla_sequence"
+      },
+      "sbol:start": 75
     },
     {
       "@id": "part:bla_sequence",
@@ -12345,6 +12557,44 @@
         "@id": "http://purl.uniprot.org/uniprot/Q99ZW2"
       },
       "sbol:displayId": "dCas9",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:dCas9_feature_0"
+        },
+        {
+          "@id": "part:dCas9_feature_1"
+        },
+        {
+          "@id": "part:dCas9_feature_2"
+        },
+        {
+          "@id": "part:dCas9_feature_3"
+        },
+        {
+          "@id": "part:dCas9_feature_4"
+        },
+        {
+          "@id": "part:dCas9_feature_5"
+        },
+        {
+          "@id": "part:dCas9_feature_6"
+        },
+        {
+          "@id": "part:dCas9_feature_7"
+        },
+        {
+          "@id": "part:dCas9_feature_8"
+        },
+        {
+          "@id": "part:dCas9_feature_9"
+        },
+        {
+          "@id": "part:dCas9_feature_10"
+        },
+        {
+          "@id": "part:dCas9_feature_11"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://dbikard.github.io/dna-parts-catalog/"
       },
@@ -12364,6 +12614,270 @@
         "dead Cas9",
         "nuclease-dead Cas9"
       ]
+    },
+    {
+      "@id": "part:dCas9_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "HNH Cas9-type",
+      "sbol:displayId": "dCas9_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 921,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 770
+    },
+    {
+      "@id": "part:dCas9_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Motif: PAM substrate-binding",
+      "sbol:displayId": "dCas9_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_10",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_10",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_10_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_10_range",
+      "@type": "sbol:Range",
+      "sbol:end": 1297,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 1297
+    },
+    {
+      "@id": "part:dCas9_feature_11",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_11",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_11_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_11_range",
+      "@type": "sbol:Range",
+      "sbol:end": 1328,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 1328
+    },
+    {
+      "@id": "part:dCas9_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 1335,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 1333
+    },
+    {
+      "@id": "part:dCas9_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: For RuvC-like nuclease domain",
+      "sbol:displayId": "dCas9_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 10,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 10
+    },
+    {
+      "@id": "part:dCas9_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Proton acceptor for HNH nuclease domain",
+      "sbol:displayId": "dCas9_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 840,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 840
+    },
+    {
+      "@id": "part:dCas9_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_4_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 10,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 10
+    },
+    {
+      "@id": "part:dCas9_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_5_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 10,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 10
+    },
+    {
+      "@id": "part:dCas9_feature_6",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_6",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_6_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_6_range",
+      "@type": "sbol:Range",
+      "sbol:end": 762,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 762
+    },
+    {
+      "@id": "part:dCas9_feature_7",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_7",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_7_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_7_range",
+      "@type": "sbol:Range",
+      "sbol:end": 766,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 766
+    },
+    {
+      "@id": "part:dCas9_feature_8",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_8",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_8_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_8_range",
+      "@type": "sbol:Range",
+      "sbol:end": 766,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 766
+    },
+    {
+      "@id": "part:dCas9_feature_9",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "dCas9_feature_9",
+      "sbol:hasLocation": {
+        "@id": "part:dCas9_feature_9_range"
+      }
+    },
+    {
+      "@id": "part:dCas9_feature_9_range",
+      "@type": "sbol:Range",
+      "sbol:end": 983,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:dCas9_sequence"
+      },
+      "sbol:start": 983
     },
     {
       "@id": "part:dCas9_sequence",
@@ -12453,6 +12967,26 @@
         "@id": "http://purl.uniprot.org/uniprot/P21236"
       },
       "sbol:displayId": "ermAM",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:ermAM_feature_0"
+        },
+        {
+          "@id": "part:ermAM_feature_1"
+        },
+        {
+          "@id": "part:ermAM_feature_2"
+        },
+        {
+          "@id": "part:ermAM_feature_3"
+        },
+        {
+          "@id": "part:ermAM_feature_4"
+        },
+        {
+          "@id": "part:ermAM_feature_5"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://dbikard.github.io/dna-parts-catalog/"
       },
@@ -12493,6 +13027,132 @@
       "cat:agent": "ai-assistant",
       "cat:fromDoc": "ermAM.md",
       "cat:method": "transcribed-from-doc"
+    },
+    {
+      "@id": "part:ermAM_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_0_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 10,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 10
+    },
+    {
+      "@id": "part:ermAM_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_1_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 12,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 12
+    },
+    {
+      "@id": "part:ermAM_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_2_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 37,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 37
+    },
+    {
+      "@id": "part:ermAM_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_3_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 58,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 58
+    },
+    {
+      "@id": "part:ermAM_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_4_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 83,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 83
+    },
+    {
+      "@id": "part:ermAM_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "ermAM_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:ermAM_feature_5_range"
+      }
+    },
+    {
+      "@id": "part:ermAM_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 100,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:ermAM_sequence"
+      },
+      "sbol:start": 100
     },
     {
       "@id": "part:ermAM_sequence",

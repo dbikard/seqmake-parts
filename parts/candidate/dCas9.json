@@ -39,5 +39,134 @@
     "migrated_from": "genbank",
     "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 769,
+      "end": 921,
+      "label": "HNH Cas9-type",
+      "so_term": "SO:0000417",
+      "description": "HNH Cas9-type",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "protein_domain",
+      "start": 1332,
+      "end": 1335,
+      "label": "Motif: PAM substrate-binding",
+      "so_term": "SO:0000417",
+      "description": "PAM substrate-binding",
+      "uniprot_type": "Motif"
+    },
+    {
+      "type": "misc_feature",
+      "start": 9,
+      "end": 10,
+      "label": "Active site: For RuvC-like nuclease domain",
+      "so_term": "SO:0000110",
+      "description": "For RuvC-like nuclease domain",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 839,
+      "end": 840,
+      "label": "Active site: Proton acceptor for HNH nuclease domain",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor for HNH nuclease domain",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "binding",
+      "start": 9,
+      "end": 10,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 9,
+      "end": 10,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 761,
+      "end": 762,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 765,
+      "end": 766,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 765,
+      "end": 766,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 982,
+      "end": 983,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 1296,
+      "end": 1297,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 1327,
+      "end": 1328,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:Q99ZW2",
+    "uniprot_release": 147,
+    "fetched": "2026-06-14",
+    "status": "variant",
+    "sequence_match": false,
+    "variants": [
+      {
+        "pos": 10,
+        "part": "A",
+        "uniprot": "D"
+      },
+      {
+        "pos": 840,
+        "part": "A",
+        "uniprot": "H"
+      }
+    ]
+  }
 }

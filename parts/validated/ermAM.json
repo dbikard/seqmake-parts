@@ -103,5 +103,80 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "binding",
+      "start": 9,
+      "end": 10,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 11,
+      "end": 12,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 36,
+      "end": 37,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 57,
+      "end": 58,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 82,
+      "end": 83,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 99,
+      "end": 100,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P21236",
+    "uniprot_release": 114,
+    "fetched": "2026-06-14",
+    "status": "variant",
+    "sequence_match": false,
+    "variants": [
+      {
+        "pos": 75,
+        "part": "T",
+        "uniprot": "I"
+      },
+      {
+        "pos": 226,
+        "part": "V",
+        "uniprot": "I"
+      }
+    ]
+  }
 }

@@ -456,6 +456,7 @@ part:DhfR a sbol:Component ;
         pubmed:6308574 ;
     dcterms:title "DhfR" ;
     sbol:displayId "DhfR" ;
+    sbol:hasFeature part:DhfR_feature_0 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:DhfR_sequence ;
     sbol:role so:0000316 ;
@@ -2273,6 +2274,13 @@ part:bla a sbol:Component ;
         pubmed:9020874 ;
     dcterms:title "bla" ;
     sbol:displayId "bla" ;
+    sbol:hasFeature part:bla_feature_0,
+        part:bla_feature_1,
+        part:bla_feature_2,
+        part:bla_feature_3,
+        part:bla_feature_4,
+        part:bla_feature_5,
+        part:bla_feature_6 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:bla_sequence ;
     sbol:role so:0000316 ;
@@ -2447,6 +2455,18 @@ part:dCas9 a sbol:Component ;
     rdfs:label "dCas9" ;
     dcterms:title "dCas9" ;
     sbol:displayId "dCas9" ;
+    sbol:hasFeature part:dCas9_feature_0,
+        part:dCas9_feature_1,
+        part:dCas9_feature_10,
+        part:dCas9_feature_11,
+        part:dCas9_feature_2,
+        part:dCas9_feature_3,
+        part:dCas9_feature_4,
+        part:dCas9_feature_5,
+        part:dCas9_feature_6,
+        part:dCas9_feature_7,
+        part:dCas9_feature_8,
+        part:dCas9_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:dCas9_sequence ;
     sbol:role so:0000316 ;
@@ -2490,6 +2510,12 @@ part:ermAM a sbol:Component ;
         pubmed:9187657 ;
     dcterms:title "ermAM" ;
     sbol:displayId "ermAM" ;
+    sbol:hasFeature part:ermAM_feature_0,
+        part:ermAM_feature_1,
+        part:ermAM_feature_2,
+        part:ermAM_feature_3,
+        part:ermAM_feature_4,
+        part:ermAM_feature_5 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:ermAM_sequence ;
     sbol:role so:0000316 ;
@@ -3856,11 +3882,17 @@ part:DhfR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "DhfR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:DhfR_sequence a sbol:Sequence ;
-    sbol:displayId "DhfR_sequence" ;
-    sbol:elements "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:DhfR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "DHFR" ;
+    sbol:displayId "DhfR_feature_0" ;
+    sbol:hasLocation part:DhfR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:DhfR_feature_0_range a sbol:Range ;
+    sbol:end 156 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:DhfR_sequence ;
+    sbol:start 2 .
 
 part:DsRed2_sequence a sbol:Sequence ;
     sbol:displayId "DsRed2_sequence" ;
@@ -6747,11 +6779,87 @@ part:bla_claim_function_provenance a prov:Activity ;
     cat:fromDoc "bla.md" ;
     cat:method "transcribed-from-doc" .
 
-part:bla_sequence a sbol:Sequence ;
-    sbol:displayId "bla_sequence" ;
-    sbol:elements "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:bla_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Signal" ;
+    sbol:displayId "bla_feature_0" ;
+    sbol:hasLocation part:bla_feature_0_range ;
+    sbol:role so:0000418 .
+
+part:bla_feature_0_range a sbol:Range ;
+    sbol:end 23 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 1 .
+
+part:bla_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Nucleophile; acyl-ester intermediate" ;
+    sbol:displayId "bla_feature_1" ;
+    sbol:hasLocation part:bla_feature_1_range ;
+    sbol:role so:0000110 .
+
+part:bla_feature_1_range a sbol:Range ;
+    sbol:end 68 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 68 .
+
+part:bla_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "bla_feature_2" ;
+    sbol:hasLocation part:bla_feature_2_range ;
+    sbol:role so:0000110 .
+
+part:bla_feature_2_range a sbol:Range ;
+    sbol:end 71 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 71 .
+
+part:bla_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton donor" ;
+    sbol:displayId "bla_feature_3" ;
+    sbol:hasLocation part:bla_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:bla_feature_3_range a sbol:Range ;
+    sbol:end 128 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 128 .
+
+part:bla_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "bla_feature_4" ;
+    sbol:hasLocation part:bla_feature_4_range ;
+    sbol:role so:0000110 .
+
+part:bla_feature_4_range a sbol:Range ;
+    sbol:end 164 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 164 .
+
+part:bla_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "bla_feature_5" ;
+    sbol:hasLocation part:bla_feature_5_range .
+
+part:bla_feature_5_range a sbol:Range ;
+    sbol:end 234 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 232 .
+
+part:bla_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Disulfide bond" ;
+    sbol:displayId "bla_feature_6" ;
+    sbol:hasLocation part:bla_feature_6_range .
+
+part:bla_feature_6_range a sbol:Range ;
+    sbol:end 121 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:bla_sequence ;
+    sbol:start 75 .
 
 part:bom_sequence a sbol:Sequence ;
     sbol:displayId "bom_sequence" ;
@@ -6943,11 +7051,141 @@ part:ccdB_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:dCas9_sequence a sbol:Sequence ;
-    sbol:displayId "dCas9_sequence" ;
-    sbol:elements "MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:dCas9_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "HNH Cas9-type" ;
+    sbol:displayId "dCas9_feature_0" ;
+    sbol:hasLocation part:dCas9_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:dCas9_feature_0_range a sbol:Range ;
+    sbol:end 921 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 770 .
+
+part:dCas9_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Motif: PAM substrate-binding" ;
+    sbol:displayId "dCas9_feature_1" ;
+    sbol:hasLocation part:dCas9_feature_1_range ;
+    sbol:role so:0000417 .
+
+part:dCas9_feature_10 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_10" ;
+    sbol:hasLocation part:dCas9_feature_10_range .
+
+part:dCas9_feature_10_range a sbol:Range ;
+    sbol:end 1297 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 1297 .
+
+part:dCas9_feature_11 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_11" ;
+    sbol:hasLocation part:dCas9_feature_11_range .
+
+part:dCas9_feature_11_range a sbol:Range ;
+    sbol:end 1328 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 1328 .
+
+part:dCas9_feature_1_range a sbol:Range ;
+    sbol:end 1335 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 1333 .
+
+part:dCas9_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Active site: For RuvC-like nuclease domain" ;
+    sbol:displayId "dCas9_feature_2" ;
+    sbol:hasLocation part:dCas9_feature_2_range ;
+    sbol:role so:0000110 .
+
+part:dCas9_feature_2_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 10 .
+
+part:dCas9_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor for HNH nuclease domain" ;
+    sbol:displayId "dCas9_feature_3" ;
+    sbol:hasLocation part:dCas9_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:dCas9_feature_3_range a sbol:Range ;
+    sbol:end 840 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 840 .
+
+part:dCas9_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_4" ;
+    sbol:hasLocation part:dCas9_feature_4_range .
+
+part:dCas9_feature_4_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 10 .
+
+part:dCas9_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_5" ;
+    sbol:hasLocation part:dCas9_feature_5_range .
+
+part:dCas9_feature_5_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 10 .
+
+part:dCas9_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_6" ;
+    sbol:hasLocation part:dCas9_feature_6_range .
+
+part:dCas9_feature_6_range a sbol:Range ;
+    sbol:end 762 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 762 .
+
+part:dCas9_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_7" ;
+    sbol:hasLocation part:dCas9_feature_7_range .
+
+part:dCas9_feature_7_range a sbol:Range ;
+    sbol:end 766 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 766 .
+
+part:dCas9_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_8" ;
+    sbol:hasLocation part:dCas9_feature_8_range .
+
+part:dCas9_feature_8_range a sbol:Range ;
+    sbol:end 766 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 766 .
+
+part:dCas9_feature_9 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "dCas9_feature_9" ;
+    sbol:hasLocation part:dCas9_feature_9_range .
+
+part:dCas9_feature_9_range a sbol:Range ;
+    sbol:end 983 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:dCas9_sequence ;
+    sbol:start 983 .
 
 part:enterokinase_site_sequence a sbol:Sequence ;
     sbol:displayId "enterokinase_site_sequence" ;
@@ -6972,11 +7210,71 @@ part:ermAM_claim_function_provenance a prov:Activity ;
     cat:fromDoc "ermAM.md" ;
     cat:method "transcribed-from-doc" .
 
-part:ermAM_sequence a sbol:Sequence ;
-    sbol:displayId "ermAM_sequence" ;
-    sbol:elements "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTVTYEQVLSIFNSYLLFNGRK" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:ermAM_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_0" ;
+    sbol:hasLocation part:ermAM_feature_0_range .
+
+part:ermAM_feature_0_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 10 .
+
+part:ermAM_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_1" ;
+    sbol:hasLocation part:ermAM_feature_1_range .
+
+part:ermAM_feature_1_range a sbol:Range ;
+    sbol:end 12 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 12 .
+
+part:ermAM_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_2" ;
+    sbol:hasLocation part:ermAM_feature_2_range .
+
+part:ermAM_feature_2_range a sbol:Range ;
+    sbol:end 37 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 37 .
+
+part:ermAM_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_3" ;
+    sbol:hasLocation part:ermAM_feature_3_range .
+
+part:ermAM_feature_3_range a sbol:Range ;
+    sbol:end 58 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 58 .
+
+part:ermAM_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_4" ;
+    sbol:hasLocation part:ermAM_feature_4_range .
+
+part:ermAM_feature_4_range a sbol:Range ;
+    sbol:end 83 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 83 .
+
+part:ermAM_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "ermAM_feature_5" ;
+    sbol:hasLocation part:ermAM_feature_5_range .
+
+part:ermAM_feature_5_range a sbol:Range ;
+    sbol:end 100 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ermAM_sequence ;
+    sbol:start 100 .
 
 part:ermR_sequence a sbol:Sequence ;
     sbol:displayId "ermR_sequence" ;
@@ -7704,6 +8002,12 @@ part:CmR_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:DhfR_sequence a sbol:Sequence ;
+    sbol:displayId "DhfR_sequence" ;
+    sbol:elements "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:GmR_sequence a sbol:Sequence ;
     sbol:displayId "GmR_sequence" ;
     sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
@@ -8029,6 +8333,18 @@ part:ParaBAD_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:ermAM_sequence a sbol:Sequence ;
+    sbol:displayId "ermAM_sequence" ;
+    sbol:elements "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTVTYEQVLSIFNSYLLFNGRK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:bla_sequence a sbol:Sequence ;
+    sbol:displayId "bla_sequence" ;
+    sbol:elements "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:tetR_tetA_promoters_sequence a sbol:Sequence ;
     sbol:displayId "tetR_tetA_promoters_sequence" ;
     sbol:elements "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA" ;
@@ -8069,6 +8385,12 @@ part:LEU2_sequence a sbol:Sequence ;
 part:cas9_sequence a sbol:Sequence ;
     sbol:displayId "cas9_sequence" ;
     sbol:elements "MDKKYSIGLDIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDHIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:dCas9_sequence a sbol:Sequence ;
+    sbol:displayId "dCas9_sequence" ;
+    sbol:elements "MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 

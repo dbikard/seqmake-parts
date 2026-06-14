@@ -224,6 +224,7 @@
     "accession": "UniProt:P13249",
     "uniprot_release": 93,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

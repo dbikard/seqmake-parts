@@ -15,6 +15,59 @@ FEATURES             Location/Qualifiers
                      /synonym="dead Cas9"
                      /synonym="nuclease-dead Cas9"
                      /db_xref="UniProt:Q99ZW2"
+     protein_domain  770..921
+                     /label="HNH Cas9-type"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000417"
+     protein_domain  1333..1335
+                     /label="Motif: PAM substrate-binding"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000417"
+     misc_feature    10
+                     /label="Active site: For RuvC-like nuclease domain"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000110"
+     misc_feature    840
+                     /label="Active site: Proton acceptor for HNH nuclease
+                     domain"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000110"
+     binding         10
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         10
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         762
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         766
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         766
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         983
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         1297
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
+     binding         1328
+                     /label="Binding site"
+                     /parent="dCas9"
+                     /note="source: UniProt:Q99ZW2"
 ORIGIN
         1 mdkkysigla igtnsvgwav itdeykvpsk kfkvlgntdr hsikknliga llfdsgetae
        61 atrlkrtarr rytrrknric ylqeifsnem akvddsffhr leesflveed kkherhpifg

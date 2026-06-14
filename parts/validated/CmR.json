@@ -121,6 +121,7 @@
     "accession": "UniProt:P62577",
     "uniprot_release": 117,
     "fetched": "2026-06-14",
+    "status": "match",
     "sequence_match": true
   }
 }

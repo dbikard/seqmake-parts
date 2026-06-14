@@ -190,6 +190,7 @@
         "accession": "UniProt:P0AG05",
         "uniprot_release": 102,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -678,7 +679,78 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Signal",
+          "feature_type": "sig_peptide",
+          "so_term": "SO:0000418",
+          "so_name": "signal_peptide",
+          "start": 0,
+          "end": 23,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Nucleophile; acyl-ester intermediate",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 67,
+          "end": 68,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 70,
+          "end": 71,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton donor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 163,
+          "end": 164,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 231,
+          "end": 234,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Disulfide bond",
+          "feature_type": "disulfide_bond",
+          "so_term": null,
+          "so_name": null,
+          "start": 74,
+          "end": 121,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Sutcliffe JG",
@@ -746,7 +818,21 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P62593",
+        "uniprot_release": 155,
+        "fetched": "2026-06-14",
+        "status": "variant",
+        "sequence_match": false,
+        "variants": [
+          {
+            "pos": 182,
+            "part": "V",
+            "uniprot": "A"
+          }
+        ]
+      }
     },
     {
       "name": "BlastR",
@@ -927,6 +1013,7 @@
         "accession": "UniProt:P0C2P0",
         "uniprot_release": 78,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -1229,6 +1316,7 @@
         "accession": "UniProt:Q99ZW2",
         "uniprot_release": 147,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -1585,6 +1673,7 @@
         "accession": "UniProt:P62577",
         "uniprot_release": 117,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -1816,10 +1905,150 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "HNH Cas9-type",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 769,
+          "end": 921,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Motif: PAM substrate-binding",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 1332,
+          "end": 1335,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: For RuvC-like nuclease domain",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor for HNH nuclease domain",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 839,
+          "end": 840,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 761,
+          "end": 762,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 765,
+          "end": 766,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 765,
+          "end": 766,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 982,
+          "end": 983,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 1296,
+          "end": 1297,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 1327,
+          "end": 1328,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
+      "functional_claims": [],
+      "uniprot_import": {
+        "accession": "UniProt:Q99ZW2",
+        "uniprot_release": 147,
+        "fetched": "2026-06-14",
+        "status": "variant",
+        "sequence_match": false,
+        "variants": [
+          {
+            "pos": 10,
+            "part": "A",
+            "uniprot": "D"
+          },
+          {
+            "pos": 840,
+            "part": "A",
+            "uniprot": "H"
+          }
+        ]
+      }
     },
     {
       "name": "DhfR",
@@ -1845,7 +2074,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "DHFR",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 1,
+          "end": 156,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Krucinska J, Lombardo MN, Erlandsen H, Estrada A, Si D, Viswanathan K, Wright DL",
@@ -1897,7 +2137,21 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P00382",
+        "uniprot_release": 145,
+        "fetched": "2026-06-14",
+        "status": "variant",
+        "sequence_match": false,
+        "variants": [
+          {
+            "pos": 73,
+            "part": "D",
+            "uniprot": "N"
+          }
+        ]
+      }
     },
     {
       "name": "DsRed2",
@@ -2155,7 +2409,68 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 11,
+          "end": 12,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 36,
+          "end": 37,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 57,
+          "end": 58,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 82,
+          "end": 83,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 99,
+          "end": 100,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Trieu-Cuot P., Poyart-Salmeron C., Carlier C., Courvalin P.",
@@ -2226,7 +2541,26 @@
           "review_status": "ai-generated",
           "supersedes": null
         }
-      ]
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:P21236",
+        "uniprot_release": 114,
+        "fetched": "2026-06-14",
+        "status": "variant",
+        "sequence_match": false,
+        "variants": [
+          {
+            "pos": 75,
+            "part": "T",
+            "uniprot": "I"
+          },
+          {
+            "pos": 226,
+            "part": "V",
+            "uniprot": "I"
+          }
+        ]
+      }
     },
     {
       "name": "ermR",
@@ -2562,6 +2896,7 @@
         "accession": "UniProt:P23181",
         "uniprot_release": 90,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -2824,6 +3159,7 @@
         "accession": "UniProt:P06633",
         "uniprot_release": 186,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -3021,6 +3357,7 @@
         "accession": "UniProt:P00557",
         "uniprot_release": 123,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -3538,6 +3875,7 @@
         "accession": "UniProt:P00552",
         "uniprot_release": 119,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -4110,6 +4448,7 @@
         "accession": "UniProt:P04173",
         "uniprot_release": 199,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -7663,6 +8002,7 @@
         "accession": "UniProt:P13249",
         "uniprot_release": 93,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -8252,6 +8592,7 @@
         "accession": "UniProt:P03051",
         "uniprot_release": 141,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -9254,6 +9595,7 @@
         "accession": "UniProt:P02981",
         "uniprot_release": 104,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -9737,6 +10079,7 @@
         "accession": "UniProt:P00912",
         "uniprot_release": 185,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     },
@@ -10014,6 +10357,7 @@
         "accession": "UniProt:P17493",
         "uniprot_release": 91,
         "fetched": "2026-06-14",
+        "status": "match",
         "sequence_match": true
       }
     }
