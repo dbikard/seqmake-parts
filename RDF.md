@@ -8,6 +8,29 @@
 > designed below as a follow-up. The authoritative builds are `tools/build_gb.py`
 > (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
 
+## TODO — adopt a stable `w3id.org` namespace (before any repo rename)
+
+The RDF base IRIs are currently derived from the GitHub Pages URL
+(`https://dbikard.github.io/dna-parts-catalog/…`), so they would break if the
+repo is renamed or hosting moves. Before renaming the repo (e.g. to
+`bioparts-kb`), decouple identity onto a permanent, redirector-backed namespace:
+
+- [ ] Register a `w3id.org` redirect (PR to `perma-id/w3id.org`) for base
+      **`https://w3id.org/bioparts/`** → the current Pages site.
+- [ ] Repoint the namespaces in `tools/build_rdf.py` to the stable base — a
+      one-time, *final* IRI change:
+  - `BASE`  → `https://w3id.org/bioparts/`
+  - `PART`  → `https://w3id.org/bioparts/part/`
+  - `COLL`  → `https://w3id.org/bioparts/collection/`
+  - `CAT`   → `https://w3id.org/bioparts/ns#`
+- [ ] Regenerate `catalog.ttl` / `.jsonld` and the per-part `.ttl`; update the
+      `QUERIES.md` examples and the `part:`/`collection:` slugs in docs.
+- [ ] Only then rename the repo and update `REPO_URL` + hardcoded
+      `dna-parts-catalog` URLs (GitHub auto-redirects old links).
+
+Rationale: "cool URIs don't change" — pin the machine identity to `w3id.org` so
+the repo name and even the host become free to change afterwards.
+
 ## Canonical record & build pipeline (Phase 0)
 
 The authored source of truth for each part is `parts/<status>/<slug>.json` — a
