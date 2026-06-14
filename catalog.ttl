@@ -2,6 +2,7 @@
 @prefix collection: <https://dbikard.github.io/dna-parts-catalog/collection/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix part: <https://dbikard.github.io/dna-parts-catalog/part/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix pubmed: <https://identifiers.org/pubmed:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sbo: <https://identifiers.org/SBO:> .
@@ -5305,8 +5306,42 @@ part:PphlF a sbol:Component ;
         "PphlF" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PphlF_claim_inducer,
+        part:PphlF_claim_repression_dynamic_range ;
     cat:regulatedBy part:PhlF ;
     cat:slug "PphlF" .
+
+part:PphlF_claim_inducer a cat:FunctionalClaim ;
+    rdfs:label "PhlF repression of PphlF is relieved by 2,4-diacetylphloroglucinol (DAPG)." ;
+    dcterms:references pubmed:24316737 ;
+    prov:wasDerivedFrom pubmed:24316737 ;
+    prov:wasGeneratedBy part:PphlF_claim_inducer_provenance ;
+    cat:claimType "inducer" ;
+    cat:claimValue "{\"inducer\": \"2,4-diacetylphloroglucinol (DAPG)\", \"mode\": \"de-repression\"}" ;
+    cat:confidence "high" ;
+    cat:inducer "2,4-diacetylphloroglucinol (DAPG)" ;
+    cat:reviewStatus "ai-cross-checked" .
+
+part:PphlF_claim_inducer_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PphlF.md" ;
+    cat:method "transcribed-from-doc" .
+
+part:PphlF_claim_repression_dynamic_range a cat:FunctionalClaim ;
+    rdfs:label "PhlF gives approximately 80-fold repression of PphlF in the source work." ;
+    dcterms:references pubmed:24316737 ;
+    prov:wasDerivedFrom pubmed:24316737 ;
+    prov:wasGeneratedBy part:PphlF_claim_repression_dynamic_range_provenance ;
+    cat:claimType "repression_dynamic_range" ;
+    cat:claimValue "{\"comparator\": \"approx\", \"fold\": 80, \"unit\": \"fold\"}" ;
+    cat:confidence "medium" ;
+    cat:foldChange 80.0 ;
+    cat:reviewStatus "ai-cross-checked" .
+
+part:PphlF_claim_repression_dynamic_range_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PphlF.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PphlF_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:24316737 ;
@@ -5459,8 +5494,25 @@ part:PtetA a sbol:Component ;
         "tet promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
+    cat:hasFunctionalClaim part:PtetA_claim_inducer ;
     cat:regulatedBy part:tetR ;
     cat:slug "PtetA" .
+
+part:PtetA_claim_inducer a cat:FunctionalClaim ;
+    rdfs:label "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc)." ;
+    dcterms:references pubmed:9092630 ;
+    prov:wasDerivedFrom pubmed:9092630 ;
+    prov:wasGeneratedBy part:PtetA_claim_inducer_provenance ;
+    cat:claimType "inducer" ;
+    cat:claimValue "{\"inducer\": \"tetracycline / anhydrotetracycline (aTc)\", \"mode\": \"de-repression\"}" ;
+    cat:confidence "high" ;
+    cat:inducer "tetracycline / anhydrotetracycline (aTc)" ;
+    cat:reviewStatus "ai-cross-checked" .
+
+part:PtetA_claim_inducer_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "PtetA.md" ;
+    cat:method "transcribed-from-doc" .
 
 part:PtetA_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:21261817,

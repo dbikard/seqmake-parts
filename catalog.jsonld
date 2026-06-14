@@ -7036,6 +7036,14 @@
       "@type": "sbol:Component",
       "cat:curationStatus": "validated",
       "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:PphlF_claim_inducer"
+        },
+        {
+          "@id": "part:PphlF_claim_repression_dynamic_range"
+        }
+      ],
       "cat:regulatedBy": {
         "@id": "part:PhlF"
       },
@@ -7088,6 +7096,61 @@
         "PphlF",
         "PhlF promoter"
       ]
+    },
+    {
+      "@id": "part:PphlF_claim_inducer",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "inducer",
+      "cat:claimValue": "{\"inducer\": \"2,4-diacetylphloroglucinol (DAPG)\", \"mode\": \"de-repression\"}",
+      "cat:confidence": "high",
+      "cat:inducer": "2,4-diacetylphloroglucinol (DAPG)",
+      "cat:reviewStatus": "ai-cross-checked",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24316737"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24316737"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PphlF_claim_inducer_provenance"
+      },
+      "rdfs:label": "PhlF repression of PphlF is relieved by 2,4-diacetylphloroglucinol (DAPG)."
+    },
+    {
+      "@id": "part:PphlF_claim_inducer_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "PphlF.md",
+      "cat:method": "transcribed-from-doc"
+    },
+    {
+      "@id": "part:PphlF_claim_repression_dynamic_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "repression_dynamic_range",
+      "cat:claimValue": "{\"comparator\": \"approx\", \"fold\": 80, \"unit\": \"fold\"}",
+      "cat:confidence": "medium",
+      "cat:foldChange": {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "80"
+      },
+      "cat:reviewStatus": "ai-cross-checked",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24316737"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24316737"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PphlF_claim_repression_dynamic_range_provenance"
+      },
+      "rdfs:label": "PhlF gives approximately 80-fold repression of PphlF in the source work."
+    },
+    {
+      "@id": "part:PphlF_claim_repression_dynamic_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "PphlF.md",
+      "cat:method": "transcribed-from-doc"
     },
     {
       "@id": "part:PphlF_feature_0",
@@ -7463,6 +7526,9 @@
       "@type": "sbol:Component",
       "cat:curationStatus": "validated",
       "cat:documented": true,
+      "cat:hasFunctionalClaim": {
+        "@id": "part:PtetA_claim_inducer"
+      },
       "cat:regulatedBy": {
         "@id": "part:tetR"
       },
@@ -7518,6 +7584,32 @@
         "ptet",
         "tet promoter"
       ]
+    },
+    {
+      "@id": "part:PtetA_claim_inducer",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "inducer",
+      "cat:claimValue": "{\"inducer\": \"tetracycline / anhydrotetracycline (aTc)\", \"mode\": \"de-repression\"}",
+      "cat:confidence": "high",
+      "cat:inducer": "tetracycline / anhydrotetracycline (aTc)",
+      "cat:reviewStatus": "ai-cross-checked",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9092630"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:9092630"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PtetA_claim_inducer_provenance"
+      },
+      "rdfs:label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc)."
+    },
+    {
+      "@id": "part:PtetA_claim_inducer_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "PtetA.md",
+      "cat:method": "transcribed-from-doc"
     },
     {
       "@id": "part:PtetA_feature_0",

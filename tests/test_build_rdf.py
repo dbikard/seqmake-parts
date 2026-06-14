@@ -54,6 +54,22 @@ def test_regulation_is_modeled_both_ways():
     assert bool(g.query(q))
 
 
+def test_functional_claims_are_projected_with_provenance():
+    g, _ = load_graph()
+    PROV = rdflib.Namespace("http://www.w3.org/ns/prov#")
+    # PphlF's DAPG inducer claim, with its source + confidence + review status.
+    claim = PART["PphlF_claim_inducer"]
+    assert (PART.PphlF, CAT.hasFunctionalClaim, claim) in g
+    assert (claim, CAT.claimType, rdflib.Literal("inducer")) in g
+    assert (claim, CAT.confidence, rdflib.Literal("high")) in g
+    assert (claim, CAT.reviewStatus, rdflib.Literal("ai-cross-checked")) in g
+    src = rdflib.URIRef("https://identifiers.org/pubmed:24316737")
+    assert (claim, PROV.wasDerivedFrom, src) in g
+    # the dynamic-range claim exposes a typed numeric fold-change
+    fold = PART["PphlF_claim_repression_dynamic_range"]
+    assert (fold, CAT.foldChange, rdflib.Literal(80, datatype=rdflib.XSD.decimal)) in g
+
+
 def test_serialization_is_deterministic():
     g1, _ = load_graph()
     g2, _ = load_graph()

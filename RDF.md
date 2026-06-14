@@ -1,9 +1,12 @@
 # RDF / semantic-web knowledge base
 
 > **Status:** Phases 0 (canonical JSON spine) and 1 (structural RDF projection)
-> implemented. Phases 2 and 3 are designed below and tracked as follow-ups. This
-> document is the design narrative; the authoritative builds are
-> `tools/build_gb.py` (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
+> implemented. Phase 2 (functional-knowledge layer) is implemented as **plumbing
+> + verified exemplars** — the schema, the nanopub-shaped RDF projection, SHACL,
+> and a few claims transcribed from curated `.md` prose; bulk extraction across
+> the catalog is the remaining work. Phase 3 (public nanopublications) is
+> designed below as a follow-up. The authoritative builds are `tools/build_gb.py`
+> (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
 
 ## Canonical record & build pipeline (Phase 0)
 
@@ -142,18 +145,25 @@ claim.
         [ a sbol:Participation ; sbol:role sbo:0000642 ; sbol:participant :PphlF_feature_2 ] .
 ```
 
-## Layer 2 — functional knowledge (Phase 2, designed)
+## Layer 2 — functional knowledge (Phase 2)
 
 The richest knowledge lives in the `.md` prose, not the GenBank: PphlF's `.md`
 records ~80× fold repression, inducer = DAPG, the J23119 scaffold, the
-mechanism. These become typed claims in the canonical record, each carrying
-**source** (PMID/DOI), **extraction provenance** (asserting agent + model
-version, source span, timestamp), **confidence**, **review_status**
-(`ai-extracted` → `ai-cross-checked` → `expert-reviewed`), and a **supersedes**
-pointer. Vocabularies: **ChEBI** (inducer), **OM** (units, e.g. fold), **NCBI
-Taxonomy** (host range), and `cat:` for what has no clean ontology. The claims
-are projected into RDF in the **nanopublication shape** (assertion + provenance),
-but stay mutable in git — nothing permanent is minted here.
+mechanism. These become typed claims in each part's canonical JSON
+(`functional_claims`), each carrying **source** (PMID/DOI), **extraction
+provenance** (method, asserting agent, source doc), **confidence**, and
+**review_status** (`ai-generated` → `ai-cross-checked` → `expert-reviewed`), plus
+a **supersedes** pointer for corrections. `tools/build_rdf.py` projects them into
+RDF in the **nanopublication shape** — each claim an assertion node with
+`prov:wasDerivedFrom` its source and `prov:wasGeneratedBy` its extraction
+activity — queryable alongside Layer 1 and SHACL-validated. They stay mutable in
+git; nothing permanent is minted (that is Phase 3).
+
+Ontology mapping is **lazy**: a claim names its inducer/unit/host as a label and
+fills the ChEBI / OM / NCBI-Taxonomy IRI only when verified (`null` otherwise) —
+no guessed IRIs. Worked claims live on `PphlF` (DAPG inducer + ~80× repression)
+and `PtetA` (aTc inducer). Bulk extraction across the catalog, gated by review,
+is the remaining Phase 2 work.
 
 ## Mutability & correction model
 

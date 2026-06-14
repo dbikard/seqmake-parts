@@ -149,5 +149,18 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "inducer",
+      "type": "inducer",
+      "label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc).",
+      "value": {"inducer": "tetracycline / anhydrotetracycline (aTc)", "mode": "de-repression"},
+      "ontology": {"inducer_chebi": null},
+      "source": {"pmid": "9092630"},
+      "provenance": {"method": "transcribed-from-doc", "from": "PtetA.md", "agent": "ai-assistant"},
+      "confidence": "high",
+      "review_status": "ai-cross-checked",
+      "supersedes": null
+    }
+  ]
 }

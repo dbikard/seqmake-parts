@@ -252,6 +252,61 @@ def add_regulation(g: Graph, part: dict, by_slug: dict[str, dict],
         g.add((p_target, SBOL.participant, target))
 
 
+def _claim_source_uri(source: dict) -> URIRef | None:
+    if source.get("pmid"):
+        return URIRef(str(PUBMED) + source["pmid"])
+    if source.get("doi"):
+        return URIRef("https://doi.org/" + source["doi"])
+    if source.get("url"):
+        return URIRef(source["url"])
+    return None
+
+
+def add_functional_claims(g: Graph, part: dict) -> int:
+    """Project a part's functional_claims (from its canonical JSON) into the graph
+    in the nanopublication shape: each claim is an assertion node carrying its own
+    source + extraction provenance + confidence + review status, so the knowledge
+    base self-describes its trust. Returns the number of claims emitted."""
+    json_path = ROOT / "parts" / part["status"] / f"{part['slug']}.json"
+    if not json_path.exists():
+        return 0
+    claims = json.loads(json_path.read_text(encoding="utf-8")).get("functional_claims", [])
+    p = PART[part["slug"]]
+    for c in claims:
+        cu = PART[f"{part['slug']}_claim_{c['id']}"]
+        g.add((p, CAT.hasFunctionalClaim, cu))
+        g.add((cu, RDF.type, CAT.FunctionalClaim))
+        g.add((cu, CAT.claimType, Literal(c["type"])))
+        g.add((cu, RDFS.label, Literal(c["label"])))
+        g.add((cu, CAT.confidence, Literal(c["confidence"])))
+        g.add((cu, CAT.reviewStatus, Literal(c["review_status"])))
+        val = c.get("value") or {}
+        # Lossless value + typed convenience predicates for the common kinds.
+        g.add((cu, CAT.claimValue, Literal(json.dumps(val, sort_keys=True))))
+        if c["type"] in ("repression_dynamic_range", "induction_dynamic_range") \
+                and isinstance(val.get("fold"), (int, float)):
+            g.add((cu, CAT.foldChange, Literal(val["fold"], datatype=XSD.decimal)))
+        if c["type"] == "inducer" and val.get("inducer"):
+            g.add((cu, CAT.inducer, Literal(val["inducer"])))
+        # Assertion provenance (the nanopublication idea, as plain PROV-O).
+        src = _claim_source_uri(c.get("source") or {})
+        if src is not None:
+            g.add((cu, DCTERMS.references, src))
+            g.add((cu, PROV.wasDerivedFrom, src))
+        prov = c.get("provenance") or {}
+        act = PART[f"{part['slug']}_claim_{c['id']}_provenance"]
+        g.add((cu, PROV.wasGeneratedBy, act))
+        g.add((act, RDF.type, PROV.Activity))
+        for key, pred in (("method", CAT.method), ("agent", CAT.agent),
+                          ("from", CAT.fromDoc)):
+            if prov.get(key):
+                g.add((act, pred, Literal(prov[key])))
+        if c.get("supersedes"):
+            g.add((cu, CAT.supersedes,
+                   PART[f"{part['slug']}_claim_{c['supersedes']}"]))
+    return len(claims)
+
+
 def add_collections(g: Graph, parts: list[dict], coll_meta: dict) -> None:
     groups: dict[str, list[dict]] = {}
     for p in parts:
@@ -290,7 +345,10 @@ def build_graph(parts: list[dict], coll_meta: dict) -> Graph:
     log: list[str] = []
     for p in parts:
         add_regulation(g, p, by_slug, log)
+    n_claims = sum(add_functional_claims(g, p) for p in parts)
     add_collections(g, parts, coll_meta)
+    if n_claims:
+        print(f"functional claims projected: {n_claims}")
     if log:
         print("regulation interactions (Phase 1 polarity is heuristic):")
         for line in sorted(log):

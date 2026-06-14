@@ -144,5 +144,30 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "inducer",
+      "type": "inducer",
+      "label": "PhlF repression of PphlF is relieved by 2,4-diacetylphloroglucinol (DAPG).",
+      "value": {"inducer": "2,4-diacetylphloroglucinol (DAPG)", "mode": "de-repression"},
+      "ontology": {"inducer_chebi": null},
+      "source": {"pmid": "24316737"},
+      "provenance": {"method": "transcribed-from-doc", "from": "PphlF.md", "agent": "ai-assistant"},
+      "confidence": "high",
+      "review_status": "ai-cross-checked",
+      "supersedes": null
+    },
+    {
+      "id": "repression_dynamic_range",
+      "type": "repression_dynamic_range",
+      "label": "PhlF gives approximately 80-fold repression of PphlF in the source work.",
+      "value": {"fold": 80, "comparator": "approx", "unit": "fold"},
+      "ontology": {"unit_om": null},
+      "source": {"pmid": "24316737"},
+      "provenance": {"method": "transcribed-from-doc", "from": "PphlF.md", "agent": "ai-assistant"},
+      "confidence": "medium",
+      "review_status": "ai-cross-checked",
+      "supersedes": null
+    }
+  ]
 }

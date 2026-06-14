@@ -68,8 +68,45 @@
     },
     "functional_claims": {
       "type": "array",
-      "description": "Phase 2: prose-derived functional knowledge (inducer, dynamic range, host range, ...), each with its own source + provenance + confidence + review_status. Empty until populated.",
-      "items": {"type": "object"}
+      "description": "Prose-derived functional knowledge (inducer, dynamic range, host range, ...). Each claim is self-describing: its source, extraction provenance, confidence, and review_status travel with it so the knowledge base can self-correct (a nanopublication shape, kept mutable in git).",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label", "source", "provenance",
+                     "confidence", "review_status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "description": "stable id unique within the part"},
+          "type": {"type": "string", "description": "claim kind, e.g. inducer / repression_dynamic_range / induction_dynamic_range / strength_class / host_range / mechanism"},
+          "label": {"type": "string", "description": "human-readable statement of the claim"},
+          "value": {"type": "object", "additionalProperties": true,
+                    "description": "structured value (e.g. {fold: 80, unit: 'fold'} or {inducer: '...'})"},
+          "ontology": {
+            "type": "object",
+            "description": "verified ontology mappings (ChEBI/OM/NCBI-taxon); a key may be null when not yet mapped (no guessed IRIs).",
+            "additionalProperties": {"type": ["string", "null"]}
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "the literature the claim is drawn from",
+            "properties": {
+              "pmid": {"type": "string"},
+              "doi": {"type": "string"},
+              "url": {"type": "string"}
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "how the claim was produced: method, asserting agent/model, source doc, timestamp"
+          },
+          "confidence": {"type": "string", "enum": ["low", "medium", "high"]},
+          "review_status": {"type": "string",
+            "enum": ["ai-generated", "ai-cross-checked", "expert-reviewed"]},
+          "supersedes": {"type": ["string", "null"],
+            "description": "id of a prior claim this one corrects"}
+        }
+      }
     }
   }
 }

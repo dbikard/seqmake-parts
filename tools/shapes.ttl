@@ -45,6 +45,19 @@ cat:ParticipationShape a sh:NodeShape ;
     sh:property [ sh:path sbol:role ; sh:minCount 1 ] ;
     sh:property [ sh:path sbol:participant ; sh:minCount 1 ] .
 
+# A functional claim is self-describing: kind, confidence, review status, and a
+# source it was derived from (the nanopublication shape).
+cat:FunctionalClaimShape a sh:NodeShape ;
+    sh:targetClass cat:FunctionalClaim ;
+    sh:property [ sh:path cat:claimType ; sh:minCount 1 ] ;
+    sh:property [ sh:path cat:confidence ; sh:minCount 1 ;
+                  sh:in ( "low" "medium" "high" ) ] ;
+    sh:property [ sh:path cat:reviewStatus ; sh:minCount 1 ;
+                  sh:in ( "ai-generated" "ai-cross-checked" "expert-reviewed" ) ] ;
+    sh:property [ sh:path <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                  sh:minCount 1 ;
+                  sh:message "a functional claim must cite a source" ] .
+
 # A range must not run past the end of its sequence.
 cat:RangeWithinSequenceShape a sh:NodeShape ;
     sh:targetClass sbol:Range ;
