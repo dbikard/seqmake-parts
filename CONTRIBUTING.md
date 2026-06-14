@@ -1,7 +1,14 @@
 # Contributing a part
 
-Thank you for helping grow the catalog! Adding a part is intentionally
-low-friction: one GenBank file, plus a documentation page once it's validated.
+Thank you for helping grow the catalog! The canonical record of each part is a
+schema-validated `<slug>.json`; the `.gb` is generated from it and prose lives in
+a sibling `<slug>.md`.
+
+To add a part with an agent, use the **`/add-part`** command (Claude Code), which
+follows the standard operating procedure in [`AUTHORING.md`](AUTHORING.md) —
+research a cited sequence, annotate, write claims with provenance, then validate
+and build. To do it by hand, follow that same SOP; `tools/new_part.py` scaffolds
+a valid skeleton.
 
 Parts are split by curation status:
 

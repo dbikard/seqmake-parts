@@ -10,3 +10,6 @@
 __pycache__/
 *.pyc
 .venv/
+
+# Claude Code local (personal) settings
+.claude/settings.local.json
