@@ -1,22 +1,27 @@
-# DNA Parts Catalog
+# Biological Parts Knowledge Base
 
 > [!WARNING]
-> **Work in progress — largely AI-generated content.** This catalog is under
-> active development and much of its content (part annotations and
-> documentation pages) is **largely AI-generated**. It may contain errors and
-> has not been fully expert-reviewed — verify any part against the cited
-> primary literature before relying on it.
+> **Work in progress — largely AI-generated content.** This knowledge base is
+> under active development and much of its content (part annotations,
+> documentation, and functional claims) is **largely AI-generated**. It may
+> contain errors and has not been fully expert-reviewed — every claim carries a
+> review status; verify against the cited primary literature before relying on it.
 
-An open, community-curated catalog of **standard DNA parts** for molecular
-cloning and synthetic biology — promoters, CDSs, terminators, ribosome binding
-sites, operators, and more — each stored as an **annotated GenBank file** with
-hierarchical sub-features (e.g. a promoter's −35 / −10 / operator) and literature
-references.
+A machine-readable, provenance-tracked **knowledge base of standard biological
+parts** for molecular cloning and synthetic biology — promoters, CDSs,
+terminators, RBSs, operators, origins, selection markers, regulators, and more.
+Each part is an annotated record with **Sequence Ontology** typing, hierarchical
+sub-features, literature references, and **prose-derived functional claims** that
+carry their own source, confidence, and review status.
 
-A growing subset of parts also carries a **curated documentation page**
-(`<part>.md`) describing its origin, properties, and use, with references.
+The data is published three ways from one canonical source: an **annotated
+GenBank file**, the **`catalog.json`** manifest, and an **RDF graph**
+(`catalog.ttl` / `catalog.jsonld`; SBOL3 + Sequence Ontology + SBO) that is
+SPARQL-queryable and federates with UniProt. Protein parts **link out to UniProt**
+rather than duplicating its annotation.
 
-**Browse the catalog:** https://dbikard.github.io/dna-parts-catalog/
+**Browse:** https://dbikard.github.io/dna-parts-catalog/ · **Query:** see
+[`QUERIES.md`](QUERIES.md) and [`RDF.md`](RDF.md)
 
 ## What's here
 

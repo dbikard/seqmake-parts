@@ -1,5 +1,5 @@
-site_name: DNA Parts Catalog
-site_description: An open, community-curated catalog of annotated DNA parts.
+site_name: Biological Parts Knowledge Base
+site_description: A machine-readable, provenance-tracked knowledge base of standard biological parts (SBOL/RDF + GenBank), linked into UniProt.
 docs_dir: docs
 
 theme:

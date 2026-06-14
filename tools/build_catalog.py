@@ -31,10 +31,10 @@ SCHEMA_VERSION = "1.0"
 # is AI-generated, so flag it prominently for anyone browsing.
 AI_WIP_WARNING = (
     '!!! warning "Work in progress — AI-generated content"\n\n'
-    "    This catalog is a **work in progress** and much of its content "
-    "(part annotations and documentation pages) is **largely AI-generated**. "
-    "It may contain errors and has not been fully expert-reviewed — verify "
-    "any part against the cited primary literature before relying on it.\n"
+    "    This knowledge base is a **work in progress** and much of its content "
+    "(part annotations, documentation, and functional claims) is **largely "
+    "AI-generated**. It may contain errors and has not been fully expert-reviewed "
+    "— verify any part against the cited primary literature before relying on it.\n"
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -634,16 +634,26 @@ def render_index(grouped, n_validated: int, n_candidate: int,
     type's page, a 'Browse by collection' hub, plus a pointer to the tag index."""
     repo = REPO_URL
     lines = [
-        "# DNA parts catalog\n",
+        "# Biological Parts Knowledge Base\n",
         AI_WIP_WARNING,
-        f"An open, community-curated catalog of standard DNA parts (promoters, "
-        f"CDSs, terminators, RBSs, …), each an annotated, machine-readable record "
-        f"organised by type. **{n_validated}** parts carry a curated documentation "
-        f"page; a further **{n_candidate}** are *candidates* with an auto-generated "
-        f"page (annotated GenBank, awaiting curation). Use the search box to find a "
-        f"part by name, or browse by type below.\n",
-        f"Programmatic access: [`catalog.json`]({repo}/blob/main/catalog.json) "
-        f"(manifest) and `catalog.ttl` / `catalog.jsonld` (RDF graph).\n",
+        f"A machine-readable knowledge base of standard biological parts — "
+        f"promoters, CDSs, terminators, RBSs, origins, selection markers and "
+        f"regulators — each an annotated record with Sequence Ontology typing, "
+        f"literature-sourced functional claims, and links into UniProt. "
+        f"**{n_validated}** parts carry a curated page; a further **{n_candidate}** "
+        f"are auto-generated from annotated GenBank, awaiting curation. Every claim "
+        f"carries its source and a review status — verify against the cited "
+        f"literature before relying on it.\n",
+        "## Use the data\n",
+        f"- **[`catalog.json`]({repo}/blob/main/catalog.json)** — the full manifest "
+        f"(every part, its metadata, and functional claims).",
+        "- **[`catalog.ttl`](catalog.ttl)** / **[`catalog.jsonld`](catalog.jsonld)** "
+        "— the same data as an RDF graph (SBOL3 + Sequence Ontology + SBO), "
+        "SPARQL-queryable and federatable with UniProt.",
+        f"- **[SPARQL cookbook]({repo}/blob/main/QUERIES.md)** — worked example "
+        f"queries; see [the data model]({repo}/blob/main/RDF.md) for the shape.",
+        "- Each part page also offers GenBank / FASTA / RDF downloads.",
+        "",
         "## Browse by type\n",
     ]
     for (key, label), ps in grouped:
