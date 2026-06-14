@@ -152,10 +152,10 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:Q99ZW2",
-    "uniprot_release": 147,
     "fetched": "2026-06-14",
+    "accession": "UniProt:Q99ZW2",
     "status": "variant",
+    "identity": 0.9985,
     "sequence_match": false,
     "variants": [
       {
@@ -168,6 +168,8 @@
         "part": "A",
         "uniprot": "H"
       }
-    ]
+    ],
+    "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
+    "uniprot_release": 147
   }
 }

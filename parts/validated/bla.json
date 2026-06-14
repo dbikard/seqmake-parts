@@ -9,7 +9,7 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW",
+  "sequence": "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPAAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW",
   "references": [
     {
       "authors": "Sutcliffe JG",
@@ -170,17 +170,18 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:P62593",
-    "uniprot_release": 155,
     "fetched": "2026-06-14",
-    "status": "variant",
-    "sequence_match": false,
-    "variants": [
+    "accession": "UniProt:P62593",
+    "status": "normalized_to_canonical",
+    "identity": 0.9965,
+    "sequence_match": true,
+    "normalized_substitutions": [
       {
         "pos": 182,
         "part": "V",
         "uniprot": "A"
       }
-    ]
+    ],
+    "uniprot_release": 155
   }
 }

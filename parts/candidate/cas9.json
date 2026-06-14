@@ -150,10 +150,11 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:Q99ZW2",
-    "uniprot_release": 147,
     "fetched": "2026-06-14",
+    "accession": "UniProt:Q99ZW2",
     "status": "match",
-    "sequence_match": true
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_release": 147
   }
 }

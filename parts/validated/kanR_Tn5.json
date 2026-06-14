@@ -131,10 +131,11 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:P00552",
-    "uniprot_release": 119,
     "fetched": "2026-06-14",
+    "accession": "UniProt:P00552",
     "status": "match",
-    "sequence_match": true
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_release": 119
   }
 }

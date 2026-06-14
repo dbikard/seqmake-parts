@@ -9,7 +9,7 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTVTYEQVLSIFNSYLLFNGRK",
+  "sequence": "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNIRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTITYEQVLSIFNSYLLFNGRK",
   "references": [
     {
       "authors": "Trieu-Cuot P., Poyart-Salmeron C., Carlier C., Courvalin P.",
@@ -161,12 +161,12 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:P21236",
-    "uniprot_release": 114,
     "fetched": "2026-06-14",
-    "status": "variant",
-    "sequence_match": false,
-    "variants": [
+    "accession": "UniProt:P21236",
+    "status": "normalized_to_canonical",
+    "identity": 0.9918,
+    "sequence_match": true,
+    "normalized_substitutions": [
       {
         "pos": 75,
         "part": "T",
@@ -177,6 +177,7 @@
         "part": "V",
         "uniprot": "I"
       }
-    ]
+    ],
+    "uniprot_release": 114
   }
 }

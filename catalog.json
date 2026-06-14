@@ -187,11 +187,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P0AG05",
-        "uniprot_release": 102,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P0AG05",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 102
       }
     },
     {
@@ -820,18 +821,19 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P62593",
-        "uniprot_release": 155,
         "fetched": "2026-06-14",
-        "status": "variant",
-        "sequence_match": false,
-        "variants": [
+        "accession": "UniProt:P62593",
+        "status": "normalized_to_canonical",
+        "identity": 0.9965,
+        "sequence_match": true,
+        "normalized_substitutions": [
           {
             "pos": 182,
             "part": "V",
             "uniprot": "A"
           }
-        ]
+        ],
+        "uniprot_release": 155
       }
     },
     {
@@ -1010,11 +1012,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P0C2P0",
-        "uniprot_release": 78,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P0C2P0",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 78
       }
     },
     {
@@ -1313,11 +1316,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:Q99ZW2",
-        "uniprot_release": 147,
         "fetched": "2026-06-14",
+        "accession": "UniProt:Q99ZW2",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 147
       }
     },
     {
@@ -1670,11 +1674,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P62577",
-        "uniprot_release": 117,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P62577",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 117
       }
     },
     {
@@ -2031,10 +2036,10 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:Q99ZW2",
-        "uniprot_release": 147,
         "fetched": "2026-06-14",
+        "accession": "UniProt:Q99ZW2",
         "status": "variant",
+        "identity": 0.9985,
         "sequence_match": false,
         "variants": [
           {
@@ -2047,7 +2052,9 @@
             "part": "A",
             "uniprot": "H"
           }
-        ]
+        ],
+        "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
+        "uniprot_release": 147
       }
     },
     {
@@ -2139,18 +2146,19 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P00382",
-        "uniprot_release": 145,
         "fetched": "2026-06-14",
-        "status": "variant",
-        "sequence_match": false,
-        "variants": [
+        "accession": "UniProt:P00382",
+        "status": "normalized_to_canonical",
+        "identity": 0.9936,
+        "sequence_match": true,
+        "normalized_substitutions": [
           {
             "pos": 73,
             "part": "D",
             "uniprot": "N"
           }
-        ]
+        ],
+        "uniprot_release": 145
       }
     },
     {
@@ -2543,12 +2551,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P21236",
-        "uniprot_release": 114,
         "fetched": "2026-06-14",
-        "status": "variant",
-        "sequence_match": false,
-        "variants": [
+        "accession": "UniProt:P21236",
+        "status": "normalized_to_canonical",
+        "identity": 0.9918,
+        "sequence_match": true,
+        "normalized_substitutions": [
           {
             "pos": 75,
             "part": "T",
@@ -2559,7 +2567,8 @@
             "part": "V",
             "uniprot": "I"
           }
-        ]
+        ],
+        "uniprot_release": 114
       }
     },
     {
@@ -2893,11 +2902,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P23181",
-        "uniprot_release": 90,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P23181",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 90
       }
     },
     {
@@ -3156,11 +3166,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:P06633",
-        "uniprot_release": 186,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P06633",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 186
       }
     },
     {
@@ -3354,11 +3365,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P00557",
-        "uniprot_release": 123,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P00557",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 123
       }
     },
     {
@@ -3872,11 +3884,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P00552",
-        "uniprot_release": 119,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P00552",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 119
       }
     },
     {
@@ -4445,11 +4458,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:P04173",
-        "uniprot_release": 199,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P04173",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 199
       }
     },
     {
@@ -7999,11 +8013,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P13249",
-        "uniprot_release": 93,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P13249",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 93
       }
     },
     {
@@ -8589,11 +8604,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:P03051",
-        "uniprot_release": 141,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P03051",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 141
       }
     },
     {
@@ -9592,11 +9608,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P02981",
-        "uniprot_release": 104,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P02981",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 104
       }
     },
     {
@@ -10076,11 +10093,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "accession": "UniProt:P00912",
-        "uniprot_release": 185,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P00912",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 185
       }
     },
     {
@@ -10354,11 +10372,12 @@
         }
       ],
       "uniprot_import": {
-        "accession": "UniProt:P17493",
-        "uniprot_release": 91,
         "fetched": "2026-06-14",
+        "accession": "UniProt:P17493",
         "status": "match",
-        "sequence_match": true
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_release": 91
       }
     }
   ],

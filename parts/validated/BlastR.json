@@ -182,10 +182,11 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:P0C2P0",
-    "uniprot_release": 78,
     "fetched": "2026-06-14",
+    "accession": "UniProt:P0C2P0",
     "status": "match",
-    "sequence_match": true
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_release": 78
   }
 }

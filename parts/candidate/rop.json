@@ -40,10 +40,11 @@
   "functional_claims": [],
   "uniprot_features": [],
   "uniprot_import": {
-    "accession": "UniProt:P03051",
-    "uniprot_release": 141,
     "fetched": "2026-06-14",
+    "accession": "UniProt:P03051",
     "status": "match",
-    "sequence_match": true
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_release": 141
   }
 }

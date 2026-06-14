@@ -9,7 +9,7 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG",
+  "sequence": "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNENVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG",
   "references": [
     {
       "authors": "Krucinska J, Lombardo MN, Erlandsen H, Estrada A, Si D, Viswanathan K, Wright DL",
@@ -103,17 +103,18 @@
     }
   ],
   "uniprot_import": {
-    "accession": "UniProt:P00382",
-    "uniprot_release": 145,
     "fetched": "2026-06-14",
-    "status": "variant",
-    "sequence_match": false,
-    "variants": [
+    "accession": "UniProt:P00382",
+    "status": "normalized_to_canonical",
+    "identity": 0.9936,
+    "sequence_match": true,
+    "normalized_substitutions": [
       {
         "pos": 73,
         "part": "D",
         "uniprot": "N"
       }
-    ]
+    ],
+    "uniprot_release": 145
   }
 }
