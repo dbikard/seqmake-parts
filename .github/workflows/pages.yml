@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # The UniProt refresh commits to main with GITHUB_TOKEN, which does NOT trigger
+  # a push event -- so redeploy when that workflow finishes successfully.
+  workflow_run:
+    workflows: ["Refresh UniProt features"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -17,6 +22,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # On a workflow_run trigger, only deploy if the refresh actually succeeded.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
