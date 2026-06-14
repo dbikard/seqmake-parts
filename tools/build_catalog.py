@@ -2,10 +2,11 @@
 """Build the catalog manifest (catalog.json) and the mkdocs site pages from
 the GenBank parts in ``parts/``.
 
-Standalone: depends only on BioPython — the catalog repo is
-self-contained. A part is one ``.gb`` file (a single main feature with no
-``/parent`` qualifier, plus optional sub-features carrying ``/parent``) and an
-optional sibling ``<stem>.md`` documentation page.
+The manifest is built with BioPython alone; building the site additionally emits
+a per-part RDF download, which uses ``rdflib`` via ``build_rdf`` (lazy-imported).
+A part is one ``.gb`` file (a single main feature with no ``/parent`` qualifier,
+plus optional sub-features carrying ``/parent``) and an optional sibling
+``<stem>.md`` documentation page.
 
 Usage:
     python tools/build_catalog.py            # writes catalog.json + docs/
@@ -295,6 +296,44 @@ def _feature_table(part: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _functional_knowledge(part: dict) -> str:
+    """The functional-knowledge section: prose-derived claims (from the canonical
+    JSON), each shown with its granular source (quote/figure), confidence and
+    review status -- the human view of the nanopublication-shaped layer."""
+    json_path = PARTS_DIR / part["status"] / f"{part['slug']}.json"
+    if not json_path.exists():
+        return ""
+    claims = json.loads(json_path.read_text(encoding="utf-8")).get("functional_claims", [])
+    if not claims:
+        return ""
+    lines = ["## Functional knowledge\n",
+             "*Prose-derived claims, each carrying its source, confidence and "
+             "review status (a nanopublication-shaped assertion). Verify against "
+             "the cited source.*\n",
+             "| Claim | Source | Confidence | Review |",
+             "|---|---|---|---|"]
+    for c in claims:
+        src = c.get("source") or {}
+        bits = []
+        if src.get("pmid"):
+            bits.append(f"[PMID {src['pmid']}]({_pmid_url(src['pmid'])})")
+        elif src.get("doi"):
+            bits.append(f"[doi:{src['doi']}](https://doi.org/{src['doi']})")
+        elif src.get("url"):
+            bits.append(f"[link]({src['url']})")
+        for k, lab in (("figure", "Fig"), ("table", "Table"),
+                       ("page", "p."), ("section", "§")):
+            if src.get(k):
+                bits.append(f"{lab} {src[k]}")
+        cell = " · ".join(bits)
+        if src.get("quote"):
+            tag = f" ({src['quote_source']})" if src.get("quote_source") else ""
+            cell += f"<br>*“{_short(src['quote'], 120)}”{tag}*"
+        lines.append(f"| {_short(c.get('label', ''), 140)} | {cell or '—'} | "
+                     f"{c.get('confidence', '—')} | {c.get('review_status', '—')} |")
+    return "\n".join(lines) + "\n"
+
+
 def _reference_list(refs: list[dict]) -> str:
     if not refs:
         return ""
@@ -382,7 +421,8 @@ def render_part_page(part: dict) -> str:
         f"# {name}\n",
         f"`{part['feature_type']}`{so_part} · {_len_label(part)}{syn}\n",
         f"[Download GenBank](files/{slug}.gb){{ .md-button }} "
-        f"[{fasta_label}](files/{slug}.fasta){{ .md-button }}\n",
+        f"[{fasta_label}](files/{slug}.fasta){{ .md-button }} "
+        f"[Download RDF](files/{slug}.ttl){{ .md-button }}\n",
     ]
     res = _resource_links(part.get("source_accession"))
     if res:
@@ -410,12 +450,14 @@ def render_part_page(part: dict) -> str:
         # its own References section).
         return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
                 + _related_section(part) + "\n"
+                + _functional_knowledge(part) + "\n"
                 + _feature_table(part) + "\n" + body)
     note = part["description"] or "_No curated documentation page yet._"
     note += (f"\n\n*This part has no curated documentation yet — "
              f"[contribute one]({contrib}).*\n")
     return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
             + _related_section(part) + "\n"
+            + _functional_knowledge(part) + "\n"
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 
@@ -727,12 +769,18 @@ def main() -> None:
                 encoding="utf-8")
         (COLLECTIONS_PAGES / "index.md").write_text(
             render_collections_index(coll_summary, coll_meta), encoding="utf-8")
+    # Per-part RDF (Turtle) for the page download button; reuses the RDF builder
+    # (lazy import avoids a circular import — build_rdf imports from this module).
+    from build_rdf import part_turtle  # noqa: E402
+    by_slug = {p["slug"]: p for p in parts}
     for p in validated:
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")
         shutil.copyfile(VALIDATED_DIR / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
         (FILES_DIR / f"{p['slug']}.fasta").write_text(
             _fasta(p["name"], p["_seq"]), encoding="utf-8")
+        (FILES_DIR / f"{p['slug']}.ttl").write_text(
+            part_turtle(p, by_slug), encoding="utf-8")
 
     print(f"catalog: {len(parts)} parts "
           f"({manifest['n_validated']} validated, {n_candidate} candidate); "

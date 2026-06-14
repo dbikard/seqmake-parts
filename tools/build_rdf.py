@@ -337,8 +337,7 @@ def add_collections(g: Graph, parts: list[dict], coll_meta: dict) -> None:
             g.add((c, SBOL.member, PART[m["slug"]]))
 
 
-def build_graph(parts: list[dict], coll_meta: dict) -> Graph:
-    g = Graph()
+def _bind(g: Graph) -> None:
     g.bind("sbol", SBOL)
     g.bind("so", SO_NS)
     g.bind("sbo", SBO)
@@ -349,6 +348,22 @@ def build_graph(parts: list[dict], coll_meta: dict) -> Graph:
     g.bind("part", PART)
     g.bind("collection", COLL)
     g.bind("pubmed", PUBMED)
+
+
+def part_turtle(part: dict, by_slug: dict[str, dict]) -> str:
+    """Turtle for a single part's subgraph (Component + sequence + features +
+    regulation + functional claims) -- the per-part RDF download on its page."""
+    g = Graph()
+    _bind(g)
+    add_part(g, part, by_slug)
+    add_regulation(g, part, by_slug, [])
+    add_functional_claims(g, part)
+    return g.serialize(format="turtle")
+
+
+def build_graph(parts: list[dict], coll_meta: dict) -> Graph:
+    g = Graph()
+    _bind(g)
 
     by_slug = {p["slug"]: p for p in parts}
     for p in parts:
