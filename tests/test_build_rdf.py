@@ -65,6 +65,8 @@ def test_functional_claims_are_projected_with_provenance():
     assert (claim, CAT.reviewStatus, rdflib.Literal("ai-cross-checked")) in g
     src = rdflib.URIRef("https://identifiers.org/pubmed:24316737")
     assert (claim, PROV.wasDerivedFrom, src) in g
+    # granular source: a verbatim quote travels with the citation
+    assert any(g.objects(claim, CAT.sourceQuote)), "claim should carry a source quote"
     # the dynamic-range claim exposes a typed numeric fold-change
     fold = PART["PphlF_claim_repression_dynamic_range"]
     assert (fold, CAT.foldChange, rdflib.Literal(80, datatype=rdflib.XSD.decimal)) in g

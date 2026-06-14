@@ -88,11 +88,17 @@
           "source": {
             "type": "object",
             "additionalProperties": false,
-            "description": "the literature the claim is drawn from",
+            "description": "the literature the claim is drawn from, as granular as possible: prefer a verbatim quote and/or a figure/table/page locator over a bare PMID.",
             "properties": {
               "pmid": {"type": "string"},
               "doi": {"type": "string"},
-              "url": {"type": "string"}
+              "url": {"type": "string"},
+              "quote": {"type": "string", "description": "verbatim supporting text"},
+              "quote_source": {"type": "string", "description": "where the quote was taken from: 'primary' (the paper) or 'catalog-doc' (the curated .md)"},
+              "figure": {"type": "string", "description": "e.g. 'Fig 2', 'Fig 3B'"},
+              "table": {"type": "string"},
+              "page": {"type": "string"},
+              "section": {"type": "string"}
             }
           },
           "provenance": {

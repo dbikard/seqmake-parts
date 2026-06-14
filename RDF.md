@@ -159,6 +159,15 @@ RDF in the **nanopublication shape** — each claim an assertion node with
 activity — queryable alongside Layer 1 and SHACL-validated. They stay mutable in
 git; nothing permanent is minted (that is Phase 3).
 
+A claim's **source is as granular as possible**: beyond a PMID/DOI it carries a
+verbatim `quote` (with `quote_source` = `primary` for the paper or `catalog-doc`
+for the curated `.md`) and a `figure` / `table` / `page` / `section` locator, so a
+reviewer can find the evidence rather than just the paper. These project to
+`cat:sourceQuote` / `cat:sourceFigure` / … on the claim. Figure-level locators
+into the primary PDFs are filled "when possible" — the exemplars quote the curated
+`.md` (the text actually read) and leave paper figure numbers for the
+review / PDF-extraction pass rather than guessing them.
+
 Ontology mapping is **lazy**: a claim names its inducer/unit/host as a label and
 fills the ChEBI / OM / NCBI-Taxonomy IRI only when verified (`null` otherwise) —
 no guessed IRIs. Worked claims live on `PphlF` (DAPG inducer + ~80× repression)

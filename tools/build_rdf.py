@@ -288,11 +288,22 @@ def add_functional_claims(g: Graph, part: dict) -> int:
             g.add((cu, CAT.foldChange, Literal(val["fold"], datatype=XSD.decimal)))
         if c["type"] == "inducer" and val.get("inducer"):
             g.add((cu, CAT.inducer, Literal(val["inducer"])))
-        # Assertion provenance (the nanopublication idea, as plain PROV-O).
-        src = _claim_source_uri(c.get("source") or {})
+        # Assertion provenance (the nanopublication idea, as plain PROV-O), with
+        # granular in-source locators (a quote and/or figure/table/page) so a
+        # reviewer can find the evidence, not just the paper.
+        source = c.get("source") or {}
+        src = _claim_source_uri(source)
         if src is not None:
             g.add((cu, DCTERMS.references, src))
             g.add((cu, PROV.wasDerivedFrom, src))
+        if source.get("quote"):
+            g.add((cu, CAT.sourceQuote, Literal(source["quote"])))
+        if source.get("quote_source"):
+            g.add((cu, CAT.sourceQuoteFrom, Literal(source["quote_source"])))
+        for key, pred in (("figure", CAT.sourceFigure), ("table", CAT.sourceTable),
+                          ("page", CAT.sourcePage), ("section", CAT.sourceSection)):
+            if source.get(key):
+                g.add((cu, pred, Literal(source[key])))
         prov = c.get("provenance") or {}
         act = PART[f"{part['slug']}_claim_{c['id']}_provenance"]
         g.add((cu, PROV.wasGeneratedBy, act))
