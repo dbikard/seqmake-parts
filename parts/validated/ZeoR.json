@@ -61,57 +61,12 @@
           "[2]"
         ]
       }
-    },
-    {
-      "type": "protein_domain",
-      "start": 2,
-      "end": 121,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "VOC / glyoxalase-bleomycin-resistance fold domain"
-        ],
-        "parent": [
-          "ZeoR"
-        ],
-        "note": [
-          "Two-half alpha/beta fold of the VOC/glyoxalase-bleomycin-resistance superfamily (UniProt P17493 DOMAIN 3-121, PROSITE-ProRule PRU01163; Pfam PF19581; InterPr..."
-        ],
-        "db_xref": [
-          "SO:0000417"
-        ],
-        "citation": [
-          "[3]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 0,
-      "end": 8,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "N-terminal domain-swap dimerization arm"
-        ],
-        "parent": [
-          "ZeoR"
-        ],
-        "note": [
-          "The ~8 N-terminal residues form the swapped arm that crosses to the partner subunit in the functional Sh ble homodimer (mutual chain exchange; Dumas et al."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[3]"
-        ]
-      }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
   },
   "functional_claims": [
     {

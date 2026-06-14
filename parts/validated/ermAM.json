@@ -72,106 +72,12 @@
           "[2]"
         ]
       }
-    },
-    {
-      "type": "protein_domain",
-      "start": 0,
-      "end": 180,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Catalytic / SAM-binding domain"
-        ],
-        "parent": [
-          "ermAM"
-        ],
-        "note": [
-          "N-terminal lobe of the bilobal ErmAM structure (NMR, Yu et al."
-        ],
-        "db_xref": [
-          "SO:0000417"
-        ],
-        "citation": [
-          "[3]",
-          "[4]"
-        ]
-      }
-    },
-    {
-      "type": "protein_domain",
-      "start": 180,
-      "end": 245,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Substrate / 23S rRNA-binding domain"
-        ],
-        "parent": [
-          "ermAM"
-        ],
-        "note": [
-          "C-terminal lobe of the bilobal ErmAM structure (Yu et al."
-        ],
-        "db_xref": [
-          "SO:0000417"
-        ],
-        "citation": [
-          "[3]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 36,
-      "end": 41,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Motif I / G-loop"
-        ],
-        "parent": [
-          "ermAM"
-        ],
-        "note": [
-          "Canonical glycine-rich Motif I 'G-loop' (G-X-G-X-G), here GTGKG, in the beta1-alphaA loop of the catalytic domain; binds the methionine/ribose moiety of the ..."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[3]",
-          "[4]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 99,
-      "end": 103,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Motif IV catalytic motif"
-        ],
-        "parent": [
-          "ermAM"
-        ],
-        "note": [
-          "Conserved Motif IV of N6-adenine methyltransferases, (N/D/S)-(I/P)-P-(Y/F/W/H); in ErmAM the relaxed Erm-family form SIPY with the conserved Pro and an aroma..."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[4]",
-          "[5]"
-        ]
-      }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
   },
   "functional_claims": [
     {

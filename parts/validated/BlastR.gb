@@ -56,67 +56,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P0C2P0"
                      /citation=[1]
-     misc_feature    56
-                     /label="Active site Glu56"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 ACT_SITE=56 'Proton donor'."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
-     misc_feature    54
-                     /label="Zinc-binding Cys54"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=54, ligand catalytic Zn(2+)."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
-     misc_feature    88
-                     /label="Zinc-binding Cys88"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=88, ligand catalytic Zn(2+)."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
-     misc_feature    91
-                     /label="Zinc-binding Cys91"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=91, ligand catalytic Zn(2+)."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
-     misc_feature    28
-                     /label="Substrate-binding Ser28"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=28 'substrate'."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-     misc_feature    82
-                     /label="Substrate-binding Arg82"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=82 'substrate'."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-     misc_feature    126
-                     /label="Substrate-binding Tyr126"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=126 'substrate'."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-                     /citation=[4]
-     misc_feature    128
-                     /label="Substrate-binding Trp128"
-                     /parent="BlastR"
-                     /note="UniProt P0C2P0 BINDING=128 'substrate'."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-                     /citation=[4]
-     misc_feature    126..130
-                     /label="Flexible C-terminal substrate-access region"
-                     /parent="BlastR"
-                     /note="Flexible C-terminal region (Tyr126-Gly130)."
-                     /db_xref="SO:0000110"
-                     /citation=[4]
-                     /citation=[3]
 ORIGIN
         1 mplsqeestl ieratatins ipisedysva saalssdgri ftgvnvyhft ggpcaelvvl
        61 gtaaaaaagn ltcivaigne nrgilspcgr crqvlldlhp gikaivkdsd gqptavgire

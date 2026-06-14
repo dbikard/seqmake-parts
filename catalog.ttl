@@ -271,19 +271,11 @@ part:BlastR a sbol:Component ;
         pubmed:8159161 ;
     dcterms:title "BlastR" ;
     sbol:displayId "BlastR" ;
-    sbol:hasFeature part:BlastR_feature_0,
-        part:BlastR_feature_1,
-        part:BlastR_feature_2,
-        part:BlastR_feature_3,
-        part:BlastR_feature_4,
-        part:BlastR_feature_5,
-        part:BlastR_feature_6,
-        part:BlastR_feature_7,
-        part:BlastR_feature_8 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:BlastR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P0C2P0> ;
     skos:altLabel "BSD",
         "blasticidin S deaminase",
         "bsd" ;
@@ -397,13 +389,11 @@ part:CmR a sbol:Component ;
         pubmed:390403 ;
     dcterms:title "CmR" ;
     sbol:displayId "CmR" ;
-    sbol:hasFeature part:CmR_feature_0,
-        part:CmR_feature_1,
-        part:CmR_feature_2 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:CmR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P62577> ;
     skos:altLabel "CAT",
         "cat",
         "chloramphenicol acetyltransferase" ;
@@ -456,17 +446,11 @@ part:DhfR a sbol:Component ;
         pubmed:6308574 ;
     dcterms:title "DhfR" ;
     sbol:displayId "DhfR" ;
-    sbol:hasFeature part:DhfR_feature_0,
-        part:DhfR_feature_1,
-        part:DhfR_feature_2,
-        part:DhfR_feature_3,
-        part:DhfR_feature_4,
-        part:DhfR_feature_5,
-        part:DhfR_feature_6 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:DhfR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P00382> ;
     skos:altLabel "DHFR",
         "DfrA",
         "TmpR",
@@ -687,12 +671,11 @@ part:GmR a sbol:Component ;
         pubmed:9727487 ;
     dcterms:title "GmR" ;
     sbol:displayId "GmR" ;
-    sbol:hasFeature part:GmR_feature_0,
-        part:GmR_feature_1 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:GmR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P23181> ;
     skos:altLabel "GentR",
         "Gentamicin R",
         "aacC1",
@@ -727,6 +710,7 @@ part:HIS3 a sbol:Component ;
     sbol:hasSequence part:HIS3_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P06633> ;
     skos:altLabel "His3",
         "IGPD",
         "imidazoleglycerol-phosphate dehydratase" ;
@@ -784,14 +768,11 @@ part:HygR a sbol:Component ;
         pubmed:6319235 ;
     dcterms:title "HygR" ;
     sbol:displayId "HygR" ;
-    sbol:hasFeature part:HygR_feature_0,
-        part:HygR_feature_1,
-        part:HygR_feature_2,
-        part:HygR_feature_3 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:HygR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P00557> ;
     skos:altLabel "APH(4)-Ia",
         "HPT",
         "hph",
@@ -881,6 +862,7 @@ part:LEU2 a sbol:Component ;
     sbol:hasSequence part:LEU2_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P04173> ;
     skos:altLabel "3-isopropylmalate dehydrogenase",
         "Leu2",
         "beta-IPM dehydrogenase" ;
@@ -1479,17 +1461,11 @@ part:PuroR a sbol:Component ;
         pubmed:3714487 ;
     dcterms:title "PuroR" ;
     sbol:displayId "PuroR" ;
-    sbol:hasFeature part:PuroR_feature_0,
-        part:PuroR_feature_1,
-        part:PuroR_feature_2,
-        part:PuroR_feature_3,
-        part:PuroR_feature_4,
-        part:PuroR_feature_5,
-        part:PuroR_feature_6 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:PuroR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P13249> ;
     skos:altLabel "PAC",
         "pac",
         "puromycin N-acetyltransferase" ;
@@ -1999,6 +1975,7 @@ part:TRP1 a sbol:Component ;
     sbol:hasSequence part:TRP1_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P00912> ;
     skos:altLabel "N-(5'-phosphoribosyl)anthranilate isomerase",
         "PRAI",
         "Trp1" ;
@@ -2018,30 +1995,11 @@ part:TetA a sbol:Component ;
         pubmed:6307828 ;
     dcterms:title "TetA" ;
     sbol:displayId "TetA" ;
-    sbol:hasFeature part:TetA_feature_0,
-        part:TetA_feature_1,
-        part:TetA_feature_10,
-        part:TetA_feature_11,
-        part:TetA_feature_12,
-        part:TetA_feature_13,
-        part:TetA_feature_14,
-        part:TetA_feature_15,
-        part:TetA_feature_16,
-        part:TetA_feature_17,
-        part:TetA_feature_18,
-        part:TetA_feature_19,
-        part:TetA_feature_2,
-        part:TetA_feature_3,
-        part:TetA_feature_4,
-        part:TetA_feature_5,
-        part:TetA_feature_6,
-        part:TetA_feature_7,
-        part:TetA_feature_8,
-        part:TetA_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:TetA_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P02981> ;
     skos:altLabel "tetA",
         "tetracycline efflux pump",
         "tetracycline resistance protein" ;
@@ -2131,12 +2089,11 @@ part:ZeoR a sbol:Component ;
         pubmed:7516875 ;
     dcterms:title "ZeoR" ;
     sbol:displayId "ZeoR" ;
-    sbol:hasFeature part:ZeoR_feature_0,
-        part:ZeoR_feature_1 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:ZeoR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P17493> ;
     skos:altLabel "BleoR",
         "Sh ble",
         "ble",
@@ -2154,23 +2111,11 @@ part:aadA a sbol:Component ;
         pubmed:29871922 ;
     dcterms:title "aadA" ;
     sbol:displayId "aadA" ;
-    sbol:hasFeature part:aadA_feature_0,
-        part:aadA_feature_1,
-        part:aadA_feature_10,
-        part:aadA_feature_11,
-        part:aadA_feature_12,
-        part:aadA_feature_2,
-        part:aadA_feature_3,
-        part:aadA_feature_4,
-        part:aadA_feature_5,
-        part:aadA_feature_6,
-        part:aadA_feature_7,
-        part:aadA_feature_8,
-        part:aadA_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:aadA_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P0AG05> ;
     skos:altLabel "ANT(3'')(9)",
         "AadA",
         "SmR",
@@ -2275,18 +2220,11 @@ part:bla a sbol:Component ;
         pubmed:9020874 ;
     dcterms:title "bla" ;
     sbol:displayId "bla" ;
-    sbol:hasFeature part:bla_feature_0,
-        part:bla_feature_1,
-        part:bla_feature_2,
-        part:bla_feature_3,
-        part:bla_feature_4,
-        part:bla_feature_5,
-        part:bla_feature_6,
-        part:bla_feature_7 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:bla_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P62593> ;
     skos:altLabel "AmpR",
         "TEM-1",
         "amp",
@@ -2385,19 +2323,11 @@ part:cas9 a sbol:Component ;
     rdfs:label "cas9" ;
     dcterms:title "cas9" ;
     sbol:displayId "cas9" ;
-    sbol:hasFeature part:cas9_feature_0,
-        part:cas9_feature_1,
-        part:cas9_feature_2,
-        part:cas9_feature_3,
-        part:cas9_feature_4,
-        part:cas9_feature_5,
-        part:cas9_feature_6,
-        part:cas9_feature_7,
-        part:cas9_feature_8 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:cas9_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q99ZW2> ;
     skos:altLabel "Cas9",
         "SpCas9",
         "SpyCas9",
@@ -2452,21 +2382,11 @@ part:dCas9 a sbol:Component ;
     rdfs:label "dCas9" ;
     dcterms:title "dCas9" ;
     sbol:displayId "dCas9" ;
-    sbol:hasFeature part:dCas9_feature_0,
-        part:dCas9_feature_1,
-        part:dCas9_feature_10,
-        part:dCas9_feature_2,
-        part:dCas9_feature_3,
-        part:dCas9_feature_4,
-        part:dCas9_feature_5,
-        part:dCas9_feature_6,
-        part:dCas9_feature_7,
-        part:dCas9_feature_8,
-        part:dCas9_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:dCas9_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q99ZW2> ;
     skos:altLabel "S. pyogenes dCas9",
         "SpdCas9",
         "dCas9",
@@ -2474,7 +2394,8 @@ part:dCas9 a sbol:Component ;
         "nuclease-dead Cas9" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "dCas9" .
+    cat:slug "dCas9" ;
+    cat:sourceAccession "UniProt:Q99ZW2" .
 
 part:enterokinase_site a sbol:Component ;
     rdfs:label "enterokinase site" ;
@@ -2504,14 +2425,11 @@ part:ermAM a sbol:Component ;
         pubmed:9187657 ;
     dcterms:title "ermAM" ;
     sbol:displayId "ermAM" ;
-    sbol:hasFeature part:ermAM_feature_0,
-        part:ermAM_feature_1,
-        part:ermAM_feature_2,
-        part:ermAM_feature_3 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:ermAM_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P21236> ;
     skos:altLabel "ermB" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -2635,16 +2553,11 @@ part:kanR_Tn5 a sbol:Component ;
         pubmed:6295884 ;
     dcterms:title "kanR (Tn5)" ;
     sbol:displayId "kanR_Tn5" ;
-    sbol:hasFeature part:kanR_Tn5_feature_0,
-        part:kanR_Tn5_feature_1,
-        part:kanR_Tn5_feature_2,
-        part:kanR_Tn5_feature_3,
-        part:kanR_Tn5_feature_4,
-        part:kanR_Tn5_feature_5 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:kanR_Tn5_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P00552> ;
     skos:altLabel "APH(3')-II",
         "NeoR",
         "NeoR/KanR",
@@ -3258,6 +3171,7 @@ part:rop a sbol:Component ;
     sbol:hasSequence part:rop_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P03051> ;
     skos:altLabel "ColE1 Rop",
         "RNA one modulator",
         "Rop/Rom",
@@ -3589,129 +3503,11 @@ part:BlastR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "BlastR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:BlastR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10833262,
-        pubmed:17959604 ;
-    dcterms:title "Active site Glu56" ;
-    sbol:displayId "BlastR_feature_0" ;
-    sbol:hasLocation part:BlastR_feature_0_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_0_range a sbol:Range ;
-    sbol:end 56 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 56 .
-
-part:BlastR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10833262,
-        pubmed:17959604 ;
-    dcterms:title "Zinc-binding Cys54" ;
-    sbol:displayId "BlastR_feature_1" ;
-    sbol:hasLocation part:BlastR_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_1_range a sbol:Range ;
-    sbol:end 54 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 54 .
-
-part:BlastR_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10833262,
-        pubmed:17959604 ;
-    dcterms:title "Zinc-binding Cys88" ;
-    sbol:displayId "BlastR_feature_2" ;
-    sbol:hasLocation part:BlastR_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_2_range a sbol:Range ;
-    sbol:end 88 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 88 .
-
-part:BlastR_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10833262,
-        pubmed:17959604 ;
-    dcterms:title "Zinc-binding Cys91" ;
-    sbol:displayId "BlastR_feature_3" ;
-    sbol:hasLocation part:BlastR_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_3_range a sbol:Range ;
-    sbol:end 91 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 91 .
-
-part:BlastR_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:17959604 ;
-    dcterms:title "Substrate-binding Ser28" ;
-    sbol:displayId "BlastR_feature_4" ;
-    sbol:hasLocation part:BlastR_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_4_range a sbol:Range ;
-    sbol:end 28 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 28 .
-
-part:BlastR_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:17959604 ;
-    dcterms:title "Substrate-binding Arg82" ;
-    sbol:displayId "BlastR_feature_5" ;
-    sbol:hasLocation part:BlastR_feature_5_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_5_range a sbol:Range ;
-    sbol:end 82 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 82 .
-
-part:BlastR_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11779186,
-        pubmed:17959604 ;
-    dcterms:title "Substrate-binding Tyr126" ;
-    sbol:displayId "BlastR_feature_6" ;
-    sbol:hasLocation part:BlastR_feature_6_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_6_range a sbol:Range ;
-    sbol:end 126 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 126 .
-
-part:BlastR_feature_7 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11779186,
-        pubmed:17959604 ;
-    dcterms:title "Substrate-binding Trp128" ;
-    sbol:displayId "BlastR_feature_7" ;
-    sbol:hasLocation part:BlastR_feature_7_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_7_range a sbol:Range ;
-    sbol:end 128 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 128 .
-
-part:BlastR_feature_8 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11779186,
-        pubmed:17959604 ;
-    dcterms:title "Flexible C-terminal substrate-access region" ;
-    sbol:displayId "BlastR_feature_8" ;
-    sbol:hasLocation part:BlastR_feature_8_range ;
-    sbol:role so:0000110 .
-
-part:BlastR_feature_8_range a sbol:Range ;
-    sbol:end 130 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:BlastR_sequence ;
-    sbol:start 126 .
+part:BlastR_sequence a sbol:Sequence ;
+    sbol:displayId "BlastR_sequence" ;
+    sbol:elements "MPLSQEESTLIERATATINSIPISEDYSVASAALSSDGRIFTGVNVYHFTGGPCAELVVLGTAAAAAAGNLTCIVAIGNENRGILSPCGRCRQVLLDLHPGIKAIVKDSDGQPTAVGIRELLPSGYVWEG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:CAG_sequence a sbol:Sequence ;
     sbol:displayId "CAG_sequence" ;
@@ -3789,47 +3585,11 @@ part:CmR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "CmR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:CmR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2187098,
-        pubmed:22294317 ;
-    dcterms:title "Active site His193" ;
-    sbol:displayId "CmR_feature_0" ;
-    sbol:hasLocation part:CmR_feature_0_range ;
-    sbol:role so:0000110 .
-
-part:CmR_feature_0_range a sbol:Range ;
-    sbol:end 193 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:CmR_sequence ;
-    sbol:start 193 .
-
-part:CmR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2109633,
-        pubmed:22294317 ;
-    dcterms:title "Oxyanion-hole stabilizing Ser146" ;
-    sbol:displayId "CmR_feature_1" ;
-    sbol:hasLocation part:CmR_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:CmR_feature_1_range a sbol:Range ;
-    sbol:end 146 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:CmR_sequence ;
-    sbol:start 146 .
-
-part:CmR_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2187098,
-        pubmed:22294317 ;
-    dcterms:title "His-positioning acidic residue Asp197" ;
-    sbol:displayId "CmR_feature_2" ;
-    sbol:hasLocation part:CmR_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:CmR_feature_2_range a sbol:Range ;
-    sbol:end 197 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:CmR_sequence ;
-    sbol:start 197 .
+part:CmR_sequence a sbol:Sequence ;
+    sbol:displayId "CmR_sequence" ;
+    sbol:elements "MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:ColE1_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
@@ -3927,102 +3687,11 @@ part:DhfR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "DhfR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:DhfR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:27624966,
-        pubmed:35562546 ;
-    dcterms:title "DHFR conserved-site signature" ;
-    sbol:displayId "DhfR_feature_0" ;
-    sbol:hasLocation part:DhfR_feature_0_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_0_range a sbol:Range ;
-    sbol:end 31 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 16 .
-
-part:DhfR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:35562546,
-        pubmed:6308574 ;
-    dcterms:title "Substrate/cofactor loop" ;
-    sbol:displayId "DhfR_feature_1" ;
-    sbol:hasLocation part:DhfR_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_1_range a sbol:Range ;
-    sbol:end 24 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 16 .
-
-part:DhfR_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:27624966,
-        pubmed:35562546 ;
-    dcterms:title "Catalytic acidic residue" ;
-    sbol:displayId "DhfR_feature_2" ;
-    sbol:hasLocation part:DhfR_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_2_range a sbol:Range ;
-    sbol:end 28 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 28 .
-
-part:DhfR_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:27624966,
-        pubmed:35562546 ;
-    dcterms:title "Active-site residue" ;
-    sbol:displayId "DhfR_feature_3" ;
-    sbol:hasLocation part:DhfR_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_3_range a sbol:Range ;
-    sbol:end 29 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 29 .
-
-part:DhfR_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:27624966,
-        pubmed:35562546 ;
-    dcterms:title "Antifolate-stacking residue" ;
-    sbol:displayId "DhfR_feature_4" ;
-    sbol:hasLocation part:DhfR_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_4_range a sbol:Range ;
-    sbol:end 32 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 32 .
-
-part:DhfR_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:27624966,
-        pubmed:35562546 ;
-    dcterms:title "Hydrophobic inhibitor-pocket residues" ;
-    sbol:displayId "DhfR_feature_5" ;
-    sbol:hasLocation part:DhfR_feature_5_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_5_range a sbol:Range ;
-    sbol:end 54 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 51 .
-
-part:DhfR_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:35562546 ;
-    dcterms:title "Conserved pteridine-binding glycine-rich turn" ;
-    sbol:displayId "DhfR_feature_6" ;
-    sbol:hasLocation part:DhfR_feature_6_range ;
-    sbol:role so:0000110 .
-
-part:DhfR_feature_6_range a sbol:Range ;
-    sbol:end 101 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:DhfR_sequence ;
-    sbol:start 98 .
+part:DhfR_sequence a sbol:Sequence ;
+    sbol:displayId "DhfR_sequence" ;
+    sbol:elements "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:DsRed2_sequence a sbol:Sequence ;
     sbol:displayId "DsRed2_sequence" ;
@@ -4119,34 +3788,11 @@ part:GmR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "GmR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:GmR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:15581578,
-        pubmed:2549372,
-        pubmed:9727487 ;
-    dcterms:title "N-acetyltransferase" ;
-    sbol:displayId "GmR_feature_0" ;
-    sbol:hasLocation part:GmR_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:GmR_feature_0_range a sbol:Range ;
-    sbol:end 177 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:GmR_sequence ;
-    sbol:start 25 .
-
-part:GmR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:15581578,
-        pubmed:9727487 ;
-    dcterms:title "GNAT motif A" ;
-    sbol:displayId "GmR_feature_1" ;
-    sbol:hasLocation part:GmR_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:GmR_feature_1_range a sbol:Range ;
-    sbol:end 123 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:GmR_sequence ;
-    sbol:start 118 .
+part:GmR_sequence a sbol:Sequence ;
+    sbol:displayId "GmR_sequence" ;
+    sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:HA_sequence a sbol:Sequence ;
     sbol:displayId "HA_sequence" ;
@@ -4195,59 +3841,11 @@ part:HygR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "HygR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:HygR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:21084294 ;
-    dcterms:title "N-terminal lobe" ;
-    sbol:displayId "HygR_feature_0" ;
-    sbol:hasLocation part:HygR_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:HygR_feature_0_range a sbol:Range ;
-    sbol:end 92 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:HygR_sequence ;
-    sbol:start 7 .
-
-part:HygR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:21084294 ;
-    dcterms:title "C-terminal lobe" ;
-    sbol:displayId "HygR_feature_1" ;
-    sbol:hasLocation part:HygR_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:HygR_feature_1_range a sbol:Range ;
-    sbol:end 301 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:HygR_sequence ;
-    sbol:start 99 .
-
-part:HygR_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:21084294,
-        pubmed:23747390 ;
-    dcterms:title "Catalytic loop" ;
-    sbol:displayId "HygR_feature_2" ;
-    sbol:hasLocation part:HygR_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:HygR_feature_2_range a sbol:Range ;
-    sbol:end 203 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:HygR_sequence ;
-    sbol:start 196 .
-
-part:HygR_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:21084294,
-        pubmed:23747390 ;
-    dcterms:title "Mg2+-binding aspartate" ;
-    sbol:displayId "HygR_feature_3" ;
-    sbol:hasLocation part:HygR_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:HygR_feature_3_range a sbol:Range ;
-    sbol:end 218 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:HygR_sequence ;
-    sbol:start 215 .
+part:HygR_sequence a sbol:Sequence ;
+    sbol:displayId "HygR_sequence" ;
+    sbol:elements "MKKPELTATSVEKFLIEKFDSVSDLMQLSEGEESRAFSFDVGGRGYVLRVNSCADGFYKDRYVYRHFASAALPIPEVLDIGEFSESLTYCISRRAQGVTLQDLPETELPAVLQPVAEAMDAIAAADLSQTSGFGPFGPQGIGQYTTWRDFICAIADPHVYHWQTVMDDTVSASVAQALDELMLWAEDCPEVRHLVHADFGSNNVLTDNGRITAVIDWSEAMFGDSQYEVANIFFWRPWLACMEQQTRYFERRHPELAGSPRLRAYMLRIGLDQLYQSLVDGNFDDAAWAQGRCDAIVRSGAGTVGRTQIARRSAAVWTDGCVEVLADSGNRRPSTRPRAKE" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:I-SceI_site_sequence a sbol:Sequence ;
     sbol:displayId "I-SceI_site_sequence" ;
@@ -5984,96 +5582,11 @@ part:PuroR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "PuroR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:PuroR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "GNAT N-acetyltransferase domain" ;
-    sbol:displayId "PuroR_feature_0" ;
-    sbol:hasLocation part:PuroR_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:PuroR_feature_0_range a sbol:Range ;
-    sbol:end 198 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 6 .
-
-part:PuroR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "Acceptor-entry alpha-helical hairpin" ;
-    sbol:displayId "PuroR_feature_1" ;
-    sbol:hasLocation part:PuroR_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:PuroR_feature_1_range a sbol:Range ;
-    sbol:end 116 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 84 .
-
-part:PuroR_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "P-loop" ;
-    sbol:displayId "PuroR_feature_2" ;
-    sbol:hasLocation part:PuroR_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:PuroR_feature_2_range a sbol:Range ;
-    sbol:end 140 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 135 .
-
-part:PuroR_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "Catalytic general acid Tyr171" ;
-    sbol:displayId "PuroR_feature_3" ;
-    sbol:hasLocation part:PuroR_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:PuroR_feature_3_range a sbol:Range ;
-    sbol:end 171 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 171 .
-
-part:PuroR_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "Acetyl-CoA contact residue Asn167" ;
-    sbol:displayId "PuroR_feature_4" ;
-    sbol:hasLocation part:PuroR_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:PuroR_feature_4_range a sbol:Range ;
-    sbol:end 167 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 167 .
-
-part:PuroR_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "Puromycin" ;
-    sbol:displayId "PuroR_feature_5" ;
-    sbol:hasLocation part:PuroR_feature_5_range ;
-    sbol:role so:0000110 .
-
-part:PuroR_feature_5_range a sbol:Range ;
-    sbol:end 77 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 77 .
-
-part:PuroR_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:33664348 ;
-    dcterms:title "Candidate distal general base Glu161" ;
-    sbol:displayId "PuroR_feature_6" ;
-    sbol:hasLocation part:PuroR_feature_6_range ;
-    sbol:role so:0000110 .
-
-part:PuroR_feature_6_range a sbol:Range ;
-    sbol:end 161 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:PuroR_sequence ;
-    sbol:start 161 .
+part:PuroR_sequence a sbol:Sequence ;
+    sbol:displayId "PuroR_sequence" ;
+    sbol:elements "MTEYKPTVRLATRDDVPRAVRTLAAAFADYPATRHTVDPDRHIERVTELQELFLTRVGLDIGKVWVADDGAAVAVWTTPESVEAGAVFAEIGPRMAELSGSRLAAQQQMEGLLAPHRPKEPAWFLATVGVSPDHQGKGLGSAVVLPGVEAAERAGVPAFLETSAPRNLPFYERLGFTVTADVEVPEGPRTWCMTRKPGA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:Pxyl_tet_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "TetR-repressible / anhydrotetracycline (aTc)-inducible (S. aureus pRAB)." ;
@@ -6475,277 +5988,11 @@ part:TetA_claim_function_provenance a prov:Activity ;
     cat:fromDoc "TetA.md" ;
     cat:method "transcribed-from-doc" .
 
-part:TetA_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM1" ;
-    sbol:displayId "TetA_feature_0" ;
-    sbol:hasLocation part:TetA_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_0_range a sbol:Range ;
-    sbol:end 27 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 7 .
-
-part:TetA_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM2" ;
-    sbol:displayId "TetA_feature_1" ;
-    sbol:hasLocation part:TetA_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_10 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM11" ;
-    sbol:displayId "TetA_feature_10" ;
-    sbol:hasLocation part:TetA_feature_10_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_10_range a sbol:Range ;
-    sbol:end 360 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 340 .
-
-part:TetA_feature_11 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM12" ;
-    sbol:displayId "TetA_feature_11" ;
-    sbol:hasLocation part:TetA_feature_11_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_11_range a sbol:Range ;
-    sbol:end 385 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 365 .
-
-part:TetA_feature_12 a sbol:SequenceFeature ;
-    dcterms:references pubmed:14702405 ;
-    dcterms:title "Tet-efflux/MFS Motif A" ;
-    sbol:displayId "TetA_feature_12" ;
-    sbol:hasLocation part:TetA_feature_12_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_12_range a sbol:Range ;
-    sbol:end 73 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 64 .
-
-part:TetA_feature_13 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220 ;
-    dcterms:title "Asp17" ;
-    sbol:displayId "TetA_feature_13" ;
-    sbol:hasLocation part:TetA_feature_13_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_13_range a sbol:Range ;
-    sbol:end 17 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 17 .
-
-part:TetA_feature_14 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220 ;
-    dcterms:title "Asp86" ;
-    sbol:displayId "TetA_feature_14" ;
-    sbol:hasLocation part:TetA_feature_14_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_14_range a sbol:Range ;
-    sbol:end 86 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 86 .
-
-part:TetA_feature_15 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220 ;
-    dcterms:title "Asp287" ;
-    sbol:displayId "TetA_feature_15" ;
-    sbol:hasLocation part:TetA_feature_15_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_15_range a sbol:Range ;
-    sbol:end 287 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 287 .
-
-part:TetA_feature_16 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10049405 ;
-    dcterms:title "Cys59" ;
-    sbol:displayId "TetA_feature_16" ;
-    sbol:hasLocation part:TetA_feature_16_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_16_range a sbol:Range ;
-    sbol:end 59 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 59 .
-
-part:TetA_feature_17 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10049405 ;
-    dcterms:title "Cys139" ;
-    sbol:displayId "TetA_feature_17" ;
-    sbol:hasLocation part:TetA_feature_17_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_17_range a sbol:Range ;
-    sbol:end 139 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 139 .
-
-part:TetA_feature_18 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10049405 ;
-    dcterms:title "Cys178" ;
-    sbol:displayId "TetA_feature_18" ;
-    sbol:hasLocation part:TetA_feature_18_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_18_range a sbol:Range ;
-    sbol:end 178 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 178 .
-
-part:TetA_feature_19 a sbol:SequenceFeature ;
-    dcterms:references pubmed:10049405 ;
-    dcterms:title "Cys381" ;
-    sbol:displayId "TetA_feature_19" ;
-    sbol:hasLocation part:TetA_feature_19_range ;
-    sbol:role so:0000110 .
-
-part:TetA_feature_19_range a sbol:Range ;
-    sbol:end 381 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 381 .
-
-part:TetA_feature_1_range a sbol:Range ;
-    sbol:end 66 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 46 .
-
-part:TetA_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM3" ;
-    sbol:displayId "TetA_feature_2" ;
-    sbol:hasLocation part:TetA_feature_2_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_2_range a sbol:Range ;
-    sbol:end 100 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 80 .
-
-part:TetA_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM4" ;
-    sbol:displayId "TetA_feature_3" ;
-    sbol:hasLocation part:TetA_feature_3_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_3_range a sbol:Range ;
-    sbol:end 124 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 104 .
-
-part:TetA_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM5" ;
-    sbol:displayId "TetA_feature_4" ;
-    sbol:hasLocation part:TetA_feature_4_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_4_range a sbol:Range ;
-    sbol:end 159 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 139 .
-
-part:TetA_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM6" ;
-    sbol:displayId "TetA_feature_5" ;
-    sbol:hasLocation part:TetA_feature_5_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_5_range a sbol:Range ;
-    sbol:end 181 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 161 .
-
-part:TetA_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM7" ;
-    sbol:displayId "TetA_feature_6" ;
-    sbol:hasLocation part:TetA_feature_6_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_6_range a sbol:Range ;
-    sbol:end 231 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 211 .
-
-part:TetA_feature_7 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM8" ;
-    sbol:displayId "TetA_feature_7" ;
-    sbol:hasLocation part:TetA_feature_7_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_7_range a sbol:Range ;
-    sbol:end 267 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 247 .
-
-part:TetA_feature_8 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM9" ;
-    sbol:displayId "TetA_feature_8" ;
-    sbol:hasLocation part:TetA_feature_8_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_8_range a sbol:Range ;
-    sbol:end 298 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 278 .
-
-part:TetA_feature_9 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1517220,
-        pubmed:2545678 ;
-    dcterms:title "TM10" ;
-    sbol:displayId "TetA_feature_9" ;
-    sbol:hasLocation part:TetA_feature_9_range ;
-    sbol:role so:0000417 .
-
-part:TetA_feature_9_range a sbol:Range ;
-    sbol:end 320 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:TetA_sequence ;
-    sbol:start 300 .
+part:TetA_sequence a sbol:Sequence ;
+    sbol:displayId "TetA_sequence" ;
+    sbol:elements "MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHYGVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRIVAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPFLAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSITGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:UGI_sequence a sbol:Sequence ;
     sbol:displayId "UGI_sequence" ;
@@ -6800,31 +6047,11 @@ part:ZeoR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "ZeoR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:ZeoR_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:7516875 ;
-    dcterms:title "VOC / glyoxalase-bleomycin-resistance fold domain" ;
-    sbol:displayId "ZeoR_feature_0" ;
-    sbol:hasLocation part:ZeoR_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:ZeoR_feature_0_range a sbol:Range ;
-    sbol:end 121 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ZeoR_sequence ;
-    sbol:start 3 .
-
-part:ZeoR_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:7516875 ;
-    dcterms:title "N-terminal domain-swap dimerization arm" ;
-    sbol:displayId "ZeoR_feature_1" ;
-    sbol:hasLocation part:ZeoR_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:ZeoR_feature_1_range a sbol:Range ;
-    sbol:end 8 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ZeoR_sequence ;
-    sbol:start 1 .
+part:ZeoR_sequence a sbol:Sequence ;
+    sbol:displayId "ZeoR_sequence" ;
+    sbol:elements "MAKLTSAVPVLTARDVAGAVEFWTDRLGFSRDFVEDDFAGVVRDDVTLFISAVQDQVVPDNTLAWVWVRGLDELYAEWSEVVSTNFRDASGPAMTEIGEQPWGREFALRDPAGNCVHFVAEEQD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:aadA_claim_function a cat:FunctionalClaim ;
     rdfs:label "Confers streptomycin/spectinomycin resistance (aminoglycoside adenylyltransferase ANT(3'')(9))." ;
@@ -6843,177 +6070,11 @@ part:aadA_claim_function_provenance a prov:Activity ;
     cat:fromDoc "aadA.md" ;
     cat:method "transcribed-from-doc" .
 
-part:aadA_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "Nucleotidyltransferase domain" ;
-    sbol:displayId "aadA_feature_0" ;
-    sbol:hasLocation part:aadA_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:aadA_feature_0_range a sbol:Range ;
-    sbol:end 157 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 3 .
-
-part:aadA_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "AadA C-terminal domain" ;
-    sbol:displayId "aadA_feature_1" ;
-    sbol:hasLocation part:aadA_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:aadA_feature_10 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "Drug-binding residue Asp" ;
-    sbol:displayId "aadA_feature_10" ;
-    sbol:hasLocation part:aadA_feature_10_range .
-
-part:aadA_feature_10_range a sbol:Range ;
-    sbol:end 182 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 182 .
-
-part:aadA_feature_11 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "Streptomycin-binding residue Trp" ;
-    sbol:displayId "aadA_feature_11" ;
-    sbol:hasLocation part:aadA_feature_11_range .
-
-part:aadA_feature_11_range a sbol:Range ;
-    sbol:end 173 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 173 .
-
-part:aadA_feature_12 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "Streptomycin-binding residue Asp" ;
-    sbol:displayId "aadA_feature_12" ;
-    sbol:hasLocation part:aadA_feature_12_range .
-
-part:aadA_feature_12_range a sbol:Range ;
-    sbol:end 178 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 178 .
-
-part:aadA_feature_1_range a sbol:Range ;
-    sbol:end 263 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 158 .
-
-part:aadA_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "Catalytic base Glu" ;
-    sbol:displayId "aadA_feature_2" ;
-    sbol:hasLocation part:aadA_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_2_range a sbol:Range ;
-    sbol:end 87 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 87 .
-
-part:aadA_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "Mg2+-coordinating residue Asp" ;
-    sbol:displayId "aadA_feature_3" ;
-    sbol:hasLocation part:aadA_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_3_range a sbol:Range ;
-    sbol:end 47 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 47 .
-
-part:aadA_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "Mg2+-coordinating residue Asp (D49)" ;
-    sbol:displayId "aadA_feature_4" ;
-    sbol:hasLocation part:aadA_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_4_range a sbol:Range ;
-    sbol:end 49 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 49 .
-
-part:aadA_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "ATP ribose-binding residue Asp" ;
-    sbol:displayId "aadA_feature_5" ;
-    sbol:hasLocation part:aadA_feature_5_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_5_range a sbol:Range ;
-    sbol:end 130 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 130 .
-
-part:aadA_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "ATP phosphate-binding residue Arg" ;
-    sbol:displayId "aadA_feature_6" ;
-    sbol:hasLocation part:aadA_feature_6_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_6_range a sbol:Range ;
-    sbol:end 192 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 192 .
-
-part:aadA_feature_7 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26527143,
-        pubmed:29871922 ;
-    dcterms:title "ATP phosphate-binding residue Lys" ;
-    sbol:displayId "aadA_feature_7" ;
-    sbol:hasLocation part:aadA_feature_7_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_7_range a sbol:Range ;
-    sbol:end 205 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 205 .
-
-part:aadA_feature_8 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "ATP phosphate-binding residue Tyr" ;
-    sbol:displayId "aadA_feature_8" ;
-    sbol:hasLocation part:aadA_feature_8_range ;
-    sbol:role so:0000110 .
-
-part:aadA_feature_8_range a sbol:Range ;
-    sbol:end 231 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 231 .
-
-part:aadA_feature_9 a sbol:SequenceFeature ;
-    dcterms:references pubmed:29871922 ;
-    dcterms:title "Drug-binding residue Trp" ;
-    sbol:displayId "aadA_feature_9" ;
-    sbol:hasLocation part:aadA_feature_9_range .
-
-part:aadA_feature_9_range a sbol:Range ;
-    sbol:end 112 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:aadA_sequence ;
-    sbol:start 112 .
+part:aadA_sequence a sbol:Sequence ;
+    sbol:displayId "aadA_sequence" ;
+    sbol:elements "MREAVIAEVSTQLSEVVGVIERHLEPTLLAVHLYGSAVDGGLKPHSDIDLLVTVTVRLDETTRRALINDLLETSASPGESEILRAVEVTIVVHDDIIPWRYPAKRELQFGEWQRNDILAGIFEPATIDIDLAILLTKAREHSVALVGPAAEELFDPVPEQDLFEALNETLTLWNSPPDWAGDERNVVLTLSRIWYSAVTGKIAPKDVAADWAMERLPAQYQPVILEARQAYLGQEEDRLASRADQLEEFVHYVKGEITKVVGK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:acrII4A_sequence a sbol:Sequence ;
     sbol:displayId "acrII4A_sequence" ;
@@ -7074,116 +6135,11 @@ part:bla_claim_function_provenance a prov:Activity ;
     cat:fromDoc "bla.md" ;
     cat:method "transcribed-from-doc" .
 
-part:bla_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:383387 ;
-    dcterms:title "Signal peptide" ;
-    sbol:displayId "bla_feature_0" ;
-    sbol:hasLocation part:bla_feature_0_range .
-
-part:bla_feature_0_range a sbol:Range ;
-    sbol:end 23 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 1 .
-
-part:bla_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:8356032 ;
-    dcterms:title "Catalytic nucleophile Ser" ;
-    sbol:displayId "bla_feature_1" ;
-    sbol:hasLocation part:bla_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_1_range a sbol:Range ;
-    sbol:end 68 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 68 .
-
-part:bla_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:8356032 ;
-    dcterms:title "Catalytic general base Lys" ;
-    sbol:displayId "bla_feature_2" ;
-    sbol:hasLocation part:bla_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_2_range a sbol:Range ;
-    sbol:end 71 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 71 .
-
-part:bla_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:8356032 ;
-    dcterms:title "SDN loop catalytic Ser" ;
-    sbol:displayId "bla_feature_3" ;
-    sbol:hasLocation part:bla_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_3_range a sbol:Range ;
-    sbol:end 128 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 128 .
-
-part:bla_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:31835662,
-        pubmed:8356032 ;
-    dcterms:title "Omega-loop catalytic Glu" ;
-    sbol:displayId "bla_feature_4" ;
-    sbol:hasLocation part:bla_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_4_range a sbol:Range ;
-    sbol:end 164 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 164 .
-
-part:bla_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:2039479,
-        pubmed:8356032 ;
-    dcterms:title "Substrate-binding K-S-G" ;
-    sbol:displayId "bla_feature_5" ;
-    sbol:hasLocation part:bla_feature_5_range .
-
-part:bla_feature_5_range a sbol:Range ;
-    sbol:end 234 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 232 .
-
-part:bla_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:8356032,
-        pubmed:9020874 ;
-    dcterms:title "Disulfide bond Cys-Cys" ;
-    sbol:displayId "bla_feature_6" ;
-    sbol:hasLocation part:bla_feature_6_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_6_range a sbol:Range ;
-    sbol:end 75 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 75 .
-
-part:bla_feature_7 a sbol:SequenceFeature ;
-    dcterms:references pubmed:8356032,
-        pubmed:9020874 ;
-    dcterms:title "Disulfide bond Cys-Cys (Cys123)" ;
-    sbol:displayId "bla_feature_7" ;
-    sbol:hasLocation part:bla_feature_7_range ;
-    sbol:role so:0000110 .
-
-part:bla_feature_7_range a sbol:Range ;
-    sbol:end 121 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:bla_sequence ;
-    sbol:start 121 .
+part:bla_sequence a sbol:Sequence ;
+    sbol:displayId "bla_sequence" ;
+    sbol:elements "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:bom_sequence a sbol:Sequence ;
     sbol:displayId "bom_sequence" ;
@@ -7221,113 +6177,11 @@ part:cas2_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:cas9_feature_0 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-I" ;
-    sbol:displayId "cas9_feature_0" ;
-    sbol:hasLocation part:cas9_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_0_range a sbol:Range ;
-    sbol:end 58 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 1 .
-
-part:cas9_feature_1 a sbol:SequenceFeature ;
-    dcterms:title "Bridge helix" ;
-    sbol:displayId "cas9_feature_1" ;
-    sbol:hasLocation part:cas9_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_1_range a sbol:Range ;
-    sbol:end 93 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 60 .
-
-part:cas9_feature_2 a sbol:SequenceFeature ;
-    dcterms:title "REC1" ;
-    sbol:displayId "cas9_feature_2" ;
-    sbol:hasLocation part:cas9_feature_2_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_2_range a sbol:Range ;
-    sbol:end 179 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 94 .
-
-part:cas9_feature_3 a sbol:SequenceFeature ;
-    dcterms:title "REC2" ;
-    sbol:displayId "cas9_feature_3" ;
-    sbol:hasLocation part:cas9_feature_3_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_3_range a sbol:Range ;
-    sbol:end 307 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 180 .
-
-part:cas9_feature_4 a sbol:SequenceFeature ;
-    dcterms:title "REC3" ;
-    sbol:displayId "cas9_feature_4" ;
-    sbol:hasLocation part:cas9_feature_4_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_4_range a sbol:Range ;
-    sbol:end 713 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 308 .
-
-part:cas9_feature_5 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-II" ;
-    sbol:displayId "cas9_feature_5" ;
-    sbol:hasLocation part:cas9_feature_5_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_5_range a sbol:Range ;
-    sbol:end 765 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 718 .
-
-part:cas9_feature_6 a sbol:SequenceFeature ;
-    dcterms:title "HNH" ;
-    sbol:displayId "cas9_feature_6" ;
-    sbol:hasLocation part:cas9_feature_6_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_6_range a sbol:Range ;
-    sbol:end 908 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 775 .
-
-part:cas9_feature_7 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-III" ;
-    sbol:displayId "cas9_feature_7" ;
-    sbol:hasLocation part:cas9_feature_7_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_7_range a sbol:Range ;
-    sbol:end 1098 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 909 .
-
-part:cas9_feature_8 a sbol:SequenceFeature ;
-    dcterms:title "PI" ;
-    sbol:displayId "cas9_feature_8" ;
-    sbol:hasLocation part:cas9_feature_8_range ;
-    sbol:role so:0000417 .
-
-part:cas9_feature_8_range a sbol:Range ;
-    sbol:end 1368 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:cas9_sequence ;
-    sbol:start 1099 .
+part:cas9_sequence a sbol:Sequence ;
+    sbol:displayId "cas9_sequence" ;
+    sbol:elements "MDKKYSIGLDIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDHIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:catP_sequence a sbol:Sequence ;
     sbol:displayId "catP_sequence" ;
@@ -7347,137 +6201,11 @@ part:ccdB_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:dCas9_feature_0 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-I" ;
-    sbol:displayId "dCas9_feature_0" ;
-    sbol:hasLocation part:dCas9_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_0_range a sbol:Range ;
-    sbol:end 58 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 1 .
-
-part:dCas9_feature_1 a sbol:SequenceFeature ;
-    dcterms:title "Bridge helix" ;
-    sbol:displayId "dCas9_feature_1" ;
-    sbol:hasLocation part:dCas9_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_10 a sbol:SequenceFeature ;
-    dcterms:title "H840A" ;
-    sbol:displayId "dCas9_feature_10" ;
-    sbol:hasLocation part:dCas9_feature_10_range ;
-    sbol:role so:0000110 .
-
-part:dCas9_feature_10_range a sbol:Range ;
-    sbol:end 840 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 840 .
-
-part:dCas9_feature_1_range a sbol:Range ;
-    sbol:end 93 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 60 .
-
-part:dCas9_feature_2 a sbol:SequenceFeature ;
-    dcterms:title "REC1" ;
-    sbol:displayId "dCas9_feature_2" ;
-    sbol:hasLocation part:dCas9_feature_2_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_2_range a sbol:Range ;
-    sbol:end 179 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 94 .
-
-part:dCas9_feature_3 a sbol:SequenceFeature ;
-    dcterms:title "REC2" ;
-    sbol:displayId "dCas9_feature_3" ;
-    sbol:hasLocation part:dCas9_feature_3_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_3_range a sbol:Range ;
-    sbol:end 307 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 180 .
-
-part:dCas9_feature_4 a sbol:SequenceFeature ;
-    dcterms:title "REC3" ;
-    sbol:displayId "dCas9_feature_4" ;
-    sbol:hasLocation part:dCas9_feature_4_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_4_range a sbol:Range ;
-    sbol:end 713 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 308 .
-
-part:dCas9_feature_5 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-II" ;
-    sbol:displayId "dCas9_feature_5" ;
-    sbol:hasLocation part:dCas9_feature_5_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_5_range a sbol:Range ;
-    sbol:end 765 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 718 .
-
-part:dCas9_feature_6 a sbol:SequenceFeature ;
-    dcterms:title "HNH" ;
-    sbol:displayId "dCas9_feature_6" ;
-    sbol:hasLocation part:dCas9_feature_6_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_6_range a sbol:Range ;
-    sbol:end 908 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 775 .
-
-part:dCas9_feature_7 a sbol:SequenceFeature ;
-    dcterms:title "RuvC-III" ;
-    sbol:displayId "dCas9_feature_7" ;
-    sbol:hasLocation part:dCas9_feature_7_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_7_range a sbol:Range ;
-    sbol:end 1098 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 909 .
-
-part:dCas9_feature_8 a sbol:SequenceFeature ;
-    dcterms:title "PI" ;
-    sbol:displayId "dCas9_feature_8" ;
-    sbol:hasLocation part:dCas9_feature_8_range ;
-    sbol:role so:0000417 .
-
-part:dCas9_feature_8_range a sbol:Range ;
-    sbol:end 1368 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 1099 .
-
-part:dCas9_feature_9 a sbol:SequenceFeature ;
-    dcterms:title "D10A" ;
-    sbol:displayId "dCas9_feature_9" ;
-    sbol:hasLocation part:dCas9_feature_9_range ;
-    sbol:role so:0000110 .
-
-part:dCas9_feature_9_range a sbol:Range ;
-    sbol:end 10 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:dCas9_sequence ;
-    sbol:start 10 .
+part:dCas9_sequence a sbol:Sequence ;
+    sbol:displayId "dCas9_sequence" ;
+    sbol:elements "MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:enterokinase_site_sequence a sbol:Sequence ;
     sbol:displayId "enterokinase_site_sequence" ;
@@ -7502,60 +6230,11 @@ part:ermAM_claim_function_provenance a prov:Activity ;
     cat:fromDoc "ermAM.md" ;
     cat:method "transcribed-from-doc" .
 
-part:ermAM_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11959553,
-        pubmed:9187657 ;
-    dcterms:title "Catalytic / SAM-binding domain" ;
-    sbol:displayId "ermAM_feature_0" ;
-    sbol:hasLocation part:ermAM_feature_0_range ;
-    sbol:role so:0000417 .
-
-part:ermAM_feature_0_range a sbol:Range ;
-    sbol:end 180 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ermAM_sequence ;
-    sbol:start 1 .
-
-part:ermAM_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:9187657 ;
-    dcterms:title "Substrate / 23S rRNA-binding domain" ;
-    sbol:displayId "ermAM_feature_1" ;
-    sbol:hasLocation part:ermAM_feature_1_range ;
-    sbol:role so:0000417 .
-
-part:ermAM_feature_1_range a sbol:Range ;
-    sbol:end 245 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ermAM_sequence ;
-    sbol:start 181 .
-
-part:ermAM_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11959553,
-        pubmed:9187657 ;
-    dcterms:title "Motif I / G-loop" ;
-    sbol:displayId "ermAM_feature_2" ;
-    sbol:hasLocation part:ermAM_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:ermAM_feature_2_range a sbol:Range ;
-    sbol:end 41 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ermAM_sequence ;
-    sbol:start 37 .
-
-part:ermAM_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:11959553,
-        pubmed:12946350 ;
-    dcterms:title "Motif IV catalytic motif" ;
-    sbol:displayId "ermAM_feature_3" ;
-    sbol:hasLocation part:ermAM_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:ermAM_feature_3_range a sbol:Range ;
-    sbol:end 103 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:ermAM_sequence ;
-    sbol:start 100 .
+part:ermAM_sequence a sbol:Sequence ;
+    sbol:displayId "ermAM_sequence" ;
+    sbol:elements "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTVTYEQVLSIFNSYLLFNGRK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:ermR_sequence a sbol:Sequence ;
     sbol:displayId "ermR_sequence" ;
@@ -7616,84 +6295,11 @@ part:kanR_Tn5_claim_function_provenance a prov:Activity ;
     cat:fromDoc "kanR_Tn5.md" ;
     cat:method "transcribed-from-doc" .
 
-part:kanR_Tn5_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253,
-        pubmed:32250119 ;
-    dcterms:title "Active site Asp190" ;
-    sbol:displayId "kanR_Tn5_feature_0" ;
-    sbol:hasLocation part:kanR_Tn5_feature_0_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_0_range a sbol:Range ;
-    sbol:end 190 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 190 .
-
-part:kanR_Tn5_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253 ;
-    dcterms:title "Catalytic loop / Brenner motif" ;
-    sbol:displayId "kanR_Tn5_feature_1" ;
-    sbol:hasLocation part:kanR_Tn5_feature_1_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_1_range a sbol:Range ;
-    sbol:end 195 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 188 .
-
-part:kanR_Tn5_feature_2 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253 ;
-    dcterms:title "Mg2+ binding site Asn195" ;
-    sbol:displayId "kanR_Tn5_feature_2" ;
-    sbol:hasLocation part:kanR_Tn5_feature_2_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_2_range a sbol:Range ;
-    sbol:end 195 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 195 .
-
-part:kanR_Tn5_feature_3 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253 ;
-    dcterms:title "Mg2+ binding site Asp208" ;
-    sbol:displayId "kanR_Tn5_feature_3" ;
-    sbol:hasLocation part:kanR_Tn5_feature_3_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_3_range a sbol:Range ;
-    sbol:end 208 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 208 .
-
-part:kanR_Tn5_feature_4 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253 ;
-    dcterms:title "Acidic aminoglycoside-recognition loop" ;
-    sbol:displayId "kanR_Tn5_feature_4" ;
-    sbol:hasLocation part:kanR_Tn5_feature_4_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_4_range a sbol:Range ;
-    sbol:end 166 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 151 .
-
-part:kanR_Tn5_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:12628253 ;
-    dcterms:title "C-terminal aminoglycoside-recognition residues" ;
-    sbol:displayId "kanR_Tn5_feature_5" ;
-    sbol:hasLocation part:kanR_Tn5_feature_5_range ;
-    sbol:role so:0000110 .
-
-part:kanR_Tn5_feature_5_range a sbol:Range ;
-    sbol:end 264 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:kanR_Tn5_sequence ;
-    sbol:start 260 .
+part:kanR_Tn5_sequence a sbol:Sequence ;
+    sbol:displayId "kanR_Tn5_sequence" ;
+    sbol:elements "MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRPVLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLSSHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQGLAPAELFARLKARMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIALATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:kanR_Tn903_sequence a sbol:Sequence ;
     sbol:displayId "kanR_Tn903_sequence" ;
@@ -8312,6 +6918,7 @@ part:ChnR a sbol:Component ;
     sbol:hasSequence part:ChnR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/protein/AB006902> ;
     skos:altLabel "ChnR activator",
         "chnR" ;
     cat:curationStatus "validated" ;
@@ -8496,12 +7103,6 @@ part:araC a sbol:Component ;
     cat:regulates part:ParaBAD ;
     cat:slug "araC" .
 
-part:GmR_sequence a sbol:Sequence ;
-    sbol:displayId "GmR_sequence" ;
-    sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
 part:P2_sequence a sbol:Sequence ;
     sbol:displayId "P2_sequence" ;
     sbol:elements "TTGACAGCTTATCATCGATAAGCTTTAAT" ;
@@ -8524,18 +7125,6 @@ part:Ptrc_sequence a sbol:Sequence ;
     sbol:displayId "Ptrc_sequence" ;
     sbol:elements "TTGACAATTAATCATCCGGCTCGTATAATG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:ZeoR_sequence a sbol:Sequence ;
-    sbol:displayId "ZeoR_sequence" ;
-    sbol:elements "MAKLTSAVPVLTARDVAGAVEFWTDRLGFSRDFVEDDFAGVVRDDVTLFISAVQDQVVPDNTLAWVWVRGLDELYAEWSEVVSTNFRDASGPAMTEIGEQPWGREFALRDPAGNCVHFVAEEQD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:CmR_sequence a sbol:Sequence ;
-    sbol:displayId "CmR_sequence" ;
-    sbol:elements "MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:PphlF_sequence a sbol:Sequence ;
@@ -8580,12 +7169,6 @@ part:ColE1_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:HygR_sequence a sbol:Sequence ;
-    sbol:displayId "HygR_sequence" ;
-    sbol:elements "MKKPELTATSVEKFLIEKFDSVSDLMQLSEGEESRAFSFDVGGRGYVLRVNSCADGFYKDRYVYRHFASAALPIPEVLDIGEFSESLTYCISRRAQGVTLQDLPETELPAVLQPVAEAMDAIAAADLSQTSGFGPFGPQGIGQYTTWRDFICAIADPHVYHWQTVMDDTVSASVAQALDELMLWAEDCPEVRHLVHADFGSNNVLTDNGRITAVIDWSEAMFGDSQYEVANIFFWRPWLACMEQQTRYFERRHPELAGSPRLRAYMLRIGLDQLYQSLVDGNFDDAAWAQGRCDAIVRSGAGTVGRTQIARRSAAVWTDGCVEVLADSGNRRPSTRPRAKE" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
 part:PA1_O4_O3_sequence a sbol:Sequence ;
     sbol:displayId "PA1_O4_O3_sequence" ;
     sbol:elements "TTGACTTGTGAGCGGATAACAATGATACTTAGATTCAATTGTGAGCGGATAACAAT" ;
@@ -8628,12 +7211,6 @@ part:T7lac_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:ermAM_sequence a sbol:Sequence ;
-    sbol:displayId "ermAM_sequence" ;
-    sbol:elements "MNKNIKYSQNFLTSEKVLNQIIKQLNLKETDTVYEIGTGKGHLTTKLAKISKQVTSIELDSHLFNLSSEKLKLNTRVTLIHQDILQFQFPNKQRYKIVGSIPYHLSTQIIKKVVFESHASDIYLIVEEGFYKRTLDIHRTLGLLLHTQVSIQQLLKLPAECFHPKPKVNSVLIKLTRHTTDVPDKYWKLYTYFVSKWVNREYRQLFTKNQFHQAMKHAKVNNLSTVTYEQVLSIFNSYLLFNGRK" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
 part:Pxyl_tet_sequence a sbol:Sequence ;
     sbol:displayId "Pxyl_tet_sequence" ;
     sbol:elements "TTGACACTCTATCATTGATAGAGTATAATTAAAATAAGCTCTCTATCATTGATAGAGT" ;
@@ -8652,46 +7229,10 @@ part:ParaBAD_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:kanR_Tn5_sequence a sbol:Sequence ;
-    sbol:displayId "kanR_Tn5_sequence" ;
-    sbol:elements "MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRPVLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLSSHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQGLAPAELFARLKARMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIALATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:DhfR_sequence a sbol:Sequence ;
-    sbol:displayId "DhfR_sequence" ;
-    sbol:elements "MKLSLMVAISKNGVIGNGPDIPWSAKGEQLLFKAITYNQWLLVGRKTFESMGALPNRKYAVVTRSSFTSDNEDVLIFPSIKDALTNLKKITDHVIVSGGGEIYKSLIDQVDTLHISTIDIEPEGDVYFPEIPSNFRPVFTQDFASNINYSYQIWQKG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:PuroR_sequence a sbol:Sequence ;
-    sbol:displayId "PuroR_sequence" ;
-    sbol:elements "MTEYKPTVRLATRDDVPRAVRTLAAAFADYPATRHTVDPDRHIERVTELQELFLTRVGLDIGKVWVADDGAAVAVWTTPESVEAGAVFAEIGPRMAELSGSRLAAQQQMEGLLAPHRPKEPAWFLATVGVSPDHQGKGLGSAVVLPGVEAAERAGVPAFLETSAPRNLPFYERLGFTVTADVEVPEGPRTWCMTRKPGA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:bla_sequence a sbol:Sequence ;
-    sbol:displayId "bla_sequence" ;
-    sbol:elements "MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
 part:tetR_tetA_promoters_sequence a sbol:Sequence ;
     sbol:displayId "tetR_tetA_promoters_sequence" ;
     sbol:elements "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:BlastR_sequence a sbol:Sequence ;
-    sbol:displayId "BlastR_sequence" ;
-    sbol:elements "MPLSQEESTLIERATATINSIPISEDYSVASAALSSDGRIFTGVNVYHFTGGPCAELVVLGTAAAAAAGNLTCIVAIGNENRGILSPCGRCRQVLLDLHPGIKAIVKDSDGQPTAVGIRELLPSGYVWEG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:cas9_sequence a sbol:Sequence ;
-    sbol:displayId "cas9_sequence" ;
-    sbol:elements "MDKKYSIGLDIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDHIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:lacI a sbol:Component ;
@@ -8712,22 +7253,4 @@ part:lacI a sbol:Component ;
         part:Ptrc,
         part:T7lac ;
     cat:slug "lacI" .
-
-part:dCas9_sequence a sbol:Sequence ;
-    sbol:displayId "dCas9_sequence" ;
-    sbol:elements "MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:aadA_sequence a sbol:Sequence ;
-    sbol:displayId "aadA_sequence" ;
-    sbol:elements "MREAVIAEVSTQLSEVVGVIERHLEPTLLAVHLYGSAVDGGLKPHSDIDLLVTVTVRLDETTRRALINDLLETSASPGESEILRAVEVTIVVHDDIIPWRYPAKRELQFGEWQRNDILAGIFEPATIDIDLAILLTKAREHSVALVGPAAEELFDPVPEQDLFEALNETLTLWNSPPDWAGDERNVVLTLSRIWYSAVTGKIAPKDVAADWAMERLPAQYQPVILEARQAYLGQEEDRLASRADQLEEFVHYVKGEITKVVGK" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
-
-part:TetA_sequence a sbol:Sequence ;
-    sbol:displayId "TetA_sequence" ;
-    sbol:elements "MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHYGVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRIVAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPFLAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSITGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 

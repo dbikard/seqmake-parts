@@ -43,19 +43,21 @@ Parts are split by curation status:
   (different Sequence Ontology types) — don't bundle them into one "promoter"
   that includes an RBS; make two parts that compose. Likewise promoter + terminator,
   CDS + terminator, etc.
-- **Coding parts are protein-canonical.** A `CDS` / `protein_domain` part is
-  stored as a **protein** GenBank record (`LOCUS … aa`): the amino-acid sequence
-  is the part, its sub-features (domains/tags) are in **residue (aa)** coordinates,
-  and no DNA is stored — a gene is just one codon realization, and parts are
-  matched/identified at the protein level. The N-terminus is the initiator
-  methionine: in bacteria an alternative start codon (GTG/TTG) is still
-  translated as fMet, so a coding part begins with **M** — never store the start
-  codon's literal amino acid (a `V`/`L` start) or record it as a variant. Record
-  provenance with a
-  `/db_xref="UniProt:Pxxxxx"` (preferred) or `NCBI:…` accession on the main
-  feature. Convert an existing DNA `.gb` with `tools/migrate_to_protein.py
-  <part.gb> --accession UniProt:…`. Regulatory parts (promoter / terminator /
-  operator / RBS / origin) stay DNA.
+- **Coding parts are protein-canonical and defer biology to UniProt.** A `CDS` /
+  `protein_domain` part is stored as a **protein** GenBank record (`LOCUS … aa`):
+  the amino-acid sequence is the part, no DNA is stored — a gene is just one codon
+  realization, and parts are matched/identified at the protein level. The
+  N-terminus is the initiator methionine: in bacteria an alternative start codon
+  (GTG/TTG) is still translated as fMet, so a coding part begins with **M** —
+  never store the start codon's literal amino acid (a `V`/`L` start) or record it
+  as a variant. A protein part **must** record a `/db_xref="UniProt:Pxxxxx"`
+  (preferred) or `NCBI:…` accession on the main feature, and **does not** carry
+  residue-level sub-features (domains, active sites, binding residues, PTMs):
+  those are maintained in UniProt / InterPro / AlphaFold and linked (the build
+  emits `rdfs:seeAlso` to the UniProt entry), not duplicated here. Annotate only
+  the engineering layer (role, functional_claims, cognate partners, collections).
+  Regulatory DNA parts (promoter / terminator / operator / RBS / origin) keep
+  their sub-features.
 - **Cross-links.** A promoter names its cognate transcription-factor part(s) with
   a `/regulated_by="<TF name>"` qualifier (repeatable) on its main feature. The
   build resolves each name to that part and derives the inverse on the TF's page

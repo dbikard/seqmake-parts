@@ -140,7 +140,17 @@ def add_part(g: Graph, part: dict, by_slug: dict[str, dict]) -> None:
     g.add((p, CAT.slug, Literal(part["slug"])))
     g.add((p, CAT.documented, Literal(part["documented"], datatype=XSD.boolean)))
     if part.get("source_accession"):
-        g.add((p, CAT.sourceAccession, Literal(part["source_accession"])))
+        acc = part["source_accession"]
+        g.add((p, CAT.sourceAccession, Literal(acc)))
+        # Defer protein biology to the authoritative source: a first-class,
+        # federatable link (UniProt's purl is its SPARQL entity IRI) rather than
+        # re-annotating domains/active sites here.
+        db, _, ident = acc.partition(":")
+        if ident and db.lower() == "uniprot":
+            g.add((p, RDFS.seeAlso, URIRef(f"http://purl.uniprot.org/uniprot/{ident}")))
+        elif ident and db.lower() == "ncbi":
+            g.add((p, RDFS.seeAlso,
+                   URIRef(f"https://www.ncbi.nlm.nih.gov/protein/{ident}")))
 
     # Sequence
     seq = PART[part["slug"] + "_sequence"]

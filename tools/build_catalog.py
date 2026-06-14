@@ -278,6 +278,17 @@ def _resource_links(acc: str | None) -> str:
     return " · ".join(links)
 
 
+def _protein_defer_note(part: dict) -> str:
+    """For a protein part, point to UniProt for residue-level biology instead of
+    duplicating it: domains/active sites/structure live in the linked entry."""
+    if part.get("kind") == "protein" and part.get("source_accession"):
+        return ('!!! note "Protein features → UniProt"\n\n'
+                "    Domains, active sites, and structure for this protein are "
+                "maintained in the linked **UniProt** entry (with InterPro and "
+                "AlphaFold), not duplicated here.\n")
+    return ""
+
+
 def _feature_table(part: dict) -> str:
     if not part["children"]:
         return ""
@@ -483,6 +494,7 @@ def render_part_page(part: dict) -> str:
         return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n"
                 + _related_section(part) + "\n"
                 + _functional_knowledge(part) + "\n"
+                + _protein_defer_note(part) + "\n"
                 + _feature_table(part) + "\n" + body)
     note = part["description"] or "_No curated documentation page yet._"
     note += (f"\n\n*This part has no curated documentation yet — "
@@ -490,6 +502,7 @@ def render_part_page(part: dict) -> str:
     return (fm + "\n".join(head) + "\n" + AI_WIP_WARNING + "\n" + note + "\n"
             + _related_section(part) + "\n"
             + _functional_knowledge(part) + "\n"
+            + _protein_defer_note(part) + "\n"
             + _feature_table(part) + "\n" + _reference_list(part["references"]))
 
 

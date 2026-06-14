@@ -56,32 +56,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P62577"
                      /citation=[1]
                      /citation=[2]
-     misc_feature    193
-                     /label="Active site His193"
-                     /parent="CmR"
-                     /note="UniProt P62577 FT ACT_SITE 193 'Proton acceptor'."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-                     /citation=[4]
-     misc_feature    146
-                     /label="Oxyanion-hole stabilizing Ser146"
-                     /parent="CmR"
-                     /note="Ser146 (= Ser148 in CATIII numbering) stabilizes the
-                     oxyanion of the tetrahedral transition state via a hydrogen
-                     bond."
-                     /db_xref="SO:0000110"
-                     /citation=[5]
-                     /citation=[3]
-     misc_feature    197
-                     /label="His-positioning acidic residue Asp197"
-                     /parent="CmR"
-                     /note="Asp197 (= Asp199 in CATIII) stabilizes the
-                     position/tautomer of catalytic His193, part of the
-                     arrangement that polarizes the imidazole and modifies its
-                     pKa (..."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-                     /citation=[4]
 ORIGIN
         1 mekkitgytt vdisqwhrke hfeafqsvaq ctynqtvqld itaflktvkk nkhkfypafi
        61 hilarlmnah pefrmamkdg elviwdsvhp cytvfheqte tfsslwseyh ddfrqflhiy

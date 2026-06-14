@@ -14,45 +14,6 @@ FEATURES             Location/Qualifiers
                      /synonym="SpyCas9"
                      /synonym="csn1"
                      /db_xref="UniProt:Q99ZW2"
-     protein_domain  1..58
-                     /label="RuvC-I"
-                     /parent="cas9"
-                     /note="RuvC nuclease domain, N-terminal segment (contains
-                     D10 catalytic residue)"
-     protein_domain  60..93
-                     /label="Bridge helix"
-                     /parent="cas9"
-                     /note="arginine-rich helix bridging the REC and NUC lobes"
-     protein_domain  94..179
-                     /label="REC1"
-                     /parent="cas9"
-                     /note="recognition lobe segment 1"
-     protein_domain  180..307
-                     /label="REC2"
-                     /parent="cas9"
-                     /note="recognition lobe segment 2"
-     protein_domain  308..713
-                     /label="REC3"
-                     /parent="cas9"
-                     /note="recognition lobe, continuation of REC1 after the
-                     REC2 insertion"
-     protein_domain  718..765
-                     /label="RuvC-II"
-                     /parent="cas9"
-                     /note="RuvC nuclease domain, middle segment"
-     protein_domain  775..908
-                     /label="HNH"
-                     /parent="cas9"
-                     /note="HNH nuclease domain (contains H840 catalytic
-                     residue)"
-     protein_domain  909..1098
-                     /label="RuvC-III"
-                     /parent="cas9"
-                     /note="RuvC nuclease domain, C-terminal segment"
-     protein_domain  1099..1368
-                     /label="PI"
-                     /parent="cas9"
-                     /note="PAM-Interacting domain"
 ORIGIN
         1 mdkkysigld igtnsvgwav itdeykvpsk kfkvlgntdr hsikknliga llfdsgetae
        61 atrlkrtarr rytrrknric ylqeifsnem akvddsffhr leesflveed kkherhpifg

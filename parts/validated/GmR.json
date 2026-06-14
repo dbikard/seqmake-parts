@@ -67,60 +67,12 @@
           "[1]"
         ]
       }
-    },
-    {
-      "type": "protein_domain",
-      "start": 24,
-      "end": 177,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "N-acetyltransferase"
-        ],
-        "parent": [
-          "GmR"
-        ],
-        "note": [
-          "UniProt P23181 (AACC1_PSEAI) annotates DOMAIN 25-177 'N-acetyltransferase' (PROSITE-ProRule PRU00532; Pfam PF00583 Acetyltransf_1; InterPro IPR000182 GNAT)."
-        ],
-        "db_xref": [
-          "SO:0000417"
-        ],
-        "citation": [
-          "[2]",
-          "[3]",
-          "[4]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 117,
-      "end": 123,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "GNAT motif A"
-        ],
-        "parent": [
-          "GmR"
-        ],
-        "note": [
-          "Segment RRQGIA matching the canonical GNAT motif-A acetyl-CoA-recognition consensus Arg/Gln-X-X-Gly-X-Gly/Ala, at the beta4-alpha3 junction immediately C-ter..."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[2]",
-          "[3]"
-        ]
-      }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
   },
   "functional_claims": [
     {

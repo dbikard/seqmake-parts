@@ -115,6 +115,11 @@ def main() -> None:
         args.name, args.type, seq, synonyms=args.synonym, note=args.note,
         source_accession=args.source_accession, regulated_by=args.regulated_by,
         collections=args.collection)
+    if data["molecule_type"] == "protein" and not args.source_accession:
+        print("WARNING: protein parts must defer biology to UniProt — re-run with "
+              "--source-accession UniProt:Pxxxxx (or NCBI:...). Do NOT annotate "
+              "residue-level features; link to UniProt/InterPro/AlphaFold instead.",
+              file=sys.stderr)
     out = ROOT / "parts" / args.status / f"{data['slug']}.json"
     if out.exists():
         sys.exit(f"refusing to overwrite existing {out}")

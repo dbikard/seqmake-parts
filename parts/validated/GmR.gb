@@ -53,25 +53,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P23181"
                      /citation=[1]
-     protein_domain  25..177
-                     /label="N-acetyltransferase"
-                     /parent="GmR"
-                     /note="UniProt P23181 (AACC1_PSEAI) annotates DOMAIN 25-177
-                     'N-acetyltransferase' (PROSITE-ProRule PRU00532; Pfam
-                     PF00583 Acetyltransf_1; InterPro IPR000182 GNAT)."
-                     /db_xref="SO:0000417"
-                     /citation=[2]
-                     /citation=[3]
-                     /citation=[4]
-     misc_feature    118..123
-                     /label="GNAT motif A"
-                     /parent="GmR"
-                     /note="Segment RRQGIA matching the canonical GNAT motif-A
-                     acetyl-CoA-recognition consensus Arg/Gln-X-X-Gly-X-Gly/Ala,
-                     at the beta4-alpha3 junction immediately C-ter..."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
 ORIGIN
         1 mlrssndvtq qgsrpktklg gssmgiirtc rlgpdqvksm raaldlfgre fgdvatysqh
        61 qpdsdylgnl lrsktfiala afdqeavvga laayvlprfe qprseiyiyd lavsgehrrq

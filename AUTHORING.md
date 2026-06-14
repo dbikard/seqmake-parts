@@ -31,9 +31,14 @@ to `parts/validated/` and is **validated**. Independently, every
   acceptable.
 - **One functional class per part** (atomic). A promoter and an RBS are two
   parts, not one. See `CONTRIBUTING.md` → *Part conventions*.
-- **Coding parts are protein-canonical.** A `CDS` / `protein_domain` is stored as
-  its amino-acid sequence (begins with `M`), residue-coordinate sub-features, and
-  a `db_xref` provenance accession (`UniProt:…` preferred).
+- **Coding parts are protein-canonical and defer biology to UniProt.** A `CDS` /
+  `protein_domain` is stored as its amino-acid sequence (begins with `M`) with a
+  **required** `UniProt:…` (or `NCBI:…`) accession on the main feature. Do **not**
+  annotate residue-level features (domains, active sites, binding residues, PTMs):
+  those are maintained in UniProt / InterPro / AlphaFold and are *linked*, not
+  duplicated (the build emits a first-class `rdfs:seeAlso` to the UniProt entry).
+  Author only the engineering layer — role, functional_claims, cognate partners,
+  collections. (DNA parts keep their sub-features: −35/−10/operator, etc.)
 - **Lab- and tool-agnostic prose.** Describe what the part *is*; never name a
   consuming tool, a using lab, or an internal plasmid. `tools/check_content.py`
   enforces this.

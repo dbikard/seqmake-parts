@@ -58,39 +58,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P21236"
                      /citation=[1]
                      /citation=[2]
-     protein_domain  1..180
-                     /label="Catalytic / SAM-binding domain"
-                     /parent="ermAM"
-                     /note="N-terminal lobe of the bilobal ErmAM structure (NMR,
-                     Yu et al."
-                     /db_xref="SO:0000417"
-                     /citation=[3]
-                     /citation=[4]
-     protein_domain  181..245
-                     /label="Substrate / 23S rRNA-binding domain"
-                     /parent="ermAM"
-                     /note="C-terminal lobe of the bilobal ErmAM structure (Yu
-                     et al."
-                     /db_xref="SO:0000417"
-                     /citation=[3]
-     misc_feature    37..41
-                     /label="Motif I / G-loop"
-                     /parent="ermAM"
-                     /note="Canonical glycine-rich Motif I 'G-loop' (G-X-G-X-G),
-                     here GTGKG, in the beta1-alphaA loop of the catalytic
-                     domain; binds the methionine/ribose moiety of the ..."
-                     /db_xref="SO:0000110"
-                     /citation=[3]
-                     /citation=[4]
-     misc_feature    100..103
-                     /label="Motif IV catalytic motif"
-                     /parent="ermAM"
-                     /note="Conserved Motif IV of N6-adenine methyltransferases,
-                     (N/D/S)-(I/P)-P-(Y/F/W/H); in ErmAM the relaxed Erm-family
-                     form SIPY with the conserved Pro and an aroma..."
-                     /db_xref="SO:0000110"
-                     /citation=[4]
-                     /citation=[5]
 ORIGIN
         1 mnknikysqn fltsekvlnq iikqlnlket dtvyeigtgk ghlttklaki skqvtsield
        61 shlfnlssek lklntrvtli hqdilqfqfp nkqrykivgs ipyhlstqii kkvvfeshas

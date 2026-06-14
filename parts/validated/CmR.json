@@ -74,83 +74,12 @@
           "[2]"
         ]
       }
-    },
-    {
-      "type": "misc_feature",
-      "start": 192,
-      "end": 193,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Active site His193"
-        ],
-        "parent": [
-          "CmR"
-        ],
-        "note": [
-          "UniProt P62577 FT ACT_SITE 193 'Proton acceptor'."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[3]",
-          "[4]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 145,
-      "end": 146,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "Oxyanion-hole stabilizing Ser146"
-        ],
-        "parent": [
-          "CmR"
-        ],
-        "note": [
-          "Ser146 (= Ser148 in CATIII numbering) stabilizes the oxyanion of the tetrahedral transition state via a hydrogen bond."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[5]",
-          "[3]"
-        ]
-      }
-    },
-    {
-      "type": "misc_feature",
-      "start": 196,
-      "end": 197,
-      "strand": 1,
-      "qualifiers": {
-        "label": [
-          "His-positioning acidic residue Asp197"
-        ],
-        "parent": [
-          "CmR"
-        ],
-        "note": [
-          "Asp197 (= Asp199 in CATIII) stabilizes the position/tautomer of catalytic His193, part of the arrangement that polarizes the imidazole and modifies its pKa (..."
-        ],
-        "db_xref": [
-          "SO:0000110"
-        ],
-        "citation": [
-          "[3]",
-          "[4]"
-        ]
-      }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
   },
   "functional_claims": [
     {

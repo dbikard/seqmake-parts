@@ -46,37 +46,6 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P00557"
                      /citation=[1]
-     protein_domain  7..92
-                     /label="N-terminal lobe"
-                     /parent="HygR"
-                     /note="Beta-rich N-terminal lobe of the protein-kinase-like
-                     (APH) fold."
-                     /db_xref="SO:0000417"
-                     /citation=[2]
-     protein_domain  99..301
-                     /label="C-terminal lobe"
-                     /parent="HygR"
-                     /note="Predominantly alpha-helical C-terminal lobe
-                     (residues 99-301, 1-based; Stogios et al."
-                     /db_xref="SO:0000417"
-                     /citation=[2]
-     misc_feature    196..203
-                     /label="Catalytic loop"
-                     /parent="HygR"
-                     /note="Catalytic loop
-                     H196-A197-D198-F199-G200-S201-N202-N203 (1-based)."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
-     misc_feature    215..218
-                     /label="Mg2+-binding aspartate"
-                     /parent="HygR"
-                     /note="Asp216 (in the I215-D216-W217-S218 loop) is the
-                     Mg2+-coordinating aspartate (DFG second-Asp equivalent of
-                     protein kinases): it contacts Mg2+ and a non-bridgi..."
-                     /db_xref="SO:0000110"
-                     /citation=[2]
-                     /citation=[3]
 ORIGIN
         1 mkkpeltats vekfliekfd svsdlmqlse geesrafsfd vggrgyvlrv nscadgfykd
        61 ryvyrhfasa alpipevldi gefsesltyc isrraqgvtl qdlpetelpa vlqpvaeamd
