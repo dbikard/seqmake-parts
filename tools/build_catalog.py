@@ -294,22 +294,32 @@ def _protein_defer_note(part: dict) -> str:
         return ""
     imp = _load_uniprot_import(part)
     status = imp.get("status")
-    if status in ("length_mismatch", "mismatch"):
-        detail = (f"length {imp.get('part_len')} aa vs UniProt {imp.get('uniprot_len')} aa"
-                  if status == "length_mismatch"
-                  else f"{imp.get('n_substitutions')} differing residues")
-        return ('!!! warning "Sequence differs from UniProt"\n\n'
-                f"    This part's sequence diverges from {part['source_accession']} "
-                f"({detail}), so UniProt features were **not** imported (their "
-                "coordinates would not apply). See the linked UniProt entry.\n")
+    acc = part["source_accession"]
+    idpct = f"{imp.get('identity', 0) * 100:.0f}% identity" if imp.get("identity") is not None else ""
+    if status == "wrong_accession":
+        return ('!!! danger "Accession likely wrong"\n\n'
+                f"    This part's sequence matches **{acc}** at only {idpct} — it "
+                "appears to be a *different protein*, i.e. the accession is probably "
+                "wrong. No features were imported; this needs review.\n")
+    if status == "length_variant":
+        return ('!!! warning "Sequence differs from UniProt (length)"\n\n'
+                f"    Same protein as {acc} but a different length "
+                f"({imp.get('part_len')} vs {imp.get('uniprot_len')} aa, {idpct}) — "
+                "an isoform/fragment, so features were **not** imported (coordinates "
+                "would shift). See the linked UniProt entry.\n")
+    if status == "divergent":
+        return ('!!! warning "Diverges from UniProt"\n\n'
+                f"    This part is a distant allele/homolog of {acc} ({idpct}); "
+                "features were **not** imported — review whether the accession is "
+                "right. See the linked UniProt entry.\n")
     if status == "variant":
         vs = imp.get("variants") or []
         subs = ", ".join(f"{v['uniprot']}{v['pos']}{v['part']}" for v in vs[:6])
         more = "…" if len(vs) > 6 else ""
         return ('!!! note "Protein features from UniProt (variant)"\n\n'
                 "    Domains / sites below are **imported from the linked UniProt "
-                f"entry**; this part is a variant of {part['source_accession']} "
-                f"(substitutions: {subs}{more}). See UniProt / InterPro / AlphaFold "
+                f"entry**; this part is a variant of {acc} ({idpct}; "
+                f"substitutions: {subs}{more}). See UniProt / InterPro / AlphaFold "
                 "for the authoritative set.\n")
     return ('!!! note "Protein features from UniProt"\n\n'
             "    Any domains / sites below are **imported from the linked UniProt "
@@ -466,6 +476,8 @@ def _tags_for(part: dict) -> list[str]:
     for c in part.get("collections_resolved") or []:
         tags.append(f"Collection: {c['name']}")
     tags += _function_tags(part)
+    if _load_uniprot_import(part).get("status") in ("wrong_accession", "divergent"):
+        tags.append("UniProt accession review")
     # de-dup, preserve order
     seen: set[str] = set()
     return [t for t in tags if not (t in seen or seen.add(t))]
