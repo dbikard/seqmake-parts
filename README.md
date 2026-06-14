@@ -33,7 +33,9 @@ parts/validated/<name>.gb   annotated GenBank part (one main feature + sub-featu
 parts/validated/<name>.md   curated documentation page (origin / properties / use)
 parts/candidate/<name>.gb   annotated GenBank part awaiting a documentation page
 catalog.json                machine-readable manifest (every part + its metadata)
+catalog.ttl / .jsonld       RDF projection of the catalog (SBOL3 + Sequence Ontology + SBO)
 tools/build_catalog.py      regenerates catalog.json + the website pages
+tools/build_rdf.py          regenerates catalog.ttl + catalog.jsonld
 docs/                       generated website source (mkdocs Material)
 ```
 
@@ -44,6 +46,10 @@ docs/                       generated website source (mkdocs Material)
 - **Programmatic access:** read `catalog.json` (schema in
   [`CONTRIBUTING.md`](CONTRIBUTING.md)) or parse the `.gb` files with any GenBank
   reader (e.g. BioPython).
+- **Semantic / SPARQL access:** load `catalog.ttl` (or `catalog.jsonld`) into any
+  RDF store — each part is an `sbol:Component` with its Sequence Ontology role,
+  sequence, sub-features, citations, collections, and promoter↔TF regulation as
+  SBOL3 `Interaction`s. See [`RDF.md`](RDF.md) for the model.
 - This catalog is a standalone, reusable dataset with no external dependencies.
 
 ## Contributing

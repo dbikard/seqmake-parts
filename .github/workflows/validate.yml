@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
       - name: Content guard (lab-agnostic, tool-agnostic part content)
         run: python tools/check_content.py
-      - run: pip install biopython pytest
+      - run: pip install biopython pytest rdflib pyshacl
       - name: Test the build + publish tooling
         run: pytest tests/ -q
       - name: Rebuild manifest (parses every .gb)
@@ -26,3 +26,13 @@ jobs:
             echo "::error::catalog.json is stale. Run 'python tools/build_catalog.py' and commit catalog.json."
             exit 1
           fi
+      - name: Rebuild RDF (catalog.ttl + catalog.jsonld)
+        run: python tools/build_rdf.py
+      - name: catalog RDF must be up to date
+        run: |
+          if ! git diff --exit-code catalog.ttl catalog.jsonld tools/catalog_context.jsonld; then
+            echo "::error::catalog RDF is stale. Run 'python tools/build_rdf.py' and commit catalog.ttl + catalog.jsonld."
+            exit 1
+          fi
+      - name: Validate RDF against SHACL shapes
+        run: pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl

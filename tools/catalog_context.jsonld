@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "sbol": "http://sbols.org/v3#",
+    "so": "https://identifiers.org/SO:",
+    "sbo": "https://identifiers.org/SBO:",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cat": "https://dbikard.github.io/dna-parts-catalog/ns#",
+    "part": "https://dbikard.github.io/dna-parts-catalog/part/",
+    "collection": "https://dbikard.github.io/dna-parts-catalog/collection/",
+    "pubmed": "https://identifiers.org/pubmed:",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

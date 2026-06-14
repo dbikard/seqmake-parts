@@ -1,0 +1,72 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix sbol: <http://sbols.org/v3#> .
+@prefix cat:  <https://dbikard.github.io/dna-parts-catalog/ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# SHACL shapes validating the generated catalog.ttl. These encode the invariants
+# the catalog already assumes; run with:  pyshacl -s tools/shapes.ttl catalog.ttl
+
+# Every part (Component) is typed, has a functional role, and a sequence.
+cat:ComponentShape a sh:NodeShape ;
+    sh:targetClass sbol:Component ;
+    sh:property [ sh:path sbol:type ; sh:minCount 1 ;
+                  sh:message "a part must declare a molecule type (sbol:type)" ] ;
+    sh:property [ sh:path sbol:role ; sh:minCount 1 ;
+                  sh:message "a part must declare a functional role (SO term)" ] ;
+    sh:property [ sh:path sbol:hasSequence ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:message "a part must reference exactly one sequence" ] ;
+    sh:property [ sh:path cat:curationStatus ; sh:minCount 1 ;
+                  sh:in ( "validated" "candidate" ) ] .
+
+# Every sequence carries its residues and an encoding.
+cat:SequenceShape a sh:NodeShape ;
+    sh:targetClass sbol:Sequence ;
+    sh:property [ sh:path sbol:elements ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path sbol:encoding ; sh:minCount 1 ] .
+
+# Every range is fully specified (1-based start/end + orientation).
+cat:RangeShape a sh:NodeShape ;
+    sh:targetClass sbol:Range ;
+    sh:property [ sh:path sbol:start ; sh:minCount 1 ; sh:datatype xsd:integer ;
+                  sh:minInclusive 1 ] ;
+    sh:property [ sh:path sbol:end ; sh:minCount 1 ; sh:datatype xsd:integer ] ;
+    sh:property [ sh:path sbol:orientation ; sh:minCount 1 ;
+                  sh:in ( sbol:inline sbol:reverseComplement ) ] ;
+    sh:property [ sh:path sbol:sequence ; sh:minCount 1 ] .
+
+# An interaction is typed and has at least two typed participations.
+cat:InteractionShape a sh:NodeShape ;
+    sh:targetClass sbol:Interaction ;
+    sh:property [ sh:path sbol:type ; sh:minCount 1 ] ;
+    sh:property [ sh:path sbol:hasParticipation ; sh:minCount 2 ] .
+
+cat:ParticipationShape a sh:NodeShape ;
+    sh:targetClass sbol:Participation ;
+    sh:property [ sh:path sbol:role ; sh:minCount 1 ] ;
+    sh:property [ sh:path sbol:participant ; sh:minCount 1 ] .
+
+# A range must not run past the end of its sequence.
+cat:RangeWithinSequenceShape a sh:NodeShape ;
+    sh:targetClass sbol:Range ;
+    sh:sparql [
+        sh:message "range end is beyond the length of its sequence" ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <http://sbols.org/v3#end> ?end ;
+                      <http://sbols.org/v3#sequence> ?seq .
+                ?seq <http://sbols.org/v3#elements> ?el .
+                FILTER (?end > STRLEN(?el))
+            }
+        """ ] .
+
+# A cat:regulatedBy link must resolve to a part in the catalog.
+cat:RegulatedByResolvesShape a sh:NodeShape ;
+    sh:targetClass sbol:Component ;
+    sh:sparql [
+        sh:message "cat:regulatedBy points to something that is not a Component" ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://dbikard.github.io/dna-parts-catalog/ns#regulatedBy> ?tf .
+                FILTER NOT EXISTS { ?tf a <http://sbols.org/v3#Component> }
+            }
+        """ ] .

@@ -1,2 +1,4 @@
 biopython>=1.80
 mkdocs-material>=9.5
+rdflib>=7.0
+pyshacl>=0.26

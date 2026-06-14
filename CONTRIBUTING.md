@@ -90,11 +90,15 @@ Parts are split by curation status:
 ```bash
 pip install -r requirements.txt
 python tools/build_catalog.py     # rebuilds catalog.json + docs/
+python tools/build_rdf.py         # rebuilds catalog.ttl + catalog.jsonld
 mkdocs serve                      # preview the site at http://127.0.0.1:8000
 ```
 
-Commit the updated `catalog.json` along with your part. The `docs/` tree is
-generated (git-ignored) and rebuilt by CI.
+Commit the updated `catalog.json` **and** `catalog.ttl` / `catalog.jsonld` along
+with your part — CI rebuilds both and fails if either is stale (and validates the
+RDF against `tools/shapes.ttl`). The RDF is a *generated projection* of the same
+`.gb` data — never hand-edit it; see [`RDF.md`](RDF.md) for the model. The
+`docs/` tree is generated (git-ignored) and rebuilt by CI.
 
 ## Interactive part viewer
 
