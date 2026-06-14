@@ -59,7 +59,9 @@ docs/                       generated website source (mkdocs Material)
   sequence, sub-features, citations, collections, and promoter↔TF regulation as
   SBOL3 `Interaction`s, plus prose-derived **functional claims** (inducer,
   dynamic range, …) carried as nanopublication-shaped assertions with their
-  source quote/figure, confidence, and review status. See [`RDF.md`](RDF.md).
+  source quote/figure, confidence, and review status. See [`RDF.md`](RDF.md) for
+  the model and [`QUERIES.md`](QUERIES.md) for a SPARQL cookbook (incl. UniProt
+  federation).
 - This catalog is a standalone, reusable dataset with no external dependencies.
 
 ## Contributing

@@ -450,7 +450,7 @@ part:CspRecT a sbol:Component ;
 
 part:DhfR a sbol:Component ;
     rdfs:label "DhfR" ;
-    dcterms:description "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 — a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub..." ;
+    dcterms:description "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 - a 157-aa FolA-fold enzyme (EC 1.5.1.3); the catalogued sequence is the UniProt P00382 canonical." ;
     dcterms:references pubmed:27624966,
         pubmed:35562546,
         pubmed:6308574 ;
@@ -3736,6 +3736,7 @@ part:ChnR_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"cyclohexanone\", \"role\": \"activator\", \"target\": \"PchnB\"}" ;
     cat:confidence "high" ;
+    cat:inducer "cyclohexanone" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster)." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -4713,6 +4714,7 @@ part:P2_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"regulation\": \"constitutive\"}" ;
     cat:confidence "high" ;
+    cat:regulation "constitutive" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no..." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -4758,6 +4760,8 @@ part:PA1_O4_O3_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream)." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -4889,6 +4893,8 @@ part:PLtetO-1_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
     cat:confidence "high" ;
+    cat:inducer "anhydrotetracycline (aTc)" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -4979,6 +4985,8 @@ part:PT5_lacO_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module)." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5184,6 +5192,7 @@ part:Pbla_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"regulation\": \"constitutive\"}" ;
     cat:confidence "medium" ;
+    cat:regulation "constitutive" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter — the native 5'UTR and ribosome binding site are a distinct fun..." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5262,6 +5271,8 @@ part:PchnB_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"activator\": \"ChnR\", \"inducer\": \"cyclohexanone\", \"regulation\": \"inducible\"}" ;
     cat:confidence "high" ;
+    cat:inducer "cyclohexanone" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5380,6 +5391,8 @@ part:PlacUV5_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"note\": \"CAP-independent\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "PlacUV5 — the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5444,6 +5457,8 @@ part:Plac_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5586,6 +5601,8 @@ part:Pm_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"activator\": \"XylS\", \"inducer\": \"m-toluate / benzoate\", \"regulation\": \"inducible\"}" ;
     cat:confidence "high" ;
+    cat:inducer "m-toluate / benzoate" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ..." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -5811,6 +5828,8 @@ part:Ptac_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"regulation\": \"inducible\", \"repressor\": \"LacI\", \"strength\": \"strong\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -6005,6 +6024,7 @@ part:Ptrc_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"note\": \"promoter core only; add a lac operator for IPTG control\", \"regulation\": \"constitutive\", \"strength\": \"strong\"}" ;
     cat:confidence "medium" ;
+    cat:regulation "constitutive" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -6234,6 +6254,8 @@ part:Pxyl_tet_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
     cat:confidence "high" ;
+    cat:inducer "anhydrotetracycline (aTc)" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1)." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -6510,6 +6532,8 @@ part:T7lac_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"IPTG\", \"note\": \"requires T7 RNA polymerase\", \"regulation\": \"inducible\", \"repressor\": \"LacI\"}" ;
     cat:confidence "high" ;
+    cat:inducer "IPTG" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase." ;
     cat:sourceQuoteFrom "catalog-doc" .
@@ -7828,6 +7852,8 @@ part:tetR_tetA_promoters_claim_regulation a cat:FunctionalClaim ;
     cat:claimType "regulation" ;
     cat:claimValue "{\"inducer\": \"anhydrotetracycline (aTc)\", \"regulation\": \"inducible\", \"repressor\": \"TetR\"}" ;
     cat:confidence "high" ;
+    cat:inducer "anhydrotetracycline (aTc)" ;
+    cat:regulation "inducible" ;
     cat:reviewStatus "ai-generated" ;
     cat:sourceQuote "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2." ;
     cat:sourceQuoteFrom "catalog-doc" .

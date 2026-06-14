@@ -42,9 +42,9 @@ FEATURES             Location/Qualifiers
                      /synonym="dihydrofolate reductase"
                      /synonym="trimethoprim resistance"
                      /note="Type I (DfrA1) trimethoprim-resistant dihydrofolate
-                     reductase from transposon Tn7 — a 157-aa enzyme - a single
-                     FolA-fold catalytic domain (UniProt P00382); the catalogued
-                     allele carries an N73D sub..."
+                     reductase from transposon Tn7 - a 157-aa FolA-fold enzyme
+                     (EC 1.5.1.3); the catalogued sequence is the UniProt P00382
+                     canonical."
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P00382"
      protein_domain  2..156

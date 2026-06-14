@@ -296,8 +296,10 @@ def add_functional_claims(g: Graph, part: dict) -> int:
         if c["type"] in ("repression_dynamic_range", "induction_dynamic_range") \
                 and isinstance(val.get("fold"), (int, float)):
             g.add((cu, CAT.foldChange, Literal(val["fold"], datatype=XSD.decimal)))
-        if c["type"] == "inducer" and val.get("inducer"):
+        if val.get("inducer"):
             g.add((cu, CAT.inducer, Literal(val["inducer"])))
+        if val.get("regulation"):
+            g.add((cu, CAT.regulation, Literal(val["regulation"])))
         # Assertion provenance (the nanopublication idea, as plain PROV-O), with
         # granular in-source locators (a quote and/or figure/table/page) so a
         # reviewer can find the evidence, not just the paper.
