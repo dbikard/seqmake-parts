@@ -51,13 +51,14 @@ Parts are split by curation status:
   (GTG/TTG) is still translated as fMet, so a coding part begins with **M** —
   never store the start codon's literal amino acid (a `V`/`L` start) or record it
   as a variant. A protein part **must** record a `/db_xref="UniProt:Pxxxxx"`
-  (preferred) or `NCBI:…` accession on the main feature, and **does not** carry
-  residue-level sub-features (domains, active sites, binding residues, PTMs):
-  those are maintained in UniProt / InterPro / AlphaFold and linked (the build
-  emits `rdfs:seeAlso` to the UniProt entry), not duplicated here. Annotate only
+  (preferred) or `NCBI:…` accession on the main feature, and its residue-level
+  features (domains, active sites, binding residues, PTMs) are **imported from
+  UniProt**, not hand-authored: run `python tools/import_uniprot_features.py
+  <slug>` to cache a provenance-tagged `uniprot_features` projection that is baked
+  into the generated `.gb` (and emits `rdfs:seeAlso` to UniProt). Hand-author only
   the engineering layer (role, functional_claims, cognate partners, collections).
   Regulatory DNA parts (promoter / terminator / operator / RBS / origin) keep
-  their sub-features.
+  their hand-authored sub-features.
 - **Cross-links.** A promoter names its cognate transcription-factor part(s) with
   a `/regulated_by="<TF name>"` qualifier (repeatable) on its main feature. The
   build resolves each name to that part and derives the inverse on the TF's page

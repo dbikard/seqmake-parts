@@ -19,9 +19,11 @@ Work through the SOP and do not skip the hard rules — most importantly:
 - Keep prose **lab- and tool-agnostic** (`tools/check_content.py` enforces this).
 - Type the part and sub-features with **Sequence Ontology** terms.
 - **Protein/CDS parts defer biology to UniProt:** stamp a required `UniProt:…`
-  (or `NCBI:…`) accession and do NOT annotate residue-level features (domains,
-  active sites, binding residues, PTMs) — those are linked, not duplicated. Only
-  add the engineering layer (role, functional_claims, cognate partners).
+  (or `NCBI:…`) accession and do NOT hand-author residue-level features (domains,
+  active sites, binding residues, PTMs). Instead run
+  `python tools/import_uniprot_features.py <slug>` to import them from UniProt
+  (cached + provenance, baked into the `.gb`). Only hand-author the engineering
+  layer (role, functional_claims, cognate partners).
 - Every `functional_claim` cites its evidence (PMID/DOI + a verbatim quote and,
   when you have actually read it, a figure/table locator). Never fabricate a
   figure number. Mark `quote_source: primary` vs `catalog-doc` honestly, and set

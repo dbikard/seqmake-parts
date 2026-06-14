@@ -282,10 +282,11 @@ def _protein_defer_note(part: dict) -> str:
     """For a protein part, point to UniProt for residue-level biology instead of
     duplicating it: domains/active sites/structure live in the linked entry."""
     if part.get("kind") == "protein" and part.get("source_accession"):
-        return ('!!! note "Protein features → UniProt"\n\n'
-                "    Domains, active sites, and structure for this protein are "
-                "maintained in the linked **UniProt** entry (with InterPro and "
-                "AlphaFold), not duplicated here.\n")
+        return ('!!! note "Protein features from UniProt"\n\n'
+                "    Any domains / sites below are **imported from the linked "
+                "UniProt entry** (a cached projection, not hand-authored); see "
+                "UniProt, InterPro and AlphaFold for the authoritative, complete "
+                "set and structure.\n")
     return ""
 
 

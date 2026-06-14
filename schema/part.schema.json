@@ -113,6 +113,29 @@
             "description": "id of a prior claim this one corrects"}
         }
       }
+    },
+    "uniprot_features": {
+      "type": "array",
+      "description": "Protein features imported from UniProt (domains, active/binding sites, signal peptides) -- a cached projection of the authoritative source, NOT hand-authored. Coordinates are 0-based, end-exclusive, in residue space. Regenerate with tools/import_uniprot_features.py; baked into the generated .gb so GenBank consumers get them.",
+      "items": {
+        "type": "object",
+        "required": ["type", "start", "end", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"type": "string", "description": "GenBank feature type (protein_domain, sig_peptide, binding, misc_feature, ...)"},
+          "start": {"type": "integer", "minimum": 0},
+          "end": {"type": "integer", "minimum": 1},
+          "label": {"type": "string"},
+          "so_term": {"type": ["string", "null"]},
+          "description": {"type": "string"},
+          "uniprot_type": {"type": "string", "description": "the original UniProt feature type"}
+        }
+      }
+    },
+    "uniprot_import": {
+      "type": "object",
+      "description": "provenance of the uniprot_features cache (accession, UniProt release, fetch date, sequence-match status).",
+      "additionalProperties": true
     }
   }
 }

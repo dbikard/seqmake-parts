@@ -43,5 +43,26 @@ def test_record_json_record_is_faithful():
             "SOURCE      \n", "SOURCE      .\n")
 
 
+def test_uniprot_features_bake_into_gb():
+    """Cached uniprot_features are emitted as source-tagged .gb sub-features."""
+    data = {
+        "schema_version": "1.0", "slug": "Tp", "locus": "Tp", "id": "Tp",
+        "description": "t", "molecule_type": "protein",
+        "locus_annotations": {"topology": "linear"},
+        "sequence": "MKVLATREDGSIPYNQ",
+        "references": [],
+        "features": [{"type": "CDS", "start": 0, "end": 16, "strand": 1,
+                      "qualifiers": {"label": ["Tp"],
+                                     "db_xref": ["SO:0000316", "UniProt:P00001"]}}],
+        "uniprot_import": {"accession": "UniProt:P00001"},
+        "uniprot_features": [{"type": "protein_domain", "start": 1, "end": 10,
+                              "label": "Test domain", "so_term": "SO:0000417"}],
+    }
+    gb = gb_text_from_json(data)
+    assert "protein_domain" in gb
+    assert '/parent="Tp"' in gb
+    assert "source: UniProt:P00001" in gb
+
+
 def test_all_json_valid_against_schema():
     assert problems() == []

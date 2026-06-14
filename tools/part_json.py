@@ -107,6 +107,23 @@ def json_to_record(data: dict) -> SeqRecord:
             FeatureLocation(int(f["start"]), int(f["end"]), strand=f["strand"]),
             type=f["type"],
             qualifiers={k: list(v) for k, v in f["qualifiers"].items()}))
+    # Cached UniProt-imported protein features are baked into the .gb as
+    # sub-features of the main feature (so GenBank consumers get them), tagged
+    # with their source. They are a projection of UniProt, not authored here.
+    uf = data.get("uniprot_features") or []
+    if uf:
+        main = next((g for g in rec.features
+                     if "parent" not in g.qualifiers), None)
+        main_label = (main.qualifiers.get("label") or [data["slug"]])[0] if main else data["slug"]
+        acc = (data.get("uniprot_import") or {}).get("accession", "")
+        src = f"source: {acc}" if acc else "source: UniProt"
+        for f in uf:
+            q = {"label": [f["label"]], "parent": [main_label], "note": [src]}
+            if f.get("so_term"):
+                q["db_xref"] = [f["so_term"]]
+            rec.features.append(SeqFeature(
+                FeatureLocation(int(f["start"]), int(f["end"]), strand=1),
+                type=f["type"], qualifiers=q))
     return rec
 
 
