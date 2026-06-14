@@ -13,6 +13,66 @@ FEATURES             Location/Qualifiers
                      /synonym="imidazoleglycerol-phosphate dehydratase"
                      /synonym="IGPD"
                      /db_xref="UniProt:P06633"
+     binding         14
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         64..72
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         64
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         90..94
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         90
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         91
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         94
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         116
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         138
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         162
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         186..194
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         186
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         187
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         190
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
+     binding         214..216
+                     /label="Binding site"
+                     /parent="HIS3"
+                     /note="source: UniProt:P06633"
 ORIGIN
         1 mteqkalvkr itnetkiqia islkggplai ehsifpekea eavaeqatqs qvinvhtgig
        61 fldhmihala khsgwslive cigdlhiddh httedcgial gqafkealga vrgvkrfgsg

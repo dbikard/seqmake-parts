@@ -111,5 +111,12 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "accession": "UniProt:P02981",
+    "uniprot_release": 104,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

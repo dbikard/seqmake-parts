@@ -13,6 +13,52 @@ FEATURES             Location/Qualifiers
                      /synonym="3-isopropylmalate dehydrogenase"
                      /synonym="beta-IPM dehydrogenase"
                      /db_xref="UniProt:P04173"
+     binding         79..90
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         97
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         107
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         136
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         225
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         225
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         250
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         254
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     binding         289..300
+                     /label="Binding site"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+     misc_feature    143
+                     /label="Site: Important for catalysis"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+                     /db_xref="SO:0000110"
+     misc_feature    192
+                     /label="Site: Important for catalysis"
+                     /parent="LEU2"
+                     /note="source: UniProt:P04173"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 msapkkivvl pgdhvgqeit aeaikvlkai sdvrsnvkfd fenhliggaa idatgvplpd
        61 ealeaskkad avllgavggp kwgtgsvrpe qgllkirkel qlyanlrpcn fasdslldls

@@ -46,6 +46,11 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P00557"
                      /citation=[1]
+     misc_feature    198
+                     /label="Active site: Proton acceptor"
+                     /parent="HygR"
+                     /note="source: UniProt:P00557"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 mkkpeltats vekfliekfd svsdlmqlse geesrafsfd vggrgyvlrv nscadgfykd
        61 ryvyrhfasa alpipevldi gefsesltyc isrraqgvtl qdlpetelpa vlqpvaeamd

@@ -91,5 +91,139 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 5,
+      "end": 198,
+      "label": "N-acetyltransferase",
+      "so_term": "SO:0000417",
+      "description": "N-acetyltransferase",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "binding",
+      "start": 76,
+      "end": 77,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 109,
+      "end": 110,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 125,
+      "end": 126,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 127,
+      "end": 128,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 129,
+      "end": 130,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 135,
+      "end": 136,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 137,
+      "end": 138,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 139,
+      "end": 140,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 140,
+      "end": 141,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 160,
+      "end": 161,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 165,
+      "end": 166,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 166,
+      "end": 167,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 172,
+      "end": 173,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P13249",
+    "uniprot_release": 93,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

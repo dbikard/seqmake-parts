@@ -92,5 +92,22 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 2,
+      "end": 121,
+      "label": "VOC",
+      "so_term": "SO:0000417",
+      "description": "VOC",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P17493",
+    "uniprot_release": 91,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

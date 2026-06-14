@@ -45,6 +45,63 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P13249"
                      /citation=[1]
                      /citation=[2]
+     protein_domain  6..198
+                     /label="N-acetyltransferase"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+                     /db_xref="SO:0000417"
+     binding         77
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         110
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         126
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         128
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         130
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         136
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         138
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         140
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         141
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         161
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         166
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         167
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
+     binding         173
+                     /label="Binding site"
+                     /parent="PuroR"
+                     /note="source: UniProt:P13249"
 ORIGIN
         1 mteykptvrl atrddvprav rtlaaafady patrhtvdpd rhiervtelq elfltrvgld
        61 igkvwvaddg aavavwttpe sveagavfae igprmaelsg srlaaqqqme gllaphrpke

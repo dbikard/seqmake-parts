@@ -36,5 +36,12 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "accession": "UniProt:P00912",
+    "uniprot_release": 185,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

@@ -100,5 +100,40 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "misc_feature",
+      "start": 189,
+      "end": 190,
+      "label": "Active site: Proton acceptor",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "binding",
+      "start": 194,
+      "end": 195,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 207,
+      "end": 208,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P00552",
+    "uniprot_release": 119,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

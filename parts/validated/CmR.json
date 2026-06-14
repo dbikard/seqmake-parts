@@ -105,5 +105,22 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "misc_feature",
+      "start": 192,
+      "end": 193,
+      "label": "Active site: Proton acceptor",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor",
+      "uniprot_type": "Active site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P62577",
+    "uniprot_release": 117,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

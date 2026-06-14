@@ -98,5 +98,22 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 24,
+      "end": 177,
+      "label": "N-acetyltransferase",
+      "so_term": "SO:0000417",
+      "description": "N-acetyltransferase",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P23181",
+    "uniprot_release": 90,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

@@ -53,6 +53,11 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P23181"
                      /citation=[1]
+     protein_domain  25..177
+                     /label="N-acetyltransferase"
+                     /parent="GmR"
+                     /note="source: UniProt:P23181"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 mlrssndvtq qgsrpktklg gssmgiirtc rlgpdqvksm raaldlfgre fgdvatysqh
        61 qpdsdylgnl lrsktfiala afdqeavvga laayvlprfe qprseiyiyd lavsgehrrq

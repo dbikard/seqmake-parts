@@ -54,6 +54,19 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P00552"
                      /citation=[1]
                      /citation=[2]
+     misc_feature    190
+                     /label="Active site: Proton acceptor"
+                     /parent="kanR (Tn5)"
+                     /note="source: UniProt:P00552"
+                     /db_xref="SO:0000110"
+     binding         195
+                     /label="Binding site"
+                     /parent="kanR (Tn5)"
+                     /note="source: UniProt:P00552"
+     binding         208
+                     /label="Binding site"
+                     /parent="kanR (Tn5)"
+                     /note="source: UniProt:P00552"
 ORIGIN
         1 mieqdglhag spaawverlf gydwaqqtig csdaavfrls aqgrpvlfvk tdlsgalnel
        61 qdeaarlswl attgvpcaav ldvvteagrd wlllgevpgq dllsshlapa ekvsimadam

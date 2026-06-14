@@ -36,5 +36,112 @@
   "provenance": {
     "migrated_from": "genbank"
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "binding",
+      "start": 78,
+      "end": 90,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 96,
+      "end": 97,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 106,
+      "end": 107,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 135,
+      "end": 136,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 224,
+      "end": 225,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 224,
+      "end": 225,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 249,
+      "end": 250,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 253,
+      "end": 254,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 288,
+      "end": 300,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 142,
+      "end": 143,
+      "label": "Site: Important for catalysis",
+      "so_term": "SO:0000110",
+      "description": "Important for catalysis",
+      "uniprot_type": "Site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 191,
+      "end": 192,
+      "label": "Site: Important for catalysis",
+      "so_term": "SO:0000110",
+      "description": "Important for catalysis",
+      "uniprot_type": "Site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P04173",
+    "uniprot_release": 199,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

@@ -44,6 +44,11 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P17493"
                      /citation=[1]
                      /citation=[2]
+     protein_domain  3..121
+                     /label="VOC"
+                     /parent="ZeoR"
+                     /note="source: UniProt:P17493"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 makltsavpv ltardvagav efwtdrlgfs rdfveddfag vvrddvtlfi savqdqvvpd
        61 ntlawvwvrg ldelyaewse vvstnfrdas gpamteigeq pwgrefalrd pagncvhfva

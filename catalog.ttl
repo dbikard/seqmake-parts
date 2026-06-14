@@ -271,6 +271,15 @@ part:BlastR a sbol:Component ;
         pubmed:8159161 ;
     dcterms:title "BlastR" ;
     sbol:displayId "BlastR" ;
+    sbol:hasFeature part:BlastR_feature_0,
+        part:BlastR_feature_1,
+        part:BlastR_feature_2,
+        part:BlastR_feature_3,
+        part:BlastR_feature_4,
+        part:BlastR_feature_5,
+        part:BlastR_feature_6,
+        part:BlastR_feature_7,
+        part:BlastR_feature_8 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:BlastR_sequence ;
     sbol:role so:0000316 ;
@@ -389,6 +398,7 @@ part:CmR a sbol:Component ;
         pubmed:390403 ;
     dcterms:title "CmR" ;
     sbol:displayId "CmR" ;
+    sbol:hasFeature part:CmR_feature_0 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:CmR_sequence ;
     sbol:role so:0000316 ;
@@ -671,6 +681,7 @@ part:GmR a sbol:Component ;
         pubmed:9727487 ;
     dcterms:title "GmR" ;
     sbol:displayId "GmR" ;
+    sbol:hasFeature part:GmR_feature_0 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:GmR_sequence ;
     sbol:role so:0000316 ;
@@ -706,6 +717,21 @@ part:HIS3 a sbol:Component ;
     rdfs:label "HIS3" ;
     dcterms:title "HIS3" ;
     sbol:displayId "HIS3" ;
+    sbol:hasFeature part:HIS3_feature_0,
+        part:HIS3_feature_1,
+        part:HIS3_feature_10,
+        part:HIS3_feature_11,
+        part:HIS3_feature_12,
+        part:HIS3_feature_13,
+        part:HIS3_feature_14,
+        part:HIS3_feature_2,
+        part:HIS3_feature_3,
+        part:HIS3_feature_4,
+        part:HIS3_feature_5,
+        part:HIS3_feature_6,
+        part:HIS3_feature_7,
+        part:HIS3_feature_8,
+        part:HIS3_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:HIS3_sequence ;
     sbol:role so:0000316 ;
@@ -768,6 +794,7 @@ part:HygR a sbol:Component ;
         pubmed:6319235 ;
     dcterms:title "HygR" ;
     sbol:displayId "HygR" ;
+    sbol:hasFeature part:HygR_feature_0 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:HygR_sequence ;
     sbol:role so:0000316 ;
@@ -858,6 +885,17 @@ part:LEU2 a sbol:Component ;
     rdfs:label "LEU2" ;
     dcterms:title "LEU2" ;
     sbol:displayId "LEU2" ;
+    sbol:hasFeature part:LEU2_feature_0,
+        part:LEU2_feature_1,
+        part:LEU2_feature_10,
+        part:LEU2_feature_2,
+        part:LEU2_feature_3,
+        part:LEU2_feature_4,
+        part:LEU2_feature_5,
+        part:LEU2_feature_6,
+        part:LEU2_feature_7,
+        part:LEU2_feature_8,
+        part:LEU2_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:LEU2_sequence ;
     sbol:role so:0000316 ;
@@ -1461,6 +1499,20 @@ part:PuroR a sbol:Component ;
         pubmed:3714487 ;
     dcterms:title "PuroR" ;
     sbol:displayId "PuroR" ;
+    sbol:hasFeature part:PuroR_feature_0,
+        part:PuroR_feature_1,
+        part:PuroR_feature_10,
+        part:PuroR_feature_11,
+        part:PuroR_feature_12,
+        part:PuroR_feature_13,
+        part:PuroR_feature_2,
+        part:PuroR_feature_3,
+        part:PuroR_feature_4,
+        part:PuroR_feature_5,
+        part:PuroR_feature_6,
+        part:PuroR_feature_7,
+        part:PuroR_feature_8,
+        part:PuroR_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:PuroR_sequence ;
     sbol:role so:0000316 ;
@@ -2089,6 +2141,7 @@ part:ZeoR a sbol:Component ;
         pubmed:7516875 ;
     dcterms:title "ZeoR" ;
     sbol:displayId "ZeoR" ;
+    sbol:hasFeature part:ZeoR_feature_0 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:ZeoR_sequence ;
     sbol:role so:0000316 ;
@@ -2323,6 +2376,18 @@ part:cas9 a sbol:Component ;
     rdfs:label "cas9" ;
     dcterms:title "cas9" ;
     sbol:displayId "cas9" ;
+    sbol:hasFeature part:cas9_feature_0,
+        part:cas9_feature_1,
+        part:cas9_feature_10,
+        part:cas9_feature_11,
+        part:cas9_feature_2,
+        part:cas9_feature_3,
+        part:cas9_feature_4,
+        part:cas9_feature_5,
+        part:cas9_feature_6,
+        part:cas9_feature_7,
+        part:cas9_feature_8,
+        part:cas9_feature_9 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:cas9_sequence ;
     sbol:role so:0000316 ;
@@ -2553,6 +2618,9 @@ part:kanR_Tn5 a sbol:Component ;
         pubmed:6295884 ;
     dcterms:title "kanR (Tn5)" ;
     sbol:displayId "kanR_Tn5" ;
+    sbol:hasFeature part:kanR_Tn5_feature_0,
+        part:kanR_Tn5_feature_1,
+        part:kanR_Tn5_feature_2 ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
     sbol:hasSequence part:kanR_Tn5_sequence ;
     sbol:role so:0000316 ;
@@ -3503,11 +3571,106 @@ part:BlastR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "BlastR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:BlastR_sequence a sbol:Sequence ;
-    sbol:displayId "BlastR_sequence" ;
-    sbol:elements "MPLSQEESTLIERATATINSIPISEDYSVASAALSSDGRIFTGVNVYHFTGGPCAELVVLGTAAAAAAGNLTCIVAIGNENRGILSPCGRCRQVLLDLHPGIKAIVKDSDGQPTAVGIRELLPSGYVWEG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:BlastR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "CMP/dCMP-type deaminase" ;
+    sbol:displayId "BlastR_feature_0" ;
+    sbol:hasLocation part:BlastR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:BlastR_feature_0_range a sbol:Range ;
+    sbol:end 129 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 1 .
+
+part:BlastR_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton donor" ;
+    sbol:displayId "BlastR_feature_1" ;
+    sbol:hasLocation part:BlastR_feature_1_range ;
+    sbol:role so:0000110 .
+
+part:BlastR_feature_1_range a sbol:Range ;
+    sbol:end 56 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 56 .
+
+part:BlastR_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site: in other chain" ;
+    sbol:displayId "BlastR_feature_2" ;
+    sbol:hasLocation part:BlastR_feature_2_range .
+
+part:BlastR_feature_2_range a sbol:Range ;
+    sbol:end 28 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 28 .
+
+part:BlastR_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "BlastR_feature_3" ;
+    sbol:hasLocation part:BlastR_feature_3_range .
+
+part:BlastR_feature_3_range a sbol:Range ;
+    sbol:end 54 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 54 .
+
+part:BlastR_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site: in other chain" ;
+    sbol:displayId "BlastR_feature_4" ;
+    sbol:hasLocation part:BlastR_feature_4_range .
+
+part:BlastR_feature_4_range a sbol:Range ;
+    sbol:end 82 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 82 .
+
+part:BlastR_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "BlastR_feature_5" ;
+    sbol:hasLocation part:BlastR_feature_5_range .
+
+part:BlastR_feature_5_range a sbol:Range ;
+    sbol:end 88 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 88 .
+
+part:BlastR_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "BlastR_feature_6" ;
+    sbol:hasLocation part:BlastR_feature_6_range .
+
+part:BlastR_feature_6_range a sbol:Range ;
+    sbol:end 91 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 91 .
+
+part:BlastR_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "BlastR_feature_7" ;
+    sbol:hasLocation part:BlastR_feature_7_range .
+
+part:BlastR_feature_7_range a sbol:Range ;
+    sbol:end 126 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 126 .
+
+part:BlastR_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site: in other chain" ;
+    sbol:displayId "BlastR_feature_8" ;
+    sbol:hasLocation part:BlastR_feature_8_range .
+
+part:BlastR_feature_8_range a sbol:Range ;
+    sbol:end 128 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:BlastR_sequence ;
+    sbol:start 128 .
 
 part:CAG_sequence a sbol:Sequence ;
     sbol:displayId "CAG_sequence" ;
@@ -3585,11 +3748,17 @@ part:CmR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "CmR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:CmR_sequence a sbol:Sequence ;
-    sbol:displayId "CmR_sequence" ;
-    sbol:elements "MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:CmR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "CmR_feature_0" ;
+    sbol:hasLocation part:CmR_feature_0_range ;
+    sbol:role so:0000110 .
+
+part:CmR_feature_0_range a sbol:Range ;
+    sbol:end 193 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:CmR_sequence ;
+    sbol:start 193 .
 
 part:ColE1_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
@@ -3788,11 +3957,17 @@ part:GmR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "GmR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:GmR_sequence a sbol:Sequence ;
-    sbol:displayId "GmR_sequence" ;
-    sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:GmR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "N-acetyltransferase" ;
+    sbol:displayId "GmR_feature_0" ;
+    sbol:hasLocation part:GmR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:GmR_feature_0_range a sbol:Range ;
+    sbol:end 177 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:GmR_sequence ;
+    sbol:start 25 .
 
 part:HA_sequence a sbol:Sequence ;
     sbol:displayId "HA_sequence" ;
@@ -3800,11 +3975,170 @@ part:HA_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:HIS3_sequence a sbol:Sequence ;
-    sbol:displayId "HIS3_sequence" ;
-    sbol:elements "MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLRGKNDHHRSESAFKALAVAIREATSPNGTNDVPSTKGVLM" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:HIS3_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_0" ;
+    sbol:hasLocation part:HIS3_feature_0_range .
+
+part:HIS3_feature_0_range a sbol:Range ;
+    sbol:end 14 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 14 .
+
+part:HIS3_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_1" ;
+    sbol:hasLocation part:HIS3_feature_1_range .
+
+part:HIS3_feature_10 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_10" ;
+    sbol:hasLocation part:HIS3_feature_10_range .
+
+part:HIS3_feature_10_range a sbol:Range ;
+    sbol:end 194 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 186 .
+
+part:HIS3_feature_11 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_11" ;
+    sbol:hasLocation part:HIS3_feature_11_range .
+
+part:HIS3_feature_11_range a sbol:Range ;
+    sbol:end 186 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 186 .
+
+part:HIS3_feature_12 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_12" ;
+    sbol:hasLocation part:HIS3_feature_12_range .
+
+part:HIS3_feature_12_range a sbol:Range ;
+    sbol:end 187 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 187 .
+
+part:HIS3_feature_13 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_13" ;
+    sbol:hasLocation part:HIS3_feature_13_range .
+
+part:HIS3_feature_13_range a sbol:Range ;
+    sbol:end 190 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 190 .
+
+part:HIS3_feature_14 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_14" ;
+    sbol:hasLocation part:HIS3_feature_14_range .
+
+part:HIS3_feature_14_range a sbol:Range ;
+    sbol:end 216 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 214 .
+
+part:HIS3_feature_1_range a sbol:Range ;
+    sbol:end 72 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 64 .
+
+part:HIS3_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_2" ;
+    sbol:hasLocation part:HIS3_feature_2_range .
+
+part:HIS3_feature_2_range a sbol:Range ;
+    sbol:end 64 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 64 .
+
+part:HIS3_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_3" ;
+    sbol:hasLocation part:HIS3_feature_3_range .
+
+part:HIS3_feature_3_range a sbol:Range ;
+    sbol:end 94 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 90 .
+
+part:HIS3_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_4" ;
+    sbol:hasLocation part:HIS3_feature_4_range .
+
+part:HIS3_feature_4_range a sbol:Range ;
+    sbol:end 90 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 90 .
+
+part:HIS3_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_5" ;
+    sbol:hasLocation part:HIS3_feature_5_range .
+
+part:HIS3_feature_5_range a sbol:Range ;
+    sbol:end 91 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 91 .
+
+part:HIS3_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_6" ;
+    sbol:hasLocation part:HIS3_feature_6_range .
+
+part:HIS3_feature_6_range a sbol:Range ;
+    sbol:end 94 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 94 .
+
+part:HIS3_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_7" ;
+    sbol:hasLocation part:HIS3_feature_7_range .
+
+part:HIS3_feature_7_range a sbol:Range ;
+    sbol:end 116 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 116 .
+
+part:HIS3_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_8" ;
+    sbol:hasLocation part:HIS3_feature_8_range .
+
+part:HIS3_feature_8_range a sbol:Range ;
+    sbol:end 138 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 138 .
+
+part:HIS3_feature_9 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "HIS3_feature_9" ;
+    sbol:hasLocation part:HIS3_feature_9_range .
+
+part:HIS3_feature_9_range a sbol:Range ;
+    sbol:end 162 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HIS3_sequence ;
+    sbol:start 162 .
 
 part:HK022_attB_sequence a sbol:Sequence ;
     sbol:displayId "HK022_attB_sequence" ;
@@ -3841,11 +4175,17 @@ part:HygR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "HygR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:HygR_sequence a sbol:Sequence ;
-    sbol:displayId "HygR_sequence" ;
-    sbol:elements "MKKPELTATSVEKFLIEKFDSVSDLMQLSEGEESRAFSFDVGGRGYVLRVNSCADGFYKDRYVYRHFASAALPIPEVLDIGEFSESLTYCISRRAQGVTLQDLPETELPAVLQPVAEAMDAIAAADLSQTSGFGPFGPQGIGQYTTWRDFICAIADPHVYHWQTVMDDTVSASVAQALDELMLWAEDCPEVRHLVHADFGSNNVLTDNGRITAVIDWSEAMFGDSQYEVANIFFWRPWLACMEQQTRYFERRHPELAGSPRLRAYMLRIGLDQLYQSLVDGNFDDAAWAQGRCDAIVRSGAGTVGRTQIARRSAAVWTDGCVEVLADSGNRRPSTRPRAKE" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:HygR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "HygR_feature_0" ;
+    sbol:hasLocation part:HygR_feature_0_range ;
+    sbol:role so:0000110 .
+
+part:HygR_feature_0_range a sbol:Range ;
+    sbol:end 198 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:HygR_sequence ;
+    sbol:start 198 .
 
 part:I-SceI_site_sequence a sbol:Sequence ;
     sbol:displayId "I-SceI_site_sequence" ;
@@ -4150,11 +4490,128 @@ part:LAA_deg_tag_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:LEU2_sequence a sbol:Sequence ;
-    sbol:displayId "LEU2_sequence" ;
-    sbol:elements "MSAPKKIVVLPGDHVGQEITAEAIKVLKAISDVRSNVKFDFENHLIGGAAIDATGVPLPDEALEASKKADAVLLGAVGGPKWGTGSVRPEQGLLKIRKELQLYANLRPCNFASDSLLDLSPIKPQFAKGTDFVVVRELVGGIYFGKRKEDDGDGVAWDSEQYTVPEVQRITRMAAFMALQHEPPLPIWSLDKANVLASSRLWRKTVEETIKNEFPTLKVQHQLIDSAAMILVKNPTHLNGIIITSNMFGDIISDEASVIPGSLGLLPSASLASLPDKNTAFGLYEPCHGSAPDLPKNKVNPIATILSAAMMLKLSLNLPEEGKAIEDAVKKVLDAGIRTGDLGGSNSTTEVGDAVAEEVKKILA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:LEU2_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_0" ;
+    sbol:hasLocation part:LEU2_feature_0_range .
+
+part:LEU2_feature_0_range a sbol:Range ;
+    sbol:end 90 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 79 .
+
+part:LEU2_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_1" ;
+    sbol:hasLocation part:LEU2_feature_1_range .
+
+part:LEU2_feature_10 a sbol:SequenceFeature ;
+    dcterms:title "Site: Important for catalysis" ;
+    sbol:displayId "LEU2_feature_10" ;
+    sbol:hasLocation part:LEU2_feature_10_range ;
+    sbol:role so:0000110 .
+
+part:LEU2_feature_10_range a sbol:Range ;
+    sbol:end 192 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 192 .
+
+part:LEU2_feature_1_range a sbol:Range ;
+    sbol:end 97 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 97 .
+
+part:LEU2_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_2" ;
+    sbol:hasLocation part:LEU2_feature_2_range .
+
+part:LEU2_feature_2_range a sbol:Range ;
+    sbol:end 107 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 107 .
+
+part:LEU2_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_3" ;
+    sbol:hasLocation part:LEU2_feature_3_range .
+
+part:LEU2_feature_3_range a sbol:Range ;
+    sbol:end 136 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 136 .
+
+part:LEU2_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_4" ;
+    sbol:hasLocation part:LEU2_feature_4_range .
+
+part:LEU2_feature_4_range a sbol:Range ;
+    sbol:end 225 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 225 .
+
+part:LEU2_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_5" ;
+    sbol:hasLocation part:LEU2_feature_5_range .
+
+part:LEU2_feature_5_range a sbol:Range ;
+    sbol:end 225 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 225 .
+
+part:LEU2_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_6" ;
+    sbol:hasLocation part:LEU2_feature_6_range .
+
+part:LEU2_feature_6_range a sbol:Range ;
+    sbol:end 250 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 250 .
+
+part:LEU2_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_7" ;
+    sbol:hasLocation part:LEU2_feature_7_range .
+
+part:LEU2_feature_7_range a sbol:Range ;
+    sbol:end 254 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 254 .
+
+part:LEU2_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "LEU2_feature_8" ;
+    sbol:hasLocation part:LEU2_feature_8_range .
+
+part:LEU2_feature_8_range a sbol:Range ;
+    sbol:end 300 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 289 .
+
+part:LEU2_feature_9 a sbol:SequenceFeature ;
+    dcterms:title "Site: Important for catalysis" ;
+    sbol:displayId "LEU2_feature_9" ;
+    sbol:hasLocation part:LEU2_feature_9_range ;
+    sbol:role so:0000110 .
+
+part:LEU2_feature_9_range a sbol:Range ;
+    sbol:end 143 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:LEU2_sequence ;
+    sbol:start 143 .
 
 part:LuxA_sequence a sbol:Sequence ;
     sbol:displayId "LuxA_sequence" ;
@@ -5582,11 +6039,160 @@ part:PuroR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "PuroR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:PuroR_sequence a sbol:Sequence ;
-    sbol:displayId "PuroR_sequence" ;
-    sbol:elements "MTEYKPTVRLATRDDVPRAVRTLAAAFADYPATRHTVDPDRHIERVTELQELFLTRVGLDIGKVWVADDGAAVAVWTTPESVEAGAVFAEIGPRMAELSGSRLAAQQQMEGLLAPHRPKEPAWFLATVGVSPDHQGKGLGSAVVLPGVEAAERAGVPAFLETSAPRNLPFYERLGFTVTADVEVPEGPRTWCMTRKPGA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:PuroR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "N-acetyltransferase" ;
+    sbol:displayId "PuroR_feature_0" ;
+    sbol:hasLocation part:PuroR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:PuroR_feature_0_range a sbol:Range ;
+    sbol:end 198 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 6 .
+
+part:PuroR_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_1" ;
+    sbol:hasLocation part:PuroR_feature_1_range .
+
+part:PuroR_feature_10 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_10" ;
+    sbol:hasLocation part:PuroR_feature_10_range .
+
+part:PuroR_feature_10_range a sbol:Range ;
+    sbol:end 161 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 161 .
+
+part:PuroR_feature_11 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_11" ;
+    sbol:hasLocation part:PuroR_feature_11_range .
+
+part:PuroR_feature_11_range a sbol:Range ;
+    sbol:end 166 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 166 .
+
+part:PuroR_feature_12 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_12" ;
+    sbol:hasLocation part:PuroR_feature_12_range .
+
+part:PuroR_feature_12_range a sbol:Range ;
+    sbol:end 167 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 167 .
+
+part:PuroR_feature_13 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_13" ;
+    sbol:hasLocation part:PuroR_feature_13_range .
+
+part:PuroR_feature_13_range a sbol:Range ;
+    sbol:end 173 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 173 .
+
+part:PuroR_feature_1_range a sbol:Range ;
+    sbol:end 77 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 77 .
+
+part:PuroR_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_2" ;
+    sbol:hasLocation part:PuroR_feature_2_range .
+
+part:PuroR_feature_2_range a sbol:Range ;
+    sbol:end 110 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 110 .
+
+part:PuroR_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_3" ;
+    sbol:hasLocation part:PuroR_feature_3_range .
+
+part:PuroR_feature_3_range a sbol:Range ;
+    sbol:end 126 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 126 .
+
+part:PuroR_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_4" ;
+    sbol:hasLocation part:PuroR_feature_4_range .
+
+part:PuroR_feature_4_range a sbol:Range ;
+    sbol:end 128 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 128 .
+
+part:PuroR_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_5" ;
+    sbol:hasLocation part:PuroR_feature_5_range .
+
+part:PuroR_feature_5_range a sbol:Range ;
+    sbol:end 130 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 130 .
+
+part:PuroR_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_6" ;
+    sbol:hasLocation part:PuroR_feature_6_range .
+
+part:PuroR_feature_6_range a sbol:Range ;
+    sbol:end 136 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 136 .
+
+part:PuroR_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_7" ;
+    sbol:hasLocation part:PuroR_feature_7_range .
+
+part:PuroR_feature_7_range a sbol:Range ;
+    sbol:end 138 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 138 .
+
+part:PuroR_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_8" ;
+    sbol:hasLocation part:PuroR_feature_8_range .
+
+part:PuroR_feature_8_range a sbol:Range ;
+    sbol:end 140 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 140 .
+
+part:PuroR_feature_9 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "PuroR_feature_9" ;
+    sbol:hasLocation part:PuroR_feature_9_range .
+
+part:PuroR_feature_9_range a sbol:Range ;
+    sbol:end 141 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PuroR_sequence ;
+    sbol:start 141 .
 
 part:Pxyl_tet_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "TetR-repressible / anhydrotetracycline (aTc)-inducible (S. aureus pRAB)." ;
@@ -6047,11 +6653,17 @@ part:ZeoR_claim_function_provenance a prov:Activity ;
     cat:fromDoc "ZeoR.md" ;
     cat:method "transcribed-from-doc" .
 
-part:ZeoR_sequence a sbol:Sequence ;
-    sbol:displayId "ZeoR_sequence" ;
-    sbol:elements "MAKLTSAVPVLTARDVAGAVEFWTDRLGFSRDFVEDDFAGVVRDDVTLFISAVQDQVVPDNTLAWVWVRGLDELYAEWSEVVSTNFRDASGPAMTEIGEQPWGREFALRDPAGNCVHFVAEEQD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:ZeoR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "VOC" ;
+    sbol:displayId "ZeoR_feature_0" ;
+    sbol:hasLocation part:ZeoR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:ZeoR_feature_0_range a sbol:Range ;
+    sbol:end 121 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ZeoR_sequence ;
+    sbol:start 3 .
 
 part:aadA_claim_function a cat:FunctionalClaim ;
     rdfs:label "Confers streptomycin/spectinomycin resistance (aminoglycoside adenylyltransferase ANT(3'')(9))." ;
@@ -6177,11 +6789,141 @@ part:cas2_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
-part:cas9_sequence a sbol:Sequence ;
-    sbol:displayId "cas9_sequence" ;
-    sbol:elements "MDKKYSIGLDIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDHIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:cas9_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "HNH Cas9-type" ;
+    sbol:displayId "cas9_feature_0" ;
+    sbol:hasLocation part:cas9_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:cas9_feature_0_range a sbol:Range ;
+    sbol:end 921 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 770 .
+
+part:cas9_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Motif: PAM substrate-binding" ;
+    sbol:displayId "cas9_feature_1" ;
+    sbol:hasLocation part:cas9_feature_1_range ;
+    sbol:role so:0000417 .
+
+part:cas9_feature_10 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_10" ;
+    sbol:hasLocation part:cas9_feature_10_range .
+
+part:cas9_feature_10_range a sbol:Range ;
+    sbol:end 1297 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 1297 .
+
+part:cas9_feature_11 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_11" ;
+    sbol:hasLocation part:cas9_feature_11_range .
+
+part:cas9_feature_11_range a sbol:Range ;
+    sbol:end 1328 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 1328 .
+
+part:cas9_feature_1_range a sbol:Range ;
+    sbol:end 1335 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 1333 .
+
+part:cas9_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Active site: For RuvC-like nuclease domain" ;
+    sbol:displayId "cas9_feature_2" ;
+    sbol:hasLocation part:cas9_feature_2_range ;
+    sbol:role so:0000110 .
+
+part:cas9_feature_2_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 10 .
+
+part:cas9_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor for HNH nuclease domain" ;
+    sbol:displayId "cas9_feature_3" ;
+    sbol:hasLocation part:cas9_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:cas9_feature_3_range a sbol:Range ;
+    sbol:end 840 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 840 .
+
+part:cas9_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_4" ;
+    sbol:hasLocation part:cas9_feature_4_range .
+
+part:cas9_feature_4_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 10 .
+
+part:cas9_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_5" ;
+    sbol:hasLocation part:cas9_feature_5_range .
+
+part:cas9_feature_5_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 10 .
+
+part:cas9_feature_6 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_6" ;
+    sbol:hasLocation part:cas9_feature_6_range .
+
+part:cas9_feature_6_range a sbol:Range ;
+    sbol:end 762 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 762 .
+
+part:cas9_feature_7 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_7" ;
+    sbol:hasLocation part:cas9_feature_7_range .
+
+part:cas9_feature_7_range a sbol:Range ;
+    sbol:end 766 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 766 .
+
+part:cas9_feature_8 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_8" ;
+    sbol:hasLocation part:cas9_feature_8_range .
+
+part:cas9_feature_8_range a sbol:Range ;
+    sbol:end 766 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 766 .
+
+part:cas9_feature_9 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "cas9_feature_9" ;
+    sbol:hasLocation part:cas9_feature_9_range .
+
+part:cas9_feature_9_range a sbol:Range ;
+    sbol:end 983 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:cas9_sequence ;
+    sbol:start 983 .
 
 part:catP_sequence a sbol:Sequence ;
     sbol:displayId "catP_sequence" ;
@@ -6295,11 +7037,39 @@ part:kanR_Tn5_claim_function_provenance a prov:Activity ;
     cat:fromDoc "kanR_Tn5.md" ;
     cat:method "transcribed-from-doc" .
 
-part:kanR_Tn5_sequence a sbol:Sequence ;
-    sbol:displayId "kanR_Tn5_sequence" ;
-    sbol:elements "MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRPVLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLSSHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQGLAPAELFARLKARMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIALATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+part:kanR_Tn5_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "kanR_Tn5_feature_0" ;
+    sbol:hasLocation part:kanR_Tn5_feature_0_range ;
+    sbol:role so:0000110 .
+
+part:kanR_Tn5_feature_0_range a sbol:Range ;
+    sbol:end 190 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn5_sequence ;
+    sbol:start 190 .
+
+part:kanR_Tn5_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "kanR_Tn5_feature_1" ;
+    sbol:hasLocation part:kanR_Tn5_feature_1_range .
+
+part:kanR_Tn5_feature_1_range a sbol:Range ;
+    sbol:end 195 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn5_sequence ;
+    sbol:start 195 .
+
+part:kanR_Tn5_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "kanR_Tn5_feature_2" ;
+    sbol:hasLocation part:kanR_Tn5_feature_2_range .
+
+part:kanR_Tn5_feature_2_range a sbol:Range ;
+    sbol:end 208 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn5_sequence ;
+    sbol:start 208 .
 
 part:kanR_Tn903_sequence a sbol:Sequence ;
     sbol:displayId "kanR_Tn903_sequence" ;
@@ -6928,6 +7698,24 @@ part:ChnR a sbol:Component ;
     cat:slug "ChnR" ;
     cat:sourceAccession "NCBI:AB006902" .
 
+part:CmR_sequence a sbol:Sequence ;
+    sbol:displayId "CmR_sequence" ;
+    sbol:elements "MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:GmR_sequence a sbol:Sequence ;
+    sbol:displayId "GmR_sequence" ;
+    sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPRFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:HygR_sequence a sbol:Sequence ;
+    sbol:displayId "HygR_sequence" ;
+    sbol:elements "MKKPELTATSVEKFLIEKFDSVSDLMQLSEGEESRAFSFDVGGRGYVLRVNSCADGFYKDRYVYRHFASAALPIPEVLDIGEFSESLTYCISRRAQGVTLQDLPETELPAVLQPVAEAMDAIAAADLSQTSGFGPFGPQGIGQYTTWRDFICAIADPHVYHWQTVMDDTVSASVAQALDELMLWAEDCPEVRHLVHADFGSNNVLTDNGRITAVIDWSEAMFGDSQYEVANIFFWRPWLACMEQQTRYFERRHPELAGSPRLRAYMLRIGLDQLYQSLVDGNFDDAAWAQGRCDAIVRSGAGTVGRTQIARRSAAVWTDGCVEVLADSGNRRPSTRPRAKE" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:PLtetO-1_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2835082,
         pubmed:8153629,
@@ -7088,6 +7876,12 @@ part:XylS a sbol:Component ;
     cat:regulates part:Pm ;
     cat:slug "XylS" .
 
+part:ZeoR_sequence a sbol:Sequence ;
+    sbol:displayId "ZeoR_sequence" ;
+    sbol:elements "MAKLTSAVPVLTARDVAGAVEFWTDRLGFSRDFVEDDFAGVVRDDVTLFISAVQDQVVPDNTLAWVWVRGLDELYAEWSEVVSTNFRDASGPAMTEIGEQPWGREFALRDPAGNCVHFVAEEQD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:araC a sbol:Component ;
     rdfs:label "araC" ;
     dcterms:title "araC" ;
@@ -7137,6 +7931,12 @@ part:PtetA_sequence a sbol:Sequence ;
     sbol:displayId "PtetA_sequence" ;
     sbol:elements "TTGACACTCTATCATTGATAGAGCATAAT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:kanR_Tn5_sequence a sbol:Sequence ;
+    sbol:displayId "kanR_Tn5_sequence" ;
+    sbol:elements "MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRPVLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLSSHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQGLAPAELFARLKARMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIALATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
 part:p15A_sequence a sbol:Sequence ;
@@ -7235,6 +8035,12 @@ part:tetR_tetA_promoters_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:BlastR_sequence a sbol:Sequence ;
+    sbol:displayId "BlastR_sequence" ;
+    sbol:elements "MPLSQEESTLIERATATINSIPISEDYSVASAALSSDGRIFTGVNVYHFTGGPCAELVVLGTAAAAAAGNLTCIVAIGNENRGILSPCGRCRQVLLDLHPGIKAIVKDSDGQPTAVGIRELLPSGYVWEG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:lacI a sbol:Component ;
     rdfs:label "lacI" ;
     dcterms:title "lacI" ;
@@ -7253,4 +8059,28 @@ part:lacI a sbol:Component ;
         part:Ptrc,
         part:T7lac ;
     cat:slug "lacI" .
+
+part:LEU2_sequence a sbol:Sequence ;
+    sbol:displayId "LEU2_sequence" ;
+    sbol:elements "MSAPKKIVVLPGDHVGQEITAEAIKVLKAISDVRSNVKFDFENHLIGGAAIDATGVPLPDEALEASKKADAVLLGAVGGPKWGTGSVRPEQGLLKIRKELQLYANLRPCNFASDSLLDLSPIKPQFAKGTDFVVVRELVGGIYFGKRKEDDGDGVAWDSEQYTVPEVQRITRMAAFMALQHEPPLPIWSLDKANVLASSRLWRKTVEETIKNEFPTLKVQHQLIDSAAMILVKNPTHLNGIIITSNMFGDIISDEASVIPGSLGLLPSASLASLPDKNTAFGLYEPCHGSAPDLPKNKVNPIATILSAAMMLKLSLNLPEEGKAIEDAVKKVLDAGIRTGDLGGSNSTTEVGDAVAEEVKKILA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:cas9_sequence a sbol:Sequence ;
+    sbol:displayId "cas9_sequence" ;
+    sbol:elements "MDKKYSIGLDIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDHIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:PuroR_sequence a sbol:Sequence ;
+    sbol:displayId "PuroR_sequence" ;
+    sbol:elements "MTEYKPTVRLATRDDVPRAVRTLAAAFADYPATRHTVDPDRHIERVTELQELFLTRVGLDIGKVWVADDGAAVAVWTTPESVEAGAVFAEIGPRMAELSGSRLAAQQQMEGLLAPHRPKEPAWFLATVGVSPDHQGKGLGSAVVLPGVEAAERAGVPAFLETSAPRNLPFYERLGFTVTADVEVPEGPRTWCMTRKPGA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:HIS3_sequence a sbol:Sequence ;
+    sbol:displayId "HIS3_sequence" ;
+    sbol:elements "MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLRGKNDHHRSESAFKALAVAIREATSPNGTNDVPSTKGVLM" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 

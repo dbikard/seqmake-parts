@@ -763,7 +763,98 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "CMP/dCMP-type deaminase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 0,
+          "end": 129,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton donor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 55,
+          "end": 56,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site: in other chain",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 27,
+          "end": 28,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 53,
+          "end": 54,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site: in other chain",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 81,
+          "end": 82,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 87,
+          "end": 88,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 90,
+          "end": 91,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 125,
+          "end": 126,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site: in other chain",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Kimura M, Kamakura T, Tao QZ, Kaneko I, Yamaguchi I",
@@ -997,7 +1088,128 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "HNH Cas9-type",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 769,
+          "end": 921,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Motif: PAM substrate-binding",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 1332,
+          "end": 1335,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: For RuvC-like nuclease domain",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor for HNH nuclease domain",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 839,
+          "end": 840,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 9,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 761,
+          "end": 762,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 765,
+          "end": 766,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 765,
+          "end": 766,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 982,
+          "end": 983,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 1296,
+          "end": 1297,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 1327,
+          "end": 1328,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
       "functional_claims": []
@@ -1268,7 +1480,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 192,
+          "end": 193,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Alton N.K., Vapnek D.",
@@ -2237,7 +2460,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "N-acetyltransferase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 24,
+          "end": 177,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Hsiang MW, White TJ, Davies JE",
@@ -2401,7 +2635,158 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 13,
+          "end": 14,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 63,
+          "end": 72,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 63,
+          "end": 64,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 89,
+          "end": 94,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 89,
+          "end": 90,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 90,
+          "end": 91,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 93,
+          "end": 94,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 115,
+          "end": 116,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 137,
+          "end": 138,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 161,
+          "end": 162,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 185,
+          "end": 194,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 185,
+          "end": 186,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 186,
+          "end": 187,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 189,
+          "end": 190,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 213,
+          "end": 216,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
       "functional_claims": []
@@ -2530,7 +2915,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 197,
+          "end": 198,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Gritz L, Davies J",
@@ -3001,7 +3397,38 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 189,
+          "end": 190,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 194,
+          "end": 195,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 207,
+          "end": 208,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Beck E, Ludwig G, Auerswald EA, Reiss B, Schaller H",
@@ -3516,7 +3943,118 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 78,
+          "end": 90,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 96,
+          "end": 97,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 106,
+          "end": 107,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 135,
+          "end": 136,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 224,
+          "end": 225,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 224,
+          "end": 225,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 249,
+          "end": 250,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 253,
+          "end": 254,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 288,
+          "end": 300,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Site: Important for catalysis",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 142,
+          "end": 143,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Site: Important for catalysis",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 191,
+          "end": 192,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
       "functional_claims": []
@@ -6870,7 +7408,148 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "N-acetyltransferase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 5,
+          "end": 198,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 76,
+          "end": 77,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 109,
+          "end": 110,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 125,
+          "end": 126,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 129,
+          "end": 130,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 135,
+          "end": 136,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 137,
+          "end": 138,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 139,
+          "end": 140,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 140,
+          "end": 141,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 160,
+          "end": 161,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 165,
+          "end": 166,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 166,
+          "end": 167,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 172,
+          "end": 173,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Lacalle RA, Pulido D, Vara J, Zalacain M, Jimenez A",
@@ -9186,7 +9865,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "VOC",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 2,
+          "end": 121,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Gatignol A, Durand H, Tiraby G",

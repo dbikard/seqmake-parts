@@ -56,6 +56,11 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P62577"
                      /citation=[1]
                      /citation=[2]
+     misc_feature    193
+                     /label="Active site: Proton acceptor"
+                     /parent="CmR"
+                     /note="source: UniProt:P62577"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 mekkitgytt vdisqwhrke hfeafqsvaq ctynqtvqld itaflktvkk nkhkfypafi
        61 hilarlmnah pefrmamkdg elviwdsvhp cytvfheqte tfsslwseyh ddfrqflhiy

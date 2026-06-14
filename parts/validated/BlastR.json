@@ -97,5 +97,94 @@
       "review_status": "ai-generated",
       "supersedes": null
     }
-  ]
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 129,
+      "label": "CMP/dCMP-type deaminase",
+      "so_term": "SO:0000417",
+      "description": "CMP/dCMP-type deaminase",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "misc_feature",
+      "start": 55,
+      "end": 56,
+      "label": "Active site: Proton donor",
+      "so_term": "SO:0000110",
+      "description": "Proton donor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "binding",
+      "start": 27,
+      "end": 28,
+      "label": "Binding site: in other chain",
+      "so_term": null,
+      "description": "in other chain",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 53,
+      "end": 54,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 81,
+      "end": 82,
+      "label": "Binding site: in other chain",
+      "so_term": null,
+      "description": "in other chain",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 87,
+      "end": 88,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 90,
+      "end": 91,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 125,
+      "end": 126,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 127,
+      "end": 128,
+      "label": "Binding site: in other chain",
+      "so_term": null,
+      "description": "in other chain",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:P0C2P0",
+    "uniprot_release": 78,
+    "fetched": "2026-06-14",
+    "sequence_match": true
+  }
 }

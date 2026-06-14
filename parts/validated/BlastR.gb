@@ -56,6 +56,44 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P0C2P0"
                      /citation=[1]
+     protein_domain  1..129
+                     /label="CMP/dCMP-type deaminase"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+                     /db_xref="SO:0000417"
+     misc_feature    56
+                     /label="Active site: Proton donor"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+                     /db_xref="SO:0000110"
+     binding         28
+                     /label="Binding site: in other chain"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         54
+                     /label="Binding site"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         82
+                     /label="Binding site: in other chain"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         88
+                     /label="Binding site"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         91
+                     /label="Binding site"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         126
+                     /label="Binding site"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
+     binding         128
+                     /label="Binding site: in other chain"
+                     /parent="BlastR"
+                     /note="source: UniProt:P0C2P0"
 ORIGIN
         1 mplsqeestl ieratatins ipisedysva saalssdgri ftgvnvyhft ggpcaelvvl
        61 gtaaaaaagn ltcivaigne nrgilspcgr crqvlldlhp gikaivkdsd gqptavgire
