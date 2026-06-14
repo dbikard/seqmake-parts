@@ -4,6 +4,7 @@
   "n_validated": 32,
   "n_candidate": 213,
   "n_documented": 32,
+  "n_functional_claims": 33,
   "parts": [
     {
       "name": "186 attP",
@@ -28,7 +29,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "186 integrase",
@@ -51,7 +53,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "2micron ori",
@@ -78,7 +81,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "6xHis",
@@ -108,7 +112,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "aadA",
@@ -319,7 +324,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/29871922/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers streptomycin/spectinomycin resistance (aminoglycoside adenylyltransferase ANT(3'')(9)).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "streptomycin / spectinomycin"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "26527143",
+            "quote": "aadA is the streptomycin/spectinomycin resistance marker - an aminoglycoside (3'')(9) adenylyltransferase, ANT(3'')(9) / ANT(3'')-Ia, EC 2.7.7.47.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "aadA.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "AAV deg tag",
@@ -344,7 +374,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Acc3",
@@ -370,7 +401,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "acrII4A",
@@ -393,7 +425,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ADH1",
@@ -419,7 +452,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ADH1 terminator",
@@ -445,7 +479,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "AID",
@@ -470,7 +505,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "AlkS",
@@ -496,7 +532,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "APH-3",
@@ -519,7 +556,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "araC",
@@ -549,7 +587,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "attP",
@@ -572,7 +611,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "attP1",
@@ -595,7 +635,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "attP2",
@@ -618,7 +659,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "AviTag\u2122",
@@ -641,7 +683,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "B0015_terminator",
@@ -667,7 +710,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "B0030 RBS",
@@ -690,7 +734,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "B0034_RBS",
@@ -715,7 +760,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "bet",
@@ -739,7 +785,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "birA",
@@ -763,7 +810,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "bla",
@@ -937,7 +985,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/9020874/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers ampicillin (beta-lactam) resistance (TEM-1 class A serine beta-lactamase).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "ampicillin / beta-lactams"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "383387",
+            "quote": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "bla.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "BlastR",
@@ -1113,6 +1186,31 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers blasticidin S resistance (blasticidin-S deaminase).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "blasticidin S"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "8159161",
+            "quote": "BSD (blasticidin-S deaminase) is a 130-aa, zinc-dependent cytidine-deaminase-family enzyme from Aspergillus terreus that confers resistance to the antibiotic blasticidin S and is widely used as a d...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "BlastR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -1136,7 +1234,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CAG",
@@ -1161,7 +1260,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cas1",
@@ -1184,7 +1284,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cas1 (Nme)",
@@ -1208,7 +1309,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cas2",
@@ -1231,7 +1333,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cas2 (Nme)",
@@ -1255,7 +1358,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cas9",
@@ -1372,7 +1476,8 @@
         }
       ],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "cat (Gram+)",
@@ -1396,7 +1501,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "catP",
@@ -1419,7 +1525,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ccdB",
@@ -1443,7 +1550,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CEN6-ARS209",
@@ -1469,7 +1577,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CFP",
@@ -1494,7 +1603,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ChnR",
@@ -1535,6 +1645,32 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Cyclohexanone-responsive AraC/XylS-family activator of the PchnB promoter.",
+          "value": {
+            "role": "activator",
+            "target": "PchnB",
+            "inducer": "cyclohexanone"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3338974",
+            "quote": "AraC/XylS-family transcriptional activator ChnR; cyclohexanone-responsive regulator cognate to the PchnB promoter (Acinetobacter johnsonii chn cluster).",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "ChnR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -1561,7 +1697,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CloDF13 ori",
@@ -1584,7 +1721,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CmR",
@@ -1693,6 +1831,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers chloramphenicol resistance by O-acetylation (chloramphenicol acetyltransferase).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "chloramphenicol"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "390403",
+            "quote": "CmR is the 219-aa type I chloramphenicol acetyltransferase (CAT) from E. coli transposon Tn9, conferring chloramphenicol resistance by O-acetylating the antibiotic.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "CmR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -1720,7 +1883,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ColE1",
@@ -1821,7 +1985,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system.",
+          "value": {
+            "copy_number": "high",
+            "control": "RNA I / RNA II antisense"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6156450",
+            "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "ColE1.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "CspRecT",
@@ -1844,7 +2033,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "CYC1 terminator",
@@ -1870,7 +2060,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "dCas9",
@@ -2008,7 +2199,8 @@
         }
       ],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "DhfR",
@@ -2152,7 +2344,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/6308574/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers trimethoprim resistance (Tn7 type I dihydrofolate reductase, DfrA1).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "trimethoprim"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "35562546",
+            "quote": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "DhfR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "DsRed2",
@@ -2177,7 +2394,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "E-tag",
@@ -2201,7 +2419,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "EcFbFP",
@@ -2227,7 +2446,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ECK120010818",
@@ -2251,7 +2471,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ECK120033736",
@@ -2275,7 +2496,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ECK120033737",
@@ -2299,7 +2521,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "EF1a",
@@ -2327,7 +2550,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "EGFP",
@@ -2353,7 +2577,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "enterokinase site",
@@ -2380,7 +2605,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ermAM",
@@ -2499,6 +2725,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers macrolide-lincosamide-streptogramin B (MLS-B) resistance by 23S rRNA A2058 dimethylation.",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "macrolides (erythromycin) / MLS-B"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2163525",
+            "quote": "ermAM (ermB / erm(B)) is the Tn1545 erythromycin-resistance rRNA adenine N6-methyltransferase: a 245-aa enzyme that dimethylates A2058 of 23S rRNA to confer MLS-B (macrolide-lincosamide-streptogram...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "ermAM.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -2526,7 +2777,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "exo",
@@ -2550,7 +2802,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "f1 ori",
@@ -2575,7 +2828,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "fd",
@@ -2599,7 +2853,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "FLAG",
@@ -2624,7 +2879,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "FRT",
@@ -2649,7 +2905,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "GAL1",
@@ -2675,7 +2932,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "gam",
@@ -2699,7 +2957,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "GFP",
@@ -2724,7 +2983,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "GmR",
@@ -2813,6 +3073,31 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers gentamicin resistance by N-acetylation (AAC(3)-Ia).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "gentamicin"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "668926",
+            "quote": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "GmR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -2838,7 +3123,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HA",
@@ -2864,7 +3150,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HaloTag",
@@ -2889,7 +3176,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HIS3",
@@ -2914,7 +3202,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HK022 attB",
@@ -2937,7 +3226,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HK022 integrase",
@@ -2960,7 +3250,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "hPGK",
@@ -2987,7 +3278,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "hU6",
@@ -3012,7 +3304,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "HygR",
@@ -3116,6 +3409,31 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers hygromycin B resistance by phosphorylation (APH(4)-Ia).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "hygromycin B"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6319235",
+            "quote": "HygR (hph / APH(4)-Ia) is the E. coli hygromycin B 4-O-phosphotransferase that confers hygromycin B resistance by ATP/GTP-dependent phosphorylation of the antibiotic's cyclitol 4-OH.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "HygR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -3142,7 +3460,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23100",
@@ -3169,7 +3488,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23101",
@@ -3196,7 +3516,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23102",
@@ -3223,7 +3544,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23104",
@@ -3251,7 +3573,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23106",
@@ -3278,7 +3601,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23107",
@@ -3306,7 +3630,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23108",
@@ -3332,7 +3657,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23109",
@@ -3359,7 +3685,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23110",
@@ -3385,7 +3712,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23114",
@@ -3412,7 +3740,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23116",
@@ -3439,7 +3768,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23117",
@@ -3466,7 +3796,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "J23119",
@@ -3493,7 +3824,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "kanR (Tn5)",
@@ -3631,6 +3963,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers kanamycin/neomycin resistance by phosphorylation (APH(3')-II / NPTII).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "kanamycin / neomycin"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6295884",
+            "quote": "Tn5 aminoglycoside 3'-phosphotransferase type II (APH(3')-II / NPTII), a 264-aa kinase-fold enzyme that confers kanamycin and neomycin resistance by ATP-dependent phosphorylation of the aminoglycos...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "kanR_Tn5.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -3659,7 +4016,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "L3S1P13",
@@ -3682,7 +4040,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "L3S2P11",
@@ -3706,7 +4065,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "L3S3P22 sTerminator",
@@ -3729,7 +4089,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LAA deg tag",
@@ -3754,7 +4115,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacI",
@@ -3804,7 +4166,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacO",
@@ -3827,7 +4190,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacO3",
@@ -3852,7 +4216,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacZ",
@@ -3876,7 +4241,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacZ alpha",
@@ -3901,7 +4267,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lacZ\u03b1",
@@ -3924,7 +4291,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lambda attB",
@@ -3947,7 +4315,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lambda cos",
@@ -3972,7 +4341,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lambda cos",
@@ -3997,7 +4367,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lambda integrase",
@@ -4020,7 +4391,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "lambda t0",
@@ -4044,7 +4416,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LEU2",
@@ -4069,7 +4442,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxA",
@@ -4093,7 +4467,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxB",
@@ -4117,7 +4492,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxC",
@@ -4141,7 +4517,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxD",
@@ -4165,7 +4542,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxE",
@@ -4189,7 +4567,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "LuxIA terminator",
@@ -4213,7 +4592,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "mCherry",
@@ -4237,7 +4617,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "mRFP1",
@@ -4262,7 +4643,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "mTurquoise2",
@@ -4287,7 +4669,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Myc",
@@ -4313,7 +4696,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "NLS (nucleoplasmin)",
@@ -4337,7 +4721,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Nme2Cas9",
@@ -4362,7 +4747,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ori2",
@@ -4385,7 +4771,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "oriT",
@@ -4408,7 +4795,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "p15A",
@@ -4488,7 +4876,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "Medium-copy ColE1-type (p15A) origin; copy number set by the RNA I/RNA II antisense system.",
+          "value": {
+            "copy_number": "medium",
+            "control": "RNA I / RNA II antisense"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6186390",
+            "quote": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "p15A.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "p15A ori",
@@ -4512,7 +4925,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "p15A ori (pSU38)",
@@ -4537,7 +4951,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "P2",
@@ -4624,6 +5039,30 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Constitutive sigma70 promoter (pBR322 tet P2).",
+          "value": {
+            "regulation": "constitutive"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "383387",
+            "quote": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "P2.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -4647,7 +5086,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PA1/O4/O3",
@@ -4752,7 +5192,33 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "LacI-repressible / IPTG-inducible (T7 A1 core with two lac O1 operators).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3057497",
+            "quote": "A 56-bp synthetic constitutive/IPTG-regulatable promoter combining the phage T7 A1 (PA1) core with two natural lac O1 operators placed at positions 4 (spacer) and 3 (downstream).",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PA1_O4_O3.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "PA1lacO-1",
@@ -4778,7 +5244,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ParaBAD",
@@ -4868,7 +5335,8 @@
         }
       ],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pBBR1 oriV",
@@ -4891,7 +5359,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pBBR1 Rep",
@@ -4914,7 +5383,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pbla",
@@ -4993,6 +5463,30 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Constitutive sigma70 promoter (pBR322 bla P3).",
+          "value": {
+            "regulation": "constitutive"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "358200",
+            "quote": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter \u2014 the native 5'UTR and ribosome binding site are a distinct fun...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Pbla.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -5017,7 +5511,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PchnB",
@@ -5099,6 +5594,32 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Cyclohexanone-inducible; activated in trans by ChnR.",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "cyclohexanone",
+            "activator": "ChnR"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "10543838",
+            "quote": "Cyclohexanone-inducible promoter (PchnB) from Acinetobacter johnsonii NCIMB 9871, activated in trans by the AraC/XylS-family regulator ChnR.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PchnB.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -5125,7 +5646,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PEM7",
@@ -5152,7 +5674,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "phi80 attB",
@@ -5175,7 +5698,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "phiC31 attP",
@@ -5200,7 +5724,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PhlF",
@@ -5229,7 +5754,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pIJ101 ori",
@@ -5255,7 +5781,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pkan",
@@ -5281,7 +5808,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PL",
@@ -5307,7 +5835,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Plac",
@@ -5403,7 +5932,33 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "LacI-repressible / IPTG-inducible lac core promoter.",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "1088926",
+            "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Plac.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "Plac/ara-1",
@@ -5429,7 +5984,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PlacI",
@@ -5453,7 +6009,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PlacIq",
@@ -5477,7 +6034,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PlacUV5",
@@ -5551,7 +6109,34 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/4913210/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "LacI-repressible / IPTG-inducible; catabolite (CAP)-insensitive UV5 allele.",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI",
+            "note": "CAP-independent"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "1088926",
+            "quote": "PlacUV5 \u2014 the 30 bp core lacUV5 promoter (-35 through -10), a point-mutant derivative of the natural E. coli lac promoter carrying the catabolite-insensitive, promoter-up UV5 allele.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PlacUV5.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "Pliar1",
@@ -5575,7 +6160,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pliar15",
@@ -5599,7 +6185,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pliar17",
@@ -5623,7 +6210,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pliar51",
@@ -5647,7 +6235,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pliar53",
@@ -5671,7 +6260,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pliar70",
@@ -5695,7 +6285,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PLlacO-1",
@@ -5721,7 +6312,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PLtetO-1",
@@ -5829,7 +6421,33 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/8153629/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "TetR-repressible / anhydrotetracycline (aTc)-inducible (lambda PL with two tetO2).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "anhydrotetracycline (aTc)",
+            "repressor": "TetR"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "9092630",
+            "quote": "PLtetO-1 is the synthetic TetR-repressible / aTc-inducible promoter of Lutz & Bujard (1997), built by inserting two Tn10 tetO2 operators into the bacteriophage lambda PL scaffold.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PLtetO-1.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "Pm",
@@ -5974,6 +6592,32 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "XylS-dependent; benzoate / m-toluate-inducible (TOL meta-operon promoter).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "m-toluate / benzoate",
+            "activator": "XylS"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "28276630",
+            "quote": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Pm.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -6000,7 +6644,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pneo",
@@ -6026,7 +6671,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PpflB",
@@ -6051,7 +6697,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PphlF",
@@ -6147,6 +6794,59 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "inducer",
+          "type": "inducer",
+          "label": "PhlF repression of PphlF is relieved by 2,4-diacetylphloroglucinol (DAPG).",
+          "value": {
+            "inducer": "2,4-diacetylphloroglucinol (DAPG)",
+            "mode": "de-repression"
+          },
+          "ontology": {
+            "inducer_chebi": null
+          },
+          "source": {
+            "pmid": "24316737",
+            "quote": "Repression is relieved by the small-molecule inducer 2,4-diacetylphloroglucinol (DAPG).",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PphlF.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-cross-checked",
+          "supersedes": null
+        },
+        {
+          "id": "repression_dynamic_range",
+          "type": "repression_dynamic_range",
+          "label": "PhlF gives approximately 80-fold repression of PphlF in the source work.",
+          "value": {
+            "fold": 80,
+            "comparator": "approx",
+            "unit": "fold"
+          },
+          "ontology": {
+            "unit_om": null
+          },
+          "source": {
+            "pmid": "24316737",
+            "quote": "PhlF gives high-fold repression (~80x in the source work), induced by DAPG.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PphlF.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "review_status": "ai-cross-checked",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -6171,7 +6871,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pRM",
@@ -6195,7 +6896,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pRO1600 oriV",
@@ -6218,7 +6920,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pSC101 ori",
@@ -6331,7 +7034,32 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/2041467/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "Low-copy origin; RepA/iteron-controlled replication.",
+          "value": {
+            "copy_number": "low",
+            "control": "RepA / iterons"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "8376344",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "pSC101_ori.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "pSC101 ori (SEVA)",
@@ -6356,7 +7084,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pSH71 ori",
@@ -6381,7 +7110,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "pSH71 ori (core)",
@@ -6405,7 +7135,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PSV40",
@@ -6429,7 +7160,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PT3",
@@ -6453,7 +7185,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PT5/lacO",
@@ -6574,6 +7307,32 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "LacI-repressible / IPTG-inducible (phage T5 promoter flanked by two lac operators).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2828874",
+            "quote": "PT5/lacO is the bacteriophage-T5 sigma-70 promoter flanked by two lac operators, giving lacI-repressible, IPTG-inducible transcription (the pQE/Bujard expression module).",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PT5_lacO.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -6608,7 +7367,8 @@
         }
       ],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Ptac",
@@ -6712,7 +7472,34 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/3069586/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Strong, LacI-repressible / IPTG-inducible synthetic trp/lacUV5 hybrid.",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI",
+            "strength": "strong"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6337371",
+            "quote": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Ptac.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "PtetA",
@@ -6816,7 +7603,34 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "inducer",
+          "type": "inducer",
+          "label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc).",
+          "value": {
+            "inducer": "tetracycline / anhydrotetracycline (aTc)",
+            "mode": "de-repression"
+          },
+          "ontology": {
+            "inducer_chebi": null
+          },
+          "source": {
+            "pmid": "9092630",
+            "quote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PtetA.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-cross-checked",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "Ptrc",
@@ -6906,6 +7720,32 @@
       ],
       "main_citations": [
         1
+      ],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Strong sigma70 promoter core (trc); this part is the core only (no lac operator).",
+          "value": {
+            "regulation": "constitutive",
+            "strength": "strong",
+            "note": "promoter core only; add a lac operator for IPTG control"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3069586",
+            "quote": "Ptrc is the 30-bp core of the trc promoter, a synthetic trp/lac hybrid with perfect-consensus -35 and -10 boxes separated by a consensus-optimal 17-bp spacer.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Ptrc.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -6930,7 +7770,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "PuroR",
@@ -7068,6 +7909,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers puromycin resistance by N-acetylation (puromycin N-acetyltransferase).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "puromycin"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2676728",
+            "quote": "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "PuroR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -7094,7 +7960,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Pxyl/tet",
@@ -7226,7 +8093,33 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/34713957/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "TetR-repressible / anhydrotetracycline (aTc)-inducible (S. aureus pRAB).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "anhydrotetracycline (aTc)",
+            "repressor": "TetR"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "21921101",
+            "quote": "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1).",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "Pxyl_tet.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "R6Kgamma ori",
@@ -7249,7 +8142,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RBS 23400",
@@ -7274,7 +8168,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RBS 7300",
@@ -7298,7 +8193,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "recE",
@@ -7321,7 +8217,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "recT",
@@ -7344,7 +8241,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "rep pSC101",
@@ -7369,7 +8267,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repA",
@@ -7392,7 +8291,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repA (IncFII)",
@@ -7415,7 +8315,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repA (R6K)",
@@ -7438,7 +8339,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RepC",
@@ -7462,7 +8364,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RepC (RSF1010)",
@@ -7488,7 +8391,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repE",
@@ -7511,7 +8415,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repH",
@@ -7534,7 +8439,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "repL",
@@ -7557,7 +8463,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RK2 oriV",
@@ -7582,7 +8489,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "rop",
@@ -7608,7 +8516,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RP4 oriT",
@@ -7633,7 +8542,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "rrnBT1",
@@ -7657,7 +8567,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "rrnBT2",
@@ -7681,7 +8592,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RSF ori",
@@ -7704,7 +8616,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RSF1010 oriV",
@@ -7727,7 +8640,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RSF1010 RepA",
@@ -7750,7 +8664,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "RSF1010 RepB",
@@ -7773,7 +8688,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "S-tag",
@@ -7799,7 +8715,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SacB",
@@ -7823,7 +8740,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SEVA tir",
@@ -7848,7 +8766,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "sfGFP",
@@ -7876,7 +8795,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "sgRNA scaffold",
@@ -7903,7 +8823,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "sopA",
@@ -7926,7 +8847,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "sopB",
@@ -7949,7 +8871,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SpecR",
@@ -7976,7 +8899,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "St1Cas9",
@@ -8001,7 +8925,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "Strep tag",
@@ -8027,7 +8952,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SUMO",
@@ -8051,7 +8977,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SV40 NLS",
@@ -8076,7 +9003,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "SV40_PA_terminator",
@@ -8099,7 +9027,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T2A",
@@ -8122,7 +9051,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7 g10 leader",
@@ -8149,7 +9079,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7 RNAP",
@@ -8175,7 +9106,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7 tag",
@@ -8201,7 +9133,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7 terminator",
@@ -8225,7 +9158,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7-Ocr",
@@ -8251,7 +9185,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "T7lac",
@@ -8367,7 +9302,34 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/8638105/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "LacI-controllable T7 phi10 promoter (requires T7 RNA polymerase).",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "IPTG",
+            "repressor": "LacI",
+            "note": "requires T7 RNA polymerase"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "10956032",
+            "quote": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "T7lac.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "T7Te",
@@ -8391,7 +9353,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "TDH3",
@@ -8420,7 +9383,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "TEF1",
@@ -8446,7 +9410,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "TetA",
@@ -8776,6 +9741,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers tetracycline resistance by active efflux (class C MFS antiporter).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "tetracycline"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6307828",
+            "quote": "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "TetA.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     },
     {
@@ -8799,7 +9789,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "tetO",
@@ -8822,7 +9813,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "tetR",
@@ -8859,7 +9851,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "tetR/tetA promoters",
@@ -9047,7 +10040,33 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/1316869/"
         }
       ],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible.",
+          "value": {
+            "regulation": "inducible",
+            "inducer": "anhydrotetracycline (aTc)",
+            "repressor": "TetR"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6311683",
+            "quote": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "tetR_tetA_promoters.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "TEV site",
@@ -9072,7 +10091,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "thrombin site",
@@ -9097,7 +10117,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "tL3",
@@ -9121,7 +10142,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "tonB",
@@ -9145,7 +10167,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "TRE3GV",
@@ -9169,7 +10192,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "trfA",
@@ -9192,7 +10216,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "TRP1",
@@ -9217,7 +10242,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ts ori101",
@@ -9241,7 +10267,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "UGI",
@@ -9265,7 +10292,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "UnaG",
@@ -9288,7 +10316,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "URA3",
@@ -9312,7 +10341,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "WPRE",
@@ -9337,7 +10367,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "XylS",
@@ -9366,7 +10397,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "YFP",
@@ -9391,7 +10423,8 @@
       "status": "candidate",
       "children": [],
       "references": [],
-      "main_citations": []
+      "main_citations": [],
+      "functional_claims": []
     },
     {
       "name": "ZeoR",
@@ -9470,6 +10503,31 @@
       "main_citations": [
         1,
         2
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers Zeocin/bleomycin resistance by stoichiometric drug binding (Sh ble protein).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "Zeocin / bleomycin"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2450783",
+            "quote": "ZeoR is the Streptoalloteichus hindustanus ble protein (UniProt P17493), a 124-aa bleomycin/Zeocin-resistance marker that confers resistance by stoichiometrically binding and sequestering the drug ...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "ZeoR.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
       ]
     }
   ],

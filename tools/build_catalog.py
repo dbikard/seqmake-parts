@@ -760,6 +760,12 @@ def main() -> None:
     coll_summary = [{"id": cid, "name": _coll_name(cid), "n": len(ms)}
                     for cid, ms in sorted(collections.items())]
 
+    # Attach the functional-knowledge layer (from each part's canonical JSON) so
+    # the manifest carries it too -- parity with the RDF graph, for non-RDF
+    # programmatic consumers.
+    for p in parts:
+        p["functional_claims"] = _load_claims(p)
+
     # Manifest covers every part (validated + candidate); internal fields stripped.
     _internal = {"_seq", "collections_resolved"}
     manifest = {
@@ -768,6 +774,7 @@ def main() -> None:
         "n_validated": sum(p["status"] == "validated" for p in parts),
         "n_candidate": sum(p["status"] == "candidate" for p in parts),
         "n_documented": sum(p["documented"] for p in parts),
+        "n_functional_claims": sum(len(p["functional_claims"]) for p in parts),
         "parts": [{k: v for k, v in p.items() if k not in _internal}
                   for p in sorted(parts, key=lambda x: x["name"].lower())],
         "collections": [

@@ -50,8 +50,9 @@ docs/                       generated website source (mkdocs Material)
 
 - **Browse / cite** individual parts on the website above, or download a part's
   `.gb` / FASTA from its page.
-- **Programmatic access:** read `catalog.json` (schema in
-  [`CONTRIBUTING.md`](CONTRIBUTING.md)) or parse the `.gb` files with any GenBank
+- **Programmatic access:** read `catalog.json` — the manifest of every part with
+  its metadata and the **functional-knowledge layer** (claims with source,
+  confidence, and review status) — or parse the `.gb` files with any GenBank
   reader (e.g. BioPython).
 - **Semantic / SPARQL access:** load `catalog.ttl` (or `catalog.jsonld`) into any
   RDF store — each part is an `sbol:Component` with its Sequence Ontology role,
