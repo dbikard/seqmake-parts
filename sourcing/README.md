@@ -12,6 +12,17 @@ This turns "couldn't access" into a **first-class, resumable state** instead of 
 dead end. See `proposals/unified-add-part.md` → *Unresolved sources → a human second
 pass*.
 
+Two kinds of request belong here:
+
+- **Sequence sources** — a deposited record / paper that establishes a part's
+  sequence (the part stops until it's byte-verifiable).
+- **Boundary evidence** — a paper carrying **experimental** data that defines a
+  feature's extent (mutational scanning, progressive truncation, genetics). Part
+  boundaries should not be (re)delimited on sequence/consensus alone (see
+  `AUTHORING.md`); when such a paper is identified but inaccessible, request it here so
+  a boundary can be set on evidence rather than guessed — meanwhile keep the boundary
+  provisional with a lower-confidence note.
+
 ## Layout
 
 - **`REQUESTS.md`** — agent-written list of needed resources: each item has a link,

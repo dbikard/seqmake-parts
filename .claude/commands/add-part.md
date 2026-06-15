@@ -40,16 +40,28 @@ Work through the SOP and do not skip the hard rules — most importantly:
 Concretely:
 
 1. **Classify first (dedup → new vs existing).** Search `catalog.json` / `parts/`
-   for the name and its synonyms.
+   for the name and its synonyms, and run `python tools/catalog_overlap.py --slug
+   <slug>` (or `--seq`) to catch **sequence** overlap with existing parts.
    - **Not present → a new part.** Author it directly (steps 2–3a). But if a
      *different* part's sequence overlaps yours (a sub/superset or a boundary variant
      of the same element), **refine that part** instead of adding a near-duplicate.
+     Re-delimiting a boundary is **not** a trivial sequence call — it should rest on
+     experimental data (truncation / mutational scanning / genetics); if you only have
+     consensus/alignment support, set a lower `confidence` and seek the defining paper
+     (use it, or add it to `sourcing/REQUESTS.md`).
    - **In `parts/candidate/` → a candidate**, or **in `parts/validated/` (has a
      `.md`) → validated** → you are *improving* an existing record. Do **not**
      hand-edit its `functional_claims` in place; use the safe additive merge
      (step 3b). A fresh AI pass must never clobber a human-reviewed claim.
 
-2. **Research** the sequence and the key references.
+2. **Research + source.** Run `python tools/source_finder.py --slug <slug>
+   [--refs <canonical accessions>]` (background it — the NCBI BLAST is queued) to find
+   the **oldest reputable 100% deposited source** and a **divergence** report vs
+   canonical references; a **protein** part gets its UniProt source directly. Act on
+   the divergence (per AUTHORING.md): cite a 100% canonical deposit; **refine** an
+   internal diff to the canonical reference, or carry a common/old variant as a
+   **labelled sibling** part (`ColE1_AT`-style) with a `sequence_variant` claim; an
+   **edge** diff is a boundary fix. Collect the key references (PMID/DOI).
 
 3a. **New part — author directly.** Scaffold with `tools/new_part.py` (see
    AUTHORING.md for flags), then edit the resulting `<slug>.json` to add

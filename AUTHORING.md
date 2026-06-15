@@ -74,18 +74,34 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
 ## Procedure
 
 1. **Check it isn't already there.** Search `catalog.json` and `parts/` for the
-   name and its synonyms; if it exists, improve that record instead. If a different
-   part's sequence **overlaps** yours (a sub/superset or a boundary variant of the
-   same element), **refine that part** (adjust its boundaries / annotation) rather
-   than adding a near-duplicate; only add a new part for a genuinely distinct
-   functional unit.
-2. **Source the sequence + literature.** Find the sequence in a citable source;
-   collect the key references (PMID/DOI). For an Addgene-deposited plasmid,
-   `python tools/addgene.py search "<name>"` finds candidates and
-   `python tools/addgene.py fetch <id> --out <file.gb>` pulls the annotated
-   GenBank to extract the part region from (needs an `ADDGENE_TOKEN` in the
-   environment — Catalog scope, from https://www.addgene.org/developers/);
-   record the Addgene id in `provenance.sequence_source`.
+   name and its synonyms, and run `python tools/catalog_overlap.py --slug <slug>`
+   (or `--seq …`) to detect **sequence** overlap/containment with existing parts. If a
+   part's sequence **overlaps** yours (a sub/superset, near-identical sibling, or a
+   boundary variant of the same element), **refine that part** rather than adding a
+   near-duplicate; only add a new part for a genuinely distinct functional unit.
+   (Re-delimiting a boundary is **not** trivial — see step 4.)
+2. **Source the sequence + literature.** Run
+   `python tools/source_finder.py --slug <slug> [--refs <canonical accessions>]`:
+   - a **protein** part gets its source from the verified `uniprot_import` (its
+     UniProt accession) — no BLAST;
+   - a **DNA** part is BLASTed (date-bracketed, so old deposits aren't hidden by the
+     score-ranked top-N) for the **oldest reputable 100% deposited carrier**, plus a
+     **divergence** report vs each `--refs` accession (% identity, diff positions,
+     edge-vs-internal). The NCBI BLAST is queued — run it in the background.
+
+   **Act on the divergence:** 100% to a reputable canonical deposit → cite it; an
+   **internal** diff → either **refine** the sequence to the canonical reference, or —
+   if the differing form is itself common/old (gauge with `tools/blast.py --entrez`
+   date-bracketing) — carry it as a **labelled sibling part** (e.g. `ColE1` vs
+   `ColE1_AT`) with a `sequence_variant` claim noting the difference is benign; an
+   **edge** diff is a **boundary** question — and boundaries need *experimental*
+   grounding, not just alignment (see step 4). A sequence that matches only odd/modern
+   deposits but diverges from the canonical reference is likely non-canonical — prefer
+   the reference. For Addgene plasmids,
+   `python tools/addgene.py search "<name>"` / `fetch <id> --out <file.gb>` (needs an
+   `ADDGENE_TOKEN`, Catalog scope, https://www.addgene.org/developers/). Record the
+   chosen deposit (a GenBank accession is best) in `provenance.sequence_source` and as a
+   `GenBank:<acc>` db_xref (→ a nuccore cross-link in the docs/RDF).
 3. **Scaffold the record:**
    ```bash
    python tools/new_part.py --name "<Name>" --type <promoter|CDS|...> \
@@ -98,6 +114,22 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    `qualifiers.parent = ["<Name>"]`, part-relative `start`/`end` (0-based,
    end-exclusive), a `label`, a `db_xref` SO term, and `citation` like `["[1]"]`).
    Add the matching `references[]` entries (DOI rides in `comment` as `doi:<id>`).
+   **Cross-reference an annotated deposit:** if the source (or an independent) GenBank
+   record annotates the region, byte-verify against it and **reconcile your sub-feature
+   coordinates / boundaries to the author annotation** — this caught the PCymRC 86→90 bp
+   boundary and confirmed its −35/−10.
+
+   **Boundaries are not a trivial bioinformatic call.** A part's start/end and a
+   sub-feature's extent are frequently poorly defined by sequence or consensus alone;
+   the authoritative basis is **experimental** — mutational scanning, progressive
+   5′/3′ truncation, or genetic dissection of the minimal functional element. When
+   (re)delimiting a boundary: (a) prefer coordinates supported by such experiments and
+   **cite that paper**; (b) if you only have consensus / alignment / deposit-annotation
+   support, set a **lower `confidence`** and note the boundary is provisional; (c)
+   actively look for a paper carrying truncation / mutagenesis / genetics data — **use
+   it if accessible, otherwise add it to `sourcing/REQUESTS.md`** (with what it would
+   resolve) for a human to provide. Do not silently tighten or extend a boundary on
+   sequence evidence alone.
 5. **Set provenance.** Replace `provenance.sequence_source` with the real source.
 6. **Add functional knowledge.** For any inducer / dynamic range / strength /
    host range claim, append a `functional_claims[]` entry with `type`, `label`,
