@@ -32,6 +32,12 @@ FEATURES             Location/Qualifiers
      rep_origin      1..792
                      /label="ColE1"
                      /synonym="ColE1"
+                     /synonym="ColE1 ori"
+                     /synonym="pMB1"
+                     /synonym="pMB1 ori"
+                     /synonym="pBR322 ori"
+                     /synonym="pUC ori"
+                     /synonym="ColE1-derived ori"
                      /note="The ColE1/pMB1-family origin-of-replication control
                      region: a 792 bp fragment carrying the convergent RNA I /
                      RNA II promoter pair that sets plasmid copy number."

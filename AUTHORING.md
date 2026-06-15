@@ -65,6 +65,12 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
 - **Sequence Ontology typing.** Type the part and each sub-feature at the
   functional-class level (promoter `SO:0000167`, RBS `SO:0000139`, CDS
   `SO:0000316`, …); `tools/new_part.py` stamps the main feature's `db_xref`.
+- **Carry all relevant synonyms.** Record every name the part is known by —
+  literature names, registry IDs (iGEM / Addgene / SEVA), related-plasmid or gene
+  names, and common abbreviations — in the main feature's `synonym` qualifier
+  (`tools/new_part.py --synonym`). Synonyms drive search and dedup; when an
+  overlapping part is deduped, **fold its synonyms into the canonical one** (e.g.
+  `pMB1` / `pBR322 ori` / `pUC ori` now live on `ColE1`).
 - **Claims cite their evidence.** Each `functional_claim` carries a `source`
   (PMID/DOI) and, where possible, a verbatim `quote` and a `figure`/`table`/`page`
   locator — prefer a quote from the **primary** source (`quote_source: primary`);

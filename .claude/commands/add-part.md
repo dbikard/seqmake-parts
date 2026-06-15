@@ -23,6 +23,9 @@ Work through the SOP and do not skip the hard rules — most importantly:
     the provided file in `provenance.sequence_source`. See `sourcing/README.md`.
 - Keep prose **lab- and tool-agnostic** (`tools/check_content.py` enforces this).
 - Type the part and sub-features with **Sequence Ontology** terms.
+- **Carry all relevant synonyms** (literature names, registry IDs, related-plasmid /
+  gene names, common abbreviations) in the main feature's `synonym` qualifier; when
+  deduping an overlapping part, fold its synonyms into the canonical one.
 - **Protein/CDS parts defer biology to UniProt:** stamp a required `UniProt:…`
   (or `NCBI:…`) accession and do NOT hand-author residue-level features (domains,
   active sites, binding residues, PTMs). Instead run

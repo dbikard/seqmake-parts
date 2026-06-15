@@ -44,7 +44,13 @@
           "ColE1"
         ],
         "synonym": [
-          "ColE1"
+          "ColE1",
+          "ColE1 ori",
+          "pMB1",
+          "pMB1 ori",
+          "pBR322 ori",
+          "pUC ori",
+          "ColE1-derived ori"
         ],
         "note": [
           "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number."

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 247,
+  "n_parts": 246,
   "n_validated": 35,
-  "n_candidate": 212,
+  "n_candidate": 211,
   "n_documented": 35,
   "n_functional_claims": 40,
   "parts": [
@@ -1719,7 +1719,13 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "ColE1"
+        "ColE1",
+        "ColE1 ori",
+        "pMB1",
+        "pMB1 ori",
+        "pBR322 ori",
+        "pUC ori",
+        "ColE1-derived ori"
       ],
       "collections": [],
       "description": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
@@ -1845,8 +1851,9 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "ColE1",
-        "ColE1 ori (cloning-vector form)"
+        "ColE1_AT",
+        "ColE1 ori (cloning-vector form)",
+        "pMB1 (vector form)"
       ],
       "collections": [],
       "description": "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985.",
@@ -6991,33 +6998,6 @@
           "supersedes": null
         }
       ]
-    },
-    {
-      "name": "pMB1",
-      "slug": "pMB1",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "synonyms": [
-        "pMB1",
-        "ori",
-        "pBR322 ori",
-        "ColE1-derived ori"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 589,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
     },
     {
       "name": "Pneo",

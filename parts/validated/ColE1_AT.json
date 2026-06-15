@@ -44,8 +44,9 @@
           "ColE1_AT"
         ],
         "synonym": [
-          "ColE1",
-          "ColE1 ori (cloning-vector form)"
+          "ColE1_AT",
+          "ColE1 ori (cloning-vector form)",
+          "pMB1 (vector form)"
         ],
         "note": [
           "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985."
