@@ -148,6 +148,9 @@ def add_part(g: Graph, part: dict, by_slug: dict[str, dict]) -> None:
         db, _, ident = acc.partition(":")
         if ident and db.lower() == "uniprot":
             g.add((p, RDFS.seeAlso, URIRef(f"http://purl.uniprot.org/uniprot/{ident}")))
+        elif ident and db.lower() in ("genbank", "nuccore", "insdc"):
+            g.add((p, RDFS.seeAlso,
+                   URIRef(f"https://www.ncbi.nlm.nih.gov/nuccore/{ident}")))
         elif ident and db.lower() == "ncbi":
             g.add((p, RDFS.seeAlso,
                    URIRef(f"https://www.ncbi.nlm.nih.gov/protein/{ident}")))

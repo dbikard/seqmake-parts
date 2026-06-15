@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 245,
+  "n_parts": 246,
   "n_validated": 32,
-  "n_candidate": 213,
+  "n_candidate": 214,
   "n_documented": 32,
-  "n_functional_claims": 33,
+  "n_functional_claims": 36,
   "parts": [
     {
       "name": "186 attP",
@@ -5638,6 +5638,203 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "PCymRC",
+      "slug": "PCymRC",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": "GenBank:MH101728",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "Pcym",
+        "cumate-inducible promoter"
+      ],
+      "collections": [],
+      "description": "CymR-repressible synthetic promoter: a sigma70 core (-35/-10) flanked by two cumate operators (CuO); CymR binding represses transcription and the inducer p-cumate relieves it",
+      "length": 90,
+      "protein_length_aa": null,
+      "regulated_by": [
+        {
+          "name": "CymR",
+          "slug": null,
+          "documented": false
+        }
+      ],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "CuO_1",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 0,
+          "end": 32,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 46,
+          "end": 52,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "+1",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000315",
+          "so_name": "TSS",
+          "start": 58,
+          "end": 59,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "CuO_2",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 58,
+          "end": 90,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Meyer AJ, Segall-Shapiro TH, Glassey E, Zhang J, Voigt CA",
+          "title": "Escherichia coli \"Marionette\" strains with 12 highly optimized small-molecule sensors",
+          "journal": "Nat Chem Biol 15(2):196-204 (2018)",
+          "pmid": "30478458",
+          "doi": "10.1038/s41589-018-0168-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30478458/"
+        },
+        {
+          "authors": "Eaton RW",
+          "title": "p-Cymene catabolic pathway in Pseudomonas putida F1: cloning and characterization of DNA encoding conversion of p-cymene to p-cumate",
+          "journal": "J Bacteriol 179(10):3171-3180 (1997)",
+          "pmid": "9150211",
+          "doi": "10.1128/jb.179.10.3171-3180.1997",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9150211/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "functional_claims": [
+        {
+          "id": "inducer",
+          "type": "inducer",
+          "label": "Repression by CymR is relieved by the inducer p-cumate (p-isopropylbenzoate): CymR binds the CuO operators to repress, and p-cumate de-represses.",
+          "value": {
+            "inducer": "p-cumate",
+            "inducer_synonyms": [
+              "cumate",
+              "p-isopropylbenzoate"
+            ],
+            "repressor": "CymR",
+            "mode": "de-repression"
+          },
+          "ontology": {
+            "inducer_chebi": null
+          },
+          "source": {
+            "pmid": "9150211",
+            "quote": "cymR encodes a repressor which controls expression of both the cym and cmt operons and is inducible by p-cumate but not p-cymene",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Characterized in Escherichia coli (the sensor was integrated into the E. coli MG1655, DH10B and BL21 genomes).",
+          "value": {
+            "host": "Escherichia coli",
+            "strains": [
+              "MG1655",
+              "DH10B",
+              "BL21"
+            ]
+          },
+          "source": {
+            "pmid": "30478458",
+            "quote": "the genomes of E. coli MG1655 (wild-type), DH10B (cloning), and BL21 (protein expression)",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "induction_dynamic_range",
+          "type": "induction_dynamic_range",
+          "label": "PCymRC is one of a 12-sensor set engineered for >100-fold induction with low background; a PCymRC-specific value is not separated in the source abstract.",
+          "value": {
+            "fold_min": 100,
+            "comparator": "min",
+            "unit": "fold",
+            "scope": "Marionette sensor panel (12 sensors incl. PCymRC), not PCymRC-specific"
+          },
+          "ontology": {
+            "unit_om": null
+          },
+          "source": {
+            "pmid": "30478458",
+            "quote": "a set of 12 high-performance sensors that exhibit >100-fold induction with low background and cross-reactivity",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "low",
           "review_status": "ai-generated",
           "supersedes": null
         }

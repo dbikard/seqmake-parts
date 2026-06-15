@@ -1115,6 +1115,34 @@ part:PA1lacO-1 a sbol:Component ;
     cat:documented false ;
     cat:slug "PA1lacO-1" .
 
+part:PCymRC a sbol:Component ;
+    rdfs:label "PCymRC" ;
+    dcterms:description "CymR-repressible synthetic promoter: a sigma70 core (-35/-10) flanked by two cumate operators (CuO); CymR binding represses transcription and the inducer p-cumate relieves it" ;
+    dcterms:references pubmed:30478458,
+        pubmed:9150211 ;
+    dcterms:title "PCymRC" ;
+    sbol:displayId "PCymRC" ;
+    sbol:hasFeature part:PCymRC_feature_0,
+        part:PCymRC_feature_1,
+        part:PCymRC_feature_2,
+        part:PCymRC_feature_3,
+        part:PCymRC_feature_4 ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
+    sbol:hasSequence part:PCymRC_sequence ;
+    sbol:role so:0000167 ;
+    sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/MH101728> ;
+    skos:altLabel "Pcym",
+        "cumate-inducible promoter" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:PCymRC_claim_host_range,
+        part:PCymRC_claim_inducer,
+        part:PCymRC_claim_induction_dynamic_range ;
+    cat:regulatedByName "CymR" ;
+    cat:slug "PCymRC" ;
+    cat:sourceAccession "GenBank:MH101728" .
+
 part:PD_E20 a sbol:Component ;
     rdfs:label "PD/E20" ;
     dcterms:title "PD/E20" ;
@@ -1547,6 +1575,7 @@ part:Pxyl_tet a sbol:Component ;
     sbol:hasSequence part:Pxyl_tet_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/JN635500.1> ;
     skos:altLabel "Pxyl/tet",
         "Pxyl/tetO",
         "Tn10 tetA promoter",
@@ -4834,6 +4863,125 @@ part:PA1lacO-1_sequence a sbol:Sequence ;
     sbol:elements "AAAATTTATCAAAAAGAGTGTTGACTTGTGAGCGGATAACAATGATACTTAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:PCymRC_claim_host_range a cat:FunctionalClaim ;
+    rdfs:label "Characterized in Escherichia coli (the sensor was integrated into the E. coli MG1655, DH10B and BL21 genomes)." ;
+    dcterms:references pubmed:30478458 ;
+    prov:wasDerivedFrom pubmed:30478458 ;
+    prov:wasGeneratedBy part:PCymRC_claim_host_range_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"host\": \"Escherichia coli\", \"strains\": [\"MG1655\", \"DH10B\", \"BL21\"]}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "the genomes of E. coli MG1655 (wild-type), DH10B (cloning), and BL21 (protein expression)" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:PCymRC_claim_host_range_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:PCymRC_claim_inducer a cat:FunctionalClaim ;
+    rdfs:label "Repression by CymR is relieved by the inducer p-cumate (p-isopropylbenzoate): CymR binds the CuO operators to repress, and p-cumate de-represses." ;
+    dcterms:references pubmed:9150211 ;
+    prov:wasDerivedFrom pubmed:9150211 ;
+    prov:wasGeneratedBy part:PCymRC_claim_inducer_provenance ;
+    cat:claimType "inducer" ;
+    cat:claimValue "{\"inducer\": \"p-cumate\", \"inducer_synonyms\": [\"cumate\", \"p-isopropylbenzoate\"], \"mode\": \"de-repression\", \"repressor\": \"CymR\"}" ;
+    cat:confidence "high" ;
+    cat:inducer "p-cumate" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "cymR encodes a repressor which controls expression of both the cym and cmt operons and is inducible by p-cumate but not p-cymene" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:PCymRC_claim_inducer_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:PCymRC_claim_induction_dynamic_range a cat:FunctionalClaim ;
+    rdfs:label "PCymRC is one of a 12-sensor set engineered for >100-fold induction with low background; a PCymRC-specific value is not separated in the source abstract." ;
+    dcterms:references pubmed:30478458 ;
+    prov:wasDerivedFrom pubmed:30478458 ;
+    prov:wasGeneratedBy part:PCymRC_claim_induction_dynamic_range_provenance ;
+    cat:claimType "induction_dynamic_range" ;
+    cat:claimValue "{\"comparator\": \"min\", \"fold_min\": 100, \"scope\": \"Marionette sensor panel (12 sensors incl. PCymRC), not PCymRC-specific\", \"unit\": \"fold\"}" ;
+    cat:confidence "low" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "a set of 12 high-performance sensors that exhibit >100-fold induction with low background and cross-reactivity" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:PCymRC_claim_induction_dynamic_range_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:PCymRC_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:30478458,
+        pubmed:9150211 ;
+    dcterms:title "CuO_1" ;
+    sbol:displayId "PCymRC_feature_0" ;
+    sbol:hasLocation part:PCymRC_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:PCymRC_feature_0_range a sbol:Range ;
+    sbol:end 32 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PCymRC_sequence ;
+    sbol:start 1 .
+
+part:PCymRC_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:30478458 ;
+    dcterms:title "-35" ;
+    sbol:displayId "PCymRC_feature_1" ;
+    sbol:hasLocation part:PCymRC_feature_1_range ;
+    sbol:role so:0000175 .
+
+part:PCymRC_feature_1_range a sbol:Range ;
+    sbol:end 29 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PCymRC_sequence ;
+    sbol:start 24 .
+
+part:PCymRC_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:30478458 ;
+    dcterms:title "-10" ;
+    sbol:displayId "PCymRC_feature_2" ;
+    sbol:hasLocation part:PCymRC_feature_2_range ;
+    sbol:role so:0000176 .
+
+part:PCymRC_feature_2_range a sbol:Range ;
+    sbol:end 52 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PCymRC_sequence ;
+    sbol:start 47 .
+
+part:PCymRC_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:30478458 ;
+    dcterms:title "+1" ;
+    sbol:displayId "PCymRC_feature_3" ;
+    sbol:hasLocation part:PCymRC_feature_3_range ;
+    sbol:role so:0000315 .
+
+part:PCymRC_feature_3_range a sbol:Range ;
+    sbol:end 59 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PCymRC_sequence ;
+    sbol:start 59 .
+
+part:PCymRC_feature_4 a sbol:SequenceFeature ;
+    dcterms:references pubmed:30478458,
+        pubmed:9150211 ;
+    dcterms:title "CuO_2" ;
+    sbol:displayId "PCymRC_feature_4" ;
+    sbol:hasLocation part:PCymRC_feature_4_range ;
+    sbol:role so:0000057 .
+
+part:PCymRC_feature_4_range a sbol:Range ;
+    sbol:end 90 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PCymRC_sequence ;
+    sbol:start 59 .
 
 part:PD_E20_sequence a sbol:Sequence ;
     sbol:displayId "PD_E20_sequence" ;
@@ -8338,6 +8486,12 @@ part:Ptac_sequence a sbol:Sequence ;
 part:T7lac_sequence a sbol:Sequence ;
     sbol:displayId "T7lac_sequence" ;
     sbol:elements "AGATCGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAACAATTC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
+part:PCymRC_sequence a sbol:Sequence ;
+    sbol:displayId "PCymRC_sequence" ;
+    sbol:elements "AACAAACAGACAATCTGGTCTGTTTGTATTATGGAAAATTTTTCTGTATAATAGATTCAACAAACAGACAATCTGGTCTGTTTGTATTAT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 

@@ -4875,6 +4875,313 @@
       }
     },
     {
+      "@id": "part:PCymRC",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:PCymRC_claim_inducer"
+        },
+        {
+          "@id": "part:PCymRC_claim_host_range"
+        },
+        {
+          "@id": "part:PCymRC_claim_induction_dynamic_range"
+        }
+      ],
+      "cat:regulatedByName": "CymR",
+      "cat:slug": "PCymRC",
+      "cat:sourceAccession": "GenBank:MH101728",
+      "dcterms:description": "CymR-repressible synthetic promoter: a sigma70 core (-35/-10) flanked by two cumate operators (CuO); CymR binding represses transcription and the inducer p-cumate relieves it",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:30478458"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9150211"
+        }
+      ],
+      "dcterms:title": "PCymRC",
+      "rdfs:label": "PCymRC",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/MH101728"
+      },
+      "sbol:displayId": "PCymRC",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:PCymRC_feature_0"
+        },
+        {
+          "@id": "part:PCymRC_feature_1"
+        },
+        {
+          "@id": "part:PCymRC_feature_2"
+        },
+        {
+          "@id": "part:PCymRC_feature_3"
+        },
+        {
+          "@id": "part:PCymRC_feature_4"
+        }
+      ],
+      "sbol:hasNamespace": {
+        "@id": "https://dbikard.github.io/dna-parts-catalog/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000167"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "Pcym",
+        "cumate-inducible promoter"
+      ]
+    },
+    {
+      "@id": "part:PCymRC_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"host\": \"Escherichia coli\", \"strains\": [\"MG1655\", \"DH10B\", \"BL21\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "the genomes of E. coli MG1655 (wild-type), DH10B (cloning), and BL21 (protein expression)",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PCymRC_claim_host_range_provenance"
+      },
+      "rdfs:label": "Characterized in Escherichia coli (the sensor was integrated into the E. coli MG1655, DH10B and BL21 genomes)."
+    },
+    {
+      "@id": "part:PCymRC_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:PCymRC_claim_inducer",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "inducer",
+      "cat:claimValue": "{\"inducer\": \"p-cumate\", \"inducer_synonyms\": [\"cumate\", \"p-isopropylbenzoate\"], \"mode\": \"de-repression\", \"repressor\": \"CymR\"}",
+      "cat:confidence": "high",
+      "cat:inducer": "p-cumate",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "cymR encodes a repressor which controls expression of both the cym and cmt operons and is inducible by p-cumate but not p-cymene",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9150211"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:9150211"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PCymRC_claim_inducer_provenance"
+      },
+      "rdfs:label": "Repression by CymR is relieved by the inducer p-cumate (p-isopropylbenzoate): CymR binds the CuO operators to repress, and p-cumate de-represses."
+    },
+    {
+      "@id": "part:PCymRC_claim_inducer_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:PCymRC_claim_induction_dynamic_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "induction_dynamic_range",
+      "cat:claimValue": "{\"comparator\": \"min\", \"fold_min\": 100, \"scope\": \"Marionette sensor panel (12 sensors incl. PCymRC), not PCymRC-specific\", \"unit\": \"fold\"}",
+      "cat:confidence": "low",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "a set of 12 high-performance sensors that exhibit >100-fold induction with low background and cross-reactivity",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:PCymRC_claim_induction_dynamic_range_provenance"
+      },
+      "rdfs:label": "PCymRC is one of a 12-sensor set engineered for >100-fold induction with low background; a PCymRC-specific value is not separated in the source abstract."
+    },
+    {
+      "@id": "part:PCymRC_claim_induction_dynamic_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:PCymRC_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:30478458"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9150211"
+        }
+      ],
+      "dcterms:title": "CuO_1",
+      "sbol:displayId": "PCymRC_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:PCymRC_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:PCymRC_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 32,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:start": 1
+    },
+    {
+      "@id": "part:PCymRC_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "dcterms:title": "-35",
+      "sbol:displayId": "PCymRC_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:PCymRC_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000175"
+      }
+    },
+    {
+      "@id": "part:PCymRC_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 29,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:start": 24
+    },
+    {
+      "@id": "part:PCymRC_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "dcterms:title": "-10",
+      "sbol:displayId": "PCymRC_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:PCymRC_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000176"
+      }
+    },
+    {
+      "@id": "part:PCymRC_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 52,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:start": 47
+    },
+    {
+      "@id": "part:PCymRC_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30478458"
+      },
+      "dcterms:title": "+1",
+      "sbol:displayId": "PCymRC_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:PCymRC_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000315"
+      }
+    },
+    {
+      "@id": "part:PCymRC_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 59,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:start": 59
+    },
+    {
+      "@id": "part:PCymRC_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:30478458"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9150211"
+        }
+      ],
+      "dcterms:title": "CuO_2",
+      "sbol:displayId": "PCymRC_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:PCymRC_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:PCymRC_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 90,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PCymRC_sequence"
+      },
+      "sbol:start": 59
+    },
+    {
+      "@id": "part:PCymRC_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "PCymRC_sequence",
+      "sbol:elements": "AACAAACAGACAATCTGGTCTGTTTGTATTATGGAAAATTTTTCTGTATAATAGATTCAACAAACAGACAATCTGGTCTGTTTGTATTAT",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://dbikard.github.io/dna-parts-catalog/"
+      }
+    },
+    {
       "@id": "part:PD_E20",
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
@@ -9094,6 +9401,9 @@
       ],
       "dcterms:title": "Pxyl/tet",
       "rdfs:label": "Pxyl/tet",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/JN635500.1"
+      },
       "sbol:displayId": "Pxyl_tet",
       "sbol:hasFeature": [
         {

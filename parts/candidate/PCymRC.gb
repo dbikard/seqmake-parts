@@ -1,0 +1,86 @@
+LOCUS       PCymRC                    90 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  CymR-repressible synthetic promoter: a sigma70 core (-35/-10)
+            flanked by two cumate operators (CuO); CymR binding represses
+            transcription and the inducer p-cumate relieves it.
+ACCESSION   PCymRC
+VERSION     PCymRC
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Meyer AJ, Segall-Shapiro TH, Glassey E, Zhang J, Voigt CA
+  TITLE     Escherichia coli "Marionette" strains with 12 highly optimized
+            small-molecule sensors
+  JOURNAL   Nat Chem Biol 15(2):196-204 (2018)
+   PUBMED   30478458
+  REMARK    doi:10.1038/s41589-018-0168-3
+REFERENCE   2
+  AUTHORS   Eaton RW
+  TITLE     p-Cymene catabolic pathway in Pseudomonas putida F1: cloning and
+            characterization of DNA encoding conversion of p-cymene to p-cumate
+  JOURNAL   J Bacteriol 179(10):3171-3180 (1997)
+   PUBMED   9150211
+  REMARK    doi:10.1128/jb.179.10.3171-3180.1997
+FEATURES             Location/Qualifiers
+     promoter        1..90
+                     /label="PCymRC"
+                     /synonym="Pcym"
+                     /synonym="cumate-inducible promoter"
+                     /note="CymR-repressible synthetic promoter: a sigma70 core
+                     (-35/-10) flanked by two cumate operators (CuO); CymR
+                     binding represses transcription and the inducer p-cumate
+                     relieves it"
+                     /citation=[1]
+                     /db_xref="SO:0000167"
+                     /db_xref="GenBank:MH101728"
+                     /regulated_by="CymR"
+     protein_bind    1..32
+                     /label="CuO_1"
+                     /parent="PCymRC"
+                     /bound_moiety="CymR"
+                     /note="Cumate operator (CuO / CymO): 32-bp CymR-binding
+                     site (per the MH101728 annotation); overlaps the -35 so
+                     CymR binding occludes RNA polymerase"
+                     /citation=[1]
+                     /citation=[2]
+                     /db_xref="SO:0000057"
+     regulatory      24..29
+                     /label="-35"
+                     /parent="PCymRC"
+                     /regulatory_class="minus_35_signal"
+                     /note="-35 box (TTGTAT; conserved TTG), matching the
+                     minus_35_signal annotated in GenBank MH101728; overlaps the
+                     3' end of CuO_1, 17-bp spacer to the -10"
+                     /citation=[1]
+                     /db_xref="SO:0000175"
+     regulatory      47..52
+                     /label="-10"
+                     /parent="PCymRC"
+                     /regulatory_class="minus_10_signal"
+                     /note="-10 box (TATAAT, consensus), matching the
+                     minus_10_signal annotated in GenBank MH101728; 17-bp spacer
+                     from the -35"
+                     /citation=[1]
+                     /db_xref="SO:0000176"
+     misc_feature    59
+                     /label="+1"
+                     /parent="PCymRC"
+                     /note="Transcription start site (per the MH101728
+                     annotation); coincides with the 5' end of CuO_2"
+                     /citation=[1]
+                     /db_xref="SO:0000315"
+     protein_bind    59..90
+                     /label="CuO_2"
+                     /parent="PCymRC"
+                     /bound_moiety="CymR"
+                     /note="Cumate operator (CuO / CymO): second 32-bp
+                     CymR-binding site (per the MH101728 annotation), spanning
+                     the +1 transcription start"
+                     /citation=[1]
+                     /citation=[2]
+                     /db_xref="SO:0000057"
+ORIGIN
+        1 aacaaacaga caatctggtc tgtttgtatt atggaaaatt tttctgtata atagattcaa
+       61 caaacagaca atctggtctg tttgtattat
+//

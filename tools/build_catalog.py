@@ -256,11 +256,12 @@ def _len_label(part: dict) -> str:
 
 
 def _resource_links(acc: str | None) -> str:
-    """External-resource links derived from a coding part's source accession.
+    """External-resource links derived from a part's source accession.
 
     A UniProt accession links to UniProt + the AlphaFold structure + the
-    InterPro family; an NCBI accession links to NCBI Protein. Empty if no
-    accession.
+    InterPro family; a GenBank/nucleotide accession links to NCBI Nucleotide
+    (the deposited sequence record); any other NCBI accession links to NCBI
+    Protein. Empty if no accession.
     """
     if not acc:
         return ""
@@ -273,6 +274,8 @@ def _resource_links(acc: str | None) -> str:
             f"[AlphaFold](https://alphafold.ebi.ac.uk/entry/{ident})",
             f"[InterPro](https://www.ebi.ac.uk/interpro/protein/UniProt/{ident}/)",
         ]
+    elif db.lower() in ("genbank", "nuccore", "insdc"):
+        links = [f"[GenBank](https://www.ncbi.nlm.nih.gov/nuccore/{ident})"]
     else:
         links = [f"[NCBI Protein](https://www.ncbi.nlm.nih.gov/protein/{ident})"]
     return " · ".join(links)
