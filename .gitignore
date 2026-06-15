@@ -6,6 +6,12 @@
 /docs/tags.md
 /site/
 
+.env
+
+# Source-document handoff: human-provided PDFs/sequences staged for the agent
+# (kept local — only the resulting part record + its provenance citation are committed)
+/sourcing/incoming/
+
 # Python
 __pycache__/
 *.pyc

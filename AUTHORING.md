@@ -28,7 +28,10 @@ to `parts/validated/` and is **validated**. Independently, every
 - **Sequence from a cited source — never from memory.** Take the sequence from a
   primary paper or a registry (Addgene, iGEM, SEVA, UniProt/NCBI) and record
   where, in `provenance.sequence_source`. A part without a sourced sequence is not
-  acceptable.
+  acceptable. **If a needed source is access-blocked** (paywall/login/403), don't
+  guess — record it in `sourcing/REQUESTS.md` and stop; resume once the human has
+  dropped the document in `sourcing/incoming/`, byte-verifying against it and citing
+  it in `provenance.sequence_source` (see `sourcing/README.md`).
 - **One functional class per part** (atomic). A promoter and an RBS are two
   parts, not one. See `CONTRIBUTING.md` → *Part conventions*.
 - **Coding parts are protein-canonical and defer biology to UniProt.** A `CDS` /
@@ -68,7 +71,12 @@ to `parts/validated/` and is **validated**. Independently, every
 1. **Check it isn't already there.** Search `catalog.json` and `parts/` for the
    name and its synonyms; if it exists, improve that record instead.
 2. **Source the sequence + literature.** Find the sequence in a citable source;
-   collect the key references (PMID/DOI).
+   collect the key references (PMID/DOI). For an Addgene-deposited plasmid,
+   `python tools/addgene.py search "<name>"` finds candidates and
+   `python tools/addgene.py fetch <id> --out <file.gb>` pulls the annotated
+   GenBank to extract the part region from (needs an `ADDGENE_TOKEN` in the
+   environment — Catalog scope, from https://www.addgene.org/developers/);
+   record the Addgene id in `provenance.sequence_source`.
 3. **Scaffold the record:**
    ```bash
    python tools/new_part.py --name "<Name>" --type <promoter|CDS|...> \
