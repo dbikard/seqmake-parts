@@ -33,3 +33,15 @@ def test_guard_allows_legitimate_science():
         "this part spans the -35/-10 core only",
     ):
         assert not any(rx.search(text) for rx, _ in FORBIDDEN), f"false positive: {text!r}"
+
+
+def test_guard_scans_canonical_json(tmp_path):
+    """The .json is the canonical record — functional_claims prose lives only
+    there — so the guard must scan it, not just the generated .gb / curated .md."""
+    d = tmp_path / "parts" / "validated"
+    d.mkdir(parents=True)
+    (d / "X.json").write_text(
+        '{"functional_claims": [{"label": "induction measured by seqmake"}]}'
+    )
+    problems = scan(tmp_path)
+    assert any("X.json" in p and "seqmake" in p for p in problems), problems

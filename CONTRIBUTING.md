@@ -137,9 +137,10 @@ reference instead of a vendored file.)
 ## Content guard
 
 Part content is **lab-agnostic and tool-agnostic** — it describes what a part
-*is*. `tools/check_content.py` enforces this over every `parts/**/*.md` and
-`*.gb`, and it must pass before a push (it runs in CI and as a `pre-push` hook).
-A part file must not:
+*is*. `tools/check_content.py` enforces this over the canonical `parts/**/*.json`
+(including the `functional_claims` prose that lives only there), the generated
+`*.gb`, and the curated `*.md`, and it must pass before a push (it runs in CI and
+as a `pre-push` hook). A part record must not:
 
 - name a consuming tool;
 - reference a specific *using* lab, person, or internal/unpublished plasmid

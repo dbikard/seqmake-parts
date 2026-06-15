@@ -2,8 +2,10 @@
 """Content lint for the public catalog.
 
 The catalog is a standalone, lab-agnostic, tool-agnostic public resource. Part
-content (``parts/**/*.md`` and ``parts/**/*.gb``) describes what a part *is*. It
-must never:
+content describes what a part *is*. The lint scans the canonical record
+(``parts/**/*.json`` — the authored source of truth, including the
+``functional_claims`` prose that lives only there), the generated GenBank
+(``parts/**/*.gb``), and the curated docs (``parts/**/*.md``). It must never:
 
   - name the consuming tool (``seqmake``) — the catalog stands on its own;
   - reference a specific lab, person, or internal/unpublished plasmid lineage
@@ -30,7 +32,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PART_GLOBS = ("parts/**/*.md", "parts/**/*.gb")
+PART_GLOBS = ("parts/**/*.json", "parts/**/*.gb", "parts/**/*.md")
 
 # (compiled pattern, reason) — matched case-insensitively over each part file.
 _RULES: tuple[tuple[str, str], ...] = (
