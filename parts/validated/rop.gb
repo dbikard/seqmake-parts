@@ -1,0 +1,42 @@
+LOCUS       rop                       63 aa                     UNK 01-JAN-1980
+DEFINITION  ColE1/pMB1 Rop (Rom) protein: a 63-aa homodimer that enhances RNA
+            I-RNA II pairing to repress primer formation, lowering plasmid copy
+            number.
+ACCESSION   rop
+VERSION     rop
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Cesareni G, Muesing MA, Polisky B
+  TITLE     Control of ColE1 DNA replication: the rop gene product negatively
+            affects transcription from the replication primer promoter
+  JOURNAL   Proc Natl Acad Sci U S A 79(20):6313-6317 (1982)
+   PUBMED   6183660
+  REMARK    doi:10.1073/pnas.79.20.6313
+REFERENCE   2
+  AUTHORS   Tomizawa J, Som T
+  TITLE     Control of ColE1 plasmid replication: enhancement of binding of RNA
+            I to the primer transcript by the Rom protein
+  JOURNAL   Cell 38(3):871-878 (1984)
+   PUBMED   6207935
+  REMARK    doi:10.1016/0092-8674(84)90282-4
+FEATURES             Location/Qualifiers
+     CDS             1..63
+                     /label="rop"
+                     /synonym="rom"
+                     /synonym="Rop/Rom"
+                     /synonym="ColE1 Rop"
+                     /synonym="RNA one modulator"
+                     /note="ColE1/pMB1 Rop (Rom): 63-aa homodimeric four-helix
+                     bundle that enhances RNA I-RNA II pairing to repress primer
+                     formation and lower plasmid copy number"
+                     /citation=[1]
+                     /citation=[2]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P03051"
+ORIGIN
+        1 mtkqektaln marfirsqtl tlleklneld adeqadices lhdhadelyr sclarfgddg
+       61 enl
+//

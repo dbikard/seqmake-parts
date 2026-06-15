@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 246,
-  "n_validated": 32,
-  "n_candidate": 214,
-  "n_documented": 32,
-  "n_functional_claims": 36,
+  "n_parts": 247,
+  "n_validated": 35,
+  "n_candidate": 212,
+  "n_documented": 35,
+  "n_functional_claims": 40,
   "parts": [
     {
       "name": "186 attP",
@@ -1715,7 +1715,7 @@
       "slug": "ColE1",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01749",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -1828,6 +1828,160 @@
           "provenance": {
             "method": "transcribed-from-doc",
             "from": "ColE1.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "ColE1_AT",
+      "slug": "ColE1_AT",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "source_accession": "GenBank:X03174",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "synonyms": [
+        "ColE1",
+        "ColE1 ori (cloning-vector form)"
+      ],
+      "collections": [],
+      "description": "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985.",
+      "length": 792,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "RNA II promoter -35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 20,
+          "end": 26,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RNA II promoter -10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 41,
+          "end": 47,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RNA I promoter -35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 197,
+          "end": 203,
+          "strand": -1,
+          "citations": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "RNA I promoter -10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 175,
+          "end": 181,
+          "strand": -1,
+          "citations": [
+            3,
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Itoh T, Tomizawa J",
+          "title": "Formation of an RNA primer for initiation of replication of ColE1 DNA by ribonuclease H.",
+          "journal": "Proc Natl Acad Sci U S A. 1980;77(5):2450-4",
+          "pmid": "6156450",
+          "doi": "10.1073/pnas.77.5.2450",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6156450/"
+        },
+        {
+          "authors": "Lin-Chao S, Bremer H",
+          "title": "Activities of the RNAI and RNAII promoters of plasmid pBR322.",
+          "journal": "J Bacteriol. 1987;169(3):1217-22",
+          "pmid": "2434459",
+          "doi": "10.1128/jb.169.3.1217-1222.1987",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2434459/"
+        },
+        {
+          "authors": "Tomizawa J, Itoh T, Selzer G, Som T",
+          "title": "Inhibition of ColE1 RNA primer formation by a plasmid-specified small RNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1981;78(3):1421-5",
+          "pmid": "6165011",
+          "doi": "10.1073/pnas.78.3.1421",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
+        }
+      ],
+      "main_citations": [],
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system.",
+          "value": {
+            "copy_number": "high",
+            "control": "RNA I / RNA II antisense"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6156450",
+            "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "ColE1_AT.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 412-413 in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication.",
+          "value": {
+            "vs_canonical": "ColE1 (pBR322 J01749 / pUC18 L08752)",
+            "differences_bp": 2,
+            "positions": "412-413",
+            "earliest_deposit": "X01803 (1985)",
+            "n_carriers_pre1997": 142,
+            "interpretation": "benign (ubiquitous in widely-used vectors)"
+          },
+          "ontology": {},
+          "source": {
+            "url": "https://www.ncbi.nlm.nih.gov/nuccore/X03174",
+            "quote": "100% identity to GenBank X03174 (cloning vector pEX2, 1986) and 142 pre-1997 deposited vectors; earliest X01803 (Nov 1985)",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "bioinformatic-blast",
+            "from": "tools/blast.py vs NCBI nt",
             "agent": "ai-assistant"
           },
           "confidence": "high",
@@ -5667,8 +5821,8 @@
         }
       ],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [
         {
           "label": "CuO_1",
@@ -8789,19 +8943,86 @@
         "RNA one modulator"
       ],
       "collections": [],
-      "description": "",
+      "description": "ColE1/pMB1 Rop (Rom): 63-aa homodimeric four-helix bundle that enhances RNA I-RNA II pairing to repress primer formation and lower plasmid copy number",
       "length": 63,
       "protein_length_aa": 63,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": [],
+      "references": [
+        {
+          "authors": "Cesareni G, Muesing MA, Polisky B",
+          "title": "Control of ColE1 DNA replication: the rop gene product negatively affects transcription from the replication primer promoter",
+          "journal": "Proc Natl Acad Sci U S A 79(20):6313-6317 (1982)",
+          "pmid": "6183660",
+          "doi": "10.1073/pnas.79.20.6313",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6183660/"
+        },
+        {
+          "authors": "Tomizawa J, Som T",
+          "title": "Control of ColE1 plasmid replication: enhancement of binding of RNA I to the primer transcript by the Rom protein",
+          "journal": "Cell 38(3):871-878 (1984)",
+          "pmid": "6207935",
+          "doi": "10.1016/0092-8674(84)90282-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6207935/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Rop (Rom) enhances binding of RNA I to the RNA II primer precursor, inhibiting primer formation and thereby repressing initiation of plasmid replication.",
+          "value": {
+            "target": "RNA I / RNA II",
+            "action": "enhances RNA I-RNA II pairing",
+            "effect": "represses primer formation"
+          },
+          "source": {
+            "pmid": "6207935",
+            "quote": "The Rom protein, a plasmid-specified 63 amino acid protein, enhances the inhibitory effect of RNA I on primer formation by enhancing the binding of RNA I to RNA II.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "Rop is a trans-acting repressor of the RNA primer promoter (its name = 'repressor of primer'), negatively regulating ColE1/pMB1 plasmid copy number.",
+          "value": {
+            "role": "negative regulator",
+            "effect_on_copy_number": "lowers",
+            "cognate_origin": "ColE1/pMB1 (RNA I / RNA II)"
+          },
+          "source": {
+            "pmid": "6183660",
+            "quote": "Transcription from the RNA primer promoter, however, is repressed by the product of a trans-acting plasmid gene product, which we have designated rop (for repressor of primer).",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
       "uniprot_import": {
-        "fetched": "2026-06-14",
+        "fetched": "2026-06-15",
         "accession": "UniProt:P03051",
         "status": "match",
         "identity": 1.0,

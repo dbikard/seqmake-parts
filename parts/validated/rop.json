@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "slug": "rop",
+  "locus": "rop",
+  "id": "rop",
+  "description": "ColE1/pMB1 Rop (Rom) protein: a 63-aa homodimer that enhances RNA I-RNA II pairing to repress primer formation, lowering plasmid copy number",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDHADELYRSCLARFGDDGENL",
+  "references": [
+    {
+      "authors": "Cesareni G, Muesing MA, Polisky B",
+      "title": "Control of ColE1 DNA replication: the rop gene product negatively affects transcription from the replication primer promoter",
+      "journal": "Proc Natl Acad Sci U S A 79(20):6313-6317 (1982)",
+      "pubmed_id": "6183660",
+      "comment": "doi:10.1073/pnas.79.20.6313"
+    },
+    {
+      "authors": "Tomizawa J, Som T",
+      "title": "Control of ColE1 plasmid replication: enhancement of binding of RNA I to the primer transcript by the Rom protein",
+      "journal": "Cell 38(3):871-878 (1984)",
+      "pubmed_id": "6207935",
+      "comment": "doi:10.1016/0092-8674(84)90282-4"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 63,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rop"
+        ],
+        "synonym": [
+          "rom",
+          "Rop/Rom",
+          "ColE1 Rop",
+          "RNA one modulator"
+        ],
+        "note": [
+          "ColE1/pMB1 Rop (Rom): 63-aa homodimeric four-helix bundle that enhances RNA I-RNA II pairing to repress primer formation and lower plasmid copy number"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P03051"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt P03051 (Rop/Rom, ColE1/pMB1 copy-number repressor); the stored 63-aa sequence is a 100% match to the UniProt canonical (verified by tools/import_uniprot_features.py, identity 1.0). The rop gene lies just downstream of the ColE1/pMB1 replication origin (present e.g. in pBR322, GenBank J01749)."
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Rop (Rom) enhances binding of RNA I to the RNA II primer precursor, inhibiting primer formation and thereby repressing initiation of plasmid replication.",
+      "value": {
+        "target": "RNA I / RNA II",
+        "action": "enhances RNA I-RNA II pairing",
+        "effect": "represses primer formation"
+      },
+      "source": {
+        "pmid": "6207935",
+        "quote": "The Rom protein, a plasmid-specified 63 amino acid protein, enhances the inhibitory effect of RNA I on primer formation by enhancing the binding of RNA I to RNA II.",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "copy_number",
+      "type": "copy_number",
+      "label": "Rop is a trans-acting repressor of the RNA primer promoter (its name = 'repressor of primer'), negatively regulating ColE1/pMB1 plasmid copy number.",
+      "value": {
+        "role": "negative regulator",
+        "effect_on_copy_number": "lowers",
+        "cognate_origin": "ColE1/pMB1 (RNA I / RNA II)"
+      },
+      "source": {
+        "pmid": "6183660",
+        "quote": "Transcription from the RNA primer promoter, however, is repressed by the product of a trans-acting plasmid gene product, which we have designated rop (for repressor of primer).",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "ai-assistant"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-06-15",
+    "accession": "UniProt:P03051",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_release": 141
+  }
+}

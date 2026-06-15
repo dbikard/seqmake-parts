@@ -1,9 +1,10 @@
-LOCUS       ColE1                    792 bp    DNA              UNK 01-JAN-1980
-DEFINITION  The ColE1/pMB1-family origin-of-replication control region: a 792 bp
-            fragment carrying the convergent RNA I / RNA II promoter pair that
-            sets plasmid copy number..
-ACCESSION   ColE1
-VERSION     ColE1
+LOCUS       ColE1_AT                 792 bp    DNA              UNK 01-JAN-1980
+DEFINITION  ColE1/pMB1 origin, common cloning-vector form: identical to the
+            canonical pMB1 origin except a benign 2-bp difference (positions
+            412-413) in the RNA I/RNA II control region; carried by 140+
+            deposited vectors since 1985..
+ACCESSION   ColE1_AT
+VERSION     ColE1_AT
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
@@ -30,16 +31,18 @@ REFERENCE   3
   REMARK    doi:10.1073/pnas.78.3.1421
 FEATURES             Location/Qualifiers
      rep_origin      1..792
-                     /label="ColE1"
+                     /label="ColE1_AT"
                      /synonym="ColE1"
-                     /note="The ColE1/pMB1-family origin-of-replication control
-                     region: a 792 bp fragment carrying the convergent RNA I /
-                     RNA II promoter pair that sets plasmid copy number."
+                     /synonym="ColE1 ori (cloning-vector form)"
+                     /note="ColE1/pMB1 origin, common cloning-vector form:
+                     identical to the canonical pMB1 origin except a benign 2-bp
+                     difference (positions 412-413) in the RNA I/RNA II control
+                     region; carried by 140+ deposited vectors since 1985."
                      /db_xref="SO:0000296"
-                     /db_xref="GenBank:J01749"
+                     /db_xref="GenBank:X03174"
      regulatory      21..26
                      /label="RNA II promoter -35"
-                     /parent="ColE1"
+                     /parent="ColE1_AT"
                      /regulatory_class="minus_35_signal"
                      /note="Top-strand -35 hexamer (TTGAGA) of the RNA II
                      promoter, which drives the ColE1/pMB1 replication
@@ -49,7 +52,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      42..47
                      /label="RNA II promoter -10"
-                     /parent="ColE1"
+                     /parent="ColE1_AT"
                      /regulatory_class="minus_10_signal"
                      /note="Top-strand -10 hexamer (CGTAAT) of the RNA II
                      promoter, 15 bp downstream of the -35."
@@ -58,7 +61,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      complement(198..203)
                      /label="RNA I promoter -35"
-                     /parent="ColE1"
+                     /parent="ColE1_AT"
                      /regulatory_class="minus_35_signal"
                      /note="-35 hexamer of the convergent RNA I promoter on the
                      bottom strand."
@@ -67,7 +70,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      complement(176..181)
                      /label="RNA I promoter -10"
-                     /parent="ColE1"
+                     /parent="ColE1_AT"
                      /regulatory_class="minus_10_signal"
                      /note="-10 hexamer of the RNA I promoter on the bottom
                      strand."
@@ -81,7 +84,7 @@ ORIGIN
       181 ccgtagttag gccaccactt caagaactct gtagcaccgc ctacatacct cgctctgcta
       241 atcctgttac cagtggctgc tgccagtggc gataagtcgt gtcttaccgg gttggactca
       301 agacgatagt taccggataa ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag
-      361 cccagcttgg agcgaacgac ctacaccgaa ctgagatacc tacagcgtga gctatgagaa
+      361 cccagcttgg agcgaacgac ctacaccgaa ctgagatacc tacagcgtga gcattgagaa
       421 agcgccacgc ttcccgaagg gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga
       481 acaggagagc gcacgaggga gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc
       541 gggtttcgcc acctctgact tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc

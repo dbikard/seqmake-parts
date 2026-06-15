@@ -429,11 +429,39 @@ part:ColE1 a sbol:Component ;
     sbol:hasSequence part:ColE1_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J01749> ;
     skos:altLabel "ColE1" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:ColE1_claim_copy_number ;
-    cat:slug "ColE1" .
+    cat:slug "ColE1" ;
+    cat:sourceAccession "GenBank:J01749" .
+
+part:ColE1_AT a sbol:Component ;
+    rdfs:label "ColE1_AT" ;
+    dcterms:description "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985." ;
+    dcterms:references pubmed:2434459,
+        pubmed:6156450,
+        pubmed:6165011 ;
+    dcterms:title "ColE1_AT" ;
+    sbol:displayId "ColE1_AT" ;
+    sbol:hasFeature part:ColE1_AT_feature_0,
+        part:ColE1_AT_feature_1,
+        part:ColE1_AT_feature_2,
+        part:ColE1_AT_feature_3 ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
+    sbol:hasSequence part:ColE1_AT_sequence ;
+    sbol:role so:0000296 ;
+    sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/X03174> ;
+    skos:altLabel "ColE1",
+        "ColE1 ori (cloning-vector form)" ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:ColE1_AT_claim_copy_number,
+        part:ColE1_AT_claim_sequence_variant ;
+    cat:slug "ColE1_AT" ;
+    cat:sourceAccession "GenBank:X03174" .
 
 part:CspRecT a sbol:Component ;
     rdfs:label "CspRecT" ;
@@ -1134,8 +1162,8 @@ part:PCymRC a sbol:Component ;
     rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/MH101728> ;
     skos:altLabel "Pcym",
         "cumate-inducible promoter" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
     cat:hasFunctionalClaim part:PCymRC_claim_host_range,
         part:PCymRC_claim_inducer,
         part:PCymRC_claim_induction_dynamic_range ;
@@ -3288,6 +3316,9 @@ part:rep_pSC101 a sbol:Component ;
 
 part:rop a sbol:Component ;
     rdfs:label "rop" ;
+    dcterms:description "ColE1/pMB1 Rop (Rom): 63-aa homodimeric four-helix bundle that enhances RNA I-RNA II pairing to repress primer formation and lower plasmid copy number" ;
+    dcterms:references pubmed:6183660,
+        pubmed:6207935 ;
     dcterms:title "rop" ;
     sbol:displayId "rop" ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> ;
@@ -3299,8 +3330,10 @@ part:rop a sbol:Component ;
         "RNA one modulator",
         "Rop/Rom",
         "rom" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:rop_claim_copy_number,
+        part:rop_claim_mechanism ;
     cat:slug "rop" ;
     cat:sourceAccession "UniProt:P03051" .
 
@@ -3815,6 +3848,96 @@ part:CmR_feature_0_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:CmR_sequence ;
     sbol:start 193 .
+
+part:ColE1_AT_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
+    dcterms:references pubmed:6156450 ;
+    prov:wasDerivedFrom pubmed:6156450 ;
+    prov:wasGeneratedBy part:ColE1_AT_claim_copy_number_provenance ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"high\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ColE1_AT_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "ColE1_AT.md" ;
+    cat:method "transcribed-from-doc" .
+
+part:ColE1_AT_claim_sequence_variant a cat:FunctionalClaim ;
+    rdfs:label "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 412-413 in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication." ;
+    dcterms:references <https://www.ncbi.nlm.nih.gov/nuccore/X03174> ;
+    prov:wasDerivedFrom <https://www.ncbi.nlm.nih.gov/nuccore/X03174> ;
+    prov:wasGeneratedBy part:ColE1_AT_claim_sequence_variant_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"differences_bp\": 2, \"earliest_deposit\": \"X01803 (1985)\", \"interpretation\": \"benign (ubiquitous in widely-used vectors)\", \"n_carriers_pre1997\": 142, \"positions\": \"412-413\", \"vs_canonical\": \"ColE1 (pBR322 J01749 / pUC18 L08752)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "100% identity to GenBank X03174 (cloning vector pEX2, 1986) and 142 pre-1997 deposited vectors; earliest X01803 (Nov 1985)" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:ColE1_AT_claim_sequence_variant_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "tools/blast.py vs NCBI nt" ;
+    cat:method "bioinformatic-blast" .
+
+part:ColE1_AT_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2434459,
+        pubmed:6156450 ;
+    dcterms:title "RNA II promoter -35" ;
+    sbol:displayId "ColE1_AT_feature_0" ;
+    sbol:hasLocation part:ColE1_AT_feature_0_range ;
+    sbol:role so:0000175 .
+
+part:ColE1_AT_feature_0_range a sbol:Range ;
+    sbol:end 26 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ColE1_AT_sequence ;
+    sbol:start 21 .
+
+part:ColE1_AT_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2434459,
+        pubmed:6156450 ;
+    dcterms:title "RNA II promoter -10" ;
+    sbol:displayId "ColE1_AT_feature_1" ;
+    sbol:hasLocation part:ColE1_AT_feature_1_range ;
+    sbol:role so:0000176 .
+
+part:ColE1_AT_feature_1_range a sbol:Range ;
+    sbol:end 47 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:ColE1_AT_sequence ;
+    sbol:start 42 .
+
+part:ColE1_AT_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2434459,
+        pubmed:6165011 ;
+    dcterms:title "RNA I promoter -35" ;
+    sbol:displayId "ColE1_AT_feature_2" ;
+    sbol:hasLocation part:ColE1_AT_feature_2_range ;
+    sbol:role so:0000175 .
+
+part:ColE1_AT_feature_2_range a sbol:Range ;
+    sbol:end 203 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:ColE1_AT_sequence ;
+    sbol:start 198 .
+
+part:ColE1_AT_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2434459,
+        pubmed:6165011 ;
+    dcterms:title "RNA I promoter -10" ;
+    sbol:displayId "ColE1_AT_feature_3" ;
+    sbol:hasLocation part:ColE1_AT_feature_3_range ;
+    sbol:role so:0000176 .
+
+part:ColE1_AT_feature_3_range a sbol:Range ;
+    sbol:end 181 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:ColE1_AT_sequence ;
+    sbol:start 176 .
 
 part:ColE1_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
@@ -7926,6 +8049,40 @@ part:rep_pSC101_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
+part:rop_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Rop is a trans-acting repressor of the RNA primer promoter (its name = 'repressor of primer'), negatively regulating ColE1/pMB1 plasmid copy number." ;
+    dcterms:references pubmed:6183660 ;
+    prov:wasDerivedFrom pubmed:6183660 ;
+    prov:wasGeneratedBy part:rop_claim_copy_number_provenance ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"cognate_origin\": \"ColE1/pMB1 (RNA I / RNA II)\", \"effect_on_copy_number\": \"lowers\", \"role\": \"negative regulator\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Transcription from the RNA primer promoter, however, is repressed by the product of a trans-acting plasmid gene product, which we have designated rop (for repressor of primer)." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:rop_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:rop_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "Rop (Rom) enhances binding of RNA I to the RNA II primer precursor, inhibiting primer formation and thereby repressing initiation of plasmid replication." ;
+    dcterms:references pubmed:6207935 ;
+    prov:wasDerivedFrom pubmed:6207935 ;
+    prov:wasGeneratedBy part:rop_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"action\": \"enhances RNA I-RNA II pairing\", \"effect\": \"represses primer formation\", \"target\": \"RNA I / RNA II\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The Rom protein, a plasmid-specified 63 amino acid protein, enhances the inhibitory effect of RNA I on primer formation by enhancing the binding of RNA I to RNA II." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:rop_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
 part:rop_sequence a sbol:Sequence ;
     sbol:displayId "rop_sequence" ;
     sbol:elements "MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDHADELYRSCLARFGDDGENL" ;
@@ -8441,9 +8598,15 @@ part:tetR a sbol:Component ;
         part:PtetA ;
     cat:slug "tetR" .
 
+part:ColE1_AT_sequence a sbol:Sequence ;
+    sbol:displayId "ColE1_AT_sequence" ;
+    sbol:elements "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCATTGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
+
 part:ColE1_sequence a sbol:Sequence ;
     sbol:displayId "ColE1_sequence" ;
-    sbol:elements "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCATTGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
+    sbol:elements "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://dbikard.github.io/dna-parts-catalog/> .
 
