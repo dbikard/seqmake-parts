@@ -18,10 +18,15 @@ rest. Author content; never hand-edit generated files.
 - **Generated, never edited:** `<slug>.gb` (from the JSON), `catalog.json`,
   `catalog.ttl`, `catalog.jsonld`, and the `docs/` site.
 
-A part is a **candidate** until it earns a curated `.md`, at which point it moves
-to `parts/validated/` and is **validated**. Independently, every
-`functional_claim` carries a `review_status` (`ai-generated` →
-`ai-cross-checked` → `expert-reviewed`) so the knowledge base can self-correct.
+A part is a **candidate** (a bare sequence + minimal info) until it becomes a
+**curated record** — sourced provenance, SO-typed main feature, located sub-features,
+references and functional_claims — *and* gains a curated `.md`; then it moves to
+`parts/validated/` and is **validated** (`tools/validate_parts.py` enforces the bar).
+The authoring agent writes that `.md`, so a full `/add-part` run yields a validated
+part directly; a part dropped in with only a sequence stays a candidate. Independently,
+every `functional_claim` (and the record) carries a `review_status` (`ai-generated` →
+`ai-cross-checked` → `expert-reviewed`): a part can be validated yet still
+`ai-generated`.
 
 ## Hard rules
 
@@ -69,7 +74,11 @@ to `parts/validated/` and is **validated**. Independently, every
 ## Procedure
 
 1. **Check it isn't already there.** Search `catalog.json` and `parts/` for the
-   name and its synonyms; if it exists, improve that record instead.
+   name and its synonyms; if it exists, improve that record instead. If a different
+   part's sequence **overlaps** yours (a sub/superset or a boundary variant of the
+   same element), **refine that part** (adjust its boundaries / annotation) rather
+   than adding a near-duplicate; only add a new part for a genuinely distinct
+   functional unit.
 2. **Source the sequence + literature.** Find the sequence in a citable source;
    collect the key references (PMID/DOI). For an Addgene-deposited plasmid,
    `python tools/addgene.py search "<name>"` finds candidates and
@@ -103,9 +112,13 @@ to `parts/validated/` and is **validated**. Independently, every
    pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl
    python -m pytest tests/ -q
    ```
-8. **Promote to validated (optional, when curating prose).** Move the `.json` to
-   `parts/validated/` and write `parts/validated/<slug>.md` (sections: Origin,
-   Properties, Use, References). Re-run step 7.
+8. **Promote to validated.** When the record clears the completeness bar (sourced
+   provenance, SO-typed main feature, located sub-features, ≥1 reference, ≥1
+   functional_claim), move the `.json` to `parts/validated/` and write the curated
+   `parts/validated/<slug>.md` (sections: Origin, Properties, Use, References) — the
+   agent writes this, so a fully-researched part is validated, not left a candidate.
+   Re-run step 7 (`validate_parts.py` enforces the bar). Leave a part in
+   `candidate/` only when it is genuinely bare (sequence + minimal info).
 9. **Commit + open a PR** with the `<slug>.json`, the generated `.gb`,
    `catalog.json`, and `catalog.ttl`/`.jsonld`. An expert review promotes claims
    to `review_status: expert-reviewed`.

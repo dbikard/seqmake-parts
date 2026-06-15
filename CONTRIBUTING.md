@@ -10,13 +10,26 @@ research a cited sequence, annotate, write claims with provenance, then validate
 and build. To do it by hand, follow that same SOP; `tools/new_part.py` scaffolds
 a valid skeleton.
 
-Parts are split by curation status:
+Parts are split by **curation tier** — how complete the record is, not merely
+whether it has prose:
 
-- **Candidate** (`parts/candidate/`) — no curated documentation page yet.
-  Published to the website as a lightweight auto-generated page (sequence viewer,
-  sub-features, downloads).
-- **Validated** (`parts/validated/`) — carries a curated `.md` page, shown on its
-  website page above the structured sections.
+- **Candidate** (`parts/candidate/`) — a *bare* part: a sequence plus minimal
+  information (a name, maybe a synonym). The raw inbox; candidates may still need
+  renaming, deduplication, or boundary fixes. Published as a lightweight
+  auto-generated page.
+- **Validated** (`parts/validated/`) — a *curated record* that clears the
+  completeness bar below **and** carries a curated `.md` page (which the authoring
+  agent can write), shown above the structured sections.
+
+A part is **validated** when its `<slug>.json` has a real
+`provenance.sequence_source` (a cited paper/registry, not a placeholder), an
+SO-typed main feature, ≥1 `reference`, ≥1 `functional_claim`, located sub-features
+where the part has internal structure, **and** a sibling `<slug>.md`.
+`tools/validate_parts.py` enforces the machine-checkable parts (legacy
+GenBank-migrated parts are grandfathered on the sourcing criterion — re-source on
+next touch). `documented` and `review_status` (`ai-generated → ai-cross-checked →
+expert-reviewed`) are *separate* axes: a part can be validated yet still
+`ai-generated`.
 
 ## Add a part
 
@@ -27,12 +40,16 @@ Parts are split by curation status:
      (e.g. a promoter's `-35`, `-10`, operator), in part-relative coordinates;
    - optional `REFERENCE` blocks with `PUBMED` / `doi:` and per-feature
      `/citation=[N]` linking a feature to reference *N*.
-2. To **promote a part to validated**, move its `.gb` to `parts/validated/` and
-   add a sibling `parts/validated/<Name>.md` documentation page (recommended
-   sections: **Origin**, **Properties**, **Use**, **References**). Validated
-   parts are marked `documented` (`status: "validated"`) and get a website page.
-   A `.gb` in `parts/validated/` **must** have a `.md`, and a `.gb` in
+2. To **promote a part to validated**, make sure its record clears the completeness
+   bar above (sourced provenance, SO-typed main feature, ≥1 reference, ≥1
+   functional_claim, sub-features), move it to `parts/validated/`, and add a sibling
+   `parts/validated/<Name>.md` (sections: **Origin**, **Properties**, **Use**,
+   **References**). A `.gb` in `parts/validated/` **must** have a `.md`, and one in
    `parts/candidate/` **must not** — the build flags misplaced files.
+   **Overlap:** if the part is a sub/superset or a boundary variant of an existing
+   validated part, **refine that part** (adjust its boundaries / annotation) instead
+   of adding a near-duplicate; fold a duplicate's name into the canonical part's
+   `synonym`. Add a new part only for a genuinely distinct functional unit.
 3. Open a pull request. CI loads every `.gb` and rebuilds `catalog.json`; your
    PR must keep `catalog.json` up to date.
 

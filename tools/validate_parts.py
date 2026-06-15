@@ -19,6 +19,35 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = ROOT / "schema" / "part.schema.json"
 
 
+def _completeness_problems(name: str, data: dict) -> list[str]:
+    """A *validated* part must be a curated record, not just a sequence: a real
+    sourced provenance, an SO-typed main feature, >=1 reference and >=1
+    functional_claim (the ``.md`` page is checked separately). A *candidate* is a
+    bare part (sequence + minimal info) and is exempt.
+
+    Legacy parts migrated from GenBank (``provenance.migrated_from`` with no
+    ``sequence_source``) are grandfathered on the sourcing criterion only -- they
+    were validated under the old rule; re-source them on next touch.
+    """
+    out: list[str] = []
+    prov = data.get("provenance") or {}
+    ss = str(prov.get("sequence_source") or "")
+    grandfathered = bool(prov.get("migrated_from")) and not ss
+    if (not ss or ss.startswith("FILL IN")) and not grandfathered:
+        out.append(f"{name}: validated part needs a real provenance.sequence_source")
+    if not data.get("references"):
+        out.append(f"{name}: validated part needs >=1 reference")
+    if not data.get("functional_claims"):
+        out.append(f"{name}: validated part needs >=1 functional_claim")
+    feats = data.get("features") or []
+    main = next((f for f in feats if "parent" not in (f.get("qualifiers") or {})), None)
+    so = [x for x in (main or {}).get("qualifiers", {}).get("db_xref", [])
+          if str(x).startswith("SO:")] if main else []
+    if not so:
+        out.append(f"{name}: validated part's main feature needs an SO db_xref")
+    return out
+
+
 def problems() -> list[str]:
     validator = Draft202012Validator(json.loads(SCHEMA.read_text(encoding="utf-8")))
     out: list[str] = []
@@ -33,9 +62,11 @@ def problems() -> list[str]:
                 out.append(f"{jf.name}: slug {data.get('slug')!r} != filename")
             md = jf.with_suffix(".md")
             is_validated = d.name == "validated"
-            if is_validated and not md.exists():
-                out.append(f"{jf.name}: validated part missing its .md page")
-            if not is_validated and md.exists():
+            if is_validated:
+                if not md.exists():
+                    out.append(f"{jf.name}: validated part missing its .md page")
+                out.extend(_completeness_problems(jf.name, data))
+            elif md.exists():
                 out.append(f"{jf.name}: candidate part must not have a .md page")
     return out
 

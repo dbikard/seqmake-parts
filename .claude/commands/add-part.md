@@ -41,7 +41,9 @@ Concretely:
 
 1. **Classify first (dedup → new vs existing).** Search `catalog.json` / `parts/`
    for the name and its synonyms.
-   - **Not present → a new part.** Author it directly (steps 2–3a).
+   - **Not present → a new part.** Author it directly (steps 2–3a). But if a
+     *different* part's sequence overlaps yours (a sub/superset or a boundary variant
+     of the same element), **refine that part** instead of adding a near-duplicate.
    - **In `parts/candidate/` → a candidate**, or **in `parts/validated/` (has a
      `.md`) → validated** → you are *improving* an existing record. Do **not**
      hand-edit its `functional_claims` in place; use the safe additive merge
@@ -50,11 +52,14 @@ Concretely:
 2. **Research** the sequence and the key references.
 
 3a. **New part — author directly.** Scaffold with `tools/new_part.py` (see
-   AUTHORING.md for flags), then edit the resulting `parts/candidate/<slug>.json`
-   to add sub-features, references, `provenance.sequence_source`, and
-   functional_claims. Default to a **candidate** (JSON only); only create the
-   validated `.md` if you are also writing curated prose (Origin / Properties /
-   Use / References).
+   AUTHORING.md for flags), then edit the resulting `<slug>.json` to add
+   sub-features, references, `provenance.sequence_source`, and functional_claims.
+   When the record clears the **completeness bar** (sourced provenance, SO-typed
+   main feature, located sub-features, ≥1 reference, ≥1 functional_claim) — i.e. a
+   normal researched run — make it **validated**: also write the curated
+   `parts/validated/<slug>.md` (Origin / Properties / Use / References) and place the
+   `.json` there. Leave it a **candidate** only when the part is genuinely bare (a
+   sourced sequence + minimal info). `tools/validate_parts.py` enforces the bar.
 
 3b. **Existing part — propose + merge (never overwrite reviewed claims).**
    - Write a *proposed overlay* JSON to a temp file (e.g. `/tmp/<slug>.proposed.json`,
