@@ -139,6 +139,33 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    it if accessible, otherwise add it to `sourcing/REQUESTS.md`** (with what it would
    resolve) for a human to provide. Do not silently tighten or extend a boundary on
    sequence evidence alone.
+
+   **Part granularity — split vs keep-composite (usage-driven).** Granularity follows
+   **community usage**, not biological separability: a functional sub-region becomes its
+   **own** part *only when it is used as a standalone unit in practice* (otherwise every
+   −10 box would be a part). Evidence a sub-region is "used alone": it carries an
+   independent registry/standard identifier or conventional name distinct from the
+   composite (iGEM BioBrick, SEVA, a common name); **or** primary literature / common
+   constructs deploy *just* that element, independent of the larger region; **or** it is a
+   recognized minimal / standard form. When that evidence is present:
+   - **Mint the sub-region as a new part and KEEP the composite — splitting is additive,
+     never destructive.** Both coexist as a deliberate subset/superset overlap (an explicit
+     exception to step 1's "overlap → dedup", alongside the `ColE1`/`ColE1_AT` variant
+     siblings): carry the combined form *and* the standalone form.
+   - **Naming:** the composite keeps the base slug; the extracted sub-part is
+     `<base>_<element>` (e.g. `Pbla` = the full bla promoter region, `Pbla_P3` = the
+     standalone strong P3 core, `Pbla_P1` = P1).
+   - **Link both ways:** the composite's main feature lists its `component` part(s) and the
+     sub-part records `sub_region_of` the composite (cross-link qualifiers, mirroring the
+     promoter↔TF `regulated_by` link); fold shared synonyms onto the form they name.
+   - **The sub-part's boundary still needs experimental grounding** (truncation / mapping /
+     mutagenesis), not consensus — else provisional + lower `confidence` (above).
+
+   When standalone-usage evidence is **absent**, keep only the composite (annotate the
+   sub-region as a sub-feature) and emit a `split` *recommendation* rather than minting —
+   the default is the composite. This is distinct from **atomicity**: a part bundling
+   *different* SO functional classes (e.g. a promoter *and* an RBS) is split into atomic
+   parts regardless of usage, because a part is one functional class.
 5. **Set provenance.** Replace `provenance.sequence_source` with the real source.
 6. **Add functional knowledge.** For any inducer / dynamic range / strength /
    host range claim, append a `functional_claims[]` entry with `type`, `label`,

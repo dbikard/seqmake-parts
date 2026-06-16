@@ -1,120 +1,107 @@
 ---
-description: Research, annotate and add or improve a DNA part in the catalog (canonical JSON + optional curated prose), merging safely into existing records, then validate and build.
-argument-hint: <part name> [feature type]
-allowed-tools: Bash, Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
+description: Add or improve one or more catalog parts via the verified annotate-part engine — source (independent re-fetch + compare), research, locate, adversarially verify, then merge the proposal safely (protecting reviewed claims), validate, and build. The engine is proposal-only; the merge is human-reviewed.
+argument-hint: <part slug> [more slugs / a related cluster] [feature type]
+allowed-tools: Bash, Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, Workflow
 ---
 
-You are adding or improving a part in this DNA parts catalog. Follow the standard
-operating procedure in @AUTHORING.md exactly; it is the source of truth for the
-rules and the record format (@schema/part.schema.json).
+You add or improve parts in this DNA parts catalog by driving the **annotate-part**
+research/verify engine (`.claude/workflows/annotate-part.js`) and then merging its
+proposal safely. The SOP and record rules are in @AUTHORING.md (record format:
+@schema/part.schema.json). The engine is **proposal-only** and is the single
+research/verify path — there is **no** verification-skipping quick path; the engine
+scales down on its own (no Locate without sub-feature geometry, no cluster sharing for a
+singleton), but source-match + citation verification always run.
 
-Part to add/improve: **$ARGUMENTS**
+Part(s) to add/improve: **$ARGUMENTS**
 
-Work through the SOP and do not skip the hard rules — most importantly:
+## Hard rules (the engine enforces these; you uphold them on merge)
 
-- **The sequence must come from a cited source, never from memory.** Find it in a
-  primary paper or a registry (Addgene / iGEM / SEVA / UniProt / NCBI) and record
-  exactly where in `provenance.sequence_source`. If you cannot source the
-  sequence, stop and report that — do not invent or recall one.
-  - **If a needed source is access-blocked** (paywall / login / 403 / 405), do not
-    guess: append it to `sourcing/REQUESTS.md` (link · what it unblocks · barrier ·
-    the filename to save it as) and stop. On resume, read the human-provided docs
-    from `sourcing/incoming/`, **byte-verify** the sequence against them, and cite
-    the provided file in `provenance.sequence_source`. See `sourcing/README.md`.
-- Keep prose **lab- and tool-agnostic** (`tools/check_content.py` enforces this).
-- Type the part and sub-features with **Sequence Ontology** terms.
-- **Carry all relevant synonyms** (literature names, registry IDs, related-plasmid /
-  gene names, common abbreviations) in the main feature's `synonym` qualifier; when
-  deduping an overlapping part, fold its synonyms into the canonical one.
-- **Protein/CDS parts defer biology to UniProt:** stamp a required `UniProt:…`
-  (or `NCBI:…`) accession and do NOT hand-author residue-level features (domains,
-  active sites, binding residues, PTMs). Instead run
-  `python tools/import_uniprot_features.py <slug>` to import them from UniProt
-  (cached + provenance, baked into the `.gb`). Only hand-author the engineering
-  layer (role, functional_claims, cognate partners). If the sequence is only a
-  close variant of the accession, the importer normalizes it to UniProt's
-  canonical sequence — unless it's an intentional functional variant (e.g. dCas9),
-  in which case set `variant_rationale` to keep it.
-- Every `functional_claim` cites its evidence (PMID/DOI + a verbatim quote and,
-  when you have actually read it, a figure/table locator). Never fabricate a
-  figure number. Mark `quote_source: primary` vs `catalog-doc` honestly, and set
-  `review_status: ai-generated` and an honest `confidence`.
+- **Sequence from a cited source, never memory.** The engine's Source phase independently
+  re-fetches + compares via `tools/source_finder.py`. If it could **not** verify
+  (access-blocked, or no 100% deposit), the proposal is flagged unverified — do **not**
+  promote it. Follow the `sourcing/REQUESTS.md` handoff (`sourcing/README.md`): the human
+  drops the document in `sourcing/incoming/`, then re-run so the engine byte-verifies and
+  cites it.
+- **Boundaries need experimental grounding** (truncation / mutational scanning / mapping /
+  genetics), not consensus — else they stay provisional with a lower `confidence`.
+- **Granularity follows usage** (AUTHORING step 4): a functional sub-region becomes its
+  own part only when it is **used standalone**; splitting is **additive** (keep the
+  composite), the sub-part is named `<base>_<element>` and cross-linked. See step 4 below.
+- Keep prose **lab- and tool-agnostic** (`tools/check_content.py` enforces this); type
+  features with **Sequence Ontology** terms; **carry all synonyms**; **protein/CDS parts
+  defer biology to UniProt** (`tools/import_uniprot_features.py`, no hand-authored
+  residue features).
+- **Never clobber human-reviewed knowledge.** Merges are additive and monotonic in
+  `review_status`: an `ai-generated` claim may be overwritten, but an
+  `ai-cross-checked`/`expert-reviewed` claim is immutable (a differing proposal is
+  appended as a flagged `<id>__v2` that supersedes it) and a validated `.md` is never
+  touched. `tools/merge_part.py` enforces this.
 
-Concretely:
+## Procedure
 
-1. **Classify first (dedup → new vs existing).** Search `catalog.json` / `parts/`
-   for the name and its synonyms, and run `python tools/catalog_overlap.py --slug
-   <slug>` (or `--seq`) to catch **sequence** overlap with existing parts.
-   - **Not present → a new part.** Author it directly (steps 2–3a). But if a
-     *different* part's sequence overlaps yours (a sub/superset or a boundary variant
-     of the same element), **refine that part** instead of adding a near-duplicate.
-     Re-delimiting a boundary is **not** a trivial sequence call — it should rest on
-     experimental data (truncation / mutational scanning / genetics); if you only have
-     consensus/alignment support, set a lower `confidence` and seek the defining paper
-     (use it, or add it to `sourcing/REQUESTS.md`).
-   - **In `parts/candidate/` → a candidate**, or **in `parts/validated/` (has a
-     `.md`) → validated** → you are *improving* an existing record. Do **not**
-     hand-edit its `functional_claims` in place; use the safe additive merge
-     (step 3b). A fresh AI pass must never clobber a human-reviewed claim.
+1. **Classify (dedup → axis 1; structure → axis 2).** Search `catalog.json` / `parts/`
+   for the slug + synonyms and run `python tools/catalog_overlap.py --slug <slug>` (or
+   `--seq`) to catch sequence overlap. Result → **new | candidate | validated** (drives
+   the write/merge policy). Note structure — DNA-with-geometry / a related cluster /
+   protein-CDS — which only selects *which engine machinery fires*, never whether
+   verification runs. **State the chosen axes per part; the user can override.** If a
+   *different* part's sequence overlaps a new one (sub/superset or boundary variant),
+   prefer refining/extracting per AUTHORING (granularity), not a near-duplicate.
 
-2. **Research + source.** Run `python tools/source_finder.py --slug <slug>
-   [--refs <canonical accessions>]` (background it — the NCBI BLAST is queued) to find
-   the **oldest reputable 100% deposited source** and a **divergence** report vs
-   canonical references; a **protein** part gets its UniProt source directly. Act on
-   the divergence (per AUTHORING.md): cite a 100% canonical deposit; **refine** an
-   internal diff to the canonical reference, or carry a common/old variant as a
-   **labelled sibling** part (`ColE1_AT`-style) with a `sequence_variant` claim; an
-   **edge** diff is a boundary fix. Collect the key references (PMID/DOI).
+2. **Run the engine.** Call the **Workflow** tool with `name: "annotate-part"`, passing the
+   spec as `args`:
+   - single: `"<slug>"` or `{ "name": "<slug>", "refs": ["<canonical accession>"] }` —
+     seed `refs` with a known canonical carrier (e.g. a plasmid GenBank accession); it
+     makes the Source phase robust to NCBI BLAST flakiness.
+   - cluster (a related family that shares a source): `{ "source": "<hint>", "parts":
+     [ <specs> ] }` — the literature is researched once and a `collections.json`-ready
+     block falls out.
 
-3a. **New part — author directly.** Scaffold with `tools/new_part.py` (see
-   AUTHORING.md for flags), then edit the resulting `<slug>.json` to add
-   sub-features, references, `provenance.sequence_source`, and functional_claims.
-   When the record clears the **completeness bar** (sourced provenance, SO-typed
-   main feature, located sub-features, ≥1 reference, ≥1 functional_claim) — i.e. a
-   normal researched run — make it **validated**: also write the curated
-   `parts/validated/<slug>.md` (Origin / Properties / Use / References) and place the
-   `.json` there. Leave it a **candidate** only when the part is genuinely bare (a
-   sourced sequence + minimal info). `tools/validate_parts.py` enforces the
-   machine-checkable bar (sourced provenance, SO-typed main feature, ≥1 cited
-   reference, ≥1 functional_claim with a cited source, a non-empty `.md`);
-   sub-features are an authoring expectation, not gated.
+   The engine returns a `part.schema.json`-shaped **proposal** per part (sourced sequence
+   + `provenance.sequence_source`, located + verified sub-features, checked citations,
+   drafted `functional_claims`, a curated `.md` draft, and curation `recommendations`).
+   It writes nothing.
 
-3b. **Existing part — propose + merge (never overwrite reviewed claims).**
-   - Write a *proposed overlay* JSON to a temp file (e.g. `/tmp/<slug>.proposed.json`,
-     not committed) carrying **only what you're contributing** for this slug — do
-     not copy the whole record. Typically `functional_claims` (reuse **stable
-     type-derived ids** so a re-run lines up by id: `inducer`,
-     `repression_dynamic_range`, `host_range`, …), any new `references`, and
-     `provenance` updates. Include `features` only if you are deliberately
-     re-annotating, and `sequence` only if you mean to assert it matches.
-   - **Dry-run the merge and read the report:**
+3. **Merge / write per axis 1.**
+   - **new** → scaffold with `tools/new_part.py` (which stamps the SO `db_xref` via
+     `tools/so_terms.py`), then apply the proposal's `features` / `references` /
+     `provenance.sequence_source` / `functional_claims`. Write the curated
+     `parts/validated/<slug>.md` and place the `.json` in `validated/` when the record
+     clears the completeness bar (sourced provenance, SO-typed main feature, ≥1
+     reference, ≥1 functional_claim, non-empty `.md`); else leave it a **candidate**.
+   - **candidate / validated** → write the proposal as a *proposed overlay* to
+     `/tmp/<slug>.proposed.json` (only what you're contributing — typically
+     `functional_claims` with stable type-derived ids, new `references`, `provenance`;
+     `features` only if deliberately re-annotating). **Dry-run** then persist:
      ```bash
-     python tools/merge_part.py --into parts/<status>/<slug>.json --proposed /tmp/<slug>.proposed.json
+     python tools/merge_part.py --into parts/<status>/<slug>.json --proposed /tmp/<slug>.proposed.json   # report
+     python tools/merge_part.py --into parts/<status>/<slug>.json --proposed /tmp/<slug>.proposed.json --write
      ```
-     `tools/merge_part.py` enforces the contract: an `ai-generated` claim is
-     overwritten by your fresh one; an `ai-cross-checked`/`expert-reviewed` claim is
-     **immutable** — a *differing* proposal is appended as a flagged `<id>__v2`
-     claim that `supersedes` it (surface every `flagged_superseding` to me), an
-     identical one is dropped. References are unioned; `provenance.sequence_source`
-     is never silently overwritten; a **sequence mismatch is a hard error** (fix the
-     sourcing, don't force it); `features` are kept unless you pass
-     `--replace-features`.
-   - When the report looks right, persist with `--write`. For a **validated** part,
-     never touch the `.md` — improving prose stays a human act.
+     Read the report; surface every `flagged_superseding`. A **sequence mismatch is a
+     hard error** — fix the sourcing, don't force it. Never touch a validated `.md`.
+   - **coding parts:** run `python tools/import_uniprot_features.py <slug>` after writing.
 
-4. **Coding parts:** run `python tools/import_uniprot_features.py <slug>` after the
-   JSON is written/merged.
+4. **Act on curation recommendations.** The engine's *verified* recommendations
+   (rename / redelimit / split / merge / new_part / metadata) are for the curator.
+   For an **extract `new_part`** (a standalone-used sub-region, e.g. `Pbla_P3`): if the
+   standalone-use evidence is **solid**, mint it too — run this procedure on
+   `<slug>_<element>`, deriving its sequence from the composite, **keep** the composite,
+   and add the two-way cross-link (composite gets a `component` qualifier; the sub-part a
+   `sub_region_of`), showing the merge before writing. If the evidence is weak, **list it
+   for the user** rather than minting. Never silently redelimit/extract on consensus.
 
-5. **Run every gate and make them pass:** `tools/validate_parts.py`,
-   `tools/build_gb.py`, `tools/build_catalog.py`, `tools/build_rdf.py`,
-   `tools/check_content.py`, `pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl`,
-   and `pytest tests/ -q`.
+5. **Run every gate and make them pass:** `tools/validate_parts.py`, `tools/build_gb.py`,
+   `tools/build_catalog.py`, `tools/build_rdf.py`, `tools/check_content.py`,
+   `pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl`, `pytest tests/ -q`. A
+   `check_content` failure goes **back to the engine** (re-synthesis), not into
+   hand-edited prose.
 
-6. **Show me** the new/changed `<slug>.json` (and `.md` if any). For an existing
-   part, also show the **merge report** (added / overwritten / preserved /
-   flagged_superseding) and call out anything that needs my review, plus a summary
-   of what you sourced and from where, before committing. Do not open a PR unless I
-   ask.
+6. **Show me**, per part: the chosen axes; what was sourced + the verify result; the
+   new/changed `<slug>.json` (+ `.md`); and for an existing part the **merge report**
+   (added / overwritten / preserved / flagged_superseding). Call out anything needing my
+   review — an **unverified source**, a **provisional boundary**, a flagged supersede, or
+   an extract recommendation. For a batch, summarize per part (a cluster also yields a
+   `collection` block). Do **not** open a PR or commit unless I ask.
 
-If anything is ambiguous (which sequence variant, which feature type, conflicting
-literature), ask me rather than guessing.
+If anything is ambiguous (which sequence variant, which boundary, conflicting literature,
+whether to mint an extract), ask me rather than guessing.
