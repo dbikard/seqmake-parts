@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
-from validate_parts import _completeness_problems  # noqa: E402
+from validate_parts import _claim_tier_problems, _completeness_problems  # noqa: E402
 
 
 def _complete():
@@ -52,3 +52,33 @@ def test_legacy_migrated_part_is_grandfathered_on_sourcing():
     # but a migrated part still needs refs/claims/SO
     d2 = dict(d); d2["functional_claims"] = []
     assert any("functional_claim" in p for p in _completeness_problems("X.json", d2))
+
+
+def test_content_free_reference_or_claim_does_not_pass():
+    # Non-empty lists with empty objects must not clear the bar.
+    d = _complete(); d["references"] = [{}]
+    assert any("reference" in p for p in _completeness_problems("X.json", d))
+    d = _complete(); d["functional_claims"] = [{"id": "x", "type": "t", "label": "L",
+        "source": {}, "provenance": {}, "confidence": "low",
+        "review_status": "ai-generated"}]
+    assert any("functional_claim" in p for p in _completeness_problems("X.json", d))
+
+
+def test_review_tier_must_be_earned():
+    # ai-generated needs nothing extra.
+    assert _claim_tier_problems("X.json", _complete()) == []
+    # ai-cross-checked with a catalog-doc quote is rejected.
+    d = _complete()
+    d["functional_claims"][0]["review_status"] = "ai-cross-checked"
+    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
+                                           "quote_source": "catalog-doc"}
+    assert any("primary source" in p for p in _claim_tier_problems("X.json", d))
+    # ...but a primary-sourced, quoted, cited claim is accepted at the higher tier.
+    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
+                                           "quote_source": "primary"}
+    assert _claim_tier_problems("X.json", d) == []
+    # expert-reviewed is held to the same bar.
+    d["functional_claims"][0]["review_status"] = "expert-reviewed"
+    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
+                                           "quote_source": "catalog-doc"}
+    assert _claim_tier_problems("X.json", d)

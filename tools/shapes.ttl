@@ -83,3 +83,20 @@ cat:RegulatedByResolvesShape a sh:NodeShape ;
                 FILTER NOT EXISTS { ?tf a <http://sbols.org/v3#Component> }
             }
         """ ] .
+
+# The review tier must be earned: a claim may only be ai-cross-checked /
+# expert-reviewed if its quote comes from the primary source (quote_source =
+# "primary"). Mirrors the write-side gate in tools/validate_parts.py.
+cat:ClaimTierShape a sh:NodeShape ;
+    sh:targetClass cat:FunctionalClaim ;
+    sh:sparql [
+        sh:message "claim is ai-cross-checked/expert-reviewed but its quote is not from the primary source (quote_source must be 'primary')" ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://dbikard.github.io/dna-parts-catalog/ns#reviewStatus> ?rs .
+                FILTER (?rs IN ("ai-cross-checked", "expert-reviewed"))
+                FILTER NOT EXISTS {
+                    $this <https://dbikard.github.io/dna-parts-catalog/ns#sourceQuoteFrom> "primary" .
+                }
+            }
+        """ ] .

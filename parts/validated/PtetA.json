@@ -159,7 +159,7 @@
       "source": {"pmid": "9092630", "quote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.", "quote_source": "catalog-doc"},
       "provenance": {"method": "transcribed-from-doc", "from": "PtetA.md", "agent": "ai-assistant"},
       "confidence": "high",
-      "review_status": "ai-cross-checked",
+      "review_status": "ai-generated",
       "supersedes": null
     }
   ]

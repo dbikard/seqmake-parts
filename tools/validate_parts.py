@@ -58,6 +58,32 @@ def _completeness_problems(name: str, data: dict) -> list[str]:
     return out
 
 
+def _claim_tier_problems(name: str, data: dict) -> list[str]:
+    """The review tier must be *earned*: a claim may only be ``ai-cross-checked``
+    or ``expert-reviewed`` if its evidence quote actually comes from the primary
+    source (``source.quote_source == "primary"``) and it cites that source. Until
+    then it stays ``ai-generated`` -- so the tier (and the site's trust marker)
+    means a real verification happened, not just a label. Applies to every part."""
+    out: list[str] = []
+    for c in data.get("functional_claims") or []:
+        rs = c.get("review_status")
+        if rs not in ("ai-cross-checked", "expert-reviewed"):
+            continue
+        cid = c.get("id")
+        src = c.get("source") or {}
+        if src.get("quote_source") != "primary":
+            out.append(f"{name}: claim {cid!r} is '{rs}' but its quote is not from "
+                       f"the primary source (set quote_source to 'primary' after "
+                       f"checking the paper, or keep review_status 'ai-generated')")
+        elif not src.get("quote"):
+            out.append(f"{name}: claim {cid!r} is '{rs}' but carries no verbatim "
+                       f"source quote")
+        if not (src.get("pmid") or src.get("doi") or src.get("url")):
+            out.append(f"{name}: claim {cid!r} is '{rs}' but cites no source "
+                       f"(pmid/doi/url)")
+    return out
+
+
 def problems() -> list[str]:
     validator = Draft202012Validator(json.loads(SCHEMA.read_text(encoding="utf-8")))
     out: list[str] = []
@@ -70,6 +96,8 @@ def problems() -> list[str]:
                 out.append(f"{jf.name}: {err.message}")
             if data.get("slug") != jf.stem:
                 out.append(f"{jf.name}: slug {data.get('slug')!r} != filename")
+            # The review tier must be earned -- enforced for every part.
+            out.extend(_claim_tier_problems(jf.name, data))
             md = jf.with_suffix(".md")
             is_validated = d.name == "validated"
             if is_validated:

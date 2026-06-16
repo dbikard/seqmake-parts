@@ -7170,7 +7170,7 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
-          "review_status": "ai-cross-checked",
+          "review_status": "ai-generated",
           "supersedes": null
         },
         {
@@ -7196,7 +7196,7 @@
             "agent": "ai-assistant"
           },
           "confidence": "medium",
-          "review_status": "ai-cross-checked",
+          "review_status": "ai-generated",
           "supersedes": null
         }
       ]
@@ -7979,7 +7979,7 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
-          "review_status": "ai-cross-checked",
+          "review_status": "ai-generated",
           "supersedes": null
         }
       ]

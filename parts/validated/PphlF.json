@@ -154,7 +154,7 @@
       "source": {"pmid": "24316737", "quote": "Repression is relieved by the small-molecule inducer 2,4-diacetylphloroglucinol (DAPG).", "quote_source": "catalog-doc"},
       "provenance": {"method": "transcribed-from-doc", "from": "PphlF.md", "agent": "ai-assistant"},
       "confidence": "high",
-      "review_status": "ai-cross-checked",
+      "review_status": "ai-generated",
       "supersedes": null
     },
     {
@@ -166,7 +166,7 @@
       "source": {"pmid": "24316737", "quote": "PhlF gives high-fold repression (~80x in the source work), induced by DAPG.", "quote_source": "catalog-doc"},
       "provenance": {"method": "transcribed-from-doc", "from": "PphlF.md", "agent": "ai-assistant"},
       "confidence": "medium",
-      "review_status": "ai-cross-checked",
+      "review_status": "ai-generated",
       "supersedes": null
     }
   ]

@@ -62,7 +62,9 @@ def test_functional_claims_are_projected_with_provenance():
     assert (PART.PphlF, CAT.hasFunctionalClaim, claim) in g
     assert (claim, CAT.claimType, rdflib.Literal("inducer")) in g
     assert (claim, CAT.confidence, rdflib.Literal("high")) in g
-    assert (claim, CAT.reviewStatus, rdflib.Literal("ai-cross-checked")) in g
+    # Its quote is from the catalog doc, not the paper, so it stays ai-generated:
+    # the tier is earned only when quote_source is "primary" (see ClaimTierShape).
+    assert (claim, CAT.reviewStatus, rdflib.Literal("ai-generated")) in g
     src = rdflib.URIRef("https://identifiers.org/pubmed:24316737")
     assert (claim, PROV.wasDerivedFrom, src) in g
     # granular source: a verbatim quote travels with the citation

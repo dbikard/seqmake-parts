@@ -8306,7 +8306,7 @@
       "cat:claimValue": "{\"inducer\": \"2,4-diacetylphloroglucinol (DAPG)\", \"mode\": \"de-repression\"}",
       "cat:confidence": "high",
       "cat:inducer": "2,4-diacetylphloroglucinol (DAPG)",
-      "cat:reviewStatus": "ai-cross-checked",
+      "cat:reviewStatus": "ai-generated",
       "cat:sourceQuote": "Repression is relieved by the small-molecule inducer 2,4-diacetylphloroglucinol (DAPG).",
       "cat:sourceQuoteFrom": "catalog-doc",
       "dcterms:references": {
@@ -8337,7 +8337,7 @@
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
         "@value": "80"
       },
-      "cat:reviewStatus": "ai-cross-checked",
+      "cat:reviewStatus": "ai-generated",
       "cat:sourceQuote": "PhlF gives high-fold repression (~80x in the source work), induced by DAPG.",
       "cat:sourceQuoteFrom": "catalog-doc",
       "dcterms:references": {
@@ -8830,7 +8830,7 @@
       "cat:claimValue": "{\"inducer\": \"tetracycline / anhydrotetracycline (aTc)\", \"mode\": \"de-repression\"}",
       "cat:confidence": "high",
       "cat:inducer": "tetracycline / anhydrotetracycline (aTc)",
-      "cat:reviewStatus": "ai-cross-checked",
+      "cat:reviewStatus": "ai-generated",
       "cat:sourceQuote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.",
       "cat:sourceQuoteFrom": "catalog-doc",
       "dcterms:references": {
