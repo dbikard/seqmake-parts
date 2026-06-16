@@ -26,15 +26,19 @@ from so_terms import SO_BY_REG, SO_BY_TYPE, so_for  # noqa: E402
 
 SCHEMA_VERSION = "1.0"
 
-# Shown at the top of the site index and every part page. The catalog is a
-# work in progress and much of its content (annotations, documentation prose)
-# is AI-generated, so flag it prominently for anyone browsing.
+# Shown at the top of the site index and every part page. We state the
+# AI-authorship plainly and pair it with the mechanism that makes it
+# trustworthy: per-claim provenance + review tiers + machine validation. The
+# honest signal is the review status of a given claim, not "human vs AI".
 AI_WIP_WARNING = (
-    '!!! warning "Work in progress — AI-generated content"\n\n'
-    "    This knowledge base is a **work in progress** and much of its content "
-    "(part annotations, documentation, and functional claims) is **largely "
-    "AI-generated**. It may contain errors and has not been fully expert-reviewed "
-    "— verify any part against the cited primary literature before relying on it.\n"
+    '!!! info "Built by AI, with provenance"\n\n'
+    "    Nearly all records here are **AI-generated** — openly, by design. Trust "
+    "is earned per claim, not assumed: each functional claim carries its "
+    "**source, confidence, and review status** "
+    "(`ai-generated` → `ai-cross-checked` → `expert-reviewed`), structure is "
+    "schema- and SHACL-validated, and sequences are traced to deposited sources. "
+    "Check a claim's status and source before relying on it — and help promote "
+    "claims toward expert review.\n"
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -380,9 +384,13 @@ def _functional_knowledge(part: dict) -> str:
     if not claims:
         return ""
     lines = ["## Functional knowledge\n",
-             "*Prose-derived claims, each carrying its source, confidence and "
-             "review status (a nanopublication-shaped assertion). Verify against "
-             "the cited source.*\n",
+             "*Each claim is a nanopublication-shaped assertion carrying its "
+             "source, the model's confidence, and a review status "
+             "(`ai-generated` → `ai-cross-checked` → `expert-reviewed`). A quote "
+             "marked `(catalog-doc)` is the catalog's own AI prose, not yet "
+             "checked against the cited paper; its confidence is then the model's "
+             "self-assessment (†). Verify against the cited source before relying "
+             "on a claim.*\n",
              "| Claim | Source | Confidence | Review |",
              "|---|---|---|---|"]
     for c in claims:
@@ -402,8 +410,13 @@ def _functional_knowledge(part: dict) -> str:
         if src.get("quote"):
             tag = f" ({src['quote_source']})" if src.get("quote_source") else ""
             cell += f"<br>*“{_short(src['quote'], 120)}”{tag}*"
+        # Don't let an unverified claim wear a face-value "high": until the quote
+        # is from the primary source, the confidence is the model's own estimate.
+        from_primary = src.get("quote_source") == "primary"
+        conf = c.get("confidence", "—")
+        conf_cell = conf if from_primary or conf == "—" else f"{conf} †"
         lines.append(f"| {_short(c.get('label', ''), 140)} | {cell or '—'} | "
-                     f"{c.get('confidence', '—')} | {c.get('review_status', '—')} |")
+                     f"{conf_cell} | {c.get('review_status', '—')} |")
     return "\n".join(lines) + "\n"
 
 
@@ -642,11 +655,11 @@ def render_index(grouped, n_validated: int, n_candidate: int,
         f"A machine-readable knowledge base of standard biological parts — "
         f"promoters, CDSs, terminators, RBSs, origins, selection markers and "
         f"regulators — each an annotated record with Sequence Ontology typing, "
-        f"literature-sourced functional claims, and links into UniProt. "
+        f"literature-cited functional claims, and links into UniProt. "
         f"**{n_validated}** parts carry a curated page; a further **{n_candidate}** "
-        f"are auto-generated from annotated GenBank, awaiting curation. Every claim "
-        f"carries its source and a review status — verify against the cited "
-        f"literature before relying on it.\n",
+        f"are auto-generated from annotated GenBank, awaiting curation. Records are "
+        f"AI-generated; trust is per claim — each carries its source, confidence "
+        f"and review status, so check those before relying on it.\n",
         "## Use the data\n",
         f"- **[`catalog.json`]({repo}/blob/main/catalog.json)** — the full manifest "
         f"(every part, its metadata, and functional claims).",
