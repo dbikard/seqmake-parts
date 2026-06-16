@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
       - name: Content guard (lab-agnostic, tool-agnostic part content)
         run: python tools/check_content.py
-      - run: pip install biopython pytest rdflib pyshacl jsonschema
+      - run: pip install -r requirements.txt pytest
       - name: Validate canonical part JSON against the schema
         run: python tools/validate_parts.py
       - name: .gb must be regenerable from the canonical JSON

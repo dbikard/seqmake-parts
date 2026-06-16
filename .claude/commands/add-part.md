@@ -74,7 +74,10 @@ Concretely:
    normal researched run — make it **validated**: also write the curated
    `parts/validated/<slug>.md` (Origin / Properties / Use / References) and place the
    `.json` there. Leave it a **candidate** only when the part is genuinely bare (a
-   sourced sequence + minimal info). `tools/validate_parts.py` enforces the bar.
+   sourced sequence + minimal info). `tools/validate_parts.py` enforces the
+   machine-checkable bar (sourced provenance, SO-typed main feature, ≥1 cited
+   reference, ≥1 functional_claim with a cited source, a non-empty `.md`);
+   sub-features are an authoring expectation, not gated.
 
 3b. **Existing part — propose + merge (never overwrite reviewed claims).**
    - Write a *proposed overlay* JSON to a temp file (e.g. `/tmp/<slug>.proposed.json`,

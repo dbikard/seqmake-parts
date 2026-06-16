@@ -103,7 +103,11 @@ def divergence(query: str, subject: str, edge_margin: int = 12) -> dict:
     best.update({
         "qlen": qlen,
         "n_mismatch": n_mis,
-        "identity_pct": round(100 * (best["coverage_bp"] - n_mis) / qlen, 2),
+        # Identity over the full query, penalizing gaps: matches / (qlen + gaps).
+        # An indel (n_gap > 0) or any uncovered query base therefore drops this
+        # below 100, so only a true full-length exact hit reports 100.0.
+        "identity_pct": round(
+            100 * (best["coverage_bp"] - n_mis) / (qlen + best["n_gap"]), 2),
         "location": classify_location(best["mismatch_positions"], qlen, edge_margin)
         if full else "partial",
     })

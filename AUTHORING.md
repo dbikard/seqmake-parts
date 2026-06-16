@@ -21,7 +21,10 @@ rest. Author content; never hand-edit generated files.
 A part is a **candidate** (a bare sequence + minimal info) until it becomes a
 **curated record** — sourced provenance, SO-typed main feature, located sub-features,
 references and functional_claims — *and* gains a curated `.md`; then it moves to
-`parts/validated/` and is **validated** (`tools/validate_parts.py` enforces the bar).
+`parts/validated/` and is **validated**. `tools/validate_parts.py` enforces the
+*machine-checkable* part of that bar: sourced provenance, an SO-typed main
+feature, ≥1 cited reference, ≥1 functional_claim with a cited source, and a
+non-empty `.md`. Located sub-features are an authoring expectation, not gated.
 The authoring agent writes that `.md`, so a full `/add-part` run yields a validated
 part directly; a part dropped in with only a sequence stays a candidate. Independently,
 every `functional_claim` (and the record) carries a `review_status` (`ai-generated` →
@@ -151,8 +154,9 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    python -m pytest tests/ -q
    ```
 8. **Promote to validated.** When the record clears the completeness bar (sourced
-   provenance, SO-typed main feature, located sub-features, ≥1 reference, ≥1
-   functional_claim), move the `.json` to `parts/validated/` and write the curated
+   provenance, SO-typed main feature, located sub-features where the part has
+   internal structure, ≥1 cited reference, ≥1 functional_claim with a cited
+   source), move the `.json` to `parts/validated/` and write the curated
    `parts/validated/<slug>.md` (sections: Origin, Properties, Use, References) — the
    agent writes this, so a fully-researched part is validated, not left a candidate.
    Re-run step 7 (`validate_parts.py` enforces the bar). Leave a part in

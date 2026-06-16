@@ -35,10 +35,20 @@ def _completeness_problems(name: str, data: dict) -> list[str]:
     grandfathered = bool(prov.get("migrated_from")) and not ss
     if (not ss or ss.startswith("FILL IN")) and not grandfathered:
         out.append(f"{name}: validated part needs a real provenance.sequence_source")
-    if not data.get("references"):
-        out.append(f"{name}: validated part needs >=1 reference")
-    if not data.get("functional_claims"):
-        out.append(f"{name}: validated part needs >=1 functional_claim")
+    # Require *substantive* records, not just non-empty lists: a reference must
+    # identify a work, and a functional claim must cite a source -- otherwise an
+    # empty {} placeholder would clear the bar (the schema allows content-free
+    # reference/source objects).
+    refs = [r for r in (data.get("references") or [])
+            if r.get("title") or r.get("pubmed_id") or r.get("doi") or r.get("authors")]
+    if not refs:
+        out.append(f"{name}: validated part needs >=1 reference (with a title/PMID/DOI)")
+    claims = [c for c in (data.get("functional_claims") or [])
+              if (c.get("source") or {}).get("pmid")
+              or (c.get("source") or {}).get("doi")
+              or (c.get("source") or {}).get("url")]
+    if not claims:
+        out.append(f"{name}: validated part needs >=1 functional_claim with a cited source")
     feats = data.get("features") or []
     main = next((f for f in feats if "parent" not in (f.get("qualifiers") or {})), None)
     so = [x for x in (main or {}).get("qualifiers", {}).get("db_xref", [])
@@ -65,6 +75,8 @@ def problems() -> list[str]:
             if is_validated:
                 if not md.exists():
                     out.append(f"{jf.name}: validated part missing its .md page")
+                elif not md.read_text(encoding="utf-8").strip():
+                    out.append(f"{jf.name}: validated part's .md page is empty")
                 out.extend(_completeness_problems(jf.name, data))
             elif md.exists():
                 out.append(f"{jf.name}: candidate part must not have a .md page")

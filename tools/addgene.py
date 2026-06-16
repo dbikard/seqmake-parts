@@ -24,8 +24,10 @@ import argparse
 import json
 import os
 import sys
+from urllib.parse import urlsplit
 
 API_BASE = "https://api.developers.addgene.org"
+API_HOST = urlsplit(API_BASE).hostname
 TIMEOUT = 20
 # Cloudflare fronts the API and bans the default Python User-Agent (HTTP 403,
 # "error code: 1010"); send an explicit one.
@@ -45,10 +47,16 @@ def _token() -> str:
 def _get(url: str, token: str, params: dict | None = None):
     import requests  # lazy: only the Addgene tool needs it
 
+    # Only ever send the bearer token to the Addgene API host itself. URLs taken
+    # from a response body (e.g. a plasmid's genbank_url) could point off-host;
+    # sending the token there would leak it to a third party.
+    headers = dict(HEADERS)
+    if urlsplit(url).hostname == API_HOST:
+        headers["Authorization"] = f"Token {token}"
     try:
         r = requests.get(
             url, params=params,
-            headers={**HEADERS, "Authorization": f"Token {token}"},
+            headers=headers,
             timeout=TIMEOUT,
         )
     except requests.exceptions.Timeout:
