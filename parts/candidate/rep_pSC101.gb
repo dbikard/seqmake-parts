@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/rep_pSC101
 FEATURES             Location/Qualifiers
      CDS             1..316
                      /label="rep pSC101"

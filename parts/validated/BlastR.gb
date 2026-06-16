@@ -43,6 +43,8 @@ REFERENCE   4
             (2002)
    PUBMED   11779186
   REMARK    doi:10.1006/bbrc.2001.6184
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/BlastR
 FEATURES             Location/Qualifiers
      CDS             1..130
                      /label="BlastR"

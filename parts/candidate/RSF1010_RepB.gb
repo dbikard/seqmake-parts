@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/RSF1010_RepB
 FEATURES             Location/Qualifiers
      CDS             1..323
                      /label="RSF1010 RepB"

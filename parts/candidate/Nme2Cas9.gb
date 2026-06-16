@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Nme2Cas9
 FEATURES             Location/Qualifiers
      CDS             1..1082
                      /label="Nme2Cas9"

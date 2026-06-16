@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/bom
 FEATURES             Location/Qualifiers
      misc_feature    1..143
                      /label="bom"

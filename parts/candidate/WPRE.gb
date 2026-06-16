@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/WPRE
 FEATURES             Location/Qualifiers
      misc_feature    1..589
                      /label="WPRE"

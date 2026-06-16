@@ -7,6 +7,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/p15A_ori_pSU38
 FEATURES             Location/Qualifiers
      rep_origin      1..789
                      /label="p15A ori (pSU38)"

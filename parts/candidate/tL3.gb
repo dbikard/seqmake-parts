@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/tL3
 FEATURES             Location/Qualifiers
      terminator      1..272
                      /label="tL3"

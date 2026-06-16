@@ -46,6 +46,8 @@ REFERENCE   5
   JOURNAL   J Mol Biol 332:99-109 (2003)
    PUBMED   12946350
   REMARK    doi:10.1016/S0022-2836(03)00863-5
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/ermAM
 FEATURES             Location/Qualifiers
      CDS             1..245
                      /label="ermAM"

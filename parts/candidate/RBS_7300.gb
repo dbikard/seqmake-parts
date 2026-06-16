@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/RBS_7300
 FEATURES             Location/Qualifiers
      RBS             1..25
                      /label="RBS 7300"

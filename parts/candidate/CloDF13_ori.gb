@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/CloDF13_ori
 FEATURES             Location/Qualifiers
      rep_origin      1..739
                      /label="CloDF13 ori"

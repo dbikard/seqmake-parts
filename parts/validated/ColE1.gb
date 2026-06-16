@@ -28,6 +28,8 @@ REFERENCE   3
   JOURNAL   Proc Natl Acad Sci U S A. 1981;78(3):1421-5
    PUBMED   6165011
   REMARK    doi:10.1073/pnas.78.3.1421
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/ColE1
 FEATURES             Location/Qualifiers
      rep_origin      1..792
                      /label="ColE1"

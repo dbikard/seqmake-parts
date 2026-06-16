@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/RSF1010_RepA
 FEATURES             Location/Qualifiers
      CDS             1..279
                      /label="RSF1010 RepA"

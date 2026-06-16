@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/186_attP
 FEATURES             Location/Qualifiers
      protein_bind    1..307
                      /label="186 attP"

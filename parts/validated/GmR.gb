@@ -39,6 +39,8 @@ REFERENCE   4
   JOURNAL   Mol Gen Genet 1989;217(2-3):202-208
    PUBMED   2549372
   REMARK    doi:10.1007/BF02464882
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/GmR
 FEATURES             Location/Qualifiers
      CDS             1..177
                      /label="GmR"

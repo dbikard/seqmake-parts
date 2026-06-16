@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/ECK120010818
 FEATURES             Location/Qualifiers
      terminator      1..54
                      /label="ECK120010818"

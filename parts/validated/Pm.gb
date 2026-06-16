@@ -60,6 +60,7 @@ REFERENCE   7
   JOURNAL   Molecular Microbiology, 1999;31(4):1105-1113
    PUBMED   10096078
   REMARK    doi:10.1046/j.1365-2958.1999.01249.x
+COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/Pm
 FEATURES             Location/Qualifiers
      promoter        1..81
                      /label="Pm"

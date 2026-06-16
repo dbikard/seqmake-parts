@@ -22,6 +22,8 @@ REFERENCE   2
   JOURNAL   Proc Natl Acad Sci USA 78(3):1421-1425 (1981)
    PUBMED   6165011
   REMARK    doi:10.1073/pnas.78.3.1421
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/p15A
 FEATURES             Location/Qualifiers
      rep_origin      1..562
                      /label="p15A"

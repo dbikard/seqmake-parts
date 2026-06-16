@@ -51,6 +51,8 @@ REFERENCE   6
   JOURNAL   J Bacteriol 1999;181(5):1689-1693
    PUBMED   10049405
   REMARK    doi:10.1128/JB.181.5.1689-1693.1999
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/TetA
 FEATURES             Location/Qualifiers
      CDS             1..396
                      /label="TetA"

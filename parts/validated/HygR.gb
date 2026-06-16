@@ -32,6 +32,8 @@ REFERENCE   3
   JOURNAL   J Struct Biol 183(1):76-85 (2013)
    PUBMED   23747390
   REMARK    doi:10.1016/j.jsb.2013.05.023
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/HygR
 FEATURES             Location/Qualifiers
      CDS             1..341
                      /label="HygR"
