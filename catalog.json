@@ -4,7 +4,7 @@
   "n_validated": 35,
   "n_candidate": 211,
   "n_documented": 35,
-  "n_functional_claims": 40,
+  "n_functional_claims": 42,
   "parts": [
     {
       "name": "186 attP",
@@ -5579,10 +5579,12 @@
       "synonyms": [
         "Pbla",
         "AmpR promoter",
-        "bla promoter"
+        "bla promoter",
+        "P3",
+        "beta-lactamase promoter"
       ],
       "collections": [],
-      "description": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter \u2014 the native 5'UTR and ribosome binding site are a distinct fun...",
+      "description": "Constitutive sigma-70 promoter (P3) of the beta-lactamase gene (bla / AmpR) from pBR322; 70 bp taken from the minus strand of J01749. Drives bla transcription in the direction opposite the conventional pBR322 numbering. Suboptimal -35/-10 hexamers give weak-to-moderate constitutive strength.",
       "length": 70,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -5641,6 +5643,14 @@
           "pmid": "6269053",
           "doi": "10.1093/nar/9.11.2517",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6269053/"
+        },
+        {
+          "authors": "Chen ST, Clowes RC",
+          "title": "Two improved promoter sequences for the beta-lactamase expression arising from a single base-pair substitution",
+          "journal": "Nucleic Acids Research",
+          "pmid": "6326054",
+          "doi": "10.1093/nar/12.7.3219",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6326054/"
         }
       ],
       "main_citations": [
@@ -5650,22 +5660,72 @@
         {
           "id": "regulation",
           "type": "regulation",
-          "label": "Constitutive sigma70 promoter (pBR322 bla P3).",
+          "label": "Constitutive sigma-70 promoter; no known cognate regulator.",
           "value": {
-            "regulation": "constitutive"
+            "regulation": "constitutive",
+            "sigma_factor": "sigma70"
           },
           "ontology": {},
           "source": {
-            "pmid": "358200",
-            "quote": "The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter \u2014 the native 5'UTR and ribosome binding site are a distinct fun...",
-            "quote_source": "catalog-doc"
+            "pmid": "6269053",
+            "quote": "Characterization of the beta-lactamase promoter of pBR322",
+            "quote_source": "primary",
+            "section": "DNase I footprinting / in vitro transcription"
           },
           "provenance": {
-            "method": "transcribed-from-doc",
-            "from": "Pbla.md",
-            "agent": "ai-assistant"
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "strength_class",
+          "type": "strength_class",
+          "label": "Weak-to-moderate constitutive strength; both -35 (TTCAAA) and -10 (GACAAT) hexamers are suboptimal vs the sigma-70 consensus.",
+          "value": {
+            "strength": "weak-moderate",
+            "minus_35": "TTCAAA",
+            "minus_10": "GACAAT"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6326054",
+            "quote": "a single GC->AT substitution creates an improved -35/-10 match, indicating the wild-type elements are suboptimal",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
           },
           "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "tss",
+          "type": "sequence_feature",
+          "label": "Transcription start site mapped ~35 bp upstream of the bla ATG, defining promoter P3.",
+          "value": {
+            "feature": "TSS",
+            "note": "~35 bp from ATG; P3 of the two bla promoters"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6178738",
+            "quote": "Precise location of two promoters for the beta-lactamase gene of pBR322. S1 mapping of RNA",
+            "quote_source": "primary",
+            "section": "S1 nuclease mapping"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
           "review_status": "ai-generated",
           "supersedes": null
         }

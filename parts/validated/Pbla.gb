@@ -1,7 +1,6 @@
 LOCUS       Pbla                      70 bp    DNA              UNK 01-JAN-1980
-DEFINITION  The constitutive P3 promoter of the pBR322 bla (TEM-1 beta-lactamase
-            / AmpR) gene: the sigma-70 -35/-10 pair. Trimmed to the promoter —
-            the native 5'UTR and ribosome binding site are a distinct fun....
+DEFINITION  Pbla (P3), the constitutive sigma-70 beta-lactamase (bla/AmpR)
+            promoter from pBR322; 70 bp, minus strand of J01749..
 ACCESSION   Pbla
 VERSION     Pbla
 KEYWORDS    .
@@ -29,25 +28,38 @@ REFERENCE   3
   JOURNAL   Nucleic Acids Research
    PUBMED   6269053
   REMARK    doi:10.1093/nar/9.11.2517
+REFERENCE   4
+  AUTHORS   Chen ST, Clowes RC
+  TITLE     Two improved promoter sequences for the beta-lactamase expression
+            arising from a single base-pair substitution
+  JOURNAL   Nucleic Acids Research
+   PUBMED   6326054
+  REMARK    doi:10.1093/nar/12.7.3219
 FEATURES             Location/Qualifiers
      promoter        1..70
                      /label="Pbla"
                      /synonym="Pbla"
                      /synonym="AmpR promoter"
                      /synonym="bla promoter"
-                     /note="The constitutive P3 promoter of the pBR322 bla
-                     (TEM-1 beta-lactamase / AmpR) gene: the sigma-70 -35/-10
-                     pair. Trimmed to the promoter — the native 5'UTR and
-                     ribosome binding site are a distinct fun..."
+                     /synonym="P3"
+                     /synonym="beta-lactamase promoter"
+                     /note="Constitutive sigma-70 promoter (P3) of the
+                     beta-lactamase gene (bla / AmpR) from pBR322; 70 bp taken
+                     from the minus strand of J01749. Drives bla transcription
+                     in the direction opposite the conventional pBR322
+                     numbering. Suboptimal -35/-10 hexamers give
+                     weak-to-moderate constitutive strength."
                      /db_xref="SO:0000167"
                      /citation=[1]
      regulatory      36..41
                      /label="-35"
                      /parent="Pbla"
                      /regulatory_class="minus_35_signal"
-                     /note="Sigma-70 -35 hexamer TTCAAA of the pBR322 bla P3
-                     promoter (4/6 to consensus TTGACA), 17 bp upstream of the
-                     -10."
+                     /note="sigma-70 -35 hexamer (TTCAAA); matches consensus
+                     TTGACA at 4/6 positions. DNase I footprinting (Russell &
+                     Bennett 1981) and S1 mapping (Brosius et al. 1982)
+                     experimentally place this element. Spacer to -10 = 17 bp
+                     (optimal)."
                      /db_xref="SO:0000175"
                      /citation=[2]
                      /citation=[3]
@@ -55,8 +67,11 @@ FEATURES             Location/Qualifiers
                      /label="-10"
                      /parent="Pbla"
                      /regulatory_class="minus_10_signal"
-                     /note="Sigma-70 -10 hexamer GACAAT (4/6 to TATAAT), 17 bp
-                     downstream of the -35 (optimal spacing)."
+                     /note="sigma-70 -10 (Pribnow) hexamer (GACAAT); the
+                     canonical 6-mer of the GACAATA 7-mer assigned by Russell &
+                     Bennett (1981) DNase I footprinting / in vitro
+                     transcription and confirmed by Brosius et al. (1982) S1
+                     mapping. Spacer from -35 = 17 bp."
                      /db_xref="SO:0000176"
                      /citation=[2]
                      /citation=[3]
