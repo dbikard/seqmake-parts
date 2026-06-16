@@ -192,6 +192,48 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    `catalog.json`, and `catalog.ttl`/`.jsonld`. An expert review promotes claims
    to `review_status: expert-reviewed`.
 
+## Autonomy — auto-apply vs human review
+
+Automate every change that can be **mechanically verified**; ask a human only when a
+decision is genuinely hard. The engine already emits the signals that separate the two —
+classify each proposed change after the merge dry-run + gates.
+
+**Auto-apply** (write → gates → commit, no human gate) when ALL hold — the change is
+*additive, verified, and reversible*:
+- **Sourced**: the sequence is source-verified (independent re-fetch + compare), or
+  unchanged for an existing part.
+- **Verified**: `ready_to_apply` — every kept sub-feature passed the JS coordinate +
+  adversarial citation checks.
+- **Non-destructive merge**: `tools/merge_part.py` reports **no `flagged_superseding`** and
+  **no `flags`** — it only adds claims / references / provenance / synonyms or overwrites
+  an `ai-generated` claim; it never alters an `ai-cross-checked` / `expert-reviewed` claim
+  or a validated `.md`.
+- **No structural decision**: no `redelimit` / `split` / `merge` / `new_part`-extract /
+  `rename` recommendation is being applied — only `metadata` / `note` / feature-annotation
+  refinements.
+- **Gates pass**: `validate_parts` · `build_gb` · `build_catalog` · `build_rdf` ·
+  `check_content` · `pyshacl` · `pytest` all green.
+
+Because every change is git-reversible and fully verified, an auto-apply change may be
+**committed without asking** — to `main` where direct commits are permitted, otherwise via
+an auto-merged PR per the repo's push policy.
+
+**Escalate to a human** when ANY holds — the decision is *hard* or *not cleanly
+reversible*:
+- source **unverified / access-blocked** (→ `sourcing/REQUESTS.md`);
+- any **verification failure** (a coordinate / subsequence / citation check failed);
+- the merge would **overwrite or supersede reviewed knowledge** (`flagged_superseding`) or
+  hits a **sequence / provenance conflict** (`flags`);
+- a **structural / identity / boundary decision** — `redelimit`, `split`, `merge`,
+  `new_part`-extract, `rename` — these change *what the part is*, need experimental
+  grounding, and aren't cleanly reversible once the part is cited or composed into
+  constructs (even a `verified: true` structural recommendation waits for a human);
+- a **gate fails** that re-synthesis cannot fix.
+
+In short: the mechanically-verifiable additive layer (sourcing, annotation, claims,
+synonyms, notes) **auto-lands**; only part-identity / boundary judgments and verification
+failures need a human.
+
 ## Minimal record shape
 
 ```jsonc

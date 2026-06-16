@@ -96,12 +96,21 @@ Part(s) to add/improve: **$ARGUMENTS**
    `check_content` failure goes **back to the engine** (re-synthesis), not into
    hand-edited prose.
 
-6. **Show me**, per part: the chosen axes; what was sourced + the verify result; the
-   new/changed `<slug>.json` (+ `.md`); and for an existing part the **merge report**
-   (added / overwritten / preserved / flagged_superseding). Call out anything needing my
-   review — an **unverified source**, a **provisional boundary**, a flagged supersede, or
-   an extract recommendation. For a batch, summarize per part (a cluster also yields a
-   `collection` block). Do **not** open a PR or commit unless I ask.
+6. **Auto-apply or escalate** (see @AUTHORING.md → *Autonomy — auto-apply vs human
+   review*). Once the gates pass, classify each part:
+   - **Auto-apply** when the change is additive + source-verified + `ready_to_apply` + a
+     clean `merge_part` report (no `flagged_superseding`, no `flags`) + **no** structural
+     recommendation (`redelimit` / `split` / `merge` / `new_part`-extract / `rename`).
+     Then **commit it without asking** (to `main` where permitted, else an auto-merged PR
+     per the repo's push policy) and report a one-line summary of what landed.
+   - **Escalate to me** when ANY hard signal is present — an **unverified / blocked
+     source**, a **verification failure**, a `flagged_superseding` / sequence-or-provenance
+     conflict, a **structural/identity/boundary** recommendation, or a gate that
+     re-synthesis can't fix. Then show the new/changed `<slug>.json` (+ `.md`), the merge
+     report, and the specific hard point — and do **not** commit.
+
+   For a batch, classify per part (a cluster also yields a `collection` block); always
+   surface a one-line per-part summary either way.
 
 If anything is ambiguous (which sequence variant, which boundary, conflicting literature,
 whether to mint an extract), ask me rather than guessing.
