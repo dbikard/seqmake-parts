@@ -1,4 +1,10 @@
-# Biological Parts Knowledge Base
+# SeqMake Parts
+
+> A machine-readable, provenance-tracked knowledge base of standard biological
+> parts. Part of the **SeqMake** tooling family; IRIs live under
+> [`w3id.org/seqmake/parts`](w3id/README.md). Not to be confused with JBEI's
+> [BioParts](https://bioparts.org) search portal — see
+> [`LANDSCAPE.md`](LANDSCAPE.md) for how the two differ.
 
 > [!WARNING]
 > **Work in progress — use at your own risk.** This is an experimental,

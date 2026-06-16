@@ -1,5 +1,5 @@
-site_name: Biological Parts Knowledge Base
-site_description: A machine-readable, provenance-tracked knowledge base of standard biological parts (SBOL/RDF + GenBank), linked into UniProt.
+site_name: SeqMake Parts
+site_description: SeqMake Parts — a machine-readable, provenance-tracked knowledge base of standard biological parts (SBOL/RDF + GenBank), linked into UniProt.
 docs_dir: docs
 
 theme:

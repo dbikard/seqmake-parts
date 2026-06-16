@@ -8,18 +8,18 @@
 > designed below as a follow-up. The authoritative builds are `tools/build_gb.py`
 > (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
 
-## Namespace & resolution (`w3id.org/bioparts`)
+## Namespace & resolution (`w3id.org/seqmake/parts`)
 
 The catalog's IRIs live under a permanent, host-independent base:
-**`https://w3id.org/bioparts/`** (`part/<slug>`, `collection/<id>`, local
+**`https://w3id.org/seqmake/parts/`** (`part/<slug>`, `collection/<id>`, local
 vocabulary at `ns#`). A [w3id.org](https://w3id.org) redirect — defined in
-[`w3id/bioparts/.htaccess`](w3id/bioparts/.htaccess) — forwards these to the
+[`w3id/seqmake/.htaccess`](w3id/seqmake/.htaccess) — forwards these to the
 current GitHub Pages site, so the hosting (and even the repo name) can change
 without breaking any IRI that has been published or cited ("cool URIs don't
 change"). The redirect maps `part/<slug>` and `collection/<id>` to their pages
 and `ns` to `catalog.ttl`.
 
-To register or update it, submit `w3id/bioparts/` as a PR to
+To register or update it, submit `w3id/seqmake/` as a PR to
 [`perma-id/w3id.org`](https://github.com/perma-id/w3id.org) (see
 [`w3id/README.md`](w3id/README.md)). The base lives in one place,
 `tools/build_rdf.py` (`BASE`/`PART`/`COLL`/`CAT`); changing it regenerates the
@@ -77,7 +77,7 @@ time**.
 
 | Thing | URI pattern |
 |---|---|
-| Catalog namespace | `https://w3id.org/bioparts/` |
+| Catalog namespace | `https://w3id.org/seqmake/parts/` |
 | A part (Component) | `…/part/<slug>` |
 | Its sequence | `…/part/<slug>_sequence` |
 | A sub-feature | `…/part/<slug>_feature_<n>` |
@@ -134,8 +134,8 @@ claim.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix pubmed: <https://identifiers.org/pubmed:> .
-@prefix cat:  <https://w3id.org/bioparts/ns#> .
-@prefix :     <https://w3id.org/bioparts/part/> .
+@prefix cat:  <https://w3id.org/seqmake/parts/ns#> .
+@prefix :     <https://w3id.org/seqmake/parts/part/> .
 
 :PphlF a sbol:Component ;
     sbol:displayId "PphlF" ; dcterms:title "PphlF" ;

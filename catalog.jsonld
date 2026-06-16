@@ -1,9 +1,9 @@
 {
   "@context": {
-    "cat": "https://w3id.org/bioparts/ns#",
-    "collection": "https://w3id.org/bioparts/collection/",
+    "cat": "https://w3id.org/seqmake/parts/ns#",
+    "collection": "https://w3id.org/seqmake/parts/collection/",
     "dcterms": "http://purl.org/dc/terms/",
-    "part": "https://w3id.org/bioparts/part/",
+    "part": "https://w3id.org/seqmake/parts/part/",
     "prov": "http://www.w3.org/ns/prov#",
     "pubmed": "https://identifiers.org/pubmed:",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -20,7 +20,7 @@
       "dcterms:title": "Anderson promoters",
       "sbol:displayId": "anderson-promoters",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:member": [
         {
@@ -74,7 +74,7 @@
       "rdfs:label": "186 attP",
       "sbol:displayId": "186_attP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:186_attP_sequence"
@@ -100,7 +100,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -113,7 +113,7 @@
       "rdfs:label": "186 integrase",
       "sbol:displayId": "186_integrase",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:186_integrase_sequence"
@@ -135,7 +135,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -149,7 +149,7 @@
       "rdfs:label": "2micron ori",
       "sbol:displayId": "2micron_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:2micron_ori_sequence"
@@ -177,7 +177,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -190,7 +190,7 @@
       "rdfs:label": "6xHis",
       "sbol:displayId": "6xHis",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:6xHis_sequence"
@@ -221,7 +221,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -234,7 +234,7 @@
       "rdfs:label": "AAV deg tag",
       "sbol:displayId": "AAV_deg_tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:AAV_deg_tag_sequence"
@@ -260,7 +260,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -274,7 +274,7 @@
       "rdfs:label": "ADH1",
       "sbol:displayId": "ADH1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ADH1_sequence"
@@ -301,7 +301,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -315,7 +315,7 @@
       "rdfs:label": "ADH1 terminator",
       "sbol:displayId": "ADH1_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ADH1_terminator_sequence"
@@ -342,7 +342,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -355,7 +355,7 @@
       "rdfs:label": "AID",
       "sbol:displayId": "AID",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:AID_sequence"
@@ -381,7 +381,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -394,7 +394,7 @@
       "rdfs:label": "APH-3",
       "sbol:displayId": "APH-3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:APH-3_sequence"
@@ -416,7 +416,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -429,7 +429,7 @@
       "rdfs:label": "Acc3",
       "sbol:displayId": "Acc3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Acc3_sequence"
@@ -456,7 +456,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -469,7 +469,7 @@
       "rdfs:label": "AlkS",
       "sbol:displayId": "AlkS",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:AlkS_sequence"
@@ -496,7 +496,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -509,7 +509,7 @@
       "rdfs:label": "AviTag\u2122",
       "sbol:displayId": "AviTag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:AviTag_sequence"
@@ -531,7 +531,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -544,7 +544,7 @@
       "rdfs:label": "B0015_terminator",
       "sbol:displayId": "B0015_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:B0015_terminator_sequence"
@@ -571,7 +571,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -584,7 +584,7 @@
       "rdfs:label": "B0030 RBS",
       "sbol:displayId": "B0030_RBS",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:B0030_RBS_sequence"
@@ -606,7 +606,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -619,7 +619,7 @@
       "rdfs:label": "B0034_RBS",
       "sbol:displayId": "B0034_RBS",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:B0034_RBS_sequence"
@@ -645,7 +645,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -709,7 +709,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:BlastR_sequence"
@@ -957,7 +957,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -970,7 +970,7 @@
       "rdfs:label": "CAG",
       "sbol:displayId": "CAG",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CAG_sequence"
@@ -996,7 +996,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1009,7 +1009,7 @@
       "rdfs:label": "CEN6-ARS209",
       "sbol:displayId": "CEN6-ARS209",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CEN6-ARS209_sequence"
@@ -1036,7 +1036,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1049,7 +1049,7 @@
       "rdfs:label": "CFP",
       "sbol:displayId": "CFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CFP_sequence"
@@ -1075,7 +1075,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1089,7 +1089,7 @@
       "rdfs:label": "CMV",
       "sbol:displayId": "CMV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CMV_sequence"
@@ -1117,7 +1117,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1131,7 +1131,7 @@
       "rdfs:label": "CYC1 terminator",
       "sbol:displayId": "CYC1_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CYC1_terminator_sequence"
@@ -1158,7 +1158,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1185,7 +1185,7 @@
       },
       "sbol:displayId": "ChnR",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ChnR_sequence"
@@ -1238,7 +1238,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1251,7 +1251,7 @@
       "rdfs:label": "CloDF13 ori",
       "sbol:displayId": "CloDF13_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CloDF13_ori_sequence"
@@ -1273,7 +1273,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1314,7 +1314,7 @@
         "@id": "part:CmR_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CmR_sequence"
@@ -1391,7 +1391,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1437,7 +1437,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ColE1_sequence"
@@ -1506,7 +1506,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ColE1_AT_sequence"
@@ -1714,7 +1714,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1881,7 +1881,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1894,7 +1894,7 @@
       "rdfs:label": "CspRecT",
       "sbol:displayId": "CspRecT",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:CspRecT_sequence"
@@ -1916,7 +1916,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -1951,7 +1951,7 @@
         "@id": "part:DhfR_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:DhfR_sequence"
@@ -2031,7 +2031,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2044,7 +2044,7 @@
       "rdfs:label": "DsRed2",
       "sbol:displayId": "DsRed2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:DsRed2_sequence"
@@ -2070,7 +2070,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2083,7 +2083,7 @@
       "rdfs:label": "E-tag",
       "sbol:displayId": "E-tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:E-tag_sequence"
@@ -2108,7 +2108,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2121,7 +2121,7 @@
       "rdfs:label": "ECK120010818",
       "sbol:displayId": "ECK120010818",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ECK120010818_sequence"
@@ -2146,7 +2146,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2159,7 +2159,7 @@
       "rdfs:label": "ECK120033736",
       "sbol:displayId": "ECK120033736",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ECK120033736_sequence"
@@ -2184,7 +2184,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2197,7 +2197,7 @@
       "rdfs:label": "ECK120033737",
       "sbol:displayId": "ECK120033737",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ECK120033737_sequence"
@@ -2222,7 +2222,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2236,7 +2236,7 @@
       "rdfs:label": "EF1a",
       "sbol:displayId": "EF1a",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:EF1a_sequence"
@@ -2265,7 +2265,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2278,7 +2278,7 @@
       "rdfs:label": "EGFP",
       "sbol:displayId": "EGFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:EGFP_sequence"
@@ -2305,7 +2305,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2318,7 +2318,7 @@
       "rdfs:label": "EcFbFP",
       "sbol:displayId": "EcFbFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:EcFbFP_sequence"
@@ -2345,7 +2345,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2358,7 +2358,7 @@
       "rdfs:label": "FLAG",
       "sbol:displayId": "FLAG",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:FLAG_sequence"
@@ -2384,7 +2384,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2397,7 +2397,7 @@
       "rdfs:label": "FRT",
       "sbol:displayId": "FRT",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:FRT_sequence"
@@ -2423,7 +2423,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2437,7 +2437,7 @@
       "rdfs:label": "GAL1",
       "sbol:displayId": "GAL1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:GAL1_sequence"
@@ -2464,7 +2464,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2477,7 +2477,7 @@
       "rdfs:label": "GFP",
       "sbol:displayId": "GFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:GFP_sequence"
@@ -2503,7 +2503,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2516,7 +2516,7 @@
       "rdfs:label": "GST",
       "sbol:displayId": "GST",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:GST_sequence"
@@ -2542,7 +2542,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2580,7 +2580,7 @@
         "@id": "part:GmR_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:GmR_sequence"
@@ -2658,7 +2658,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2671,7 +2671,7 @@
       "rdfs:label": "HA",
       "sbol:displayId": "HA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HA_sequence"
@@ -2698,7 +2698,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -2762,7 +2762,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HIS3_sequence"
@@ -3103,7 +3103,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3116,7 +3116,7 @@
       "rdfs:label": "HK022 attB",
       "sbol:displayId": "HK022_attB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HK022_attB_sequence"
@@ -3138,7 +3138,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3151,7 +3151,7 @@
       "rdfs:label": "HK022 integrase",
       "sbol:displayId": "HK022_integrase",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HK022_integrase_sequence"
@@ -3173,7 +3173,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3186,7 +3186,7 @@
       "rdfs:label": "HaloTag",
       "sbol:displayId": "HaloTag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HaloTag_sequence"
@@ -3212,7 +3212,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3247,7 +3247,7 @@
         "@id": "part:HygR_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:HygR_sequence"
@@ -3325,7 +3325,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3338,7 +3338,7 @@
       "rdfs:label": "I-SceI site",
       "sbol:displayId": "I-SceI_site",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:I-SceI_site_sequence"
@@ -3365,7 +3365,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3378,7 +3378,7 @@
       "rdfs:label": "J23100",
       "sbol:displayId": "J23100",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23100_sequence"
@@ -3404,7 +3404,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3417,7 +3417,7 @@
       "rdfs:label": "J23101",
       "sbol:displayId": "J23101",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23101_sequence"
@@ -3443,7 +3443,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3456,7 +3456,7 @@
       "rdfs:label": "J23102",
       "sbol:displayId": "J23102",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23102_sequence"
@@ -3482,7 +3482,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3495,7 +3495,7 @@
       "rdfs:label": "J23104",
       "sbol:displayId": "J23104",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23104_sequence"
@@ -3522,7 +3522,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3535,7 +3535,7 @@
       "rdfs:label": "J23106",
       "sbol:displayId": "J23106",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23106_sequence"
@@ -3561,7 +3561,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3574,7 +3574,7 @@
       "rdfs:label": "J23107",
       "sbol:displayId": "J23107",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23107_sequence"
@@ -3601,7 +3601,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3614,7 +3614,7 @@
       "rdfs:label": "J23108",
       "sbol:displayId": "J23108",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23108_sequence"
@@ -3639,7 +3639,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3652,7 +3652,7 @@
       "rdfs:label": "J23109",
       "sbol:displayId": "J23109",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23109_sequence"
@@ -3678,7 +3678,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3691,7 +3691,7 @@
       "rdfs:label": "J23110",
       "sbol:displayId": "J23110",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23110_sequence"
@@ -3716,7 +3716,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3729,7 +3729,7 @@
       "rdfs:label": "J23114",
       "sbol:displayId": "J23114",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23114_sequence"
@@ -3755,7 +3755,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3768,7 +3768,7 @@
       "rdfs:label": "J23116",
       "sbol:displayId": "J23116",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23116_sequence"
@@ -3794,7 +3794,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3807,7 +3807,7 @@
       "rdfs:label": "J23117",
       "sbol:displayId": "J23117",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23117_sequence"
@@ -3833,7 +3833,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3846,7 +3846,7 @@
       "rdfs:label": "J23119",
       "sbol:displayId": "J23119",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:J23119_sequence"
@@ -3872,7 +3872,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3885,7 +3885,7 @@
       "rdfs:label": "L3S1P13",
       "sbol:displayId": "L3S1P13",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:L3S1P13_sequence"
@@ -3907,7 +3907,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3920,7 +3920,7 @@
       "rdfs:label": "L3S2P11",
       "sbol:displayId": "L3S2P11",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:L3S2P11_sequence"
@@ -3945,7 +3945,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3958,7 +3958,7 @@
       "rdfs:label": "L3S3P22 sTerminator",
       "sbol:displayId": "L3S3P22_sTerminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:L3S3P22_sTerminator_sequence"
@@ -3980,7 +3980,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -3993,7 +3993,7 @@
       "rdfs:label": "LAA deg tag",
       "sbol:displayId": "LAA_deg_tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LAA_deg_tag_sequence"
@@ -4019,7 +4019,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4071,7 +4071,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LEU2_sequence"
@@ -4334,7 +4334,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4347,7 +4347,7 @@
       "rdfs:label": "LuxA",
       "sbol:displayId": "LuxA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxA_sequence"
@@ -4372,7 +4372,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4385,7 +4385,7 @@
       "rdfs:label": "LuxB",
       "sbol:displayId": "LuxB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxB_sequence"
@@ -4410,7 +4410,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4423,7 +4423,7 @@
       "rdfs:label": "LuxC",
       "sbol:displayId": "LuxC",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxC_sequence"
@@ -4448,7 +4448,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4461,7 +4461,7 @@
       "rdfs:label": "LuxD",
       "sbol:displayId": "LuxD",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxD_sequence"
@@ -4486,7 +4486,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4499,7 +4499,7 @@
       "rdfs:label": "LuxE",
       "sbol:displayId": "LuxE",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxE_sequence"
@@ -4524,7 +4524,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4537,7 +4537,7 @@
       "rdfs:label": "LuxIA terminator",
       "sbol:displayId": "LuxIA_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:LuxIA_terminator_sequence"
@@ -4562,7 +4562,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4575,7 +4575,7 @@
       "rdfs:label": "Myc",
       "sbol:displayId": "Myc",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Myc_sequence"
@@ -4602,7 +4602,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4615,7 +4615,7 @@
       "rdfs:label": "NLS (nucleoplasmin)",
       "sbol:displayId": "NLS_nucleoplasmin",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:NLS_nucleoplasmin_sequence"
@@ -4640,7 +4640,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4653,7 +4653,7 @@
       "rdfs:label": "Nme2Cas9",
       "sbol:displayId": "Nme2Cas9",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Nme2Cas9_sequence"
@@ -4679,7 +4679,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4718,7 +4718,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:P2_sequence"
@@ -4744,7 +4744,7 @@
       "rdfs:label": "P2A",
       "sbol:displayId": "P2A",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:P2A_sequence"
@@ -4766,7 +4766,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4870,7 +4870,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -4912,7 +4912,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PA1_O4_O3_sequence"
@@ -5101,7 +5101,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5115,7 +5115,7 @@
       "rdfs:label": "PA1lacO-1",
       "sbol:displayId": "PA1lacO-1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PA1lacO-1_sequence"
@@ -5142,7 +5142,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5197,7 +5197,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PCymRC_sequence"
@@ -5449,7 +5449,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5462,7 +5462,7 @@
       "rdfs:label": "PD/E20",
       "sbol:displayId": "PD_E20",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PD_E20_sequence"
@@ -5489,7 +5489,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5502,7 +5502,7 @@
       "rdfs:label": "PEM7",
       "sbol:displayId": "PEM7",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PEM7_sequence"
@@ -5530,7 +5530,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5543,7 +5543,7 @@
       "rdfs:label": "PL",
       "sbol:displayId": "PL",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PL_sequence"
@@ -5570,7 +5570,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5584,7 +5584,7 @@
       "rdfs:label": "PLlacO-1",
       "sbol:displayId": "PLlacO-1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PLlacO-1_sequence"
@@ -5611,7 +5611,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5662,7 +5662,7 @@
         "@id": "part:PLtetO-1_interaction_tetR"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PLtetO-1_sequence"
@@ -5876,7 +5876,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5897,7 +5897,7 @@
       "rdfs:label": "PSV40",
       "sbol:displayId": "PSV40",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PSV40_sequence"
@@ -5922,7 +5922,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -5935,7 +5935,7 @@
       "rdfs:label": "PT3",
       "sbol:displayId": "PT3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PT3_sequence"
@@ -5960,7 +5960,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6008,7 +6008,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PT5_lacO_sequence"
@@ -6185,7 +6185,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6201,7 +6201,7 @@
         "@id": "part:PT7_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PT7_sequence"
@@ -6247,7 +6247,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6260,7 +6260,7 @@
       "rdfs:label": "PURA3",
       "sbol:displayId": "PURA3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PURA3_sequence"
@@ -6285,7 +6285,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6298,7 +6298,7 @@
       "rdfs:label": "PVeg",
       "sbol:displayId": "PVeg",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PVeg_sequence"
@@ -6325,7 +6325,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6370,7 +6370,7 @@
         "@id": "part:ParaBAD_interaction_araC"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ParaBAD_sequence"
@@ -6580,7 +6580,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6624,7 +6624,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pbla_sequence"
@@ -6742,7 +6742,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6755,7 +6755,7 @@
       "rdfs:label": "Pcat",
       "sbol:displayId": "Pcat",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pcat_sequence"
@@ -6780,7 +6780,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6828,7 +6828,7 @@
         "@id": "part:PchnB_interaction_ChnR"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PchnB_sequence"
@@ -6960,7 +6960,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -6984,7 +6984,7 @@
       "rdfs:label": "PhlF",
       "sbol:displayId": "PhlF",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PhlF_sequence"
@@ -7006,7 +7006,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7019,7 +7019,7 @@
       "rdfs:label": "Pkan",
       "sbol:displayId": "Pkan",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pkan_sequence"
@@ -7046,7 +7046,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7094,7 +7094,7 @@
         "@id": "part:Plac_interaction_lacI"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Plac_sequence"
@@ -7117,7 +7117,7 @@
       "rdfs:label": "PlacI",
       "sbol:displayId": "PlacI",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PlacI_sequence"
@@ -7142,7 +7142,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7155,7 +7155,7 @@
       "rdfs:label": "PlacIq",
       "sbol:displayId": "PlacIq",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PlacIq_sequence"
@@ -7180,7 +7180,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7225,7 +7225,7 @@
         "@id": "part:PlacUV5_interaction_lacI"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PlacUV5_sequence"
@@ -7383,7 +7383,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7405,7 +7405,7 @@
       "rdfs:label": "Plac/ara-1",
       "sbol:displayId": "Plac_ara-1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Plac_ara-1_sequence"
@@ -7432,7 +7432,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7622,7 +7622,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7643,7 +7643,7 @@
       "rdfs:label": "Pliar1",
       "sbol:displayId": "Pliar1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar1_sequence"
@@ -7669,7 +7669,7 @@
       "rdfs:label": "Pliar15",
       "sbol:displayId": "Pliar15",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar15_sequence"
@@ -7694,7 +7694,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7707,7 +7707,7 @@
       "rdfs:label": "Pliar17",
       "sbol:displayId": "Pliar17",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar17_sequence"
@@ -7732,7 +7732,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7744,7 +7744,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7757,7 +7757,7 @@
       "rdfs:label": "Pliar51",
       "sbol:displayId": "Pliar51",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar51_sequence"
@@ -7782,7 +7782,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7795,7 +7795,7 @@
       "rdfs:label": "Pliar53",
       "sbol:displayId": "Pliar53",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar53_sequence"
@@ -7820,7 +7820,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7833,7 +7833,7 @@
       "rdfs:label": "Pliar70",
       "sbol:displayId": "Pliar70",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pliar70_sequence"
@@ -7858,7 +7858,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -7921,7 +7921,7 @@
         "@id": "part:Pm_interaction_XylS"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pm_sequence"
@@ -8143,7 +8143,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -8164,7 +8164,7 @@
       "rdfs:label": "Pneo",
       "sbol:displayId": "Pneo",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pneo_sequence"
@@ -8191,7 +8191,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -8204,7 +8204,7 @@
       "rdfs:label": "PpflB",
       "sbol:displayId": "PpflB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PpflB_sequence"
@@ -8230,7 +8230,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -8283,7 +8283,7 @@
         "@id": "part:PphlF_interaction_PhlF"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PphlF_sequence"
@@ -8489,7 +8489,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -8548,7 +8548,7 @@
         "@id": "part:Ptac_interaction_lacI"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Ptac_sequence"
@@ -8748,7 +8748,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -8807,7 +8807,7 @@
         "@id": "part:PtetA_interaction_tetR"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PtetA_sequence"
@@ -8995,7 +8995,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9054,7 +9054,7 @@
         "@id": "part:Ptrc_interaction_lacI"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Ptrc_sequence"
@@ -9205,7 +9205,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9289,7 +9289,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:PuroR_sequence"
@@ -9639,7 +9639,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9694,7 +9694,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Pxyl_tet_sequence"
@@ -9901,7 +9901,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9914,7 +9914,7 @@
       "rdfs:label": "R6Kgamma ori",
       "sbol:displayId": "R6Kgamma_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:R6Kgamma_ori_sequence"
@@ -9936,7 +9936,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9949,7 +9949,7 @@
       "rdfs:label": "RBS 23400",
       "sbol:displayId": "RBS_23400",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RBS_23400_sequence"
@@ -9975,7 +9975,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -9988,7 +9988,7 @@
       "rdfs:label": "RBS 7300",
       "sbol:displayId": "RBS_7300",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RBS_7300_sequence"
@@ -10013,7 +10013,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10026,7 +10026,7 @@
       "rdfs:label": "RK2 oriV",
       "sbol:displayId": "RK2_oriV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RK2_oriV_sequence"
@@ -10052,7 +10052,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10065,7 +10065,7 @@
       "rdfs:label": "RP4 oriT",
       "sbol:displayId": "RP4_oriT",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RP4_oriT_sequence"
@@ -10091,7 +10091,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10104,7 +10104,7 @@
       "rdfs:label": "RSF1010 RepA",
       "sbol:displayId": "RSF1010_RepA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RSF1010_RepA_sequence"
@@ -10126,7 +10126,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10139,7 +10139,7 @@
       "rdfs:label": "RSF1010 RepB",
       "sbol:displayId": "RSF1010_RepB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RSF1010_RepB_sequence"
@@ -10161,7 +10161,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10174,7 +10174,7 @@
       "rdfs:label": "RSF1010 oriV",
       "sbol:displayId": "RSF1010_oriV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RSF1010_oriV_sequence"
@@ -10196,7 +10196,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10209,7 +10209,7 @@
       "rdfs:label": "RSF ori",
       "sbol:displayId": "RSF_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RSF_ori_sequence"
@@ -10231,7 +10231,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10244,7 +10244,7 @@
       "rdfs:label": "RepC",
       "sbol:displayId": "RepC",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RepC_sequence"
@@ -10270,7 +10270,7 @@
       "rdfs:label": "RepC (RSF1010)",
       "sbol:displayId": "RepC_RSF1010",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:RepC_RSF1010_sequence"
@@ -10297,7 +10297,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10309,7 +10309,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10323,7 +10323,7 @@
       "rdfs:label": "S-tag",
       "sbol:displayId": "S-tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:S-tag_sequence"
@@ -10350,7 +10350,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10363,7 +10363,7 @@
       "rdfs:label": "SEVA tir",
       "sbol:displayId": "SEVA_tir",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SEVA_tir_sequence"
@@ -10389,7 +10389,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10402,7 +10402,7 @@
       "rdfs:label": "SUMO",
       "sbol:displayId": "SUMO",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SUMO_sequence"
@@ -10427,7 +10427,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10440,7 +10440,7 @@
       "rdfs:label": "SV40 NLS",
       "sbol:displayId": "SV40_NLS",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SV40_NLS_sequence"
@@ -10466,7 +10466,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10479,7 +10479,7 @@
       "rdfs:label": "SV40_PA_terminator",
       "sbol:displayId": "SV40_PA_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SV40_PA_terminator_sequence"
@@ -10501,7 +10501,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10514,7 +10514,7 @@
       "rdfs:label": "SacB",
       "sbol:displayId": "SacB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SacB_sequence"
@@ -10539,7 +10539,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10552,7 +10552,7 @@
       "rdfs:label": "SpecR",
       "sbol:displayId": "SpecR",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:SpecR_sequence"
@@ -10580,7 +10580,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10593,7 +10593,7 @@
       "rdfs:label": "St1Cas9",
       "sbol:displayId": "St1Cas9",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:St1Cas9_sequence"
@@ -10619,7 +10619,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10632,7 +10632,7 @@
       "rdfs:label": "Strep tag",
       "sbol:displayId": "Strep_tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:Strep_tag_sequence"
@@ -10659,7 +10659,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10672,7 +10672,7 @@
       "rdfs:label": "T2A",
       "sbol:displayId": "T2A",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T2A_sequence"
@@ -10694,7 +10694,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10707,7 +10707,7 @@
       "rdfs:label": "T7-Ocr",
       "sbol:displayId": "T7-Ocr",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7-Ocr_sequence"
@@ -10734,7 +10734,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10747,7 +10747,7 @@
       "rdfs:label": "T7Te",
       "sbol:displayId": "T7Te",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7Te_sequence"
@@ -10772,7 +10772,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10785,7 +10785,7 @@
       "rdfs:label": "T7 RNAP",
       "sbol:displayId": "T7_RNAP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7_RNAP_sequence"
@@ -10812,7 +10812,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10826,7 +10826,7 @@
       "rdfs:label": "T7 g10 leader",
       "sbol:displayId": "T7_g10_leader",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7_g10_leader_sequence"
@@ -10854,7 +10854,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10867,7 +10867,7 @@
       "rdfs:label": "T7 tag",
       "sbol:displayId": "T7_tag",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7_tag_sequence"
@@ -10894,7 +10894,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10907,7 +10907,7 @@
       "rdfs:label": "T7 terminator",
       "sbol:displayId": "T7_terminator",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7_terminator_sequence"
@@ -10932,7 +10932,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -10986,7 +10986,7 @@
         "@id": "part:T7lac_interaction_lacI"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:T7lac_sequence"
@@ -11198,7 +11198,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11220,7 +11220,7 @@
       "rdfs:label": "TDH3",
       "sbol:displayId": "TDH3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TDH3_sequence"
@@ -11250,7 +11250,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11264,7 +11264,7 @@
       "rdfs:label": "TEF1",
       "sbol:displayId": "TEF1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TEF1_sequence"
@@ -11291,7 +11291,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11304,7 +11304,7 @@
       "rdfs:label": "TEV site",
       "sbol:displayId": "TEV_site",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TEV_site_sequence"
@@ -11330,7 +11330,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11343,7 +11343,7 @@
       "rdfs:label": "TRE3GV",
       "sbol:displayId": "TRE3GV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TRE3GV_sequence"
@@ -11368,7 +11368,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11385,7 +11385,7 @@
       },
       "sbol:displayId": "TRP1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TRP1_sequence"
@@ -11411,7 +11411,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11452,7 +11452,7 @@
       },
       "sbol:displayId": "TetA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:TetA_sequence"
@@ -11505,7 +11505,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11518,7 +11518,7 @@
       "rdfs:label": "UGI",
       "sbol:displayId": "UGI",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:UGI_sequence"
@@ -11543,7 +11543,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11556,7 +11556,7 @@
       "rdfs:label": "URA3",
       "sbol:displayId": "URA3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:URA3_sequence"
@@ -11581,7 +11581,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11594,7 +11594,7 @@
       "rdfs:label": "UnaG",
       "sbol:displayId": "UnaG",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:UnaG_sequence"
@@ -11616,7 +11616,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11630,7 +11630,7 @@
       "rdfs:label": "WPRE",
       "sbol:displayId": "WPRE",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:WPRE_sequence"
@@ -11656,7 +11656,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11672,7 +11672,7 @@
       "rdfs:label": "XylS",
       "sbol:displayId": "XylS",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:XylS_sequence"
@@ -11694,7 +11694,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11707,7 +11707,7 @@
       "rdfs:label": "YFP",
       "sbol:displayId": "YFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:YFP_sequence"
@@ -11733,7 +11733,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11768,7 +11768,7 @@
         "@id": "part:ZeoR_feature_0"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ZeoR_sequence"
@@ -11846,7 +11846,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11875,7 +11875,7 @@
       },
       "sbol:displayId": "aadA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:aadA_sequence"
@@ -11933,7 +11933,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11946,7 +11946,7 @@
       "rdfs:label": "acrII4A",
       "sbol:displayId": "acrII4A",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:acrII4A_sequence"
@@ -11968,7 +11968,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -11984,7 +11984,7 @@
       "rdfs:label": "araC",
       "sbol:displayId": "araC",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:araC_sequence"
@@ -12009,7 +12009,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12022,7 +12022,7 @@
       "rdfs:label": "attP",
       "sbol:displayId": "attP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:attP_sequence"
@@ -12045,7 +12045,7 @@
       "rdfs:label": "attP1",
       "sbol:displayId": "attP1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:attP1_sequence"
@@ -12067,7 +12067,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12080,7 +12080,7 @@
       "rdfs:label": "attP2",
       "sbol:displayId": "attP2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:attP2_sequence"
@@ -12102,7 +12102,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12114,7 +12114,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12127,7 +12127,7 @@
       "rdfs:label": "bet",
       "sbol:displayId": "bet",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:bet_sequence"
@@ -12152,7 +12152,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12165,7 +12165,7 @@
       "rdfs:label": "birA",
       "sbol:displayId": "birA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:birA_sequence"
@@ -12190,7 +12190,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12251,7 +12251,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:bla_sequence"
@@ -12468,7 +12468,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12481,7 +12481,7 @@
       "rdfs:label": "bom",
       "sbol:displayId": "bom",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:bom_sequence"
@@ -12503,7 +12503,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12516,7 +12516,7 @@
       "rdfs:label": "cI857",
       "sbol:displayId": "cI857",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cI857_sequence"
@@ -12543,7 +12543,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12556,7 +12556,7 @@
       "rdfs:label": "cas1",
       "sbol:displayId": "cas1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cas1_sequence"
@@ -12579,7 +12579,7 @@
       "rdfs:label": "cas1 (Nme)",
       "sbol:displayId": "cas1_Nme",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cas1_Nme_sequence"
@@ -12604,7 +12604,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12616,7 +12616,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12629,7 +12629,7 @@
       "rdfs:label": "cas2",
       "sbol:displayId": "cas2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cas2_sequence"
@@ -12652,7 +12652,7 @@
       "rdfs:label": "cas2 (Nme)",
       "sbol:displayId": "cas2_Nme",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cas2_Nme_sequence"
@@ -12677,7 +12677,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12689,7 +12689,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -12744,7 +12744,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cas9_sequence"
@@ -13035,7 +13035,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13048,7 +13048,7 @@
       "rdfs:label": "catP",
       "sbol:displayId": "catP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:catP_sequence"
@@ -13070,7 +13070,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13083,7 +13083,7 @@
       "rdfs:label": "cat (Gram+)",
       "sbol:displayId": "cat_Gram",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:cat_Gram_sequence"
@@ -13108,7 +13108,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13121,7 +13121,7 @@
       "rdfs:label": "ccdB",
       "sbol:displayId": "ccdB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ccdB_sequence"
@@ -13146,7 +13146,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13201,7 +13201,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:dCas9_sequence"
@@ -13493,7 +13493,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13507,7 +13507,7 @@
       "rdfs:label": "enterokinase site",
       "sbol:displayId": "enterokinase_site",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:enterokinase_site_sequence"
@@ -13535,7 +13535,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13593,7 +13593,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ermAM_sequence"
@@ -13768,7 +13768,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13781,7 +13781,7 @@
       "rdfs:label": "ermR",
       "sbol:displayId": "ermR",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ermR_sequence"
@@ -13809,7 +13809,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13822,7 +13822,7 @@
       "rdfs:label": "exo",
       "sbol:displayId": "exo",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:exo_sequence"
@@ -13847,7 +13847,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13860,7 +13860,7 @@
       "rdfs:label": "f1 ori",
       "sbol:displayId": "f1_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:f1_ori_sequence"
@@ -13886,7 +13886,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13899,7 +13899,7 @@
       "rdfs:label": "fd",
       "sbol:displayId": "fd",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:fd_sequence"
@@ -13924,7 +13924,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13937,7 +13937,7 @@
       "rdfs:label": "gam",
       "sbol:displayId": "gam",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:gam_sequence"
@@ -13962,7 +13962,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -13976,7 +13976,7 @@
       "rdfs:label": "hPGK",
       "sbol:displayId": "hPGK",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:hPGK_sequence"
@@ -14004,7 +14004,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14017,7 +14017,7 @@
       "rdfs:label": "hU6",
       "sbol:displayId": "hU6",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:hU6_sequence"
@@ -14043,7 +14043,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14089,7 +14089,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:kanR_Tn5_sequence"
@@ -14211,7 +14211,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14224,7 +14224,7 @@
       "rdfs:label": "kanR (Tn903)",
       "sbol:displayId": "kanR_Tn903",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:kanR_Tn903_sequence"
@@ -14253,7 +14253,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14283,7 +14283,7 @@
       "rdfs:label": "lacI",
       "sbol:displayId": "lacI",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacI_sequence"
@@ -14308,7 +14308,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14321,7 +14321,7 @@
       "rdfs:label": "lacO",
       "sbol:displayId": "lacO",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacO_sequence"
@@ -14344,7 +14344,7 @@
       "rdfs:label": "lacO3",
       "sbol:displayId": "lacO3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacO3_sequence"
@@ -14370,7 +14370,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14382,7 +14382,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14395,7 +14395,7 @@
       "rdfs:label": "lacZ\u03b1",
       "sbol:displayId": "lacZ",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacZ_sequence"
@@ -14418,7 +14418,7 @@
       "rdfs:label": "lacZ",
       "sbol:displayId": "lacZ_1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacZ_1_sequence"
@@ -14443,7 +14443,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14456,7 +14456,7 @@
       "rdfs:label": "lacZ alpha",
       "sbol:displayId": "lacZ_alpha",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lacZ_alpha_sequence"
@@ -14482,7 +14482,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14494,7 +14494,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14507,7 +14507,7 @@
       "rdfs:label": "lambda attB",
       "sbol:displayId": "lambda_attB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lambda_attB_sequence"
@@ -14529,7 +14529,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14542,7 +14542,7 @@
       "rdfs:label": "lambda cos",
       "sbol:displayId": "lambda_cos",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lambda_cos_sequence"
@@ -14569,7 +14569,7 @@
       "rdfs:label": "lambda cos",
       "sbol:displayId": "lambda_cos_1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lambda_cos_1_sequence"
@@ -14595,7 +14595,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14607,7 +14607,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14620,7 +14620,7 @@
       "rdfs:label": "lambda integrase",
       "sbol:displayId": "lambda_integrase",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lambda_integrase_sequence"
@@ -14642,7 +14642,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14655,7 +14655,7 @@
       "rdfs:label": "lambda t0",
       "sbol:displayId": "lambda_t0",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:lambda_t0_sequence"
@@ -14680,7 +14680,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14693,7 +14693,7 @@
       "rdfs:label": "mCherry",
       "sbol:displayId": "mCherry",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:mCherry_sequence"
@@ -14718,7 +14718,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14731,7 +14731,7 @@
       "rdfs:label": "mRFP1",
       "sbol:displayId": "mRFP1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:mRFP1_sequence"
@@ -14757,7 +14757,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14770,7 +14770,7 @@
       "rdfs:label": "mTurquoise2",
       "sbol:displayId": "mTurquoise2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:mTurquoise2_sequence"
@@ -14796,7 +14796,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14809,7 +14809,7 @@
       "rdfs:label": "ori2",
       "sbol:displayId": "ori2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ori2_sequence"
@@ -14831,7 +14831,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14844,7 +14844,7 @@
       "rdfs:label": "oriT",
       "sbol:displayId": "oriT",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:oriT_sequence"
@@ -14866,7 +14866,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -14902,7 +14902,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:p15A_sequence"
@@ -15048,7 +15048,7 @@
       "rdfs:label": "p15A ori",
       "sbol:displayId": "p15A_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:p15A_ori_sequence"
@@ -15075,7 +15075,7 @@
       "rdfs:label": "p15A ori (pSU38)",
       "sbol:displayId": "p15A_ori_pSU38",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:p15A_ori_pSU38_sequence"
@@ -15101,7 +15101,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15113,7 +15113,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15125,7 +15125,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15138,7 +15138,7 @@
       "rdfs:label": "pBBR1 Rep",
       "sbol:displayId": "pBBR1_Rep",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pBBR1_Rep_sequence"
@@ -15160,7 +15160,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15173,7 +15173,7 @@
       "rdfs:label": "pBBR1 oriV",
       "sbol:displayId": "pBBR1_oriV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pBBR1_oriV_sequence"
@@ -15195,7 +15195,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15208,7 +15208,7 @@
       "rdfs:label": "pIJ101 ori",
       "sbol:displayId": "pIJ101_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pIJ101_ori_sequence"
@@ -15235,7 +15235,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15248,7 +15248,7 @@
       "rdfs:label": "pR",
       "sbol:displayId": "pR",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pR_sequence"
@@ -15274,7 +15274,7 @@
       "rdfs:label": "pRM",
       "sbol:displayId": "pRM",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pRM_sequence"
@@ -15299,7 +15299,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15312,7 +15312,7 @@
       "rdfs:label": "pRO1600 oriV",
       "sbol:displayId": "pRO1600_oriV",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pRO1600_oriV_sequence"
@@ -15334,7 +15334,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15346,7 +15346,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15391,7 +15391,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pSC101_ori_sequence"
@@ -15414,7 +15414,7 @@
       "rdfs:label": "pSC101 ori (SEVA)",
       "sbol:displayId": "pSC101_ori_SEVA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pSC101_ori_SEVA_sequence"
@@ -15440,7 +15440,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15634,7 +15634,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15648,7 +15648,7 @@
       "rdfs:label": "pSH71 ori",
       "sbol:displayId": "pSH71_ori",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pSH71_ori_sequence"
@@ -15676,7 +15676,7 @@
       "rdfs:label": "pSH71 ori (core)",
       "sbol:displayId": "pSH71_ori_core",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:pSH71_ori_core_sequence"
@@ -15701,7 +15701,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15713,7 +15713,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15726,7 +15726,7 @@
       "rdfs:label": "phi80 attB",
       "sbol:displayId": "phi80_attB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:phi80_attB_sequence"
@@ -15748,7 +15748,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15761,7 +15761,7 @@
       "rdfs:label": "phiC31 attP",
       "sbol:displayId": "phiC31_attP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:phiC31_attP_sequence"
@@ -15787,7 +15787,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15800,7 +15800,7 @@
       "rdfs:label": "recE",
       "sbol:displayId": "recE",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:recE_sequence"
@@ -15822,7 +15822,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15835,7 +15835,7 @@
       "rdfs:label": "recT",
       "sbol:displayId": "recT",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:recT_sequence"
@@ -15857,7 +15857,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15870,7 +15870,7 @@
       "rdfs:label": "repA",
       "sbol:displayId": "repA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repA_sequence"
@@ -15893,7 +15893,7 @@
       "rdfs:label": "repA (IncFII)",
       "sbol:displayId": "repA_IncFII",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repA_IncFII_sequence"
@@ -15915,7 +15915,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15928,7 +15928,7 @@
       "rdfs:label": "repA (R6K)",
       "sbol:displayId": "repA_R6K",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repA_R6K_sequence"
@@ -15950,7 +15950,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15962,7 +15962,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -15975,7 +15975,7 @@
       "rdfs:label": "repE",
       "sbol:displayId": "repE",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repE_sequence"
@@ -15997,7 +15997,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16010,7 +16010,7 @@
       "rdfs:label": "repH",
       "sbol:displayId": "repH",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repH_sequence"
@@ -16032,7 +16032,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16045,7 +16045,7 @@
       "rdfs:label": "repL",
       "sbol:displayId": "repL",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:repL_sequence"
@@ -16067,7 +16067,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16080,7 +16080,7 @@
       "rdfs:label": "rep pSC101",
       "sbol:displayId": "rep_pSC101",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:rep_pSC101_sequence"
@@ -16106,7 +16106,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16140,7 +16140,7 @@
       },
       "sbol:displayId": "rop",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:rop_sequence"
@@ -16221,7 +16221,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16234,7 +16234,7 @@
       "rdfs:label": "rrnBT1",
       "sbol:displayId": "rrnBT1",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:rrnBT1_sequence"
@@ -16259,7 +16259,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16272,7 +16272,7 @@
       "rdfs:label": "rrnBT2",
       "sbol:displayId": "rrnBT2",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:rrnBT2_sequence"
@@ -16297,7 +16297,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16310,7 +16310,7 @@
       "rdfs:label": "sfGFP",
       "sbol:displayId": "sfGFP",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:sfGFP_sequence"
@@ -16339,7 +16339,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16352,7 +16352,7 @@
       "rdfs:label": "sgRNA scaffold",
       "sbol:displayId": "sgRNA_scaffold",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:sgRNA_scaffold_sequence"
@@ -16380,7 +16380,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16393,7 +16393,7 @@
       "rdfs:label": "sopA",
       "sbol:displayId": "sopA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:sopA_sequence"
@@ -16415,7 +16415,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16428,7 +16428,7 @@
       "rdfs:label": "sopB",
       "sbol:displayId": "sopB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:sopB_sequence"
@@ -16450,7 +16450,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16463,7 +16463,7 @@
       "rdfs:label": "tL3",
       "sbol:displayId": "tL3",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tL3_sequence"
@@ -16488,7 +16488,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16501,7 +16501,7 @@
       "rdfs:label": "tetAC",
       "sbol:displayId": "tetAC",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tetAC_sequence"
@@ -16523,7 +16523,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16536,7 +16536,7 @@
       "rdfs:label": "tetO",
       "sbol:displayId": "tetO",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tetO_sequence"
@@ -16558,7 +16558,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16579,7 +16579,7 @@
       "rdfs:label": "tetR",
       "sbol:displayId": "tetR",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tetR_sequence"
@@ -16606,7 +16606,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -16672,7 +16672,7 @@
         }
       ],
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tetR_tetA_promoters_sequence"
@@ -16988,7 +16988,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -17001,7 +17001,7 @@
       "rdfs:label": "thrombin site",
       "sbol:displayId": "thrombin_site",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:thrombin_site_sequence"
@@ -17027,7 +17027,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -17040,7 +17040,7 @@
       "rdfs:label": "tonB",
       "sbol:displayId": "tonB",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:tonB_sequence"
@@ -17065,7 +17065,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -17078,7 +17078,7 @@
       "rdfs:label": "trfA",
       "sbol:displayId": "trfA",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:trfA_sequence"
@@ -17100,7 +17100,7 @@
         "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     },
     {
@@ -17113,7 +17113,7 @@
       "rdfs:label": "ts ori101",
       "sbol:displayId": "ts_ori101",
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       },
       "sbol:hasSequence": {
         "@id": "part:ts_ori101_sequence"
@@ -17138,7 +17138,7 @@
         "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
-        "@id": "https://w3id.org/bioparts/"
+        "@id": "https://w3id.org/seqmake/parts/"
       }
     }
   ]

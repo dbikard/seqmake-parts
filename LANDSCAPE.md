@@ -83,9 +83,9 @@ That second observation is the gap this project is built around.
 
 ## Where this project sits
 
-This project is deliberately **not** another registry platform, federated search
-portal, or physical repository. It is a **standalone, reusable dataset** — a
-provenance-tracked knowledge base of standard parts — with a few defining
+**SeqMake Parts** is deliberately **not** another registry platform, federated
+search portal, or physical repository. It is a **standalone, reusable dataset** —
+a provenance-tracked knowledge base of standard parts — with a few defining
 choices that distinguish it from everything in the table above:
 
 1. **Functional knowledge is the product, modeled as data.** Each part carries
@@ -114,7 +114,7 @@ choices that distinguish it from everything in the table above:
    which is a trade we *want* to make.
 
 4. **Permanent, host-independent identity.** Parts and collections resolve under
-   `https://w3id.org/bioparts/`, so cited IRIs survive a change of hosting or
+   `https://w3id.org/seqmake/parts/`, so cited IRIs survive a change of hosting or
    repo name — a FAIR property the single-hosted portals don't guarantee.
 
 5. **AI-authored, but transparent about it.** The KB is openly experimental and
@@ -143,6 +143,21 @@ evidence?" — as data, not prose.**
 We compete with nobody on the left axis and shouldn't try. Our defensible ground
 is the bottom-right: small, deeply annotated, every functional fact sourced and
 trust-rated, shipped as standards-based FAIR files.
+
+### Naming & identity
+
+The project is named **SeqMake Parts** and mints its permanent IRIs under
+`https://w3id.org/seqmake/parts/` — the parts dataset within the **SeqMake**
+house brand (the same brand as the embedded part-view widget). This is a
+deliberate move *away* from the working name "bioparts": JBEI's portal already
+owns **BioParts / bioparts.org** in this exact field, so a near-identical name
+would have read as "that portal's data" and blurred precisely the
+knowledge-base-vs-registry distinction this review draws. Namespacing under
+SeqMake instead inherits an existing identity, signals that the parts catalog is
+one dataset in a wider tooling family, and keeps the IRI base free of the clash.
+The base was changed *before* the w3id redirect was registered or any IRI was
+externally cited, so no "cool URI" was broken — the cheap window to rename was
+taken while it was still open.
 
 ## Strategic implications
 

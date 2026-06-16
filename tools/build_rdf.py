@@ -44,14 +44,14 @@ from build_catalog import (  # noqa: E402
 # --------------------------------------------------------------------------
 SBOL = Namespace("http://sbols.org/v3#")
 PROV = Namespace("http://www.w3.org/ns/prov#")
-# Stable, host-independent identity via a w3id.org redirect (see w3id/bioparts/).
-# These IRIs are the catalog's permanent names; w3id.org/bioparts -> the current
+# Stable, host-independent identity via a w3id.org redirect (see w3id/seqmake/).
+# These IRIs are the catalog's permanent names; w3id.org/seqmake/parts -> the current
 # GitHub Pages site, so the hosting (and repo name) can change without breaking
 # any IRI that has been published or cited.
-BASE = Namespace("https://w3id.org/bioparts/")
-PART = Namespace("https://w3id.org/bioparts/part/")
-COLL = Namespace("https://w3id.org/bioparts/collection/")
-CAT = Namespace("https://w3id.org/bioparts/ns#")
+BASE = Namespace("https://w3id.org/seqmake/parts/")
+PART = Namespace("https://w3id.org/seqmake/parts/part/")
+COLL = Namespace("https://w3id.org/seqmake/parts/collection/")
+CAT = Namespace("https://w3id.org/seqmake/parts/ns#")
 PUBMED = Namespace("https://identifiers.org/pubmed:")
 SO_NS = Namespace("https://identifiers.org/SO:")
 SBO = Namespace("https://identifiers.org/SBO:")
