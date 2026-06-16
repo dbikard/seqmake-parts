@@ -3,7 +3,7 @@
   "slug": "GmR",
   "locus": "GmR",
   "id": "GmR",
-  "description": "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
+  "description": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -57,7 +57,7 @@
           "gentamicin acetyltransferase"
         ],
         "note": [
-          "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181."
+          "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181."
         ],
         "db_xref": [
           "SO:0000316",
@@ -72,7 +72,8 @@
   "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
-    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
+    "sequence_source": "UniProt:P23181 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py"
   },
   "functional_claims": [
     {
@@ -86,7 +87,7 @@
       "ontology": {},
       "source": {
         "pmid": "668926",
-        "quote": "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
+        "quote": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
         "quote_source": "catalog-doc"
       },
       "provenance": {

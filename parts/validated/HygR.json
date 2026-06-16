@@ -65,7 +65,8 @@
   "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
-    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
+    "sequence_source": "UniProt:P00557 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py"
   },
   "functional_claims": [
     {

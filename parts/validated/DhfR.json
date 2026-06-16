@@ -3,7 +3,7 @@
   "slug": "DhfR",
   "locus": "DhfR",
   "id": "DhfR",
-  "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 — a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
+  "description": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -64,7 +64,8 @@
   "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
-    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
+    "sequence_source": "UniProt:P00382 (canonical sequence; normalized_to_canonical, identity 0.9936), verified by tools/import_uniprot_features.py"
   },
   "functional_claims": [
     {
@@ -78,7 +79,7 @@
       "ontology": {},
       "source": {
         "pmid": "35562546",
-        "quote": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 — a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
+        "quote": "Type I (DfrA1) trimethoprim-resistant dihydrofolate reductase from transposon Tn7 \u2014 a 157-aa enzyme - a single FolA-fold catalytic domain (UniProt P00382); the catalogued allele carries an N73D sub...",
         "quote_source": "catalog-doc"
       },
       "provenance": {

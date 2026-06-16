@@ -48,7 +48,8 @@
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "NCBI:AB006902 (chnR CDS, Acinetobacter sp. cyclohexanone-degradation locus; recorded source deposit)"
   },
   "functional_claims": [
     {

@@ -77,7 +77,8 @@
   "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
-    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
+    "sequence_source": "UniProt:P21236 (canonical sequence; normalized_to_canonical, identity 0.9918), verified by tools/import_uniprot_features.py"
   },
   "functional_claims": [
     {
