@@ -70,6 +70,13 @@ docs/                       generated website source (mkdocs Material)
   federation).
 - This catalog is a standalone, reusable dataset with no external dependencies.
 
+## How this fits the ecosystem
+
+This is a curated, machine-readable **knowledge base** — not a registry platform,
+search portal, or physical repository. For how it relates to ICE/BioParts,
+SynBioHub, the iGEM Registry, and Addgene, and where it deliberately differs, see
+the strategic review in [`LANDSCAPE.md`](LANDSCAPE.md).
+
 ## Contributing
 
 New parts and documentation pages are welcome — see
