@@ -2,7 +2,7 @@
 
 The catalog ships an RDF graph — [`catalog.ttl`](catalog.ttl) (Turtle) and
 [`catalog.jsonld`](catalog.jsonld) (JSON-LD), also published next to the
-[website](https://dbikard.github.io/dna-parts-catalog/). Load it into any triple
+[website](https://dbikard.github.io/seqmake-parts/). Load it into any triple
 store, or locally:
 
 ```python

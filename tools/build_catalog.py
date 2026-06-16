@@ -65,7 +65,7 @@ TAGS_FILE = DOCS_DIR / "tags.md"
 # membership, which always lives with the parts).
 COLLECTIONS_PAGES = DOCS_DIR / "collections"
 COLLECTIONS_FILE = ROOT / "collections.json"
-REPO_URL = "https://github.com/dbikard/dna-parts-catalog"
+REPO_URL = "https://github.com/dbikard/seqmake-parts"
 
 # SO accession -> name, for reverse lookup when a feature carries an explicit
 # /db_xref="SO:...". The type/regulatory_class -> SO mapping itself lives in
@@ -559,7 +559,7 @@ def render_part_page(part: dict) -> str:
         f'<script type="application/json">{mol_json}</script></div>\n')
     fm = _frontmatter(_tags_for(part))
     md_path = part_dir / f"{slug}.md"
-    contrib = "https://github.com/dbikard/dna-parts-catalog/blob/main/CONTRIBUTING.md"
+    contrib = "https://github.com/dbikard/seqmake-parts/blob/main/CONTRIBUTING.md"
     if part["documented"]:
         body = md_path.read_text(encoding="utf-8").strip() + "\n"
         # Structured feature table up top, then the curated prose (which carries
