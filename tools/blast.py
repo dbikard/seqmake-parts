@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -32,6 +33,47 @@ ROOT = Path(__file__).resolve().parent.parent
 BLAST = "https://blast.ncbi.nlm.nih.gov/Blast.cgi"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 HEADERS = {"User-Agent": "dna-parts-catalog/1.0 (+https://github.com/dbikard/dna-parts-catalog)"}
+
+# NCBI E-utilities etiquette: identify the client with tool/email and, if set,
+# an API key (raises the rate limit from 3 to 10 req/s). Configure via the
+# NCBI_EMAIL / NCBI_API_KEY env vars. https://www.ncbi.nlm.nih.gov/books/NBK25497/
+TOOL = "dna-parts-catalog"
+EMAIL = os.environ.get("NCBI_EMAIL", "")
+API_KEY = os.environ.get("NCBI_API_KEY", "")
+NCBI_DELAY = 0.11 if API_KEY else 0.34   # stay under the per-second limit
+
+
+def _ncbi(params: dict) -> dict:
+    """Add NCBI etiquette params (tool/email, optional api_key) to an E-utilities call."""
+    p = {**params, "tool": TOOL}
+    if EMAIL:
+        p["email"] = EMAIL
+    if API_KEY:
+        p["api_key"] = API_KEY
+    return p
+
+
+def _request(method: str, url: str, *, fatal: bool = True, **kw):
+    """An NCBI HTTP call with the shared User-Agent, retry/backoff on transient
+    failures (429/5xx + network errors) and raise_for_status. Returns the
+    response, or None when ``fatal=False`` and every attempt failed."""
+    import requests
+    last = None
+    for attempt in range(4):
+        try:
+            r = requests.request(method, url, headers=HEADERS, **kw)
+            if r.status_code in (429, 500, 502, 503, 504):
+                last = f"HTTP {r.status_code}"
+                time.sleep(2 ** attempt)
+                continue
+            r.raise_for_status()
+            return r
+        except requests.RequestException as e:
+            last = e
+            time.sleep(2 ** attempt)
+    if fatal:
+        sys.exit(f"NCBI request failed after retries: {url} ({last})")
+    return None
 
 
 def _seq_for(slug: str) -> str:
@@ -43,13 +85,11 @@ def _seq_for(slug: str) -> str:
 
 
 def submit(seq: str, entrez: str = "") -> tuple[str, int]:
-    import requests
     data = {"CMD": "Put", "PROGRAM": "blastn", "MEGABLAST": "on",
             "DATABASE": "nt", "QUERY": seq, "HITLIST_SIZE": "250"}
     if entrez:
         data["ENTREZ_QUERY"] = entrez   # e.g. '1980:2010[PDAT]' to bracket deposit age
-    r = requests.post(BLAST, data=data, headers=HEADERS, timeout=60)
-    r.raise_for_status()
+    r = _request("POST", BLAST, data=data, timeout=60)
     rid = re.search(r"^\s*RID = (\S+)", r.text, re.M)
     rtoe = re.search(r"^\s*RTOE = (\d+)", r.text, re.M)
     if not rid:
@@ -58,13 +98,12 @@ def submit(seq: str, entrez: str = "") -> tuple[str, int]:
 
 
 def wait(rid: str, max_wait: int) -> None:
-    import requests
     waited = 0
     while waited < max_wait:
         time.sleep(20)
         waited += 20
-        r = requests.get(BLAST, headers=HEADERS, timeout=60,
-                         params={"CMD": "Get", "FORMAT_OBJECT": "SearchInfo", "RID": rid})
+        r = _request("GET", BLAST, timeout=60,
+                     params={"CMD": "Get", "FORMAT_OBJECT": "SearchInfo", "RID": rid})
         st = re.search(r"Status=(\w+)", r.text)
         st = st.group(1) if st else "?"
         if st == "READY":
@@ -77,34 +116,36 @@ def wait(rid: str, max_wait: int) -> None:
 
 
 def results_json(rid: str) -> dict:
-    import requests
-    r = requests.get(BLAST, headers=HEADERS, timeout=180,
-                     params={"CMD": "Get", "RID": rid, "FORMAT_TYPE": "JSON2_S"})
+    r = _request("GET", BLAST, timeout=180,
+                 params={"CMD": "Get", "RID": rid, "FORMAT_TYPE": "JSON2_S"})
     return json.loads(r.text)
 
 
 def _meta(accs: list[str]) -> dict:
     """Deposit date / definition / length per accession (chunked esummary).
     Keyed by both the versioned and bare accession so BLAST's bare ids resolve."""
-    import requests
     out: dict = {}
     for i in range(0, len(accs), 80):
         chunk = accs[i:i + 80]
         if not chunk:
             break
-        try:
-            r = requests.get(f"{EUTILS}/esummary.fcgi", headers=HEADERS, timeout=60,
-                             params={"db": "nuccore", "id": ",".join(chunk), "retmode": "json"})
-            res = r.json()["result"]
-            for uid in res.get("uids", []):
-                d = res[uid]
-                av = d.get("accessionversion", uid)
-                rec = {"title": d.get("title", ""), "date": d.get("createdate", ""),
-                       "len": d.get("slen", "")}
-                out[av] = rec
-                out[av.split(".")[0]] = rec
-        except Exception:
-            pass
+        # Best-effort metadata enrichment: a failed chunk shouldn't abort the run.
+        r = _request("GET", f"{EUTILS}/esummary.fcgi", timeout=60, fatal=False,
+                     params=_ncbi({"db": "nuccore", "id": ",".join(chunk),
+                                   "retmode": "json"}))
+        if r is not None:
+            try:
+                res = r.json()["result"]
+                for uid in res.get("uids", []):
+                    d = res[uid]
+                    av = d.get("accessionversion", uid)
+                    rec = {"title": d.get("title", ""), "date": d.get("createdate", ""),
+                           "len": d.get("slen", "")}
+                    out[av] = rec
+                    out[av.split(".")[0]] = rec
+            except Exception:
+                pass
+        time.sleep(NCBI_DELAY)
     return out
 
 

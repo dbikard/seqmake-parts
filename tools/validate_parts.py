@@ -84,6 +84,26 @@ def _claim_tier_problems(name: str, data: dict) -> list[str]:
     return out
 
 
+def _coordinate_problems(name: str, data: dict) -> list[str]:
+    """Every feature must lie within the sequence: 0 <= start < end <= len(seq).
+    The JSON Schema can bound start/end individually but can't compare them or
+    check them against the sequence length, so do it here (catches inverted or
+    out-of-range coordinates before they reach the .gb / RDF build)."""
+    out: list[str] = []
+    n = len(data.get("sequence") or "")
+    for grp in ("features", "uniprot_features"):
+        for f in data.get(grp) or []:
+            s, e = f.get("start"), f.get("end")
+            if not isinstance(s, int) or not isinstance(e, int):
+                continue  # type errors are the schema's job
+            if not (0 <= s < e <= n):
+                tag = f.get("label") or (f.get("qualifiers", {}).get("label", [""]) or [""])[0] \
+                    or f.get("type", "?")
+                out.append(f"{name}: {grp} {tag!r} has out-of-range coordinates "
+                           f"start={s} end={e} (sequence length {n})")
+    return out
+
+
 def problems() -> list[str]:
     validator = Draft202012Validator(json.loads(SCHEMA.read_text(encoding="utf-8")))
     out: list[str] = []
@@ -96,7 +116,8 @@ def problems() -> list[str]:
                 out.append(f"{jf.name}: {err.message}")
             if data.get("slug") != jf.stem:
                 out.append(f"{jf.name}: slug {data.get('slug')!r} != filename")
-            # The review tier must be earned -- enforced for every part.
+            # Enforced for every part: coordinates in-bounds + earned review tier.
+            out.extend(_coordinate_problems(jf.name, data))
             out.extend(_claim_tier_problems(jf.name, data))
             md = jf.with_suffix(".md")
             is_validated = d.name == "validated"

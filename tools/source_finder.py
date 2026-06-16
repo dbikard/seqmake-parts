@@ -167,13 +167,13 @@ def find_dna_sources(seq: str, window: str, rid: str | None, max_wait: int) -> d
 
 
 def _fetch(acc: str) -> str:
-    import urllib.request
+    import blast  # reuse the NCBI client (etiquette params + retry/backoff)
     from io import StringIO
     from Bio import SeqIO
-    u = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id="
-         f"{acc}&rettype=gb&retmode=text")
-    return str(SeqIO.read(StringIO(urllib.request.urlopen(u, timeout=60).read().decode()),
-                          "genbank").seq)
+    r = blast._request("GET", f"{blast.EUTILS}/efetch.fcgi", timeout=60,
+                       params=blast._ncbi({"db": "nuccore", "id": acc,
+                                           "rettype": "gb", "retmode": "text"}))
+    return str(SeqIO.read(StringIO(r.text), "genbank").seq)
 
 
 def main() -> None:

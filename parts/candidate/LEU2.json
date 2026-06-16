@@ -144,6 +144,6 @@
     "status": "match",
     "identity": 1.0,
     "sequence_match": true,
-    "uniprot_release": 199
+    "uniprot_entry_version": 199
   }
 }

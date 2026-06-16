@@ -237,7 +237,7 @@ def import_part(path: Path) -> str:
     if cmp["status"] == "match":
         return do_import(entry, {"accession": f"UniProt:{acc}", "status": "match",
                                  "identity": 1.0, "sequence_match": True,
-                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                                 "uniprot_entry_version": entry.get("entryAudit", {}).get("entryVersion")},
                          "match")
 
     # 2) Intentional variant (declared) -> keep, import the reference's features.
@@ -246,7 +246,7 @@ def import_part(path: Path) -> str:
         return do_import(entry, {"accession": f"UniProt:{acc}", "status": "variant",
                                  "identity": cmp["identity"], "sequence_match": False,
                                  "variants": cmp["variants"], "variant_rationale": rationale,
-                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                                 "uniprot_entry_version": entry.get("entryAudit", {}).get("entryVersion")},
                          f"variant KEPT ({len(cmp['variants'])} SNP(s), "
                          f"{cmp['identity']*100:.1f}% id) -- {rationale[:50]}")
 
@@ -262,7 +262,7 @@ def import_part(path: Path) -> str:
         return do_import(entry2, {"accession": f"UniProt:{new_acc}", "status": "reaccessioned",
                                   "identity": 1.0, "sequence_match": True,
                                   "previous_accession": f"UniProt:{acc}", "reviewed": reviewed,
-                                  "uniprot_release": entry2.get("entryAudit", {}).get("entryVersion")},
+                                  "uniprot_entry_version": entry2.get("entryAudit", {}).get("entryVersion")},
                          f"RE-ACCESSIONED {acc} -> {new_acc} (exact UniProt match{tag})")
 
     # 4a) No exact match anywhere, but a close same-length variant -> normalize.
@@ -271,14 +271,14 @@ def import_part(path: Path) -> str:
         return do_import(entry, {"accession": f"UniProt:{acc}", "status": "normalized_to_canonical",
                                  "identity": cmp["identity"], "sequence_match": True,
                                  "normalized_substitutions": cmp["variants"],
-                                 "uniprot_release": entry.get("entryAudit", {}).get("entryVersion")},
+                                 "uniprot_entry_version": entry.get("entryAudit", {}).get("entryVersion")},
                          f"normalized to canonical (no exact match; replaced "
                          f"{len(cmp['variants'])} residue(s))")
 
     # 4b) No exact match and not a close variant -> record the finding, don't import.
     data.pop("uniprot_features", None)
     prov = {"accession": f"UniProt:{acc}", "fetched": today,
-            "uniprot_release": entry.get("entryAudit", {}).get("entryVersion"), **cmp}
+            "uniprot_entry_version": entry.get("entryAudit", {}).get("entryVersion"), **cmp}
     data["uniprot_import"] = prov
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     idpct = f"{cmp['identity']*100:.1f}% id"

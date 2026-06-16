@@ -58,7 +58,6 @@
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank",
     "sequence_source": "UniProt P03051 (Rop/Rom, ColE1/pMB1 copy-number repressor); the stored 63-aa sequence is a 100% match to the UniProt canonical (verified by tools/import_uniprot_features.py, identity 1.0). The rop gene lies just downstream of the ColE1/pMB1 replication origin (present e.g. in pBR322, GenBank J01749)."
   },
   "functional_claims": [
@@ -116,6 +115,6 @@
     "status": "match",
     "identity": 1.0,
     "sequence_match": true,
-    "uniprot_release": 141
+    "uniprot_entry_version": 141
   }
 }

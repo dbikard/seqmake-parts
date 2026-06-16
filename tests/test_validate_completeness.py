@@ -9,7 +9,22 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
-from validate_parts import _claim_tier_problems, _completeness_problems  # noqa: E402
+from validate_parts import (  # noqa: E402
+    _claim_tier_problems, _completeness_problems, _coordinate_problems)
+
+
+def test_out_of_range_coordinates_are_flagged():
+    assert _coordinate_problems("X.json",
+        {"sequence": "ACGTACGTAC", "features": [{"type": "x", "start": 0, "end": 5}]}) == []
+    # start == end (empty/inverted)
+    assert _coordinate_problems("X.json",
+        {"sequence": "ACGT", "features": [{"type": "x", "start": 2, "end": 2}]})
+    # end past the sequence
+    assert _coordinate_problems("X.json",
+        {"sequence": "ACGT", "features": [{"type": "x", "start": 0, "end": 99}]})
+    # uniprot_features are bounded too (residue space)
+    assert _coordinate_problems("X.json",
+        {"sequence": "MKV", "uniprot_features": [{"type": "d", "start": 0, "end": 9}]})
 
 
 def _complete():

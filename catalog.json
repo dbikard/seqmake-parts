@@ -192,7 +192,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 102
+        "uniprot_entry_version": 102
       }
     },
     {
@@ -833,7 +833,7 @@
             "uniprot": "A"
           }
         ],
-        "uniprot_release": 155
+        "uniprot_entry_version": 155
       }
     },
     {
@@ -1017,7 +1017,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 78
+        "uniprot_entry_version": 78
       }
     },
     {
@@ -1321,7 +1321,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 147
+        "uniprot_entry_version": 147
       }
     },
     {
@@ -1679,7 +1679,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 117
+        "uniprot_entry_version": 117
       }
     },
     {
@@ -2215,7 +2215,7 @@
           }
         ],
         "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
-        "uniprot_release": 147
+        "uniprot_entry_version": 147
       }
     },
     {
@@ -2319,7 +2319,7 @@
             "uniprot": "N"
           }
         ],
-        "uniprot_release": 145
+        "uniprot_entry_version": 145
       }
     },
     {
@@ -2729,7 +2729,7 @@
             "uniprot": "I"
           }
         ],
-        "uniprot_release": 114
+        "uniprot_entry_version": 114
       }
     },
     {
@@ -3068,7 +3068,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 90
+        "uniprot_entry_version": 90
       }
     },
     {
@@ -3332,7 +3332,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 186
+        "uniprot_entry_version": 186
       }
     },
     {
@@ -3531,7 +3531,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 123
+        "uniprot_entry_version": 123
       }
     },
     {
@@ -4050,7 +4050,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 119
+        "uniprot_entry_version": 119
       }
     },
     {
@@ -4624,7 +4624,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 199
+        "uniprot_entry_version": 199
       }
     },
     {
@@ -8349,7 +8349,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 93
+        "uniprot_entry_version": 93
       }
     },
     {
@@ -9007,7 +9007,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 141
+        "uniprot_entry_version": 141
       }
     },
     {
@@ -10011,7 +10011,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 104
+        "uniprot_entry_version": 104
       }
     },
     {
@@ -10496,7 +10496,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 185
+        "uniprot_entry_version": 185
       }
     },
     {
@@ -10775,7 +10775,7 @@
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_release": 91
+        "uniprot_entry_version": 91
       }
     }
   ],

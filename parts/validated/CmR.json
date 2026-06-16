@@ -123,6 +123,6 @@
     "status": "match",
     "identity": 1.0,
     "sequence_match": true,
-    "uniprot_release": 117
+    "uniprot_entry_version": 117
   }
 }
