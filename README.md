@@ -1,11 +1,12 @@
 # Biological Parts Knowledge Base
 
 > [!WARNING]
-> **Work in progress — largely AI-generated content.** This knowledge base is
-> under active development and much of its content (part annotations,
-> documentation, and functional claims) is **largely AI-generated**. It may
-> contain errors and has not been fully expert-reviewed — every claim carries a
-> review status; verify against the cited primary literature before relying on it.
+> **Work in progress — use at your own risk.** This is an experimental,
+> **AI-generated** knowledge base under active development. Nothing here has been
+> fully expert-reviewed and it may contain errors. What we offer instead of
+> guarantees is transparency: every claim carries its source, confidence, and a
+> review status — check those, and verify against the cited primary literature,
+> before relying on anything.
 
 A machine-readable, provenance-tracked **knowledge base of standard biological
 parts** for molecular cloning and synthetic biology — promoters, CDSs,

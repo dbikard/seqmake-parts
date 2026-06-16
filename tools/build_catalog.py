@@ -26,19 +26,21 @@ from so_terms import SO_BY_REG, SO_BY_TYPE, so_for  # noqa: E402
 
 SCHEMA_VERSION = "1.0"
 
-# Shown at the top of the site index and every part page. We state the
-# AI-authorship plainly and pair it with the mechanism that makes it
-# trustworthy: per-claim provenance + review tiers + machine validation. The
-# honest signal is the review status of a given claim, not "human vs AI".
+# Shown at the top of the site index and every part page. Own it plainly: this
+# is an experimental, AI-generated WIP — use at your own risk. What we offer in
+# place of guarantees is transparency: per-claim provenance + review tiers +
+# machine validation. The honest signal is a claim's review status, not
+# "human vs AI".
 AI_WIP_WARNING = (
-    '!!! info "Built by AI, with provenance"\n\n'
-    "    Nearly all records here are **AI-generated** — openly, by design. Trust "
-    "is earned per claim, not assumed: each functional claim carries its "
-    "**source, confidence, and review status** "
+    '!!! warning "Work in progress — use at your own risk"\n\n'
+    "    This is an experimental, **AI-generated** knowledge base under active "
+    "development — **use at your own risk**. Nothing here has been fully "
+    "expert-reviewed. What we offer instead is transparency: each functional "
+    "claim carries its **source, confidence, and review status** "
     "(`ai-generated` → `ai-cross-checked` → `expert-reviewed`), structure is "
-    "schema- and SHACL-validated, and sequences are traced to deposited sources. "
-    "Check a claim's status and source before relying on it — and help promote "
-    "claims toward expert review.\n"
+    "schema- and SHACL-validated, and sequences trace to deposited sources. "
+    "Check a claim's status and source — and verify against the primary "
+    "literature — before relying on it.\n"
 )
 
 ROOT = Path(__file__).resolve().parent.parent
