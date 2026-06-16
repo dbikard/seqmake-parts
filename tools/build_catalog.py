@@ -652,7 +652,7 @@ def render_index(grouped, n_validated: int, n_candidate: int,
     type's page, a 'Browse by collection' hub, plus a pointer to the tag index."""
     repo = REPO_URL
     lines = [
-        "# Biological Parts Knowledge Base\n",
+        "# SeqMake Parts\n",
         AI_WIP_WARNING,
         f"A machine-readable knowledge base of standard biological parts — "
         f"promoters, CDSs, terminators, RBSs, origins, selection markers and "

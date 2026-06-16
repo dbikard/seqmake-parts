@@ -1,6 +1,6 @@
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix sbol: <http://sbols.org/v3#> .
-@prefix cat:  <https://w3id.org/bioparts/ns#> .
+@prefix cat:  <https://w3id.org/seqmake/parts/ns#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 # SHACL shapes validating the generated catalog.ttl. These encode the invariants
@@ -79,7 +79,7 @@ cat:RegulatedByResolvesShape a sh:NodeShape ;
         sh:message "cat:regulatedBy points to something that is not a Component" ;
         sh:select """
             SELECT $this WHERE {
-                $this <https://w3id.org/bioparts/ns#regulatedBy> ?tf .
+                $this <https://w3id.org/seqmake/parts/ns#regulatedBy> ?tf .
                 FILTER NOT EXISTS { ?tf a <http://sbols.org/v3#Component> }
             }
         """ ] .
@@ -93,10 +93,10 @@ cat:ClaimTierShape a sh:NodeShape ;
         sh:message "claim is ai-cross-checked/expert-reviewed but its quote is not from the primary source (quote_source must be 'primary')" ;
         sh:select """
             SELECT $this WHERE {
-                $this <https://w3id.org/bioparts/ns#reviewStatus> ?rs .
+                $this <https://w3id.org/seqmake/parts/ns#reviewStatus> ?rs .
                 FILTER (?rs IN ("ai-cross-checked", "expert-reviewed"))
                 FILTER NOT EXISTS {
-                    $this <https://w3id.org/bioparts/ns#sourceQuoteFrom> "primary" .
+                    $this <https://w3id.org/seqmake/parts/ns#sourceQuoteFrom> "primary" .
                 }
             }
         """ ] .

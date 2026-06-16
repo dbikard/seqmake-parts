@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://w3id.org/bioparts/schema/part.schema.json",
+  "$id": "https://w3id.org/seqmake/parts/schema/part.schema.json",
   "title": "DNA parts catalog -- canonical part record",
   "description": "The canonical, authored representation of one part. The .gb file is generated from this by tools/build_gb.py; prose lives in the sibling <slug>.md.",
   "type": "object",

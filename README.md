@@ -1,4 +1,10 @@
-# Biological Parts Knowledge Base
+# SeqMake Parts
+
+> A machine-readable, provenance-tracked knowledge base of standard biological
+> parts. Part of the **SeqMake** tooling family; IRIs live under
+> [`w3id.org/seqmake/parts`](w3id/README.md). Not to be confused with JBEI's
+> [BioParts](https://bioparts.org) search portal — see
+> [`LANDSCAPE.md`](LANDSCAPE.md) for how the two differ.
 
 > [!WARNING]
 > **Work in progress — use at your own risk.** This is an experimental,
@@ -69,6 +75,13 @@ docs/                       generated website source (mkdocs Material)
   the model and [`QUERIES.md`](QUERIES.md) for a SPARQL cookbook (incl. UniProt
   federation).
 - This catalog is a standalone, reusable dataset with no external dependencies.
+
+## How this fits the ecosystem
+
+This is a curated, machine-readable **knowledge base** — not a registry platform,
+search portal, or physical repository. For how it relates to ICE/BioParts,
+SynBioHub, the iGEM Registry, and Addgene, and where it deliberately differs, see
+the strategic review in [`LANDSCAPE.md`](LANDSCAPE.md).
 
 ## Contributing
 
