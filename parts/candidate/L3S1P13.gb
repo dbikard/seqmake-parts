@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/L3S1P13
 FEATURES             Location/Qualifiers
      terminator      1..51
                      /label="L3S1P13"

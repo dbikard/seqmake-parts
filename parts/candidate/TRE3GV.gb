@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/TRE3GV
 FEATURES             Location/Qualifiers
      promoter        1..350
                      /label="TRE3GV"

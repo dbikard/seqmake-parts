@@ -35,6 +35,8 @@ REFERENCE   4
             its in vivo activity
   JOURNAL   J Biol Chem. 1985 Mar 25;260(6):3539-3541
    PUBMED   2579077
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Ptrc
 FEATURES             Location/Qualifiers
      promoter        1..30
                      /label="Ptrc"

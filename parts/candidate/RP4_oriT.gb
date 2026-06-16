@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/RP4_oriT
 FEATURES             Location/Qualifiers
      oriT            1..257
                      /label="RP4 oriT"

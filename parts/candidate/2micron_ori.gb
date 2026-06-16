@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/2micron_ori
 FEATURES             Location/Qualifiers
      rep_origin      1..878
                      /label="2micron ori"

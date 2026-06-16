@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/sopB
 FEATURES             Location/Qualifiers
      CDS             1..323
                      /label="sopB"

@@ -42,6 +42,8 @@ REFERENCE   5
   JOURNAL   Biochemistry 29(8):2075-2080 (1990)
    PUBMED   2109633
   REMARK    doi:10.1021/bi00460a016
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/CmR
 FEATURES             Location/Qualifiers
      CDS             1..219
                      /label="CmR"

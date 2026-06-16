@@ -32,12 +32,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BLAST = "https://blast.ncbi.nlm.nih.gov/Blast.cgi"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-HEADERS = {"User-Agent": "dna-parts-catalog/1.0 (+https://github.com/dbikard/dna-parts-catalog)"}
+HEADERS = {"User-Agent": "seqmake-parts/1.0 (+https://github.com/dbikard/seqmake-parts)"}
 
 # NCBI E-utilities etiquette: identify the client with tool/email and, if set,
 # an API key (raises the rate limit from 3 to 10 req/s). Configure via the
 # NCBI_EMAIL / NCBI_API_KEY env vars. https://www.ncbi.nlm.nih.gov/books/NBK25497/
-TOOL = "dna-parts-catalog"
+TOOL = "seqmake-parts"
 EMAIL = os.environ.get("NCBI_EMAIL", "")
 API_KEY = os.environ.get("NCBI_API_KEY", "")
 NCBI_DELAY = 0.11 if API_KEY else 0.34   # stay under the per-second limit

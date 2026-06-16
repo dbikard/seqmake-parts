@@ -41,6 +41,8 @@ REFERENCE   5
   JOURNAL   Microbial Biotechnology 15(4):1101-1119
    PUBMED   34713957
   REMARK    doi:10.1111/1751-7915.13926
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Pxyl_tet
 FEATURES             Location/Qualifiers
      promoter        1..58
                      /label="Pxyl/tet"

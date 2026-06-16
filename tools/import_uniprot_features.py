@@ -49,7 +49,7 @@ _TYPE_MAP: dict[str, tuple[str, str | None]] = {
 
 
 def _get_json(url: str) -> dict:
-    req = urllib.request.Request(url, headers={"User-Agent": "dna-parts-catalog/uniprot-import"})
+    req = urllib.request.Request(url, headers={"User-Agent": "seqmake-parts/uniprot-import"})
     with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310
         return json.loads(r.read().decode("utf-8"))
 

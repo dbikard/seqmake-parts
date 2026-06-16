@@ -28,6 +28,8 @@ REFERENCE   3
   JOURNAL   Mol Microbiol 5(2):233-237 (1991)
    PUBMED   2041467
   REMARK    doi:10.1111/j.1365-2958.1991.tb02103.x
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/pSC101_ori
 FEATURES             Location/Qualifiers
      rep_origin      1..223
                      /label="pSC101 ori"

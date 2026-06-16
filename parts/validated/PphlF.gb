@@ -28,6 +28,8 @@ REFERENCE   3
   JOURNAL   J Bacteriol 184(11):3008-3016 (2002)
    PUBMED   12003942
   REMARK    doi:10.1128/JB.184.11.3008-3016.2002
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PphlF
 FEATURES             Location/Qualifiers
      promoter        1..51
                      /label="PphlF"

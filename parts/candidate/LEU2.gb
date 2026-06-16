@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/LEU2
 FEATURES             Location/Qualifiers
      CDS             1..364
                      /label="LEU2"

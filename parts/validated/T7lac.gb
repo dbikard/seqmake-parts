@@ -37,6 +37,8 @@ REFERENCE   4
   JOURNAL   Science
    PUBMED   8638105
   REMARK    doi:10.1126/science.271.5253.1247
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/T7lac
 FEATURES             Location/Qualifiers
      promoter        1..67
                      /label="T7lac"

@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/bet
 FEATURES             Location/Qualifiers
      CDS             1..261
                      /label="bet"

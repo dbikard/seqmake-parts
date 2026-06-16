@@ -32,6 +32,8 @@ REFERENCE   3
   JOURNAL   Nucleic Acids Res 11(15):5147-5158 (1983)
    PUBMED   6308574
   REMARK    doi:10.1093/nar/11.15.5147
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/DhfR
 FEATURES             Location/Qualifiers
      CDS             1..157
                      /label="DhfR"

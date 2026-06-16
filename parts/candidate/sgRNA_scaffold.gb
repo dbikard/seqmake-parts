@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/sgRNA_scaffold
 FEATURES             Location/Qualifiers
      misc_RNA        1..76
                      /label="sgRNA scaffold"

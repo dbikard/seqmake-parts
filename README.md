@@ -27,7 +27,7 @@ GenBank file**, the **`catalog.json`** manifest, and an **RDF graph**
 SPARQL-queryable and federates with UniProt. Protein parts **link out to UniProt**
 rather than duplicating its annotation.
 
-**Browse:** https://dbikard.github.io/dna-parts-catalog/ · **Query:** see
+**Browse:** https://dbikard.github.io/seqmake-parts/ · **Query:** see
 [`QUERIES.md`](QUERIES.md) and [`RDF.md`](RDF.md)
 
 ## What's here
