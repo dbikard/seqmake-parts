@@ -146,10 +146,14 @@ self-contained, iframe-isolated widget at
 **vendored build** of the upstream viewer widget, not hand-edited. `build_catalog.py`
 inlines each part's `MoleculeInfo` (sequence + features) into the page as a
 `<script type="application/json">` child of a `<div data-part-view>`, which the
-widget hydrates on load. To refresh the widget, rebuild it from the viewer
-source (`npm run build:widget`) and copy the resulting bundle over the vendored
-file. (When the viewer ships as an npm package this becomes a CDN/package
-reference instead of a vendored file.)
+widget hydrates on load. The bundle is **auto-copied** from the viewer's source
+repo on each new version; the copy step must also update the provenance sidecar
+[`seqmake-part-view.version.json`](docs/assets/seqmake-part-view.version.json)
+(source / version / commit / built / **sha256**). The bundle is minified and not
+hand-reviewed, so the sidecar is how each update stays auditable, and
+`tests/test_widget_bundle.py` fails in CI if the committed bundle doesn't match
+the recorded `sha256` (a partial copy, or a forgotten sidecar update). (When the
+viewer ships as an npm package this becomes a CDN/package reference instead.)
 
 ## Content guard
 
