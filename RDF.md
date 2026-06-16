@@ -8,28 +8,22 @@
 > designed below as a follow-up. The authoritative builds are `tools/build_gb.py`
 > (JSON → `.gb`) and `tools/build_rdf.py` (→ RDF).
 
-## TODO — adopt a stable `w3id.org` namespace (before any repo rename)
+## Namespace & resolution (`w3id.org/bioparts`)
 
-The RDF base IRIs are currently derived from the GitHub Pages URL
-(`https://dbikard.github.io/dna-parts-catalog/…`), so they would break if the
-repo is renamed or hosting moves. Before renaming the repo (e.g. to
-`bioparts-kb`), decouple identity onto a permanent, redirector-backed namespace:
+The catalog's IRIs live under a permanent, host-independent base:
+**`https://w3id.org/bioparts/`** (`part/<slug>`, `collection/<id>`, local
+vocabulary at `ns#`). A [w3id.org](https://w3id.org) redirect — defined in
+[`w3id/bioparts/.htaccess`](w3id/bioparts/.htaccess) — forwards these to the
+current GitHub Pages site, so the hosting (and even the repo name) can change
+without breaking any IRI that has been published or cited ("cool URIs don't
+change"). The redirect maps `part/<slug>` and `collection/<id>` to their pages
+and `ns` to `catalog.ttl`.
 
-- [ ] Register a `w3id.org` redirect (PR to `perma-id/w3id.org`) for base
-      **`https://w3id.org/bioparts/`** → the current Pages site.
-- [ ] Repoint the namespaces in `tools/build_rdf.py` to the stable base — a
-      one-time, *final* IRI change:
-  - `BASE`  → `https://w3id.org/bioparts/`
-  - `PART`  → `https://w3id.org/bioparts/part/`
-  - `COLL`  → `https://w3id.org/bioparts/collection/`
-  - `CAT`   → `https://w3id.org/bioparts/ns#`
-- [ ] Regenerate `catalog.ttl` / `.jsonld` and the per-part `.ttl`; update the
-      `QUERIES.md` examples and the `part:`/`collection:` slugs in docs.
-- [ ] Only then rename the repo and update `REPO_URL` + hardcoded
-      `dna-parts-catalog` URLs (GitHub auto-redirects old links).
-
-Rationale: "cool URIs don't change" — pin the machine identity to `w3id.org` so
-the repo name and even the host become free to change afterwards.
+To register or update it, submit `w3id/bioparts/` as a PR to
+[`perma-id/w3id.org`](https://github.com/perma-id/w3id.org) (see
+[`w3id/README.md`](w3id/README.md)). The base lives in one place,
+`tools/build_rdf.py` (`BASE`/`PART`/`COLL`/`CAT`); changing it regenerates the
+graph, and `tools/shapes.ttl` + the tests pin the same IRIs.
 
 ## Canonical record & build pipeline (Phase 0)
 
@@ -83,7 +77,7 @@ time**.
 
 | Thing | URI pattern |
 |---|---|
-| Catalog namespace | `https://dbikard.github.io/dna-parts-catalog/` |
+| Catalog namespace | `https://w3id.org/bioparts/` |
 | A part (Component) | `…/part/<slug>` |
 | Its sequence | `…/part/<slug>_sequence` |
 | A sub-feature | `…/part/<slug>_feature_<n>` |
@@ -140,8 +134,8 @@ claim.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix pubmed: <https://identifiers.org/pubmed:> .
-@prefix cat:  <https://dbikard.github.io/dna-parts-catalog/ns#> .
-@prefix :     <https://dbikard.github.io/dna-parts-catalog/part/> .
+@prefix cat:  <https://w3id.org/bioparts/ns#> .
+@prefix :     <https://w3id.org/bioparts/part/> .
 
 :PphlF a sbol:Component ;
     sbol:displayId "PphlF" ; dcterms:title "PphlF" ;

@@ -10,7 +10,7 @@ TTL = ROOT / "catalog.ttl"
 
 PREFIXES = """
 PREFIX sbol: <http://sbols.org/v3#>
-PREFIX cat:  <https://dbikard.github.io/dna-parts-catalog/ns#>
+PREFIX cat:  <https://w3id.org/bioparts/ns#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -58,7 +58,7 @@ def test_claims_carry_source_and_confidence(g):
 def test_part_subfeatures(g):
     rows = list(g.query(PREFIXES + """
         SELECT ?f ?role WHERE {
-          <https://dbikard.github.io/dna-parts-catalog/part/PphlF> sbol:hasFeature ?f .
+          <https://w3id.org/bioparts/part/PphlF> sbol:hasFeature ?f .
           ?f sbol:role ?role }"""))
     assert len(rows) >= 3                    # -35, -10, operator
 

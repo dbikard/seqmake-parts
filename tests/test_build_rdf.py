@@ -11,8 +11,8 @@ from build_rdf import build_graph, load_graph  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SBOL = rdflib.Namespace("http://sbols.org/v3#")
-CAT = rdflib.Namespace("https://dbikard.github.io/dna-parts-catalog/ns#")
-PART = rdflib.Namespace("https://dbikard.github.io/dna-parts-catalog/part/")
+CAT = rdflib.Namespace("https://w3id.org/bioparts/ns#")
+PART = rdflib.Namespace("https://w3id.org/bioparts/part/")
 
 
 def test_graph_builds_and_is_nonempty():
@@ -42,7 +42,7 @@ def test_regulation_is_modeled_both_ways():
     q = """
     PREFIX sbol: <http://sbols.org/v3#>
     PREFIX sbo: <https://identifiers.org/SBO:>
-    PREFIX part: <https://dbikard.github.io/dna-parts-catalog/part/>
+    PREFIX part: <https://w3id.org/bioparts/part/>
     ASK {
       part:PphlF sbol:hasInteraction ?i .
       ?i sbol:type sbo:0000169 ;

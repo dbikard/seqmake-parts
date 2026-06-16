@@ -44,10 +44,14 @@ from build_catalog import (  # noqa: E402
 # --------------------------------------------------------------------------
 SBOL = Namespace("http://sbols.org/v3#")
 PROV = Namespace("http://www.w3.org/ns/prov#")
-BASE = Namespace("https://dbikard.github.io/dna-parts-catalog/")
-PART = Namespace("https://dbikard.github.io/dna-parts-catalog/part/")
-COLL = Namespace("https://dbikard.github.io/dna-parts-catalog/collection/")
-CAT = Namespace("https://dbikard.github.io/dna-parts-catalog/ns#")
+# Stable, host-independent identity via a w3id.org redirect (see w3id/bioparts/).
+# These IRIs are the catalog's permanent names; w3id.org/bioparts -> the current
+# GitHub Pages site, so the hosting (and repo name) can change without breaking
+# any IRI that has been published or cited.
+BASE = Namespace("https://w3id.org/bioparts/")
+PART = Namespace("https://w3id.org/bioparts/part/")
+COLL = Namespace("https://w3id.org/bioparts/collection/")
+CAT = Namespace("https://w3id.org/bioparts/ns#")
 PUBMED = Namespace("https://identifiers.org/pubmed:")
 SO_NS = Namespace("https://identifiers.org/SO:")
 SBO = Namespace("https://identifiers.org/SBO:")

@@ -17,7 +17,7 @@ Common prefixes:
 PREFIX sbol: <http://sbols.org/v3#>
 PREFIX so:   <https://identifiers.org/SO:>
 PREFIX sbo:  <https://identifiers.org/SBO:>
-PREFIX cat:  <https://dbikard.github.io/dna-parts-catalog/ns#>
+PREFIX cat:  <https://w3id.org/bioparts/ns#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -66,7 +66,7 @@ SELECT ?part ?statement ?confidence ?review ?source WHERE {
 ## A part's annotated sub-features (with Sequence Ontology roles)
 ```sparql
 SELECT ?label ?role WHERE {
-  <https://dbikard.github.io/dna-parts-catalog/part/PphlF> sbol:hasFeature ?f .
+  <https://w3id.org/bioparts/part/PphlF> sbol:hasFeature ?f .
   ?f dcterms:title ?label ; sbol:role ?role .
 }
 ```
