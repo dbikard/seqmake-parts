@@ -1,7 +1,14 @@
 # Proposal: unify `/add-part` + a research workflow into one researched-authoring capability
 
-**Status:** proposal / not yet implemented. Pick this up from a session rooted in
-this repo.
+**Status:** substantially implemented (2026-06). The capability described here is
+built and proven end-to-end on branch `feat/unified-add-part-engine`: the driver
+`.claude/commands/add-part.md`, the proposal-only engine
+`.claude/workflows/annotate-part.js`, and the supporting tools
+(`tools/source_finder.py`, `tools/merge_part.py`, `tools/catalog_overlap.py`,
+`tools/addgene.py`, `tools/blast.py`). This document is retained as the design
+rationale / historical spec, not a pending to-do. Known remaining gaps:
+batch/cluster runs not yet exercised end-to-end, and the `component` /
+`sub_region_of` RDF projection in `build_rdf.py` is still pending.
 
 ## Why
 

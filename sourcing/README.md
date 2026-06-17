@@ -9,8 +9,9 @@ those documents and drops them into `incoming/`; on the next pass the agent read
 document in the part's `provenance.sequence_source`.
 
 This turns "couldn't access" into a **first-class, resumable state** instead of a
-dead end. See `proposals/unified-add-part.md` → *Unresolved sources → a human second
-pass*.
+dead end. The sourcing hard rule lives in [`AUTHORING.md`](../AUTHORING.md) (a
+sequence comes from a cited source, never memory; an access-blocked source is
+recorded here and the part stops).
 
 Two kinds of request belong here:
 
@@ -27,7 +28,10 @@ Two kinds of request belong here:
 
 - **`REQUESTS.md`** — agent-written list of needed resources: each item has a link,
   what it would unblock, the access barrier, and the **exact filename** to save it
-  as. Tracked in git, so the outstanding ask is visible and auditable.
+  as. Tracked in git, so the outstanding ask is visible and auditable. It lists
+  **active requests only** — a fulfilled request is removed (the part's
+  `provenance.sequence_source` citation + git history are the permanent record);
+  `tools/check_requests.py` enforces this in CI and the `pre-push` hook.
 - **`incoming/`** — drop folder for the provided documents. **Gitignored** — external
   PDFs and sequences stay local and are never committed; only the resulting part
   record and its provenance citation go into the repo.

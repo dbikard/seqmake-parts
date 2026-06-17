@@ -86,11 +86,13 @@ the strategic review in [`LANDSCAPE.md`](LANDSCAPE.md).
 ## Contributing
 
 New parts and documentation pages are welcome — see
-[`CONTRIBUTING.md`](CONTRIBUTING.md). Each part's canonical record is a
-`<slug>.json` (validated against [`schema/part.schema.json`](schema/part.schema.json));
-the `.gb` is generated from it. Adding a `.md` page promotes a candidate to a
-validated part. CI validates the JSON, regenerates the `.gb`, and rebuilds the
-manifest + RDF.
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for the mechanics. The **single source of
+truth for what a part is and how it is defined, added, and validated** (for both
+the `/add-part` agent and human authors) is [`AUTHORING.md`](AUTHORING.md). Each
+part's canonical record is a `<slug>.json` (validated against
+[`schema/part.schema.json`](schema/part.schema.json)); the `.gb` is generated from
+it. Adding a `.md` page promotes a candidate to a validated part. CI validates the
+JSON, regenerates the `.gb`, and rebuilds the manifest + RDF.
 
 ## License
 

@@ -1,9 +1,11 @@
 # Authoring a part
 
-How a part is created and validated in this repo. This is the agent-facing
-standard operating procedure behind the `/add-part` command; humans can follow it
-directly too. It complements [`CONTRIBUTING.md`](CONTRIBUTING.md) (conventions)
-and [`schema/part.schema.json`](schema/part.schema.json) (the record format).
+**This is the single source of truth for what a part is and how it is defined,
+added, and validated** — the standard operating procedure for the `/add-part`
+agent and for human contributors alike. [`CONTRIBUTING.md`](CONTRIBUTING.md) is
+the practical on-ramp (how to submit a contribution) and
+[`schema/part.schema.json`](schema/part.schema.json) is the machine contract for a
+record; both defer to this document for the rules. When they disagree, this wins.
 
 ## The model
 
@@ -67,7 +69,8 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
   dropped the document in `sourcing/incoming/`, byte-verifying against it and citing
   it in `provenance.sequence_source` (see `sourcing/README.md`).
 - **One functional class per part** (atomic). A promoter and an RBS are two
-  parts, not one. See `CONTRIBUTING.md` → *Part conventions*.
+  parts, not one (a span bundling >1 SO functional class always splits — see the
+  atomicity note in step 4).
 - **Coding parts are protein-canonical and defer biology to UniProt.** A `CDS` /
   `protein_domain` is stored as its amino-acid sequence (begins with `M`) with a
   **required** `UniProt:…` (or `NCBI:…`) accession on the main feature. Do **not**
@@ -92,8 +95,16 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
   consuming tool, a using lab, or an internal plasmid. `tools/check_content.py`
   enforces this.
 - **Sequence Ontology typing.** Type the part and each sub-feature at the
-  functional-class level (promoter `SO:0000167`, RBS `SO:0000139`, CDS
-  `SO:0000316`, …); `tools/new_part.py` stamps the main feature's `db_xref`.
+  **functional-class** level — promoter `SO:0000167`, ribosome_entry_site
+  `SO:0000139`, terminator `SO:0000141`, CDS `SO:0000316`, operator `SO:0000057`,
+  origin_of_replication `SO:0000296`, `-35` `SO:0000175`, `-10` `SO:0000176`. Use
+  the class, not a more specific term (an RBS is `SO:0000139`, not
+  `bacterial_RNApol_promoter`); a finer term like `Shine_Dalgarno_sequence`
+  `SO:0000552` is used only as an explicit `db_xref` on a dedicated sub-feature,
+  never inferred from a label. `tools/new_part.py` stamps the main feature's
+  `db_xref`; otherwise `tools/build_catalog.py` derives `so_term` from the feature
+  type / `regulatory_class` (an explicit `db_xref` wins), and the website index
+  groups validated parts by the main feature's `so_term`.
 - **Carry all relevant synonyms.** Record every name the part is known by —
   literature names, registry IDs (iGEM / Addgene / SEVA), related-plasmid or gene
   names, and common abbreviations — in the main feature's `synonym` qualifier
@@ -105,6 +116,19 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
   locator — prefer a quote from the **primary** source (`quote_source: primary`);
   if you only transcribe the catalog's own prose, mark `quote_source:
   catalog-doc`. Never invent a figure number you have not read.
+- **Cross-link cognate partners.** A promoter names its transcription-factor
+  part(s) with a repeatable `regulated_by="<TF>"` qualifier on its main feature
+  (use a name/synonym already in the catalog); the build resolves it and derives
+  the inverse ("regulates") on the TF's page, so the link is authored once and
+  shown both ways. Composition cross-links (`component` ↔ `sub_region_of`, step 4)
+  work the same way.
+- **Declare collection membership on the part.** A part joins a family (a vector
+  series, a promoter set, an inducible-sensor kit) with a repeatable
+  `collection="<id>"` qualifier on its main feature — membership always lives on
+  the parts, never in a central file. Give the collection its display prose in the
+  top-level `collections.json` keyed by the same `<id>` (`name`, `description`,
+  `source`, optional `references` and `resources`); the build groups members into a
+  collection page and a "Browse by collection" hub.
 
 ## Procedure
 

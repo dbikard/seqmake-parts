@@ -3,7 +3,8 @@
 The contract that protects human-reviewed knowledge from machine re-runs: an
 ``ai-generated`` claim may be overwritten; an ``ai-cross-checked`` /
 ``expert-reviewed`` claim is immutable and a contesting proposal is appended as a
-flagged, superseding claim instead. See proposals/unified-add-part.md."""
+flagged, superseding claim instead. See AUTHORING.md (and the design rationale in
+proposals/archive/unified-add-part.md)."""
 import json
 import sys
 from pathlib import Path

@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
-# Block a push when the catalog content guard fails: part content must stay
-# lab-agnostic and tool-agnostic (no consuming-tool names, no internal-lab
-# lineage, no definition-by-negation). See tools/check_content.py.
+# Block a push when a catalog guard fails:
+#  - content guard: part content must stay lab-agnostic and tool-agnostic (no
+#    consuming-tool names, no internal-lab lineage, no definition-by-negation) —
+#    see tools/check_content.py.
+#  - requests guard: sourcing/REQUESTS.md must list only ACTIVE requests (no
+#    resolved entries left behind) — see tools/check_requests.py.
 set -euo pipefail
 root="$(git rev-parse --show-toplevel)"
-if ! python3 "$root/tools/check_content.py"; then
+fail=0
+python3 "$root/tools/check_content.py" || fail=1
+python3 "$root/tools/check_requests.py" || fail=1
+if [ "$fail" -ne 0 ]; then
   echo "" >&2
-  echo "pre-push: content guard failed — fix the violations above before pushing." >&2
+  echo "pre-push: a catalog guard failed — fix the violations above before pushing." >&2
   exit 1
 fi

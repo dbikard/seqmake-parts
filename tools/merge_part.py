@@ -1,6 +1,7 @@
 """Additive, review-status-aware merge of a proposed part record into an existing one.
 
-The ``/add-part`` capability (see ``proposals/unified-add-part.md``) runs a
+The ``/add-part`` capability (live spec: ``AUTHORING.md``; design rationale:
+``proposals/archive/unified-add-part.md``) runs a
 proposal-only research workflow and then MERGES its output into the canonical
 ``parts/<status>/<slug>.json``. Re-running on a candidate/validated part is where a
 machine pass can silently destroy human-reviewed knowledge, so the merge policy is

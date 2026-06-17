@@ -41,7 +41,7 @@ Present: PT7✓, T7lac✓, T7 terminator✓, lacI/PlacIq✓, 6xHis/T7-tag/thromb
 | T7 g10 leader | RBS | T7 gene-10 translational enhancer/RBS (35 bp) | pET-28a (Addgene 249430) ✓ stubbed |
 | S-tag | protein_domain | 15-aa S-peptide (KETAAAKFERQHMDS), RNase-S | RNase A 1-15 / UniProt P61823 ✓ stubbed |
 | enterokinase site | protein_domain | DDDDK protease cleavage site | pET maps (DDDDK motif) ✓ stubbed |
-| rop / rom | CDS | ColE1 Rop, ~63 aa copy-number repressor | UniProt P03051 ✓ stubbed |
+| rop / rom | CDS | ColE1 Rop, ~63 aa copy-number repressor | UniProt P03051 ✓ validated (added with the ColE1 cluster) |
 
 ## Yeast expression (pRS / pYES / pGAL; SGD)
 Present: CEN6-ARS209✓, URA3✓.
@@ -138,10 +138,10 @@ Plan: 5 promoters (DNA, from the Marionette plasmids) + 5 cognate TFs
 whole orthogonal set, so a single annotate-part cluster run does all five.
 
 **G7 — pET extras** · Studier; Novagen pET maps · ✓ stubs in
-T7 g10 leader · S-tag · enterokinase site · rop (ColE1)
+T7 g10 leader · S-tag · enterokinase site  (rop already **validated**)
 T7 g10 leader from pET-28a; S-tag verified against RNase A (P61823) residues
 1-15; enterokinase = DDDDK motif (like the existing TEV/thrombin sites); rop
-already stubbed (UniProt P03051).
+was validated as part of the ColE1 cluster (UniProt P03051).
 
 Priority: G1–G5 + G7 **stubbed** ✓. **Remaining TODO: G6 (Marionette)** — the
 last group to stub before the whole roadmap is candidate-complete.
