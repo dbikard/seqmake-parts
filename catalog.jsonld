@@ -16296,12 +16296,67 @@
     {
       "@id": "part:rrnBT1",
       "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:rrnBT1_claim_mechanism"
+        },
+        {
+          "@id": "part:rrnBT1_claim_strength_class"
+        },
+        {
+          "@id": "part:rrnBT1_claim_factor_enhancement"
+        },
+        {
+          "@id": "part:rrnBT1_claim_host_range"
+        },
+        {
+          "@id": "part:rrnBT1_claim_phage_rnap_termination"
+        }
+      ],
       "cat:slug": "rrnBT1",
+      "dcterms:description": "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 169 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (Brosius et al. 1981). Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6202587"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2821282"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12840000"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:15615852"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23511967"
+        }
+      ],
       "dcterms:title": "rrnBT1",
       "rdfs:label": "rrnBT1",
       "sbol:displayId": "rrnBT1",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:rrnBT1_feature_0"
+        },
+        {
+          "@id": "part:rrnBT1_feature_1"
+        },
+        {
+          "@id": "part:rrnBT1_feature_2"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -16316,8 +16371,253 @@
       },
       "skos:altLabel": [
         "rrnBT1",
-        "rrnBT1 terminator"
+        "rrnBT1 terminator",
+        "rrnB T1",
+        "rrnB T1 terminator",
+        "T1"
       ]
+    },
+    {
+      "@id": "part:rrnBT1_claim_factor_enhancement",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"effect\": \"enhances termination\", \"factor\": \"NusA\", \"u_tract_length\": 4}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "NusA protein is an efficient transcription termination factor for certain terminator sites, enhancing rrnB T1 termination",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2821282"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:2821282"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1_claim_factor_enhancement_provenance"
+      },
+      "rdfs:label": "NusA enhances rrnB T1 termination in vitro to levels matching in-vivo estimates, consistent with the short (4-nt) U-tract being partly rate-limiting in isolation."
+    },
+    {
+      "@id": "part:rrnBT1_claim_factor_enhancement_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"host\": \"Escherichia coli\", \"standalone\": true}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "T1 and T2 are each efficient standalone terminators in a galK reporter assay",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1718749"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:1718749"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1_claim_host_range_provenance"
+      },
+      "rdfs:label": "Functions as an efficient standalone terminator for E. coli (sigma-70) RNA polymerase."
+    },
+    {
+      "@id": "part:rrnBT1_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"class\": \"class I (hairpin-dependent)\", \"hairpin\": \"CAGTCGAAAGACTGGGCCTTTCG\", \"mechanism\": \"intrinsic\", \"rho_dependent\": false, \"u_tract\": \"TTTT\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "two signals in rrnB T1: a class I (hairpin-dependent) signal and a class II conserved-sequence signal",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Results",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9192998"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:9192998"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Intrinsic (Rho-independent) transcription terminator: a GC-rich hairpin followed by a short U-tract releases E. coli RNA polymerase without accessory factors."
+    },
+    {
+      "@id": "part:rrnBT1_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1_claim_phage_rnap_termination",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"hairpin_required\": false, \"polymerase\": \"T7/SP6\", \"sequence\": \"TATCTGTT\", \"signal\": \"class II conserved sequence\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "the conserved sequence TATCTGTT causes sequential conformational changes in T7 RNA polymerase, operating independently of the RNA hairpin",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:15615852"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:15615852"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1_claim_phage_rnap_termination_provenance"
+      },
+      "rdfs:label": "Also terminates phage (T7/SP6) RNA polymerase via a hairpin-independent class II conserved sequence (TATCTGTT)."
+    },
+    {
+      "@id": "part:rrnBT1_claim_phage_rnap_termination_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1_claim_strength_class",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "strength_class",
+      "cat:claimValue": "{\"comparator\": \">95% threshold\", \"strength\": \"strong\", \"termination_efficiency_pct\": 97}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "rrnB T1 measured at greater than 97% termination efficiency in a systematic measurement of intrinsic terminators in E. coli",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "systematic terminator measurement",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:23511967"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:23511967"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1_claim_strength_class_provenance"
+      },
+      "rdfs:label": "Strong terminator: >97% termination efficiency for host RNA polymerase, above the >95% strong-terminator threshold."
+    },
+    {
+      "@id": "part:rrnBT1_claim_strength_class_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12840000"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23511967"
+        }
+      ],
+      "dcterms:title": "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)",
+      "sbol:displayId": "rrnBT1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000313"
+      }
+    },
+    {
+      "@id": "part:rrnBT1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 47,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1_sequence"
+      },
+      "sbol:start": 25
+    },
+    {
+      "@id": "part:rrnBT1_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2821282"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        }
+      ],
+      "dcterms:title": "poly-U tract (rrnB T1)",
+      "sbol:displayId": "rrnBT1_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:rrnBT1_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 51,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1_sequence"
+      },
+      "sbol:start": 48
+    },
+    {
+      "@id": "part:rrnBT1_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:15615852"
+        }
+      ],
+      "dcterms:title": "class II conserved sequence (TATCTGTT) \u2014 phage RNAP termination signal",
+      "sbol:displayId": "rrnBT1_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:rrnBT1_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 58,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1_sequence"
+      },
+      "sbol:start": 51
     },
     {
       "@id": "part:rrnBT1_sequence",

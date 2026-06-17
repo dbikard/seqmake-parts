@@ -1,0 +1,145 @@
+LOCUS       rrnBT1                   169 bp    DNA              UNK 01-JAN-1980
+DEFINITION  rrnBT1 — the E. coli rrnB operon T1 intrinsic (Rho-independent)
+            transcription terminator; 169 bp from J01695, >97% termination
+            efficiency..
+ACCESSION   rrnBT1
+VERSION     rrnBT1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Brosius J, Dull TJ, Sleeter DD, Noller HF
+  TITLE     Gene organization and primary structure of a ribosomal RNA operon
+            from Escherichia coli
+  JOURNAL   Journal of Molecular Biology
+   PUBMED   7028991
+  REMARK    doi:10.1016/0022-2836(81)90508-8
+REFERENCE   2
+  AUTHORS   Brosius J
+  TITLE     Toxicity of an overproduced foreign gene product in Escherichia coli
+            and its use in plasmid vectors for the selection of transcription
+            terminators
+  JOURNAL   Gene
+   PUBMED   6202587
+  REMARK    doi:10.1016/0378-1119(84)90137-9
+REFERENCE   3
+  AUTHORS   Schmidt MC, Chamberlin MJ
+  TITLE     nusA protein of Escherichia coli is an efficient transcription
+            termination factor for certain terminator sites
+  JOURNAL   Journal of Molecular Biology
+   PUBMED   2821282
+  REMARK    doi:10.1016/0022-2836(87)90486-4
+REFERENCE   4
+  AUTHORS   Orosz A, Boros I, Venetianer P
+  TITLE     Analysis of the complex transcription termination region of the
+            Escherichia coli rrnB gene
+  JOURNAL   European Journal of Biochemistry
+   PUBMED   1718749
+  REMARK    doi:10.1111/j.1432-1033.1991.tb16326.x
+REFERENCE   5
+  AUTHORS   Lyakhov DL, He B, Zhang X, Studier FW, Dunn JJ, McAllister WT
+  TITLE     Mutant bacteriophage T7 RNA polymerases with altered termination
+            properties
+  JOURNAL   Journal of Molecular Biology
+   PUBMED   9192998
+  REMARK    doi:10.1006/jmbi.1997.1015
+REFERENCE   6
+  AUTHORS   Schwartz A, Rahmouni AR, Boudvillain M
+  TITLE     The functional anatomy of an intrinsic transcription terminator
+  JOURNAL   The EMBO Journal
+   PUBMED   12840000
+  REMARK    doi:10.1093/emboj/cdg310
+REFERENCE   7
+  AUTHORS   Sohn Y, Kang C
+  TITLE     Sequential multiple functions of the conserved sequence in
+            sequence-specific termination by T7 RNA polymerase
+  JOURNAL   PNAS
+   PUBMED   15615852
+  REMARK    doi:10.1073/pnas.0406581101
+REFERENCE   8
+  AUTHORS   Cambray G, Guimaraes JC, Mutalik VK, Lam C, Mai QA, Thimmaiah T,
+            Carothers JM, Arkin AP, Endy D
+  TITLE     Measurement and modeling of intrinsic transcription terminators
+  JOURNAL   Nucleic Acids Research
+   PUBMED   23511967
+  REMARK    doi:10.1093/nar/gkt163
+FEATURES             Location/Qualifiers
+     terminator      1..169
+                     /label="rrnBT1"
+                     /synonym="rrnBT1"
+                     /synonym="rrnBT1 terminator"
+                     /synonym="rrnB T1"
+                     /synonym="rrnB T1 terminator"
+                     /synonym="T1"
+                     /note="rrnB T1, the strong intrinsic (Rho-independent)
+                     transcription terminator from the T1-T2 terminator cluster
+                     downstream of the 5S rRNA gene in the E. coli rrnB
+                     ribosomal RNA operon; 169 bp taken at 100% identity from
+                     the canonical rrnB operon sequence J01695 (Brosius et al.
+                     1981). Terminates host (E. coli sigma-70) RNA polymerase
+                     via a GC-rich hairpin followed by a short U-tract; >97%
+                     termination efficiency (Cambray et al. 2013). The element
+                     additionally carries a class II conserved sequence
+                     (TATCTGTT) that triggers termination by phage (T7/SP6) RNA
+                     polymerases independently of the hairpin."
+                     /db_xref="SO:0000141"
+                     /citation=[1]
+                     /citation=[5]
+                     /citation=[8]
+     stem_loop       25..47
+                     /label="T1 GC-rich hairpin (class I intrinsic terminator
+                     stem-loop)"
+                     /parent="rrnBT1"
+                     /note="23-nt GC-rich hairpin (transcript RNA
+                     5'-CAGUCGAAAGACUGGGCCUUUCG-3') that is the class I
+                     (hairpin-dependent) intrinsic-termination signal of rrnB
+                     T1. Lyakhov et al. 1997 defined the class I vs class II
+                     signals and showed mutating this hairpin abolishes class I
+                     termination; Schwartz, Rahmouni & Boudvillain 2003 used
+                     NAIM to map discrete contacts in the lower-half GC stem of
+                     this hairpin. The hairpin is immediately followed by the
+                     U-tract. Coordinates confirmed by exact sequence match at
+                     24-47."
+                     /db_xref="SO:0000313"
+                     /citation=[1]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[8]
+     misc_feature    48..51
+                     /label="poly-U tract (rrnB T1)"
+                     /parent="rrnBT1"
+                     /note="Four-uridine (UUUU) run in the transcript,
+                     immediately 3' of the T1 hairpin, that destabilizes the
+                     RNA:DNA hybrid to release the polymerase. The U-run is
+                     unusually short (4 nt vs the 6-8 nt consensus); Schmidt &
+                     Chamberlin 1987 showed NusA enhances rrnB T1 termination in
+                     vitro to in-vivo-equivalent levels, and Orosz et al. 1991
+                     confirmed T1 acts as an efficient standalone terminator in
+                     a reporter assay. TTTT confirmed at 47-51."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
+                     /citation=[3]
+                     /citation=[4]
+     misc_feature    51..58
+                     /label="class II conserved sequence (TATCTGTT) — phage RNAP
+                     termination signal"
+                     /parent="rrnBT1"
+                     /note="8-bp conserved sequence (CS) TATCTGTT that is the
+                     class II termination signal of rrnB T1, acting
+                     independently of the upstream hairpin and relevant only for
+                     phage RNA polymerases (T7, SP6). Lyakhov et al. 1997 showed
+                     T7 RNAP mutants that fail at the class I hairpin still
+                     terminate at this class II CS; Sohn & Kang 2004
+                     characterized it mechanistically (sequential conformational
+                     changes in T7 RNAP, no hairpin required). Not required for
+                     E. coli RNAP intrinsic termination. TATCTGTT confirmed at
+                     50-58."
+                     /db_xref="SO:0000110"
+                     /citation=[5]
+                     /citation=[7]
+ORIGIN
+        1 aggcatcaaa taaaacgaaa ggctcagtcg aaagactggg cctttcgttt tatctgttgt
+       61 ttgtcggtga acgctctcct gagtaggaca aatccgccgg gagcggattt gaacgttgcg
+      121 aagcaacggc ccggagggtg gcgggcagga cgcccgccat aaactgcca
+//

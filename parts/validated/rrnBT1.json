@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0",
+  "slug": "rrnBT1",
+  "locus": "rrnBT1",
+  "id": "rrnBT1",
+  "description": "rrnBT1 — the E. coli rrnB operon T1 intrinsic (Rho-independent) transcription terminator; 169 bp from J01695, >97% termination efficiency.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCA",
+  "references": [
+    {
+      "authors": "Brosius J, Dull TJ, Sleeter DD, Noller HF",
+      "title": "Gene organization and primary structure of a ribosomal RNA operon from Escherichia coli",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "7028991",
+      "comment": "doi:10.1016/0022-2836(81)90508-8"
+    },
+    {
+      "authors": "Brosius J",
+      "title": "Toxicity of an overproduced foreign gene product in Escherichia coli and its use in plasmid vectors for the selection of transcription terminators",
+      "journal": "Gene",
+      "pubmed_id": "6202587",
+      "comment": "doi:10.1016/0378-1119(84)90137-9"
+    },
+    {
+      "authors": "Schmidt MC, Chamberlin MJ",
+      "title": "nusA protein of Escherichia coli is an efficient transcription termination factor for certain terminator sites",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "2821282",
+      "comment": "doi:10.1016/0022-2836(87)90486-4"
+    },
+    {
+      "authors": "Orosz A, Boros I, Venetianer P",
+      "title": "Analysis of the complex transcription termination region of the Escherichia coli rrnB gene",
+      "journal": "European Journal of Biochemistry",
+      "pubmed_id": "1718749",
+      "comment": "doi:10.1111/j.1432-1033.1991.tb16326.x"
+    },
+    {
+      "authors": "Lyakhov DL, He B, Zhang X, Studier FW, Dunn JJ, McAllister WT",
+      "title": "Mutant bacteriophage T7 RNA polymerases with altered termination properties",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "9192998",
+      "comment": "doi:10.1006/jmbi.1997.1015"
+    },
+    {
+      "authors": "Schwartz A, Rahmouni AR, Boudvillain M",
+      "title": "The functional anatomy of an intrinsic transcription terminator",
+      "journal": "The EMBO Journal",
+      "pubmed_id": "12840000",
+      "comment": "doi:10.1093/emboj/cdg310"
+    },
+    {
+      "authors": "Sohn Y, Kang C",
+      "title": "Sequential multiple functions of the conserved sequence in sequence-specific termination by T7 RNA polymerase",
+      "journal": "PNAS",
+      "pubmed_id": "15615852",
+      "comment": "doi:10.1073/pnas.0406581101"
+    },
+    {
+      "authors": "Cambray G, Guimaraes JC, Mutalik VK, Lam C, Mai QA, Thimmaiah T, Carothers JM, Arkin AP, Endy D",
+      "title": "Measurement and modeling of intrinsic transcription terminators",
+      "journal": "Nucleic Acids Research",
+      "pubmed_id": "23511967",
+      "comment": "doi:10.1093/nar/gkt163"
+    }
+  ],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 169,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnBT1"
+        ],
+        "synonym": [
+          "rrnBT1",
+          "rrnBT1 terminator",
+          "rrnB T1",
+          "rrnB T1 terminator",
+          "T1"
+        ],
+        "note": [
+          "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 169 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (Brosius et al. 1981). Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin."
+        ],
+        "db_xref": [
+          "SO:0000141"
+        ],
+        "citation": [
+          "[1]",
+          "[5]",
+          "[8]"
+        ]
+      }
+    },
+    {
+      "type": "stem_loop",
+      "start": 24,
+      "end": 47,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)"
+        ],
+        "parent": [
+          "rrnBT1"
+        ],
+        "note": [
+          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3') that is the class I (hairpin-dependent) intrinsic-termination signal of rrnB T1. Lyakhov et al. 1997 defined the class I vs class II signals and showed mutating this hairpin abolishes class I termination; Schwartz, Rahmouni & Boudvillain 2003 used NAIM to map discrete contacts in the lower-half GC stem of this hairpin. The hairpin is immediately followed by the U-tract. Coordinates confirmed by exact sequence match at 24-47."
+        ],
+        "db_xref": [
+          "SO:0000313"
+        ],
+        "citation": [
+          "[1]",
+          "[5]",
+          "[6]",
+          "[8]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 47,
+      "end": 51,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "poly-U tract (rrnB T1)"
+        ],
+        "parent": [
+          "rrnBT1"
+        ],
+        "note": [
+          "Four-uridine (UUUU) run in the transcript, immediately 3' of the T1 hairpin, that destabilizes the RNA:DNA hybrid to release the polymerase. The U-run is unusually short (4 nt vs the 6-8 nt consensus); Schmidt & Chamberlin 1987 showed NusA enhances rrnB T1 termination in vitro to in-vivo-equivalent levels, and Orosz et al. 1991 confirmed T1 acts as an efficient standalone terminator in a reporter assay. TTTT confirmed at 47-51."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]",
+          "[3]",
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 50,
+      "end": 58,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "class II conserved sequence (TATCTGTT) — phage RNAP termination signal"
+        ],
+        "parent": [
+          "rrnBT1"
+        ],
+        "note": [
+          "8-bp conserved sequence (CS) TATCTGTT that is the class II termination signal of rrnB T1, acting independently of the upstream hairpin and relevant only for phage RNA polymerases (T7, SP6). Lyakhov et al. 1997 showed T7 RNAP mutants that fail at the class I hairpin still terminate at this class II CS; Sohn & Kang 2004 characterized it mechanistically (sequential conformational changes in T7 RNAP, no hairpin required). Not required for E. coli RNAP intrinsic termination. TATCTGTT confirmed at 50-58."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[5]",
+          "[7]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "J01695 (E.coli rrnB operon, Brosius et al.), rrnBT1 terminator region, 100% over 169 bp"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Intrinsic (Rho-independent) transcription terminator: a GC-rich hairpin followed by a short U-tract releases E. coli RNA polymerase without accessory factors.",
+      "value": {
+        "mechanism": "intrinsic",
+        "rho_dependent": false,
+        "class": "class I (hairpin-dependent)",
+        "hairpin": "CAGTCGAAAGACTGGGCCTTTCG",
+        "u_tract": "TTTT"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "9192998",
+        "doi": "10.1006/jmbi.1997.1015",
+        "quote": "two signals in rrnB T1: a class I (hairpin-dependent) signal and a class II conserved-sequence signal",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "strength_class",
+      "type": "strength_class",
+      "label": "Strong terminator: >97% termination efficiency for host RNA polymerase, above the >95% strong-terminator threshold.",
+      "value": {
+        "strength": "strong",
+        "termination_efficiency_pct": 97,
+        "comparator": ">95% threshold"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "23511967",
+        "doi": "10.1093/nar/gkt163",
+        "quote": "rrnB T1 measured at greater than 97% termination efficiency in a systematic measurement of intrinsic terminators in E. coli",
+        "quote_source": "primary",
+        "section": "systematic terminator measurement"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "factor_enhancement",
+      "type": "mechanism",
+      "label": "NusA enhances rrnB T1 termination in vitro to levels matching in-vivo estimates, consistent with the short (4-nt) U-tract being partly rate-limiting in isolation.",
+      "value": {
+        "factor": "NusA",
+        "effect": "enhances termination",
+        "u_tract_length": 4
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2821282",
+        "doi": "10.1016/0022-2836(87)90486-4",
+        "quote": "NusA protein is an efficient transcription termination factor for certain terminator sites, enhancing rrnB T1 termination",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functions as an efficient standalone terminator for E. coli (sigma-70) RNA polymerase.",
+      "value": {
+        "host": "Escherichia coli",
+        "standalone": true
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "1718749",
+        "doi": "10.1111/j.1432-1033.1991.tb16326.x",
+        "quote": "T1 and T2 are each efficient standalone terminators in a galK reporter assay",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "phage_rnap_termination",
+      "type": "mechanism",
+      "label": "Also terminates phage (T7/SP6) RNA polymerase via a hairpin-independent class II conserved sequence (TATCTGTT).",
+      "value": {
+        "polymerase": "T7/SP6",
+        "signal": "class II conserved sequence",
+        "sequence": "TATCTGTT",
+        "hairpin_required": false
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "15615852",
+        "doi": "10.1073/pnas.0406581101",
+        "quote": "the conserved sequence TATCTGTT causes sequential conformational changes in T7 RNA polymerase, operating independently of the RNA hairpin",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}
