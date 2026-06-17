@@ -3,8 +3,8 @@ export const meta = {
   description: "Catalog-native research/verify engine for one or more RELATED DNA/protein parts. SOURCES the sequence (independent re-fetch + byte/alignment compare via tools/source_finder.py — never trusts memory), researches the literature ONCE over a related cluster, LOCATES sub-features (-35/-10/operator/RBS/domains) on the real sequence, adversarially VERIFIES coordinates (in JS) and citations, and SYNTHESIZES a part.schema.json-shaped proposal (features + references + provenance.sequence_source + nanopub-shaped functional_claims + a curated .md). PROPOSAL-ONLY: it never writes a part file — the /add-part command merges the proposal via tools/merge_part.py (which protects reviewed claims). For a cluster it also returns a collections.json-ready block.",
   whenToUse: "When adding or improving a catalog part's sourcing + annotation + claims. Pass a single part (a slug string, or { name, sequence?, feature_type?, refs? }) OR a related cluster (an array of those, or { source, parts: [...] }) — clustering shares the Research phase so a common paper is researched once. Returns verified proposals; the caller merges + runs the gates.",
   phases: [
-    { title: 'Resolve', detail: 'Load each part record (parts/<status>/<slug>.json) + catalog name inventory (one mechanical agent)', model: 'haiku' },
-    { title: 'Source', detail: 'Per part: independent re-fetch + compare via source_finder.py -> provenance.sequence_source (never from memory)', model: 'sonnet' },
+    { title: 'Resolve', detail: 'Load each part record (parts/<status>/<slug>.json) + catalog name inventory + localized cross-part sequence overlaps (one mechanical agent)', model: 'haiku' },
+    { title: 'Source', detail: 'Per part: independent re-fetch + compare via source_finder.py -> provenance.sequence_source (never from memory); verify FULL-LENGTH (candidate records may be chimeric/mis-trimmed) and EXPLAIN every cross-part homology (never dismiss)', model: 'sonnet' },
     { title: 'Research', detail: 'ONE shared literature pass over the cluster (scout, early-stop)', model: 'sonnet' },
     { title: 'Locate', detail: 'Per part: map elements onto the real sequence (verify subsequences)', model: 'sonnet' },
     { title: 'Verify', detail: 'Per part: coordinates checked in JS; one agent adversarially checks citations', model: 'sonnet' },
@@ -106,6 +106,28 @@ const RESOLVE_SCHEMA = {
               required: ['label', 'type', 'start', 'end'],
             },
           },
+          overlaps: {
+            type: 'array',
+            description: 'sequence overlaps vs the rest of the catalog (tools/catalog_overlap.py), each LOCALIZED to a concrete span — a data-quality + dedup signal, NOT noise to ignore',
+            items: {
+              type: 'object',
+              properties: {
+                slug: { type: 'string' }, status: { type: 'string' }, len: { type: 'integer' },
+                relation: { type: 'string' }, est_overlap_bp: { type: 'integer' },
+                shared_kmers: { type: 'integer' }, q_frac: { type: 'number' }, exact: { type: 'boolean' },
+                best_match: {
+                  type: 'object',
+                  description: 'longest EXACT contiguous match: its length (bp), strand (+1/-1), and 0-based positions in this part (q_*) and the other part (s_*)',
+                  properties: {
+                    bp: { type: 'integer' }, strand: { type: 'integer' },
+                    q_start: { type: 'integer' }, q_end: { type: 'integer' },
+                    s_start: { type: 'integer' }, s_end: { type: 'integer' }, subseq: { type: 'string' },
+                  },
+                },
+              },
+              required: ['slug', 'relation'],
+            },
+          },
         },
         required: ['found', 'name'],
       },
@@ -131,6 +153,28 @@ const SOURCE_SCHEMA = {
     boundary_question: { type: 'boolean', description: 'true if divergence sits at the part edge -> a boundary question needing experimental grounding, not a sequence call' },
     variant_suggestion: { type: 'string', description: 'if an INTERNAL diff vs the canonical ref makes this a real variant, the labelled-sibling suggestion (ColE1_AT-style); else empty' },
     blocked: { type: 'boolean', description: 'true if a needed source was access-blocked (paywall/login/403/405) and was written to sourcing/REQUESTS.md' },
+    full_length_match: { type: 'boolean', description: 'true ONLY if the ENTIRE stored sequence maps to the cited deposit; false if only a sub-span aligns and the remainder is foreign (a chimera / mis-trim). A part whose sequence is only partly genuine is NOT verified.' },
+    quality_flags: {
+      type: 'array',
+      description: 'data-quality defects found in the STORED candidate record (empty if it is a clean, correctly-delimited instance of the part): e.g. "chimera", "mis-trimmed / includes flanking sequence", "vector backbone / MCS / restriction sites embedded", "wrong strand", "mislabeled (different element)", "over-long".',
+      items: { type: 'string' },
+    },
+    homology_findings: {
+      type: 'array',
+      description: 'one entry per non-trivial sequence overlap with another catalog part (from the Resolve overlaps): an explanation, never a dismissal. A >=16 bp exact match is not chance.',
+      items: {
+        type: 'object',
+        properties: {
+          other_part: { type: 'string' },
+          overlap_bp: { type: 'integer' },
+          strand: { type: 'integer', description: '+1 same strand, -1 reverse-complement' },
+          identity_pct: { type: 'number' },
+          interpretation: { type: 'string', description: 'what the shared region IS and why it recurs' },
+          implicates: { type: 'string', enum: ['this_part', 'other_part', 'shared_biological_element', 'unclear'], description: 'which record (if any) the homology shows to be bad-quality; shared_biological_element = a legitimately recurring motif, neither record is wrong' },
+        },
+        required: ['other_part', 'interpretation', 'implicates'],
+      },
+    },
     unresolved: {
       type: 'array',
       items: {
@@ -194,7 +238,7 @@ const RESEARCH_SCHEMA = {
     },
     confidence: { type: 'string', enum: ['high', 'medium', 'low'] },
     complete: { type: 'boolean', description: 'true ONLY if every applicable cis element of EVERY part was located with a citation (or positively confirmed not to apply)' },
-    needs_curation_judgment: { type: 'boolean', description: 'true if any part likely needs a curation DECISION rather than a routine assembly: a boundary re-delimitation, a split/extract because a sub-region is used standalone (granularity), a rename, or a variant/sibling. Routes synthesis to the stronger model.' },
+    needs_curation_judgment: { type: 'boolean', description: 'true if any part likely needs a curation DECISION rather than a routine assembly: a boundary re-delimitation, a split/extract because a sub-region is used standalone OR a compose because an adjacent same-class ensemble is used as one unit (granularity, both directions), a rename, or a variant/sibling. Routes synthesis to the stronger model.' },
     notes: { type: 'string' },
   },
   required: ['elements', 'references', 'confidence', 'complete'],
@@ -327,7 +371,7 @@ const FINAL_SCHEMA = {
       items: {
         type: 'object',
         properties: {
-          kind: { type: 'string', enum: ['rename', 'redelimit', 'split', 'merge', 'new_part', 'metadata', 'note'] },
+          kind: { type: 'string', enum: ['rename', 'redelimit', 'split', 'merge', 'compose', 'new_part', 'metadata', 'note'] },
           title: { type: 'string' }, rationale: { type: 'string' }, proposal: { type: 'string' },
           confidence: { type: 'string', enum: ['high', 'medium', 'low'] },
         },
@@ -440,14 +484,33 @@ const resolveResult = await agent(
   `Resolve these catalog part slugs: ${JSON.stringify(names)}. Run this EXACT command from the repo root and return the JSON it prints as your structured output (do not invent values):\n\n` +
   '```\n' +
   `cd ${REPO} && python - <<'PYEOF'\n` +
-  `import json, glob, os\n` +
+  `import json, glob, os, sys\n` +
   `NAMES = ${JSON.stringify(names)}\n` +
+  `sys.path.insert(0, 'tools')\n` +
+  `try:\n` +
+  `    import catalog_overlap as _co\n` +
+  `except Exception:\n` +
+  `    _co = None\n` +
   `def load(slug):\n` +
   `    for st in ('validated','candidate'):\n` +
   `        p = f'parts/{st}/{slug}.json'\n` +
   `        if os.path.exists(p):\n` +
   `            d = json.load(open(p)); d['_status'] = st; d['_has_md'] = os.path.exists(f'parts/{st}/{slug}.md'); return d\n` +
   `    return None\n` +
+  `def overlaps_for(d, nm):\n` +
+  `    if _co is None or d.get('molecule_type','DNA') == 'protein' or not d.get('sequence'):\n` +
+  `        return []\n` +
+  `    rows = []\n` +
+  `    try:\n` +
+  `        for h in _co.scan(d['sequence'].upper(), exclude=d.get('slug', nm))[:6]:\n` +
+  `            bm = dict(h.get('best_match') or {})\n` +
+  `            if bm.get('subseq') and len(bm['subseq']) > 60: bm['subseq'] = bm['subseq'][:60] + '...'\n` +
+  `            row = {k2: h[k2] for k2 in ('slug','status','len','relation','est_overlap_bp','shared_kmers','q_frac','exact') if k2 in h}\n` +
+  `            if bm: row['best_match'] = bm\n` +
+  `            rows.append(row)\n` +
+  `    except Exception:\n` +
+  `        return []\n` +
+  `    return rows\n` +
   `out = []\n` +
   `for nm in NAMES:\n` +
   `    d = load(nm)\n` +
@@ -460,6 +523,7 @@ const resolveResult = await agent(
   `      'sequence': d.get('sequence',''),\n` +
   `      'recorded_sequence_source': (d.get('provenance') or {}).get('sequence_source',''),\n` +
   `      'has_md': d['_has_md'], 'synonyms': q.get('synonym', []),\n` +
+  `      'overlaps': overlaps_for(d, nm),\n` +
   `      'children': [{'label': (c.get('qualifiers',{}).get('label',['?'])[0]), 'type': c.get('type',''),\n` +
   `                    'start': c.get('start'), 'end': c.get('end'), 'strand': c.get('strand',1)}\n` +
   `                   for c in (d.get('features') or [])[1:]],\n` +
@@ -494,6 +558,7 @@ for (const s of specs) {
     feature_type, sequence,
     children: (r && r.children) || [],
     synonyms: (r && r.synonyms) || [],
+    overlaps: (r && r.overlaps) || [],
     recordedSource: (r && r.recorded_sequence_source) || '',
     refs: s.refs || [],
     isProteinPart, unit: isProteinPart ? 'aa' : 'bp',
@@ -504,6 +569,14 @@ if (!parts.length) {
   return { error: 'No parts resolved (none in parts/ and none had a supplied sequence).', requested: names }
 }
 log(`Resolved ${parts.length}/${specs.length}: ${parts.map((p) => `${p.name} (${p.status}, ${p.sequence.length}${p.unit}, ${p.category})`).join(', ')}; ${existingNames.length} catalog names for dedup`)
+for (const p of parts) {
+  if (!p.overlaps || !p.overlaps.length) continue
+  const top = p.overlaps.slice(0, 4).map((o) => {
+    const bm = o.best_match || {}
+    return `${o.slug}(${o.relation}${bm.bp ? `, ${bm.bp}bp exact${bm.strand === -1 ? ' RC' : ''}` : ''})`
+  }).join(', ')
+  log(`[${p.name}] catalog overlaps to investigate (not noise): ${top}`)
+}
 
 // ---- 2. Source: independent re-fetch + compare (per part) ------------------
 // The inviolable gate. tools/source_finder.py does the heavy lifting: protein ->
@@ -525,13 +598,21 @@ async function sourceOne(part) {
     `- PROTEIN: the "protein" block gives the UniProt/NCBI accession + match status. verified=true if the status is exact/canonical (or identity 100). sequence_source = its "sequence_source" string. location="n/a".\n` +
     `- DNA: "dna_sources.recommended" is the oldest reputable 100% deposit (accession + date + title). verified=true ONLY if there is a full-length 100% perfect hit (n_perfect>0 and the recommended deposit covers the whole part). Build sequence_source like "pBR322 (J01749), <what region>, 100% over ${part.sequence.length} bp". If "divergence_vs_refs" is present, read each ref's "location": exact -> cite it; "edge" -> set boundary_question=true (a boundary needs experimental grounding, not a sequence call); "internal" -> set variant_suggestion (a labelled sibling, ColE1_AT-style); honor any top-level "flag" (likely-non-canonical).\n` +
     `- If source_finder finds NO 100% deposit, or a needed record is access-blocked (paywall/login/403/405): do NOT invent a source. Append the need to sourcing/REQUESTS.md (link · what it unblocks · barrier · suggested filename) per sourcing/README.md, set blocked=true and verified=false, and list it under "unresolved".\n` +
+    `\nCANDIDATE RECORDS MAY BE LOW QUALITY — do NOT trust the stored sequence as a clean, correctly-delimited instance of the part. Migrated/auto-collected records are frequently CHIMERIC or VECTOR fragments (carrying backbone, a multiple-cloning site, restriction sites, or a foreign terminator/origin), MIS-TRIMMED (extra flanking sequence, wrong length), on the WRONG STRAND, or MISLABELED (a different element entirely). Confirm the ENTIRE stored sequence maps to the cited deposit, not just a sub-span: set full_length_match accordingly, and if any internal segment fails to align — or you find embedded cloning/restriction sites or a foreign element — record it in quality_flags and set verified=false (a sequence only partly genuine is NOT verified).\n` +
+    `\nUNEXPECTED HOMOLOGY — INVESTIGATE, NEVER DISMISS. The Resolve step localized this part's sequence overlaps with other catalog parts (below). An EXACT match of ~16 bp or more does NOT occur by chance (4^16 ≈ 4e9), so every overlap is real homology that must be EXPLAINED — never written off as coincidental or "benign". For each, load the other part (parts/<status>/<slug>.json) and decide which it is: a legitimately RECURRING biological element (a common terminator/origin/promoter/RBS motif that appears in several parts → implicates="shared_biological_element"); evidence THIS record is mis-trimmed / chimeric / mislabeled (→ "this_part" + a quality_flag); or evidence the OTHER part is the bad record, e.g. it embeds a copy of an element it should not contain (→ "other_part" — a curation note; do NOT edit the other part here). Emit one homology_finding per overlap. Localize with EXACT matching on BOTH strands and trust the best_match span the Resolve step already computed; do NOT re-derive with difflib/fuzzy diff on DNA (its autojunk heuristic silently fails on a 4-letter alphabet).\n` +
+    `\nResolve-computed overlaps for ${part.name} (each with a localized best_match: bp, strand, positions):\n${JSON.stringify(part.overlaps || [], null, 2)}\n` +
     (part.recordedSource ? `\nThe part already records sequence_source = ${JSON.stringify(part.recordedSource)}; treat this run as RE-VERIFICATION — confirm that source still resolves and still matches, and report if it has rotted.\n` : `\nThe part has no recorded sequence_source; this is DISCOVERY — find and verify one.\n`) +
     `\nReport honestly. Never set verified=true without an actual fetched + compared match.`,
     { schema: SOURCE_SCHEMA, label: `source:${part.name}`, phase: 'Source', model: WORKER_MODEL },
   )
   part.source = verdict
+  const qf = (verdict.quality_flags || [])
+  const otherBad = (verdict.homology_findings || []).filter((h) => h.implicates === 'other_part')
   log(`[${part.name}] source: ${verdict.verified ? 'VERIFIED' : (verdict.blocked ? 'BLOCKED -> REQUESTS.md' : 'UNVERIFIED')}` +
     `${verdict.accession ? ` (${verdict.accession}${verdict.identity_pct != null ? `, ${verdict.identity_pct}%` : ''})` : ''}` +
+    `${verdict.full_length_match === false ? ' [NOT full-length: chimera/mis-trim]' : ''}` +
+    `${qf.length ? ` [quality: ${qf.join('; ')}]` : ''}` +
+    `${otherBad.length ? ` [flags other part(s): ${otherBad.map((h) => h.other_part).join(', ')}]` : ''}` +
     `${verdict.boundary_question ? ' [edge/boundary question]' : ''}`)
   return part
 }
@@ -554,9 +635,9 @@ const scout = await agent(
   `Comprehensively research the molecular architecture of ${single ? `the part "${parts[0].name}"` : `these ${parts.length} related parts`}.\n\n` +
   sourceLine +
   `For EACH part, identify its elements:\n${perPartTargets}\n\n` +
-  `Give the exact or consensus motif each element has in the literature and the primary paper(s) that define them. TAG every element with "part" = the exact slug above. For any boundary/extent, set "experimental"=true ONLY if it is grounded in an EXPERIMENT (progressive truncation, mutational scanning, S1/primer-extension TSS mapping, genetics) — consensus/alignment alone is not experimental. Also determine each part's origin (natural fragment vs engineered design), conventional/registry name(s), close variants, commonly-paired parts (cognate protein + inducer), whether the boundaries look right, and — importantly — whether any functional SUB-region is used as a standalone part in its own right (its own registry/standard ID, or literature/constructs that deploy just that element independent of the larger region) — these feed curation recommendations. Return real PMIDs/DOIs (with year) and which element each reference supports.\n\n` +
+  `Give the exact or consensus motif each element has in the literature and the primary paper(s) that define them. TAG every element with "part" = the exact slug above. For any boundary/extent, set "experimental"=true ONLY if it is grounded in an EXPERIMENT (progressive truncation, mutational scanning, S1/primer-extension TSS mapping, genetics) — consensus/alignment alone is not experimental. Also determine each part's origin (natural fragment vs engineered design), conventional/registry name(s), close variants, commonly-paired parts (cognate protein + inducer), whether the boundaries look right, and — importantly, for GRANULARITY in BOTH directions — (i) whether any functional SUB-region is used as a standalone part in its own right (its own registry/standard ID, or literature/constructs that deploy just that element independent of the larger region → a split/extract signal), and (ii) whether this part is one of an ADJACENT SAME-CLASS ensemble that is commonly deployed together as ONE unit (e.g. a tandem T1+T2 double terminator used as a single terminator → a compose signal), each ideally attested in ≥2 independent contexts — these feed curation recommendations. Return real PMIDs/DOIs (with year) and which element each reference supports.\n\n` +
   `Also collect a few useful EXTERNAL "resources" — real working LINKS (registry/kit/database/UniProt/SO/tool/protocol), NOT papers.\n\n` +
-  `Self-assess: "confidence"=high ONLY if sure of every element with a solid citation each; "complete"=true ONLY if every applicable element of every part was located (or positively confirmed N/A). Set "needs_curation_judgment"=true if any part likely needs a curation decision (boundary re-delimitation, a split/extract because a sub-region is used standalone, a rename, or a variant) rather than a routine annotation.` +
+  `Self-assess: "confidence"=high ONLY if sure of every element with a solid citation each; "complete"=true ONLY if every applicable element of every part was located (or positively confirmed N/A). Set "needs_curation_judgment"=true if any part likely needs a curation decision (boundary re-delimitation, a split/extract because a sub-region is used standalone, a compose because an adjacent same-class ensemble is used as one unit, a rename, or a variant) rather than a routine annotation.` +
   sharedBlock,
   { schema: RESEARCH_SCHEMA, label: 'research:scout', phase: 'Research', model: WORKER_MODEL },
 )
@@ -679,14 +760,16 @@ async function annotateOne(part) {
   // ANY wrinkle -> Opus, so quality is protected on every non-trivial part.
   const src = part.source || {}
   const researchFlagsCuration = research.some((r) => r && r.needs_curation_judgment)
+  const qualityConcern = src.full_length_match === false || (src.quality_flags && src.quality_flags.length > 0)
   const cleanAndConfident =
-    nBadCoord === 0 && !!src.verified && boundaryHits.length === 0 && !researchFlagsCuration &&
+    nBadCoord === 0 && !!src.verified && !qualityConcern && boundaryHits.length === 0 && !researchFlagsCuration &&
     !!scout && scout.confidence === 'high' && scout.complete
   const synthModel = cleanAndConfident ? WORKER_MODEL : SYNTH_MODEL
   if (cleanAndConfident) {
     log(`[${part.name}] Synthesize on ${WORKER_MODEL} (clean + confident — no Opus needed)`)
   } else {
     const why = [nBadCoord ? `${nBadCoord} verify-fail` : '', !src.verified ? 'unverified-source' : '',
+      qualityConcern ? 'record-quality-flag' : '',
       boundaryHits.length ? 'boundary-question' : '', researchFlagsCuration ? 'curation-judgment-flagged' : '',
       !(scout && scout.confidence === 'high' && scout.complete) ? 'research<high/incomplete' : ''].filter(Boolean).join(', ')
     log(`[${part.name}] Synthesize on ${SYNTH_MODEL} (judgment needed: ${why})`)
@@ -702,11 +785,15 @@ async function annotateOne(part) {
     `\nRules:\n` +
     `- features: emit the MAIN feature first (type=${part.feature_type || 'the part type'}, start 0, end ${seq.length}, the part's SO term, label "${part.name}"), then each kept sub-feature. DROP any child whose coordinate or subsequence failed verification. Keep only FUNCTIONAL sub-features (-35, -10, +1/TSS, operators, activator/repressor sites, RBS); DROP spacers, separations, discriminators, restriction/cloning sites. Each sub-feature: parent="${part.name}", a so_term (${SO_HINTS}), a regulatory_class where type=regulatory, citation_pmids, and provisional=true if its extent rests on consensus alone (no experimental grounding).\n` +
     `- provenance.sequence_source: the verified string from the SOURCE verdict. If the SOURCE verdict was unverified/blocked, leave it as the verdict gave it and add a warning — never fabricate a source.\n` +
+    `- record quality + cross-part homology: the SOURCE verdict carries full_length_match, quality_flags, and homology_findings. If full_length_match is false or quality_flags is non-empty (chimera / mis-trim / embedded vector or restriction sites / wrong strand / mislabeled), add each to warnings and set confidence=low and ready_to_apply=false — this candidate sequence is not a clean instance of the part and likely needs re-sourcing or re-delimiting (a human call). For each homology_finding: implicates="this_part" → handle as above; implicates="other_part" → emit a 'note' recommendation naming that other part and the defect (a curation flag for the catalog), do NOT propose editing it here; implicates="shared_biological_element" → no action.\n` +
     `- functional_claims: emit nanopub-shaped claims (regulation / inducer / strength / host_range / sequence_variant ...) ONLY where supported, each with a stable type-derived id, a source {pmid/doi, quote, quote_source: primary|catalog-doc, figure/table/page}, an honest confidence, and value. A constitutive promoter gets at least a {id:"regulation", type:"regulation", value:{regulation:"constitutive"}} claim.\n` +
     `- references: dedupe; full bib (pmid, doi, authors, title, journal, year) for every cited PMID.\n` +
     `- confidence: high ONLY if the sequence is source-verified AND coordinates+citations verified. ready_to_apply=true only when every kept child verified cleanly and the sequence is verified.\n` +
     `- report_markdown: a tight, factual .md — one-line summary then ## Origin, ## Properties, ## Use, ## References (PMID/DOI links). It MUST be lab- and tool-AGNOSTIC: never name a specific lab, kit, vendor, plasmid-prep brand, or software; describe the biology and cite papers. (tools/check_content.py enforces this and will reject violations.)\n` +
-    `- recommendations: critically assess the PART ITSELF — rename (non-standard name); redelimit (boundaries; only on experimental grounding — else a 'note' that it is provisional); split (ATOMICITY: the part bundles >1 SO functional class, e.g. a promoter AND an RBS — divide into atomic parts); merge; new_part; metadata/note. For new_part: a missing related part — a canonical variant, a cognate partner, OR a standalone-used SUB-REGION extracted from this part. GRANULARITY rule: if a functional sub-region is COMMONLY USED ALONE (its own registry/standard ID, or literature/constructs deploying just it, or a recognized minimal/standard form), recommend minting it as "<slug>_<element>" while KEEPING this composite — splitting is ADDITIVE, both coexist and are cross-linked (composite lists its component, the sub-part is sub_region_of the composite); the sub-part's boundary still needs experimental grounding (else provisional). Default to keep-composite when standalone use is unproven. (A deterministic post-check drops any new_part already in the catalog.) Cite evidence; honest confidence; empty if well-curated.\n` +
+    `- recommendations: critically assess the PART ITSELF — rename (non-standard name); redelimit (boundaries; only on experimental grounding — else a 'note' that it is provisional); split (ATOMICITY: the part bundles >1 SO functional class, e.g. a promoter AND an RBS — divide into atomic parts); compose (kind:"compose"); new_part; metadata/note. The governing principle (AUTHORING "What a part is"): a part is functionally COHERENT ∧ USED AS A UNIT, and the catalog holds every granularity that independently passes both, ADDITIVELY and cross-linked — so granularity runs in BOTH directions:\n` +
+    `    • GRANULARITY DOWN (split/extract via new_part): if a functional sub-region is COMMONLY USED ALONE (its own registry/standard ID, or literature/constructs deploying just it, or a recognized minimal/standard form — ideally ≥2 independent contexts), recommend minting it as "<slug>_<element>" while KEEPING this composite; both coexist and are cross-linked (composite lists its component, the sub-part is sub_region_of the composite). For new_part: a missing related part — a canonical variant, a cognate partner, OR such a standalone-used sub-region.\n` +
+    `    • GRANULARITY UP (compose/merge): if this part plus an ADJACENT SAME-FUNCTIONAL-CLASS part are commonly deployed together AS ONE UNIT (e.g. a tandem T1+T2 double terminator used as one terminator, ≥2 independent contexts), recommend kind:"compose" to mint the composite "<wholeName>" while KEEPING the atoms, cross-linked the same way. The composite's sequence MUST be sourced FRESH from the native/canonical deposit (state the accession + the span) — NEVER assembled by concatenating member parts (that inherits member errors and drops the native junction). Only same-class ensembles compose; mixing SO classes never composes.\n` +
+    `    Both directions need standalone-use EVIDENCE (cite it) and the boundary still needs experimental grounding (else provisional); default to the form already attested when usage is unproven. (A deterministic post-check drops any new_part already in the catalog.) Honest confidence; empty if well-curated.\n` +
     `- Echo slug="${part.name}", sequence, and feature_type unchanged.`,
     { schema: FINAL_SCHEMA, label: `synthesize:${part.name}`, phase: 'Synthesize', model: synthModel },
   )
@@ -731,7 +818,7 @@ async function annotateOne(part) {
       `Adversarially vet these curation recommendations for "${part.name}". Be skeptical; default verified=false when unsure. One result per recommendation, keyed by 0-based "index".\n\n` +
       `Recommendations:\n${JSON.stringify(proposal.recommendations.map((r, i) => ({ index: i, ...r })), null, 2)}\n\n` +
       `Existing catalog parts (slugs + synonyms):\n${JSON.stringify(existingNames)}\n\n` +
-      `Judge by kind: new_part INVALID if already in the list — and a new_part that EXTRACTS a standalone sub-region is valid ONLY if there is real evidence the sub-region is used alone (its own registry/standard ID, or independent literature/construct use) AND the composite is kept (additive, not destructive); rename valid only if the new name is the registry/literature-standard form and not taken; redelimit/split/merge must hold against the biology + research (a redelimit needs EXPERIMENTAL grounding, not consensus; a split applies to a part bundling >1 functional class); metadata/note kept only if accurate. verified=true only if correct AND worth a curator's time; one-line reason.`,
+      `Judge by kind: new_part INVALID if already in the list — and a new_part that EXTRACTS a standalone sub-region is valid ONLY if there is real evidence the sub-region is used alone (its own registry/standard ID, or independent literature/construct use, ≥2 contexts) AND the composite is kept (additive, not destructive); compose valid ONLY if the members are the SAME functional class, are commonly deployed together as ONE unit (real evidence, ≥2 contexts), the atoms are kept, and the proposal sources the composite FRESH from a named deposit (a compose that concatenates member parts is INVALID); rename valid only if the new name is the registry/literature-standard form and not taken; redelimit/split/merge must hold against the biology + research (a redelimit needs EXPERIMENTAL grounding, not consensus; a split applies to a part bundling >1 functional class); metadata/note kept only if accurate. verified=true only if correct AND worth a curator's time; one-line reason.`,
       {
         schema: { type: 'object', properties: { results: { type: 'array', items: { type: 'object', properties: { index: { type: 'integer' }, verified: { type: 'boolean' }, reason: { type: 'string' } }, required: ['index', 'verified'] } } }, required: ['results'] },
         label: `verify-recs:${part.name}`, phase: 'Verify recs', model: WORKER_MODEL,

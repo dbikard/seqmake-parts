@@ -6,11 +6,18 @@ catalog — a sub/superset, a near-identical sibling, or a partial overlap — s
 **refine the existing part rather than add a near-duplicate** (the catalog's
 "overlap → refine" policy; cf. ColE1 / ColE1_AT). Local and fast (no NCBI): a
 strand-independent k-mer pre-filter plus an exact-containment check on both strands.
+Each overlap is then *localized* (``best_match``) to a concrete span — its exact
+length, strand, and position in each part — because a bare shared-k-mer count is easy
+to wave off as "benign", whereas a ">=16 bp exact, reverse strand" span is real
+homology that demands an explanation.
 
-A flagged overlap is a prompt to decide refine-vs-add — and remember that **part
-boundaries are not a trivial bioinformatic call** (see AUTHORING.md): re-delimiting a
-part should rest on experimental data (truncation / mutational scanning / genetics),
-not sequence overlap alone.
+A flagged overlap is a prompt to decide refine-vs-add — and a real homology you did
+not expect is also a data-quality signal: one of the two records may be **mis-trimmed,
+chimeric (vector backbone / a cloning site / a foreign element), or mislabeled**, so
+investigate it rather than assuming the stored sequences are clean. Remember too that
+**part boundaries are not a trivial bioinformatic call** (see AUTHORING.md):
+re-delimiting a part should rest on experimental data (truncation / mutational scanning
+/ genetics), not sequence overlap alone.
 
 Usage::
 
@@ -36,6 +43,51 @@ def canon_kmers(seq: str, k: int = 16) -> set[str]:
     """Strand-independent k-mer set (each k-mer canonicalized to min(self, revcomp))."""
     s = seq.upper()
     return {min(s[i:i + k], _rc(s[i:i + k])) for i in range(len(s) - k + 1)}
+
+
+def localize(query: str, subject: str, k: int = 16) -> dict | None:
+    """Longest EXACT contiguous match between query and subject, checking BOTH strands.
+
+    A shared canonical k-mer guarantees a >=k exact run on one strand, so this pins the
+    overlap down to a concrete span instead of a bare k-mer count: how long it really is,
+    which strand it is on, and where it sits in each part. Use this to interpret an
+    overlap (a recurring biological motif vs. a chimera / mis-trim) -- a raw shared-k-mer
+    count is easy to wave off as "benign"; a "99 bp exact, -1 strand" span is not.
+
+    Coordinates are 0-based; ``s_start``/``s_end`` are always in the SUBJECT's own
+    forward coordinates (already mapped back when the match is on the reverse strand).
+    Returns None when no >=k exact run exists (e.g. either sequence shorter than k).
+    """
+    q = query.upper()
+    if len(q) < k:
+        return None
+    best: dict | None = None
+    for oriented, strand in ((subject.upper(), 1), (_rc(subject.upper()), -1)):
+        if len(oriented) < k:
+            continue
+        idx: dict[str, list[int]] = {}
+        for j in range(len(oriented) - k + 1):
+            idx.setdefault(oriented[j:j + k], []).append(j)
+        for i in range(len(q) - k + 1):
+            for j in idx.get(q[i:i + k], ()):  # anchor: q[i:i+k] == oriented[j:j+k]
+                a, b = i, j                    # extend left
+                while a > 0 and b > 0 and q[a - 1] == oriented[b - 1]:
+                    a -= 1
+                    b -= 1
+                eq, es = i + k, j + k          # extend right
+                while eq < len(q) and es < len(oriented) and q[eq] == oriented[es]:
+                    eq += 1
+                    es += 1
+                span = eq - a
+                if best is None or span > best["bp"]:
+                    if strand == 1:
+                        ss, se = b, es
+                    else:                       # map back to subject forward coords
+                        ss, se = len(subject) - es, len(subject) - b
+                    best = {"bp": span, "strand": strand,
+                            "q_start": a, "q_end": eq, "s_start": ss, "s_end": se,
+                            "subseq": q[a:eq]}
+    return best
 
 
 def containment(query: str, subject: str) -> str | None:
@@ -73,9 +125,16 @@ def relation(query: str, subject: str, k: int = 16, min_overlap: int = 30) -> di
             rel = "overlap"
         else:
             return None
-    return {"relation": rel, "shared_kmers": shared,
-            "q_frac": round(qf, 3), "p_frac": round(sf, 3),
-            "est_overlap_bp": int(est), "exact": exact is not None}
+    out = {"relation": rel, "shared_kmers": shared,
+           "q_frac": round(qf, 3), "p_frac": round(sf, 3),
+           "est_overlap_bp": int(est), "exact": exact is not None}
+    # Localize the overlap to a concrete span (length + strand + positions) so it cannot
+    # be dismissed as a coincidental k-mer count: a >=k exact match does not occur by
+    # chance and deserves an explanation (recurring motif vs. chimera / mis-trim).
+    bm = localize(query, subject, k)
+    if bm:
+        out["best_match"] = bm
+    return out
 
 
 def load_catalog() -> list[tuple[str, str, str]]:

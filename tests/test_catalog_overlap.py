@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
-from catalog_overlap import canon_kmers, containment, relation, scan  # noqa: E402
+from catalog_overlap import canon_kmers, containment, localize, relation, scan  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 Q = "ATGCAGTTCGGATCCGAATTCAAAGGTCTAGACCATGGCTTTACGCATGCAAGCTTGGCA"  # 60 bp
@@ -34,6 +34,28 @@ def test_relation_partial_overlap():
     b = "TTGGTTGGAACCAACCTCTCTCTCTAGAGAGAGCACACACAC" + common
     r = relation(a, b, k=16, min_overlap=30)
     assert r and r["relation"] == "overlap" and r["est_overlap_bp"] >= 30
+
+
+# flanks chosen so no boundary base coincides on either strand (no spurious extension)
+_BLOCK = "ATGCAGTTCGGATCCGAATTCAAAGGTCTAGACCATGGCTTTACGCATGC"  # 50 bp
+_Q = "TTAGGTCA" + _BLOCK + "GACTTGAC"
+_S_FWD = "CCGAATAC" + _BLOCK + "ATCGGTTA"
+
+
+def test_localize_forward_span():
+    bm = localize(_Q, _S_FWD, k=16)
+    assert bm and bm["strand"] == 1 and bm["bp"] == len(_BLOCK)
+    assert bm["subseq"] == _BLOCK and _Q[bm["q_start"]:bm["q_end"]] == _BLOCK
+    assert _S_FWD[bm["s_start"]:bm["s_end"]] == _BLOCK
+
+
+def test_localize_reverse_strand_span_maps_to_subject_coords():
+    # the shared block sits on the REVERSE strand of the subject (the rrnBT1/attP case)
+    s = _rc(_S_FWD)                                     # block is now reverse-complemented in s
+    bm = localize(_Q, s, k=16)
+    assert bm and bm["strand"] == -1 and bm["bp"] == len(_BLOCK)
+    assert s[bm["s_start"]:bm["s_end"]] == _rc(_BLOCK)  # s_* are subject FORWARD coords
+    assert relation(_Q, s, k=16)["best_match"]["strand"] == -1
 
 
 def test_relation_none_when_unrelated():

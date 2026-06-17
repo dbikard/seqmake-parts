@@ -18,6 +18,32 @@ rest. Author content; never hand-edit generated files.
 - **Generated, never edited:** `<slug>.gb` (from the JSON), `catalog.json`,
   `catalog.ttl`, `catalog.jsonld`, and the `docs/` site.
 
+**What a part is (the principle the rest derives from).** A part is a sequence that is
+both **functionally coherent** — it performs *one* functional class, whether as a single
+element or as a coherent ensemble of same-class elements acting as one unit — **and**
+**used as a unit** — deployed on its own in synthetic constructs, recurrently, ideally
+across multiple distinct contexts. Both are required, and each rules out a failure the
+other can't:
+- *Function without usage* → you'd mint every −10 box and every terminator hairpin. An
+  element that is only ever used *inside* a larger unit is a **sub-feature/annotation**
+  of that part, not a part of its own.
+- *Usage without function* → you'd admit chimeric cloning fragments that merely recur (a
+  binding site fused to a terminator fused to an MCS). A span that isn't one coherent
+  function is a **bad record**, not a part — re-delimit it to the functional unit or
+  flag it (step 1).
+
+The catalog represents a sequence at **every granularity that independently satisfies
+both**, *additively* and linked by composition — so an element and the larger unit it
+belongs to can both be parts at once (e.g. `rrnBT1`, `rrnBT2`, **and** a `rrnBT1T2`
+double-terminator). This one principle drives granularity in **both** directions — extract
+a sub-part *or* compose a larger one (step 4) — and underlies the coherence check in
+step 1. Evidence that a span is "used as a unit": a registry/standard identifier or
+conventional name, primary literature or common constructs deploying *just* that span, or
+a recognized minimal/standard form — in **≥2 independent contexts**. A **composite part**
+is one contiguous sequence deployed as a single unit; a **collection**
+(`collections.json`) is a browse-together family that is never itself one sequence — same
+function ≠ a part unless it ships as one sequence.
+
 A part is a **candidate** (a bare sequence + minimal info) until it becomes a
 **curated record** — sourced provenance, SO-typed main feature, located sub-features,
 references and functional_claims — *and* gains a curated `.md`; then it moves to
@@ -82,13 +108,22 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
 
 ## Procedure
 
-1. **Check it isn't already there.** Search `catalog.json` and `parts/` for the
-   name and its synonyms, and run `python tools/catalog_overlap.py --slug <slug>`
-   (or `--seq …`) to detect **sequence** overlap/containment with existing parts. If a
-   part's sequence **overlaps** yours (a sub/superset, near-identical sibling, or a
-   boundary variant of the same element), **refine that part** rather than adding a
-   near-duplicate; only add a new part for a genuinely distinct functional unit.
-   (Re-delimiting a boundary is **not** trivial — see step 4.)
+1. **Check it isn't already there — and that it's a part at all.** Search `catalog.json`
+   and `parts/` for the name and its synonyms, and run
+   `python tools/catalog_overlap.py --slug <slug>` (or `--seq …`) to detect **sequence**
+   overlap/containment with existing parts. If a part's sequence **overlaps** yours (a
+   sub/superset, near-identical sibling, or a boundary variant of the same element),
+   **refine that part** rather than adding a near-duplicate; only add a new part for a
+   genuinely distinct functional unit. (Re-delimiting a boundary is **not** trivial — see
+   step 4.) Apply the **coherence test** (per *What a part is*): does this span map to one
+   coherent function? A migrated/candidate sequence may be **chimeric, mis-trimmed, or
+   mislabeled** — a span that fuses unrelated functions (e.g. a binding site + a
+   terminator + an MCS, betrayed by vector/restriction-site context or an *unexpected
+   cross-part homology* — never dismiss one; `catalog_overlap` localizes it) is a **bad
+   record**, not a part: re-delimit to the functional unit or flag it for re-sourcing, do
+   not annotate it as-is. Then place the span on the granularity axis — its own part, a
+   **sub-feature** of a larger part (coherent but never used standalone), or a member of a
+   **composite** (step 4).
 2. **Source the sequence + literature.** Run
    `python tools/source_finder.py --slug <slug> [--refs <canonical accessions>]`:
    - a **protein** part gets its source from the verified `uniprot_import` (its
@@ -140,32 +175,45 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    resolve) for a human to provide. Do not silently tighten or extend a boundary on
    sequence evidence alone.
 
-   **Part granularity — split vs keep-composite (usage-driven).** Granularity follows
-   **community usage**, not biological separability: a functional sub-region becomes its
-   **own** part *only when it is used as a standalone unit in practice* (otherwise every
-   −10 box would be a part). Evidence a sub-region is "used alone": it carries an
-   independent registry/standard identifier or conventional name distinct from the
-   composite (iGEM BioBrick, SEVA, a common name); **or** primary literature / common
-   constructs deploy *just* that element, independent of the larger region; **or** it is a
-   recognized minimal / standard form. When that evidence is present:
-   - **Mint the sub-region as a new part and KEEP the composite — splitting is additive,
-     never destructive.** Both coexist as a deliberate subset/superset overlap (an explicit
-     exception to step 1's "overlap → dedup", alongside the `ColE1`/`ColE1_AT` variant
-     siblings): carry the combined form *and* the standalone form.
-   - **Naming:** the composite keeps the base slug; the extracted sub-part is
-     `<base>_<element>` (e.g. `Pbla` = the full bla promoter region, `Pbla_P3` = the
-     standalone strong P3 core, `Pbla_P1` = P1).
-   - **Link both ways:** the composite's main feature lists its `component` part(s) and the
-     sub-part records `sub_region_of` the composite (cross-link qualifiers, mirroring the
-     promoter↔TF `regulated_by` link); fold shared synonyms onto the form they name.
-   - **The sub-part's boundary still needs experimental grounding** (truncation / mapping /
-     mutagenesis), not consensus — else provisional + lower `confidence` (above).
+   **Part granularity — split *and* merge, both additive (from *What a part is*).**
+   Granularity is wherever a span jointly satisfies **functional coherence** *and*
+   **standalone use** — and that can be several nested levels at once, so the same
+   principle runs in **both** directions. Hold *every* level that independently passes the
+   test, linked by composition; nothing is either/or.
+   - **Split / extract (downward):** a *sub-region* independently passes both tests (its
+     own coherent function + used standalone). Mint it **and KEEP the composite** — both
+     coexist as a deliberate subset/superset overlap (an explicit exception to step 1's
+     "overlap → dedup", alongside the `ColE1`/`ColE1_AT` variant siblings). e.g. `Pbla` =
+     the full bla promoter region; `Pbla_P3` = the standalone strong P3 core.
+   - **Merge / compose (upward):** an *adjacent ensemble* of same-class parts is itself
+     used as one unit (one shared function + deployed together recurrently). Mint the
+     **composite** and **KEEP the atoms** — e.g. the rrnB `T1`+`T2` tandem → a `rrnBT1T2`
+     double terminator. A composite's sequence is **sourced fresh from the native /
+     canonical deposit** (per the sequence-from-a-source rule), *not* assembled by
+     concatenating member parts — assembly inherits member errors and drops the native
+     junction/spacer.
+   - **Evidence of standalone use (either direction):** a registry/standard identifier or
+     conventional name (iGEM BioBrick, SEVA, …), primary literature / common constructs
+     deploying *just* that span, or a recognized minimal/standard form — in **≥2
+     independent contexts**. Absent that evidence, do **not** mint: keep the sub-region a
+     sub-feature (don't split) or leave the atoms uncomposed (don't merge), and emit a
+     `split` / `merge` **recommendation** instead — the conservative default is the form
+     already attested.
+   - **Naming & links:** the composite keeps the base slug; an extracted sub-part is
+     `<base>_<element>` (`Pbla_P3`, `Pbla_P1`); a composed unit names the whole
+     (`rrnBT1T2`). Link both ways — the composite's main feature lists its `component`
+     part(s), each member records `sub_region_of` the composite (cross-link qualifiers,
+     mirroring the promoter↔TF `regulated_by` link); fold shared synonyms onto the form
+     they name.
+   - **Boundaries still need experimental grounding** (truncation / mapping / mutagenesis),
+     not consensus — else provisional + lower `confidence` (above). The two-criterion test
+     decides *whether* a span is a part and *at what level*; experiment decides its *exact
+     endpoints*.
 
-   When standalone-usage evidence is **absent**, keep only the composite (annotate the
-   sub-region as a sub-feature) and emit a `split` *recommendation* rather than minting —
-   the default is the composite. This is distinct from **atomicity**: a part bundling
-   *different* SO functional classes (e.g. a promoter *and* an RBS) is split into atomic
-   parts regardless of usage, because a part is one functional class.
+   This is distinct from **atomicity**: a composite is a coherent ensemble of the **same**
+   functional class acting as one unit; a span bundling *different* SO classes (a promoter
+   *and* an RBS) is still split into atomic parts regardless of usage, because a part is
+   one functional class.
 5. **Set provenance.** Replace `provenance.sequence_source` with the real source.
 6. **Add functional knowledge.** For any inducer / dynamic range / strength /
    host range claim, append a `functional_claims[]` entry with `type`, `label`,
@@ -208,8 +256,9 @@ classify each proposed change after the merge dry-run + gates.
   **no `flags`** — it only adds claims / references / provenance / synonyms or overwrites
   an `ai-generated` claim; it never alters an `ai-cross-checked` / `expert-reviewed` claim
   or a validated `.md`.
-- **No structural decision**: no `redelimit` / `split` / `merge` / `new_part`-extract /
-  `rename` recommendation is being applied — only `metadata` / `note` / feature-annotation
+- **No structural decision**: no `redelimit` / `split` / `merge`-or-`compose` /
+  `new_part`-extract / `rename` recommendation is being applied — only `metadata` / `note`
+  / feature-annotation
   refinements.
 - **Gates pass**: `validate_parts` · `build_gb` · `build_catalog` · `build_rdf` ·
   `check_content` · `pyshacl` · `pytest` all green.
@@ -224,8 +273,9 @@ reversible*:
 - any **verification failure** (a coordinate / subsequence / citation check failed);
 - the merge would **overwrite or supersede reviewed knowledge** (`flagged_superseding`) or
   hits a **sequence / provenance conflict** (`flags`);
-- a **structural / identity / boundary decision** — `redelimit`, `split`, `merge`,
-  `new_part`-extract, `rename` — these change *what the part is*, need experimental
+- a **structural / identity / boundary decision** — `redelimit`, `split`,
+  `merge`/`compose`, `new_part`-extract, `rename` — these change *what the part is*, need
+  experimental
   grounding, and aren't cleanly reversible once the part is cited or composed into
   constructs (even a `verified: true` structural recommendation waits for a human);
 - a **gate fails** that re-synthesis cannot fix.

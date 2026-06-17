@@ -39,14 +39,22 @@ Part(s) to add/improve: **$ARGUMENTS**
 
 ## Procedure
 
-1. **Classify (dedup → axis 1; structure → axis 2).** Search `catalog.json` / `parts/`
-   for the slug + synonyms and run `python tools/catalog_overlap.py --slug <slug>` (or
-   `--seq`) to catch sequence overlap. Result → **new | candidate | validated** (drives
-   the write/merge policy). Note structure — DNA-with-geometry / a related cluster /
-   protein-CDS — which only selects *which engine machinery fires*, never whether
-   verification runs. **State the chosen axes per part; the user can override.** If a
-   *different* part's sequence overlaps a new one (sub/superset or boundary variant),
-   prefer refining/extracting per AUTHORING (granularity), not a near-duplicate.
+1. **Classify (dedup → axis 1; structure → axis 2; coherence+granularity → axis 3).**
+   Search `catalog.json` / `parts/` for the slug + synonyms and run
+   `python tools/catalog_overlap.py --slug <slug>` (or `--seq`) to catch sequence overlap.
+   Result → **new | candidate | validated** (drives the write/merge policy). Note
+   structure — DNA-with-geometry / a related cluster / protein-CDS — which only selects
+   *which engine machinery fires*, never whether verification runs. Apply AUTHORING's
+   *What a part is* (functional coherence ∧ standalone use): **(a) coherence** — is this
+   span one coherent function, or a chimeric/mis-trimmed/mislabeled record? An unexpected
+   cross-part homology (`catalog_overlap` localizes it) or vector/restriction-site context
+   is a **bad-record** signal — never dismiss it; flag for re-sourcing, don't annotate
+   as-is. **(b) granularity** — is the span its own part, a **sub-feature** of a larger
+   part, or a member of a **composite** that should be minted (e.g. a tandem
+   double-terminator)? Splitting *and* composing are both additive. **State the chosen axes
+   per part; the user can override.** If a *different* part's sequence overlaps a new one
+   (sub/superset or boundary variant), prefer refining/extracting/composing per AUTHORING
+   (granularity), not a near-duplicate.
 
 2. **Run the engine.** Call the **Workflow** tool with `name: "annotate-part"`, passing the
    spec as `args`:
@@ -82,13 +90,20 @@ Part(s) to add/improve: **$ARGUMENTS**
    - **coding parts:** run `python tools/import_uniprot_features.py <slug>` after writing.
 
 4. **Act on curation recommendations.** The engine's *verified* recommendations
-   (rename / redelimit / split / merge / new_part / metadata) are for the curator.
-   For an **extract `new_part`** (a standalone-used sub-region, e.g. `Pbla_P3`): if the
-   standalone-use evidence is **solid**, mint it too — run this procedure on
-   `<slug>_<element>`, deriving its sequence from the composite, **keep** the composite,
-   and add the two-way cross-link (composite gets a `component` qualifier; the sub-part a
-   `sub_region_of`), showing the merge before writing. If the evidence is weak, **list it
-   for the user** rather than minting. Never silently redelimit/extract on consensus.
+   (rename / redelimit / split / merge / compose / new_part / metadata) are for the
+   curator. Granularity recs come in **both** directions and both are **additive**:
+   - **extract `new_part`** (a standalone-used sub-region, e.g. `Pbla_P3`): if the
+     standalone-use evidence is **solid** (≥2 independent contexts), mint it — run this
+     procedure on `<slug>_<element>`, deriving its sequence from the composite, **keep**
+     the composite, and add the two-way cross-link (composite gets a `component`
+     qualifier; the sub-part a `sub_region_of`), showing the merge before writing.
+   - **compose / `merge`** (an adjacent same-class ensemble used as one unit, e.g.
+     `rrnBT1T2` from `rrnBT1`+`rrnBT2`): if the standalone-use evidence is **solid**, mint
+     the composite — run this procedure on the composite slug, **sourcing its sequence
+     fresh** from the native/canonical deposit (never by concatenating member parts),
+     **keep** the atoms, and add the same two-way cross-link.
+   If the standalone-use evidence is weak, **list it for the user** rather than minting.
+   Never silently redelimit / extract / compose on consensus.
 
 5. **Run every gate and make them pass:** `tools/validate_parts.py`, `tools/build_gb.py`,
    `tools/build_catalog.py`, `tools/build_rdf.py`, `tools/check_content.py`,
