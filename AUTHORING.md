@@ -242,16 +242,16 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
 6. **Add functional knowledge.** For any inducer / dynamic range / strength /
    host range claim, append a `functional_claims[]` entry with `type`, `label`,
    `value`, `source` (+ `quote`/`figure`), `confidence`, and `review_status`.
-7. **Validate it (candidate).** Run the gates:
+7. **Validate it (candidate).** Run the full gate suite in one command — this
+   mirrors CI exactly, so passing locally means passing CI:
    ```bash
-   python tools/validate_parts.py      # JSON vs schema
-   python tools/build_gb.py            # JSON -> .gb
-   python tools/build_catalog.py       # catalog.json + site
-   python tools/build_rdf.py           # catalog.ttl + .jsonld
-   python tools/check_content.py       # agnostic-prose guard
-   pyshacl -s tools/shapes.ttl -i rdfs catalog.ttl
-   python -m pytest tests/ -q
+   python tools/check_all.py
    ```
+   It runs, in order: the content / requests / link guards, JSON-schema
+   validation (`validate_parts.py`), regeneration of every generated artifact
+   (`build_gb.py` → `build_catalog.py` → `build_rdf.py`) with a staleness check,
+   the SHACL shapes (`pyshacl`), and the tests (`pytest`). Run any one directly
+   while iterating; run `check_all.py` before you commit.
 8. **Promote to validated.** When the record clears the completeness bar (sourced
    provenance, SO-typed main feature, located sub-features where the part has
    internal structure, ≥1 cited reference, ≥1 functional_claim with a cited

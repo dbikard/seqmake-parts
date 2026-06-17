@@ -48,6 +48,13 @@ python tools/build_rdf.py         # rebuild catalog.ttl + catalog.jsonld
 mkdocs serve                      # preview the site at http://127.0.0.1:8000
 ```
 
+Before committing, run the full gate suite in one command — it mirrors CI, so
+"passes here" means "passes CI":
+
+```bash
+python tools/check_all.py
+```
+
 **The canonical record of each part is `parts/<status>/<slug>.json`** (validated
 against [`schema/part.schema.json`](schema/part.schema.json)); the `.gb`,
 `catalog.json`, `catalog.ttl`, and `catalog.jsonld` are *generated* projections of

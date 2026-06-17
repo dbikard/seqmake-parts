@@ -5,11 +5,14 @@
 #    see tools/check_content.py.
 #  - requests guard: sourcing/REQUESTS.md must list only ACTIVE requests (no
 #    resolved entries left behind) — see tools/check_requests.py.
+#  - link guard: relative Markdown links must resolve — see tools/check_links.py.
+# These are the fast guards; run `python tools/check_all.py` for the full CI suite.
 set -euo pipefail
 root="$(git rev-parse --show-toplevel)"
 fail=0
 python3 "$root/tools/check_content.py" || fail=1
 python3 "$root/tools/check_requests.py" || fail=1
+python3 "$root/tools/check_links.py" || fail=1
 if [ "$fail" -ne 0 ]; then
   echo "" >&2
   echo "pre-push: a catalog guard failed — fix the violations above before pushing." >&2

@@ -17,6 +17,8 @@ jobs:
         run: python tools/check_content.py
       - name: Requests guard (sourcing/REQUESTS.md lists active requests only)
         run: python tools/check_requests.py
+      - name: Link guard (relative Markdown links resolve)
+        run: python tools/check_links.py
       - run: pip install -r requirements.txt pytest
       - name: Validate canonical part JSON against the schema
         run: python tools/validate_parts.py
