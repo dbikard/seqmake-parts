@@ -4,7 +4,7 @@ The catalog's RDF IRIs use the permanent base **`https://w3id.org/seqmake/parts/
 — the parts dataset under the **SeqMake** house brand — instead of the GitHub
 Pages URL, so they survive a change of host or repo name.
 [`seqmake/.htaccess`](seqmake/.htaccess) is the redirect that makes them resolve;
-it forwards to the current site (`dbikard.github.io/dna-parts-catalog`).
+it forwards to the current site (`dbikard.github.io/seqmake-parts`).
 
 ## How IRIs resolve
 

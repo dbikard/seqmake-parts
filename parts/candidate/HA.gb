@@ -6,6 +6,7 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/HA
 FEATURES             Location/Qualifiers
      protein_domain  1..9
                      /label="HA"

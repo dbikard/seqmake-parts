@@ -6,6 +6,7 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/PL
 FEATURES             Location/Qualifiers
      promoter        1..382
                      /label="PL"

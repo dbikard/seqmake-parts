@@ -64,6 +64,8 @@ REFERENCE   8
   JOURNAL   Nucleic Acids Research
    PUBMED   23511967
   REMARK    doi:10.1093/nar/gkt163
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/rrnBT1
 FEATURES             Location/Qualifiers
      terminator      1..169
                      /label="rrnBT1"

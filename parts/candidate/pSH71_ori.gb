@@ -7,6 +7,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/pSH71_ori
 FEATURES             Location/Qualifiers
      rep_origin      1..813
                      /label="pSH71 ori"

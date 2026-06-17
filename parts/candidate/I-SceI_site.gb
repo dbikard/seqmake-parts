@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/I-SceI_site
 FEATURES             Location/Qualifiers
      protein_bind    1..18
                      /label="I-SceI site"

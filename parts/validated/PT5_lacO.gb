@@ -43,6 +43,8 @@ REFERENCE   5
   JOURNAL   EMBO Journal 5(6):1377-1381
    PUBMED   3015603
   REMARK    doi:10.1002/j.1460-2075.1986.tb04369.x
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PT5_lacO
 FEATURES             Location/Qualifiers
      promoter        1..81
                      /label="PT5/lacO"

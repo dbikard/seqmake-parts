@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/TEV_site
 FEATURES             Location/Qualifiers
      protein_domain  1..7
                      /label="TEV site"

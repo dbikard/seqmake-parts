@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/pSC101_ori_SEVA
 FEATURES             Location/Qualifiers
      rep_origin      1..951
                      /label="pSC101 ori (SEVA)"

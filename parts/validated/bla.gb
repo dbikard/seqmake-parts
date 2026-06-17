@@ -43,6 +43,8 @@ REFERENCE   5
   JOURNAL   Biochemical Journal
    PUBMED   9020874
   REMARK    doi:10.1042/bj3210413
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/bla
 FEATURES             Location/Qualifiers
      CDS             1..286
                      /label="bla"

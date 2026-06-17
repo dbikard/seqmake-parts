@@ -39,6 +39,8 @@ REFERENCE   4
   JOURNAL   Metabolic Engineering 10(2):121-129 (2008)
    PUBMED   17950643
   REMARK    doi:10.1016/j.ymben.2007.08.002
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PchnB
 FEATURES             Location/Qualifiers
      promoter        1..396
                      /label="PchnB"

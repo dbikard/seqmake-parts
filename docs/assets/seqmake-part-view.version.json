@@ -1,9 +1,8 @@
 {
-  "_note": "Provenance for the vendored seqmake-part-view.js bundle. The automated copy step in the source repo MUST overwrite source/version/commit/built and recompute sha256 on every update; tests/test_widget_bundle.py fails if the committed .js does not match sha256. The bundle is not hand-reviewed (it is minified) — this sidecar is how each update stays auditable.",
-  "source": "unknown",
+  "source": "git@gitlab.pasteur.fr:dbikard/seqmake",
   "path": "assets/seqmake-part-view.js",
-  "version": "unknown",
-  "commit": "unknown",
-  "built": "unknown",
+  "version": "v0.4.0-251-gd3e4fa4-dirty",
+  "commit": "d3e4fa4edd5a37c301aabd4487f5f4f51f6a050f",
+  "built": "2026-06-16T08:22:45Z",
   "sha256": "d64ba321ec5a2b535768354c803cea7ee2a043a20e655d73343eb4af74c44ac3"
 }

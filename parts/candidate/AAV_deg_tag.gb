@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/AAV_deg_tag
 FEATURES             Location/Qualifiers
      protein_domain  1..11
                      /label="AAV deg tag"

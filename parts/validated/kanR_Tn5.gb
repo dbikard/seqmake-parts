@@ -37,6 +37,8 @@ REFERENCE   4
   JOURNAL   J Phys Chem B
    PUBMED   32250119
   REMARK    doi:10.1021/acs.jpcb.0c01604
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/kanR_Tn5
 FEATURES             Location/Qualifiers
      CDS             1..264
                      /label="kanR (Tn5)"

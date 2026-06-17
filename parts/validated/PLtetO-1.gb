@@ -31,6 +31,8 @@ REFERENCE   3
   JOURNAL   Science 1994;264(5157):418-420
    PUBMED   8153629
   REMARK    doi:10.1126/science.8153629
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PLtetO-1
 FEATURES             Location/Qualifiers
      promoter        1..74
                      /label="PLtetO-1"

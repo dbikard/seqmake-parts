@@ -20,6 +20,8 @@ REFERENCE   2
   JOURNAL   Proc. Natl. Acad. Sci. USA 66(3):773-779
    PUBMED   4913210
   REMARK    doi:10.1073/pnas.66.3.773
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PlacUV5
 FEATURES             Location/Qualifiers
      promoter        1..30
                      /label="PlacUV5"

@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/EF1a
 FEATURES             Location/Qualifiers
      promoter        1..1179
                      /label="EF1a"

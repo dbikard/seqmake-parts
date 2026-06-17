@@ -28,6 +28,13 @@ from Bio.SeqRecord import SeqRecord
 
 SCHEMA_VERSION = "1.0"
 
+# The catalog's permanent base IRI for a part (w3id.org -> the live site). Stamped
+# into the generated .gb so the downloadable bench file carries its own stable
+# catalog identifier. Mirrors ``build_rdf.PART``; keep them in sync. It goes in
+# COMMENT rather than the semantically-natural DBLINK because BioPython mangles
+# URLs in DBLINK (inserts a space after ``https:``); COMMENT round-trips intact.
+PART_IRI_BASE = "https://w3id.org/seqmake/parts/part/"
+
 # BioPython writes an empty SOURCE as ``SOURCE      `` (no trailing dot); the
 # catalog's established convention is ``SOURCE      .``. Normalise on write so a
 # regenerated .gb is byte-stable against the existing corpus.
@@ -128,9 +135,18 @@ def json_to_record(data: dict) -> SeqRecord:
 
 
 def gb_text_from_json(data: dict) -> str:
-    """The GenBank text for a part-JSON dict (with the catalog SOURCE convention)."""
+    """The GenBank text for a part-JSON dict (with the catalog SOURCE convention).
+
+    Stamps the part's permanent catalog IRI into the record COMMENT so the
+    downloadable .gb is self-identifying. The IRI is derived from the slug (so it
+    is not stored in the JSON spine, only projected here)."""
+    rec = json_to_record(data)
+    slug = data.get("slug") or rec.id or rec.name
+    if slug:
+        rec.annotations["comment"] = (
+            f"Permanent catalog identifier: {PART_IRI_BASE}{slug}")
     buf = io.StringIO()
-    SeqIO.write([json_to_record(data)], buf, "genbank")
+    SeqIO.write([rec], buf, "genbank")
     return buf.getvalue().replace(_BIO_SOURCE, _CANON_SOURCE)
 
 

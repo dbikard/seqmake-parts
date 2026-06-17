@@ -28,6 +28,8 @@ REFERENCE   3
   JOURNAL   EMBO J 1994;13(11):2483-2492
    PUBMED   7516875
   REMARK    doi:10.1002/j.1460-2075.1994.tb06535.x
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/ZeoR
 FEATURES             Location/Qualifiers
      CDS             1..124
                      /label="ZeoR"

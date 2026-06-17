@@ -36,7 +36,11 @@ PART_GLOBS = ("parts/**/*.json", "parts/**/*.gb", "parts/**/*.md")
 
 # (compiled pattern, reason) — matched case-insensitively over each part file.
 _RULES: tuple[tuple[str, str], ...] = (
-    (r"seqmake",
+    # 'seqmake' names the consuming tool (forbidden) — except where it is the
+    # catalog's own permanent IRI namespace (https://w3id.org/seqmake/parts/...),
+    # which is the data's stable identity, not a tool dependency. Allow it only
+    # when it immediately follows 'w3id.org/'.
+    (r"(?<!w3id\.org/)seqmake",
      "names the consuming tool 'seqmake' (the catalog is tool-agnostic)"),
     # Internal-lab phrasing (possessive / lineage), NOT scientific attribution of
     # an originating lab (e.g. "the Bujard-lab pZ system" is legitimate provenance).

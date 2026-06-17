@@ -31,7 +31,7 @@ API_HOST = urlsplit(API_BASE).hostname
 TIMEOUT = 20
 # Cloudflare fronts the API and bans the default Python User-Agent (HTTP 403,
 # "error code: 1010"); send an explicit one.
-HEADERS = {"User-Agent": "dna-parts-catalog/1.0 (+https://github.com/dbikard/dna-parts-catalog)"}
+HEADERS = {"User-Agent": "seqmake-parts/1.0 (+https://github.com/dbikard/seqmake-parts)"}
 
 
 def _token() -> str:

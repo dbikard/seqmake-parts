@@ -28,6 +28,8 @@ REFERENCE   3
   JOURNAL   Proc Natl Acad Sci USA 70(12):3581-3584 (1973)
    PUBMED   4587255
   REMARK    doi:10.1073/pnas.70.12.3581
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PA1_O4_O3
 FEATURES             Location/Qualifiers
      promoter        1..56
                      /label="PA1/O4/O3"

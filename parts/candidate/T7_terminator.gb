@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/T7_terminator
 FEATURES             Location/Qualifiers
      terminator      1..48
                      /label="T7 terminator"

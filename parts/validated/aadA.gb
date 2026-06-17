@@ -23,6 +23,8 @@ REFERENCE   2
   JOURNAL   J Biol Chem 293(29):11481-11490 (2018)
    PUBMED   29871922
   REMARK    doi:10.1074/jbc.RA118.003989
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/aadA
 FEATURES             Location/Qualifiers
      CDS             1..263
                      /label="aadA"

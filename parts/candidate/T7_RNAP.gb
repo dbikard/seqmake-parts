@@ -6,6 +6,8 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/T7_RNAP
 FEATURES             Location/Qualifiers
      CDS             1..883
                      /label="T7 RNAP"

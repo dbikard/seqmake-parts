@@ -31,6 +31,8 @@ REFERENCE   3
   JOURNAL   Scientific Reports 11:5247 (2021)
    PUBMED   33664348
   REMARK    doi:10.1038/s41598-021-84551-9
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PuroR
 FEATURES             Location/Qualifiers
      CDS             1..199
                      /label="PuroR"

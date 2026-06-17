@@ -35,6 +35,8 @@ REFERENCE   4
   JOURNAL   Nucleic Acids Research
    PUBMED   6326054
   REMARK    doi:10.1093/nar/12.7.3219
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Pbla
 FEATURES             Location/Qualifiers
      promoter        1..70
                      /label="Pbla"
