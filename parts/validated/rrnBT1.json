@@ -85,6 +85,9 @@
           "rrnB T1 terminator",
           "T1"
         ],
+        "sub_region_of": [
+          "rrnBT1T2"
+        ],
         "note": [
           "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 169 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (Brosius et al. 1981). Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin."
         ],
@@ -111,7 +114,7 @@
           "rrnBT1"
         ],
         "note": [
-          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3') that is the class I (hairpin-dependent) intrinsic-termination signal of rrnB T1. Lyakhov et al. 1997 defined the class I vs class II signals and showed mutating this hairpin abolishes class I termination; Schwartz, Rahmouni & Boudvillain 2003 used NAIM to map discrete contacts in the lower-half GC stem of this hairpin. The hairpin is immediately followed by the U-tract. Coordinates confirmed by exact sequence match at 24-47."
+          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3'), the class I (hairpin-dependent) intrinsic-termination signal of rrnB T1. Lyakhov et al. 1997 defined the class I vs class II signals of T1 and showed that disrupting this hairpin abolishes class I termination — in the context of phage T7 RNA polymerase; Schwartz, Rahmouni & Boudvillain 2003 anatomized intrinsic-terminator hairpin contacts by NAIM more generally. The hairpin's role in host E. coli RNAP intrinsic termination at this exact stem is inferred from the canonical intrinsic-terminator architecture rather than directly mapped here. The hairpin is immediately followed by the U-tract. Coordinates confirmed by exact sequence match at 24-47."
         ],
         "db_xref": [
           "SO:0000313"

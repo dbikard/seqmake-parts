@@ -16378,6 +16378,464 @@
       ]
     },
     {
+      "@id": "part:rrnBT1T2",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:rrnBT1T2_claim_mechanism"
+        },
+        {
+          "@id": "part:rrnBT1T2_claim_strength_class"
+        },
+        {
+          "@id": "part:rrnBT1T2_claim_tandem_unit"
+        },
+        {
+          "@id": "part:rrnBT1T2_claim_host_range"
+        }
+      ],
+      "cat:slug": "rrnBT1T2",
+      "dcterms:description": "rrnB T1+T2 tandem double terminator: the complete T1-T2 intrinsic (Rho-independent) transcription terminator cluster located downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon. 217 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (positions 6362\u20136578, 1-based; Brosius et al. 1981). bp 1\u2013169 are the T1 terminator (catalog part rrnBT1); bp 170\u2013217 are the 3' portion of the T2 terminator region (overlapping the 3' end of catalog part rrnBT2). The two terminators function as a tandem unit that strongly and bidirectionally insulates downstream sequence from upstream transcription; both terminate host (E. coli sigma-70) RNA polymerase. Composite of catalog atoms rrnBT1 + rrnBT2; sourced fresh from J01695, not assembled by concatenation.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6202587"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2821282"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1719220"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12840000"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:15615852"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23511967"
+        }
+      ],
+      "dcterms:title": "rrnBT1T2",
+      "rdfs:label": "rrnBT1T2",
+      "sbol:displayId": "rrnBT1T2",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:rrnBT1T2_feature_0"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_1"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_2"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_3"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_4"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_5"
+        },
+        {
+          "@id": "part:rrnBT1T2_feature_6"
+        }
+      ],
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000141"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "rrnBT1T2",
+        "rrnB T1T2",
+        "rrnB T1-T2 double terminator",
+        "rrnB T1T2 terminator",
+        "T1T2"
+      ]
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"host\": \"Escherichia coli\", \"host_rnap\": true, \"phage_rnap\": \"T7/SP6 (via T1 class II CS)\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "T1 and T2 are each efficient standalone terminators in a galK reporter assay",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1718749"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:1718749"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1T2_claim_host_range_provenance"
+      },
+      "rdfs:label": "Functions as an efficient terminator for E. coli (sigma-70) RNA polymerase; the T1 component also terminates phage (T7/SP6) RNA polymerases via a hairpin-independent class II conserved sequence."
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"architecture\": \"tandem T1+T2\", \"mechanism\": \"intrinsic\", \"rho_dependent\": false, \"t1_hairpin\": \"CAGTCGAAAGACTGGGCCTTTCG\", \"t2_hairpin\": \"AAGGCCATCCTGACGGATGGCCTT\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "rrnB T1 and T2 each function separately as transcription terminators",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Results",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6202587"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:6202587"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1T2_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Tandem intrinsic (Rho-independent) double terminator: two consecutive GC-rich-hairpin/U-tract terminators (T1 then T2) terminate E. coli RNA polymerase without accessory factors."
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_strength_class",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "strength_class",
+      "cat:claimValue": "{\"basis\": \"T1 component\", \"comparator\": \">95% threshold\", \"strength\": \"strong\", \"termination_efficiency_pct\": 97}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "rrnB T1 measured at greater than 97% termination efficiency in a systematic measurement of intrinsic terminators in E. coli",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "systematic terminator measurement",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:23511967"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:23511967"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1T2_claim_strength_class_provenance"
+      },
+      "rdfs:label": "Strong terminator: the T1 component alone terminates host RNA polymerase at >97% efficiency, above the >95% strong-terminator threshold; the tandem T1+T2 arrangement provides additional read-through insulation."
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_strength_class_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_tandem_unit",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"architecture\": \"tandem T1-T2 cluster\", \"functions_as\": \"single unit\", \"read_through\": \"phage lambda N/Q antiterminators\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Suppression of the terminator cluster T1-T2 of Escherichia coli ribosomal RNA operon, rrnB, by phage lambda antiterminators",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Title/Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1719220"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:1719220"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:rrnBT1T2_claim_tandem_unit_provenance"
+      },
+      "rdfs:label": "T1 and T2 act as a tandem terminator cluster (one functional unit): both terminators are read through together only by phage lambda N and Q antiterminators, demonstrating they function as a coupled T1-T2 cluster."
+    },
+    {
+      "@id": "part:rrnBT1T2_claim_tandem_unit_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-workflow",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6202587"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23511967"
+        }
+      ],
+      "dcterms:title": "rrnB T1 terminator",
+      "sbol:displayId": "rrnBT1T2_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000141"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 169,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 1
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6202587"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        }
+      ],
+      "dcterms:title": "rrnB T2 terminator",
+      "sbol:displayId": "rrnBT1T2_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000141"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 217,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 169
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12840000"
+        }
+      ],
+      "dcterms:title": "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)",
+      "sbol:displayId": "rrnBT1T2_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000313"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 47,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 25
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2821282"
+        }
+      ],
+      "dcterms:title": "poly-U tract (rrnB T1)",
+      "sbol:displayId": "rrnBT1T2_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 51,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 48
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:15615852"
+        }
+      ],
+      "dcterms:title": "class II conserved sequence (TATCTGTT) \u2014 phage RNAP termination signal",
+      "sbol:displayId": "rrnBT1T2_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 58,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 51
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1718749"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9192998"
+        }
+      ],
+      "dcterms:title": "T2 GC-rich hairpin (intrinsic terminator stem-loop)",
+      "sbol:displayId": "rrnBT1T2_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_5_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000313"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 210,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 187
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_6",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7028991"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23511967"
+        }
+      ],
+      "dcterms:title": "poly-U tract (rrnB T2)",
+      "sbol:displayId": "rrnBT1T2_feature_6",
+      "sbol:hasLocation": {
+        "@id": "part:rrnBT1T2_feature_6_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:rrnBT1T2_feature_6_range",
+      "@type": "sbol:Range",
+      "sbol:end": 213,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:rrnBT1T2_sequence"
+      },
+      "sbol:start": 209
+    },
+    {
+      "@id": "part:rrnBT1T2_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "rrnBT1T2_sequence",
+      "sbol:elements": "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCAGGCATCAAATTAAGCAGAAGGCCATCCTGACGGATGGCCTTTTTGCGT",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:rrnBT1_claim_factor_enhancement",
       "@type": "cat:FunctionalClaim",
       "cat:claimType": "mechanism",

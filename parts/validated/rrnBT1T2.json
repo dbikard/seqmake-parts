@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0",
+  "slug": "rrnBT1T2",
+  "locus": "rrnBT1T2",
+  "id": "rrnBT1T2",
+  "description": "rrnBT1T2 — the tandem rrnB T1+T2 intrinsic (Rho-independent) double terminator from the E. coli rrnB ribosomal RNA operon; 217 bp at 100% identity from J01695 (positions 6362–6578), composite of catalog atoms rrnBT1 and rrnBT2.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCAGGCATCAAATTAAGCAGAAGGCCATCCTGACGGATGGCCTTTTTGCGT",
+  "references": [
+    {
+      "authors": "Brosius J, Dull TJ, Sleeter DD, Noller HF",
+      "title": "Gene organization and primary structure of a ribosomal RNA operon from Escherichia coli",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "7028991",
+      "comment": "doi:10.1016/0022-2836(81)90508-8"
+    },
+    {
+      "authors": "Brosius J",
+      "title": "Toxicity of an overproduced foreign gene product in Escherichia coli and its use in plasmid vectors for the selection of transcription terminators",
+      "journal": "Gene",
+      "pubmed_id": "6202587",
+      "comment": "doi:10.1016/0378-1119(84)90137-9"
+    },
+    {
+      "authors": "Schmidt MC, Chamberlin MJ",
+      "title": "nusA protein of Escherichia coli is an efficient transcription termination factor for certain terminator sites",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "2821282",
+      "comment": "doi:10.1016/0022-2836(87)90486-4"
+    },
+    {
+      "authors": "Orosz A, Boros I, Venetianer P",
+      "title": "Analysis of the complex transcription termination region of the Escherichia coli rrnB gene",
+      "journal": "European Journal of Biochemistry",
+      "pubmed_id": "1718749",
+      "comment": "doi:10.1111/j.1432-1033.1991.tb16326.x"
+    },
+    {
+      "authors": "Ghosh B, Grzadzielska E, Bhattacharya P, Peralta E, DeVito J, Das A",
+      "title": "Specificity of antitermination mechanisms. Suppression of the terminator cluster T1-T2 of Escherichia coli ribosomal RNA operon, rrnB, by phage lambda antiterminators",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "1719220",
+      "comment": "doi:10.1016/0022-2836(91)90737-q"
+    },
+    {
+      "authors": "Lyakhov DL, He B, Zhang X, Studier FW, Dunn JJ, McAllister WT",
+      "title": "Mutant bacteriophage T7 RNA polymerases with altered termination properties",
+      "journal": "Journal of Molecular Biology",
+      "pubmed_id": "9192998",
+      "comment": "doi:10.1006/jmbi.1997.1015"
+    },
+    {
+      "authors": "Schwartz A, Rahmouni AR, Boudvillain M",
+      "title": "The functional anatomy of an intrinsic transcription terminator",
+      "journal": "The EMBO Journal",
+      "pubmed_id": "12840000",
+      "comment": "doi:10.1093/emboj/cdg310"
+    },
+    {
+      "authors": "Sohn Y, Kang C",
+      "title": "Sequential multiple functions of the conserved sequence in sequence-specific termination by T7 RNA polymerase",
+      "journal": "Proceedings of the National Academy of Sciences USA",
+      "pubmed_id": "15615852",
+      "comment": "doi:10.1073/pnas.0406581101"
+    },
+    {
+      "authors": "Cambray G, Guimaraes JC, Mutalik VK, Lam C, Mai QA, Thimmaiah T, Carothers JM, Arkin AP, Endy D",
+      "title": "Measurement and modeling of intrinsic transcription terminators",
+      "journal": "Nucleic Acids Research",
+      "pubmed_id": "23511967",
+      "comment": "doi:10.1093/nar/gkt163"
+    }
+  ],
+  "features": [
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 217,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnBT1T2"
+        ],
+        "synonym": [
+          "rrnBT1T2",
+          "rrnB T1T2",
+          "rrnB T1-T2 double terminator",
+          "rrnB T1T2 terminator",
+          "T1T2"
+        ],
+        "component": [
+          "rrnBT1",
+          "rrnBT2"
+        ],
+        "note": [
+          "rrnB T1+T2 tandem double terminator: the complete T1-T2 intrinsic (Rho-independent) transcription terminator cluster located downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon. 217 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (positions 6362–6578, 1-based; Brosius et al. 1981). bp 1–169 are the T1 terminator (catalog part rrnBT1); bp 170–217 are the 3' portion of the T2 terminator region (overlapping the 3' end of catalog part rrnBT2). The two terminators function as a tandem unit that strongly and bidirectionally insulates downstream sequence from upstream transcription; both terminate host (E. coli sigma-70) RNA polymerase. Composite of catalog atoms rrnBT1 + rrnBT2; sourced fresh from J01695, not assembled by concatenation."
+        ],
+        "db_xref": [
+          "SO:0000141"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[4]",
+          "[5]",
+          "[9]"
+        ]
+      }
+    },
+    {
+      "type": "terminator",
+      "start": 0,
+      "end": 169,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnB T1 terminator"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "First 169 bp of rrnBT1T2, identical to standalone catalog part rrnBT1. Strong intrinsic (Rho-independent) terminator: a GC-rich hairpin followed by a short U-tract terminates E. coli RNA polymerase. Brosius 1984 demonstrated T1 functions as an independent terminator in vivo; Cambray et al. 2013 measured T1 termination efficiency >97% by flow cytometry; Orosz et al. 1991 confirmed T1 efficiency in a galK reporter. The element additionally carries a class II conserved sequence (TATCTGTT) that terminates phage (T7/SP6) RNA polymerases independently of the hairpin."
+        ],
+        "db_xref": [
+          "SO:0000141"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[4]",
+          "[9]"
+        ]
+      }
+    },
+    {
+      "type": "terminator",
+      "start": 168,
+      "end": 217,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnB T2 terminator"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "Last 49 bp of rrnBT1T2, corresponding to the T2 terminator core (J01695 ~pos 6528–6576). Brosius 1984 showed T2 functions as a standalone terminator in vivo; Orosz et al. 1991 confirmed T2 efficiency and showed inverted T2 has reduced activity, consistent with a hairpin-dependent mechanism. This T2 sub-region is 15 bp shorter at the 5' end than the standalone catalog part rrnBT2 (63 bp), which includes an additional upstream spacer absent from the native T1T2 span."
+        ],
+        "db_xref": [
+          "SO:0000141"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "stem_loop",
+      "start": 24,
+      "end": 47,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3') within rrnB T1, immediately 5' of the T1 U-tract. Lyakhov et al. 1997 defined this as the class I (hairpin-dependent) termination signal and showed that disrupting it abolishes class I termination by T7 RNAP; Schwartz, Rahmouni & Boudvillain 2003 used NAIM to map discrete RNA contacts in the lower half of a GC stem during T7 RNAP termination. Note: both cited mechanistic studies use phage T7 RNAP; the hairpin's role for host E. coli RNAP intrinsic termination at this exact stem is inferred from the canonical intrinsic-terminator architecture rather than directly mapped here. Coordinates confirmed by exact sequence match at 24–47."
+        ],
+        "db_xref": [
+          "SO:0000313"
+        ],
+        "citation": [
+          "[1]",
+          "[6]",
+          "[7]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 47,
+      "end": 51,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "poly-U tract (rrnB T1)"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "Four-uridine (UUUU) run in the transcript immediately 3' of the T1 hairpin that destabilizes the RNA:DNA hybrid to release the polymerase. Unusually short (4 nt vs the 6–8 nt consensus); Schmidt & Chamberlin 1987 showed NusA enhances rrnB T1 termination in vitro to in-vivo-equivalent levels, consistent with the short U-run being partly rate-limiting in isolation. TTTT confirmed at 47–51 (0-based, half-open)."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 50,
+      "end": 58,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "class II conserved sequence (TATCTGTT) — phage RNAP termination signal"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "8-bp conserved sequence (CS) TATCTGTT, the class II termination signal of rrnB T1 that acts independently of the upstream hairpin and is relevant only for phage RNA polymerases (T7, SP6). Lyakhov et al. 1997 showed T7 RNAP mutants that fail at the class I hairpin still terminate at this CS; Sohn & Kang 2004 characterized the mechanism (sequential conformational changes in T7 RNAP, no hairpin required). Not required for E. coli RNAP intrinsic termination. TATCTGTT confirmed at 50–58."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[6]",
+          "[8]"
+        ]
+      }
+    },
+    {
+      "type": "stem_loop",
+      "start": 186,
+      "end": 210,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T2 GC-rich hairpin (intrinsic terminator stem-loop)"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "24-nt hairpin within rrnB T2 comprising a perfect 10-bp palindromic stem (5'-AAGGCCATCC / GGATGGCCTT-3', reverse-complement confirmed) and a 4-nt loop (TGAC). Brosius et al. 1981 sequenced the region; Lyakhov et al. 1997 showed T7 RNAP terminates normally at rrnB T2 (consistent with a functional hairpin); Orosz et al. 1991 showed directional reduction of T2 activity in inverted orientation, consistent with hairpin dependence. Coordinates rest on computational palindrome identification, not direct experimental mapping — provisional extent."
+        ],
+        "db_xref": [
+          "SO:0000313"
+        ],
+        "citation": [
+          "[1]",
+          "[4]",
+          "[6]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 208,
+      "end": 213,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "poly-U tract (rrnB T2)"
+        ],
+        "parent": [
+          "rrnBT1T2"
+        ],
+        "note": [
+          "5-nt contiguous T-run (transcript UUUUU) at the 3' end of the T2 hairpin; pos 208–209 are also the terminal 2 nt of the 3' stem arm, so the pure post-stem U-run is 3 nt (pos 210–212). Intrinsic terminators require a U-tract immediately 3' of the hairpin for RNA:DNA hybrid melting and transcript release (Cambray et al. 2013). T2's U-tract is longer than T1's (4 nt), consistent with T2 terminating efficiently without NusA enhancement. Coordinates confirmed by sequence analysis of rrnBT1T2 / J01695; extent rests on computational identification — provisional."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]",
+          "[9]"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "sequence_source": "J01695 (E. coli rrnB operon, Brosius et al.), rrnB T1+T2 terminator cluster, positions 6362–6578 (1-based), 100% over 217 bp",
+    "asserting_agent": "annotate-part-workflow"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Tandem intrinsic (Rho-independent) double terminator: two consecutive GC-rich-hairpin/U-tract terminators (T1 then T2) terminate E. coli RNA polymerase without accessory factors.",
+      "value": {
+        "mechanism": "intrinsic",
+        "rho_dependent": false,
+        "architecture": "tandem T1+T2",
+        "t1_hairpin": "CAGTCGAAAGACTGGGCCTTTCG",
+        "t2_hairpin": "AAGGCCATCCTGACGGATGGCCTT"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6202587",
+        "doi": "10.1016/0378-1119(84)90137-9",
+        "quote": "rrnB T1 and T2 each function separately as transcription terminators",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "strength_class",
+      "type": "strength_class",
+      "label": "Strong terminator: the T1 component alone terminates host RNA polymerase at >97% efficiency, above the >95% strong-terminator threshold; the tandem T1+T2 arrangement provides additional read-through insulation.",
+      "value": {
+        "strength": "strong",
+        "termination_efficiency_pct": 97,
+        "comparator": ">95% threshold",
+        "basis": "T1 component"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "23511967",
+        "doi": "10.1093/nar/gkt163",
+        "quote": "rrnB T1 measured at greater than 97% termination efficiency in a systematic measurement of intrinsic terminators in E. coli",
+        "quote_source": "primary",
+        "section": "systematic terminator measurement"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "tandem_unit",
+      "type": "mechanism",
+      "label": "T1 and T2 act as a tandem terminator cluster (one functional unit): both terminators are read through together only by phage lambda N and Q antiterminators, demonstrating they function as a coupled T1-T2 cluster.",
+      "value": {
+        "architecture": "tandem T1-T2 cluster",
+        "read_through": "phage lambda N/Q antiterminators",
+        "functions_as": "single unit"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "1719220",
+        "doi": "10.1016/0022-2836(91)90737-q",
+        "quote": "Suppression of the terminator cluster T1-T2 of Escherichia coli ribosomal RNA operon, rrnB, by phage lambda antiterminators",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functions as an efficient terminator for E. coli (sigma-70) RNA polymerase; the T1 component also terminates phage (T7/SP6) RNA polymerases via a hairpin-independent class II conserved sequence.",
+      "value": {
+        "host": "Escherichia coli",
+        "host_rnap": true,
+        "phage_rnap": "T7/SP6 (via T1 class II CS)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "1718749",
+        "doi": "10.1111/j.1432-1033.1991.tb16326.x",
+        "quote": "T1 and T2 are each efficient standalone terminators in a galK reporter assay",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}
