@@ -70,6 +70,9 @@
         ],
         "collection": [
           "phage-att-sites"
+        ],
+        "cognate": [
+          "HK022_attB"
         ]
       }
     }

@@ -1,0 +1,46 @@
+LOCUS       lambda_attB               21 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Bacteriophage lambda bacterial attachment site attB (BOB′); the 21
+            bp E. coli chromosomal target (gal–bio) for lambda Int + IHF
+            site-specific integration..
+ACCESSION   lambda_attB
+VERSION     lambda_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Haldimann A, Wanner BL
+  TITLE     Conditional-replication, integration, excision, and retrieval
+            plasmid-host systems for gene structure-function studies of bacteria
+  JOURNAL   J Bacteriol
+   PUBMED   11591683
+  REMARK    doi:10.1128/JB.183.21.6384-6393.2001
+REFERENCE   2
+  AUTHORS   St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE
+  TITLE     One-step cloning and chromosomal integration of DNA
+  JOURNAL   ACS Synth Biol
+   PUBMED   24050148
+  REMARK    doi:10.1021/sb400021j
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/lambda_attB
+FEATURES             Location/Qualifiers
+     protein_bind    1..21
+                     /label="lambda_attB"
+                     /synonym="lambda_attB"
+                     /synonym="lambda attB"
+                     /collection="phage-att-sites"
+                     /cognate="lambda_attP"
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /note="Lambda bacterial attachment site attB (B-O-B′), the
+                     chromosomal target recombined with phage attP (lambda_attP)
+                     by lambda tyrosine integrase + IHF (Xis/Fis for excision).
+                     21 bp minimal attB from NC_000913.3 (attλ, between gal and
+                     bio); 15 bp common core O = GCTTTTTTATACTAA, with the 7 bp
+                     crossover overlap TTTATAC at which Int makes the staggered
+                     cut. Source-verified 100%. Cognate phage site:
+                     lambda_attP."
+ORIGIN
+        1 ctgctttttt atactaactt g
+//

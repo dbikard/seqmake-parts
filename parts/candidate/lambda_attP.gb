@@ -61,6 +61,7 @@ FEATURES             Location/Qualifiers
                      sub-feature annotation (Int arm/core sites, IHF H/H1/H2,
                      Xis) and functional_claims pending a re-run under the
                      corrected attP identity."
+                     /cognate="lambda_attB"
 ORIGIN
         1 catcacagta tcgtgatgac agaggcaggg agtgggacaa aattgaaatc aaataatgat
        61 tttattttga ctgatagtga cctgttcgtt gcaacaaatt gataagcaat gcttttttat

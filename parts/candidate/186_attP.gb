@@ -78,6 +78,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /citation=[6]
                      /collection="phage-att-sites"
+                     /cognate="186_attB"
      protein_bind    complement(13..23)
                      /label="Int arm-type site 1 (P arm)"
                      /parent="186_attP"

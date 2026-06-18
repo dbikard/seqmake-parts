@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "slug": "HK022_attB",
+  "locus": "HK022_attB",
+  "id": "HK022_attB",
+  "description": "Bacteriophage HK022 bacterial attachment site attB; the E. coli chromosomal target in the torS–torT intergenic region for HK022 integrase.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "TTAAATTCACGGTCGGTGCACTTTAGGTGAAAAAGGTTGAGTCG",
+  "references": [
+    {
+      "authors": "Nagaraja R, Weisberg RA",
+      "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda",
+      "journal": "J Bacteriol",
+      "pubmed_id": "2146253",
+      "comment": "doi:10.1128/jb.172.11.6540-6550.1990"
+    },
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 44,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HK022_attB"
+        ],
+        "synonym": [
+          "HK022_attB",
+          "HK022 attB"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ],
+        "cognate": [
+          "HK022_attP"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ],
+        "note": [
+          "Phage HK022 bacterial attachment site attB. HK022 (a lambdoid coliphage with altered att specificity vs lambda) integrates in the torS-torT intergenic region — NOT leuX. 44 bp window from NC_000913.3 containing the 7 bp common-core overlap AGGTGAA (the solid, source-verified element); the exact minimal BOB′ boundaries are not pinned to a primary figure and are PROVISIONAL. Cognate phage site: HK022_attP."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), torS-torT intergenic region, positions 1056169..1056212 (+ strand), 100% identity over 44 bp",
+    "asserting_agent": "attB-research-agent + local genome verification"
+  },
+  "functional_claims": []
+}

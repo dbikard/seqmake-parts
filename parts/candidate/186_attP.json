@@ -83,6 +83,9 @@
         ],
         "collection": [
           "phage-att-sites"
+        ],
+        "cognate": [
+          "186_attB"
         ]
       }
     },

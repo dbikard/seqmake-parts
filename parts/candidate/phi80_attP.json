@@ -57,6 +57,9 @@
         ],
         "note": [
           "Bacteriophage phi80 phage attachment site (attP). Identified as attP (NOT bacterial attB) — its source AY048738.1 is a CRIM integration plasmid (pAH162), which carries the phage attP. Detailed sub-feature annotation and functional_claims pending a re-run under the corrected attP identity."
+        ],
+        "cognate": [
+          "phi80_attB"
         ]
       }
     }

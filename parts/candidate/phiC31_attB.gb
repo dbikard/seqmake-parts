@@ -1,0 +1,50 @@
+LOCUS       phiC31_attB               34 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Streptomyces phage phiC31 bacterial attachment site attB; the 34 bp
+            natural Streptomyces chromosomal target for the phiC31 large serine
+            integrase..
+ACCESSION   phiC31_attB
+VERSION     phiC31_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Thorpe HM, Smith MC
+  TITLE     In vitro site-specific integration of bacteriophage DNA catalyzed by
+            a recombinase of the resolvase/invertase family
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   9576912
+  REMARK    doi:10.1073/pnas.95.10.5505
+REFERENCE   2
+  AUTHORS   Groth AC, Olivares EC, Thyagarajan B, Calos MP
+  TITLE     A phage integrase directs efficient site-specific integration in
+            human cells
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   10801973
+  REMARK    doi:10.1073/pnas.090527097
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/phiC31_attB
+FEATURES             Location/Qualifiers
+     protein_bind    1..34
+                     /label="phiC31_attB"
+                     /synonym="phiC31_attB"
+                     /synonym="phiC31 attB"
+                     /collection="phage-att-sites"
+                     /cognate="phiC31_attP"
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /note="phiC31 bacterial attachment site attB, the 34 bp
+                     natural target in the Streptomyces coelicolor chromosome
+                     recognized by the phiC31 large serine integrase
+                     (unidirectional; no host cofactors; cannot excise without
+                     an RDF). Central TT crossover dinucleotide; attB and attP
+                     share only a very short central core (~39% overall
+                     identity), the basis of the reaction directionality. In
+                     non-native hosts (human/other) phiC31 Int also recombines
+                     with degenerate genomic pseudo-attP sites; there is no
+                     single canonical pseudo-attB. Cognate phage site:
+                     phiC31_attP."
+ORIGIN
+        1 gtgccagggc gtgcccttgg gctccccggg cgcg
+//

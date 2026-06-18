@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "slug": "phi80_attB",
+  "locus": "phi80_attB",
+  "id": "phi80_attB",
+  "description": "Bacteriophage phi80 bacterial attachment site attB; the E. coli chromosomal target within the 3′ end of yciI (beside tonB) for phi80 integrase + IHF.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTTAAATATTGAATCTCTATTCAGAACACTTTCTTAAATGGTTTCACTGAAACG",
+  "references": [
+    {
+      "authors": "Leong JM, Nunes-Düby S, Lesser CF, Youderian P, Susskind MM, Landy A",
+      "journal": "Journal of Biological Chemistry",
+      "pubmed_id": "2984205"
+    },
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 54,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phi80_attB"
+        ],
+        "synonym": [
+          "phi80_attB",
+          "phi80 attB"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ],
+        "cognate": [
+          "phi80_attP"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ],
+        "note": [
+          "Phage phi80 bacterial attachment site attB, within the 3′ end of gene yciI (b1251), divergent from and adjacent to tonB — reconciling the historical 'tonB region / ~28 min' lore (beside tonB, not in it; not a tRNA gene). 54 bp window from NC_000913.3 containing the 15 bp core consensus AACACTTTCTTAAAT; the exact 17 bp common core and crossover (Leong et al. 1985) are behind paywalls and the precise boundaries are PROVISIONAL. Cognate phage site: phi80_attP."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), 3′ end of yciI (b1251), adjacent to tonB, positions 1310549..1310602 (+ strand), 100% identity over 54 bp",
+    "asserting_agent": "attB-research-agent + local genome verification"
+  },
+  "functional_claims": []
+}

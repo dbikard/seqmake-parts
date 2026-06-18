@@ -47,6 +47,7 @@ FEATURES             Location/Qualifiers
                      carries the phage attP. Detailed sub-feature annotation and
                      functional_claims pending a re-run under the corrected attP
                      identity."
+                     /cognate="phi80_attB"
 ORIGIN
         1 gcccgtgcga atcagaaata atctcgatat catctctttt cttgccgagc gccttcctga
        61 gctttgtgtc ggtgatcatt gaatgggtac acatttttgt ttttgggtac acaaaagtgt

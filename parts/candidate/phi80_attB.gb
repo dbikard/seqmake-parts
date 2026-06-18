@@ -1,0 +1,52 @@
+LOCUS       phi80_attB                54 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Bacteriophage phi80 bacterial attachment site attB; the E. coli
+            chromosomal target within the 3′ end of yciI (beside tonB) for phi80
+            integrase + IHF..
+ACCESSION   phi80_attB
+VERSION     phi80_attB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Leong JM, Nunes-Düby S, Lesser CF, Youderian P, Susskind MM, Landy A
+  JOURNAL   Journal of Biological Chemistry
+   PUBMED   2984205
+REFERENCE   2
+  AUTHORS   Haldimann A, Wanner BL
+  TITLE     Conditional-replication, integration, excision, and retrieval
+            plasmid-host systems for gene structure-function studies of bacteria
+  JOURNAL   J Bacteriol
+   PUBMED   11591683
+  REMARK    doi:10.1128/JB.183.21.6384-6393.2001
+REFERENCE   3
+  AUTHORS   St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE
+  TITLE     One-step cloning and chromosomal integration of DNA
+  JOURNAL   ACS Synth Biol
+   PUBMED   24050148
+  REMARK    doi:10.1021/sb400021j
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/phi80_attB
+FEATURES             Location/Qualifiers
+     protein_bind    1..54
+                     /label="phi80_attB"
+                     /synonym="phi80_attB"
+                     /synonym="phi80 attB"
+                     /collection="phage-att-sites"
+                     /cognate="phi80_attP"
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /note="Phage phi80 bacterial attachment site attB, within
+                     the 3′ end of gene yciI (b1251), divergent from and
+                     adjacent to tonB — reconciling the historical 'tonB region
+                     / ~28 min' lore (beside tonB, not in it; not a tRNA gene).
+                     54 bp window from NC_000913.3 containing the 15 bp core
+                     consensus AACACTTTCTTAAAT; the exact 17 bp common core and
+                     crossover (Leong et al. 1985) are behind paywalls and the
+                     precise boundaries are PROVISIONAL. Cognate phage site:
+                     phi80_attP."
+ORIGIN
+        1 cttaaatatt gaatctctat tcagaacact ttcttaaatg gtttcactga aacg
+//

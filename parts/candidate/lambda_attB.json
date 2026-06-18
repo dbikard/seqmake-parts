@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "slug": "lambda_attB",
+  "locus": "lambda_attB",
+  "id": "lambda_attB",
+  "description": "Bacteriophage lambda bacterial attachment site attB (BOB′); the 21 bp E. coli chromosomal target (gal–bio) for lambda Int + IHF site-specific integration.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CTGCTTTTTTATACTAACTTG",
+  "references": [
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 21,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lambda_attB"
+        ],
+        "synonym": [
+          "lambda_attB",
+          "lambda attB"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ],
+        "cognate": [
+          "lambda_attP"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "note": [
+          "Lambda bacterial attachment site attB (B-O-B′), the chromosomal target recombined with phage attP (lambda_attP) by lambda tyrosine integrase + IHF (Xis/Fis for excision). 21 bp minimal attB from NC_000913.3 (attλ, between gal and bio); 15 bp common core O = GCTTTTTTATACTAA, with the 7 bp crossover overlap TTTATAC at which Int makes the staggered cut. Source-verified 100%. Cognate phage site: lambda_attP."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), attλ locus between the gal and bio operons, positions 807326..807346 (+ strand), 100% identity over 21 bp",
+    "asserting_agent": "attB-research-agent + local genome verification"
+  },
+  "functional_claims": []
+}

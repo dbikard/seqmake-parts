@@ -75,6 +75,9 @@
         ],
         "collection": [
           "phage-att-sites"
+        ],
+        "cognate": [
+          "phiC31_attB"
         ]
       }
     },

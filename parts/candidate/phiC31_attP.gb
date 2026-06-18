@@ -67,6 +67,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /citation=[4]
                      /collection="phage-att-sites"
+                     /cognate="phiC31_attB"
      protein_bind    32..70
                      /label="phiC31 attP minimal core (39 bp)"
                      /parent="phiC31_attP"
