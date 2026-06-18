@@ -1,0 +1,75 @@
+LOCUS       6xHis                      6 aa                     UNK 01-JAN-1980
+DEFINITION  6xHis (hexahistidine) polyhistidine affinity tag — a canonical 6-aa
+            IMAC purification tag (HHHHHH)..
+ACCESSION   6xHis
+VERSION     6xHis
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Hochuli E, Döbeli H, Schacher A
+  TITLE     New metal chelate adsorbent selective for proteins and peptides
+            containing neighbouring histidine residues
+  JOURNAL   Journal of Chromatography (1987)
+   PUBMED   3443622
+  REMARK    doi:10.1016/s0021-9673(00)93969-4
+REFERENCE   2
+  AUTHORS   Hochuli E, Bannwarth W, Döbeli H, Gentz R, Stüber D
+  TITLE     Genetic Approach to Facilitate Purification of Recombinant Proteins
+            with a Novel Metal Chelate Adsorbent
+  JOURNAL   Bio/Technology (1988)
+  REMARK    doi:10.1038/nbt1188-1321
+REFERENCE   3
+  AUTHORS   Terpe K
+  TITLE     Overview of tag protein fusions: from molecular and biochemical
+            fundamentals to commercial systems
+  JOURNAL   Applied Microbiology and Biotechnology (2003)
+   PUBMED   12536251
+  REMARK    doi:10.1007/s00253-002-1158-6
+REFERENCE   4
+  AUTHORS   Kimple ME, Brill AL, Pasker RL
+  TITLE     Overview of affinity tags for protein purification
+  JOURNAL   Current Protocols in Protein Science (2013)
+   PUBMED   24510596
+  REMARK    doi:10.1002/0471140864.ps0909s73
+REFERENCE   5
+  AUTHORS   Kaufmann M, Lindner P, Honegger A, Blank K, Tschopp M, Capitani G,
+            Plückthun A, Grütter MG
+  TITLE     Crystal structure of the anti-His tag antibody 3D5 single-chain
+            fragment complexed to its antigen
+  JOURNAL   Journal of Molecular Biology (2002)
+   PUBMED   12054774
+  REMARK    doi:10.1016/S0022-2836(02)00038-4
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/6xHis
+FEATURES             Location/Qualifiers
+     protein_domain  1..6
+                     /label="6xHis"
+                     /synonym="6xHis"
+                     /synonym="6xHis (fragment)"
+                     /synonym="His tag"
+                     /synonym="His-tag"
+                     /synonym="8xHis"
+                     /synonym="8xHis (fragment)"
+                     /synonym="10xHis"
+                     /synonym="polyhistidine tag"
+                     /synonym="hexahistidine"
+                     /synonym="His6"
+                     /synonym="His6-tag"
+                     /synonym="poly-His"
+                     /note="Canonical hexahistidine (polyhistidine) affinity
+                     tag, HHHHHH. Synthetic 6-aa peptide that binds immobilized
+                     divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) for
+                     immobilized-metal affinity chromatography (IMAC). Atomic
+                     part: the 6 residues are the functional unit and carry no
+                     internal functional sub-elements."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 hhhhhh
+//

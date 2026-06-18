@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "slug": "GST",
+  "locus": "GST",
+  "id": "GST",
+  "description": "GST affinity/solubility tag \u2014 218 aa Schistosoma japonicum Sj26 glutathione S-transferase, the canonical pGEX-family fusion partner for one-step glutathione-resin purification",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSPILGYWKIKGLVQPTRLLLEYLEEKYEEHLYERDEGDKWRNKKFELGLEFPNLPYYIDGDVKLTQSMAIIRYIADKHNMLGGCPKERAEISMLEGAVLDIRYGVSRIAYSKDFETLKVDFLSKLPEMLKMFEDRLCHKTYLNGDHVTHPDFMLYDALDVVLYMDPMCLDAFPKLVCFKKRIEAIPQIDKYLKSSKYIAWPLQGWQATFGGGDHPPK",
+  "references": [
+    {
+      "authors": "Smith DB, Johnson KS",
+      "title": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase.",
+      "journal": "Gene (1988)",
+      "pubmed_id": "3047011",
+      "comment": "doi:10.1016/0378-1119(88)90005-4"
+    },
+    {
+      "authors": "Kaplan W, Husler P, Klump H, Erhardt J, Sluis-Cremer N, Dirr H",
+      "title": "Conformational stability of pGEX-expressed Schistosoma japonicum glutathione S-transferase: a detoxification enzyme and fusion-protein affinity tag.",
+      "journal": "Protein Science (1997)",
+      "pubmed_id": "9041642",
+      "comment": "doi:10.1002/pro.5560060216"
+    },
+    {
+      "authors": "Smith DB",
+      "title": "Generating fusions to glutathione S-transferase for protein studies.",
+      "journal": "Methods in Enzymology (2000)",
+      "pubmed_id": "11036647",
+      "comment": "doi:10.1016/s0076-6879(00)26059-x"
+    },
+    {
+      "authors": "Harper S, Speicher DW",
+      "title": "Purification of proteins fused to glutathione S-transferase.",
+      "journal": "Methods in Molecular Biology (2011)",
+      "pubmed_id": "20978970",
+      "comment": "doi:10.1007/978-1-60761-913-0_14"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 218,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "GST"
+        ],
+        "synonym": [
+          "glutathione S-transferase",
+          "Sj26GST",
+          "Sj26",
+          "GST-tag",
+          "pGEX GST"
+        ],
+        "note": [
+          "Schistosoma japonicum 26 kDa glutathione S-transferase (Sj26GST); UniProt P08515, 218 aa; affinity handle (binds glutathione-agarose, eluted with reduced glutathione) and solubility/chaperone partner in N-terminal fusions; obligate non-covalent homodimer (can force dimerization of the fused partner)"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P08515"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P08515 (Glutathione S-transferase class-mu 26 kDa isozyme, Schistosoma japonicum; Swiss-Prot reviewed, SV=3), 218 aa, 100% identity over full length, independently fetched and compared"
+  },
+  "functional_claims": [
+    {
+      "id": "affinity_purification",
+      "type": "function",
+      "label": "Binds glutathione resin for one-step affinity purification of fusion proteins",
+      "value": {
+        "function": "affinity_purification",
+        "ligand": "glutathione",
+        "matrix": "glutathione-agarose",
+        "elution": "reduced glutathione",
+        "organism": "Schistosoma japonicum"
+      },
+      "source": {
+        "pmid": "3047011",
+        "doi": "10.1016/0378-1119(88)90005-4",
+        "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "solubility_partner",
+      "type": "function",
+      "label": "Acts as a solubility/chaperone partner to promote soluble expression of fused proteins",
+      "value": {
+        "function": "solubility_enhancement",
+        "mechanism": "chaperone-like folding assistance"
+      },
+      "source": {
+        "pmid": "20978970",
+        "doi": "10.1007/978-1-60761-913-0_14",
+        "quote": "GST as a chaperone/solubility partner, non-denaturing purification on glutathione resin",
+        "quote_source": "catalog-doc",
+        "section": "introduction"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functional in Escherichia coli (primary host) and Saccharomyces cerevisiae / Schizosaccharomyces pombe",
+      "value": {
+        "hosts": [
+          "Escherichia coli",
+          "Saccharomyces cerevisiae",
+          "Schizosaccharomyces pombe"
+        ],
+        "primary_host": "Escherichia coli"
+      },
+      "source": {
+        "pmid": "11036647",
+        "doi": "10.1016/s0076-6879(00)26059-x",
+        "quote": "expression in E. coli and yeast (S. cerevisiae, S. pombe)",
+        "quote_source": "catalog-doc",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "oligomeric_state",
+      "type": "biophysics",
+      "label": "Forms a non-covalent homodimer in solution; two-state thermal unfolding with deltaG ~26 kcal/mol",
+      "value": {
+        "oligomeric_state": "homodimer",
+        "unfolding_model": "two-state",
+        "deltaG_kcal_mol": 26,
+        "measurement": "calorimetry"
+      },
+      "source": {
+        "pmid": "9041642",
+        "doi": "10.1002/pro.5560060216",
+        "quote": "pGEX-2T-expressed Sj26GST as a homodimer with two-state unfolding; quantifies thermodynamic stability (deltaG ~26 kcal/mol)",
+        "quote_source": "catalog-doc",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "protease_removal",
+      "type": "tag_removal",
+      "label": "Tag removed by thrombin or factor Xa cleavage at linker sites engineered into pGEX vectors",
+      "value": {
+        "proteases": [
+          "thrombin",
+          "factor Xa"
+        ],
+        "note": "Cleavage sites are in the linker, not within GST itself; separate catalog parts thrombin_site and enterokinase_site encode the recognition sequences"
+      },
+      "source": {
+        "pmid": "3047011",
+        "doi": "10.1016/0378-1119(88)90005-4",
+        "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 1,
+      "end": 83,
+      "label": "GST N-terminal",
+      "so_term": "SO:0000417",
+      "description": "GST N-terminal",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "protein_domain",
+      "start": 84,
+      "end": 203,
+      "label": "GST C-terminal",
+      "so_term": "SO:0000417",
+      "description": "GST C-terminal",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "binding",
+      "start": 6,
+      "end": 8,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 40,
+      "end": 45,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 53,
+      "end": 55,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 66,
+      "end": 68,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 110,
+      "end": 111,
+      "label": "Binding site",
+      "so_term": null,
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-06-18",
+    "accession": "UniProt:P08515",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 152
+  }
+}

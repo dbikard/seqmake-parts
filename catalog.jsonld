@@ -75,21 +75,86 @@
       },
       "sbol:member": [
         {
+          "@id": "part:186_attB"
+        },
+        {
           "@id": "part:186_attP"
+        },
+        {
+          "@id": "part:HK022_attB"
         },
         {
           "@id": "part:HK022_attP"
         },
         {
+          "@id": "part:lambda_attB"
+        },
+        {
           "@id": "part:lambda_attP"
+        },
+        {
+          "@id": "part:phi80_attB"
         },
         {
           "@id": "part:phi80_attP"
         },
         {
+          "@id": "part:phiC31_attB"
+        },
+        {
           "@id": "part:phiC31_attP"
         }
       ]
+    },
+    {
+      "@id": "part:186_attB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "186_attB",
+      "dcterms:description": "Phage 186 bacterial attachment site attB, overlapping the 3\u2032 half of the tRNA-Ile gene (preserved on integration). 46 bp shared core (identical to the 186_attP core), read 5\u2032->3\u2032 on the minus strand of NC_000913.3 at the tRNA-Ile locus. NCBI annotates the gene as ileX (b3069); the phage/pOSIP literature names the site ileY (distinct from NCBI ileY b2652 \u2014 a nomenclature caveat). Cognate phage site: 186_attP.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:11591683"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24050148"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:3806670"
+        }
+      ],
+      "dcterms:title": "186_attB",
+      "rdfs:label": "186_attB",
+      "sbol:displayId": "186_attB",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:186_attB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "186_attB",
+        "186 attB"
+      ]
+    },
+    {
+      "@id": "part:186_attB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "186_attB_sequence",
+      "sbol:elements": "TGGTGGCCCCTGCTGGACTTGAACCAGCGACCAAGCGATTATGAGT",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
     },
     {
       "@id": "part:186_attP",
@@ -679,9 +744,41 @@
     {
       "@id": "part:6xHis",
       "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:6xHis_claim_mechanism"
+        },
+        {
+          "@id": "part:6xHis_claim_purification_use"
+        },
+        {
+          "@id": "part:6xHis_claim_host_range"
+        },
+        {
+          "@id": "part:6xHis_claim_sequence_variant"
+        }
+      ],
       "cat:slug": "6xHis",
+      "dcterms:description": "Canonical hexahistidine (polyhistidine) affinity tag, HHHHHH. Synthetic 6-aa peptide that binds immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) for immobilized-metal affinity chromatography (IMAC). Atomic part: the 6 residues are the functional unit and carry no internal functional sub-elements.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:3443622"
+        },
+        {
+          "@id": "https://doi.org/10.1038/nbt1188-1321"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12536251"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24510596"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12054774"
+        }
+      ],
       "dcterms:title": "6xHis",
       "rdfs:label": "6xHis",
       "sbol:displayId": "6xHis",
@@ -705,8 +802,124 @@
         "8xHis",
         "8xHis (fragment)",
         "10xHis",
-        "polyhistidine tag"
+        "polyhistidine tag",
+        "hexahistidine",
+        "His6",
+        "His6-tag",
+        "poly-His"
       ]
+    },
+    {
+      "@id": "part:6xHis_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"conditions\": [\"native\", \"denaturing\"], \"host_range\": \"broad\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "the His-tag ... small size, works under denaturing conditions, low cost",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Review of tag protein fusions",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:12536251"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:12536251"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:6xHis_claim_host_range_provenance"
+      },
+      "rdfs:label": "Host- and organism-agnostic: as a small synthetic peptide the tag functions across expression hosts and works under both native and denaturing (e.g. 6\u20138 M urea / guanidine) conditions."
+    },
+    {
+      "@id": "part:6xHis_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:6xHis_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"elution\": [\"imidazole\", \"low pH\"], \"matrices\": [\"NTA\", \"IDA\"], \"mechanism\": \"immobilized-metal affinity chromatography (IMAC)\", \"metal_ions\": [\"Ni2+\", \"Co2+\", \"Cu2+\", \"Zn2+\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Title/Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:3443622"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:3443622"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:6xHis_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Adjacent histidine residues chelate immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) on an IMAC matrix, enabling single-step affinity purification; protein is eluted by imidazole competition or low pH."
+    },
+    {
+      "@id": "part:6xHis_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:6xHis_claim_purification_use",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"application\": \"recombinant-protein affinity purification\", \"fusion\": \"N- or C-terminal genetic fusion\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Title",
+      "dcterms:references": {
+        "@id": "https://doi.org/10.1038/nbt1188-1321"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://doi.org/10.1038/nbt1188-1321"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:6xHis_claim_purification_use_provenance"
+      },
+      "rdfs:label": "Genetic fusion of the polyhistidine peptide to a recombinant protein permits one-step IMAC purification of the fusion product."
+    },
+    {
+      "@id": "part:6xHis_claim_purification_use_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:6xHis_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"canonical\": \"HHHHHH\", \"variants\": [\"8xHis (HHHHHHHH)\", \"10xHis (HHHHHHHHHH)\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "6xHis tag ... metal ion choices (Ni2+, Co2+, Cu2+, Zn2+), matrix types (NTA vs IDA), placement",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Overview of affinity tags",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24510596"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24510596"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:6xHis_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "Common length variants of the polyhistidine tag exist (e.g. 8xHis, 10xHis); the 6xHis form (HHHHHH) is the canonical minimal tag."
+    },
+    {
+      "@id": "part:6xHis_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
     },
     {
       "@id": "part:6xHis_sequence",
@@ -3005,12 +3218,71 @@
     {
       "@id": "part:GST",
       "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:GST_claim_affinity_purification"
+        },
+        {
+          "@id": "part:GST_claim_solubility_partner"
+        },
+        {
+          "@id": "part:GST_claim_host_range"
+        },
+        {
+          "@id": "part:GST_claim_oligomeric_state"
+        },
+        {
+          "@id": "part:GST_claim_protease_removal"
+        }
+      ],
       "cat:slug": "GST",
+      "cat:sourceAccession": "UniProt:P08515",
+      "dcterms:description": "Schistosoma japonicum 26 kDa glutathione S-transferase (Sj26GST); UniProt P08515, 218 aa; affinity handle (binds glutathione-agarose, eluted with reduced glutathione) and solubility/chaperone partner in N-terminal fusions; obligate non-covalent homodimer (can force dimerization of the fused partner)",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:3047011"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9041642"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:11036647"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:20978970"
+        }
+      ],
       "dcterms:title": "GST",
       "rdfs:label": "GST",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P08515"
+      },
       "sbol:displayId": "GST",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:GST_feature_0"
+        },
+        {
+          "@id": "part:GST_feature_1"
+        },
+        {
+          "@id": "part:GST_feature_2"
+        },
+        {
+          "@id": "part:GST_feature_3"
+        },
+        {
+          "@id": "part:GST_feature_4"
+        },
+        {
+          "@id": "part:GST_feature_5"
+        },
+        {
+          "@id": "part:GST_feature_6"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -3024,10 +3296,305 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "GST",
-        "GST tag",
-        "glutathione S-transferase"
+        "glutathione S-transferase",
+        "Sj26GST",
+        "Sj26",
+        "GST-tag",
+        "pGEX GST"
       ]
+    },
+    {
+      "@id": "part:GST_claim_affinity_purification",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "function",
+      "cat:claimValue": "{\"elution\": \"reduced glutathione\", \"function\": \"affinity_purification\", \"ligand\": \"glutathione\", \"matrix\": \"glutathione-agarose\", \"organism\": \"Schistosoma japonicum\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:3047011"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:3047011"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:GST_claim_affinity_purification_provenance"
+      },
+      "rdfs:label": "Binds glutathione resin for one-step affinity purification of fusion proteins"
+    },
+    {
+      "@id": "part:GST_claim_affinity_purification_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:GST_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"hosts\": [\"Escherichia coli\", \"Saccharomyces cerevisiae\", \"Schizosaccharomyces pombe\"], \"primary_host\": \"Escherichia coli\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "expression in E. coli and yeast (S. cerevisiae, S. pombe)",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11036647"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11036647"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:GST_claim_host_range_provenance"
+      },
+      "rdfs:label": "Functional in Escherichia coli (primary host) and Saccharomyces cerevisiae / Schizosaccharomyces pombe"
+    },
+    {
+      "@id": "part:GST_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:GST_claim_oligomeric_state",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "biophysics",
+      "cat:claimValue": "{\"deltaG_kcal_mol\": 26, \"measurement\": \"calorimetry\", \"oligomeric_state\": \"homodimer\", \"unfolding_model\": \"two-state\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "pGEX-2T-expressed Sj26GST as a homodimer with two-state unfolding; quantifies thermodynamic stability (deltaG ~26 kcal/mol)",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9041642"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:9041642"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:GST_claim_oligomeric_state_provenance"
+      },
+      "rdfs:label": "Forms a non-covalent homodimer in solution; two-state thermal unfolding with deltaG ~26 kcal/mol"
+    },
+    {
+      "@id": "part:GST_claim_oligomeric_state_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:GST_claim_protease_removal",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "tag_removal",
+      "cat:claimValue": "{\"note\": \"Cleavage sites are in the linker, not within GST itself; separate catalog parts thrombin_site and enterokinase_site encode the recognition sequences\", \"proteases\": [\"thrombin\", \"factor Xa\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:3047011"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:3047011"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:GST_claim_protease_removal_provenance"
+      },
+      "rdfs:label": "Tag removed by thrombin or factor Xa cleavage at linker sites engineered into pGEX vectors"
+    },
+    {
+      "@id": "part:GST_claim_protease_removal_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:GST_claim_solubility_partner",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "function",
+      "cat:claimValue": "{\"function\": \"solubility_enhancement\", \"mechanism\": \"chaperone-like folding assistance\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "GST as a chaperone/solubility partner, non-denaturing purification on glutathione resin",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "introduction",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:20978970"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:20978970"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:GST_claim_solubility_partner_provenance"
+      },
+      "rdfs:label": "Acts as a solubility/chaperone partner to promote soluble expression of fused proteins"
+    },
+    {
+      "@id": "part:GST_claim_solubility_partner_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:GST_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "GST N-terminal",
+      "sbol:displayId": "GST_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:GST_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 83,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 2
+    },
+    {
+      "@id": "part:GST_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "GST C-terminal",
+      "sbol:displayId": "GST_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:GST_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 203,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 85
+    },
+    {
+      "@id": "part:GST_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "GST_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_2_range"
+      }
+    },
+    {
+      "@id": "part:GST_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 8,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 7
+    },
+    {
+      "@id": "part:GST_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "GST_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_3_range"
+      }
+    },
+    {
+      "@id": "part:GST_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 45,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 41
+    },
+    {
+      "@id": "part:GST_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "GST_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_4_range"
+      }
+    },
+    {
+      "@id": "part:GST_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 55,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 54
+    },
+    {
+      "@id": "part:GST_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "GST_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_5_range"
+      }
+    },
+    {
+      "@id": "part:GST_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 68,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 67
+    },
+    {
+      "@id": "part:GST_feature_6",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "GST_feature_6",
+      "sbol:hasLocation": {
+        "@id": "part:GST_feature_6_range"
+      }
+    },
+    {
+      "@id": "part:GST_feature_6_range",
+      "@type": "sbol:Range",
+      "sbol:end": 111,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:GST_sequence"
+      },
+      "sbol:start": 111
     },
     {
       "@id": "part:GST_sequence",
@@ -3597,6 +4164,56 @@
       "sbol:elements": "MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLRGKNDHHRSESAFKALAVAIREATSPNGTNDVPSTKGVLM",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:HK022_attB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "HK022_attB",
+      "dcterms:description": "Phage HK022 bacterial attachment site attB. HK022 (a lambdoid coliphage with altered att specificity vs lambda) integrates in the torS-torT intergenic region \u2014 NOT leuX. 44 bp window from NC_000913.3 containing the 7 bp common-core overlap AGGTGAA (the solid, source-verified element); the exact minimal BOB\u2032 boundaries are not pinned to a primary figure and are PROVISIONAL. Cognate phage site: HK022_attP.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:2146253"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:11591683"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24050148"
+        }
+      ],
+      "dcterms:title": "HK022_attB",
+      "rdfs:label": "HK022_attB",
+      "sbol:displayId": "HK022_attB",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:HK022_attB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "HK022_attB",
+        "HK022 attB"
+      ]
+    },
+    {
+      "@id": "part:HK022_attB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "HK022_attB_sequence",
+      "sbol:elements": "TTAAATTCACGGTCGGTGCACTTTAGGTGAAAAAGGTTGAGTCG",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -15174,6 +15791,53 @@
       }
     },
     {
+      "@id": "part:lambda_attB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "lambda_attB",
+      "dcterms:description": "Lambda bacterial attachment site attB (B-O-B\u2032), the chromosomal target recombined with phage attP (lambda_attP) by lambda tyrosine integrase + IHF (Xis/Fis for excision). 21 bp minimal attB from NC_000913.3 (att\u03bb, between gal and bio); 15 bp common core O = GCTTTTTTATACTAA, with the 7 bp crossover overlap TTTATAC at which Int makes the staggered cut. Source-verified 100%. Cognate phage site: lambda_attP.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:11591683"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24050148"
+        }
+      ],
+      "dcterms:title": "lambda_attB",
+      "rdfs:label": "lambda_attB",
+      "sbol:displayId": "lambda_attB",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:lambda_attB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "lambda_attB",
+        "lambda attB"
+      ]
+    },
+    {
+      "@id": "part:lambda_attB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "lambda_attB_sequence",
+      "sbol:elements": "CTGCTTTTTTATACTAACTTG",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:lambda_attP",
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
@@ -16416,6 +17080,56 @@
       }
     },
     {
+      "@id": "part:phi80_attB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "phi80_attB",
+      "dcterms:description": "Phage phi80 bacterial attachment site attB, within the 3\u2032 end of gene yciI (b1251), divergent from and adjacent to tonB \u2014 reconciling the historical 'tonB region / ~28 min' lore (beside tonB, not in it; not a tRNA gene). 54 bp window from NC_000913.3 containing the 15 bp core consensus AACACTTTCTTAAAT; the exact 17 bp common core and crossover (Leong et al. 1985) are behind paywalls and the precise boundaries are PROVISIONAL. Cognate phage site: phi80_attP.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:2984205"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:11591683"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24050148"
+        }
+      ],
+      "dcterms:title": "phi80_attB",
+      "rdfs:label": "phi80_attB",
+      "sbol:displayId": "phi80_attB",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:phi80_attB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "phi80_attB",
+        "phi80 attB"
+      ]
+    },
+    {
+      "@id": "part:phi80_attB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "phi80_attB_sequence",
+      "sbol:elements": "CTTAAATATTGAATCTCTATTCAGAACACTTTCTTAAATGGTTTCACTGAAACG",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:phi80_attP",
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
@@ -16460,6 +17174,53 @@
       "@type": "sbol:Sequence",
       "sbol:displayId": "phi80_attP_sequence",
       "sbol:elements": "GCCCGTGCGAATCAGAAATAATCTCGATATCATCTCTTTTCTTGCCGAGCGCCTTCCTGAGCTTTGTGTCGGTGATCATTGAATGGGTACACATTTTTGTTTTTGGGTACACAAAAGTGTACACAAAGTTGCCCACTCAAAGCTACACGCAATGTAACACTAGTTCGCAGAGTGTTATGGTTTACATCCTTGAAAGCCTGCTGGATAAGGGTTTAGCGTAACAGAACGTTTTTACGCGGAATTGTTCGTAATATGCCAAATGACAATTTAAGAAAGTGTTCTAATTTATTAGAAATTTGCACTTAAATCAAAAAGTTACGGACAATTCAACCACCAATCAATAAATTAAAGGGCACATTAAAGTACACAATATTTGTGCCCTTCTCTGTTTCTTTCCCGTTATCAGCTAGCTGGAAACTTTTTATACAGAGTTTAGAGCCCTACTCCATACGTTTTTGATACGCTTTGTCGTGATTCACC",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:phiC31_attB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "phiC31_attB",
+      "dcterms:description": "phiC31 bacterial attachment site attB, the 34 bp natural target in the Streptomyces coelicolor chromosome recognized by the phiC31 large serine integrase (unidirectional; no host cofactors; cannot excise without an RDF). Central TT crossover dinucleotide; attB and attP share only a very short central core (~39% overall identity), the basis of the reaction directionality. In non-native hosts (human/other) phiC31 Int also recombines with degenerate genomic pseudo-attP sites; there is no single canonical pseudo-attB. Cognate phage site: phiC31_attP.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:9576912"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10801973"
+        }
+      ],
+      "dcterms:title": "phiC31_attB",
+      "rdfs:label": "phiC31_attB",
+      "sbol:displayId": "phiC31_attB",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:phiC31_attB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "phiC31_attB",
+        "phiC31 attB"
+      ]
+    },
+    {
+      "@id": "part:phiC31_attB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "phiC31_attB_sequence",
+      "sbol:elements": "GTGCCAGGGCGTGCCCTTGGGCTCCCCGGGCGCG",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },

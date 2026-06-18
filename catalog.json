@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 246,
-  "n_validated": 37,
-  "n_candidate": 209,
-  "n_documented": 37,
-  "n_functional_claims": 61,
+  "n_parts": 251,
+  "n_validated": 39,
+  "n_candidate": 212,
+  "n_documented": 39,
+  "n_functional_claims": 70,
   "parts": [
     {
       "name": "186 integrase",
@@ -28,6 +28,62 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "functional_claims": []
+    },
+    {
+      "name": "186_attB",
+      "slug": "186_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "186_attB",
+        "186 attB"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Phage 186 bacterial attachment site attB, overlapping the 3\u2032 half of the tRNA-Ile gene (preserved on integration). 46 bp shared core (identical to the 186_attP core), read 5\u2032->3\u2032 on the minus strand of NC_000913.3 at the tRNA-Ile locus. NCBI annotates the gene as ileX (b3069); the phage/pOSIP literature names the site ileY (distinct from NCBI ileY b2652 \u2014 a nomenclature caveat). Cognate phage site: 186_attP.",
+      "length": 46,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        },
+        {
+          "authors": "Kalionis B, Dodd IB, Egan JB",
+          "title": "Control of gene expression in the P2-related template coliphages. III. DNA sequence of the major control region of phage 186",
+          "journal": "J Mol Biol",
+          "pmid": "3806670",
+          "doi": "10.1016/0022-2836(86)90257-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3806670/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3
+      ],
       "functional_claims": []
     },
     {
@@ -369,20 +425,186 @@
         "8xHis",
         "8xHis (fragment)",
         "10xHis",
-        "polyhistidine tag"
+        "polyhistidine tag",
+        "hexahistidine",
+        "His6",
+        "His6-tag",
+        "poly-His"
       ],
       "collections": [],
-      "description": "",
+      "description": "Canonical hexahistidine (polyhistidine) affinity tag, HHHHHH. Synthetic 6-aa peptide that binds immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) for immobilized-metal affinity chromatography (IMAC). Atomic part: the 6 residues are the functional unit and carry no internal functional sub-elements.",
       "length": 6,
       "protein_length_aa": 6,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Hochuli E, D\u00f6beli H, Schacher A",
+          "title": "New metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+          "journal": "Journal of Chromatography (1987)",
+          "pmid": "3443622",
+          "doi": "10.1016/s0021-9673(00)93969-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3443622/"
+        },
+        {
+          "authors": "Hochuli E, Bannwarth W, D\u00f6beli H, Gentz R, St\u00fcber D",
+          "title": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+          "journal": "Bio/Technology (1988)",
+          "pmid": "",
+          "doi": "10.1038/nbt1188-1321",
+          "url": "https://doi.org/10.1038/nbt1188-1321"
+        },
+        {
+          "authors": "Terpe K",
+          "title": "Overview of tag protein fusions: from molecular and biochemical fundamentals to commercial systems",
+          "journal": "Applied Microbiology and Biotechnology (2003)",
+          "pmid": "12536251",
+          "doi": "10.1007/s00253-002-1158-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12536251/"
+        },
+        {
+          "authors": "Kimple ME, Brill AL, Pasker RL",
+          "title": "Overview of affinity tags for protein purification",
+          "journal": "Current Protocols in Protein Science (2013)",
+          "pmid": "24510596",
+          "doi": "10.1002/0471140864.ps0909s73",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24510596/"
+        },
+        {
+          "authors": "Kaufmann M, Lindner P, Honegger A, Blank K, Tschopp M, Capitani G, Pl\u00fcckthun A, Gr\u00fctter MG",
+          "title": "Crystal structure of the anti-His tag antibody 3D5 single-chain fragment complexed to its antigen",
+          "journal": "Journal of Molecular Biology (2002)",
+          "pmid": "12054774",
+          "doi": "10.1016/S0022-2836(02)00038-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12054774/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Adjacent histidine residues chelate immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) on an IMAC matrix, enabling single-step affinity purification; protein is eluted by imidazole competition or low pH.",
+          "value": {
+            "mechanism": "immobilized-metal affinity chromatography (IMAC)",
+            "metal_ions": [
+              "Ni2+",
+              "Co2+",
+              "Cu2+",
+              "Zn2+"
+            ],
+            "matrices": [
+              "NTA",
+              "IDA"
+            ],
+            "elution": [
+              "imidazole",
+              "low pH"
+            ]
+          },
+          "source": {
+            "pmid": "3443622",
+            "doi": "10.1016/s0021-9673(00)93969-4",
+            "quote": "metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "purification_use",
+          "type": "mechanism",
+          "label": "Genetic fusion of the polyhistidine peptide to a recombinant protein permits one-step IMAC purification of the fusion product.",
+          "value": {
+            "application": "recombinant-protein affinity purification",
+            "fusion": "N- or C-terminal genetic fusion"
+          },
+          "source": {
+            "doi": "10.1038/nbt1188-1321",
+            "quote": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Host- and organism-agnostic: as a small synthetic peptide the tag functions across expression hosts and works under both native and denaturing (e.g. 6\u20138 M urea / guanidine) conditions.",
+          "value": {
+            "host_range": "broad",
+            "conditions": [
+              "native",
+              "denaturing"
+            ]
+          },
+          "source": {
+            "pmid": "12536251",
+            "doi": "10.1007/s00253-002-1158-6",
+            "quote": "the His-tag ... small size, works under denaturing conditions, low cost",
+            "quote_source": "catalog-doc",
+            "section": "Review of tag protein fusions"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Common length variants of the polyhistidine tag exist (e.g. 8xHis, 10xHis); the 6xHis form (HHHHHH) is the canonical minimal tag.",
+          "value": {
+            "canonical": "HHHHHH",
+            "variants": [
+              "8xHis (HHHHHHHH)",
+              "10xHis (HHHHHHHHHH)"
+            ]
+          },
+          "source": {
+            "pmid": "24510596",
+            "doi": "10.1002/0471140864.ps0909s73",
+            "quote": "6xHis tag ... metal ion choices (Ni2+, Co2+, Cu2+, Zn2+), matrix types (NTA vs IDA), placement",
+            "quote_source": "catalog-doc",
+            "section": "Overview of affinity tags"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "aadA",
@@ -3321,26 +3543,278 @@
       "slug": "GST",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P08515",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "GST",
-        "GST tag",
-        "glutathione S-transferase"
+        "glutathione S-transferase",
+        "Sj26GST",
+        "Sj26",
+        "GST-tag",
+        "pGEX GST"
       ],
       "collections": [],
-      "description": "",
+      "description": "Schistosoma japonicum 26 kDa glutathione S-transferase (Sj26GST); UniProt P08515, 218 aa; affinity handle (binds glutathione-agarose, eluted with reduced glutathione) and solubility/chaperone partner in N-terminal fusions; obligate non-covalent homodimer (can force dimerization of the fused partner)",
       "length": 218,
       "protein_length_aa": 218,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "GST N-terminal",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 1,
+          "end": 83,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "GST C-terminal",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 84,
+          "end": 203,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 6,
+          "end": 8,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 40,
+          "end": 45,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 53,
+          "end": 55,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 66,
+          "end": 68,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": null,
+          "so_name": null,
+          "start": 110,
+          "end": 111,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Smith DB, Johnson KS",
+          "title": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase.",
+          "journal": "Gene (1988)",
+          "pmid": "3047011",
+          "doi": "10.1016/0378-1119(88)90005-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3047011/"
+        },
+        {
+          "authors": "Kaplan W, Husler P, Klump H, Erhardt J, Sluis-Cremer N, Dirr H",
+          "title": "Conformational stability of pGEX-expressed Schistosoma japonicum glutathione S-transferase: a detoxification enzyme and fusion-protein affinity tag.",
+          "journal": "Protein Science (1997)",
+          "pmid": "9041642",
+          "doi": "10.1002/pro.5560060216",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9041642/"
+        },
+        {
+          "authors": "Smith DB",
+          "title": "Generating fusions to glutathione S-transferase for protein studies.",
+          "journal": "Methods in Enzymology (2000)",
+          "pmid": "11036647",
+          "doi": "10.1016/s0076-6879(00)26059-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11036647/"
+        },
+        {
+          "authors": "Harper S, Speicher DW",
+          "title": "Purification of proteins fused to glutathione S-transferase.",
+          "journal": "Methods in Molecular Biology (2011)",
+          "pmid": "20978970",
+          "doi": "10.1007/978-1-60761-913-0_14",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20978970/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "functional_claims": [
+        {
+          "id": "affinity_purification",
+          "type": "function",
+          "label": "Binds glutathione resin for one-step affinity purification of fusion proteins",
+          "value": {
+            "function": "affinity_purification",
+            "ligand": "glutathione",
+            "matrix": "glutathione-agarose",
+            "elution": "reduced glutathione",
+            "organism": "Schistosoma japonicum"
+          },
+          "source": {
+            "pmid": "3047011",
+            "doi": "10.1016/0378-1119(88)90005-4",
+            "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "solubility_partner",
+          "type": "function",
+          "label": "Acts as a solubility/chaperone partner to promote soluble expression of fused proteins",
+          "value": {
+            "function": "solubility_enhancement",
+            "mechanism": "chaperone-like folding assistance"
+          },
+          "source": {
+            "pmid": "20978970",
+            "doi": "10.1007/978-1-60761-913-0_14",
+            "quote": "GST as a chaperone/solubility partner, non-denaturing purification on glutathione resin",
+            "quote_source": "catalog-doc",
+            "section": "introduction"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Functional in Escherichia coli (primary host) and Saccharomyces cerevisiae / Schizosaccharomyces pombe",
+          "value": {
+            "hosts": [
+              "Escherichia coli",
+              "Saccharomyces cerevisiae",
+              "Schizosaccharomyces pombe"
+            ],
+            "primary_host": "Escherichia coli"
+          },
+          "source": {
+            "pmid": "11036647",
+            "doi": "10.1016/s0076-6879(00)26059-x",
+            "quote": "expression in E. coli and yeast (S. cerevisiae, S. pombe)",
+            "quote_source": "catalog-doc",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "oligomeric_state",
+          "type": "biophysics",
+          "label": "Forms a non-covalent homodimer in solution; two-state thermal unfolding with deltaG ~26 kcal/mol",
+          "value": {
+            "oligomeric_state": "homodimer",
+            "unfolding_model": "two-state",
+            "deltaG_kcal_mol": 26,
+            "measurement": "calorimetry"
+          },
+          "source": {
+            "pmid": "9041642",
+            "doi": "10.1002/pro.5560060216",
+            "quote": "pGEX-2T-expressed Sj26GST as a homodimer with two-state unfolding; quantifies thermodynamic stability (deltaG ~26 kcal/mol)",
+            "quote_source": "catalog-doc",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "protease_removal",
+          "type": "tag_removal",
+          "label": "Tag removed by thrombin or factor Xa cleavage at linker sites engineered into pGEX vectors",
+          "value": {
+            "proteases": [
+              "thrombin",
+              "factor Xa"
+            ],
+            "note": "Cleavage sites are in the linker, not within GST itself; separate catalog parts thrombin_site and enterokinase_site encode the recognition sequences"
+          },
+          "source": {
+            "pmid": "3047011",
+            "doi": "10.1016/0378-1119(88)90005-4",
+            "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+            "quote_source": "primary",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "fetched": "2026-06-18",
+        "accession": "UniProt:P08515",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 152
+      }
     },
     {
       "name": "HA",
@@ -3602,6 +4076,62 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "functional_claims": []
+    },
+    {
+      "name": "HK022_attB",
+      "slug": "HK022_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "HK022_attB",
+        "HK022 attB"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Phage HK022 bacterial attachment site attB. HK022 (a lambdoid coliphage with altered att specificity vs lambda) integrates in the torS-torT intergenic region \u2014 NOT leuX. 44 bp window from NC_000913.3 containing the 7 bp common-core overlap AGGTGAA (the solid, source-verified element); the exact minimal BOB\u2032 boundaries are not pinned to a primary figure and are PROVISIONAL. Cognate phage site: HK022_attP.",
+      "length": 44,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Nagaraja R, Weisberg RA",
+          "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda",
+          "journal": "J Bacteriol",
+          "pmid": "2146253",
+          "doi": "10.1128/jb.172.11.6540-6550.1990",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2146253/"
+        },
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3
+      ],
       "functional_claims": []
     },
     {
@@ -4858,6 +5388,53 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "functional_claims": []
+    },
+    {
+      "name": "lambda_attB",
+      "slug": "lambda_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "lambda_attB",
+        "lambda attB"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Lambda bacterial attachment site attB (B-O-B\u2032), the chromosomal target recombined with phage attP (lambda_attP) by lambda tyrosine integrase + IHF (Xis/Fis for excision). 21 bp minimal attB from NC_000913.3 (att\u03bb, between gal and bio); 15 bp common core O = GCTTTTTTATACTAA, with the 7 bp crossover overlap TTTATAC at which Int makes the staggered cut. Source-verified 100%. Cognate phage site: lambda_attP.",
+      "length": 21,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
       "functional_claims": []
     },
     {
@@ -6565,6 +7142,62 @@
       "functional_claims": []
     },
     {
+      "name": "phi80_attB",
+      "slug": "phi80_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "phi80_attB",
+        "phi80 attB"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Phage phi80 bacterial attachment site attB, within the 3\u2032 end of gene yciI (b1251), divergent from and adjacent to tonB \u2014 reconciling the historical 'tonB region / ~28 min' lore (beside tonB, not in it; not a tRNA gene). 54 bp window from NC_000913.3 containing the 15 bp core consensus AACACTTTCTTAAAT; the exact 17 bp common core and crossover (Leong et al. 1985) are behind paywalls and the precise boundaries are PROVISIONAL. Cognate phage site: phi80_attP.",
+      "length": 54,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Leong JM, Nunes-D\u00fcby S, Lesser CF, Youderian P, Susskind MM, Landy A",
+          "title": "",
+          "journal": "Journal of Biological Chemistry",
+          "pmid": "2984205",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2984205/"
+        },
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3
+      ],
+      "functional_claims": []
+    },
+    {
       "name": "phi80_attP",
       "slug": "phi80_attP",
       "feature_type": "protein_bind",
@@ -6616,6 +7249,53 @@
         }
       ],
       "main_citations": [],
+      "functional_claims": []
+    },
+    {
+      "name": "phiC31_attB",
+      "slug": "phiC31_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "phiC31_attB",
+        "phiC31 attB"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "phiC31 bacterial attachment site attB, the 34 bp natural target in the Streptomyces coelicolor chromosome recognized by the phiC31 large serine integrase (unidirectional; no host cofactors; cannot excise without an RDF). Central TT crossover dinucleotide; attB and attP share only a very short central core (~39% overall identity), the basis of the reaction directionality. In non-native hosts (human/other) phiC31 Int also recombines with degenerate genomic pseudo-attP sites; there is no single canonical pseudo-attB. Cognate phage site: phiC31_attP.",
+      "length": 34,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Thorpe HM, Smith MC",
+          "title": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+          "journal": "Proc Natl Acad Sci USA",
+          "pmid": "9576912",
+          "doi": "10.1073/pnas.95.10.5505",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9576912/"
+        },
+        {
+          "authors": "Groth AC, Olivares EC, Thyagarajan B, Calos MP",
+          "title": "A phage integrase directs efficient site-specific integration in human cells",
+          "journal": "Proc Natl Acad Sci USA",
+          "pmid": "10801973",
+          "doi": "10.1073/pnas.090527097",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10801973/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
       "functional_claims": []
     },
     {
@@ -12232,13 +12912,18 @@
           "url": "http://www.sequenceontology.org/browser/current_release/term/SO:0001797"
         }
       ],
-      "n_parts": 5,
+      "n_parts": 10,
       "n_validated": 0,
       "members": [
+        "186_attB",
         "186_attP",
+        "HK022_attB",
         "HK022_attP",
+        "lambda_attB",
         "lambda_attP",
+        "phi80_attB",
         "phi80_attP",
+        "phiC31_attB",
         "phiC31_attP"
       ]
     }

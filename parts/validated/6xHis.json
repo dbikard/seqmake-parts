@@ -3,14 +3,50 @@
   "slug": "6xHis",
   "locus": "6xHis",
   "id": "6xHis",
-  "description": "6xHis",
+  "description": "6xHis (hexahistidine) polyhistidine affinity tag \u2014 a canonical 6-aa IMAC purification tag (HHHHHH).",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
   "sequence": "HHHHHH",
-  "references": [],
+  "references": [
+    {
+      "authors": "Hochuli E, D\u00f6beli H, Schacher A",
+      "title": "New metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+      "journal": "Journal of Chromatography (1987)",
+      "pubmed_id": "3443622",
+      "comment": "doi:10.1016/s0021-9673(00)93969-4"
+    },
+    {
+      "authors": "Hochuli E, Bannwarth W, D\u00f6beli H, Gentz R, St\u00fcber D",
+      "title": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+      "journal": "Bio/Technology (1988)",
+      "pubmed_id": "",
+      "comment": "doi:10.1038/nbt1188-1321"
+    },
+    {
+      "authors": "Terpe K",
+      "title": "Overview of tag protein fusions: from molecular and biochemical fundamentals to commercial systems",
+      "journal": "Applied Microbiology and Biotechnology (2003)",
+      "pubmed_id": "12536251",
+      "comment": "doi:10.1007/s00253-002-1158-6"
+    },
+    {
+      "authors": "Kimple ME, Brill AL, Pasker RL",
+      "title": "Overview of affinity tags for protein purification",
+      "journal": "Current Protocols in Protein Science (2013)",
+      "pubmed_id": "24510596",
+      "comment": "doi:10.1002/0471140864.ps0909s73"
+    },
+    {
+      "authors": "Kaufmann M, Lindner P, Honegger A, Blank K, Tschopp M, Capitani G, Pl\u00fcckthun A, Gr\u00fctter MG",
+      "title": "Crystal structure of the anti-His tag antibody 3D5 single-chain fragment complexed to its antigen",
+      "journal": "Journal of Molecular Biology (2002)",
+      "pubmed_id": "12054774",
+      "comment": "doi:10.1016/S0022-2836(02)00038-4"
+    }
+  ],
   "features": [
     {
       "type": "protein_domain",
@@ -29,14 +65,147 @@
           "8xHis",
           "8xHis (fragment)",
           "10xHis",
-          "polyhistidine tag"
+          "polyhistidine tag",
+          "hexahistidine",
+          "His6",
+          "His6-tag",
+          "poly-His"
+        ],
+        "note": [
+          "Canonical hexahistidine (polyhistidine) affinity tag, HHHHHH. Synthetic 6-aa peptide that binds immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) for immobilized-metal affinity chromatography (IMAC). Atomic part: the 6 residues are the functional unit and carry no internal functional sub-elements."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
         ]
       }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "PDB 1KTR Chain B (Kaufmann et al., J.Mol.Biol. 2002, PMID 12054774), \"Oligohistidine peptide Antigen\", synthetic construct (taxon:32630), sequence HHHHHH, identity 100% over 6 aa; independently fetched via RCSB FASTA API and compared byte-for-byte to the stored sequence."
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Adjacent histidine residues chelate immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) on an IMAC matrix, enabling single-step affinity purification; protein is eluted by imidazole competition or low pH.",
+      "value": {
+        "mechanism": "immobilized-metal affinity chromatography (IMAC)",
+        "metal_ions": [
+          "Ni2+",
+          "Co2+",
+          "Cu2+",
+          "Zn2+"
+        ],
+        "matrices": [
+          "NTA",
+          "IDA"
+        ],
+        "elution": [
+          "imidazole",
+          "low pH"
+        ]
+      },
+      "source": {
+        "pmid": "3443622",
+        "doi": "10.1016/s0021-9673(00)93969-4",
+        "quote": "metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "purification_use",
+      "type": "mechanism",
+      "label": "Genetic fusion of the polyhistidine peptide to a recombinant protein permits one-step IMAC purification of the fusion product.",
+      "value": {
+        "application": "recombinant-protein affinity purification",
+        "fusion": "N- or C-terminal genetic fusion"
+      },
+      "source": {
+        "doi": "10.1038/nbt1188-1321",
+        "quote": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Host- and organism-agnostic: as a small synthetic peptide the tag functions across expression hosts and works under both native and denaturing (e.g. 6\u20138 M urea / guanidine) conditions.",
+      "value": {
+        "host_range": "broad",
+        "conditions": [
+          "native",
+          "denaturing"
+        ]
+      },
+      "source": {
+        "pmid": "12536251",
+        "doi": "10.1007/s00253-002-1158-6",
+        "quote": "the His-tag ... small size, works under denaturing conditions, low cost",
+        "quote_source": "catalog-doc",
+        "section": "Review of tag protein fusions"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Common length variants of the polyhistidine tag exist (e.g. 8xHis, 10xHis); the 6xHis form (HHHHHH) is the canonical minimal tag.",
+      "value": {
+        "canonical": "HHHHHH",
+        "variants": [
+          "8xHis (HHHHHHHH)",
+          "10xHis (HHHHHHHHHH)"
+        ]
+      },
+      "source": {
+        "pmid": "24510596",
+        "doi": "10.1002/0471140864.ps0909s73",
+        "quote": "6xHis tag ... metal ion choices (Ni2+, Co2+, Cu2+, Zn2+), matrix types (NTA vs IDA), placement",
+        "quote_source": "catalog-doc",
+        "section": "Overview of affinity tags"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

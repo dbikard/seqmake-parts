@@ -1,0 +1,95 @@
+LOCUS       GST                      218 aa                     UNK 01-JAN-1980
+DEFINITION  GST affinity/solubility tag — 218 aa Schistosoma japonicum Sj26
+            glutathione S-transferase, the canonical pGEX-family fusion partner
+            for one-step glutathione-resin purification.
+ACCESSION   GST
+VERSION     GST
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Smith DB, Johnson KS
+  TITLE     Single-step purification of polypeptides expressed in Escherichia
+            coli as fusions with glutathione S-transferase.
+  JOURNAL   Gene (1988)
+   PUBMED   3047011
+  REMARK    doi:10.1016/0378-1119(88)90005-4
+REFERENCE   2
+  AUTHORS   Kaplan W, Husler P, Klump H, Erhardt J, Sluis-Cremer N, Dirr H
+  TITLE     Conformational stability of pGEX-expressed Schistosoma japonicum
+            glutathione S-transferase: a detoxification enzyme and
+            fusion-protein affinity tag.
+  JOURNAL   Protein Science (1997)
+   PUBMED   9041642
+  REMARK    doi:10.1002/pro.5560060216
+REFERENCE   3
+  AUTHORS   Smith DB
+  TITLE     Generating fusions to glutathione S-transferase for protein studies.
+  JOURNAL   Methods in Enzymology (2000)
+   PUBMED   11036647
+  REMARK    doi:10.1016/s0076-6879(00)26059-x
+REFERENCE   4
+  AUTHORS   Harper S, Speicher DW
+  TITLE     Purification of proteins fused to glutathione S-transferase.
+  JOURNAL   Methods in Molecular Biology (2011)
+   PUBMED   20978970
+  REMARK    doi:10.1007/978-1-60761-913-0_14
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/GST
+FEATURES             Location/Qualifiers
+     CDS             1..218
+                     /label="GST"
+                     /synonym="glutathione S-transferase"
+                     /synonym="Sj26GST"
+                     /synonym="Sj26"
+                     /synonym="GST-tag"
+                     /synonym="pGEX GST"
+                     /note="Schistosoma japonicum 26 kDa glutathione
+                     S-transferase (Sj26GST); UniProt P08515, 218 aa; affinity
+                     handle (binds glutathione-agarose, eluted with reduced
+                     glutathione) and solubility/chaperone partner in N-terminal
+                     fusions; obligate non-covalent homodimer (can force
+                     dimerization of the fused partner)"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P08515"
+     protein_domain  2..83
+                     /label="GST N-terminal"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+                     /db_xref="SO:0000417"
+     protein_domain  85..203
+                     /label="GST C-terminal"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+                     /db_xref="SO:0000417"
+     binding         7..8
+                     /label="Binding site"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+     binding         41..45
+                     /label="Binding site"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+     binding         54..55
+                     /label="Binding site"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+     binding         67..68
+                     /label="Binding site"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+     binding         111
+                     /label="Binding site"
+                     /parent="GST"
+                     /note="source: UniProt:P08515"
+ORIGIN
+        1 mspilgywki kglvqptrll leyleekyee hlyerdegdk wrnkkfelgl efpnlpyyid
+       61 gdvkltqsma iiryiadkhn mlggcpkera eismlegavl dirygvsria yskdfetlkv
+      121 dflsklpeml kmfedrlchk tylngdhvth pdfmlydald vvlymdpmcl dafpklvcfk
+      181 krieaipqid kylksskyia wplqgwqatf gggdhppk
+//
