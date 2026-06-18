@@ -76,6 +76,26 @@ docs/                       generated website source (mkdocs Material)
   federation).
 - This catalog is a standalone, reusable dataset with no external dependencies.
 
+### For agents (LLM tooling)
+
+The catalog is self-describing to LLM agents (Claude Code, Codex, …) over plain
+HTTP — no plugin required. An agent should **narrow, then fetch**:
+
+- **[`llms.txt`](https://w3id.org/seqmake/parts/llms.txt)** — the orientation
+  entry point: what this is, the trust caveat, and where to start.
+- **[`index.json`](https://w3id.org/seqmake/parts/index.json)** — a token-cheap
+  discovery index: one compact line per part (slug, name, synonyms, type, SO
+  role, status, claim count, cognate TFs), plus URL templates for the artifacts
+  below. Filter here first.
+- **Per-part record** `…/parts/files/<slug>.json` — one part's full canonical
+  detail (sequence + located sub-features + functional claims + provenance +
+  references); `.gb` / `.fasta` / `.ttl` alongside. Or pull the whole
+  [`catalog.json`](https://w3id.org/seqmake/parts/catalog.json) at once.
+
+Every functional claim carries its **source, confidence, and review status** —
+an agent should surface those and verify against the cited literature, not
+assert. All records are currently `ai-generated`.
+
 ## How this fits the ecosystem
 
 This is a curated, machine-readable **knowledge base** — not a registry platform,

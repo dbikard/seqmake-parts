@@ -33,9 +33,9 @@ jobs:
       - run: python tools/build_catalog.py
       - run: python tools/build_rdf.py
       - run: mkdocs build
-      - name: Publish RDF + schema next to the site
+      - name: Publish machine artifacts + schema next to the site
         run: |
-          cp catalog.ttl catalog.jsonld site/
+          cp catalog.ttl catalog.jsonld catalog.json index.json llms.txt site/
           mkdir -p site/schema
           cp schema/part.schema.json site/schema/
       - uses: actions/upload-pages-artifact@v5

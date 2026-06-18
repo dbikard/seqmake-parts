@@ -17,8 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PY = sys.executable
-GENERATED = ["parts", "catalog.json", "catalog.ttl", "catalog.jsonld",
-             "tools/catalog_context.jsonld"]
+GENERATED = ["parts", "catalog.json", "index.json", "llms.txt",
+             "catalog.ttl", "catalog.jsonld", "tools/catalog_context.jsonld"]
 
 
 def run(label: str, cmd: list[str]) -> bool:

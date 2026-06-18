@@ -66,6 +66,8 @@ TAGS_FILE = DOCS_DIR / "tags.md"
 COLLECTIONS_PAGES = DOCS_DIR / "collections"
 COLLECTIONS_FILE = ROOT / "collections.json"
 REPO_URL = "https://github.com/dbikard/seqmake-parts"
+SITE_URL = "https://dbikard.github.io/seqmake-parts"   # GitHub Pages: bytes served here
+BASE_IRI = "https://w3id.org/seqmake/parts"            # stable, host-independent IRIs
 
 # SO accession -> name, for reverse lookup when a feature carries an explicit
 # /db_xref="SO:...". The type/regulatory_class -> SO mapping itself lives in
@@ -814,6 +816,124 @@ def render_collections_index(summary: list[dict], coll_meta: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def build_agent_index(manifest: dict) -> dict:
+    """A compact, one-line-per-part discovery index for agents -- enough to FIND
+    and filter (slug, name, synonyms, type, SO role, status, claim count,
+    cognate TFs), not the full detail. An agent narrows here, then fetches each
+    part's ``record`` (canonical JSON) or the whole ``catalog`` for sub-features,
+    functional claims, and references. Projected from the manifest, so it can
+    never disagree with catalog.json."""
+    parts = []
+    for p in manifest["parts"]:
+        entry = {
+            "slug": p["slug"],
+            "name": p["name"],
+            "feature_type": p["feature_type"],
+            "kind": p["kind"],
+            "so_term": p["so_term"],
+            "so_name": p["so_name"],
+            "status": p["status"],
+            "n_claims": len(p.get("functional_claims", [])),
+        }
+        if p.get("synonyms"):
+            entry["synonyms"] = p["synonyms"]
+        if p.get("regulated_by"):
+            entry["regulated_by"] = p["regulated_by"]
+        parts.append(entry)
+    return {
+        "schema_version": manifest["schema_version"],
+        "title": "SeqMake Parts -- agent discovery index",
+        "description": (
+            "One compact line per part: enough to find and filter. Fetch full "
+            "detail from each part's `record` URL (canonical JSON: sequence, "
+            "located sub-features, functional claims with source/confidence/"
+            "review_status, references) or the whole `catalog` at once. ALL "
+            "records are currently review_status='ai-generated' and not yet "
+            "expert-reviewed -- treat claims as a grounded starting point and "
+            "verify against the cited primary literature."),
+        "base_iri": BASE_IRI,
+        "site": SITE_URL,
+        "catalog": f"{SITE_URL}/catalog.json",
+        "rdf": f"{SITE_URL}/catalog.ttl",
+        "schema": f"{BASE_IRI}/schema/part.schema.json",
+        "queries": f"{REPO_URL}/blob/main/QUERIES.md",
+        "url_templates": {
+            "iri": f"{BASE_IRI}/part/{{slug}}",
+            "page": f"{SITE_URL}/parts/{{slug}}/",
+            "record": f"{SITE_URL}/parts/files/{{slug}}.json",
+            "genbank": f"{SITE_URL}/parts/files/{{slug}}.gb",
+            "fasta": f"{SITE_URL}/parts/files/{{slug}}.fasta",
+            "rdf": f"{SITE_URL}/parts/files/{{slug}}.ttl",
+        },
+        "n_parts": manifest["n_parts"],
+        "n_validated": manifest["n_validated"],
+        "n_candidate": manifest["n_candidate"],
+        "n_functional_claims": manifest["n_functional_claims"],
+        "parts": parts,
+        "collections": [
+            {"id": c["id"], "name": c["name"], "n_parts": c["n_parts"]}
+            for c in manifest["collections"]],
+    }
+
+
+def render_llms_txt(manifest: dict) -> str:
+    """The /llms.txt entry point (an emerging convention): a short, plain-text
+    orientation for LLM agents -- what this is, the trust caveat, and the few
+    URLs to start from. Generated, so the counts stay honest."""
+    n = manifest
+    return f"""\
+# SeqMake Parts
+
+> A machine-readable, provenance-tracked knowledge base of standard biological
+> parts -- promoters, CDSs, terminators, RBSs, operators, origins, selection
+> markers, regulators, and more. Each part is an annotated record with Sequence
+> Ontology typing, located sub-features, literature references, and
+> prose-derived functional claims. Every functional claim carries its source
+> (PMID + verbatim quote / figure), a confidence, and a review_status, so an
+> agent can weigh and cite it rather than assert it.
+
+CAVEAT: this is an AI-generated knowledge base under active development. All
+{n['n_parts']} records are currently review_status = "ai-generated" and have not
+been expert-reviewed. Treat claims as a grounded starting point and VERIFY
+against the cited primary literature before relying on them.
+
+Contents: {n['n_parts']} parts ({n['n_validated']} validated, {n['n_candidate']} \
+candidate) carrying {n['n_functional_claims']} functional claims.
+
+## For agents: where to start
+
+1. Discovery index -- one compact line per part (slug, name, synonyms, type, SO
+   role, status, claim count, cognate TFs). Narrow here first:
+     {BASE_IRI}/index.json
+2. Full manifest -- every part with its sub-features, functional claims, and
+   references (no nucleotide sequence; large):
+     {BASE_IRI}/catalog.json
+3. Per-part canonical record -- sequence + located sub-features + functional
+   claims + provenance + references (substitute the slug):
+     {SITE_URL}/parts/files/{{slug}}.json
+   GenBank / FASTA / per-part RDF: same path with .gb / .fasta / .ttl
+4. Stable citation IRI for a part (resolves to its page):
+     {BASE_IRI}/part/{{slug}}
+5. RDF graph -- SBOL3 + Sequence Ontology + SBO; promoter<->TF regulation as
+   typed interactions; federates with UniProt:
+     {BASE_IRI}/catalog.ttl   (also catalog.jsonld)
+6. SPARQL cookbook (inducer queries, the regulation graph, claims-with-evidence):
+     {REPO_URL}/blob/main/QUERIES.md
+7. Part-record JSON Schema:
+     {BASE_IRI}/schema/part.schema.json
+
+## How to read a functional claim
+
+Each claim has: a `type` (inducer / induction_dynamic_range /
+repression_dynamic_range / strength_class / host_range / mechanism / ...), a
+structured `value`, a `source` (pmid/doi + a verbatim quote and/or figure), a
+`confidence` (low | medium | high), and a `review_status`. Prefer higher
+confidence, and surface the source + review_status whenever you use a claim.
+
+Repository: {REPO_URL}
+"""
+
+
 def main() -> None:
     parts, skipped = [], []
     # ``validated/`` parts must carry a .md; ``candidate/`` parts must not.
@@ -889,6 +1009,14 @@ def main() -> None:
     (ROOT / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n",
                                        encoding="utf-8")
 
+    # Agent-facing self-describing layer: a token-cheap discovery index and an
+    # llms.txt entry point, both PROJECTED from the manifest (single source of
+    # truth, so they can never disagree) and published at the site root by
+    # .github/workflows/pages.yml. The CI staleness gate keeps them in step.
+    (ROOT / "index.json").write_text(
+        json.dumps(build_agent_index(manifest), indent=2) + "\n", encoding="utf-8")
+    (ROOT / "llms.txt").write_text(render_llms_txt(manifest), encoding="utf-8")
+
     # The website publishes every part: validated parts carry curated prose,
     # candidates get a lightweight auto-generated page (viewer + features +
     # downloads). A landing hub, one page per type, one page per part, a tag index.
@@ -924,6 +1052,10 @@ def main() -> None:
         (PARTS_PAGES / f"{p['slug']}.md").write_text(render_part_page(p),
                                                      encoding="utf-8")
         shutil.copyfile(src_dir / f"{p['slug']}.gb", FILES_DIR / f"{p['slug']}.gb")
+        # Publish the canonical record too, so an agent that narrowed via
+        # index.json can fetch one part's full detail (sequence + located
+        # sub-features + functional claims + provenance) without the manifest.
+        shutil.copyfile(src_dir / f"{p['slug']}.json", FILES_DIR / f"{p['slug']}.json")
         (FILES_DIR / f"{p['slug']}.fasta").write_text(
             _fasta(p["name"], p["_seq"]), encoding="utf-8")
         (FILES_DIR / f"{p['slug']}.ttl").write_text(
