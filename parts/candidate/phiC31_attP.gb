@@ -1,19 +1,128 @@
 LOCUS       phiC31_attP              100 bp    DNA              UNK 01-JAN-1980
-DEFINITION  phiC31 attP.
+DEFINITION  phiC31_attP — 100 bp phage attachment site (attP) of Streptomyces
+            phage phiC31, recognized by the phiC31 large serine integrase;
+            contains the minimal 39 bp core with two 9 bp inverted-repeat
+            half-sites and the central TT crossover..
 ACCESSION   phiC31_attP
 VERSION     phiC31_attP
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Rausch H, Lehmann M
+  TITLE     Structural analysis of the actinophage phi C31 attachment site
+  JOURNAL   Nucleic Acids Res
+   PUBMED   1656389
+REFERENCE   2
+  AUTHORS   Thorpe HM, Smith MC
+  TITLE     In vitro site-specific integration of bacteriophage DNA catalyzed by
+            a recombinase of the resolvase/invertase family
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   9576912
+  REMARK    doi:10.1073/pnas.95.10.5505
+REFERENCE   3
+  AUTHORS   Smith MC, Burns RN, Wilson SE, Gregory MA
+  TITLE     The complete genome sequence of the Streptomyces temperate phage
+            phiC31: evolutionary relationships to other viruses
+  JOURNAL   Nucleic Acids Res
+   PUBMED   10219087
+  REMARK    doi:10.1093/nar/27.10.2145
+REFERENCE   4
+  AUTHORS   Groth AC, Olivares EC, Thyagarajan B, Calos MP
+  TITLE     A phage integrase directs efficient site-specific integration in
+            human cells
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   10801973
+  REMARK    doi:10.1073/pnas.090527097
+REFERENCE   5
+  AUTHORS   St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE
+  TITLE     One-step cloning and chromosomal integration of DNA
+  JOURNAL   ACS Synth Biol
+   PUBMED   24050148
+  REMARK    doi:10.1021/sb400021j
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/phiC31_attP
 FEATURES             Location/Qualifiers
      protein_bind    1..100
-                     /label="phiC31 attP"
+                     /label="phiC31_attP"
+                     /synonym="phiC31_attP"
                      /synonym="phiC31 attP"
                      /synonym="phi-C31 attP"
                      /synonym="phiC31 attachment site"
+                     /note="Phage attachment site (attP) of Streptomyces
+                     temperate phage phiC31, the DNA target recognized by the
+                     phiC31 large serine integrase. 100 bp spanning the attP
+                     crossover region; exact reverse complement of X57036.1
+                     positions 1590-1689. The phiC31 integrase recombines this
+                     attP with a chromosomal attB to integrate DNA irreversibly
+                     and unidirectionally, with no required host accessory
+                     factors. Widely used as a chromosomal landing pad in
+                     heterologous hosts including mammalian cells. The
+                     functional center comprises two 9 bp imperfect
+                     inverted-repeat integrase half-sites flanking a spacer that
+                     carries the central TT crossover dinucleotide."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[4]
+                     /collection="phage-att-sites"
+     protein_bind    32..70
+                     /label="phiC31 attP minimal core (39 bp)"
+                     /parent="phiC31_attP"
+                     /note="Minimal functional phiC31 attP defined as 39 bp by
+                     systematic truncation assay (Groth et al. 2000, PMID
+                     10801973). Spans positions 31-70 of the 100 bp part and
+                     contains both 9 bp inverted-repeat integrase half-sites
+                     plus the central TT crossover; the ~31 bp flanking the core
+                     on each side lie outside the minimal functional site."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+     protein_bind    32..40
+                     /label="phiC31 Int binding -- left half-site"
+                     /parent="phiC31_attP"
+                     /note="9 bp imperfect inverted-repeat left half-site
+                     (CCCCAACTG), one of the two integrase binding determinants
+                     of phiC31 attP (Groth et al. 2000, PMID 10801973). The left
+                     and right half-sites are in inverted orientation flanking
+                     the spacer that carries the TT crossover. Half-site
+                     boundary is a figure-level detail in the source; sequence
+                     and coordinates verified against the stored part."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+     protein_bind    complement(61..69)
+                     /label="phiC31 Int binding -- right half-site"
+                     /parent="phiC31_attP"
+                     /note="9 bp imperfect inverted-repeat right half-site
+                     (Groth et al. 2000, PMID 10801973). On the plus strand
+                     reads CAGTTGGGG; its reverse complement is CCCCAACTG, the
+                     mirror of the left half-site, confirming the
+                     inverted-repeat architecture. Annotated on the minus strand
+                     to reflect its inverted orientation relative to the left
+                     half-site. Half-site boundary is a figure-level detail in
+                     the source; sequence and coordinates verified against the
+                     stored part."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+     misc_feature    55..56
+                     /label="TT crossover dinucleotide"
+                     /parent="phiC31_attP"
+                     /note="Central TT overlap dinucleotide at the recombination
+                     crossover point of phiC31 attP, shared with attB; lies near
+                     the center of the minimal 39 bp core. phiC31 integrase is a
+                     large serine recombinase of the resolvase/invertase family
+                     (Thorpe & Smith 1998, PMID 9576912), a family that makes
+                     staggered double-strand cuts leaving a short central
+                     overlap, so the 2 bp stagger is mechanistically expected.
+                     The specific TT identity at this position is consistent
+                     with the X57036.1 crossover annotation (attP crossover at
+                     X57036 positions 1639-1641) but is not explicitly
+                     attributed to a single primary reference here; treat the
+                     exact 2 bp identity as consensus/inferred pending a
+                     junction-sequencing primary source."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 aaccccttgt gtcatgtcgg cgaccctacg cccccaactg agagaactca aaggttaccc
        61 cagttggggc actactcccg aaaaccgctt ctgacctggg

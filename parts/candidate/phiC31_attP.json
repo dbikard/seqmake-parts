@@ -3,14 +3,49 @@
   "slug": "phiC31_attP",
   "locus": "phiC31_attP",
   "id": "phiC31_attP",
-  "description": "phiC31 attP",
+  "description": "phiC31_attP — 100 bp phage attachment site (attP) of Streptomyces phage phiC31, recognized by the phiC31 large serine integrase; contains the minimal 39 bp core with two 9 bp inverted-repeat half-sites and the central TT crossover.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
   "sequence": "AACCCCTTGTGTCATGTCGGCGACCCTACGCCCCCAACTGAGAGAACTCAAAGGTTACCCCAGTTGGGGCACTACTCCCGAAAACCGCTTCTGACCTGGG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Rausch H, Lehmann M",
+      "title": "Structural analysis of the actinophage phi C31 attachment site",
+      "journal": "Nucleic Acids Res",
+      "pubmed_id": "1656389"
+    },
+    {
+      "authors": "Thorpe HM, Smith MC",
+      "title": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+      "journal": "Proc Natl Acad Sci USA",
+      "pubmed_id": "9576912",
+      "comment": "doi:10.1073/pnas.95.10.5505"
+    },
+    {
+      "authors": "Smith MC, Burns RN, Wilson SE, Gregory MA",
+      "title": "The complete genome sequence of the Streptomyces temperate phage phiC31: evolutionary relationships to other viruses",
+      "journal": "Nucleic Acids Res",
+      "pubmed_id": "10219087",
+      "comment": "doi:10.1093/nar/27.10.2145"
+    },
+    {
+      "authors": "Groth AC, Olivares EC, Thyagarajan B, Calos MP",
+      "title": "A phage integrase directs efficient site-specific integration in human cells",
+      "journal": "Proc Natl Acad Sci USA",
+      "pubmed_id": "10801973",
+      "comment": "doi:10.1073/pnas.090527097"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
   "features": [
     {
       "type": "protein_bind",
@@ -19,19 +54,211 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "phiC31 attP"
+          "phiC31_attP"
         ],
         "synonym": [
+          "phiC31_attP",
           "phiC31 attP",
           "phi-C31 attP",
           "phiC31 attachment site"
+        ],
+        "note": [
+          "Phage attachment site (attP) of Streptomyces temperate phage phiC31, the DNA target recognized by the phiC31 large serine integrase. 100 bp spanning the attP crossover region; exact reverse complement of X57036.1 positions 1590-1689. The phiC31 integrase recombines this attP with a chromosomal attB to integrate DNA irreversibly and unidirectionally, with no required host accessory factors. Widely used as a chromosomal landing pad in heterologous hosts including mammalian cells. The functional center comprises two 9 bp imperfect inverted-repeat integrase half-sites flanking a spacer that carries the central TT crossover dinucleotide."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[4]"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 31,
+      "end": 70,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phiC31 attP minimal core (39 bp)"
+        ],
+        "parent": [
+          "phiC31_attP"
+        ],
+        "note": [
+          "Minimal functional phiC31 attP defined as 39 bp by systematic truncation assay (Groth et al. 2000, PMID 10801973). Spans positions 31-70 of the 100 bp part and contains both 9 bp inverted-repeat integrase half-sites plus the central TT crossover; the ~31 bp flanking the core on each side lie outside the minimal functional site."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 31,
+      "end": 40,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phiC31 Int binding -- left half-site"
+        ],
+        "parent": [
+          "phiC31_attP"
+        ],
+        "note": [
+          "9 bp imperfect inverted-repeat left half-site (CCCCAACTG), one of the two integrase binding determinants of phiC31 attP (Groth et al. 2000, PMID 10801973). The left and right half-sites are in inverted orientation flanking the spacer that carries the TT crossover. Half-site boundary is a figure-level detail in the source; sequence and coordinates verified against the stored part."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 60,
+      "end": 69,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "phiC31 Int binding -- right half-site"
+        ],
+        "parent": [
+          "phiC31_attP"
+        ],
+        "note": [
+          "9 bp imperfect inverted-repeat right half-site (Groth et al. 2000, PMID 10801973). On the plus strand reads CAGTTGGGG; its reverse complement is CCCCAACTG, the mirror of the left half-site, confirming the inverted-repeat architecture. Annotated on the minus strand to reflect its inverted orientation relative to the left half-site. Half-site boundary is a figure-level detail in the source; sequence and coordinates verified against the stored part."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[4]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 54,
+      "end": 56,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "TT crossover dinucleotide"
+        ],
+        "parent": [
+          "phiC31_attP"
+        ],
+        "note": [
+          "Central TT overlap dinucleotide at the recombination crossover point of phiC31 attP, shared with attB; lies near the center of the minimal 39 bp core. phiC31 integrase is a large serine recombinase of the resolvase/invertase family (Thorpe & Smith 1998, PMID 9576912), a family that makes staggered double-strand cuts leaving a short central overlap, so the 2 bp stagger is mechanistically expected. The specific TT identity at this position is consistent with the X57036.1 crossover annotation (attP crossover at X57036 positions 1639-1641) but is not explicitly attributed to a single primary reference here; treat the exact 2 bp identity as consensus/inferred pending a junction-sequencing primary source."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "X57036.1 (Bacteriophage Phi-C31 attP phage attachment site crossover region and 3 ORF's), reverse complement of positions 1590-1689, 100% identity over 100 bp",
+    "asserting_agent": "annotate-part-workflow"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "phiC31 attP is the integrase target recognized by the phiC31 large serine integrase, which recombines attP x attB to integrate DNA unidirectionally with no required host accessory factors.",
+      "value": {
+        "recombinase": "phiC31 integrase",
+        "recombinase_family": "large serine integrase (resolvase/invertase family)",
+        "reaction": "attP x attB -> attL + attR",
+        "directionality": "unidirectional (excision requires a recombination directionality factor)",
+        "host_factors_required": "none"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "9576912",
+        "doi": "10.1073/pnas.95.10.5505",
+        "quote": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+        "quote_source": "primary",
+        "section": "in vitro integration with purified integrase"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "minimal_site",
+      "type": "sequence_feature",
+      "label": "Minimal functional phiC31 attP is 39 bp, defined by systematic truncation assay.",
+      "value": {
+        "minimal_attP_bp": 39,
+        "minimal_attB_bp": 34,
+        "architecture": "two 9 bp inverted-repeat integrase half-sites flanking a spacer containing the central crossover"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "10801973",
+        "doi": "10.1073/pnas.090527097",
+        "quote": "defines minimal phiC31 attB and attP by truncation; a phage integrase directs efficient site-specific integration in human cells",
+        "quote_source": "primary",
+        "section": "minimal att-site truncation analysis"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "phiC31 integrase plus this attP function across a broad host range, including efficient site-specific integration in mammalian (human) cells.",
+      "value": {
+        "native_host": "Streptomyces (phiC31 is a Streptomyces temperate phage)",
+        "demonstrated_hosts": [
+          "mammalian/human cells",
+          "heterologous bacterial chromosomal landing pads"
+        ]
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "10801973",
+        "doi": "10.1073/pnas.090527097",
+        "quote": "A phage integrase directs efficient site-specific integration in human cells",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

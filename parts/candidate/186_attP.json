@@ -3,14 +3,57 @@
   "slug": "186_attP",
   "locus": "186_attP",
   "id": "186_attP",
-  "description": "186 attP",
+  "description": "Bacteriophage 186 attP site-specific recombination attachment site (NC_001317.1 20867-21173) — Int arm/core sites, one P-arm IHF site, the tRNA-Ile/attB core with 7-bp crossover, and five Apl excisionase operators.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
   "sequence": "ATGCACTCAGGAAAGTGGCGGTAAAAAATCCACCGCCATTCTATCGCCACTCGAAAACGAGGCAACAAAAAGGCCACTCGAGAGAGTGGCCTAACTGTATGTATTTACTACTTAAATTTGGTGGCCCCTGCTGGACTTGAACCAGCGACCAAGCGATTATGAGTTCCTACAAGAACAACCGAAAATCAATAGTATGCGTTATTTATCATTGACATAGATTGCCATTGTTTGCCAATAATTACCTATTATTCGCCATTTCTACCGCCACTTTATCGCCATTCTATTATCTGTTACTCAGAACCATCGC",
-  "references": [],
+  "references": [
+    {
+      "authors": "Argos P, Landy A, Abremski K, Egan JB, Haggard-Ljungquist E, Hoess RH, Kahn ML, Kalionis B, Narayana SV, Pierson LS",
+      "title": "The integrase family of site-specific recombinases: regional similarities and global diversity",
+      "journal": "EMBO J",
+      "pubmed_id": "3011407",
+      "comment": "doi:10.1002/j.1460-2075.1986.tb04229.x"
+    },
+    {
+      "authors": "Kalionis B, Dodd IB, Egan JB",
+      "title": "Control of gene expression in the P2-related template coliphages. III. DNA sequence of the major control region of phage 186",
+      "journal": "J Mol Biol",
+      "pubmed_id": "3806670",
+      "comment": "doi:10.1016/0022-2836(86)90257-3"
+    },
+    {
+      "authors": "Yu A, Haggard-Ljungquist E",
+      "title": "Characterization of the binding sites of two proteins involved in the bacteriophage P2 site-specific recombination system",
+      "journal": "J Bacteriol",
+      "pubmed_id": "8444786",
+      "comment": "doi:10.1128/jb.175.5.1239-1249.1993"
+    },
+    {
+      "authors": "Esposito D, Scocca JJ",
+      "title": "Identification of an HP1 phage protein required for site-specific excision",
+      "journal": "Mol Microbiol",
+      "pubmed_id": "7997180",
+      "comment": "doi:10.1111/j.1365-2958.1994.tb00462.x"
+    },
+    {
+      "authors": "Frumerie C, Sylwan L, Ahlgren-Berg A, Haggard-Ljungquist E",
+      "title": "Cooperative interactions between bacteriophage P2 integrase and its accessory factors IHF and Cox",
+      "journal": "Virology",
+      "pubmed_id": "15661160",
+      "comment": "doi:10.1016/j.virol.2004.11.015"
+    },
+    {
+      "authors": "Cutts EE, Barry Egan J, Dodd IB, Shearwin KE",
+      "title": "A quantitative binding model for the Apl protein, the dual purpose recombination-directionality factor and lysis-lysogeny regulator of bacteriophage 186",
+      "journal": "Nucleic Acids Res",
+      "pubmed_id": "32789491",
+      "comment": "doi:10.1093/nar/gkaa655"
+    }
+  ],
   "features": [
     {
       "type": "protein_bind",
@@ -19,19 +62,358 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "186 attP"
+          "186_attP"
         ],
         "synonym": [
+          "186_attP",
           "186 attP",
-          "phage 186 att",
-          "186 att"
+          "phage 186 attP",
+          "186 attachment site"
+        ],
+        "note": [
+          "Bacteriophage 186 phage attachment site (attP) for the 186 tyrosine integrase. 307 bp spanning the full attP functional region: Int arm-type recognition sequences on the P (left) and P' (right) arms, a single P-arm IHF site, the tRNA-Ile/attB common core (BOB') with the predicted 7-bp staggered crossover, a right-arm IHF site, and five Apl (recombination directionality factor) operators. 186 is a P2-family lambdoid coliphage; integration into the host chromosome (within the ileY tRNA-Ile locus) requires 186 Int + IHF, while Apl directs excision. Source: NC_001317.1 positions 20867-21173."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[6]"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 12,
+      "end": 23,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "Int arm-type site 1 (P arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted Int arm-type recognition sequence. The arm motif (consensus YAYCGCCAYTY) lies on the minus strand here: reverse complement of the [12,23) forward sequence (AAGTGGCGGTA) is TACCGCCACTT, matching the consensus. GenBank NC_001317.1 annotates a protein_bind region (genome 20889-21147) /bound_moiety=Int /note='predicted Int arm-type recognition sequences; 3 sites to left of attP'. P arm site 1 of 3. Extent rests on GenBank prediction + the arm-site consensus, not on 186-specific footprinting; P2 (a relative) uses a distinct arm consensus (TGTGGACA), so the 186 motif assignment is provisional."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 30,
+      "end": 41,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Int arm-type site 2 (P arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted Int arm-type recognition sequence (CACCGCCATTC), matching the YAYCGCCAYTY consensus on the plus strand. Within GenBank NC_001317.1 protein_bind /bound_moiety=Int. P arm site 2 of 3. Provisional: GenBank prediction + consensus, no 186-specific footprint."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 41,
+      "end": 52,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Int arm-type site 3 (P arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted Int arm-type recognition sequence (TATCGCCACTC), matching the YAYCGCCAYTY consensus on the plus strand. Within GenBank NC_001317.1 protein_bind /bound_moiety=Int. P arm site 3 of 3. Provisional: GenBank prediction + consensus, no 186-specific footprint."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 92,
+      "end": 119,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "IHF site H1 (P arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Integration host factor (IHF) binding site on the P (left) arm, between the core and the P-arm Int sites (27 bp). GenBank NC_001317.1 annotates protein_bind here with /bound_moiety=IHF and an /experiment qualifier. P2-family attPs carry a single P-arm IHF site (in contrast to lambda). Provisional: the position derives from the GenBank annotation and the P2-family architecture; no 186-specific IHF footprinting paper was located."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[3]",
+          "[5]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 118,
+      "end": 164,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tRNA-Ile / attB common core (BOB')"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "BOB' core region shared between phage attP and the host attB, overlapping a (truncated) tRNA-Ile gene; integration occurs within the E. coli ileY tRNA-Ile locus. GenBank NC_001317.1 annotates a tRNA feature (/note='truncated') across this span, with an interior sub-region shared with attB. Provisional: extent taken from the GenBank annotation; no 186-specific paper delimiting the attB-common core was located."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[2]",
+          "[6]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 156,
+      "end": 163,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "attP crossover (O region, 7-bp overlap)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted 7-bp staggered-cut overlap (O region) at which the 186 tyrosine integrase exchanges strands; lies inside the attB-common core. GenBank NC_001317.1 misc_feature /note='attP; predicted crossover region with attB'. Provisional: a GenBank prediction; the precise 7-bp crossover has not been experimentally mapped for 186 in the cited literature."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[6]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 190,
+      "end": 220,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "IHF site H2 (P' arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Candidate second IHF binding site on the P' (right) arm, between the crossover core and the Apl operators (30 bp). GenBank NC_001317.1 annotates protein_bind here with /bound_moiety=IHF and an /experiment qualifier. Provisional and to be treated with caution: the closest characterised relative (P2) is reported to carry only a single IHF site in attP, so a second 186 IHF site would be 186-specific and is not corroborated by an experimental 186 footprinting study in the cited literature."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[5]",
+          "[6]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 208,
+      "end": 256,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Apl operators (5x, P' arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Region containing five Apl operator sites. Apl is the 186 recombination directionality factor (RDF; the 186 homolog of P2 Cox / HP1 Cox), a cooperatively-binding HTH protein that recognises short direct-repeat operators spaced about one helical turn apart, bends the DNA, and directs excisive recombination while inhibiting integration. GenBank NC_001317.1 protein_bind /bound_moiety=Apl /note='five binding sites for Apl excisionase at attP'. The 48-bp span is the region; individual 6-bp operator coordinates within it are not resolved from the annotation. Grounded by a 186-specific quantitative binding study."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[4]",
+          "[6]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 259,
+      "end": 270,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Int arm-type site 4 (P' arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted Int arm-type recognition sequence (TACCGCCACTT), matching the YAYCGCCAYTY consensus on the plus strand. GenBank NC_001317.1 protein_bind /bound_moiety=Int /note='2 sites to right of attP'. P' arm site 1 of 2. Provisional: GenBank prediction + consensus, no 186-specific footprint."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 270,
+      "end": 281,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Int arm-type site 5 (P' arm)"
+        ],
+        "parent": [
+          "186_attP"
+        ],
+        "note": [
+          "Predicted Int arm-type recognition sequence (TATCGCCATTC), matching the YAYCGCCAYTY consensus on the plus strand. GenBank NC_001317.1 protein_bind /bound_moiety=Int. P' arm site 2 of 2. Provisional: GenBank prediction + consensus, no 186-specific footprint."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[3]"
         ]
       }
     }
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "NC_001317.1 (Escherichia phage 186, complete genome), positions 20867-21173, 100% identity over 307 bp",
+    "asserting_agent": "annotate-part-workflow"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "186 attP is the phage attachment site for 186 tyrosine (lambda-family) integrase-mediated site-specific recombination; integrative recombination (attP x attB -> attL/attR) requires 186 Int plus host IHF.",
+      "value": {
+        "recombinase_family": "tyrosine integrase (lambda integrase family)",
+        "recombinase": "186 Int",
+        "host_factor": "IHF",
+        "reaction": "attP x attB -> attL + attR",
+        "directionality_factor": "Apl"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3011407",
+        "doi": "10.1002/j.1460-2075.1986.tb04229.x",
+        "quote": "the site-specific recombination proteins encoded by bacteriophage lambda, phi 80, P22, P2, 186, P4 and P1 ... Three positions are perfectly conserved within this family: histidine, arginine and tyrosine ... tyrosine-433 forms a transient covalent linkage to DNA during strand cleavage and rejoining.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "directionality_factor",
+      "type": "regulation",
+      "label": "Apl, the 186 recombination directionality factor, binds multiple cooperative direct-repeat operators within attP, bends the DNA, and directs excision while inhibiting integration.",
+      "value": {
+        "factor": "Apl",
+        "role": "recombination directionality factor (excisionase)",
+        "binding": "multiple cooperative direct-repeat operators spaced ~one helical turn apart",
+        "effect": "promotes excision, inhibits integration"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "32789491",
+        "doi": "10.1093/nar/gkaa655",
+        "quote": "The Apl protein of bacteriophage 186 functions both as an excisionase and as a transcriptional regulator; binding to the phage attachment site (att) ... Apl binding sites are direct repeats spaced one DNA helix turn apart ... Apl binds to multiple sites with high cooperativity, bends the DNA and spreads from specific binding sites into adjacent non-specific DNA",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_integration_locus",
+      "type": "host_range",
+      "label": "186 integrates site-specifically into the Escherichia coli chromosome; the attP core overlaps a tRNA-Ile gene corresponding to the host attB.",
+      "value": {
+        "host": "Escherichia coli",
+        "attB_locus": "tRNA-Ile (ileY)",
+        "core": "BOB' common core shared between attP and attB"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3806670",
+        "doi": "10.1016/0022-2836(86)90257-3",
+        "quote": "The PstI fragment ... of coliphage 186, known genetically to encode the major control genes ... seven genes, including the int and cI genes",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

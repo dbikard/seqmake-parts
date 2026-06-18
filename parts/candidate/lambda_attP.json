@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "slug": "lambda_attP",
+  "locus": "lambda_attP",
+  "id": "lambda_attP",
+  "description": "Bacteriophage lambda attP attachment site (POP'); 387 bp, source-verified 100% to AY048716.1. The phage-borne site recombined with the bacterial attB by lambda Int + IHF.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "CATCACAGTATCGTGATGACAGAGGCAGGGAGTGGGACAAAATTGAAATCAAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTTTTATAATGCCAACTTAGTATAAAAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATATGCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTAACAGAGCATTAGCGCAAGGTGATTTTTGTCTTCTTGCGCTAATTTTTTGTCATCAAACCTGTCGCACTCCAGAGAAGCACAAAGCCTCGCAATCCAGTGCAAA",
+  "references": [
+    {
+      "authors": "Landy A, Ross W",
+      "title": "Viral integration and excision: structure of the lambda att sites",
+      "journal": "Science",
+      "pubmed_id": "331474",
+      "comment": "doi:10.1126/science.331474"
+    },
+    {
+      "authors": "Mizuuchi M, Mizuuchi K",
+      "title": "Integrative recombination of bacteriophage lambda: extent of the DNA sequence involved in attachment site function",
+      "journal": "Proc Natl Acad Sci U S A",
+      "pubmed_id": "6251450",
+      "comment": "doi:10.1073/pnas.77.6.3220"
+    },
+    {
+      "authors": "Ross W, Landy A",
+      "title": "Patterns of lambda Int recognition in the regions of strand exchange",
+      "journal": "Cell",
+      "pubmed_id": "6235918",
+      "comment": "doi:10.1016/0092-8674(83)90360-0"
+    },
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "Van Duyne GD, Landy A",
+      "title": "Bacteriophage lambda site-specific recombination",
+      "journal": "Mol Microbiol",
+      "pubmed_id": "38372210",
+      "comment": "doi:10.1111/mmi.15241"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 387,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lambda_attP"
+        ],
+        "synonym": [
+          "lambda_attP",
+          "lambda attP",
+          "phage lambda attP",
+          "lambda POP'"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "note": [
+          "Bacteriophage lambda phage attachment site (attP, P-O-P'), the Int/IHF recombination substrate carrying the P and P' arms flanking the 15 bp common core. Identified as attP (NOT bacterial attB) — its source AY048716.1 is a CRIM integration plasmid (which carries attP), and it shares 192 bp of the P/P' arm region with the genomic lambda attP (a true attB would share only the ~15 bp core). Detailed sub-feature annotation (Int arm/core sites, IHF H/H1/H2, Xis) and functional_claims pending a re-run under the corrected attP identity."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "AY048716.1 (CRIM plasmid pAH63, complete sequence; Haldimann & Wanner 2001 J Bacteriol 183:6384), complement strand positions 1545–1931, 100% identity over 387 bp",
+    "asserting_agent": "annotate-part-workflow"
+  },
+  "functional_claims": []
+}

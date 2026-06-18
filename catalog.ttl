@@ -30,20 +30,16 @@ collection:anderson-promoters a sbol:Collection ;
         part:J23117,
         part:J23119 .
 
-part:186_attP a sbol:Component ;
-    rdfs:label "186 attP" ;
-    dcterms:title "186 attP" ;
-    sbol:displayId "186_attP" ;
+collection:phage-att-sites a sbol:Collection ;
+    dcterms:description "Phage-borne attP attachment sites from phylogenetically distinct, mutually orthogonal site-specific recombination systems, each recognized by its own dedicated integrase and not cross-reacting with the others: phiC31 attP (Streptomyces phage phiC31; a large serine integrase that needs no host factors and gives highly directional integration), and the tyrosine-integrase attP sites of coliphages lambda, 186 (a P2-family system that also uses the Apl directionality factor), phi80, and HK022 (which use the host integration host factor IHF, and an excisionase for the reverse reaction). Each attP is the phage half of an attP x attB recombination pair; the cognate bacterial attB sites (in the host chromosome, or a pseudo-attB in non-native hosts for phiC31) are being added. These orthogonal sites are widely used as landing pads for stable, single-copy genomic integration." ;
+    dcterms:title "Phage attachment sites for chromosomal integration" ;
+    sbol:displayId "phage-att-sites" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:186_attP_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "186 att",
-        "186 attP",
-        "phage 186 att" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "186_attP" .
+    sbol:member part:186_attP,
+        part:HK022_attP,
+        part:lambda_attP,
+        part:phi80_attP,
+        part:phiC31_attP .
 
 part:186_integrase a sbol:Component ;
     rdfs:label "186 integrase" ;
@@ -780,19 +776,6 @@ part:HIS3 a sbol:Component ;
     cat:documented false ;
     cat:slug "HIS3" ;
     cat:sourceAccession "UniProt:P06633" .
-
-part:HK022_attB a sbol:Component ;
-    rdfs:label "HK022 attB" ;
-    dcterms:title "HK022 attB" ;
-    sbol:displayId "HK022_attB" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:HK022_attB_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "HK022 attB" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "HK022_attB" .
 
 part:HK022_integrase a sbol:Component ;
     rdfs:label "HK022 integrase" ;
@@ -2266,19 +2249,6 @@ part:acrII4A a sbol:Component ;
     cat:documented false ;
     cat:slug "acrII4A" .
 
-part:attP a sbol:Component ;
-    rdfs:label "attP" ;
-    dcterms:title "attP" ;
-    sbol:displayId "attP" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:attP_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "attP" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "attP" .
-
 part:attP1 a sbol:Component ;
     rdfs:label "attP1" ;
     dcterms:title "attP1" ;
@@ -2821,19 +2791,6 @@ part:lacZ_alpha a sbol:Component ;
     cat:documented false ;
     cat:slug "lacZ_alpha" .
 
-part:lambda_attB a sbol:Component ;
-    rdfs:label "lambda attB" ;
-    dcterms:title "lambda attB" ;
-    sbol:displayId "lambda_attB" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:lambda_attB_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "lambda attB" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "lambda_attB" .
-
 part:lambda_cos a sbol:Component ;
     rdfs:label "lambda cos" ;
     dcterms:title "lambda cos" ;
@@ -3162,34 +3119,6 @@ part:pSH71_ori_core a sbol:Component ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "pSH71_ori_core" .
-
-part:phi80_attB a sbol:Component ;
-    rdfs:label "phi80 attB" ;
-    dcterms:title "phi80 attB" ;
-    sbol:displayId "phi80_attB" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:phi80_attB_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "phi80 attB" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "phi80_attB" .
-
-part:phiC31_attP a sbol:Component ;
-    rdfs:label "phiC31 attP" ;
-    dcterms:title "phiC31 attP" ;
-    sbol:displayId "phiC31_attP" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:phiC31_attP_sequence ;
-    sbol:role so:0000410 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "phi-C31 attP",
-        "phiC31 attP",
-        "phiC31 attachment site" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "phiC31_attP" .
 
 part:recE a sbol:Component ;
     rdfs:label "recE" ;
@@ -3606,11 +3535,235 @@ part:ts_ori101 a sbol:Component ;
     cat:documented false ;
     cat:slug "ts_ori101" .
 
-part:186_attP_sequence a sbol:Sequence ;
-    sbol:displayId "186_attP_sequence" ;
-    sbol:elements "ATGCACTCAGGAAAGTGGCGGTAAAAAATCCACCGCCATTCTATCGCCACTCGAAAACGAGGCAACAAAAAGGCCACTCGAGAGAGTGGCCTAACTGTATGTATTTACTACTTAAATTTGGTGGCCCCTGCTGGACTTGAACCAGCGACCAAGCGATTATGAGTTCCTACAAGAACAACCGAAAATCAATAGTATGCGTTATTTATCATTGACATAGATTGCCATTGTTTGCCAATAATTACCTATTATTCGCCATTTCTACCGCCACTTTATCGCCATTCTATTATCTGTTACTCAGAACCATCGC" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:186_attP a sbol:Component ;
+    rdfs:label "186_attP" ;
+    dcterms:description "Bacteriophage 186 phage attachment site (attP) for the 186 tyrosine integrase. 307 bp spanning the full attP functional region: Int arm-type recognition sequences on the P (left) and P' (right) arms, a single P-arm IHF site, the tRNA-Ile/attB common core (BOB') with the predicted 7-bp staggered crossover, a right-arm IHF site, and five Apl (recombination directionality factor) operators. 186 is a P2-family lambdoid coliphage; integration into the host chromosome (within the ileY tRNA-Ile locus) requires 186 Int + IHF, while Apl directs excision. Source: NC_001317.1 positions 20867-21173." ;
+    dcterms:references pubmed:15661160,
+        pubmed:3011407,
+        pubmed:32789491,
+        pubmed:3806670,
+        pubmed:7997180,
+        pubmed:8444786 ;
+    dcterms:title "186_attP" ;
+    sbol:displayId "186_attP" ;
+    sbol:hasFeature part:186_attP_feature_0,
+        part:186_attP_feature_1,
+        part:186_attP_feature_2,
+        part:186_attP_feature_3,
+        part:186_attP_feature_4,
+        part:186_attP_feature_5,
+        part:186_attP_feature_6,
+        part:186_attP_feature_7,
+        part:186_attP_feature_8,
+        part:186_attP_feature_9 ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:186_attP_sequence ;
+    sbol:role so:0000057 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "186 attP",
+        "186 attachment site",
+        "186_attP",
+        "phage 186 attP" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:186_attP_claim_directionality_factor,
+        part:186_attP_claim_host_integration_locus,
+        part:186_attP_claim_mechanism ;
+    cat:slug "186_attP" .
+
+part:186_attP_claim_directionality_factor a cat:FunctionalClaim ;
+    rdfs:label "Apl, the 186 recombination directionality factor, binds multiple cooperative direct-repeat operators within attP, bends the DNA, and directs excision while inhibiting integration." ;
+    dcterms:references pubmed:32789491 ;
+    prov:wasDerivedFrom pubmed:32789491 ;
+    prov:wasGeneratedBy part:186_attP_claim_directionality_factor_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"binding\": \"multiple cooperative direct-repeat operators spaced ~one helical turn apart\", \"effect\": \"promotes excision, inhibits integration\", \"factor\": \"Apl\", \"role\": \"recombination directionality factor (excisionase)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The Apl protein of bacteriophage 186 functions both as an excisionase and as a transcriptional regulator; binding to the phage attachment site (att) ... Apl binding sites are direct repeats spaced one DNA helix turn apart ... Apl binds to multiple sites with high cooperativity, bends the DNA and spreads from specific binding sites into adjacent non-specific DNA" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:186_attP_claim_directionality_factor_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:186_attP_claim_host_integration_locus a cat:FunctionalClaim ;
+    rdfs:label "186 integrates site-specifically into the Escherichia coli chromosome; the attP core overlaps a tRNA-Ile gene corresponding to the host attB." ;
+    dcterms:references pubmed:3806670 ;
+    prov:wasDerivedFrom pubmed:3806670 ;
+    prov:wasGeneratedBy part:186_attP_claim_host_integration_locus_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"attB_locus\": \"tRNA-Ile (ileY)\", \"core\": \"BOB' common core shared between attP and attB\", \"host\": \"Escherichia coli\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The PstI fragment ... of coliphage 186, known genetically to encode the major control genes ... seven genes, including the int and cI genes" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:186_attP_claim_host_integration_locus_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:186_attP_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "186 attP is the phage attachment site for 186 tyrosine (lambda-family) integrase-mediated site-specific recombination; integrative recombination (attP x attB -> attL/attR) requires 186 Int plus host IHF." ;
+    dcterms:references pubmed:3011407 ;
+    prov:wasDerivedFrom pubmed:3011407 ;
+    prov:wasGeneratedBy part:186_attP_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"directionality_factor\": \"Apl\", \"host_factor\": \"IHF\", \"reaction\": \"attP x attB -> attL + attR\", \"recombinase\": \"186 Int\", \"recombinase_family\": \"tyrosine integrase (lambda integrase family)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "the site-specific recombination proteins encoded by bacteriophage lambda, phi 80, P22, P2, 186, P4 and P1 ... Three positions are perfectly conserved within this family: histidine, arginine and tyrosine ... tyrosine-433 forms a transient covalent linkage to DNA during strand cleavage and rejoining." ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:186_attP_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:186_attP_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:8444786 ;
+    dcterms:title "Int arm-type site 1 (P arm)" ;
+    sbol:displayId "186_attP_feature_0" ;
+    sbol:hasLocation part:186_attP_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_0_range a sbol:Range ;
+    sbol:end 23 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 13 .
+
+part:186_attP_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:8444786 ;
+    dcterms:title "Int arm-type site 2 (P arm)" ;
+    sbol:displayId "186_attP_feature_1" ;
+    sbol:hasLocation part:186_attP_feature_1_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_1_range a sbol:Range ;
+    sbol:end 41 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 31 .
+
+part:186_attP_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:8444786 ;
+    dcterms:title "Int arm-type site 3 (P arm)" ;
+    sbol:displayId "186_attP_feature_2" ;
+    sbol:hasLocation part:186_attP_feature_2_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_2_range a sbol:Range ;
+    sbol:end 52 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 42 .
+
+part:186_attP_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:15661160,
+        pubmed:8444786 ;
+    dcterms:title "IHF site H1 (P arm)" ;
+    sbol:displayId "186_attP_feature_3" ;
+    sbol:hasLocation part:186_attP_feature_3_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_3_range a sbol:Range ;
+    sbol:end 119 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 93 .
+
+part:186_attP_feature_4 a sbol:SequenceFeature ;
+    dcterms:references pubmed:32789491,
+        pubmed:3806670 ;
+    dcterms:title "tRNA-Ile / attB common core (BOB')" ;
+    sbol:displayId "186_attP_feature_4" ;
+    sbol:hasLocation part:186_attP_feature_4_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_4_range a sbol:Range ;
+    sbol:end 164 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 119 .
+
+part:186_attP_feature_5 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:32789491 ;
+    dcterms:title "attP crossover (O region, 7-bp overlap)" ;
+    sbol:displayId "186_attP_feature_5" ;
+    sbol:hasLocation part:186_attP_feature_5_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_5_range a sbol:Range ;
+    sbol:end 163 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 157 .
+
+part:186_attP_feature_6 a sbol:SequenceFeature ;
+    dcterms:references pubmed:15661160,
+        pubmed:32789491 ;
+    dcterms:title "IHF site H2 (P' arm)" ;
+    sbol:displayId "186_attP_feature_6" ;
+    sbol:hasLocation part:186_attP_feature_6_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_6_range a sbol:Range ;
+    sbol:end 220 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 191 .
+
+part:186_attP_feature_7 a sbol:SequenceFeature ;
+    dcterms:references pubmed:32789491,
+        pubmed:7997180 ;
+    dcterms:title "Apl operators (5x, P' arm)" ;
+    sbol:displayId "186_attP_feature_7" ;
+    sbol:hasLocation part:186_attP_feature_7_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_7_range a sbol:Range ;
+    sbol:end 256 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 209 .
+
+part:186_attP_feature_8 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:8444786 ;
+    dcterms:title "Int arm-type site 4 (P' arm)" ;
+    sbol:displayId "186_attP_feature_8" ;
+    sbol:hasLocation part:186_attP_feature_8_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_8_range a sbol:Range ;
+    sbol:end 270 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 260 .
+
+part:186_attP_feature_9 a sbol:SequenceFeature ;
+    dcterms:references pubmed:3011407,
+        pubmed:8444786 ;
+    dcterms:title "Int arm-type site 5 (P' arm)" ;
+    sbol:displayId "186_attP_feature_9" ;
+    sbol:hasLocation part:186_attP_feature_9_range ;
+    sbol:role so:0000057 .
+
+part:186_attP_feature_9_range a sbol:Range ;
+    sbol:end 281 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:186_attP_sequence ;
+    sbol:start 271 .
 
 part:186_integrase_sequence a sbol:Sequence ;
     sbol:displayId "186_integrase_sequence" ;
@@ -4379,8 +4532,105 @@ part:HIS3_feature_9_range a sbol:Range ;
     sbol:sequence part:HIS3_sequence ;
     sbol:start 162 .
 
-part:HK022_attB_sequence a sbol:Sequence ;
-    sbol:displayId "HK022_attB_sequence" ;
+part:HK022_attP a sbol:Component ;
+    rdfs:label "HK022_attB" ;
+    dcterms:description "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations." ;
+    dcterms:references pubmed:11591683,
+        pubmed:2146253,
+        pubmed:24050148,
+        pubmed:2547971 ;
+    dcterms:title "HK022_attB" ;
+    sbol:displayId "HK022_attP" ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:HK022_attP_sequence ;
+    sbol:role so:0000057 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "HK022 attP",
+        "HK022 attachment site (phage)",
+        "HK022_attP",
+        "phage HK022 attP" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:HK022_attP_claim_host_range,
+        part:HK022_attP_claim_mechanism,
+        part:HK022_attP_claim_orthogonality,
+        part:HK022_attP_claim_specificity ;
+    cat:slug "HK022_attP" .
+
+part:HK022_attP_claim_host_range a cat:FunctionalClaim ;
+    rdfs:label "Functions as a site-specific chromosomal integration landing pad in Escherichia coli (and related enterobacteria) when paired with HK022 Int; the cognate bacterial attB lies in the leuX tRNA-Leu gene." ;
+    dcterms:references pubmed:11591683 ;
+    prov:wasDerivedFrom pubmed:11591683 ;
+    prov:wasGeneratedBy part:HK022_attP_claim_host_range_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"chromosomal_locus\": \"leuX (tRNA-Leu) for the bacterial attB\", \"host\": \"Escherichia coli\", \"requires\": \"HK022 Int (plus IHF; Xis for excision)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "CRIM plasmids are integrated into the chromosome by site-specific recombination at one of five different phage attachment sites." ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:HK022_attP_claim_host_range_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:HK022_attP_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "Recombination substrate for the HK022 tyrosine (lambda-family) integrase; Int catalyzes site-specific strand exchange within the conserved overlap (O) core, flanked by arm-type and core-type Int-binding sites." ;
+    dcterms:references pubmed:2547971 ;
+    prov:wasDerivedFrom pubmed:2547971 ;
+    prov:wasGeneratedBy part:HK022_attP_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"accessory_factors\": [\"IHF\", \"Xis (excision/directionality)\"], \"cognate_protein\": \"HK022 Int\", \"core_overlap\": \"CAGTCACTATGAATCAACTACTTAGAT\", \"core_position\": \"203..230 (+ strand)\", \"recombinase_family\": \"tyrosine recombinase (lambda Int family)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The temperate bacteriophage HK022, like its relative lambda, inserts its chromosome into a specific site in the bacterial chromosome during lysogenization and excises it after induction." ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:HK022_attP_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:HK022_attP_claim_orthogonality a cat:FunctionalClaim ;
+    rdfs:label "Deployable in parallel with other phage att/Int systems (e.g. phiC31, 186, phi80) as an independent, orthogonal chromosomal landing pad, each recognized only by its cognate integrase." ;
+    dcterms:references pubmed:24050148 ;
+    prov:wasDerivedFrom pubmed:24050148 ;
+    prov:wasGeneratedBy part:HK022_attP_claim_orthogonality_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"orthogonal_to\": [\"phiC31_attP\", \"186_attP\", \"phi80_attB\", \"lambda_attB\"], \"single_copy_integration\": true}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "We describe \"clonetegration\", a method for integrating DNA into prokaryotic chromosomes ... clonetegration facilitates cloning and expression of genetic elements that are impossible to propagate within typical multicopy plasmids." ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:HK022_attP_claim_orthogonality_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:HK022_attP_claim_specificity a cat:FunctionalClaim ;
+    rdfs:label "HK022 and lambda att sites are NOT cross-reactive: each phage Int recombines only its cognate att pair. Specificity is determined by the core-type Int-binding sites (B, B', C), not the arm-type sites, which are conserved between the two phages." ;
+    dcterms:references pubmed:2146253 ;
+    prov:wasDerivedFrom pubmed:2146253 ;
+    prov:wasGeneratedBy part:HK022_attP_claim_specificity_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"conserved_with_lambda\": \"arm-type Int-binding sites and overlap core\", \"cross_reactive_with_lambda\": false, \"specificity_determinant\": \"core-type Int-binding sites (B, B', C)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "neither protein promotes efficient recombination between the pair of attachment sites used by the other phage ... allowed us to locate determinants of the specificity difference ... C, B, and most importantly, B'." ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Abstract" .
+
+part:HK022_attP_claim_specificity_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:HK022_attP_sequence a sbol:Sequence ;
+    sbol:displayId "HK022_attP_sequence" ;
     sbol:elements "GACAAAATTGAAATCGACAAATGATTTTATTTTGACTAATAATGACCTACTTACATTAATTTACTGATAATTAAAGAGATTTTAAATATACAACTTATTCACCTAAAGGATGACAAAATAACATTAATCACTTAAAAATCATCGCATTACACTAATCTGTGGTTAAATGATAGACTACATAATGCGACAAAACGCAACATATCCAGTCACTATGAATCAACTACTTAGATAGTATTAGTGACCTGAGACAGAGCATTA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
@@ -7129,12 +7379,6 @@ part:attP2_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:attP_sequence a sbol:Sequence ;
-    sbol:displayId "attP_sequence" ;
-    sbol:elements "AAATCAAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTTTTATAATGCCAACTTAGTATAAAAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATGCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTAACAGAGCATTAGCGCAAGGTGATTTTTGTCTTCTTGCGCTAATTTTTTGGTACCTCTAGGGCGGCGGATTTGTCCTACTCAGGAGAGCGTTCACCGACAAACAACAGATAAAACGAAAGGCCCAGTCTTTCGACTGAGCCTTTCGTTTTATTTGATGCCTCTAGCACGCGTACCATGGAG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
 part:bet_sequence a sbol:Sequence ;
     sbol:displayId "bet_sequence" ;
     sbol:elements "MSTALATLAGKLAERVGMDSVDPQELITTLRQTAFKGDASDAQFIALLIVANQYGLNPWTKEIYAFPDKQNGIVPVVGVDGWSRIINENQQFDGMDFEQDNESCTCRIYRKDRNHPICVTEWMDECRREPFKTREGREITGPWQSHPKRMLRHKAMIQCARLAFGFAGIYDKDEAERIVENTAYTAERQPERDITPVNDETMQEINTLLIALDKTWDDDLLPLCSQIFRRDIRASSELTQAEAVKALGFLKQKAAEQKVAA" ;
@@ -7796,8 +8040,30 @@ part:lacZ_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:lambda_attB_sequence a sbol:Sequence ;
-    sbol:displayId "lambda_attB_sequence" ;
+part:lambda_attP a sbol:Component ;
+    rdfs:label "lambda_attP" ;
+    dcterms:description "Bacteriophage lambda phage attachment site (attP, P-O-P'), the Int/IHF recombination substrate carrying the P and P' arms flanking the 15 bp common core. Identified as attP (NOT bacterial attB) — its source AY048716.1 is a CRIM integration plasmid (which carries attP), and it shares 192 bp of the P/P' arm region with the genomic lambda attP (a true attB would share only the ~15 bp core). Detailed sub-feature annotation (Int arm/core sites, IHF H/H1/H2, Xis) and functional_claims pending a re-run under the corrected attP identity." ;
+    dcterms:references pubmed:11591683,
+        pubmed:331474,
+        pubmed:38372210,
+        pubmed:6235918,
+        pubmed:6251450 ;
+    dcterms:title "lambda_attP" ;
+    sbol:displayId "lambda_attP" ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:lambda_attP_sequence ;
+    sbol:role so:0000057 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "lambda POP'",
+        "lambda attP",
+        "lambda_attP",
+        "phage lambda attP" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:slug "lambda_attP" .
+
+part:lambda_attP_sequence a sbol:Sequence ;
+    sbol:displayId "lambda_attP_sequence" ;
     sbol:elements "CATCACAGTATCGTGATGACAGAGGCAGGGAGTGGGACAAAATTGAAATCAAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTTTTATAATGCCAACTTAGTATAAAAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATATGCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTAACAGAGCATTAGCGCAAGGTGATTTTTGTCTTCTTGCGCTAATTTTTTGTCATCAAACCTGTCGCACTCCAGAGAAGCACAAAGCCTCGCAATCCAGTGCAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
@@ -8067,17 +8333,166 @@ part:pSH71_ori_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:phi80_attB_sequence a sbol:Sequence ;
-    sbol:displayId "phi80_attB_sequence" ;
+part:phi80_attP a sbol:Component ;
+    rdfs:label "phi80_attP" ;
+    dcterms:description "Bacteriophage phi80 phage attachment site (attP). Identified as attP (NOT bacterial attB) — its source AY048738.1 is a CRIM integration plasmid (pAH162), which carries the phage attP. Detailed sub-feature annotation and functional_claims pending a re-run under the corrected attP identity." ;
+    dcterms:references pubmed:11591683,
+        pubmed:24050148,
+        pubmed:3011407 ;
+    dcterms:title "phi80_attP" ;
+    sbol:displayId "phi80_attP" ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:phi80_attP_sequence ;
+    sbol:role so:0000057 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "phage phi80 attP",
+        "phi-80 attP",
+        "phi80 attP",
+        "phi80_attP" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:slug "phi80_attP" .
+
+part:phi80_attP_sequence a sbol:Sequence ;
+    sbol:displayId "phi80_attP_sequence" ;
     sbol:elements "GCCCGTGCGAATCAGAAATAATCTCGATATCATCTCTTTTCTTGCCGAGCGCCTTCCTGAGCTTTGTGTCGGTGATCATTGAATGGGTACACATTTTTGTTTTTGGGTACACAAAAGTGTACACAAAGTTGCCCACTCAAAGCTACACGCAATGTAACACTAGTTCGCAGAGTGTTATGGTTTACATCCTTGAAAGCCTGCTGGATAAGGGTTTAGCGTAACAGAACGTTTTTACGCGGAATTGTTCGTAATATGCCAAATGACAATTTAAGAAAGTGTTCTAATTTATTAGAAATTTGCACTTAAATCAAAAAGTTACGGACAATTCAACCACCAATCAATAAATTAAAGGGCACATTAAAGTACACAATATTTGTGCCCTTCTCTGTTTCTTTCCCGTTATCAGCTAGCTGGAAACTTTTTATACAGAGTTTAGAGCCCTACTCCATACGTTTTTGATACGCTTTGTCGTGATTCACC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:phiC31_attP_sequence a sbol:Sequence ;
-    sbol:displayId "phiC31_attP_sequence" ;
-    sbol:elements "AACCCCTTGTGTCATGTCGGCGACCCTACGCCCCCAACTGAGAGAACTCAAAGGTTACCCCAGTTGGGGCACTACTCCCGAAAACCGCTTCTGACCTGGG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:phiC31_attP a sbol:Component ;
+    rdfs:label "phiC31_attP" ;
+    dcterms:description "Phage attachment site (attP) of Streptomyces temperate phage phiC31, the DNA target recognized by the phiC31 large serine integrase. 100 bp spanning the attP crossover region; exact reverse complement of X57036.1 positions 1590-1689. The phiC31 integrase recombines this attP with a chromosomal attB to integrate DNA irreversibly and unidirectionally, with no required host accessory factors. Widely used as a chromosomal landing pad in heterologous hosts including mammalian cells. The functional center comprises two 9 bp imperfect inverted-repeat integrase half-sites flanking a spacer that carries the central TT crossover dinucleotide." ;
+    dcterms:references pubmed:10219087,
+        pubmed:10801973,
+        pubmed:1656389,
+        pubmed:24050148,
+        pubmed:9576912 ;
+    dcterms:title "phiC31_attP" ;
+    sbol:displayId "phiC31_attP" ;
+    sbol:hasFeature part:phiC31_attP_feature_0,
+        part:phiC31_attP_feature_1,
+        part:phiC31_attP_feature_2,
+        part:phiC31_attP_feature_3 ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:phiC31_attP_sequence ;
+    sbol:role so:0000057 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "phi-C31 attP",
+        "phiC31 attP",
+        "phiC31 attachment site",
+        "phiC31_attP" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:phiC31_attP_claim_host_range,
+        part:phiC31_attP_claim_mechanism,
+        part:phiC31_attP_claim_minimal_site ;
+    cat:slug "phiC31_attP" .
+
+part:phiC31_attP_claim_host_range a cat:FunctionalClaim ;
+    rdfs:label "phiC31 integrase plus this attP function across a broad host range, including efficient site-specific integration in mammalian (human) cells." ;
+    dcterms:references pubmed:10801973 ;
+    prov:wasDerivedFrom pubmed:10801973 ;
+    prov:wasGeneratedBy part:phiC31_attP_claim_host_range_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"demonstrated_hosts\": [\"mammalian/human cells\", \"heterologous bacterial chromosomal landing pads\"], \"native_host\": \"Streptomyces (phiC31 is a Streptomyces temperate phage)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "A phage integrase directs efficient site-specific integration in human cells" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:phiC31_attP_claim_host_range_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:phiC31_attP_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "phiC31 attP is the integrase target recognized by the phiC31 large serine integrase, which recombines attP x attB to integrate DNA unidirectionally with no required host accessory factors." ;
+    dcterms:references pubmed:9576912 ;
+    prov:wasDerivedFrom pubmed:9576912 ;
+    prov:wasGeneratedBy part:phiC31_attP_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"directionality\": \"unidirectional (excision requires a recombination directionality factor)\", \"host_factors_required\": \"none\", \"reaction\": \"attP x attB -> attL + attR\", \"recombinase\": \"phiC31 integrase\", \"recombinase_family\": \"large serine integrase (resolvase/invertase family)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "in vitro integration with purified integrase" .
+
+part:phiC31_attP_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:phiC31_attP_claim_minimal_site a cat:FunctionalClaim ;
+    rdfs:label "Minimal functional phiC31 attP is 39 bp, defined by systematic truncation assay." ;
+    dcterms:references pubmed:10801973 ;
+    prov:wasDerivedFrom pubmed:10801973 ;
+    prov:wasGeneratedBy part:phiC31_attP_claim_minimal_site_provenance ;
+    cat:claimType "sequence_feature" ;
+    cat:claimValue "{\"architecture\": \"two 9 bp inverted-repeat integrase half-sites flanking a spacer containing the central crossover\", \"minimal_attB_bp\": 34, \"minimal_attP_bp\": 39}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "defines minimal phiC31 attB and attP by truncation; a phage integrase directs efficient site-specific integration in human cells" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "minimal att-site truncation analysis" .
+
+part:phiC31_attP_claim_minimal_site_provenance a prov:Activity ;
+    cat:agent "annotate-part-workflow" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:phiC31_attP_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:10801973 ;
+    dcterms:title "phiC31 attP minimal core (39 bp)" ;
+    sbol:displayId "phiC31_attP_feature_0" ;
+    sbol:hasLocation part:phiC31_attP_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:phiC31_attP_feature_0_range a sbol:Range ;
+    sbol:end 70 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:phiC31_attP_sequence ;
+    sbol:start 32 .
+
+part:phiC31_attP_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:10801973 ;
+    dcterms:title "phiC31 Int binding -- left half-site" ;
+    sbol:displayId "phiC31_attP_feature_1" ;
+    sbol:hasLocation part:phiC31_attP_feature_1_range ;
+    sbol:role so:0000057 .
+
+part:phiC31_attP_feature_1_range a sbol:Range ;
+    sbol:end 40 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:phiC31_attP_sequence ;
+    sbol:start 32 .
+
+part:phiC31_attP_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:10801973 ;
+    dcterms:title "phiC31 Int binding -- right half-site" ;
+    sbol:displayId "phiC31_attP_feature_2" ;
+    sbol:hasLocation part:phiC31_attP_feature_2_range ;
+    sbol:role so:0000057 .
+
+part:phiC31_attP_feature_2_range a sbol:Range ;
+    sbol:end 69 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:phiC31_attP_sequence ;
+    sbol:start 61 .
+
+part:phiC31_attP_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:1656389,
+        pubmed:9576912 ;
+    dcterms:title "TT crossover dinucleotide" ;
+    sbol:displayId "phiC31_attP_feature_3" ;
+    sbol:hasLocation part:phiC31_attP_feature_3_range ;
+    sbol:role so:0000057 .
+
+part:phiC31_attP_feature_3_range a sbol:Range ;
+    sbol:end 56 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:phiC31_attP_sequence ;
+    sbol:start 55 .
 
 part:recE_sequence a sbol:Sequence ;
     sbol:displayId "recE_sequence" ;
@@ -9042,6 +9457,12 @@ part:T7lac_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:phiC31_attP_sequence a sbol:Sequence ;
+    sbol:displayId "phiC31_attP_sequence" ;
+    sbol:elements "AACCCCTTGTGTCATGTCGGCGACCCTACGCCCCCAACTGAGAGAACTCAAAGGTTACCCCAGTTGGGGCACTACTCCCGAAAACCGCTTCTGACCTGGG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:PCymRC_sequence a sbol:Sequence ;
     sbol:displayId "PCymRC_sequence" ;
     sbol:elements "AACAAACAGACAATCTGGTCTGTTTGTATTATGGAAAATTTTTCTGTATAATAGATTCAACAAACAGACAATCTGGTCTGTTTGTATTAT" ;
@@ -9114,6 +9535,12 @@ part:lacI a sbol:Component ;
         part:Ptrc,
         part:T7lac ;
     cat:slug "lacI" .
+
+part:186_attP_sequence a sbol:Sequence ;
+    sbol:displayId "186_attP_sequence" ;
+    sbol:elements "ATGCACTCAGGAAAGTGGCGGTAAAAAATCCACCGCCATTCTATCGCCACTCGAAAACGAGGCAACAAAAAGGCCACTCGAGAGAGTGGCCTAACTGTATGTATTTACTACTTAAATTTGGTGGCCCCTGCTGGACTTGAACCAGCGACCAAGCGATTATGAGTTCCTACAAGAACAACCGAAAATCAATAGTATGCGTTATTTATCATTGACATAGATTGCCATTGTTTGCCAATAATTACCTATTATTCGCCATTTCTACCGCCACTTTATCGCCATTCTATTATCTGTTACTCAGAACCATCGC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:LEU2_sequence a sbol:Sequence ;
     sbol:displayId "LEU2_sequence" ;

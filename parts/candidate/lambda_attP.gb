@@ -1,0 +1,72 @@
+LOCUS       lambda_attP              387 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Bacteriophage lambda attP attachment site (POP'); 387 bp,
+            source-verified 100% to AY048716.1. The phage-borne site recombined
+            with the bacterial attB by lambda Int + IHF..
+ACCESSION   lambda_attP
+VERSION     lambda_attP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Landy A, Ross W
+  TITLE     Viral integration and excision: structure of the lambda att sites
+  JOURNAL   Science
+   PUBMED   331474
+  REMARK    doi:10.1126/science.331474
+REFERENCE   2
+  AUTHORS   Mizuuchi M, Mizuuchi K
+  TITLE     Integrative recombination of bacteriophage lambda: extent of the DNA
+            sequence involved in attachment site function
+  JOURNAL   Proc Natl Acad Sci U S A
+   PUBMED   6251450
+  REMARK    doi:10.1073/pnas.77.6.3220
+REFERENCE   3
+  AUTHORS   Ross W, Landy A
+  TITLE     Patterns of lambda Int recognition in the regions of strand exchange
+  JOURNAL   Cell
+   PUBMED   6235918
+  REMARK    doi:10.1016/0092-8674(83)90360-0
+REFERENCE   4
+  AUTHORS   Haldimann A, Wanner BL
+  TITLE     Conditional-replication, integration, excision, and retrieval
+            plasmid-host systems for gene structure-function studies of bacteria
+  JOURNAL   J Bacteriol
+   PUBMED   11591683
+  REMARK    doi:10.1128/JB.183.21.6384-6393.2001
+REFERENCE   5
+  AUTHORS   Van Duyne GD, Landy A
+  TITLE     Bacteriophage lambda site-specific recombination
+  JOURNAL   Mol Microbiol
+   PUBMED   38372210
+  REMARK    doi:10.1111/mmi.15241
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/lambda_attP
+FEATURES             Location/Qualifiers
+     protein_bind    1..387
+                     /label="lambda_attP"
+                     /synonym="lambda_attP"
+                     /synonym="lambda attP"
+                     /synonym="phage lambda attP"
+                     /synonym="lambda POP'"
+                     /collection="phage-att-sites"
+                     /db_xref="SO:0000057"
+                     /note="Bacteriophage lambda phage attachment site (attP,
+                     P-O-P'), the Int/IHF recombination substrate carrying the P
+                     and P' arms flanking the 15 bp common core. Identified as
+                     attP (NOT bacterial attB) — its source AY048716.1 is a CRIM
+                     integration plasmid (which carries attP), and it shares 192
+                     bp of the P/P' arm region with the genomic lambda attP (a
+                     true attB would share only the ~15 bp core). Detailed
+                     sub-feature annotation (Int arm/core sites, IHF H/H1/H2,
+                     Xis) and functional_claims pending a re-run under the
+                     corrected attP identity."
+ORIGIN
+        1 catcacagta tcgtgatgac agaggcaggg agtgggacaa aattgaaatc aaataatgat
+       61 tttattttga ctgatagtga cctgttcgtt gcaacaaatt gataagcaat gcttttttat
+      121 aatgccaact tagtataaaa aagctgaacg agaaacgtaa aatgatataa atatcaatat
+      181 attaaattag attttgcata aaaaacagac tacataatac tgtaaaacac aacatatatg
+      241 cagtcactat gaatcaacta cttagatggt attagtgacc tgtaacagag cattagcgca
+      301 aggtgatttt tgtcttcttg cgctaatttt ttgtcatcaa acctgtcgca ctccagagaa
+      361 gcacaaagcc tcgcaatcca gtgcaaa
+//

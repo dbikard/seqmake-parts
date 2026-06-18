@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "slug": "HK022_attP",
+  "locus": "HK022_attP",
+  "id": "HK022_attP",
+  "description": "HK022 phage attachment (att) site — a 258 bp tyrosine-integrase recombination substrate from coliphage HK022 (X51962), used as a chromosomal integration landing pad in E. coli.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GACAAAATTGAAATCGACAAATGATTTTATTTTGACTAATAATGACCTACTTACATTAATTTACTGATAATTAAAGAGATTTTAAATATACAACTTATTCACCTAAAGGATGACAAAATAACATTAATCACTTAAAAATCATCGCATTACACTAATCTGTGGTTAAATGATAGACTACATAATGCGACAAAACGCAACATATCCAGTCACTATGAATCAACTACTTAGATAGTATTAGTGACCTGAGACAGAGCATTA",
+  "references": [
+    {
+      "authors": "Yagil E, Dolev S, Oberto J, Kislev N, Ramaiah N, Weisberg RA",
+      "title": "Determinants of site-specific recombination in the lambdoid coliphage HK022. An evolutionary change in specificity.",
+      "journal": "J Mol Biol",
+      "pubmed_id": "2547971",
+      "comment": "doi:10.1016/0022-2836(89)90238-6"
+    },
+    {
+      "authors": "Nagaraja R, Weisberg RA",
+      "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda.",
+      "journal": "J Bacteriol",
+      "pubmed_id": "2146253",
+      "comment": "doi:10.1128/jb.172.11.6540-6550.1990"
+    },
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria.",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA.",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 258,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HK022_attB"
+        ],
+        "synonym": [
+          "HK022_attP",
+          "HK022 attP",
+          "phage HK022 attP",
+          "HK022 attachment site (phage)"
+        ],
+        "note": [
+          "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "X51962 (Coliphage HK022 int and xis genes, Yoshida et al. 1990), complement strand positions 229..486, 100% identity over 258 bp",
+    "asserting_agent": "annotate-part-workflow"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Recombination substrate for the HK022 tyrosine (lambda-family) integrase; Int catalyzes site-specific strand exchange within the conserved overlap (O) core, flanked by arm-type and core-type Int-binding sites.",
+      "value": {
+        "recombinase_family": "tyrosine recombinase (lambda Int family)",
+        "cognate_protein": "HK022 Int",
+        "accessory_factors": [
+          "IHF",
+          "Xis (excision/directionality)"
+        ],
+        "core_overlap": "CAGTCACTATGAATCAACTACTTAGAT",
+        "core_position": "203..230 (+ strand)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2547971",
+        "doi": "10.1016/0022-2836(89)90238-6",
+        "quote": "The temperate bacteriophage HK022, like its relative lambda, inserts its chromosome into a specific site in the bacterial chromosome during lysogenization and excises it after induction.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "specificity",
+      "type": "mechanism",
+      "label": "HK022 and lambda att sites are NOT cross-reactive: each phage Int recombines only its cognate att pair. Specificity is determined by the core-type Int-binding sites (B, B', C), not the arm-type sites, which are conserved between the two phages.",
+      "value": {
+        "cross_reactive_with_lambda": false,
+        "specificity_determinant": "core-type Int-binding sites (B, B', C)",
+        "conserved_with_lambda": "arm-type Int-binding sites and overlap core"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2146253",
+        "doi": "10.1128/jb.172.11.6540-6550.1990",
+        "quote": "neither protein promotes efficient recombination between the pair of attachment sites used by the other phage ... allowed us to locate determinants of the specificity difference ... C, B, and most importantly, B'.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functions as a site-specific chromosomal integration landing pad in Escherichia coli (and related enterobacteria) when paired with HK022 Int; the cognate bacterial attB lies in the leuX tRNA-Leu gene.",
+      "value": {
+        "host": "Escherichia coli",
+        "chromosomal_locus": "leuX (tRNA-Leu) for the bacterial attB",
+        "requires": "HK022 Int (plus IHF; Xis for excision)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11591683",
+        "doi": "10.1128/JB.183.21.6384-6393.2001",
+        "quote": "CRIM plasmids are integrated into the chromosome by site-specific recombination at one of five different phage attachment sites.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "orthogonality",
+      "type": "mechanism",
+      "label": "Deployable in parallel with other phage att/Int systems (e.g. phiC31, 186, phi80) as an independent, orthogonal chromosomal landing pad, each recognized only by its cognate integrase.",
+      "value": {
+        "orthogonal_to": [
+          "phiC31_attP",
+          "186_attP",
+          "phi80_attB",
+          "lambda_attB"
+        ],
+        "single_copy_integration": true
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "24050148",
+        "doi": "10.1021/sb400021j",
+        "quote": "We describe \"clonetegration\", a method for integrating DNA into prokaryotic chromosomes ... clonetegration facilitates cloning and expression of genetic elements that are impossible to propagate within typical multicopy plasmids.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

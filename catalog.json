@@ -1,37 +1,11 @@
 {
   "schema_version": "1.0",
-  "n_parts": 247,
+  "n_parts": 246,
   "n_validated": 37,
-  "n_candidate": 210,
+  "n_candidate": 209,
   "n_documented": 37,
-  "n_functional_claims": 51,
+  "n_functional_claims": 61,
   "parts": [
-    {
-      "name": "186 attP",
-      "slug": "186_attP",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "186 attP",
-        "phage 186 att",
-        "186 att"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 307,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
     {
       "name": "186 integrase",
       "slug": "186_integrase",
@@ -55,6 +29,301 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "186_attP",
+      "slug": "186_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "186_attP",
+        "186 attP",
+        "phage 186 attP",
+        "186 attachment site"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Bacteriophage 186 phage attachment site (attP) for the 186 tyrosine integrase. 307 bp spanning the full attP functional region: Int arm-type recognition sequences on the P (left) and P' (right) arms, a single P-arm IHF site, the tRNA-Ile/attB common core (BOB') with the predicted 7-bp staggered crossover, a right-arm IHF site, and five Apl (recombination directionality factor) operators. 186 is a P2-family lambdoid coliphage; integration into the host chromosome (within the ileY tRNA-Ile locus) requires 186 Int + IHF, while Apl directs excision. Source: NC_001317.1 positions 20867-21173.",
+      "length": 307,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "Int arm-type site 1 (P arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 12,
+          "end": 23,
+          "strand": -1,
+          "citations": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "Int arm-type site 2 (P arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 30,
+          "end": 41,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "Int arm-type site 3 (P arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 41,
+          "end": 52,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "IHF site H1 (P arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 92,
+          "end": 119,
+          "strand": 1,
+          "citations": [
+            3,
+            5
+          ]
+        },
+        {
+          "label": "tRNA-Ile / attB common core (BOB')",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 118,
+          "end": 164,
+          "strand": 1,
+          "citations": [
+            2,
+            6
+          ]
+        },
+        {
+          "label": "attP crossover (O region, 7-bp overlap)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 156,
+          "end": 163,
+          "strand": 1,
+          "citations": [
+            1,
+            6
+          ]
+        },
+        {
+          "label": "IHF site H2 (P' arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 190,
+          "end": 220,
+          "strand": 1,
+          "citations": [
+            5,
+            6
+          ]
+        },
+        {
+          "label": "Apl operators (5x, P' arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 208,
+          "end": 256,
+          "strand": 1,
+          "citations": [
+            4,
+            6
+          ]
+        },
+        {
+          "label": "Int arm-type site 4 (P' arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 259,
+          "end": 270,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "Int arm-type site 5 (P' arm)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 270,
+          "end": 281,
+          "strand": 1,
+          "citations": [
+            1,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Argos P, Landy A, Abremski K, Egan JB, Haggard-Ljungquist E, Hoess RH, Kahn ML, Kalionis B, Narayana SV, Pierson LS",
+          "title": "The integrase family of site-specific recombinases: regional similarities and global diversity",
+          "journal": "EMBO J",
+          "pmid": "3011407",
+          "doi": "10.1002/j.1460-2075.1986.tb04229.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3011407/"
+        },
+        {
+          "authors": "Kalionis B, Dodd IB, Egan JB",
+          "title": "Control of gene expression in the P2-related template coliphages. III. DNA sequence of the major control region of phage 186",
+          "journal": "J Mol Biol",
+          "pmid": "3806670",
+          "doi": "10.1016/0022-2836(86)90257-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3806670/"
+        },
+        {
+          "authors": "Yu A, Haggard-Ljungquist E",
+          "title": "Characterization of the binding sites of two proteins involved in the bacteriophage P2 site-specific recombination system",
+          "journal": "J Bacteriol",
+          "pmid": "8444786",
+          "doi": "10.1128/jb.175.5.1239-1249.1993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8444786/"
+        },
+        {
+          "authors": "Esposito D, Scocca JJ",
+          "title": "Identification of an HP1 phage protein required for site-specific excision",
+          "journal": "Mol Microbiol",
+          "pmid": "7997180",
+          "doi": "10.1111/j.1365-2958.1994.tb00462.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7997180/"
+        },
+        {
+          "authors": "Frumerie C, Sylwan L, Ahlgren-Berg A, Haggard-Ljungquist E",
+          "title": "Cooperative interactions between bacteriophage P2 integrase and its accessory factors IHF and Cox",
+          "journal": "Virology",
+          "pmid": "15661160",
+          "doi": "10.1016/j.virol.2004.11.015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15661160/"
+        },
+        {
+          "authors": "Cutts EE, Barry Egan J, Dodd IB, Shearwin KE",
+          "title": "A quantitative binding model for the Apl protein, the dual purpose recombination-directionality factor and lysis-lysogeny regulator of bacteriophage 186",
+          "journal": "Nucleic Acids Res",
+          "pmid": "32789491",
+          "doi": "10.1093/nar/gkaa655",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32789491/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "186 attP is the phage attachment site for 186 tyrosine (lambda-family) integrase-mediated site-specific recombination; integrative recombination (attP x attB -> attL/attR) requires 186 Int plus host IHF.",
+          "value": {
+            "recombinase_family": "tyrosine integrase (lambda integrase family)",
+            "recombinase": "186 Int",
+            "host_factor": "IHF",
+            "reaction": "attP x attB -> attL + attR",
+            "directionality_factor": "Apl"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3011407",
+            "doi": "10.1002/j.1460-2075.1986.tb04229.x",
+            "quote": "the site-specific recombination proteins encoded by bacteriophage lambda, phi 80, P22, P2, 186, P4 and P1 ... Three positions are perfectly conserved within this family: histidine, arginine and tyrosine ... tyrosine-433 forms a transient covalent linkage to DNA during strand cleavage and rejoining.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "directionality_factor",
+          "type": "regulation",
+          "label": "Apl, the 186 recombination directionality factor, binds multiple cooperative direct-repeat operators within attP, bends the DNA, and directs excision while inhibiting integration.",
+          "value": {
+            "factor": "Apl",
+            "role": "recombination directionality factor (excisionase)",
+            "binding": "multiple cooperative direct-repeat operators spaced ~one helical turn apart",
+            "effect": "promotes excision, inhibits integration"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "32789491",
+            "doi": "10.1093/nar/gkaa655",
+            "quote": "The Apl protein of bacteriophage 186 functions both as an excisionase and as a transcriptional regulator; binding to the phage attachment site (att) ... Apl binding sites are direct repeats spaced one DNA helix turn apart ... Apl binds to multiple sites with high cooperativity, bends the DNA and spreads from specific binding sites into adjacent non-specific DNA",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_integration_locus",
+          "type": "host_range",
+          "label": "186 integrates site-specifically into the Escherichia coli chromosome; the attP core overlaps a tRNA-Ile gene corresponding to the host attB.",
+          "value": {
+            "host": "Escherichia coli",
+            "attB_locus": "tRNA-Ile (ileY)",
+            "core": "BOB' common core shared between attP and attB"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3806670",
+            "doi": "10.1016/0022-2836(86)90257-3",
+            "quote": "The PstI fragment ... of coliphage 186, known genetically to encode the major control genes ... seven genes, including the int and cI genes",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "2micron ori",
@@ -427,30 +696,6 @@
           "documented": false
         }
       ],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
-      "name": "attP",
-      "slug": "attP",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "attP"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 417,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
@@ -3336,30 +3581,6 @@
       }
     },
     {
-      "name": "HK022 attB",
-      "slug": "HK022_attB",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "HK022 attB"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 258,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "HK022 integrase",
       "slug": "HK022_integrase",
       "feature_type": "CDS",
@@ -3382,6 +3603,187 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "HK022_attB",
+      "slug": "HK022_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "HK022_attP",
+        "HK022 attP",
+        "phage HK022 attP",
+        "HK022 attachment site (phage)"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations.",
+      "length": 258,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Yagil E, Dolev S, Oberto J, Kislev N, Ramaiah N, Weisberg RA",
+          "title": "Determinants of site-specific recombination in the lambdoid coliphage HK022. An evolutionary change in specificity.",
+          "journal": "J Mol Biol",
+          "pmid": "2547971",
+          "doi": "10.1016/0022-2836(89)90238-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2547971/"
+        },
+        {
+          "authors": "Nagaraja R, Weisberg RA",
+          "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda.",
+          "journal": "J Bacteriol",
+          "pmid": "2146253",
+          "doi": "10.1128/jb.172.11.6540-6550.1990",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2146253/"
+        },
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria.",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA.",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Recombination substrate for the HK022 tyrosine (lambda-family) integrase; Int catalyzes site-specific strand exchange within the conserved overlap (O) core, flanked by arm-type and core-type Int-binding sites.",
+          "value": {
+            "recombinase_family": "tyrosine recombinase (lambda Int family)",
+            "cognate_protein": "HK022 Int",
+            "accessory_factors": [
+              "IHF",
+              "Xis (excision/directionality)"
+            ],
+            "core_overlap": "CAGTCACTATGAATCAACTACTTAGAT",
+            "core_position": "203..230 (+ strand)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2547971",
+            "doi": "10.1016/0022-2836(89)90238-6",
+            "quote": "The temperate bacteriophage HK022, like its relative lambda, inserts its chromosome into a specific site in the bacterial chromosome during lysogenization and excises it after induction.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "mechanism",
+          "label": "HK022 and lambda att sites are NOT cross-reactive: each phage Int recombines only its cognate att pair. Specificity is determined by the core-type Int-binding sites (B, B', C), not the arm-type sites, which are conserved between the two phages.",
+          "value": {
+            "cross_reactive_with_lambda": false,
+            "specificity_determinant": "core-type Int-binding sites (B, B', C)",
+            "conserved_with_lambda": "arm-type Int-binding sites and overlap core"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2146253",
+            "doi": "10.1128/jb.172.11.6540-6550.1990",
+            "quote": "neither protein promotes efficient recombination between the pair of attachment sites used by the other phage ... allowed us to locate determinants of the specificity difference ... C, B, and most importantly, B'.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Functions as a site-specific chromosomal integration landing pad in Escherichia coli (and related enterobacteria) when paired with HK022 Int; the cognate bacterial attB lies in the leuX tRNA-Leu gene.",
+          "value": {
+            "host": "Escherichia coli",
+            "chromosomal_locus": "leuX (tRNA-Leu) for the bacterial attB",
+            "requires": "HK022 Int (plus IHF; Xis for excision)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11591683",
+            "doi": "10.1128/JB.183.21.6384-6393.2001",
+            "quote": "CRIM plasmids are integrated into the chromosome by site-specific recombination at one of five different phage attachment sites.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "orthogonality",
+          "type": "mechanism",
+          "label": "Deployable in parallel with other phage att/Int systems (e.g. phiC31, 186, phi80) as an independent, orthogonal chromosomal landing pad, each recognized only by its cognate integrase.",
+          "value": {
+            "orthogonal_to": [
+              "phiC31_attP",
+              "186_attP",
+              "phi80_attB",
+              "lambda_attB"
+            ],
+            "single_copy_integration": true
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "24050148",
+            "doi": "10.1021/sb400021j",
+            "quote": "We describe \"clonetegration\", a method for integrating DNA into prokaryotic chromosomes ... clonetegration facilitates cloning and expression of genetic elements that are impossible to propagate within typical multicopy plasmids.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "hPGK",
@@ -4358,30 +4760,6 @@
       "functional_claims": []
     },
     {
-      "name": "lambda attB",
-      "slug": "lambda_attB",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "lambda attB"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 387,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "lambda cos",
       "slug": "lambda_cos",
       "feature_type": "misc_feature",
@@ -4479,6 +4857,76 @@
       "status": "candidate",
       "children": [],
       "references": [],
+      "main_citations": [],
+      "functional_claims": []
+    },
+    {
+      "name": "lambda_attP",
+      "slug": "lambda_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "lambda_attP",
+        "lambda attP",
+        "phage lambda attP",
+        "lambda POP'"
+      ],
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Bacteriophage lambda phage attachment site (attP, P-O-P'), the Int/IHF recombination substrate carrying the P and P' arms flanking the 15 bp common core. Identified as attP (NOT bacterial attB) \u2014 its source AY048716.1 is a CRIM integration plasmid (which carries attP), and it shares 192 bp of the P/P' arm region with the genomic lambda attP (a true attB would share only the ~15 bp core). Detailed sub-feature annotation (Int arm/core sites, IHF H/H1/H2, Xis) and functional_claims pending a re-run under the corrected attP identity.",
+      "length": 387,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Landy A, Ross W",
+          "title": "Viral integration and excision: structure of the lambda att sites",
+          "journal": "Science",
+          "pmid": "331474",
+          "doi": "10.1126/science.331474",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/331474/"
+        },
+        {
+          "authors": "Mizuuchi M, Mizuuchi K",
+          "title": "Integrative recombination of bacteriophage lambda: extent of the DNA sequence involved in attachment site function",
+          "journal": "Proc Natl Acad Sci U S A",
+          "pmid": "6251450",
+          "doi": "10.1073/pnas.77.6.3220",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6251450/"
+        },
+        {
+          "authors": "Ross W, Landy A",
+          "title": "Patterns of lambda Int recognition in the regions of strand exchange",
+          "journal": "Cell",
+          "pmid": "6235918",
+          "doi": "10.1016/0092-8674(83)90360-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6235918/"
+        },
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "Van Duyne GD, Landy A",
+          "title": "Bacteriophage lambda site-specific recombination",
+          "journal": "Mol Microbiol",
+          "pmid": "38372210",
+          "doi": "10.1111/mmi.15241",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38372210/"
+        }
+      ],
       "main_citations": [],
       "functional_claims": []
     },
@@ -6117,18 +6565,23 @@
       "functional_claims": []
     },
     {
-      "name": "phi80 attB",
-      "slug": "phi80_attB",
+      "name": "phi80_attP",
+      "slug": "phi80_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
       "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
       "synonyms": [
-        "phi80 attB"
+        "phi80_attP",
+        "phi80 attP",
+        "phi-80 attP",
+        "phage phi80 attP"
       ],
-      "collections": [],
-      "description": "",
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Bacteriophage phi80 phage attachment site (attP). Identified as attP (NOT bacterial attB) \u2014 its source AY048738.1 is a CRIM integration plasmid (pAH162), which carries the phage attP. Detailed sub-feature annotation and functional_claims pending a re-run under the corrected attP identity.",
       "length": 480,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -6136,35 +6589,240 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
+      "references": [
+        {
+          "authors": "Haldimann A, Wanner BL",
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria.",
+          "journal": "J Bacteriol",
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11591683/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA.",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        },
+        {
+          "authors": "Argos P, Landy A, Abremski K, Egan JB, Haggard-Ljungquist E, Hoess RH, Kahn ML, Kalionis B, Narayana SV, Pierson LS",
+          "title": "The integrase family of site-specific recombinases: regional similarities and global diversity.",
+          "journal": "EMBO J",
+          "pmid": "3011407",
+          "doi": "10.1002/j.1460-2075.1986.tb04229.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3011407/"
+        }
+      ],
       "main_citations": [],
       "functional_claims": []
     },
     {
-      "name": "phiC31 attP",
+      "name": "phiC31_attP",
       "slug": "phiC31_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
       "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
       "synonyms": [
+        "phiC31_attP",
         "phiC31 attP",
         "phi-C31 attP",
         "phiC31 attachment site"
       ],
-      "collections": [],
-      "description": "",
+      "collections": [
+        "phage-att-sites"
+      ],
+      "description": "Phage attachment site (attP) of Streptomyces temperate phage phiC31, the DNA target recognized by the phiC31 large serine integrase. 100 bp spanning the attP crossover region; exact reverse complement of X57036.1 positions 1590-1689. The phiC31 integrase recombines this attP with a chromosomal attB to integrate DNA irreversibly and unidirectionally, with no required host accessory factors. Widely used as a chromosomal landing pad in heterologous hosts including mammalian cells. The functional center comprises two 9 bp imperfect inverted-repeat integrase half-sites flanking a spacer that carries the central TT crossover dinucleotide.",
       "length": 100,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "children": [
+        {
+          "label": "phiC31 attP minimal core (39 bp)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 31,
+          "end": 70,
+          "strand": 1,
+          "citations": [
+            4
+          ]
+        },
+        {
+          "label": "phiC31 Int binding -- left half-site",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 31,
+          "end": 40,
+          "strand": 1,
+          "citations": [
+            4
+          ]
+        },
+        {
+          "label": "phiC31 Int binding -- right half-site",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 60,
+          "end": 69,
+          "strand": -1,
+          "citations": [
+            4
+          ]
+        },
+        {
+          "label": "TT crossover dinucleotide",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 54,
+          "end": 56,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Rausch H, Lehmann M",
+          "title": "Structural analysis of the actinophage phi C31 attachment site",
+          "journal": "Nucleic Acids Res",
+          "pmid": "1656389",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1656389/"
+        },
+        {
+          "authors": "Thorpe HM, Smith MC",
+          "title": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+          "journal": "Proc Natl Acad Sci USA",
+          "pmid": "9576912",
+          "doi": "10.1073/pnas.95.10.5505",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9576912/"
+        },
+        {
+          "authors": "Smith MC, Burns RN, Wilson SE, Gregory MA",
+          "title": "The complete genome sequence of the Streptomyces temperate phage phiC31: evolutionary relationships to other viruses",
+          "journal": "Nucleic Acids Res",
+          "pmid": "10219087",
+          "doi": "10.1093/nar/27.10.2145",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10219087/"
+        },
+        {
+          "authors": "Groth AC, Olivares EC, Thyagarajan B, Calos MP",
+          "title": "A phage integrase directs efficient site-specific integration in human cells",
+          "journal": "Proc Natl Acad Sci USA",
+          "pmid": "10801973",
+          "doi": "10.1073/pnas.090527097",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10801973/"
+        },
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "journal": "ACS Synth Biol",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        4
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "phiC31 attP is the integrase target recognized by the phiC31 large serine integrase, which recombines attP x attB to integrate DNA unidirectionally with no required host accessory factors.",
+          "value": {
+            "recombinase": "phiC31 integrase",
+            "recombinase_family": "large serine integrase (resolvase/invertase family)",
+            "reaction": "attP x attB -> attL + attR",
+            "directionality": "unidirectional (excision requires a recombination directionality factor)",
+            "host_factors_required": "none"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "9576912",
+            "doi": "10.1073/pnas.95.10.5505",
+            "quote": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+            "quote_source": "primary",
+            "section": "in vitro integration with purified integrase"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "minimal_site",
+          "type": "sequence_feature",
+          "label": "Minimal functional phiC31 attP is 39 bp, defined by systematic truncation assay.",
+          "value": {
+            "minimal_attP_bp": 39,
+            "minimal_attB_bp": 34,
+            "architecture": "two 9 bp inverted-repeat integrase half-sites flanking a spacer containing the central crossover"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "10801973",
+            "doi": "10.1073/pnas.090527097",
+            "quote": "defines minimal phiC31 attB and attP by truncation; a phage integrase directs efficient site-specific integration in human cells",
+            "quote_source": "primary",
+            "section": "minimal att-site truncation analysis"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "phiC31 integrase plus this attP function across a broad host range, including efficient site-specific integration in mammalian (human) cells.",
+          "value": {
+            "native_host": "Streptomyces (phiC31 is a Streptomyces temperate phage)",
+            "demonstrated_hosts": [
+              "mammalian/human cells",
+              "heterologous bacterial chromosomal landing pads"
+            ]
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "10801973",
+            "doi": "10.1073/pnas.090527097",
+            "quote": "A phage integrase directs efficient site-specific integration in human cells",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-workflow"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "PhlF",
@@ -11436,6 +12094,152 @@
         "J23116",
         "J23117",
         "J23119"
+      ]
+    },
+    {
+      "id": "phage-att-sites",
+      "name": "Phage attachment sites for chromosomal integration",
+      "source": "Bacteriophage integrase landing-pad systems (site-specific recombination)",
+      "references": [
+        {
+          "title": "One-step cloning and chromosomal integration of DNA",
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "journal": "ACS Synth Biol",
+          "year": 2013,
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j"
+        },
+        {
+          "title": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+          "authors": "Thorpe HM, Smith MC",
+          "journal": "Proc Natl Acad Sci USA",
+          "year": 1998,
+          "pmid": "9576912",
+          "doi": "10.1073/pnas.95.10.5505"
+        },
+        {
+          "title": "A phage integrase directs efficient site-specific integration in human cells",
+          "authors": "Groth AC, Olivares EC, Thyagarajan B, Calos MP",
+          "journal": "Proc Natl Acad Sci USA",
+          "year": 2000,
+          "pmid": "10801973",
+          "doi": "10.1073/pnas.090527097"
+        },
+        {
+          "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+          "authors": "Haldimann A, Wanner BL",
+          "journal": "J Bacteriol",
+          "year": 2001,
+          "pmid": "11591683",
+          "doi": "10.1128/JB.183.21.6384-6393.2001"
+        },
+        {
+          "title": "Determinants of site-specific recombination in the lambdoid coliphage HK022. An evolutionary change in specificity",
+          "authors": "Yagil E, Dolev S, Oberto J, Kislev N, Ramaiah N, Weisberg RA",
+          "journal": "J Mol Biol",
+          "year": 1989,
+          "pmid": "2547971",
+          "doi": "10.1016/0022-2836(89)90238-6"
+        },
+        {
+          "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda",
+          "authors": "Nagaraja R, Weisberg RA",
+          "journal": "J Bacteriol",
+          "year": 1990,
+          "pmid": "2146253",
+          "doi": "10.1128/jb.172.11.6540-6550.1990"
+        },
+        {
+          "title": "Control of gene expression in the P2-related template coliphages. III. DNA sequence of the major control region of phage 186",
+          "authors": "Kalionis B, Dodd IB, Egan JB",
+          "journal": "J Mol Biol",
+          "year": 1986,
+          "pmid": "3806670",
+          "doi": "10.1016/0022-2836(86)90257-3"
+        },
+        {
+          "title": "A quantitative binding model for the Apl protein, the dual purpose recombination-directionality factor and lysis-lysogeny regulator of bacteriophage 186",
+          "authors": "Cutts EE, Barry Egan J, Dodd IB, Shearwin KE",
+          "journal": "Nucleic Acids Res",
+          "year": 2020,
+          "pmid": "32789491",
+          "doi": "10.1093/nar/gkaa655"
+        },
+        {
+          "title": "Cooperative interactions between bacteriophage P2 integrase and its accessory factors IHF and Cox",
+          "authors": "Frumerie C, Sylwan L, Ahlgren-Berg A, Haggard-Ljungquist E",
+          "journal": "Virology",
+          "year": 2005,
+          "pmid": "15661160",
+          "doi": "10.1016/j.virol.2004.11.015"
+        },
+        {
+          "title": "The complete genome sequence of the Streptomyces temperate phage phiC31: evolutionary relationships to other viruses",
+          "authors": "Smith MC, Burns RN, Wilson SE, Gregory MA",
+          "journal": "Nucleic Acids Res",
+          "year": 1999,
+          "pmid": "10219087",
+          "doi": "10.1093/nar/27.10.2145"
+        }
+      ],
+      "resources": [
+        {
+          "title": "pOSIP Kit \u2014 Addgene (St-Pierre et al. 2013; all four att sites)",
+          "url": "https://www.addgene.org/kits/posip/"
+        },
+        {
+          "title": "pOSIP-KO (KanR, 186 attP) \u2014 Addgene #45985",
+          "url": "https://www.addgene.org/45985/"
+        },
+        {
+          "title": "pOSIP-KH (KanR, HK022 attP) \u2014 Addgene #45983",
+          "url": "https://www.addgene.org/45983/"
+        },
+        {
+          "title": "NC_001317: Escherichia phage 186 complete genome (NCBI)",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001317"
+        },
+        {
+          "title": "NC_001978: Bacteriophage phiC31 complete genome (NCBI)",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001978"
+        },
+        {
+          "title": "NC_021190.1: Enterobacteria phage phi80 genome (NCBI)",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_021190.1"
+        },
+        {
+          "title": "NC_002166.1: Coliphage HK022 complete genome (NCBI)",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_002166.1"
+        },
+        {
+          "title": "X51962: Coliphage HK022 int and xis genes (NCBI GenBank)",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/X51962"
+        },
+        {
+          "title": "phiC31 Integrase (UniProt Q9T221)",
+          "url": "https://www.uniprot.org/uniprot/Q9T221"
+        },
+        {
+          "title": "phi80 Integrase (UniProt P06155)",
+          "url": "https://www.uniprot.org/uniprot/P06155"
+        },
+        {
+          "title": "HK022 Integrase (UniProt P16407)",
+          "url": "https://www.uniprot.org/uniprot/P16407"
+        },
+        {
+          "title": "Sequence Ontology: site_specific_recombination_target_region (SO:0001797)",
+          "url": "http://www.sequenceontology.org/browser/current_release/term/SO:0001797"
+        }
+      ],
+      "n_parts": 5,
+      "n_validated": 0,
+      "members": [
+        "186_attP",
+        "HK022_attP",
+        "lambda_attP",
+        "phi80_attP",
+        "phiC31_attP"
       ]
     }
   ]

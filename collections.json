@@ -23,5 +23,142 @@
         "url": "http://parts.igem.org/Part:BBa_J23100"
       }
     ]
+  },
+  "phage-att-sites": {
+    "name": "Phage attachment sites for chromosomal integration",
+    "description": "Phage-borne attP attachment sites from phylogenetically distinct, mutually orthogonal site-specific recombination systems, each recognized by its own dedicated integrase and not cross-reacting with the others: phiC31 attP (Streptomyces phage phiC31; a large serine integrase that needs no host factors and gives highly directional integration), and the tyrosine-integrase attP sites of coliphages lambda, 186 (a P2-family system that also uses the Apl directionality factor), phi80, and HK022 (which use the host integration host factor IHF, and an excisionase for the reverse reaction). Each attP is the phage half of an attP x attB recombination pair; the cognate bacterial attB sites (in the host chromosome, or a pseudo-attB in non-native hosts for phiC31) are being added. These orthogonal sites are widely used as landing pads for stable, single-copy genomic integration.",
+    "source": "Bacteriophage integrase landing-pad systems (site-specific recombination)",
+    "references": [
+      {
+        "title": "One-step cloning and chromosomal integration of DNA",
+        "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+        "journal": "ACS Synth Biol",
+        "year": 2013,
+        "pmid": "24050148",
+        "doi": "10.1021/sb400021j"
+      },
+      {
+        "title": "In vitro site-specific integration of bacteriophage DNA catalyzed by a recombinase of the resolvase/invertase family",
+        "authors": "Thorpe HM, Smith MC",
+        "journal": "Proc Natl Acad Sci USA",
+        "year": 1998,
+        "pmid": "9576912",
+        "doi": "10.1073/pnas.95.10.5505"
+      },
+      {
+        "title": "A phage integrase directs efficient site-specific integration in human cells",
+        "authors": "Groth AC, Olivares EC, Thyagarajan B, Calos MP",
+        "journal": "Proc Natl Acad Sci USA",
+        "year": 2000,
+        "pmid": "10801973",
+        "doi": "10.1073/pnas.090527097"
+      },
+      {
+        "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria",
+        "authors": "Haldimann A, Wanner BL",
+        "journal": "J Bacteriol",
+        "year": 2001,
+        "pmid": "11591683",
+        "doi": "10.1128/JB.183.21.6384-6393.2001"
+      },
+      {
+        "title": "Determinants of site-specific recombination in the lambdoid coliphage HK022. An evolutionary change in specificity",
+        "authors": "Yagil E, Dolev S, Oberto J, Kislev N, Ramaiah N, Weisberg RA",
+        "journal": "J Mol Biol",
+        "year": 1989,
+        "pmid": "2547971",
+        "doi": "10.1016/0022-2836(89)90238-6"
+      },
+      {
+        "title": "Specificity determinants in the attachment sites of bacteriophages HK022 and lambda",
+        "authors": "Nagaraja R, Weisberg RA",
+        "journal": "J Bacteriol",
+        "year": 1990,
+        "pmid": "2146253",
+        "doi": "10.1128/jb.172.11.6540-6550.1990"
+      },
+      {
+        "title": "Control of gene expression in the P2-related template coliphages. III. DNA sequence of the major control region of phage 186",
+        "authors": "Kalionis B, Dodd IB, Egan JB",
+        "journal": "J Mol Biol",
+        "year": 1986,
+        "pmid": "3806670",
+        "doi": "10.1016/0022-2836(86)90257-3"
+      },
+      {
+        "title": "A quantitative binding model for the Apl protein, the dual purpose recombination-directionality factor and lysis-lysogeny regulator of bacteriophage 186",
+        "authors": "Cutts EE, Barry Egan J, Dodd IB, Shearwin KE",
+        "journal": "Nucleic Acids Res",
+        "year": 2020,
+        "pmid": "32789491",
+        "doi": "10.1093/nar/gkaa655"
+      },
+      {
+        "title": "Cooperative interactions between bacteriophage P2 integrase and its accessory factors IHF and Cox",
+        "authors": "Frumerie C, Sylwan L, Ahlgren-Berg A, Haggard-Ljungquist E",
+        "journal": "Virology",
+        "year": 2005,
+        "pmid": "15661160",
+        "doi": "10.1016/j.virol.2004.11.015"
+      },
+      {
+        "title": "The complete genome sequence of the Streptomyces temperate phage phiC31: evolutionary relationships to other viruses",
+        "authors": "Smith MC, Burns RN, Wilson SE, Gregory MA",
+        "journal": "Nucleic Acids Res",
+        "year": 1999,
+        "pmid": "10219087",
+        "doi": "10.1093/nar/27.10.2145"
+      }
+    ],
+    "resources": [
+      {
+        "title": "pOSIP Kit — Addgene (St-Pierre et al. 2013; all four att sites)",
+        "url": "https://www.addgene.org/kits/posip/"
+      },
+      {
+        "title": "pOSIP-KO (KanR, 186 attP) — Addgene #45985",
+        "url": "https://www.addgene.org/45985/"
+      },
+      {
+        "title": "pOSIP-KH (KanR, HK022 attP) — Addgene #45983",
+        "url": "https://www.addgene.org/45983/"
+      },
+      {
+        "title": "NC_001317: Escherichia phage 186 complete genome (NCBI)",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001317"
+      },
+      {
+        "title": "NC_001978: Bacteriophage phiC31 complete genome (NCBI)",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001978"
+      },
+      {
+        "title": "NC_021190.1: Enterobacteria phage phi80 genome (NCBI)",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_021190.1"
+      },
+      {
+        "title": "NC_002166.1: Coliphage HK022 complete genome (NCBI)",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_002166.1"
+      },
+      {
+        "title": "X51962: Coliphage HK022 int and xis genes (NCBI GenBank)",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/X51962"
+      },
+      {
+        "title": "phiC31 Integrase (UniProt Q9T221)",
+        "url": "https://www.uniprot.org/uniprot/Q9T221"
+      },
+      {
+        "title": "phi80 Integrase (UniProt P06155)",
+        "url": "https://www.uniprot.org/uniprot/P06155"
+      },
+      {
+        "title": "HK022 Integrase (UniProt P16407)",
+        "url": "https://www.uniprot.org/uniprot/P16407"
+      },
+      {
+        "title": "Sequence Ontology: site_specific_recombination_target_region (SO:0001797)",
+        "url": "http://www.sequenceontology.org/browser/current_release/term/SO:0001797"
+      }
+    ]
   }
 }

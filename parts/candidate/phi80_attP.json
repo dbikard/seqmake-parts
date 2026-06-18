@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "slug": "phi80_attP",
+  "locus": "phi80_attP",
+  "id": "phi80_attP",
+  "description": "Bacteriophage phi80 attP attachment site; 480 bp, source-verified 100% to AY048738.1. Recombination substrate for the phi80 tyrosine integrase.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GCCCGTGCGAATCAGAAATAATCTCGATATCATCTCTTTTCTTGCCGAGCGCCTTCCTGAGCTTTGTGTCGGTGATCATTGAATGGGTACACATTTTTGTTTTTGGGTACACAAAAGTGTACACAAAGTTGCCCACTCAAAGCTACACGCAATGTAACACTAGTTCGCAGAGTGTTATGGTTTACATCCTTGAAAGCCTGCTGGATAAGGGTTTAGCGTAACAGAACGTTTTTACGCGGAATTGTTCGTAATATGCCAAATGACAATTTAAGAAAGTGTTCTAATTTATTAGAAATTTGCACTTAAATCAAAAAGTTACGGACAATTCAACCACCAATCAATAAATTAAAGGGCACATTAAAGTACACAATATTTGTGCCCTTCTCTGTTTCTTTCCCGTTATCAGCTAGCTGGAAACTTTTTATACAGAGTTTAGAGCCCTACTCCATACGTTTTTGATACGCTTTGTCGTGATTCACC",
+  "references": [
+    {
+      "authors": "Haldimann A, Wanner BL",
+      "title": "Conditional-replication, integration, excision, and retrieval plasmid-host systems for gene structure-function studies of bacteria.",
+      "journal": "J Bacteriol",
+      "pubmed_id": "11591683",
+      "comment": "doi:10.1128/JB.183.21.6384-6393.2001"
+    },
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA.",
+      "journal": "ACS Synth Biol",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    },
+    {
+      "authors": "Argos P, Landy A, Abremski K, Egan JB, Haggard-Ljungquist E, Hoess RH, Kahn ML, Kalionis B, Narayana SV, Pierson LS",
+      "title": "The integrase family of site-specific recombinases: regional similarities and global diversity.",
+      "journal": "EMBO J",
+      "pubmed_id": "3011407",
+      "comment": "doi:10.1002/j.1460-2075.1986.tb04229.x"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 480,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "phi80_attP"
+        ],
+        "synonym": [
+          "phi80_attP",
+          "phi80 attP",
+          "phi-80 attP",
+          "phage phi80 attP"
+        ],
+        "collection": [
+          "phage-att-sites"
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "note": [
+          "Bacteriophage phi80 phage attachment site (attP). Identified as attP (NOT bacterial attB) — its source AY048738.1 is a CRIM integration plasmid (pAH162), which carries the phage attP. Detailed sub-feature annotation and functional_claims pending a re-run under the corrected attP identity."
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "AY048738.1 (CRIM plasmid pAH162, Haldimann & Wanner 2001), complement(361..840), 100% over 480 bp",
+    "asserting_agent": "annotate-part-workflow"
+  },
+  "functional_claims": []
+}
