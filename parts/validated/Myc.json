@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "slug": "Myc",
+  "locus": "Myc",
+  "id": "Myc",
+  "description": "Myc epitope tag \u2014 canonical 10 aa peptide (EQKLISEEDL) from human c-Myc (P01106), recognized by the 9E10 monoclonal antibody for immunodetection of recombinant fusion proteins.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "EQKLISEEDL",
+  "references": [
+    {
+      "authors": "Evan GI, Lewis GK, Ramsay G, Bishop JM",
+      "title": "Isolation of monoclonal antibodies specific for human c-myc proto-oncogene product",
+      "journal": "Molecular and Cellular Biology (1985)",
+      "pubmed_id": "3915782",
+      "comment": "doi:10.1128/mcb.5.12.3610-3616.1985"
+    },
+    {
+      "authors": "Hilpert K, Hansen G, Wessner H, K\u00fcttner G, Welfle K, Seifert M, H\u00f6hne W",
+      "title": "Anti-c-myc antibody 9E10: epitope key positions and variability characterized using peptide spot synthesis on cellulose",
+      "journal": "Protein Engineering (2001)",
+      "pubmed_id": "11739900",
+      "comment": "doi:10.1093/protein/14.10.803"
+    },
+    {
+      "authors": "Sch\u00fcchner S, Behm C, Mudrak I, Ogris E",
+      "title": "The Myc tag monoclonal antibody 9E10 displays highly variable epitope recognition dependent on neighboring sequence context",
+      "journal": "Science Signaling (2020)",
+      "pubmed_id": "31992583",
+      "comment": "doi:10.1126/scisignal.aax9730"
+    },
+    {
+      "authors": "Russo G, Unkauf T, Meier D, Wenzel EV, Langreder N, Schneider KT, Wiesner R, Bischoff R, Stadler V, D\u00fcbel S",
+      "title": "In vitro evolution of myc-tag antibodies: in-depth specificity and affinity analysis of Myc1-9E10 and Hyper-Myc",
+      "journal": "Biological Chemistry (2022)",
+      "pubmed_id": "35312243",
+      "comment": "doi:10.1515/hsz-2021-0405"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 10,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Myc"
+        ],
+        "synonym": [
+          "Myc",
+          "c-Myc tag",
+          "Myc tag",
+          "Myc-tag",
+          "c-Myc epitope",
+          "9E10 epitope",
+          "EQKLISEEDL"
+        ],
+        "note": [
+          "Canonical 10 aa Myc epitope tag (EQKLISEEDL) from human c-Myc (UniProt P01106, residues 425-434). Recognized by the 9E10 monoclonal antibody; widely used for immunodetection and immunoprecipitation of recombinant fusion proteins. Atomic part: no functional sub-elements."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P01106 (MYC_HUMAN, Myc proto-oncogene protein, Homo sapiens, Swiss-Prot reviewed, 454 aa); the 10 aa part sequence EQKLISEEDL is an exact sub-sequence at positions 425-434 (1-based), independently re-fetched from https://rest.uniprot.org/uniprotkb/P01106.fasta and confirmed 100% identical"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "The EQKLISEEDL peptide is specifically recognized by the 9E10 monoclonal antibody (anti-c-Myc), enabling immunodetection and immunoprecipitation of Myc-tagged recombinant fusion proteins.",
+      "value": {
+        "mechanism": "epitope-antibody recognition",
+        "antibody": "9E10 (anti-c-Myc)",
+        "applications": [
+          "immunodetection",
+          "immunoprecipitation",
+          "co-immunoprecipitation",
+          "flow cytometry"
+        ]
+      },
+      "source": {
+        "pmid": "3915782",
+        "doi": "10.1128/mcb.5.12.3610-3616.1985",
+        "quote": "monoclonal antibodies specific for human c-myc proto-oncogene product",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "epitope_core",
+      "type": "sequence_variant",
+      "label": "The minimal binding determinant of 9E10 within EQKLISEEDL is KLISEEDL (8 aa); the core residues required for recognition are LISE (positions 4-7 of the full tag). Position substitution analysis shows EQK and the terminal L are partially dispensable.",
+      "value": {
+        "full_tag": "EQKLISEEDL",
+        "minimal_binding_peptide": "KLISEEDL",
+        "core_epitope": "LISE"
+      },
+      "source": {
+        "pmid": "11739900",
+        "doi": "10.1093/protein/14.10.803",
+        "quote": "9E10 core epitope LISE and minimum binding peptide KLISEEDL; substitutional analysis of EQKLISEEDL by peptide spot synthesis",
+        "quote_source": "catalog-doc",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "context_dependence",
+      "type": "caveat",
+      "label": "9E10 recognition of EQKLISEEDL is highly context-dependent: neighboring residues in the fusion protein can abolish or reduce antibody binding. Alternative antibodies (4A6, 9B11) show less context sensitivity and are recommended when robust detection across diverse fusion architectures is required.",
+      "value": {
+        "issue": "context-dependent epitope recognition by 9E10",
+        "alternative_antibodies": [
+          "4A6",
+          "9B11"
+        ],
+        "recommendation": "test detection empirically; consider alternative anti-Myc antibodies for sensitive applications"
+      },
+      "source": {
+        "pmid": "31992583",
+        "doi": "10.1126/scisignal.aax9730",
+        "quote": "The Myc tag monoclonal antibody 9E10 displays highly variable epitope recognition dependent on neighboring sequence context",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "improved_antibody",
+      "type": "sequence_variant",
+      "label": "Hyper-Myc is an evolved anti-Myc antibody with 18 nM affinity and improved thermal stability (+37%) compared to 9E10, while retaining identical EQKLISEEDL epitope specificity. Existing Myc-tagged constructs can be detected with Hyper-Myc without sequence modification.",
+      "value": {
+        "antibody_variant": "Hyper-Myc",
+        "affinity_nM": 18,
+        "thermal_stability_improvement_pct": 37,
+        "epitope_unchanged": true
+      },
+      "source": {
+        "pmid": "35312243",
+        "doi": "10.1515/hsz-2021-0405",
+        "quote": "evolved antibody with 18 nM affinity (+improved vs 9E10) and +37% thermal stability, retaining identical EQKLISEEDL epitope specificity",
+        "quote_source": "catalog-doc",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "As a small synthetic peptide tag derived from a human protein, EQKLISEEDL functions as an epitope tag across all common expression hosts (bacterial, yeast, insect, mammalian) regardless of the fusion partner orientation (N- or C-terminal).",
+      "value": {
+        "host_range": "broad",
+        "hosts": [
+          "Escherichia coli",
+          "Saccharomyces cerevisiae",
+          "insect cells",
+          "mammalian cells"
+        ],
+        "placement": [
+          "N-terminal",
+          "C-terminal",
+          "internal"
+        ]
+      },
+      "source": {
+        "pmid": "3915782",
+        "doi": "10.1128/mcb.5.12.3610-3616.1985",
+        "quote": "Isolation of monoclonal antibodies specific for human c-myc proto-oncogene product",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

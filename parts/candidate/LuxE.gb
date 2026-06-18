@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxE"
                      /synonym="LuxE"
                      /synonym="long-chain-fatty-acid ligase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkgikeydss aailsniilr sktgmtsyvd kqeitassei ddlifssdpl vwsydeqeki
        61 rkklvldafr nhykhcreyr hycqahkvdd niteiddipv fptsvfkftr lltsqeneie

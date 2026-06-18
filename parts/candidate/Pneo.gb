@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="neo promoter"
                      /synonym="neomycin promoter"
                      /synonym="kanamycin promoter (SEVA)"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 acagcaagcg aaccggaatt gccagctggg gcgccctctg gtaaggttgg gaagccctgc
        61 aaagtaaact ggatggcttt cttgccgcca aggatctgat ggcgcagggg atcaagatcg

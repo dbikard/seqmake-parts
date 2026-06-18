@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="T7 RNApolymerase"
                      /synonym="T7 RNA polymerase"
                      /synonym="DNA-directed RNA polymerase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mntiniaknd fsdielaaip fntladhyge rlareqlale hesyemgear frkmferqlk
        61 agevadnaaa kplittllpk miarindwfe evkakrgkrp tafqflqeik peavayitik

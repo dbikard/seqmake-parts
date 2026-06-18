@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      terminator      1..51
                      /label="L3S1P13"
                      /synonym="L3S1P13"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 gacgaacaat aaggcctccc taacgggggg ccttttttat tgataacaaa a
 //

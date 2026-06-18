@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      protein_domain  1..18
                      /label="T2A"
                      /synonym="T2A"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 egrgslltcg dveenpgp
 //

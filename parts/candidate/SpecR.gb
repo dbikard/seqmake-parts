@@ -16,6 +16,7 @@ FEATURES             Location/Qualifiers
                      /synonym="spec"
                      /synonym="aad9"
                      /synonym="spectinomycin adenyltransferase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mfgsgvesgl kpnsdldflv vvsepltdqs keiliqkirp iskkigdksn lryieltiii
        61 qqemvpwnhp pkqefiygew lqelyeqgyi pqkelnsdlt imlyqakrkn kriygnydle

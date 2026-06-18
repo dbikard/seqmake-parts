@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      oriT            1..228
                      /label="oriT"
                      /synonym="OriT"
+                     /db_xref="SO:0000724"
 ORIGIN
         1 tctgttacgc cggcggtagc cggccagcct cgcagagcag gattcccgtt gagcaccgcc
        61 aggtgcgaat aagggacagt gaagaaggaa cacccgctcg cgggtgggcc tacttcacct

@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="PURA3"
                      /synonym="PURA3"
                      /synonym="URA3 promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ttcaattcat catttttttt ttattctttt ttttgatttc ggtttctttg aaattttttt
        61 gattcggtaa tctccgaaca gaaggaagaa cgaaggaagg agcacagact tagattggta

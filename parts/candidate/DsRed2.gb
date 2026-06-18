@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="DsRed2"
                      /synonym="dsred2"
                      /synonym="red fluorescent protein (DsRed2)"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 massenvite fmrfkvrmeg tvnghefeie gegegrpyeg hntvklkvtk ggplpfawdi
        61 lspqfqygsk vyvkhpadip dykklsfpeg fkwervmnfe dggvatvtqd sslqdgcfiy

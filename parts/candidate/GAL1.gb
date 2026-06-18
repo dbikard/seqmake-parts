@@ -20,6 +20,7 @@ FEATURES             Location/Qualifiers
                      the divergent GAL1-10 promoter; includes the Gal4 UAS).
                      Extracted from pYES2 (Addgene 244550), GAL1 promoter
                      feature (442 bp)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 cggattagaa gccgccgagc gggtgacagc cctccgaagg aagactctcc tccgtgcgtc
        61 ctcgtcttca ccggtcgcgt tcctgaaacg cagatgtgcc tcgcgccgca ctgctccgaa

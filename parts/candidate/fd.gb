@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
                      /label="fd"
                      /synonym="fd"
                      /synonym="fd terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 gatacaatta aaggctcctt ttggagcctt tttttttgga
 //

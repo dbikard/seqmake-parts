@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="ECK120033736"
                      /synonym="ECK120033736"
                      /synonym="Terminator ECK120033736"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 gcgcaataaa aaagcccccg gaaggtgatc ttccgggggc tttctcatgc gt
 //

@@ -20,6 +20,7 @@ FEATURES             Location/Qualifiers
                      medium-strength constitutive mammalian promoter. Extracted
                      from a PGK lentiviral vector (Addgene 253233), hPGK
                      promoter feature (511 bp)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ggggttgggg ttgcgccttt tccaaggcag ccctgggttt gcgcagggac gcggctgctc
        61 tgggcgtggt tccgggaaac gcagcggcgc cgaccctggg tctcgcacat tcttcacgtc

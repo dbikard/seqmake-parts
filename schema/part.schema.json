@@ -45,7 +45,14 @@
         "required": ["type", "start", "end", "strand", "qualifiers"],
         "additionalProperties": false,
         "properties": {
-          "type": {"type": "string"},
+          "type": {
+            "type": "string",
+            "description": "GenBank/INSDC feature key (the shared vocabulary with the seqmake app), plus the de-facto synbio extension protein_domain. The Sequence Ontology accession is a derived /db_xref, mapped from this key by tools/so_terms.py. Deprecated INSDC signal keys (-35_signal/-10_signal) are expressed as regulatory + /regulatory_class; the display-only 'resistance' pseudo-type is not a feature key.",
+            "enum": ["CDS", "gene", "promoter", "terminator", "RBS", "regulatory",
+                     "protein_bind", "misc_binding", "rep_origin", "oriT",
+                     "misc_recomb", "stem_loop", "sig_peptide", "mat_peptide",
+                     "primer_bind", "misc_RNA", "misc_feature", "protein_domain"]
+          },
           "start": {"type": "integer", "minimum": 0, "description": "0-based inclusive start"},
           "end": {"type": "integer", "minimum": 1, "description": "0-based exclusive end"},
           "strand": {"type": "integer", "enum": [1, -1]},

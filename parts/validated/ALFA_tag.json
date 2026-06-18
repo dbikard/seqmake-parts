@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "slug": "ALFA_tag",
+  "locus": "ALFA_tag",
+  "id": "ALFA_tag",
+  "description": "ALFA_tag \u2014 a 13-aa synthetic epitope tag (SRLEEELRRRLTE) recognized by the NbALFA nanobody with ultra-high affinity (Kd = 26 pM), used for protein detection, purification, and imaging.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "SRLEEELRRRLTE",
+  "references": [
+    {
+      "authors": "G\u00f6tzke H, Kilisch M, Mart\u00ednez-Carranza M, Sograte-Idrissi S, Rajavel A, Schlichthaerle T, Engels N, Jungmann R, Stenmark P, Opazo F, Frey S",
+      "title": "The ALFA-tag is a highly versatile tool for nanobody-based bioscience applications",
+      "journal": "Nature Communications (2019)",
+      "pubmed_id": "31562305",
+      "comment": "doi:10.1038/s41467-019-12301-7"
+    },
+    {
+      "authors": "G\u00f6tzke H et al.",
+      "title": "Discovery and Characterization of an ALFA-Tag-Specific Affinity Resin Optimized for Protein Purification at Low Temperatures in Physiological Buffer",
+      "journal": "Frontiers in Bioengineering and Biotechnology (2021)",
+      "pubmed_id": "33718340",
+      "comment": "doi:10.3389/fbioe.2021.622993"
+    },
+    {
+      "authors": "Jedlitzke B, Mootz HD",
+      "title": "A Light-Activatable Photocaged Variant of the Ultra-High Affinity ALFA-Tag Nanobody",
+      "journal": "ChemBioChem (2022)",
+      "pubmed_id": "35411584",
+      "comment": "doi:10.1002/cbic.202200079"
+    },
+    {
+      "authors": "Fay A, Kurland AP, Li Z, Monetti M, Johnson JR, Glickman MS",
+      "title": "A split ALFA tag-nanobody system for protein localization and proximity proteomics in mycobacteria",
+      "journal": "mBio (2025)",
+      "pubmed_id": "40196699",
+      "comment": "doi:10.1128/mbio.00971-25"
+    },
+    {
+      "authors": "Akhuli D, Dhar A, Viji AS, Bhojappa B, Palani S",
+      "title": "ALIBY: ALFA Nanobody-Based Toolkit for Imaging and Biochemistry in Yeast",
+      "journal": "mSphere (2022)",
+      "pubmed_id": "36200780",
+      "comment": "doi:10.1128/msphere.00333-22"
+    },
+    {
+      "authors": "Chiesa et al.",
+      "title": "Application of ALFA-Tagging in the Nematode Model Organisms Caenorhabditis elegans and Pristionchus pacificus",
+      "journal": "Cells (2022)",
+      "pubmed_id": "36497133",
+      "comment": "doi:10.3390/cells11233875"
+    },
+    {
+      "authors": "Zhang et al.",
+      "title": "ALFA nanobody-guided endogenous labeling",
+      "journal": "Nature Chemical Biology (2025)",
+      "pubmed_id": "40883491",
+      "comment": "doi:10.1038/s41589-025-02019-7"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 13,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "ALFA_tag"
+        ],
+        "synonym": [
+          "ALFA-tag",
+          "ALFA epitope",
+          "SRLEEELRRRLTE"
+        ],
+        "note": [
+          "13-aa synthetic epitope tag SRLEEELRRRLTE. Recognized with sub-nanomolar affinity by NbALFA (Kd = 26 pM). No internal functional sub-elements; the tag acts as a single binding epitope."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "PDB 6I2G chain B, entity 2 (\"ALFA-tag peptide\", synthetic construct, PSRLEEELRRRLTEP 15 aa; ALFA tag core SRLEEELRRRLTE = positions 1-14, 100% identity over all 13 aa; deposited 2018-11-01, released 2019-09-25; G\u00f6tzke H et al., The ALFA-tag is a highly versatile tool for nanobody-based bioscience applications, Nat Commun 10:4403, 2019, PMID 31562305, doi:10.1038/s41467-019-12301-7)"
+  },
+  "functional_claims": [
+    {
+      "id": "affinity_binding",
+      "type": "affinity_binding",
+      "label": "ALFA tag is bound by the NbALFA nanobody with Kd = 26 pM, one of the highest affinities reported for an epitope tag/binder pair.",
+      "value": {
+        "binder": "NbALFA",
+        "binder_type": "nanobody",
+        "Kd": "26 pM",
+        "measurement_method": "isothermal titration calorimetry and surface plasmon resonance"
+      },
+      "source": {
+        "pmid": "31562305",
+        "doi": "10.1038/s41467-019-12301-7",
+        "quote": "NbALFA binds ALFA-tag with a Kd of 26 pM",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "affinity_purification",
+      "type": "mechanism",
+      "label": "Fusion proteins bearing the ALFA tag can be purified by NbALFA-coupled affinity resin; a cold-elutable NbALFACE variant (Kd ~100 nM) enables gentle elution at 4\u00b0C under physiological buffer.",
+      "value": {
+        "application": "affinity purification",
+        "resin_binder": "NbALFA or NbALFACE",
+        "NbALFACE_Kd": "~100 nM",
+        "elution_condition": "4\u00b0C, physiological buffer (NbALFACE)"
+      },
+      "source": {
+        "pmid": "33718340",
+        "doi": "10.3389/fbioe.2021.622993",
+        "quote": "efficient elution at 4\u00b0C in physiological buffer",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "position_independence",
+      "type": "mechanism",
+      "label": "The ALFA tag functions independently of its position (N-terminal, C-terminal, or internal), making it compatible with diverse fusion architectures.",
+      "value": {
+        "positions_tested": [
+          "N-terminal",
+          "C-terminal",
+          "internal"
+        ],
+        "position_dependence": "none reported"
+      },
+      "source": {
+        "pmid": "31562305",
+        "doi": "10.1038/s41467-019-12301-7",
+        "quote": "the ALFA-tag is position-independent",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "The ALFA tag has been validated in diverse hosts including E. coli, mammalian cells, S. cerevisiae, C. elegans, P. pacificus, and M. tuberculosis.",
+      "value": {
+        "host_range": "broad",
+        "validated_hosts": [
+          "Escherichia coli",
+          "mammalian cells",
+          "Saccharomyces cerevisiae",
+          "Caenorhabditis elegans",
+          "Pristionchus pacificus",
+          "Mycobacterium tuberculosis"
+        ]
+      },
+      "source": {
+        "pmid": "31562305",
+        "doi": "10.1038/s41467-019-12301-7",
+        "quote": "highly versatile tool for nanobody-based bioscience applications",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "imaging_detection",
+      "type": "mechanism",
+      "label": "The ALFA tag supports immunofluorescence imaging and super-resolution microscopy via NbALFA conjugated to fluorescent dyes or proteins.",
+      "value": {
+        "application": "protein detection and imaging",
+        "methods": [
+          "immunofluorescence",
+          "super-resolution microscopy (STORM/PALM/PAINT)"
+        ],
+        "binder": "NbALFA-fluorophore conjugate or NbALFA-fluorescent protein fusion"
+      },
+      "source": {
+        "pmid": "31562305",
+        "doi": "10.1038/s41467-019-12301-7",
+        "quote": "versatile tool for nanobody-based bioscience applications",
+        "quote_source": "primary",
+        "section": "Results/Applications"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "crispr_compatible",
+      "type": "mechanism",
+      "label": "At 13 aa (39 bp coding), the ALFA tag is small enough for CRISPR-mediated knock-in at endogenous loci without disrupting protein function.",
+      "value": {
+        "application": "CRISPR knock-in endogenous tagging",
+        "tag_size_aa": 13,
+        "tag_size_bp": 39
+      },
+      "source": {
+        "pmid": "36497133",
+        "doi": "10.3390/cells11233875",
+        "quote": "CRISPR-mediated insertion of the ALFA-tag does not perturb protein function",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "light_control",
+      "type": "sequence_variant",
+      "label": "A photocaged NbALFA variant (ALFA-Pb, Tyr42ONBY substitution) reduces affinity to Kd 3.2\u20137.9 \u00b5M in the dark and restores near-wild-type affinity (~183\u2013346 pM) after 365 nm UV irradiation, enabling light-controlled binding to the ALFA tag.",
+      "value": {
+        "variant": "NbALFA Tyr42ONBY (ALFA-Pb)",
+        "Kd_dark": "3.2\u20137.9 \u00b5M",
+        "Kd_activated": "~183\u2013346 pM",
+        "activation_wavelength": "365 nm UV"
+      },
+      "source": {
+        "pmid": "35411584",
+        "doi": "10.1002/cbic.202200079",
+        "quote": "photocaged variant with Tyr42ONBY has Kd 3.2\u20137.9 \u00b5M inactive, restores to ~183\u2013346 pM after 365 nm UV irradiation",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "split_tag",
+      "type": "mechanism",
+      "label": "A split ALFA tag/NbALFA system enables proximity proteomics and protein localization studies, demonstrated in mycobacteria using TurboID-NbALFA.",
+      "value": {
+        "application": "proximity proteomics and protein localization",
+        "system": "split ALFA tag / NbALFA-TurboID",
+        "organism": "Mycobacterium tuberculosis"
+      },
+      "source": {
+        "pmid": "40196699",
+        "doi": "10.1128/mbio.00971-25",
+        "quote": "split ALFA tag-nanobody system for protein localization and proximity proteomics in mycobacteria",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

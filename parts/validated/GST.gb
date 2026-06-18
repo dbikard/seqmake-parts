@@ -71,22 +71,27 @@ FEATURES             Location/Qualifiers
                      /label="Binding site"
                      /parent="GST"
                      /note="source: UniProt:P08515"
+                     /db_xref="SO:0000409"
      binding         41..45
                      /label="Binding site"
                      /parent="GST"
                      /note="source: UniProt:P08515"
+                     /db_xref="SO:0000409"
      binding         54..55
                      /label="Binding site"
                      /parent="GST"
                      /note="source: UniProt:P08515"
+                     /db_xref="SO:0000409"
      binding         67..68
                      /label="Binding site"
                      /parent="GST"
                      /note="source: UniProt:P08515"
+                     /db_xref="SO:0000409"
      binding         111
                      /label="Binding site"
                      /parent="GST"
                      /note="source: UniProt:P08515"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mspilgywki kglvqptrll leyleekyee hlyerdegdk wrnkkfelgl efpnlpyyid
        61 gdvkltqsma iiryiadkhn mlggcpkera eismlegavl dirygvsria yskdfetlkv

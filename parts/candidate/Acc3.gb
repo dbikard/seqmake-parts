@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="acc3"
                      /synonym="gentamicin 3-N-acetyltransferase"
                      /synonym="GmR (SEVA)"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mlrssndvtq qgsrpktklg gssmgiirtc rlgpdqvksm raaldlfgre fgdvatysqh
        61 qpdsdylgnl lrsktfiala afdqeavvga laayvlpkfe qprseiyiyd lavsgehrrq

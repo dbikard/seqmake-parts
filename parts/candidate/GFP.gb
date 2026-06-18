@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="GFP"
                      /synonym="gfpmut2"
                      /synonym="green fluorescent protein"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mskgeelftg vvpilveldg dvnghkfsvs gegegdatyg kltlkfictt gklpvpwptl
        61 vttfayglqc farypdhmkq hdffksampe gyvqertiff kddgnyktra evkfegdtlv

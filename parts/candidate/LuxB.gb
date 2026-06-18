@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxB"
                      /synonym="LuxB"
                      /synonym="luciferase beta chain"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkfglfflnf insttvqeqs ivrmqeitey vdklnfeqil vyenhfsdng vvgapltvsg
        61 fllgltekik igslnhiitt hhpvaiaeea clldqlsegr filgfsdcek kdemhffnrp

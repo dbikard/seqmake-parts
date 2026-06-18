@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "slug": "V5_tag",
+  "locus": "V5_tag",
+  "id": "V5_tag",
+  "description": "V5_tag \u2014 a 14-aa epitope tag (GKPIPNPLLGLDST) from the PIV5/SV5 P/V protein (UniProt P11208, residues 95\u2013108), recognized by the high-affinity SV5-Pk1 monoclonal antibody for protein detection, purification, and imaging.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "GKPIPNPLLGLDST",
+  "references": [
+    {
+      "authors": "Hanke T, Szawlowski P, Randall RE",
+      "title": "Construction of solid matrix-antibody-antigen complexes containing simian immunodeficiency virus p27 using tag-specific monoclonal antibody and tag-linked antigen.",
+      "journal": "J Gen Virol (1992)",
+      "pubmed_id": "1372038",
+      "comment": "doi:10.1099/0022-1317-73-3-653"
+    },
+    {
+      "authors": "Southern JA, Young DF, Heaney F, Baumg\u00e4rtner WK, Randall RE",
+      "title": "Identification of an epitope on the P and V proteins of simian virus 5 that distinguishes between two isolates with different biological characteristics.",
+      "journal": "J Gen Virol (1991)",
+      "pubmed_id": "1713260",
+      "comment": "doi:10.1099/0022-1317-72-7-1551"
+    },
+    {
+      "authors": "Randall RE, Young DF, Goswami KK, Russell WC",
+      "title": "Isolation and characterization of monoclonal antibodies to simian virus 5 and their use in revealing antigenic differences between human, canine and simian isolates.",
+      "journal": "J Gen Virol (1987)",
+      "pubmed_id": "2445904",
+      "comment": "doi:10.1099/0022-1317-68-11-2769"
+    },
+    {
+      "authors": "Randall RE, Hanke T, Young D, Southern JA",
+      "title": "Two-tag purification of recombinant proteins for the construction of solid matrix-antibody-antigen (SMAA) complexes as vaccines.",
+      "journal": "Vaccine (1993)",
+      "pubmed_id": "7504859",
+      "comment": "doi:10.1016/0264-410x(93)90050-8"
+    },
+    {
+      "authors": "Fritschle K, Mielke M, Seelbach OJ, M\u00fchlthaler U, \u017divani\u0107 M, Bozoglu T, D\u00f6tsch S, Warmuth L, Busch DH, Skerra A, Kupatt C, Weber WA, Randall RE, Steiger K, Morath V",
+      "title": "The V5-Epitope Tag for Cell Engineering and Its Use in Immunohistochemistry and Quantitative Flow Cytometry.",
+      "journal": "Biology (Basel) (2025)",
+      "pubmed_id": "40723447",
+      "comment": "doi:10.3390/biology14070890"
+    },
+    {
+      "authors": "Randall RE, Young D, Pisliakova M, Andrejeva J, West L, Rossler L, Morath V, Hughes D, Goodbourn S",
+      "title": "Single-cycle parainfluenza virus type 5 vectors for producing recombinant proteins, including a humanized anti-V5 tag antibody.",
+      "journal": "J Gen Virol (2025)",
+      "pubmed_id": "39786361",
+      "comment": "doi:10.1099/jgv.0.002061"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 14,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "V5_tag"
+        ],
+        "synonym": [
+          "V5 tag",
+          "V5 epitope",
+          "Pk-tag",
+          "Pk tag",
+          "Pk epitope",
+          "GKPIPNPLLGLDST"
+        ],
+        "note": [
+          "14-aa epitope tag GKPIPNPLLGLDST derived from residues 95\u2013108 of the Parainfluenza virus 5 / Simian virus 5 (PIV5/SV5) phosphoprotein (P/V protein; UniProt P11208). Recognized by the SV5-Pk1 (Pk) monoclonal antibody. Also known as the Pk tag or V5 epitope."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P11208 (PHOSP_PIV5, Parainfluenza virus 5 strain W3 phosphoprotein, Swiss-Prot reviewed), residues 95\u2013108 (GKPIPNPLLGLDST), 100% identity over 14 aa; independently re-fetched from rest.uniprot.org/uniprotkb/P11208.fasta and compared byte-for-byte \u2014 exact match confirmed"
+  },
+  "functional_claims": [
+    {
+      "id": "affinity_binding",
+      "type": "affinity_binding",
+      "label": "The V5 (Pk) tag is bound by the murine SV5-Pk1 monoclonal antibody with high affinity (KD ~441 pM).",
+      "value": {
+        "binder": "mu_SV5-Pk1",
+        "binder_type": "monoclonal antibody",
+        "KD": "~441 pM"
+      },
+      "source": {
+        "pmid": "40723447",
+        "doi": "10.3390/biology14070890",
+        "quote": "KD of mu_SV5-Pk1 ~441 pM",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "humanized_binder",
+      "type": "affinity_binding",
+      "label": "A humanized anti-V5 antibody (hu_SV5-Pk1 / Hu6) binds the V5 tag with high affinity (KD ~572 pM), extending the tag to therapeutic and synthetic-biology applications.",
+      "value": {
+        "binder": "hu_SV5-Pk1 (Hu6)",
+        "binder_type": "humanized monoclonal antibody",
+        "KD": "~572 pM"
+      },
+      "source": {
+        "pmid": "39786361",
+        "doi": "10.1099/jgv.0.002061",
+        "quote": "humanized anti-V5 antibody (hu_SV5-Pk1) with KD ~572 pM",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "epitope_mapping",
+      "type": "mechanism",
+      "label": "The minimal antibody-binding determinant lies within the tag, with core residues IPNPLLGLD and a beta-turn motif essential for SV5-P-k monoclonal antibody recognition.",
+      "value": {
+        "epitope_core": "IPNPLLGLD",
+        "structural_motif": "beta-turn",
+        "method": "synthetic peptide competition"
+      },
+      "source": {
+        "pmid": "1713260",
+        "doi": "10.1099/0022-1317-72-7-1551",
+        "quote": "an epitope on the P and V proteins of simian virus 5",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "portable_tag",
+      "type": "mechanism",
+      "label": "The 14-aa Pk oligopeptide (GKPIPNPLLGLDST) functions as a portable epitope tag that retains antigenicity when fused to the C-terminus of foreign recombinant proteins, enabling antibody-based detection and affinity capture.",
+      "value": {
+        "application": "epitope tagging / affinity capture",
+        "tag_length_aa": 14,
+        "position_validated": "C-terminal fusion"
+      },
+      "source": {
+        "pmid": "1372038",
+        "doi": "10.1099/0022-1317-73-3-653",
+        "quote": "tag-specific monoclonal antibody and tag-linked antigen",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "trypsin_resistance",
+      "type": "mechanism",
+      "label": "The V5 tag contains no arginine or lysine within its antibody-binding core and is reported to be resistant to trypsin cleavage, with low hydrophobicity favoring solubility of tagged fusions.",
+      "value": {
+        "property": "trypsin resistance",
+        "basis": "absence of arginine in the tag",
+        "hydrophilicity": "low hydrophobicity"
+      },
+      "source": {
+        "pmid": "40723447",
+        "doi": "10.3390/biology14070890",
+        "quote": "trypsin resistance (no arginine); low hydrophilicity",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "detection_applications",
+      "type": "mechanism",
+      "label": "The V5 tag is validated for immunohistochemistry on FFPE tissue, quantitative flow cytometry, and cell-tracking applications including CAR-T cell engineering and gene-therapy monitoring.",
+      "value": {
+        "applications": [
+          "immunohistochemistry (FFPE)",
+          "quantitative flow cytometry",
+          "CAR-T cell tracking",
+          "gene therapy monitoring"
+        ]
+      },
+      "source": {
+        "pmid": "40723447",
+        "doi": "10.3390/biology14070890",
+        "quote": "validation for IHC on FFPE, quantitative flow cytometry; CAR-T cell tracking and gene therapy monitoring applications",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

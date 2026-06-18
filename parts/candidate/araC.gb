@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="araC"
                      /synonym="araC"
                      /synonym="arabinose operon regulatory protein"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 maeaqndpll pgysfnahlv agltpieang yldffidrpl gmkgyilnlt irgqgvvknq
        61 grefvcrpgd illfppgeih hygrhpeare wyhqwvyfrp raywhewlnw psifantgff

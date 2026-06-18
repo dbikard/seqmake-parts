@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..323
                      /label="sopB"
                      /synonym="sopB"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkrapvipkh tlntqpvedt slstpaapmv dsliarvgvm argnaitlpv cgrdvkftle
        61 vlrgdsvekt srvwsgnerd qelltedald dlipsflltg qqtpafgrrv sgvieiadgs

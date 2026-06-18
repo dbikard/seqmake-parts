@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="PT3"
                      /synonym="PT3"
                      /synonym="T3 promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 aattaaccct cactaaaggg
 //

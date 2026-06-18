@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..270
                      /label="CspRecT"
                      /synonym="CspRecT"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mnqivkftdd sglavqvtpd dvrryicena tekevglflq lcqtqrlnpf vkdaylvkyg
        61 gapasmitsy qvfnrracrd anydgiksgv vvlrdgdvvh krgaacykka geeliggwae

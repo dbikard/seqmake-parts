@@ -1,0 +1,65 @@
+LOCUS       Myc                       10 aa                     UNK 01-JAN-1980
+DEFINITION  Myc epitope tag — canonical 10 aa peptide (EQKLISEEDL) from human
+            c-Myc (P01106), recognized by the 9E10 monoclonal antibody for
+            immunodetection of recombinant fusion proteins..
+ACCESSION   Myc
+VERSION     Myc
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Evan GI, Lewis GK, Ramsay G, Bishop JM
+  TITLE     Isolation of monoclonal antibodies specific for human c-myc
+            proto-oncogene product
+  JOURNAL   Molecular and Cellular Biology (1985)
+   PUBMED   3915782
+  REMARK    doi:10.1128/mcb.5.12.3610-3616.1985
+REFERENCE   2
+  AUTHORS   Hilpert K, Hansen G, Wessner H, Küttner G, Welfle K, Seifert M,
+            Höhne W
+  TITLE     Anti-c-myc antibody 9E10: epitope key positions and variability
+            characterized using peptide spot synthesis on cellulose
+  JOURNAL   Protein Engineering (2001)
+   PUBMED   11739900
+  REMARK    doi:10.1093/protein/14.10.803
+REFERENCE   3
+  AUTHORS   Schüchner S, Behm C, Mudrak I, Ogris E
+  TITLE     The Myc tag monoclonal antibody 9E10 displays highly variable
+            epitope recognition dependent on neighboring sequence context
+  JOURNAL   Science Signaling (2020)
+   PUBMED   31992583
+  REMARK    doi:10.1126/scisignal.aax9730
+REFERENCE   4
+  AUTHORS   Russo G, Unkauf T, Meier D, Wenzel EV, Langreder N, Schneider KT,
+            Wiesner R, Bischoff R, Stadler V, Dübel S
+  TITLE     In vitro evolution of myc-tag antibodies: in-depth specificity and
+            affinity analysis of Myc1-9E10 and Hyper-Myc
+  JOURNAL   Biological Chemistry (2022)
+   PUBMED   35312243
+  REMARK    doi:10.1515/hsz-2021-0405
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Myc
+FEATURES             Location/Qualifiers
+     protein_domain  1..10
+                     /label="Myc"
+                     /synonym="Myc"
+                     /synonym="c-Myc tag"
+                     /synonym="Myc tag"
+                     /synonym="Myc-tag"
+                     /synonym="c-Myc epitope"
+                     /synonym="9E10 epitope"
+                     /synonym="EQKLISEEDL"
+                     /note="Canonical 10 aa Myc epitope tag (EQKLISEEDL) from
+                     human c-Myc (UniProt P01106, residues 425-434). Recognized
+                     by the 9E10 monoclonal antibody; widely used for
+                     immunodetection and immunoprecipitation of recombinant
+                     fusion proteins. Atomic part: no functional sub-elements."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 eqkliseedl
+//

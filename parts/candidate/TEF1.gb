@@ -18,6 +18,7 @@ FEATURES             Location/Qualifiers
                      /note="S. cerevisiae TEF1 (translation elongation factor
                      EF-1 alpha) promoter; strong constitutive. Extracted from
                      pJF89 (Addgene 253756), TEF1 promoter feature (414 bp)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gatcccccac acaccatagc ttcaaaatgt ttctactcct tttttactct tccagatttt
        61 ctcggactcc gcgcatcgcc gtaccacttc aaaacaccca agcacagcat actaaatttc

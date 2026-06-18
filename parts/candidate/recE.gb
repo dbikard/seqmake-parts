@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..866
                      /label="recE"
                      /synonym="recE"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mstkplfllr kakkssgepd vvlwasndfe stcatldyli vksgkklssy fkavatnfpv
        61 vndlpaegei dftwseryql skdsmtwelk pgaapdnahy qgntnvnged mteieenmll

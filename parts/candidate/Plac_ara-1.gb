@@ -20,6 +20,7 @@ FEATURES             Location/Qualifiers
                      araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10
                      (TATGAT), downstream lac operator; AraC- and
                      LacI-controlled (arabinose + IPTG)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 catagcattt ttatccataa gattagcgga tcctaagctt tacaattgtg agcgctcaca
        61 attatgatag attcaattgt gagcggataa caatttcaca ca

@@ -1,0 +1,48 @@
+# SeqMake Parts
+
+> A machine-readable, provenance-tracked knowledge base of standard biological
+> parts -- promoters, CDSs, terminators, RBSs, operators, origins, selection
+> markers, regulators, and more. Each part is an annotated record with Sequence
+> Ontology typing, located sub-features, literature references, and
+> prose-derived functional claims. Every functional claim carries its source
+> (PMID + verbatim quote / figure), a confidence, and a review_status, so an
+> agent can weigh and cite it rather than assert it.
+
+CAVEAT: this is an AI-generated knowledge base under active development. All
+256 records are currently review_status = "ai-generated" and have not
+been expert-reviewed. Treat claims as a grounded starting point and VERIFY
+against the cited primary literature before relying on them.
+
+Contents: 256 parts (51 validated, 205 candidate) carrying 134 functional claims.
+
+## For agents: where to start
+
+1. Discovery index -- one compact line per part (slug, name, synonyms, type, SO
+   role, status, claim count, cognate TFs). Narrow here first:
+     https://w3id.org/seqmake/parts/index.json
+2. Full manifest -- every part with its sub-features, functional claims, and
+   references (no nucleotide sequence; large):
+     https://w3id.org/seqmake/parts/catalog.json
+3. Per-part canonical record -- sequence + located sub-features + functional
+   claims + provenance + references (substitute the slug):
+     https://dbikard.github.io/seqmake-parts/parts/files/{slug}.json
+   GenBank / FASTA / per-part RDF: same path with .gb / .fasta / .ttl
+4. Stable citation IRI for a part (resolves to its page):
+     https://w3id.org/seqmake/parts/part/{slug}
+5. RDF graph -- SBOL3 + Sequence Ontology + SBO; promoter<->TF regulation as
+   typed interactions; federates with UniProt:
+     https://w3id.org/seqmake/parts/catalog.ttl   (also catalog.jsonld)
+6. SPARQL cookbook (inducer queries, the regulation graph, claims-with-evidence):
+     https://github.com/dbikard/seqmake-parts/blob/main/QUERIES.md
+7. Part-record JSON Schema:
+     https://w3id.org/seqmake/parts/schema/part.schema.json
+
+## How to read a functional claim
+
+Each claim has: a `type` (inducer / induction_dynamic_range /
+repression_dynamic_range / strength_class / host_range / mechanism / ...), a
+structured `value`, a `source` (pmid/doi + a verbatim quote and/or figure), a
+`confidence` (low | medium | high), and a `review_status`. Prefer higher
+confidence, and surface the source + review_status whenever you use a claim.
+
+Repository: https://github.com/dbikard/seqmake-parts

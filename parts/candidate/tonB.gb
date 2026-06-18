@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="tonB"
                      /synonym="tonB"
                      /synonym="tonB terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 ttaacggcac caccgaaatt cagtaagcag aaagtcaaaa gcctccgacc ggaggctttt
        61 gactattact caacaggtaa ggcgcgaggt ttt

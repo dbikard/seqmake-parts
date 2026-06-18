@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="St1Cas9"
                      /synonym="cas9 (St1)"
                      /synonym="SthCas9"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtkpysigld igtnsvgwav ttdnykvpsk kmkvlgntsk kyikknllgv llfdsgitae
        61 grrlkrtarr rytrrrnril ylqeifstem atlddaffqr lddsflvpdd krdskypifg

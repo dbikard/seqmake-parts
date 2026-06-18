@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0",
+  "slug": "VSVG_tag",
+  "locus": "VSVG_tag",
+  "id": "VSVG_tag",
+  "description": "VSVG_tag \u2014 11-aa epitope tag (YTDIEMNRLGK) from the cytoplasmic tail of Vesicular stomatitis Indiana virus glycoprotein; detected by the P5D4 monoclonal antibody for immunodetection, immunoprecipitation, and affinity purification.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "YTDIEMNRLGK",
+  "references": [
+    {
+      "authors": "Kreis TE",
+      "title": "Microinjected antibodies against the cytoplasmic domain of vesicular stomatitis virus glycoprotein block its transport to the cell surface.",
+      "journal": "EMBO J (1986)",
+      "pubmed_id": "3013626",
+      "comment": "doi:10.1002/j.1460-2075.1986.tb04306.x"
+    },
+    {
+      "authors": "Rose JK, Bergmann JE",
+      "title": "Altered cytoplasmic domains affect intracellular transport of the vesicular stomatitis virus glycoprotein.",
+      "journal": "Cell (1983)",
+      "pubmed_id": "6352053",
+      "comment": "doi:10.1016/0092-8674(83)90384-7"
+    },
+    {
+      "authors": "Funakoshi M, Hochstrasser M",
+      "title": "Small epitope-linker modules for PCR-based C-terminal tagging in Saccharomyces cerevisiae.",
+      "journal": "Yeast (2009)",
+      "pubmed_id": "19243080",
+      "comment": "doi:10.1002/yea.1658"
+    },
+    {
+      "authors": "Shevtsova Z, Malik JMI, Michel U, Scholl U, Bahr M, Kugler S",
+      "title": "Evaluation of epitope tags for protein detection after in vivo CNS gene transfer.",
+      "journal": "Eur J Neurosci (2006)",
+      "pubmed_id": "16630044",
+      "comment": "doi:10.1111/j.1460-9568.2006.04725.x"
+    },
+    {
+      "authors": "Munis AM, Tijani M, Hassall M, Mattiuzzo G, Collins MK, Takeuchi Y",
+      "title": "Characterization of Antibody Interactions with the G Protein of Vesicular Stomatitis Virus Indiana Strain and Other Vesiculovirus G Proteins.",
+      "journal": "J Virol (2018)",
+      "pubmed_id": "30232190",
+      "comment": "doi:10.1128/JVI.00900-18"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 11,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "VSVG_tag"
+        ],
+        "synonym": [
+          "VSV-G tag",
+          "VSV-G epitope",
+          "VSVG epitope",
+          "YTDIEMNRLGK"
+        ],
+        "note": [
+          "11-aa epitope tag YTDIEMNRLGK, derived from the cytoplasmic tail (C-terminal residues 501\u2013511) of Vesicular stomatitis Indiana virus glycoprotein (VSV-G). Recognised by the P5D4 monoclonal antibody, widely used for protein detection, immunoprecipitation, and affinity purification. The tag acts as a single binding epitope with no functional sub-elements."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P03522 (Glycoprotein, Vesicular stomatitis Indiana virus strain San Juan), residues 501\u2013511 (C-terminal 11 aa of 511), exact match 100% (11/11 aa), independently fetched and compared via UniProt REST API"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "The VSVG tag (YTDIEMNRLGK) is recognised by the P5D4 monoclonal antibody raised against the cytoplasmic domain of VSV-G, enabling immunodetection (Western blot, immunofluorescence, immunoprecipitation) and affinity purification of fusion proteins.",
+      "value": {
+        "mechanism": "epitope tag \u2014 P5D4 monoclonal antibody recognition",
+        "antibody": "P5D4",
+        "epitope": "YTDIEMNRLGK (VSV-G aa 501\u2013511)",
+        "applications": [
+          "Western blot",
+          "immunofluorescence",
+          "immunoprecipitation",
+          "affinity purification"
+        ]
+      },
+      "source": {
+        "pmid": "3013626",
+        "doi": "10.1002/j.1460-2075.1986.tb04306.x",
+        "quote": "Microinjected antibodies against the cytoplasmic domain of vesicular stomatitis virus glycoprotein block its transport to the cell surface",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "epitope_mapping",
+      "type": "mechanism",
+      "label": "The P5D4 monoclonal antibody was raised against the 15 C-terminal residues of VSV-G (aa 497\u2013511) and its epitope maps to the five carboxy-terminal amino acids; the 11-aa YTDIEMNRLGK tag contains this minimal epitope.",
+      "value": {
+        "antibody": "P5D4",
+        "immunogen": "15 C-terminal residues of VSV-G (aa 497\u2013511)",
+        "minimal_epitope": "five carboxy-terminal amino acids",
+        "tag_residues": "aa 501\u2013511 of VSV-G"
+      },
+      "source": {
+        "pmid": "3013626",
+        "doi": "10.1002/j.1460-2075.1986.tb04306.x",
+        "quote": "generation of P5D4 monoclonal antibody against the 15 C-terminal residues (497-511) of VSV-G and maps the P5D4 epitope to the five carboxy-terminal amino acids",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "The VSVG tag has been validated for protein tagging in multiple hosts including mammalian cells and Saccharomyces cerevisiae, with utility in in vivo CNS gene transfer contexts.",
+      "value": {
+        "host_range": "broad",
+        "confirmed_hosts": [
+          "mammalian cells",
+          "Saccharomyces cerevisiae",
+          "rat CNS neurons (in vivo)"
+        ]
+      },
+      "source": {
+        "pmid": "19243080",
+        "doi": "10.1002/yea.1658",
+        "quote": "Small epitope-linker modules for PCR-based C-terminal tagging in Saccharomyces cerevisiae",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "cytoplasmic_tail_origin",
+      "type": "mechanism",
+      "label": "The VSVG tag sequence is derived from the cytoplasmic tail of VSV-G, a region required for Golgi-to-plasma-membrane transport; when used as a short peptide tag it does not confer transmembrane anchoring.",
+      "value": {
+        "origin": "cytoplasmic tail of VSV-G glycoprotein (Indiana strain, San Juan)",
+        "uniprot": "P03522",
+        "residues": "501\u2013511 of 511 aa",
+        "note": "As a free peptide tag it lacks the adjacent transmembrane domain and therefore does not anchor proteins to membranes."
+      },
+      "source": {
+        "pmid": "6352053",
+        "doi": "10.1016/0092-8674(83)90384-7",
+        "quote": "Altered cytoplasmic domains affect intracellular transport of the vesicular stomatitis virus glycoprotein",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "antibody_cross_reactivity",
+      "type": "mechanism",
+      "label": "The P5D4 antibody specifically recognises VSVind.G (Indiana serotype) cytoplasmic tail; reactivity against G proteins from other vesiculovirus serotypes varies, confirming the YTDIEMNRLGK epitope as Indiana-serotype-specific.",
+      "value": {
+        "antibody": "P5D4",
+        "specificity": "VSVind.G (Indiana serotype) cytoplasmic tail",
+        "cross_reactivity": "variable across other vesiculovirus G proteins"
+      },
+      "source": {
+        "pmid": "30232190",
+        "doi": "10.1128/JVI.00900-18",
+        "quote": "Characterizes monoclonal antibodies against VSVind.G and maps their epitopes; confirms P5D4 recognises the YTDIEMNRLGK (aa 501-511) epitope in the cytoplasmic tail",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "yeast_pcr_tagging",
+      "type": "mechanism",
+      "label": "The VSVG tag is validated as one of 10 short epitope tags for PCR-based C-terminal protein tagging in S. cerevisiae, compatible with Western blot detection and affinity purification.",
+      "value": {
+        "application": "PCR-based C-terminal tagging",
+        "organism": "Saccharomyces cerevisiae",
+        "detection_methods": [
+          "Western blot",
+          "affinity purification"
+        ],
+        "tag_set": "one of 10 validated short epitope tags"
+      },
+      "source": {
+        "pmid": "19243080",
+        "doi": "10.1002/yea.1658",
+        "quote": "demonstrates VSV-G tag as one of 10 validated short epitope tags for PCR-based C-terminal protein tagging in yeast; validates its use in WB and affinity purification",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

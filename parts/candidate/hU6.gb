@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="hU6"
                      /synonym="hU6_promoter"
                      /synonym="U6 promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 aaggtcgggc aggaagaggg cctatttccc atgattcctt catatttgca tatacgatac
        61 aaggctgtta gagagataat tagaattaat ttgactgtaa acacaaagat attagtacaa

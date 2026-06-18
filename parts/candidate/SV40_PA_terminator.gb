@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      terminator      1..120
                      /label="SV40_PA_terminator"
                      /synonym="SV40_PA_terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 ttgtttattg cagcttataa tggttacaaa taaagcaata gcatcacaaa tttcacaaat
        61 aaagcatttt tttcactgca ttctagttgt ggtttgtcca aactcatcaa tgtatcttat

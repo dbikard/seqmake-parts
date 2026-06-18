@@ -19,6 +19,7 @@ FEATURES             Location/Qualifiers
                      transcription terminator; standard yeast terminator.
                      Extracted from pGADT7 (Addgene 233529), ADH1 terminator
                      feature (188 bp)."
+                     /db_xref="SO:0000141"
 ORIGIN
         1 gcgaatttct tatgatttat gatttttatt attaaataag ttataaaaaa aataagtgta
        61 tacaaatttt aaagtgactc ttaggtttta aaacgaaaat tcttattctt gagtaactct

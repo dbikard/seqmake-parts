@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="pSC101"
                      /synonym="pSC101 ori (SEVA)"
                      /synonym="pSC101 origin"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 atgtctgaat tagttgtttt caaagcaaat gaactagcga ttagtcgcta tgacttaacg
        61 gagcatgaaa ccaagctaat tttatgctgt gtggcactac tcaaccccac gattgaaaac

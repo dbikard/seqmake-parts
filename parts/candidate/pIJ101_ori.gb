@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="pIJ101 ori"
                      /synonym="Streptomyces ori"
                      /synonym="pIJ101 origin"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 ggagcgagtt agtgcgaagt gggcccactt gcgagccggg cgatgtgccg ggcggcccgc
        61 tcctggcggt cgtcggcgtc gtcgtcctgg tcgtcgtcct gctctcgccg tcggcgtgca

@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="L3S2P11"
                      /synonym="L3S2P11"
                      /synonym="(modified) RF L3S2P11 terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 atcgctacca aattccagaa aacagacgct ttcgagcgtc ttttttcgtt ttggtca
 //

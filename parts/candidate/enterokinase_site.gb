@@ -19,6 +19,7 @@ FEATURES             Location/Qualifiers
                      /note="Enterokinase (enteropeptidase) recognition site
                      DDDDK; cleaves after the Lys, leaving no extra residues on
                      the downstream protein. Standard pET fusion-removal site."
+                     /db_xref="SO:0000417"
 ORIGIN
         1 ddddk
 //

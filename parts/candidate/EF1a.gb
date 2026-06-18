@@ -22,6 +22,7 @@ FEATURES             Location/Qualifiers
                      strong constitutive in most cell types). Extracted from
                      pCDH-EF1 lentiviral vector (Addgene 207805), EF-1-alpha
                      promoter feature (1179 bp)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ggctccggtg cccgtcagtg ggcagagcgc acatcgccca cagtccccga gaagttgggg
        61 ggaggggtcg gcaattgaac cggtgcctag agaaggtggc gcggggtaaa ctgggaaagt

@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..396
                      /label="tetAC"
                      /synonym="tetAC"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mksnnalivi lgtvtldavg iglvmpvlpg llrdivhsds iashygvlla lyalmqflca
        61 pvlgalsdrf grrpvllasl lgatidyaim attpvlwily agrivagitg atgavagayi

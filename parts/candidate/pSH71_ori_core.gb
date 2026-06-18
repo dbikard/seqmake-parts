@@ -16,6 +16,7 @@ FEATURES             Location/Qualifiers
                      /synonym="pLZ12 ori core"
                      /note="Core origin of replication from pSH71/pLZ12. Minimal
                      conserved region upstream of repA, shared across variants."
+                     /db_xref="SO:0000296"
 ORIGIN
         1 aaaatttttg aaaaaaattt ggaatttgga aaaaaatggg gggaaaggaa gcgaattttg
        61 cttccgtact acgacccccc attaagtgcc gagtgccaat ttttgtgcca aaaacgctct

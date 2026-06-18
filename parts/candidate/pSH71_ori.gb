@@ -18,6 +18,7 @@ FEATURES             Location/Qualifiers
                      /note="Origin of replication from Lactococcus plasmid pSH71
                      (also in pLZ12/pWV01 family). Rolling-circle replication,
                      requires RepA."
+                     /db_xref="SO:0000296"
 ORIGIN
         1 tcgatttttt attaaaacgt ctcaaaatcg tttctgagac gttttagcgt ttatttcgtt
        61 tagttatcgg cataatcgtt aaaacaggcg ttatcgtagc gtaaaagccc ttgagcgtag

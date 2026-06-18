@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="LAA deg tag"
                      /synonym="LAAdegradation tag(high speed)"
                      /synonym="LAA degradation tag"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 aandenyala a
 //

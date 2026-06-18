@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="J23108"
                      /synonym="J23108 promoter"
                      /collection="anderson-promoters"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ctgacagcta gctcagtcct aggtataatg ctagc
 //

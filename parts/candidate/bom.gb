@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      misc_feature    1..143
                      /label="bom"
                      /synonym="bom"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 cctgatgcgg tattttctcc ttacgcatct gtgcggtatt tcacaccgca tatatggtgc
        61 actctcagta caatctgctc tgatgccgca tagttaagcc agtatacact ccgctatcgc

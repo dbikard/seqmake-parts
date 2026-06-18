@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..200
                      /label="PhlF"
                      /synonym="PhlF"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 martpsrssi gslrsphthk ailtstieil kecgysglsi esvarragas kptiyrwwtn
        61 kaaliaevye neseqvrkfp dlgsfkadld fllrnlwkvw reticgeafr cviaeaqldp

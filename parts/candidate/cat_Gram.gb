@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="cat (Gram+)"
                      /synonym="cat (Gram+)"
                      /synonym="chloramphenicol acetyltransferase (Gram+)"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mnfnkidldn wkrkeifnhy lnqqttfsit teidisvlyr nikqegykfy pafiflvtrv
        61 insntafrtg ynsdgelgyw dkleplytif dgvsktfsgi wtpvkndfke fydlylsdve

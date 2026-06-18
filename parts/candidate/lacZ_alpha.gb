@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="lacZ alpha"
                      /synonym="lacZa"
                      /synonym="beta-galactosidase alpha subunit"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtmitnsssv pgdplestsr vhgdleacrh aslalavvlq rrdwenpgvt qlnrlaahpp
        61 faswrnseea rtdrpsqqlr slngewr

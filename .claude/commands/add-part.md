@@ -14,6 +14,14 @@ singleton), but source-match + citation verification always run.
 
 Part(s) to add/improve: **$ARGUMENTS**
 
+`$ARGUMENTS` is **natural language** — a contributor types it however they'd say it
+(e.g. `T7lac`, `aadA, from UniProt P0AG05 (see PMID 26527143)`, `the Anderson promoters
+J23100, J23101, J23102`, or a part name followed by a pasted sequence). In step 1 you
+parse it into the slug(s), any source/accession **or citation hint** (an accession, PMID,
+or DOI → the engine's `refs`), the family/`source` for a cluster, and the feature type.
+Also check `sourcing/incoming/` for any PDF/sequence the contributor dropped there and
+feed it to the Source phase. Never make the contributor write JSON.
+
 ## Hard rules (the engine enforces these; you uphold them on merge)
 
 - **Sequence from a cited source, never memory.** The engine's Source phase independently
@@ -21,9 +29,15 @@ Part(s) to add/improve: **$ARGUMENTS**
   (access-blocked, or no 100% deposit), the proposal is flagged unverified — do **not**
   promote it. Follow the `sourcing/REQUESTS.md` handoff (`sourcing/README.md`): the human
   drops the document in `sourcing/incoming/`, then re-run so the engine byte-verifies and
-  cites it.
+  cites it. **When you're driving a contributor's run, nudge them directly**: if sourcing is
+  blocked, ask them for a canonical **accession** or, for a paywalled paper, to drop the
+  **PDF** into `sourcing/incoming/` and re-run — note it's gitignored (the PDF stays local;
+  only the citation + provenance are committed). Frame it as optional-but-better, not a
+  blocker for trying.
 - **Boundaries need experimental grounding** (truncation / mutational scanning / mapping /
-  genetics), not consensus — else they stay provisional with a lower `confidence`.
+  genetics), not consensus — else they stay provisional with a lower `confidence`. If the
+  grounding paper is inaccessible, **ask the contributor for it** (same `sourcing/incoming/`
+  drop) before settling for a provisional boundary.
 - **Granularity follows usage** (AUTHORING step 4): a functional sub-region becomes its
   own part only when it is **used standalone**; splitting is **additive** (keep the
   composite), the sub-part is named `<base>_<element>` and cross-linked. See step 4 below.
@@ -116,8 +130,8 @@ Part(s) to add/improve: **$ARGUMENTS**
    - **Auto-apply** when the change is additive + source-verified + `ready_to_apply` + a
      clean `merge_part` report (no `flagged_superseding`, no `flags`) + **no** structural
      recommendation (`redelimit` / `split` / `merge` / `new_part`-extract / `rename`).
-     Then **commit it without asking** (to `main` where permitted, else an auto-merged PR
-     per the repo's push policy) and report a one-line summary of what landed.
+     Then **commit it without asking** and **finalize per step 7**, reporting a one-line
+     summary of what landed.
    - **Escalate to me** when ANY hard signal is present — an **unverified / blocked
      source**, a **verification failure**, a `flagged_superseding` / sequence-or-provenance
      conflict, a **structural/identity/boundary** recommendation, or a gate that
@@ -126,6 +140,27 @@ Part(s) to add/improve: **$ARGUMENTS**
 
    For a batch, classify per part (a cluster also yields a `collection` block); always
    surface a one-line per-part summary either way.
+
+7. **Finalize — commit and open the pull request.** Stage the canonical `<slug>.json`(s),
+   the curated `.md`, and the regenerated artifacts (`catalog.json`, `catalog.ttl`,
+   `catalog.jsonld`, the `.gb`s), and commit with a clear message. Then open the PR with
+   `gh`, **detecting the contributor's situation** — don't assume push access to the
+   upstream `dbikard/seqmake-parts`:
+   - **No upstream write access (the common case — an outside contributor):** they cloned
+     with `gh repo fork … --clone`, so `origin` is *their fork* and `upstream` is the
+     catalog. Create a branch (`add-part/<slug>`), push it to `origin`, and open the PR:
+     ```bash
+     git switch -c add-part/<slug> && git add -A && git commit -m "feat(parts): <slug> — <one-line>"
+     git push -u origin add-part/<slug>
+     gh pr create --repo dbikard/seqmake-parts --fill   # gh routes the cross-fork PR from the fork branch
+     ```
+     If no fork/remote is set up yet, create one first: `gh repo fork dbikard/seqmake-parts --remote`.
+   - **Upstream write access (a maintainer):** commit on a branch and `gh pr create`, or
+     push to `main` where the repo policy permits.
+   Report the PR URL. The PR description should summarize the sourced sequence + cited
+   claims so a reviewer can check provenance at a glance. **Never** force a push or open a
+   PR when step 6 escalated (unverified source / verify failure / reviewed-claim conflict /
+   structural decision) — surface the issue instead.
 
 If anything is ambiguous (which sequence variant, which boundary, conflicting literature,
 whether to mint an extract), ask me rather than guessing.

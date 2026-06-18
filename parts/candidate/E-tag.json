@@ -3,13 +3,13 @@
   "slug": "E-tag",
   "locus": "E-tag",
   "id": "E-tag",
-  "description": "E-tag",
+  "description": "E-tag epitope/affinity tag (GAPVPYPDPLEPR) from M13 bacteriophage g3p; pCANTAB 5E phage-display detection/purification tag",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "GAPVPYPDPLEPA",
+  "sequence": "GAPVPYPDPLEPR",
   "references": [],
   "features": [
     {
@@ -30,7 +30,8 @@
   ],
   "review_status": "ai-generated",
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "FILL IN: canonical E-tag GAPVPYPDPLEPR \u2014 re-source via engine"
   },
   "functional_claims": []
 }

@@ -21,6 +21,7 @@ FEATURES             Location/Qualifiers
                      mammalian promoter. Extracted from pcDNA3.1(+) (Addgene
                      255272): CMV enhancer (1-380) + CMV core promoter
                      (381-584)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gacattgatt attgactagt tattaatagt aatcaattac ggggtcatta gttcatagcc
        61 catatatgga gttccgcgtt acataactta cggtaaatgg cccgcctggc tgaccgccca

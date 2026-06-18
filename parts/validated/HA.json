@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "slug": "HA",
+  "locus": "HA",
+  "id": "HA",
+  "description": "Nine-residue HA epitope tag (YPYDVPDYA) derived from influenza A hemagglutinin, used for immunodetection and affinity purification via anti-HA antibodies.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "YPYDVPDYA",
+  "references": [
+    {
+      "authors": "Wilson IA, Niman HL, Houghten RA, Cherenson AR, Connolly ML, Lerner RA",
+      "title": "The structure of an antigenic determinant in a protein.",
+      "journal": "Cell (1984)",
+      "pubmed_id": "6204768",
+      "comment": "doi:10.1016/0092-8674(84)90412-4"
+    },
+    {
+      "authors": "Field J, Nikawa J, Broek D, MacDonald B, Rodgers L, Wilson IA, Lerner RA, Wigler M",
+      "title": "Purification of a RAS-responsive adenylyl cyclase complex from Saccharomyces cerevisiae by use of an epitope addition method.",
+      "journal": "Molecular and Cellular Biology (1988)",
+      "pubmed_id": "2455217",
+      "comment": "doi:10.1128/mcb.8.5.2159-2165.1988"
+    },
+    {
+      "authors": "Schembri L, Dalibart R, Tomasello F, Legembre P, Ichas F, De Giorgi F",
+      "title": "The HA tag is cleaved and loses immunoreactivity during apoptosis.",
+      "journal": "Nature Methods (2007)",
+      "pubmed_id": "17264856",
+      "comment": "doi:10.1038/nmeth0207-107"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 9,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HA"
+        ],
+        "synonym": [
+          "HA",
+          "HA tag",
+          "HA-tag",
+          "hemagglutinin tag",
+          "HA epitope",
+          "influenza HA epitope",
+          "YPYDVPDYA"
+        ],
+        "note": [
+          "Nine-residue immunodominant epitope tag YPYDVPDYA derived from influenza A hemagglutinin (H3N2 strain A/Aichi/2/1968, UniProt P03437 residues 114-122). Widely used for immunoprecipitation, western blotting, and affinity purification via anti-HA antibodies (e.g., 12CA5, 3F10). Note: the DVPD motif is cleaved by caspases 3 and 7 during apoptosis, causing loss of immunoreactivity."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt P03437 (HEMA_I68A0, Hemagglutinin, Influenza A virus strain A/Aichi/2/1968 H3N2; Swiss-Prot reviewed canonical), residues 114-122, 100% identity over 9 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "epitope_detection",
+      "type": "function",
+      "label": "Immunodetection epitope recognized by anti-HA monoclonal antibodies",
+      "value": {
+        "function": "epitope_tag",
+        "antibodies": [
+          "12CA5",
+          "3F10"
+        ],
+        "applications": [
+          "immunoprecipitation",
+          "western_blot",
+          "affinity_purification",
+          "immunofluorescence"
+        ],
+        "host_range": "broad (yeast, mammalian, bacterial, insect cells)"
+      },
+      "source": {
+        "pmid": "2455217",
+        "doi": "10.1128/mcb.8.5.2159-2165.1988",
+        "quote": "Purification of a RAS-responsive adenylyl cyclase complex from Saccharomyces cerevisiae by use of an epitope addition method",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "caspase_cleavage_limitation",
+      "type": "sequence_variant",
+      "label": "HA tag DVPD motif cleaved by caspases 3 and 7 during apoptosis, causing loss of immunoreactivity",
+      "value": {
+        "cleavage_site": "DVPD",
+        "proteases": [
+          "caspase-3",
+          "caspase-7"
+        ],
+        "consequence": "complete loss of immunoreactivity",
+        "context": "apoptosis"
+      },
+      "source": {
+        "pmid": "17264856",
+        "doi": "10.1038/nmeth0207-107",
+        "quote": "The HA tag is cleaved and loses immunoreactivity during apoptosis",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "epitope_origin",
+      "type": "annotation",
+      "label": "Nine-residue sequence corresponds to an immunodominant antigenic determinant of influenza A hemagglutinin",
+      "value": {
+        "source_organism": "Influenza A virus strain A/Aichi/2/1968 H3N2",
+        "source_protein": "Hemagglutinin",
+        "source_residues": "114-122",
+        "uniprot": "P03437"
+      },
+      "source": {
+        "pmid": "6204768",
+        "doi": "10.1016/0092-8674(84)90412-4",
+        "quote": "The structure of an antigenic determinant in a protein",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

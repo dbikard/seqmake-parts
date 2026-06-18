@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..336
                      /label="186 integrase"
                      /synonym="186 integrase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtvrknpagg wicelypnga kgkrirkkfa tkgealafeq ytvqnpwqee kedrrtlkel
        61 vdswysahgi tlkdglkrql amhhafecmg eplardfdaq mfsryrekrl kgeyarsnrv

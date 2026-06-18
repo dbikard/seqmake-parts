@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="lambda PL"
                      /synonym="PL promoter"
                      /synonym="lambda PL promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 taacccggcc tcagcgccgg gttttctttg cctcacgatc gcccccaaaa cacataacca
        61 attgtattta ttgaaaaata aatagataca actcactaaa catagcaatt cagatctctc

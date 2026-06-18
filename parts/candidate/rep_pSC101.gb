@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="Replication protein"
                      /synonym="rep pSC101"
                      /synonym="repA101 ts"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mselvvfkan elaisrydlt ehetklilcc vallnptien ptrkertvsf tynqyaqmmn
        61 isrenaygvl akatrelmtr tveirnplvk gfeifqwtny akfsseklel vfseeilpyl

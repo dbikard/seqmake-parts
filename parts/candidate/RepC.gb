@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="RepC"
                      /synonym="RepC"
                      /synonym="RepC protein"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 myknnhanhs nhlenhdldn fsktgysnsr ldahtvcisd pklsfdamti vgnlnrdnaq
        61 alskfmsvep qirlwdilqt kfkakalqek vyieydkvka dswdrrnmri efnpnkltrd

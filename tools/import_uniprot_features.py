@@ -35,14 +35,14 @@ ROOT = Path(__file__).resolve().parent.parent
 _TYPE_MAP: dict[str, tuple[str, str | None]] = {
     "Domain": ("protein_domain", "SO:0000417"),
     "Active site": ("misc_feature", "SO:0000110"),
-    "Binding site": ("binding", None),
-    "Metal binding": ("binding", None),
+    "Binding site": ("binding", "SO:0000409"),
+    "Metal binding": ("binding", "SO:0000409"),
     "Signal": ("sig_peptide", "SO:0000418"),
     "Transit peptide": ("transit_peptide", None),
     "Propeptide": ("propeptide", None),
     "Site": ("misc_feature", "SO:0000110"),
     "Modified residue": ("modified_residue", None),
-    "Disulfide bond": ("disulfide_bond", None),
+    "Disulfide bond": ("disulfide_bond", "SO:0001088"),
     "Motif": ("protein_domain", "SO:0000417"),
     "Zinc finger": ("protein_domain", "SO:0000417"),
 }

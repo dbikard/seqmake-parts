@@ -67,7 +67,7 @@
       }
     },
     {
-      "type": "minus_35_signal",
+      "type": "regulatory",
       "start": 0,
       "end": 6,
       "strand": 1,
@@ -77,6 +77,9 @@
         ],
         "parent": [
           "P2"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
         ],
         "note": [
           "Perfect match to the canonical sigma70 -35 consensus TTGACA (minus35_score=1.0 at pos 0)."
@@ -91,7 +94,7 @@
       }
     },
     {
-      "type": "minus_10_signal",
+      "type": "regulatory",
       "start": 23,
       "end": 29,
       "strand": 1,
@@ -101,6 +104,9 @@
         ],
         "parent": [
           "P2"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
         ],
         "note": [
           "TTTAAT, a strong sigma70 -10 variant (5/6 to TATAAT consensus; minus10_pos=23, spacer_len=17, optimal spacing)."

@@ -1,0 +1,57 @@
+LOCUS       HA                         9 aa                     UNK 01-JAN-1980
+DEFINITION  Nine-residue HA epitope tag (YPYDVPDYA) derived from influenza A
+            hemagglutinin, used for immunodetection and affinity purification
+            via anti-HA antibodies..
+ACCESSION   HA
+VERSION     HA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Wilson IA, Niman HL, Houghten RA, Cherenson AR, Connolly ML, Lerner
+            RA
+  TITLE     The structure of an antigenic determinant in a protein.
+  JOURNAL   Cell (1984)
+   PUBMED   6204768
+  REMARK    doi:10.1016/0092-8674(84)90412-4
+REFERENCE   2
+  AUTHORS   Field J, Nikawa J, Broek D, MacDonald B, Rodgers L, Wilson IA,
+            Lerner RA, Wigler M
+  TITLE     Purification of a RAS-responsive adenylyl cyclase complex from
+            Saccharomyces cerevisiae by use of an epitope addition method.
+  JOURNAL   Molecular and Cellular Biology (1988)
+   PUBMED   2455217
+  REMARK    doi:10.1128/mcb.8.5.2159-2165.1988
+REFERENCE   3
+  AUTHORS   Schembri L, Dalibart R, Tomasello F, Legembre P, Ichas F, De Giorgi
+            F
+  TITLE     The HA tag is cleaved and loses immunoreactivity during apoptosis.
+  JOURNAL   Nature Methods (2007)
+   PUBMED   17264856
+  REMARK    doi:10.1038/nmeth0207-107
+COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/HA
+FEATURES             Location/Qualifiers
+     protein_domain  1..9
+                     /label="HA"
+                     /synonym="HA"
+                     /synonym="HA tag"
+                     /synonym="HA-tag"
+                     /synonym="hemagglutinin tag"
+                     /synonym="HA epitope"
+                     /synonym="influenza HA epitope"
+                     /synonym="YPYDVPDYA"
+                     /note="Nine-residue immunodominant epitope tag YPYDVPDYA
+                     derived from influenza A hemagglutinin (H3N2 strain
+                     A/Aichi/2/1968, UniProt P03437 residues 114-122). Widely
+                     used for immunoprecipitation, western blotting, and
+                     affinity purification via anti-HA antibodies (e.g., 12CA5,
+                     3F10). Note: the DVPD motif is cleaved by caspases 3 and 7
+                     during apoptosis, causing loss of immunoreactivity."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 ypydvpdya
+//

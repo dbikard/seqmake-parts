@@ -1,0 +1,84 @@
+LOCUS       ALFA_tag                  13 aa            linear   UNK 01-JAN-1980
+DEFINITION  ALFA_tag — a 13-aa synthetic epitope tag (SRLEEELRRRLTE) recognized
+            by the NbALFA nanobody with ultra-high affinity (Kd = 26 pM), used
+            for protein detection, purification, and imaging..
+ACCESSION   ALFA_tag
+VERSION     ALFA_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Götzke H, Kilisch M, Martínez-Carranza M, Sograte-Idrissi S, Rajavel
+            A, Schlichthaerle T, Engels N, Jungmann R, Stenmark P, Opazo F, Frey
+            S
+  TITLE     The ALFA-tag is a highly versatile tool for nanobody-based
+            bioscience applications
+  JOURNAL   Nature Communications (2019)
+   PUBMED   31562305
+  REMARK    doi:10.1038/s41467-019-12301-7
+REFERENCE   2
+  AUTHORS   Götzke H et al.
+  TITLE     Discovery and Characterization of an ALFA-Tag-Specific Affinity
+            Resin Optimized for Protein Purification at Low Temperatures in
+            Physiological Buffer
+  JOURNAL   Frontiers in Bioengineering and Biotechnology (2021)
+   PUBMED   33718340
+  REMARK    doi:10.3389/fbioe.2021.622993
+REFERENCE   3
+  AUTHORS   Jedlitzke B, Mootz HD
+  TITLE     A Light-Activatable Photocaged Variant of the Ultra-High Affinity
+            ALFA-Tag Nanobody
+  JOURNAL   ChemBioChem (2022)
+   PUBMED   35411584
+  REMARK    doi:10.1002/cbic.202200079
+REFERENCE   4
+  AUTHORS   Fay A, Kurland AP, Li Z, Monetti M, Johnson JR, Glickman MS
+  TITLE     A split ALFA tag-nanobody system for protein localization and
+            proximity proteomics in mycobacteria
+  JOURNAL   mBio (2025)
+   PUBMED   40196699
+  REMARK    doi:10.1128/mbio.00971-25
+REFERENCE   5
+  AUTHORS   Akhuli D, Dhar A, Viji AS, Bhojappa B, Palani S
+  TITLE     ALIBY: ALFA Nanobody-Based Toolkit for Imaging and Biochemistry in
+            Yeast
+  JOURNAL   mSphere (2022)
+   PUBMED   36200780
+  REMARK    doi:10.1128/msphere.00333-22
+REFERENCE   6
+  AUTHORS   Chiesa et al.
+  TITLE     Application of ALFA-Tagging in the Nematode Model Organisms
+            Caenorhabditis elegans and Pristionchus pacificus
+  JOURNAL   Cells (2022)
+   PUBMED   36497133
+  REMARK    doi:10.3390/cells11233875
+REFERENCE   7
+  AUTHORS   Zhang et al.
+  TITLE     ALFA nanobody-guided endogenous labeling
+  JOURNAL   Nature Chemical Biology (2025)
+   PUBMED   40883491
+  REMARK    doi:10.1038/s41589-025-02019-7
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/ALFA_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..13
+                     /label="ALFA_tag"
+                     /synonym="ALFA-tag"
+                     /synonym="ALFA epitope"
+                     /synonym="SRLEEELRRRLTE"
+                     /note="13-aa synthetic epitope tag SRLEEELRRRLTE.
+                     Recognized with sub-nanomolar affinity by NbALFA (Kd = 26
+                     pM). No internal functional sub-elements; the tag acts as a
+                     single binding epitope."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 srleeelrrr lte
+//

@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..305
                      /label="ori2"
                      /synonym="ori2"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 cttcttctga gggcaatttg tcacagggtt aagggcaatt tgtcacagac aggactgtca
        61 tttgagggtg atttgtcaca ctgaaagggc aatttgtcac aacaccttct ctagaaccag

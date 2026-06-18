@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="URA3"
                      /synonym="URA3"
                      /synonym="orotidine-5'-phosphate decarboxylase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mskatykera athpspvaak lfnimhekqt nlcasldvrt tkellelvea lgpkicllkt
        61 hvdiltdfsm egtvkplkal sakynfllfe drkfadignt vklqysagvy riaewaditn

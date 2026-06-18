@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="TRE3GV"
                      /synonym="TRE3GV"
                      /synonym="TRE3GV promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gagtttactc cctatcagtg atagagaacg tatgaagagt ttactcccta tcagtgatag
        61 agaacgtatg cagactttac tccctatcag tgatagagaa cgtataagga gtttactccc

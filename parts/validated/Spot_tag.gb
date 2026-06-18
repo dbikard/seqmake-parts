@@ -1,0 +1,60 @@
+LOCUS       Spot_tag                  12 aa            linear   UNK 01-JAN-1980
+DEFINITION  12-aa affinity/epitope tag (PDRVRAVSHWSS) recognized by BC2 nanobody
+            with sub-nanomolar affinity; enables immunodetection, pull-down, and
+            dSTORM super-resolution labeling.
+ACCESSION   Spot_tag
+VERSION     Spot_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Braun MB, Traenkle B, Koch PA, Emele F, Weiss F, Poetz O, Stehle T,
+            Rothbauer U
+  TITLE     Peptides in headlock – a novel high-affinity and versatile
+            peptide-binding nanobody for proteomics and microscopy
+  JOURNAL   Scientific Reports (2016)
+   PUBMED   26791954
+  REMARK    doi:10.1038/srep19211
+REFERENCE   2
+  AUTHORS   Virant D, Traenkle B, Maier J, Kaiser PD, Bodenhöfer M, Schmees C,
+            Vojnovic I, Pisak-Lukáts B, Endesfelder U, Rothbauer U
+  TITLE     A peptide tag-specific nanobody enables high-quality labeling for
+            dSTORM imaging
+  JOURNAL   Nature Communications (2018)
+   PUBMED   29500346
+  REMARK    doi:10.1038/s41467-018-03191-2
+REFERENCE   3
+  AUTHORS   Mentzelopoulou A, Liu C, Moschou PN
+  TITLE     Protein Detection and Localization in Plant Cells Using Spot-Tagging
+  JOURNAL   Physiologia Plantarum (2024)
+   PUBMED   38779764
+  REMARK    doi:10.1111/ppl.14351
+REFERENCE   4
+  AUTHORS   Rothbauer U et al. (inventors)
+  TITLE     Epitope tag and method for detection and/or purification of tagged
+            polypeptides
+  JOURNAL   US Patent US20170137467A1 / US10273265 (2017)
+  REMARK    doi:US20170137467A1
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Spot_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..12
+                     /label="Spot_tag"
+                     /synonym="Spot-tag"
+                     /synonym="SPOT-tag"
+                     /synonym="PDRVRAVSHWSS"
+                     /note="12-aa affinity/epitope tag (PDRVRAVSHWSS);
+                     affinity-optimized variant of the BC2-tag (PDRKAAVSHWQQ,
+                     residues 16-27 of human β-catenin P35222). Four
+                     substitutions relative to BC2T: K4V, A5R, Q11S, Q12S.
+                     Sequence first publicly disclosed as SEQ ID NO:33 (pTag1)
+                     in patent US20170137467A1."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 pdrvravshw ss
+//

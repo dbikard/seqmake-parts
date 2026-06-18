@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
                      /label="pR"
                      /synonym="pR"
                      /synonym="pR promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ttgactattt tacctctggc ggtgataat
 //

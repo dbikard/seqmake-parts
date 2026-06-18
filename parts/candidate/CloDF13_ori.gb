@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..739
                      /label="CloDF13 ori"
                      /synonym="CloDF13 ori"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 gatcaaagga tcttcttgag atcctttttt tctgcgcgta atcttttgcc ctgtaaacga
        61 aaaaaccacc tggggaggtg gtttgatcga aggttaagtc agttggggaa ctgcttaacc

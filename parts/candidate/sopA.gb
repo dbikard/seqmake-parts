@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..391
                      /label="sopA"
                      /synonym="sopA"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mfrmklmetl nqcinaghem tkaiaiaqfn ddspearkit rrwrigeaad lvgvssqair
        61 daekagrlph pdmeirgrve qrvgytieqi nhmrdvfgtr lrraedvfpp vigvaahkgg

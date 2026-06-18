@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="PlacI"
                      /synonym="PlacI"
                      /synonym="lacI promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gacaccatcg aatggcgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
        61 caattcaggg tggtgaat

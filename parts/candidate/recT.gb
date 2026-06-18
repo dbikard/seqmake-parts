@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..288
                      /label="recT"
                      /synonym="recT"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mngqllrhyh cpaglrnmqm tkqppiakad lqktqgnrap aavknsdvis finqpsmkeq
        61 laaalprhmt aermiriatt eirkvpalgn cdtmsfvsai vqcsqlglep gsalghayll

@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="ccdB"
                      /synonym="ccdB"
                      /synonym="toxin CcdB"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mqfkvytykr esryrlfvdv qsdiidtpgr rmviplasar llsdkvsrel ypvvhigdes
        61 wrmmttdmas vpvsvigeev adlshrendi knainlmfwg i

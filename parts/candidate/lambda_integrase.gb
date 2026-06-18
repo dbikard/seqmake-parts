@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..356
                      /label="lambda integrase"
                      /synonym="lambda integrase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mgrrrsherr dlppnlyirn ngyycyrdpr tgkefglgrd rriaiteaiq anielfsghk
        61 hkpltarins dnsvtlhswl dryekilasr gikqktliny mskikairrg lpdapledit

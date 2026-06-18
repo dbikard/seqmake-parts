@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="lambda cI857"
                      /synonym="cI857 repressor"
                      /synonym="temperature-sensitive lambda repressor"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mstkkkpltq eqledarrlk aiyekkknel glsqesvadk mgmgqsgvga lfnginalna
        61 ynaalltkil kvsveefsps iareiyemye avsmqpslrs eyeypvfshv qagmfspklr

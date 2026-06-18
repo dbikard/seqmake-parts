@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="AAV deg tag"
                      /synonym="AAVDeg_Tag(medium speed)"
                      /synonym="AAV degradation tag"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 aandenyaaa v
 //

@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..321
                      /label="XylS"
                      /synonym="XylS"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mdfcllneks qifvhaepya vsdyvnqyvg thsirlpkgg rpagrlhhri fgcldlcris
        61 yggsvrvisp gletcyhlqi ilkghclwrg hgqehyfapg ellllnpddq adltysedce

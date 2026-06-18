@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="bet"
                      /synonym="bet"
                      /synonym="bet protein"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mstalatlag klaervgmds vdpqelittl rqtafkgdas daqfialliv anqyglnpwt
        61 keiyafpdkq ngivpvvgvd gwsriinenq qfdgmdfeqd nesctcriyr kdrnhpicvt

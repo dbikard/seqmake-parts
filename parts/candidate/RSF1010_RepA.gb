@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..279
                      /label="RSF1010 RepA"
                      /synonym="RSF1010 RepA"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mathkpinil eafaaapppl dyvlpnmvag tvgalvspgg agksmlalql aaqiaggpdl
        61 levgelptgp viylpaedpp taihhrlhal gahlsaeerq avadglliqp ligslpnima

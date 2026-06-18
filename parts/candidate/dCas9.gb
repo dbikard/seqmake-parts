@@ -16,6 +16,7 @@ FEATURES             Location/Qualifiers
                      /synonym="S. pyogenes dCas9"
                      /synonym="dead Cas9"
                      /synonym="nuclease-dead Cas9"
+                     /db_xref="SO:0000316"
                      /db_xref="UniProt:Q99ZW2"
      protein_domain  770..921
                      /label="HNH Cas9-type"
@@ -42,34 +43,42 @@ FEATURES             Location/Qualifiers
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         10
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         762
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         766
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         766
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         983
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         1297
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
      binding         1328
                      /label="Binding site"
                      /parent="dCas9"
                      /note="source: UniProt:Q99ZW2"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mdkkysigla igtnsvgwav itdeykvpsk kfkvlgntdr hsikknliga llfdsgetae
        61 atrlkrtarr rytrrknric ylqeifsnem akvddsffhr leesflveed kkherhpifg

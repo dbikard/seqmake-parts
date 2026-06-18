@@ -64,26 +64,32 @@ FEATURES             Location/Qualifiers
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
      binding         12
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
      binding         37
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
      binding         58
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
      binding         83
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
      binding         100
                      /label="Binding site"
                      /parent="ermAM"
                      /note="source: UniProt:P21236"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mnknikysqn fltsekvlnq iikqlnlket dtvyeigtgk ghlttklaki skqvtsield
        61 shlfnlssek lklnirvtli hqdilqfqfp nkqrykivgs ipyhlstqii kkvvfeshas

@@ -14,43 +14,53 @@ FEATURES             Location/Qualifiers
                      /synonym="Leu2"
                      /synonym="3-isopropylmalate dehydrogenase"
                      /synonym="beta-IPM dehydrogenase"
+                     /db_xref="SO:0000316"
                      /db_xref="UniProt:P04173"
      binding         79..90
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         97
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         107
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         136
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         225
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         225
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         250
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         254
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      binding         289..300
                      /label="Binding site"
                      /parent="LEU2"
                      /note="source: UniProt:P04173"
+                     /db_xref="SO:0000409"
      misc_feature    143
                      /label="Site: Important for catalysis"
                      /parent="LEU2"

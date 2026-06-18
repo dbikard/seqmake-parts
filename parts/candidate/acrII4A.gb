@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..87
                      /label="acrII4A"
                      /synonym="acrII4A"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mnindlirei knkdytvkls gtdsnsitql iirvnndgne yvisesenes ivekfisafk
        61 ngwnqeyede eefyndmqti tlkseln

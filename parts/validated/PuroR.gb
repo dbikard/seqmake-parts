@@ -56,54 +56,67 @@ FEATURES             Location/Qualifiers
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         110
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         126
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         128
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         130
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         136
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         138
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         140
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         141
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         161
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         166
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         167
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
      binding         173
                      /label="Binding site"
                      /parent="PuroR"
                      /note="source: UniProt:P13249"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mteykptvrl atrddvprav rtlaaafady patrhtvdpd rhiervtelq elfltrvgld
        61 igkvwvaddg aavavwttpe sveagavfae igprmaelsg srlaaqqqme gllaphrpke

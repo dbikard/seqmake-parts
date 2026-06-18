@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 252,
-  "n_validated": 43,
-  "n_candidate": 209,
-  "n_documented": 43,
-  "n_functional_claims": 90,
+  "n_parts": 256,
+  "n_validated": 51,
+  "n_candidate": 205,
+  "n_documented": 51,
+  "n_functional_claims": 134,
   "parts": [
     {
       "name": "186 integrase",
@@ -842,6 +842,313 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "ALFA_tag",
+      "slug": "ALFA_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "ALFA-tag",
+        "ALFA epitope",
+        "SRLEEELRRRLTE"
+      ],
+      "collections": [],
+      "description": "13-aa synthetic epitope tag SRLEEELRRRLTE. Recognized with sub-nanomolar affinity by NbALFA (Kd = 26 pM). No internal functional sub-elements; the tag acts as a single binding epitope.",
+      "length": 13,
+      "protein_length_aa": 13,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "G\u00f6tzke H, Kilisch M, Mart\u00ednez-Carranza M, Sograte-Idrissi S, Rajavel A, Schlichthaerle T, Engels N, Jungmann R, Stenmark P, Opazo F, Frey S",
+          "title": "The ALFA-tag is a highly versatile tool for nanobody-based bioscience applications",
+          "journal": "Nature Communications (2019)",
+          "pmid": "31562305",
+          "doi": "10.1038/s41467-019-12301-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31562305/"
+        },
+        {
+          "authors": "G\u00f6tzke H et al.",
+          "title": "Discovery and Characterization of an ALFA-Tag-Specific Affinity Resin Optimized for Protein Purification at Low Temperatures in Physiological Buffer",
+          "journal": "Frontiers in Bioengineering and Biotechnology (2021)",
+          "pmid": "33718340",
+          "doi": "10.3389/fbioe.2021.622993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33718340/"
+        },
+        {
+          "authors": "Jedlitzke B, Mootz HD",
+          "title": "A Light-Activatable Photocaged Variant of the Ultra-High Affinity ALFA-Tag Nanobody",
+          "journal": "ChemBioChem (2022)",
+          "pmid": "35411584",
+          "doi": "10.1002/cbic.202200079",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35411584/"
+        },
+        {
+          "authors": "Fay A, Kurland AP, Li Z, Monetti M, Johnson JR, Glickman MS",
+          "title": "A split ALFA tag-nanobody system for protein localization and proximity proteomics in mycobacteria",
+          "journal": "mBio (2025)",
+          "pmid": "40196699",
+          "doi": "10.1128/mbio.00971-25",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40196699/"
+        },
+        {
+          "authors": "Akhuli D, Dhar A, Viji AS, Bhojappa B, Palani S",
+          "title": "ALIBY: ALFA Nanobody-Based Toolkit for Imaging and Biochemistry in Yeast",
+          "journal": "mSphere (2022)",
+          "pmid": "36200780",
+          "doi": "10.1128/msphere.00333-22",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36200780/"
+        },
+        {
+          "authors": "Chiesa et al.",
+          "title": "Application of ALFA-Tagging in the Nematode Model Organisms Caenorhabditis elegans and Pristionchus pacificus",
+          "journal": "Cells (2022)",
+          "pmid": "36497133",
+          "doi": "10.3390/cells11233875",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36497133/"
+        },
+        {
+          "authors": "Zhang et al.",
+          "title": "ALFA nanobody-guided endogenous labeling",
+          "journal": "Nature Chemical Biology (2025)",
+          "pmid": "40883491",
+          "doi": "10.1038/s41589-025-02019-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40883491/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "functional_claims": [
+        {
+          "id": "affinity_binding",
+          "type": "affinity_binding",
+          "label": "ALFA tag is bound by the NbALFA nanobody with Kd = 26 pM, one of the highest affinities reported for an epitope tag/binder pair.",
+          "value": {
+            "binder": "NbALFA",
+            "binder_type": "nanobody",
+            "Kd": "26 pM",
+            "measurement_method": "isothermal titration calorimetry and surface plasmon resonance"
+          },
+          "source": {
+            "pmid": "31562305",
+            "doi": "10.1038/s41467-019-12301-7",
+            "quote": "NbALFA binds ALFA-tag with a Kd of 26 pM",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "affinity_purification",
+          "type": "mechanism",
+          "label": "Fusion proteins bearing the ALFA tag can be purified by NbALFA-coupled affinity resin; a cold-elutable NbALFACE variant (Kd ~100 nM) enables gentle elution at 4\u00b0C under physiological buffer.",
+          "value": {
+            "application": "affinity purification",
+            "resin_binder": "NbALFA or NbALFACE",
+            "NbALFACE_Kd": "~100 nM",
+            "elution_condition": "4\u00b0C, physiological buffer (NbALFACE)"
+          },
+          "source": {
+            "pmid": "33718340",
+            "doi": "10.3389/fbioe.2021.622993",
+            "quote": "efficient elution at 4\u00b0C in physiological buffer",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "position_independence",
+          "type": "mechanism",
+          "label": "The ALFA tag functions independently of its position (N-terminal, C-terminal, or internal), making it compatible with diverse fusion architectures.",
+          "value": {
+            "positions_tested": [
+              "N-terminal",
+              "C-terminal",
+              "internal"
+            ],
+            "position_dependence": "none reported"
+          },
+          "source": {
+            "pmid": "31562305",
+            "doi": "10.1038/s41467-019-12301-7",
+            "quote": "the ALFA-tag is position-independent",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "The ALFA tag has been validated in diverse hosts including E. coli, mammalian cells, S. cerevisiae, C. elegans, P. pacificus, and M. tuberculosis.",
+          "value": {
+            "host_range": "broad",
+            "validated_hosts": [
+              "Escherichia coli",
+              "mammalian cells",
+              "Saccharomyces cerevisiae",
+              "Caenorhabditis elegans",
+              "Pristionchus pacificus",
+              "Mycobacterium tuberculosis"
+            ]
+          },
+          "source": {
+            "pmid": "31562305",
+            "doi": "10.1038/s41467-019-12301-7",
+            "quote": "highly versatile tool for nanobody-based bioscience applications",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "imaging_detection",
+          "type": "mechanism",
+          "label": "The ALFA tag supports immunofluorescence imaging and super-resolution microscopy via NbALFA conjugated to fluorescent dyes or proteins.",
+          "value": {
+            "application": "protein detection and imaging",
+            "methods": [
+              "immunofluorescence",
+              "super-resolution microscopy (STORM/PALM/PAINT)"
+            ],
+            "binder": "NbALFA-fluorophore conjugate or NbALFA-fluorescent protein fusion"
+          },
+          "source": {
+            "pmid": "31562305",
+            "doi": "10.1038/s41467-019-12301-7",
+            "quote": "versatile tool for nanobody-based bioscience applications",
+            "quote_source": "primary",
+            "section": "Results/Applications"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "crispr_compatible",
+          "type": "mechanism",
+          "label": "At 13 aa (39 bp coding), the ALFA tag is small enough for CRISPR-mediated knock-in at endogenous loci without disrupting protein function.",
+          "value": {
+            "application": "CRISPR knock-in endogenous tagging",
+            "tag_size_aa": 13,
+            "tag_size_bp": 39
+          },
+          "source": {
+            "pmid": "36497133",
+            "doi": "10.3390/cells11233875",
+            "quote": "CRISPR-mediated insertion of the ALFA-tag does not perturb protein function",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "light_control",
+          "type": "sequence_variant",
+          "label": "A photocaged NbALFA variant (ALFA-Pb, Tyr42ONBY substitution) reduces affinity to Kd 3.2\u20137.9 \u00b5M in the dark and restores near-wild-type affinity (~183\u2013346 pM) after 365 nm UV irradiation, enabling light-controlled binding to the ALFA tag.",
+          "value": {
+            "variant": "NbALFA Tyr42ONBY (ALFA-Pb)",
+            "Kd_dark": "3.2\u20137.9 \u00b5M",
+            "Kd_activated": "~183\u2013346 pM",
+            "activation_wavelength": "365 nm UV"
+          },
+          "source": {
+            "pmid": "35411584",
+            "doi": "10.1002/cbic.202200079",
+            "quote": "photocaged variant with Tyr42ONBY has Kd 3.2\u20137.9 \u00b5M inactive, restores to ~183\u2013346 pM after 365 nm UV irradiation",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "split_tag",
+          "type": "mechanism",
+          "label": "A split ALFA tag/NbALFA system enables proximity proteomics and protein localization studies, demonstrated in mycobacteria using TurboID-NbALFA.",
+          "value": {
+            "application": "proximity proteomics and protein localization",
+            "system": "split ALFA tag / NbALFA-TurboID",
+            "organism": "Mycobacterium tuberculosis"
+          },
+          "source": {
+            "pmid": "40196699",
+            "doi": "10.1128/mbio.00971-25",
+            "quote": "split ALFA tag-nanobody system for protein localization and proximity proteomics in mycobacteria",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "AlkS",
@@ -4047,46 +4354,405 @@
         "HA",
         "HA tag",
         "HA-tag",
-        "hemagglutinin tag"
+        "hemagglutinin tag",
+        "HA epitope",
+        "influenza HA epitope",
+        "YPYDVPDYA"
       ],
       "collections": [],
-      "description": "",
+      "description": "Nine-residue immunodominant epitope tag YPYDVPDYA derived from influenza A hemagglutinin (H3N2 strain A/Aichi/2/1968, UniProt P03437 residues 114-122). Widely used for immunoprecipitation, western blotting, and affinity purification via anti-HA antibodies (e.g., 12CA5, 3F10). Note: the DVPD motif is cleaved by caspases 3 and 7 during apoptosis, causing loss of immunoreactivity.",
       "length": 9,
       "protein_length_aa": 9,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Wilson IA, Niman HL, Houghten RA, Cherenson AR, Connolly ML, Lerner RA",
+          "title": "The structure of an antigenic determinant in a protein.",
+          "journal": "Cell (1984)",
+          "pmid": "6204768",
+          "doi": "10.1016/0092-8674(84)90412-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6204768/"
+        },
+        {
+          "authors": "Field J, Nikawa J, Broek D, MacDonald B, Rodgers L, Wilson IA, Lerner RA, Wigler M",
+          "title": "Purification of a RAS-responsive adenylyl cyclase complex from Saccharomyces cerevisiae by use of an epitope addition method.",
+          "journal": "Molecular and Cellular Biology (1988)",
+          "pmid": "2455217",
+          "doi": "10.1128/mcb.8.5.2159-2165.1988",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2455217/"
+        },
+        {
+          "authors": "Schembri L, Dalibart R, Tomasello F, Legembre P, Ichas F, De Giorgi F",
+          "title": "The HA tag is cleaved and loses immunoreactivity during apoptosis.",
+          "journal": "Nature Methods (2007)",
+          "pmid": "17264856",
+          "doi": "10.1038/nmeth0207-107",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17264856/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3
+      ],
+      "functional_claims": [
+        {
+          "id": "epitope_detection",
+          "type": "function",
+          "label": "Immunodetection epitope recognized by anti-HA monoclonal antibodies",
+          "value": {
+            "function": "epitope_tag",
+            "antibodies": [
+              "12CA5",
+              "3F10"
+            ],
+            "applications": [
+              "immunoprecipitation",
+              "western_blot",
+              "affinity_purification",
+              "immunofluorescence"
+            ],
+            "host_range": "broad (yeast, mammalian, bacterial, insect cells)"
+          },
+          "source": {
+            "pmid": "2455217",
+            "doi": "10.1128/mcb.8.5.2159-2165.1988",
+            "quote": "Purification of a RAS-responsive adenylyl cyclase complex from Saccharomyces cerevisiae by use of an epitope addition method",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "caspase_cleavage_limitation",
+          "type": "sequence_variant",
+          "label": "HA tag DVPD motif cleaved by caspases 3 and 7 during apoptosis, causing loss of immunoreactivity",
+          "value": {
+            "cleavage_site": "DVPD",
+            "proteases": [
+              "caspase-3",
+              "caspase-7"
+            ],
+            "consequence": "complete loss of immunoreactivity",
+            "context": "apoptosis"
+          },
+          "source": {
+            "pmid": "17264856",
+            "doi": "10.1038/nmeth0207-107",
+            "quote": "The HA tag is cleaved and loses immunoreactivity during apoptosis",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "epitope_origin",
+          "type": "annotation",
+          "label": "Nine-residue sequence corresponds to an immunodominant antigenic determinant of influenza A hemagglutinin",
+          "value": {
+            "source_organism": "Influenza A virus strain A/Aichi/2/1968 H3N2",
+            "source_protein": "Hemagglutinin",
+            "source_residues": "114-122",
+            "uniprot": "P03437"
+          },
+          "source": {
+            "pmid": "6204768",
+            "doi": "10.1016/0092-8674(84)90412-4",
+            "quote": "The structure of an antigenic determinant in a protein",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "HaloTag",
       "slug": "HaloTag",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "NCBI:ADN27525.1",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
         "HaloTag",
         "HaloTag H7",
-        "Halo tag"
+        "Halo tag",
+        "HaloTag7",
+        "HaloTag 7",
+        "HaloTag protein",
+        "modified haloalkane dehalogenase"
       ],
       "collections": [],
-      "description": "",
-      "length": 298,
-      "protein_length_aa": 298,
+      "description": "HaloTag7 self-labeling protein tag, 297 aa. Engineered monomeric haloalkane dehalogenase derived from Rhodococcus rhodochrous DhaA, carrying mutations that (i) abolish the second hydrolytic step so the enzyme-substrate covalent intermediate is trapped, and (ii) improve folding, solubility, and binding kinetics. Forms a rapid, essentially irreversible covalent ester bond with synthetic chloroalkane ligands. No coordinate-verified internal sub-features were retained; the catalytic residues (nucleophilic Asp at the alpha/beta-hydrolase nucleophile elbow, motif IGMGKSDK; the engineered His->Phe that prevents hydrolytic release) are mechanistic and are captured as functional_claims rather than as residue-level features.",
+      "length": 297,
+      "protein_length_aa": 297,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Los GV, Encell LP, McDougall MG, Hartzell DD, Karassina N, Zimprich C, Wood MG, Learish R, Ohana RF, Urh M, Simpson D, Mendez J, Zimmerman K, Otto P, Vidugiris G, Zhu J, Darzins A, Klaubert DH, Bulleit RF, Wood KV",
+          "title": "HaloTag: a novel protein labeling technology for cell imaging and protein analysis.",
+          "journal": "ACS Chemical Biology (2008)",
+          "pmid": "18533659",
+          "doi": "10.1021/cb800025k",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18533659/"
+        },
+        {
+          "authors": "Ohana RF, Encell LP, Zhao K, Simpson D, Slater MR, Urh M, Wood KV",
+          "title": "HaloTag7: a genetically engineered tag that enhances bacterial expression of soluble proteins and improves protein purification.",
+          "journal": "Protein Expression and Purification (2009)",
+          "pmid": "19464373",
+          "doi": "10.1016/j.pep.2009.05.010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19464373/"
+        },
+        {
+          "authors": "Frei MS, Tarnawski M, Roberti MJ, Koch B, Hiblot J, Johnsson K",
+          "title": "Engineered HaloTag variants for fluorescence lifetime multiplexing.",
+          "journal": "Nature Methods (2021)",
+          "pmid": "34916672",
+          "doi": "10.1038/s41592-021-01341-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34916672/"
+        },
+        {
+          "authors": "Frei MS, Koch B, Hiblot J, Johnsson K, et al.",
+          "title": "Kinetic and Structural Characterization of the Self-Labeling Protein Tags HaloTag7, SNAP-tag, and CLIP-tag.",
+          "journal": "Biochemistry (2021)",
+          "pmid": "",
+          "doi": "10.1021/acs.biochem.1c00258",
+          "url": "https://doi.org/10.1021/acs.biochem.1c00258"
+        },
+        {
+          "authors": "Buckley DL, Raina K, Darricarrere N, Hines J, Gustafson JL, Smith IE, Miah AH, Harling JD, Crews CM",
+          "title": "HaloPROTACS: Use of Small Molecule PROTACs to Induce Degradation of HaloTag Fusion Proteins.",
+          "journal": "ACS Chemical Biology (2015)",
+          "pmid": "26070106",
+          "doi": "10.1021/acschembio.5b00442",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26070106/"
+        },
+        {
+          "authors": "Minner-Meinen R, Weber JN, Albrecht A, Matis R, Behnecke M, Tietge C, Frank S, Schulze J, Buschmann H, Walla PJ, Mendel RR, Hansch R, Kaufholdt D",
+          "title": "Split-HaloTag imaging assay for sophisticated microscopy of protein-protein interactions.",
+          "journal": "Plant Communications (2021)",
+          "pmid": "34746759",
+          "doi": "10.1016/j.xplc.2021.100212",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34746759/"
+        },
+        {
+          "authors": "Ohana RF, Hurst R, Vidugiriene J, Slater MR, Wood KV, Urh M",
+          "title": "HaloTag-based purification of functional human kinases from mammalian cells.",
+          "journal": "Protein Expression and Purification (2010)",
+          "pmid": "21129486",
+          "doi": "10.1016/j.pep.2010.11.014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21129486/"
+        },
+        {
+          "authors": "Peterson SN, Kwon K",
+          "title": "The HaloTag: Improving Soluble Expression and Applications in Protein Functional Analysis.",
+          "journal": "Current Chemical Genomics (2012)",
+          "pmid": "23115610",
+          "doi": "10.2174/1875397301206010008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23115610/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "HaloTag is an engineered haloalkane dehalogenase that forms a covalent, essentially irreversible ester bond with a synthetic chloroalkane ligand. The nucleophilic aspartate at the alpha/beta-hydrolase nucleophile elbow attacks the terminal carbon of the chloroalkane, displacing chloride; an engineered His->Phe substitution at the base catalytic histidine prevents the normal second hydrolytic step, trapping the covalent enzyme-ligand intermediate.",
+          "value": {
+            "tag_class": "self-labeling protein tag",
+            "scaffold": "haloalkane dehalogenase (DhaA, Rhodococcus rhodochrous)",
+            "ligand": "synthetic chloroalkane linker",
+            "bond": "covalent ester",
+            "reversibility": "essentially irreversible",
+            "trapping_mutation": "base catalytic His -> Phe"
+          },
+          "source": {
+            "pmid": "18533659",
+            "doi": "10.1021/cb800025k",
+            "quote": "The protein tag (HaloTag) is a modified haloalkane dehalogenase designed to covalently bind to synthetic ligands... Covalent bond formation between the protein tag and the chloroalkane linker is highly specific, occurs rapidly under physiological conditions, and is essentially irreversible.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "This 297-aa sequence is HaloTag7, an engineered variant of Rhodococcus DhaA carrying 21 amino-acid substitutions relative to the parent dehalogenase that enhance soluble expression, folding, and ligand-binding kinetics; it is the workhorse HaloTag scaffold for downstream applications.",
+          "value": {
+            "variant_name": "HaloTag7",
+            "parent": "DhaA haloalkane dehalogenase (Rhodococcus rhodochrous)",
+            "mutations_vs_parent": 21,
+            "length_aa": 297
+          },
+          "source": {
+            "pmid": "19464373",
+            "doi": "10.1016/j.pep.2009.05.010",
+            "quote": "we have developed a novel protein tag, HaloTag7, engineered to enhance expression and solubility of recombinant proteins and to provide efficient protein purification coupled with tag removal.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "solubility_enhancement",
+          "type": "strength_class",
+          "label": "As an N-terminal fusion partner in E. coli, HaloTag7 enhanced soluble expression: 74% of 23 test human proteins were produced in soluble form when fused to HaloTag7, versus 52% for MBP, 39% for GST, and 22% for a His6 tag.",
+          "value": {
+            "property": "solubility enhancement",
+            "soluble_fraction_HaloTag7": "74%",
+            "soluble_fraction_MBP": "52%",
+            "soluble_fraction_GST": "39%",
+            "soluble_fraction_His6": "22%",
+            "n_proteins": 23,
+            "host": "Escherichia coli"
+          },
+          "source": {
+            "pmid": "19464373",
+            "doi": "10.1016/j.pep.2009.05.010",
+            "quote": "74% of the proteins were produced in soluble form when fused to HaloTag7 compared to 52%, 39% and 22%, respectively, for the other tags.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "labeling_kinetics",
+          "type": "mechanism",
+          "label": "HaloTag7 labels its chloroalkane substrates rapidly; the apparent second-order rate constant spans more than six orders of magnitude depending on the attached fluorophore, with rhodamine-chloroalkane substrates reacting near the diffusion limit and HaloTag7 labeling more than 100-fold faster than SNAP-tag for matched substrates.",
+          "value": {
+            "k_app_range": "10^3-10^8 M^-1 s^-1",
+            "fastest_substrate_class": "rhodamine-chloroalkane",
+            "relative_to_SNAP_tag": ">100-fold faster (matched substrates)",
+            "mechanism": "two-step (binding then covalent capture)"
+          },
+          "source": {
+            "doi": "10.1021/acs.biochem.1c00258",
+            "quote": "HaloTag7 labeling kinetics: k_app spans >6 orders of magnitude (10^3-10^8 M^-1 s^-1) depending on ligand; rhodamine-CA substrates near diffusion-limited; HaloTag7 >100-fold faster than SNAP-tag for matched substrates.",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "HaloTag has been deployed across bacterial, mammalian, and plant systems for labeling, imaging, and purification of fusion proteins.",
+          "value": {
+            "host_range": "broad",
+            "validated_hosts": [
+              "Escherichia coli",
+              "mammalian cells",
+              "plant cells"
+            ]
+          },
+          "source": {
+            "pmid": "18533659",
+            "doi": "10.1021/cb800025k",
+            "quote": "either in solution, in living cells, or in chemically fixed cells.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "application_chemogenetic_degradation",
+          "type": "mechanism",
+          "label": "HaloTag fusions can serve as a chemogenetic handle for targeted protein degradation: bifunctional chloroalkane-E3-ligase-ligand molecules recruit the ubiquitin-proteasome system to HaloTag7 fusion proteins, inducing their degradation.",
+          "value": {
+            "application": "targeted protein degradation (PROTAC)",
+            "bifunctional_molecule": "chloroalkane-VHL ligand",
+            "effect": "ubiquitin-proteasome-mediated degradation of HaloTag7 fusions"
+          },
+          "source": {
+            "pmid": "26070106",
+            "doi": "10.1021/acschembio.5b00442",
+            "quote": "incorporate small molecule VHL ligands to successfully degrade HaloTag7 fusion proteins... due to their ability to chemically knock down widely used HaloTag7 fusion proteins in a general fashion.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "HIS3",
@@ -6110,20 +6776,205 @@
         "Myc",
         "c-Myc tag",
         "Myc tag",
-        "Myc-tag"
+        "Myc-tag",
+        "c-Myc epitope",
+        "9E10 epitope",
+        "EQKLISEEDL"
       ],
       "collections": [],
-      "description": "",
+      "description": "Canonical 10 aa Myc epitope tag (EQKLISEEDL) from human c-Myc (UniProt P01106, residues 425-434). Recognized by the 9E10 monoclonal antibody; widely used for immunodetection and immunoprecipitation of recombinant fusion proteins. Atomic part: no functional sub-elements.",
       "length": 10,
       "protein_length_aa": 10,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Evan GI, Lewis GK, Ramsay G, Bishop JM",
+          "title": "Isolation of monoclonal antibodies specific for human c-myc proto-oncogene product",
+          "journal": "Molecular and Cellular Biology (1985)",
+          "pmid": "3915782",
+          "doi": "10.1128/mcb.5.12.3610-3616.1985",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3915782/"
+        },
+        {
+          "authors": "Hilpert K, Hansen G, Wessner H, K\u00fcttner G, Welfle K, Seifert M, H\u00f6hne W",
+          "title": "Anti-c-myc antibody 9E10: epitope key positions and variability characterized using peptide spot synthesis on cellulose",
+          "journal": "Protein Engineering (2001)",
+          "pmid": "11739900",
+          "doi": "10.1093/protein/14.10.803",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11739900/"
+        },
+        {
+          "authors": "Sch\u00fcchner S, Behm C, Mudrak I, Ogris E",
+          "title": "The Myc tag monoclonal antibody 9E10 displays highly variable epitope recognition dependent on neighboring sequence context",
+          "journal": "Science Signaling (2020)",
+          "pmid": "31992583",
+          "doi": "10.1126/scisignal.aax9730",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31992583/"
+        },
+        {
+          "authors": "Russo G, Unkauf T, Meier D, Wenzel EV, Langreder N, Schneider KT, Wiesner R, Bischoff R, Stadler V, D\u00fcbel S",
+          "title": "In vitro evolution of myc-tag antibodies: in-depth specificity and affinity analysis of Myc1-9E10 and Hyper-Myc",
+          "journal": "Biological Chemistry (2022)",
+          "pmid": "35312243",
+          "doi": "10.1515/hsz-2021-0405",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35312243/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "The EQKLISEEDL peptide is specifically recognized by the 9E10 monoclonal antibody (anti-c-Myc), enabling immunodetection and immunoprecipitation of Myc-tagged recombinant fusion proteins.",
+          "value": {
+            "mechanism": "epitope-antibody recognition",
+            "antibody": "9E10 (anti-c-Myc)",
+            "applications": [
+              "immunodetection",
+              "immunoprecipitation",
+              "co-immunoprecipitation",
+              "flow cytometry"
+            ]
+          },
+          "source": {
+            "pmid": "3915782",
+            "doi": "10.1128/mcb.5.12.3610-3616.1985",
+            "quote": "monoclonal antibodies specific for human c-myc proto-oncogene product",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "epitope_core",
+          "type": "sequence_variant",
+          "label": "The minimal binding determinant of 9E10 within EQKLISEEDL is KLISEEDL (8 aa); the core residues required for recognition are LISE (positions 4-7 of the full tag). Position substitution analysis shows EQK and the terminal L are partially dispensable.",
+          "value": {
+            "full_tag": "EQKLISEEDL",
+            "minimal_binding_peptide": "KLISEEDL",
+            "core_epitope": "LISE"
+          },
+          "source": {
+            "pmid": "11739900",
+            "doi": "10.1093/protein/14.10.803",
+            "quote": "9E10 core epitope LISE and minimum binding peptide KLISEEDL; substitutional analysis of EQKLISEEDL by peptide spot synthesis",
+            "quote_source": "catalog-doc",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "context_dependence",
+          "type": "caveat",
+          "label": "9E10 recognition of EQKLISEEDL is highly context-dependent: neighboring residues in the fusion protein can abolish or reduce antibody binding. Alternative antibodies (4A6, 9B11) show less context sensitivity and are recommended when robust detection across diverse fusion architectures is required.",
+          "value": {
+            "issue": "context-dependent epitope recognition by 9E10",
+            "alternative_antibodies": [
+              "4A6",
+              "9B11"
+            ],
+            "recommendation": "test detection empirically; consider alternative anti-Myc antibodies for sensitive applications"
+          },
+          "source": {
+            "pmid": "31992583",
+            "doi": "10.1126/scisignal.aax9730",
+            "quote": "The Myc tag monoclonal antibody 9E10 displays highly variable epitope recognition dependent on neighboring sequence context",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "improved_antibody",
+          "type": "sequence_variant",
+          "label": "Hyper-Myc is an evolved anti-Myc antibody with 18 nM affinity and improved thermal stability (+37%) compared to 9E10, while retaining identical EQKLISEEDL epitope specificity. Existing Myc-tagged constructs can be detected with Hyper-Myc without sequence modification.",
+          "value": {
+            "antibody_variant": "Hyper-Myc",
+            "affinity_nM": 18,
+            "thermal_stability_improvement_pct": 37,
+            "epitope_unchanged": true
+          },
+          "source": {
+            "pmid": "35312243",
+            "doi": "10.1515/hsz-2021-0405",
+            "quote": "evolved antibody with 18 nM affinity (+improved vs 9E10) and +37% thermal stability, retaining identical EQKLISEEDL epitope specificity",
+            "quote_source": "catalog-doc",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "As a small synthetic peptide tag derived from a human protein, EQKLISEEDL functions as an epitope tag across all common expression hosts (bacterial, yeast, insect, mammalian) regardless of the fusion partner orientation (N- or C-terminal).",
+          "value": {
+            "host_range": "broad",
+            "hosts": [
+              "Escherichia coli",
+              "Saccharomyces cerevisiae",
+              "insect cells",
+              "mammalian cells"
+            ],
+            "placement": [
+              "N-terminal",
+              "C-terminal",
+              "internal"
+            ]
+          },
+          "source": {
+            "pmid": "3915782",
+            "doi": "10.1128/mcb.5.12.3610-3616.1985",
+            "quote": "Isolation of monoclonal antibodies specific for human c-myc proto-oncogene product",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "NLS (nucleoplasmin)",
@@ -11765,6 +12616,230 @@
       "functional_claims": []
     },
     {
+      "name": "Spot_tag",
+      "slug": "Spot_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "Spot-tag",
+        "SPOT-tag",
+        "PDRVRAVSHWSS"
+      ],
+      "collections": [],
+      "description": "12-aa affinity/epitope tag (PDRVRAVSHWSS); affinity-optimized variant of the BC2-tag (PDRKAAVSHWQQ, residues 16-27 of human \u03b2-catenin P35222). Four substitutions relative to BC2T: K4V, A5R, Q11S, Q12S. Sequence first publicly disclosed as SEQ ID NO:33 (pTag1) in patent US20170137467A1.",
+      "length": 12,
+      "protein_length_aa": 12,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Braun MB, Traenkle B, Koch PA, Emele F, Weiss F, Poetz O, Stehle T, Rothbauer U",
+          "title": "Peptides in headlock \u2013 a novel high-affinity and versatile peptide-binding nanobody for proteomics and microscopy",
+          "journal": "Scientific Reports (2016)",
+          "pmid": "26791954",
+          "doi": "10.1038/srep19211",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26791954/"
+        },
+        {
+          "authors": "Virant D, Traenkle B, Maier J, Kaiser PD, Bodenh\u00f6fer M, Schmees C, Vojnovic I, Pisak-Luk\u00e1ts B, Endesfelder U, Rothbauer U",
+          "title": "A peptide tag-specific nanobody enables high-quality labeling for dSTORM imaging",
+          "journal": "Nature Communications (2018)",
+          "pmid": "29500346",
+          "doi": "10.1038/s41467-018-03191-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29500346/"
+        },
+        {
+          "authors": "Mentzelopoulou A, Liu C, Moschou PN",
+          "title": "Protein Detection and Localization in Plant Cells Using Spot-Tagging",
+          "journal": "Physiologia Plantarum (2024)",
+          "pmid": "38779764",
+          "doi": "10.1111/ppl.14351",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38779764/"
+        },
+        {
+          "authors": "Rothbauer U et al. (inventors)",
+          "title": "Epitope tag and method for detection and/or purification of tagged polypeptides",
+          "journal": "US Patent US20170137467A1 / US10273265 (2017)",
+          "pmid": "",
+          "doi": "US20170137467A1",
+          "url": "https://doi.org/US20170137467A1"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "functional_claims": [
+        {
+          "id": "affinity_tag",
+          "type": "function",
+          "label": "Acts as an affinity/epitope tag enabling pull-down and immunodetection via cognate BC2 nanobody",
+          "value": {
+            "function": "affinity_tag",
+            "cognate_binder": "BC2 nanobody (anti-BC2-tag VHH)",
+            "binding_mechanism": "nanobody headlock \u2014 CDR3 Arg106 forms a salt bridge with Asp1 and packs against Val4/Arg5; all four substituted positions relative to BC2T contribute to affinity enhancement"
+          },
+          "source": {
+            "pmid": "26791954",
+            "doi": "10.1038/srep19211",
+            "quote": "BC2 nanobody binds the BC2-tag peptide with KD ~1.4 nM via a headlock mechanism",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "affinity_kd",
+          "type": "binding_affinity",
+          "label": "KD ~0.7 nM for Spot-tag (pTag1, PDRVRAVSHWSS) with BC2 nanobody \u2014 approximately 2-fold improved over parent BC2T",
+          "value": {
+            "kd_nM": 0.7,
+            "unit": "nM",
+            "method": "surface plasmon resonance or equivalent; reported in patent US20170137467A1"
+          },
+          "source": {
+            "doi": "US20170137467A1",
+            "quote": "pTag1 (PDRVRAVSHWSS) KD 0.7 nM",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range_mammalian",
+          "type": "host_range",
+          "label": "Functional in mammalian cell lines (vimentin, tubulin, actin, lamin, LC3B, membrane proteins labeled in dSTORM)",
+          "value": {
+            "organisms": [
+              "Homo sapiens",
+              "Mus musculus"
+            ],
+            "cell_types": [
+              "HeLa",
+              "U2OS",
+              "various mammalian cell lines"
+            ],
+            "context": "fusion protein N- or C-terminal tag"
+          },
+          "source": {
+            "pmid": "29500346",
+            "doi": "10.1038/s41467-018-03191-2",
+            "quote": "labeling of vimentin, tubulin, actin, lamin, LC3B, and membrane proteins in mammalian and yeast cells",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range_plant",
+          "type": "host_range",
+          "label": "Functional in plant cells (Arabidopsis thaliana); demonstrated with KIN7.3 microtubule motor",
+          "value": {
+            "organisms": [
+              "Arabidopsis thaliana"
+            ],
+            "context": "whole-mount immunostaining protocol",
+            "note": "confirms functionality beyond mammalian systems"
+          },
+          "source": {
+            "pmid": "38779764",
+            "doi": "10.1111/ppl.14351",
+            "quote": "Spot-tag application in plant cells (Arabidopsis); proof-of-concept with KIN7.3 microtubule motor",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "application_dstorm",
+          "type": "application",
+          "label": "Enables dSTORM super-resolution microscopy labeling via Spot-tag/BC2-nanobody system",
+          "value": {
+            "application": "dSTORM super-resolution microscopy",
+            "format": "bivalent nanobody; site-specifically labeled with organic fluorophores",
+            "advantage": "small tag size (12 aa) minimizes steric perturbation; high affinity enables efficient target capture"
+          },
+          "source": {
+            "pmid": "29500346",
+            "doi": "10.1038/s41467-018-03191-2",
+            "quote": "first peptide-tag-specific nanobody used in dSTORM; bivalent nanobody format",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Spot-tag (PDRVRAVSHWSS) is an affinity-optimized variant of BC2-tag (PDRKAAVSHWQQ); differs at positions 4 (K\u2192V), 5 (A\u2192R), 11 (Q\u2192S), 12 (Q\u2192S)",
+          "value": {
+            "parent_sequence": "PDRKAAVSHWQQ",
+            "parent_name": "BC2-tag",
+            "parent_origin": "human beta-catenin residues 16-27 (UniProt P35222)",
+            "substitutions": [
+              "K4V",
+              "A5R",
+              "Q11S",
+              "Q12S"
+            ],
+            "effect": "~2-fold affinity improvement over BC2T (KD 0.7 nM vs ~1.4 nM)"
+          },
+          "source": {
+            "pmid": "26791954",
+            "doi": "10.1038/srep19211",
+            "quote": "BC2-tag peptide (PDRKAAVSHWQQ) is residues 16-27 of human beta-catenin",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
+    },
+    {
       "name": "St1Cas9",
       "slug": "St1Cas9",
       "feature_type": "CDS",
@@ -12214,33 +13289,6 @@
       "functional_claims": []
     },
     {
-      "name": "T7 tag",
-      "slug": "T7_tag",
-      "feature_type": "protein_domain",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000417",
-      "so_name": "polypeptide_domain",
-      "synonyms": [
-        "T7 tag",
-        "T7-tag",
-        "T7 tag (gene 10 leader)",
-        "gene 10 leader"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 11,
-      "protein_length_aa": 11,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "T7 terminator",
       "slug": "T7_terminator",
       "feature_type": "terminator",
@@ -12291,6 +13339,202 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "T7_tag",
+      "slug": "T7_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "T7 tag",
+        "T7-tag",
+        "T7 tag (gene 10 leader)",
+        "gene 10 leader",
+        "T7 epitope",
+        "gene 10 leader peptide",
+        "MASMTGGQQMG"
+      ],
+      "collections": [],
+      "description": "T7 tag (gene 10 leader peptide): the N-terminal 11-residue epitope MASMTGGQQMG of bacteriophage T7 Gene product 10A (major capsid protein). Functions both as a translational leader in T7-based expression vectors and as a short immunological epitope tag recognised by anti-T7 monoclonal antibodies. Atomic: the 11 aa are the complete functional unit with no internal sub-features. Distinct from the upstream DNA 5' UTR RBS element (T7_g10_leader).",
+      "length": 11,
+      "protein_length_aa": 11,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Studier FW, Moffatt BA",
+          "title": "Use of bacteriophage T7 RNA polymerase to direct selective high-level expression of cloned genes.",
+          "journal": "Journal of Molecular Biology (1986)",
+          "pmid": "3537305",
+          "doi": "10.1016/0022-2836(86)90385-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3537305/"
+        },
+        {
+          "authors": "Studier FW, Rosenberg AH, Dunn JJ, Dubendorff JW",
+          "title": "Use of T7 RNA polymerase to direct expression of cloned genes.",
+          "journal": "Methods in Enzymology (1990)",
+          "pmid": "2199796",
+          "doi": "10.1016/0076-6879(90)85008-c",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2199796/"
+        },
+        {
+          "authors": "Enomoto S, Chen G, Berman J",
+          "title": "Vectors for expressing T7 epitope- and His6 affinity-tagged fusion proteins in S. cerevisiae.",
+          "journal": "BioTechniques (1998)",
+          "pmid": "9591127",
+          "doi": "10.2144/98245st01",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9591127/"
+        },
+        {
+          "authors": "Makrides SC",
+          "title": "Strategies for achieving high-level expression of genes in Escherichia coli.",
+          "journal": "Microbiological Reviews (1996)",
+          "pmid": "8840785",
+          "doi": "10.1128/mr.60.3.512-538.1996",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8840785/"
+        },
+        {
+          "authors": "Condron BG, Atkins JF, Gesteland RF",
+          "title": "Frameshifting in gene 10 of bacteriophage T7.",
+          "journal": "Journal of Bacteriology (1991)",
+          "pmid": "1938901",
+          "doi": "10.1128/jb.173.21.6998-7003.1991",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1938901/"
+        },
+        {
+          "authors": "Sipley J, Stassi D, Dunn J, Goldman E",
+          "title": "Analysis of bacteriophage T7 gene 10A and frameshifted 10B proteins.",
+          "journal": "Gene Expression (1991)",
+          "pmid": "1820210",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1820210/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "The T7 tag (MASMTGGQQMG) is recognised by anti-T7 monoclonal antibodies, enabling immunodetection (Western blot, ELISA, immunoprecipitation, immunofluorescence) of T7-tagged fusion proteins.",
+          "value": {
+            "mechanism": "epitope tag \u2014 anti-T7 monoclonal antibody recognition",
+            "applications": [
+              "Western blot",
+              "ELISA",
+              "immunoprecipitation",
+              "immunofluorescence",
+              "immunoaffinity purification"
+            ]
+          },
+          "source": {
+            "pmid": "8840785",
+            "doi": "10.1128/mr.60.3.512-538.1996",
+            "quote": "T7 tag ... an 11 amino acid sequence ... detected by an antibody generated against bacteriophage T7 gene 10 protein ... used for detection and purification",
+            "quote_source": "catalog-doc",
+            "section": "Review: Table 1"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "The T7 tag functions as an epitope tag across multiple expression hosts including Escherichia coli and Saccharomyces cerevisiae; broader eukaryotic applicability is implied by its small size and non-cellular origin.",
+          "value": {
+            "host_range": "broad",
+            "confirmed_hosts": [
+              "Escherichia coli",
+              "Saccharomyces cerevisiae"
+            ]
+          },
+          "source": {
+            "pmid": "9591127",
+            "doi": "10.2144/98245st01",
+            "quote": "Vectors for expressing T7 epitope- and His6 affinity-tagged fusion proteins in S. cerevisiae",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "origin",
+          "type": "sequence_variant",
+          "label": "Both natural products of T7 gene 10 (10A, 344 aa; and frameshifted 10B, 398 aa) share an identical N-terminal sequence MASMTGGQQMG, confirming the T7 tag as the shared, invariant N-terminus of both gp10 isoforms.",
+          "value": {
+            "canonical": "MASMTGGQQMG",
+            "carriers": [
+              "T7 gp10A (P19726, 344 aa)",
+              "T7 gp10B (P19727, 398 aa, frameshifted)"
+            ],
+            "note": "Both isoforms share identical N-terminus; frameshift affects only the C-terminal extension"
+          },
+          "source": {
+            "pmid": "1938901",
+            "doi": "10.1128/jb.173.21.6998-7003.1991",
+            "quote": "gene 10 of bacteriophage T7 is expressed as two proteins, 10A and 10B ... frameshifting ... both proteins share the same N terminus",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "expression_system_origin",
+          "type": "mechanism",
+          "label": "The T7 tag sequence originates from the first 11 residues of the T7 gene 10 translation-initiation region, which was incorporated into T7-based expression vectors to drive strong translation of downstream cloned sequences.",
+          "value": {
+            "mechanism": "gene 10 leader used as translational enhancement element in T7 expression vectors",
+            "context": "The peptide-encoding sequence immediately follows the T7 gene 10 Shine-Dalgarno; placing a cloned gene downstream appends the T7 tag to the recombinant protein N-terminus"
+          },
+          "source": {
+            "pmid": "2199796",
+            "doi": "10.1016/0076-6879(90)85008-c",
+            "quote": "The first 260 nucleotides of the T7 gene 10, encoding about 40 amino acids, provide a translation-initiation signal and a portion of the gene 10 protein in front of the target gene",
+            "quote_source": "primary",
+            "section": "Methods in Enzymology, pET system description"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "T7lac",
@@ -13392,6 +14636,485 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "V5_tag",
+      "slug": "V5_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "V5 tag",
+        "V5 epitope",
+        "Pk-tag",
+        "Pk tag",
+        "Pk epitope",
+        "GKPIPNPLLGLDST"
+      ],
+      "collections": [],
+      "description": "14-aa epitope tag GKPIPNPLLGLDST derived from residues 95\u2013108 of the Parainfluenza virus 5 / Simian virus 5 (PIV5/SV5) phosphoprotein (P/V protein; UniProt P11208). Recognized by the SV5-Pk1 (Pk) monoclonal antibody. Also known as the Pk tag or V5 epitope.",
+      "length": 14,
+      "protein_length_aa": 14,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Hanke T, Szawlowski P, Randall RE",
+          "title": "Construction of solid matrix-antibody-antigen complexes containing simian immunodeficiency virus p27 using tag-specific monoclonal antibody and tag-linked antigen.",
+          "journal": "J Gen Virol (1992)",
+          "pmid": "1372038",
+          "doi": "10.1099/0022-1317-73-3-653",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1372038/"
+        },
+        {
+          "authors": "Southern JA, Young DF, Heaney F, Baumg\u00e4rtner WK, Randall RE",
+          "title": "Identification of an epitope on the P and V proteins of simian virus 5 that distinguishes between two isolates with different biological characteristics.",
+          "journal": "J Gen Virol (1991)",
+          "pmid": "1713260",
+          "doi": "10.1099/0022-1317-72-7-1551",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1713260/"
+        },
+        {
+          "authors": "Randall RE, Young DF, Goswami KK, Russell WC",
+          "title": "Isolation and characterization of monoclonal antibodies to simian virus 5 and their use in revealing antigenic differences between human, canine and simian isolates.",
+          "journal": "J Gen Virol (1987)",
+          "pmid": "2445904",
+          "doi": "10.1099/0022-1317-68-11-2769",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2445904/"
+        },
+        {
+          "authors": "Randall RE, Hanke T, Young D, Southern JA",
+          "title": "Two-tag purification of recombinant proteins for the construction of solid matrix-antibody-antigen (SMAA) complexes as vaccines.",
+          "journal": "Vaccine (1993)",
+          "pmid": "7504859",
+          "doi": "10.1016/0264-410x(93)90050-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7504859/"
+        },
+        {
+          "authors": "Fritschle K, Mielke M, Seelbach OJ, M\u00fchlthaler U, \u017divani\u0107 M, Bozoglu T, D\u00f6tsch S, Warmuth L, Busch DH, Skerra A, Kupatt C, Weber WA, Randall RE, Steiger K, Morath V",
+          "title": "The V5-Epitope Tag for Cell Engineering and Its Use in Immunohistochemistry and Quantitative Flow Cytometry.",
+          "journal": "Biology (Basel) (2025)",
+          "pmid": "40723447",
+          "doi": "10.3390/biology14070890",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40723447/"
+        },
+        {
+          "authors": "Randall RE, Young D, Pisliakova M, Andrejeva J, West L, Rossler L, Morath V, Hughes D, Goodbourn S",
+          "title": "Single-cycle parainfluenza virus type 5 vectors for producing recombinant proteins, including a humanized anti-V5 tag antibody.",
+          "journal": "J Gen Virol (2025)",
+          "pmid": "39786361",
+          "doi": "10.1099/jgv.0.002061",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39786361/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "affinity_binding",
+          "type": "affinity_binding",
+          "label": "The V5 (Pk) tag is bound by the murine SV5-Pk1 monoclonal antibody with high affinity (KD ~441 pM).",
+          "value": {
+            "binder": "mu_SV5-Pk1",
+            "binder_type": "monoclonal antibody",
+            "KD": "~441 pM"
+          },
+          "source": {
+            "pmid": "40723447",
+            "doi": "10.3390/biology14070890",
+            "quote": "KD of mu_SV5-Pk1 ~441 pM",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "humanized_binder",
+          "type": "affinity_binding",
+          "label": "A humanized anti-V5 antibody (hu_SV5-Pk1 / Hu6) binds the V5 tag with high affinity (KD ~572 pM), extending the tag to therapeutic and synthetic-biology applications.",
+          "value": {
+            "binder": "hu_SV5-Pk1 (Hu6)",
+            "binder_type": "humanized monoclonal antibody",
+            "KD": "~572 pM"
+          },
+          "source": {
+            "pmid": "39786361",
+            "doi": "10.1099/jgv.0.002061",
+            "quote": "humanized anti-V5 antibody (hu_SV5-Pk1) with KD ~572 pM",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "epitope_mapping",
+          "type": "mechanism",
+          "label": "The minimal antibody-binding determinant lies within the tag, with core residues IPNPLLGLD and a beta-turn motif essential for SV5-P-k monoclonal antibody recognition.",
+          "value": {
+            "epitope_core": "IPNPLLGLD",
+            "structural_motif": "beta-turn",
+            "method": "synthetic peptide competition"
+          },
+          "source": {
+            "pmid": "1713260",
+            "doi": "10.1099/0022-1317-72-7-1551",
+            "quote": "an epitope on the P and V proteins of simian virus 5",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "portable_tag",
+          "type": "mechanism",
+          "label": "The 14-aa Pk oligopeptide (GKPIPNPLLGLDST) functions as a portable epitope tag that retains antigenicity when fused to the C-terminus of foreign recombinant proteins, enabling antibody-based detection and affinity capture.",
+          "value": {
+            "application": "epitope tagging / affinity capture",
+            "tag_length_aa": 14,
+            "position_validated": "C-terminal fusion"
+          },
+          "source": {
+            "pmid": "1372038",
+            "doi": "10.1099/0022-1317-73-3-653",
+            "quote": "tag-specific monoclonal antibody and tag-linked antigen",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "trypsin_resistance",
+          "type": "mechanism",
+          "label": "The V5 tag contains no arginine or lysine within its antibody-binding core and is reported to be resistant to trypsin cleavage, with low hydrophobicity favoring solubility of tagged fusions.",
+          "value": {
+            "property": "trypsin resistance",
+            "basis": "absence of arginine in the tag",
+            "hydrophilicity": "low hydrophobicity"
+          },
+          "source": {
+            "pmid": "40723447",
+            "doi": "10.3390/biology14070890",
+            "quote": "trypsin resistance (no arginine); low hydrophilicity",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "detection_applications",
+          "type": "mechanism",
+          "label": "The V5 tag is validated for immunohistochemistry on FFPE tissue, quantitative flow cytometry, and cell-tracking applications including CAR-T cell engineering and gene-therapy monitoring.",
+          "value": {
+            "applications": [
+              "immunohistochemistry (FFPE)",
+              "quantitative flow cytometry",
+              "CAR-T cell tracking",
+              "gene therapy monitoring"
+            ]
+          },
+          "source": {
+            "pmid": "40723447",
+            "doi": "10.3390/biology14070890",
+            "quote": "validation for IHC on FFPE, quantitative flow cytometry; CAR-T cell tracking and gene therapy monitoring applications",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "VSVG_tag",
+      "slug": "VSVG_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "VSV-G tag",
+        "VSV-G epitope",
+        "VSVG epitope",
+        "YTDIEMNRLGK"
+      ],
+      "collections": [],
+      "description": "11-aa epitope tag YTDIEMNRLGK, derived from the cytoplasmic tail (C-terminal residues 501\u2013511) of Vesicular stomatitis Indiana virus glycoprotein (VSV-G). Recognised by the P5D4 monoclonal antibody, widely used for protein detection, immunoprecipitation, and affinity purification. The tag acts as a single binding epitope with no functional sub-elements.",
+      "length": 11,
+      "protein_length_aa": 11,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Kreis TE",
+          "title": "Microinjected antibodies against the cytoplasmic domain of vesicular stomatitis virus glycoprotein block its transport to the cell surface.",
+          "journal": "EMBO J (1986)",
+          "pmid": "3013626",
+          "doi": "10.1002/j.1460-2075.1986.tb04306.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3013626/"
+        },
+        {
+          "authors": "Rose JK, Bergmann JE",
+          "title": "Altered cytoplasmic domains affect intracellular transport of the vesicular stomatitis virus glycoprotein.",
+          "journal": "Cell (1983)",
+          "pmid": "6352053",
+          "doi": "10.1016/0092-8674(83)90384-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6352053/"
+        },
+        {
+          "authors": "Funakoshi M, Hochstrasser M",
+          "title": "Small epitope-linker modules for PCR-based C-terminal tagging in Saccharomyces cerevisiae.",
+          "journal": "Yeast (2009)",
+          "pmid": "19243080",
+          "doi": "10.1002/yea.1658",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19243080/"
+        },
+        {
+          "authors": "Shevtsova Z, Malik JMI, Michel U, Scholl U, Bahr M, Kugler S",
+          "title": "Evaluation of epitope tags for protein detection after in vivo CNS gene transfer.",
+          "journal": "Eur J Neurosci (2006)",
+          "pmid": "16630044",
+          "doi": "10.1111/j.1460-9568.2006.04725.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16630044/"
+        },
+        {
+          "authors": "Munis AM, Tijani M, Hassall M, Mattiuzzo G, Collins MK, Takeuchi Y",
+          "title": "Characterization of Antibody Interactions with the G Protein of Vesicular Stomatitis Virus Indiana Strain and Other Vesiculovirus G Proteins.",
+          "journal": "J Virol (2018)",
+          "pmid": "30232190",
+          "doi": "10.1128/JVI.00900-18",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30232190/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "The VSVG tag (YTDIEMNRLGK) is recognised by the P5D4 monoclonal antibody raised against the cytoplasmic domain of VSV-G, enabling immunodetection (Western blot, immunofluorescence, immunoprecipitation) and affinity purification of fusion proteins.",
+          "value": {
+            "mechanism": "epitope tag \u2014 P5D4 monoclonal antibody recognition",
+            "antibody": "P5D4",
+            "epitope": "YTDIEMNRLGK (VSV-G aa 501\u2013511)",
+            "applications": [
+              "Western blot",
+              "immunofluorescence",
+              "immunoprecipitation",
+              "affinity purification"
+            ]
+          },
+          "source": {
+            "pmid": "3013626",
+            "doi": "10.1002/j.1460-2075.1986.tb04306.x",
+            "quote": "Microinjected antibodies against the cytoplasmic domain of vesicular stomatitis virus glycoprotein block its transport to the cell surface",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "epitope_mapping",
+          "type": "mechanism",
+          "label": "The P5D4 monoclonal antibody was raised against the 15 C-terminal residues of VSV-G (aa 497\u2013511) and its epitope maps to the five carboxy-terminal amino acids; the 11-aa YTDIEMNRLGK tag contains this minimal epitope.",
+          "value": {
+            "antibody": "P5D4",
+            "immunogen": "15 C-terminal residues of VSV-G (aa 497\u2013511)",
+            "minimal_epitope": "five carboxy-terminal amino acids",
+            "tag_residues": "aa 501\u2013511 of VSV-G"
+          },
+          "source": {
+            "pmid": "3013626",
+            "doi": "10.1002/j.1460-2075.1986.tb04306.x",
+            "quote": "generation of P5D4 monoclonal antibody against the 15 C-terminal residues (497-511) of VSV-G and maps the P5D4 epitope to the five carboxy-terminal amino acids",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "The VSVG tag has been validated for protein tagging in multiple hosts including mammalian cells and Saccharomyces cerevisiae, with utility in in vivo CNS gene transfer contexts.",
+          "value": {
+            "host_range": "broad",
+            "confirmed_hosts": [
+              "mammalian cells",
+              "Saccharomyces cerevisiae",
+              "rat CNS neurons (in vivo)"
+            ]
+          },
+          "source": {
+            "pmid": "19243080",
+            "doi": "10.1002/yea.1658",
+            "quote": "Small epitope-linker modules for PCR-based C-terminal tagging in Saccharomyces cerevisiae",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "cytoplasmic_tail_origin",
+          "type": "mechanism",
+          "label": "The VSVG tag sequence is derived from the cytoplasmic tail of VSV-G, a region required for Golgi-to-plasma-membrane transport; when used as a short peptide tag it does not confer transmembrane anchoring.",
+          "value": {
+            "origin": "cytoplasmic tail of VSV-G glycoprotein (Indiana strain, San Juan)",
+            "uniprot": "P03522",
+            "residues": "501\u2013511 of 511 aa",
+            "note": "As a free peptide tag it lacks the adjacent transmembrane domain and therefore does not anchor proteins to membranes."
+          },
+          "source": {
+            "pmid": "6352053",
+            "doi": "10.1016/0092-8674(83)90384-7",
+            "quote": "Altered cytoplasmic domains affect intracellular transport of the vesicular stomatitis virus glycoprotein",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "antibody_cross_reactivity",
+          "type": "mechanism",
+          "label": "The P5D4 antibody specifically recognises VSVind.G (Indiana serotype) cytoplasmic tail; reactivity against G proteins from other vesiculovirus serotypes varies, confirming the YTDIEMNRLGK epitope as Indiana-serotype-specific.",
+          "value": {
+            "antibody": "P5D4",
+            "specificity": "VSVind.G (Indiana serotype) cytoplasmic tail",
+            "cross_reactivity": "variable across other vesiculovirus G proteins"
+          },
+          "source": {
+            "pmid": "30232190",
+            "doi": "10.1128/JVI.00900-18",
+            "quote": "Characterizes monoclonal antibodies against VSVind.G and maps their epitopes; confirms P5D4 recognises the YTDIEMNRLGK (aa 501-511) epitope in the cytoplasmic tail",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "yeast_pcr_tagging",
+          "type": "mechanism",
+          "label": "The VSVG tag is validated as one of 10 short epitope tags for PCR-based C-terminal protein tagging in S. cerevisiae, compatible with Western blot detection and affinity purification.",
+          "value": {
+            "application": "PCR-based C-terminal tagging",
+            "organism": "Saccharomyces cerevisiae",
+            "detection_methods": [
+              "Western blot",
+              "affinity purification"
+            ],
+            "tag_set": "one of 10 validated short epitope tags"
+          },
+          "source": {
+            "pmid": "19243080",
+            "doi": "10.1002/yea.1658",
+            "quote": "demonstrates VSV-G tag as one of 10 validated short epitope tags for PCR-based C-terminal protein tagging in yeast; validates its use in WB and affinity purification",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "WPRE",

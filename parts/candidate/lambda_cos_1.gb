@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="cos"
                      /synonym="lambda cos region"
                      /synonym="cos site (SEVA)"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 gacatgaggt tgccccgtat tcagtgtcgc tgatttgtat tgtctgaagt tgtttttacg
        61 ttaagttgat gcagatcaat taatacgata cctgcgtcat aattgattat ttgacgtggt

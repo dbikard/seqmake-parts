@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="UGI"
                      /synonym="UGI"
                      /synonym="uracil-DNA glycosylase inhibitor"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtnlsdiiek etgkqlviqe silmlpeeve evignkpesd ilvhtaydes tdenvmllts
        61 dapeykpwal viqdsngenk ikml

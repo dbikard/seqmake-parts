@@ -16,6 +16,7 @@ FEATURES             Location/Qualifiers
                      /synonym="guide RNA scaffold"
                      /synonym="chimeric RNA scaffold"
                      /synonym="sgRNA scaffold (SpCas9)"
+                     /db_xref="SO:0000655"
 ORIGIN
         1 gttttagagc tagaaatagc aagttaaaat aaggctagtc cgttatcaac ttgaaaaagt
        61 ggcaccgagt cggtgc

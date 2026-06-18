@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="rrnBT2"
                      /synonym="rrnBT2"
                      /synonym="rrn BT2 terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 taacctaaac tgacaggcat caaattaagc agaaggccat cctgacggat ggcctttttg
        61 cgt

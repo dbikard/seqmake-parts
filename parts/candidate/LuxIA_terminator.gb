@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxIA terminator"
                      /synonym="LuxIA terminator"
                      /synonym="LuxIA Dual Terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 atactagaga gagaatataa aaagccagat tattaatccg gcttttttat tattt
 //

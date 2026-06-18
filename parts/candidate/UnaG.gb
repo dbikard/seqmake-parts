@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..139
                      /label="UnaG"
                      /synonym="UnaG"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mvekfvgtwk iadshnfgey lkaigapkel sdggdattpt lyisqkdgdk mtvkiengpp
        61 tfldtqvkfk lgeefdefps drrkgvksvv nlvgeklvyv qkwdgketty vreikdgklv

@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="SEVA tir"
                      /synonym="tir region"
                      /synonym="SEVA translation initiation region"
+                     /db_xref="SO:0000139"
 ORIGIN
         1 gattaacttt ataaggagga aaaa
 //

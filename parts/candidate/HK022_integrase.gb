@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..357
                      /label="HK022 integrase"
                      /synonym="HK022 integrase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mgrrrsherr dlppnlyirn ngyycyrdpr tgkefglgrd rriaiteaiq aniellsgnr
        61 reslidrikg adaitlhawl dryetilser girpktlldy askirairrk lpdkpladis

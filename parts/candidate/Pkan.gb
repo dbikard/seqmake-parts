@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="PKan"
                      /synonym="kanamycin promoter"
                      /synonym="Km promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 aacacccctt gtattactgt ttatgtaagc agacagtttt attgttcatg atgatatatt
        61 tttatcttgt gcaatgtaac atcagagatt ttgagacaca agacgt

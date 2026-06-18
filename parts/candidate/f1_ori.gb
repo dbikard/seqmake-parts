@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="M13 origin"
                      /synonym="M13 ori"
                      /synonym="f1 ori"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 acgcgccctg tagcggcgca ttaagcgcgg cgggtgtggt ggttacgcgc agcgtgaccg
        61 ctacacttgc cagcgcctta gcgcccgctc ctttcgcttt cttcccttcc tttctcgcca

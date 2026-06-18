@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..113
                      /label="cas2"
                      /synonym="Cas2"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 msyrymrmil mfdmptdtae erkayrkfrk fllsegfimh qfsiysklll nntannamig
        61 rlrehnpnkg nitlltvtek qfarmiylhg ernnciansd erlvflgeaf des

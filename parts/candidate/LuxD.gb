@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxD"
                      /synonym="LuxD"
                      /synonym="acyl transferase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 meneskykti dhvicvegnk kihvwetlpe enspkrknai iiasgfarrm dhfaglaeyl
        61 srngfhviry dslhhvglss gtideftmsi gkqsllavvd wlttrkinnf gmlasslsar

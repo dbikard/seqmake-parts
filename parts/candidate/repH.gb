@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..105
                      /label="repH"
                      /synonym="repH"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkrraymktc knckefikdt eickihslmi hdktvatycs kynesrclhk gkvqcincsk
        61 mnrygwcaik mrcfteeeqk kertcikyya rsfkkahvkk skkkk

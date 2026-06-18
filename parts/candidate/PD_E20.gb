@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="PD_E20"
                      /synonym="PD/E20 (T5) constitutive promoter"
                      /synonym="T5 core promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 aaaaaactgc aaaaaatagt ttgacaccct agccgatagg ctttaagatg tacccagttc
        61 gatgagagcg ataac

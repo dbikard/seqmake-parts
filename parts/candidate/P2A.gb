@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      protein_domain  1..19
                      /label="P2A"
                      /synonym="P2A"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 atnfsllkqa gdveenpgp
 //

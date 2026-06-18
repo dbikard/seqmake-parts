@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..220
                      /label="pBBR1 Rep"
                      /synonym="pBBR1 Rep"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 matqsreigi qaknkpghwv qterkaheaw agliarkpta amllhhlvaq mghqnavvvs
        61 qktlskligr slrtvqyavk dlvaerwisv vklngpgtvs ayvvndrvaw gqprdqlrls

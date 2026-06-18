@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..289
                      /label="cas1"
                      /synonym="Cas1"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 magwrtvvvn thsklsyknn hlifkdaykt elihlseidi lllettdivl stmlvkrlvd
        61 envlvifcdd krlptamlmp fygrhdsslq lgkqmswset vksqvwttii aqkilnqscy

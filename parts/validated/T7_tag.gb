@@ -1,0 +1,78 @@
+LOCUS       T7_tag                    11 aa                     UNK 01-JAN-1980
+DEFINITION  T7 tag — 11-residue N-terminal epitope (MASMTGGQQMG) from
+            bacteriophage T7 Gene product 10A; used as a fusion tag for
+            immunodetection and immunoaffinity purification..
+ACCESSION   T7_tag
+VERSION     T7_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Studier FW, Moffatt BA
+  TITLE     Use of bacteriophage T7 RNA polymerase to direct selective
+            high-level expression of cloned genes.
+  JOURNAL   Journal of Molecular Biology (1986)
+   PUBMED   3537305
+  REMARK    doi:10.1016/0022-2836(86)90385-2
+REFERENCE   2
+  AUTHORS   Studier FW, Rosenberg AH, Dunn JJ, Dubendorff JW
+  TITLE     Use of T7 RNA polymerase to direct expression of cloned genes.
+  JOURNAL   Methods in Enzymology (1990)
+   PUBMED   2199796
+  REMARK    doi:10.1016/0076-6879(90)85008-c
+REFERENCE   3
+  AUTHORS   Enomoto S, Chen G, Berman J
+  TITLE     Vectors for expressing T7 epitope- and His6 affinity-tagged fusion
+            proteins in S. cerevisiae.
+  JOURNAL   BioTechniques (1998)
+   PUBMED   9591127
+  REMARK    doi:10.2144/98245st01
+REFERENCE   4
+  AUTHORS   Makrides SC
+  TITLE     Strategies for achieving high-level expression of genes in
+            Escherichia coli.
+  JOURNAL   Microbiological Reviews (1996)
+   PUBMED   8840785
+  REMARK    doi:10.1128/mr.60.3.512-538.1996
+REFERENCE   5
+  AUTHORS   Condron BG, Atkins JF, Gesteland RF
+  TITLE     Frameshifting in gene 10 of bacteriophage T7.
+  JOURNAL   Journal of Bacteriology (1991)
+   PUBMED   1938901
+  REMARK    doi:10.1128/jb.173.21.6998-7003.1991
+REFERENCE   6
+  AUTHORS   Sipley J, Stassi D, Dunn J, Goldman E
+  TITLE     Analysis of bacteriophage T7 gene 10A and frameshifted 10B proteins.
+  JOURNAL   Gene Expression (1991)
+   PUBMED   1820210
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/T7_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..11
+                     /label="T7_tag"
+                     /synonym="T7 tag"
+                     /synonym="T7-tag"
+                     /synonym="T7 tag (gene 10 leader)"
+                     /synonym="gene 10 leader"
+                     /synonym="T7 epitope"
+                     /synonym="gene 10 leader peptide"
+                     /synonym="MASMTGGQQMG"
+                     /note="T7 tag (gene 10 leader peptide): the N-terminal
+                     11-residue epitope MASMTGGQQMG of bacteriophage T7 Gene
+                     product 10A (major capsid protein). Functions both as a
+                     translational leader in T7-based expression vectors and as
+                     a short immunological epitope tag recognised by anti-T7
+                     monoclonal antibodies. Atomic: the 11 aa are the complete
+                     functional unit with no internal sub-features. Distinct
+                     from the upstream DNA 5' UTR RBS element (T7_g10_leader)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 masmtggqqm g
+//

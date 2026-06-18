@@ -19,12 +19,16 @@ Pure BioPython (shared with publish_part / build_catalog); no other deps.
 from __future__ import annotations
 
 import io
+import sys
 from pathlib import Path
 
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqFeature import FeatureLocation, Reference as BioReference, SeqFeature
 from Bio.SeqRecord import SeqRecord
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from so_terms import so_for  # noqa: E402
 
 SCHEMA_VERSION = "1.0"
 
@@ -92,6 +96,26 @@ def record_to_json(rec: SeqRecord, slug: str) -> dict:
     return data
 
 
+def _with_so_dbxref(ftype: str, quals: dict) -> dict:
+    """Ensure the feature's qualifiers carry a Sequence Ontology ``/db_xref``.
+
+    The SO accession is a *derived projection* of the GenBank feature type
+    (via ``so_terms.so_for``), so the generated .gb is uniformly SO-typed for
+    downstream consumers (e.g. seqmake reads ``/db_xref="SO:..."`` rather than
+    recomputing it). An SO db_xref already present is treated as an explicit
+    per-feature override and kept verbatim; otherwise the derived accession is
+    prepended (SO-first, matching ``publish_part``'s convention). A type with no
+    mapping is left untouched -- ``validate_parts`` gates against that case."""
+    db = list(quals.get("db_xref", []))
+    if any(str(x).startswith("SO:") for x in db):
+        return quals
+    so = so_for(ftype, (quals.get("regulatory_class") or [None])[0],
+                (quals.get("label") or [None])[0])
+    if not so:
+        return quals
+    return {**quals, "db_xref": [so[0], *db]}
+
+
 def json_to_record(data: dict) -> SeqRecord:
     """Reconstruct a BioPython ``SeqRecord`` from a canonical part-JSON dict
     (the inverse of ``record_to_json``)."""
@@ -113,7 +137,8 @@ def json_to_record(data: dict) -> SeqRecord:
         rec.features.append(SeqFeature(
             FeatureLocation(int(f["start"]), int(f["end"]), strand=f["strand"]),
             type=f["type"],
-            qualifiers={k: list(v) for k, v in f["qualifiers"].items()}))
+            qualifiers=_with_so_dbxref(
+                f["type"], {k: list(v) for k, v in f["qualifiers"].items()})))
     # Cached UniProt-imported protein features are baked into the .gb as
     # sub-features of the main feature (so GenBank consumers get them), tagged
     # with their source. They are a projection of UniProt, not authored here.
@@ -126,8 +151,12 @@ def json_to_record(data: dict) -> SeqRecord:
         src = f"source: {acc}" if acc else "source: UniProt"
         for f in uf:
             q = {"label": [f["label"]], "parent": [main_label], "note": [src]}
-            if f.get("so_term"):
-                q["db_xref"] = [f["so_term"]]
+            so_acc = f.get("so_term")
+            if not so_acc:
+                m = so_for(f["type"])
+                so_acc = m[0] if m else None
+            if so_acc:
+                q["db_xref"] = [so_acc]
             rec.features.append(SeqFeature(
                 FeatureLocation(int(f["start"]), int(f["end"]), strand=1),
                 type=f["type"], qualifiers=q))

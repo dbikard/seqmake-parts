@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "slug": "Spot_tag",
+  "locus": "Spot_tag",
+  "id": "Spot_tag",
+  "description": "12-aa affinity/epitope tag (PDRVRAVSHWSS) recognized by BC2 nanobody with sub-nanomolar affinity; enables immunodetection, pull-down, and dSTORM super-resolution labeling",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "PDRVRAVSHWSS",
+  "references": [
+    {
+      "authors": "Braun MB, Traenkle B, Koch PA, Emele F, Weiss F, Poetz O, Stehle T, Rothbauer U",
+      "title": "Peptides in headlock \u2013 a novel high-affinity and versatile peptide-binding nanobody for proteomics and microscopy",
+      "journal": "Scientific Reports (2016)",
+      "pubmed_id": "26791954",
+      "comment": "doi:10.1038/srep19211"
+    },
+    {
+      "authors": "Virant D, Traenkle B, Maier J, Kaiser PD, Bodenh\u00f6fer M, Schmees C, Vojnovic I, Pisak-Luk\u00e1ts B, Endesfelder U, Rothbauer U",
+      "title": "A peptide tag-specific nanobody enables high-quality labeling for dSTORM imaging",
+      "journal": "Nature Communications (2018)",
+      "pubmed_id": "29500346",
+      "comment": "doi:10.1038/s41467-018-03191-2"
+    },
+    {
+      "authors": "Mentzelopoulou A, Liu C, Moschou PN",
+      "title": "Protein Detection and Localization in Plant Cells Using Spot-Tagging",
+      "journal": "Physiologia Plantarum (2024)",
+      "pubmed_id": "38779764",
+      "comment": "doi:10.1111/ppl.14351"
+    },
+    {
+      "authors": "Rothbauer U et al. (inventors)",
+      "title": "Epitope tag and method for detection and/or purification of tagged polypeptides",
+      "journal": "US Patent US20170137467A1 / US10273265 (2017)",
+      "pubmed_id": "",
+      "comment": "doi:US20170137467A1"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 12,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Spot_tag"
+        ],
+        "synonym": [
+          "Spot-tag",
+          "SPOT-tag",
+          "PDRVRAVSHWSS"
+        ],
+        "note": [
+          "12-aa affinity/epitope tag (PDRVRAVSHWSS); affinity-optimized variant of the BC2-tag (PDRKAAVSHWQQ, residues 16-27 of human \u03b2-catenin P35222). Four substitutions relative to BC2T: K4V, A5R, Q11S, Q12S. Sequence first publicly disclosed as SEQ ID NO:33 (pTag1) in patent US20170137467A1."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "US20170137467A1 (patent: \"Epitope tag and method for detection and/or purification of tagged polypeptides\", Rothbauer et al., ChromoTek GmbH; filed 2016-11-16, published 2017-05-18), SEQ ID NO:33 (pTag1) = PDRVRAVSHWSS, 100% identity over 12 aa; independently fetched from https://patents.google.com/patent/US20170137467A1/en and sequence confirmed. Parent epitope BC2T (PDRKAAVSHWQQ) is residues 16-27 of human \u03b2-catenin (UniProt P35222), originally described in Braun et al. 2016 (PMID 26791954, doi:10.1038/srep19211)."
+  },
+  "functional_claims": [
+    {
+      "id": "affinity_tag",
+      "type": "function",
+      "label": "Acts as an affinity/epitope tag enabling pull-down and immunodetection via cognate BC2 nanobody",
+      "value": {
+        "function": "affinity_tag",
+        "cognate_binder": "BC2 nanobody (anti-BC2-tag VHH)",
+        "binding_mechanism": "nanobody headlock \u2014 CDR3 Arg106 forms a salt bridge with Asp1 and packs against Val4/Arg5; all four substituted positions relative to BC2T contribute to affinity enhancement"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "BC2 nanobody binds the BC2-tag peptide with KD ~1.4 nM via a headlock mechanism",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "affinity_kd",
+      "type": "binding_affinity",
+      "label": "KD ~0.7 nM for Spot-tag (pTag1, PDRVRAVSHWSS) with BC2 nanobody \u2014 approximately 2-fold improved over parent BC2T",
+      "value": {
+        "kd_nM": 0.7,
+        "unit": "nM",
+        "method": "surface plasmon resonance or equivalent; reported in patent US20170137467A1"
+      },
+      "source": {
+        "doi": "US20170137467A1",
+        "quote": "pTag1 (PDRVRAVSHWSS) KD 0.7 nM",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range_mammalian",
+      "type": "host_range",
+      "label": "Functional in mammalian cell lines (vimentin, tubulin, actin, lamin, LC3B, membrane proteins labeled in dSTORM)",
+      "value": {
+        "organisms": [
+          "Homo sapiens",
+          "Mus musculus"
+        ],
+        "cell_types": [
+          "HeLa",
+          "U2OS",
+          "various mammalian cell lines"
+        ],
+        "context": "fusion protein N- or C-terminal tag"
+      },
+      "source": {
+        "pmid": "29500346",
+        "doi": "10.1038/s41467-018-03191-2",
+        "quote": "labeling of vimentin, tubulin, actin, lamin, LC3B, and membrane proteins in mammalian and yeast cells",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range_plant",
+      "type": "host_range",
+      "label": "Functional in plant cells (Arabidopsis thaliana); demonstrated with KIN7.3 microtubule motor",
+      "value": {
+        "organisms": [
+          "Arabidopsis thaliana"
+        ],
+        "context": "whole-mount immunostaining protocol",
+        "note": "confirms functionality beyond mammalian systems"
+      },
+      "source": {
+        "pmid": "38779764",
+        "doi": "10.1111/ppl.14351",
+        "quote": "Spot-tag application in plant cells (Arabidopsis); proof-of-concept with KIN7.3 microtubule motor",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application_dstorm",
+      "type": "application",
+      "label": "Enables dSTORM super-resolution microscopy labeling via Spot-tag/BC2-nanobody system",
+      "value": {
+        "application": "dSTORM super-resolution microscopy",
+        "format": "bivalent nanobody; site-specifically labeled with organic fluorophores",
+        "advantage": "small tag size (12 aa) minimizes steric perturbation; high affinity enables efficient target capture"
+      },
+      "source": {
+        "pmid": "29500346",
+        "doi": "10.1038/s41467-018-03191-2",
+        "quote": "first peptide-tag-specific nanobody used in dSTORM; bivalent nanobody format",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Spot-tag (PDRVRAVSHWSS) is an affinity-optimized variant of BC2-tag (PDRKAAVSHWQQ); differs at positions 4 (K\u2192V), 5 (A\u2192R), 11 (Q\u2192S), 12 (Q\u2192S)",
+      "value": {
+        "parent_sequence": "PDRKAAVSHWQQ",
+        "parent_name": "BC2-tag",
+        "parent_origin": "human beta-catenin residues 16-27 (UniProt P35222)",
+        "substitutions": [
+          "K4V",
+          "A5R",
+          "Q11S",
+          "Q12S"
+        ],
+        "effect": "~2-fold affinity improvement over BC2T (KD 0.7 nM vs ~1.4 nM)"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "BC2-tag peptide (PDRKAAVSHWQQ) is residues 16-27 of human beta-catenin",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

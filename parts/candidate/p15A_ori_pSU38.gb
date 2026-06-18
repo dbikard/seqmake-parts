@@ -18,6 +18,7 @@ FEATURES             Location/Qualifiers
                      /note="p15A origin variant from pSU38 family; differs from
                      canonical p15A ori by several point mutations and extended
                      flanking sequence."
+                     /db_xref="SO:0000296"
 ORIGIN
         1 cgtaatctct tgctctgaaa acgaaaaaac cgccttgcag ggcggttttt cgaaggttct
        61 ctgagctacc aactctttga accgaggtaa ctggcttgga ggagcgcagt caccaaaact

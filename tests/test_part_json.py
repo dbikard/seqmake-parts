@@ -64,5 +64,41 @@ def test_uniprot_features_bake_into_gb():
     assert "source: UniProt:P00001" in gb
 
 
+def _dna_part(feature):
+    return {
+        "schema_version": "1.0", "slug": "Tp", "locus": "Tp", "id": "Tp",
+        "description": "t", "molecule_type": "DNA",
+        "locus_annotations": {"topology": "linear"},
+        "sequence": "ACGTACGTACGTACGTACGT", "references": [],
+        "features": [feature],
+    }
+
+
+def test_so_dbxref_injected_from_feature_type():
+    """A feature with no SO db_xref gets one derived from its GenBank type at
+    .gb-build time (so the .gb is uniformly SO-typed for seqmake)."""
+    gb = gb_text_from_json(_dna_part(
+        {"type": "promoter", "start": 0, "end": 10, "strand": 1,
+         "qualifiers": {"label": ["P"]}}))
+    assert '/db_xref="SO:0000167"' in gb
+
+
+def test_explicit_so_dbxref_is_preserved_as_override():
+    """An author-set SO db_xref wins over the type-derived default."""
+    gb = gb_text_from_json(_dna_part(
+        {"type": "misc_feature", "start": 0, "end": 10, "strand": 1,
+         "qualifiers": {"label": ["x"], "db_xref": ["SO:0000313"]}}))
+    assert '/db_xref="SO:0000313"' in gb          # the override
+    assert '/db_xref="SO:0000110"' not in gb      # not the misc_feature default
+
+
+def test_regulatory_class_drives_so_term():
+    """regulatory + /regulatory_class resolves to the specific signal SO term."""
+    gb = gb_text_from_json(_dna_part(
+        {"type": "regulatory", "start": 0, "end": 6, "strand": 1,
+         "qualifiers": {"label": ["-35"], "regulatory_class": ["minus_35_signal"]}}))
+    assert '/db_xref="SO:0000175"' in gb
+
+
 def test_all_json_valid_against_schema():
     assert problems() == []

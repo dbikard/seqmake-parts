@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..264
                      /label="APH-3"
                      /synonym="APH-3"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 makmrispel kkliekyrcv kdtegmspak vyklvgenen lylkmtdsry kgttydvere
        61 kdmmlwlegk lpvpkvlhfe rhdgwsnllm seadgvlcse eyedeqspek iielyaecir

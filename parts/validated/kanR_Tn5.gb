@@ -65,10 +65,12 @@ FEATURES             Location/Qualifiers
                      /label="Binding site"
                      /parent="kanR (Tn5)"
                      /note="source: UniProt:P00552"
+                     /db_xref="SO:0000409"
      binding         208
                      /label="Binding site"
                      /parent="kanR (Tn5)"
                      /note="source: UniProt:P00552"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mieqdglhag spaawverlf gydwaqqtig csdaavfrls aqgrpvlfvk tdlsgalnel
        61 qdeaarlswl attgvpcaav ldvvteagrd wlllgevpgq dllsshlapa ekvsimadam

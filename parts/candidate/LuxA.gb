@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxA"
                      /synonym="LuxA"
                      /synonym="luciferase alpha chain"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkfgnfllty qppqfsqtev mkrlvklgri seecgfdtvw llehhftefg llgnpyvaaa
        61 yllgatkkln vgtaaivlpt ahpvrqledv nlldqmskgr frfgicrgly nkdfrvfgtd

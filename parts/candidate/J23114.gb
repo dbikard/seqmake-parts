@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="Anderson constitutive promoter"
                      /synonym="J23114 promoter"
                      /collection="anderson-promoters"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 tttatggcta gctcagtcct aggtacaatg ctagc
 //

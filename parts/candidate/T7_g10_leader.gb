@@ -22,6 +22,7 @@ FEATURES             Location/Qualifiers
                      pET-28a (Addgene 249430), the RBS/leader between the XbaI
                      site and the start ATG (35 bp). DNA 5'UTR element, distinct
                      from the T7-tag peptide (see T7_tag)."
+                     /db_xref="SO:0000139"
 ORIGIN
         1 aataattttg tttaacttta agaaggagat atacc
 //

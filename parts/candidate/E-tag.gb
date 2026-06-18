@@ -1,5 +1,6 @@
 LOCUS       E-tag                     13 aa                     UNK 01-JAN-1980
-DEFINITION  E-tag.
+DEFINITION  E-tag epitope/affinity tag (GAPVPYPDPLEPR) from M13 bacteriophage
+            g3p; pCANTAB 5E phage-display detection/purification tag.
 ACCESSION   E-tag
 VERSION     E-tag
 KEYWORDS    .
@@ -13,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /label="E-tag"
                      /synonym="E-tag"
                      /synonym="E tag"
+                     /db_xref="SO:0000417"
 ORIGIN
-        1 gapvpypdpl epa
+        1 gapvpypdpl epr
 //

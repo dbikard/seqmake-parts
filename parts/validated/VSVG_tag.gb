@@ -1,0 +1,73 @@
+LOCUS       VSVG_tag                  11 aa            linear   UNK 01-JAN-1980
+DEFINITION  VSVG_tag — 11-aa epitope tag (YTDIEMNRLGK) from the cytoplasmic tail
+            of Vesicular stomatitis Indiana virus glycoprotein; detected by the
+            P5D4 monoclonal antibody for immunodetection, immunoprecipitation,
+            and affinity purification..
+ACCESSION   VSVG_tag
+VERSION     VSVG_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Kreis TE
+  TITLE     Microinjected antibodies against the cytoplasmic domain of vesicular
+            stomatitis virus glycoprotein block its transport to the cell
+            surface.
+  JOURNAL   EMBO J (1986)
+   PUBMED   3013626
+  REMARK    doi:10.1002/j.1460-2075.1986.tb04306.x
+REFERENCE   2
+  AUTHORS   Rose JK, Bergmann JE
+  TITLE     Altered cytoplasmic domains affect intracellular transport of the
+            vesicular stomatitis virus glycoprotein.
+  JOURNAL   Cell (1983)
+   PUBMED   6352053
+  REMARK    doi:10.1016/0092-8674(83)90384-7
+REFERENCE   3
+  AUTHORS   Funakoshi M, Hochstrasser M
+  TITLE     Small epitope-linker modules for PCR-based C-terminal tagging in
+            Saccharomyces cerevisiae.
+  JOURNAL   Yeast (2009)
+   PUBMED   19243080
+  REMARK    doi:10.1002/yea.1658
+REFERENCE   4
+  AUTHORS   Shevtsova Z, Malik JMI, Michel U, Scholl U, Bahr M, Kugler S
+  TITLE     Evaluation of epitope tags for protein detection after in vivo CNS
+            gene transfer.
+  JOURNAL   Eur J Neurosci (2006)
+   PUBMED   16630044
+  REMARK    doi:10.1111/j.1460-9568.2006.04725.x
+REFERENCE   5
+  AUTHORS   Munis AM, Tijani M, Hassall M, Mattiuzzo G, Collins MK, Takeuchi Y
+  TITLE     Characterization of Antibody Interactions with the G Protein of
+            Vesicular Stomatitis Virus Indiana Strain and Other Vesiculovirus G
+            Proteins.
+  JOURNAL   J Virol (2018)
+   PUBMED   30232190
+  REMARK    doi:10.1128/JVI.00900-18
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/VSVG_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..11
+                     /label="VSVG_tag"
+                     /synonym="VSV-G tag"
+                     /synonym="VSV-G epitope"
+                     /synonym="VSVG epitope"
+                     /synonym="YTDIEMNRLGK"
+                     /note="11-aa epitope tag YTDIEMNRLGK, derived from the
+                     cytoplasmic tail (C-terminal residues 501–511) of Vesicular
+                     stomatitis Indiana virus glycoprotein (VSV-G). Recognised
+                     by the P5D4 monoclonal antibody, widely used for protein
+                     detection, immunoprecipitation, and affinity purification.
+                     The tag acts as a single binding epitope with no functional
+                     sub-elements."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 ytdiemnrlg k
+//

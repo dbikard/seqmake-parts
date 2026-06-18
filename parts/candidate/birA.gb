@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="birA"
                      /synonym="BirA"
                      /synonym="biotin--protein ligase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mkdntvplkl iallangefh sgeqlgetlg msraainkhi qtlrdwgvdv ftvpgkgysl
        61 pepiqllnak qilgqldggs vavlpvidst nqylldrige lksgdaciae yqqagrgrrg

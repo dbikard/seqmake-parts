@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="RBS 23400"
                      /synonym="Synthetic RBS 23"
                      /synonym="400 TIR (NEQ)"
+                     /db_xref="SO:0000139"
 ORIGIN
         1 gatttcgcaa gctaaggaag ctaaa
 //

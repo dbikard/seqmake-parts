@@ -13,31 +13,38 @@ FEATURES             Location/Qualifiers
                      /label="ParaBAD"
                      /synonym="araBAD promoter"
                      /regulated_by="AraC"
+                     /db_xref="SO:0000167"
      protein_bind    3..20
                      /label="O2"
                      /parent="ParaBAD"
                      /note="AraC operator (upstream loop partner)"
+                     /db_xref="SO:0000410"
      promoter        125..153
                      /label="Pc"
                      /parent="ParaBAD"
                      /note="divergent promoter for araC"
+                     /db_xref="SO:0000167"
      protein_bind    161..182
                      /label="O1"
                      /parent="ParaBAD"
                      /note="AraC operator (loop partner of O2)"
+                     /db_xref="SO:0000410"
      protein_bind    204..217
                      /label="CAP"
                      /parent="ParaBAD"
                      /note="cAMP receptor protein binding site"
+                     /db_xref="SO:0000410"
      protein_bind    213..251
                      /label="I1+I2"
                      /parent="ParaBAD"
                      /note="AraC activation half-sites"
+                     /db_xref="SO:0000410"
      regulatory      250..277
                      /label="pBAD"
                      /parent="ParaBAD"
                      /regulatory_class="promoter"
                      /note="sigma70 -35/-10 core promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 aagaaaccaa ttgtccatat tgcatcagac attgccgtca ctgcgtcttt tactggctct
        61 tctcgctaac caaaccggta accccgctta ttaaaagcat tctgtaacaa agcgggacca

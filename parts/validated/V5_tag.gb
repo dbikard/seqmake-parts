@@ -1,0 +1,85 @@
+LOCUS       V5_tag                    14 aa            linear   UNK 01-JAN-1980
+DEFINITION  V5_tag — a 14-aa epitope tag (GKPIPNPLLGLDST) from the PIV5/SV5 P/V
+            protein (UniProt P11208, residues 95–108), recognized by the
+            high-affinity SV5-Pk1 monoclonal antibody for protein detection,
+            purification, and imaging..
+ACCESSION   V5_tag
+VERSION     V5_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Hanke T, Szawlowski P, Randall RE
+  TITLE     Construction of solid matrix-antibody-antigen complexes containing
+            simian immunodeficiency virus p27 using tag-specific monoclonal
+            antibody and tag-linked antigen.
+  JOURNAL   J Gen Virol (1992)
+   PUBMED   1372038
+  REMARK    doi:10.1099/0022-1317-73-3-653
+REFERENCE   2
+  AUTHORS   Southern JA, Young DF, Heaney F, Baumgärtner WK, Randall RE
+  TITLE     Identification of an epitope on the P and V proteins of simian virus
+            5 that distinguishes between two isolates with different biological
+            characteristics.
+  JOURNAL   J Gen Virol (1991)
+   PUBMED   1713260
+  REMARK    doi:10.1099/0022-1317-72-7-1551
+REFERENCE   3
+  AUTHORS   Randall RE, Young DF, Goswami KK, Russell WC
+  TITLE     Isolation and characterization of monoclonal antibodies to simian
+            virus 5 and their use in revealing antigenic differences between
+            human, canine and simian isolates.
+  JOURNAL   J Gen Virol (1987)
+   PUBMED   2445904
+  REMARK    doi:10.1099/0022-1317-68-11-2769
+REFERENCE   4
+  AUTHORS   Randall RE, Hanke T, Young D, Southern JA
+  TITLE     Two-tag purification of recombinant proteins for the construction of
+            solid matrix-antibody-antigen (SMAA) complexes as vaccines.
+  JOURNAL   Vaccine (1993)
+   PUBMED   7504859
+  REMARK    doi:10.1016/0264-410x(93)90050-8
+REFERENCE   5
+  AUTHORS   Fritschle K, Mielke M, Seelbach OJ, Mühlthaler U, Živanić M, Bozoglu
+            T, Dötsch S, Warmuth L, Busch DH, Skerra A, Kupatt C, Weber WA,
+            Randall RE, Steiger K, Morath V
+  TITLE     The V5-Epitope Tag for Cell Engineering and Its Use in
+            Immunohistochemistry and Quantitative Flow Cytometry.
+  JOURNAL   Biology (Basel) (2025)
+   PUBMED   40723447
+  REMARK    doi:10.3390/biology14070890
+REFERENCE   6
+  AUTHORS   Randall RE, Young D, Pisliakova M, Andrejeva J, West L, Rossler L,
+            Morath V, Hughes D, Goodbourn S
+  TITLE     Single-cycle parainfluenza virus type 5 vectors for producing
+            recombinant proteins, including a humanized anti-V5 tag antibody.
+  JOURNAL   J Gen Virol (2025)
+   PUBMED   39786361
+  REMARK    doi:10.1099/jgv.0.002061
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/V5_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..14
+                     /label="V5_tag"
+                     /synonym="V5 tag"
+                     /synonym="V5 epitope"
+                     /synonym="Pk-tag"
+                     /synonym="Pk tag"
+                     /synonym="Pk epitope"
+                     /synonym="GKPIPNPLLGLDST"
+                     /note="14-aa epitope tag GKPIPNPLLGLDST derived from
+                     residues 95–108 of the Parainfluenza virus 5 / Simian virus
+                     5 (PIV5/SV5) phosphoprotein (P/V protein; UniProt P11208).
+                     Recognized by the SV5-Pk1 (Pk) monoclonal antibody. Also
+                     known as the Pk tag or V5 epitope."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 gkpipnpllg ldst
+//

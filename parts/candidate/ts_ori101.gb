@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="ts ori101"
                      /synonym="oriR101"
                      /synonym="ts ori101"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 tctcaattgg tctaggtgat tttaatcact ataccaattg agatgggcta gtcaatgata
        61 attactagtc cttttccttt gagttgtggg tatctgtaaa ttctgctaga cctttgctgg

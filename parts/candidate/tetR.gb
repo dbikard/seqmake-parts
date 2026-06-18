@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="tetR"
                      /synonym="tet repressor"
                      /synonym="tetracycline repressor"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mmsrldkskv insalellne vgieglttrk laqklgveqp tlywhvknkr alldalaiem
        61 ldrhhthfcp legeswqdfl rnnaksfrca llshrdgakv hlgtrptekq yetlenqlaf

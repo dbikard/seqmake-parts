@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="cas1 (Nme)"
                      /synonym="cas1 (Nme)"
                      /synonym="cas1 NMV_RS09840"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtwrslliqn ggklslqrrq lliqqngesh tvplediavi iienretlit apllsalaeh
        61 gatlltcdeq flpcgqwlpy aqyhrqlkil klqlnisepl kkqlwqhivr qkilnqafva

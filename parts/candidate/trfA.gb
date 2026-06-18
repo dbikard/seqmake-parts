@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..382
                      /label="trfA"
                      /synonym="trfA"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mnrtfdrkay rqelidagfs aedaetiasr tvmrapretf qsvgsivqqa takierdsvq
        61 lappalpaps aaversrrle qeaaglaksm tidtrgtmtt kkrktagedl akqvseakqa

@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      protein_domain  1..15
                      /label="AviTag™"
                      /synonym="AviTag™"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 glndifeaqk iewhe
 //

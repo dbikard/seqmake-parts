@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="yeast centromere/ARS"
                      /synonym="CEN6 ARS209"
                      /synonym="S. cerevisiae CEN6-ARS209"
+                     /db_xref="SO:0000110"
 ORIGIN
         1 cttttcatca cgtgctataa aaataattat aatttaaaat ttttaatata aatatataaa
        61 ttaaaaatag aaagtaaaaa aagaaattaa agaaaaaata gtttttgttt tccgaagatg

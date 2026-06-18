@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..351
                      /label="repA (R6K)"
                      /synonym="repA"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mtnynqknen kqevktalek ctdkkrknpr ftsyiapltt kkniertstc gdylfmlsda
        61 dlehfklhkg nfcgnrfcpm cswrlackds leisilmehl rkeenkefif ltlttpnvks

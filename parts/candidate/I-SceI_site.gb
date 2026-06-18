@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="I-SceI recognition site"
                      /synonym="I-SceI site"
                      /synonym="I-SceI cut site"
+                     /db_xref="SO:0000410"
 ORIGIN
         1 attaccctgt tatcccta
 //

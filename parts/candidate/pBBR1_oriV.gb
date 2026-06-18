@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..772
                      /label="pBBR1 oriV"
                      /synonym="pBBR1 oriV"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 gcttatctcc atgcggtagg ggtgccgcac ggttgcggca ccatgcgcaa tcagctgcaa
        61 cttttcggca gcgcgacaac aattatgcgt tgcgtaaaag tggcagtcaa ttacagattt

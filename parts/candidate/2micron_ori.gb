@@ -20,6 +20,7 @@ FEATURES             Location/Qualifiers
                      origin of replication; confers high-copy episomal
                      maintenance (vs low-copy CEN/ARS). Extracted from pYES2
                      (Addgene 244550), 2u ori feature (878 bp)."
+                     /db_xref="SO:0000296"
 ORIGIN
         1 attgcgaata ccgcttccac aaacattgct caaaagtatc tctttgctat atatctctgt
        61 gctatatccc tatataacct acccatccac ctttcgctcc ttgaacttgc atctaaactc

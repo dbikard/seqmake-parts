@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..395
                      /label="RSF1010 oriV"
                      /synonym="RSF1010 oriV"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 ggctgcacac gcgcccccac ccttcgggta gggggaaagg ccgctaaagc ggctaaaagc
        61 gctccagcgt atttctgcgg ggtttggtgt ggggtttagc gggctttgcc cgcctttccc

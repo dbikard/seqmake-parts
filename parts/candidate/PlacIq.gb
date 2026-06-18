@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="PlacIq"
                      /synonym="PlacIq"
                      /synonym="lacIq promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gacaccatcg aatggtgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
        61 caattcaggg tggtgaat

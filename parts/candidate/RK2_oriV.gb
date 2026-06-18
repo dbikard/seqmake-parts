@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="RK2 oriV"
                      /synonym="oriV RK2"
                      /synonym="oriV"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 agcgggccgg gagggttcga gaaggggggg cacccccctt cggcgtgcgc ggtcacgcgc
        61 acagggcgca gccctggtta aaaacaaggt ttataaatat tggtttaaaa gcaggttaaa

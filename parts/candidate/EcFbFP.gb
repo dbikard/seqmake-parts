@@ -15,6 +15,7 @@ FEATURES             Location/Qualifiers
                      /synonym="FbFP"
                      /synonym="flavin-based fluorescent protein"
                      /synonym="LOV-domain fluorescent protein"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 masfqsfgip gqlevikkal dhvrvgvvit dpalednpiv yvnqgfvqmt gyeteeilgk
        61 narflqgkht dpaevdnirt alqnkepvtv qiqnykkdgt mfwnelnidp meiedktyfv

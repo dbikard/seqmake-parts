@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..750
                      /label="RSF ori"
                      /synonym="RSF ori"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 cttccgcttc ctcgctcact gactcgctac gctcggtcgt tcgactgcgg cgagcggtgt
        61 cagctcactc aaaagcggta atacggttat ccacagaatc aggggataaa gccggaaaga

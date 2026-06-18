@@ -19,6 +19,7 @@ FEATURES             Location/Qualifiers
                      25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35
                      TTGACA / -10 GATACT) with two natural lac operators
                      (LacI-repressible, IPTG-inducible)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ataaatgtga gcggataaca ttgacattgt gagcggataa caagatactg agcacatcag
        61 caggacgcac tgacc

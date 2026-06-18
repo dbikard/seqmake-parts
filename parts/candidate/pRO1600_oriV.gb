@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..352
                      /label="pRO1600 oriV"
                      /synonym="pRO1600 oriV"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 tgtgtataag gggacactgt atctgcgtcc cacaatacaa caaatccgtc cctttacaac
        61 aacaaatccg tcccttctta acaacaaatc cgtcccttaa tggcaacaaa tccgtccctt

@@ -15,6 +15,9 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from so_terms import so_for  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = ROOT / "schema" / "part.schema.json"
 
@@ -49,12 +52,39 @@ def _completeness_problems(name: str, data: dict) -> list[str]:
               or (c.get("source") or {}).get("url")]
     if not claims:
         out.append(f"{name}: validated part needs >=1 functional_claim with a cited source")
-    feats = data.get("features") or []
-    main = next((f for f in feats if "parent" not in (f.get("qualifiers") or {})), None)
-    so = [x for x in (main or {}).get("qualifiers", {}).get("db_xref", [])
-          if str(x).startswith("SO:")] if main else []
-    if not so:
-        out.append(f"{name}: validated part's main feature needs an SO db_xref")
+    # SO typing of the main (and every) feature is enforced for *all* parts by
+    # _so_coverage_problems, so it is not repeated here.
+    return out
+
+
+def _so_coverage_problems(name: str, data: dict) -> list[str]:
+    """Every feature the generated .gb will carry must resolve to a Sequence
+    Ontology accession, so the .gb is uniformly SO-typed for downstream
+    consumers (notably seqmake, which reads ``/db_xref="SO:..."`` from the .gb
+    instead of recomputing it -- see tools/part_json._with_so_dbxref).
+
+    A feature passes if it already carries an explicit SO ``/db_xref`` (an
+    override) OR its type is mappable via ``tools/so_terms.so_for`` (which
+    ``part_json`` then injects at .gb-build time). Otherwise the type needs an
+    entry in ``so_terms.py`` (or the feature an explicit ``/db_xref="SO:..."``).
+    Applies to every part -- this is the contract the catalog guarantees."""
+    out: list[str] = []
+    for f in data.get("features") or []:
+        q = f.get("qualifiers") or {}
+        if any(str(x).startswith("SO:") for x in q.get("db_xref", [])):
+            continue
+        rc = (q.get("regulatory_class") or [None])[0]
+        lab = (q.get("label") or [None])[0]
+        if so_for(f.get("type", ""), rc, lab) is None:
+            out.append(f"{name}: feature type {f.get('type')!r} has no SO mapping "
+                       f"(add it to tools/so_terms.py, or set an explicit "
+                       f"/db_xref=\"SO:...\" on the feature)")
+    for f in data.get("uniprot_features") or []:
+        if f.get("so_term"):
+            continue
+        if so_for(f.get("type", "")) is None:
+            out.append(f"{name}: uniprot_feature type {f.get('type')!r} has no SO "
+                       f"mapping (add it to tools/so_terms.py and the import map)")
     return out
 
 
@@ -116,9 +146,11 @@ def problems() -> list[str]:
                 out.append(f"{jf.name}: {err.message}")
             if data.get("slug") != jf.stem:
                 out.append(f"{jf.name}: slug {data.get('slug')!r} != filename")
-            # Enforced for every part: coordinates in-bounds + earned review tier.
+            # Enforced for every part: coordinates in-bounds, earned review
+            # tier, and full SO coverage of the features the .gb will carry.
             out.extend(_coordinate_problems(jf.name, data))
             out.extend(_claim_tier_problems(jf.name, data))
+            out.extend(_so_coverage_problems(jf.name, data))
             md = jf.with_suffix(".md")
             is_validated = d.name == "validated"
             if is_validated:

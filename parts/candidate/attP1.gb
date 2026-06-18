@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      protein_bind    1..25
                      /label="attP1"
                      /synonym="attP1"
+                     /db_xref="SO:0000410"
 ORIGIN
         1 gttcagcttt tttgtacaaa gttgg
 //

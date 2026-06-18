@@ -1,0 +1,3917 @@
+{
+  "schema_version": "1.0",
+  "title": "SeqMake Parts -- agent discovery index",
+  "description": "One compact line per part: enough to find and filter. Fetch full detail from each part's `record` URL (canonical JSON: sequence, located sub-features, functional claims with source/confidence/review_status, references) or the whole `catalog` at once. ALL records are currently review_status='ai-generated' and not yet expert-reviewed -- treat claims as a grounded starting point and verify against the cited primary literature.",
+  "base_iri": "https://w3id.org/seqmake/parts",
+  "site": "https://dbikard.github.io/seqmake-parts",
+  "catalog": "https://dbikard.github.io/seqmake-parts/catalog.json",
+  "rdf": "https://dbikard.github.io/seqmake-parts/catalog.ttl",
+  "schema": "https://w3id.org/seqmake/parts/schema/part.schema.json",
+  "queries": "https://github.com/dbikard/seqmake-parts/blob/main/QUERIES.md",
+  "url_templates": {
+    "iri": "https://w3id.org/seqmake/parts/part/{slug}",
+    "page": "https://dbikard.github.io/seqmake-parts/parts/{slug}/",
+    "record": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.json",
+    "genbank": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.gb",
+    "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
+    "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
+  },
+  "n_parts": 256,
+  "n_validated": 51,
+  "n_candidate": 205,
+  "n_functional_claims": 134,
+  "parts": [
+    {
+      "slug": "186_integrase",
+      "name": "186 integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "186 integrase"
+      ]
+    },
+    {
+      "slug": "186_attB",
+      "name": "186_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "186_attB",
+        "186 attB"
+      ]
+    },
+    {
+      "slug": "186_attP",
+      "name": "186_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 3,
+      "synonyms": [
+        "186_attP",
+        "186 attP",
+        "phage 186 attP",
+        "186 attachment site"
+      ]
+    },
+    {
+      "slug": "2micron_ori",
+      "name": "2micron ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "2u ori",
+        "2-micron origin",
+        "2 micron ori",
+        "yeast 2 micron plasmid origin",
+        "2micron origin of replication"
+      ]
+    },
+    {
+      "slug": "6xHis",
+      "name": "6xHis",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 4,
+      "synonyms": [
+        "6xHis",
+        "6xHis (fragment)",
+        "His tag",
+        "His-tag",
+        "8xHis",
+        "8xHis (fragment)",
+        "10xHis",
+        "polyhistidine tag",
+        "hexahistidine",
+        "His6",
+        "His6-tag",
+        "poly-His"
+      ]
+    },
+    {
+      "slug": "aadA",
+      "name": "aadA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "ANT(3'')(9)",
+        "AadA",
+        "SmR",
+        "SpR",
+        "SpecR",
+        "aadA1",
+        "spectinomycin adenyltransferase",
+        "streptomycin 3''-adenylyltransferase"
+      ]
+    },
+    {
+      "slug": "AAV_deg_tag",
+      "name": "AAV deg tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "AAV deg tag",
+        "AAVDeg_Tag(medium speed)",
+        "AAV degradation tag"
+      ]
+    },
+    {
+      "slug": "Acc3",
+      "name": "Acc3",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Acc3",
+        "acc3",
+        "gentamicin 3-N-acetyltransferase",
+        "GmR (SEVA)"
+      ]
+    },
+    {
+      "slug": "acrII4A",
+      "name": "acrII4A",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "acrII4A"
+      ]
+    },
+    {
+      "slug": "ADH1",
+      "name": "ADH1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ADH1 promoter",
+        "PADH1",
+        "pADH1",
+        "Sc ADH1 promoter"
+      ]
+    },
+    {
+      "slug": "ADH1_terminator",
+      "name": "ADH1 terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ADH1 terminator",
+        "tADH1",
+        "ADH1t",
+        "ADH1 transcription terminator"
+      ]
+    },
+    {
+      "slug": "AID",
+      "name": "AID",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "AID",
+        "AICDA",
+        "activation-induced cytidine deaminase"
+      ]
+    },
+    {
+      "slug": "ALFA_tag",
+      "name": "ALFA_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 8,
+      "synonyms": [
+        "ALFA-tag",
+        "ALFA epitope",
+        "SRLEEELRRRLTE"
+      ]
+    },
+    {
+      "slug": "AlkS",
+      "name": "AlkS",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "AlkS",
+        "alkS",
+        "alkane-responsive regulator",
+        "alkS crc-mut"
+      ]
+    },
+    {
+      "slug": "APH-3",
+      "name": "APH-3",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "APH-3"
+      ]
+    },
+    {
+      "slug": "araC",
+      "name": "araC",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "araC",
+        "arabinose operon regulatory protein"
+      ]
+    },
+    {
+      "slug": "attP1",
+      "name": "attP1",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "attP1"
+      ]
+    },
+    {
+      "slug": "attP2",
+      "name": "attP2",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "attP2"
+      ]
+    },
+    {
+      "slug": "AviTag",
+      "name": "AviTag\u2122",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "AviTag\u2122"
+      ]
+    },
+    {
+      "slug": "B0015_terminator",
+      "name": "B0015_terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_B0015",
+        "B0015",
+        "double terminator",
+        "B0010-B0012"
+      ]
+    },
+    {
+      "slug": "B0030_RBS",
+      "name": "B0030 RBS",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "B0030 RBS"
+      ]
+    },
+    {
+      "slug": "B0034_RBS",
+      "name": "B0034_RBS",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_B0034",
+        "B0034",
+        "BioBrick RBS"
+      ]
+    },
+    {
+      "slug": "bet",
+      "name": "bet",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "bet",
+        "bet protein"
+      ]
+    },
+    {
+      "slug": "birA",
+      "name": "birA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BirA",
+        "biotin--protein ligase"
+      ]
+    },
+    {
+      "slug": "bla",
+      "name": "bla",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "AmpR",
+        "TEM-1",
+        "amp",
+        "beta-lactamase",
+        "penicillinase"
+      ]
+    },
+    {
+      "slug": "BlastR",
+      "name": "BlastR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "BSD",
+        "blasticidin S deaminase",
+        "bsd"
+      ]
+    },
+    {
+      "slug": "bom",
+      "name": "bom",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "bom"
+      ]
+    },
+    {
+      "slug": "CAG",
+      "name": "CAG",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CAG",
+        "chicken \u03b2-actin promoter",
+        "chicken beta-actin promoter"
+      ]
+    },
+    {
+      "slug": "cas1",
+      "name": "cas1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Cas1"
+      ]
+    },
+    {
+      "slug": "cas1_Nme",
+      "name": "cas1 (Nme)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "cas1 (Nme)",
+        "cas1 NMV_RS09840"
+      ]
+    },
+    {
+      "slug": "cas2",
+      "name": "cas2",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Cas2"
+      ]
+    },
+    {
+      "slug": "cas2_Nme",
+      "name": "cas2 (Nme)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "cas2 (Nme)",
+        "cas2 NMV_RS09845"
+      ]
+    },
+    {
+      "slug": "cas9",
+      "name": "cas9",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SpCas9",
+        "Cas9",
+        "SpyCas9",
+        "csn1"
+      ]
+    },
+    {
+      "slug": "cat_Gram",
+      "name": "cat (Gram+)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "cat (Gram+)",
+        "chloramphenicol acetyltransferase (Gram+)"
+      ]
+    },
+    {
+      "slug": "catP",
+      "name": "catP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "catP"
+      ]
+    },
+    {
+      "slug": "ccdB",
+      "name": "ccdB",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ccdB",
+        "toxin CcdB"
+      ]
+    },
+    {
+      "slug": "CEN6-ARS209",
+      "name": "CEN6-ARS209",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CEN6-ARS209",
+        "yeast centromere/ARS",
+        "CEN6 ARS209",
+        "S. cerevisiae CEN6-ARS209"
+      ]
+    },
+    {
+      "slug": "CFP",
+      "name": "CFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CFP",
+        "cyan fluorescent protein",
+        "ECFP"
+      ]
+    },
+    {
+      "slug": "ChnR",
+      "name": "ChnR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "chnR",
+        "ChnR activator"
+      ]
+    },
+    {
+      "slug": "cI857",
+      "name": "cI857",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "cI857",
+        "lambda cI857",
+        "cI857 repressor",
+        "temperature-sensitive lambda repressor"
+      ]
+    },
+    {
+      "slug": "CloDF13_ori",
+      "name": "CloDF13 ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CloDF13 ori"
+      ]
+    },
+    {
+      "slug": "CmR",
+      "name": "CmR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "CAT",
+        "cat",
+        "chloramphenicol acetyltransferase"
+      ]
+    },
+    {
+      "slug": "CMV",
+      "name": "CMV",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CMV promoter",
+        "PCMV",
+        "CMV IE promoter",
+        "human cytomegalovirus immediate early promoter",
+        "CMV enhancer/promoter"
+      ]
+    },
+    {
+      "slug": "ColE1",
+      "name": "ColE1",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "ColE1",
+        "ColE1 ori",
+        "pMB1",
+        "pMB1 ori",
+        "pBR322 ori",
+        "pUC ori",
+        "ColE1-derived ori"
+      ]
+    },
+    {
+      "slug": "ColE1_AT",
+      "name": "ColE1_AT",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "validated",
+      "n_claims": 2,
+      "synonyms": [
+        "ColE1_AT",
+        "ColE1 ori (cloning-vector form)",
+        "pMB1 (vector form)"
+      ]
+    },
+    {
+      "slug": "CspRecT",
+      "name": "CspRecT",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CspRecT"
+      ]
+    },
+    {
+      "slug": "CYC1_terminator",
+      "name": "CYC1 terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "CYC1 terminator",
+        "tCYC1",
+        "CYC1t",
+        "CYC1 transcription terminator"
+      ]
+    },
+    {
+      "slug": "dCas9",
+      "name": "dCas9",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "dCas9",
+        "SpdCas9",
+        "S. pyogenes dCas9",
+        "dead Cas9",
+        "nuclease-dead Cas9"
+      ]
+    },
+    {
+      "slug": "DhfR",
+      "name": "DhfR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "DHFR",
+        "DfrA",
+        "TmpR",
+        "dhfR",
+        "dihydrofolate reductase",
+        "trimethoprim resistance"
+      ]
+    },
+    {
+      "slug": "DsRed2",
+      "name": "DsRed2",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "DsRed2",
+        "dsred2",
+        "red fluorescent protein (DsRed2)"
+      ]
+    },
+    {
+      "slug": "E-tag",
+      "name": "E-tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "E-tag",
+        "E tag"
+      ]
+    },
+    {
+      "slug": "EcFbFP",
+      "name": "EcFbFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "EcFbFP",
+        "FbFP",
+        "flavin-based fluorescent protein",
+        "LOV-domain fluorescent protein"
+      ]
+    },
+    {
+      "slug": "ECK120010818",
+      "name": "ECK120010818",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ECK120010818",
+        "Terminator ECK120010818"
+      ]
+    },
+    {
+      "slug": "ECK120033736",
+      "name": "ECK120033736",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ECK120033736",
+        "Terminator ECK120033736"
+      ]
+    },
+    {
+      "slug": "ECK120033737",
+      "name": "ECK120033737",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ECK120033737",
+        "Terminator ECK120033737"
+      ]
+    },
+    {
+      "slug": "EF1a",
+      "name": "EF1a",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "EF1alpha",
+        "EF1a promoter",
+        "EF-1alpha promoter",
+        "EF-1a promoter",
+        "EEF1A1 promoter",
+        "human elongation factor 1 alpha promoter"
+      ]
+    },
+    {
+      "slug": "EGFP",
+      "name": "EGFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "EGFP",
+        "eGFP",
+        "Enhanced GFP",
+        "GFP"
+      ]
+    },
+    {
+      "slug": "enterokinase_site",
+      "name": "enterokinase site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "enterokinase",
+        "enterokinase cleavage site",
+        "EK site",
+        "enteropeptidase site",
+        "DDDDK"
+      ]
+    },
+    {
+      "slug": "ermAM",
+      "name": "ermAM",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "ermB"
+      ]
+    },
+    {
+      "slug": "ermR",
+      "name": "ermR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ErmR",
+        "ErmC",
+        "ermR",
+        "erythromycin methylase",
+        "rRNA adenine N-6-methyltransferase"
+      ]
+    },
+    {
+      "slug": "exo",
+      "name": "exo",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "exo",
+        "exonuclease"
+      ]
+    },
+    {
+      "slug": "f1_ori",
+      "name": "f1 ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "M13 origin",
+        "M13 ori",
+        "f1 ori"
+      ]
+    },
+    {
+      "slug": "fd",
+      "name": "fd",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "fd",
+        "fd terminator"
+      ]
+    },
+    {
+      "slug": "FLAG",
+      "name": "FLAG",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "FLAG",
+        "FLAG-tag",
+        "FLAG octapeptide",
+        "DYKDDDDK",
+        "FLAG epitope"
+      ]
+    },
+    {
+      "slug": "FRT",
+      "name": "FRT",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "FRT",
+        "FRT site",
+        "FRT site sequence"
+      ]
+    },
+    {
+      "slug": "GAL1",
+      "name": "GAL1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "GAL1 promoter",
+        "PGAL1",
+        "pGAL1",
+        "Sc GAL1 promoter"
+      ]
+    },
+    {
+      "slug": "gam",
+      "name": "gam",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "gam",
+        "gam protein"
+      ]
+    },
+    {
+      "slug": "GFP",
+      "name": "GFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "GFP",
+        "gfpmut2",
+        "green fluorescent protein"
+      ]
+    },
+    {
+      "slug": "GmR",
+      "name": "GmR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "GentR",
+        "Gentamicin R",
+        "aacC1",
+        "gentamicin acetyltransferase"
+      ]
+    },
+    {
+      "slug": "GST",
+      "name": "GST",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "glutathione S-transferase",
+        "Sj26GST",
+        "Sj26",
+        "GST-tag",
+        "pGEX GST"
+      ]
+    },
+    {
+      "slug": "HA",
+      "name": "HA",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 3,
+      "synonyms": [
+        "HA",
+        "HA tag",
+        "HA-tag",
+        "hemagglutinin tag",
+        "HA epitope",
+        "influenza HA epitope",
+        "YPYDVPDYA"
+      ]
+    },
+    {
+      "slug": "HaloTag",
+      "name": "HaloTag",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "HaloTag",
+        "HaloTag H7",
+        "Halo tag",
+        "HaloTag7",
+        "HaloTag 7",
+        "HaloTag protein",
+        "modified haloalkane dehalogenase"
+      ]
+    },
+    {
+      "slug": "HIS3",
+      "name": "HIS3",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "His3",
+        "imidazoleglycerol-phosphate dehydratase",
+        "IGPD"
+      ]
+    },
+    {
+      "slug": "HK022_integrase",
+      "name": "HK022 integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "HK022 integrase"
+      ]
+    },
+    {
+      "slug": "HK022_attB",
+      "name": "HK022_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "HK022_attB",
+        "HK022 attB"
+      ]
+    },
+    {
+      "slug": "HK022_attP",
+      "name": "HK022_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 4,
+      "synonyms": [
+        "HK022_attP",
+        "HK022 attP",
+        "phage HK022 attP",
+        "HK022 attachment site (phage)"
+      ]
+    },
+    {
+      "slug": "hPGK",
+      "name": "hPGK",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PGK",
+        "PGK promoter",
+        "hPGK promoter",
+        "PGK1 promoter",
+        "human phosphoglycerate kinase 1 promoter"
+      ]
+    },
+    {
+      "slug": "hU6",
+      "name": "hU6",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "hU6",
+        "hU6_promoter",
+        "U6 promoter"
+      ]
+    },
+    {
+      "slug": "HygR",
+      "name": "HygR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "APH(4)-Ia",
+        "HPT",
+        "hph",
+        "hygromycin B phosphotransferase"
+      ]
+    },
+    {
+      "slug": "I-SceI_site",
+      "name": "I-SceI site",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000410",
+      "so_name": "protein_binding_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "I-SceI",
+        "I-SceI recognition site",
+        "I-SceI site",
+        "I-SceI cut site"
+      ]
+    },
+    {
+      "slug": "J23100",
+      "name": "J23100",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23100",
+        "Anderson constitutive promoter",
+        "J23100 promoter"
+      ]
+    },
+    {
+      "slug": "J23101",
+      "name": "J23101",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23101",
+        "Anderson constitutive promoter",
+        "J23101 promoter"
+      ]
+    },
+    {
+      "slug": "J23102",
+      "name": "J23102",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23102",
+        "Anderson constitutive promoter",
+        "J23102 promoter"
+      ]
+    },
+    {
+      "slug": "J23104",
+      "name": "J23104",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "J23104",
+        "BBa_J23104",
+        "BBa_J23104 Promoter (strong)",
+        "J23104 promoter"
+      ]
+    },
+    {
+      "slug": "J23106",
+      "name": "J23106",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23106",
+        "Anderson constitutive promoter",
+        "J23106 promoter"
+      ]
+    },
+    {
+      "slug": "J23107",
+      "name": "J23107",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "J23107",
+        "BBa_J23107",
+        "BBa_J23107 Promoter (medium)",
+        "J23107 promoter"
+      ]
+    },
+    {
+      "slug": "J23108",
+      "name": "J23108",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "J23108",
+        "J23108 promoter"
+      ]
+    },
+    {
+      "slug": "J23109",
+      "name": "J23109",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23109",
+        "Anderson constitutive promoter",
+        "J23109 promoter"
+      ]
+    },
+    {
+      "slug": "J23110",
+      "name": "J23110",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "J23110",
+        "J23110 promoter"
+      ]
+    },
+    {
+      "slug": "J23114",
+      "name": "J23114",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23114",
+        "Anderson constitutive promoter",
+        "J23114 promoter"
+      ]
+    },
+    {
+      "slug": "J23116",
+      "name": "J23116",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23116",
+        "Anderson constitutive promoter",
+        "J23116 promoter"
+      ]
+    },
+    {
+      "slug": "J23117",
+      "name": "J23117",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "BBa_J23117",
+        "Anderson constitutive promoter",
+        "J23117 promoter"
+      ]
+    },
+    {
+      "slug": "J23119",
+      "name": "J23119",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "J23119",
+        "J23119 promoter",
+        "J23119(SpeI) promoter"
+      ]
+    },
+    {
+      "slug": "kanR_Tn5",
+      "name": "kanR (Tn5)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "APH(3')-II",
+        "NeoR",
+        "NeoR/KanR",
+        "kanR",
+        "neo",
+        "nptII"
+      ]
+    },
+    {
+      "slug": "kanR_Tn903",
+      "name": "kanR (Tn903)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "KanR",
+        "KmR",
+        "KanR2",
+        "APH(3')-Ia",
+        "aphA1",
+        "nptI"
+      ]
+    },
+    {
+      "slug": "L3S1P13",
+      "name": "L3S1P13",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "L3S1P13"
+      ]
+    },
+    {
+      "slug": "L3S2P11",
+      "name": "L3S2P11",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "L3S2P11",
+        "(modified) RF L3S2P11 terminator"
+      ]
+    },
+    {
+      "slug": "L3S3P22_sTerminator",
+      "name": "L3S3P22 sTerminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "L3S3P22 sTerminator"
+      ]
+    },
+    {
+      "slug": "LAA_deg_tag",
+      "name": "LAA deg tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LAA deg tag",
+        "LAAdegradation tag(high speed)",
+        "LAA degradation tag"
+      ]
+    },
+    {
+      "slug": "lacI",
+      "name": "lacI",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacI",
+        "lac repressor"
+      ]
+    },
+    {
+      "slug": "lacO",
+      "name": "lacO",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacO"
+      ]
+    },
+    {
+      "slug": "lacO3",
+      "name": "lacO3",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacO3",
+        "Lac O3 operator",
+        "Lac O3"
+      ]
+    },
+    {
+      "slug": "lacZ_1",
+      "name": "lacZ",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacZ",
+        "beta-galactosidase"
+      ]
+    },
+    {
+      "slug": "lacZ_alpha",
+      "name": "lacZ alpha",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacZ alpha",
+        "lacZa",
+        "beta-galactosidase alpha subunit"
+      ]
+    },
+    {
+      "slug": "lacZ",
+      "name": "lacZ\u03b1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lacZ\u03b1"
+      ]
+    },
+    {
+      "slug": "lambda_cos",
+      "name": "lambda cos",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lambda cos",
+        "Minimal lambda cos sequence",
+        "cos site"
+      ]
+    },
+    {
+      "slug": "lambda_cos_1",
+      "name": "lambda cos",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "cos",
+        "lambda cos region",
+        "cos site (SEVA)"
+      ]
+    },
+    {
+      "slug": "lambda_integrase",
+      "name": "lambda integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lambda integrase"
+      ]
+    },
+    {
+      "slug": "lambda_t0",
+      "name": "lambda t0",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lambda t0",
+        "lambda t0 terminator"
+      ]
+    },
+    {
+      "slug": "lambda_attB",
+      "name": "lambda_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lambda_attB",
+        "lambda attB"
+      ]
+    },
+    {
+      "slug": "lambda_attP",
+      "name": "lambda_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "lambda_attP",
+        "lambda attP",
+        "phage lambda attP",
+        "lambda POP'"
+      ]
+    },
+    {
+      "slug": "LEU2",
+      "name": "LEU2",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Leu2",
+        "3-isopropylmalate dehydrogenase",
+        "beta-IPM dehydrogenase"
+      ]
+    },
+    {
+      "slug": "LuxA",
+      "name": "LuxA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxA",
+        "luciferase alpha chain"
+      ]
+    },
+    {
+      "slug": "LuxB",
+      "name": "LuxB",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxB",
+        "luciferase beta chain"
+      ]
+    },
+    {
+      "slug": "LuxC",
+      "name": "LuxC",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxC",
+        "acyl-CoA reductase"
+      ]
+    },
+    {
+      "slug": "LuxD",
+      "name": "LuxD",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxD",
+        "acyl transferase"
+      ]
+    },
+    {
+      "slug": "LuxE",
+      "name": "LuxE",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxE",
+        "long-chain-fatty-acid ligase"
+      ]
+    },
+    {
+      "slug": "LuxIA_terminator",
+      "name": "LuxIA terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "LuxIA terminator",
+        "LuxIA Dual Terminator"
+      ]
+    },
+    {
+      "slug": "mCherry",
+      "name": "mCherry",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "mCherry",
+        "mCherry E"
+      ]
+    },
+    {
+      "slug": "mRFP1",
+      "name": "mRFP1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "mRFP1",
+        "RFP",
+        "red fluorescent protein"
+      ]
+    },
+    {
+      "slug": "mTurquoise2",
+      "name": "mTurquoise2",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "mTurquoise2",
+        "mturquoise2",
+        "cyan fluorescent protein (mTurquoise2)"
+      ]
+    },
+    {
+      "slug": "Myc",
+      "name": "Myc",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "Myc",
+        "c-Myc tag",
+        "Myc tag",
+        "Myc-tag",
+        "c-Myc epitope",
+        "9E10 epitope",
+        "EQKLISEEDL"
+      ]
+    },
+    {
+      "slug": "NLS_nucleoplasmin",
+      "name": "NLS (nucleoplasmin)",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "NLS (nucleoplasmin)",
+        "nucleoplasmin NLS"
+      ]
+    },
+    {
+      "slug": "Nme2Cas9",
+      "name": "Nme2Cas9",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Nme2Cas9",
+        "cas9 NMV_RS09835",
+        "NmeCas9"
+      ]
+    },
+    {
+      "slug": "ori2",
+      "name": "ori2",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "ori2"
+      ]
+    },
+    {
+      "slug": "oriT",
+      "name": "oriT",
+      "feature_type": "oriT",
+      "kind": "dna",
+      "so_term": "SO:0000724",
+      "so_name": "oriT",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "OriT"
+      ]
+    },
+    {
+      "slug": "p15A",
+      "name": "p15A",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "p15A"
+      ]
+    },
+    {
+      "slug": "p15A_ori",
+      "name": "p15A ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "origin",
+        "p15A ori"
+      ]
+    },
+    {
+      "slug": "p15A_ori_pSU38",
+      "name": "p15A ori (pSU38)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "p15A ori",
+        "P15A rep",
+        "p15A origin (pSU38)"
+      ]
+    },
+    {
+      "slug": "P2",
+      "name": "P2",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "Ptet2",
+        "tet promoter"
+      ]
+    },
+    {
+      "slug": "P2A",
+      "name": "P2A",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "P2A"
+      ]
+    },
+    {
+      "slug": "PA1_O4_O3",
+      "name": "PA1/O4/O3",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PA1/O4/O3",
+        "PA1_04_03",
+        "PA1/O4/O3 constitutive promoter"
+      ]
+    },
+    {
+      "slug": "PA1lacO-1",
+      "name": "PA1lacO-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PA1lacO-1 promoter",
+        "PA1/lacO-1",
+        "PA1lacO1",
+        "A1/lacO-1 promoter"
+      ]
+    },
+    {
+      "slug": "ParaBAD",
+      "name": "ParaBAD",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "araBAD promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "AraC",
+          "slug": "araC",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "pBBR1_oriV",
+      "name": "pBBR1 oriV",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pBBR1 oriV"
+      ]
+    },
+    {
+      "slug": "pBBR1_Rep",
+      "name": "pBBR1 Rep",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pBBR1 Rep"
+      ]
+    },
+    {
+      "slug": "Pbla",
+      "name": "Pbla",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 3,
+      "synonyms": [
+        "Pbla",
+        "AmpR promoter",
+        "bla promoter",
+        "P3",
+        "beta-lactamase promoter"
+      ]
+    },
+    {
+      "slug": "Pcat",
+      "name": "Pcat",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pcat",
+        "cat promoter"
+      ]
+    },
+    {
+      "slug": "PchnB",
+      "name": "PchnB",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PchnB",
+        "chnB promoter",
+        "cyclohexanone-inducible promoter",
+        "chnB promoter region"
+      ],
+      "regulated_by": [
+        {
+          "name": "ChnR",
+          "slug": "ChnR",
+          "documented": true
+        }
+      ]
+    },
+    {
+      "slug": "PCymRC",
+      "name": "PCymRC",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 3,
+      "synonyms": [
+        "Pcym",
+        "cumate-inducible promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "CymR",
+          "slug": null,
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "PD_E20",
+      "name": "PD/E20",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PD/E20",
+        "PD_E20",
+        "PD/E20 (T5) constitutive promoter",
+        "T5 core promoter"
+      ]
+    },
+    {
+      "slug": "PEM7",
+      "name": "PEM7",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PEM7",
+        "PEM7 promoter",
+        "Pem7",
+        "EM7 promoter",
+        "synthetic constitutive promoter"
+      ]
+    },
+    {
+      "slug": "phi80_attB",
+      "name": "phi80_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "phi80_attB",
+        "phi80 attB"
+      ]
+    },
+    {
+      "slug": "phi80_attP",
+      "name": "phi80_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "phi80_attP",
+        "phi80 attP",
+        "phi-80 attP",
+        "phage phi80 attP"
+      ]
+    },
+    {
+      "slug": "phiC31_attB",
+      "name": "phiC31_attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "phiC31_attB",
+        "phiC31 attB"
+      ]
+    },
+    {
+      "slug": "phiC31_attP",
+      "name": "phiC31_attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 3,
+      "synonyms": [
+        "phiC31_attP",
+        "phiC31 attP",
+        "phi-C31 attP",
+        "phiC31 attachment site"
+      ]
+    },
+    {
+      "slug": "PhlF",
+      "name": "PhlF",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PhlF"
+      ]
+    },
+    {
+      "slug": "pIJ101_ori",
+      "name": "pIJ101 ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pIJ101",
+        "pIJ101 ori",
+        "Streptomyces ori",
+        "pIJ101 origin"
+      ]
+    },
+    {
+      "slug": "Pkan",
+      "name": "Pkan",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pkan",
+        "PKan",
+        "kanamycin promoter",
+        "Km promoter"
+      ]
+    },
+    {
+      "slug": "PL",
+      "name": "PL",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PL",
+        "lambda PL",
+        "PL promoter",
+        "lambda PL promoter"
+      ]
+    },
+    {
+      "slug": "Plac",
+      "name": "Plac",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "lac promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "LacI",
+          "slug": "lacI",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "Plac_ara-1",
+      "name": "Plac/ara-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Plac/ara-1 promoter",
+        "Placara-1",
+        "lac/ara-1 promoter",
+        "lac/ara hybrid promoter"
+      ]
+    },
+    {
+      "slug": "PlacI",
+      "name": "PlacI",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PlacI",
+        "lacI promoter"
+      ]
+    },
+    {
+      "slug": "PlacIq",
+      "name": "PlacIq",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PlacIq",
+        "lacIq promoter"
+      ]
+    },
+    {
+      "slug": "PlacUV5",
+      "name": "PlacUV5",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PlacUV5",
+        "lacUV5 promoter",
+        "lacUV5"
+      ],
+      "regulated_by": [
+        {
+          "name": "LacI",
+          "slug": "lacI",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "Pliar1",
+      "name": "Pliar1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar1",
+        "synthetic Pliar1 promoter"
+      ]
+    },
+    {
+      "slug": "Pliar15",
+      "name": "Pliar15",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar15",
+        "synthetic Pliar15 promoter"
+      ]
+    },
+    {
+      "slug": "Pliar17",
+      "name": "Pliar17",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar17",
+        "synthetic Pliar17 promoter"
+      ]
+    },
+    {
+      "slug": "Pliar51",
+      "name": "Pliar51",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar51",
+        "synthetic Pliar51 promoter"
+      ]
+    },
+    {
+      "slug": "Pliar53",
+      "name": "Pliar53",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar53",
+        "synthetic Pliar53 promoter"
+      ]
+    },
+    {
+      "slug": "Pliar70",
+      "name": "Pliar70",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pliar70",
+        "synthetic Pliar70 promoter"
+      ]
+    },
+    {
+      "slug": "PLlacO-1",
+      "name": "PLlacO-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PLlacO-1 promoter",
+        "PllacO-1",
+        "PLlacO1",
+        "lac/PL hybrid promoter"
+      ]
+    },
+    {
+      "slug": "PLtetO-1",
+      "name": "PLtetO-1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PLtetO-1",
+        "PLtetO-1 promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "TetR",
+          "slug": "tetR",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "Pm",
+      "name": "Pm",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "Pm",
+        "Pm promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "XylS",
+          "slug": "XylS",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "Pneo",
+      "name": "Pneo",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Pneo",
+        "neo promoter",
+        "neomycin promoter",
+        "kanamycin promoter (SEVA)"
+      ]
+    },
+    {
+      "slug": "PpflB",
+      "name": "PpflB",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PpflB",
+        "Promoter PpflB",
+        "pflB promoter"
+      ]
+    },
+    {
+      "slug": "PphlF",
+      "name": "PphlF",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 2,
+      "synonyms": [
+        "PphlF",
+        "PhlF promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "PhlF",
+          "slug": "PhlF",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "pR",
+      "name": "pR",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pR",
+        "pR promoter"
+      ]
+    },
+    {
+      "slug": "pRM",
+      "name": "pRM",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pRM",
+        "pRM promoter"
+      ]
+    },
+    {
+      "slug": "pRO1600_oriV",
+      "name": "pRO1600 oriV",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pRO1600 oriV"
+      ]
+    },
+    {
+      "slug": "pSC101_ori",
+      "name": "pSC101 ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "pSC101 ori"
+      ]
+    },
+    {
+      "slug": "pSC101_ori_SEVA",
+      "name": "pSC101 ori (SEVA)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pSC101",
+        "pSC101 ori (SEVA)",
+        "pSC101 origin"
+      ]
+    },
+    {
+      "slug": "pSH71_ori",
+      "name": "pSH71 ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pSH71 ori",
+        "pLZ12 ori",
+        "pSH71 origin"
+      ]
+    },
+    {
+      "slug": "pSH71_ori_core",
+      "name": "pSH71 ori (core)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "pSH71 ori core",
+        "pLZ12 ori core"
+      ]
+    },
+    {
+      "slug": "PSV40",
+      "name": "PSV40",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PSV40",
+        "SV40 promoter"
+      ]
+    },
+    {
+      "slug": "PT3",
+      "name": "PT3",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PT3",
+        "T3 promoter"
+      ]
+    },
+    {
+      "slug": "PT5_lacO",
+      "name": "PT5/lacO",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PT5/lacO",
+        "T5 promoter",
+        "T5/lacO promoter",
+        "T5 lac operator promoter"
+      ]
+    },
+    {
+      "slug": "PT7",
+      "name": "PT7",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T7 promoter"
+      ]
+    },
+    {
+      "slug": "Ptac",
+      "name": "Ptac",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "tac promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "LacI",
+          "slug": "lacI",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "PtetA",
+      "name": "PtetA",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "ptet",
+        "tet promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "TetR",
+          "slug": "tetR",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "Ptrc",
+      "name": "Ptrc",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "Ptrc",
+        "trc promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "LacI",
+          "slug": "lacI",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "PURA3",
+      "name": "PURA3",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PURA3",
+        "URA3 promoter"
+      ]
+    },
+    {
+      "slug": "PuroR",
+      "name": "PuroR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PAC",
+        "pac",
+        "puromycin N-acetyltransferase"
+      ]
+    },
+    {
+      "slug": "PVeg",
+      "name": "PVeg",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "PVeg",
+        "PVeg promoter",
+        "Bacillus PVeg",
+        "vegetative promoter"
+      ]
+    },
+    {
+      "slug": "Pxyl_tet",
+      "name": "Pxyl/tet",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "Pxyl/tet",
+        "Pxyl/tetO",
+        "ptet_full",
+        "Tn10 tetA promoter"
+      ]
+    },
+    {
+      "slug": "R6Kgamma_ori",
+      "name": "R6Kgamma ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "R6Kgamma ori"
+      ]
+    },
+    {
+      "slug": "RBS_23400",
+      "name": "RBS 23400",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RBS 23400",
+        "Synthetic RBS 23",
+        "400 TIR (NEQ)"
+      ]
+    },
+    {
+      "slug": "RBS_7300",
+      "name": "RBS 7300",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RBS 7300",
+        "Synthetic RBS7 7300 TIR NEQ"
+      ]
+    },
+    {
+      "slug": "recE",
+      "name": "recE",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "recE"
+      ]
+    },
+    {
+      "slug": "recT",
+      "name": "recT",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "recT"
+      ]
+    },
+    {
+      "slug": "rep_pSC101",
+      "name": "rep pSC101",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Replication protein",
+        "rep pSC101",
+        "repA101 ts"
+      ]
+    },
+    {
+      "slug": "repA",
+      "name": "repA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repA"
+      ]
+    },
+    {
+      "slug": "repA_IncFII",
+      "name": "repA (IncFII)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repA"
+      ]
+    },
+    {
+      "slug": "repA_R6K",
+      "name": "repA (R6K)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repA"
+      ]
+    },
+    {
+      "slug": "RepC",
+      "name": "RepC",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RepC",
+        "RepC protein"
+      ]
+    },
+    {
+      "slug": "RepC_RSF1010",
+      "name": "RepC (RSF1010)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RepC",
+        "repC (RSF1010)",
+        "RSF1010 RepC",
+        "replication protein C"
+      ]
+    },
+    {
+      "slug": "repE",
+      "name": "repE",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repE"
+      ]
+    },
+    {
+      "slug": "repH",
+      "name": "repH",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repH"
+      ]
+    },
+    {
+      "slug": "repL",
+      "name": "repL",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "repL"
+      ]
+    },
+    {
+      "slug": "RK2_oriV",
+      "name": "RK2 oriV",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RK2 oriV",
+        "oriV RK2",
+        "oriV"
+      ]
+    },
+    {
+      "slug": "rop",
+      "name": "rop",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 2,
+      "synonyms": [
+        "rom",
+        "Rop/Rom",
+        "ColE1 Rop",
+        "RNA one modulator"
+      ]
+    },
+    {
+      "slug": "RP4_oriT",
+      "name": "RP4 oriT",
+      "feature_type": "oriT",
+      "kind": "dna",
+      "so_term": "SO:0000724",
+      "so_name": "oriT",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RP4 oriT",
+        "RP4 transfer origin",
+        "oriT RP4"
+      ]
+    },
+    {
+      "slug": "rrnBT1",
+      "name": "rrnBT1",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "rrnBT1",
+        "rrnBT1 terminator",
+        "rrnB T1",
+        "rrnB T1 terminator",
+        "T1"
+      ]
+    },
+    {
+      "slug": "rrnBT1T2",
+      "name": "rrnBT1T2",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "validated",
+      "n_claims": 4,
+      "synonyms": [
+        "rrnBT1T2",
+        "rrnB T1T2",
+        "rrnB T1-T2 double terminator",
+        "rrnB T1T2 terminator",
+        "T1T2"
+      ]
+    },
+    {
+      "slug": "rrnBT2",
+      "name": "rrnBT2",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "rrnBT2",
+        "rrn BT2 terminator"
+      ]
+    },
+    {
+      "slug": "RSF_ori",
+      "name": "RSF ori",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RSF ori"
+      ]
+    },
+    {
+      "slug": "RSF1010_oriV",
+      "name": "RSF1010 oriV",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RSF1010 oriV"
+      ]
+    },
+    {
+      "slug": "RSF1010_RepA",
+      "name": "RSF1010 RepA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RSF1010 RepA"
+      ]
+    },
+    {
+      "slug": "RSF1010_RepB",
+      "name": "RSF1010 RepB",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "RSF1010 RepB"
+      ]
+    },
+    {
+      "slug": "S-tag",
+      "name": "S-tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "S tag",
+        "S Tag",
+        "S-peptide",
+        "S peptide",
+        "S-tag",
+        "S\u00b7Tag",
+        "S15",
+        "RNase A S-peptide (1-15)"
+      ]
+    },
+    {
+      "slug": "SacB",
+      "name": "SacB",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SacB",
+        "levansucrase"
+      ]
+    },
+    {
+      "slug": "SEVA_tir",
+      "name": "SEVA tir",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SEVA tir",
+        "tir region",
+        "SEVA translation initiation region"
+      ]
+    },
+    {
+      "slug": "sfGFP",
+      "name": "sfGFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Superfolder GFP",
+        "Superfolder",
+        "sfGFP",
+        "msfGFP",
+        "GFP (superfolder)",
+        "GFP"
+      ]
+    },
+    {
+      "slug": "sgRNA_scaffold",
+      "name": "sgRNA scaffold",
+      "feature_type": "misc_RNA",
+      "kind": "dna",
+      "so_term": "SO:0000655",
+      "so_name": "ncRNA",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "sgRNA scaffold",
+        "gRNA scaffold",
+        "guide RNA scaffold",
+        "chimeric RNA scaffold",
+        "sgRNA scaffold (SpCas9)"
+      ]
+    },
+    {
+      "slug": "sopA",
+      "name": "sopA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "sopA"
+      ]
+    },
+    {
+      "slug": "sopB",
+      "name": "sopB",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "sopB"
+      ]
+    },
+    {
+      "slug": "SpecR",
+      "name": "SpecR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SpecR",
+        "SmR",
+        "spec",
+        "aad9",
+        "spectinomycin adenyltransferase"
+      ]
+    },
+    {
+      "slug": "Spot_tag",
+      "name": "Spot_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "Spot-tag",
+        "SPOT-tag",
+        "PDRVRAVSHWSS"
+      ]
+    },
+    {
+      "slug": "St1Cas9",
+      "name": "St1Cas9",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "St1Cas9",
+        "cas9 (St1)",
+        "SthCas9"
+      ]
+    },
+    {
+      "slug": "Strep_tag",
+      "name": "Strep_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "Strep-tag II",
+        "Strep tag",
+        "Strep-tag",
+        "WSHPQFEK",
+        "Strep-tag II peptide"
+      ]
+    },
+    {
+      "slug": "SUMO",
+      "name": "SUMO",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SUMO",
+        "SMT3"
+      ]
+    },
+    {
+      "slug": "SV40_NLS",
+      "name": "SV40 NLS",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SV40 NLS",
+        "NLS",
+        "nuclear localization signal"
+      ]
+    },
+    {
+      "slug": "SV40_PA_terminator",
+      "name": "SV40_PA_terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "SV40_PA_terminator"
+      ]
+    },
+    {
+      "slug": "T2A",
+      "name": "T2A",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T2A"
+      ]
+    },
+    {
+      "slug": "T7_g10_leader",
+      "name": "T7 g10 leader",
+      "feature_type": "RBS",
+      "kind": "dna",
+      "so_term": "SO:0000139",
+      "so_name": "ribosome_entry_site",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "g10 leader RBS",
+        "T7 gene 10 leader RBS",
+        "g10-L",
+        "T7 g10 RBS",
+        "phi10 RBS"
+      ]
+    },
+    {
+      "slug": "T7_RNAP",
+      "name": "T7 RNAP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T7 RNAP",
+        "T7 RNApolymerase",
+        "T7 RNA polymerase",
+        "DNA-directed RNA polymerase"
+      ]
+    },
+    {
+      "slug": "T7_terminator",
+      "name": "T7 terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T7 terminator",
+        "T7 Terminator"
+      ]
+    },
+    {
+      "slug": "T7-Ocr",
+      "name": "T7-Ocr",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T7-Ocr",
+        "T7p01",
+        "Ocr",
+        "gene 0.3 protein"
+      ]
+    },
+    {
+      "slug": "T7_tag",
+      "name": "T7_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 4,
+      "synonyms": [
+        "T7 tag",
+        "T7-tag",
+        "T7 tag (gene 10 leader)",
+        "gene 10 leader",
+        "T7 epitope",
+        "gene 10 leader peptide",
+        "MASMTGGQQMG"
+      ]
+    },
+    {
+      "slug": "T7lac",
+      "name": "T7lac",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "PT7/lacO",
+        "T7/lacO promoter",
+        "T7 lac operator promoter"
+      ],
+      "regulated_by": [
+        {
+          "name": "LacI",
+          "slug": "lacI",
+          "documented": false
+        }
+      ]
+    },
+    {
+      "slug": "T7Te",
+      "name": "T7Te",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "T7Te",
+        "T7Te Terminator"
+      ]
+    },
+    {
+      "slug": "TDH3",
+      "name": "TDH3",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "GPD",
+        "GPD promoter",
+        "TDH3 promoter",
+        "GAP promoter",
+        "PGPD",
+        "pTDH3",
+        "pGPD"
+      ]
+    },
+    {
+      "slug": "TEF1",
+      "name": "TEF1",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "TEF1 promoter",
+        "PTEF1",
+        "pTEF1",
+        "Sc TEF1 promoter"
+      ]
+    },
+    {
+      "slug": "TetA",
+      "name": "TetA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "tetA",
+        "tetracycline efflux pump",
+        "tetracycline resistance protein"
+      ]
+    },
+    {
+      "slug": "tetAC",
+      "name": "tetAC",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "tetAC"
+      ]
+    },
+    {
+      "slug": "tetO",
+      "name": "tetO",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "tetO"
+      ]
+    },
+    {
+      "slug": "tetR",
+      "name": "tetR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "TetR",
+        "tetR",
+        "tet repressor",
+        "tetracycline repressor"
+      ]
+    },
+    {
+      "slug": "tetR_tetA_promoters",
+      "name": "tetR/tetA promoters",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "tetR/tetA promoters"
+      ]
+    },
+    {
+      "slug": "TEV_site",
+      "name": "TEV site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "TEV site",
+        "TEV",
+        "TEV cleavage site"
+      ]
+    },
+    {
+      "slug": "thrombin_site",
+      "name": "thrombin site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "thrombin site",
+        "thrombin",
+        "thrombin cleavage site"
+      ]
+    },
+    {
+      "slug": "tL3",
+      "name": "tL3",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "tL3",
+        "tL3 terminator"
+      ]
+    },
+    {
+      "slug": "tonB",
+      "name": "tonB",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "tonB",
+        "tonB terminator"
+      ]
+    },
+    {
+      "slug": "TRE3GV",
+      "name": "TRE3GV",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "TRE3GV",
+        "TRE3GV promoter"
+      ]
+    },
+    {
+      "slug": "trfA",
+      "name": "trfA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "trfA"
+      ]
+    },
+    {
+      "slug": "TRP1",
+      "name": "TRP1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "Trp1",
+        "N-(5'-phosphoribosyl)anthranilate isomerase",
+        "PRAI"
+      ]
+    },
+    {
+      "slug": "ts_ori101",
+      "name": "ts ori101",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "oriR101",
+        "ts ori101"
+      ]
+    },
+    {
+      "slug": "Twin_Strep_tag",
+      "name": "Twin_Strep_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 4,
+      "synonyms": [
+        "Twin-Strep-tag",
+        "Twin-Strep",
+        "Strep-tag II tandem",
+        "Twin Strep tag"
+      ]
+    },
+    {
+      "slug": "UGI",
+      "name": "UGI",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "UGI",
+        "uracil-DNA glycosylase inhibitor"
+      ]
+    },
+    {
+      "slug": "UnaG",
+      "name": "UnaG",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "UnaG"
+      ]
+    },
+    {
+      "slug": "URA3",
+      "name": "URA3",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "URA3",
+        "orotidine-5'-phosphate decarboxylase"
+      ]
+    },
+    {
+      "slug": "V5_tag",
+      "name": "V5_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "V5 tag",
+        "V5 epitope",
+        "Pk-tag",
+        "Pk tag",
+        "Pk epitope",
+        "GKPIPNPLLGLDST"
+      ]
+    },
+    {
+      "slug": "VSVG_tag",
+      "name": "VSVG_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "VSV-G tag",
+        "VSV-G epitope",
+        "VSVG epitope",
+        "YTDIEMNRLGK"
+      ]
+    },
+    {
+      "slug": "WPRE",
+      "name": "WPRE",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "woodchuck hepatitis virus posttranscriptional regulatory element",
+        "WHP posttranscriptional regulatory element",
+        "WPRE element"
+      ]
+    },
+    {
+      "slug": "XylS",
+      "name": "XylS",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "XylS"
+      ]
+    },
+    {
+      "slug": "YFP",
+      "name": "YFP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "n_claims": 0,
+      "synonyms": [
+        "YFP",
+        "yellow fluorescent protein",
+        "EYFP"
+      ]
+    },
+    {
+      "slug": "ZeoR",
+      "name": "ZeoR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 1,
+      "synonyms": [
+        "BleoR",
+        "Sh ble",
+        "ble",
+        "bleomycin resistance protein"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "anderson-promoters",
+      "name": "Anderson promoters",
+      "n_parts": 13
+    },
+    {
+      "id": "phage-att-sites",
+      "name": "Phage attachment sites for chromosomal integration",
+      "n_parts": 10
+    }
+  ]
+}

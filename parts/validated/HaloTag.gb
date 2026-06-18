@@ -1,0 +1,114 @@
+LOCUS       HaloTag                  297 aa                     UNK 01-JAN-1980
+DEFINITION  HaloTag7 self-labeling protein tag (297 aa) — an engineered
+            monomeric haloalkane dehalogenase (from Rhodococcus DhaA) that forms
+            an irreversible covalent ester bond with synthetic chloroalkane
+            ligands..
+ACCESSION   HaloTag
+VERSION     HaloTag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Los GV, Encell LP, McDougall MG, Hartzell DD, Karassina N, Zimprich
+            C, Wood MG, Learish R, Ohana RF, Urh M, Simpson D, Mendez J,
+            Zimmerman K, Otto P, Vidugiris G, Zhu J, Darzins A, Klaubert DH,
+            Bulleit RF, Wood KV
+  TITLE     HaloTag: a novel protein labeling technology for cell imaging and
+            protein analysis.
+  JOURNAL   ACS Chemical Biology (2008)
+   PUBMED   18533659
+  REMARK    doi:10.1021/cb800025k
+REFERENCE   2
+  AUTHORS   Ohana RF, Encell LP, Zhao K, Simpson D, Slater MR, Urh M, Wood KV
+  TITLE     HaloTag7: a genetically engineered tag that enhances bacterial
+            expression of soluble proteins and improves protein purification.
+  JOURNAL   Protein Expression and Purification (2009)
+   PUBMED   19464373
+  REMARK    doi:10.1016/j.pep.2009.05.010
+REFERENCE   3
+  AUTHORS   Frei MS, Tarnawski M, Roberti MJ, Koch B, Hiblot J, Johnsson K
+  TITLE     Engineered HaloTag variants for fluorescence lifetime multiplexing.
+  JOURNAL   Nature Methods (2021)
+   PUBMED   34916672
+  REMARK    doi:10.1038/s41592-021-01341-x
+REFERENCE   4
+  AUTHORS   Frei MS, Koch B, Hiblot J, Johnsson K, et al.
+  TITLE     Kinetic and Structural Characterization of the Self-Labeling Protein
+            Tags HaloTag7, SNAP-tag, and CLIP-tag.
+  JOURNAL   Biochemistry (2021)
+  REMARK    doi:10.1021/acs.biochem.1c00258
+REFERENCE   5
+  AUTHORS   Buckley DL, Raina K, Darricarrere N, Hines J, Gustafson JL, Smith
+            IE, Miah AH, Harling JD, Crews CM
+  TITLE     HaloPROTACS: Use of Small Molecule PROTACs to Induce Degradation of
+            HaloTag Fusion Proteins.
+  JOURNAL   ACS Chemical Biology (2015)
+   PUBMED   26070106
+  REMARK    doi:10.1021/acschembio.5b00442
+REFERENCE   6
+  AUTHORS   Minner-Meinen R, Weber JN, Albrecht A, Matis R, Behnecke M, Tietge
+            C, Frank S, Schulze J, Buschmann H, Walla PJ, Mendel RR, Hansch R,
+            Kaufholdt D
+  TITLE     Split-HaloTag imaging assay for sophisticated microscopy of
+            protein-protein interactions.
+  JOURNAL   Plant Communications (2021)
+   PUBMED   34746759
+  REMARK    doi:10.1016/j.xplc.2021.100212
+REFERENCE   7
+  AUTHORS   Ohana RF, Hurst R, Vidugiriene J, Slater MR, Wood KV, Urh M
+  TITLE     HaloTag-based purification of functional human kinases from
+            mammalian cells.
+  JOURNAL   Protein Expression and Purification (2010)
+   PUBMED   21129486
+  REMARK    doi:10.1016/j.pep.2010.11.014
+REFERENCE   8
+  AUTHORS   Peterson SN, Kwon K
+  TITLE     The HaloTag: Improving Soluble Expression and Applications in
+            Protein Functional Analysis.
+  JOURNAL   Current Chemical Genomics (2012)
+   PUBMED   23115610
+  REMARK    doi:10.2174/1875397301206010008
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/HaloTag
+FEATURES             Location/Qualifiers
+     CDS             1..297
+                     /label="HaloTag"
+                     /synonym="HaloTag"
+                     /synonym="HaloTag H7"
+                     /synonym="Halo tag"
+                     /synonym="HaloTag7"
+                     /synonym="HaloTag 7"
+                     /synonym="HaloTag protein"
+                     /synonym="modified haloalkane dehalogenase"
+                     /note="HaloTag7 self-labeling protein tag, 297 aa.
+                     Engineered monomeric haloalkane dehalogenase derived from
+                     Rhodococcus rhodochrous DhaA, carrying mutations that (i)
+                     abolish the second hydrolytic step so the enzyme-substrate
+                     covalent intermediate is trapped, and (ii) improve folding,
+                     solubility, and binding kinetics. Forms a rapid,
+                     essentially irreversible covalent ester bond with synthetic
+                     chloroalkane ligands. No coordinate-verified internal
+                     sub-features were retained; the catalytic residues
+                     (nucleophilic Asp at the alpha/beta-hydrolase nucleophile
+                     elbow, motif IGMGKSDK; the engineered His->Phe that
+                     prevents hydrolytic release) are mechanistic and are
+                     captured as functional_claims rather than as residue-level
+                     features."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000316"
+                     /db_xref="NCBI:ADN27525.1"
+ORIGIN
+        1 maeigtgfpf dphyvevlge rmhyvdvgpr dgtpvlflhg nptssyvwrn iiphvapthr
+       61 ciapdligmg ksdkpdlgyf fddhvrfmda fiealgleev vlvihdwgsa lgfhwakrnp
+      121 ervkgiafme firpiptwde wpefaretfq afrttdvgrk liidqnvfie gtlpmgvvrp
+      181 ltevemdhyr epflnpvdre plwrfpnelp iagepaniva lveeymdwlh qspvpkllfw
+      241 gtpgvlippa eaarlakslp nckavdigpg lnllqednpd ligseiarwl stleisg
+//

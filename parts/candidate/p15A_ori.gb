@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="p15A ori"
                      /synonym="origin"
                      /synonym="p15A ori"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 ttgagatcgt tttggtctgc gcgtaatctc ttgctctgaa aacgaaaaaa ccgccttgca
        61 gggcggtttt tcgaaggttc tctgagctac caactctttg aaccgaggta actggcttgg

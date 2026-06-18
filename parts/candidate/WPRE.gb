@@ -20,6 +20,7 @@ FEATURES             Location/Qualifiers
                      stability and expression (Zufferey 1999). Extracted from
                      pCDH-EF1 lentiviral vector (Addgene 207805), WPRE feature
                      (589 bp)."
+                     /db_xref="SO:0000110"
 ORIGIN
         1 aatcaacctc tggattacaa aatttgtgaa agattgactg gtattcttaa ctatgttgct
        61 ccttttacgc tatgtggata cgctgcttta atgcctttgt atcatgctat tgcttcccgt

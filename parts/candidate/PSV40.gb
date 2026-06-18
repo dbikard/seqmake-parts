@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="PSV40"
                      /synonym="PSV40"
                      /synonym="SV40 promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 gtgtgtcagt tagggtgtgg aaagtcccca ggctccccag caggcagaag tatgcaaagc
        61 atgcatctca attagtcagc aaccaggtgt ggaaagtccc caggctcccc agcaggcaga

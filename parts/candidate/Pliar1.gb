@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="Pliar1"
                      /synonym="Pliar1"
                      /synonym="synthetic Pliar1 promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 ggtgtcacta accggtcatc gcggccaggt ataattgcac ga
 //

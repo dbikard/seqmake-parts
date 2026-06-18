@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      rep_origin      1..430
                      /label="R6Kgamma ori"
                      /synonym="R6Kgamma ori"
+                     /db_xref="SO:0000296"
 ORIGIN
         1 aagatccggc cacgatgcgt ccggcgtaga ggatctgaag atcagcagtt caacctgttg
        61 atagtacgta ctaagctctc atgtttcacg tactaagctc tcatgtttaa cgtactaagc

@@ -49,6 +49,12 @@ SO_BY_TYPE: dict[str, tuple[str, str]] = {
     "sig_peptide": ("SO:0000418", "signal_peptide"),
     "mat_peptide": ("SO:0000419", "mature_protein_region"),
     "gene": ("SO:0000704", "gene"),
+    "stem_loop": ("SO:0000313", "stem_loop"),
+    "binding": ("SO:0000409", "binding_site"),
+    "misc_binding": ("SO:0000409", "binding_site"),
+    "primer_bind": ("SO:0005850", "primer_binding_site"),
+    "misc_recomb": ("SO:0000298", "recombination_feature"),
+    "disulfide_bond": ("SO:0001088", "disulfide_bond"),
     "misc_feature": ("SO:0000110", "sequence_feature"),
 }
 

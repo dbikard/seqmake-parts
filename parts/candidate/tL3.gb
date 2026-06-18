@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="tL3"
                      /synonym="tL3"
                      /synonym="tL3 terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 aatggcgatg acgcatcctc acgataatat ccgggtaggc gcaatcactt tcgtctctac
        61 tccgttacaa agcgaggctg ggtatttccc ggcctttctg ttatccgaaa tccactgaaa

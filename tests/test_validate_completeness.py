@@ -1,16 +1,18 @@
 """The validated-tier completeness gate (tools/validate_parts._completeness_problems).
 
-A *validated* part must be a curated record — sourced provenance, an SO-typed main
-feature, >=1 reference and >=1 functional_claim — not just a sequence. Legacy
-GenBank-migrated parts are grandfathered on the sourcing criterion only. Candidates
-(bare parts) are exempt. See CONTRIBUTING.md (curation tiers) + AUTHORING.md."""
+A *validated* part must be a curated record — sourced provenance, >=1 reference and
+>=1 functional_claim — not just a sequence. Legacy GenBank-migrated parts are
+grandfathered on the sourcing criterion only. Candidates (bare parts) are exempt.
+SO typing of every feature is a separate, all-parts gate (_so_coverage_problems),
+also exercised here. See CONTRIBUTING.md (curation tiers) + AUTHORING.md."""
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
 from validate_parts import (  # noqa: E402
-    _claim_tier_problems, _completeness_problems, _coordinate_problems)
+    _claim_tier_problems, _completeness_problems, _coordinate_problems,
+    _so_coverage_problems)
 
 
 def test_out_of_range_coordinates_are_flagged():
@@ -44,13 +46,34 @@ def test_complete_validated_part_passes():
     assert _completeness_problems("X.json", _complete()) == []
 
 
-def test_missing_claim_reference_or_so_each_flagged():
+def test_missing_claim_or_reference_each_flagged():
     d = _complete(); d["functional_claims"] = []
     assert any("functional_claim" in p for p in _completeness_problems("X.json", d))
     d = _complete(); d["references"] = []
     assert any("reference" in p for p in _completeness_problems("X.json", d))
+
+
+def test_so_coverage_gate():
+    # A derivable type with no stored SO db_xref still passes -- part_json
+    # injects the SO term at .gb-build time.
     d = _complete(); d["features"][0]["qualifiers"]["db_xref"] = []
-    assert any("SO db_xref" in p for p in _completeness_problems("X.json", d))
+    assert _so_coverage_problems("X.json", d) == []
+    # An unmappable type with no explicit SO db_xref is flagged.
+    d = _complete()
+    d["features"][0]["type"] = "totally_made_up"
+    d["features"][0]["qualifiers"]["db_xref"] = []
+    assert any("no SO mapping" in p for p in _so_coverage_problems("X.json", d))
+    # ...unless the author pins an explicit SO db_xref (the override path).
+    d["features"][0]["qualifiers"]["db_xref"] = ["SO:0000110"]
+    assert _so_coverage_problems("X.json", d) == []
+    # uniprot_features are covered too: a mapped type passes, unmapped is flagged.
+    d = _complete()
+    d["uniprot_features"] = [{"type": "binding", "start": 0, "end": 3,
+                             "label": "site"}]
+    assert _so_coverage_problems("X.json", d) == []
+    d["uniprot_features"] = [{"type": "made_up", "start": 0, "end": 3,
+                             "label": "site"}]
+    assert any("uniprot_feature" in p for p in _so_coverage_problems("X.json", d))
 
 
 def test_missing_or_placeholder_source_is_flagged():

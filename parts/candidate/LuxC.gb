@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="LuxC"
                      /synonym="LuxC"
                      /synonym="acyl-CoA reductase"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 msmtkkisfi ingqveifpe sddlvqsinf gdnsvylpil ndshvkniid cngnnelrlh
        61 nivnflytvg qrwkneeysr rrtyirdlkk ymgyseemak leanwismil cskgglydvv

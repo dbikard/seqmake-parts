@@ -19,6 +19,7 @@ FEATURES             Location/Qualifiers
                      transcription terminator; the standard yeast terminator.
                      Extracted from pYES2 (Addgene 244550), CYC1 terminator
                      feature (248 bp)."
+                     /db_xref="SO:0000141"
 ORIGIN
         1 tcatgtaatt agttatgtca cgcttacatt cacgccctcc ccccacatcc gctctaaccg
        61 aaaaggaagg agttagacaa cctgaagtct aggtccctat ttattttttt atagttatgt

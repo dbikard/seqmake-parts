@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..207
                      /label="catP"
                      /synonym="catP"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mvfekidkns wnrkeyfdhy fasvpctysm tvkvditqik ekgmklypam lyyiamivnr
        61 hsefrtainq dgelgiydem ipsytifhnd tetfsslwte cksdfksfla dyesdtqryg

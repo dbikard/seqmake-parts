@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..251
                      /label="repE"
                      /synonym="repE"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 maetavinhk krknsprivq sndlteaays lsrdqkrmly lfvdqirksd gtlqehdgic
        61 eihvakyaei fgltsaeask dirqalksfa gkevvfyrpe edagdekgye sfpwfikrah

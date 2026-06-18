@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="CAG"
                      /synonym="chicken β-actin promoter"
                      /synonym="chicken beta-actin promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 tcgaggtgag ccccacgttc tgcttcactc tccccatctc ccccccctcc ccacccccaa
        61 ttttgtattt atttattttt taattatttt gtgcagcgat gggggcgggg gggggggggg

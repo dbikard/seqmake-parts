@@ -22,6 +22,7 @@ FEATURES             Location/Qualifiers
                      dehydrogenase 3) promoter, commonly called GPD or GAP;
                      strong constitutive. Extracted from a TDH3-driven yeast
                      vector (Addgene 239293), GAP promoter feature (668 bp)."
+                     /db_xref="SO:0000167"
 ORIGIN
         1 tcattatcaa tactgccatt tcaaagaata cgtaaataat taatagtagt gattttccta
        61 actttattta gtcaaaaaat tagcctttta attctgctgt aacccgtaca tgcccaaaat

@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "slug": "T7_tag",
+  "locus": "T7_tag",
+  "id": "T7_tag",
+  "description": "T7 tag \u2014 11-residue N-terminal epitope (MASMTGGQQMG) from bacteriophage T7 Gene product 10A; used as a fusion tag for immunodetection and immunoaffinity purification.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MASMTGGQQMG",
+  "references": [
+    {
+      "authors": "Studier FW, Moffatt BA",
+      "title": "Use of bacteriophage T7 RNA polymerase to direct selective high-level expression of cloned genes.",
+      "journal": "Journal of Molecular Biology (1986)",
+      "pubmed_id": "3537305",
+      "comment": "doi:10.1016/0022-2836(86)90385-2"
+    },
+    {
+      "authors": "Studier FW, Rosenberg AH, Dunn JJ, Dubendorff JW",
+      "title": "Use of T7 RNA polymerase to direct expression of cloned genes.",
+      "journal": "Methods in Enzymology (1990)",
+      "pubmed_id": "2199796",
+      "comment": "doi:10.1016/0076-6879(90)85008-c"
+    },
+    {
+      "authors": "Enomoto S, Chen G, Berman J",
+      "title": "Vectors for expressing T7 epitope- and His6 affinity-tagged fusion proteins in S. cerevisiae.",
+      "journal": "BioTechniques (1998)",
+      "pubmed_id": "9591127",
+      "comment": "doi:10.2144/98245st01"
+    },
+    {
+      "authors": "Makrides SC",
+      "title": "Strategies for achieving high-level expression of genes in Escherichia coli.",
+      "journal": "Microbiological Reviews (1996)",
+      "pubmed_id": "8840785",
+      "comment": "doi:10.1128/mr.60.3.512-538.1996"
+    },
+    {
+      "authors": "Condron BG, Atkins JF, Gesteland RF",
+      "title": "Frameshifting in gene 10 of bacteriophage T7.",
+      "journal": "Journal of Bacteriology (1991)",
+      "pubmed_id": "1938901",
+      "comment": "doi:10.1128/jb.173.21.6998-7003.1991"
+    },
+    {
+      "authors": "Sipley J, Stassi D, Dunn J, Goldman E",
+      "title": "Analysis of bacteriophage T7 gene 10A and frameshifted 10B proteins.",
+      "journal": "Gene Expression (1991)",
+      "pubmed_id": "1820210",
+      "comment": ""
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 11,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7_tag"
+        ],
+        "synonym": [
+          "T7 tag",
+          "T7-tag",
+          "T7 tag (gene 10 leader)",
+          "gene 10 leader",
+          "T7 epitope",
+          "gene 10 leader peptide",
+          "MASMTGGQQMG"
+        ],
+        "note": [
+          "T7 tag (gene 10 leader peptide): the N-terminal 11-residue epitope MASMTGGQQMG of bacteriophage T7 Gene product 10A (major capsid protein). Functions both as a translational leader in T7-based expression vectors and as a short immunological epitope tag recognised by anti-T7 monoclonal antibodies. Atomic: the 11 aa are the complete functional unit with no internal sub-features. Distinct from the upstream DNA 5' UTR RBS element (T7_g10_leader)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P19726 (CAPSA_BPT7, Major capsid protein / Gene product 10A, Escherichia phage T7; Swiss-Prot reviewed), positions 1\u201311 = MASMTGGQQMG; 100% identity over 11/11 aa, verified by direct efetch from rest.uniprot.org"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "The T7 tag (MASMTGGQQMG) is recognised by anti-T7 monoclonal antibodies, enabling immunodetection (Western blot, ELISA, immunoprecipitation, immunofluorescence) of T7-tagged fusion proteins.",
+      "value": {
+        "mechanism": "epitope tag \u2014 anti-T7 monoclonal antibody recognition",
+        "applications": [
+          "Western blot",
+          "ELISA",
+          "immunoprecipitation",
+          "immunofluorescence",
+          "immunoaffinity purification"
+        ]
+      },
+      "source": {
+        "pmid": "8840785",
+        "doi": "10.1128/mr.60.3.512-538.1996",
+        "quote": "T7 tag ... an 11 amino acid sequence ... detected by an antibody generated against bacteriophage T7 gene 10 protein ... used for detection and purification",
+        "quote_source": "catalog-doc",
+        "section": "Review: Table 1"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "The T7 tag functions as an epitope tag across multiple expression hosts including Escherichia coli and Saccharomyces cerevisiae; broader eukaryotic applicability is implied by its small size and non-cellular origin.",
+      "value": {
+        "host_range": "broad",
+        "confirmed_hosts": [
+          "Escherichia coli",
+          "Saccharomyces cerevisiae"
+        ]
+      },
+      "source": {
+        "pmid": "9591127",
+        "doi": "10.2144/98245st01",
+        "quote": "Vectors for expressing T7 epitope- and His6 affinity-tagged fusion proteins in S. cerevisiae",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "sequence_variant",
+      "label": "Both natural products of T7 gene 10 (10A, 344 aa; and frameshifted 10B, 398 aa) share an identical N-terminal sequence MASMTGGQQMG, confirming the T7 tag as the shared, invariant N-terminus of both gp10 isoforms.",
+      "value": {
+        "canonical": "MASMTGGQQMG",
+        "carriers": [
+          "T7 gp10A (P19726, 344 aa)",
+          "T7 gp10B (P19727, 398 aa, frameshifted)"
+        ],
+        "note": "Both isoforms share identical N-terminus; frameshift affects only the C-terminal extension"
+      },
+      "source": {
+        "pmid": "1938901",
+        "doi": "10.1128/jb.173.21.6998-7003.1991",
+        "quote": "gene 10 of bacteriophage T7 is expressed as two proteins, 10A and 10B ... frameshifting ... both proteins share the same N terminus",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "expression_system_origin",
+      "type": "mechanism",
+      "label": "The T7 tag sequence originates from the first 11 residues of the T7 gene 10 translation-initiation region, which was incorporated into T7-based expression vectors to drive strong translation of downstream cloned sequences.",
+      "value": {
+        "mechanism": "gene 10 leader used as translational enhancement element in T7 expression vectors",
+        "context": "The peptide-encoding sequence immediately follows the T7 gene 10 Shine-Dalgarno; placing a cloned gene downstream appends the T7 tag to the recombinant protein N-terminus"
+      },
+      "source": {
+        "pmid": "2199796",
+        "doi": "10.1016/0076-6879(90)85008-c",
+        "quote": "The first 260 nucleotides of the T7 gene 10, encoding about 40 amino acids, provide a translation-initiation signal and a portion of the gene 10 protein in front of the target gene",
+        "quote_source": "primary",
+        "section": "Methods in Enzymology, pET system description"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

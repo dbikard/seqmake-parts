@@ -17,6 +17,7 @@ FEATURES             Location/Qualifiers
                      /synonym="msfGFP"
                      /synonym="GFP (superfolder)"
                      /synonym="GFP"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 mskgeelftg vvpilveldg dvnghkfsvr gegegdatng kltlkfictt gklpvpwptl
        61 vttltygvqc fsrypdhmkq hdffksampe gyvqertisf kddgtyktra evkfegdtlv

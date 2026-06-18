@@ -14,6 +14,7 @@ FEATURES             Location/Qualifiers
                      /synonym="RP4 oriT"
                      /synonym="RP4 transfer origin"
                      /synonym="oriT RP4"
+                     /db_xref="SO:0000724"
 ORIGIN
         1 ggtaccagcg cttttccgct gcataaccct gcttcggggt cattatagcg attttttcgg
        61 tatatccatc ctttttcgca cgatatacag gattttgcca aagggttcgt gtagactttc

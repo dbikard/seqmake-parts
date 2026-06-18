@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="pRM"
                      /synonym="pRM"
                      /synonym="pRM promoter"
+                     /db_xref="SO:0000167"
 ORIGIN
         1 tagatattta tcccttgcgg tgatagatt
 //

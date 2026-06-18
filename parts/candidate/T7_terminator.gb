@@ -13,6 +13,7 @@ FEATURES             Location/Qualifiers
                      /label="T7 terminator"
                      /synonym="T7 terminator"
                      /synonym="T7 Terminator"
+                     /db_xref="SO:0000141"
 ORIGIN
         1 ctagcataac cccttggggc ctctaaacgg gtcttgaggg gttttttg
 //

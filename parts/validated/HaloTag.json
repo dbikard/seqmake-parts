@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "slug": "HaloTag",
+  "locus": "HaloTag",
+  "id": "HaloTag",
+  "description": "HaloTag7 self-labeling protein tag (297 aa) \u2014 an engineered monomeric haloalkane dehalogenase (from Rhodococcus DhaA) that forms an irreversible covalent ester bond with synthetic chloroalkane ligands.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MAEIGTGFPFDPHYVEVLGERMHYVDVGPRDGTPVLFLHGNPTSSYVWRNIIPHVAPTHRCIAPDLIGMGKSDKPDLGYFFDDHVRFMDAFIEALGLEEVVLVIHDWGSALGFHWAKRNPERVKGIAFMEFIRPIPTWDEWPEFARETFQAFRTTDVGRKLIIDQNVFIEGTLPMGVVRPLTEVEMDHYREPFLNPVDREPLWRFPNELPIAGEPANIVALVEEYMDWLHQSPVPKLLFWGTPGVLIPPAEAARLAKSLPNCKAVDIGPGLNLLQEDNPDLIGSEIARWLSTLEISG",
+  "references": [
+    {
+      "authors": "Los GV, Encell LP, McDougall MG, Hartzell DD, Karassina N, Zimprich C, Wood MG, Learish R, Ohana RF, Urh M, Simpson D, Mendez J, Zimmerman K, Otto P, Vidugiris G, Zhu J, Darzins A, Klaubert DH, Bulleit RF, Wood KV",
+      "title": "HaloTag: a novel protein labeling technology for cell imaging and protein analysis.",
+      "journal": "ACS Chemical Biology (2008)",
+      "pubmed_id": "18533659",
+      "comment": "doi:10.1021/cb800025k"
+    },
+    {
+      "authors": "Ohana RF, Encell LP, Zhao K, Simpson D, Slater MR, Urh M, Wood KV",
+      "title": "HaloTag7: a genetically engineered tag that enhances bacterial expression of soluble proteins and improves protein purification.",
+      "journal": "Protein Expression and Purification (2009)",
+      "pubmed_id": "19464373",
+      "comment": "doi:10.1016/j.pep.2009.05.010"
+    },
+    {
+      "authors": "Frei MS, Tarnawski M, Roberti MJ, Koch B, Hiblot J, Johnsson K",
+      "title": "Engineered HaloTag variants for fluorescence lifetime multiplexing.",
+      "journal": "Nature Methods (2021)",
+      "pubmed_id": "34916672",
+      "comment": "doi:10.1038/s41592-021-01341-x"
+    },
+    {
+      "authors": "Frei MS, Koch B, Hiblot J, Johnsson K, et al.",
+      "title": "Kinetic and Structural Characterization of the Self-Labeling Protein Tags HaloTag7, SNAP-tag, and CLIP-tag.",
+      "journal": "Biochemistry (2021)",
+      "pubmed_id": "",
+      "comment": "doi:10.1021/acs.biochem.1c00258"
+    },
+    {
+      "authors": "Buckley DL, Raina K, Darricarrere N, Hines J, Gustafson JL, Smith IE, Miah AH, Harling JD, Crews CM",
+      "title": "HaloPROTACS: Use of Small Molecule PROTACs to Induce Degradation of HaloTag Fusion Proteins.",
+      "journal": "ACS Chemical Biology (2015)",
+      "pubmed_id": "26070106",
+      "comment": "doi:10.1021/acschembio.5b00442"
+    },
+    {
+      "authors": "Minner-Meinen R, Weber JN, Albrecht A, Matis R, Behnecke M, Tietge C, Frank S, Schulze J, Buschmann H, Walla PJ, Mendel RR, Hansch R, Kaufholdt D",
+      "title": "Split-HaloTag imaging assay for sophisticated microscopy of protein-protein interactions.",
+      "journal": "Plant Communications (2021)",
+      "pubmed_id": "34746759",
+      "comment": "doi:10.1016/j.xplc.2021.100212"
+    },
+    {
+      "authors": "Ohana RF, Hurst R, Vidugiriene J, Slater MR, Wood KV, Urh M",
+      "title": "HaloTag-based purification of functional human kinases from mammalian cells.",
+      "journal": "Protein Expression and Purification (2010)",
+      "pubmed_id": "21129486",
+      "comment": "doi:10.1016/j.pep.2010.11.014"
+    },
+    {
+      "authors": "Peterson SN, Kwon K",
+      "title": "The HaloTag: Improving Soluble Expression and Applications in Protein Functional Analysis.",
+      "journal": "Current Chemical Genomics (2012)",
+      "pubmed_id": "23115610",
+      "comment": "doi:10.2174/1875397301206010008"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 297,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HaloTag"
+        ],
+        "synonym": [
+          "HaloTag",
+          "HaloTag H7",
+          "Halo tag",
+          "HaloTag7",
+          "HaloTag 7",
+          "HaloTag protein",
+          "modified haloalkane dehalogenase"
+        ],
+        "note": [
+          "HaloTag7 self-labeling protein tag, 297 aa. Engineered monomeric haloalkane dehalogenase derived from Rhodococcus rhodochrous DhaA, carrying mutations that (i) abolish the second hydrolytic step so the enzyme-substrate covalent intermediate is trapped, and (ii) improve folding, solubility, and binding kinetics. Forms a rapid, essentially irreversible covalent ester bond with synthetic chloroalkane ligands. No coordinate-verified internal sub-features were retained; the catalytic residues (nucleophilic Asp at the alpha/beta-hydrolase nucleophile elbow, motif IGMGKSDK; the engineered His->Phe that prevents hydrolytic release) are mechanistic and are captured as functional_claims rather than as residue-level features."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "NCBI:ADN27525.1"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "ADN27525.1 (HaloTag protein, Promega Corporation submission 28-APR-2010, 297 aa, 100% identity full-length, encoded by HM157289.1:191..1084)"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "HaloTag is an engineered haloalkane dehalogenase that forms a covalent, essentially irreversible ester bond with a synthetic chloroalkane ligand. The nucleophilic aspartate at the alpha/beta-hydrolase nucleophile elbow attacks the terminal carbon of the chloroalkane, displacing chloride; an engineered His->Phe substitution at the base catalytic histidine prevents the normal second hydrolytic step, trapping the covalent enzyme-ligand intermediate.",
+      "value": {
+        "tag_class": "self-labeling protein tag",
+        "scaffold": "haloalkane dehalogenase (DhaA, Rhodococcus rhodochrous)",
+        "ligand": "synthetic chloroalkane linker",
+        "bond": "covalent ester",
+        "reversibility": "essentially irreversible",
+        "trapping_mutation": "base catalytic His -> Phe"
+      },
+      "source": {
+        "pmid": "18533659",
+        "doi": "10.1021/cb800025k",
+        "quote": "The protein tag (HaloTag) is a modified haloalkane dehalogenase designed to covalently bind to synthetic ligands... Covalent bond formation between the protein tag and the chloroalkane linker is highly specific, occurs rapidly under physiological conditions, and is essentially irreversible.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "This 297-aa sequence is HaloTag7, an engineered variant of Rhodococcus DhaA carrying 21 amino-acid substitutions relative to the parent dehalogenase that enhance soluble expression, folding, and ligand-binding kinetics; it is the workhorse HaloTag scaffold for downstream applications.",
+      "value": {
+        "variant_name": "HaloTag7",
+        "parent": "DhaA haloalkane dehalogenase (Rhodococcus rhodochrous)",
+        "mutations_vs_parent": 21,
+        "length_aa": 297
+      },
+      "source": {
+        "pmid": "19464373",
+        "doi": "10.1016/j.pep.2009.05.010",
+        "quote": "we have developed a novel protein tag, HaloTag7, engineered to enhance expression and solubility of recombinant proteins and to provide efficient protein purification coupled with tag removal.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "solubility_enhancement",
+      "type": "strength_class",
+      "label": "As an N-terminal fusion partner in E. coli, HaloTag7 enhanced soluble expression: 74% of 23 test human proteins were produced in soluble form when fused to HaloTag7, versus 52% for MBP, 39% for GST, and 22% for a His6 tag.",
+      "value": {
+        "property": "solubility enhancement",
+        "soluble_fraction_HaloTag7": "74%",
+        "soluble_fraction_MBP": "52%",
+        "soluble_fraction_GST": "39%",
+        "soluble_fraction_His6": "22%",
+        "n_proteins": 23,
+        "host": "Escherichia coli"
+      },
+      "source": {
+        "pmid": "19464373",
+        "doi": "10.1016/j.pep.2009.05.010",
+        "quote": "74% of the proteins were produced in soluble form when fused to HaloTag7 compared to 52%, 39% and 22%, respectively, for the other tags.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "labeling_kinetics",
+      "type": "mechanism",
+      "label": "HaloTag7 labels its chloroalkane substrates rapidly; the apparent second-order rate constant spans more than six orders of magnitude depending on the attached fluorophore, with rhodamine-chloroalkane substrates reacting near the diffusion limit and HaloTag7 labeling more than 100-fold faster than SNAP-tag for matched substrates.",
+      "value": {
+        "k_app_range": "10^3-10^8 M^-1 s^-1",
+        "fastest_substrate_class": "rhodamine-chloroalkane",
+        "relative_to_SNAP_tag": ">100-fold faster (matched substrates)",
+        "mechanism": "two-step (binding then covalent capture)"
+      },
+      "source": {
+        "doi": "10.1021/acs.biochem.1c00258",
+        "quote": "HaloTag7 labeling kinetics: k_app spans >6 orders of magnitude (10^3-10^8 M^-1 s^-1) depending on ligand; rhodamine-CA substrates near diffusion-limited; HaloTag7 >100-fold faster than SNAP-tag for matched substrates.",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "HaloTag has been deployed across bacterial, mammalian, and plant systems for labeling, imaging, and purification of fusion proteins.",
+      "value": {
+        "host_range": "broad",
+        "validated_hosts": [
+          "Escherichia coli",
+          "mammalian cells",
+          "plant cells"
+        ]
+      },
+      "source": {
+        "pmid": "18533659",
+        "doi": "10.1021/cb800025k",
+        "quote": "either in solution, in living cells, or in chemically fixed cells.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application_chemogenetic_degradation",
+      "type": "mechanism",
+      "label": "HaloTag fusions can serve as a chemogenetic handle for targeted protein degradation: bifunctional chloroalkane-E3-ligase-ligand molecules recruit the ubiquitin-proteasome system to HaloTag7 fusion proteins, inducing their degradation.",
+      "value": {
+        "application": "targeted protein degradation (PROTAC)",
+        "bifunctional_molecule": "chloroalkane-VHL ligand",
+        "effect": "ubiquitin-proteasome-mediated degradation of HaloTag7 fusions"
+      },
+      "source": {
+        "pmid": "26070106",
+        "doi": "10.1021/acschembio.5b00442",
+        "quote": "incorporate small molecule VHL ligands to successfully degrade HaloTag7 fusion proteins... due to their ability to chemically knock down widely used HaloTag7 fusion proteins in a general fashion.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

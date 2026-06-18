@@ -12,6 +12,7 @@ FEATURES             Location/Qualifiers
      CDS             1..545
                      /label="repA (IncFII)"
                      /synonym="repA"
+                     /db_xref="SO:0000316"
 ORIGIN
         1 meqldskykl kkflmavfrd gigqgnnlid neyvrvfqnn ksnskqlelg eefkeysktt
        61 ffkniddive ftfakniyye ntffnlcttd gkagtnenli nryalgfdfd kkelgqgfny
