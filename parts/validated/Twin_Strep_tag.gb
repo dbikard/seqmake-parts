@@ -1,0 +1,72 @@
+LOCUS       Twin_Strep_tag            30 aa            linear   UNK 01-JAN-1980
+DEFINITION  Twin-Strep-tag: two tandem Strep-tag II (WSHPQFEK) units joined by a
+            GGGSGGGSGGS linker, conferring bivalent high-avidity binding to
+            Strep-Tactin/Strep-Tactin XT for one-step affinity purification and
+            detection..
+ACCESSION   Twin_Strep_tag
+VERSION     Twin_Strep_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K,
+            Matulewicz K, Niermeier D, Schuchardt I, Stanar K
+  TITLE     Development of the Twin-Strep-tag and its application for
+            purification of recombinant proteins from cell culture supernatants
+  JOURNAL   Protein Expression and Purification (2013)
+   PUBMED   24012791
+  REMARK    doi:10.1016/j.pep.2013.08.021
+REFERENCE   2
+  AUTHORS   Schmidt TGM, Koepke J, Frank R, Skerra A
+  TITLE     Molecular interaction between the Strep-tag affinity peptide and its
+            cognate target, streptavidin
+  JOURNAL   Journal of Molecular Biology (1996)
+   PUBMED   8636976
+  REMARK    doi:10.1006/jmbi.1996.0061
+REFERENCE   3
+  AUTHORS   Eichinger A, Schmidt TGM, Skerra A
+  TITLE     The Role of Changing Loop Conformations in Streptavidin Versions
+            Engineered for High-affinity Binding of the Strep-tag II Peptide
+  JOURNAL   Journal of Molecular Biology (2021)
+   PUBMED   33639211
+  REMARK    doi:10.1016/j.jmb.2021.166893
+REFERENCE   4
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     The Strep-tag system for one-step purification and high-affinity
+            detection or capturing of proteins
+  JOURNAL   Nature Protocols (2007)
+   PUBMED   17571060
+  REMARK    doi:10.1038/nprot.2007.209
+REFERENCE   5
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     The Strep-tag system for one-step affinity purification of proteins
+            from mammalian cell culture
+  JOURNAL   Methods in Molecular Biology (2015)
+   PUBMED   25749948
+  REMARK    doi:10.1007/978-1-4939-2447-9_8
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Twin_Strep_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..30
+                     /label="Twin_Strep_tag"
+                     /synonym="Twin-Strep-tag"
+                     /synonym="Twin-Strep"
+                     /synonym="Strep-tag II tandem"
+                     /synonym="Twin Strep tag"
+                     /note="Tandem affinity tag: two Strep-tag II (WSHPQFEK)
+                     units connected by a GGGSGGGSGGS flexible linker, with an
+                     N-terminal Ser-Ala. Bivalency lowers the off-rate from
+                     Strep-Tactin/Strep-Tactin XT, giving picomolar-range
+                     avidity and enabling near-irreversible capture with mild
+                     competitive (biotin/desthiobiotin) elution. Sequence
+                     confirmed 100% over 30 aa against PDB 6SOS chain R."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 sawshpqfek gggsgggsgg sawshpqfek
+//

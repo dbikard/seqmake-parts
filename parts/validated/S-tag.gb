@@ -1,0 +1,69 @@
+LOCUS       S-tag                     15 aa            linear   UNK 01-JAN-1980
+DEFINITION  S-tag: 15-aa N-terminal fragment of bovine RNase A (mature residues
+            1-15) used as a protein affinity and detection tag via high-affinity
+            reconstitution with S-protein.
+ACCESSION   S-tag
+VERSION     S-tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Kim JS, Raines RT
+  TITLE     Ribonuclease S-peptide as a carrier in fusion proteins
+  JOURNAL   Protein Science (1993)
+   PUBMED   8453373
+  REMARK    doi:10.1002/pro.5560020307
+REFERENCE   2
+  AUTHORS   Raines RT, McCormick M, Van Oosbree TR, Mierendorf RC
+  TITLE     The S·Tag fusion system for protein purification
+  JOURNAL   Methods in Enzymology (2000)
+   PUBMED   11036653
+  REMARK    doi:10.1016/s0076-6879(00)26065-5
+REFERENCE   3
+  AUTHORS   Richards FM, Vithayathil PJ
+  TITLE     The preparation of subtilisin-modified ribonuclease and the
+            separation of the peptide and protein components
+  JOURNAL   Journal of Biological Chemistry (1959)
+   PUBMED   13654398
+  REMARK    doi:10.1016/S0021-9258(18)70031-8
+REFERENCE   4
+  AUTHORS   Connelly PR, Varadarajan R, Sturtevant JM, Richards FM
+  TITLE     Thermodynamics of protein-peptide interactions in the ribonuclease S
+            system studied by titration calorimetry
+  JOURNAL   Biochemistry (1990)
+   PUBMED   2383573
+  REMARK    doi:10.1021/bi00477a031
+REFERENCE   5
+  AUTHORS   Asai T, Wims LA, Morrison SL
+  TITLE     An interaction between S-tag and S-protein derived from human
+            ribonuclease 1 allows site-specific conjugation of an enzyme to an
+            antibody for targeted drug delivery
+  JOURNAL   Journal of Immunological Methods (2005)
+   PUBMED   15914191
+  REMARK    doi:10.1016/j.jim.2005.01.020
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/S-tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..15
+                     /label="S-tag"
+                     /synonym="S tag"
+                     /synonym="S Tag"
+                     /synonym="S-peptide"
+                     /synonym="S peptide"
+                     /synonym="S-tag"
+                     /synonym="S·Tag"
+                     /synonym="S15"
+                     /synonym="RNase A S-peptide (1-15)"
+                     /note="Residues 1-15 of mature bovine RNase A (UniProt
+                     P61823, precursor positions 27-41); binds S-protein with Kd
+                     ~10^-7 M to reconstitute RNase activity"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 ketaaakfer qhmds
+//

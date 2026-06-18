@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.0",
+  "slug": "Strep_tag",
+  "locus": "Strep_tag",
+  "id": "Strep_tag",
+  "description": "Strep-tag II \u2014 an engineered 8-residue synthetic affinity peptide (WSHPQFEK) that binds the biotin pocket of streptavidin / engineered streptavidin for mild, single-step affinity purification and detection.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "WSHPQFEK",
+  "references": [
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "The random peptide library-assisted engineering of a C-terminal affinity peptide, useful for the detection and purification of a functional Ig Fv fragment",
+      "journal": "Protein Engineering (1993)",
+      "pubmed_id": "",
+      "comment": "doi:10.1093/protein/6.1.109"
+    },
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "One-step affinity purification of bacterially produced proteins by means of the 'Strep tag' and immobilized recombinant core streptavidin",
+      "journal": "Journal of Chromatography A (1994)",
+      "pubmed_id": "7921186",
+      "comment": ""
+    },
+    {
+      "authors": "Schmidt TGM, Koepke J, Frank R, Skerra A",
+      "title": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+      "journal": "Journal of Molecular Biology (1996)",
+      "pubmed_id": "8636976",
+      "comment": "doi:10.1006/jmbi.1996.0061"
+    },
+    {
+      "authors": "Voss S, Skerra A",
+      "title": "Mutagenesis of a flexible loop in streptavidin leads to higher affinity for the Strep-tag II peptide and improved performance in recombinant protein purification",
+      "journal": "Protein Engineering (1997)",
+      "pubmed_id": "9415448",
+      "comment": "doi:10.1093/protein/10.8.975"
+    },
+    {
+      "authors": "Skerra A, Schmidt TGM",
+      "title": "Applications of a peptide ligand for streptavidin: the Strep-tag",
+      "journal": "Biomolecular Engineering (1999)",
+      "pubmed_id": "10796988",
+      "comment": ""
+    },
+    {
+      "authors": "Skerra A, Schmidt TGM",
+      "title": "Use of the Strep-Tag and streptavidin for detection and purification of recombinant proteins",
+      "journal": "Methods in Enzymology (2000)",
+      "pubmed_id": "11036648",
+      "comment": ""
+    },
+    {
+      "authors": "Korndorfer IP, Skerra A",
+      "title": "Improved affinity of engineered streptavidin for the Strep-tag II peptide is due to a fixed open conformation of the lid-like loop at the binding site",
+      "journal": "Protein Science (2002)",
+      "pubmed_id": "11910031",
+      "comment": ""
+    },
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+      "journal": "Nature Protocols (2007)",
+      "pubmed_id": "17571060",
+      "comment": "doi:10.1038/nprot.2007.209"
+    },
+    {
+      "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
+      "title": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+      "journal": "Protein Expression and Purification (2013)",
+      "pubmed_id": "24012791",
+      "comment": "doi:10.1016/j.pep.2013.08.021"
+    },
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "The Strep-tag system for one-step affinity purification of proteins from mammalian cell culture",
+      "journal": "Methods in Molecular Biology (2015)",
+      "pubmed_id": "25749948",
+      "comment": "doi:10.1007/978-1-4939-2447-9_8"
+    },
+    {
+      "authors": "Liu L, Sommermeyer D, Cabanov A, Kosasih P, Hill T, Riddell SR",
+      "title": "Inclusion of Strep-tag II in design of antigen receptors for T-cell immunotherapy",
+      "journal": "Nature Biotechnology (2016)",
+      "pubmed_id": "26900664",
+      "comment": "doi:10.1038/nbt.3461"
+    },
+    {
+      "authors": "Eichinger A, Skerra A et al.",
+      "title": "The Role of Changing Loop Conformations in Streptavidin Versions Engineered for High-affinity Binding of the Strep-tag II Peptide",
+      "journal": "Journal of Molecular Biology (2021)",
+      "pubmed_id": "",
+      "comment": "doi:10.1016/j.jmb.2021.166893"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 8,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Strep_tag"
+        ],
+        "synonym": [
+          "Strep-tag II",
+          "Strep tag",
+          "Strep-tag",
+          "WSHPQFEK",
+          "Strep-tag II peptide"
+        ],
+        "note": [
+          "Strep-tag II core affinity peptide, WSHPQFEK (8 aa). Synthetic engineered peptide that binds the biotin-binding pocket of streptavidin and of engineered high-affinity streptavidin (Strep-Tactin) in a 3-10-helical conformation; eluted competitively by desthiobiotin or biotin. Atomic part: the 8 residues are the functional unit and carry no internal functional sub-elements. Verified to 100% identity over all 8 residues against PDB 1RSU chain P (positions 3-10)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]",
+          "[9]",
+          "[10]",
+          "[11]",
+          "[12]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "1RSU_P (PDB 1RSU chain P, \"STREP-TAG II PEPTIDE\", SNWSHPQFEK, 10 aa; the 8-aa Strep-tag II core WSHPQFEK = positions 3-10, 100% identity over full query length; deposited 1995-10-19, released 1997-05-15; Schmidt TG, Koepke J, Frank R, Skerra A; J Mol Biol 255:753-766, 1996; PMID 8636976; DOI 10.1006/jmbi.1996.0061)"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "The peptide binds the biotin-binding pocket of streptavidin, adopting a 3-10-helical conformation; the Glu7/Lys9 (His-Pro-Gln-Phe-Glu-Lys) substitutions relative to the original Strep-tag optimise this streptavidin-pocket binding mode.",
+      "value": {
+        "mechanism": "binds the biotin-binding pocket of streptavidin",
+        "binding_mode": "3-10 helix",
+        "target": "streptavidin",
+        "structure": "PDB 1RSU (Strep-tag II:streptavidin complex, 1.70 A)"
+      },
+      "source": {
+        "pmid": "8636976",
+        "doi": "10.1006/jmbi.1996.0061",
+        "quote": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "purification_use",
+      "type": "mechanism",
+      "label": "Genetic fusion of the Strep-tag II peptide to a recombinant protein permits one-step affinity purification on immobilised streptavidin (or engineered streptavidin), with gentle competitive elution by desthiobiotin or biotin under physiological conditions.",
+      "value": {
+        "application": "recombinant-protein affinity purification",
+        "fusion": "N- or C-terminal genetic fusion",
+        "matrix": "immobilised streptavidin / engineered streptavidin (Strep-Tactin)",
+        "elution": [
+          "desthiobiotin",
+          "biotin"
+        ],
+        "conditions": "mild / physiological"
+      },
+      "source": {
+        "pmid": "17571060",
+        "doi": "10.1038/nprot.2007.209",
+        "quote": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "affinity",
+      "type": "affinity",
+      "label": "The Strep-tag II peptide binds streptavidin with a dissociation constant of approximately 1 uM; affinity-engineered streptavidin (Strep-Tactin) raises this affinity by roughly an order of magnitude.",
+      "value": {
+        "Kd": "~1 uM (streptavidin)",
+        "engineered_partner": "Strep-Tactin (engineered streptavidin, ~10-fold higher affinity)"
+      },
+      "source": {
+        "pmid": "11036648",
+        "quote": "Use of the Strep-Tag and streptavidin for detection and purification of recombinant proteins",
+        "quote_source": "catalog-doc",
+        "section": "Methods in Enzymology protocol review"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "position_flexibility",
+      "type": "host_range",
+      "label": "Host- and position-agnostic: the small synthetic peptide can be fused at either the N- or C-terminus and functions for purification and detection across diverse expression hosts, including bacterial and mammalian cell-culture systems.",
+      "value": {
+        "host_range": "broad (bacterial to mammalian)",
+        "position": [
+          "N-terminal",
+          "C-terminal"
+        ]
+      },
+      "source": {
+        "pmid": "10796988",
+        "quote": "Applications of a peptide ligand for streptavidin: the Strep-tag",
+        "quote_source": "catalog-doc",
+        "section": "Review of Strep-tag applications"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Strep-tag II (WSHPQFEK) is the rationally engineered successor to the original library-selected Strep-tag (AWRHPQFGG); a tandem avidity version, the Twin-Strep-tag, links two WSHPQFEK copies via a GGGSGGGSGGS linker for higher-affinity (near-pM) capture.",
+      "value": {
+        "this_variant": "Strep-tag II (WSHPQFEK)",
+        "predecessor": "original Strep-tag (AWRHPQFGG)",
+        "avidity_variant": "Twin-Strep-tag (SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK)"
+      },
+      "source": {
+        "pmid": "24012791",
+        "doi": "10.1016/j.pep.2013.08.021",
+        "quote": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

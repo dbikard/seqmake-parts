@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "slug": "S-tag",
+  "locus": "S-tag",
+  "id": "S-tag",
+  "description": "S-tag: 15-aa N-terminal fragment of bovine RNase A (mature residues 1-15) used as a protein affinity and detection tag via high-affinity reconstitution with S-protein",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "KETAAAKFERQHMDS",
+  "references": [
+    {
+      "authors": "Kim JS, Raines RT",
+      "title": "Ribonuclease S-peptide as a carrier in fusion proteins",
+      "journal": "Protein Science (1993)",
+      "pubmed_id": "8453373",
+      "comment": "doi:10.1002/pro.5560020307"
+    },
+    {
+      "authors": "Raines RT, McCormick M, Van Oosbree TR, Mierendorf RC",
+      "title": "The S\u00b7Tag fusion system for protein purification",
+      "journal": "Methods in Enzymology (2000)",
+      "pubmed_id": "11036653",
+      "comment": "doi:10.1016/s0076-6879(00)26065-5"
+    },
+    {
+      "authors": "Richards FM, Vithayathil PJ",
+      "title": "The preparation of subtilisin-modified ribonuclease and the separation of the peptide and protein components",
+      "journal": "Journal of Biological Chemistry (1959)",
+      "pubmed_id": "13654398",
+      "comment": "doi:10.1016/S0021-9258(18)70031-8"
+    },
+    {
+      "authors": "Connelly PR, Varadarajan R, Sturtevant JM, Richards FM",
+      "title": "Thermodynamics of protein-peptide interactions in the ribonuclease S system studied by titration calorimetry",
+      "journal": "Biochemistry (1990)",
+      "pubmed_id": "2383573",
+      "comment": "doi:10.1021/bi00477a031"
+    },
+    {
+      "authors": "Asai T, Wims LA, Morrison SL",
+      "title": "An interaction between S-tag and S-protein derived from human ribonuclease 1 allows site-specific conjugation of an enzyme to an antibody for targeted drug delivery",
+      "journal": "Journal of Immunological Methods (2005)",
+      "pubmed_id": "15914191",
+      "comment": "doi:10.1016/j.jim.2005.01.020"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 15,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "S-tag"
+        ],
+        "synonym": [
+          "S tag",
+          "S Tag",
+          "S-peptide",
+          "S peptide",
+          "S-tag",
+          "S\u00b7Tag",
+          "S15",
+          "RNase A S-peptide (1-15)"
+        ],
+        "note": [
+          "Residues 1-15 of mature bovine RNase A (UniProt P61823, precursor positions 27-41); binds S-protein with Kd ~10^-7 M to reconstitute RNase activity"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P61823 (RNAS1_BOVIN, Ribonuclease pancreatic, Bos taurus), mature chain residues 1-15 (precursor positions 27-41), 100% identity over 15 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "High-affinity non-covalent binding to S-protein",
+      "value": {
+        "partner": "S-protein (RNase A residues 21-124)",
+        "Kd_range": "10^-6 to 10^-9 M",
+        "notes": "Calorimetry gives ~10^-6 to 10^-7 M; functional fusion system reports Kd <= 10^-9 M upon activity reconstitution"
+      },
+      "source": {
+        "pmid": "2383573",
+        "doi": "10.1021/bi00477a031",
+        "quote": "thermodynamic characterization of S-peptide (1-15) binding to S-protein; establishes binding affinity in the 10^-6 to 10^-7 M range by calorimetry; confirms 15-aa truncation is the minimal active unit",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "minimal_active_unit",
+      "type": "sequence_variant",
+      "label": "15-aa S15 truncation is the minimal unit sufficient for S-protein binding and activity reconstitution",
+      "value": {
+        "variant": "S15 (residues 1-15 of mature RNase A)",
+        "full_S_peptide_length": 20,
+        "activity": "RNase activity reconstitution upon S-protein association",
+        "affinity_tag_use": true
+      },
+      "source": {
+        "pmid": "8453373",
+        "doi": "10.1002/pro.5560020307",
+        "quote": "residues 1-15 (S15) are sufficient for S-protein binding and ribonuclease activity reconstitution; introduces S-tag as affinity/detection tag; Kd <= 10^-9 M; D14N variant for nondenaturing purification; detection sensitivity >= 10^-16 mol",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "detection_sensitivity",
+      "type": "strength",
+      "label": "Detection sensitivity >= 10^-16 mol via S-protein-enzyme conjugate assay",
+      "value": {
+        "sensitivity_mol": "1e-16",
+        "assay": "RNase activity-based detection using S-protein-HRP conjugate"
+      },
+      "source": {
+        "pmid": "8453373",
+        "doi": "10.1002/pro.5560020307",
+        "quote": "detection sensitivity >= 10^-16 mol",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "affinity_purification",
+      "type": "regulation",
+      "label": "Enables affinity purification via S-protein agarose resin",
+      "value": {
+        "application": "affinity_purification",
+        "resin": "S-protein agarose",
+        "elution": "low pH or chaotropic agent; D14N variant allows nondenaturing elution"
+      },
+      "source": {
+        "pmid": "11036653",
+        "doi": "10.1016/s0076-6879(00)26065-5",
+        "quote": "canonical reference for the Novagen commercial S-tag system; describes S-protein agarose purification, thrombin cleavage, dual His+S-tag strategy, and quantitative RNase activity detection",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functional in diverse recombinant expression hosts",
+      "value": {
+        "hosts": [
+          "E. coli",
+          "mammalian cells"
+        ],
+        "notes": "Used in E. coli pET-based systems and mammalian antibody-enzyme conjugate contexts"
+      },
+      "source": {
+        "pmid": "15914191",
+        "doi": "10.1016/j.jim.2005.01.020",
+        "quote": "demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "human_variant",
+      "type": "sequence_variant",
+      "label": "Human RNase 1-derived S-tag variant with same 15-aa architecture",
+      "value": {
+        "origin": "human RNase 1",
+        "rationale": "reduced immunogenicity for therapeutic applications",
+        "application": "antibody-enzyme conjugation for targeted drug delivery"
+      },
+      "source": {
+        "pmid": "15914191",
+        "doi": "10.1016/j.jim.2005.01.020",
+        "quote": "human RNase 1-derived S-tag variant; demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

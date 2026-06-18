@@ -1,0 +1,86 @@
+LOCUS       FLAG                       8 aa                     UNK 01-JAN-1980
+DEFINITION  FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic
+            peptide used as an affinity/epitope tag, recognized by anti-FLAG
+            M1/M2/M5 antibodies and N-terminally cleavable by enterokinase..
+ACCESSION   FLAG
+VERSION     FLAG
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Hopp TP, Prickett KS, Price VL, Libby RT, March CJ, Cerretti DP,
+            Urdal DL, Conlon PJ
+  TITLE     A Short Polypeptide Marker Sequence Useful for Recombinant Protein
+            Identification and Purification
+  JOURNAL   Bio/Technology (Nature Biotechnology) (1988)
+   PUBMED   6526011
+  REMARK    doi:10.1038/nbt1088-1204
+REFERENCE   2
+  AUTHORS   Brizzard BL, Chubet RG, Vizard DL
+  TITLE     Immunoaffinity purification of FLAG epitope-tagged bacterial
+            alkaline phosphatase using a novel monoclonal antibody and peptide
+            elution
+  JOURNAL   BioTechniques (1994)
+   PUBMED   8024796
+REFERENCE   3
+  AUTHORS   Einhauer A, Jungbauer A
+  TITLE     The FLAG peptide, a versatile fusion tag for the purification of
+            recombinant proteins
+  JOURNAL   Journal of Biochemical and Biophysical Methods (2001)
+   PUBMED   11694294
+  REMARK    doi:10.1016/s0165-022x(01)00213-5
+REFERENCE   4
+  AUTHORS   Roosild TP, Castronovo S, Choe S
+  TITLE     Structure of anti-FLAG M2 Fab domain and its use in the
+            stabilization of engineered membrane proteins
+  JOURNAL   Acta Crystallographica Section F (2006)
+   PUBMED   16946459
+  REMARK    doi:10.1107/S1744309106029125
+REFERENCE   5
+  AUTHORS   Beugelink JW, Janssen BJC, Pronker MF
+  TITLE     Structural Basis for Recognition of the FLAG-tag by Anti-FLAG M2
+  JOURNAL   Journal of Molecular Biology (2024)
+   PUBMED   38852931
+  REMARK    doi:10.1016/j.jmb.2024.168649
+REFERENCE   6
+  AUTHORS   Guo XY, Gao XD, Fujita M
+  TITLE     Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects
+            antibody recognition
+  JOURNAL   PLoS ONE (2021)
+   PUBMED   33951064
+  REMARK    doi:10.1371/journal.pone.0250805
+REFERENCE   7
+  AUTHORS   Nogi T, et al.
+  TITLE     Identification of Amino Acid Residues Responsible for the Binding to
+            Anti-FLAG M2 Antibody Using a Phage Display Combinatorial Peptide
+            Library
+  JOURNAL   Applied Biochemistry and Biotechnology (2013)
+  REMARK    doi:10.1007/s12010-013-0326-8
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/FLAG
+FEATURES             Location/Qualifiers
+     protein_domain  1..8
+                     /label="FLAG"
+                     /synonym="FLAG"
+                     /synonym="FLAG-tag"
+                     /synonym="FLAG octapeptide"
+                     /synonym="DYKDDDDK"
+                     /synonym="FLAG epitope"
+                     /note="Engineered 8-aa FLAG epitope/affinity tag
+                     (Asp-Tyr-Lys-Asp-Asp-Asp-Asp-Lys). Recognized by anti-FLAG
+                     M1/M2/M5 monoclonal antibodies. The C-terminal
+                     Asp-Asp-Asp-Asp-Lys is an enterokinase recognition/cleavage
+                     site, enabling removal of an N-terminal tag.
+                     Source-verified to PDB 8RMO chain F at 100% identity."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 dykddddk
+//

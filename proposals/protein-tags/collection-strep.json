@@ -1,0 +1,92 @@
+{
+  "name": "Strep-tag / Twin-Strep-tag affinity system",
+  "suggested_id": "strep-tag-system",
+  "description": "The Strep-tag system is a compact peptide-affinity technology built around engineered streptavidin variants. The core tag, Strep-tag II (WSHPQFEK, 8 aa), was derived by rational engineering from the original Strep-tag selected by Schmidt and Skerra in 1993 and binds Strep-Tactin \u2014 a loop-engineered streptavidin \u2014 with a Kd of ~1 \u00b5M, enabling single-step purification under physiological conditions with mild desthiobiotin elution. The Twin-Strep-tag (SAWSHPQFEK-GGGSGGGSGGSAWSHPQFEK, 28 aa) links two Strep-tag II units via a flexible GGGSGGGSGGS spacer; avid bivalent binding to Strep-Tactin XT brings the apparent affinity into the picomolar range while retaining reversibility, making the system suitable for demanding applications such as mammalian cell-culture purification, surface plasmon resonance capture, and cell-sorting. Both tags are bioinert, tolerate a wide range of buffer conditions, and can be placed at either terminus of a recombinant protein.",
+  "references": [
+    {
+      "title": "The random peptide library-assisted engineering of a C-terminal affinity peptide, useful for the detection and purification of a functional Ig Fv fragment",
+      "authors": "Schmidt TGM, Skerra A",
+      "journal": "Protein Engineering",
+      "year": 1993,
+      "doi": "10.1093/protein/6.1.109"
+    },
+    {
+      "title": "One-step affinity purification of bacterially produced proteins by means of the 'Strep tag' and immobilized recombinant core streptavidin",
+      "authors": "Schmidt TGM, Skerra A",
+      "journal": "Journal of Chromatography A",
+      "year": 1994,
+      "pmid": "7921186",
+      "doi": "10.1016/0021-9673(94)80434-6"
+    },
+    {
+      "title": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+      "authors": "Schmidt TGM, Koepke J, Frank R, Skerra A",
+      "journal": "Journal of Molecular Biology",
+      "year": 1996,
+      "pmid": "8636976",
+      "doi": "10.1006/jmbi.1996.0061"
+    },
+    {
+      "title": "Mutagenesis of a flexible loop in streptavidin leads to higher affinity for the Strep-tag II peptide and improved performance in recombinant protein purification",
+      "authors": "Voss S, Skerra A",
+      "journal": "Protein Engineering",
+      "year": 1997,
+      "pmid": "9415448",
+      "doi": "10.1093/protein/10.8.975"
+    },
+    {
+      "title": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+      "authors": "Schmidt TGM, Skerra A",
+      "journal": "Nature Protocols",
+      "year": 2007,
+      "pmid": "17571060",
+      "doi": "10.1038/nprot.2007.209"
+    },
+    {
+      "title": "Development of the Twin-Strep-tag\u00ae and its application for purification of recombinant proteins from cell culture supernatants",
+      "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
+      "journal": "Protein Expression and Purification",
+      "year": 2013,
+      "pmid": "24012791",
+      "doi": "10.1016/j.pep.2013.08.021"
+    },
+    {
+      "title": "The Role of Changing Loop Conformations in Streptavidin Versions Engineered for High-affinity Binding of the Strep-tag II Peptide",
+      "authors": "Schmidt TGM, Eichinger A, Schneider M, Bonet L, Carl U, Karthaus D, Theobald I, Skerra A",
+      "journal": "Journal of Molecular Biology",
+      "year": 2021,
+      "pmid": "33639211",
+      "doi": "10.1016/j.jmb.2021.166893"
+    }
+  ],
+  "resources": [
+    {
+      "title": "IBA Lifesciences: Strep-tag technology overview",
+      "url": "https://www.iba-lifesciences.com/strep-tag"
+    },
+    {
+      "title": "IBA Lifesciences: Strep-Tactin XT \u2014 high-affinity variant for Twin-Strep-tag",
+      "url": "https://www.iba-lifesciences.com/strep-tag/strep-tactin-xt/"
+    },
+    {
+      "title": "IBA Lifesciences: Twin-Strep-tag Capture Kit for SPR (protocol manual PDF)",
+      "url": "https://www.iba-lifesciences.com/media/1a/1f/e0/1723034008/Protocol_Twin-Strep-tag-Capture-Kit.pdf"
+    },
+    {
+      "title": "PDB 1RSU: Crystal structure of streptavidin \u2014 Strep-tag II complex (1.70 \u00c5)",
+      "url": "https://www.rcsb.org/structure/1RSU"
+    },
+    {
+      "title": "PDB 1RST: Crystal structure of streptavidin \u2014 original Strep-tag I complex (1.70 \u00c5)",
+      "url": "https://www.rcsb.org/structure/1RST"
+    },
+    {
+      "title": "PDB 6SOK: Strep-Tactin XT variant VTAR \u2014 Twin-Strep-tag complex (1.96 \u00c5)",
+      "url": "https://www.rcsb.org/structure/6SOK"
+    },
+    {
+      "title": "UniProt P22629: Streptavidin (Streptomyces avidinii) \u2014 cognate binding partner",
+      "url": "https://www.uniprot.org/uniprotkb/P22629"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 251,
-  "n_validated": 39,
-  "n_candidate": 212,
-  "n_documented": 39,
-  "n_functional_claims": 70,
+  "n_parts": 252,
+  "n_validated": 43,
+  "n_candidate": 209,
+  "n_documented": 43,
+  "n_functional_claims": 90,
   "parts": [
     {
       "name": "186 integrase",
@@ -1201,8 +1201,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 231,
           "end": 234,
           "strand": 1,
@@ -1211,8 +1211,8 @@
         {
           "label": "Disulfide bond",
           "feature_type": "disulfide_bond",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0001088",
+          "so_name": "disulfide_bond",
           "start": 74,
           "end": 121,
           "strand": 1,
@@ -1348,8 +1348,8 @@
         {
           "label": "Binding site: in other chain",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 27,
           "end": 28,
           "strand": 1,
@@ -1358,8 +1358,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 53,
           "end": 54,
           "strand": 1,
@@ -1368,8 +1368,8 @@
         {
           "label": "Binding site: in other chain",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 81,
           "end": 82,
           "strand": 1,
@@ -1378,8 +1378,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 87,
           "end": 88,
           "strand": 1,
@@ -1388,8 +1388,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 90,
           "end": 91,
           "strand": 1,
@@ -1398,8 +1398,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 125,
           "end": 126,
           "strand": 1,
@@ -1408,8 +1408,8 @@
         {
           "label": "Binding site: in other chain",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 127,
           "end": 128,
           "strand": 1,
@@ -1701,8 +1701,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 9,
           "end": 10,
           "strand": 1,
@@ -1711,8 +1711,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 9,
           "end": 10,
           "strand": 1,
@@ -1721,8 +1721,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 761,
           "end": 762,
           "strand": 1,
@@ -1731,8 +1731,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 765,
           "end": 766,
           "strand": 1,
@@ -1741,8 +1741,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 765,
           "end": 766,
           "strand": 1,
@@ -1751,8 +1751,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 982,
           "end": 983,
           "strand": 1,
@@ -1761,8 +1761,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 1296,
           "end": 1297,
           "strand": 1,
@@ -1771,8 +1771,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 1327,
           "end": 1328,
           "strand": 1,
@@ -2582,8 +2582,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 9,
           "end": 10,
           "strand": 1,
@@ -2592,8 +2592,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 9,
           "end": 10,
           "strand": 1,
@@ -2602,8 +2602,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 761,
           "end": 762,
           "strand": 1,
@@ -2612,8 +2612,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 765,
           "end": 766,
           "strand": 1,
@@ -2622,8 +2622,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 765,
           "end": 766,
           "strand": 1,
@@ -2632,8 +2632,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 982,
           "end": 983,
           "strand": 1,
@@ -2642,8 +2642,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 1296,
           "end": 1297,
           "strand": 1,
@@ -2652,8 +2652,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 1327,
           "end": 1328,
           "strand": 1,
@@ -3049,8 +3049,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 9,
           "end": 10,
           "strand": 1,
@@ -3059,8 +3059,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 11,
           "end": 12,
           "strand": 1,
@@ -3069,8 +3069,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 36,
           "end": 37,
           "strand": 1,
@@ -3079,8 +3079,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 57,
           "end": 58,
           "strand": 1,
@@ -3089,8 +3089,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 82,
           "end": 83,
           "strand": 1,
@@ -3099,8 +3099,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 99,
           "end": 100,
           "strand": 1,
@@ -3313,21 +3313,240 @@
       "so_name": "polypeptide_domain",
       "synonyms": [
         "FLAG",
-        "FLAG tag",
-        "FLAG-tag"
+        "FLAG-tag",
+        "FLAG octapeptide",
+        "DYKDDDDK",
+        "FLAG epitope"
       ],
       "collections": [],
-      "description": "",
+      "description": "Engineered 8-aa FLAG epitope/affinity tag (Asp-Tyr-Lys-Asp-Asp-Asp-Asp-Lys). Recognized by anti-FLAG M1/M2/M5 monoclonal antibodies. The C-terminal Asp-Asp-Asp-Asp-Lys is an enterokinase recognition/cleavage site, enabling removal of an N-terminal tag. Source-verified to PDB 8RMO chain F at 100% identity.",
       "length": 8,
       "protein_length_aa": 8,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Hopp TP, Prickett KS, Price VL, Libby RT, March CJ, Cerretti DP, Urdal DL, Conlon PJ",
+          "title": "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification",
+          "journal": "Bio/Technology (Nature Biotechnology) (1988)",
+          "pmid": "6526011",
+          "doi": "10.1038/nbt1088-1204",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6526011/"
+        },
+        {
+          "authors": "Brizzard BL, Chubet RG, Vizard DL",
+          "title": "Immunoaffinity purification of FLAG epitope-tagged bacterial alkaline phosphatase using a novel monoclonal antibody and peptide elution",
+          "journal": "BioTechniques (1994)",
+          "pmid": "8024796",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8024796/"
+        },
+        {
+          "authors": "Einhauer A, Jungbauer A",
+          "title": "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins",
+          "journal": "Journal of Biochemical and Biophysical Methods (2001)",
+          "pmid": "11694294",
+          "doi": "10.1016/s0165-022x(01)00213-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11694294/"
+        },
+        {
+          "authors": "Roosild TP, Castronovo S, Choe S",
+          "title": "Structure of anti-FLAG M2 Fab domain and its use in the stabilization of engineered membrane proteins",
+          "journal": "Acta Crystallographica Section F (2006)",
+          "pmid": "16946459",
+          "doi": "10.1107/S1744309106029125",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16946459/"
+        },
+        {
+          "authors": "Beugelink JW, Janssen BJC, Pronker MF",
+          "title": "Structural Basis for Recognition of the FLAG-tag by Anti-FLAG M2",
+          "journal": "Journal of Molecular Biology (2024)",
+          "pmid": "38852931",
+          "doi": "10.1016/j.jmb.2024.168649",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38852931/"
+        },
+        {
+          "authors": "Guo XY, Gao XD, Fujita M",
+          "title": "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition",
+          "journal": "PLoS ONE (2021)",
+          "pmid": "33951064",
+          "doi": "10.1371/journal.pone.0250805",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33951064/"
+        },
+        {
+          "authors": "Nogi T, et al.",
+          "title": "Identification of Amino Acid Residues Responsible for the Binding to Anti-FLAG M2 Antibody Using a Phage Display Combinatorial Peptide Library",
+          "journal": "Applied Biochemistry and Biotechnology (2013)",
+          "pmid": "",
+          "doi": "10.1007/s12010-013-0326-8",
+          "url": "https://doi.org/10.1007/s12010-013-0326-8"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "FLAG is an engineered hydrophilic 8-aa epitope/affinity tag for detection and purification of recombinant proteins",
+          "value": {
+            "function": "epitope_affinity_tag",
+            "design": "engineered_synthetic_peptide",
+            "length_aa": 8,
+            "hydrophilic": true
+          },
+          "source": {
+            "pmid": "6526011",
+            "doi": "10.1038/nbt1088-1204",
+            "quote": "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "antibody_recognition",
+          "type": "antibody_recognition",
+          "label": "FLAG is recognized by the anti-FLAG monoclonal antibodies M1 (Ca2+-dependent, N-terminal-specific), M2 (Ca2+-independent, position-insensitive) and M5",
+          "value": {
+            "antibodies": [
+              "M1",
+              "M2",
+              "M5"
+            ],
+            "M1": {
+              "calcium_dependent": true,
+              "requires_free_N_terminus": true
+            },
+            "M2": {
+              "calcium_dependent": false,
+              "position_insensitive": true
+            }
+          },
+          "source": {
+            "pmid": "11694294",
+            "doi": "10.1016/s0165-022x(01)00213-5",
+            "quote": "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins",
+            "quote_source": "primary",
+            "section": "review of M1 Ca2+-dependent and M2/M5 peptide-competitive elution"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "enterokinase_cleavage",
+          "type": "mechanism",
+          "label": "The C-terminal DDDDK of FLAG is an enterokinase (enteropeptidase) recognition site, allowing proteolytic removal of an N-terminal FLAG tag",
+          "value": {
+            "protease": "enterokinase",
+            "recognition_motif": "DDDDK",
+            "cleaves_after": "K",
+            "use": "tag_removal"
+          },
+          "source": {
+            "pmid": "11694294",
+            "doi": "10.1016/s0165-022x(01)00213-5",
+            "quote": "enterokinase cleavage",
+            "quote_source": "primary",
+            "section": "tag removal"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "minimal_epitope",
+          "type": "sequence_variant",
+          "label": "The minimal anti-FLAG M2 epitope is DYK(D)/DYKxxD; residues D5 and D7 are dispensable for M2 binding",
+          "value": {
+            "minimal_motif": "DYKxxD",
+            "contact_residues": [
+              "D1",
+              "Y2",
+              "K3",
+              "D4",
+              "D6"
+            ],
+            "dispensable": [
+              "D5",
+              "D7"
+            ]
+          },
+          "source": {
+            "pmid": "38852931",
+            "doi": "10.1016/j.jmb.2024.168649",
+            "quote": "identifies D1, Y2, K3, D4, D6 as the five contact residues; FLAG adopts a 3_10 helix",
+            "quote_source": "primary",
+            "figure": "co-crystal structure analysis (PDB 8RMO)"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sulfation_caveat",
+          "type": "sequence_variant",
+          "label": "In the secretory pathway, Tyr2 of FLAG can be sulfated by TPST2 (SLC35B2-dependent), reducing anti-FLAG M2 and polyclonal detection of secreted/membrane proteins",
+          "value": {
+            "modification": "tyrosine_sulfation",
+            "residue": "Y2",
+            "enzymes": [
+              "TPST2",
+              "SLC35B2"
+            ],
+            "effect": "reduced_antibody_recognition",
+            "context": "secretory_pathway"
+          },
+          "source": {
+            "pmid": "33951064",
+            "doi": "10.1371/journal.pone.0250805",
+            "quote": "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "FRT",
@@ -3585,8 +3804,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 6,
           "end": 8,
           "strand": 1,
@@ -3595,8 +3814,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 40,
           "end": 45,
           "strand": 1,
@@ -3605,8 +3824,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 53,
           "end": 55,
           "strand": 1,
@@ -3615,8 +3834,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 66,
           "end": 68,
           "strand": 1,
@@ -3625,8 +3844,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 110,
           "end": 111,
           "strand": 1,
@@ -3894,8 +4113,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 13,
           "end": 14,
           "strand": 1,
@@ -3904,8 +4123,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 63,
           "end": 72,
           "strand": 1,
@@ -3914,8 +4133,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 63,
           "end": 64,
           "strand": 1,
@@ -3924,8 +4143,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 89,
           "end": 94,
           "strand": 1,
@@ -3934,8 +4153,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 89,
           "end": 90,
           "strand": 1,
@@ -3944,8 +4163,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 90,
           "end": 91,
           "strand": 1,
@@ -3954,8 +4173,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 93,
           "end": 94,
           "strand": 1,
@@ -3964,8 +4183,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 115,
           "end": 116,
           "strand": 1,
@@ -3974,8 +4193,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 137,
           "end": 138,
           "strand": 1,
@@ -3984,8 +4203,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 161,
           "end": 162,
           "strand": 1,
@@ -3994,8 +4213,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 185,
           "end": 194,
           "strand": 1,
@@ -4004,8 +4223,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 185,
           "end": 186,
           "strand": 1,
@@ -4014,8 +4233,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 186,
           "end": 187,
           "strand": 1,
@@ -4024,8 +4243,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 189,
           "end": 190,
           "strand": 1,
@@ -4034,8 +4253,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 213,
           "end": 216,
           "strand": 1,
@@ -4895,8 +5114,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 194,
           "end": 195,
           "strand": 1,
@@ -4905,8 +5124,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 207,
           "end": 208,
           "strand": 1,
@@ -5532,8 +5751,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 78,
           "end": 90,
           "strand": 1,
@@ -5542,8 +5761,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 96,
           "end": 97,
           "strand": 1,
@@ -5552,8 +5771,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 106,
           "end": 107,
           "strand": 1,
@@ -5562,8 +5781,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 135,
           "end": 136,
           "strand": 1,
@@ -5572,8 +5791,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 224,
           "end": 225,
           "strand": 1,
@@ -5582,8 +5801,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 224,
           "end": 225,
           "strand": 1,
@@ -5592,8 +5811,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 249,
           "end": 250,
           "strand": 1,
@@ -5602,8 +5821,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 253,
           "end": 254,
           "strand": 1,
@@ -5612,8 +5831,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 288,
           "end": 300,
           "strand": 1,
@@ -6184,7 +6403,7 @@
       "children": [
         {
           "label": "-35",
-          "feature_type": "minus_35_signal",
+          "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
           "start": 0,
@@ -6197,7 +6416,7 @@
         },
         {
           "label": "-10",
-          "feature_type": "minus_10_signal",
+          "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
           "start": 23,
@@ -9558,8 +9777,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 76,
           "end": 77,
           "strand": 1,
@@ -9568,8 +9787,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 109,
           "end": 110,
           "strand": 1,
@@ -9578,8 +9797,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 125,
           "end": 126,
           "strand": 1,
@@ -9588,8 +9807,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 127,
           "end": 128,
           "strand": 1,
@@ -9598,8 +9817,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 129,
           "end": 130,
           "strand": 1,
@@ -9608,8 +9827,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 135,
           "end": 136,
           "strand": 1,
@@ -9618,8 +9837,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 137,
           "end": 138,
           "strand": 1,
@@ -9628,8 +9847,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 139,
           "end": 140,
           "strand": 1,
@@ -9638,8 +9857,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 140,
           "end": 141,
           "strand": 1,
@@ -9648,8 +9867,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 160,
           "end": 161,
           "strand": 1,
@@ -9658,8 +9877,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 165,
           "end": 166,
           "strand": 1,
@@ -9668,8 +9887,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 166,
           "end": 167,
           "strand": 1,
@@ -9678,8 +9897,8 @@
         {
           "label": "Binding site",
           "feature_type": "binding",
-          "so_term": null,
-          "so_name": null,
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
           "start": 172,
           "end": 173,
           "strand": 1,
@@ -10462,7 +10681,7 @@
           "label": "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)",
           "feature_type": "stem_loop",
           "so_term": "SO:0000313",
-          "so_name": "",
+          "so_name": "stem_loop",
           "start": 24,
           "end": 47,
           "strand": 1,
@@ -10761,7 +10980,7 @@
           "label": "T1 GC-rich hairpin (class I intrinsic terminator stem-loop)",
           "feature_type": "stem_loop",
           "so_term": "SO:0000313",
-          "so_name": "",
+          "so_name": "stem_loop",
           "start": 24,
           "end": 47,
           "strand": 1,
@@ -10801,7 +11020,7 @@
           "label": "T2 GC-rich hairpin (intrinsic terminator stem-loop)",
           "feature_type": "stem_loop",
           "so_term": "SO:0000313",
-          "so_name": "",
+          "so_name": "stem_loop",
           "start": 186,
           "end": 210,
           "strand": 1,
@@ -11148,20 +11367,218 @@
         "S tag",
         "S Tag",
         "S-peptide",
-        "S peptide"
+        "S peptide",
+        "S-tag",
+        "S\u00b7Tag",
+        "S15",
+        "RNase A S-peptide (1-15)"
       ],
       "collections": [],
-      "description": "15-aa S-peptide affinity/detection tag = bovine pancreatic RNase A mature residues 1-15 (UniProt P61823 positions 27-41); binds S-protein (RNase-S system). Standard Novagen pET tag.",
+      "description": "Residues 1-15 of mature bovine RNase A (UniProt P61823, precursor positions 27-41); binds S-protein with Kd ~10^-7 M to reconstitute RNase activity",
       "length": 15,
       "protein_length_aa": 15,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Kim JS, Raines RT",
+          "title": "Ribonuclease S-peptide as a carrier in fusion proteins",
+          "journal": "Protein Science (1993)",
+          "pmid": "8453373",
+          "doi": "10.1002/pro.5560020307",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8453373/"
+        },
+        {
+          "authors": "Raines RT, McCormick M, Van Oosbree TR, Mierendorf RC",
+          "title": "The S\u00b7Tag fusion system for protein purification",
+          "journal": "Methods in Enzymology (2000)",
+          "pmid": "11036653",
+          "doi": "10.1016/s0076-6879(00)26065-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11036653/"
+        },
+        {
+          "authors": "Richards FM, Vithayathil PJ",
+          "title": "The preparation of subtilisin-modified ribonuclease and the separation of the peptide and protein components",
+          "journal": "Journal of Biological Chemistry (1959)",
+          "pmid": "13654398",
+          "doi": "10.1016/S0021-9258(18)70031-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/13654398/"
+        },
+        {
+          "authors": "Connelly PR, Varadarajan R, Sturtevant JM, Richards FM",
+          "title": "Thermodynamics of protein-peptide interactions in the ribonuclease S system studied by titration calorimetry",
+          "journal": "Biochemistry (1990)",
+          "pmid": "2383573",
+          "doi": "10.1021/bi00477a031",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2383573/"
+        },
+        {
+          "authors": "Asai T, Wims LA, Morrison SL",
+          "title": "An interaction between S-tag and S-protein derived from human ribonuclease 1 allows site-specific conjugation of an enzyme to an antibody for targeted drug delivery",
+          "journal": "Journal of Immunological Methods (2005)",
+          "pmid": "15914191",
+          "doi": "10.1016/j.jim.2005.01.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15914191/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "functional_claims": [
+        {
+          "id": "binding_affinity",
+          "type": "binding_affinity",
+          "label": "High-affinity non-covalent binding to S-protein",
+          "value": {
+            "partner": "S-protein (RNase A residues 21-124)",
+            "Kd_range": "10^-6 to 10^-9 M",
+            "notes": "Calorimetry gives ~10^-6 to 10^-7 M; functional fusion system reports Kd <= 10^-9 M upon activity reconstitution"
+          },
+          "source": {
+            "pmid": "2383573",
+            "doi": "10.1021/bi00477a031",
+            "quote": "thermodynamic characterization of S-peptide (1-15) binding to S-protein; establishes binding affinity in the 10^-6 to 10^-7 M range by calorimetry; confirms 15-aa truncation is the minimal active unit",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "minimal_active_unit",
+          "type": "sequence_variant",
+          "label": "15-aa S15 truncation is the minimal unit sufficient for S-protein binding and activity reconstitution",
+          "value": {
+            "variant": "S15 (residues 1-15 of mature RNase A)",
+            "full_S_peptide_length": 20,
+            "activity": "RNase activity reconstitution upon S-protein association",
+            "affinity_tag_use": true
+          },
+          "source": {
+            "pmid": "8453373",
+            "doi": "10.1002/pro.5560020307",
+            "quote": "residues 1-15 (S15) are sufficient for S-protein binding and ribonuclease activity reconstitution; introduces S-tag as affinity/detection tag; Kd <= 10^-9 M; D14N variant for nondenaturing purification; detection sensitivity >= 10^-16 mol",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "detection_sensitivity",
+          "type": "strength",
+          "label": "Detection sensitivity >= 10^-16 mol via S-protein-enzyme conjugate assay",
+          "value": {
+            "sensitivity_mol": "1e-16",
+            "assay": "RNase activity-based detection using S-protein-HRP conjugate"
+          },
+          "source": {
+            "pmid": "8453373",
+            "doi": "10.1002/pro.5560020307",
+            "quote": "detection sensitivity >= 10^-16 mol",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "affinity_purification",
+          "type": "regulation",
+          "label": "Enables affinity purification via S-protein agarose resin",
+          "value": {
+            "application": "affinity_purification",
+            "resin": "S-protein agarose",
+            "elution": "low pH or chaotropic agent; D14N variant allows nondenaturing elution"
+          },
+          "source": {
+            "pmid": "11036653",
+            "doi": "10.1016/s0076-6879(00)26065-5",
+            "quote": "canonical reference for the Novagen commercial S-tag system; describes S-protein agarose purification, thrombin cleavage, dual His+S-tag strategy, and quantitative RNase activity detection",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Functional in diverse recombinant expression hosts",
+          "value": {
+            "hosts": [
+              "E. coli",
+              "mammalian cells"
+            ],
+            "notes": "Used in E. coli pET-based systems and mammalian antibody-enzyme conjugate contexts"
+          },
+          "source": {
+            "pmid": "15914191",
+            "doi": "10.1016/j.jim.2005.01.020",
+            "quote": "demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "human_variant",
+          "type": "sequence_variant",
+          "label": "Human RNase 1-derived S-tag variant with same 15-aa architecture",
+          "value": {
+            "origin": "human RNase 1",
+            "rationale": "reduced immunogenicity for therapeutic applications",
+            "application": "antibody-enzyme conjugation for targeted drug delivery"
+          },
+          "source": {
+            "pmid": "15914191",
+            "doi": "10.1016/j.jim.2005.01.020",
+            "quote": "human RNase 1-derived S-tag variant; demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "SacB",
@@ -11374,7 +11791,7 @@
       "functional_claims": []
     },
     {
-      "name": "Strep tag",
+      "name": "Strep_tag",
       "slug": "Strep_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -11382,23 +11799,265 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "Strep-tag II",
         "Strep tag",
-        "Strep-Tag II",
-        "StrepTag",
-        "Strep-tag"
+        "Strep-tag",
+        "WSHPQFEK",
+        "Strep-tag II peptide"
       ],
       "collections": [],
-      "description": "",
+      "description": "Strep-tag II core affinity peptide, WSHPQFEK (8 aa). Synthetic engineered peptide that binds the biotin-binding pocket of streptavidin and of engineered high-affinity streptavidin (Strep-Tactin) in a 3-10-helical conformation; eluted competitively by desthiobiotin or biotin. Atomic part: the 8 residues are the functional unit and carry no internal functional sub-elements. Verified to 100% identity over all 8 residues against PDB 1RSU chain P (positions 3-10).",
       "length": 8,
       "protein_length_aa": 8,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "The random peptide library-assisted engineering of a C-terminal affinity peptide, useful for the detection and purification of a functional Ig Fv fragment",
+          "journal": "Protein Engineering (1993)",
+          "pmid": "",
+          "doi": "10.1093/protein/6.1.109",
+          "url": "https://doi.org/10.1093/protein/6.1.109"
+        },
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "One-step affinity purification of bacterially produced proteins by means of the 'Strep tag' and immobilized recombinant core streptavidin",
+          "journal": "Journal of Chromatography A (1994)",
+          "pmid": "7921186",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7921186/"
+        },
+        {
+          "authors": "Schmidt TGM, Koepke J, Frank R, Skerra A",
+          "title": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+          "journal": "Journal of Molecular Biology (1996)",
+          "pmid": "8636976",
+          "doi": "10.1006/jmbi.1996.0061",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8636976/"
+        },
+        {
+          "authors": "Voss S, Skerra A",
+          "title": "Mutagenesis of a flexible loop in streptavidin leads to higher affinity for the Strep-tag II peptide and improved performance in recombinant protein purification",
+          "journal": "Protein Engineering (1997)",
+          "pmid": "9415448",
+          "doi": "10.1093/protein/10.8.975",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9415448/"
+        },
+        {
+          "authors": "Skerra A, Schmidt TGM",
+          "title": "Applications of a peptide ligand for streptavidin: the Strep-tag",
+          "journal": "Biomolecular Engineering (1999)",
+          "pmid": "10796988",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10796988/"
+        },
+        {
+          "authors": "Skerra A, Schmidt TGM",
+          "title": "Use of the Strep-Tag and streptavidin for detection and purification of recombinant proteins",
+          "journal": "Methods in Enzymology (2000)",
+          "pmid": "11036648",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11036648/"
+        },
+        {
+          "authors": "Korndorfer IP, Skerra A",
+          "title": "Improved affinity of engineered streptavidin for the Strep-tag II peptide is due to a fixed open conformation of the lid-like loop at the binding site",
+          "journal": "Protein Science (2002)",
+          "pmid": "11910031",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11910031/"
+        },
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+          "journal": "Nature Protocols (2007)",
+          "pmid": "17571060",
+          "doi": "10.1038/nprot.2007.209",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17571060/"
+        },
+        {
+          "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
+          "title": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+          "journal": "Protein Expression and Purification (2013)",
+          "pmid": "24012791",
+          "doi": "10.1016/j.pep.2013.08.021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24012791/"
+        },
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "The Strep-tag system for one-step affinity purification of proteins from mammalian cell culture",
+          "journal": "Methods in Molecular Biology (2015)",
+          "pmid": "25749948",
+          "doi": "10.1007/978-1-4939-2447-9_8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25749948/"
+        },
+        {
+          "authors": "Liu L, Sommermeyer D, Cabanov A, Kosasih P, Hill T, Riddell SR",
+          "title": "Inclusion of Strep-tag II in design of antigen receptors for T-cell immunotherapy",
+          "journal": "Nature Biotechnology (2016)",
+          "pmid": "26900664",
+          "doi": "10.1038/nbt.3461",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26900664/"
+        },
+        {
+          "authors": "Eichinger A, Skerra A et al.",
+          "title": "The Role of Changing Loop Conformations in Streptavidin Versions Engineered for High-affinity Binding of the Strep-tag II Peptide",
+          "journal": "Journal of Molecular Biology (2021)",
+          "pmid": "",
+          "doi": "10.1016/j.jmb.2021.166893",
+          "url": "https://doi.org/10.1016/j.jmb.2021.166893"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "The peptide binds the biotin-binding pocket of streptavidin, adopting a 3-10-helical conformation; the Glu7/Lys9 (His-Pro-Gln-Phe-Glu-Lys) substitutions relative to the original Strep-tag optimise this streptavidin-pocket binding mode.",
+          "value": {
+            "mechanism": "binds the biotin-binding pocket of streptavidin",
+            "binding_mode": "3-10 helix",
+            "target": "streptavidin",
+            "structure": "PDB 1RSU (Strep-tag II:streptavidin complex, 1.70 A)"
+          },
+          "source": {
+            "pmid": "8636976",
+            "doi": "10.1006/jmbi.1996.0061",
+            "quote": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "purification_use",
+          "type": "mechanism",
+          "label": "Genetic fusion of the Strep-tag II peptide to a recombinant protein permits one-step affinity purification on immobilised streptavidin (or engineered streptavidin), with gentle competitive elution by desthiobiotin or biotin under physiological conditions.",
+          "value": {
+            "application": "recombinant-protein affinity purification",
+            "fusion": "N- or C-terminal genetic fusion",
+            "matrix": "immobilised streptavidin / engineered streptavidin (Strep-Tactin)",
+            "elution": [
+              "desthiobiotin",
+              "biotin"
+            ],
+            "conditions": "mild / physiological"
+          },
+          "source": {
+            "pmid": "17571060",
+            "doi": "10.1038/nprot.2007.209",
+            "quote": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "affinity",
+          "type": "affinity",
+          "label": "The Strep-tag II peptide binds streptavidin with a dissociation constant of approximately 1 uM; affinity-engineered streptavidin (Strep-Tactin) raises this affinity by roughly an order of magnitude.",
+          "value": {
+            "Kd": "~1 uM (streptavidin)",
+            "engineered_partner": "Strep-Tactin (engineered streptavidin, ~10-fold higher affinity)"
+          },
+          "source": {
+            "pmid": "11036648",
+            "quote": "Use of the Strep-Tag and streptavidin for detection and purification of recombinant proteins",
+            "quote_source": "catalog-doc",
+            "section": "Methods in Enzymology protocol review"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "position_flexibility",
+          "type": "host_range",
+          "label": "Host- and position-agnostic: the small synthetic peptide can be fused at either the N- or C-terminus and functions for purification and detection across diverse expression hosts, including bacterial and mammalian cell-culture systems.",
+          "value": {
+            "host_range": "broad (bacterial to mammalian)",
+            "position": [
+              "N-terminal",
+              "C-terminal"
+            ]
+          },
+          "source": {
+            "pmid": "10796988",
+            "quote": "Applications of a peptide ligand for streptavidin: the Strep-tag",
+            "quote_source": "catalog-doc",
+            "section": "Review of Strep-tag applications"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Strep-tag II (WSHPQFEK) is the rationally engineered successor to the original library-selected Strep-tag (AWRHPQFGG); a tandem avidity version, the Twin-Strep-tag, links two WSHPQFEK copies via a GGGSGGGSGGS linker for higher-affinity (near-pM) capture.",
+          "value": {
+            "this_variant": "Strep-tag II (WSHPQFEK)",
+            "predecessor": "original Strep-tag (AWRHPQFGG)",
+            "avidity_variant": "Twin-Strep-tag (SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK)"
+          },
+          "source": {
+            "pmid": "24012791",
+            "doi": "10.1016/j.pep.2013.08.021",
+            "quote": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "SUMO",
@@ -12477,6 +13136,188 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "Twin_Strep_tag",
+      "slug": "Twin_Strep_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "Twin-Strep-tag",
+        "Twin-Strep",
+        "Strep-tag II tandem",
+        "Twin Strep tag"
+      ],
+      "collections": [],
+      "description": "Tandem affinity tag: two Strep-tag II (WSHPQFEK) units connected by a GGGSGGGSGGS flexible linker, with an N-terminal Ser-Ala. Bivalency lowers the off-rate from Strep-Tactin/Strep-Tactin XT, giving picomolar-range avidity and enabling near-irreversible capture with mild competitive (biotin/desthiobiotin) elution. Sequence confirmed 100% over 30 aa against PDB 6SOS chain R.",
+      "length": 30,
+      "protein_length_aa": 30,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
+          "title": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+          "journal": "Protein Expression and Purification (2013)",
+          "pmid": "24012791",
+          "doi": "10.1016/j.pep.2013.08.021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24012791/"
+        },
+        {
+          "authors": "Schmidt TGM, Koepke J, Frank R, Skerra A",
+          "title": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+          "journal": "Journal of Molecular Biology (1996)",
+          "pmid": "8636976",
+          "doi": "10.1006/jmbi.1996.0061",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8636976/"
+        },
+        {
+          "authors": "Eichinger A, Schmidt TGM, Skerra A",
+          "title": "The Role of Changing Loop Conformations in Streptavidin Versions Engineered for High-affinity Binding of the Strep-tag II Peptide",
+          "journal": "Journal of Molecular Biology (2021)",
+          "pmid": "33639211",
+          "doi": "10.1016/j.jmb.2021.166893",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33639211/"
+        },
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+          "journal": "Nature Protocols (2007)",
+          "pmid": "17571060",
+          "doi": "10.1038/nprot.2007.209",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17571060/"
+        },
+        {
+          "authors": "Schmidt TGM, Skerra A",
+          "title": "The Strep-tag system for one-step affinity purification of proteins from mammalian cell culture",
+          "journal": "Methods in Molecular Biology (2015)",
+          "pmid": "25749948",
+          "doi": "10.1007/978-1-4939-2447-9_8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25749948/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Bivalent tandem display of two Strep-tag II units connected by a GGGSGGGSGGS linker lowers the dissociation rate from engineered streptavidin, giving an avidity (multivalent) binding mode.",
+          "value": {
+            "mechanism": "avidity_bivalent",
+            "units": 2,
+            "binding_motif": "WSHPQFEK",
+            "linker": "GGGSGGGSGGS",
+            "partner": "engineered streptavidin (Strep-Tactin / Strep-Tactin XT)"
+          },
+          "source": {
+            "pmid": "24012791",
+            "doi": "10.1016/j.pep.2013.08.021",
+            "quote": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+            "quote_source": "catalog-doc",
+            "section": "Design / Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Functions as a portable affinity/detection tag independent of expression host; demonstrated for proteins secreted into mammalian cell-culture supernatants and broadly used across prokaryotic and eukaryotic systems.",
+          "value": {
+            "host_range": "host-independent",
+            "demonstrated_hosts": [
+              "mammalian cell culture",
+              "bacterial",
+              "eukaryotic"
+            ]
+          },
+          "source": {
+            "pmid": "24012791",
+            "doi": "10.1016/j.pep.2013.08.021",
+            "quote": "application for purification of recombinant proteins from cell culture supernatants",
+            "quote_source": "catalog-doc",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "strength_affinity",
+          "type": "strength_class",
+          "label": "Bivalent binding to engineered streptavidin (Strep-Tactin/Strep-Tactin XT) gives near-irreversible, picomolar-range capture, far tighter than a single Strep-tag II (micromolar to Strep-Tactin).",
+          "value": {
+            "affinity_class": "picomolar_range",
+            "comparator_single_tag": "micromolar (Strep-tag II / Strep-Tactin)",
+            "elution": "competitive (biotin / desthiobiotin), mild"
+          },
+          "source": {
+            "doi": "10.1016/j.jmb.2021.166893",
+            "pmid": "33639211",
+            "quote": "structural basis of high-affinity bivalent binding of the Twin-Strep-tag to engineered streptavidin (Strep-Tactin XT)",
+            "quote_source": "catalog-doc",
+            "section": "Structure / Discussion"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Distinct from a patent-filing variant of identical length (30 aa) that encodes SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK (GGGS x3 linker, no Ser-Ala before the second unit). This record is the canonical product sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK (GGGSGGGSGGS linker).",
+          "value": {
+            "this_sequence": "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK",
+            "this_linker": "GGGSGGGSGGS",
+            "variant_sequence": "SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK",
+            "variant_linker": "GGGSGGGSGGGS",
+            "variant_source": "patent sequences YCW61670.1 / YCV17326.1"
+          },
+          "source": {
+            "pmid": "33639211",
+            "doi": "10.1016/j.jmb.2021.166893",
+            "quote": "Twin-Strep-tag peptide chain R, sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK",
+            "quote_source": "primary",
+            "section": "PDB 6SOS entity"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "UGI",

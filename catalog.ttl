@@ -648,17 +648,32 @@ part:EcFbFP a sbol:Component ;
 
 part:FLAG a sbol:Component ;
     rdfs:label "FLAG" ;
+    dcterms:description "Engineered 8-aa FLAG epitope/affinity tag (Asp-Tyr-Lys-Asp-Asp-Asp-Asp-Lys). Recognized by anti-FLAG M1/M2/M5 monoclonal antibodies. The C-terminal Asp-Asp-Asp-Asp-Lys is an enterokinase recognition/cleavage site, enabling removal of an N-terminal tag. Source-verified to PDB 8RMO chain F at 100% identity." ;
+    dcterms:references <https://doi.org/10.1007/s12010-013-0326-8>,
+        pubmed:11694294,
+        pubmed:16946459,
+        pubmed:33951064,
+        pubmed:38852931,
+        pubmed:6526011,
+        pubmed:8024796 ;
     dcterms:title "FLAG" ;
     sbol:displayId "FLAG" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:FLAG_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "FLAG",
-        "FLAG tag",
+    skos:altLabel "DYKDDDDK",
+        "FLAG",
+        "FLAG epitope",
+        "FLAG octapeptide",
         "FLAG-tag" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:FLAG_claim_antibody_recognition,
+        part:FLAG_claim_enterokinase_cleavage,
+        part:FLAG_claim_function,
+        part:FLAG_claim_minimal_epitope,
+        part:FLAG_claim_sulfation_caveat ;
     cat:slug "FLAG" .
 
 part:FRT a sbol:Component ;
@@ -1805,19 +1820,34 @@ part:RepC_RSF1010 a sbol:Component ;
 
 part:S-tag a sbol:Component ;
     rdfs:label "S-tag" ;
-    dcterms:description "15-aa S-peptide affinity/detection tag = bovine pancreatic RNase A mature residues 1-15 (UniProt P61823 positions 27-41); binds S-protein (RNase-S system). Standard Novagen pET tag." ;
+    dcterms:description "Residues 1-15 of mature bovine RNase A (UniProt P61823, precursor positions 27-41); binds S-protein with Kd ~10^-7 M to reconstitute RNase activity" ;
+    dcterms:references pubmed:11036653,
+        pubmed:13654398,
+        pubmed:15914191,
+        pubmed:2383573,
+        pubmed:8453373 ;
     dcterms:title "S-tag" ;
     sbol:displayId "S-tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:S-tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "S Tag",
+    skos:altLabel "RNase A S-peptide (1-15)",
+        "S Tag",
         "S peptide",
         "S tag",
-        "S-peptide" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
+        "S-peptide",
+        "S-tag",
+        "S15",
+        "S·Tag" ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:S-tag_claim_affinity_purification,
+        part:S-tag_claim_binding_affinity,
+        part:S-tag_claim_detection_sensitivity,
+        part:S-tag_claim_host_range,
+        part:S-tag_claim_human_variant,
+        part:S-tag_claim_minimal_active_unit ;
     cat:slug "S-tag" .
 
 part:SEVA_tir a sbol:Component ;
@@ -1924,19 +1954,38 @@ part:St1Cas9 a sbol:Component ;
     cat:slug "St1Cas9" .
 
 part:Strep_tag a sbol:Component ;
-    rdfs:label "Strep tag" ;
-    dcterms:title "Strep tag" ;
+    rdfs:label "Strep_tag" ;
+    dcterms:description "Strep-tag II core affinity peptide, WSHPQFEK (8 aa). Synthetic engineered peptide that binds the biotin-binding pocket of streptavidin and of engineered high-affinity streptavidin (Strep-Tactin) in a 3-10-helical conformation; eluted competitively by desthiobiotin or biotin. Atomic part: the 8 residues are the functional unit and carry no internal functional sub-elements. Verified to 100% identity over all 8 residues against PDB 1RSU chain P (positions 3-10)." ;
+    dcterms:references <https://doi.org/10.1016/j.jmb.2021.166893>,
+        <https://doi.org/10.1093/protein/6.1.109>,
+        pubmed:10796988,
+        pubmed:11036648,
+        pubmed:11910031,
+        pubmed:17571060,
+        pubmed:24012791,
+        pubmed:25749948,
+        pubmed:26900664,
+        pubmed:7921186,
+        pubmed:8636976,
+        pubmed:9415448 ;
+    dcterms:title "Strep_tag" ;
     sbol:displayId "Strep_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Strep_tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "Strep tag",
-        "Strep-Tag II",
         "Strep-tag",
-        "StrepTag" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
+        "Strep-tag II",
+        "Strep-tag II peptide",
+        "WSHPQFEK" ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:Strep_tag_claim_affinity,
+        part:Strep_tag_claim_mechanism,
+        part:Strep_tag_claim_position_flexibility,
+        part:Strep_tag_claim_purification_use,
+        part:Strep_tag_claim_sequence_variant ;
     cat:slug "Strep_tag" .
 
 part:T2A a sbol:Component ;
@@ -2153,6 +2202,32 @@ part:TetA a sbol:Component ;
     cat:hasFunctionalClaim part:TetA_claim_function ;
     cat:slug "TetA" ;
     cat:sourceAccession "UniProt:P02981" .
+
+part:Twin_Strep_tag a sbol:Component ;
+    rdfs:label "Twin_Strep_tag" ;
+    dcterms:description "Tandem affinity tag: two Strep-tag II (WSHPQFEK) units connected by a GGGSGGGSGGS flexible linker, with an N-terminal Ser-Ala. Bivalency lowers the off-rate from Strep-Tactin/Strep-Tactin XT, giving picomolar-range avidity and enabling near-irreversible capture with mild competitive (biotin/desthiobiotin) elution. Sequence confirmed 100% over 30 aa against PDB 6SOS chain R." ;
+    dcterms:references pubmed:17571060,
+        pubmed:24012791,
+        pubmed:25749948,
+        pubmed:33639211,
+        pubmed:8636976 ;
+    dcterms:title "Twin_Strep_tag" ;
+    sbol:displayId "Twin_Strep_tag" ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:Twin_Strep_tag_sequence ;
+    sbol:role so:0000417 ;
+    sbol:type sbo:0000252 ;
+    skos:altLabel "Strep-tag II tandem",
+        "Twin Strep tag",
+        "Twin-Strep",
+        "Twin-Strep-tag" ;
+    cat:curationStatus "validated" ;
+    cat:documented true ;
+    cat:hasFunctionalClaim part:Twin_Strep_tag_claim_host_range,
+        part:Twin_Strep_tag_claim_mechanism,
+        part:Twin_Strep_tag_claim_sequence_variant,
+        part:Twin_Strep_tag_claim_strength_affinity ;
+    cat:slug "Twin_Strep_tag" .
 
 part:UGI a sbol:Component ;
     rdfs:label "UGI" ;
@@ -4029,7 +4104,8 @@ part:BlastR_feature_1_range a sbol:Range ;
 part:BlastR_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site: in other chain" ;
     sbol:displayId "BlastR_feature_2" ;
-    sbol:hasLocation part:BlastR_feature_2_range .
+    sbol:hasLocation part:BlastR_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_2_range a sbol:Range ;
     sbol:end 28 ;
@@ -4040,7 +4116,8 @@ part:BlastR_feature_2_range a sbol:Range ;
 part:BlastR_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "BlastR_feature_3" ;
-    sbol:hasLocation part:BlastR_feature_3_range .
+    sbol:hasLocation part:BlastR_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_3_range a sbol:Range ;
     sbol:end 54 ;
@@ -4051,7 +4128,8 @@ part:BlastR_feature_3_range a sbol:Range ;
 part:BlastR_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site: in other chain" ;
     sbol:displayId "BlastR_feature_4" ;
-    sbol:hasLocation part:BlastR_feature_4_range .
+    sbol:hasLocation part:BlastR_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_4_range a sbol:Range ;
     sbol:end 82 ;
@@ -4062,7 +4140,8 @@ part:BlastR_feature_4_range a sbol:Range ;
 part:BlastR_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "BlastR_feature_5" ;
-    sbol:hasLocation part:BlastR_feature_5_range .
+    sbol:hasLocation part:BlastR_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_5_range a sbol:Range ;
     sbol:end 88 ;
@@ -4073,7 +4152,8 @@ part:BlastR_feature_5_range a sbol:Range ;
 part:BlastR_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "BlastR_feature_6" ;
-    sbol:hasLocation part:BlastR_feature_6_range .
+    sbol:hasLocation part:BlastR_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_6_range a sbol:Range ;
     sbol:end 91 ;
@@ -4084,7 +4164,8 @@ part:BlastR_feature_6_range a sbol:Range ;
 part:BlastR_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "BlastR_feature_7" ;
-    sbol:hasLocation part:BlastR_feature_7_range .
+    sbol:hasLocation part:BlastR_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_7_range a sbol:Range ;
     sbol:end 126 ;
@@ -4095,7 +4176,8 @@ part:BlastR_feature_7_range a sbol:Range ;
 part:BlastR_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site: in other chain" ;
     sbol:displayId "BlastR_feature_8" ;
-    sbol:hasLocation part:BlastR_feature_8_range .
+    sbol:hasLocation part:BlastR_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:BlastR_feature_8_range a sbol:Range ;
     sbol:end 128 ;
@@ -4438,6 +4520,96 @@ part:EcFbFP_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:FLAG_claim_antibody_recognition a cat:FunctionalClaim ;
+    rdfs:label "FLAG is recognized by the anti-FLAG monoclonal antibodies M1 (Ca2+-dependent, N-terminal-specific), M2 (Ca2+-independent, position-insensitive) and M5" ;
+    dcterms:references pubmed:11694294 ;
+    prov:wasDerivedFrom pubmed:11694294 ;
+    prov:wasGeneratedBy part:FLAG_claim_antibody_recognition_provenance ;
+    cat:claimType "antibody_recognition" ;
+    cat:claimValue "{\"M1\": {\"calcium_dependent\": true, \"requires_free_N_terminus\": true}, \"M2\": {\"calcium_dependent\": false, \"position_insensitive\": true}, \"antibodies\": [\"M1\", \"M2\", \"M5\"]}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "review of M1 Ca2+-dependent and M2/M5 peptide-competitive elution" .
+
+part:FLAG_claim_antibody_recognition_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:FLAG_claim_enterokinase_cleavage a cat:FunctionalClaim ;
+    rdfs:label "The C-terminal DDDDK of FLAG is an enterokinase (enteropeptidase) recognition site, allowing proteolytic removal of an N-terminal FLAG tag" ;
+    dcterms:references pubmed:11694294 ;
+    prov:wasDerivedFrom pubmed:11694294 ;
+    prov:wasGeneratedBy part:FLAG_claim_enterokinase_cleavage_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"cleaves_after\": \"K\", \"protease\": \"enterokinase\", \"recognition_motif\": \"DDDDK\", \"use\": \"tag_removal\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "enterokinase cleavage" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "tag removal" .
+
+part:FLAG_claim_enterokinase_cleavage_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:FLAG_claim_function a cat:FunctionalClaim ;
+    rdfs:label "FLAG is an engineered hydrophilic 8-aa epitope/affinity tag for detection and purification of recombinant proteins" ;
+    dcterms:references pubmed:6526011 ;
+    prov:wasDerivedFrom pubmed:6526011 ;
+    prov:wasGeneratedBy part:FLAG_claim_function_provenance ;
+    cat:claimType "function" ;
+    cat:claimValue "{\"design\": \"engineered_synthetic_peptide\", \"function\": \"epitope_affinity_tag\", \"hydrophilic\": true, \"length_aa\": 8}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "title" .
+
+part:FLAG_claim_function_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:FLAG_claim_minimal_epitope a cat:FunctionalClaim ;
+    rdfs:label "The minimal anti-FLAG M2 epitope is DYK(D)/DYKxxD; residues D5 and D7 are dispensable for M2 binding" ;
+    dcterms:references pubmed:38852931 ;
+    prov:wasDerivedFrom pubmed:38852931 ;
+    prov:wasGeneratedBy part:FLAG_claim_minimal_epitope_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"contact_residues\": [\"D1\", \"Y2\", \"K3\", \"D4\", \"D6\"], \"dispensable\": [\"D5\", \"D7\"], \"minimal_motif\": \"DYKxxD\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceFigure "co-crystal structure analysis (PDB 8RMO)" ;
+    cat:sourceQuote "identifies D1, Y2, K3, D4, D6 as the five contact residues; FLAG adopts a 3_10 helix" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:FLAG_claim_minimal_epitope_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:FLAG_claim_sulfation_caveat a cat:FunctionalClaim ;
+    rdfs:label "In the secretory pathway, Tyr2 of FLAG can be sulfated by TPST2 (SLC35B2-dependent), reducing anti-FLAG M2 and polyclonal detection of secreted/membrane proteins" ;
+    dcterms:references pubmed:33951064 ;
+    prov:wasDerivedFrom pubmed:33951064 ;
+    prov:wasGeneratedBy part:FLAG_claim_sulfation_caveat_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"context\": \"secretory_pathway\", \"effect\": \"reduced_antibody_recognition\", \"enzymes\": [\"TPST2\", \"SLC35B2\"], \"modification\": \"tyrosine_sulfation\", \"residue\": \"Y2\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "title" .
+
+part:FLAG_claim_sulfation_caveat_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
 part:FLAG_sequence a sbol:Sequence ;
     sbol:displayId "FLAG_sequence" ;
     sbol:elements "DYKDDDDK" ;
@@ -4579,7 +4751,8 @@ part:GST_feature_1_range a sbol:Range ;
 part:GST_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "GST_feature_2" ;
-    sbol:hasLocation part:GST_feature_2_range .
+    sbol:hasLocation part:GST_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:GST_feature_2_range a sbol:Range ;
     sbol:end 8 ;
@@ -4590,7 +4763,8 @@ part:GST_feature_2_range a sbol:Range ;
 part:GST_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "GST_feature_3" ;
-    sbol:hasLocation part:GST_feature_3_range .
+    sbol:hasLocation part:GST_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:GST_feature_3_range a sbol:Range ;
     sbol:end 45 ;
@@ -4601,7 +4775,8 @@ part:GST_feature_3_range a sbol:Range ;
 part:GST_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "GST_feature_4" ;
-    sbol:hasLocation part:GST_feature_4_range .
+    sbol:hasLocation part:GST_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:GST_feature_4_range a sbol:Range ;
     sbol:end 55 ;
@@ -4612,7 +4787,8 @@ part:GST_feature_4_range a sbol:Range ;
 part:GST_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "GST_feature_5" ;
-    sbol:hasLocation part:GST_feature_5_range .
+    sbol:hasLocation part:GST_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:GST_feature_5_range a sbol:Range ;
     sbol:end 68 ;
@@ -4623,7 +4799,8 @@ part:GST_feature_5_range a sbol:Range ;
 part:GST_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "GST_feature_6" ;
-    sbol:hasLocation part:GST_feature_6_range .
+    sbol:hasLocation part:GST_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:GST_feature_6_range a sbol:Range ;
     sbol:end 111 ;
@@ -4669,7 +4846,8 @@ part:HA_sequence a sbol:Sequence ;
 part:HIS3_feature_0 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_0" ;
-    sbol:hasLocation part:HIS3_feature_0_range .
+    sbol:hasLocation part:HIS3_feature_0_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_0_range a sbol:Range ;
     sbol:end 14 ;
@@ -4680,12 +4858,14 @@ part:HIS3_feature_0_range a sbol:Range ;
 part:HIS3_feature_1 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_1" ;
-    sbol:hasLocation part:HIS3_feature_1_range .
+    sbol:hasLocation part:HIS3_feature_1_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_10 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_10" ;
-    sbol:hasLocation part:HIS3_feature_10_range .
+    sbol:hasLocation part:HIS3_feature_10_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_10_range a sbol:Range ;
     sbol:end 194 ;
@@ -4696,7 +4876,8 @@ part:HIS3_feature_10_range a sbol:Range ;
 part:HIS3_feature_11 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_11" ;
-    sbol:hasLocation part:HIS3_feature_11_range .
+    sbol:hasLocation part:HIS3_feature_11_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_11_range a sbol:Range ;
     sbol:end 186 ;
@@ -4707,7 +4888,8 @@ part:HIS3_feature_11_range a sbol:Range ;
 part:HIS3_feature_12 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_12" ;
-    sbol:hasLocation part:HIS3_feature_12_range .
+    sbol:hasLocation part:HIS3_feature_12_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_12_range a sbol:Range ;
     sbol:end 187 ;
@@ -4718,7 +4900,8 @@ part:HIS3_feature_12_range a sbol:Range ;
 part:HIS3_feature_13 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_13" ;
-    sbol:hasLocation part:HIS3_feature_13_range .
+    sbol:hasLocation part:HIS3_feature_13_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_13_range a sbol:Range ;
     sbol:end 190 ;
@@ -4729,7 +4912,8 @@ part:HIS3_feature_13_range a sbol:Range ;
 part:HIS3_feature_14 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_14" ;
-    sbol:hasLocation part:HIS3_feature_14_range .
+    sbol:hasLocation part:HIS3_feature_14_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_14_range a sbol:Range ;
     sbol:end 216 ;
@@ -4746,7 +4930,8 @@ part:HIS3_feature_1_range a sbol:Range ;
 part:HIS3_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_2" ;
-    sbol:hasLocation part:HIS3_feature_2_range .
+    sbol:hasLocation part:HIS3_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_2_range a sbol:Range ;
     sbol:end 64 ;
@@ -4757,7 +4942,8 @@ part:HIS3_feature_2_range a sbol:Range ;
 part:HIS3_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_3" ;
-    sbol:hasLocation part:HIS3_feature_3_range .
+    sbol:hasLocation part:HIS3_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_3_range a sbol:Range ;
     sbol:end 94 ;
@@ -4768,7 +4954,8 @@ part:HIS3_feature_3_range a sbol:Range ;
 part:HIS3_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_4" ;
-    sbol:hasLocation part:HIS3_feature_4_range .
+    sbol:hasLocation part:HIS3_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_4_range a sbol:Range ;
     sbol:end 90 ;
@@ -4779,7 +4966,8 @@ part:HIS3_feature_4_range a sbol:Range ;
 part:HIS3_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_5" ;
-    sbol:hasLocation part:HIS3_feature_5_range .
+    sbol:hasLocation part:HIS3_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_5_range a sbol:Range ;
     sbol:end 91 ;
@@ -4790,7 +4978,8 @@ part:HIS3_feature_5_range a sbol:Range ;
 part:HIS3_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_6" ;
-    sbol:hasLocation part:HIS3_feature_6_range .
+    sbol:hasLocation part:HIS3_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_6_range a sbol:Range ;
     sbol:end 94 ;
@@ -4801,7 +4990,8 @@ part:HIS3_feature_6_range a sbol:Range ;
 part:HIS3_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_7" ;
-    sbol:hasLocation part:HIS3_feature_7_range .
+    sbol:hasLocation part:HIS3_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_7_range a sbol:Range ;
     sbol:end 116 ;
@@ -4812,7 +5002,8 @@ part:HIS3_feature_7_range a sbol:Range ;
 part:HIS3_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_8" ;
-    sbol:hasLocation part:HIS3_feature_8_range .
+    sbol:hasLocation part:HIS3_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_8_range a sbol:Range ;
     sbol:end 138 ;
@@ -4823,7 +5014,8 @@ part:HIS3_feature_8_range a sbol:Range ;
 part:HIS3_feature_9 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "HIS3_feature_9" ;
-    sbol:hasLocation part:HIS3_feature_9_range .
+    sbol:hasLocation part:HIS3_feature_9_range ;
+    sbol:role so:0000409 .
 
 part:HIS3_feature_9_range a sbol:Range ;
     sbol:end 162 ;
@@ -5305,7 +5497,8 @@ part:LAA_deg_tag_sequence a sbol:Sequence ;
 part:LEU2_feature_0 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_0" ;
-    sbol:hasLocation part:LEU2_feature_0_range .
+    sbol:hasLocation part:LEU2_feature_0_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_0_range a sbol:Range ;
     sbol:end 90 ;
@@ -5316,7 +5509,8 @@ part:LEU2_feature_0_range a sbol:Range ;
 part:LEU2_feature_1 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_1" ;
-    sbol:hasLocation part:LEU2_feature_1_range .
+    sbol:hasLocation part:LEU2_feature_1_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_10 a sbol:SequenceFeature ;
     dcterms:title "Site: Important for catalysis" ;
@@ -5339,7 +5533,8 @@ part:LEU2_feature_1_range a sbol:Range ;
 part:LEU2_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_2" ;
-    sbol:hasLocation part:LEU2_feature_2_range .
+    sbol:hasLocation part:LEU2_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_2_range a sbol:Range ;
     sbol:end 107 ;
@@ -5350,7 +5545,8 @@ part:LEU2_feature_2_range a sbol:Range ;
 part:LEU2_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_3" ;
-    sbol:hasLocation part:LEU2_feature_3_range .
+    sbol:hasLocation part:LEU2_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_3_range a sbol:Range ;
     sbol:end 136 ;
@@ -5361,7 +5557,8 @@ part:LEU2_feature_3_range a sbol:Range ;
 part:LEU2_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_4" ;
-    sbol:hasLocation part:LEU2_feature_4_range .
+    sbol:hasLocation part:LEU2_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_4_range a sbol:Range ;
     sbol:end 225 ;
@@ -5372,7 +5569,8 @@ part:LEU2_feature_4_range a sbol:Range ;
 part:LEU2_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_5" ;
-    sbol:hasLocation part:LEU2_feature_5_range .
+    sbol:hasLocation part:LEU2_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_5_range a sbol:Range ;
     sbol:end 225 ;
@@ -5383,7 +5581,8 @@ part:LEU2_feature_5_range a sbol:Range ;
 part:LEU2_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_6" ;
-    sbol:hasLocation part:LEU2_feature_6_range .
+    sbol:hasLocation part:LEU2_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_6_range a sbol:Range ;
     sbol:end 250 ;
@@ -5394,7 +5593,8 @@ part:LEU2_feature_6_range a sbol:Range ;
 part:LEU2_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_7" ;
-    sbol:hasLocation part:LEU2_feature_7_range .
+    sbol:hasLocation part:LEU2_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_7_range a sbol:Range ;
     sbol:end 254 ;
@@ -5405,7 +5605,8 @@ part:LEU2_feature_7_range a sbol:Range ;
 part:LEU2_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "LEU2_feature_8" ;
-    sbol:hasLocation part:LEU2_feature_8_range .
+    sbol:hasLocation part:LEU2_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:LEU2_feature_8_range a sbol:Range ;
     sbol:end 300 ;
@@ -7040,12 +7241,14 @@ part:PuroR_feature_0_range a sbol:Range ;
 part:PuroR_feature_1 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_1" ;
-    sbol:hasLocation part:PuroR_feature_1_range .
+    sbol:hasLocation part:PuroR_feature_1_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_10 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_10" ;
-    sbol:hasLocation part:PuroR_feature_10_range .
+    sbol:hasLocation part:PuroR_feature_10_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_10_range a sbol:Range ;
     sbol:end 161 ;
@@ -7056,7 +7259,8 @@ part:PuroR_feature_10_range a sbol:Range ;
 part:PuroR_feature_11 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_11" ;
-    sbol:hasLocation part:PuroR_feature_11_range .
+    sbol:hasLocation part:PuroR_feature_11_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_11_range a sbol:Range ;
     sbol:end 166 ;
@@ -7067,7 +7271,8 @@ part:PuroR_feature_11_range a sbol:Range ;
 part:PuroR_feature_12 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_12" ;
-    sbol:hasLocation part:PuroR_feature_12_range .
+    sbol:hasLocation part:PuroR_feature_12_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_12_range a sbol:Range ;
     sbol:end 167 ;
@@ -7078,7 +7283,8 @@ part:PuroR_feature_12_range a sbol:Range ;
 part:PuroR_feature_13 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_13" ;
-    sbol:hasLocation part:PuroR_feature_13_range .
+    sbol:hasLocation part:PuroR_feature_13_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_13_range a sbol:Range ;
     sbol:end 173 ;
@@ -7095,7 +7301,8 @@ part:PuroR_feature_1_range a sbol:Range ;
 part:PuroR_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_2" ;
-    sbol:hasLocation part:PuroR_feature_2_range .
+    sbol:hasLocation part:PuroR_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_2_range a sbol:Range ;
     sbol:end 110 ;
@@ -7106,7 +7313,8 @@ part:PuroR_feature_2_range a sbol:Range ;
 part:PuroR_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_3" ;
-    sbol:hasLocation part:PuroR_feature_3_range .
+    sbol:hasLocation part:PuroR_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_3_range a sbol:Range ;
     sbol:end 126 ;
@@ -7117,7 +7325,8 @@ part:PuroR_feature_3_range a sbol:Range ;
 part:PuroR_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_4" ;
-    sbol:hasLocation part:PuroR_feature_4_range .
+    sbol:hasLocation part:PuroR_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_4_range a sbol:Range ;
     sbol:end 128 ;
@@ -7128,7 +7337,8 @@ part:PuroR_feature_4_range a sbol:Range ;
 part:PuroR_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_5" ;
-    sbol:hasLocation part:PuroR_feature_5_range .
+    sbol:hasLocation part:PuroR_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_5_range a sbol:Range ;
     sbol:end 130 ;
@@ -7139,7 +7349,8 @@ part:PuroR_feature_5_range a sbol:Range ;
 part:PuroR_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_6" ;
-    sbol:hasLocation part:PuroR_feature_6_range .
+    sbol:hasLocation part:PuroR_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_6_range a sbol:Range ;
     sbol:end 136 ;
@@ -7150,7 +7361,8 @@ part:PuroR_feature_6_range a sbol:Range ;
 part:PuroR_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_7" ;
-    sbol:hasLocation part:PuroR_feature_7_range .
+    sbol:hasLocation part:PuroR_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_7_range a sbol:Range ;
     sbol:end 138 ;
@@ -7161,7 +7373,8 @@ part:PuroR_feature_7_range a sbol:Range ;
 part:PuroR_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_8" ;
-    sbol:hasLocation part:PuroR_feature_8_range .
+    sbol:hasLocation part:PuroR_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_8_range a sbol:Range ;
     sbol:end 140 ;
@@ -7172,7 +7385,8 @@ part:PuroR_feature_8_range a sbol:Range ;
 part:PuroR_feature_9 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "PuroR_feature_9" ;
-    sbol:hasLocation part:PuroR_feature_9_range .
+    sbol:hasLocation part:PuroR_feature_9_range ;
+    sbol:role so:0000409 .
 
 part:PuroR_feature_9_range a sbol:Range ;
     sbol:end 141 ;
@@ -7334,6 +7548,108 @@ part:RepC_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:S-tag_claim_affinity_purification a cat:FunctionalClaim ;
+    rdfs:label "Enables affinity purification via S-protein agarose resin" ;
+    dcterms:references pubmed:11036653 ;
+    prov:wasDerivedFrom pubmed:11036653 ;
+    prov:wasGeneratedBy part:S-tag_claim_affinity_purification_provenance ;
+    cat:claimType "regulation" ;
+    cat:claimValue "{\"application\": \"affinity_purification\", \"elution\": \"low pH or chaotropic agent; D14N variant allows nondenaturing elution\", \"resin\": \"S-protein agarose\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "canonical reference for the Novagen commercial S-tag system; describes S-protein agarose purification, thrombin cleavage, dual His+S-tag strategy, and quantitative RNase activity detection" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_affinity_purification_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:S-tag_claim_binding_affinity a cat:FunctionalClaim ;
+    rdfs:label "High-affinity non-covalent binding to S-protein" ;
+    dcterms:references pubmed:2383573 ;
+    prov:wasDerivedFrom pubmed:2383573 ;
+    prov:wasGeneratedBy part:S-tag_claim_binding_affinity_provenance ;
+    cat:claimType "binding_affinity" ;
+    cat:claimValue "{\"Kd_range\": \"10^-6 to 10^-9 M\", \"notes\": \"Calorimetry gives ~10^-6 to 10^-7 M; functional fusion system reports Kd <= 10^-9 M upon activity reconstitution\", \"partner\": \"S-protein (RNase A residues 21-124)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "thermodynamic characterization of S-peptide (1-15) binding to S-protein; establishes binding affinity in the 10^-6 to 10^-7 M range by calorimetry; confirms 15-aa truncation is the minimal active unit" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_binding_affinity_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:S-tag_claim_detection_sensitivity a cat:FunctionalClaim ;
+    rdfs:label "Detection sensitivity >= 10^-16 mol via S-protein-enzyme conjugate assay" ;
+    dcterms:references pubmed:8453373 ;
+    prov:wasDerivedFrom pubmed:8453373 ;
+    prov:wasGeneratedBy part:S-tag_claim_detection_sensitivity_provenance ;
+    cat:claimType "strength" ;
+    cat:claimValue "{\"assay\": \"RNase activity-based detection using S-protein-HRP conjugate\", \"sensitivity_mol\": \"1e-16\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "detection sensitivity >= 10^-16 mol" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_detection_sensitivity_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:S-tag_claim_host_range a cat:FunctionalClaim ;
+    rdfs:label "Functional in diverse recombinant expression hosts" ;
+    dcterms:references pubmed:15914191 ;
+    prov:wasDerivedFrom pubmed:15914191 ;
+    prov:wasGeneratedBy part:S-tag_claim_host_range_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"hosts\": [\"E. coli\", \"mammalian cells\"], \"notes\": \"Used in E. coli pET-based systems and mammalian antibody-enzyme conjugate contexts\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_host_range_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:S-tag_claim_human_variant a cat:FunctionalClaim ;
+    rdfs:label "Human RNase 1-derived S-tag variant with same 15-aa architecture" ;
+    dcterms:references pubmed:15914191 ;
+    prov:wasDerivedFrom pubmed:15914191 ;
+    prov:wasGeneratedBy part:S-tag_claim_human_variant_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"application\": \"antibody-enzyme conjugation for targeted drug delivery\", \"origin\": \"human RNase 1\", \"rationale\": \"reduced immunogenicity for therapeutic applications\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "human RNase 1-derived S-tag variant; demonstrates close variant with same 15-aa architecture but human origin for reduced immunogenicity in therapeutic antibody-enzyme conjugation" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_human_variant_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:S-tag_claim_minimal_active_unit a cat:FunctionalClaim ;
+    rdfs:label "15-aa S15 truncation is the minimal unit sufficient for S-protein binding and activity reconstitution" ;
+    dcterms:references pubmed:8453373 ;
+    prov:wasDerivedFrom pubmed:8453373 ;
+    prov:wasGeneratedBy part:S-tag_claim_minimal_active_unit_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"activity\": \"RNase activity reconstitution upon S-protein association\", \"affinity_tag_use\": true, \"full_S_peptide_length\": 20, \"variant\": \"S15 (residues 1-15 of mature RNase A)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "residues 1-15 (S15) are sufficient for S-protein binding and ribonuclease activity reconstitution; introduces S-tag as affinity/detection tag; Kd <= 10^-9 M; D14N variant for nondenaturing purification; detection sensitivity >= 10^-16 mol" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:S-tag_claim_minimal_active_unit_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
 part:S-tag_sequence a sbol:Sequence ;
     sbol:displayId "S-tag_sequence" ;
     sbol:elements "KETAAAKFERQHMDS" ;
@@ -7381,6 +7697,96 @@ part:St1Cas9_sequence a sbol:Sequence ;
     sbol:elements "MTKPYSIGLDIGTNSVGWAVTTDNYKVPSKKMKVLGNTSKKYIKKNLLGVLLFDSGITAEGRRLKRTARRRYTRRRNRILYLQEIFSTEMATLDDAFFQRLDDSFLVPDDKRDSKYPIFGNLVEEKAYHDEFPTIYHLRKYLADSTKKADLRLVYLALAHMIKYRGHFLIEGEFNSKNNDIQKNFQDFLDTYNAIFESDLSLENSKQLEEIVKDKISKLEKKDRILKLFPGEKNSGIFSEFLKLIVGNQADFRKCFNLDEKASLHFSKESYDEDLETLLGYIGDDYSDVFLKAKKLYDAILLSGFLTVTDNETEAPLSSAMIKRYNEHKEDLALLKEYIRNISLKTYNEVFKDDTKNGYAGYIDGKTNQEDFYVYLKKLLAEFEGADYFLEKIDREDFLRKQRTFDNGSIPYQIHLQEMRAILDKQAKFYPFLAKNKERIEKILTFRIPYYVGPLARGNSDFAWSIRKRNEKITPWNFEDVIDKESSAEAFINRMTSFDLYLPEEKVLPKHSLLYETFNVYNELTKVRFIAESMRDYQFLDSKQKKDIVRLYFKDKRKVTDKDIIEYLHAIYGYDGIELKGIEKQFNSSLSTYHDLLNIINDKEFLDDSSNEAIIEEIIHTLTIFEDREMIKQRLSKFENIFDKSVLKKLSRRHYTGWGKLSAKLINGIRDEKSGNTILDYLIDDGISNRNFMQLIHDDALSFKKKIQKAQIIGDEDKGNIKEVVKSLPGSPAIKKGILQSIKIVDELVKVMGGRKPESIVVEMARENQYTNQGKSNSQQRLKRLEKSLKELGSKILKENIPAKLSKIDNNALQNDRLYLYYLQNGKDMYTGDDLDIDRLSNYDIDHIIPQAFLKDNSIDNKVLVSSASNRGKSDDVPSLEVVKKRKTFWYQLLKSKLISQRKFDNLTKAERGGLSPEDKAGFIQRQLVETRQITKHVARLLDEKFNNKKDENNRAVRTVKIITLKSTLVSQFRKDFELYKVREINDFHHAHDAYLNAVVASALLKKYPKLEPEFVYGDYPKYNSFRERKSATEKVYFYSNIMNIFKKSISLADGRVIERPLIEVNEETGESVWNKESDLATVRRVLSYPQVNVVKKVEEQNHGLDRGKPKGLFNANLSSKPKPNSNENLVGAKEYLDPKKYGGYAGISNSFTVLVKGTIEKGAKKKITNVLEFQGISILDRINYRKDKLNFLLEKGYKDIELIIELPKYSLFELSDGSRRMLASILSTNNKRGEIHKGNQIFLSQKFVKLLYHAKRISNTINENHRKYVENHKKEFEELFYYILEFNENYVGAKKNGKLLNSAFQSWQNHSIDELCSSFIGPTGSERKGLFELTSRGSAADFEFLGVKIPRYRDYTPSSLLKDATLIHQSVTGLYETRIDLAKLGEG" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:Strep_tag_claim_affinity a cat:FunctionalClaim ;
+    rdfs:label "The Strep-tag II peptide binds streptavidin with a dissociation constant of approximately 1 uM; affinity-engineered streptavidin (Strep-Tactin) raises this affinity by roughly an order of magnitude." ;
+    dcterms:references pubmed:11036648 ;
+    prov:wasDerivedFrom pubmed:11036648 ;
+    prov:wasGeneratedBy part:Strep_tag_claim_affinity_provenance ;
+    cat:claimType "affinity" ;
+    cat:claimValue "{\"Kd\": \"~1 uM (streptavidin)\", \"engineered_partner\": \"Strep-Tactin (engineered streptavidin, ~10-fold higher affinity)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Use of the Strep-Tag and streptavidin for detection and purification of recombinant proteins" ;
+    cat:sourceQuoteFrom "catalog-doc" ;
+    cat:sourceSection "Methods in Enzymology protocol review" .
+
+part:Strep_tag_claim_affinity_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:Strep_tag_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "The peptide binds the biotin-binding pocket of streptavidin, adopting a 3-10-helical conformation; the Glu7/Lys9 (His-Pro-Gln-Phe-Glu-Lys) substitutions relative to the original Strep-tag optimise this streptavidin-pocket binding mode." ;
+    dcterms:references pubmed:8636976 ;
+    prov:wasDerivedFrom pubmed:8636976 ;
+    prov:wasGeneratedBy part:Strep_tag_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"binding_mode\": \"3-10 helix\", \"mechanism\": \"binds the biotin-binding pocket of streptavidin\", \"structure\": \"PDB 1RSU (Strep-tag II:streptavidin complex, 1.70 A)\", \"target\": \"streptavidin\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Title/Abstract" .
+
+part:Strep_tag_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:Strep_tag_claim_position_flexibility a cat:FunctionalClaim ;
+    rdfs:label "Host- and position-agnostic: the small synthetic peptide can be fused at either the N- or C-terminus and functions for purification and detection across diverse expression hosts, including bacterial and mammalian cell-culture systems." ;
+    dcterms:references pubmed:10796988 ;
+    prov:wasDerivedFrom pubmed:10796988 ;
+    prov:wasGeneratedBy part:Strep_tag_claim_position_flexibility_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"host_range\": \"broad (bacterial to mammalian)\", \"position\": [\"N-terminal\", \"C-terminal\"]}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Applications of a peptide ligand for streptavidin: the Strep-tag" ;
+    cat:sourceQuoteFrom "catalog-doc" ;
+    cat:sourceSection "Review of Strep-tag applications" .
+
+part:Strep_tag_claim_position_flexibility_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:Strep_tag_claim_purification_use a cat:FunctionalClaim ;
+    rdfs:label "Genetic fusion of the Strep-tag II peptide to a recombinant protein permits one-step affinity purification on immobilised streptavidin (or engineered streptavidin), with gentle competitive elution by desthiobiotin or biotin under physiological conditions." ;
+    dcterms:references pubmed:17571060 ;
+    prov:wasDerivedFrom pubmed:17571060 ;
+    prov:wasGeneratedBy part:Strep_tag_claim_purification_use_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"application\": \"recombinant-protein affinity purification\", \"conditions\": \"mild / physiological\", \"elution\": [\"desthiobiotin\", \"biotin\"], \"fusion\": \"N- or C-terminal genetic fusion\", \"matrix\": \"immobilised streptavidin / engineered streptavidin (Strep-Tactin)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Title" .
+
+part:Strep_tag_claim_purification_use_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:Strep_tag_claim_sequence_variant a cat:FunctionalClaim ;
+    rdfs:label "Strep-tag II (WSHPQFEK) is the rationally engineered successor to the original library-selected Strep-tag (AWRHPQFGG); a tandem avidity version, the Twin-Strep-tag, links two WSHPQFEK copies via a GGGSGGGSGGS linker for higher-affinity (near-pM) capture." ;
+    dcterms:references pubmed:24012791 ;
+    prov:wasDerivedFrom pubmed:24012791 ;
+    prov:wasGeneratedBy part:Strep_tag_claim_sequence_variant_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"avidity_variant\": \"Twin-Strep-tag (SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK)\", \"predecessor\": \"original Strep-tag (AWRHPQFGG)\", \"this_variant\": \"Strep-tag II (WSHPQFEK)\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "Title" .
+
+part:Strep_tag_claim_sequence_variant_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
 
 part:Strep_tag_sequence a sbol:Sequence ;
     sbol:displayId "Strep_tag_sequence" ;
@@ -7590,6 +7996,84 @@ part:TetA_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:Twin_Strep_tag_claim_host_range a cat:FunctionalClaim ;
+    rdfs:label "Functions as a portable affinity/detection tag independent of expression host; demonstrated for proteins secreted into mammalian cell-culture supernatants and broadly used across prokaryotic and eukaryotic systems." ;
+    dcterms:references pubmed:24012791 ;
+    prov:wasDerivedFrom pubmed:24012791 ;
+    prov:wasGeneratedBy part:Twin_Strep_tag_claim_host_range_provenance ;
+    cat:claimType "host_range" ;
+    cat:claimValue "{\"demonstrated_hosts\": [\"mammalian cell culture\", \"bacterial\", \"eukaryotic\"], \"host_range\": \"host-independent\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "application for purification of recombinant proteins from cell culture supernatants" ;
+    cat:sourceQuoteFrom "catalog-doc" ;
+    cat:sourceSection "Title" .
+
+part:Twin_Strep_tag_claim_host_range_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:Twin_Strep_tag_claim_mechanism a cat:FunctionalClaim ;
+    rdfs:label "Bivalent tandem display of two Strep-tag II units connected by a GGGSGGGSGGS linker lowers the dissociation rate from engineered streptavidin, giving an avidity (multivalent) binding mode." ;
+    dcterms:references pubmed:24012791 ;
+    prov:wasDerivedFrom pubmed:24012791 ;
+    prov:wasGeneratedBy part:Twin_Strep_tag_claim_mechanism_provenance ;
+    cat:claimType "mechanism" ;
+    cat:claimValue "{\"binding_motif\": \"WSHPQFEK\", \"linker\": \"GGGSGGGSGGS\", \"mechanism\": \"avidity_bivalent\", \"partner\": \"engineered streptavidin (Strep-Tactin / Strep-Tactin XT)\", \"units\": 2}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants" ;
+    cat:sourceQuoteFrom "catalog-doc" ;
+    cat:sourceSection "Design / Abstract" .
+
+part:Twin_Strep_tag_claim_mechanism_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:Twin_Strep_tag_claim_sequence_variant a cat:FunctionalClaim ;
+    rdfs:label "Distinct from a patent-filing variant of identical length (30 aa) that encodes SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK (GGGS x3 linker, no Ser-Ala before the second unit). This record is the canonical product sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK (GGGSGGGSGGS linker)." ;
+    dcterms:references pubmed:33639211 ;
+    prov:wasDerivedFrom pubmed:33639211 ;
+    prov:wasGeneratedBy part:Twin_Strep_tag_claim_sequence_variant_provenance ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"this_linker\": \"GGGSGGGSGGS\", \"this_sequence\": \"SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK\", \"variant_linker\": \"GGGSGGGSGGGS\", \"variant_sequence\": \"SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK\", \"variant_source\": \"patent sequences YCW61670.1 / YCV17326.1\"}" ;
+    cat:confidence "high" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "Twin-Strep-tag peptide chain R, sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK" ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "PDB 6SOS entity" .
+
+part:Twin_Strep_tag_claim_sequence_variant_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "primary" ;
+    cat:method "ai-extraction" .
+
+part:Twin_Strep_tag_claim_strength_affinity a cat:FunctionalClaim ;
+    rdfs:label "Bivalent binding to engineered streptavidin (Strep-Tactin/Strep-Tactin XT) gives near-irreversible, picomolar-range capture, far tighter than a single Strep-tag II (micromolar to Strep-Tactin)." ;
+    dcterms:references pubmed:33639211 ;
+    prov:wasDerivedFrom pubmed:33639211 ;
+    prov:wasGeneratedBy part:Twin_Strep_tag_claim_strength_affinity_provenance ;
+    cat:claimType "strength_class" ;
+    cat:claimValue "{\"affinity_class\": \"picomolar_range\", \"comparator_single_tag\": \"micromolar (Strep-tag II / Strep-Tactin)\", \"elution\": \"competitive (biotin / desthiobiotin), mild\"}" ;
+    cat:confidence "medium" ;
+    cat:reviewStatus "ai-generated" ;
+    cat:sourceQuote "structural basis of high-affinity bivalent binding of the Twin-Strep-tag to engineered streptavidin (Strep-Tactin XT)" ;
+    cat:sourceQuoteFrom "catalog-doc" ;
+    cat:sourceSection "Structure / Discussion" .
+
+part:Twin_Strep_tag_claim_strength_affinity_provenance a prov:Activity ;
+    cat:agent "annotate-part-engine" ;
+    cat:fromDoc "secondary" ;
+    cat:method "ai-extraction" .
+
+part:Twin_Strep_tag_sequence a sbol:Sequence ;
+    sbol:displayId "Twin_Strep_tag_sequence" ;
+    sbol:elements "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:UGI_sequence a sbol:Sequence ;
     sbol:displayId "UGI_sequence" ;
     sbol:elements "MTNLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDAPEYKPWALVIQDSNGENKIKML" ;
@@ -7794,7 +8278,8 @@ part:bla_feature_4_range a sbol:Range ;
 part:bla_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "bla_feature_5" ;
-    sbol:hasLocation part:bla_feature_5_range .
+    sbol:hasLocation part:bla_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:bla_feature_5_range a sbol:Range ;
     sbol:end 234 ;
@@ -7805,7 +8290,8 @@ part:bla_feature_5_range a sbol:Range ;
 part:bla_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Disulfide bond" ;
     sbol:displayId "bla_feature_6" ;
-    sbol:hasLocation part:bla_feature_6_range .
+    sbol:hasLocation part:bla_feature_6_range ;
+    sbol:role so:0001088 .
 
 part:bla_feature_6_range a sbol:Range ;
     sbol:end 121 ;
@@ -7870,7 +8356,8 @@ part:cas9_feature_1 a sbol:SequenceFeature ;
 part:cas9_feature_10 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_10" ;
-    sbol:hasLocation part:cas9_feature_10_range .
+    sbol:hasLocation part:cas9_feature_10_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_10_range a sbol:Range ;
     sbol:end 1297 ;
@@ -7881,7 +8368,8 @@ part:cas9_feature_10_range a sbol:Range ;
 part:cas9_feature_11 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_11" ;
-    sbol:hasLocation part:cas9_feature_11_range .
+    sbol:hasLocation part:cas9_feature_11_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_11_range a sbol:Range ;
     sbol:end 1328 ;
@@ -7922,7 +8410,8 @@ part:cas9_feature_3_range a sbol:Range ;
 part:cas9_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_4" ;
-    sbol:hasLocation part:cas9_feature_4_range .
+    sbol:hasLocation part:cas9_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_4_range a sbol:Range ;
     sbol:end 10 ;
@@ -7933,7 +8422,8 @@ part:cas9_feature_4_range a sbol:Range ;
 part:cas9_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_5" ;
-    sbol:hasLocation part:cas9_feature_5_range .
+    sbol:hasLocation part:cas9_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_5_range a sbol:Range ;
     sbol:end 10 ;
@@ -7944,7 +8434,8 @@ part:cas9_feature_5_range a sbol:Range ;
 part:cas9_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_6" ;
-    sbol:hasLocation part:cas9_feature_6_range .
+    sbol:hasLocation part:cas9_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_6_range a sbol:Range ;
     sbol:end 762 ;
@@ -7955,7 +8446,8 @@ part:cas9_feature_6_range a sbol:Range ;
 part:cas9_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_7" ;
-    sbol:hasLocation part:cas9_feature_7_range .
+    sbol:hasLocation part:cas9_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_7_range a sbol:Range ;
     sbol:end 766 ;
@@ -7966,7 +8458,8 @@ part:cas9_feature_7_range a sbol:Range ;
 part:cas9_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_8" ;
-    sbol:hasLocation part:cas9_feature_8_range .
+    sbol:hasLocation part:cas9_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_8_range a sbol:Range ;
     sbol:end 766 ;
@@ -7977,7 +8470,8 @@ part:cas9_feature_8_range a sbol:Range ;
 part:cas9_feature_9 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "cas9_feature_9" ;
-    sbol:hasLocation part:cas9_feature_9_range .
+    sbol:hasLocation part:cas9_feature_9_range ;
+    sbol:role so:0000409 .
 
 part:cas9_feature_9_range a sbol:Range ;
     sbol:end 983 ;
@@ -8024,7 +8518,8 @@ part:dCas9_feature_1 a sbol:SequenceFeature ;
 part:dCas9_feature_10 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_10" ;
-    sbol:hasLocation part:dCas9_feature_10_range .
+    sbol:hasLocation part:dCas9_feature_10_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_10_range a sbol:Range ;
     sbol:end 1297 ;
@@ -8035,7 +8530,8 @@ part:dCas9_feature_10_range a sbol:Range ;
 part:dCas9_feature_11 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_11" ;
-    sbol:hasLocation part:dCas9_feature_11_range .
+    sbol:hasLocation part:dCas9_feature_11_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_11_range a sbol:Range ;
     sbol:end 1328 ;
@@ -8076,7 +8572,8 @@ part:dCas9_feature_3_range a sbol:Range ;
 part:dCas9_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_4" ;
-    sbol:hasLocation part:dCas9_feature_4_range .
+    sbol:hasLocation part:dCas9_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_4_range a sbol:Range ;
     sbol:end 10 ;
@@ -8087,7 +8584,8 @@ part:dCas9_feature_4_range a sbol:Range ;
 part:dCas9_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_5" ;
-    sbol:hasLocation part:dCas9_feature_5_range .
+    sbol:hasLocation part:dCas9_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_5_range a sbol:Range ;
     sbol:end 10 ;
@@ -8098,7 +8596,8 @@ part:dCas9_feature_5_range a sbol:Range ;
 part:dCas9_feature_6 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_6" ;
-    sbol:hasLocation part:dCas9_feature_6_range .
+    sbol:hasLocation part:dCas9_feature_6_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_6_range a sbol:Range ;
     sbol:end 762 ;
@@ -8109,7 +8608,8 @@ part:dCas9_feature_6_range a sbol:Range ;
 part:dCas9_feature_7 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_7" ;
-    sbol:hasLocation part:dCas9_feature_7_range .
+    sbol:hasLocation part:dCas9_feature_7_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_7_range a sbol:Range ;
     sbol:end 766 ;
@@ -8120,7 +8620,8 @@ part:dCas9_feature_7_range a sbol:Range ;
 part:dCas9_feature_8 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_8" ;
-    sbol:hasLocation part:dCas9_feature_8_range .
+    sbol:hasLocation part:dCas9_feature_8_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_8_range a sbol:Range ;
     sbol:end 766 ;
@@ -8131,7 +8632,8 @@ part:dCas9_feature_8_range a sbol:Range ;
 part:dCas9_feature_9 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "dCas9_feature_9" ;
-    sbol:hasLocation part:dCas9_feature_9_range .
+    sbol:hasLocation part:dCas9_feature_9_range ;
+    sbol:role so:0000409 .
 
 part:dCas9_feature_9_range a sbol:Range ;
     sbol:end 983 ;
@@ -8165,7 +8667,8 @@ part:ermAM_claim_function_provenance a prov:Activity ;
 part:ermAM_feature_0 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_0" ;
-    sbol:hasLocation part:ermAM_feature_0_range .
+    sbol:hasLocation part:ermAM_feature_0_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_0_range a sbol:Range ;
     sbol:end 10 ;
@@ -8176,7 +8679,8 @@ part:ermAM_feature_0_range a sbol:Range ;
 part:ermAM_feature_1 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_1" ;
-    sbol:hasLocation part:ermAM_feature_1_range .
+    sbol:hasLocation part:ermAM_feature_1_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_1_range a sbol:Range ;
     sbol:end 12 ;
@@ -8187,7 +8691,8 @@ part:ermAM_feature_1_range a sbol:Range ;
 part:ermAM_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_2" ;
-    sbol:hasLocation part:ermAM_feature_2_range .
+    sbol:hasLocation part:ermAM_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_2_range a sbol:Range ;
     sbol:end 37 ;
@@ -8198,7 +8703,8 @@ part:ermAM_feature_2_range a sbol:Range ;
 part:ermAM_feature_3 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_3" ;
-    sbol:hasLocation part:ermAM_feature_3_range .
+    sbol:hasLocation part:ermAM_feature_3_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_3_range a sbol:Range ;
     sbol:end 58 ;
@@ -8209,7 +8715,8 @@ part:ermAM_feature_3_range a sbol:Range ;
 part:ermAM_feature_4 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_4" ;
-    sbol:hasLocation part:ermAM_feature_4_range .
+    sbol:hasLocation part:ermAM_feature_4_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_4_range a sbol:Range ;
     sbol:end 83 ;
@@ -8220,7 +8727,8 @@ part:ermAM_feature_4_range a sbol:Range ;
 part:ermAM_feature_5 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "ermAM_feature_5" ;
-    sbol:hasLocation part:ermAM_feature_5_range .
+    sbol:hasLocation part:ermAM_feature_5_range ;
+    sbol:role so:0000409 .
 
 part:ermAM_feature_5_range a sbol:Range ;
     sbol:end 100 ;
@@ -8302,7 +8810,8 @@ part:kanR_Tn5_feature_0_range a sbol:Range ;
 part:kanR_Tn5_feature_1 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "kanR_Tn5_feature_1" ;
-    sbol:hasLocation part:kanR_Tn5_feature_1_range .
+    sbol:hasLocation part:kanR_Tn5_feature_1_range ;
+    sbol:role so:0000409 .
 
 part:kanR_Tn5_feature_1_range a sbol:Range ;
     sbol:end 195 ;
@@ -8313,7 +8822,8 @@ part:kanR_Tn5_feature_1_range a sbol:Range ;
 part:kanR_Tn5_feature_2 a sbol:SequenceFeature ;
     dcterms:title "Binding site" ;
     sbol:displayId "kanR_Tn5_feature_2" ;
-    sbol:hasLocation part:kanR_Tn5_feature_2_range .
+    sbol:hasLocation part:kanR_Tn5_feature_2_range ;
+    sbol:role so:0000409 .
 
 part:kanR_Tn5_feature_2_range a sbol:Range ;
     sbol:end 208 ;

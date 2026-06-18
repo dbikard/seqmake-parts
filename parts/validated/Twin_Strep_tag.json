@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "slug": "Twin_Strep_tag",
+  "locus": "Twin_Strep_tag",
+  "id": "Twin_Strep_tag",
+  "description": "Twin-Strep-tag: two tandem Strep-tag II (WSHPQFEK) units joined by a GGGSGGGSGGS linker, conferring bivalent high-avidity binding to Strep-Tactin/Strep-Tactin XT for one-step affinity purification and detection.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK",
+  "references": [
+    {
+      "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
+      "title": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+      "journal": "Protein Expression and Purification (2013)",
+      "pubmed_id": "24012791",
+      "comment": "doi:10.1016/j.pep.2013.08.021"
+    },
+    {
+      "authors": "Schmidt TGM, Koepke J, Frank R, Skerra A",
+      "title": "Molecular interaction between the Strep-tag affinity peptide and its cognate target, streptavidin",
+      "journal": "Journal of Molecular Biology (1996)",
+      "pubmed_id": "8636976",
+      "comment": "doi:10.1006/jmbi.1996.0061"
+    },
+    {
+      "authors": "Eichinger A, Schmidt TGM, Skerra A",
+      "title": "The Role of Changing Loop Conformations in Streptavidin Versions Engineered for High-affinity Binding of the Strep-tag II Peptide",
+      "journal": "Journal of Molecular Biology (2021)",
+      "pubmed_id": "33639211",
+      "comment": "doi:10.1016/j.jmb.2021.166893"
+    },
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "The Strep-tag system for one-step purification and high-affinity detection or capturing of proteins",
+      "journal": "Nature Protocols (2007)",
+      "pubmed_id": "17571060",
+      "comment": "doi:10.1038/nprot.2007.209"
+    },
+    {
+      "authors": "Schmidt TGM, Skerra A",
+      "title": "The Strep-tag system for one-step affinity purification of proteins from mammalian cell culture",
+      "journal": "Methods in Molecular Biology (2015)",
+      "pubmed_id": "25749948",
+      "comment": "doi:10.1007/978-1-4939-2447-9_8"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Twin_Strep_tag"
+        ],
+        "synonym": [
+          "Twin-Strep-tag",
+          "Twin-Strep",
+          "Strep-tag II tandem",
+          "Twin Strep tag"
+        ],
+        "note": [
+          "Tandem affinity tag: two Strep-tag II (WSHPQFEK) units connected by a GGGSGGGSGGS flexible linker, with an N-terminal Ser-Ala. Bivalency lowers the off-rate from Strep-Tactin/Strep-Tactin XT, giving picomolar-range avidity and enabling near-irreversible capture with mild competitive (biotin/desthiobiotin) elution. Sequence confirmed 100% over 30 aa against PDB 6SOS chain R."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "PDB 6SOS chain R (Schmidt, Eichinger, Schneider, Bonet, Carl, Karthaus, Theobald, Skerra; J.Mol.Biol. 2021, PMID 33639211, DOI 10.1016/j.jmb.2021.166893), \"Twin-Strep-tag peptide\", synthetic construct (taxon:32630), sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK, 100% identity over 30 aa; independently fetched via RCSB FASTA API (https://www.rcsb.org/fasta/entry/6SOS/display) and compared byte-for-byte to the canonical IBA Twin-Strep-tag sequence."
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Bivalent tandem display of two Strep-tag II units connected by a GGGSGGGSGGS linker lowers the dissociation rate from engineered streptavidin, giving an avidity (multivalent) binding mode.",
+      "value": {
+        "mechanism": "avidity_bivalent",
+        "units": 2,
+        "binding_motif": "WSHPQFEK",
+        "linker": "GGGSGGGSGGS",
+        "partner": "engineered streptavidin (Strep-Tactin / Strep-Tactin XT)"
+      },
+      "source": {
+        "pmid": "24012791",
+        "doi": "10.1016/j.pep.2013.08.021",
+        "quote": "Development of the Twin-Strep-tag and its application for purification of recombinant proteins from cell culture supernatants",
+        "quote_source": "catalog-doc",
+        "section": "Design / Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functions as a portable affinity/detection tag independent of expression host; demonstrated for proteins secreted into mammalian cell-culture supernatants and broadly used across prokaryotic and eukaryotic systems.",
+      "value": {
+        "host_range": "host-independent",
+        "demonstrated_hosts": [
+          "mammalian cell culture",
+          "bacterial",
+          "eukaryotic"
+        ]
+      },
+      "source": {
+        "pmid": "24012791",
+        "doi": "10.1016/j.pep.2013.08.021",
+        "quote": "application for purification of recombinant proteins from cell culture supernatants",
+        "quote_source": "catalog-doc",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "strength_affinity",
+      "type": "strength_class",
+      "label": "Bivalent binding to engineered streptavidin (Strep-Tactin/Strep-Tactin XT) gives near-irreversible, picomolar-range capture, far tighter than a single Strep-tag II (micromolar to Strep-Tactin).",
+      "value": {
+        "affinity_class": "picomolar_range",
+        "comparator_single_tag": "micromolar (Strep-tag II / Strep-Tactin)",
+        "elution": "competitive (biotin / desthiobiotin), mild"
+      },
+      "source": {
+        "doi": "10.1016/j.jmb.2021.166893",
+        "pmid": "33639211",
+        "quote": "structural basis of high-affinity bivalent binding of the Twin-Strep-tag to engineered streptavidin (Strep-Tactin XT)",
+        "quote_source": "catalog-doc",
+        "section": "Structure / Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Distinct from a patent-filing variant of identical length (30 aa) that encodes SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK (GGGS x3 linker, no Ser-Ala before the second unit). This record is the canonical product sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK (GGGSGGGSGGS linker).",
+      "value": {
+        "this_sequence": "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK",
+        "this_linker": "GGGSGGGSGGS",
+        "variant_sequence": "SAWSHPQFEKGGGSGGGSGGGSWSHPQFEK",
+        "variant_linker": "GGGSGGGSGGGS",
+        "variant_source": "patent sequences YCW61670.1 / YCV17326.1"
+      },
+      "source": {
+        "pmid": "33639211",
+        "doi": "10.1016/j.jmb.2021.166893",
+        "quote": "Twin-Strep-tag peptide chain R, sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK",
+        "quote_source": "primary",
+        "section": "PDB 6SOS entity"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+LOCUS       Strep_tag                  8 aa                     UNK 01-JAN-1980
+DEFINITION  Strep-tag II — an engineered 8-residue synthetic affinity peptide
+            (WSHPQFEK) that binds the biotin pocket of streptavidin / engineered
+            streptavidin for mild, single-step affinity purification and
+            detection..
+ACCESSION   Strep_tag
+VERSION     Strep_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     The random peptide library-assisted engineering of a C-terminal
+            affinity peptide, useful for the detection and purification of a
+            functional Ig Fv fragment
+  JOURNAL   Protein Engineering (1993)
+  REMARK    doi:10.1093/protein/6.1.109
+REFERENCE   2
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     One-step affinity purification of bacterially produced proteins by
+            means of the 'Strep tag' and immobilized recombinant core
+            streptavidin
+  JOURNAL   Journal of Chromatography A (1994)
+   PUBMED   7921186
+REFERENCE   3
+  AUTHORS   Schmidt TGM, Koepke J, Frank R, Skerra A
+  TITLE     Molecular interaction between the Strep-tag affinity peptide and its
+            cognate target, streptavidin
+  JOURNAL   Journal of Molecular Biology (1996)
+   PUBMED   8636976
+  REMARK    doi:10.1006/jmbi.1996.0061
+REFERENCE   4
+  AUTHORS   Voss S, Skerra A
+  TITLE     Mutagenesis of a flexible loop in streptavidin leads to higher
+            affinity for the Strep-tag II peptide and improved performance in
+            recombinant protein purification
+  JOURNAL   Protein Engineering (1997)
+   PUBMED   9415448
+  REMARK    doi:10.1093/protein/10.8.975
+REFERENCE   5
+  AUTHORS   Skerra A, Schmidt TGM
+  TITLE     Applications of a peptide ligand for streptavidin: the Strep-tag
+  JOURNAL   Biomolecular Engineering (1999)
+   PUBMED   10796988
+REFERENCE   6
+  AUTHORS   Skerra A, Schmidt TGM
+  TITLE     Use of the Strep-Tag and streptavidin for detection and purification
+            of recombinant proteins
+  JOURNAL   Methods in Enzymology (2000)
+   PUBMED   11036648
+REFERENCE   7
+  AUTHORS   Korndorfer IP, Skerra A
+  TITLE     Improved affinity of engineered streptavidin for the Strep-tag II
+            peptide is due to a fixed open conformation of the lid-like loop at
+            the binding site
+  JOURNAL   Protein Science (2002)
+   PUBMED   11910031
+REFERENCE   8
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     The Strep-tag system for one-step purification and high-affinity
+            detection or capturing of proteins
+  JOURNAL   Nature Protocols (2007)
+   PUBMED   17571060
+  REMARK    doi:10.1038/nprot.2007.209
+REFERENCE   9
+  AUTHORS   Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K,
+            Matulewicz K, Niermeier D, Schuchardt I, Stanar K
+  TITLE     Development of the Twin-Strep-tag and its application for
+            purification of recombinant proteins from cell culture supernatants
+  JOURNAL   Protein Expression and Purification (2013)
+   PUBMED   24012791
+  REMARK    doi:10.1016/j.pep.2013.08.021
+REFERENCE   10
+  AUTHORS   Schmidt TGM, Skerra A
+  TITLE     The Strep-tag system for one-step affinity purification of proteins
+            from mammalian cell culture
+  JOURNAL   Methods in Molecular Biology (2015)
+   PUBMED   25749948
+  REMARK    doi:10.1007/978-1-4939-2447-9_8
+REFERENCE   11
+  AUTHORS   Liu L, Sommermeyer D, Cabanov A, Kosasih P, Hill T, Riddell SR
+  TITLE     Inclusion of Strep-tag II in design of antigen receptors for T-cell
+            immunotherapy
+  JOURNAL   Nature Biotechnology (2016)
+   PUBMED   26900664
+  REMARK    doi:10.1038/nbt.3461
+REFERENCE   12
+  AUTHORS   Eichinger A, Skerra A et al.
+  TITLE     The Role of Changing Loop Conformations in Streptavidin Versions
+            Engineered for High-affinity Binding of the Strep-tag II Peptide
+  JOURNAL   Journal of Molecular Biology (2021)
+  REMARK    doi:10.1016/j.jmb.2021.166893
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Strep_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..8
+                     /label="Strep_tag"
+                     /synonym="Strep-tag II"
+                     /synonym="Strep tag"
+                     /synonym="Strep-tag"
+                     /synonym="WSHPQFEK"
+                     /synonym="Strep-tag II peptide"
+                     /note="Strep-tag II core affinity peptide, WSHPQFEK (8 aa).
+                     Synthetic engineered peptide that binds the biotin-binding
+                     pocket of streptavidin and of engineered high-affinity
+                     streptavidin (Strep-Tactin) in a 3-10-helical conformation;
+                     eluted competitively by desthiobiotin or biotin. Atomic
+                     part: the 8 residues are the functional unit and carry no
+                     internal functional sub-elements. Verified to 100% identity
+                     over all 8 residues against PDB 1RSU chain P (positions
+                     3-10)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /citation=[9]
+                     /citation=[10]
+                     /citation=[11]
+                     /citation=[12]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 wshpqfek
+//

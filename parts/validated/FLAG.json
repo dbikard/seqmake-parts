@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0",
+  "slug": "FLAG",
+  "locus": "FLAG",
+  "id": "FLAG",
+  "description": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "DYKDDDDK",
+  "references": [
+    {
+      "authors": "Hopp TP, Prickett KS, Price VL, Libby RT, March CJ, Cerretti DP, Urdal DL, Conlon PJ",
+      "title": "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification",
+      "journal": "Bio/Technology (Nature Biotechnology) (1988)",
+      "pubmed_id": "6526011",
+      "comment": "doi:10.1038/nbt1088-1204"
+    },
+    {
+      "authors": "Brizzard BL, Chubet RG, Vizard DL",
+      "title": "Immunoaffinity purification of FLAG epitope-tagged bacterial alkaline phosphatase using a novel monoclonal antibody and peptide elution",
+      "journal": "BioTechniques (1994)",
+      "pubmed_id": "8024796",
+      "comment": ""
+    },
+    {
+      "authors": "Einhauer A, Jungbauer A",
+      "title": "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins",
+      "journal": "Journal of Biochemical and Biophysical Methods (2001)",
+      "pubmed_id": "11694294",
+      "comment": "doi:10.1016/s0165-022x(01)00213-5"
+    },
+    {
+      "authors": "Roosild TP, Castronovo S, Choe S",
+      "title": "Structure of anti-FLAG M2 Fab domain and its use in the stabilization of engineered membrane proteins",
+      "journal": "Acta Crystallographica Section F (2006)",
+      "pubmed_id": "16946459",
+      "comment": "doi:10.1107/S1744309106029125"
+    },
+    {
+      "authors": "Beugelink JW, Janssen BJC, Pronker MF",
+      "title": "Structural Basis for Recognition of the FLAG-tag by Anti-FLAG M2",
+      "journal": "Journal of Molecular Biology (2024)",
+      "pubmed_id": "38852931",
+      "comment": "doi:10.1016/j.jmb.2024.168649"
+    },
+    {
+      "authors": "Guo XY, Gao XD, Fujita M",
+      "title": "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition",
+      "journal": "PLoS ONE (2021)",
+      "pubmed_id": "33951064",
+      "comment": "doi:10.1371/journal.pone.0250805"
+    },
+    {
+      "authors": "Nogi T, et al.",
+      "title": "Identification of Amino Acid Residues Responsible for the Binding to Anti-FLAG M2 Antibody Using a Phage Display Combinatorial Peptide Library",
+      "journal": "Applied Biochemistry and Biotechnology (2013)",
+      "pubmed_id": "",
+      "comment": "doi:10.1007/s12010-013-0326-8"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 8,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "FLAG"
+        ],
+        "synonym": [
+          "FLAG",
+          "FLAG-tag",
+          "FLAG octapeptide",
+          "DYKDDDDK",
+          "FLAG epitope"
+        ],
+        "note": [
+          "Engineered 8-aa FLAG epitope/affinity tag (Asp-Tyr-Lys-Asp-Asp-Asp-Asp-Lys). Recognized by anti-FLAG M1/M2/M5 monoclonal antibodies. The C-terminal Asp-Asp-Asp-Asp-Lys is an enterokinase recognition/cleavage site, enabling removal of an N-terminal tag. Source-verified to PDB 8RMO chain F at 100% identity."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "PDB 8RMO chain F (entity 1, \"FLAG-tag\", synthetic polypeptide, Beugelink et al. J.Mol.Biol. 2024 doi:10.1016/j.jmb.2024.168649), 100% identity over 8 aa; canonical original reference: Hopp TP et al. Bio/Technology 6:1204-1210 (1988) doi:10.1038/nbt1088-1204"
+  },
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "FLAG is an engineered hydrophilic 8-aa epitope/affinity tag for detection and purification of recombinant proteins",
+      "value": {
+        "function": "epitope_affinity_tag",
+        "design": "engineered_synthetic_peptide",
+        "length_aa": 8,
+        "hydrophilic": true
+      },
+      "source": {
+        "pmid": "6526011",
+        "doi": "10.1038/nbt1088-1204",
+        "quote": "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "antibody_recognition",
+      "type": "antibody_recognition",
+      "label": "FLAG is recognized by the anti-FLAG monoclonal antibodies M1 (Ca2+-dependent, N-terminal-specific), M2 (Ca2+-independent, position-insensitive) and M5",
+      "value": {
+        "antibodies": [
+          "M1",
+          "M2",
+          "M5"
+        ],
+        "M1": {
+          "calcium_dependent": true,
+          "requires_free_N_terminus": true
+        },
+        "M2": {
+          "calcium_dependent": false,
+          "position_insensitive": true
+        }
+      },
+      "source": {
+        "pmid": "11694294",
+        "doi": "10.1016/s0165-022x(01)00213-5",
+        "quote": "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins",
+        "quote_source": "primary",
+        "section": "review of M1 Ca2+-dependent and M2/M5 peptide-competitive elution"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "enterokinase_cleavage",
+      "type": "mechanism",
+      "label": "The C-terminal DDDDK of FLAG is an enterokinase (enteropeptidase) recognition site, allowing proteolytic removal of an N-terminal FLAG tag",
+      "value": {
+        "protease": "enterokinase",
+        "recognition_motif": "DDDDK",
+        "cleaves_after": "K",
+        "use": "tag_removal"
+      },
+      "source": {
+        "pmid": "11694294",
+        "doi": "10.1016/s0165-022x(01)00213-5",
+        "quote": "enterokinase cleavage",
+        "quote_source": "primary",
+        "section": "tag removal"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "minimal_epitope",
+      "type": "sequence_variant",
+      "label": "The minimal anti-FLAG M2 epitope is DYK(D)/DYKxxD; residues D5 and D7 are dispensable for M2 binding",
+      "value": {
+        "minimal_motif": "DYKxxD",
+        "contact_residues": [
+          "D1",
+          "Y2",
+          "K3",
+          "D4",
+          "D6"
+        ],
+        "dispensable": [
+          "D5",
+          "D7"
+        ]
+      },
+      "source": {
+        "pmid": "38852931",
+        "doi": "10.1016/j.jmb.2024.168649",
+        "quote": "identifies D1, Y2, K3, D4, D6 as the five contact residues; FLAG adopts a 3_10 helix",
+        "quote_source": "primary",
+        "figure": "co-crystal structure analysis (PDB 8RMO)"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sulfation_caveat",
+      "type": "sequence_variant",
+      "label": "In the secretory pathway, Tyr2 of FLAG can be sulfated by TPST2 (SLC35B2-dependent), reducing anti-FLAG M2 and polyclonal detection of secreted/membrane proteins",
+      "value": {
+        "modification": "tyrosine_sulfation",
+        "residue": "Y2",
+        "enzymes": [
+          "TPST2",
+          "SLC35B2"
+        ],
+        "effect": "reduced_antibody_recognition",
+        "context": "secretory_pathway"
+      },
+      "source": {
+        "pmid": "33951064",
+        "doi": "10.1371/journal.pone.0250805",
+        "quote": "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}
