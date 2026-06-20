@@ -20,6 +20,13 @@ from so_terms import so_for  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = ROOT / "schema" / "part.schema.json"
+CLAIM_TYPES = ROOT / "schema" / "claim_types.json"
+
+
+def _claim_vocab() -> tuple[set[str], set[str]]:
+    """(canonical, aliases) claim-type strings from the controlled vocabulary."""
+    v = json.loads(CLAIM_TYPES.read_text(encoding="utf-8"))
+    return set(v.get("claim_types", {})), set(v.get("aliases", {}))
 
 
 def _completeness_problems(name: str, data: dict) -> list[str]:
@@ -114,6 +121,23 @@ def _claim_tier_problems(name: str, data: dict) -> list[str]:
     return out
 
 
+def _claim_type_problems(name: str, data: dict) -> list[str]:
+    """Every functional_claim ``type`` must be in the controlled vocabulary
+    (``schema/claim_types.json``): a canonical type, or a registered alias that
+    grandfathers a historical string. Unknown types are rejected so the vocabulary
+    can't drift again (the live data already had affinity/binding_affinity/affinity_binding,
+    strength/strength_class, and two one-off *_dynamic_range siblings). Applies to every part."""
+    canonical, aliases = _claim_vocab()
+    allowed = canonical | aliases
+    out: list[str] = []
+    for c in data.get("functional_claims") or []:
+        t = c.get("type")
+        if t is not None and t not in allowed:
+            out.append(f"{name}: claim {c.get('id')!r} has unknown type {t!r} "
+                       f"(not in schema/claim_types.json; add a canonical type or alias)")
+    return out
+
+
 def _coordinate_problems(name: str, data: dict) -> list[str]:
     """Every feature must lie within the sequence: 0 <= start < end <= len(seq).
     The JSON Schema can bound start/end individually but can't compare them or
@@ -150,6 +174,7 @@ def problems() -> list[str]:
             # tier, and full SO coverage of the features the .gb will carry.
             out.extend(_coordinate_problems(jf.name, data))
             out.extend(_claim_tier_problems(jf.name, data))
+            out.extend(_claim_type_problems(jf.name, data))
             out.extend(_so_coverage_problems(jf.name, data))
             md = jf.with_suffix(".md")
             is_validated = d.name == "validated"

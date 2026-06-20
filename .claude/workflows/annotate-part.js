@@ -363,6 +363,19 @@ const FINAL_SCHEMA = {
     },
     confidence: { type: 'string', enum: ['high', 'medium', 'low'] },
     warnings: { type: 'array', items: { type: 'string' } },
+    requested_papers: {
+      type: 'array',
+      description: 'papers whose PRIMARY full text was needed to support a claim but was inaccessible (paywall / not-in-PMC) AND not in the local store. The affected claims were emitted with honest (non-primary) sourcing + capped confidence; these get appended to sourcing/REQUESTS.md so a human can deposit them.',
+      items: {
+        type: 'object',
+        properties: {
+          pmid: { type: 'string' }, doi: { type: 'string' }, title: { type: 'string' },
+          unblocks: { type: 'string', description: 'claim id(s) this paper would verify' },
+          barrier: { type: 'string', description: 'paywall | not-in-pmc | login | 403 | other' },
+        },
+        required: ['unblocks'],
+      },
+    },
     ready_to_apply: { type: 'boolean' },
     report_markdown: { type: 'string', description: 'curated .md for a validated part: a one-line summary then ## Origin, ## Properties, ## Use, ## References (PMID/DOI links). Lab- and tool-AGNOSTIC (tools/check_content.py enforces this): never name a specific lab, kit, vendor, or software; describe the biology.' },
     recommendations: {
@@ -786,7 +799,8 @@ async function annotateOne(part) {
     `- features: emit the MAIN feature first (type=${part.feature_type || 'the part type'}, start 0, end ${seq.length}, the part's SO term, label "${part.name}"), then each kept sub-feature. DROP any child whose coordinate or subsequence failed verification. Keep only FUNCTIONAL sub-features (-35, -10, +1/TSS, operators, activator/repressor sites, RBS); DROP spacers, separations, discriminators, restriction/cloning sites. Each sub-feature: parent="${part.name}", a so_term (${SO_HINTS}), a regulatory_class where type=regulatory, citation_pmids, and provisional=true if its extent rests on consensus alone (no experimental grounding).\n` +
     `- provenance.sequence_source: the verified string from the SOURCE verdict. If the SOURCE verdict was unverified/blocked, leave it as the verdict gave it and add a warning — never fabricate a source.\n` +
     `- record quality + cross-part homology: the SOURCE verdict carries full_length_match, quality_flags, and homology_findings. If full_length_match is false or quality_flags is non-empty (chimera / mis-trim / embedded vector or restriction sites / wrong strand / mislabeled), add each to warnings and set confidence=low and ready_to_apply=false — this candidate sequence is not a clean instance of the part and likely needs re-sourcing or re-delimiting (a human call). For each homology_finding: implicates="this_part" → handle as above; implicates="other_part" → emit a 'note' recommendation naming that other part and the defect (a curation flag for the catalog), do NOT propose editing it here; implicates="shared_biological_element" → no action.\n` +
-    `- functional_claims: emit nanopub-shaped claims (regulation / inducer / strength / host_range / sequence_variant ...) ONLY where supported, each with a stable type-derived id, a source {pmid/doi, quote, quote_source: primary|catalog-doc, figure/table/page}, an honest confidence, and value. A constitutive promoter gets at least a {id:"regulation", type:"regulation", value:{regulation:"constitutive"}} claim.\n` +
+    `- functional_claims: emit nanopub-shaped claims (regulation / inducer / strength / host_range / sequence_variant ...) ONLY where supported, each with a stable type-derived id, a source {pmid/doi, quote, quote_source: primary|catalog-doc, figure/table/page}, an honest confidence, and value. A constitutive promoter gets at least a {id:"regulation", type:"regulation", value:{regulation:"constitutive"}} claim. Use a canonical claim TYPE from schema/claim_types.json (no new free-text types).\n` +
+    `- CLAIM-EVIDENCE HONESTY GATE (symmetric with the sequence SOURCE gate — do NOT fabricate support from an abstract or memory): a claim may carry quote_source="primary" + confidence high ONLY if you actually READ the primary full text (or the specific figure/table/passage) the claim rests on. First check the local paper store: \`python tools/papers.py resolve --json --pmid <pmid> --doi <doi>\` and read it if present. If the primary full text is NOT accessible (paywall / not-in-PMC / only the abstract is reachable) and the claim's evidence needs more than the abstract (a quantitative value, a figure/table, a mechanism detail): do NOT set quote_source="primary"; cap confidence at medium (low if it rests on a figure/number you could not see); and ADD that paper to "requested_papers" {pmid/doi, title, unblocks:<claim id>, barrier}. A claim fully supported by the abstract alone is fine at its honest confidence and needs no request.\n` +
     `- references: dedupe; full bib (pmid, doi, authors, title, journal, year) for every cited PMID.\n` +
     `- confidence: high ONLY if the sequence is source-verified AND coordinates+citations verified. ready_to_apply=true only when every kept child verified cleanly and the sequence is verified.\n` +
     `- report_markdown: a tight, factual .md — one-line summary then ## Origin, ## Properties, ## Use, ## References (PMID/DOI links). It MUST be lab- and tool-AGNOSTIC: never name a specific lab, kit, vendor, plasmid-prep brand, or software; describe the biology and cite papers. (tools/check_content.py enforces this and will reject violations.)\n` +
@@ -839,6 +853,30 @@ phase('Locate')
 const proposals = (await parallel(parts.map((p) => () => annotateOne(p)))).filter(Boolean)
 log(`Done: ${proposals.length}/${parts.length} proposal(s) synthesized`)
 
+// ---- Claim-evidence requests: surface papers whose full text was needed but blocked ----
+// (the literature sibling of the sequence-SOURCE request path). Dedup by pmid/doi and
+// route each through tools/papers.py request, which is store-aware + self-pruning.
+const reqMap = new Map()
+for (const pr of proposals) {
+  for (const rp of pr.requested_papers || []) {
+    const key = rp.pmid ? `pmid:${rp.pmid}` : (rp.doi ? `doi:${rp.doi}` : null)
+    if (key && !reqMap.has(key)) reqMap.set(key, rp)
+  }
+}
+const requestedPapers = [...reqMap.values()]
+if (requestedPapers.length) {
+  phase('Requests')
+  log(`${requestedPapers.length} blocked paper(s) needed for claim evidence -> sourcing/REQUESTS.md`)
+  await agent(
+    `Some functional claims need a primary paper whose full text was inaccessible. For EACH entry below, run:\n` +
+    `  python tools/papers.py request [--pmid <pmid>] [--doi <doi>] [--title "<title>"] --unblocks "<unblocks>" --barrier <barrier>\n` +
+    `(the command is store-aware and idempotent — it skips papers already deposited and de-dups). Report how many you recorded.\n\n` +
+    `Entries:\n${JSON.stringify(requestedPapers, null, 2)}`,
+    { schema: { type: 'object', properties: { recorded: { type: 'integer' }, note: { type: 'string' } }, required: ['recorded'] },
+      label: 'requests', phase: 'Requests' },
+  )
+}
+
 // ---- 8. Collection block (cluster only) ------------------------------------
 let collection = null
 if (!single && proposals.length) {
@@ -861,4 +899,5 @@ if (!single && proposals.length) {
 // runs the gates. This engine never writes a part file.
 return single
   ? (proposals[0] || { error: `Failed to annotate "${parts[0].name}".` })
-  : { source: clusterSource || null, count: proposals.length, proposals, collection }
+  : { source: clusterSource || null, count: proposals.length, proposals, collection,
+      requested_papers: requestedPapers }

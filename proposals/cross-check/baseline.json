@@ -1,0 +1,191 @@
+[
+  {
+    "part": "tetR_tetA_promoters",
+    "claim_id": "regulation",
+    "claim_type": "regulation",
+    "label": "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible.",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "solubility_partner",
+    "claim_type": "function",
+    "label": "MBP is an uncommonly effective solubility-enhancing fusion partner; the solubility enhancement is an intrinsic property of the MBP fold",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "solubility_mechanism_intrinsic",
+    "claim_type": "mechanism",
+    "label": "Solubility enhancement is an intrinsic property of MBP, but folding of the passenger is either spontaneous or chaperone-mediated",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "affinity_purification",
+    "claim_type": "function",
+    "label": "MBP binds amylose resin, enabling one-step affinity purification of fusions; bound protein is eluted with maltose",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "ligand",
+    "claim_type": "inducer",
+    "label": "Native ligands are maltose and linear maltodextrins; ligand binding underlies the amylose-resin affinity handle",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "tag_removal",
+    "claim_type": "tag_removal",
+    "label": "Tag is removed after purification by site-specific protease cleavage at a recognition site engineered into the linker (e.g. Factor Xa)",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "expression_level",
+    "claim_type": "strength_class",
+    "label": "MBP fusions accumulate to a high level in E. coli (on the order of a few percent of total cellular protein)",
+    "orig_confidence": "medium",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "host_range",
+    "claim_type": "host_range",
+    "label": "Native to and primarily used in Escherichia coli",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "dimerization_caution",
+    "claim_type": "biophysics",
+    "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant \u2014 a caution for structural studies of MBP fusions",
+    "orig_confidence": "medium",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "MBP",
+    "claim_id": "sequence_variant",
+    "claim_type": "sequence_variant",
+    "label": "A surface-entropy-reduced engineered variant (MBPeng) carrying ~8 substitutions is widely used to improve crystallizability of MBP fusions",
+    "orig_confidence": "medium",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "6xHis",
+    "claim_id": "mechanism",
+    "claim_type": "mechanism",
+    "label": "Adjacent histidine residues chelate immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) on an IMAC matrix, enabling single-step affinity purification; protein is eluted by imidazole competition or low pH.",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "6xHis",
+    "claim_id": "purification_use",
+    "claim_type": "mechanism",
+    "label": "Genetic fusion of the polyhistidine peptide to a recombinant protein permits one-step IMAC purification of the fusion product.",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "6xHis",
+    "claim_id": "host_range",
+    "claim_type": "host_range",
+    "label": "Host- and organism-agnostic: as a small synthetic peptide the tag functions across expression hosts and works under both native and denaturing (e.g. 6\u20138 M urea / guanidine) conditions.",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  },
+  {
+    "part": "6xHis",
+    "claim_id": "sequence_variant",
+    "claim_type": "sequence_variant",
+    "label": "Common length variants of the polyhistidine tag exist (e.g. 8xHis, 10xHis); the 6xHis form (HHHHHH) is the canonical minimal tag.",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  },
+  {
+    "part": "FLAG",
+    "claim_id": "function",
+    "claim_type": "function",
+    "label": "FLAG is an engineered hydrophilic 8-aa epitope/affinity tag for detection and purification of recombinant proteins",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "FLAG",
+    "claim_id": "antibody_recognition",
+    "claim_type": "antibody_recognition",
+    "label": "FLAG is recognized by the anti-FLAG monoclonal antibodies M1 (Ca2+-dependent, N-terminal-specific), M2 (Ca2+-independent, position-insensitive) and M5",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "FLAG",
+    "claim_id": "enterokinase_cleavage",
+    "claim_type": "mechanism",
+    "label": "The C-terminal DDDDK of FLAG is an enterokinase (enteropeptidase) recognition site, allowing proteolytic removal of an N-terminal FLAG tag",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "FLAG",
+    "claim_id": "minimal_epitope",
+    "claim_type": "sequence_variant",
+    "label": "The minimal anti-FLAG M2 epitope is DYK(D)/DYKxxD; residues D5 and D7 are dispensable for M2 binding",
+    "orig_confidence": "medium",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "FLAG",
+    "claim_id": "sulfation_caveat",
+    "claim_type": "sequence_variant",
+    "label": "In the secretory pathway, Tyr2 of FLAG can be sulfated by TPST2 (SLC35B2-dependent), reducing anti-FLAG M2 and polyclonal detection of secreted/membrane proteins",
+    "orig_confidence": "medium",
+    "orig_status": "ai-generated",
+    "quote_source": "primary"
+  },
+  {
+    "part": "T7lac",
+    "claim_id": "regulation",
+    "claim_type": "regulation",
+    "label": "LacI-controllable T7 phi10 promoter (requires T7 RNA polymerase).",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  },
+  {
+    "part": "PtetA",
+    "claim_id": "inducer",
+    "claim_type": "inducer",
+    "label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc).",
+    "orig_confidence": "high",
+    "orig_status": "ai-generated",
+    "quote_source": "catalog-doc"
+  }
+]

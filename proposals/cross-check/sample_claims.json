@@ -1,0 +1,480 @@
+[
+  {
+    "part": "tetR_tetA_promoters",
+    "part_is": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+    "molecule_type": "DNA",
+    "sequence": "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA",
+    "claim_id": "regulation",
+    "claim_type": "regulation",
+    "claim_label": "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible.",
+    "claim_value": {
+      "regulation": "inducible",
+      "inducer": "anhydrotetracycline (aTc)",
+      "repressor": "TetR"
+    },
+    "asserted_source": {
+      "pmid": "6311683",
+      "quote": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+      "quote_source": "catalog-doc"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "solubility_partner",
+    "claim_type": "function",
+    "claim_label": "MBP is an uncommonly effective solubility-enhancing fusion partner; the solubility enhancement is an intrinsic property of the MBP fold",
+    "claim_value": {
+      "function": "solubility_enhancement",
+      "mechanism": "intrinsic to MBP structure; passenger folding may be spontaneous or require endogenous chaperones",
+      "comparison": "more effective than GST and thioredoxin at promoting solubility of fused polypeptides"
+    },
+    "asserted_source": {
+      "pmid": "10452611",
+      "doi": "10.1110/ps.8.8.1668",
+      "quote": "Escherichia coli maltose-binding protein is uncommonly effective at promoting the solubility of polypeptides to which it is fused.",
+      "quote_source": "primary",
+      "section": "title and abstract"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "solubility_mechanism_intrinsic",
+    "claim_type": "mechanism",
+    "claim_label": "Solubility enhancement is an intrinsic property of MBP, but folding of the passenger is either spontaneous or chaperone-mediated",
+    "claim_value": {
+      "property": "intrinsic_solubility_enhancement",
+      "passenger_folding": "spontaneous_or_chaperone_mediated"
+    },
+    "asserted_source": {
+      "pmid": "23166722",
+      "doi": "10.1371/journal.pone.0049589",
+      "quote": "The ability to enhance the solubility of its fusion partners is an intrinsic property of maltose-binding protein but their folding is either spontaneous or chaperone-mediated.",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "affinity_purification",
+    "claim_type": "function",
+    "claim_label": "MBP binds amylose resin, enabling one-step affinity purification of fusions; bound protein is eluted with maltose",
+    "claim_value": {
+      "function": "affinity_purification",
+      "ligand": "maltose / maltodextrin",
+      "matrix": "amylose resin",
+      "elution": "maltose"
+    },
+    "asserted_source": {
+      "pmid": "2843437",
+      "doi": "10.1016/0378-1119(88)90004-2",
+      "quote": "Vectors that facilitate the expression and purification of foreign peptides in Escherichia coli by fusion to maltose-binding protein.",
+      "quote_source": "primary",
+      "section": "title and abstract"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "ligand",
+    "claim_type": "inducer",
+    "claim_label": "Native ligands are maltose and linear maltodextrins; ligand binding underlies the amylose-resin affinity handle",
+    "claim_value": {
+      "ligands": [
+        "maltose",
+        "maltodextrin"
+      ],
+      "role": "natural substrate of the periplasmic maltose/maltodextrin transport system; basis of the amylose-affinity purification step"
+    },
+    "asserted_source": {
+      "pmid": "6088507",
+      "quote": "Sequences of the malE gene and of its product, the maltose-binding protein of Escherichia coli K12.",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "tag_removal",
+    "claim_type": "tag_removal",
+    "claim_label": "Tag is removed after purification by site-specific protease cleavage at a recognition site engineered into the linker (e.g. Factor Xa)",
+    "claim_value": {
+      "proteases": [
+        "Factor Xa"
+      ],
+      "note": "Cleavage site lies in the engineered linker between MBP and the passenger, not within MBP itself; the recognition sequence is supplied by the expression vector, not by this part"
+    },
+    "asserted_source": {
+      "pmid": "3073105",
+      "doi": "10.1016/0378-1119(88)90170-9",
+      "quote": "An Escherichia coli vector to express and purify foreign proteins by fusion to and separation from maltose-binding protein.",
+      "quote_source": "primary",
+      "section": "title and abstract"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "expression_level",
+    "claim_type": "strength_class",
+    "claim_label": "MBP fusions accumulate to a high level in E. coli (on the order of a few percent of total cellular protein)",
+    "claim_value": {
+      "level": "high",
+      "approx_fraction_total_protein": "~2%"
+    },
+    "asserted_source": {
+      "pmid": "3073105",
+      "doi": "10.1016/0378-1119(88)90170-9",
+      "quote": "expression of fusion protein to approximately 2% of total cellular protein",
+      "quote_source": "catalog-doc",
+      "section": "abstract"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "host_range",
+    "claim_type": "host_range",
+    "claim_label": "Native to and primarily used in Escherichia coli",
+    "claim_value": {
+      "hosts": [
+        "Escherichia coli"
+      ],
+      "primary_host": "Escherichia coli",
+      "origin": "Escherichia coli K12 malE gene product"
+    },
+    "asserted_source": {
+      "pmid": "6088507",
+      "quote": "the maltose-binding protein of Escherichia coli K12",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "dimerization_caution",
+    "claim_type": "biophysics",
+    "claim_label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant \u2014 a caution for structural studies of MBP fusions",
+    "claim_value": {
+      "phenomenon": "passenger-promoted interlaced dimerization",
+      "context": "observed in a common engineered MBP variant (MBPeng)",
+      "implication": "can confound crystallographic / oligomeric-state interpretation of MBP-fusion structures"
+    },
+    "asserted_source": {
+      "pmid": "31892719",
+      "doi": "10.1038/s41598-019-56718-y",
+      "quote": "Passenger sequences can promote interlaced dimers in a common variant of the maltose-binding protein.",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "MBP",
+    "part_is": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+    "molecule_type": "protein",
+    "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+    "claim_id": "sequence_variant",
+    "claim_type": "sequence_variant",
+    "claim_label": "A surface-entropy-reduced engineered variant (MBPeng) carrying ~8 substitutions is widely used to improve crystallizability of MBP fusions",
+    "claim_value": {
+      "variant": "MBPeng",
+      "mutations_count": 8,
+      "rationale": "surface-entropy reduction to aid crystallization of MBP-fusion proteins",
+      "relation_to_this_part": "engineered derivative of E. coli malE / MBP; not the canonical P0AEX9 sequence"
+    },
+    "asserted_source": {
+      "pmid": "31892719",
+      "doi": "10.1038/s41598-019-56718-y",
+      "quote": "a common variant of the maltose-binding protein",
+      "quote_source": "primary",
+      "section": "title and abstract"
+    }
+  },
+  {
+    "part": "6xHis",
+    "part_is": "6xHis (hexahistidine) polyhistidine affinity tag \u2014 a canonical 6-aa IMAC purification tag (HHHHHH).",
+    "molecule_type": "protein",
+    "sequence": "HHHHHH",
+    "claim_id": "mechanism",
+    "claim_type": "mechanism",
+    "claim_label": "Adjacent histidine residues chelate immobilized divalent transition-metal ions (Ni2+, Co2+, Cu2+, Zn2+) on an IMAC matrix, enabling single-step affinity purification; protein is eluted by imidazole competition or low pH.",
+    "claim_value": {
+      "mechanism": "immobilized-metal affinity chromatography (IMAC)",
+      "metal_ions": [
+        "Ni2+",
+        "Co2+",
+        "Cu2+",
+        "Zn2+"
+      ],
+      "matrices": [
+        "NTA",
+        "IDA"
+      ],
+      "elution": [
+        "imidazole",
+        "low pH"
+      ]
+    },
+    "asserted_source": {
+      "pmid": "3443622",
+      "doi": "10.1016/s0021-9673(00)93969-4",
+      "quote": "metal chelate adsorbent selective for proteins and peptides containing neighbouring histidine residues",
+      "quote_source": "primary",
+      "section": "Title/Abstract"
+    }
+  },
+  {
+    "part": "6xHis",
+    "part_is": "6xHis (hexahistidine) polyhistidine affinity tag \u2014 a canonical 6-aa IMAC purification tag (HHHHHH).",
+    "molecule_type": "protein",
+    "sequence": "HHHHHH",
+    "claim_id": "purification_use",
+    "claim_type": "mechanism",
+    "claim_label": "Genetic fusion of the polyhistidine peptide to a recombinant protein permits one-step IMAC purification of the fusion product.",
+    "claim_value": {
+      "application": "recombinant-protein affinity purification",
+      "fusion": "N- or C-terminal genetic fusion"
+    },
+    "asserted_source": {
+      "doi": "10.1038/nbt1188-1321",
+      "quote": "Genetic Approach to Facilitate Purification of Recombinant Proteins with a Novel Metal Chelate Adsorbent",
+      "quote_source": "primary",
+      "section": "Title"
+    }
+  },
+  {
+    "part": "6xHis",
+    "part_is": "6xHis (hexahistidine) polyhistidine affinity tag \u2014 a canonical 6-aa IMAC purification tag (HHHHHH).",
+    "molecule_type": "protein",
+    "sequence": "HHHHHH",
+    "claim_id": "host_range",
+    "claim_type": "host_range",
+    "claim_label": "Host- and organism-agnostic: as a small synthetic peptide the tag functions across expression hosts and works under both native and denaturing (e.g. 6\u20138 M urea / guanidine) conditions.",
+    "claim_value": {
+      "host_range": "broad",
+      "conditions": [
+        "native",
+        "denaturing"
+      ]
+    },
+    "asserted_source": {
+      "pmid": "12536251",
+      "doi": "10.1007/s00253-002-1158-6",
+      "quote": "the His-tag ... small size, works under denaturing conditions, low cost",
+      "quote_source": "catalog-doc",
+      "section": "Review of tag protein fusions"
+    }
+  },
+  {
+    "part": "6xHis",
+    "part_is": "6xHis (hexahistidine) polyhistidine affinity tag \u2014 a canonical 6-aa IMAC purification tag (HHHHHH).",
+    "molecule_type": "protein",
+    "sequence": "HHHHHH",
+    "claim_id": "sequence_variant",
+    "claim_type": "sequence_variant",
+    "claim_label": "Common length variants of the polyhistidine tag exist (e.g. 8xHis, 10xHis); the 6xHis form (HHHHHH) is the canonical minimal tag.",
+    "claim_value": {
+      "canonical": "HHHHHH",
+      "variants": [
+        "8xHis (HHHHHHHH)",
+        "10xHis (HHHHHHHHHH)"
+      ]
+    },
+    "asserted_source": {
+      "pmid": "24510596",
+      "doi": "10.1002/0471140864.ps0909s73",
+      "quote": "6xHis tag ... metal ion choices (Ni2+, Co2+, Cu2+, Zn2+), matrix types (NTA vs IDA), placement",
+      "quote_source": "catalog-doc",
+      "section": "Overview of affinity tags"
+    }
+  },
+  {
+    "part": "FLAG",
+    "part_is": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+    "molecule_type": "protein",
+    "sequence": "DYKDDDDK",
+    "claim_id": "function",
+    "claim_type": "function",
+    "claim_label": "FLAG is an engineered hydrophilic 8-aa epitope/affinity tag for detection and purification of recombinant proteins",
+    "claim_value": {
+      "function": "epitope_affinity_tag",
+      "design": "engineered_synthetic_peptide",
+      "length_aa": 8,
+      "hydrophilic": true
+    },
+    "asserted_source": {
+      "pmid": "6526011",
+      "doi": "10.1038/nbt1088-1204",
+      "quote": "A Short Polypeptide Marker Sequence Useful for Recombinant Protein Identification and Purification",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "FLAG",
+    "part_is": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+    "molecule_type": "protein",
+    "sequence": "DYKDDDDK",
+    "claim_id": "antibody_recognition",
+    "claim_type": "antibody_recognition",
+    "claim_label": "FLAG is recognized by the anti-FLAG monoclonal antibodies M1 (Ca2+-dependent, N-terminal-specific), M2 (Ca2+-independent, position-insensitive) and M5",
+    "claim_value": {
+      "antibodies": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "M1": {
+        "calcium_dependent": true,
+        "requires_free_N_terminus": true
+      },
+      "M2": {
+        "calcium_dependent": false,
+        "position_insensitive": true
+      }
+    },
+    "asserted_source": {
+      "pmid": "11694294",
+      "doi": "10.1016/s0165-022x(01)00213-5",
+      "quote": "The FLAG peptide, a versatile fusion tag for the purification of recombinant proteins",
+      "quote_source": "primary",
+      "section": "review of M1 Ca2+-dependent and M2/M5 peptide-competitive elution"
+    }
+  },
+  {
+    "part": "FLAG",
+    "part_is": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+    "molecule_type": "protein",
+    "sequence": "DYKDDDDK",
+    "claim_id": "enterokinase_cleavage",
+    "claim_type": "mechanism",
+    "claim_label": "The C-terminal DDDDK of FLAG is an enterokinase (enteropeptidase) recognition site, allowing proteolytic removal of an N-terminal FLAG tag",
+    "claim_value": {
+      "protease": "enterokinase",
+      "recognition_motif": "DDDDK",
+      "cleaves_after": "K",
+      "use": "tag_removal"
+    },
+    "asserted_source": {
+      "pmid": "11694294",
+      "doi": "10.1016/s0165-022x(01)00213-5",
+      "quote": "enterokinase cleavage",
+      "quote_source": "primary",
+      "section": "tag removal"
+    }
+  },
+  {
+    "part": "FLAG",
+    "part_is": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+    "molecule_type": "protein",
+    "sequence": "DYKDDDDK",
+    "claim_id": "minimal_epitope",
+    "claim_type": "sequence_variant",
+    "claim_label": "The minimal anti-FLAG M2 epitope is DYK(D)/DYKxxD; residues D5 and D7 are dispensable for M2 binding",
+    "claim_value": {
+      "minimal_motif": "DYKxxD",
+      "contact_residues": [
+        "D1",
+        "Y2",
+        "K3",
+        "D4",
+        "D6"
+      ],
+      "dispensable": [
+        "D5",
+        "D7"
+      ]
+    },
+    "asserted_source": {
+      "pmid": "38852931",
+      "doi": "10.1016/j.jmb.2024.168649",
+      "quote": "identifies D1, Y2, K3, D4, D6 as the five contact residues; FLAG adopts a 3_10 helix",
+      "quote_source": "primary",
+      "figure": "co-crystal structure analysis (PDB 8RMO)"
+    }
+  },
+  {
+    "part": "FLAG",
+    "part_is": "FLAG epitope tag (DYKDDDDK): an engineered 8-residue hydrophilic peptide used as an affinity/epitope tag, recognized by anti-FLAG M1/M2/M5 antibodies and N-terminally cleavable by enterokinase.",
+    "molecule_type": "protein",
+    "sequence": "DYKDDDDK",
+    "claim_id": "sulfation_caveat",
+    "claim_type": "sequence_variant",
+    "claim_label": "In the secretory pathway, Tyr2 of FLAG can be sulfated by TPST2 (SLC35B2-dependent), reducing anti-FLAG M2 and polyclonal detection of secreted/membrane proteins",
+    "claim_value": {
+      "modification": "tyrosine_sulfation",
+      "residue": "Y2",
+      "enzymes": [
+        "TPST2",
+        "SLC35B2"
+      ],
+      "effect": "reduced_antibody_recognition",
+      "context": "secretory_pathway"
+    },
+    "asserted_source": {
+      "pmid": "33951064",
+      "doi": "10.1371/journal.pone.0250805",
+      "quote": "Sulfation of a FLAG tag mediated by SLC35B2 and TPST2 affects antibody recognition",
+      "quote_source": "primary",
+      "section": "title"
+    }
+  },
+  {
+    "part": "T7lac",
+    "part_is": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
+    "molecule_type": "DNA",
+    "sequence": "AGATCGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAACAATTC",
+    "claim_id": "regulation",
+    "claim_type": "regulation",
+    "claim_label": "LacI-controllable T7 phi10 promoter (requires T7 RNA polymerase).",
+    "claim_value": {
+      "regulation": "inducible",
+      "inducer": "IPTG",
+      "repressor": "LacI",
+      "note": "requires T7 RNA polymerase"
+    },
+    "asserted_source": {
+      "pmid": "10956032",
+      "quote": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
+      "quote_source": "catalog-doc"
+    }
+  },
+  {
+    "part": "PtetA",
+    "part_is": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
+    "molecule_type": "DNA",
+    "sequence": "TTGACACTCTATCATTGATAGAGCATAAT",
+    "claim_id": "inducer",
+    "claim_type": "inducer",
+    "claim_label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc).",
+    "claim_value": {
+      "inducer": "tetracycline / anhydrotetracycline (aTc)",
+      "mode": "de-repression"
+    },
+    "asserted_source": {
+      "pmid": "9092630",
+      "quote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.",
+      "quote_source": "catalog-doc"
+    }
+  }
+]

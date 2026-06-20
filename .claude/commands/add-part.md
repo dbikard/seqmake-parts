@@ -34,6 +34,16 @@ feed it to the Source phase. Never make the contributor write JSON.
   **PDF** into `sourcing/incoming/` and re-run — note it's gitignored (the PDF stays local;
   only the citation + provenance are committed). Frame it as optional-but-better, not a
   blocker for trying.
+- **Claim evidence from the primary full text, never an abstract or memory.** The engine's
+  Synthesize phase applies a claim-evidence honesty gate (symmetric with the Source gate): a
+  claim is only `quote_source: primary` + high confidence if the primary full text (or the
+  cited figure/table) was actually read — checking the local paper store
+  (`tools/papers.py resolve`) first. When the full text is paywalled / not in PMC, the claim
+  is emitted at capped confidence (non-primary) and the paper is appended to
+  `sourcing/REQUESTS.md` via `tools/papers.py request` (store-aware + self-pruning). **So
+  paper requests now come from claims, not just sequences** — when they appear, nudge the
+  contributor to drop the PDF (`tools/papers.py add <pdf> --pmid …`); a re-run then verifies
+  the claim and the request auto-clears.
 - **Boundaries need experimental grounding** (truncation / mutational scanning / mapping /
   genetics), not consensus — else they stay provisional with a lower `confidence`. If the
   grounding paper is inaccessible, **ask the contributor for it** (same `sourcing/incoming/`

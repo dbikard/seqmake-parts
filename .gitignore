@@ -13,6 +13,11 @@
 # (kept local — only the resulting part record + its provenance citation are committed)
 /sourcing/incoming/
 
+# Local full-text paper store (tools/papers.py) — paywalled PDFs + extracted text +
+# index, keyed by PMID/DOI for the cross-check/verifier agents. A personal reference
+# cache; copyrighted full text is never committed.
+/sourcing/papers/
+
 # Python
 __pycache__/
 *.pyc

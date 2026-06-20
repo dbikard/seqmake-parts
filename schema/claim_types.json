@@ -1,0 +1,81 @@
+{
+  "version": "0.1.0",
+  "$comment": "Controlled vocabulary for functional_claims[].type. Decision-oriented: types are grouped by the datasheet SECTION a designer consults and tagged with the part CLASSES they apply to. 'datasheet_slot' marks a type that fills an operational parameter an engineer selects/operates the part by (a structural prior for usefulness). 'aliases' grandfather every historical type string so existing data validates; new claims must use a canonical type. validate_parts.py enforces canonical-or-alias. Promote to a SKOS scheme at w3id.org/seqmake/claim-types once stable.",
+
+  "part_classes": [
+    "promoter", "terminator", "operator", "replicon", "resistance",
+    "protein_tag", "fusion_domain", "cleavage_site", "recombination_site", "rna"
+  ],
+
+  "sections": {
+    "regulation_control":   {"label": "Regulation & control", "purpose": "How expression is switched/tuned: what induces or represses it and over what range."},
+    "performance":          {"label": "Performance",          "purpose": "Quantitative output: strength, efficiency, yield, copy number, sensitivity."},
+    "interaction_affinity": {"label": "Interaction & affinity","purpose": "What the part binds and how tightly: ligand, matrix, antibody, Kd."},
+    "processing_modification":{"label": "Processing & modification","purpose": "Cleavage/removal and post-translational changes the part undergoes or directs."},
+    "composition_structure":{"label": "Composition & structure","purpose": "What the part is built from and how it works: mechanism, domains, variants."},
+    "context_deployment":   {"label": "Context & deployment", "purpose": "Where/how it is used: host range, conditions, placement, applications."},
+    "selection_replication":{"label": "Selection & replication","purpose": "Replicon behaviour and selection: incompatibility, marker."},
+    "caveats_limitations":  {"label": "Caveats & limitations","purpose": "Failure modes, interferences, context-dependence — risk-reducing knowledge."},
+    "identity_origin":      {"label": "Identity & origin",    "purpose": "Provenance/definition. Low marginal usefulness unless it discriminates the part."}
+  },
+
+  "claim_types": {
+    "regulation":        {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "Overall control logic of a regulatory region (inducible/repressible/constitutive; the TF and signal)."},
+    "inducer":           {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "The small-molecule/signal that activates or de-represses, ideally with effective concentration."},
+    "repressor":         {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "The repressor/activator protein acting on the part."},
+    "dynamic_range":     {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "Fold change between ON and OFF (induction or repression); value carries direction + fold."},
+    "leakiness":         {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "Basal/uninduced expression level."},
+    "induction_kinetics":{"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "Speed/shape of the ON or OFF transition."},
+    "orthogonality":     {"section": "regulation_control", "datasheet_slot": true,  "applies_to": ["promoter", "operator"], "description": "Cross-talk/insulation versus other regulators or host machinery."},
+
+    "strength":             {"section": "performance", "datasheet_slot": true, "applies_to": ["promoter"],      "description": "Promoter strength (relative/absolute transcription initiation)."},
+    "termination_efficiency":{"section": "performance","datasheet_slot": true, "applies_to": ["terminator"],    "description": "Fraction of transcripts terminated; directionality."},
+    "expression_yield":     {"section": "performance", "datasheet_slot": true, "applies_to": ["protein_tag", "fusion_domain", "promoter"], "description": "Accumulation level of product (e.g. % total cellular protein)."},
+    "copy_number":          {"section": "performance", "datasheet_slot": true, "applies_to": ["replicon"],      "description": "Plasmid copies per cell and what sets it."},
+    "solubility":           {"section": "performance", "datasheet_slot": true, "applies_to": ["fusion_domain", "protein_tag"], "description": "Effect on soluble yield of a fusion passenger."},
+    "detection":            {"section": "performance", "datasheet_slot": true, "applies_to": ["protein_tag"],   "description": "Detection sensitivity/limit and the probe/readout."},
+
+    "binding_affinity":  {"section": "interaction_affinity", "datasheet_slot": true, "applies_to": ["protein_tag", "operator", "fusion_domain"], "description": "Quantitative binding strength (Kd/Ka) to a partner."},
+    "ligand":            {"section": "interaction_affinity", "datasheet_slot": true, "applies_to": ["fusion_domain", "protein_tag"], "description": "Native ligand/substrate underlying a binding handle."},
+    "affinity_matrix":   {"section": "interaction_affinity", "datasheet_slot": true, "applies_to": ["protein_tag", "fusion_domain"], "description": "Purification matrix the part binds and the elution condition."},
+    "antibody_recognition":{"section": "interaction_affinity","datasheet_slot": true, "applies_to": ["protein_tag"], "description": "Antibodies that recognise the epitope and their requirements."},
+
+    "tag_removal":           {"section": "processing_modification", "datasheet_slot": true, "applies_to": ["protein_tag", "fusion_domain", "cleavage_site"], "description": "Protease and site used to remove the tag/cleave the fusion."},
+    "recognition_specificity":{"section": "processing_modification","datasheet_slot": true, "applies_to": ["cleavage_site", "recombination_site"], "description": "Sequence specificity of an enzyme acting on the part (cleavage/recombination)."},
+    "post_translational":    {"section": "processing_modification", "datasheet_slot": true, "applies_to": ["protein_tag", "fusion_domain"], "description": "PTMs the part can undergo (sulfation, phosphorylation, ...) and their consequence."},
+
+    "mechanism":         {"section": "composition_structure", "datasheet_slot": false, "applies_to": ["promoter", "terminator", "operator", "replicon", "resistance", "protein_tag", "fusion_domain", "cleavage_site"], "description": "How the part works at the molecular level."},
+    "domain_function":   {"section": "composition_structure", "datasheet_slot": false, "applies_to": ["fusion_domain", "protein_tag"], "description": "Function attributable to a specific domain/region."},
+    "structure":         {"section": "composition_structure", "datasheet_slot": false, "applies_to": ["fusion_domain", "protein_tag"], "description": "Domain architecture / fold relevant to use."},
+    "biophysics":        {"section": "composition_structure", "datasheet_slot": false, "applies_to": ["fusion_domain", "protein_tag"], "description": "Oligomeric state, stability, and similar biophysical properties."},
+    "sequence_variant":  {"section": "composition_structure", "datasheet_slot": true,  "applies_to": ["promoter", "terminator", "operator", "protein_tag", "fusion_domain", "cleavage_site"], "description": "Named variants/mutants and minimal motifs, and how they differ from this part."},
+    "sequence_feature":  {"section": "composition_structure", "datasheet_slot": false, "applies_to": ["promoter", "terminator", "operator"], "description": "A mapped sub-feature (TSS, spacer, dyad) not captured as a structured feature."},
+
+    "host_range":        {"section": "context_deployment", "datasheet_slot": true,  "applies_to": ["promoter", "terminator", "operator", "replicon", "resistance", "protein_tag", "fusion_domain"], "description": "Organisms/contexts the part is validated or expected to work in."},
+    "application":       {"section": "context_deployment", "datasheet_slot": true,  "applies_to": ["protein_tag", "fusion_domain", "promoter"], "description": "A concrete use the part enables (e.g. dSTORM imaging, two-step purification)."},
+    "placement":         {"section": "context_deployment", "datasheet_slot": true,  "applies_to": ["protein_tag", "cleavage_site"], "description": "N-/C-terminal or positional constraints on use."},
+    "conditions":        {"section": "context_deployment", "datasheet_slot": true,  "applies_to": ["protein_tag", "fusion_domain", "promoter"], "description": "Buffer/temperature/redox conditions required or tolerated."},
+
+    "selection_marker":  {"section": "selection_replication", "datasheet_slot": true, "applies_to": ["resistance", "replicon"], "description": "Selectable phenotype the part confers."},
+    "incompatibility_group":{"section": "selection_replication","datasheet_slot": true, "applies_to": ["replicon"], "description": "Replicon incompatibility/compatibility group."},
+
+    "caveat":            {"section": "caveats_limitations", "datasheet_slot": true,  "applies_to": ["promoter", "terminator", "operator", "replicon", "resistance", "protein_tag", "fusion_domain", "cleavage_site"], "description": "Failure mode, interference, context-dependence, or scar a user must plan around."},
+
+    "origin":            {"section": "identity_origin", "datasheet_slot": false, "applies_to": ["promoter", "terminator", "operator", "replicon", "resistance", "protein_tag", "fusion_domain", "cleavage_site"], "description": "Provenance/derivation of the sequence. Useful only when it discriminates the part."},
+    "function":          {"section": "identity_origin", "datasheet_slot": false, "applies_to": ["promoter", "terminator", "operator", "replicon", "resistance", "protein_tag", "fusion_domain", "cleavage_site"], "description": "GENERIC fallback. Discouraged — re-type to a specific claim_type; a bare 'function' claim is usually low-usefulness or mis-typed."}
+  },
+
+  "aliases": {
+    "affinity_binding": "binding_affinity",
+    "affinity": "binding_affinity",
+    "strength_class": "termination_efficiency",
+    "induction_dynamic_range": "dynamic_range",
+    "repression_dynamic_range": "dynamic_range",
+    "natural_origin": "origin",
+    "annotation": "origin",
+    "limitation": "caveat",
+    "specificity": "recognition_specificity"
+  },
+
+  "deprecated": ["function"]
+}
