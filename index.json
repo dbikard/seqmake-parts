@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 259,
-  "n_validated": 54,
-  "n_candidate": 205,
-  "n_functional_claims": 157,
+  "n_parts": 261,
+  "n_validated": 61,
+  "n_candidate": 200,
+  "n_functional_claims": 196,
   "parts": [
     {
       "slug": "186_integrase",
@@ -782,11 +782,15 @@
       "kind": "protein",
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 4,
       "synonyms": [
         "E-tag",
-        "E tag"
+        "E tag",
+        "anti-E tag",
+        "GAPVPYPDPLEPR",
+        "g3p epitope tag",
+        "E epitope tag"
       ]
     },
     {
@@ -883,13 +887,13 @@
     },
     {
       "slug": "enterokinase_site",
-      "name": "enterokinase site",
+      "name": "enterokinase_site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 5,
       "synonyms": [
         "enterokinase",
         "enterokinase cleavage site",
@@ -955,6 +959,21 @@
         "M13 origin",
         "M13 ori",
         "f1 ori"
+      ]
+    },
+    {
+      "slug": "FactorXa_site",
+      "name": "FactorXa_site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 5,
+      "synonyms": [
+        "Factor Xa cleavage site",
+        "FXa site",
+        "IEGR"
       ]
     },
     {
@@ -1192,6 +1211,22 @@
         "hPGK promoter",
         "PGK1 promoter",
         "human phosphoglycerate kinase 1 promoter"
+      ]
+    },
+    {
+      "slug": "HRV3C_site",
+      "name": "HRV3C_site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 8,
+      "synonyms": [
+        "PreScission protease site",
+        "3C protease cleavage site",
+        "HRV 3C site",
+        "LEVLFQGP"
       ]
     },
     {
@@ -3397,11 +3432,15 @@
       "kind": "protein",
       "so_term": "SO:0000316",
       "so_name": "CDS",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 5,
       "synonyms": [
         "SUMO",
-        "SMT3"
+        "SMT3",
+        "Smt3",
+        "SUMO tag",
+        "small ubiquitin-related modifier",
+        "Smt3p"
       ]
     },
     {
@@ -3670,32 +3709,37 @@
     },
     {
       "slug": "TEV_site",
-      "name": "TEV site",
+      "name": "TEV_site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 6,
       "synonyms": [
         "TEV site",
         "TEV",
-        "TEV cleavage site"
+        "TEV cleavage site",
+        "TEV protease site",
+        "ENLYFQG",
+        "ENLYFQ-G"
       ]
     },
     {
       "slug": "thrombin_site",
-      "name": "thrombin site",
+      "name": "thrombin_site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 6,
       "synonyms": [
         "thrombin site",
         "thrombin",
-        "thrombin cleavage site"
+        "thrombin cleavage site",
+        "thrombin recognition site",
+        "LVPRGS"
       ]
     },
     {

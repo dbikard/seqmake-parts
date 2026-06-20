@@ -1,0 +1,86 @@
+LOCUS       E-tag                     13 aa                     UNK 01-JAN-1980
+DEFINITION  E-tag: synthetic 13-residue epitope/affinity tag (GAPVPYPDPLEPR)
+            derived from M13 bacteriophage g3p, the detection/purification tag
+            of the pCANTAB 5E phage-display vector..
+ACCESSION   E-tag
+VERSION     E-tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Beckmann C, Haase B, Timmis KN, Tesar M
+  TITLE     Multifunctional g3p-peptide tag for current phage display systems.
+  JOURNAL   Journal of Immunological Methods (1998)
+   PUBMED   9672201
+  REMARK    doi:10.1016/s0022-1759(98)00008-8
+REFERENCE   2
+  AUTHORS   Tesar M, Beckmann C, Roettgen P, Haase B, Faude U, Timmis KN
+  TITLE     Monoclonal antibody against pIII of filamentous phage: an
+            immunological tool to study pIII fusion protein expression in phage
+            display systems.
+  JOURNAL   Immunotechnology (1995)
+   PUBMED   9373333
+  REMARK    doi:10.1016/1380-2933(95)00005-4
+REFERENCE   3
+  AUTHORS   Kramer K, Fiedler M, Skerra A, Hock B
+  TITLE     A generic strategy for subcloning antibody variable regions from the
+            scFv phage display vector pCANTAB 5 E into pASK85 permits the
+            economical production of F(ab) fragments and leads to improved
+            recombinant immunoglobulin stability.
+  JOURNAL   Biosensors and Bioelectronics (2002)
+   PUBMED   11849927
+  REMARK    doi:10.1016/s0956-5663(01)00292-5
+REFERENCE   4
+  AUTHORS   Baek H, Suk KH, Kim YH, Cha S
+  TITLE     An improved helper phage system for efficient isolation of specific
+            antibody molecules in phage display.
+  JOURNAL   Nucleic Acids Research (2002)
+   PUBMED   11861923
+  REMARK    doi:10.1093/nar/30.5.e18
+REFERENCE   5
+  AUTHORS   Singh PK, Agrawal R, Kamboj DV, et al.
+  TITLE     Construction of a single-chain variable-fragment antibody against
+            the superantigen staphylococcal enterotoxin B.
+  JOURNAL   Applied and Environmental Microbiology (2010)
+   PUBMED   20952642
+  REMARK    doi:10.1128/AEM.01441-10
+REFERENCE   6
+  AUTHORS   Mohammadi M, Nejatollahi F, Sakhteman A, Zarei N
+  TITLE     In silico analysis of three different tag polypeptides with dual
+            roles in scFv antibodies.
+  JOURNAL   Journal of Theoretical Biology (2016)
+   PUBMED   27113782
+  REMARK    doi:10.1016/j.jtbi.2016.04.016
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/E-tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..13
+                     /label="E-tag"
+                     /synonym="E-tag"
+                     /synonym="E tag"
+                     /synonym="anti-E tag"
+                     /synonym="GAPVPYPDPLEPR"
+                     /synonym="g3p epitope tag"
+                     /synonym="E epitope tag"
+                     /note="Synthetic 13-residue epitope/affinity tag
+                     GAPVPYPDPLEPR derived from M13 bacteriophage g3p (gene III
+                     protein). It is the C-terminal detection/purification tag
+                     of the pCANTAB 5E phage-display vector (Pharmacia/GE), used
+                     to track and purify scFv-g3p fusion proteins and free
+                     scFv/Fab fragments via anti-E-tag monoclonal antibody.
+                     Conceptually based on the g3p-peptide epitope recognized by
+                     mAb 10C3 (Beckmann et al., 1998). Note: this string is also
+                     coincidentally present in human osteocalcin (UniProt
+                     P02818); that match is unrelated to the engineered tag's
+                     origin."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 gapvpypdpl epr
+//

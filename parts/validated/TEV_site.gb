@@ -1,0 +1,84 @@
+LOCUS       TEV_site                   7 aa                     UNK 01-JAN-1980
+DEFINITION  TEV protease recognition site, engineered ENLYFQG heptapeptide
+            (P1'=Gly) — cleaved between Q and G by Tobacco Etch Virus NIa
+            protease; canonical scar-minimal tag-removal site..
+ACCESSION   TEV_site
+VERSION     TEV_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Dougherty WG, Carrington JC, Cary SM, Parks TD
+  TITLE     Biochemical and mutational analysis of a plant virus polyprotein
+            cleavage site
+  JOURNAL   EMBO J (1988)
+   PUBMED   3409865
+  REMARK    doi:10.1002/j.1460-2075.1988.tb02942.x
+REFERENCE   2
+  AUTHORS   Carrington JC, Dougherty WG
+  TITLE     A viral cleavage site cassette: identification of amino acid
+            sequences required for tobacco etch virus polyprotein processing
+  JOURNAL   Proc Natl Acad Sci USA (1988)
+   PUBMED   3285343
+  REMARK    doi:10.1073/pnas.85.10.3391
+REFERENCE   3
+  AUTHORS   Parks TD, Leuther KK, Howard ED, Johnston SA, Dougherty WG
+  TITLE     Release of proteins and peptides from fusion proteins using a
+            recombinant plant virus proteinase
+  JOURNAL   Anal Biochem (1994)
+   PUBMED   8179197
+  REMARK    doi:10.1006/abio.1994.1060
+REFERENCE   4
+  AUTHORS   Kapust RB, Tozser J, Fox JD, Anderson DE, Cherry S, Copeland TD,
+            Waugh DS
+  TITLE     Tobacco etch virus protease: mechanism of autolysis and rational
+            design of stable mutants with wild-type catalytic proficiency
+  JOURNAL   Protein Eng (2001)
+   PUBMED   11809930
+  REMARK    doi:10.1093/protein/14.12.993
+REFERENCE   5
+  AUTHORS   Kapust RB, Tozser J, Copeland TD, Waugh DS
+  TITLE     The P1' specificity of tobacco etch virus protease
+  JOURNAL   Biochem Biophys Res Commun (2002)
+   PUBMED   12074568
+  REMARK    doi:10.1016/S0006-291X(02)00574-0
+REFERENCE   6
+  AUTHORS   Phan J, Zdanov A, Evdokimov AG, Tropea JE, Peters HK 3rd, Kapust RB,
+            Li M, Wlodawer A, Waugh DS
+  TITLE     Structural basis for the substrate specificity of tobacco etch virus
+            protease
+  JOURNAL   J Biol Chem (2002)
+   PUBMED   12377789
+  REMARK    doi:10.1074/jbc.M207895200
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/TEV_site
+FEATURES             Location/Qualifiers
+     protein_domain  1..7
+                     /label="TEV_site"
+                     /synonym="TEV site"
+                     /synonym="TEV"
+                     /synonym="TEV cleavage site"
+                     /synonym="TEV protease site"
+                     /synonym="ENLYFQG"
+                     /synonym="ENLYFQ-G"
+                     /note="Tobacco Etch Virus (TEV) NIa protease recognition
+                     site, engineered form ENLYFQG
+                     (Glu-Asn-Leu-Tyr-Phe-Gln-Gly). TEV protease cleaves the
+                     scissile peptide bond between the P1 Gln and the P1'
+                     residue, i.e. after the Q (ENLYFQ|G), leaving a single
+                     non-native Gly on the released downstream product.
+                     Whole-part feature spanning all 7 residues; this is a
+                     single atomic functional element with no functional
+                     sub-features. P1'=Gly is an engineered variant of the
+                     natural NIb|CP junction sequence ENLYFQS (P1'=Ser)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 enlyfqg
+//

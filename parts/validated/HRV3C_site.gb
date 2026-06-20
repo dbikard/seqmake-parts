@@ -1,0 +1,104 @@
+LOCUS       HRV3C_site                 8 aa            linear   UNK 01-JAN-1980
+DEFINITION  HRV3C_site — LEVLFQGP, the 8-residue recognition/cleavage site for
+            Human Rhinovirus 3C protease (EC 3.4.22.28); the protease cleaves
+            between Q and G (LEVLFQ|GP), and is widely used to remove affinity
+            or solubility tags from recombinant fusion proteins at 4 °C with
+            high specificity and efficiency..
+ACCESSION   HRV3C_site
+VERSION     HRV3C_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Cordingley MG, Callahan PL, Sardana VV, Garsky VM, Colonno RJ
+  TITLE     Substrate requirements of human rhinovirus 3C protease for peptide
+            cleavage in vitro.
+  JOURNAL   Journal of Biological Chemistry (1990)
+   PUBMED   2160953
+  REMARK    doi:10.1016/S0021-9258(19)38811-8
+REFERENCE   2
+  AUTHORS   Fan X, Li X, Zhou Y, Mei M, Liu P, Zhao J, Peng W, Jiang ZB, Yang S,
+            Iverson BL, Zhang G, Yi L
+  TITLE     Quantitative Analysis of the Substrate Specificity of Human
+            Rhinovirus 3C Protease and Exploration of Its Substrate Recognition
+            Mechanisms.
+  JOURNAL   ACS Chemical Biology (2019)
+   PUBMED   31613083
+  REMARK    doi:10.1021/acschembio.9b00539
+REFERENCE   3
+  AUTHORS   Abdelkader EH, Otting G
+  TITLE     NT*-HRV3CP: An optimized construct of human rhinovirus 14 3C
+            protease for high-yield expression and fast affinity-tag cleavage.
+  JOURNAL   Journal of Biotechnology (2020)
+   PUBMED   33166527
+  REMARK    doi:10.1016/j.jbiotec.2020.11.005
+REFERENCE   4
+  AUTHORS   Waugh DS
+  TITLE     An overview of enzymatic reagents for the removal of affinity tags.
+  JOURNAL   Protein Expression and Purification (2011)
+   PUBMED   21871965
+  REMARK    doi:10.1016/j.pep.2011.08.005
+REFERENCE   5
+  AUTHORS   Mei M, Fan X, Zhou Y, Zhang F, Zhang G, Yi L
+  TITLE     A combinatorial strategy for HRV 3C protease engineering to achieve
+            the N-terminal free cleavage.
+  JOURNAL   International Journal of Biological Macromolecules (2024)
+   PUBMED   38521339
+  REMARK    doi:10.1016/j.ijbiomac.2024.131066
+REFERENCE   6
+  AUTHORS   Xu J, Nakanishi T, Kato T, Park EY
+  TITLE     In vivo enzymatic digestion of HRV 3C protease cleavage
+            sites-containing proteins produced in a silkworm-baculovirus
+            expression system.
+  JOURNAL   Bioscience Reports (2022)
+   PUBMED   35642592
+  REMARK    doi:10.1042/BSR20220739
+REFERENCE   7
+  AUTHORS   Xu H, Wang Q, Zhang Z, Yi L, Ma L, Zhai C
+  TITLE     A simplified method to remove fusion tags from a xylanase of
+            Bacillus sp. HBP8 with HRV 3C protease.
+  JOURNAL   Enzyme and Microbial Technology (2019)
+   PUBMED   30686346
+  REMARK    doi:10.1016/j.enzmictec.2019.01.004
+REFERENCE   8
+  AUTHORS   Davis GJ, Wang QM, Cox GA, Johnson RB, Wakulchik M, Dotson CA,
+            Villarreal EC
+  TITLE     Expression and purification of recombinant rhinovirus 14 3CD
+            proteinase and its comparison to the 3C proteinase.
+  JOURNAL   Archives of Biochemistry and Biophysics (1997)
+   PUBMED   9328292
+  REMARK    doi:10.1006/abbi.1997.0291
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/HRV3C_site
+FEATURES             Location/Qualifiers
+     protein_domain  1..8
+                     /label="HRV3C_site"
+                     /synonym="PreScission protease site"
+                     /synonym="3C protease cleavage site"
+                     /synonym="HRV 3C site"
+                     /synonym="LEVLFQGP"
+                     /note="Human rhinovirus 3C protease recognition and
+                     cleavage site (LEVLFQGP; Leu-Glu-Val-Leu-Phe-Gln-Gly-Pro).
+                     The 3C cysteine protease cleaves the peptide bond between Q
+                     (P1) and G (P1'), i.e. LEVLFQ|GP, leaving a Gly-Pro
+                     N-terminal scar on the downstream protein. The site derives
+                     from the natural HRV polyprotein processing sequence at
+                     residues 1423-1430 of HRV3 (UniProt Q82081). It is the
+                     recognition sequence used in the PreScission protease
+                     reagent (a GST-HRV3C fusion). Source-verified to UniProt
+                     Q82081 (POLG_HRV3) at 100% identity over all 8 aa. No
+                     functional sub-features are present: this is a single
+                     atomic cleavage-site element."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 levlfqgp
+//

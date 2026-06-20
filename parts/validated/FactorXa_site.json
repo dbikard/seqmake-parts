@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "slug": "FactorXa_site",
+  "locus": "FactorXa_site",
+  "id": "FactorXa_site",
+  "description": "FactorXa_site \u2014 IEGR, the Ile-Glu-Gly-Arg P4-P1 recognition tetrapeptide cleaved after Arg by coagulation Factor Xa; the canonical engineered tag-removal/fusion-protein cleavage site.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "IEGR",
+  "references": [
+    {
+      "authors": "Nagai K, Th\u00f8gersen HC",
+      "title": "Generation of beta-globin by sequence-specific proteolysis of a hybrid protein produced in Escherichia coli",
+      "journal": "Nature (1984)",
+      "pubmed_id": "6330564",
+      "comment": "doi:10.1038/309810a0"
+    },
+    {
+      "authors": "Jenny RJ, Mann KG, Lundblad RL",
+      "title": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+      "journal": "Protein Expression and Purification (2003)",
+      "pubmed_id": "12963335",
+      "comment": "doi:10.1016/s1046-5928(03)00168-2"
+    },
+    {
+      "authors": "Hsu HJ, Tsai KC, Sun YK, Chang HJ, Huang YJ, Yu HM, Lin CH, Mao SS, Yang AS",
+      "title": "Factor Xa active site substrate specificity with substrate phage display and computational molecular modeling",
+      "journal": "Journal of Biological Chemistry (2008)",
+      "pubmed_id": "18296445",
+      "comment": "doi:10.1074/jbc.M708843200"
+    },
+    {
+      "authors": "Wearne SJ",
+      "title": "Factor Xa cleavage of fusion proteins. Elimination of non-specific cleavage by reversible acylation",
+      "journal": "FEBS Letters (1990)",
+      "pubmed_id": "2185034",
+      "comment": "doi:10.1016/0014-5793(90)80696-g"
+    },
+    {
+      "authors": "He M, Jin L, Austen B",
+      "title": "Specificity of factor Xa in the cleavage of fusion proteins",
+      "journal": "Journal of Protein Chemistry (1993)",
+      "pubmed_id": "8427626",
+      "comment": "doi:10.1007/BF01024906"
+    },
+    {
+      "authors": "Waugh DS",
+      "title": "An overview of enzymatic reagents for the removal of affinity tags",
+      "journal": "Protein Expression and Purification (2011)",
+      "pubmed_id": "21871965",
+      "comment": "doi:10.1016/j.pep.2011.08.005"
+    },
+    {
+      "authors": "Stojanovski BM, Di Cera E",
+      "title": "Role of sequence and position of the cleavage sites in prothrombin activation",
+      "journal": "Journal of Biological Chemistry (2021)",
+      "pubmed_id": "34265300",
+      "comment": "doi:10.1016/j.jbc.2021.100955"
+    },
+    {
+      "authors": "Sahin-T\u00f3th M, Dunten RL, Kaback HR",
+      "title": "Design of a membrane protein for site-specific proteolysis: properties of engineered factor Xa protease sites in the lactose permease of Escherichia coli",
+      "journal": "Biochemistry (1995)",
+      "pubmed_id": "7827058",
+      "comment": "doi:10.1021/bi00004a001"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 4,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "FactorXa_site"
+        ],
+        "synonym": [
+          "Factor Xa cleavage site",
+          "FXa site",
+          "IEGR"
+        ],
+        "note": [
+          "Coagulation Factor Xa protease recognition site (IEGR; Ile-Glu-Gly-Arg). Factor Xa cleaves the peptide bond on the C-terminal (carboxyl) side of the P1 Arg, i.e. after the terminal R (IEGR|...). Whole-part feature spanning all 4 residues; this is a single atomic functional element and has no functional sub-features."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt P00734 (THRB_HUMAN, Prothrombin, Homo sapiens; reviewed Swiss-Prot), residues 311-314 (1-based, canonical isoform), 100% identity over 4 aa; IEGR is the Factor Xa P4-P1 recognition tetrapeptide immediately preceding the documented cleavage site at Arg-314. Independently fetched via https://rest.uniprot.org/uniprotkb/P00734.fasta and confirmed by direct substring alignment (BioPython PairwiseAligner local mode, score=8.0, 4/4 matches)."
+  },
+  "functional_claims": [
+    {
+      "id": "recognition_specificity",
+      "type": "recognition_specificity",
+      "label": "IEGR is a Factor Xa P4-P1 recognition site; the protease cleaves on the C-terminal side of the P1 Arg (after the terminal R)",
+      "value": {
+        "protease": "Factor Xa (coagulation factor Xa, EC 3.4.21.6)",
+        "recognition_motif": "Ile-Glu-Gly-Arg (IEGR)",
+        "positions": "P4-P3-P2-P1",
+        "cleavage_position": "after P1 Arg (IEGR|X)",
+        "preferred_consensus": "Ile-Glu/Asp-Gly-Arg (IEGR / IDGR)"
+      },
+      "source": {
+        "pmid": "18296445",
+        "doi": "10.1074/jbc.M708843200",
+        "quote": "Factor Xa active site substrate specificity with substrate phage display and computational molecular modeling",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Engineered into a fusion-protein linker, IEGR allows site-specific proteolytic release of the passenger from its tag by Factor Xa",
+      "value": {
+        "function": "site_specific_protease_cleavage_site",
+        "use": "tag_removal_from_fusion_protein",
+        "protease": "Factor Xa",
+        "founding_demonstration": "sequence-specific proteolysis of a hybrid protein to release a native-N-terminus product (beta-globin) produced in E. coli"
+      },
+      "source": {
+        "pmid": "6330564",
+        "doi": "10.1038/309810a0",
+        "quote": "Generation of beta-globin by sequence-specific proteolysis of a hybrid protein produced in Escherichia coli",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "natural_origin",
+      "type": "natural_origin",
+      "label": "IEGR is the natural P4-P1 sequence preceding a Factor Xa cleavage site in human prothrombin",
+      "value": {
+        "origin_protein": "human prothrombin (UniProt P00734, THRB_HUMAN)",
+        "context": "Factor Xa cleavage site at Arg; the natural flanking context is DEDSDRAIEGRTATS",
+        "note": "Prothrombin is physiologically activated by Factor Xa; the IEGR/IDGR motifs at its activation cleavage sites are the biological template for the engineered tag"
+      },
+      "source": {
+        "pmid": "34265300",
+        "doi": "10.1016/j.jbc.2021.100955",
+        "quote": "Role of sequence and position of the cleavage sites in prothrombin activation",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "context_dependence",
+      "type": "limitation",
+      "label": "Factor Xa cleavage at IEGR is context-dependent: nonspecific secondary cleavage and inhibition by certain P1' residues are documented practical limitations",
+      "value": {
+        "limitation": "context_dependence_and_nonspecific_cleavage",
+        "details": [
+          "nonspecific cleavage can occur at secondary (e.g. Lys-containing) sites",
+          "hydrophobic or otherwise unfavorable residues immediately C-terminal of the site (P1') can inhibit cleavage",
+          "steric accessibility of the inserted site affects cleavage efficiency"
+        ]
+      },
+      "source": {
+        "pmid": "12963335",
+        "doi": "10.1016/s1046-5928(03)00168-2",
+        "quote": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Host-agnostic sequence element; the cleaving enzyme (Factor Xa) is supplied in vitro, so the site functions independently of the expression host",
+      "value": {
+        "element_type": "in_vitro_protease_recognition_site",
+        "host_dependence": "none (cleavage performed in vitro with exogenous Factor Xa)",
+        "enzyme_origin": "mammalian coagulation Factor Xa"
+      },
+      "source": {
+        "pmid": "21871965",
+        "doi": "10.1016/j.pep.2011.08.005",
+        "quote": "An overview of enzymatic reagents for the removal of affinity tags",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

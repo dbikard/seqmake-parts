@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "slug": "E-tag",
+  "locus": "E-tag",
+  "id": "E-tag",
+  "description": "E-tag: synthetic 13-residue epitope/affinity tag (GAPVPYPDPLEPR) derived from M13 bacteriophage g3p, the detection/purification tag of the pCANTAB 5E phage-display vector.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GAPVPYPDPLEPR",
+  "references": [
+    {
+      "authors": "Beckmann C, Haase B, Timmis KN, Tesar M",
+      "title": "Multifunctional g3p-peptide tag for current phage display systems.",
+      "journal": "Journal of Immunological Methods (1998)",
+      "pubmed_id": "9672201",
+      "comment": "doi:10.1016/s0022-1759(98)00008-8"
+    },
+    {
+      "authors": "Tesar M, Beckmann C, Roettgen P, Haase B, Faude U, Timmis KN",
+      "title": "Monoclonal antibody against pIII of filamentous phage: an immunological tool to study pIII fusion protein expression in phage display systems.",
+      "journal": "Immunotechnology (1995)",
+      "pubmed_id": "9373333",
+      "comment": "doi:10.1016/1380-2933(95)00005-4"
+    },
+    {
+      "authors": "Kramer K, Fiedler M, Skerra A, Hock B",
+      "title": "A generic strategy for subcloning antibody variable regions from the scFv phage display vector pCANTAB 5 E into pASK85 permits the economical production of F(ab) fragments and leads to improved recombinant immunoglobulin stability.",
+      "journal": "Biosensors and Bioelectronics (2002)",
+      "pubmed_id": "11849927",
+      "comment": "doi:10.1016/s0956-5663(01)00292-5"
+    },
+    {
+      "authors": "Baek H, Suk KH, Kim YH, Cha S",
+      "title": "An improved helper phage system for efficient isolation of specific antibody molecules in phage display.",
+      "journal": "Nucleic Acids Research (2002)",
+      "pubmed_id": "11861923",
+      "comment": "doi:10.1093/nar/30.5.e18"
+    },
+    {
+      "authors": "Singh PK, Agrawal R, Kamboj DV, et al.",
+      "title": "Construction of a single-chain variable-fragment antibody against the superantigen staphylococcal enterotoxin B.",
+      "journal": "Applied and Environmental Microbiology (2010)",
+      "pubmed_id": "20952642",
+      "comment": "doi:10.1128/AEM.01441-10"
+    },
+    {
+      "authors": "Mohammadi M, Nejatollahi F, Sakhteman A, Zarei N",
+      "title": "In silico analysis of three different tag polypeptides with dual roles in scFv antibodies.",
+      "journal": "Journal of Theoretical Biology (2016)",
+      "pubmed_id": "27113782",
+      "comment": "doi:10.1016/j.jtbi.2016.04.016"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 13,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "E-tag"
+        ],
+        "synonym": [
+          "E-tag",
+          "E tag",
+          "anti-E tag",
+          "GAPVPYPDPLEPR",
+          "g3p epitope tag",
+          "E epitope tag"
+        ],
+        "note": [
+          "Synthetic 13-residue epitope/affinity tag GAPVPYPDPLEPR derived from M13 bacteriophage g3p (gene III protein). It is the C-terminal detection/purification tag of the pCANTAB 5E phage-display vector (Pharmacia/GE), used to track and purify scFv-g3p fusion proteins and free scFv/Fab fragments via anti-E-tag monoclonal antibody. Conceptually based on the g3p-peptide epitope recognized by mAb 10C3 (Beckmann et al., 1998). Note: this string is also coincidentally present in human osteocalcin (UniProt P02818); that match is unrelated to the engineered tag's origin."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "AF130864.1 (pG8SAET phagemid vector, deposited 1999-05-06), misc_feature 316..354 annotated \"E-tag\"; independent efetch + translation yields GAPVPYPDPLEPR, 100% identity over all 13 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "epitope_detection",
+      "type": "function",
+      "label": "Detection/affinity epitope recognized by anti-E-tag monoclonal antibody",
+      "value": {
+        "function": "epitope_tag",
+        "applications": [
+          "western_blot",
+          "affinity_purification",
+          "phage_display_tracking",
+          "ELISA"
+        ],
+        "vector": "pCANTAB 5E",
+        "fusion_position": "C-terminal",
+        "host_range": "Escherichia coli expression and M13 phage display"
+      },
+      "source": {
+        "pmid": "11849927",
+        "doi": "10.1016/s0956-5663(01)00292-5",
+        "quote": "purification of recombinant proteins via the carboxyl-terminal E-tag (Malone, 1994)",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "epitope_origin",
+      "type": "annotation",
+      "label": "13-residue tag derived from the M13 bacteriophage g3p (gene III protein) epitope concept",
+      "value": {
+        "source_protein": "M13 bacteriophage g3p (gene III protein)",
+        "synthetic": true,
+        "minimal_epitope_concept": "11-aa g3p epitope (g3p positions 292-302), mAb 10C3, Kd ~6.8e-10 M",
+        "deployment_vector": "pCANTAB 5E"
+      },
+      "source": {
+        "pmid": "9672201",
+        "doi": "10.1016/s0022-1759(98)00008-8",
+        "quote": "Multifunctional g3p-peptide tag for current phage display systems",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "scfv_linker_stability",
+      "type": "function",
+      "label": "E-tag also serves a structural/linker role with favorable stability in scFv constructs",
+      "value": {
+        "role": "linker_and_detection",
+        "context": "single-chain variable fragment (scFv) antibodies",
+        "evidence": "molecular dynamics simulation indicating favorable stability as an scFv linker"
+      },
+      "source": {
+        "pmid": "27113782",
+        "doi": "10.1016/j.jtbi.2016.04.016",
+        "quote": "In silico analysis of three different tag polypeptides with dual roles in scFv antibodies",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "low",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "anti_e_tag_antibody_cost_limitation",
+      "type": "annotation",
+      "label": "E-tag affinity purification is limited by the high cost of the cognate anti-E-tag antibody",
+      "value": {
+        "limitation": "purification scalability",
+        "cause": "high expenditure for the cognate anti-E-tag antibody"
+      },
+      "source": {
+        "pmid": "11849927",
+        "doi": "10.1016/s0956-5663(01)00292-5",
+        "quote": "severely limited by the high expenditure for the cognate anti-E-tag antibody",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

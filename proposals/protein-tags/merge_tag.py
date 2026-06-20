@@ -24,8 +24,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
+_SRC_FIELDS = {"pmid", "doi", "url", "quote", "quote_source",
+               "figure", "table", "page", "section"}
+
+
 def norm_claim(c):
-    src = dict(c.get("source", {}))
+    # schema source has additionalProperties:false — keep only allowed fields
+    # (engine runs sometimes emit a stray 'journal'/'authors' on the source)
+    src = {k: v for k, v in (c.get("source") or {}).items() if k in _SRC_FIELDS}
     q = src.get("quote_source", "")
     return {
         "id": c["id"], "type": c["type"], "label": c["label"],

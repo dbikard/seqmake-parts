@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "slug": "thrombin_site",
+  "locus": "thrombin_site",
+  "id": "thrombin_site",
+  "description": "Engineered 6-residue thrombin recognition/cleavage site (LVPRGS) used to proteolytically remove affinity/solubility tags from recombinant fusion proteins; thrombin cleaves after the Arg (LVPR | GS), leaving a Gly-Ser N-terminal scar.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "LVPRGS",
+  "references": [
+    {
+      "authors": "Smith DB, Johnson KS",
+      "title": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+      "journal": "Gene (1988)",
+      "pubmed_id": "3047011",
+      "comment": "doi:10.1016/0378-1119(88)90005-4"
+    },
+    {
+      "authors": "Gallwitz M, Enoksson M, Thorpe M, Hellman L",
+      "title": "The Extended Cleavage Specificity of Human Thrombin",
+      "journal": "PLoS One (2012)",
+      "pubmed_id": "22384068",
+      "comment": "doi:10.1371/journal.pone.0031756"
+    },
+    {
+      "authors": "Waugh DS",
+      "title": "An overview of enzymatic reagents for the removal of affinity tags",
+      "journal": "Protein Expression and Purification (2011)",
+      "pubmed_id": "21871965",
+      "comment": "doi:10.1016/j.pep.2011.08.005"
+    },
+    {
+      "authors": "Jenny RJ, Mann KG, Lundblad RL",
+      "title": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+      "journal": "Protein Expression and Purification (2003)",
+      "pubmed_id": "12963335",
+      "comment": "doi:10.1016/s1046-5928(03)00168-2"
+    },
+    {
+      "authors": "Liu D, Xu R, Dutta K, Cowburn D",
+      "title": "N-terminal cysteinyl proteins can be prepared using thrombin cleavage",
+      "journal": "FEBS Letters (2008)",
+      "pubmed_id": "18331839",
+      "comment": "doi:10.1016/j.febslet.2008.02.078"
+    },
+    {
+      "authors": "Hakes DJ, Dixon JE",
+      "title": "New vectors for high level expression of recombinant proteins in bacteria",
+      "journal": "Analytical Biochemistry (1992)",
+      "pubmed_id": "1519755",
+      "comment": "doi:10.1016/0003-2697(92)90108-j"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 6,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "thrombin_site"
+        ],
+        "synonym": [
+          "thrombin site",
+          "thrombin",
+          "thrombin cleavage site",
+          "thrombin recognition site",
+          "LVPRGS"
+        ],
+        "note": [
+          "Engineered 6-aa thrombin (factor IIa) recognition/cleavage site Leu-Val-Pro-Arg-Gly-Ser. Thrombin hydrolyses the peptide bond after the Arg (LVPR | GS), releasing the downstream protein with an N-terminal Gly-Ser scar. Derived from the natural human factor VIII thrombin site LVPRGF by a Phe->Ser substitution that creates a BamHI (GGATCC) cloning site; the canonical site of the pGEX-2T GST-fusion expression system. Source-verified to U13850.1 misc_feature 918..935 at 100% identity over all 6 residues."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "U13850.1 (pGEX-2T cloning vector, Pharmacia Biotech, deposited 1994-08-19), misc_feature 918..935 annotated 'encodes thrombin recognition site', nt CTGGTTCCGCGTGGATCC translates to LVPRGS, 100% over 6 aa; original design in Smith & Johnson 1988, Gene 67:31-40 (PMID 3047011, doi:10.1016/0378-1119(88)90005-4)"
+  },
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "LVPRGS is an engineered thrombin (factor IIa) recognition/cleavage site used to proteolytically separate an affinity or solubility tag from a target protein in recombinant fusions",
+      "value": {
+        "function": "protease_cleavage_site",
+        "protease": "thrombin",
+        "ec_number": "3.4.21.5",
+        "design": "engineered_synthetic_peptide",
+        "length_aa": 6,
+        "use": "tag_removal"
+      },
+      "source": {
+        "pmid": "3047011",
+        "doi": "10.1016/0378-1119(88)90005-4",
+        "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+        "quote_source": "primary",
+        "section": "title; thrombin cleavage of the GST-fusion linker"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Thrombin cleaves the LVPRGS site after the Arg residue (LVPR | GS), releasing the downstream protein with an N-terminal Gly-Ser scar",
+      "value": {
+        "protease": "thrombin",
+        "recognition_motif": "LVPRGS",
+        "scissile_bond": "R4-G5",
+        "cleaves_after": "Arg",
+        "scar": "GS"
+      },
+      "source": {
+        "pmid": "21871965",
+        "doi": "10.1016/j.pep.2011.08.005",
+        "quote": "Thrombin cleaves after the Arg of LVPR|GS, leaving Gly-Ser residues on the N-terminus of the released protein",
+        "quote_source": "primary",
+        "section": "thrombin recognition site and resulting scar"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "origin_engineering",
+      "type": "sequence_variant",
+      "label": "LVPRGS was engineered from the natural human factor VIII thrombin cleavage site LVPRGF by a Phe->Ser substitution at P2' that creates a BamHI (GGATCC) restriction site for convenient cloning",
+      "value": {
+        "parent_site": "LVPRGF",
+        "parent_origin": "human_factor_VIII",
+        "substitution": "F6S",
+        "position": "P2_prime",
+        "rationale": "creates_BamHI_GGATCC_cloning_site"
+      },
+      "source": {
+        "pmid": "21871965",
+        "doi": "10.1016/j.pep.2011.08.005",
+        "quote": "The thrombin site LVPRGS is derived from the factor VIII sequence LVPRGF, with the C-terminal Phe replaced by Ser to introduce a BamHI site",
+        "quote_source": "primary",
+        "section": "overview of thrombin recognition sequence"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "extended_specificity",
+      "type": "mechanism",
+      "label": "Thrombin's extended cleavage consensus is P2=Pro (dominant), P1=Arg (obligatory) and a small P1' residue, with P3'=Arg preferred; LVPRGS matches the core P2-Pro/P1-Arg/P1'-small determinants",
+      "value": {
+        "consensus": "P4-P4'",
+        "P2": "Pro",
+        "P1": "Arg",
+        "P1_prime": "small_residue",
+        "P3_prime": "Arg_preferred"
+      },
+      "source": {
+        "pmid": "22384068",
+        "doi": "10.1371/journal.pone.0031756",
+        "quote": "The Extended Cleavage Specificity of Human Thrombin",
+        "quote_source": "primary",
+        "section": "title; phage-display determination of P4-P4' specificity"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "off_target_caveat",
+      "type": "mechanism",
+      "label": "Thrombin can cleave at cryptic/off-target sites within target proteins, so cleavage products require verification; this is a recognized limitation versus the more specific factor Xa and TEV proteases",
+      "value": {
+        "caveat": "off_target_cleavage",
+        "promiscuity": "higher_than_TEV",
+        "mitigation": "verify_cleavage_products"
+      },
+      "source": {
+        "pmid": "12963335",
+        "doi": "10.1016/s1046-5928(03)00168-2",
+        "quote": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+        "quote_source": "primary",
+        "section": "title; off-target cleavage and verification"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "lvprc_variant",
+      "type": "sequence_variant",
+      "label": "A Gly->Cys variant at P1' (LVPRC) lets thrombin expose an N-terminal cysteine on the released protein, enabling downstream native chemical ligation",
+      "value": {
+        "variant_motif": "LVPRC",
+        "substitution": "G5C",
+        "position": "P1_prime",
+        "application": "N-terminal_cysteine_for_native_chemical_ligation"
+      },
+      "source": {
+        "pmid": "18331839",
+        "doi": "10.1016/j.febslet.2008.02.078",
+        "quote": "N-terminal cysteinyl proteins can be prepared using thrombin cleavage",
+        "quote_source": "primary",
+        "section": "title; LVPRC variant demonstrated with Csk and Abl kinase domains"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

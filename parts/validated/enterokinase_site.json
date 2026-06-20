@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "slug": "enterokinase_site",
+  "locus": "enterokinase_sit",
+  "id": "enterokinase_site",
+  "description": "Enterokinase (enteropeptidase) recognition/cleavage site DDDDK \u2014 a 5-residue protease site used to remove an N-terminal fusion tag, leaving no extra residues on the downstream protein.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear",
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "DDDDK",
+  "references": [
+    {
+      "authors": "Maroux S, Baratti J, Desnuelle P",
+      "title": "Purification and specificity of porcine enterokinase",
+      "journal": "J Biol Chem (1971)",
+      "pubmed_id": "5570436",
+      "comment": ""
+    },
+    {
+      "authors": "Light A, Janska H",
+      "title": "Enterokinase (enteropeptidase): comparative aspects",
+      "journal": "Trends Biochem Sci (1989)",
+      "pubmed_id": "2658218",
+      "comment": "doi:10.1016/0968-0004(89)90133-3"
+    },
+    {
+      "authors": "Kitamoto Y, Yuan X, Wu Q, McCourt DW, Sadler JE",
+      "title": "Enterokinase, the initiator of intestinal digestion, is a mosaic protease composed of a distinctive assortment of domains",
+      "journal": "Proc Natl Acad Sci USA (1994)",
+      "pubmed_id": "8226855",
+      "comment": "doi:10.1073/pnas.91.16.7588"
+    },
+    {
+      "authors": "Collins-Racie LA, McColgan JM, Grant KL, DiBlasio-Smith EA, McCoy JM, LaVallie ER",
+      "title": "Production of recombinant bovine enterokinase catalytic subunit in Escherichia coli using the novel secretory fusion partner DsbA",
+      "journal": "Nature Biotechnology (1995)",
+      "pubmed_id": "9636275",
+      "comment": "doi:10.1038/nbt0995-982"
+    },
+    {
+      "authors": "Lu D, Yuan X, Zheng X, Sadler JE",
+      "title": "Bovine proenteropeptidase is activated by trypsin, and the specificity of enteropeptidase depends on the heavy chain",
+      "journal": "J Biol Chem (1997)",
+      "pubmed_id": "9395456",
+      "comment": "doi:10.1074/jbc.272.50.31293"
+    },
+    {
+      "authors": "Boulware KT, Daugherty PS",
+      "title": "Protease specificity determination by using cellular libraries of peptide substrates (CLiPS)",
+      "journal": "Proc Natl Acad Sci USA (2006)",
+      "pubmed_id": "16672368",
+      "comment": "doi:10.1073/pnas.0511108103"
+    },
+    {
+      "authors": "Liew OW, Chong JPC, Lim YZ, Ang CX, Lau YCA, Yandle TG, Brennan SO",
+      "title": "An SRLLR motif downstream of the scissile bond enhances enterokinase cleavage efficiency",
+      "journal": "Biochimie (2006)",
+      "pubmed_id": "17097793",
+      "comment": "doi:10.1016/j.biochi.2006.10.005"
+    },
+    {
+      "authors": "Gasparian ME, Bychkov ML, Dolgikh DA, Kirpichnikov MP",
+      "title": "Strategy for improvement of enteropeptidase efficiency in tag removal processes",
+      "journal": "Protein Expr Purif (2011)",
+      "pubmed_id": "21515380",
+      "comment": "doi:10.1016/j.pep.2011.04.005"
+    },
+    {
+      "authors": "Smith ET, Johnson DA",
+      "title": "Human enteropeptidase light chain: bioengineering of recombinants and kinetic investigations of structure and function",
+      "journal": "Protein Sci (2013)",
+      "pubmed_id": "23436726",
+      "comment": "doi:10.1002/pro.2239"
+    },
+    {
+      "authors": "Yang X, Ding Z, Peng L, Song Q, Zhang D, Cui F, Xia C, Li K, Yin H, Li S, Li Z, Huang H",
+      "title": "Cryo-EM structures reveal the activation and substrate recognition mechanism of human enteropeptidase",
+      "journal": "Nat Commun (2022)",
+      "pubmed_id": "36376282",
+      "comment": "doi:10.1038/s41467-022-34364-9"
+    },
+    {
+      "authors": "Choi SI, Song HW, Moon JW, Seong BL",
+      "title": "Recombinant enterokinase light chain with affinity tag: expression from Saccharomyces cerevisiae and its utilities in fusion protein technology",
+      "journal": "Biotechnol Bioeng (2001)",
+      "pubmed_id": "11745150",
+      "comment": "doi:10.1002/bit.10082"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 5,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "enterokinase_site"
+        ],
+        "synonym": [
+          "enterokinase",
+          "enterokinase cleavage site",
+          "EK site",
+          "enteropeptidase site",
+          "DDDDK"
+        ],
+        "note": [
+          "Enterokinase (enteropeptidase) recognition/cleavage site (Asp-Asp-Asp-Asp-Lys). The protease cleaves on the C-terminal side of the Lys (after K), releasing a downstream protein with no residual vector-derived residues \u2014 hence its wide use for tag removal from fusion proteins. The acidic (Asp)4 tetrad and the P1 Lys are recognized by the enterokinase light-chain S1\u2013S5 basic substrate pocket. Sequence DDDDK is a 100%-identity match to residues 19\u201323 of the trypsinogen-1 activation propeptide (UniProt:P00760), the canonical natural occurrence of the motif. This part covers a 5-aa sub-span of that 247-aa precursor (full_length_match=false), which is expected for a short recognition motif and is not a sequence defect."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]",
+          "[9]",
+          "[10]",
+          "[11]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P00760 (TRY1_BOVIN, Bos taurus trypsinogen-1, Swiss-Prot reviewed PE=1 SV=3) \u2014 DDDDK is an exact 100% match to residues 19\u201323 of the 247-aa precursor, within the activation propeptide (annotated positions 18\u201323). Verified by independent FASTA fetch and Python substring search."
+  },
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "DDDDK is the enterokinase (enteropeptidase) recognition sequence; the enzyme cleaves on the C-terminal side of the Lys, leaving no extra residues on the downstream protein",
+      "value": {
+        "function": "protease_cleavage_site",
+        "protease": "enterokinase",
+        "protease_synonym": "enteropeptidase",
+        "recognition_motif": "DDDDK",
+        "cleaves_after": "K",
+        "scar": "none_downstream"
+      },
+      "source": {
+        "pmid": "5570436",
+        "quote": "Purification and specificity of porcine enterokinase",
+        "quote_source": "catalog-doc",
+        "section": "title / specificity (Asp)4-Lys"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "specificity",
+      "type": "specificity",
+      "label": "The canonical recognition motif is (Asp)4-Lys-Ile (DDDDK\u2193I); the four upstream Asp residues and a P1 Lys define the site",
+      "value": {
+        "consensus": "DDDDK",
+        "extended_consensus": "DDDDK-I",
+        "p1_residue": "Lys",
+        "upstream_acidic_tetrad": "(Asp)4"
+      },
+      "source": {
+        "pmid": "2658218",
+        "doi": "10.1016/0968-0004(89)90133-3",
+        "quote": "Enterokinase (enteropeptidase): comparative aspects \u2014 (Asp)4-Lys-Ile specificity",
+        "quote_source": "catalog-doc",
+        "section": "specificity review"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "use_tag_removal",
+      "type": "application",
+      "label": "DDDDK is used as a fusion-protein tag-removal site; recombinant enterokinase light chain cleaves it to release the target protein",
+      "value": {
+        "use": "fusion_tag_removal",
+        "reagent": "recombinant enterokinase light chain",
+        "context": "fusion protein after affinity purification"
+      },
+      "source": {
+        "pmid": "9636275",
+        "doi": "10.1038/nbt0995-982",
+        "quote": "Production of recombinant bovine enterokinase catalytic subunit in Escherichia coli \u2014 used to cleave DDDDK fusion sites",
+        "quote_source": "catalog-doc",
+        "section": "recombinant enterokinase for tag removal"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "off_target_caveat",
+      "type": "caveat",
+      "label": "Enterokinase is not strictly specific: it can cleave at secondary/off-target sites and prefers Arg over Lys at P1; canonical DDDDK is not its fastest substrate",
+      "value": {
+        "promiscuity": "documented",
+        "p1_preference": "Arg > Lys",
+        "secondary_cleavage": "context-dependent off-target cleavage reported",
+        "downstream_context": "P1'=Ser followed by a basic P2' (e.g. SRLLR) enhances cleavage"
+      },
+      "source": {
+        "pmid": "16672368",
+        "doi": "10.1073/pnas.0511108103",
+        "quote": "enteropeptidase is unexpectedly promiscuous; prefers Arg at P1 over Lys; canonical DDDDK is not the fastest substrate",
+        "quote_source": "catalog-doc",
+        "section": "CLiPS specificity profiling"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant_DDDDR",
+      "type": "sequence_variant",
+      "label": "The DDDDR variant (P1 Lys\u2192Arg) is cleaved more efficiently, requiring 3\u20136x less enzyme than DDDDK for equivalent fusion-protein cleavage",
+      "value": {
+        "variant": "DDDDR",
+        "change": "K5R",
+        "effect": "higher cleavage efficiency",
+        "enzyme_saving": "3-6x less enzyme vs DDDDK"
+      },
+      "source": {
+        "pmid": "21515380",
+        "doi": "10.1016/j.pep.2011.04.005",
+        "quote": "DDDDR variant requires 3\u20136x less enzyme than DDDDK for equivalent cleavage of Trx/TRAIL and Trx/FGF-2 fusions",
+        "quote_source": "catalog-doc",
+        "section": "engineering recommendation"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

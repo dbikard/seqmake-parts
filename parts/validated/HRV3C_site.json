@@ -1,0 +1,333 @@
+{
+  "schema_version": "1.0",
+  "slug": "HRV3C_site",
+  "locus": "HRV3C_site",
+  "id": "HRV3C_site",
+  "description": "HRV3C_site \u2014 LEVLFQGP, the 8-residue recognition/cleavage site for Human Rhinovirus 3C protease (EC 3.4.22.28); the protease cleaves between Q and G (LEVLFQ|GP), and is widely used to remove affinity or solubility tags from recombinant fusion proteins at 4 \u00b0C with high specificity and efficiency.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "LEVLFQGP",
+  "references": [
+    {
+      "authors": "Cordingley MG, Callahan PL, Sardana VV, Garsky VM, Colonno RJ",
+      "title": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro.",
+      "journal": "Journal of Biological Chemistry (1990)",
+      "pubmed_id": "2160953",
+      "comment": "doi:10.1016/S0021-9258(19)38811-8"
+    },
+    {
+      "authors": "Fan X, Li X, Zhou Y, Mei M, Liu P, Zhao J, Peng W, Jiang ZB, Yang S, Iverson BL, Zhang G, Yi L",
+      "title": "Quantitative Analysis of the Substrate Specificity of Human Rhinovirus 3C Protease and Exploration of Its Substrate Recognition Mechanisms.",
+      "journal": "ACS Chemical Biology (2019)",
+      "pubmed_id": "31613083",
+      "comment": "doi:10.1021/acschembio.9b00539"
+    },
+    {
+      "authors": "Abdelkader EH, Otting G",
+      "title": "NT*-HRV3CP: An optimized construct of human rhinovirus 14 3C protease for high-yield expression and fast affinity-tag cleavage.",
+      "journal": "Journal of Biotechnology (2020)",
+      "pubmed_id": "33166527",
+      "comment": "doi:10.1016/j.jbiotec.2020.11.005"
+    },
+    {
+      "authors": "Waugh DS",
+      "title": "An overview of enzymatic reagents for the removal of affinity tags.",
+      "journal": "Protein Expression and Purification (2011)",
+      "pubmed_id": "21871965",
+      "comment": "doi:10.1016/j.pep.2011.08.005"
+    },
+    {
+      "authors": "Mei M, Fan X, Zhou Y, Zhang F, Zhang G, Yi L",
+      "title": "A combinatorial strategy for HRV 3C protease engineering to achieve the N-terminal free cleavage.",
+      "journal": "International Journal of Biological Macromolecules (2024)",
+      "pubmed_id": "38521339",
+      "comment": "doi:10.1016/j.ijbiomac.2024.131066"
+    },
+    {
+      "authors": "Xu J, Nakanishi T, Kato T, Park EY",
+      "title": "In vivo enzymatic digestion of HRV 3C protease cleavage sites-containing proteins produced in a silkworm-baculovirus expression system.",
+      "journal": "Bioscience Reports (2022)",
+      "pubmed_id": "35642592",
+      "comment": "doi:10.1042/BSR20220739"
+    },
+    {
+      "authors": "Xu H, Wang Q, Zhang Z, Yi L, Ma L, Zhai C",
+      "title": "A simplified method to remove fusion tags from a xylanase of Bacillus sp. HBP8 with HRV 3C protease.",
+      "journal": "Enzyme and Microbial Technology (2019)",
+      "pubmed_id": "30686346",
+      "comment": "doi:10.1016/j.enzmictec.2019.01.004"
+    },
+    {
+      "authors": "Davis GJ, Wang QM, Cox GA, Johnson RB, Wakulchik M, Dotson CA, Villarreal EC",
+      "title": "Expression and purification of recombinant rhinovirus 14 3CD proteinase and its comparison to the 3C proteinase.",
+      "journal": "Archives of Biochemistry and Biophysics (1997)",
+      "pubmed_id": "9328292",
+      "comment": "doi:10.1006/abbi.1997.0291"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 8,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "HRV3C_site"
+        ],
+        "synonym": [
+          "PreScission protease site",
+          "3C protease cleavage site",
+          "HRV 3C site",
+          "LEVLFQGP"
+        ],
+        "note": [
+          "Human rhinovirus 3C protease recognition and cleavage site (LEVLFQGP; Leu-Glu-Val-Leu-Phe-Gln-Gly-Pro). The 3C cysteine protease cleaves the peptide bond between Q (P1) and G (P1'), i.e. LEVLFQ|GP, leaving a Gly-Pro N-terminal scar on the downstream protein. The site derives from the natural HRV polyprotein processing sequence at residues 1423-1430 of HRV3 (UniProt Q82081). It is the recognition sequence used in the PreScission protease reagent (a GST-HRV3C fusion). Source-verified to UniProt Q82081 (POLG_HRV3) at 100% identity over all 8 aa. No functional sub-features are present: this is a single atomic cleavage-site element."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt Q82081 (POLG_HRV3, Human rhinovirus 3 genome polyprotein, Swiss-Prot reviewed), residues 1423-1430 (LEVLFQGP); cleavage between Q1428 and G1429 annotated as \"Cleavage; by protease 3C\"; 100% identity over 8/8 aa, verified by direct UniProt REST fetch."
+  },
+  "functional_claims": [
+    {
+      "id": "function",
+      "type": "function",
+      "label": "LEVLFQGP is the HRV 3C protease recognition and cleavage site; the protease cleaves between Q (P1) and G (P1'), releasing the downstream protein with a Gly-Pro N-terminal scar",
+      "value": {
+        "function": "protease_cleavage_site",
+        "protease": "Human rhinovirus 3C protease",
+        "protease_synonym": "HRV3C protease, HRV 3C protease, PreScission protease (as fusion)",
+        "ec_number": "3.4.22.28",
+        "recognition_motif": "LEVLFQGP",
+        "scissile_bond": "Q6-G7",
+        "cleavage_notation": "LEVLFQ|GP",
+        "scar_downstream": "GP",
+        "use": "tag_removal_from_fusion_protein"
+      },
+      "source": {
+        "pmid": "2160953",
+        "doi": "10.1016/S0021-9258(19)38811-8",
+        "quote": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro \u2014 minimum substrate TLFQ/GP; P1=Gln and scissile bond Q|G established experimentally",
+        "quote_source": "primary",
+        "section": "title and results; substrate truncation/substitution experiments"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "recognition_specificity",
+      "type": "recognition_specificity",
+      "label": "HRV 3C protease has dominant specificity at P1 (Gln > Glu) and P1' (Gly/Ala/Cys/Ser); P4 (hydrophobic) and P2 (Leu/Phe) also contribute to recognition",
+      "value": {
+        "P1": "Gln (dominant; Glu also accepted)",
+        "P1_prime": "Gly/Ala/Cys/Ser",
+        "P2": "Leu or Phe",
+        "P4": "hydrophobic residue",
+        "extended_recognition_note": "P1=Gln and P1'=Gly are the strongest determinants; S1 pocket residue His160 and S1' pocket residue Thr141 identified structurally",
+        "improved_substrate": "LEVLFQ|GM (P1'=Met reported as improved at elevated temperatures)"
+      },
+      "source": {
+        "pmid": "31613083",
+        "doi": "10.1021/acschembio.9b00539",
+        "quote": "P1=Gln/Glu and P1'=Gly/Ala/Cys/Ser as dominant determinants; LEVLFQ\u2193GM as improved substrate at high temperature",
+        "quote_source": "primary",
+        "section": "YESS substrate profiling results and discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "natural_origin",
+      "type": "natural_origin",
+      "label": "LEVLFQGP derives from the natural HRV3 polyprotein processing sequence (residues 1423-1430, UniProt Q82081); the 3C protease cleaves this site during viral polyprotein maturation",
+      "value": {
+        "origin_protein": "Human rhinovirus 3 genome polyprotein (UniProt Q82081, POLG_HRV3)",
+        "residues": "1423-1430 (LEVLFQGP)",
+        "annotated_feature": "Cleavage; by protease 3C between Q1428 and G1429",
+        "biological_context": "Viral polyprotein processing during HRV3 replication"
+      },
+      "source": {
+        "pmid": "2160953",
+        "doi": "10.1016/S0021-9258(19)38811-8",
+        "quote": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro \u2014 sites in the viral polyprotein define the recognition consensus",
+        "quote_source": "primary",
+        "section": "introduction; natural polyprotein substrates"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "low_temperature_activity",
+      "type": "application",
+      "label": "HRV 3C protease cleaves LEVLFQGP efficiently at 4 \u00b0C, enabling tag removal under conditions that minimize target protein degradation or aggregation",
+      "value": {
+        "optimal_temperature": "4 \u00b0C",
+        "advantage": "active at low temperature; minimizes proteolytic damage to target protein during extended incubation",
+        "comparison": "more active at 4 \u00b0C than thrombin or Factor Xa under comparable conditions"
+      },
+      "source": {
+        "pmid": "33166527",
+        "doi": "10.1016/j.jbiotec.2020.11.005",
+        "quote": "demonstrates 4 \u00b0C cleavage in minutes; confirms LEVLFQ/GX as the stringent recognition sequence; describes PreScission protease as GST-HRV3C fusion",
+        "quote_source": "primary",
+        "section": "results and discussion; optimized protease construct for rapid tag cleavage"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "gp_scar",
+      "type": "limitation",
+      "label": "Cleavage of LEVLFQGP leaves a Gly-Pro (GP) dipeptide scar on the N-terminus of the released downstream protein; this scar may be undesirable for structural or functional studies requiring a native N-terminus",
+      "value": {
+        "scar": "GP",
+        "scar_residues_count": 2,
+        "limitation": "GP scar retained on downstream protein N-terminus after cleavage",
+        "mitigation_strategies": [
+          "use engineered 3C variants with expanded P1' specificity (e.g. C3 variant) to reduce scar",
+          "alternative: incorporate site downstream of TEV if scar-free cleavage is needed"
+        ]
+      },
+      "source": {
+        "pmid": "38521339",
+        "doi": "10.1016/j.ijbiomac.2024.131066",
+        "quote": "Documents the GP scar problem; reports engineered C3 variant with expanded P1' specificity; confirms LEVLFQ\u2193GP and LEVLFQ\u2193GM as canonical and improved substrates respectively",
+        "quote_source": "primary",
+        "section": "introduction and engineering rationale"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "high_specificity",
+      "type": "application",
+      "label": "HRV 3C protease shows very high cleavage specificity for LEVLFQGP compared to thrombin and Factor Xa; off-target cleavage within the fusion partner is rare",
+      "value": {
+        "specificity": "high relative to thrombin and Factor Xa",
+        "off_target_risk": "low",
+        "context": "in vitro cleavage after affinity purification of fusion protein"
+      },
+      "source": {
+        "pmid": "21871965",
+        "doi": "10.1016/j.pep.2011.08.005",
+        "quote": "Review discusses LEVLFQGP as a standard cleavage site, its comparison to TEV protease, 4 \u00b0C activity advantage, and notes the sequence may have been refined from natural ETLFQGP; also documents GP scar and PreScission protease variants",
+        "quote_source": "primary",
+        "section": "HRV 3C protease section; comparison to other proteases"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "expression_system_compatibility",
+      "type": "host_range",
+      "label": "LEVLFQGP is functional as a tag-removal site across diverse expression systems including bacterial and insect cell (baculovirus) expression, whether cleaved in vitro or in vivo",
+      "value": {
+        "expression_systems_demonstrated": [
+          "E. coli",
+          "silkworm baculovirus (BEVS)"
+        ],
+        "cleavage_mode": [
+          "in vitro",
+          "in vivo"
+        ],
+        "in_vivo_efficiency": "high; documented for BEVS-expressed fusion proteins"
+      },
+      "source": {
+        "pmid": "35642592",
+        "doi": "10.1042/BSR20220739",
+        "quote": "Demonstrates that LEVLFQGP site is used in diverse expression systems (E. coli and insect BEVS); site cleaved in vivo with high efficiency",
+        "quote_source": "primary",
+        "section": "title and results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant_LEVLFQGM",
+      "type": "sequence_variant",
+      "label": "The LEVLFQGM variant (P1'=Met instead of Gly) is identified as an improved substrate at elevated temperatures in quantitative specificity profiling",
+      "value": {
+        "variant": "LEVLFQGM",
+        "change": "G7M at P1' position",
+        "effect": "improved cleavage efficiency at elevated temperature",
+        "note": "Scar would be MP rather than GP on the released downstream protein"
+      },
+      "source": {
+        "pmid": "31613083",
+        "doi": "10.1021/acschembio.9b00539",
+        "quote": "identifies LEVLFQ\u2193GM as improved substrate at high temperature",
+        "quote_source": "primary",
+        "section": "YESS profiling results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

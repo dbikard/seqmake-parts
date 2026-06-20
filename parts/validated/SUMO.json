@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "slug": "SUMO",
+  "locus": "SUMO",
+  "id": "SUMO",
+  "description": "SUMO (yeast Smt3, S. cerevisiae) — 98-aa ubiquitin-like beta-grasp protein ending in the conserved C-terminal diglycine; canonical N-terminal SUMO-fusion solubility/expression tag cleaved at the Gly-Gly by the SUMO protease Ulp1 to release a native N-terminus.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MSDSEVNQEAKPEVKPEVKPETHINLKVSDGSSEIFFKIKKTTPLRRLMEAFAKRQGKEMDSLRFLYDGIRIQADQTPEDLDMEDNDIIEAHREQIGG",
+  "references": [
+    {
+      "authors": "Mossessova E, Lima CD",
+      "title": "Ulp1-SUMO crystal structure and genetic analysis reveal conserved interactions and a regulatory element essential for cell growth in yeast",
+      "journal": "Molecular Cell (2000)",
+      "pubmed_id": "10882122",
+      "comment": "doi:10.1016/s1097-2765(00)80326-3"
+    },
+    {
+      "authors": "Malakhov MP, Mattern MR, Malakhova OA, Drinker M, Weeks SD, Butt TR",
+      "title": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+      "journal": "Journal of Structural and Functional Genomics (2004)",
+      "pubmed_id": "15263846",
+      "comment": "doi:10.1023/B:JSFG.0000029237.70316.52"
+    },
+    {
+      "authors": "Butt TR, Edavettal SC, Hall JP, Mattern MR",
+      "title": "SUMO fusion technology for difficult-to-express proteins",
+      "journal": "Protein Expression and Purification (2005)",
+      "pubmed_id": "16084395",
+      "comment": "doi:10.1016/j.pep.2005.03.016"
+    },
+    {
+      "authors": "Marblestone JG, Edavettal SC, Lim Y, Lim P, Zuo X, Butt TR",
+      "title": "Comparison of SUMO fusion technology with traditional gene fusion systems: enhanced expression and solubility with SUMO",
+      "journal": "Protein Science (2006)",
+      "pubmed_id": "16322573",
+      "comment": "doi:10.1110/ps.051812706"
+    },
+    {
+      "authors": "Lee CD, Sun HC, Hu SM, Chiu CF, Homhuan A, Liang SM, Leng CH, Wang TF",
+      "title": "An improved SUMO fusion protein system for effective production of native proteins",
+      "journal": "Protein Science (2008)",
+      "pubmed_id": "18467498",
+      "comment": "doi:10.1110/ps.035188.108"
+    },
+    {
+      "authors": "Zhang F, Zheng H, Xian Y, Song H, Wang S, Yun Y, Yi L, Zhang G",
+      "title": "Profiling Substrate Specificity of the SUMO Protease Ulp1 by the YESS-PSSC System to Advance the Conserved Mechanism for Substrate Cleavage",
+      "journal": "International Journal of Molecular Sciences (2022)",
+      "pubmed_id": "36293045",
+      "comment": "doi:10.3390/ijms232012188"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 98,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SUMO"
+        ],
+        "synonym": [
+          "SUMO",
+          "SMT3",
+          "Smt3",
+          "SUMO tag",
+          "small ubiquitin-related modifier",
+          "Smt3p"
+        ],
+        "note": [
+          "Small ubiquitin-related modifier (Smt3 / SUMO), Saccharomyces cerevisiae SMT3; UniProt Q12306, residues 1–98. Ubiquitin-like (UBL) protein with a beta-grasp fold. As stored this is the mature/processed form retaining the initiator Met (M1) for use as a recombinant N-terminal fusion tag and ending at the conserved C-terminal Gly-Gly (G97-G98), the Ulp1 cleavage site. The full precursor is 101 aa; the C-terminal propeptide (residues 99–101, ATY) is removed by the SUMO protease Ulp1 to expose the Gly-Gly. Widely deployed as a SUMO-fusion partner that enhances soluble expression of difficult passengers and, upon Ulp1 cleavage at the Gly-Gly, releases the passenger with a native N-terminus."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:Q12306"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:Q12306 (SUMO_YEAST / SMT3, S. cerevisiae), residues 1–98 of 101; the stored 98-aa sequence is 100% identical to Q12306[1:98] — independently fetched via https://rest.uniprot.org/uniprotkb/Q12306.fasta and compared byte-for-byte (0 mismatches). Residues 99–101 (ATY) are the annotated C-terminal propeptide (FT PROPEP 99..101) cleaved by Ulp1; the part correctly ends at G98, the Ulp1 cleavage site."
+  },
+  "functional_claims": [
+    {
+      "id": "solubility_partner",
+      "type": "function",
+      "label": "SUMO is an N-terminal fusion partner that enhances soluble expression and overall expression yield of fused (including difficult-to-express) proteins in E. coli",
+      "value": {
+        "function": "solubility_and_expression_enhancement",
+        "tag_position": "N-terminal",
+        "applies_to": "difficult-to-express proteins"
+      },
+      "source": {
+        "pmid": "15263846",
+        "doi": "10.1023/B:JSFG.0000029237.70316.52",
+        "quote": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "tag_removal",
+      "type": "tag_removal",
+      "label": "The SUMO tag is removed by the SUMO-specific protease Ulp1, which cleaves at the C-terminal Gly-Gly to release the passenger with a native N-terminus",
+      "value": {
+        "protease": "Ulp1 (SUMO-specific protease; SENP family)",
+        "cleavage_site": "after the C-terminal Gly-Gly (G97-G98)",
+        "recognition": "Ulp1 recognizes the folded 3D structure of SUMO, not a linear sequence motif",
+        "product": "passenger protein with a native (scarless) N-terminus",
+        "p1prime_constraint": "any residue tolerated at the +1 position except proline"
+      },
+      "source": {
+        "pmid": "16084395",
+        "doi": "10.1016/j.pep.2005.03.016",
+        "quote": "SUMO fusion technology for difficult-to-express proteins",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "cleavage_specificity",
+      "type": "sequence_feature",
+      "label": "Ulp1 cleavage requires the conserved C-terminal Gly-Gly; single substitutions are tolerated but dual mutation of the diglycine abolishes cleavage",
+      "value": {
+        "determinant": "C-terminal Gly-Gly motif",
+        "single_substitution": "tolerated",
+        "double_substitution": "abolishes cleavage",
+        "structural_basis": "tapered active-site pocket of Ulp1 accommodates the diglycine"
+      },
+      "source": {
+        "pmid": "36293045",
+        "doi": "10.3390/ijms232012188",
+        "quote": "Profiling Substrate Specificity of the SUMO Protease Ulp1 by the YESS-PSSC System to Advance the Conserved Mechanism for Substrate Cleavage",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "strength",
+      "type": "strength",
+      "label": "In a head-to-head comparison of fusion partners, SUMO ranked among the highest for enhancing expression and solubility, comparable to NusA and ahead of MBP, GST, TRX and ubiquitin",
+      "value": {
+        "ranking": "highest tier (with NusA) for expression/solubility among MBP, GST, TRX, Ub, NusA, SUMO",
+        "protease_kinetics": "Ulp1 kcat ~25-fold higher than AcTEV protease",
+        "cleavage_product": "native N-terminus on the released passenger"
+      },
+      "source": {
+        "pmid": "16322573",
+        "doi": "10.1110/ps.051812706",
+        "quote": "Comparison of SUMO fusion technology with traditional gene fusion systems: enhanced expression and solubility with SUMO",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Native to Saccharomyces cerevisiae (SMT3 gene product); deployed as a fusion tag primarily in E. coli expression systems",
+      "value": {
+        "origin": "Saccharomyces cerevisiae (SMT3)",
+        "primary_expression_host": "Escherichia coli",
+        "hosts": [
+          "Escherichia coli",
+          "Saccharomyces cerevisiae"
+        ]
+      },
+      "source": {
+        "pmid": "15263846",
+        "doi": "10.1023/B:JSFG.0000029237.70316.52",
+        "quote": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_import": {
+    "accession": "UniProt:Q12306",
+    "fetched": "2026-06-20",
+    "uniprot_entry_version": 215,
+    "status": "length_variant",
+    "identity": 1.0,
+    "part_len": 98,
+    "uniprot_len": 101
+  }
+}

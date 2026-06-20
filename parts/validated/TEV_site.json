@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "slug": "TEV_site",
+  "locus": "TEV_site",
+  "id": "TEV_site",
+  "description": "TEV protease recognition site, engineered ENLYFQG heptapeptide (P1'=Gly) \u2014 cleaved between Q and G by Tobacco Etch Virus NIa protease; canonical scar-minimal tag-removal site.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ENLYFQG",
+  "references": [
+    {
+      "authors": "Dougherty WG, Carrington JC, Cary SM, Parks TD",
+      "title": "Biochemical and mutational analysis of a plant virus polyprotein cleavage site",
+      "journal": "EMBO J (1988)",
+      "pubmed_id": "3409865",
+      "comment": "doi:10.1002/j.1460-2075.1988.tb02942.x"
+    },
+    {
+      "authors": "Carrington JC, Dougherty WG",
+      "title": "A viral cleavage site cassette: identification of amino acid sequences required for tobacco etch virus polyprotein processing",
+      "journal": "Proc Natl Acad Sci USA (1988)",
+      "pubmed_id": "3285343",
+      "comment": "doi:10.1073/pnas.85.10.3391"
+    },
+    {
+      "authors": "Parks TD, Leuther KK, Howard ED, Johnston SA, Dougherty WG",
+      "title": "Release of proteins and peptides from fusion proteins using a recombinant plant virus proteinase",
+      "journal": "Anal Biochem (1994)",
+      "pubmed_id": "8179197",
+      "comment": "doi:10.1006/abio.1994.1060"
+    },
+    {
+      "authors": "Kapust RB, Tozser J, Fox JD, Anderson DE, Cherry S, Copeland TD, Waugh DS",
+      "title": "Tobacco etch virus protease: mechanism of autolysis and rational design of stable mutants with wild-type catalytic proficiency",
+      "journal": "Protein Eng (2001)",
+      "pubmed_id": "11809930",
+      "comment": "doi:10.1093/protein/14.12.993"
+    },
+    {
+      "authors": "Kapust RB, Tozser J, Copeland TD, Waugh DS",
+      "title": "The P1' specificity of tobacco etch virus protease",
+      "journal": "Biochem Biophys Res Commun (2002)",
+      "pubmed_id": "12074568",
+      "comment": "doi:10.1016/S0006-291X(02)00574-0"
+    },
+    {
+      "authors": "Phan J, Zdanov A, Evdokimov AG, Tropea JE, Peters HK 3rd, Kapust RB, Li M, Wlodawer A, Waugh DS",
+      "title": "Structural basis for the substrate specificity of tobacco etch virus protease",
+      "journal": "J Biol Chem (2002)",
+      "pubmed_id": "12377789",
+      "comment": "doi:10.1074/jbc.M207895200"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 7,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "TEV_site"
+        ],
+        "synonym": [
+          "TEV site",
+          "TEV",
+          "TEV cleavage site",
+          "TEV protease site",
+          "ENLYFQG",
+          "ENLYFQ-G"
+        ],
+        "note": [
+          "Tobacco Etch Virus (TEV) NIa protease recognition site, engineered form ENLYFQG (Glu-Asn-Leu-Tyr-Phe-Gln-Gly). TEV protease cleaves the scissile peptide bond between the P1 Gln and the P1' residue, i.e. after the Q (ENLYFQ|G), leaving a single non-native Gly on the released downstream product. Whole-part feature spanning all 7 residues; this is a single atomic functional element with no functional sub-features. P1'=Gly is an engineered variant of the natural NIb|CP junction sequence ENLYFQS (P1'=Ser)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "Engineered P1'-Gly variant of the Tobacco Etch Virus NIa protease cleavage site. ENLYFQG is the de-facto standard recombinant tag-removal TEV site (single non-native Gly scar). Defining literature: Parks et al. 1994 (Anal Biochem, PMID 8179197; founding use of the TEV site for fusion-tag removal) and Kapust et al. 2002 (Biochem Biophys Res Commun, PMID 12074568; P1' specificity characterizing the Gly form). The natural NIb|CP junction is ENLYFQS (UniProt P04517 aa 2786-2792); ENLYFQG differs only at P1' (S->G), captured in the sequence_variant claim."
+  },
+  "functional_claims": [
+    {
+      "id": "recognition_specificity",
+      "type": "recognition_specificity",
+      "label": "ENLYFQ(G/S) is the 7-residue TEV protease recognition site; the enzyme cleaves between the P1 Gln and P1' (after the Q, ENLYFQ|G)",
+      "value": {
+        "protease": "Tobacco Etch Virus NIa protease (TEV protease, EC 3.4.22.44)",
+        "recognition_motif": "Glu-Asn-Leu-Tyr-Phe-Gln-(Gly/Ser)",
+        "positions": "P6-P5-P4-P3-P2-P1-P1'",
+        "consensus": "E-X-X-Y-X-Q-(G/S)",
+        "cleavage_position": "between P1 Gln and P1' residue (ENLYFQ|G)"
+      },
+      "source": {
+        "pmid": "3409865",
+        "doi": "10.1002/j.1460-2075.1988.tb02942.x",
+        "quote": "Biochemical and mutational analysis of a plant virus polyprotein cleavage site",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "The stored sequence is the engineered P1'-Gly variant (ENLYFQG); the natural TEV NIb|CP junction is ENLYFQS (P1'=Ser)",
+      "value": {
+        "stored_sequence": "ENLYFQG",
+        "natural_sequence": "ENLYFQS",
+        "variant": "P1' Ser->Gly (S->G at position 7)",
+        "natural_origin": "TEV genome polyprotein, NIb|CP cleavage junction (UniProt P04517 aa 2786-2792 / GenBank M15239 frame+1)",
+        "rationale": "P1'-Gly is a well-established engineered form: it is accepted by TEV protease and leaves a single non-native Gly on the cleaved product; both ENLYFQG and ENLYFQS are widely used recombinant TEV sites",
+        "identity_to_natural_pct": 85.7
+      },
+      "source": {
+        "pmid": "12074568",
+        "doi": "10.1016/S0006-291X(02)00574-0",
+        "quote": "The P1' specificity of tobacco etch virus protease",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "p1prime_specificity",
+      "type": "recognition_specificity",
+      "label": "TEV protease tolerates several residues at P1' (Gly, Ser, Ala, Met, Cys, His) but not Pro; this defines the difference between the ENLYFQG and ENLYFQS variants",
+      "value": {
+        "position": "P1'",
+        "tolerated": [
+          "Gly",
+          "Ser",
+          "Ala",
+          "Met",
+          "Cys",
+          "His"
+        ],
+        "not_tolerated": [
+          "Pro"
+        ],
+        "consequence": "the P1' residue becomes the new N-terminal residue of the released downstream product; ENLYFQG leaves an N-terminal Gly, ENLYFQS leaves an N-terminal Ser"
+      },
+      "source": {
+        "pmid": "12074568",
+        "doi": "10.1016/S0006-291X(02)00574-0",
+        "quote": "The P1' specificity of tobacco etch virus protease",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "function",
+      "type": "function",
+      "label": "Engineered into a fusion-protein linker, ENLYFQG enables highly specific proteolytic release of the passenger from its tag by TEV protease",
+      "value": {
+        "function": "site_specific_protease_cleavage_site",
+        "use": "tag_removal_from_fusion_protein",
+        "protease": "TEV protease",
+        "founding_demonstration": "use of the TEV (ENLYFQ-S/G) site to release proteins/peptides from fusion proteins with a recombinant plant-virus proteinase",
+        "advantage": "high sequence specificity (7-residue recognition) gives clean, minimal-scar tag removal"
+      },
+      "source": {
+        "pmid": "8179197",
+        "doi": "10.1006/abio.1994.1060",
+        "quote": "Release of proteins and peptides from fusion proteins using a recombinant plant virus proteinase",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "structural_basis",
+      "type": "mechanism",
+      "label": "The crystal structure of TEV protease with substrate/product peptide explains the heptapeptide selectivity and confirms cleavage between Q and the P1' residue",
+      "value": {
+        "structure": "TEV protease complexed with a substrate/product peptide",
+        "explains": "structural basis of ENLYFQ(G/S) heptapeptide selectivity",
+        "confirms": "scissile bond is between P1 Gln and P1' residue"
+      },
+      "source": {
+        "pmid": "12377789",
+        "doi": "10.1074/jbc.M207895200",
+        "quote": "Structural basis for the substrate specificity of tobacco etch virus protease",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Host-agnostic sequence element; the cleaving enzyme (TEV protease) is supplied separately, so the site functions independently of the expression host",
+      "value": {
+        "element_type": "protease_recognition_site",
+        "host_dependence": "none (cleavage performed with TEV protease, in vitro or co-expressed in vivo)",
+        "enzyme_origin": "Tobacco Etch Virus NIa protease (commonly the S219V-stabilized recombinant form)"
+      },
+      "source": {
+        "pmid": "11809930",
+        "doi": "10.1093/protein/14.12.993",
+        "quote": "Tobacco etch virus protease: mechanism of autolysis and rational design of stable mutants with wild-type catalytic proficiency",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

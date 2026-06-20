@@ -1,0 +1,91 @@
+LOCUS       SUMO                      98 aa                     UNK 01-JAN-1980
+DEFINITION  SUMO (yeast Smt3, S. cerevisiae) — 98-aa ubiquitin-like beta-grasp
+            protein ending in the conserved C-terminal diglycine; canonical
+            N-terminal SUMO-fusion solubility/expression tag cleaved at the
+            Gly-Gly by the SUMO protease Ulp1 to release a native N-terminus..
+ACCESSION   SUMO
+VERSION     SUMO
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Mossessova E, Lima CD
+  TITLE     Ulp1-SUMO crystal structure and genetic analysis reveal conserved
+            interactions and a regulatory element essential for cell growth in
+            yeast
+  JOURNAL   Molecular Cell (2000)
+   PUBMED   10882122
+  REMARK    doi:10.1016/s1097-2765(00)80326-3
+REFERENCE   2
+  AUTHORS   Malakhov MP, Mattern MR, Malakhova OA, Drinker M, Weeks SD, Butt TR
+  TITLE     SUMO fusions and SUMO-specific protease for efficient expression and
+            purification of proteins
+  JOURNAL   Journal of Structural and Functional Genomics (2004)
+   PUBMED   15263846
+  REMARK    doi:10.1023/B:JSFG.0000029237.70316.52
+REFERENCE   3
+  AUTHORS   Butt TR, Edavettal SC, Hall JP, Mattern MR
+  TITLE     SUMO fusion technology for difficult-to-express proteins
+  JOURNAL   Protein Expression and Purification (2005)
+   PUBMED   16084395
+  REMARK    doi:10.1016/j.pep.2005.03.016
+REFERENCE   4
+  AUTHORS   Marblestone JG, Edavettal SC, Lim Y, Lim P, Zuo X, Butt TR
+  TITLE     Comparison of SUMO fusion technology with traditional gene fusion
+            systems: enhanced expression and solubility with SUMO
+  JOURNAL   Protein Science (2006)
+   PUBMED   16322573
+  REMARK    doi:10.1110/ps.051812706
+REFERENCE   5
+  AUTHORS   Lee CD, Sun HC, Hu SM, Chiu CF, Homhuan A, Liang SM, Leng CH, Wang
+            TF
+  TITLE     An improved SUMO fusion protein system for effective production of
+            native proteins
+  JOURNAL   Protein Science (2008)
+   PUBMED   18467498
+  REMARK    doi:10.1110/ps.035188.108
+REFERENCE   6
+  AUTHORS   Zhang F, Zheng H, Xian Y, Song H, Wang S, Yun Y, Yi L, Zhang G
+  TITLE     Profiling Substrate Specificity of the SUMO Protease Ulp1 by the
+            YESS-PSSC System to Advance the Conserved Mechanism for Substrate
+            Cleavage
+  JOURNAL   International Journal of Molecular Sciences (2022)
+   PUBMED   36293045
+  REMARK    doi:10.3390/ijms232012188
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SUMO
+FEATURES             Location/Qualifiers
+     CDS             1..98
+                     /label="SUMO"
+                     /synonym="SUMO"
+                     /synonym="SMT3"
+                     /synonym="Smt3"
+                     /synonym="SUMO tag"
+                     /synonym="small ubiquitin-related modifier"
+                     /synonym="Smt3p"
+                     /note="Small ubiquitin-related modifier (Smt3 / SUMO),
+                     Saccharomyces cerevisiae SMT3; UniProt Q12306, residues
+                     1–98. Ubiquitin-like (UBL) protein with a beta-grasp fold.
+                     As stored this is the mature/processed form retaining the
+                     initiator Met (M1) for use as a recombinant N-terminal
+                     fusion tag and ending at the conserved C-terminal Gly-Gly
+                     (G97-G98), the Ulp1 cleavage site. The full precursor is
+                     101 aa; the C-terminal propeptide (residues 99–101, ATY) is
+                     removed by the SUMO protease Ulp1 to expose the Gly-Gly.
+                     Widely deployed as a SUMO-fusion partner that enhances
+                     soluble expression of difficult passengers and, upon Ulp1
+                     cleavage at the Gly-Gly, releases the passenger with a
+                     native N-terminus."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q12306"
+ORIGIN
+        1 msdsevnqea kpevkpevkp ethinlkvsd gsseiffkik kttplrrlme afakrqgkem
+       61 dslrflydgi riqadqtped ldmedndiie ahreqigg
+//

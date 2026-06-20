@@ -1,0 +1,92 @@
+LOCUS       FactorXa_site              4 aa            linear   UNK 01-JAN-1980
+DEFINITION  FactorXa_site — IEGR, the Ile-Glu-Gly-Arg P4-P1 recognition
+            tetrapeptide cleaved after Arg by coagulation Factor Xa; the
+            canonical engineered tag-removal/fusion-protein cleavage site..
+ACCESSION   FactorXa_site
+VERSION     FactorXa_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Nagai K, Thøgersen HC
+  TITLE     Generation of beta-globin by sequence-specific proteolysis of a
+            hybrid protein produced in Escherichia coli
+  JOURNAL   Nature (1984)
+   PUBMED   6330564
+  REMARK    doi:10.1038/309810a0
+REFERENCE   2
+  AUTHORS   Jenny RJ, Mann KG, Lundblad RL
+  TITLE     A critical review of the methods for cleavage of fusion proteins
+            with thrombin and factor Xa
+  JOURNAL   Protein Expression and Purification (2003)
+   PUBMED   12963335
+  REMARK    doi:10.1016/s1046-5928(03)00168-2
+REFERENCE   3
+  AUTHORS   Hsu HJ, Tsai KC, Sun YK, Chang HJ, Huang YJ, Yu HM, Lin CH, Mao SS,
+            Yang AS
+  TITLE     Factor Xa active site substrate specificity with substrate phage
+            display and computational molecular modeling
+  JOURNAL   Journal of Biological Chemistry (2008)
+   PUBMED   18296445
+  REMARK    doi:10.1074/jbc.M708843200
+REFERENCE   4
+  AUTHORS   Wearne SJ
+  TITLE     Factor Xa cleavage of fusion proteins. Elimination of non-specific
+            cleavage by reversible acylation
+  JOURNAL   FEBS Letters (1990)
+   PUBMED   2185034
+  REMARK    doi:10.1016/0014-5793(90)80696-g
+REFERENCE   5
+  AUTHORS   He M, Jin L, Austen B
+  TITLE     Specificity of factor Xa in the cleavage of fusion proteins
+  JOURNAL   Journal of Protein Chemistry (1993)
+   PUBMED   8427626
+  REMARK    doi:10.1007/BF01024906
+REFERENCE   6
+  AUTHORS   Waugh DS
+  TITLE     An overview of enzymatic reagents for the removal of affinity tags
+  JOURNAL   Protein Expression and Purification (2011)
+   PUBMED   21871965
+  REMARK    doi:10.1016/j.pep.2011.08.005
+REFERENCE   7
+  AUTHORS   Stojanovski BM, Di Cera E
+  TITLE     Role of sequence and position of the cleavage sites in prothrombin
+            activation
+  JOURNAL   Journal of Biological Chemistry (2021)
+   PUBMED   34265300
+  REMARK    doi:10.1016/j.jbc.2021.100955
+REFERENCE   8
+  AUTHORS   Sahin-Tóth M, Dunten RL, Kaback HR
+  TITLE     Design of a membrane protein for site-specific proteolysis:
+            properties of engineered factor Xa protease sites in the lactose
+            permease of Escherichia coli
+  JOURNAL   Biochemistry (1995)
+   PUBMED   7827058
+  REMARK    doi:10.1021/bi00004a001
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/FactorXa_site
+FEATURES             Location/Qualifiers
+     protein_domain  1..4
+                     /label="FactorXa_site"
+                     /synonym="Factor Xa cleavage site"
+                     /synonym="FXa site"
+                     /synonym="IEGR"
+                     /note="Coagulation Factor Xa protease recognition site
+                     (IEGR; Ile-Glu-Gly-Arg). Factor Xa cleaves the peptide bond
+                     on the C-terminal (carboxyl) side of the P1 Arg, i.e. after
+                     the terminal R (IEGR|...). Whole-part feature spanning all
+                     4 residues; this is a single atomic functional element and
+                     has no functional sub-features."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 iegr
+//

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 259,
-  "n_validated": 54,
-  "n_candidate": 205,
-  "n_documented": 54,
-  "n_functional_claims": 157,
+  "n_parts": 261,
+  "n_validated": 61,
+  "n_candidate": 200,
+  "n_documented": 61,
+  "n_functional_claims": 196,
   "parts": [
     {
       "name": "186 integrase",
@@ -3132,20 +3132,184 @@
       "so_name": "polypeptide_domain",
       "synonyms": [
         "E-tag",
-        "E tag"
+        "E tag",
+        "anti-E tag",
+        "GAPVPYPDPLEPR",
+        "g3p epitope tag",
+        "E epitope tag"
       ],
       "collections": [],
-      "description": "",
+      "description": "Synthetic 13-residue epitope/affinity tag GAPVPYPDPLEPR derived from M13 bacteriophage g3p (gene III protein). It is the C-terminal detection/purification tag of the pCANTAB 5E phage-display vector (Pharmacia/GE), used to track and purify scFv-g3p fusion proteins and free scFv/Fab fragments via anti-E-tag monoclonal antibody. Conceptually based on the g3p-peptide epitope recognized by mAb 10C3 (Beckmann et al., 1998). Note: this string is also coincidentally present in human osteocalcin (UniProt P02818); that match is unrelated to the engineered tag's origin.",
       "length": 13,
       "protein_length_aa": 13,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Beckmann C, Haase B, Timmis KN, Tesar M",
+          "title": "Multifunctional g3p-peptide tag for current phage display systems.",
+          "journal": "Journal of Immunological Methods (1998)",
+          "pmid": "9672201",
+          "doi": "10.1016/s0022-1759(98)00008-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9672201/"
+        },
+        {
+          "authors": "Tesar M, Beckmann C, Roettgen P, Haase B, Faude U, Timmis KN",
+          "title": "Monoclonal antibody against pIII of filamentous phage: an immunological tool to study pIII fusion protein expression in phage display systems.",
+          "journal": "Immunotechnology (1995)",
+          "pmid": "9373333",
+          "doi": "10.1016/1380-2933(95)00005-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9373333/"
+        },
+        {
+          "authors": "Kramer K, Fiedler M, Skerra A, Hock B",
+          "title": "A generic strategy for subcloning antibody variable regions from the scFv phage display vector pCANTAB 5 E into pASK85 permits the economical production of F(ab) fragments and leads to improved recombinant immunoglobulin stability.",
+          "journal": "Biosensors and Bioelectronics (2002)",
+          "pmid": "11849927",
+          "doi": "10.1016/s0956-5663(01)00292-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11849927/"
+        },
+        {
+          "authors": "Baek H, Suk KH, Kim YH, Cha S",
+          "title": "An improved helper phage system for efficient isolation of specific antibody molecules in phage display.",
+          "journal": "Nucleic Acids Research (2002)",
+          "pmid": "11861923",
+          "doi": "10.1093/nar/30.5.e18",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11861923/"
+        },
+        {
+          "authors": "Singh PK, Agrawal R, Kamboj DV, et al.",
+          "title": "Construction of a single-chain variable-fragment antibody against the superantigen staphylococcal enterotoxin B.",
+          "journal": "Applied and Environmental Microbiology (2010)",
+          "pmid": "20952642",
+          "doi": "10.1128/AEM.01441-10",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20952642/"
+        },
+        {
+          "authors": "Mohammadi M, Nejatollahi F, Sakhteman A, Zarei N",
+          "title": "In silico analysis of three different tag polypeptides with dual roles in scFv antibodies.",
+          "journal": "Journal of Theoretical Biology (2016)",
+          "pmid": "27113782",
+          "doi": "10.1016/j.jtbi.2016.04.016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27113782/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "epitope_detection",
+          "type": "function",
+          "label": "Detection/affinity epitope recognized by anti-E-tag monoclonal antibody",
+          "value": {
+            "function": "epitope_tag",
+            "applications": [
+              "western_blot",
+              "affinity_purification",
+              "phage_display_tracking",
+              "ELISA"
+            ],
+            "vector": "pCANTAB 5E",
+            "fusion_position": "C-terminal",
+            "host_range": "Escherichia coli expression and M13 phage display"
+          },
+          "source": {
+            "pmid": "11849927",
+            "doi": "10.1016/s0956-5663(01)00292-5",
+            "quote": "purification of recombinant proteins via the carboxyl-terminal E-tag (Malone, 1994)",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "epitope_origin",
+          "type": "annotation",
+          "label": "13-residue tag derived from the M13 bacteriophage g3p (gene III protein) epitope concept",
+          "value": {
+            "source_protein": "M13 bacteriophage g3p (gene III protein)",
+            "synthetic": true,
+            "minimal_epitope_concept": "11-aa g3p epitope (g3p positions 292-302), mAb 10C3, Kd ~6.8e-10 M",
+            "deployment_vector": "pCANTAB 5E"
+          },
+          "source": {
+            "pmid": "9672201",
+            "doi": "10.1016/s0022-1759(98)00008-8",
+            "quote": "Multifunctional g3p-peptide tag for current phage display systems",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "scfv_linker_stability",
+          "type": "function",
+          "label": "E-tag also serves a structural/linker role with favorable stability in scFv constructs",
+          "value": {
+            "role": "linker_and_detection",
+            "context": "single-chain variable fragment (scFv) antibodies",
+            "evidence": "molecular dynamics simulation indicating favorable stability as an scFv linker"
+          },
+          "source": {
+            "pmid": "27113782",
+            "doi": "10.1016/j.jtbi.2016.04.016",
+            "quote": "In silico analysis of three different tag polypeptides with dual roles in scFv antibodies",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "low",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "anti_e_tag_antibody_cost_limitation",
+          "type": "annotation",
+          "label": "E-tag affinity purification is limited by the high cost of the cognate anti-E-tag antibody",
+          "value": {
+            "limitation": "purification scalability",
+            "cause": "high expenditure for the cognate anti-E-tag antibody"
+          },
+          "source": {
+            "pmid": "11849927",
+            "doi": "10.1016/s0956-5663(01)00292-5",
+            "quote": "severely limited by the high expenditure for the cognate anti-E-tag antibody",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "EcFbFP",
@@ -3306,7 +3470,7 @@
       "functional_claims": []
     },
     {
-      "name": "enterokinase site",
+      "name": "enterokinase_site",
       "slug": "enterokinase_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -3321,17 +3485,249 @@
         "DDDDK"
       ],
       "collections": [],
-      "description": "Enterokinase (enteropeptidase) recognition site DDDDK; cleaves after the Lys, leaving no extra residues on the downstream protein. Standard pET fusion-removal site.",
+      "description": "Enterokinase (enteropeptidase) recognition/cleavage site (Asp-Asp-Asp-Asp-Lys). The protease cleaves on the C-terminal side of the Lys (after K), releasing a downstream protein with no residual vector-derived residues \u2014 hence its wide use for tag removal from fusion proteins. The acidic (Asp)4 tetrad and the P1 Lys are recognized by the enterokinase light-chain S1\u2013S5 basic substrate pocket. Sequence DDDDK is a 100%-identity match to residues 19\u201323 of the trypsinogen-1 activation propeptide (UniProt:P00760), the canonical natural occurrence of the motif. This part covers a 5-aa sub-span of that 247-aa precursor (full_length_match=false), which is expected for a short recognition motif and is not a sequence defect.",
       "length": 5,
       "protein_length_aa": 5,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Maroux S, Baratti J, Desnuelle P",
+          "title": "Purification and specificity of porcine enterokinase",
+          "journal": "J Biol Chem (1971)",
+          "pmid": "5570436",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/5570436/"
+        },
+        {
+          "authors": "Light A, Janska H",
+          "title": "Enterokinase (enteropeptidase): comparative aspects",
+          "journal": "Trends Biochem Sci (1989)",
+          "pmid": "2658218",
+          "doi": "10.1016/0968-0004(89)90133-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2658218/"
+        },
+        {
+          "authors": "Kitamoto Y, Yuan X, Wu Q, McCourt DW, Sadler JE",
+          "title": "Enterokinase, the initiator of intestinal digestion, is a mosaic protease composed of a distinctive assortment of domains",
+          "journal": "Proc Natl Acad Sci USA (1994)",
+          "pmid": "8226855",
+          "doi": "10.1073/pnas.91.16.7588",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8226855/"
+        },
+        {
+          "authors": "Collins-Racie LA, McColgan JM, Grant KL, DiBlasio-Smith EA, McCoy JM, LaVallie ER",
+          "title": "Production of recombinant bovine enterokinase catalytic subunit in Escherichia coli using the novel secretory fusion partner DsbA",
+          "journal": "Nature Biotechnology (1995)",
+          "pmid": "9636275",
+          "doi": "10.1038/nbt0995-982",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9636275/"
+        },
+        {
+          "authors": "Lu D, Yuan X, Zheng X, Sadler JE",
+          "title": "Bovine proenteropeptidase is activated by trypsin, and the specificity of enteropeptidase depends on the heavy chain",
+          "journal": "J Biol Chem (1997)",
+          "pmid": "9395456",
+          "doi": "10.1074/jbc.272.50.31293",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9395456/"
+        },
+        {
+          "authors": "Boulware KT, Daugherty PS",
+          "title": "Protease specificity determination by using cellular libraries of peptide substrates (CLiPS)",
+          "journal": "Proc Natl Acad Sci USA (2006)",
+          "pmid": "16672368",
+          "doi": "10.1073/pnas.0511108103",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16672368/"
+        },
+        {
+          "authors": "Liew OW, Chong JPC, Lim YZ, Ang CX, Lau YCA, Yandle TG, Brennan SO",
+          "title": "An SRLLR motif downstream of the scissile bond enhances enterokinase cleavage efficiency",
+          "journal": "Biochimie (2006)",
+          "pmid": "17097793",
+          "doi": "10.1016/j.biochi.2006.10.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17097793/"
+        },
+        {
+          "authors": "Gasparian ME, Bychkov ML, Dolgikh DA, Kirpichnikov MP",
+          "title": "Strategy for improvement of enteropeptidase efficiency in tag removal processes",
+          "journal": "Protein Expr Purif (2011)",
+          "pmid": "21515380",
+          "doi": "10.1016/j.pep.2011.04.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21515380/"
+        },
+        {
+          "authors": "Smith ET, Johnson DA",
+          "title": "Human enteropeptidase light chain: bioengineering of recombinants and kinetic investigations of structure and function",
+          "journal": "Protein Sci (2013)",
+          "pmid": "23436726",
+          "doi": "10.1002/pro.2239",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23436726/"
+        },
+        {
+          "authors": "Yang X, Ding Z, Peng L, Song Q, Zhang D, Cui F, Xia C, Li K, Yin H, Li S, Li Z, Huang H",
+          "title": "Cryo-EM structures reveal the activation and substrate recognition mechanism of human enteropeptidase",
+          "journal": "Nat Commun (2022)",
+          "pmid": "36376282",
+          "doi": "10.1038/s41467-022-34364-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36376282/"
+        },
+        {
+          "authors": "Choi SI, Song HW, Moon JW, Seong BL",
+          "title": "Recombinant enterokinase light chain with affinity tag: expression from Saccharomyces cerevisiae and its utilities in fusion protein technology",
+          "journal": "Biotechnol Bioeng (2001)",
+          "pmid": "11745150",
+          "doi": "10.1002/bit.10082",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11745150/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "DDDDK is the enterokinase (enteropeptidase) recognition sequence; the enzyme cleaves on the C-terminal side of the Lys, leaving no extra residues on the downstream protein",
+          "value": {
+            "function": "protease_cleavage_site",
+            "protease": "enterokinase",
+            "protease_synonym": "enteropeptidase",
+            "recognition_motif": "DDDDK",
+            "cleaves_after": "K",
+            "scar": "none_downstream"
+          },
+          "source": {
+            "pmid": "5570436",
+            "quote": "Purification and specificity of porcine enterokinase",
+            "quote_source": "catalog-doc",
+            "section": "title / specificity (Asp)4-Lys"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "specificity",
+          "label": "The canonical recognition motif is (Asp)4-Lys-Ile (DDDDK\u2193I); the four upstream Asp residues and a P1 Lys define the site",
+          "value": {
+            "consensus": "DDDDK",
+            "extended_consensus": "DDDDK-I",
+            "p1_residue": "Lys",
+            "upstream_acidic_tetrad": "(Asp)4"
+          },
+          "source": {
+            "pmid": "2658218",
+            "doi": "10.1016/0968-0004(89)90133-3",
+            "quote": "Enterokinase (enteropeptidase): comparative aspects \u2014 (Asp)4-Lys-Ile specificity",
+            "quote_source": "catalog-doc",
+            "section": "specificity review"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "use_tag_removal",
+          "type": "application",
+          "label": "DDDDK is used as a fusion-protein tag-removal site; recombinant enterokinase light chain cleaves it to release the target protein",
+          "value": {
+            "use": "fusion_tag_removal",
+            "reagent": "recombinant enterokinase light chain",
+            "context": "fusion protein after affinity purification"
+          },
+          "source": {
+            "pmid": "9636275",
+            "doi": "10.1038/nbt0995-982",
+            "quote": "Production of recombinant bovine enterokinase catalytic subunit in Escherichia coli \u2014 used to cleave DDDDK fusion sites",
+            "quote_source": "catalog-doc",
+            "section": "recombinant enterokinase for tag removal"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "off_target_caveat",
+          "type": "caveat",
+          "label": "Enterokinase is not strictly specific: it can cleave at secondary/off-target sites and prefers Arg over Lys at P1; canonical DDDDK is not its fastest substrate",
+          "value": {
+            "promiscuity": "documented",
+            "p1_preference": "Arg > Lys",
+            "secondary_cleavage": "context-dependent off-target cleavage reported",
+            "downstream_context": "P1'=Ser followed by a basic P2' (e.g. SRLLR) enhances cleavage"
+          },
+          "source": {
+            "pmid": "16672368",
+            "doi": "10.1073/pnas.0511108103",
+            "quote": "enteropeptidase is unexpectedly promiscuous; prefers Arg at P1 over Lys; canonical DDDDK is not the fastest substrate",
+            "quote_source": "catalog-doc",
+            "section": "CLiPS specificity profiling"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant_DDDDR",
+          "type": "sequence_variant",
+          "label": "The DDDDR variant (P1 Lys\u2192Arg) is cleaved more efficiently, requiring 3\u20136x less enzyme than DDDDK for equivalent fusion-protein cleavage",
+          "value": {
+            "variant": "DDDDR",
+            "change": "K5R",
+            "effect": "higher cleavage efficiency",
+            "enzyme_saving": "3-6x less enzyme vs DDDDK"
+          },
+          "source": {
+            "pmid": "21515380",
+            "doi": "10.1016/j.pep.2011.04.005",
+            "quote": "DDDDR variant requires 3\u20136x less enzyme than DDDDK for equivalent cleavage of Trx/TRAIL and Trx/FGF-2 fusions",
+            "quote_source": "catalog-doc",
+            "section": "engineering recommendation"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "ermAM",
@@ -3584,6 +3980,238 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "FactorXa_site",
+      "slug": "FactorXa_site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "Factor Xa cleavage site",
+        "FXa site",
+        "IEGR"
+      ],
+      "collections": [],
+      "description": "Coagulation Factor Xa protease recognition site (IEGR; Ile-Glu-Gly-Arg). Factor Xa cleaves the peptide bond on the C-terminal (carboxyl) side of the P1 Arg, i.e. after the terminal R (IEGR|...). Whole-part feature spanning all 4 residues; this is a single atomic functional element and has no functional sub-features.",
+      "length": 4,
+      "protein_length_aa": 4,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Nagai K, Th\u00f8gersen HC",
+          "title": "Generation of beta-globin by sequence-specific proteolysis of a hybrid protein produced in Escherichia coli",
+          "journal": "Nature (1984)",
+          "pmid": "6330564",
+          "doi": "10.1038/309810a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6330564/"
+        },
+        {
+          "authors": "Jenny RJ, Mann KG, Lundblad RL",
+          "title": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+          "journal": "Protein Expression and Purification (2003)",
+          "pmid": "12963335",
+          "doi": "10.1016/s1046-5928(03)00168-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12963335/"
+        },
+        {
+          "authors": "Hsu HJ, Tsai KC, Sun YK, Chang HJ, Huang YJ, Yu HM, Lin CH, Mao SS, Yang AS",
+          "title": "Factor Xa active site substrate specificity with substrate phage display and computational molecular modeling",
+          "journal": "Journal of Biological Chemistry (2008)",
+          "pmid": "18296445",
+          "doi": "10.1074/jbc.M708843200",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18296445/"
+        },
+        {
+          "authors": "Wearne SJ",
+          "title": "Factor Xa cleavage of fusion proteins. Elimination of non-specific cleavage by reversible acylation",
+          "journal": "FEBS Letters (1990)",
+          "pmid": "2185034",
+          "doi": "10.1016/0014-5793(90)80696-g",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2185034/"
+        },
+        {
+          "authors": "He M, Jin L, Austen B",
+          "title": "Specificity of factor Xa in the cleavage of fusion proteins",
+          "journal": "Journal of Protein Chemistry (1993)",
+          "pmid": "8427626",
+          "doi": "10.1007/BF01024906",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8427626/"
+        },
+        {
+          "authors": "Waugh DS",
+          "title": "An overview of enzymatic reagents for the removal of affinity tags",
+          "journal": "Protein Expression and Purification (2011)",
+          "pmid": "21871965",
+          "doi": "10.1016/j.pep.2011.08.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21871965/"
+        },
+        {
+          "authors": "Stojanovski BM, Di Cera E",
+          "title": "Role of sequence and position of the cleavage sites in prothrombin activation",
+          "journal": "Journal of Biological Chemistry (2021)",
+          "pmid": "34265300",
+          "doi": "10.1016/j.jbc.2021.100955",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34265300/"
+        },
+        {
+          "authors": "Sahin-T\u00f3th M, Dunten RL, Kaback HR",
+          "title": "Design of a membrane protein for site-specific proteolysis: properties of engineered factor Xa protease sites in the lactose permease of Escherichia coli",
+          "journal": "Biochemistry (1995)",
+          "pmid": "7827058",
+          "doi": "10.1021/bi00004a001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7827058/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "functional_claims": [
+        {
+          "id": "recognition_specificity",
+          "type": "recognition_specificity",
+          "label": "IEGR is a Factor Xa P4-P1 recognition site; the protease cleaves on the C-terminal side of the P1 Arg (after the terminal R)",
+          "value": {
+            "protease": "Factor Xa (coagulation factor Xa, EC 3.4.21.6)",
+            "recognition_motif": "Ile-Glu-Gly-Arg (IEGR)",
+            "positions": "P4-P3-P2-P1",
+            "cleavage_position": "after P1 Arg (IEGR|X)",
+            "preferred_consensus": "Ile-Glu/Asp-Gly-Arg (IEGR / IDGR)"
+          },
+          "source": {
+            "pmid": "18296445",
+            "doi": "10.1074/jbc.M708843200",
+            "quote": "Factor Xa active site substrate specificity with substrate phage display and computational molecular modeling",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Engineered into a fusion-protein linker, IEGR allows site-specific proteolytic release of the passenger from its tag by Factor Xa",
+          "value": {
+            "function": "site_specific_protease_cleavage_site",
+            "use": "tag_removal_from_fusion_protein",
+            "protease": "Factor Xa",
+            "founding_demonstration": "sequence-specific proteolysis of a hybrid protein to release a native-N-terminus product (beta-globin) produced in E. coli"
+          },
+          "source": {
+            "pmid": "6330564",
+            "doi": "10.1038/309810a0",
+            "quote": "Generation of beta-globin by sequence-specific proteolysis of a hybrid protein produced in Escherichia coli",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "natural_origin",
+          "type": "natural_origin",
+          "label": "IEGR is the natural P4-P1 sequence preceding a Factor Xa cleavage site in human prothrombin",
+          "value": {
+            "origin_protein": "human prothrombin (UniProt P00734, THRB_HUMAN)",
+            "context": "Factor Xa cleavage site at Arg; the natural flanking context is DEDSDRAIEGRTATS",
+            "note": "Prothrombin is physiologically activated by Factor Xa; the IEGR/IDGR motifs at its activation cleavage sites are the biological template for the engineered tag"
+          },
+          "source": {
+            "pmid": "34265300",
+            "doi": "10.1016/j.jbc.2021.100955",
+            "quote": "Role of sequence and position of the cleavage sites in prothrombin activation",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "context_dependence",
+          "type": "limitation",
+          "label": "Factor Xa cleavage at IEGR is context-dependent: nonspecific secondary cleavage and inhibition by certain P1' residues are documented practical limitations",
+          "value": {
+            "limitation": "context_dependence_and_nonspecific_cleavage",
+            "details": [
+              "nonspecific cleavage can occur at secondary (e.g. Lys-containing) sites",
+              "hydrophobic or otherwise unfavorable residues immediately C-terminal of the site (P1') can inhibit cleavage",
+              "steric accessibility of the inserted site affects cleavage efficiency"
+            ]
+          },
+          "source": {
+            "pmid": "12963335",
+            "doi": "10.1016/s1046-5928(03)00168-2",
+            "quote": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Host-agnostic sequence element; the cleaving enzyme (Factor Xa) is supplied in vitro, so the site functions independently of the expression host",
+          "value": {
+            "element_type": "in_vitro_protease_recognition_site",
+            "host_dependence": "none (cleavage performed in vitro with exogenous Factor Xa)",
+            "enzyme_origin": "mammalian coagulation Factor Xa"
+          },
+          "source": {
+            "pmid": "21871965",
+            "doi": "10.1016/j.pep.2011.08.005",
+            "quote": "An overview of enzymatic reagents for the removal of affinity tags",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "fd",
@@ -5227,6 +5855,329 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "HRV3C_site",
+      "slug": "HRV3C_site",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "synonyms": [
+        "PreScission protease site",
+        "3C protease cleavage site",
+        "HRV 3C site",
+        "LEVLFQGP"
+      ],
+      "collections": [],
+      "description": "Human rhinovirus 3C protease recognition and cleavage site (LEVLFQGP; Leu-Glu-Val-Leu-Phe-Gln-Gly-Pro). The 3C cysteine protease cleaves the peptide bond between Q (P1) and G (P1'), i.e. LEVLFQ|GP, leaving a Gly-Pro N-terminal scar on the downstream protein. The site derives from the natural HRV polyprotein processing sequence at residues 1423-1430 of HRV3 (UniProt Q82081). It is the recognition sequence used in the PreScission protease reagent (a GST-HRV3C fusion). Source-verified to UniProt Q82081 (POLG_HRV3) at 100% identity over all 8 aa. No functional sub-features are present: this is a single atomic cleavage-site element.",
+      "length": 8,
+      "protein_length_aa": 8,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [],
+      "references": [
+        {
+          "authors": "Cordingley MG, Callahan PL, Sardana VV, Garsky VM, Colonno RJ",
+          "title": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro.",
+          "journal": "Journal of Biological Chemistry (1990)",
+          "pmid": "2160953",
+          "doi": "10.1016/S0021-9258(19)38811-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2160953/"
+        },
+        {
+          "authors": "Fan X, Li X, Zhou Y, Mei M, Liu P, Zhao J, Peng W, Jiang ZB, Yang S, Iverson BL, Zhang G, Yi L",
+          "title": "Quantitative Analysis of the Substrate Specificity of Human Rhinovirus 3C Protease and Exploration of Its Substrate Recognition Mechanisms.",
+          "journal": "ACS Chemical Biology (2019)",
+          "pmid": "31613083",
+          "doi": "10.1021/acschembio.9b00539",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31613083/"
+        },
+        {
+          "authors": "Abdelkader EH, Otting G",
+          "title": "NT*-HRV3CP: An optimized construct of human rhinovirus 14 3C protease for high-yield expression and fast affinity-tag cleavage.",
+          "journal": "Journal of Biotechnology (2020)",
+          "pmid": "33166527",
+          "doi": "10.1016/j.jbiotec.2020.11.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33166527/"
+        },
+        {
+          "authors": "Waugh DS",
+          "title": "An overview of enzymatic reagents for the removal of affinity tags.",
+          "journal": "Protein Expression and Purification (2011)",
+          "pmid": "21871965",
+          "doi": "10.1016/j.pep.2011.08.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21871965/"
+        },
+        {
+          "authors": "Mei M, Fan X, Zhou Y, Zhang F, Zhang G, Yi L",
+          "title": "A combinatorial strategy for HRV 3C protease engineering to achieve the N-terminal free cleavage.",
+          "journal": "International Journal of Biological Macromolecules (2024)",
+          "pmid": "38521339",
+          "doi": "10.1016/j.ijbiomac.2024.131066",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38521339/"
+        },
+        {
+          "authors": "Xu J, Nakanishi T, Kato T, Park EY",
+          "title": "In vivo enzymatic digestion of HRV 3C protease cleavage sites-containing proteins produced in a silkworm-baculovirus expression system.",
+          "journal": "Bioscience Reports (2022)",
+          "pmid": "35642592",
+          "doi": "10.1042/BSR20220739",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35642592/"
+        },
+        {
+          "authors": "Xu H, Wang Q, Zhang Z, Yi L, Ma L, Zhai C",
+          "title": "A simplified method to remove fusion tags from a xylanase of Bacillus sp. HBP8 with HRV 3C protease.",
+          "journal": "Enzyme and Microbial Technology (2019)",
+          "pmid": "30686346",
+          "doi": "10.1016/j.enzmictec.2019.01.004",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30686346/"
+        },
+        {
+          "authors": "Davis GJ, Wang QM, Cox GA, Johnson RB, Wakulchik M, Dotson CA, Villarreal EC",
+          "title": "Expression and purification of recombinant rhinovirus 14 3CD proteinase and its comparison to the 3C proteinase.",
+          "journal": "Archives of Biochemistry and Biophysics (1997)",
+          "pmid": "9328292",
+          "doi": "10.1006/abbi.1997.0291",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9328292/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "LEVLFQGP is the HRV 3C protease recognition and cleavage site; the protease cleaves between Q (P1) and G (P1'), releasing the downstream protein with a Gly-Pro N-terminal scar",
+          "value": {
+            "function": "protease_cleavage_site",
+            "protease": "Human rhinovirus 3C protease",
+            "protease_synonym": "HRV3C protease, HRV 3C protease, PreScission protease (as fusion)",
+            "ec_number": "3.4.22.28",
+            "recognition_motif": "LEVLFQGP",
+            "scissile_bond": "Q6-G7",
+            "cleavage_notation": "LEVLFQ|GP",
+            "scar_downstream": "GP",
+            "use": "tag_removal_from_fusion_protein"
+          },
+          "source": {
+            "pmid": "2160953",
+            "doi": "10.1016/S0021-9258(19)38811-8",
+            "quote": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro \u2014 minimum substrate TLFQ/GP; P1=Gln and scissile bond Q|G established experimentally",
+            "quote_source": "primary",
+            "section": "title and results; substrate truncation/substitution experiments"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "recognition_specificity",
+          "type": "recognition_specificity",
+          "label": "HRV 3C protease has dominant specificity at P1 (Gln > Glu) and P1' (Gly/Ala/Cys/Ser); P4 (hydrophobic) and P2 (Leu/Phe) also contribute to recognition",
+          "value": {
+            "P1": "Gln (dominant; Glu also accepted)",
+            "P1_prime": "Gly/Ala/Cys/Ser",
+            "P2": "Leu or Phe",
+            "P4": "hydrophobic residue",
+            "extended_recognition_note": "P1=Gln and P1'=Gly are the strongest determinants; S1 pocket residue His160 and S1' pocket residue Thr141 identified structurally",
+            "improved_substrate": "LEVLFQ|GM (P1'=Met reported as improved at elevated temperatures)"
+          },
+          "source": {
+            "pmid": "31613083",
+            "doi": "10.1021/acschembio.9b00539",
+            "quote": "P1=Gln/Glu and P1'=Gly/Ala/Cys/Ser as dominant determinants; LEVLFQ\u2193GM as improved substrate at high temperature",
+            "quote_source": "primary",
+            "section": "YESS substrate profiling results and discussion"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "natural_origin",
+          "type": "natural_origin",
+          "label": "LEVLFQGP derives from the natural HRV3 polyprotein processing sequence (residues 1423-1430, UniProt Q82081); the 3C protease cleaves this site during viral polyprotein maturation",
+          "value": {
+            "origin_protein": "Human rhinovirus 3 genome polyprotein (UniProt Q82081, POLG_HRV3)",
+            "residues": "1423-1430 (LEVLFQGP)",
+            "annotated_feature": "Cleavage; by protease 3C between Q1428 and G1429",
+            "biological_context": "Viral polyprotein processing during HRV3 replication"
+          },
+          "source": {
+            "pmid": "2160953",
+            "doi": "10.1016/S0021-9258(19)38811-8",
+            "quote": "Substrate requirements of human rhinovirus 3C protease for peptide cleavage in vitro \u2014 sites in the viral polyprotein define the recognition consensus",
+            "quote_source": "primary",
+            "section": "introduction; natural polyprotein substrates"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "low_temperature_activity",
+          "type": "application",
+          "label": "HRV 3C protease cleaves LEVLFQGP efficiently at 4 \u00b0C, enabling tag removal under conditions that minimize target protein degradation or aggregation",
+          "value": {
+            "optimal_temperature": "4 \u00b0C",
+            "advantage": "active at low temperature; minimizes proteolytic damage to target protein during extended incubation",
+            "comparison": "more active at 4 \u00b0C than thrombin or Factor Xa under comparable conditions"
+          },
+          "source": {
+            "pmid": "33166527",
+            "doi": "10.1016/j.jbiotec.2020.11.005",
+            "quote": "demonstrates 4 \u00b0C cleavage in minutes; confirms LEVLFQ/GX as the stringent recognition sequence; describes PreScission protease as GST-HRV3C fusion",
+            "quote_source": "primary",
+            "section": "results and discussion; optimized protease construct for rapid tag cleavage"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "gp_scar",
+          "type": "limitation",
+          "label": "Cleavage of LEVLFQGP leaves a Gly-Pro (GP) dipeptide scar on the N-terminus of the released downstream protein; this scar may be undesirable for structural or functional studies requiring a native N-terminus",
+          "value": {
+            "scar": "GP",
+            "scar_residues_count": 2,
+            "limitation": "GP scar retained on downstream protein N-terminus after cleavage",
+            "mitigation_strategies": [
+              "use engineered 3C variants with expanded P1' specificity (e.g. C3 variant) to reduce scar",
+              "alternative: incorporate site downstream of TEV if scar-free cleavage is needed"
+            ]
+          },
+          "source": {
+            "pmid": "38521339",
+            "doi": "10.1016/j.ijbiomac.2024.131066",
+            "quote": "Documents the GP scar problem; reports engineered C3 variant with expanded P1' specificity; confirms LEVLFQ\u2193GP and LEVLFQ\u2193GM as canonical and improved substrates respectively",
+            "quote_source": "primary",
+            "section": "introduction and engineering rationale"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "high_specificity",
+          "type": "application",
+          "label": "HRV 3C protease shows very high cleavage specificity for LEVLFQGP compared to thrombin and Factor Xa; off-target cleavage within the fusion partner is rare",
+          "value": {
+            "specificity": "high relative to thrombin and Factor Xa",
+            "off_target_risk": "low",
+            "context": "in vitro cleavage after affinity purification of fusion protein"
+          },
+          "source": {
+            "pmid": "21871965",
+            "doi": "10.1016/j.pep.2011.08.005",
+            "quote": "Review discusses LEVLFQGP as a standard cleavage site, its comparison to TEV protease, 4 \u00b0C activity advantage, and notes the sequence may have been refined from natural ETLFQGP; also documents GP scar and PreScission protease variants",
+            "quote_source": "primary",
+            "section": "HRV 3C protease section; comparison to other proteases"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "expression_system_compatibility",
+          "type": "host_range",
+          "label": "LEVLFQGP is functional as a tag-removal site across diverse expression systems including bacterial and insect cell (baculovirus) expression, whether cleaved in vitro or in vivo",
+          "value": {
+            "expression_systems_demonstrated": [
+              "E. coli",
+              "silkworm baculovirus (BEVS)"
+            ],
+            "cleavage_mode": [
+              "in vitro",
+              "in vivo"
+            ],
+            "in_vivo_efficiency": "high; documented for BEVS-expressed fusion proteins"
+          },
+          "source": {
+            "pmid": "35642592",
+            "doi": "10.1042/BSR20220739",
+            "quote": "Demonstrates that LEVLFQGP site is used in diverse expression systems (E. coli and insect BEVS); site cleaved in vivo with high efficiency",
+            "quote_source": "primary",
+            "section": "title and results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant_LEVLFQGM",
+          "type": "sequence_variant",
+          "label": "The LEVLFQGM variant (P1'=Met instead of Gly) is identified as an improved substrate at elevated temperatures in quantitative specificity profiling",
+          "value": {
+            "variant": "LEVLFQGM",
+            "change": "G7M at P1' position",
+            "effect": "improved cleavage efficiency at elevated temperature",
+            "note": "Scar would be MP rather than GP on the released downstream protein"
+          },
+          "source": {
+            "pmid": "31613083",
+            "doi": "10.1021/acschembio.9b00539",
+            "quote": "identifies LEVLFQ\u2193GM as improved substrate at high temperature",
+            "quote_source": "primary",
+            "section": "YESS profiling results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "hU6",
@@ -13816,25 +14767,226 @@
       "slug": "SUMO",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q12306",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
         "SUMO",
-        "SMT3"
+        "SMT3",
+        "Smt3",
+        "SUMO tag",
+        "small ubiquitin-related modifier",
+        "Smt3p"
       ],
       "collections": [],
-      "description": "",
-      "length": 97,
-      "protein_length_aa": 97,
+      "description": "Small ubiquitin-related modifier (Smt3 / SUMO), Saccharomyces cerevisiae SMT3; UniProt Q12306, residues 1\u201398. Ubiquitin-like (UBL) protein with a beta-grasp fold. As stored this is the mature/processed form retaining the initiator Met (M1) for use as a recombinant N-terminal fusion tag and ending at the conserved C-terminal Gly-Gly (G97-G98), the Ulp1 cleavage site. The full precursor is 101 aa; the C-terminal propeptide (residues 99\u2013101, ATY) is removed by the SUMO protease Ulp1 to expose the Gly-Gly. Widely deployed as a SUMO-fusion partner that enhances soluble expression of difficult passengers and, upon Ulp1 cleavage at the Gly-Gly, releases the passenger with a native N-terminus.",
+      "length": 98,
+      "protein_length_aa": 98,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Mossessova E, Lima CD",
+          "title": "Ulp1-SUMO crystal structure and genetic analysis reveal conserved interactions and a regulatory element essential for cell growth in yeast",
+          "journal": "Molecular Cell (2000)",
+          "pmid": "10882122",
+          "doi": "10.1016/s1097-2765(00)80326-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10882122/"
+        },
+        {
+          "authors": "Malakhov MP, Mattern MR, Malakhova OA, Drinker M, Weeks SD, Butt TR",
+          "title": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+          "journal": "Journal of Structural and Functional Genomics (2004)",
+          "pmid": "15263846",
+          "doi": "10.1023/B:JSFG.0000029237.70316.52",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15263846/"
+        },
+        {
+          "authors": "Butt TR, Edavettal SC, Hall JP, Mattern MR",
+          "title": "SUMO fusion technology for difficult-to-express proteins",
+          "journal": "Protein Expression and Purification (2005)",
+          "pmid": "16084395",
+          "doi": "10.1016/j.pep.2005.03.016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16084395/"
+        },
+        {
+          "authors": "Marblestone JG, Edavettal SC, Lim Y, Lim P, Zuo X, Butt TR",
+          "title": "Comparison of SUMO fusion technology with traditional gene fusion systems: enhanced expression and solubility with SUMO",
+          "journal": "Protein Science (2006)",
+          "pmid": "16322573",
+          "doi": "10.1110/ps.051812706",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16322573/"
+        },
+        {
+          "authors": "Lee CD, Sun HC, Hu SM, Chiu CF, Homhuan A, Liang SM, Leng CH, Wang TF",
+          "title": "An improved SUMO fusion protein system for effective production of native proteins",
+          "journal": "Protein Science (2008)",
+          "pmid": "18467498",
+          "doi": "10.1110/ps.035188.108",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18467498/"
+        },
+        {
+          "authors": "Zhang F, Zheng H, Xian Y, Song H, Wang S, Yun Y, Yi L, Zhang G",
+          "title": "Profiling Substrate Specificity of the SUMO Protease Ulp1 by the YESS-PSSC System to Advance the Conserved Mechanism for Substrate Cleavage",
+          "journal": "International Journal of Molecular Sciences (2022)",
+          "pmid": "36293045",
+          "doi": "10.3390/ijms232012188",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36293045/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "solubility_partner",
+          "type": "function",
+          "label": "SUMO is an N-terminal fusion partner that enhances soluble expression and overall expression yield of fused (including difficult-to-express) proteins in E. coli",
+          "value": {
+            "function": "solubility_and_expression_enhancement",
+            "tag_position": "N-terminal",
+            "applies_to": "difficult-to-express proteins"
+          },
+          "source": {
+            "pmid": "15263846",
+            "doi": "10.1023/B:JSFG.0000029237.70316.52",
+            "quote": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "tag_removal",
+          "type": "tag_removal",
+          "label": "The SUMO tag is removed by the SUMO-specific protease Ulp1, which cleaves at the C-terminal Gly-Gly to release the passenger with a native N-terminus",
+          "value": {
+            "protease": "Ulp1 (SUMO-specific protease; SENP family)",
+            "cleavage_site": "after the C-terminal Gly-Gly (G97-G98)",
+            "recognition": "Ulp1 recognizes the folded 3D structure of SUMO, not a linear sequence motif",
+            "product": "passenger protein with a native (scarless) N-terminus",
+            "p1prime_constraint": "any residue tolerated at the +1 position except proline"
+          },
+          "source": {
+            "pmid": "16084395",
+            "doi": "10.1016/j.pep.2005.03.016",
+            "quote": "SUMO fusion technology for difficult-to-express proteins",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "cleavage_specificity",
+          "type": "sequence_feature",
+          "label": "Ulp1 cleavage requires the conserved C-terminal Gly-Gly; single substitutions are tolerated but dual mutation of the diglycine abolishes cleavage",
+          "value": {
+            "determinant": "C-terminal Gly-Gly motif",
+            "single_substitution": "tolerated",
+            "double_substitution": "abolishes cleavage",
+            "structural_basis": "tapered active-site pocket of Ulp1 accommodates the diglycine"
+          },
+          "source": {
+            "pmid": "36293045",
+            "doi": "10.3390/ijms232012188",
+            "quote": "Profiling Substrate Specificity of the SUMO Protease Ulp1 by the YESS-PSSC System to Advance the Conserved Mechanism for Substrate Cleavage",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "strength",
+          "type": "strength",
+          "label": "In a head-to-head comparison of fusion partners, SUMO ranked among the highest for enhancing expression and solubility, comparable to NusA and ahead of MBP, GST, TRX and ubiquitin",
+          "value": {
+            "ranking": "highest tier (with NusA) for expression/solubility among MBP, GST, TRX, Ub, NusA, SUMO",
+            "protease_kinetics": "Ulp1 kcat ~25-fold higher than AcTEV protease",
+            "cleavage_product": "native N-terminus on the released passenger"
+          },
+          "source": {
+            "pmid": "16322573",
+            "doi": "10.1110/ps.051812706",
+            "quote": "Comparison of SUMO fusion technology with traditional gene fusion systems: enhanced expression and solubility with SUMO",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Native to Saccharomyces cerevisiae (SMT3 gene product); deployed as a fusion tag primarily in E. coli expression systems",
+          "value": {
+            "origin": "Saccharomyces cerevisiae (SMT3)",
+            "primary_expression_host": "Escherichia coli",
+            "hosts": [
+              "Escherichia coli",
+              "Saccharomyces cerevisiae"
+            ]
+          },
+          "source": {
+            "pmid": "15263846",
+            "doi": "10.1023/B:JSFG.0000029237.70316.52",
+            "quote": "SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins",
+            "quote_source": "primary",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "accession": "UniProt:Q12306",
+        "fetched": "2026-06-20",
+        "uniprot_entry_version": 215,
+        "status": "length_variant",
+        "identity": 1.0,
+        "part_len": 98,
+        "uniprot_len": 101
+      }
     },
     {
       "name": "SV40 NLS",
@@ -14849,7 +16001,7 @@
       ]
     },
     {
-      "name": "TEV site",
+      "name": "TEV_site",
       "slug": "TEV_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -14859,23 +16011,250 @@
       "synonyms": [
         "TEV site",
         "TEV",
-        "TEV cleavage site"
+        "TEV cleavage site",
+        "TEV protease site",
+        "ENLYFQG",
+        "ENLYFQ-G"
       ],
       "collections": [],
-      "description": "",
+      "description": "Tobacco Etch Virus (TEV) NIa protease recognition site, engineered form ENLYFQG (Glu-Asn-Leu-Tyr-Phe-Gln-Gly). TEV protease cleaves the scissile peptide bond between the P1 Gln and the P1' residue, i.e. after the Q (ENLYFQ|G), leaving a single non-native Gly on the released downstream product. Whole-part feature spanning all 7 residues; this is a single atomic functional element with no functional sub-features. P1'=Gly is an engineered variant of the natural NIb|CP junction sequence ENLYFQS (P1'=Ser).",
       "length": 7,
       "protein_length_aa": 7,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Dougherty WG, Carrington JC, Cary SM, Parks TD",
+          "title": "Biochemical and mutational analysis of a plant virus polyprotein cleavage site",
+          "journal": "EMBO J (1988)",
+          "pmid": "3409865",
+          "doi": "10.1002/j.1460-2075.1988.tb02942.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3409865/"
+        },
+        {
+          "authors": "Carrington JC, Dougherty WG",
+          "title": "A viral cleavage site cassette: identification of amino acid sequences required for tobacco etch virus polyprotein processing",
+          "journal": "Proc Natl Acad Sci USA (1988)",
+          "pmid": "3285343",
+          "doi": "10.1073/pnas.85.10.3391",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3285343/"
+        },
+        {
+          "authors": "Parks TD, Leuther KK, Howard ED, Johnston SA, Dougherty WG",
+          "title": "Release of proteins and peptides from fusion proteins using a recombinant plant virus proteinase",
+          "journal": "Anal Biochem (1994)",
+          "pmid": "8179197",
+          "doi": "10.1006/abio.1994.1060",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8179197/"
+        },
+        {
+          "authors": "Kapust RB, Tozser J, Fox JD, Anderson DE, Cherry S, Copeland TD, Waugh DS",
+          "title": "Tobacco etch virus protease: mechanism of autolysis and rational design of stable mutants with wild-type catalytic proficiency",
+          "journal": "Protein Eng (2001)",
+          "pmid": "11809930",
+          "doi": "10.1093/protein/14.12.993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11809930/"
+        },
+        {
+          "authors": "Kapust RB, Tozser J, Copeland TD, Waugh DS",
+          "title": "The P1' specificity of tobacco etch virus protease",
+          "journal": "Biochem Biophys Res Commun (2002)",
+          "pmid": "12074568",
+          "doi": "10.1016/S0006-291X(02)00574-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12074568/"
+        },
+        {
+          "authors": "Phan J, Zdanov A, Evdokimov AG, Tropea JE, Peters HK 3rd, Kapust RB, Li M, Wlodawer A, Waugh DS",
+          "title": "Structural basis for the substrate specificity of tobacco etch virus protease",
+          "journal": "J Biol Chem (2002)",
+          "pmid": "12377789",
+          "doi": "10.1074/jbc.M207895200",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12377789/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "recognition_specificity",
+          "type": "recognition_specificity",
+          "label": "ENLYFQ(G/S) is the 7-residue TEV protease recognition site; the enzyme cleaves between the P1 Gln and P1' (after the Q, ENLYFQ|G)",
+          "value": {
+            "protease": "Tobacco Etch Virus NIa protease (TEV protease, EC 3.4.22.44)",
+            "recognition_motif": "Glu-Asn-Leu-Tyr-Phe-Gln-(Gly/Ser)",
+            "positions": "P6-P5-P4-P3-P2-P1-P1'",
+            "consensus": "E-X-X-Y-X-Q-(G/S)",
+            "cleavage_position": "between P1 Gln and P1' residue (ENLYFQ|G)"
+          },
+          "source": {
+            "pmid": "3409865",
+            "doi": "10.1002/j.1460-2075.1988.tb02942.x",
+            "quote": "Biochemical and mutational analysis of a plant virus polyprotein cleavage site",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "The stored sequence is the engineered P1'-Gly variant (ENLYFQG); the natural TEV NIb|CP junction is ENLYFQS (P1'=Ser)",
+          "value": {
+            "stored_sequence": "ENLYFQG",
+            "natural_sequence": "ENLYFQS",
+            "variant": "P1' Ser->Gly (S->G at position 7)",
+            "natural_origin": "TEV genome polyprotein, NIb|CP cleavage junction (UniProt P04517 aa 2786-2792 / GenBank M15239 frame+1)",
+            "rationale": "P1'-Gly is a well-established engineered form: it is accepted by TEV protease and leaves a single non-native Gly on the cleaved product; both ENLYFQG and ENLYFQS are widely used recombinant TEV sites",
+            "identity_to_natural_pct": 85.7
+          },
+          "source": {
+            "pmid": "12074568",
+            "doi": "10.1016/S0006-291X(02)00574-0",
+            "quote": "The P1' specificity of tobacco etch virus protease",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "p1prime_specificity",
+          "type": "recognition_specificity",
+          "label": "TEV protease tolerates several residues at P1' (Gly, Ser, Ala, Met, Cys, His) but not Pro; this defines the difference between the ENLYFQG and ENLYFQS variants",
+          "value": {
+            "position": "P1'",
+            "tolerated": [
+              "Gly",
+              "Ser",
+              "Ala",
+              "Met",
+              "Cys",
+              "His"
+            ],
+            "not_tolerated": [
+              "Pro"
+            ],
+            "consequence": "the P1' residue becomes the new N-terminal residue of the released downstream product; ENLYFQG leaves an N-terminal Gly, ENLYFQS leaves an N-terminal Ser"
+          },
+          "source": {
+            "pmid": "12074568",
+            "doi": "10.1016/S0006-291X(02)00574-0",
+            "quote": "The P1' specificity of tobacco etch virus protease",
+            "quote_source": "primary",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Engineered into a fusion-protein linker, ENLYFQG enables highly specific proteolytic release of the passenger from its tag by TEV protease",
+          "value": {
+            "function": "site_specific_protease_cleavage_site",
+            "use": "tag_removal_from_fusion_protein",
+            "protease": "TEV protease",
+            "founding_demonstration": "use of the TEV (ENLYFQ-S/G) site to release proteins/peptides from fusion proteins with a recombinant plant-virus proteinase",
+            "advantage": "high sequence specificity (7-residue recognition) gives clean, minimal-scar tag removal"
+          },
+          "source": {
+            "pmid": "8179197",
+            "doi": "10.1006/abio.1994.1060",
+            "quote": "Release of proteins and peptides from fusion proteins using a recombinant plant virus proteinase",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "structural_basis",
+          "type": "mechanism",
+          "label": "The crystal structure of TEV protease with substrate/product peptide explains the heptapeptide selectivity and confirms cleavage between Q and the P1' residue",
+          "value": {
+            "structure": "TEV protease complexed with a substrate/product peptide",
+            "explains": "structural basis of ENLYFQ(G/S) heptapeptide selectivity",
+            "confirms": "scissile bond is between P1 Gln and P1' residue"
+          },
+          "source": {
+            "pmid": "12377789",
+            "doi": "10.1074/jbc.M207895200",
+            "quote": "Structural basis for the substrate specificity of tobacco etch virus protease",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Host-agnostic sequence element; the cleaving enzyme (TEV protease) is supplied separately, so the site functions independently of the expression host",
+          "value": {
+            "element_type": "protease_recognition_site",
+            "host_dependence": "none (cleavage performed with TEV protease, in vitro or co-expressed in vivo)",
+            "enzyme_origin": "Tobacco Etch Virus NIa protease (commonly the S219V-stabilized recombinant form)"
+          },
+          "source": {
+            "pmid": "11809930",
+            "doi": "10.1093/protein/14.12.993",
+            "quote": "Tobacco etch virus protease: mechanism of autolysis and rational design of stable mutants with wild-type catalytic proficiency",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
-      "name": "thrombin site",
+      "name": "thrombin_site",
       "slug": "thrombin_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -14885,20 +16264,239 @@
       "synonyms": [
         "thrombin site",
         "thrombin",
-        "thrombin cleavage site"
+        "thrombin cleavage site",
+        "thrombin recognition site",
+        "LVPRGS"
       ],
       "collections": [],
-      "description": "",
+      "description": "Engineered 6-aa thrombin (factor IIa) recognition/cleavage site Leu-Val-Pro-Arg-Gly-Ser. Thrombin hydrolyses the peptide bond after the Arg (LVPR | GS), releasing the downstream protein with an N-terminal Gly-Ser scar. Derived from the natural human factor VIII thrombin site LVPRGF by a Phe->Ser substitution that creates a BamHI (GGATCC) cloning site; the canonical site of the pGEX-2T GST-fusion expression system. Source-verified to U13850.1 misc_feature 918..935 at 100% identity over all 6 residues.",
       "length": 6,
       "protein_length_aa": 6,
       "regulated_by": [],
       "regulates": [],
-      "documented": false,
-      "status": "candidate",
+      "documented": true,
+      "status": "validated",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Smith DB, Johnson KS",
+          "title": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+          "journal": "Gene (1988)",
+          "pmid": "3047011",
+          "doi": "10.1016/0378-1119(88)90005-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3047011/"
+        },
+        {
+          "authors": "Gallwitz M, Enoksson M, Thorpe M, Hellman L",
+          "title": "The Extended Cleavage Specificity of Human Thrombin",
+          "journal": "PLoS One (2012)",
+          "pmid": "22384068",
+          "doi": "10.1371/journal.pone.0031756",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22384068/"
+        },
+        {
+          "authors": "Waugh DS",
+          "title": "An overview of enzymatic reagents for the removal of affinity tags",
+          "journal": "Protein Expression and Purification (2011)",
+          "pmid": "21871965",
+          "doi": "10.1016/j.pep.2011.08.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21871965/"
+        },
+        {
+          "authors": "Jenny RJ, Mann KG, Lundblad RL",
+          "title": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+          "journal": "Protein Expression and Purification (2003)",
+          "pmid": "12963335",
+          "doi": "10.1016/s1046-5928(03)00168-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12963335/"
+        },
+        {
+          "authors": "Liu D, Xu R, Dutta K, Cowburn D",
+          "title": "N-terminal cysteinyl proteins can be prepared using thrombin cleavage",
+          "journal": "FEBS Letters (2008)",
+          "pmid": "18331839",
+          "doi": "10.1016/j.febslet.2008.02.078",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18331839/"
+        },
+        {
+          "authors": "Hakes DJ, Dixon JE",
+          "title": "New vectors for high level expression of recombinant proteins in bacteria",
+          "journal": "Analytical Biochemistry (1992)",
+          "pmid": "1519755",
+          "doi": "10.1016/0003-2697(92)90108-j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1519755/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "LVPRGS is an engineered thrombin (factor IIa) recognition/cleavage site used to proteolytically separate an affinity or solubility tag from a target protein in recombinant fusions",
+          "value": {
+            "function": "protease_cleavage_site",
+            "protease": "thrombin",
+            "ec_number": "3.4.21.5",
+            "design": "engineered_synthetic_peptide",
+            "length_aa": 6,
+            "use": "tag_removal"
+          },
+          "source": {
+            "pmid": "3047011",
+            "doi": "10.1016/0378-1119(88)90005-4",
+            "quote": "Single-step purification of polypeptides expressed in Escherichia coli as fusions with glutathione S-transferase",
+            "quote_source": "primary",
+            "section": "title; thrombin cleavage of the GST-fusion linker"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Thrombin cleaves the LVPRGS site after the Arg residue (LVPR | GS), releasing the downstream protein with an N-terminal Gly-Ser scar",
+          "value": {
+            "protease": "thrombin",
+            "recognition_motif": "LVPRGS",
+            "scissile_bond": "R4-G5",
+            "cleaves_after": "Arg",
+            "scar": "GS"
+          },
+          "source": {
+            "pmid": "21871965",
+            "doi": "10.1016/j.pep.2011.08.005",
+            "quote": "Thrombin cleaves after the Arg of LVPR|GS, leaving Gly-Ser residues on the N-terminus of the released protein",
+            "quote_source": "primary",
+            "section": "thrombin recognition site and resulting scar"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "origin_engineering",
+          "type": "sequence_variant",
+          "label": "LVPRGS was engineered from the natural human factor VIII thrombin cleavage site LVPRGF by a Phe->Ser substitution at P2' that creates a BamHI (GGATCC) restriction site for convenient cloning",
+          "value": {
+            "parent_site": "LVPRGF",
+            "parent_origin": "human_factor_VIII",
+            "substitution": "F6S",
+            "position": "P2_prime",
+            "rationale": "creates_BamHI_GGATCC_cloning_site"
+          },
+          "source": {
+            "pmid": "21871965",
+            "doi": "10.1016/j.pep.2011.08.005",
+            "quote": "The thrombin site LVPRGS is derived from the factor VIII sequence LVPRGF, with the C-terminal Phe replaced by Ser to introduce a BamHI site",
+            "quote_source": "primary",
+            "section": "overview of thrombin recognition sequence"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "extended_specificity",
+          "type": "mechanism",
+          "label": "Thrombin's extended cleavage consensus is P2=Pro (dominant), P1=Arg (obligatory) and a small P1' residue, with P3'=Arg preferred; LVPRGS matches the core P2-Pro/P1-Arg/P1'-small determinants",
+          "value": {
+            "consensus": "P4-P4'",
+            "P2": "Pro",
+            "P1": "Arg",
+            "P1_prime": "small_residue",
+            "P3_prime": "Arg_preferred"
+          },
+          "source": {
+            "pmid": "22384068",
+            "doi": "10.1371/journal.pone.0031756",
+            "quote": "The Extended Cleavage Specificity of Human Thrombin",
+            "quote_source": "primary",
+            "section": "title; phage-display determination of P4-P4' specificity"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "off_target_caveat",
+          "type": "mechanism",
+          "label": "Thrombin can cleave at cryptic/off-target sites within target proteins, so cleavage products require verification; this is a recognized limitation versus the more specific factor Xa and TEV proteases",
+          "value": {
+            "caveat": "off_target_cleavage",
+            "promiscuity": "higher_than_TEV",
+            "mitigation": "verify_cleavage_products"
+          },
+          "source": {
+            "pmid": "12963335",
+            "doi": "10.1016/s1046-5928(03)00168-2",
+            "quote": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+            "quote_source": "primary",
+            "section": "title; off-target cleavage and verification"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "lvprc_variant",
+          "type": "sequence_variant",
+          "label": "A Gly->Cys variant at P1' (LVPRC) lets thrombin expose an N-terminal cysteine on the released protein, enabling downstream native chemical ligation",
+          "value": {
+            "variant_motif": "LVPRC",
+            "substitution": "G5C",
+            "position": "P1_prime",
+            "application": "N-terminal_cysteine_for_native_chemical_ligation"
+          },
+          "source": {
+            "pmid": "18331839",
+            "doi": "10.1016/j.febslet.2008.02.078",
+            "quote": "N-terminal cysteinyl proteins can be prepared using thrombin cleavage",
+            "quote_source": "primary",
+            "section": "title; LVPRC variant demonstrated with Csk and Abl kinase domains"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "tL3",

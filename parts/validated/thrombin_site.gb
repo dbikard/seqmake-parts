@@ -1,0 +1,81 @@
+LOCUS       thrombin_site              6 aa                     UNK 01-JAN-1980
+DEFINITION  Engineered 6-residue thrombin recognition/cleavage site (LVPRGS)
+            used to proteolytically remove affinity/solubility tags from
+            recombinant fusion proteins; thrombin cleaves after the Arg (LVPR |
+            GS), leaving a Gly-Ser N-terminal scar..
+ACCESSION   thrombin_site
+VERSION     thrombin_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Smith DB, Johnson KS
+  TITLE     Single-step purification of polypeptides expressed in Escherichia
+            coli as fusions with glutathione S-transferase
+  JOURNAL   Gene (1988)
+   PUBMED   3047011
+  REMARK    doi:10.1016/0378-1119(88)90005-4
+REFERENCE   2
+  AUTHORS   Gallwitz M, Enoksson M, Thorpe M, Hellman L
+  TITLE     The Extended Cleavage Specificity of Human Thrombin
+  JOURNAL   PLoS One (2012)
+   PUBMED   22384068
+  REMARK    doi:10.1371/journal.pone.0031756
+REFERENCE   3
+  AUTHORS   Waugh DS
+  TITLE     An overview of enzymatic reagents for the removal of affinity tags
+  JOURNAL   Protein Expression and Purification (2011)
+   PUBMED   21871965
+  REMARK    doi:10.1016/j.pep.2011.08.005
+REFERENCE   4
+  AUTHORS   Jenny RJ, Mann KG, Lundblad RL
+  TITLE     A critical review of the methods for cleavage of fusion proteins
+            with thrombin and factor Xa
+  JOURNAL   Protein Expression and Purification (2003)
+   PUBMED   12963335
+  REMARK    doi:10.1016/s1046-5928(03)00168-2
+REFERENCE   5
+  AUTHORS   Liu D, Xu R, Dutta K, Cowburn D
+  TITLE     N-terminal cysteinyl proteins can be prepared using thrombin
+            cleavage
+  JOURNAL   FEBS Letters (2008)
+   PUBMED   18331839
+  REMARK    doi:10.1016/j.febslet.2008.02.078
+REFERENCE   6
+  AUTHORS   Hakes DJ, Dixon JE
+  TITLE     New vectors for high level expression of recombinant proteins in
+            bacteria
+  JOURNAL   Analytical Biochemistry (1992)
+   PUBMED   1519755
+  REMARK    doi:10.1016/0003-2697(92)90108-j
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/thrombin_site
+FEATURES             Location/Qualifiers
+     protein_domain  1..6
+                     /label="thrombin_site"
+                     /synonym="thrombin site"
+                     /synonym="thrombin"
+                     /synonym="thrombin cleavage site"
+                     /synonym="thrombin recognition site"
+                     /synonym="LVPRGS"
+                     /note="Engineered 6-aa thrombin (factor IIa)
+                     recognition/cleavage site Leu-Val-Pro-Arg-Gly-Ser. Thrombin
+                     hydrolyses the peptide bond after the Arg (LVPR | GS),
+                     releasing the downstream protein with an N-terminal Gly-Ser
+                     scar. Derived from the natural human factor VIII thrombin
+                     site LVPRGF by a Phe->Ser substitution that creates a BamHI
+                     (GGATCC) cloning site; the canonical site of the pGEX-2T
+                     GST-fusion expression system. Source-verified to U13850.1
+                     misc_feature 918..935 at 100% identity over all 6
+                     residues."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 lvprgs
+//

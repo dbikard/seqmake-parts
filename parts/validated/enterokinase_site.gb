@@ -1,0 +1,125 @@
+LOCUS       enterokinase_sit           5 aa            linear   UNK 01-JAN-1980
+DEFINITION  Enterokinase (enteropeptidase) recognition/cleavage site DDDDK — a
+            5-residue protease site used to remove an N-terminal fusion tag,
+            leaving no extra residues on the downstream protein..
+ACCESSION   enterokinase_site
+VERSION     enterokinase_site
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Maroux S, Baratti J, Desnuelle P
+  TITLE     Purification and specificity of porcine enterokinase
+  JOURNAL   J Biol Chem (1971)
+   PUBMED   5570436
+REFERENCE   2
+  AUTHORS   Light A, Janska H
+  TITLE     Enterokinase (enteropeptidase): comparative aspects
+  JOURNAL   Trends Biochem Sci (1989)
+   PUBMED   2658218
+  REMARK    doi:10.1016/0968-0004(89)90133-3
+REFERENCE   3
+  AUTHORS   Kitamoto Y, Yuan X, Wu Q, McCourt DW, Sadler JE
+  TITLE     Enterokinase, the initiator of intestinal digestion, is a mosaic
+            protease composed of a distinctive assortment of domains
+  JOURNAL   Proc Natl Acad Sci USA (1994)
+   PUBMED   8226855
+  REMARK    doi:10.1073/pnas.91.16.7588
+REFERENCE   4
+  AUTHORS   Collins-Racie LA, McColgan JM, Grant KL, DiBlasio-Smith EA, McCoy
+            JM, LaVallie ER
+  TITLE     Production of recombinant bovine enterokinase catalytic subunit in
+            Escherichia coli using the novel secretory fusion partner DsbA
+  JOURNAL   Nature Biotechnology (1995)
+   PUBMED   9636275
+  REMARK    doi:10.1038/nbt0995-982
+REFERENCE   5
+  AUTHORS   Lu D, Yuan X, Zheng X, Sadler JE
+  TITLE     Bovine proenteropeptidase is activated by trypsin, and the
+            specificity of enteropeptidase depends on the heavy chain
+  JOURNAL   J Biol Chem (1997)
+   PUBMED   9395456
+  REMARK    doi:10.1074/jbc.272.50.31293
+REFERENCE   6
+  AUTHORS   Boulware KT, Daugherty PS
+  TITLE     Protease specificity determination by using cellular libraries of
+            peptide substrates (CLiPS)
+  JOURNAL   Proc Natl Acad Sci USA (2006)
+   PUBMED   16672368
+  REMARK    doi:10.1073/pnas.0511108103
+REFERENCE   7
+  AUTHORS   Liew OW, Chong JPC, Lim YZ, Ang CX, Lau YCA, Yandle TG, Brennan SO
+  TITLE     An SRLLR motif downstream of the scissile bond enhances enterokinase
+            cleavage efficiency
+  JOURNAL   Biochimie (2006)
+   PUBMED   17097793
+  REMARK    doi:10.1016/j.biochi.2006.10.005
+REFERENCE   8
+  AUTHORS   Gasparian ME, Bychkov ML, Dolgikh DA, Kirpichnikov MP
+  TITLE     Strategy for improvement of enteropeptidase efficiency in tag
+            removal processes
+  JOURNAL   Protein Expr Purif (2011)
+   PUBMED   21515380
+  REMARK    doi:10.1016/j.pep.2011.04.005
+REFERENCE   9
+  AUTHORS   Smith ET, Johnson DA
+  TITLE     Human enteropeptidase light chain: bioengineering of recombinants
+            and kinetic investigations of structure and function
+  JOURNAL   Protein Sci (2013)
+   PUBMED   23436726
+  REMARK    doi:10.1002/pro.2239
+REFERENCE   10
+  AUTHORS   Yang X, Ding Z, Peng L, Song Q, Zhang D, Cui F, Xia C, Li K, Yin H,
+            Li S, Li Z, Huang H
+  TITLE     Cryo-EM structures reveal the activation and substrate recognition
+            mechanism of human enteropeptidase
+  JOURNAL   Nat Commun (2022)
+   PUBMED   36376282
+  REMARK    doi:10.1038/s41467-022-34364-9
+REFERENCE   11
+  AUTHORS   Choi SI, Song HW, Moon JW, Seong BL
+  TITLE     Recombinant enterokinase light chain with affinity tag: expression
+            from Saccharomyces cerevisiae and its utilities in fusion protein
+            technology
+  JOURNAL   Biotechnol Bioeng (2001)
+   PUBMED   11745150
+  REMARK    doi:10.1002/bit.10082
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/enterokinase_site
+FEATURES             Location/Qualifiers
+     protein_domain  1..5
+                     /label="enterokinase_site"
+                     /synonym="enterokinase"
+                     /synonym="enterokinase cleavage site"
+                     /synonym="EK site"
+                     /synonym="enteropeptidase site"
+                     /synonym="DDDDK"
+                     /note="Enterokinase (enteropeptidase) recognition/cleavage
+                     site (Asp-Asp-Asp-Asp-Lys). The protease cleaves on the
+                     C-terminal side of the Lys (after K), releasing a
+                     downstream protein with no residual vector-derived residues
+                     — hence its wide use for tag removal from fusion proteins.
+                     The acidic (Asp)4 tetrad and the P1 Lys are recognized by
+                     the enterokinase light-chain S1–S5 basic substrate pocket.
+                     Sequence DDDDK is a 100%-identity match to residues 19–23
+                     of the trypsinogen-1 activation propeptide
+                     (UniProt:P00760), the canonical natural occurrence of the
+                     motif. This part covers a 5-aa sub-span of that 247-aa
+                     precursor (full_length_match=false), which is expected for
+                     a short recognition motif and is not a sequence defect."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /citation=[9]
+                     /citation=[10]
+                     /citation=[11]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 ddddk
+//
