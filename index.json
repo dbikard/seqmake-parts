@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 261,
-  "n_validated": 61,
-  "n_candidate": 200,
-  "n_functional_claims": 196,
+  "n_parts": 264,
+  "n_validated": 66,
+  "n_candidate": 198,
+  "n_functional_claims": 235,
   "parts": [
     {
       "slug": "186_integrase",
@@ -302,15 +302,19 @@
     },
     {
       "slug": "AviTag",
-      "name": "AviTag\u2122",
+      "name": "AviTag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 9,
       "synonyms": [
-        "AviTag\u2122"
+        "AviTag\u2122",
+        "BAP",
+        "biotin acceptor peptide",
+        "Avi tag",
+        "GLNDIFEAQKIEWHE"
       ]
     },
     {
@@ -378,11 +382,14 @@
       "kind": "protein",
       "so_term": "SO:0000316",
       "so_name": "CDS",
-      "status": "candidate",
-      "n_claims": 0,
+      "status": "validated",
+      "n_claims": 7,
       "synonyms": [
         "BirA",
-        "biotin--protein ligase"
+        "biotin--protein ligase",
+        "biotin protein ligase",
+        "biotin ligase",
+        "BPL"
       ]
     },
     {
@@ -1746,6 +1753,22 @@
         "Leu2",
         "3-isopropylmalate dehydrogenase",
         "beta-IPM dehydrogenase"
+      ]
+    },
+    {
+      "slug": "LPETG_tag",
+      "name": "LPETG_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 7,
+      "synonyms": [
+        "sortase A recognition motif",
+        "LPXTG motif",
+        "sortag",
+        "LPETG"
       ]
     },
     {
@@ -3336,6 +3359,20 @@
       ]
     },
     {
+      "slug": "SnoopTag",
+      "name": "SnoopTag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 6,
+      "synonyms": [
+        "Snoop tag",
+        "KLGDIEFIKVNK"
+      ]
+    },
+    {
       "slug": "sopA",
       "name": "sopA",
       "feature_type": "CDS",
@@ -3391,6 +3428,20 @@
         "Spot-tag",
         "SPOT-tag",
         "PDRVRAVSHWSS"
+      ]
+    },
+    {
+      "slug": "SpyTag",
+      "name": "SpyTag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 10,
+      "synonyms": [
+        "SpyTag001",
+        "AHIVMVDAYKPTK"
       ]
     },
     {

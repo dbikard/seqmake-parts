@@ -1,0 +1,107 @@
+LOCUS       LPETG_tag                  5 aa            linear   UNK 01-JAN-1980
+DEFINITION  LPETG — the canonical sortase A (SrtA) recognition motif (a single
+            instance of the Gram-positive LPXTG cell-wall sorting signal); SrtA
+            cleaves between the Thr and Gly (LPET|G), forming an acyl-enzyme
+            thioester that is resolved by transpeptidation onto an N-terminal
+            oligoglycine acceptor, making LPETG the standard C-terminal handle
+            for site-specific protein ligation (sortagging) and conjugation..
+ACCESSION   LPETG_tag
+VERSION     LPETG_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Mazmanian SK, Liu G, Ton-That H, Schneewind O
+  TITLE     Staphylococcus aureus sortase, an enzyme that anchors surface
+            proteins to the cell wall
+  JOURNAL   Science (1999)
+   PUBMED   10427003
+  REMARK    doi:10.1126/science.285.5428.760
+REFERENCE   2
+  AUTHORS   Ton-That H, Liu G, Mazmanian SK, Faull KF, Schneewind O
+  TITLE     Purification and characterization of sortase, the transpeptidase
+            that cleaves surface proteins of Staphylococcus aureus at the LPXTG
+            motif
+  JOURNAL   Proc Natl Acad Sci USA (1999)
+   PUBMED   10535938
+  REMARK    doi:10.1073/pnas.96.22.12424
+REFERENCE   3
+  AUTHORS   Mao H, Hart SA, Schink A, Pollok BA
+  TITLE     Sortase-mediated protein ligation: a new method for protein
+            engineering
+  JOURNAL   J Am Chem Soc (2004)
+   PUBMED   14995162
+  REMARK    doi:10.1021/ja039915e
+REFERENCE   4
+  AUTHORS   Guimaraes CP, Witte MD, Theile CS, Bozkurt G, Kundrat L, Blom AEM,
+            Ploegh HL
+  TITLE     Site-specific C-terminal and internal loop labeling of proteins
+            using sortase-mediated reactions
+  JOURNAL   Nat Protoc (2013)
+   PUBMED   23989673
+  REMARK    doi:10.1038/nprot.2013.101
+REFERENCE   5
+  AUTHORS   Chen I, Dorr BM, Liu DR
+  TITLE     A general strategy for the evolution of bond-forming enzymes using
+            yeast display
+  JOURNAL   Proc Natl Acad Sci USA (2011)
+   PUBMED   21697512
+  REMARK    doi:10.1073/pnas.1101046108
+REFERENCE   6
+  AUTHORS   Dorr BM, Ham HO, An C, Chaikof EL, Liu DR
+  TITLE     Reprogramming the specificity of sortase enzymes
+  JOURNAL   Proc Natl Acad Sci USA (2014)
+  REMARK    doi:10.1073/pnas.1411179111
+REFERENCE   7
+  AUTHORS   Hansenova Manaskova S, Nazmi K, van Belkum A, Bikker FJ, van Wamel
+            WJB, Veerman ECI
+  TITLE     Synthetic LPETG-Containing Peptide Incorporation in the
+            Staphylococcus aureus Cell-Wall in a Sortase A- and Growth
+            Phase-Dependent Manner
+  JOURNAL   PLoS One (2014)
+   PUBMED   24586638
+  REMARK    doi:10.1371/journal.pone.0089260
+REFERENCE   8
+  AUTHORS   O'Halloran DP, Wynne K, Geoghegan JA
+  TITLE     Protein A is released into the Staphylococcus aureus culture
+            supernatant with an unprocessed sorting signal
+  JOURNAL   Infect Immun (2015)
+   PUBMED   25644005
+  REMARK    doi:10.1128/IAI.03122-14
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/LPETG_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..5
+                     /label="LPETG_tag"
+                     /synonym="sortase A recognition motif"
+                     /synonym="LPXTG motif"
+                     /synonym="sortag"
+                     /synonym="LPETG"
+                     /note="Sortase A (SrtA) recognition motif and a single
+                     instance of the Gram-positive LPXTG cell-wall sorting
+                     signal (Leu-Pro-Glu-Thr-Gly). SrtA cleaves the scissile
+                     peptide bond between the P1 Thr and the P1' Gly (LPET|G),
+                     forming a covalent acyl-enzyme thioester intermediate at
+                     the active-site Cys; this intermediate is resolved by
+                     nucleophilic attack of an N-terminal oligoglycine (Gly-n,
+                     typically GGG/GGGGG) acceptor, ligating the upstream
+                     protein to the acceptor and regenerating an LPETGG...
+                     junction. Whole-part feature spanning all 5 residues; this
+                     is a single atomic functional element with no functional
+                     sub-features. The X position of the LPXTG consensus is most
+                     commonly Glu (E) in efficient engineering substrates.
+                     Source-verified to UniProt P02976 (Protein A) Motif 'LPXTG
+                     sorting signal' at positions 482-486, 5/5 identity."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 lpetg
+//

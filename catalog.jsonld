@@ -1524,11 +1524,73 @@
     {
       "@id": "part:AviTag",
       "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:AviTag_claim_mechanism"
+        },
+        {
+          "@id": "part:AviTag_claim_origin"
+        },
+        {
+          "@id": "part:AviTag_claim_application"
+        },
+        {
+          "@id": "part:AviTag_claim_host_range"
+        },
+        {
+          "@id": "part:AviTag_claim_placement"
+        },
+        {
+          "@id": "part:AviTag_claim_expression_yield"
+        },
+        {
+          "@id": "part:AviTag_claim_sequence_variant"
+        },
+        {
+          "@id": "part:AviTag_claim_binding_affinity"
+        },
+        {
+          "@id": "part:AviTag_claim_caveat"
+        }
+      ],
       "cat:slug": "AviTag",
-      "dcterms:title": "AviTag\u2122",
-      "rdfs:label": "AviTag\u2122",
+      "dcterms:description": "15-aa synthetic biotin acceptor peptide (GLNDIFEAQKIEWHE) optimized from a 13-residue BirA consensus identified by Schatz 1993 (PMID:7764094). Beckett et al. 1999 (PMID:10211839) defined the minimal 14-mer and confirmed the optimized 15-mer achieves kcat/Km comparable to the natural BCCP substrate; Lys11 (K10 in original Schatz numbering) is the biotinylation site. Biotinylation is catalyzed by Escherichia coli biotin ligase BirA.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7764094"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10211839"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9750126"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:15897449"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:16554831"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:18323822"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:14715286"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:25560075"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:35207587"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:38662935"
+        }
+      ],
+      "dcterms:title": "AviTag",
+      "rdfs:label": "AviTag",
       "sbol:displayId": "AviTag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -1542,7 +1604,265 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000252"
       },
-      "skos:altLabel": "AviTag\u2122"
+      "skos:altLabel": [
+        "AviTag\u2122",
+        "BAP",
+        "biotin acceptor peptide",
+        "Avi tag",
+        "GLNDIFEAQKIEWHE"
+      ]
+    },
+    {
+      "@id": "part:AviTag_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"applications\": [\"streptavidin/avidin affinity purification (one-step capture after in vivo or in vitro biotinylation)\", \"live-cell surface protein labeling with streptavidin or monovalent streptavidin probes\", \"single-molecule imaging and quantum dot targeting\", \"chromatin immunoprecipitation (ChIP) of biotinylated nuclear proteins\", \"protein immobilization on streptavidin-coated surfaces\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Targeting quantum dots to surface proteins in living cells with biotin ligase",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:15897449"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:15897449"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_application_provenance"
+      },
+      "rdfs:label": "AviTag enables site-specific single-biotin installation for streptavidin-based detection, affinity capture, live-cell surface protein labeling, and ChIP."
+    },
+    {
+      "@id": "part:AviTag_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_binding_affinity",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "binding_affinity",
+      "cat:claimValue": "{\"Kd_streptavidin\": \"~10^-15 M (femtomolar)\", \"ligand\": \"streptavidin (tetrameric or monovalent)\", \"note\": \"Affinity is for biotin-streptavidin interaction; AviTag provides the site-specific biotin handle\", \"preferred_partner\": \"monovalent streptavidin (mSA) to prevent receptor crosslinking in live-cell applications\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "A monovalent streptavidin with a single femtomolar biotin binding site",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:16554831"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:16554831"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_binding_affinity_provenance"
+      },
+      "rdfs:label": "Biotinylated AviTag binds streptavidin with femtomolar affinity (Kd ~10^-15 M); monovalent streptavidin (mSA) is the preferred detection partner to avoid receptor crosslinking."
+    },
+    {
+      "@id": "part:AviTag_claim_binding_affinity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_caveat",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "caveat",
+      "cat:claimValue": "{\"failure_modes\": [\"incomplete in vivo biotinylation (50-80%), leaving unbiotinylated target that co-purifies\", \"BirA may biotinylate accessible endogenous lysines if overexpressed or if the tag is in a crowded environment\", \"high intracellular biotin supplementation required for efficient in vivo labeling\", \"tag must be surface-exposed for live-cell BirA-mediated labeling\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "AviTrap: A novel solution to achieve complete biotinylation ... in vivo biotinylation efficiency 50-80%",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title/Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:38662935"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:38662935"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_caveat_provenance"
+      },
+      "rdfs:label": "In vivo biotinylation is incomplete (typically 50-80%); unbiotinylated fraction co-purifies and can be problematic for quantitative applications; AviTrap or in vitro biotinylation are workarounds."
+    },
+    {
+      "@id": "part:AviTag_claim_caveat_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_expression_yield",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "expression_yield",
+      "cat:claimValue": "{\"in_vitro_efficiency_pct\": \"80-100\", \"in_vivo_efficiency_pct\": \"50-80\", \"limiting_factors\": [\"BirA concentration\", \"intracellular biotin availability\", \"tag accessibility\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "In vivo biotinylation efficiency 50-80%; in vitro 80-100%",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:38662935"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:38662935"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_expression_yield_provenance"
+      },
+      "rdfs:label": "In vitro biotinylation with purified BirA achieves 80-100% biotinylation efficiency; in vivo efficiency is typically 50-80% and depends on BirA:substrate ratio and biotin availability."
+    },
+    {
+      "@id": "part:AviTag_claim_expression_yield_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"notes\": \"BirA must be co-expressed or added exogenously; endogenous mammalian biotin ligases do not efficiently biotinylate the peptide\", \"validated_in\": [\"Escherichia coli (in vivo, co-expression of BirA)\", \"Spodoptera frugiperda insect cells (in vivo, baculovirus BirA co-expression; PMID:9750126)\", \"mammalian cell surface (extracellular BirA application; PMID:15897449)\", \"cell-free in vitro (purified BirA; PMID:25560075)\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Site-specific, enzymatic biotinylation of recombinant proteins in Spodoptera frugiperda cells using biotin acceptor peptides",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9750126"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:9750126"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_host_range_provenance"
+      },
+      "rdfs:label": "AviTag is biotinylated by E. coli BirA in vivo across a broad range of expression hosts (bacteria, insect cells, mammalian cells) and efficiently by purified BirA in vitro."
+    },
+    {
+      "@id": "part:AviTag_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"biotinylated_residue\": \"Lys11 (K10 in original Schatz 1993 numbering)\", \"enzyme\": \"BirA (biotin holoenzyme synthetase)\", \"mechanism\": \"ATP-dependent enzymatic biotinylation; biotin transferred from biotin-AMP intermediate to epsilon-amine of lysine\", \"specificity\": \"single-site, sequence-specific; BirA does not biotinylate other cellular lysines under standard conditions\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "A minimal peptide substrate in biotin holoenzyme synthetase-catalyzed biotinylation ... the optimised 15-mer achieves kcat/Km similar to the natural BCCP substrate; K10 identified as biotinylation site by MALDI-TOF",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title/Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10211839"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:10211839"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_mechanism_provenance"
+      },
+      "rdfs:label": "AviTag is site-specifically biotinylated on Lys11 by BirA biotin ligase; the reaction is ATP-dependent and the product biotin-lysine (biotinyl-AMP intermediate) is covalently attached."
+    },
+    {
+      "@id": "part:AviTag_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_origin",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "origin",
+      "cat:claimValue": "{\"design\": \"in vitro peptide library screening followed by kinetic optimization to 15-mer\", \"organism_source\": \"fully synthetic; no natural protein parent\", \"original_name\": \"Biotin Acceptor Peptide (BAP); 'AviTag' is a commercial synonym\", \"parent\": \"13-aa BirA consensus peptide (Schatz 1993)\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "a 13 residue consensus peptide specifies biotinylation in Escherichia coli",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Title",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:7764094"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:7764094"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_origin_provenance"
+      },
+      "rdfs:label": "AviTag is a fully synthetic 15-mer derived by combinatorial optimization from a 13-residue BirA consensus first identified by Schatz 1993 using peptide-library screening."
+    },
+    {
+      "@id": "part:AviTag_claim_origin_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_placement",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "placement",
+      "cat:claimValue": "{\"accessibility_requirement\": \"BirA requires access to the lysine side-chain; buried or sterically occluded tags are poorly biotinylated\", \"linker_recommended\": true, \"positions\": [\"N-terminal\", \"C-terminal\", \"internal loop\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "AviTag insertion by inverse PCR; GST-BirA purification; 80-100% biotinylation efficiency in vitro",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Abstract/Methods",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:25560075"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:25560075"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_placement_provenance"
+      },
+      "rdfs:label": "AviTag can be fused at the N-terminus, C-terminus, or as an internal loop insertion; accessibility to BirA is required and surface exposure is critical for efficient in vivo biotinylation."
+    },
+    {
+      "@id": "part:AviTag_claim_placement_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:AviTag_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"canonical_15mer\": \"GLNDIFEAQKIEWHE\", \"note\": \"Slow variants designed to report only on close-proximity BirA-fused proteins\", \"precursor_13mer\": \"Schatz 1993 consensus (PMID:7764094)\", \"slow_variants\": [{\"application\": \"PUB proximity assay\", \"name\": \"BAP1070\", \"relative_rate\": \"~1/45 of AviTag\"}, {\"application\": \"PUB proximity assay\", \"name\": \"BAP1108\", \"relative_rate\": \"~1/48 of AviTag\"}]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "BAP1070/BAP1108 slow-kinetics variants (45-48x slower); PUB method for protein-protein interactions; kinetic comparison AviTag vs BCCP vs new variants",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:35207587"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:35207587"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:AviTag_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "Slow-kinetics variants BAP1070 and BAP1108 (45-48x slower than AviTag) enable proximity-based PUB assays; the original 13-mer consensus (Schatz 1993) is a less-efficient precursor."
+    },
+    {
+      "@id": "part:AviTag_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
     },
     {
       "@id": "part:AviTag_sequence",
@@ -7210,6 +7530,292 @@
       "@type": "sbol:Sequence",
       "sbol:displayId": "LEU2_sequence",
       "sbol:elements": "MSAPKKIVVLPGDHVGQEITAEAIKVLKAISDVRSNVKFDFENHLIGGAAIDATGVPLPDEALEASKKADAVLLGAVGGPKWGTGSVRPEQGLLKIRKELQLYANLRPCNFASDSLLDLSPIKPQFAKGTDFVVVRELVGGIYFGKRKEDDGDGVAWDSEQYTVPEVQRITRMAAFMALQHEPPLPIWSLDKANVLASSRLWRKTVEETIKNEFPTLKVQHQLIDSAAMILVKNPTHLNGIIITSNMFGDIISDEASVIPGSLGLLPSASLASLPDKNTAFGLYEPCHGSAPDLPKNKVNPIATILSAAMMLKLSLNLPEEGKAIEDAVKKVLDAGIRTGDLGGSNSTTEVGDAVAEEVKKILA",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:LPETG_tag",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:LPETG_tag_claim_recognition_specificity"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_mechanism"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_natural_origin"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_application"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_placement"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_host_range"
+        },
+        {
+          "@id": "part:LPETG_tag_claim_sequence_variant"
+        }
+      ],
+      "cat:slug": "LPETG_tag",
+      "dcterms:description": "Sortase A (SrtA) recognition motif and a single instance of the Gram-positive LPXTG cell-wall sorting signal (Leu-Pro-Glu-Thr-Gly). SrtA cleaves the scissile peptide bond between the P1 Thr and the P1' Gly (LPET|G), forming a covalent acyl-enzyme thioester intermediate at the active-site Cys; this intermediate is resolved by nucleophilic attack of an N-terminal oligoglycine (Gly-n, typically GGG/GGGGG) acceptor, ligating the upstream protein to the acceptor and regenerating an LPETGG... junction. Whole-part feature spanning all 5 residues; this is a single atomic functional element with no functional sub-features. The X position of the LPXTG consensus is most commonly Glu (E) in efficient engineering substrates. Source-verified to UniProt P02976 (Protein A) Motif 'LPXTG sorting signal' at positions 482-486, 5/5 identity.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:10427003"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10535938"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:14995162"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23989673"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:21697512"
+        },
+        {
+          "@id": "https://doi.org/10.1073/pnas.1411179111"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24586638"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:25644005"
+        }
+      ],
+      "dcterms:title": "LPETG_tag",
+      "rdfs:label": "LPETG_tag",
+      "sbol:displayId": "LPETG_tag",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:LPETG_tag_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000252"
+      },
+      "skos:altLabel": [
+        "sortase A recognition motif",
+        "LPXTG motif",
+        "sortag",
+        "LPETG"
+      ]
+    },
+    {
+      "@id": "part:LPETG_tag_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"acceptor\": \"N-terminal (oligo)glycine on the partner (peptide, protein, small molecule, surface, D-peptide, or branched peptide)\", \"founding_in_vitro_demonstration\": \"use of LPETG for in vitro protein engineering / conjugation to (D)-peptides, branched peptides, and small molecules bearing an N-terminal glycine\", \"handle\": \"C-terminal LPETG on the protein of interest\", \"method\": \"sortase-mediated protein ligation (sortagging)\", \"uses\": [\"site-specific bioconjugation / labeling\", \"protein-protein and protein-peptide ligation\", \"protein immobilization\", \"C-terminal and internal-loop labeling of proteins\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Sortase-mediated protein ligation: a new method for protein engineering",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:14995162"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:14995162"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_application_provenance"
+      },
+      "rdfs:label": "LPETG is the standard C-terminal handle for sortase-mediated protein ligation (sortagging): a protein carrying C-terminal LPETG can be site-specifically conjugated to molecules bearing an N-terminal glycine"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"element_type\": \"sortase recognition / cell-wall sorting signal (peptide motif)\", \"enzyme_origin\": \"Staphylococcus aureus sortase A (SrtA); commonly the evolved pentamutant eSrtA for enhanced activity\", \"host_dependence\": \"none for the motif itself; ligation requires sortase A supplied in vitro (or co-expressed in vivo)\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Sortase-mediated protein ligation: a new method for protein engineering",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:14995162"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:14995162"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_host_range_provenance"
+      },
+      "rdfs:label": "Host-agnostic sequence element: LPETG is a short peptide motif and the sortase enzyme is supplied separately, so the handle functions independently of the expression host"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"enzyme_class\": \"transpeptidase (cysteine acyltransferase)\", \"natural_function\": \"anchoring surface proteins to the Gram-positive cell-wall peptidoglycan (via the lipid II / pentaglycine cross-bridge as natural acceptor)\", \"net_result\": \"site-specific ligation of an LPXTG-tagged protein to a Gly-n-bearing partner, reconstituting an LPETGG... junction\", \"step_1\": \"cleavage of the Thr-Gly bond of LPXTG and formation of a covalent acyl-enzyme thioester intermediate at the active-site cysteine\", \"step_2\": \"resolution of the thioester by nucleophilic attack of an N-terminal oligoglycine (Gly-n) amine, ligating the LPET-acyl group to the acceptor\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Staphylococcus aureus sortase, an enzyme that anchors surface proteins to the cell wall",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10427003"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:10427003"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Sortase A is a transpeptidase: it cleaves LPXTG to form an acyl-enzyme thioester at the active-site Cys, then transfers the acyl group to an N-terminal oligoglycine acceptor (transpeptidation)"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_natural_origin",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "origin",
+      "cat:claimValue": "{\"also_present_in\": \"FnbA (UniProt P14738) at positions 982-986, and many other Gram-positive surface proteins as the conserved LPXTG class signal\", \"biological_context\": \"C-terminal cell-wall sorting signal directing SrtA-mediated covalent anchoring to peptidoglycan\", \"origin_protein\": \"Immunoglobulin G-binding protein A (Protein A / SpA), Staphylococcus aureus (UniProt P02976)\", \"residues\": \"482-486 (LPETG), annotated Motif 'LPXTG sorting signal'\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Protein A is released into the Staphylococcus aureus culture supernatant with an unprocessed sorting signal",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:25644005"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:25644005"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_natural_origin_provenance"
+      },
+      "rdfs:label": "LPETG is the native LPXTG sorting signal of S. aureus Protein A (SpA); native SpA carries the exact LPETG sequence in its precursor"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_natural_origin_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_placement",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "placement",
+      "cat:claimValue": "{\"junction_after_ligation\": \"LPETGG... (the acceptor's N-terminal Gly residues become part of the product)\", \"position\": \"C-terminal of the protein of interest (commonly POI-LPETG-His6 so an affinity tag downstream is removed upon ligation)\", \"structural_requirement\": \"the LPXTG motif should lie in a flexible, solvent-accessible / unstructured region for efficient cleavage\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Site-specific C-terminal and internal loop labeling of proteins using sortase-mediated reactions",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:23989673"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:23989673"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_placement_provenance"
+      },
+      "rdfs:label": "LPETG must be placed at (or near) the C-terminus of the protein of interest and in an accessible, unstructured region; the Gly that follows it is consumed/relocated by the ligation"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_placement_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_recognition_specificity",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "recognition_specificity",
+      "cat:claimValue": "{\"consensus\": \"Leu-Pro-any-Thr-Gly\", \"enzyme\": \"Sortase A (SrtA), a transpeptidase/cysteine acyltransferase\", \"positions\": \"P5-P4-P3-P2-P1-P1' (Leu-Pro-Glu-Thr | Gly)\", \"recognition_motif\": \"LPXTG (here LPETG, X=Glu)\", \"scissile_bond\": \"between P1 Thr and P1' Gly (LPET|G)\", \"x_position_note\": \"Glu (E) is commonly found at the X position of efficient natural and engineering SrtA substrates\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Purification and characterization of sortase, the transpeptidase that cleaves surface proteins of Staphylococcus aureus at the LPXTG motif",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10535938"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:10535938"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_recognition_specificity_provenance"
+      },
+      "rdfs:label": "LPETG is an instance of the LPXTG sortase recognition motif; sortase A cleaves between the Thr and the Gly (LPET|G)"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_recognition_specificity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"evolved_catalyst\": \"eSrtA pentamutant (P94R/D160N/D165A/K190E/K196T), reported with markedly improved activity toward LPETG\", \"motif_variants\": \"LPXTG class; X is most often Glu in efficient substrates (LPETG); other X residues occur in natural signals\", \"orthogonal_motifs\": \"engineered sortases reprogrammed to recognize LAXTG and LPXSG, independent of canonical LPETG, enabling dual labeling\", \"reported_improvement\": \"~140-fold increased activity vs wild-type SrtA (quantitative value from a primary text not directly accessed)\"}",
+      "cat:confidence": "low",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "A general strategy for the evolution of bond-forming enzymes using yeast display",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "title and abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:21697512"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:21697512"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:LPETG_tag_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "The catalyst, not the motif, is the main engineered variant: the evolved SrtA pentamutant (eSrtA) has greatly improved activity toward LPETG; orthogonal sortases instead recognize altered motifs (LAXTG / LPXSG) rather than LPETG"
+    },
+    {
+      "@id": "part:LPETG_tag_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:LPETG_tag_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "LPETG_tag_sequence",
+      "sbol:elements": "LPETG",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
       },
@@ -14847,6 +15453,250 @@
       }
     },
     {
+      "@id": "part:SnoopTag",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:SnoopTag_claim_mechanism"
+        },
+        {
+          "@id": "part:SnoopTag_claim_performance_yield"
+        },
+        {
+          "@id": "part:SnoopTag_claim_orthogonality"
+        },
+        {
+          "@id": "part:SnoopTag_claim_origin"
+        },
+        {
+          "@id": "part:SnoopTag_claim_application"
+        },
+        {
+          "@id": "part:SnoopTag_claim_sequence_variant"
+        }
+      ],
+      "cat:slug": "SnoopTag",
+      "dcterms:description": "12-aa reactive peptide split from the D4 (CnaA-like) domain of Streptococcus pneumoniae RrgA pilus adhesin (UniProt A7KT94, residues 727\u2013738). Pairs with the protein SnoopCatcher to form a spontaneous, covalent intermolecular isopeptide bond. Orthogonal to the SpyTag/SpyCatcher pair. Sequence verified 100% over 12 aa against GenBank AMD39968.1 (Veggiani 2016 PNAS deposit).",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:26787909"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:29402082"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:34324879"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:37289810"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:30028591"
+        }
+      ],
+      "dcterms:title": "SnoopTag",
+      "rdfs:label": "SnoopTag",
+      "sbol:displayId": "SnoopTag",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:SnoopTag_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000252"
+      },
+      "skos:altLabel": [
+        "Snoop tag",
+        "KLGDIEFIKVNK"
+      ]
+    },
+    {
+      "@id": "part:SnoopTag_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"applications\": [\"covalent fusion of two protein modules\", \"sequential / programmable polyprotein ('polyproteam') assembly when combined orthogonally with SpyTag/SpyCatcher\", \"plug-and-display on multivalent scaffolds\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Solid-phase attachment followed by sequential SpyTag or SnoopTag reaction between building-blocks enabled iterative extension. Linear, branched, and combinatorial polyproteins were synthesized",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_application_provenance"
+      },
+      "rdfs:label": "Programmable, irreversible protein-protein conjugation and modular assembly"
+    },
+    {
+      "@id": "part:SnoopTag_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"bond_type\": \"isopeptide\", \"mechanism\": \"Reactive peptide split from the RrgA D4 domain; on mixing with the partner protein SnoopCatcher it reconstitutes the split domain and forms a spontaneous intramolecular-derived intermolecular isopeptide (amide) bond between a Lys side chain on SnoopTag and an Asn side chain on SnoopCatcher, covalently and irreversibly locking the two units together.\", \"partner\": \"SnoopCatcher\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "By engineering the adhesin RrgA from [Streptococcus pneumoniae], we developed the peptide SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Spontaneous covalent isopeptide-bond formation with SnoopCatcher"
+    },
+    {
+      "@id": "part:SnoopTag_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_claim_origin",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "origin",
+      "cat:claimValue": "{\"derivation\": \"split-domain engineering of the RrgA isopeptide-bond-forming domain into a peptide (SnoopTag) and protein (SnoopCatcher) pair\", \"organism\": \"Streptococcus pneumoniae\", \"parent_protein\": \"RrgA pilus adhesin (UniProt A7KT94)\", \"parent_region\": \"D4 (CnaA-like) domain, residues 727\\u2013738\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "By engineering the adhesin RrgA from [Streptococcus pneumoniae], we developed the peptide SnoopTag",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_origin_provenance"
+      },
+      "rdfs:label": "Derived from the RrgA pilus adhesin D4 domain of S. pneumoniae"
+    },
+    {
+      "@id": "part:SnoopTag_claim_origin_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_claim_orthogonality",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "orthogonality",
+      "cat:claimValue": "{\"cross_reaction\": \"none\", \"orthogonal_to\": [\"SpyTag\", \"SpyCatcher\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "SnoopTag/SnoopCatcher reacted with each other but not with an alternative peptide/protein pair, SpyTag/SpyCatcher",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract (Significance)",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_orthogonality_provenance"
+      },
+      "rdfs:label": "Orthogonal to SpyTag/SpyCatcher (no cross-reaction)"
+    },
+    {
+      "@id": "part:SnoopTag_claim_orthogonality_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_claim_performance_yield",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "expression_yield",
+      "cat:claimValue": "{\"note\": \"Reported reaction completeness for the SnoopTag/SnoopCatcher pair.\", \"readout\": \"isopeptide bond formation between SnoopTag and SnoopCatcher\", \"yield\": \">99%\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher with >99% yield and no cross-reaction to SpyTag/SpyCatcher",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:26787909"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_performance_yield_provenance"
+      },
+      "rdfs:label": "SnoopTag + SnoopCatcher react to >99% yield"
+    },
+    {
+      "@id": "part:SnoopTag_claim_performance_yield_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"note\": \"All derived from the same S. pneumoniae RrgA scaffold; these are distinct related parts, not this exact peptide.\", \"variants\": [\"SnoopTagJr (three-part RrgA split with DogTag + SnoopLigase)\", \"DogTag (loop-insertable, paired with DogCatcher)\", \"SnoopTag2 (second-generation, accelerated ligation)\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Three-part RrgA split generating SnoopTagJr, DogTag, and SnoopLigase",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "candidate-reference summary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:29402082"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:29402082"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SnoopTag_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "RrgA scaffold is evolvable: SnoopTagJr, DogTag, SnoopTag2 derivatives"
+    },
+    {
+      "@id": "part:SnoopTag_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SnoopTag_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "SnoopTag_sequence",
+      "sbol:elements": "KLGDIEFIKVNK",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:SpecR",
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
@@ -15116,6 +15966,377 @@
       "@type": "sbol:Sequence",
       "sbol:displayId": "Spot_tag_sequence",
       "sbol:elements": "PDRVRAVSHWSS",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:SpyTag",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:SpyTag_claim_mechanism"
+        },
+        {
+          "@id": "part:SpyTag_claim_structure"
+        },
+        {
+          "@id": "part:SpyTag_claim_sequence_feature"
+        },
+        {
+          "@id": "part:SpyTag_claim_induction_kinetics"
+        },
+        {
+          "@id": "part:SpyTag_claim_placement"
+        },
+        {
+          "@id": "part:SpyTag_claim_conditions"
+        },
+        {
+          "@id": "part:SpyTag_claim_host_range"
+        },
+        {
+          "@id": "part:SpyTag_claim_origin"
+        },
+        {
+          "@id": "part:SpyTag_claim_sequence_variant"
+        },
+        {
+          "@id": "part:SpyTag_claim_application"
+        }
+      ],
+      "cat:slug": "SpyTag",
+      "dcterms:description": "13-aa peptide tag (AHIVMVDAYKPTK) engineered by splitting the CnaB2 immunoglobulin-like domain of Streptococcus pyogenes fibronectin-binding protein FbaB (UniProt Q6A1F3, residues 550-562). On mixing with its 116-aa protein partner SpyCatcher, the tag's Asp7 spontaneously forms an intermolecular isopeptide (amide) bond to Lys31 of SpyCatcher, catalysed by SpyCatcher Glu77, yielding an irreversible covalent linkage. Fusable at N-terminus, C-terminus, or internally.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:22366317"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24161952"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:29024296"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:31822621"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:31052154"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:34324879"
+        }
+      ],
+      "dcterms:title": "SpyTag",
+      "rdfs:label": "SpyTag",
+      "sbol:displayId": "SpyTag",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:SpyTag_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000252"
+      },
+      "skos:altLabel": [
+        "SpyTag001",
+        "AHIVMVDAYKPTK"
+      ]
+    },
+    {
+      "@id": "part:SpyTag_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"applications\": [\"irreversible protein-protein conjugation / protein superglue\", \"modular protein architectures and biomaterials\", \"VLP/vaccine antigen display\", \"cell-surface labeling and imaging\", \"stringent affinity capture via covalent linkage\"]}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "broad applications (OMVs, VLPs, hydrogels, microscopy)",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "cat:sourceSection": "Review",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:31052154"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:31052154"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_application_provenance"
+      },
+      "rdfs:label": "Genetically encoded covalent module for protein assembly, immobilization, vaccines and biomaterials"
+    },
+    {
+      "@id": "part:SpyTag_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_conditions",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "conditions",
+      "cat:claimValue": "{\"force_to_rupture_nN\": 1, \"robust_conditions\": \"diverse pH, temperature, and buffer\", \"stability\": \"not reversed by boiling or competing peptide\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Reaction occurred in high yield simply upon mixing and amidst diverse conditions of pH, temperature, and buffer... Single-molecule dynamic force spectroscopy showed that SpyTag did not separate from SpyCatcher until the force exceeded 1 nN, where covalent bonds snap.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_conditions_provenance"
+      },
+      "rdfs:label": "Reaction is robust across pH, temperature and buffer; bond resists boiling and force >1 nN"
+    },
+    {
+      "@id": "part:SpyTag_claim_conditions_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"validated_in\": [\"Escherichia coli (recombinant fusions)\", \"mammalian cell surface\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "SpyTag could be fused at either terminus or internally and reacted specifically at the mammalian cell surface.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_host_range_provenance"
+      },
+      "rdfs:label": "Works in bacteria and at the mammalian cell surface"
+    },
+    {
+      "@id": "part:SpyTag_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_induction_kinetics",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "induction_kinetics",
+      "cat:claimValue": "{\"concentration_uM\": 10, \"half_time_s\": 74, \"rate_constant_M-1_s-1\": 1400, \"reaction\": \"covalent isopeptide bond formation with SpyCatcher\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "The two partners then react rapidly, forming the isopeptide bond, with a half-time of 74 s for partners at 10 \u03bcM.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Introduction",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_induction_kinetics_provenance"
+      },
+      "rdfs:label": "Second-order reaction with SpyCatcher: k ~1.4e3 M-1 s-1, t1/2 ~74 s at 10 uM"
+    },
+    {
+      "@id": "part:SpyTag_claim_induction_kinetics_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"catalytic_residue\": \"Glu77 of SpyCatcher\", \"mechanism\": \"intermolecular isopeptide bond\", \"partner\": \"SpyCatcher (116 aa)\", \"partner_residue\": \"Lys31 of SpyCatcher\", \"reactive_residue\": \"Asp7 (CnaB2 Asp117) of SpyTag\", \"reversibility\": \"irreversible; resists boiling in SDS and competing peptide\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "The electron density map clearly confirms the isopeptide bond between Lys31 of SpyCatcher and Asp7 of SpyTag",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Crystal structure of the SpyTag/SpyCatcher complex",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Spontaneous, irreversible isopeptide (amide) bond to SpyCatcher"
+    },
+    {
+      "@id": "part:SpyTag_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_origin",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "origin",
+      "cat:claimValue": "{\"design\": \"split of CnaB2 into peptide (SpyTag) + protein (SpyCatcher) fragments with rational engineering\", \"domain\": \"CnaB2 (immunoglobulin-like collagen adhesion domain)\", \"organism\": \"Streptococcus pyogenes\", \"parent_protein\": \"fibronectin-binding protein FbaB\", \"residues\": \"550-562\", \"uniprot\": \"Q6A1F3\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "fibronectin-binding protein FbaB contains a domain with a spontaneous isopeptide bond between Lys and Asp. By splitting this domain and rational engineering of the fragments, we obtained a peptide (SpyTag) which formed an amide bond to its protein partner (SpyCatcher)",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_origin_provenance"
+      },
+      "rdfs:label": "Derived from the CnaB2 domain of S. pyogenes FbaB (UniProt Q6A1F3 residues 550-562)"
+    },
+    {
+      "@id": "part:SpyTag_claim_origin_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_placement",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "placement",
+      "cat:claimValue": "{\"positions\": [\"N-terminal\", \"C-terminal\", \"internal\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "SpyTag could be fused at either terminus or internally and reacted specifically at the mammalian cell surface.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22366317"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_placement_provenance"
+      },
+      "rdfs:label": "Fusable at N-terminus, C-terminus, or internally"
+    },
+    {
+      "@id": "part:SpyTag_claim_placement_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_sequence_feature",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_feature",
+      "cat:claimValue": "{\"dispensable_residues\": \"Pro11, Thr12, Lys13 (PTK)\", \"evidence\": \"Pro11/Thr12 contact only a neighbouring molecule in the crystal lattice; Lys13 is disordered\", \"implication\": \"the binding-competent core spans residues 1-10\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "our structures suggest that the three C-terminal amino acids of SpyTag peptide (PTK) may not have a direct role in stabilizing the initial non-covalent complex between SpyTag and SpyCatcher: Pro11 and Thr12 are visible, but these two amino acids interact with residues of the neighboring SpyCatcher molecule in the crystal, while Lys13 is disordered",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Crystal structure of the SpyTag/SpyCatcher complex",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_sequence_feature_provenance"
+      },
+      "rdfs:label": "C-terminal Pro11-Thr12-Lys13 (PTK) tripeptide is dispensable for binding"
+    },
+    {
+      "@id": "part:SpyTag_claim_sequence_feature_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"parent_rate_M-1_s-1\": 1400, \"variants\": [{\"fold_over_SpyTag\": \"~12\", \"name\": \"SpyTag002\", \"note\": \"phage-display optimized pair with SpyCatcher002\", \"rate_constant_M-1_s-1\": 20000}, {\"fold_over_SpyTag\": \"~400\", \"key_mutation\": \"T112H (CnaB2 numbering)\", \"name\": \"SpyTag003\", \"note\": \"approaches the diffusion limit; pairs with SpyCatcher003\", \"rate_constant_M-1_s-1\": 550000}]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "The second-order rate constant for SpyTag003/SpyCatcher003 was 5.5 \u00b1 0.6 \u00d7 10[5] M[-1]s[-1] ... \u223c400-fold faster than the 1.4 \u00d7 10[3] M[-1]s[-1] previously shown for SpyTag/SpyCatcher",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Results",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:31822621"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:31822621"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "Faster-reacting descendants SpyTag002 and SpyTag003"
+    },
+    {
+      "@id": "part:SpyTag_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_claim_structure",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "structure",
+      "cat:claimValue": "{\"fold\": \"beta-sandwich (reformed CnaB2 domain)\", \"h_bond_contacts\": \"Tyr9, Lys10\", \"hydrophobic_core_contacts\": \"Ile3, Met5\", \"interacting_residues\": \"10 of 13\", \"pdb\": \"4MLI\", \"resolution_angstrom\": 2.1}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "only 10 out of 13 amino acids of the SpyTag peptide were observed to interact with SpyCatcher, pointing to specific contacts important for rapid split protein reconstitution",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract / Crystal structure",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:24161952"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:SpyTag_claim_structure_provenance"
+      },
+      "rdfs:label": "Reconstituted complex forms a beta-sandwich; only 10 of 13 SpyTag residues contact SpyCatcher"
+    },
+    {
+      "@id": "part:SpyTag_claim_structure_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:SpyTag_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "SpyTag_sequence",
+      "sbol:elements": "AHIVMVDAYKPTK",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
       },
@@ -18418,12 +19639,101 @@
     {
       "@id": "part:birA",
       "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
+      "cat:curationStatus": "validated",
+      "cat:documented": true,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:birA_claim_mechanism"
+        },
+        {
+          "@id": "part:birA_claim_structure"
+        },
+        {
+          "@id": "part:birA_claim_host_range"
+        },
+        {
+          "@id": "part:birA_claim_application"
+        },
+        {
+          "@id": "part:birA_claim_sequence_variant"
+        },
+        {
+          "@id": "part:birA_claim_sequence_variant_turboid"
+        },
+        {
+          "@id": "part:birA_claim_regulation"
+        }
+      ],
       "cat:slug": "birA",
+      "cat:sourceAccession": "UniProt:P06709",
+      "dcterms:description": "Bifunctional biotin-[acetyl-CoA-carboxylase] ligase / biotin-operon repressor (BirA), E. coli K12; UniProt P06709, 321 aa, ~35.3 kDa. Three-domain architecture: an N-terminal winged helix-turn-helix DNA-binding domain, a central catalytic domain (seven-stranded mixed beta-sheet bearing the active site and the biotin-binding GRGRRG loop, here at residues 115-120, 1-based), and a C-terminal antiparallel beta-sheet domain. Catalyses biotinylation in two steps: biotin + ATP -> biotinoyl-5'-AMP, then transfer of biotin to a specific lysine of the acceptor substrate. Bio-5'-AMP also acts as corepressor, driving homodimerization and sequence-specific binding to the bioO operator to repress the biotin biosynthesis operon. Parent enzyme of the AviTag/BAP site-specific biotinylation system and of the engineered proximity-labeling ligases BioID (R118G), TurboID and miniTurbo.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:7024555"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6456358"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:3899863"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:1409631"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:8639659"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:11714929"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:24189073"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:9485476"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10529178"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:7764094"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:18323822"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:22412018"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:30125270"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:22210766"
+        }
+      ],
       "dcterms:title": "birA",
       "rdfs:label": "birA",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P06709"
+      },
       "sbol:displayId": "birA",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:birA_feature_0"
+        },
+        {
+          "@id": "part:birA_feature_1"
+        },
+        {
+          "@id": "part:birA_feature_2"
+        },
+        {
+          "@id": "part:birA_feature_3"
+        },
+        {
+          "@id": "part:birA_feature_4"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -18438,8 +19748,325 @@
       },
       "skos:altLabel": [
         "BirA",
-        "biotin--protein ligase"
+        "biotin--protein ligase",
+        "biotin protein ligase",
+        "biotin ligase",
+        "BPL"
       ]
+    },
+    {
+      "@id": "part:birA_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"cognate_substrate\": \"AviTag / biotin acceptor peptide (BAP); 15-aa GLNDIFEAQKIEWHE derived from the 13-residue consensus\", \"downstream\": \"avidin/streptavidin affinity capture, detection, immobilization\", \"use\": \"site-specific in vivo or in vitro mono-biotinylation of an acceptor-peptide-tagged protein\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Established BirA + AviTag (GLNDIFEAQKIEWHE) system for site-specific biotinylation of cell-surface proteins; defines paired use of BirA enzyme with AviTag substrate",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:18323822"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:18323822"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_application_provenance"
+      },
+      "rdfs:label": "BirA is the enzyme of the AviTag/BAP site-specific biotinylation system: co-expressed with (or applied to) a fused acceptor peptide, it biotinylates a single lysine, enabling avidin/streptavidin capture, detection, and immobilization."
+    },
+    {
+      "@id": "part:birA_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_host_range",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "host_range",
+      "cat:claimValue": "{\"basis\": \"background biotinylation is minimal in eukaryotes because biotin is a rare modification\", \"native_host\": \"Escherichia coli\", \"validated_hosts\": [\"mammalian cells\", \"yeast\", \"flies (Drosophila)\", \"worms (C. elegans)\", \"bacteria\"]}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Because biotinylation is a rare modification, in mammalian cells it is restricted primarily to only a few carboxylases; BAT-independent binding is minimal.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Introduction",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_host_range_provenance"
+      },
+      "rdfs:label": "BirA biotinylation is highly specific in eukaryotic cells because endogenous biotinylation is restricted to a few carboxylases; this makes the BirA + acceptor-peptide system functional across mammalian and other heterologous hosts."
+    },
+    {
+      "@id": "part:birA_claim_host_range_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"dual_function\": \"biotin-protein ligase AND bio-5'-AMP-dependent transcriptional repressor of the biotin biosynthesis operon\", \"reaction\": \"biotin + ATP -> biotinoyl-5'-AMP (intermediate held in active site) -> biotin transferred to acceptor lysine\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Biotinylation by BirA is a two-step process. The first of these combines biotin and ATP to form biotinoyl-5'-AMP (bioAMP). This activated biotin is held within the BirA active site until it reacts with a specific lysine residue of the BAT sequence in the second step.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Introduction",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_mechanism_provenance"
+      },
+      "rdfs:label": "BirA catalyses biotinylation in two steps: it condenses biotin with ATP to form biotinoyl-5'-AMP, then transfers biotin to a specific lysine of the acceptor substrate; bio-5'-AMP is also the corepressor of the biotin operon."
+    },
+    {
+      "@id": "part:birA_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_regulation",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "regulation",
+      "cat:claimValue": "{\"corepressor\": \"biotinoyl-5'-AMP (bio-5'-AMP), which drives dimerization required for DNA binding\", \"operator\": \"bioO (~40 bp palindrome), bound cooperatively by two holo-BirA monomers\", \"role\": \"corepressor-activated transcriptional repressor of the biotin biosynthesis (bio) operon\"}",
+      "cat:confidence": "medium",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Eisenstein & Beckett (1999): Bio-5'-AMP drives BirA homodimerization; dimerization is prerequisite for DNA operator binding; Abbott & Beckett (1993): cooperative binding of two holoBirA monomers to the 40-bp bioO operator palindrome.",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10529178"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:10529178"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_regulation_provenance"
+      },
+      "rdfs:label": "Holo-BirA (with bound bio-5'-AMP) homodimerizes and binds the 40-bp bioO operator palindrome as a corepressor, repressing the biotin biosynthesis operon; bio-5'-AMP availability sets repressor activity."
+    },
+    {
+      "@id": "part:birA_claim_regulation_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"effect\": \"promiscuous proximity-dependent biotinylation; ~100-fold reduced bio-5'-AMP affinity; defective self-association and DNA binding\", \"labeling_radius_nm\": \"~20-30\", \"mutation\": \"R118G\", \"name\": \"BirA* (BioID)\", \"position_verified\": \"residue 118 is R in this sequence (1-based)\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "One such BirA mutant (R118G, hereafter called BirA*), which is defective in both self-association and DNA binding, displays an affinity for bioAMP two orders of magnitude less than that of the wild-type enzyme... roughly 50% of detected proteins likely reside within ~20-30 nm of the nearest LaA molecule.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Introduction / Discussion",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:22412018"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "The R118G mutant (BirA*, used in BioID) is defective in self-association and DNA binding and binds bio-5'-AMP ~100-fold more weakly than wild type, so it prematurely releases reactive bio-5'-AMP and biotinylates neighbouring proteins promiscuously within ~20-30 nm."
+    },
+    {
+      "@id": "part:birA_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_sequence_variant_turboid",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"TurboID\": {\"mutations_vs_WT\": 15, \"size_kDa\": 35}, \"engineering\": \"yeast display-based directed evolution\", \"labeling_time\": \"~10 minutes\", \"miniTurbo\": {\"mutations_vs_WT\": 13, \"n_terminal_deletion\": \"aa 1-63\", \"size_kDa\": 28}}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "Our engineering efforts yielded two promiscuous ligases: 35 kD TurboID, with 15 mutations relative to wild-type BirA; and 28 kD miniTurbo, with N-terminal domain deleted and 13 mutations relative to wild-type BirA... enable 10-minute PL in cells with non-toxic and easily deliverable biotin.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract / Results",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:30125270"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:30125270"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_sequence_variant_turboid_provenance"
+      },
+      "rdfs:label": "TurboID (35 kDa, 15 mutations vs wild-type BirA) and miniTurbo (28 kDa, N-terminal domain aa 1-63 deleted plus 13 mutations) are directed-evolution variants that catalyse proximity labeling far faster than BioID, enabling 10-minute biotin labeling in cells and organisms."
+    },
+    {
+      "@id": "part:birA_claim_sequence_variant_turboid_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_claim_structure",
+      "@type": "cat:FunctionalClaim",
+      "cat:claimType": "structure",
+      "cat:claimValue": "{\"c_terminal\": \"six-stranded antiparallel beta-sheet sandwich\", \"central\": \"seven-stranded mixed beta-sheet, alpha-helices on one face, solvent-exposed face carries the active site\", \"n_terminal\": \"alpha-helical helix-turn-helix DNA-binding domain\", \"pdb\": \"1BIB\"}",
+      "cat:confidence": "high",
+      "cat:reviewStatus": "ai-generated",
+      "cat:sourceQuote": "The structure of BirA is highly asymmetric and consists of three domains. The N-terminal domain is mostly alpha-helical, contains a helix-turn-helix DNA-binding motif... The central domain consists of a seven-stranded mixed beta-sheet with alpha-helices covering one face. The other side of the sheet is largely solvent-exposed and contains the active site. The C-terminal domain comprises a six-stranded, antiparallel beta-sheet sandwich.",
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "Abstract",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1409631"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:1409631"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:birA_claim_structure_provenance"
+      },
+      "rdfs:label": "BirA is a three-domain protein: an N-terminal alpha-helical helix-turn-helix DNA-binding domain, a central seven-stranded mixed beta-sheet catalytic/active-site domain, and a C-terminal antiparallel beta-sheet domain."
+    },
+    {
+      "@id": "part:birA_claim_structure_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "annotate-part-engine",
+      "cat:fromDoc": "primary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:birA_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "BPL/LPL catalytic",
+      "sbol:displayId": "birA_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:birA_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:birA_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 254,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:birA_sequence"
+      },
+      "sbol:start": 67
+    },
+    {
+      "@id": "part:birA_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "birA_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:birA_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:birA_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 91,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:birA_sequence"
+      },
+      "sbol:start": 89
+    },
+    {
+      "@id": "part:birA_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "birA_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:birA_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:birA_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 112,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:birA_sequence"
+      },
+      "sbol:start": 112
+    },
+    {
+      "@id": "part:birA_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "birA_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:birA_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:birA_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 118,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:birA_sequence"
+      },
+      "sbol:start": 116
+    },
+    {
+      "@id": "part:birA_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "birA_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:birA_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:birA_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 183,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:birA_sequence"
+      },
+      "sbol:start": 183
     },
     {
       "@id": "part:birA_sequence",

@@ -1,0 +1,69 @@
+LOCUS       SnoopTag                  12 aa            linear   UNK 01-JAN-1980
+DEFINITION  SnoopTag: a 12-aa peptide split from the D4 domain of Streptococcus
+            pneumoniae RrgA that spontaneously forms a covalent isopeptide bond
+            with its partner protein SnoopCatcher (>99% yield) and is orthogonal
+            to SpyTag/SpyCatcher..
+ACCESSION   SnoopTag
+VERSION     SnoopTag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Veggiani G, Nakamura T, Brenner MD, Gayet RV, Yan J, Robinson CV,
+            Howarth M
+  TITLE     Programmable polyproteams built using twin peptide superglues
+  JOURNAL   Proc Natl Acad Sci U S A (2016)
+   PUBMED   26787909
+  REMARK    doi:10.1073/pnas.1519214113
+REFERENCE   2
+  AUTHORS   Buldun CM, Jean JX, Bedford MR, Howarth M
+  TITLE     SnoopLigase Catalyzes Peptide-Peptide Locking and Enables
+            Solid-Phase Conjugate Isolation
+  JOURNAL   J Am Chem Soc (2018)
+   PUBMED   29402082
+  REMARK    doi:10.1021/jacs.7b13237
+REFERENCE   3
+  AUTHORS   Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang
+            J, Bon RS, Howarth M
+  TITLE     DogCatcher allows loop-friendly protein-protein ligation
+  JOURNAL   Cell Chem Biol (2021)
+   PUBMED   34324879
+  REMARK    doi:10.1016/j.chembiol.2021.07.005
+REFERENCE   4
+  AUTHORS   Keeble AH, Wood DP, Howarth M
+  TITLE     Design and Evolution of Enhanced Peptide-Peptide Ligation for
+            Modular Transglutaminase Assembly
+  JOURNAL   Bioconjug Chem (2023)
+   PUBMED   37289810
+  REMARK    doi:10.1021/acs.bioconjchem.3c00122
+REFERENCE   5
+  AUTHORS   Bruun TUJ, Andersson AC, Draper SJ, Howarth M
+  TITLE     Engineering a Rugged Nanoscaffold To Enhance Plug-and-Display
+            Vaccination
+  JOURNAL   ACS Nano (2018)
+   PUBMED   30028591
+  REMARK    doi:10.1021/acsnano.8b02805
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SnoopTag
+FEATURES             Location/Qualifiers
+     protein_domain  1..12
+                     /label="SnoopTag"
+                     /synonym="Snoop tag"
+                     /synonym="KLGDIEFIKVNK"
+                     /note="12-aa reactive peptide split from the D4 (CnaA-like)
+                     domain of Streptococcus pneumoniae RrgA pilus adhesin
+                     (UniProt A7KT94, residues 727–738). Pairs with the protein
+                     SnoopCatcher to form a spontaneous, covalent intermolecular
+                     isopeptide bond. Orthogonal to the SpyTag/SpyCatcher pair.
+                     Sequence verified 100% over 12 aa against GenBank
+                     AMD39968.1 (Veggiani 2016 PNAS deposit)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 klgdiefikv nk
+//

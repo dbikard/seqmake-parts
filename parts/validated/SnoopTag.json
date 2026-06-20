@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "slug": "SnoopTag",
+  "locus": "SnoopTag",
+  "id": "SnoopTag",
+  "description": "SnoopTag: a 12-aa peptide split from the D4 domain of Streptococcus pneumoniae RrgA that spontaneously forms a covalent isopeptide bond with its partner protein SnoopCatcher (>99% yield) and is orthogonal to SpyTag/SpyCatcher.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "KLGDIEFIKVNK",
+  "references": [
+    {
+      "authors": "Veggiani G, Nakamura T, Brenner MD, Gayet RV, Yan J, Robinson CV, Howarth M",
+      "title": "Programmable polyproteams built using twin peptide superglues",
+      "journal": "Proc Natl Acad Sci U S A (2016)",
+      "pubmed_id": "26787909",
+      "comment": "doi:10.1073/pnas.1519214113"
+    },
+    {
+      "authors": "Buldun CM, Jean JX, Bedford MR, Howarth M",
+      "title": "SnoopLigase Catalyzes Peptide-Peptide Locking and Enables Solid-Phase Conjugate Isolation",
+      "journal": "J Am Chem Soc (2018)",
+      "pubmed_id": "29402082",
+      "comment": "doi:10.1021/jacs.7b13237"
+    },
+    {
+      "authors": "Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang J, Bon RS, Howarth M",
+      "title": "DogCatcher allows loop-friendly protein-protein ligation",
+      "journal": "Cell Chem Biol (2021)",
+      "pubmed_id": "34324879",
+      "comment": "doi:10.1016/j.chembiol.2021.07.005"
+    },
+    {
+      "authors": "Keeble AH, Wood DP, Howarth M",
+      "title": "Design and Evolution of Enhanced Peptide-Peptide Ligation for Modular Transglutaminase Assembly",
+      "journal": "Bioconjug Chem (2023)",
+      "pubmed_id": "37289810",
+      "comment": "doi:10.1021/acs.bioconjchem.3c00122"
+    },
+    {
+      "authors": "Bruun TUJ, Andersson AC, Draper SJ, Howarth M",
+      "title": "Engineering a Rugged Nanoscaffold To Enhance Plug-and-Display Vaccination",
+      "journal": "ACS Nano (2018)",
+      "pubmed_id": "30028591",
+      "comment": "doi:10.1021/acsnano.8b02805"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 12,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SnoopTag"
+        ],
+        "synonym": [
+          "Snoop tag",
+          "KLGDIEFIKVNK"
+        ],
+        "note": [
+          "12-aa reactive peptide split from the D4 (CnaA-like) domain of Streptococcus pneumoniae RrgA pilus adhesin (UniProt A7KT94, residues 727\u2013738). Pairs with the protein SnoopCatcher to form a spontaneous, covalent intermolecular isopeptide bond. Orthogonal to the SpyTag/SpyCatcher pair. Sequence verified 100% over 12 aa against GenBank AMD39968.1 (Veggiani 2016 PNAS deposit)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "AMD39968.1 (GenBank protein, \"SnoopTag-MBP [synthetic construct]\", deposited 10-FEB-2016; Veggiani et al. 2016, PNAS 113:1202\u20131207, PMID 26787909): SnoopTag KLGDIEFIKVNK at residues 23\u201334 (1-based), 100% identity over 12 aa. Biological origin confirmed in UniProt A7KT94 (RrgA, S. pneumoniae, residues 727\u2013738). Independently fetched and compared."
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Spontaneous covalent isopeptide-bond formation with SnoopCatcher",
+      "value": {
+        "mechanism": "Reactive peptide split from the RrgA D4 domain; on mixing with the partner protein SnoopCatcher it reconstitutes the split domain and forms a spontaneous intramolecular-derived intermolecular isopeptide (amide) bond between a Lys side chain on SnoopTag and an Asn side chain on SnoopCatcher, covalently and irreversibly locking the two units together.",
+        "partner": "SnoopCatcher",
+        "bond_type": "isopeptide"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "By engineering the adhesin RrgA from [Streptococcus pneumoniae], we developed the peptide SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "performance_yield",
+      "type": "expression_yield",
+      "label": "SnoopTag + SnoopCatcher react to >99% yield",
+      "value": {
+        "yield": ">99%",
+        "readout": "isopeptide bond formation between SnoopTag and SnoopCatcher",
+        "note": "Reported reaction completeness for the SnoopTag/SnoopCatcher pair."
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher with >99% yield and no cross-reaction to SpyTag/SpyCatcher",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "orthogonality",
+      "type": "orthogonality",
+      "label": "Orthogonal to SpyTag/SpyCatcher (no cross-reaction)",
+      "value": {
+        "orthogonal_to": [
+          "SpyTag",
+          "SpyCatcher"
+        ],
+        "cross_reaction": "none"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "SnoopTag/SnoopCatcher reacted with each other but not with an alternative peptide/protein pair, SpyTag/SpyCatcher",
+        "quote_source": "primary",
+        "section": "Abstract (Significance)"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Derived from the RrgA pilus adhesin D4 domain of S. pneumoniae",
+      "value": {
+        "organism": "Streptococcus pneumoniae",
+        "parent_protein": "RrgA pilus adhesin (UniProt A7KT94)",
+        "parent_region": "D4 (CnaA-like) domain, residues 727\u2013738",
+        "derivation": "split-domain engineering of the RrgA isopeptide-bond-forming domain into a peptide (SnoopTag) and protein (SnoopCatcher) pair"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "By engineering the adhesin RrgA from [Streptococcus pneumoniae], we developed the peptide SnoopTag",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Programmable, irreversible protein-protein conjugation and modular assembly",
+      "value": {
+        "applications": [
+          "covalent fusion of two protein modules",
+          "sequential / programmable polyprotein ('polyproteam') assembly when combined orthogonally with SpyTag/SpyCatcher",
+          "plug-and-display on multivalent scaffolds"
+        ]
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "Solid-phase attachment followed by sequential SpyTag or SnoopTag reaction between building-blocks enabled iterative extension. Linear, branched, and combinatorial polyproteins were synthesized",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "RrgA scaffold is evolvable: SnoopTagJr, DogTag, SnoopTag2 derivatives",
+      "value": {
+        "variants": [
+          "SnoopTagJr (three-part RrgA split with DogTag + SnoopLigase)",
+          "DogTag (loop-insertable, paired with DogCatcher)",
+          "SnoopTag2 (second-generation, accelerated ligation)"
+        ],
+        "note": "All derived from the same S. pneumoniae RrgA scaffold; these are distinct related parts, not this exact peptide."
+      },
+      "source": {
+        "pmid": "29402082",
+        "doi": "10.1021/jacs.7b13237",
+        "quote": "Three-part RrgA split generating SnoopTagJr, DogTag, and SnoopLigase",
+        "quote_source": "catalog-doc",
+        "section": "candidate-reference summary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.0",
+  "slug": "SpyTag",
+  "locus": "SpyTag",
+  "id": "SpyTag",
+  "description": "SpyTag \u2014 13-aa peptide (AHIVMVDAYKPTK) from the CnaB2 domain of S. pyogenes FbaB that forms a spontaneous, irreversible isopeptide bond to its protein partner SpyCatcher.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "AHIVMVDAYKPTK",
+  "references": [
+    {
+      "authors": "Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT, Howarth M",
+      "title": "Peptide tag forming a rapid covalent bond to a protein, through engineering a bacterial adhesin",
+      "journal": "Proc Natl Acad Sci U S A (2012)",
+      "pubmed_id": "22366317",
+      "comment": "doi:10.1073/pnas.1115485109"
+    },
+    {
+      "authors": "Li L, Fierer JO, Rapoport TA, Howarth M",
+      "title": "Structural analysis and optimization of the covalent association between SpyCatcher and a peptide Tag",
+      "journal": "Journal of Molecular Biology (2014)",
+      "pubmed_id": "24161952",
+      "comment": "doi:10.1016/j.jmb.2013.10.021"
+    },
+    {
+      "authors": "Keeble AH, Banerjee A, Ferla MP, Reddington SC, Anuar INAK, Howarth M",
+      "title": "Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze Membrane Dynamics",
+      "journal": "Angewandte Chemie International Edition (2017)",
+      "pubmed_id": "29024296",
+      "comment": "doi:10.1002/anie.201707623"
+    },
+    {
+      "authors": "Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R, Hyt\u00f6nen VP, Howarth M",
+      "title": "Approaching infinite affinity through engineering of peptide-protein interaction",
+      "journal": "Proc Natl Acad Sci U S A (2019)",
+      "pubmed_id": "31822621",
+      "comment": "doi:10.1073/pnas.1909653116"
+    },
+    {
+      "authors": "Hatlem D, Trunk T, Linke D, Leo JC",
+      "title": "Catching a SPY: Using the SpyCatcher-SpyTag and Related Systems for Labeling and Localizing Bacterial Proteins",
+      "journal": "International Journal of Molecular Sciences (2019)",
+      "pubmed_id": "31052154",
+      "comment": "doi:10.3390/ijms20092129"
+    },
+    {
+      "authors": "Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang J, Bon RS, Howarth M",
+      "title": "DogCatcher allows loop-friendly protein-protein ligation",
+      "journal": "Cell Chemical Biology (2021)",
+      "pubmed_id": "34324879",
+      "comment": "doi:10.1016/j.chembiol.2021.07.005"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 13,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SpyTag"
+        ],
+        "synonym": [
+          "SpyTag001",
+          "AHIVMVDAYKPTK"
+        ],
+        "note": [
+          "13-aa peptide tag (AHIVMVDAYKPTK) engineered by splitting the CnaB2 immunoglobulin-like domain of Streptococcus pyogenes fibronectin-binding protein FbaB (UniProt Q6A1F3, residues 550-562). On mixing with its 116-aa protein partner SpyCatcher, the tag's Asp7 spontaneously forms an intermolecular isopeptide (amide) bond to Lys31 of SpyCatcher, catalysed by SpyCatcher Glu77, yielding an irreversible covalent linkage. Fusable at N-terminus, C-terminus, or internally."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt Q6A1F3 (FbaB / fibronectin-binding protein F2, Streptococcus pyogenes), positions 550-562, 100% identity over 13 aa; independently fetched 2026-06-20 via rest.uniprot.org and confirmed via NCBI efetch of backing record CAH04964.1"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Spontaneous, irreversible isopeptide (amide) bond to SpyCatcher",
+      "value": {
+        "mechanism": "intermolecular isopeptide bond",
+        "reactive_residue": "Asp7 (CnaB2 Asp117) of SpyTag",
+        "partner_residue": "Lys31 of SpyCatcher",
+        "catalytic_residue": "Glu77 of SpyCatcher",
+        "reversibility": "irreversible; resists boiling in SDS and competing peptide",
+        "partner": "SpyCatcher (116 aa)"
+      },
+      "source": {
+        "pmid": "24161952",
+        "doi": "10.1016/j.jmb.2013.10.021",
+        "quote": "The electron density map clearly confirms the isopeptide bond between Lys31 of SpyCatcher and Asp7 of SpyTag",
+        "quote_source": "primary",
+        "section": "Crystal structure of the SpyTag/SpyCatcher complex"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "structure",
+      "type": "structure",
+      "label": "Reconstituted complex forms a beta-sandwich; only 10 of 13 SpyTag residues contact SpyCatcher",
+      "value": {
+        "pdb": "4MLI",
+        "resolution_angstrom": 2.1,
+        "interacting_residues": "10 of 13",
+        "hydrophobic_core_contacts": "Ile3, Met5",
+        "h_bond_contacts": "Tyr9, Lys10",
+        "fold": "beta-sandwich (reformed CnaB2 domain)"
+      },
+      "source": {
+        "pmid": "24161952",
+        "doi": "10.1016/j.jmb.2013.10.021",
+        "quote": "only 10 out of 13 amino acids of the SpyTag peptide were observed to interact with SpyCatcher, pointing to specific contacts important for rapid split protein reconstitution",
+        "quote_source": "primary",
+        "section": "Abstract / Crystal structure"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_feature",
+      "type": "sequence_feature",
+      "label": "C-terminal Pro11-Thr12-Lys13 (PTK) tripeptide is dispensable for binding",
+      "value": {
+        "dispensable_residues": "Pro11, Thr12, Lys13 (PTK)",
+        "evidence": "Pro11/Thr12 contact only a neighbouring molecule in the crystal lattice; Lys13 is disordered",
+        "implication": "the binding-competent core spans residues 1-10"
+      },
+      "source": {
+        "pmid": "24161952",
+        "doi": "10.1016/j.jmb.2013.10.021",
+        "quote": "our structures suggest that the three C-terminal amino acids of SpyTag peptide (PTK) may not have a direct role in stabilizing the initial non-covalent complex between SpyTag and SpyCatcher: Pro11 and Thr12 are visible, but these two amino acids interact with residues of the neighboring SpyCatcher molecule in the crystal, while Lys13 is disordered",
+        "quote_source": "primary",
+        "section": "Crystal structure of the SpyTag/SpyCatcher complex"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "induction_kinetics",
+      "type": "induction_kinetics",
+      "label": "Second-order reaction with SpyCatcher: k ~1.4e3 M-1 s-1, t1/2 ~74 s at 10 uM",
+      "value": {
+        "rate_constant_M-1_s-1": 1400,
+        "half_time_s": 74,
+        "concentration_uM": 10,
+        "reaction": "covalent isopeptide bond formation with SpyCatcher"
+      },
+      "source": {
+        "pmid": "24161952",
+        "doi": "10.1016/j.jmb.2013.10.021",
+        "quote": "The two partners then react rapidly, forming the isopeptide bond, with a half-time of 74 s for partners at 10 \u03bcM.",
+        "quote_source": "primary",
+        "section": "Introduction"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "Fusable at N-terminus, C-terminus, or internally",
+      "value": {
+        "positions": [
+          "N-terminal",
+          "C-terminal",
+          "internal"
+        ]
+      },
+      "source": {
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109",
+        "quote": "SpyTag could be fused at either terminus or internally and reacted specifically at the mammalian cell surface.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "conditions",
+      "type": "conditions",
+      "label": "Reaction is robust across pH, temperature and buffer; bond resists boiling and force >1 nN",
+      "value": {
+        "robust_conditions": "diverse pH, temperature, and buffer",
+        "force_to_rupture_nN": 1,
+        "stability": "not reversed by boiling or competing peptide"
+      },
+      "source": {
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109",
+        "quote": "Reaction occurred in high yield simply upon mixing and amidst diverse conditions of pH, temperature, and buffer... Single-molecule dynamic force spectroscopy showed that SpyTag did not separate from SpyCatcher until the force exceeded 1 nN, where covalent bonds snap.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Works in bacteria and at the mammalian cell surface",
+      "value": {
+        "validated_in": [
+          "Escherichia coli (recombinant fusions)",
+          "mammalian cell surface"
+        ]
+      },
+      "source": {
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109",
+        "quote": "SpyTag could be fused at either terminus or internally and reacted specifically at the mammalian cell surface.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Derived from the CnaB2 domain of S. pyogenes FbaB (UniProt Q6A1F3 residues 550-562)",
+      "value": {
+        "parent_protein": "fibronectin-binding protein FbaB",
+        "organism": "Streptococcus pyogenes",
+        "uniprot": "Q6A1F3",
+        "residues": "550-562",
+        "domain": "CnaB2 (immunoglobulin-like collagen adhesion domain)",
+        "design": "split of CnaB2 into peptide (SpyTag) + protein (SpyCatcher) fragments with rational engineering"
+      },
+      "source": {
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109",
+        "quote": "fibronectin-binding protein FbaB contains a domain with a spontaneous isopeptide bond between Lys and Asp. By splitting this domain and rational engineering of the fragments, we obtained a peptide (SpyTag) which formed an amide bond to its protein partner (SpyCatcher)",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Faster-reacting descendants SpyTag002 and SpyTag003",
+      "value": {
+        "variants": [
+          {
+            "name": "SpyTag002",
+            "rate_constant_M-1_s-1": 20000,
+            "fold_over_SpyTag": "~12",
+            "note": "phage-display optimized pair with SpyCatcher002"
+          },
+          {
+            "name": "SpyTag003",
+            "rate_constant_M-1_s-1": 550000,
+            "fold_over_SpyTag": "~400",
+            "key_mutation": "T112H (CnaB2 numbering)",
+            "note": "approaches the diffusion limit; pairs with SpyCatcher003"
+          }
+        ],
+        "parent_rate_M-1_s-1": 1400
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "The second-order rate constant for SpyTag003/SpyCatcher003 was 5.5 \u00b1 0.6 \u00d7 10[5] M[-1]s[-1] ... \u223c400-fold faster than the 1.4 \u00d7 10[3] M[-1]s[-1] previously shown for SpyTag/SpyCatcher",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Genetically encoded covalent module for protein assembly, immobilization, vaccines and biomaterials",
+      "value": {
+        "applications": [
+          "irreversible protein-protein conjugation / protein superglue",
+          "modular protein architectures and biomaterials",
+          "VLP/vaccine antigen display",
+          "cell-surface labeling and imaging",
+          "stringent affinity capture via covalent linkage"
+        ]
+      },
+      "source": {
+        "pmid": "31052154",
+        "doi": "10.3390/ijms20092129",
+        "quote": "broad applications (OMVs, VLPs, hydrogels, microscopy)",
+        "quote_source": "catalog-doc",
+        "section": "Review"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

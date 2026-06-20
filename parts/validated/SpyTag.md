@@ -1,0 +1,20 @@
+# SpyTag
+
+SpyTag is a 13-amino-acid peptide (AHIVMVDAYKPTK) that forms a spontaneous, irreversible covalent (isopeptide) bond to its protein partner SpyCatcher.
+
+## Origin
+SpyTag was engineered by splitting the CnaB2 domain — an immunoglobulin-like collagen-adhesion domain — of the fibronectin-binding protein FbaB from *Streptococcus pyogenes* (UniProt Q6A1F3, residues 550-562). In the intact CnaB2 domain a spontaneous internal isopeptide bond links a lysine and an aspartate. Splitting the domain and rationally engineering the two fragments yielded a short peptide (SpyTag) and a 116-residue protein (SpyCatcher) that re-associate and reform that bond between molecules ([Zakeri 2012](https://doi.org/10.1073/pnas.1115485109)).
+
+## Properties
+On simple mixing, SpyTag's Asp7 (CnaB2 numbering Asp117) forms an intermolecular isopeptide (amide) bond to Lys31 of SpyCatcher, catalysed by SpyCatcher Glu77. The covalent complex reforms a compact beta-sandwich; the crystal structure of the reconstituted complex (PDB 4MLI, 2.1 A) directly confirms the Lys31-Asp7 bond and shows that only 10 of the 13 SpyTag residues contact SpyCatcher — Ile3 and Met5 anchor a hydrophobic pocket while Tyr9 and Lys10 make hydrogen-bond/electrostatic contacts. The three C-terminal residues (Pro11-Thr12-Lys13) are dispensable for binding ([Li 2014](https://doi.org/10.1016/j.jmb.2013.10.021)). The reaction is second-order with a rate constant near 1.4e3 M-1 s-1 (half-time ~74 s at 10 uM) and proceeds in high yield across a wide range of pH, temperature and buffer. The resulting bond is not reversed by boiling in SDS or by competing peptide and withstands single-molecule forces above 1 nN ([Zakeri 2012](https://doi.org/10.1073/pnas.1115485109); [Li 2014](https://doi.org/10.1016/j.jmb.2013.10.021)). Faster-reacting descendants have been engineered: SpyTag002 reacts ~12-fold faster (~2e4 M-1 s-1) and SpyTag003 ~400-fold faster (~5.5e5 M-1 s-1, approaching the diffusion limit), each with a matched SpyCatcher variant ([Keeble 2017](https://doi.org/10.1002/anie.201707623); [Keeble 2019](https://doi.org/10.1073/pnas.1909653116)).
+
+## Use
+SpyTag can be fused at the N-terminus, C-terminus or an internal position of a target protein and reacts specifically even at the mammalian cell surface. The covalent, irreversible linkage to SpyCatcher provides a genetically encoded "protein superglue" for modular protein assembly, immobilization, stringent affinity capture, antigen display on virus-like particles, biomaterials/hydrogels and cell-surface labelling ([Zakeri 2012](https://doi.org/10.1073/pnas.1115485109); [Hatlem 2019](https://doi.org/10.3390/ijms20092129)). Because the tag is non-functional alone, it is deployed together with its cognate SpyCatcher (or the matched 002/003 partner); related orthogonal pairs such as SnoopTag/SnoopCatcher and the loop-friendly DogTag/DogCatcher allow multi-way covalent assembly ([Hatlem 2019](https://doi.org/10.3390/ijms20092129); [Keeble 2021](https://doi.org/10.1016/j.chembiol.2021.07.005)).
+
+## References
+- Zakeri et al. 2012, PNAS — [PMID 22366317](https://pubmed.ncbi.nlm.nih.gov/22366317/) — [doi:10.1073/pnas.1115485109](https://doi.org/10.1073/pnas.1115485109)
+- Li et al. 2014, J Mol Biol — [PMID 24161952](https://pubmed.ncbi.nlm.nih.gov/24161952/) — [doi:10.1016/j.jmb.2013.10.021](https://doi.org/10.1016/j.jmb.2013.10.021)
+- Keeble et al. 2017, Angew Chem Int Ed — [PMID 29024296](https://pubmed.ncbi.nlm.nih.gov/29024296/) — [doi:10.1002/anie.201707623](https://doi.org/10.1002/anie.201707623)
+- Keeble et al. 2019, PNAS — [PMID 31822621](https://pubmed.ncbi.nlm.nih.gov/31822621/) — [doi:10.1073/pnas.1909653116](https://doi.org/10.1073/pnas.1909653116)
+- Hatlem et al. 2019, Int J Mol Sci — [PMID 31052154](https://pubmed.ncbi.nlm.nih.gov/31052154/) — [doi:10.3390/ijms20092129](https://doi.org/10.3390/ijms20092129)
+- Keeble et al. 2021, Cell Chem Biol — [PMID 34324879](https://pubmed.ncbi.nlm.nih.gov/34324879/) — [doi:10.1016/j.chembiol.2021.07.005](https://doi.org/10.1016/j.chembiol.2021.07.005)

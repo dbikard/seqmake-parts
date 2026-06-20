@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0",
+  "slug": "birA",
+  "locus": "birA",
+  "id": "birA",
+  "description": "birA — E. coli bifunctional biotin-protein ligase / biotin-operon repressor (BirA, UniProt P06709), 321 aa; the parent enzyme of the AviTag biotinylation system and of the BioID/TurboID proximity-labeling ligases.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "MKDNTVPLKLIALLANGEFHSGEQLGETLGMSRAAINKHIQTLRDWGVDVFTVPGKGYSLPEPIQLLNAKQILGQLDGGSVAVLPVIDSTNQYLLDRIGELKSGDACIAEYQQAGRGRRGRKWFSPFGANLYLSMFWRLEQGPAAAIGLSLVIGIVMAEVLRKLGADKVRVKWPNDLYLQDRKLAGILVELTGKTGDAAQIVIGAGINMAMRRVEESVVNQGWITLQEAGINLDRNTLAAMLIRELRAALELFEQEGLAPYLSRWEKLDNFINRPVKLIIGDKEIFGISRGIDKQGALLLEQDGIIKPWMGGEISLRSAEK",
+  "references": [
+    {
+      "authors": "Barker DF, Campbell AM",
+      "title": "The birA gene of Escherichia coli encodes a biotin holoenzyme synthetase",
+      "journal": "J Mol Biol (1981)",
+      "pubmed_id": "7024555",
+      "comment": ""
+    },
+    {
+      "authors": "Barker DF, Campbell AM",
+      "title": "Genetic and biochemical characterization of the birA gene and its product: evidence for a direct role of biotin holoenzyme synthetase in repression of the biotin operon in Escherichia coli",
+      "journal": "J Mol Biol (1981)",
+      "pubmed_id": "6456358",
+      "comment": ""
+    },
+    {
+      "authors": "Howard PK, Shaw J, Otsuka AJ",
+      "title": "Nucleotide sequence of the birA gene encoding the biotin operon repressor and biotin holoenzyme synthetase functions of Escherichia coli",
+      "journal": "Gene (1985)",
+      "pubmed_id": "3899863",
+      "comment": ""
+    },
+    {
+      "authors": "Wilson KP, Shewchuk LM, Brennan RG, Otsuka AJ, Matthews BW",
+      "title": "Escherichia coli biotin holoenzyme synthetase/bio repressor crystal structure delineates the biotin- and DNA-binding domains",
+      "journal": "Proc Natl Acad Sci USA (1992)",
+      "pubmed_id": "1409631",
+      "comment": "doi:10.1073/pnas.89.19.9257"
+    },
+    {
+      "authors": "Xu Y, Beckett D",
+      "title": "Evidence for interdomain interaction in the Escherichia coli repressor of biotin biosynthesis from studies of an N-terminal domain deletion mutant",
+      "journal": "Biochemistry (1996)",
+      "pubmed_id": "8639659",
+      "comment": ""
+    },
+    {
+      "authors": "Nenortas E, Beckett D",
+      "title": "Purification and characterization of intact and truncated forms of the Escherichia coli biotin holoenzyme synthetase/biotin operon repressor",
+      "journal": "Protein Sci (2001)",
+      "pubmed_id": "11714929",
+      "comment": "doi:10.1110/ps.22401"
+    },
+    {
+      "authors": "Lim KH, Huang H, Pralle A, Park S",
+      "title": "The wing of a winged helix-turn-helix transcription factor organizes the active site of BirA, a bifunctional repressor/ligase",
+      "journal": "J Biol Chem (2014)",
+      "pubmed_id": "24189073",
+      "comment": "doi:10.1074/jbc.M113.525618"
+    },
+    {
+      "authors": "Abbott J, Beckett D",
+      "title": "Cooperative binding of the Escherichia coli repressor of biotin biosynthesis to the biotin operator sequence",
+      "journal": "Biochemistry (1993)",
+      "pubmed_id": "9485476",
+      "comment": "doi:10.1021/bi9715019"
+    },
+    {
+      "authors": "Eisenstein E, Beckett D",
+      "title": "Dimerization of the Escherichia coli biotin repressor: corepressor function in protein assembly",
+      "journal": "Biochemistry (1999)",
+      "pubmed_id": "10529178",
+      "comment": ""
+    },
+    {
+      "authors": "Schatz PJ",
+      "title": "Use of peptide libraries to map the substrate specificity of a peptide-modifying enzyme: a 13 residue consensus peptide specifies biotinylation in Escherichia coli",
+      "journal": "Biotechnology (N Y) (1993)",
+      "pubmed_id": "7764094",
+      "comment": "doi:10.1038/nbt1093-1138"
+    },
+    {
+      "authors": "Howarth M, Ting AY",
+      "title": "Imaging proteins in live mammalian cells with biotin ligase and monovalent streptavidin",
+      "journal": "Nat Protoc (2008)",
+      "pubmed_id": "18323822",
+      "comment": "doi:10.1038/nprot.2008.20"
+    },
+    {
+      "authors": "Roux KJ, Kim DI, Raida M, Burke B",
+      "title": "A promiscuous biotin ligase fusion protein identifies proximal and interacting proteins in mammalian cells",
+      "journal": "J Cell Biol (2012)",
+      "pubmed_id": "22412018",
+      "comment": "doi:10.1083/jcb.201112098"
+    },
+    {
+      "authors": "Branon TC, Bosch JA, Sanchez AD, Udeshi ND, Svinkina T, Carr SA, Feldman JL, Perrimon N, Ting AY",
+      "title": "Efficient proximity labeling in living cells and organisms with TurboID",
+      "journal": "Nat Biotechnol (2018)",
+      "pubmed_id": "30125270",
+      "comment": "doi:10.1038/nbt.4201"
+    },
+    {
+      "authors": "Hwang J, Bhatt DK, Bhatt S, Bhatt P",
+      "title": "Altered Regulation of Escherichia coli Biotin Biosynthesis in BirA Superrepressor Mutant Strains",
+      "journal": "J Bacteriol (2012)",
+      "pubmed_id": "22210766",
+      "comment": "doi:10.1128/jb.06549-11"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 321,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "birA"
+        ],
+        "synonym": [
+          "BirA",
+          "biotin--protein ligase",
+          "biotin protein ligase",
+          "biotin ligase",
+          "BPL"
+        ],
+        "note": [
+          "Bifunctional biotin-[acetyl-CoA-carboxylase] ligase / biotin-operon repressor (BirA), E. coli K12; UniProt P06709, 321 aa, ~35.3 kDa. Three-domain architecture: an N-terminal winged helix-turn-helix DNA-binding domain, a central catalytic domain (seven-stranded mixed beta-sheet bearing the active site and the biotin-binding GRGRRG loop, here at residues 115-120, 1-based), and a C-terminal antiparallel beta-sheet domain. Catalyses biotinylation in two steps: biotin + ATP -> biotinoyl-5'-AMP, then transfer of biotin to a specific lysine of the acceptor substrate. Bio-5'-AMP also acts as corepressor, driving homodimerization and sequence-specific binding to the bioO operator to repress the biotin biosynthesis operon. Parent enzyme of the AviTag/BAP site-specific biotinylation system and of the engineered proximity-labeling ligases BioID (R118G), TurboID and miniTurbo."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]",
+          "[9]",
+          "[10]",
+          "[11]",
+          "[12]",
+          "[13]",
+          "[14]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P06709"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt P06709 (BIRA_ECOLI, Bifunctional ligase/repressor BirA, E. coli K12, reviewed/Swiss-Prot), 100% identity over all 321 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "BirA catalyses biotinylation in two steps: it condenses biotin with ATP to form biotinoyl-5'-AMP, then transfers biotin to a specific lysine of the acceptor substrate; bio-5'-AMP is also the corepressor of the biotin operon.",
+      "value": {
+        "reaction": "biotin + ATP -> biotinoyl-5'-AMP (intermediate held in active site) -> biotin transferred to acceptor lysine",
+        "dual_function": "biotin-protein ligase AND bio-5'-AMP-dependent transcriptional repressor of the biotin biosynthesis operon"
+      },
+      "source": {
+        "pmid": "22412018",
+        "doi": "10.1083/jcb.201112098",
+        "quote": "Biotinylation by BirA is a two-step process. The first of these combines biotin and ATP to form biotinoyl-5'-AMP (bioAMP). This activated biotin is held within the BirA active site until it reacts with a specific lysine residue of the BAT sequence in the second step.",
+        "quote_source": "primary",
+        "section": "Introduction"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "structure",
+      "type": "structure",
+      "label": "BirA is a three-domain protein: an N-terminal alpha-helical helix-turn-helix DNA-binding domain, a central seven-stranded mixed beta-sheet catalytic/active-site domain, and a C-terminal antiparallel beta-sheet domain.",
+      "value": {
+        "n_terminal": "alpha-helical helix-turn-helix DNA-binding domain",
+        "central": "seven-stranded mixed beta-sheet, alpha-helices on one face, solvent-exposed face carries the active site",
+        "c_terminal": "six-stranded antiparallel beta-sheet sandwich",
+        "pdb": "1BIB"
+      },
+      "source": {
+        "pmid": "1409631",
+        "doi": "10.1073/pnas.89.19.9257",
+        "quote": "The structure of BirA is highly asymmetric and consists of three domains. The N-terminal domain is mostly alpha-helical, contains a helix-turn-helix DNA-binding motif... The central domain consists of a seven-stranded mixed beta-sheet with alpha-helices covering one face. The other side of the sheet is largely solvent-exposed and contains the active site. The C-terminal domain comprises a six-stranded, antiparallel beta-sheet sandwich.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "BirA biotinylation is highly specific in eukaryotic cells because endogenous biotinylation is restricted to a few carboxylases; this makes the BirA + acceptor-peptide system functional across mammalian and other heterologous hosts.",
+      "value": {
+        "native_host": "Escherichia coli",
+        "validated_hosts": [
+          "mammalian cells",
+          "yeast",
+          "flies (Drosophila)",
+          "worms (C. elegans)",
+          "bacteria"
+        ],
+        "basis": "background biotinylation is minimal in eukaryotes because biotin is a rare modification"
+      },
+      "source": {
+        "pmid": "22412018",
+        "doi": "10.1083/jcb.201112098",
+        "quote": "Because biotinylation is a rare modification, in mammalian cells it is restricted primarily to only a few carboxylases; BAT-independent binding is minimal.",
+        "quote_source": "primary",
+        "section": "Introduction"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "BirA is the enzyme of the AviTag/BAP site-specific biotinylation system: co-expressed with (or applied to) a fused acceptor peptide, it biotinylates a single lysine, enabling avidin/streptavidin capture, detection, and immobilization.",
+      "value": {
+        "use": "site-specific in vivo or in vitro mono-biotinylation of an acceptor-peptide-tagged protein",
+        "cognate_substrate": "AviTag / biotin acceptor peptide (BAP); 15-aa GLNDIFEAQKIEWHE derived from the 13-residue consensus",
+        "downstream": "avidin/streptavidin affinity capture, detection, immobilization"
+      },
+      "source": {
+        "pmid": "18323822",
+        "doi": "10.1038/nprot.2008.20",
+        "quote": "Established BirA + AviTag (GLNDIFEAQKIEWHE) system for site-specific biotinylation of cell-surface proteins; defines paired use of BirA enzyme with AviTag substrate",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "The R118G mutant (BirA*, used in BioID) is defective in self-association and DNA binding and binds bio-5'-AMP ~100-fold more weakly than wild type, so it prematurely releases reactive bio-5'-AMP and biotinylates neighbouring proteins promiscuously within ~20-30 nm.",
+      "value": {
+        "mutation": "R118G",
+        "name": "BirA* (BioID)",
+        "effect": "promiscuous proximity-dependent biotinylation; ~100-fold reduced bio-5'-AMP affinity; defective self-association and DNA binding",
+        "labeling_radius_nm": "~20-30",
+        "position_verified": "residue 118 is R in this sequence (1-based)"
+      },
+      "source": {
+        "pmid": "22412018",
+        "doi": "10.1083/jcb.201112098",
+        "quote": "One such BirA mutant (R118G, hereafter called BirA*), which is defective in both self-association and DNA binding, displays an affinity for bioAMP two orders of magnitude less than that of the wild-type enzyme... roughly 50% of detected proteins likely reside within ~20-30 nm of the nearest LaA molecule.",
+        "quote_source": "primary",
+        "section": "Introduction / Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant_turboid",
+      "type": "sequence_variant",
+      "label": "TurboID (35 kDa, 15 mutations vs wild-type BirA) and miniTurbo (28 kDa, N-terminal domain aa 1-63 deleted plus 13 mutations) are directed-evolution variants that catalyse proximity labeling far faster than BioID, enabling 10-minute biotin labeling in cells and organisms.",
+      "value": {
+        "TurboID": {
+          "size_kDa": 35,
+          "mutations_vs_WT": 15
+        },
+        "miniTurbo": {
+          "size_kDa": 28,
+          "n_terminal_deletion": "aa 1-63",
+          "mutations_vs_WT": 13
+        },
+        "labeling_time": "~10 minutes",
+        "engineering": "yeast display-based directed evolution"
+      },
+      "source": {
+        "pmid": "30125270",
+        "doi": "10.1038/nbt.4201",
+        "quote": "Our engineering efforts yielded two promiscuous ligases: 35 kD TurboID, with 15 mutations relative to wild-type BirA; and 28 kD miniTurbo, with N-terminal domain deleted and 13 mutations relative to wild-type BirA... enable 10-minute PL in cells with non-toxic and easily deliverable biotin.",
+        "quote_source": "primary",
+        "section": "Abstract / Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "regulation",
+      "type": "regulation",
+      "label": "Holo-BirA (with bound bio-5'-AMP) homodimerizes and binds the 40-bp bioO operator palindrome as a corepressor, repressing the biotin biosynthesis operon; bio-5'-AMP availability sets repressor activity.",
+      "value": {
+        "role": "corepressor-activated transcriptional repressor of the biotin biosynthesis (bio) operon",
+        "operator": "bioO (~40 bp palindrome), bound cooperatively by two holo-BirA monomers",
+        "corepressor": "biotinoyl-5'-AMP (bio-5'-AMP), which drives dimerization required for DNA binding"
+      },
+      "source": {
+        "pmid": "10529178",
+        "quote": "Eisenstein & Beckett (1999): Bio-5'-AMP drives BirA homodimerization; dimerization is prerequisite for DNA operator binding; Abbott & Beckett (1993): cooperative binding of two holoBirA monomers to the 40-bp bioO operator palindrome.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 66,
+      "end": 254,
+      "label": "BPL/LPL catalytic",
+      "so_term": "SO:0000417",
+      "description": "BPL/LPL catalytic",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "binding",
+      "start": 88,
+      "end": 91,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 111,
+      "end": 112,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 115,
+      "end": 118,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 182,
+      "end": 183,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-06-20",
+    "accession": "UniProt:P06709",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 210
+  }
+}

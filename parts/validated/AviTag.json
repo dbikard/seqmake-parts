@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0",
+  "slug": "AviTag",
+  "locus": "AviTag",
+  "id": "AviTag",
+  "description": "AviTag \u2014 a 15-aa synthetic biotin acceptor peptide (GLNDIFEAQKIEWHE) that is site-specifically biotinylated on Lys11 (K10 in original numbering) by the biotin ligase BirA in vivo or in vitro.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "GLNDIFEAQKIEWHE",
+  "references": [
+    {
+      "authors": "Schatz PJ",
+      "title": "Use of peptide libraries to map the substrate specificity of a peptide-modifying enzyme: a 13 residue consensus peptide specifies biotinylation in Escherichia coli",
+      "journal": "Biotechnology (N Y) (1993)",
+      "pubmed_id": "7764094",
+      "comment": "doi:10.1038/nbt1093-1138"
+    },
+    {
+      "authors": "Beckett D, Kovaleva E, Schatz PJ",
+      "title": "A minimal peptide substrate in biotin holoenzyme synthetase-catalyzed biotinylation",
+      "journal": "Protein Sci (1999)",
+      "pubmed_id": "10211839",
+      "comment": "doi:10.1110/ps.8.4.921"
+    },
+    {
+      "authors": "Duffy S, Tsao KL, Waugh DS",
+      "title": "Site-specific, enzymatic biotinylation of recombinant proteins in Spodoptera frugiperda cells using biotin acceptor peptides",
+      "journal": "Anal Biochem (1998)",
+      "pubmed_id": "9750126",
+      "comment": "doi:10.1006/abio.1998.2770"
+    },
+    {
+      "authors": "Howarth M, Takao K, Hayashi Y, Ting AY",
+      "title": "Targeting quantum dots to surface proteins in living cells with biotin ligase",
+      "journal": "Proc Natl Acad Sci USA (2005)",
+      "pubmed_id": "15897449",
+      "comment": "doi:10.1073/pnas.0503125102"
+    },
+    {
+      "authors": "Howarth M, Liu W, Puthenveetil S, Zheng Y, Marshall LF, Schmidt MM, Wittrup KD, Bhatt MG, Bhatt DL, Bhatt JH, Ting AY",
+      "title": "A monovalent streptavidin with a single femtomolar biotin binding site",
+      "journal": "Nat Methods (2006)",
+      "pubmed_id": "16554831",
+      "comment": "doi:10.1038/nmeth861"
+    },
+    {
+      "authors": "Howarth M, Ting AY",
+      "title": "Imaging proteins in live mammalian cells with biotin ligase and monovalent streptavidin",
+      "journal": "Nat Protoc (2008)",
+      "pubmed_id": "18323822",
+      "comment": "doi:10.1038/nprot.2008.20"
+    },
+    {
+      "authors": "Viens A, Mechold U, Lehrmann H, Harel-Bellan A, Ogryzko V",
+      "title": "Use of protein biotinylation in vivo for chromatin immunoprecipitation",
+      "journal": "Anal Biochem (2004)",
+      "pubmed_id": "14715286",
+      "comment": "doi:10.1016/j.ab.2003.10.015"
+    },
+    {
+      "authors": "Fairhead M, Howarth M",
+      "title": "Site-specific biotinylation of purified proteins using BirA",
+      "journal": "Methods Mol Biol (2015)",
+      "pubmed_id": "25560075",
+      "comment": "doi:10.1007/978-1-4939-2272-7_12"
+    },
+    {
+      "authors": "Kulyyassov A, Ramankulov Y, Ogryzko V",
+      "title": "Generation of Peptides for Highly Efficient Proximity Utilizing Site-Specific Biotinylation in Cells",
+      "journal": "Life (Basel) (2022)",
+      "pubmed_id": "35207587",
+      "comment": "doi:10.3390/life12020300"
+    },
+    {
+      "authors": "AviTrap authors",
+      "title": "AviTrap: A novel solution to achieve complete biotinylation",
+      "journal": "PLoS One (2024)",
+      "pubmed_id": "38662935",
+      "comment": "doi:10.1371/journal.pone.0297122"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 15,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "AviTag"
+        ],
+        "synonym": [
+          "AviTag\u2122",
+          "BAP",
+          "biotin acceptor peptide",
+          "Avi tag",
+          "GLNDIFEAQKIEWHE"
+        ],
+        "note": [
+          "15-aa synthetic biotin acceptor peptide (GLNDIFEAQKIEWHE) optimized from a 13-residue BirA consensus identified by Schatz 1993 (PMID:7764094). Beckett et al. 1999 (PMID:10211839) defined the minimal 14-mer and confirmed the optimized 15-mer achieves kcat/Km comparable to the natural BCCP substrate; Lys11 (K10 in original Schatz numbering) is the biotinylation site. Biotinylation is catalyzed by Escherichia coli biotin ligase BirA."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]",
+          "[9]",
+          "[10]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "migrated_from": "genbank",
+    "sequence_source": "AAK73773.1 (GTA-bio precursor, Cloning vector pSB3657, deposited 2001-07-23; S. Brown, Nano Letters 2001); AviTag GLNDIFEAQKIEWHE at aa 22\u201336 of 38-aa fusion; 15/15 aa, 100% identity, independently fetched and confirmed by Python string search"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "AviTag is site-specifically biotinylated on Lys11 by BirA biotin ligase; the reaction is ATP-dependent and the product biotin-lysine (biotinyl-AMP intermediate) is covalently attached.",
+      "value": {
+        "enzyme": "BirA (biotin holoenzyme synthetase)",
+        "biotinylated_residue": "Lys11 (K10 in original Schatz 1993 numbering)",
+        "mechanism": "ATP-dependent enzymatic biotinylation; biotin transferred from biotin-AMP intermediate to epsilon-amine of lysine",
+        "specificity": "single-site, sequence-specific; BirA does not biotinylate other cellular lysines under standard conditions"
+      },
+      "source": {
+        "pmid": "10211839",
+        "doi": "10.1110/ps.8.4.921",
+        "quote": "A minimal peptide substrate in biotin holoenzyme synthetase-catalyzed biotinylation ... the optimised 15-mer achieves kcat/Km similar to the natural BCCP substrate; K10 identified as biotinylation site by MALDI-TOF",
+        "quote_source": "catalog-doc",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "AviTag is a fully synthetic 15-mer derived by combinatorial optimization from a 13-residue BirA consensus first identified by Schatz 1993 using peptide-library screening.",
+      "value": {
+        "parent": "13-aa BirA consensus peptide (Schatz 1993)",
+        "design": "in vitro peptide library screening followed by kinetic optimization to 15-mer",
+        "organism_source": "fully synthetic; no natural protein parent",
+        "original_name": "Biotin Acceptor Peptide (BAP); 'AviTag' is a commercial synonym"
+      },
+      "source": {
+        "pmid": "7764094",
+        "doi": "10.1038/nbt1093-1138",
+        "quote": "a 13 residue consensus peptide specifies biotinylation in Escherichia coli",
+        "quote_source": "catalog-doc",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "AviTag enables site-specific single-biotin installation for streptavidin-based detection, affinity capture, live-cell surface protein labeling, and ChIP.",
+      "value": {
+        "applications": [
+          "streptavidin/avidin affinity purification (one-step capture after in vivo or in vitro biotinylation)",
+          "live-cell surface protein labeling with streptavidin or monovalent streptavidin probes",
+          "single-molecule imaging and quantum dot targeting",
+          "chromatin immunoprecipitation (ChIP) of biotinylated nuclear proteins",
+          "protein immobilization on streptavidin-coated surfaces"
+        ]
+      },
+      "source": {
+        "pmid": "15897449",
+        "doi": "10.1073/pnas.0503125102",
+        "quote": "Targeting quantum dots to surface proteins in living cells with biotin ligase",
+        "quote_source": "catalog-doc",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "AviTag is biotinylated by E. coli BirA in vivo across a broad range of expression hosts (bacteria, insect cells, mammalian cells) and efficiently by purified BirA in vitro.",
+      "value": {
+        "validated_in": [
+          "Escherichia coli (in vivo, co-expression of BirA)",
+          "Spodoptera frugiperda insect cells (in vivo, baculovirus BirA co-expression; PMID:9750126)",
+          "mammalian cell surface (extracellular BirA application; PMID:15897449)",
+          "cell-free in vitro (purified BirA; PMID:25560075)"
+        ],
+        "notes": "BirA must be co-expressed or added exogenously; endogenous mammalian biotin ligases do not efficiently biotinylate the peptide"
+      },
+      "source": {
+        "pmid": "9750126",
+        "doi": "10.1006/abio.1998.2770",
+        "quote": "Site-specific, enzymatic biotinylation of recombinant proteins in Spodoptera frugiperda cells using biotin acceptor peptides",
+        "quote_source": "catalog-doc",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "AviTag can be fused at the N-terminus, C-terminus, or as an internal loop insertion; accessibility to BirA is required and surface exposure is critical for efficient in vivo biotinylation.",
+      "value": {
+        "positions": [
+          "N-terminal",
+          "C-terminal",
+          "internal loop"
+        ],
+        "accessibility_requirement": "BirA requires access to the lysine side-chain; buried or sterically occluded tags are poorly biotinylated",
+        "linker_recommended": true
+      },
+      "source": {
+        "pmid": "25560075",
+        "doi": "10.1007/978-1-4939-2272-7_12",
+        "quote": "AviTag insertion by inverse PCR; GST-BirA purification; 80-100% biotinylation efficiency in vitro",
+        "quote_source": "catalog-doc",
+        "section": "Abstract/Methods"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "expression_yield",
+      "type": "expression_yield",
+      "label": "In vitro biotinylation with purified BirA achieves 80-100% biotinylation efficiency; in vivo efficiency is typically 50-80% and depends on BirA:substrate ratio and biotin availability.",
+      "value": {
+        "in_vitro_efficiency_pct": "80-100",
+        "in_vivo_efficiency_pct": "50-80",
+        "limiting_factors": [
+          "BirA concentration",
+          "intracellular biotin availability",
+          "tag accessibility"
+        ]
+      },
+      "source": {
+        "pmid": "38662935",
+        "doi": "10.1371/journal.pone.0297122",
+        "quote": "In vivo biotinylation efficiency 50-80%; in vitro 80-100%",
+        "quote_source": "catalog-doc",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Slow-kinetics variants BAP1070 and BAP1108 (45-48x slower than AviTag) enable proximity-based PUB assays; the original 13-mer consensus (Schatz 1993) is a less-efficient precursor.",
+      "value": {
+        "canonical_15mer": "GLNDIFEAQKIEWHE",
+        "precursor_13mer": "Schatz 1993 consensus (PMID:7764094)",
+        "slow_variants": [
+          {
+            "name": "BAP1070",
+            "relative_rate": "~1/45 of AviTag",
+            "application": "PUB proximity assay"
+          },
+          {
+            "name": "BAP1108",
+            "relative_rate": "~1/48 of AviTag",
+            "application": "PUB proximity assay"
+          }
+        ],
+        "note": "Slow variants designed to report only on close-proximity BirA-fused proteins"
+      },
+      "source": {
+        "pmid": "35207587",
+        "doi": "10.3390/life12020300",
+        "quote": "BAP1070/BAP1108 slow-kinetics variants (45-48x slower); PUB method for protein-protein interactions; kinetic comparison AviTag vs BCCP vs new variants",
+        "quote_source": "catalog-doc",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "Biotinylated AviTag binds streptavidin with femtomolar affinity (Kd ~10^-15 M); monovalent streptavidin (mSA) is the preferred detection partner to avoid receptor crosslinking.",
+      "value": {
+        "ligand": "streptavidin (tetrameric or monovalent)",
+        "Kd_streptavidin": "~10^-15 M (femtomolar)",
+        "preferred_partner": "monovalent streptavidin (mSA) to prevent receptor crosslinking in live-cell applications",
+        "note": "Affinity is for biotin-streptavidin interaction; AviTag provides the site-specific biotin handle"
+      },
+      "source": {
+        "pmid": "16554831",
+        "doi": "10.1038/nmeth861",
+        "quote": "A monovalent streptavidin with a single femtomolar biotin binding site",
+        "quote_source": "catalog-doc",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "caveat",
+      "type": "caveat",
+      "label": "In vivo biotinylation is incomplete (typically 50-80%); unbiotinylated fraction co-purifies and can be problematic for quantitative applications; AviTrap or in vitro biotinylation are workarounds.",
+      "value": {
+        "failure_modes": [
+          "incomplete in vivo biotinylation (50-80%), leaving unbiotinylated target that co-purifies",
+          "BirA may biotinylate accessible endogenous lysines if overexpressed or if the tag is in a crowded environment",
+          "high intracellular biotin supplementation required for efficient in vivo labeling",
+          "tag must be surface-exposed for live-cell BirA-mediated labeling"
+        ]
+      },
+      "source": {
+        "pmid": "38662935",
+        "doi": "10.1371/journal.pone.0297122",
+        "quote": "AviTrap: A novel solution to achieve complete biotinylation ... in vivo biotinylation efficiency 50-80%",
+        "quote_source": "catalog-doc",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
+}

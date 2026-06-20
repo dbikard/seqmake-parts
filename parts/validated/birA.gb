@@ -1,0 +1,185 @@
+LOCUS       birA                     321 aa                     UNK 01-JAN-1980
+DEFINITION  birA — E. coli bifunctional biotin-protein ligase / biotin-operon
+            repressor (BirA, UniProt P06709), 321 aa; the parent enzyme of the
+            AviTag biotinylation system and of the BioID/TurboID
+            proximity-labeling ligases..
+ACCESSION   birA
+VERSION     birA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Barker DF, Campbell AM
+  TITLE     The birA gene of Escherichia coli encodes a biotin holoenzyme
+            synthetase
+  JOURNAL   J Mol Biol (1981)
+   PUBMED   7024555
+REFERENCE   2
+  AUTHORS   Barker DF, Campbell AM
+  TITLE     Genetic and biochemical characterization of the birA gene and its
+            product: evidence for a direct role of biotin holoenzyme synthetase
+            in repression of the biotin operon in Escherichia coli
+  JOURNAL   J Mol Biol (1981)
+   PUBMED   6456358
+REFERENCE   3
+  AUTHORS   Howard PK, Shaw J, Otsuka AJ
+  TITLE     Nucleotide sequence of the birA gene encoding the biotin operon
+            repressor and biotin holoenzyme synthetase functions of Escherichia
+            coli
+  JOURNAL   Gene (1985)
+   PUBMED   3899863
+REFERENCE   4
+  AUTHORS   Wilson KP, Shewchuk LM, Brennan RG, Otsuka AJ, Matthews BW
+  TITLE     Escherichia coli biotin holoenzyme synthetase/bio repressor crystal
+            structure delineates the biotin- and DNA-binding domains
+  JOURNAL   Proc Natl Acad Sci USA (1992)
+   PUBMED   1409631
+  REMARK    doi:10.1073/pnas.89.19.9257
+REFERENCE   5
+  AUTHORS   Xu Y, Beckett D
+  TITLE     Evidence for interdomain interaction in the Escherichia coli
+            repressor of biotin biosynthesis from studies of an N-terminal
+            domain deletion mutant
+  JOURNAL   Biochemistry (1996)
+   PUBMED   8639659
+REFERENCE   6
+  AUTHORS   Nenortas E, Beckett D
+  TITLE     Purification and characterization of intact and truncated forms of
+            the Escherichia coli biotin holoenzyme synthetase/biotin operon
+            repressor
+  JOURNAL   Protein Sci (2001)
+   PUBMED   11714929
+  REMARK    doi:10.1110/ps.22401
+REFERENCE   7
+  AUTHORS   Lim KH, Huang H, Pralle A, Park S
+  TITLE     The wing of a winged helix-turn-helix transcription factor organizes
+            the active site of BirA, a bifunctional repressor/ligase
+  JOURNAL   J Biol Chem (2014)
+   PUBMED   24189073
+  REMARK    doi:10.1074/jbc.M113.525618
+REFERENCE   8
+  AUTHORS   Abbott J, Beckett D
+  TITLE     Cooperative binding of the Escherichia coli repressor of biotin
+            biosynthesis to the biotin operator sequence
+  JOURNAL   Biochemistry (1993)
+   PUBMED   9485476
+  REMARK    doi:10.1021/bi9715019
+REFERENCE   9
+  AUTHORS   Eisenstein E, Beckett D
+  TITLE     Dimerization of the Escherichia coli biotin repressor: corepressor
+            function in protein assembly
+  JOURNAL   Biochemistry (1999)
+   PUBMED   10529178
+REFERENCE   10
+  AUTHORS   Schatz PJ
+  TITLE     Use of peptide libraries to map the substrate specificity of a
+            peptide-modifying enzyme: a 13 residue consensus peptide specifies
+            biotinylation in Escherichia coli
+  JOURNAL   Biotechnology (N Y) (1993)
+   PUBMED   7764094
+  REMARK    doi:10.1038/nbt1093-1138
+REFERENCE   11
+  AUTHORS   Howarth M, Ting AY
+  TITLE     Imaging proteins in live mammalian cells with biotin ligase and
+            monovalent streptavidin
+  JOURNAL   Nat Protoc (2008)
+   PUBMED   18323822
+  REMARK    doi:10.1038/nprot.2008.20
+REFERENCE   12
+  AUTHORS   Roux KJ, Kim DI, Raida M, Burke B
+  TITLE     A promiscuous biotin ligase fusion protein identifies proximal and
+            interacting proteins in mammalian cells
+  JOURNAL   J Cell Biol (2012)
+   PUBMED   22412018
+  REMARK    doi:10.1083/jcb.201112098
+REFERENCE   13
+  AUTHORS   Branon TC, Bosch JA, Sanchez AD, Udeshi ND, Svinkina T, Carr SA,
+            Feldman JL, Perrimon N, Ting AY
+  TITLE     Efficient proximity labeling in living cells and organisms with
+            TurboID
+  JOURNAL   Nat Biotechnol (2018)
+   PUBMED   30125270
+  REMARK    doi:10.1038/nbt.4201
+REFERENCE   14
+  AUTHORS   Hwang J, Bhatt DK, Bhatt S, Bhatt P
+  TITLE     Altered Regulation of Escherichia coli Biotin Biosynthesis in BirA
+            Superrepressor Mutant Strains
+  JOURNAL   J Bacteriol (2012)
+   PUBMED   22210766
+  REMARK    doi:10.1128/jb.06549-11
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/birA
+FEATURES             Location/Qualifiers
+     CDS             1..321
+                     /label="birA"
+                     /synonym="BirA"
+                     /synonym="biotin--protein ligase"
+                     /synonym="biotin protein ligase"
+                     /synonym="biotin ligase"
+                     /synonym="BPL"
+                     /note="Bifunctional biotin-[acetyl-CoA-carboxylase] ligase
+                     / biotin-operon repressor (BirA), E. coli K12; UniProt
+                     P06709, 321 aa, ~35.3 kDa. Three-domain architecture: an
+                     N-terminal winged helix-turn-helix DNA-binding domain, a
+                     central catalytic domain (seven-stranded mixed beta-sheet
+                     bearing the active site and the biotin-binding GRGRRG loop,
+                     here at residues 115-120, 1-based), and a C-terminal
+                     antiparallel beta-sheet domain. Catalyses biotinylation in
+                     two steps: biotin + ATP -> biotinoyl-5'-AMP, then transfer
+                     of biotin to a specific lysine of the acceptor substrate.
+                     Bio-5'-AMP also acts as corepressor, driving
+                     homodimerization and sequence-specific binding to the bioO
+                     operator to repress the biotin biosynthesis operon. Parent
+                     enzyme of the AviTag/BAP site-specific biotinylation system
+                     and of the engineered proximity-labeling ligases BioID
+                     (R118G), TurboID and miniTurbo."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /citation=[9]
+                     /citation=[10]
+                     /citation=[11]
+                     /citation=[12]
+                     /citation=[13]
+                     /citation=[14]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P06709"
+     protein_domain  67..254
+                     /label="BPL/LPL catalytic"
+                     /parent="birA"
+                     /note="source: UniProt:P06709"
+                     /db_xref="SO:0000417"
+     binding         89..91
+                     /label="Binding site"
+                     /parent="birA"
+                     /note="source: UniProt:P06709"
+                     /db_xref="SO:0000409"
+     binding         112
+                     /label="Binding site"
+                     /parent="birA"
+                     /note="source: UniProt:P06709"
+                     /db_xref="SO:0000409"
+     binding         116..118
+                     /label="Binding site"
+                     /parent="birA"
+                     /note="source: UniProt:P06709"
+                     /db_xref="SO:0000409"
+     binding         183
+                     /label="Binding site"
+                     /parent="birA"
+                     /note="source: UniProt:P06709"
+                     /db_xref="SO:0000409"
+ORIGIN
+        1 mkdntvplkl iallangefh sgeqlgetlg msraainkhi qtlrdwgvdv ftvpgkgysl
+       61 pepiqllnak qilgqldggs vavlpvidst nqylldrige lksgdaciae yqqagrgrrg
+      121 rkwfspfgan lylsmfwrle qgpaaaigls lvigivmaev lrklgadkvr vkwpndlylq
+      181 drklagilve ltgktgdaaq ivigaginma mrrveesvvn qgwitlqeag inldrntlaa
+      241 mlirelraal elfeqeglap ylsrwekldn finrpvklii gdkeifgisr gidkqgalll
+      301 eqdgiikpwm ggeislrsae k
+//

@@ -1,0 +1,81 @@
+LOCUS       SpyTag                    13 aa            linear   UNK 01-JAN-1980
+DEFINITION  SpyTag — 13-aa peptide (AHIVMVDAYKPTK) from the CnaB2 domain of S.
+            pyogenes FbaB that forms a spontaneous, irreversible isopeptide bond
+            to its protein partner SpyCatcher..
+ACCESSION   SpyTag
+VERSION     SpyTag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT,
+            Howarth M
+  TITLE     Peptide tag forming a rapid covalent bond to a protein, through
+            engineering a bacterial adhesin
+  JOURNAL   Proc Natl Acad Sci U S A (2012)
+   PUBMED   22366317
+  REMARK    doi:10.1073/pnas.1115485109
+REFERENCE   2
+  AUTHORS   Li L, Fierer JO, Rapoport TA, Howarth M
+  TITLE     Structural analysis and optimization of the covalent association
+            between SpyCatcher and a peptide Tag
+  JOURNAL   Journal of Molecular Biology (2014)
+   PUBMED   24161952
+  REMARK    doi:10.1016/j.jmb.2013.10.021
+REFERENCE   3
+  AUTHORS   Keeble AH, Banerjee A, Ferla MP, Reddington SC, Anuar INAK, Howarth
+            M
+  TITLE     Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze
+            Membrane Dynamics
+  JOURNAL   Angewandte Chemie International Edition (2017)
+   PUBMED   29024296
+  REMARK    doi:10.1002/anie.201707623
+REFERENCE   4
+  AUTHORS   Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R,
+            Hytönen VP, Howarth M
+  TITLE     Approaching infinite affinity through engineering of peptide-protein
+            interaction
+  JOURNAL   Proc Natl Acad Sci U S A (2019)
+   PUBMED   31822621
+  REMARK    doi:10.1073/pnas.1909653116
+REFERENCE   5
+  AUTHORS   Hatlem D, Trunk T, Linke D, Leo JC
+  TITLE     Catching a SPY: Using the SpyCatcher-SpyTag and Related Systems for
+            Labeling and Localizing Bacterial Proteins
+  JOURNAL   International Journal of Molecular Sciences (2019)
+   PUBMED   31052154
+  REMARK    doi:10.3390/ijms20092129
+REFERENCE   6
+  AUTHORS   Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang
+            J, Bon RS, Howarth M
+  TITLE     DogCatcher allows loop-friendly protein-protein ligation
+  JOURNAL   Cell Chemical Biology (2021)
+   PUBMED   34324879
+  REMARK    doi:10.1016/j.chembiol.2021.07.005
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SpyTag
+FEATURES             Location/Qualifiers
+     protein_domain  1..13
+                     /label="SpyTag"
+                     /synonym="SpyTag001"
+                     /synonym="AHIVMVDAYKPTK"
+                     /note="13-aa peptide tag (AHIVMVDAYKPTK) engineered by
+                     splitting the CnaB2 immunoglobulin-like domain of
+                     Streptococcus pyogenes fibronectin-binding protein FbaB
+                     (UniProt Q6A1F3, residues 550-562). On mixing with its
+                     116-aa protein partner SpyCatcher, the tag's Asp7
+                     spontaneously forms an intermolecular isopeptide (amide)
+                     bond to Lys31 of SpyCatcher, catalysed by SpyCatcher Glu77,
+                     yielding an irreversible covalent linkage. Fusable at
+                     N-terminus, C-terminus, or internally."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 ahivmvdayk ptk
+//
