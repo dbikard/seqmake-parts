@@ -876,6 +876,73 @@ def build_agent_index(manifest: dict) -> dict:
     }
 
 
+# Display order for the landing page's type facets, keyed on the GenBank
+# feature_type the records use (the same keys overrides/home.html colours by).
+_HOME_TYPE_ORDER = [
+    "promoter", "RBS", "protein_bind", "CDS", "protein_domain",
+    "terminator", "rep_origin", "oriT", "misc_RNA", "misc_feature",
+]
+
+
+def build_parts_index(manifest: dict) -> dict:
+    """The client-side search/browse index for the redesigned landing page
+    (``overrides/home.html`` fetches ``parts_index.json`` at runtime). A
+    projection of the manifest: every part trimmed to what the home page needs
+    to search, facet, sort and preview (name / synonyms / type / status / size /
+    collections / regulation / claim counts), plus per-type counts for the facet
+    rail. Projected from the manifest, so it can never disagree with
+    catalog.json."""
+    cid_name = {c["id"]: c["name"] for c in manifest["collections"]}
+
+    def _names(refs):
+        return [r.get("name") if isinstance(r, dict) else r for r in (refs or [])]
+
+    parts = []
+    for p in manifest["parts"]:
+        fcs = p.get("functional_claims", []) or []
+        parts.append({
+            "name": p["name"], "slug": p["slug"], "type": p["feature_type"],
+            "so_name": p.get("so_name"), "so_term": p.get("so_term"),
+            "kind": p.get("kind"), "status": p.get("status"),
+            "documented": bool(p.get("documented")),
+            "len": p.get("length"), "aa": p.get("protein_length_aa"),
+            "syn": p.get("synonyms") or [], "desc": p.get("description") or "",
+            "cols": [cid_name.get(c, c) for c in (p.get("collections") or [])],
+            "acc": p.get("source_accession") or "",
+            "tf": _names(p.get("regulated_by")), "regs": _names(p.get("regulates")),
+            "nclaims": len(fcs),
+            "claim_types": sorted({fc.get("type") for fc in fcs if fc.get("type")}),
+            "review": sorted({fc.get("review_status") for fc in fcs
+                              if fc.get("review_status")}),
+            "nrefs": len(p.get("references") or []),
+            "uniprot": (p.get("uniprot_import") or {}).get("accession"),
+        })
+
+    types: dict[str, dict] = {}
+    for p in manifest["parts"]:
+        e = types.setdefault(p["feature_type"], {
+            "type": p["feature_type"], "so_name": p.get("so_name"),
+            "so_term": p.get("so_term"), "total": 0, "validated": 0})
+        e["total"] += 1
+        e["validated"] += p.get("status") == "validated"
+    order = {t: i for i, t in enumerate(_HOME_TYPE_ORDER)}
+    types_list = sorted(types.values(), key=lambda e: order.get(e["type"], 99))
+
+    return {
+        "meta": {
+            "n_parts": manifest["n_parts"], "n_validated": manifest["n_validated"],
+            "n_candidate": manifest["n_candidate"],
+            "n_documented": manifest["n_documented"],
+            "n_claims": manifest["n_functional_claims"],
+            "schema_version": manifest["schema_version"],
+        },
+        "types": types_list,
+        "collections": [{"id": c["id"], "name": c["name"], "n_parts": c["n_parts"]}
+                        for c in manifest["collections"]],
+        "parts": parts,
+    }
+
+
 def render_llms_txt(manifest: dict) -> str:
     """The /llms.txt entry point (an emerging convention): a short, plain-text
     orientation for LLM agents -- what this is, the trust caveat, and the few
@@ -1027,8 +1094,16 @@ def main() -> None:
             shutil.rmtree(d)
     FILES_DIR.mkdir(parents=True, exist_ok=True)
     TYPES_PAGES.mkdir(parents=True, exist_ok=True)
+    # The landing page is rendered by the custom standalone template
+    # overrides/home.html (set via front-matter); index.md stays a real page so
+    # the nav, in-site back-links, and the link guard keep working. The home
+    # template fetches parts_index.json (the client-side search/browse index).
     (DOCS_DIR / "index.md").write_text(
-        render_index(grouped, manifest["n_validated"], n_candidate, coll_summary),
+        "---\ntemplate: home.html\n---\n\n"
+        + render_index(grouped, manifest["n_validated"], n_candidate, coll_summary),
+        encoding="utf-8")
+    (DOCS_DIR / "parts_index.json").write_text(
+        json.dumps(build_parts_index(manifest), separators=(",", ":")) + "\n",
         encoding="utf-8")
     TAGS_FILE.write_text(render_tags_page(), encoding="utf-8")
     for (key, label), ps in grouped:

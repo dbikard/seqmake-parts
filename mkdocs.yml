@@ -4,6 +4,11 @@ docs_dir: docs
 
 theme:
   name: material
+  # The landing page (docs/index.md) sets `template: home.html`, a standalone
+  # custom template here that renders the redesigned, data-driven catalog home
+  # (it fetches the generated docs/parts_index.json). All other pages use the
+  # stock Material theme. See tools/build_catalog.py.
+  custom_dir: overrides
   features:
     - search.suggest
     - search.highlight
