@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 256,
-  "n_validated": 51,
+  "n_parts": 259,
+  "n_validated": 54,
   "n_candidate": 205,
-  "n_functional_claims": 134,
+  "n_functional_claims": 157,
   "parts": [
     {
       "slug": "186_integrase",
@@ -1798,6 +1798,22 @@
       ]
     },
     {
+      "slug": "MBP",
+      "name": "MBP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 9,
+      "synonyms": [
+        "malE",
+        "MalE",
+        "maltose-binding protein",
+        "maltose/maltodextrin-binding protein"
+      ]
+    },
+    {
       "slug": "mCherry",
       "name": "mCherry",
       "feature_type": "CDS",
@@ -1887,6 +1903,21 @@
         "Nme2Cas9",
         "cas9 NMV_RS09835",
         "NmeCas9"
+      ]
+    },
+    {
+      "slug": "NusA",
+      "name": "NusA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 7,
+      "synonyms": [
+        "nusA",
+        "N-utilization substance protein A",
+        "transcription termination/antitermination protein NusA"
       ]
     },
     {
@@ -3735,6 +3766,23 @@
         "Trp1",
         "N-(5'-phosphoribosyl)anthranilate isomerase",
         "PRAI"
+      ]
+    },
+    {
+      "slug": "Trx_tag",
+      "name": "Trx_tag",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 7,
+      "synonyms": [
+        "trxA",
+        "thioredoxin",
+        "thioredoxin-1",
+        "Trx",
+        "Trx-tag"
       ]
     },
     {

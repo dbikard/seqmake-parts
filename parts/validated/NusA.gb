@@ -1,0 +1,124 @@
+LOCUS       NusA                     495 aa            linear   UNK 01-JAN-1980
+DEFINITION  NusA (N-utilization substance protein A), E. coli K-12 transcription
+            elongation factor and solubility-enhancing fusion tag, 495 aa,
+            UniProt P0AFF6.
+ACCESSION   NusA
+VERSION     NusA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Greenblatt J, Li J
+  TITLE     Interaction of the sigma factor and the nusA gene protein of E. coli
+            with RNA polymerase in the initiation-termination cycle of
+            transcription
+  JOURNAL   Cell (1981)
+   PUBMED   6263495
+  REMARK    doi:10.1016/0092-8674(81)90332-9
+REFERENCE   2
+  AUTHORS   De Marco V, Stier G, Blandin S, de Marco A
+  TITLE     The solubility and stability of recombinant proteins are increased
+            by their fusion to NusA
+  JOURNAL   Biochem Biophys Res Commun (2004)
+   PUBMED   15336530
+  REMARK    doi:10.1016/j.bbrc.2004.07.189
+REFERENCE   3
+  AUTHORS   Nallamsetty S, Waugh DS
+  TITLE     Solubility-enhancing proteins MBP and NusA play a passive role in
+            the folding of their fusion partners
+  JOURNAL   Protein Expr Purif (2006)
+   PUBMED   16168669
+  REMARK    doi:10.1016/j.pep.2005.06.012
+REFERENCE   4
+  AUTHORS   de Marco A
+  TITLE     Two-step metal affinity purification of double-tagged (NusA-His6)
+            fusion proteins
+  JOURNAL   Nat Protoc (2006)
+   PUBMED   17406446
+  REMARK    doi:10.1038/nprot.2006.289
+REFERENCE   5
+  AUTHORS   Raran-Kurussi S, Waugh DS
+  TITLE     Unrelated solubility-enhancing fusion partners MBP and NusA utilize
+            a similar mode of action
+  JOURNAL   Biotechnol Bioeng (2014)
+   PUBMED   24942647
+  REMARK    doi:10.1002/bit.25317
+REFERENCE   6
+  AUTHORS   Ha KS, Toulokhonov I, Vassylyev DG, Landick R
+  TITLE     The NusA N-terminal domain is necessary and sufficient for
+            enhancement of transcriptional pausing via interaction with the RNA
+            exit channel of RNA polymerase
+  JOURNAL   J Mol Biol (2010)
+   PUBMED   20600118
+  REMARK    doi:10.1016/j.jmb.2010.06.036
+REFERENCE   7
+  AUTHORS   Li K, Jiang T, Yu B, Wang L, Gao C, Ma C, Xu P, Ma Y
+  TITLE     Escherichia coli transcription termination factor NusA: heat-induced
+            oligomerization and chaperone activity
+  JOURNAL   Sci Rep (2013)
+   PUBMED   23907089
+  REMARK    doi:10.1038/srep02347
+REFERENCE   8
+  AUTHORS   Belogurov GA, Artsimovitch I
+  TITLE     The role of E. coli Nus-factors in transcription regulation and
+            transcription:translation coupling: From structure to mechanism
+  JOURNAL   Transcription (2011)
+   PUBMED   21922055
+  REMARK    doi:10.4161/trns.2.3.15671
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/NusA
+FEATURES             Location/Qualifiers
+     CDS             1..495
+                     /label="NusA"
+                     /synonym="nusA"
+                     /synonym="N-utilization substance protein A"
+                     /synonym="transcription termination/antitermination protein
+                     NusA"
+                     /note="E. coli K-12 NusA (N-utilization substance protein
+                     A), 495 aa, UniProt P0AFF6. Essential transcription
+                     elongation factor that enhances transcriptional pausing and
+                     intrinsic termination; displaced from RNAP by sigma at
+                     initiation. Multi-domain architecture: NTD (aa 1–137,
+                     interacts with RNAP beta-flap tip helix), S1 RNA-binding
+                     domain, KH RNA-binding domain, AR1 (interacts with
+                     bacteriophage lambda N antiterminator), AR2
+                     (autoinhibitory). Also widely deployed as an N-terminal
+                     solubility-enhancing fusion tag in recombinant protein
+                     expression."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0AFF6"
+     protein_domain  135..200
+                     /label="S1 motif"
+                     /parent="NusA"
+                     /note="source: UniProt:P0AFF6"
+                     /db_xref="SO:0000417"
+     protein_domain  230..293
+                     /label="KH 1"
+                     /parent="NusA"
+                     /note="source: UniProt:P0AFF6"
+                     /db_xref="SO:0000417"
+     protein_domain  302..368
+                     /label="KH 2"
+                     /parent="NusA"
+                     /note="source: UniProt:P0AFF6"
+                     /db_xref="SO:0000417"
+ORIGIN
+        1 mnkeilavve avsnekalpr ekifealesa latatkkkye qeidvrvqid rksgdfdtfr
+       61 rwlvvdevtq ptkeitleaa ryedeslnlg dyvedqiesv tfdrittqta kqvivqkvre
+      121 aeramvvdqf rehegeiitg vvkkvnrdni sldlgnnaea vilredmlpr enfrpgdrvr
+      181 gvlysvrpea rgaqlfvtrs kpemlielfr ievpeigeev ieikaaardp gsrakiavkt
+      241 ndkridpvga cvgmrgarvq avstelgger idivlwddnp aqfvinamap advasivvde
+      301 dkhtmdiave agnlaqaigr ngqnvrlasq lsgwelnvmt vddlqakhqa eahaaidtft
+      361 kyldidedfa tvlveegfst leelayvpmk elleieglde ptvealrera knalatiaqa
+      421 qeeslgdnkp addllnlegv drdlafklaa rgvctledla eqgiddladi egltdekaga
+      481 limaarnicw fgdea
+//

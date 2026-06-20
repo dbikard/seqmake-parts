@@ -9,11 +9,11 @@
 > agent can weigh and cite it rather than assert it.
 
 CAVEAT: this is an AI-generated knowledge base under active development. All
-256 records are currently review_status = "ai-generated" and have not
+259 records are currently review_status = "ai-generated" and have not
 been expert-reviewed. Treat claims as a grounded starting point and VERIFY
 against the cited primary literature before relying on them.
 
-Contents: 256 parts (51 validated, 205 candidate) carrying 134 functional claims.
+Contents: 259 parts (54 validated, 205 candidate) carrying 157 functional claims.
 
 ## For agents: where to start
 

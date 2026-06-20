@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 256,
-  "n_validated": 51,
+  "n_parts": 259,
+  "n_validated": 54,
   "n_candidate": 205,
-  "n_documented": 51,
-  "n_functional_claims": 134,
+  "n_documented": 54,
+  "n_functional_claims": 157,
   "parts": [
     {
       "name": "186 integrase",
@@ -6688,6 +6688,355 @@
       "functional_claims": []
     },
     {
+      "name": "MBP",
+      "slug": "MBP",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P0AEX9",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "malE",
+        "MalE",
+        "maltose-binding protein",
+        "maltose/maltodextrin-binding protein"
+      ],
+      "collections": [],
+      "description": "Maltose/maltodextrin-binding periplasmic protein precursor (MalE / MBP), E. coli K12 malE; UniProt P0AEX9, 396 aa. As stored this is the full PRECURSOR: an N-terminal 26-aa signal peptide (aa 1-26) followed by the 370-aa mature protein (aa 27-396). Periplasmic maltose/maltodextrin transport component; widely re-purposed as an N-terminal fusion partner that strongly enhances soluble expression of its passenger and binds amylose resin (eluted with maltose) for affinity purification.",
+      "length": 396,
+      "protein_length_aa": 396,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Signal",
+          "feature_type": "sig_peptide",
+          "so_term": "SO:0000418",
+          "so_name": "signal_peptide",
+          "start": 0,
+          "end": 26,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Duplay P, Bedouelle H, Fowler A, Zabin I, Saurin W, Hofnung M",
+          "title": "Sequences of the malE gene and of its product, the maltose-binding protein of Escherichia coli K12.",
+          "journal": "J Biol Chem (1984)",
+          "pmid": "6088507",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6088507/"
+        },
+        {
+          "authors": "di Guan C, Li P, Riggs PD, Inouye H",
+          "title": "Vectors that facilitate the expression and purification of foreign peptides in Escherichia coli by fusion to maltose-binding protein.",
+          "journal": "Gene (1988)",
+          "pmid": "2843437",
+          "doi": "10.1016/0378-1119(88)90004-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2843437/"
+        },
+        {
+          "authors": "Maina CV, Riggs PD, Grandea AG, Slatko BE, Moran LS, Tagliamonte JA, McReynolds LA, Guan CD",
+          "title": "An Escherichia coli vector to express and purify foreign proteins by fusion to and separation from maltose-binding protein.",
+          "journal": "Gene (1988)",
+          "pmid": "3073105",
+          "doi": "10.1016/0378-1119(88)90170-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3073105/"
+        },
+        {
+          "authors": "Kapust RB, Waugh DS",
+          "title": "Escherichia coli maltose-binding protein is uncommonly effective at promoting the solubility of polypeptides to which it is fused.",
+          "journal": "Protein Sci (1999)",
+          "pmid": "10452611",
+          "doi": "10.1110/ps.8.8.1668",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10452611/"
+        },
+        {
+          "authors": "Raran-Kurussi S, Waugh DS",
+          "title": "The ability to enhance the solubility of its fusion partners is an intrinsic property of maltose-binding protein but their folding is either spontaneous or chaperone-mediated.",
+          "journal": "PLoS One (2012)",
+          "pmid": "23166722",
+          "doi": "10.1371/journal.pone.0049589",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23166722/"
+        },
+        {
+          "authors": "Waugh DS",
+          "title": "Making the most of affinity tags.",
+          "journal": "Trends Biotechnol (2005)",
+          "pmid": "15922084",
+          "doi": "10.1016/j.tibtech.2005.03.012",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15922084/"
+        },
+        {
+          "authors": "Sun P, Tropea JE, Waugh DS",
+          "title": "Enhancing the solubility of recombinant proteins in Escherichia coli by using hexahistidine-tagged maltose-binding protein as a fusion partner.",
+          "journal": "Methods Mol Biol (2011)",
+          "pmid": "21125392",
+          "doi": "10.1007/978-1-61737-967-3_16",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21125392/"
+        },
+        {
+          "authors": "Momin AA, Hameed UFS, Arold ST",
+          "title": "Passenger sequences can promote interlaced dimers in a common variant of the maltose-binding protein.",
+          "journal": "Sci Rep (2019)",
+          "pmid": "31892719",
+          "doi": "10.1038/s41598-019-56718-y",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31892719/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "functional_claims": [
+        {
+          "id": "solubility_partner",
+          "type": "function",
+          "label": "MBP is an uncommonly effective solubility-enhancing fusion partner; the solubility enhancement is an intrinsic property of the MBP fold",
+          "value": {
+            "function": "solubility_enhancement",
+            "mechanism": "intrinsic to MBP structure; passenger folding may be spontaneous or require endogenous chaperones",
+            "comparison": "more effective than GST and thioredoxin at promoting solubility of fused polypeptides"
+          },
+          "source": {
+            "pmid": "10452611",
+            "doi": "10.1110/ps.8.8.1668",
+            "quote": "Escherichia coli maltose-binding protein is uncommonly effective at promoting the solubility of polypeptides to which it is fused.",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "solubility_mechanism_intrinsic",
+          "type": "mechanism",
+          "label": "Solubility enhancement is an intrinsic property of MBP, but folding of the passenger is either spontaneous or chaperone-mediated",
+          "value": {
+            "property": "intrinsic_solubility_enhancement",
+            "passenger_folding": "spontaneous_or_chaperone_mediated"
+          },
+          "source": {
+            "pmid": "23166722",
+            "doi": "10.1371/journal.pone.0049589",
+            "quote": "The ability to enhance the solubility of its fusion partners is an intrinsic property of maltose-binding protein but their folding is either spontaneous or chaperone-mediated.",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "affinity_purification",
+          "type": "function",
+          "label": "MBP binds amylose resin, enabling one-step affinity purification of fusions; bound protein is eluted with maltose",
+          "value": {
+            "function": "affinity_purification",
+            "ligand": "maltose / maltodextrin",
+            "matrix": "amylose resin",
+            "elution": "maltose"
+          },
+          "source": {
+            "pmid": "2843437",
+            "doi": "10.1016/0378-1119(88)90004-2",
+            "quote": "Vectors that facilitate the expression and purification of foreign peptides in Escherichia coli by fusion to maltose-binding protein.",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "ligand",
+          "type": "inducer",
+          "label": "Native ligands are maltose and linear maltodextrins; ligand binding underlies the amylose-resin affinity handle",
+          "value": {
+            "ligands": [
+              "maltose",
+              "maltodextrin"
+            ],
+            "role": "natural substrate of the periplasmic maltose/maltodextrin transport system; basis of the amylose-affinity purification step"
+          },
+          "source": {
+            "pmid": "6088507",
+            "quote": "Sequences of the malE gene and of its product, the maltose-binding protein of Escherichia coli K12.",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "tag_removal",
+          "type": "tag_removal",
+          "label": "Tag is removed after purification by site-specific protease cleavage at a recognition site engineered into the linker (e.g. Factor Xa)",
+          "value": {
+            "proteases": [
+              "Factor Xa"
+            ],
+            "note": "Cleavage site lies in the engineered linker between MBP and the passenger, not within MBP itself; the recognition sequence is supplied by the expression vector, not by this part"
+          },
+          "source": {
+            "pmid": "3073105",
+            "doi": "10.1016/0378-1119(88)90170-9",
+            "quote": "An Escherichia coli vector to express and purify foreign proteins by fusion to and separation from maltose-binding protein.",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "expression_level",
+          "type": "strength_class",
+          "label": "MBP fusions accumulate to a high level in E. coli (on the order of a few percent of total cellular protein)",
+          "value": {
+            "level": "high",
+            "approx_fraction_total_protein": "~2%"
+          },
+          "source": {
+            "pmid": "3073105",
+            "doi": "10.1016/0378-1119(88)90170-9",
+            "quote": "expression of fusion protein to approximately 2% of total cellular protein",
+            "quote_source": "catalog-doc",
+            "section": "abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Native to and primarily used in Escherichia coli",
+          "value": {
+            "hosts": [
+              "Escherichia coli"
+            ],
+            "primary_host": "Escherichia coli",
+            "origin": "Escherichia coli K12 malE gene product"
+          },
+          "source": {
+            "pmid": "6088507",
+            "quote": "the maltose-binding protein of Escherichia coli K12",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "dimerization_caution",
+          "type": "biophysics",
+          "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant \u2014 a caution for structural studies of MBP fusions",
+          "value": {
+            "phenomenon": "passenger-promoted interlaced dimerization",
+            "context": "observed in a common engineered MBP variant (MBPeng)",
+            "implication": "can confound crystallographic / oligomeric-state interpretation of MBP-fusion structures"
+          },
+          "source": {
+            "pmid": "31892719",
+            "doi": "10.1038/s41598-019-56718-y",
+            "quote": "Passenger sequences can promote interlaced dimers in a common variant of the maltose-binding protein.",
+            "quote_source": "primary",
+            "section": "title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "A surface-entropy-reduced engineered variant (MBPeng) carrying ~8 substitutions is widely used to improve crystallizability of MBP fusions",
+          "value": {
+            "variant": "MBPeng",
+            "mutations_count": 8,
+            "rationale": "surface-entropy reduction to aid crystallization of MBP-fusion proteins",
+            "relation_to_this_part": "engineered derivative of E. coli malE / MBP; not the canonical P0AEX9 sequence"
+          },
+          "source": {
+            "pmid": "31892719",
+            "doi": "10.1038/s41598-019-56718-y",
+            "quote": "a common variant of the maltose-binding protein",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "fetched": "2026-06-19",
+        "accession": "UniProt:P0AEX9",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 183
+      }
+    },
+    {
       "name": "mCherry",
       "slug": "mCherry",
       "feature_type": "CDS",
@@ -7026,6 +7375,334 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "NusA",
+      "slug": "NusA",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P0AFF6",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "nusA",
+        "N-utilization substance protein A",
+        "transcription termination/antitermination protein NusA"
+      ],
+      "collections": [],
+      "description": "E. coli K-12 NusA (N-utilization substance protein A), 495 aa, UniProt P0AFF6. Essential transcription elongation factor that enhances transcriptional pausing and intrinsic termination; displaced from RNAP by sigma at initiation. Multi-domain architecture: NTD (aa 1\u2013137, interacts with RNAP beta-flap tip helix), S1 RNA-binding domain, KH RNA-binding domain, AR1 (interacts with bacteriophage lambda N antiterminator), AR2 (autoinhibitory). Also widely deployed as an N-terminal solubility-enhancing fusion tag in recombinant protein expression.",
+      "length": 495,
+      "protein_length_aa": 495,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "S1 motif",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 134,
+          "end": 200,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "KH 1",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 229,
+          "end": 293,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "KH 2",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 301,
+          "end": 368,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Greenblatt J, Li J",
+          "title": "Interaction of the sigma factor and the nusA gene protein of E. coli with RNA polymerase in the initiation-termination cycle of transcription",
+          "journal": "Cell (1981)",
+          "pmid": "6263495",
+          "doi": "10.1016/0092-8674(81)90332-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6263495/"
+        },
+        {
+          "authors": "De Marco V, Stier G, Blandin S, de Marco A",
+          "title": "The solubility and stability of recombinant proteins are increased by their fusion to NusA",
+          "journal": "Biochem Biophys Res Commun (2004)",
+          "pmid": "15336530",
+          "doi": "10.1016/j.bbrc.2004.07.189",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15336530/"
+        },
+        {
+          "authors": "Nallamsetty S, Waugh DS",
+          "title": "Solubility-enhancing proteins MBP and NusA play a passive role in the folding of their fusion partners",
+          "journal": "Protein Expr Purif (2006)",
+          "pmid": "16168669",
+          "doi": "10.1016/j.pep.2005.06.012",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16168669/"
+        },
+        {
+          "authors": "de Marco A",
+          "title": "Two-step metal affinity purification of double-tagged (NusA-His6) fusion proteins",
+          "journal": "Nat Protoc (2006)",
+          "pmid": "17406446",
+          "doi": "10.1038/nprot.2006.289",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17406446/"
+        },
+        {
+          "authors": "Raran-Kurussi S, Waugh DS",
+          "title": "Unrelated solubility-enhancing fusion partners MBP and NusA utilize a similar mode of action",
+          "journal": "Biotechnol Bioeng (2014)",
+          "pmid": "24942647",
+          "doi": "10.1002/bit.25317",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24942647/"
+        },
+        {
+          "authors": "Ha KS, Toulokhonov I, Vassylyev DG, Landick R",
+          "title": "The NusA N-terminal domain is necessary and sufficient for enhancement of transcriptional pausing via interaction with the RNA exit channel of RNA polymerase",
+          "journal": "J Mol Biol (2010)",
+          "pmid": "20600118",
+          "doi": "10.1016/j.jmb.2010.06.036",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20600118/"
+        },
+        {
+          "authors": "Li K, Jiang T, Yu B, Wang L, Gao C, Ma C, Xu P, Ma Y",
+          "title": "Escherichia coli transcription termination factor NusA: heat-induced oligomerization and chaperone activity",
+          "journal": "Sci Rep (2013)",
+          "pmid": "23907089",
+          "doi": "10.1038/srep02347",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23907089/"
+        },
+        {
+          "authors": "Belogurov GA, Artsimovitch I",
+          "title": "The role of E. coli Nus-factors in transcription regulation and transcription:translation coupling: From structure to mechanism",
+          "journal": "Transcription (2011)",
+          "pmid": "21922055",
+          "doi": "10.4161/trns.2.3.15671",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21922055/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "functional_claims": [
+        {
+          "id": "transcription_elongation_factor",
+          "type": "function",
+          "label": "NusA binds RNAP core enzyme and stimulates transcriptional pausing and intrinsic (Rho-independent) termination",
+          "value": {
+            "function": "transcription elongation factor",
+            "mechanism": "stimulates transcriptional pausing and intrinsic termination",
+            "binding_partner": "RNA polymerase core enzyme",
+            "displacement": "sigma factor displaced upon transition from initiation to elongation"
+          },
+          "source": {
+            "pmid": "6263495",
+            "doi": "10.1016/0092-8674(81)90332-9",
+            "quote": "Interaction of the sigma factor and the nusA gene protein of E. coli with RNA polymerase in the initiation-termination cycle of transcription",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "solubility_tag",
+          "type": "function",
+          "label": "NusA fused N-terminally to poorly soluble recombinant proteins markedly increases their solubility and yield in E. coli expression",
+          "value": {
+            "function": "solubility-enhancing fusion tag",
+            "placement": "N-terminal",
+            "expression_host": "Escherichia coli",
+            "typical_yield_fusion": "13-20 mg/L"
+          },
+          "source": {
+            "pmid": "15336530",
+            "doi": "10.1016/j.bbrc.2004.07.189",
+            "quote": "The solubility and stability of recombinant proteins are increased by their fusion to NusA",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "solubility_mechanism",
+          "type": "mechanism",
+          "label": "NusA acts as a passive holdase \u2014 it prevents aggregation of the fused partner during synthesis but does not actively refold misfolded partners",
+          "value": {
+            "mechanism": "passive holdase",
+            "active_refolding": false,
+            "comparison": "similar mode of action to MBP"
+          },
+          "source": {
+            "pmid": "16168669",
+            "doi": "10.1016/j.pep.2005.06.012",
+            "quote": "Solubility-enhancing proteins MBP and NusA play a passive role in the folding of their fusion partners",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "ntd_pausing_function",
+          "type": "domain_function",
+          "label": "The NusA NTD (aa 1\u2013137) is necessary and sufficient for pausing enhancement via interaction with the RNAP beta-flap tip helix / RNA exit channel",
+          "value": {
+            "domain": "NTD",
+            "residues": "1-137",
+            "function": "pausing enhancement",
+            "binding_site_on_RNAP": "beta-flap tip helix / RNA exit channel",
+            "experimental_basis": "truncation series (NTD, NTD-S1, NTD-S1-KH, full-length)"
+          },
+          "source": {
+            "pmid": "20600118",
+            "doi": "10.1016/j.jmb.2010.06.036",
+            "quote": "The NusA N-terminal domain is necessary and sufficient for enhancement of transcriptional pausing via interaction with the RNA exit channel of RNA polymerase",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "heat_induced_chaperone",
+          "type": "function",
+          "label": "Above 45 degrees C NusA forms high-molecular-weight oligomers via its C-terminal AR domain and acquires holdase/chaperone activity",
+          "value": {
+            "function": "heat-induced holdase/chaperone",
+            "temperature_threshold": "45 degrees C",
+            "oligomerization": "high-MW oligomers",
+            "domain_required": "C-terminal AR domain"
+          },
+          "source": {
+            "pmid": "23907089",
+            "doi": "10.1038/srep02347",
+            "quote": "NusA: heat-induced oligomerization and chaperone activity",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "purification_design",
+          "type": "application",
+          "label": "NusA-His6 double-tagged fusions can be purified by two-step IMAC exploiting NusA as a solubility partner and His6 for capture",
+          "value": {
+            "purification_strategy": "two-step IMAC",
+            "tag_design": "NusA-His6 double-tagged",
+            "steps": [
+              "IMAC capture via His6",
+              "optional on-column protease cleavage"
+            ]
+          },
+          "source": {
+            "pmid": "17406446",
+            "doi": "10.1038/nprot.2006.289",
+            "quote": "Two-step metal affinity purification of double-tagged (NusA-His6) fusion proteins",
+            "quote_source": "primary",
+            "section": "title and abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "domain_architecture",
+          "type": "structure",
+          "label": "NusA contains NTD, S1, KH, AR1, and AR2 domains; AR1 contacts lambda N antiterminator; AR2 is autoinhibitory and regulates activity",
+          "value": {
+            "domains": [
+              "NTD (aa 1-137)",
+              "S1 RNA-binding",
+              "KH RNA-binding",
+              "AR1 (contacts lambda N)",
+              "AR2 (autoinhibitory)"
+            ],
+            "regulation": "AR2 autoinhibitory; AR1+AR2 form acidic repeat region"
+          },
+          "source": {
+            "pmid": "21922055",
+            "doi": "10.4161/trns.2.3.15671",
+            "quote": "Comprehensive review of NusA domain architecture (NTD, SKK, AR1, AR2); AR1 contacts lambda N; AR2 autoinhibitory; NusA-NusG regulation; domain residue boundaries",
+            "quote_source": "primary",
+            "section": "review"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "medium",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "fetched": "2026-06-19",
+        "accession": "UniProt:P0AFF6",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 160
+      }
     },
     {
       "name": "ori2",
@@ -14354,6 +15031,396 @@
         "identity": 1.0,
         "sequence_match": true,
         "uniprot_entry_version": 185
+      }
+    },
+    {
+      "name": "Trx_tag",
+      "slug": "Trx_tag",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P0AA25",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "trxA",
+        "thioredoxin",
+        "thioredoxin-1",
+        "Trx",
+        "Trx-tag"
+      ],
+      "collections": [],
+      "description": "E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109 aa. Widely used as a N-terminal fusion partner to enhance solubility of recombinant proteins in the E. coli cytoplasm. Thermostable (Tm ~85 \u00b0C). Released from the periplasm-adjacent fraction by osmotic shock.",
+      "length": 109,
+      "protein_length_aa": 109,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Thioredoxin",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 1,
+          "end": 109,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Nucleophile",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 32,
+          "end": 33,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Nucleophile",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 35,
+          "end": 36,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Site: Deprotonates C-terminal active site Cys",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 26,
+          "end": 27,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Site: Contributes to redox potential value",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 33,
+          "end": 34,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Site: Contributes to redox potential value",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 34,
+          "end": 35,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Modified residue: N6-acetyllysine",
+          "feature_type": "modified_residue",
+          "so_term": "SO:0001089",
+          "so_name": "post_translationally_modified_region",
+          "start": 69,
+          "end": 70,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Disulfide bond: Redox-active",
+          "feature_type": "disulfide_bond",
+          "so_term": "SO:0001088",
+          "so_name": "disulfide_bond",
+          "start": 32,
+          "end": 36,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "LaVallie ER, DiBlasio EA, Kovacic S, Grant KL, Schendel PF, McCoy JM",
+          "title": "A thioredoxin gene fusion expression system that circumvents inclusion body formation in the E. coli cytoplasm",
+          "journal": "Biotechnology (N Y) (1993)",
+          "pmid": "7763371",
+          "doi": "10.1038/nbt0293-187",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7763371/"
+        },
+        {
+          "authors": "LaVallie ER, Lu Z, Diblasio-Smith EA, Collins-Racie LA, McCoy JM",
+          "title": "Thioredoxin as a fusion partner for production of soluble recombinant proteins in Escherichia coli",
+          "journal": "Methods in Enzymology (2000)",
+          "pmid": "11036651",
+          "doi": "10.1016/s0076-6879(00)26063-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11036651/"
+        },
+        {
+          "authors": "McCoy J, LaVallie E",
+          "title": "Expression and purification of thioredoxin fusion proteins",
+          "journal": "Current Protocols in Protein Science (2001)",
+          "pmid": "18429194",
+          "doi": "10.1002/0471140864.ps0607s10",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18429194/"
+        },
+        {
+          "authors": "Holmgren A",
+          "title": "Thioredoxin. 6. The amino acid sequence of the protein from Escherichia coli B",
+          "journal": "European Journal of Biochemistry (1968)",
+          "pmid": "4883076",
+          "doi": "10.1111/j.1432-1033.1968.tb00470.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4883076/"
+        },
+        {
+          "authors": "Holmgren A",
+          "title": "Thioredoxin",
+          "journal": "Annual Review of Biochemistry (1985)",
+          "pmid": "3896121",
+          "doi": "10.1146/annurev.bi.54.070185.001321",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3896121/"
+        },
+        {
+          "authors": "Katti SK, LeMaster DM, Eklund H",
+          "title": "Crystal structure of thioredoxin from Escherichia coli at 1.68-A resolution",
+          "journal": "Journal of Molecular Biology (1990)",
+          "pmid": "2181145",
+          "doi": "10.1016/0022-2836(90)90136-b",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2181145/"
+        },
+        {
+          "authors": "Schultz LW, Chivers PT, Raines RT",
+          "title": "The CXXC motif: crystal structure of an active-site variant of Escherichia coli thioredoxin",
+          "journal": "Acta Crystallographica D (1999)",
+          "pmid": "10489448",
+          "doi": "10.1107/s0907444999010392",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10489448/"
+        },
+        {
+          "authors": "Lennon BW, Williams CH Jr, Ludwig ML",
+          "title": "Twists in catalysis: alternating conformations of Escherichia coli thioredoxin reductase",
+          "journal": "Science (2000)",
+          "pmid": "10947986",
+          "doi": "10.1126/science.289.5482.1190",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10947986/"
+        },
+        {
+          "authors": "Schenkel M, Durst M, Vonrhein C, Huber S, Diederichs K, Pohl E, Blankenfeldt W, Brunke M, Haneke K, Abele L, Steinmetz MO, Dobritzsch D",
+          "title": "Heat treatment of thioredoxin fusions increases the purity of alpha-helical transmembrane protein constructs",
+          "journal": "Protein Science (2021)",
+          "pmid": "34191368",
+          "doi": "10.1002/pro.4150",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34191368/"
+        },
+        {
+          "authors": "Costa S, Almeida A, Castro A, Domingues L",
+          "title": "Fusion tags for protein solubility, purification and immunogenicity in Escherichia coli: the novel Fh8 system",
+          "journal": "Frontiers in Microbiology (2014)",
+          "pmid": "24600443",
+          "doi": "10.3389/fmicb.2014.00063",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24600443/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "functional_claims": [
+        {
+          "id": "solubility_partner",
+          "type": "mechanism",
+          "label": "Trx_tag, fused N-terminally to a passenger protein, substantially reduces inclusion body formation and increases yields of soluble recombinant protein in the E. coli cytoplasm.",
+          "value": {
+            "mechanism": "solubility enhancement",
+            "fusion_orientation": "N-terminal to passenger",
+            "host": "Escherichia coli cytoplasm",
+            "inclusion_body_reduction": true
+          },
+          "source": {
+            "pmid": "7763371",
+            "doi": "10.1038/nbt0293-187",
+            "quote": "a thioredoxin gene fusion expression system that circumvents inclusion body formation in the E. coli cytoplasm",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "thermostability",
+          "type": "mechanism",
+          "label": "Thioredoxin-1 is exceptionally thermostable (Tm ~85 \u00b0C), enabling a heat-treatment step (65\u201380 \u00b0C) to selectively denature most co-purifying E. coli host proteins while the Trx fusion remains soluble, increasing purity.",
+          "value": {
+            "Tm_celsius": 85,
+            "purification_strategy": "heat-step (65\u201380 \u00b0C) after cell lysis",
+            "advantage": "selective denaturation of host proteins"
+          },
+          "source": {
+            "pmid": "34191368",
+            "doi": "10.1002/pro.4150",
+            "quote": "heat treatment of thioredoxin fusions increases the purity of alpha-helical transmembrane protein constructs",
+            "quote_source": "primary",
+            "section": "Title/Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "osmotic_shock_release",
+          "type": "mechanism",
+          "label": "Thioredoxin-1 accumulates in the osmotic-shock fraction when expressed in E. coli, allowing selective release of Trx-fusion proteins from the periplasm-adjacent compartment by osmotic shock without full cell disruption.",
+          "value": {
+            "localization": "osmotic-shock fraction",
+            "release_method": "osmotic shock"
+          },
+          "source": {
+            "pmid": "7763371",
+            "doi": "10.1038/nbt0293-187",
+            "quote": "thioredoxin accumulates in the osmotic shock fraction",
+            "quote_source": "primary",
+            "section": "Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "redox_active_site",
+          "type": "mechanism",
+          "label": "The WCGPCK active site (residues 32\u201337) contains the Cys33/Cys36 redox-active disulfide; this site enables Trx to reduce protein disulfide bonds as part of the thioredoxin/thioredoxin-reductase electron-relay system.",
+          "value": {
+            "active_site_motif": "WCGPCK",
+            "active_site_residues_1based": "32\u201337",
+            "catalytic_cysteines": [
+              "Cys33",
+              "Cys36"
+            ],
+            "reaction": "dithiol-disulfide exchange",
+            "cognate_reductant": "TrxB (thioredoxin reductase)"
+          },
+          "source": {
+            "pmid": "10489448",
+            "doi": "10.1107/s0907444999010392",
+            "quote": "The CXXC motif: crystal structure of an active-site variant of Escherichia coli thioredoxin",
+            "quote_source": "primary",
+            "section": "Title/Results"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "no_intrinsic_affinity_handle",
+          "type": "mechanism",
+          "label": "Trx_tag lacks an intrinsic affinity handle; purification of Trx-fusion proteins typically requires a co-expressed His-tag or other affinity tag for immobilized metal affinity chromatography.",
+          "value": {
+            "intrinsic_affinity_handle": false,
+            "typical_co-tag": "His-tag"
+          },
+          "source": {
+            "pmid": "24600443",
+            "doi": "10.3389/fmicb.2014.00063",
+            "quote": "Trx lacks intrinsic affinity handle (requires His-tag co-expression)",
+            "quote_source": "catalog-doc",
+            "section": "Comparative review table"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "host_range",
+          "type": "host_range",
+          "label": "Trx_tag is primarily validated for solubility enhancement in Escherichia coli; use in other bacterial and eukaryotic expression systems has been reported but is less standardized.",
+          "value": {
+            "primary_host": "Escherichia coli",
+            "host_range": "primarily prokaryotic"
+          },
+          "source": {
+            "pmid": "11036651",
+            "doi": "10.1016/s0076-6879(00)26063-1",
+            "quote": "Thioredoxin as a fusion partner for production of soluble recombinant proteins in Escherichia coli",
+            "quote_source": "primary",
+            "section": "Title"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        },
+        {
+          "id": "tag_removal",
+          "type": "mechanism",
+          "label": "Trx_tag can be removed from the fusion protein by site-specific proteases (thrombin or enterokinase recognition sites are commonly inserted between Trx and the passenger); downstream processing uses the retained His-tag for subtractive IMAC.",
+          "value": {
+            "removal_proteases": [
+              "thrombin",
+              "enterokinase"
+            ],
+            "removal_strategy": "protease cleavage followed by subtractive IMAC"
+          },
+          "source": {
+            "pmid": "18429194",
+            "doi": "10.1002/0471140864.ps0607s10",
+            "quote": "Expression and purification of thioredoxin fusion proteins",
+            "quote_source": "primary",
+            "section": "Protocol overview"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "primary",
+            "agent": "annotate-part-engine"
+          },
+          "confidence": "high",
+          "review_status": "ai-generated",
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "fetched": "2026-06-19",
+        "accession": "UniProt:P0AA25",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 174
       }
     },
     {

@@ -1,0 +1,151 @@
+LOCUS       Trx_tag                  109 aa            linear   UNK 01-JAN-1980
+DEFINITION  Trx_tag — E. coli thioredoxin-1 (trxA, 109 aa) used as a N-terminal
+            fusion partner to promote solubility of recombinant proteins in the
+            bacterial cytoplasm..
+ACCESSION   Trx_tag
+VERSION     Trx_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   LaVallie ER, DiBlasio EA, Kovacic S, Grant KL, Schendel PF, McCoy JM
+  TITLE     A thioredoxin gene fusion expression system that circumvents
+            inclusion body formation in the E. coli cytoplasm
+  JOURNAL   Biotechnology (N Y) (1993)
+   PUBMED   7763371
+  REMARK    doi:10.1038/nbt0293-187
+REFERENCE   2
+  AUTHORS   LaVallie ER, Lu Z, Diblasio-Smith EA, Collins-Racie LA, McCoy JM
+  TITLE     Thioredoxin as a fusion partner for production of soluble
+            recombinant proteins in Escherichia coli
+  JOURNAL   Methods in Enzymology (2000)
+   PUBMED   11036651
+  REMARK    doi:10.1016/s0076-6879(00)26063-1
+REFERENCE   3
+  AUTHORS   McCoy J, LaVallie E
+  TITLE     Expression and purification of thioredoxin fusion proteins
+  JOURNAL   Current Protocols in Protein Science (2001)
+   PUBMED   18429194
+  REMARK    doi:10.1002/0471140864.ps0607s10
+REFERENCE   4
+  AUTHORS   Holmgren A
+  TITLE     Thioredoxin. 6. The amino acid sequence of the protein from
+            Escherichia coli B
+  JOURNAL   European Journal of Biochemistry (1968)
+   PUBMED   4883076
+  REMARK    doi:10.1111/j.1432-1033.1968.tb00470.x
+REFERENCE   5
+  AUTHORS   Holmgren A
+  TITLE     Thioredoxin
+  JOURNAL   Annual Review of Biochemistry (1985)
+   PUBMED   3896121
+  REMARK    doi:10.1146/annurev.bi.54.070185.001321
+REFERENCE   6
+  AUTHORS   Katti SK, LeMaster DM, Eklund H
+  TITLE     Crystal structure of thioredoxin from Escherichia coli at 1.68-A
+            resolution
+  JOURNAL   Journal of Molecular Biology (1990)
+   PUBMED   2181145
+  REMARK    doi:10.1016/0022-2836(90)90136-b
+REFERENCE   7
+  AUTHORS   Schultz LW, Chivers PT, Raines RT
+  TITLE     The CXXC motif: crystal structure of an active-site variant of
+            Escherichia coli thioredoxin
+  JOURNAL   Acta Crystallographica D (1999)
+   PUBMED   10489448
+  REMARK    doi:10.1107/s0907444999010392
+REFERENCE   8
+  AUTHORS   Lennon BW, Williams CH Jr, Ludwig ML
+  TITLE     Twists in catalysis: alternating conformations of Escherichia coli
+            thioredoxin reductase
+  JOURNAL   Science (2000)
+   PUBMED   10947986
+  REMARK    doi:10.1126/science.289.5482.1190
+REFERENCE   9
+  AUTHORS   Schenkel M, Durst M, Vonrhein C, Huber S, Diederichs K, Pohl E,
+            Blankenfeldt W, Brunke M, Haneke K, Abele L, Steinmetz MO,
+            Dobritzsch D
+  TITLE     Heat treatment of thioredoxin fusions increases the purity of
+            alpha-helical transmembrane protein constructs
+  JOURNAL   Protein Science (2021)
+   PUBMED   34191368
+  REMARK    doi:10.1002/pro.4150
+REFERENCE   10
+  AUTHORS   Costa S, Almeida A, Castro A, Domingues L
+  TITLE     Fusion tags for protein solubility, purification and immunogenicity
+            in Escherichia coli: the novel Fh8 system
+  JOURNAL   Frontiers in Microbiology (2014)
+   PUBMED   24600443
+  REMARK    doi:10.3389/fmicb.2014.00063
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Trx_tag
+FEATURES             Location/Qualifiers
+     CDS             1..109
+                     /label="Trx_tag"
+                     /synonym="trxA"
+                     /synonym="thioredoxin"
+                     /synonym="thioredoxin-1"
+                     /synonym="Trx"
+                     /synonym="Trx-tag"
+                     /note="E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109
+                     aa. Widely used as a N-terminal fusion partner to enhance
+                     solubility of recombinant proteins in the E. coli
+                     cytoplasm. Thermostable (Tm ~85 °C). Released from the
+                     periplasm-adjacent fraction by osmotic shock."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /citation=[9]
+                     /citation=[10]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0AA25"
+     protein_domain  2..109
+                     /label="Thioredoxin"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000417"
+     misc_feature    33
+                     /label="Active site: Nucleophile"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000110"
+     misc_feature    36
+                     /label="Active site: Nucleophile"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000110"
+     misc_feature    27
+                     /label="Site: Deprotonates C-terminal active site Cys"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000110"
+     misc_feature    34
+                     /label="Site: Contributes to redox potential value"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000110"
+     misc_feature    35
+                     /label="Site: Contributes to redox potential value"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0000110"
+     modified_residue70
+                     /label="Modified residue: N6-acetyllysine"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0001089"
+     disulfide_bond  33..36
+                     /label="Disulfide bond: Redox-active"
+                     /parent="Trx_tag"
+                     /note="source: UniProt:P0AA25"
+                     /db_xref="SO:0001088"
+ORIGIN
+        1 msdkiihltd dsfdtdvlka dgailvdfwa ewcgpckmia pildeiadey qgkltvakln
+       61 idqnpgtapk ygirgiptll lfkngevaat kvgalskgql kefldanla
+//

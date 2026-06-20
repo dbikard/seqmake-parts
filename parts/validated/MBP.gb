@@ -1,0 +1,110 @@
+LOCUS       MBP                      396 aa            linear   UNK 01-JAN-1980
+DEFINITION  MBP (E. coli K12 malE / MalE) — 396 aa maltose/maltodextrin-binding
+            periplasmic protein precursor; canonical high-efficiency
+            solubility-enhancing and amylose-affinity fusion partner.
+ACCESSION   MBP
+VERSION     MBP
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Duplay P, Bedouelle H, Fowler A, Zabin I, Saurin W, Hofnung M
+  TITLE     Sequences of the malE gene and of its product, the maltose-binding
+            protein of Escherichia coli K12.
+  JOURNAL   J Biol Chem (1984)
+   PUBMED   6088507
+REFERENCE   2
+  AUTHORS   di Guan C, Li P, Riggs PD, Inouye H
+  TITLE     Vectors that facilitate the expression and purification of foreign
+            peptides in Escherichia coli by fusion to maltose-binding protein.
+  JOURNAL   Gene (1988)
+   PUBMED   2843437
+  REMARK    doi:10.1016/0378-1119(88)90004-2
+REFERENCE   3
+  AUTHORS   Maina CV, Riggs PD, Grandea AG, Slatko BE, Moran LS, Tagliamonte JA,
+            McReynolds LA, Guan CD
+  TITLE     An Escherichia coli vector to express and purify foreign proteins by
+            fusion to and separation from maltose-binding protein.
+  JOURNAL   Gene (1988)
+   PUBMED   3073105
+  REMARK    doi:10.1016/0378-1119(88)90170-9
+REFERENCE   4
+  AUTHORS   Kapust RB, Waugh DS
+  TITLE     Escherichia coli maltose-binding protein is uncommonly effective at
+            promoting the solubility of polypeptides to which it is fused.
+  JOURNAL   Protein Sci (1999)
+   PUBMED   10452611
+  REMARK    doi:10.1110/ps.8.8.1668
+REFERENCE   5
+  AUTHORS   Raran-Kurussi S, Waugh DS
+  TITLE     The ability to enhance the solubility of its fusion partners is an
+            intrinsic property of maltose-binding protein but their folding is
+            either spontaneous or chaperone-mediated.
+  JOURNAL   PLoS One (2012)
+   PUBMED   23166722
+  REMARK    doi:10.1371/journal.pone.0049589
+REFERENCE   6
+  AUTHORS   Waugh DS
+  TITLE     Making the most of affinity tags.
+  JOURNAL   Trends Biotechnol (2005)
+   PUBMED   15922084
+  REMARK    doi:10.1016/j.tibtech.2005.03.012
+REFERENCE   7
+  AUTHORS   Sun P, Tropea JE, Waugh DS
+  TITLE     Enhancing the solubility of recombinant proteins in Escherichia coli
+            by using hexahistidine-tagged maltose-binding protein as a fusion
+            partner.
+  JOURNAL   Methods Mol Biol (2011)
+   PUBMED   21125392
+  REMARK    doi:10.1007/978-1-61737-967-3_16
+REFERENCE   8
+  AUTHORS   Momin AA, Hameed UFS, Arold ST
+  TITLE     Passenger sequences can promote interlaced dimers in a common
+            variant of the maltose-binding protein.
+  JOURNAL   Sci Rep (2019)
+   PUBMED   31892719
+  REMARK    doi:10.1038/s41598-019-56718-y
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/MBP
+FEATURES             Location/Qualifiers
+     CDS             1..396
+                     /label="MBP"
+                     /synonym="malE"
+                     /synonym="MalE"
+                     /synonym="maltose-binding protein"
+                     /synonym="maltose/maltodextrin-binding protein"
+                     /note="Maltose/maltodextrin-binding periplasmic protein
+                     precursor (MalE / MBP), E. coli K12 malE; UniProt P0AEX9,
+                     396 aa. As stored this is the full PRECURSOR: an N-terminal
+                     26-aa signal peptide (aa 1-26) followed by the 370-aa
+                     mature protein (aa 27-396). Periplasmic
+                     maltose/maltodextrin transport component; widely
+                     re-purposed as an N-terminal fusion partner that strongly
+                     enhances soluble expression of its passenger and binds
+                     amylose resin (eluted with maltose) for affinity
+                     purification."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0AEX9"
+     sig_peptide     1..26
+                     /label="Signal"
+                     /parent="MBP"
+                     /note="source: UniProt:P0AEX9"
+                     /db_xref="SO:0000418"
+ORIGIN
+        1 mkiktgaril alsalttmmf sasalakiee gklviwingd kgynglaevg kkfekdtgik
+       61 vtvehpdkle ekfpqvaatg dgpdiifwah drfggyaqsg llaeitpdka fqdklypftw
+      121 davryngkli aypiaveals liynkdllpn ppktweeipa ldkelkakgk salmfnlqep
+      181 yftwpliaad ggyafkyeng kydikdvgvd nagakagltf lvdliknkhm nadtdysiae
+      241 aafnkgetam tingpwawsn idtskvnygv tvlptfkgqp skpfvgvlsa ginaaspnke
+      301 lakeflenyl ltdegleavn kdkplgaval ksyeeelakd priaatmena qkgeimpnip
+      361 qmsafwyavr tavinaasgr qtvdealkda qtritk
+//

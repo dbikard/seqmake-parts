@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "slug": "MBP",
+  "locus": "MBP",
+  "id": "MBP",
+  "description": "MBP (E. coli K12 malE / MalE) — 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "MKIKTGARILALSALTTMMFSASALAKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDEALKDAQTRITK",
+  "references": [
+    {
+      "authors": "Duplay P, Bedouelle H, Fowler A, Zabin I, Saurin W, Hofnung M",
+      "title": "Sequences of the malE gene and of its product, the maltose-binding protein of Escherichia coli K12.",
+      "journal": "J Biol Chem (1984)",
+      "pubmed_id": "6088507",
+      "comment": ""
+    },
+    {
+      "authors": "di Guan C, Li P, Riggs PD, Inouye H",
+      "title": "Vectors that facilitate the expression and purification of foreign peptides in Escherichia coli by fusion to maltose-binding protein.",
+      "journal": "Gene (1988)",
+      "pubmed_id": "2843437",
+      "comment": "doi:10.1016/0378-1119(88)90004-2"
+    },
+    {
+      "authors": "Maina CV, Riggs PD, Grandea AG, Slatko BE, Moran LS, Tagliamonte JA, McReynolds LA, Guan CD",
+      "title": "An Escherichia coli vector to express and purify foreign proteins by fusion to and separation from maltose-binding protein.",
+      "journal": "Gene (1988)",
+      "pubmed_id": "3073105",
+      "comment": "doi:10.1016/0378-1119(88)90170-9"
+    },
+    {
+      "authors": "Kapust RB, Waugh DS",
+      "title": "Escherichia coli maltose-binding protein is uncommonly effective at promoting the solubility of polypeptides to which it is fused.",
+      "journal": "Protein Sci (1999)",
+      "pubmed_id": "10452611",
+      "comment": "doi:10.1110/ps.8.8.1668"
+    },
+    {
+      "authors": "Raran-Kurussi S, Waugh DS",
+      "title": "The ability to enhance the solubility of its fusion partners is an intrinsic property of maltose-binding protein but their folding is either spontaneous or chaperone-mediated.",
+      "journal": "PLoS One (2012)",
+      "pubmed_id": "23166722",
+      "comment": "doi:10.1371/journal.pone.0049589"
+    },
+    {
+      "authors": "Waugh DS",
+      "title": "Making the most of affinity tags.",
+      "journal": "Trends Biotechnol (2005)",
+      "pubmed_id": "15922084",
+      "comment": "doi:10.1016/j.tibtech.2005.03.012"
+    },
+    {
+      "authors": "Sun P, Tropea JE, Waugh DS",
+      "title": "Enhancing the solubility of recombinant proteins in Escherichia coli by using hexahistidine-tagged maltose-binding protein as a fusion partner.",
+      "journal": "Methods Mol Biol (2011)",
+      "pubmed_id": "21125392",
+      "comment": "doi:10.1007/978-1-61737-967-3_16"
+    },
+    {
+      "authors": "Momin AA, Hameed UFS, Arold ST",
+      "title": "Passenger sequences can promote interlaced dimers in a common variant of the maltose-binding protein.",
+      "journal": "Sci Rep (2019)",
+      "pubmed_id": "31892719",
+      "comment": "doi:10.1038/s41598-019-56718-y"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 396,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "MBP"
+        ],
+        "synonym": [
+          "malE",
+          "MalE",
+          "maltose-binding protein",
+          "maltose/maltodextrin-binding protein"
+        ],
+        "note": [
+          "Maltose/maltodextrin-binding periplasmic protein precursor (MalE / MBP), E. coli K12 malE; UniProt P0AEX9, 396 aa. As stored this is the full PRECURSOR: an N-terminal 26-aa signal peptide (aa 1-26) followed by the 370-aa mature protein (aa 27-396). Periplasmic maltose/maltodextrin transport component; widely re-purposed as an N-terminal fusion partner that strongly enhances soluble expression of its passenger and binds amylose resin (eluted with maltose) for affinity purification."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P0AEX9"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P0AEX9 (Maltose/maltodextrin-binding periplasmic protein, MALE_ECOLI, Escherichia coli K12; Swiss-Prot reviewed, SV=1, entry v183), 396 aa, 100% identity over full length, independently fetched and compared"
+  },
+  "functional_claims": [
+    {
+      "id": "solubility_partner",
+      "type": "function",
+      "label": "MBP is an uncommonly effective solubility-enhancing fusion partner; the solubility enhancement is an intrinsic property of the MBP fold",
+      "value": {
+        "function": "solubility_enhancement",
+        "mechanism": "intrinsic to MBP structure; passenger folding may be spontaneous or require endogenous chaperones",
+        "comparison": "more effective than GST and thioredoxin at promoting solubility of fused polypeptides"
+      },
+      "source": {
+        "pmid": "10452611",
+        "doi": "10.1110/ps.8.8.1668",
+        "quote": "Escherichia coli maltose-binding protein is uncommonly effective at promoting the solubility of polypeptides to which it is fused.",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "solubility_mechanism_intrinsic",
+      "type": "mechanism",
+      "label": "Solubility enhancement is an intrinsic property of MBP, but folding of the passenger is either spontaneous or chaperone-mediated",
+      "value": {
+        "property": "intrinsic_solubility_enhancement",
+        "passenger_folding": "spontaneous_or_chaperone_mediated"
+      },
+      "source": {
+        "pmid": "23166722",
+        "doi": "10.1371/journal.pone.0049589",
+        "quote": "The ability to enhance the solubility of its fusion partners is an intrinsic property of maltose-binding protein but their folding is either spontaneous or chaperone-mediated.",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "affinity_purification",
+      "type": "function",
+      "label": "MBP binds amylose resin, enabling one-step affinity purification of fusions; bound protein is eluted with maltose",
+      "value": {
+        "function": "affinity_purification",
+        "ligand": "maltose / maltodextrin",
+        "matrix": "amylose resin",
+        "elution": "maltose"
+      },
+      "source": {
+        "pmid": "2843437",
+        "doi": "10.1016/0378-1119(88)90004-2",
+        "quote": "Vectors that facilitate the expression and purification of foreign peptides in Escherichia coli by fusion to maltose-binding protein.",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "ligand",
+      "type": "inducer",
+      "label": "Native ligands are maltose and linear maltodextrins; ligand binding underlies the amylose-resin affinity handle",
+      "value": {
+        "ligands": [
+          "maltose",
+          "maltodextrin"
+        ],
+        "role": "natural substrate of the periplasmic maltose/maltodextrin transport system; basis of the amylose-affinity purification step"
+      },
+      "source": {
+        "pmid": "6088507",
+        "quote": "Sequences of the malE gene and of its product, the maltose-binding protein of Escherichia coli K12.",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "tag_removal",
+      "type": "tag_removal",
+      "label": "Tag is removed after purification by site-specific protease cleavage at a recognition site engineered into the linker (e.g. Factor Xa)",
+      "value": {
+        "proteases": [
+          "Factor Xa"
+        ],
+        "note": "Cleavage site lies in the engineered linker between MBP and the passenger, not within MBP itself; the recognition sequence is supplied by the expression vector, not by this part"
+      },
+      "source": {
+        "pmid": "3073105",
+        "doi": "10.1016/0378-1119(88)90170-9",
+        "quote": "An Escherichia coli vector to express and purify foreign proteins by fusion to and separation from maltose-binding protein.",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "expression_level",
+      "type": "strength_class",
+      "label": "MBP fusions accumulate to a high level in E. coli (on the order of a few percent of total cellular protein)",
+      "value": {
+        "level": "high",
+        "approx_fraction_total_protein": "~2%"
+      },
+      "source": {
+        "pmid": "3073105",
+        "doi": "10.1016/0378-1119(88)90170-9",
+        "quote": "expression of fusion protein to approximately 2% of total cellular protein",
+        "quote_source": "catalog-doc",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Native to and primarily used in Escherichia coli",
+      "value": {
+        "hosts": [
+          "Escherichia coli"
+        ],
+        "primary_host": "Escherichia coli",
+        "origin": "Escherichia coli K12 malE gene product"
+      },
+      "source": {
+        "pmid": "6088507",
+        "quote": "the maltose-binding protein of Escherichia coli K12",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "dimerization_caution",
+      "type": "biophysics",
+      "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant — a caution for structural studies of MBP fusions",
+      "value": {
+        "phenomenon": "passenger-promoted interlaced dimerization",
+        "context": "observed in a common engineered MBP variant (MBPeng)",
+        "implication": "can confound crystallographic / oligomeric-state interpretation of MBP-fusion structures"
+      },
+      "source": {
+        "pmid": "31892719",
+        "doi": "10.1038/s41598-019-56718-y",
+        "quote": "Passenger sequences can promote interlaced dimers in a common variant of the maltose-binding protein.",
+        "quote_source": "primary",
+        "section": "title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "A surface-entropy-reduced engineered variant (MBPeng) carrying ~8 substitutions is widely used to improve crystallizability of MBP fusions",
+      "value": {
+        "variant": "MBPeng",
+        "mutations_count": 8,
+        "rationale": "surface-entropy reduction to aid crystallization of MBP-fusion proteins",
+        "relation_to_this_part": "engineered derivative of E. coli malE / MBP; not the canonical P0AEX9 sequence"
+      },
+      "source": {
+        "pmid": "31892719",
+        "doi": "10.1038/s41598-019-56718-y",
+        "quote": "a common variant of the maltose-binding protein",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [
+    {
+      "type": "sig_peptide",
+      "start": 0,
+      "end": 26,
+      "label": "Signal",
+      "so_term": "SO:0000418",
+      "description": "",
+      "uniprot_type": "Signal"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-06-19",
+    "accession": "UniProt:P0AEX9",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 183
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0",
+  "slug": "Trx_tag",
+  "locus": "Trx_tag",
+  "id": "Trx_tag",
+  "description": "Trx_tag \u2014 E. coli thioredoxin-1 (trxA, 109 aa) used as a N-terminal fusion partner to promote solubility of recombinant proteins in the bacterial cytoplasm.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "MSDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+  "references": [
+    {
+      "authors": "LaVallie ER, DiBlasio EA, Kovacic S, Grant KL, Schendel PF, McCoy JM",
+      "title": "A thioredoxin gene fusion expression system that circumvents inclusion body formation in the E. coli cytoplasm",
+      "journal": "Biotechnology (N Y) (1993)",
+      "pubmed_id": "7763371",
+      "comment": "doi:10.1038/nbt0293-187"
+    },
+    {
+      "authors": "LaVallie ER, Lu Z, Diblasio-Smith EA, Collins-Racie LA, McCoy JM",
+      "title": "Thioredoxin as a fusion partner for production of soluble recombinant proteins in Escherichia coli",
+      "journal": "Methods in Enzymology (2000)",
+      "pubmed_id": "11036651",
+      "comment": "doi:10.1016/s0076-6879(00)26063-1"
+    },
+    {
+      "authors": "McCoy J, LaVallie E",
+      "title": "Expression and purification of thioredoxin fusion proteins",
+      "journal": "Current Protocols in Protein Science (2001)",
+      "pubmed_id": "18429194",
+      "comment": "doi:10.1002/0471140864.ps0607s10"
+    },
+    {
+      "authors": "Holmgren A",
+      "title": "Thioredoxin. 6. The amino acid sequence of the protein from Escherichia coli B",
+      "journal": "European Journal of Biochemistry (1968)",
+      "pubmed_id": "4883076",
+      "comment": "doi:10.1111/j.1432-1033.1968.tb00470.x"
+    },
+    {
+      "authors": "Holmgren A",
+      "title": "Thioredoxin",
+      "journal": "Annual Review of Biochemistry (1985)",
+      "pubmed_id": "3896121",
+      "comment": "doi:10.1146/annurev.bi.54.070185.001321"
+    },
+    {
+      "authors": "Katti SK, LeMaster DM, Eklund H",
+      "title": "Crystal structure of thioredoxin from Escherichia coli at 1.68-A resolution",
+      "journal": "Journal of Molecular Biology (1990)",
+      "pubmed_id": "2181145",
+      "comment": "doi:10.1016/0022-2836(90)90136-b"
+    },
+    {
+      "authors": "Schultz LW, Chivers PT, Raines RT",
+      "title": "The CXXC motif: crystal structure of an active-site variant of Escherichia coli thioredoxin",
+      "journal": "Acta Crystallographica D (1999)",
+      "pubmed_id": "10489448",
+      "comment": "doi:10.1107/s0907444999010392"
+    },
+    {
+      "authors": "Lennon BW, Williams CH Jr, Ludwig ML",
+      "title": "Twists in catalysis: alternating conformations of Escherichia coli thioredoxin reductase",
+      "journal": "Science (2000)",
+      "pubmed_id": "10947986",
+      "comment": "doi:10.1126/science.289.5482.1190"
+    },
+    {
+      "authors": "Schenkel M, Durst M, Vonrhein C, Huber S, Diederichs K, Pohl E, Blankenfeldt W, Brunke M, Haneke K, Abele L, Steinmetz MO, Dobritzsch D",
+      "title": "Heat treatment of thioredoxin fusions increases the purity of alpha-helical transmembrane protein constructs",
+      "journal": "Protein Science (2021)",
+      "pubmed_id": "34191368",
+      "comment": "doi:10.1002/pro.4150"
+    },
+    {
+      "authors": "Costa S, Almeida A, Castro A, Domingues L",
+      "title": "Fusion tags for protein solubility, purification and immunogenicity in Escherichia coli: the novel Fh8 system",
+      "journal": "Frontiers in Microbiology (2014)",
+      "pubmed_id": "24600443",
+      "comment": "doi:10.3389/fmicb.2014.00063"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 109,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Trx_tag"
+        ],
+        "synonym": [
+          "trxA",
+          "thioredoxin",
+          "thioredoxin-1",
+          "Trx",
+          "Trx-tag"
+        ],
+        "note": [
+          "E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109 aa. Widely used as a N-terminal fusion partner to enhance solubility of recombinant proteins in the E. coli cytoplasm. Thermostable (Tm ~85 \u00b0C). Released from the periplasm-adjacent fraction by osmotic shock."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]",
+          "[9]",
+          "[10]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P0AA25"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P0AA25 (Thioredoxin 1, Escherichia coli (strain K12); Swiss-Prot reviewed, SV=2), 109 aa, 100% identity over full length, independently fetched and compared"
+  },
+  "functional_claims": [
+    {
+      "id": "solubility_partner",
+      "type": "mechanism",
+      "label": "Trx_tag, fused N-terminally to a passenger protein, substantially reduces inclusion body formation and increases yields of soluble recombinant protein in the E. coli cytoplasm.",
+      "value": {
+        "mechanism": "solubility enhancement",
+        "fusion_orientation": "N-terminal to passenger",
+        "host": "Escherichia coli cytoplasm",
+        "inclusion_body_reduction": true
+      },
+      "source": {
+        "pmid": "7763371",
+        "doi": "10.1038/nbt0293-187",
+        "quote": "a thioredoxin gene fusion expression system that circumvents inclusion body formation in the E. coli cytoplasm",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "thermostability",
+      "type": "mechanism",
+      "label": "Thioredoxin-1 is exceptionally thermostable (Tm ~85 \u00b0C), enabling a heat-treatment step (65\u201380 \u00b0C) to selectively denature most co-purifying E. coli host proteins while the Trx fusion remains soluble, increasing purity.",
+      "value": {
+        "Tm_celsius": 85,
+        "purification_strategy": "heat-step (65\u201380 \u00b0C) after cell lysis",
+        "advantage": "selective denaturation of host proteins"
+      },
+      "source": {
+        "pmid": "34191368",
+        "doi": "10.1002/pro.4150",
+        "quote": "heat treatment of thioredoxin fusions increases the purity of alpha-helical transmembrane protein constructs",
+        "quote_source": "primary",
+        "section": "Title/Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "osmotic_shock_release",
+      "type": "mechanism",
+      "label": "Thioredoxin-1 accumulates in the osmotic-shock fraction when expressed in E. coli, allowing selective release of Trx-fusion proteins from the periplasm-adjacent compartment by osmotic shock without full cell disruption.",
+      "value": {
+        "localization": "osmotic-shock fraction",
+        "release_method": "osmotic shock"
+      },
+      "source": {
+        "pmid": "7763371",
+        "doi": "10.1038/nbt0293-187",
+        "quote": "thioredoxin accumulates in the osmotic shock fraction",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "redox_active_site",
+      "type": "mechanism",
+      "label": "The WCGPCK active site (residues 32\u201337) contains the Cys33/Cys36 redox-active disulfide; this site enables Trx to reduce protein disulfide bonds as part of the thioredoxin/thioredoxin-reductase electron-relay system.",
+      "value": {
+        "active_site_motif": "WCGPCK",
+        "active_site_residues_1based": "32\u201337",
+        "catalytic_cysteines": [
+          "Cys33",
+          "Cys36"
+        ],
+        "reaction": "dithiol-disulfide exchange",
+        "cognate_reductant": "TrxB (thioredoxin reductase)"
+      },
+      "source": {
+        "pmid": "10489448",
+        "doi": "10.1107/s0907444999010392",
+        "quote": "The CXXC motif: crystal structure of an active-site variant of Escherichia coli thioredoxin",
+        "quote_source": "primary",
+        "section": "Title/Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "no_intrinsic_affinity_handle",
+      "type": "mechanism",
+      "label": "Trx_tag lacks an intrinsic affinity handle; purification of Trx-fusion proteins typically requires a co-expressed His-tag or other affinity tag for immobilized metal affinity chromatography.",
+      "value": {
+        "intrinsic_affinity_handle": false,
+        "typical_co-tag": "His-tag"
+      },
+      "source": {
+        "pmid": "24600443",
+        "doi": "10.3389/fmicb.2014.00063",
+        "quote": "Trx lacks intrinsic affinity handle (requires His-tag co-expression)",
+        "quote_source": "catalog-doc",
+        "section": "Comparative review table"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Trx_tag is primarily validated for solubility enhancement in Escherichia coli; use in other bacterial and eukaryotic expression systems has been reported but is less standardized.",
+      "value": {
+        "primary_host": "Escherichia coli",
+        "host_range": "primarily prokaryotic"
+      },
+      "source": {
+        "pmid": "11036651",
+        "doi": "10.1016/s0076-6879(00)26063-1",
+        "quote": "Thioredoxin as a fusion partner for production of soluble recombinant proteins in Escherichia coli",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "tag_removal",
+      "type": "mechanism",
+      "label": "Trx_tag can be removed from the fusion protein by site-specific proteases (thrombin or enterokinase recognition sites are commonly inserted between Trx and the passenger); downstream processing uses the retained His-tag for subtractive IMAC.",
+      "value": {
+        "removal_proteases": [
+          "thrombin",
+          "enterokinase"
+        ],
+        "removal_strategy": "protease cleavage followed by subtractive IMAC"
+      },
+      "source": {
+        "pmid": "18429194",
+        "doi": "10.1002/0471140864.ps0607s10",
+        "quote": "Expression and purification of thioredoxin fusion proteins",
+        "quote_source": "primary",
+        "section": "Protocol overview"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 1,
+      "end": 109,
+      "label": "Thioredoxin",
+      "so_term": "SO:0000417",
+      "description": "Thioredoxin",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "misc_feature",
+      "start": 32,
+      "end": 33,
+      "label": "Active site: Nucleophile",
+      "so_term": "SO:0000110",
+      "description": "Nucleophile",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 35,
+      "end": 36,
+      "label": "Active site: Nucleophile",
+      "so_term": "SO:0000110",
+      "description": "Nucleophile",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 26,
+      "end": 27,
+      "label": "Site: Deprotonates C-terminal active site Cys",
+      "so_term": "SO:0000110",
+      "description": "Deprotonates C-terminal active site Cys",
+      "uniprot_type": "Site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 33,
+      "end": 34,
+      "label": "Site: Contributes to redox potential value",
+      "so_term": "SO:0000110",
+      "description": "Contributes to redox potential value",
+      "uniprot_type": "Site"
+    },
+    {
+      "type": "misc_feature",
+      "start": 34,
+      "end": 35,
+      "label": "Site: Contributes to redox potential value",
+      "so_term": "SO:0000110",
+      "description": "Contributes to redox potential value",
+      "uniprot_type": "Site"
+    },
+    {
+      "type": "modified_residue",
+      "start": 69,
+      "end": 70,
+      "label": "Modified residue: N6-acetyllysine",
+      "so_term": "SO:0001089",
+      "description": "N6-acetyllysine",
+      "uniprot_type": "Modified residue"
+    },
+    {
+      "type": "disulfide_bond",
+      "start": 32,
+      "end": 36,
+      "label": "Disulfide bond: Redox-active",
+      "so_term": "SO:0001088",
+      "description": "Redox-active",
+      "uniprot_type": "Disulfide bond"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-06-19",
+    "accession": "UniProt:P0AA25",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 174
+  }
+}

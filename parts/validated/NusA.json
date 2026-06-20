@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0",
+  "slug": "NusA",
+  "locus": "NusA",
+  "id": "NusA",
+  "description": "NusA (N-utilization substance protein A), E. coli K-12 transcription elongation factor and solubility-enhancing fusion tag, 495 aa, UniProt P0AFF6",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "MNKEILAVVEAVSNEKALPREKIFEALESALATATKKKYEQEIDVRVQIDRKSGDFDTFRRWLVVDEVTQPTKEITLEAARYEDESLNLGDYVEDQIESVTFDRITTQTAKQVIVQKVREAERAMVVDQFREHEGEIITGVVKKVNRDNISLDLGNNAEAVILREDMLPRENFRPGDRVRGVLYSVRPEARGAQLFVTRSKPEMLIELFRIEVPEIGEEVIEIKAAARDPGSRAKIAVKTNDKRIDPVGACVGMRGARVQAVSTELGGERIDIVLWDDNPAQFVINAMAPADVASIVVDEDKHTMDIAVEAGNLAQAIGRNGQNVRLASQLSGWELNVMTVDDLQAKHQAEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIEGLTDEKAGALIMAARNICWFGDEA",
+  "references": [
+    {
+      "authors": "Greenblatt J, Li J",
+      "title": "Interaction of the sigma factor and the nusA gene protein of E. coli with RNA polymerase in the initiation-termination cycle of transcription",
+      "journal": "Cell (1981)",
+      "pubmed_id": "6263495",
+      "comment": "doi:10.1016/0092-8674(81)90332-9"
+    },
+    {
+      "authors": "De Marco V, Stier G, Blandin S, de Marco A",
+      "title": "The solubility and stability of recombinant proteins are increased by their fusion to NusA",
+      "journal": "Biochem Biophys Res Commun (2004)",
+      "pubmed_id": "15336530",
+      "comment": "doi:10.1016/j.bbrc.2004.07.189"
+    },
+    {
+      "authors": "Nallamsetty S, Waugh DS",
+      "title": "Solubility-enhancing proteins MBP and NusA play a passive role in the folding of their fusion partners",
+      "journal": "Protein Expr Purif (2006)",
+      "pubmed_id": "16168669",
+      "comment": "doi:10.1016/j.pep.2005.06.012"
+    },
+    {
+      "authors": "de Marco A",
+      "title": "Two-step metal affinity purification of double-tagged (NusA-His6) fusion proteins",
+      "journal": "Nat Protoc (2006)",
+      "pubmed_id": "17406446",
+      "comment": "doi:10.1038/nprot.2006.289"
+    },
+    {
+      "authors": "Raran-Kurussi S, Waugh DS",
+      "title": "Unrelated solubility-enhancing fusion partners MBP and NusA utilize a similar mode of action",
+      "journal": "Biotechnol Bioeng (2014)",
+      "pubmed_id": "24942647",
+      "comment": "doi:10.1002/bit.25317"
+    },
+    {
+      "authors": "Ha KS, Toulokhonov I, Vassylyev DG, Landick R",
+      "title": "The NusA N-terminal domain is necessary and sufficient for enhancement of transcriptional pausing via interaction with the RNA exit channel of RNA polymerase",
+      "journal": "J Mol Biol (2010)",
+      "pubmed_id": "20600118",
+      "comment": "doi:10.1016/j.jmb.2010.06.036"
+    },
+    {
+      "authors": "Li K, Jiang T, Yu B, Wang L, Gao C, Ma C, Xu P, Ma Y",
+      "title": "Escherichia coli transcription termination factor NusA: heat-induced oligomerization and chaperone activity",
+      "journal": "Sci Rep (2013)",
+      "pubmed_id": "23907089",
+      "comment": "doi:10.1038/srep02347"
+    },
+    {
+      "authors": "Belogurov GA, Artsimovitch I",
+      "title": "The role of E. coli Nus-factors in transcription regulation and transcription:translation coupling: From structure to mechanism",
+      "journal": "Transcription (2011)",
+      "pubmed_id": "21922055",
+      "comment": "doi:10.4161/trns.2.3.15671"
+    }
+  ],
+  "features": [
+    {
+      "type": "CDS",
+      "start": 0,
+      "end": 495,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "NusA"
+        ],
+        "synonym": [
+          "nusA",
+          "N-utilization substance protein A",
+          "transcription termination/antitermination protein NusA"
+        ],
+        "note": [
+          "E. coli K-12 NusA (N-utilization substance protein A), 495 aa, UniProt P0AFF6. Essential transcription elongation factor that enhances transcriptional pausing and intrinsic termination; displaced from RNAP by sigma at initiation. Multi-domain architecture: NTD (aa 1–137, interacts with RNAP beta-flap tip helix), S1 RNA-binding domain, KH RNA-binding domain, AR1 (interacts with bacteriophage lambda N antiterminator), AR2 (autoinhibitory). Also widely deployed as an N-terminal solubility-enhancing fusion tag in recombinant protein expression."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000316",
+          "UniProt:P0AFF6"
+        ]
+      }
+    }
+  ],
+  "review_status": "ai-generated",
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P0AFF6 (NUSA_ECOLI, Swiss-Prot reviewed, E. coli K12 NusA, 495 aa), independently fetched via both FASTA and JSON REST endpoints — sequences identical, 100% match over full 495 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "transcription_elongation_factor",
+      "type": "function",
+      "label": "NusA binds RNAP core enzyme and stimulates transcriptional pausing and intrinsic (Rho-independent) termination",
+      "value": {
+        "function": "transcription elongation factor",
+        "mechanism": "stimulates transcriptional pausing and intrinsic termination",
+        "binding_partner": "RNA polymerase core enzyme",
+        "displacement": "sigma factor displaced upon transition from initiation to elongation"
+      },
+      "source": {
+        "pmid": "6263495",
+        "doi": "10.1016/0092-8674(81)90332-9",
+        "quote": "Interaction of the sigma factor and the nusA gene protein of E. coli with RNA polymerase in the initiation-termination cycle of transcription",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "solubility_tag",
+      "type": "function",
+      "label": "NusA fused N-terminally to poorly soluble recombinant proteins markedly increases their solubility and yield in E. coli expression",
+      "value": {
+        "function": "solubility-enhancing fusion tag",
+        "placement": "N-terminal",
+        "expression_host": "Escherichia coli",
+        "typical_yield_fusion": "13-20 mg/L"
+      },
+      "source": {
+        "pmid": "15336530",
+        "doi": "10.1016/j.bbrc.2004.07.189",
+        "quote": "The solubility and stability of recombinant proteins are increased by their fusion to NusA",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "solubility_mechanism",
+      "type": "mechanism",
+      "label": "NusA acts as a passive holdase — it prevents aggregation of the fused partner during synthesis but does not actively refold misfolded partners",
+      "value": {
+        "mechanism": "passive holdase",
+        "active_refolding": false,
+        "comparison": "similar mode of action to MBP"
+      },
+      "source": {
+        "pmid": "16168669",
+        "doi": "10.1016/j.pep.2005.06.012",
+        "quote": "Solubility-enhancing proteins MBP and NusA play a passive role in the folding of their fusion partners",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "ntd_pausing_function",
+      "type": "domain_function",
+      "label": "The NusA NTD (aa 1–137) is necessary and sufficient for pausing enhancement via interaction with the RNAP beta-flap tip helix / RNA exit channel",
+      "value": {
+        "domain": "NTD",
+        "residues": "1-137",
+        "function": "pausing enhancement",
+        "binding_site_on_RNAP": "beta-flap tip helix / RNA exit channel",
+        "experimental_basis": "truncation series (NTD, NTD-S1, NTD-S1-KH, full-length)"
+      },
+      "source": {
+        "pmid": "20600118",
+        "doi": "10.1016/j.jmb.2010.06.036",
+        "quote": "The NusA N-terminal domain is necessary and sufficient for enhancement of transcriptional pausing via interaction with the RNA exit channel of RNA polymerase",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "heat_induced_chaperone",
+      "type": "function",
+      "label": "Above 45 degrees C NusA forms high-molecular-weight oligomers via its C-terminal AR domain and acquires holdase/chaperone activity",
+      "value": {
+        "function": "heat-induced holdase/chaperone",
+        "temperature_threshold": "45 degrees C",
+        "oligomerization": "high-MW oligomers",
+        "domain_required": "C-terminal AR domain"
+      },
+      "source": {
+        "pmid": "23907089",
+        "doi": "10.1038/srep02347",
+        "quote": "NusA: heat-induced oligomerization and chaperone activity",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "purification_design",
+      "type": "application",
+      "label": "NusA-His6 double-tagged fusions can be purified by two-step IMAC exploiting NusA as a solubility partner and His6 for capture",
+      "value": {
+        "purification_strategy": "two-step IMAC",
+        "tag_design": "NusA-His6 double-tagged",
+        "steps": [
+          "IMAC capture via His6",
+          "optional on-column protease cleavage"
+        ]
+      },
+      "source": {
+        "pmid": "17406446",
+        "doi": "10.1038/nprot.2006.289",
+        "quote": "Two-step metal affinity purification of double-tagged (NusA-His6) fusion proteins",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "domain_architecture",
+      "type": "structure",
+      "label": "NusA contains NTD, S1, KH, AR1, and AR2 domains; AR1 contacts lambda N antiterminator; AR2 is autoinhibitory and regulates activity",
+      "value": {
+        "domains": [
+          "NTD (aa 1-137)",
+          "S1 RNA-binding",
+          "KH RNA-binding",
+          "AR1 (contacts lambda N)",
+          "AR2 (autoinhibitory)"
+        ],
+        "regulation": "AR2 autoinhibitory; AR1+AR2 form acidic repeat region"
+      },
+      "source": {
+        "pmid": "21922055",
+        "doi": "10.4161/trns.2.3.15671",
+        "quote": "Comprehensive review of NusA domain architecture (NTD, SKK, AR1, AR2); AR1 contacts lambda N; AR2 autoinhibitory; NusA-NusG regulation; domain residue boundaries",
+        "quote_source": "primary",
+        "section": "review"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 134,
+      "end": 200,
+      "label": "S1 motif",
+      "so_term": "SO:0000417",
+      "description": "S1 motif",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "protein_domain",
+      "start": 229,
+      "end": 293,
+      "label": "KH 1",
+      "so_term": "SO:0000417",
+      "description": "KH 1",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "protein_domain",
+      "start": 301,
+      "end": 368,
+      "label": "KH 2",
+      "so_term": "SO:0000417",
+      "description": "KH 2",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-06-19",
+    "accession": "UniProt:P0AFF6",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 160
+  }
+}
