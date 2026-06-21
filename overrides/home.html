@@ -417,7 +417,7 @@ footer a:hover{color:var(--madder);border-color:var(--madder)}
     </a>
     <div class="spacer"></div>
     <button class="searchbtn" id="openPalette" aria-label="Search the catalog">
-      <span class="mag">⌕</span><span class="txt">Search 246 parts, synonyms, claims…</span>
+      <span class="mag">⌕</span><span class="txt" id="searchHint">Search the catalog — parts, synonyms, claims…</span>
       <span class="kbd">⌘K</span>
     </button>
     <a class="navlink" href="#contribute">Contribute</a>
@@ -1112,6 +1112,8 @@ function boot(){
   readHash();
   document.getElementById("quickFilter").value=state.q;
   document.getElementById("sort").value=state.sort;
+  const hint=document.getElementById("searchHint");
+  if(hint)hint.textContent=`Search ${PARTS.length} parts, synonyms, claims…`;
   buildRibbon();buildHelix();buildRail();applyView();
   document.getElementById("presets").innerHTML=PRESETS.map(p=>`<button class="preset">${esc(p.l)}</button>`).join("");
   renderResults();

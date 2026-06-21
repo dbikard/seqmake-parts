@@ -63,7 +63,9 @@ nav:
   - Catalog: index.md
   - Browse by type:
       - Promoters: types/promoters.md
-      - Origins of replication: types/origins-of-replication.md
       - Coding sequences: types/coding-sequences.md
+      - Protein domains: types/protein-domains.md
+      - Terminators: types/terminators.md
+      - Origins of replication: types/origins-of-replication.md
   - Collections: collections/index.md
   - Tags: tags.md
