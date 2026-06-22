@@ -1,0 +1,63 @@
+LOCUS       Gateway_attP2            232 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Gateway (lambda-derived) attP2 attachment site; 232 bp, the
+            specificity-2 donor-vector recombination site from pDONR221. The BP
+            reaction (lambda Int + IHF) recombines it only with the cognate
+            attB2 to give attL2 + attR2, enforcing directional recombinational
+            cloning..
+ACCESSION   Gateway_attP2
+VERSION     Gateway_attP2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Hartley JL, Temple GF, Brasch MA
+  TITLE     DNA cloning using in vitro site-specific recombination
+  JOURNAL   Genome Res
+   PUBMED   11076863
+  REMARK    doi:10.1101/gr.143000
+REFERENCE   2
+  AUTHORS   Landy A
+  TITLE     Dynamic, structural, and regulatory aspects of lambda site-specific
+            recombination
+  JOURNAL   Annu Rev Biochem
+   PUBMED   2528323
+  REMARK    doi:10.1146/annurev.bi.58.070189.004405
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Gateway_attP2
+FEATURES             Location/Qualifiers
+     protein_bind    1..232
+                     /label="Gateway attP2"
+                     /synonym="Gateway_attP2"
+                     /synonym="attP2"
+                     /synonym="Gateway attP2"
+                     /synonym="lambda-derived attP (specificity 2)"
+                     /note="Gateway recombinational-cloning attP site,
+                     specificity 2; 232 bp donor-vector attachment site.
+                     Engineered, lambda-derived attP site: it keeps the
+                     bacteriophage lambda attP architecture (P and P' arm
+                     Int-binding sites and IHF sites flanking the common core)
+                     with a central 7 bp overlap modified to set its
+                     recombination specificity. The BP reaction (lambda Int +
+                     IHF) recombines attB2 with attP2 to give attL2 + attR2.
+                     Source: pDONR221 positions 2753-2984 (- strand)."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /collection="gateway-att-sites"
+                     /cognate="Gateway_attB2"
+     misc_feature    80..94
+                     /label="att core / 7 bp overlap (specificity 2)"
+                     /parent="Gateway_attP2"
+                     /note="Common-core crossover region carrying the
+                     specificity-2 7 bp overlap (GTACAAGA...); strand exchange
+                     by lambda Int occurs across this overlap, and its sequence
+                     makes attP2 recombine only with the cognate attB2."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+ORIGIN
+        1 aaataatgat tttattttga ctgatagtga cctgttcgtt gcaacaaatt gataagcaat
+       61 gctttcttat aatgccaact ttgtacaaga aagctgaacg agaaacgtaa aatgatataa
+      121 atatcaatat attaaattag attttgcata aaaaacagac tacataatac tgtaaaacac
+      181 aacatatcca gtcactatga atcaactact tagatggtat tagtgacctg ta
+//

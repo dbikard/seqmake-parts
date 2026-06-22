@@ -191,6 +191,30 @@
       ]
     },
     {
+      "@id": "collection:gateway-att-sites",
+      "@type": "sbol:Collection",
+      "dcterms:description": "The att recombination sites of the Gateway cloning system: engineered derivatives of the bacteriophage lambda att/Int system in which the central 7 bp overlap was altered to create two mutually orthogonal specificities (1 and 2). attB x attP (the BP reaction, lambda Int + IHF) gives attL + attR, and attL x attR (LR) regenerates attB + attP; using distinct specificities at the two ends of a fragment makes the reactions directional. attP1/attP2 are the ~232 bp donor-vector (pDONR) sites; attB1/attB2 are the 25 bp minimal sites added to a fragment by PCR primer tails. Each attP is cross-linked to its cognate attB.",
+      "dcterms:title": "Gateway (lambda-derived) recombinational-cloning att sites",
+      "sbol:displayId": "gateway-att-sites",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:member": [
+        {
+          "@id": "part:Gateway_attB1"
+        },
+        {
+          "@id": "part:Gateway_attB2"
+        },
+        {
+          "@id": "part:Gateway_attP1"
+        },
+        {
+          "@id": "part:Gateway_attP2"
+        }
+      ]
+    },
+    {
       "@id": "collection:phage-att-sites",
       "@type": "sbol:Collection",
       "dcterms:description": "Phage-borne attP attachment sites from phylogenetically distinct, mutually orthogonal site-specific recombination systems, each recognized by its own dedicated integrase and not cross-reacting with the others: phiC31 attP (Streptomyces phage phiC31; a large serine integrase that needs no host factors and gives highly directional integration), and the tyrosine-integrase attP sites of coliphages lambda, 186 (a P2-family system that also uses the Apl directionality factor), phi80, and HK022 (which use the host integration host factor IHF, and an excisionase for the reverse reaction). Each attP is the phage half of an attP x attB recombination pair; the cognate bacterial attB sites (in the host chromosome, or a pseudo-attB in non-native hosts for phiC31) are being added. These orthogonal sites are widely used as landing pads for stable, single-copy genomic integration.",
@@ -6015,6 +6039,678 @@
       "sbol:elements": "MSPILGYWKIKGLVQPTRLLLEYLEEKYEEHLYERDEGDKWRNKKFELGLEFPNLPYYIDGDVKLTQSMAIIRYIADKHNMLGGCPKERAEISMLEGAVLDIRYGVSRIAYSKDFETLKVDFLSKLPEMLKMFEDRLCHKTYLNGDHVTHPDFMLYDALDVVLYMDPMCLDAFPKLVCFKKRIEAIPQIDKYLKSSKYIAWPLQGWQATFGGGDHPPK",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:Gateway_attB1",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:Gateway_attB1_claim_mechanism"
+        },
+        {
+          "@id": "part:Gateway_attB1_claim_specificity"
+        },
+        {
+          "@id": "part:Gateway_attB1_claim_application"
+        }
+      ],
+      "cat:slug": "Gateway_attB1",
+      "dcterms:description": "Gateway recombinational-cloning attB site, specificity 1; 25 bp minimal attachment site appended to a DNA fragment via the attB1 PCR primer tail. The BP reaction (lambda Int + IHF) recombines attB1 with attP1 to insert the fragment into a pDONR entry vector. Engineered lambda-derived site; canonical sequence per Hartley, Temple & Brasch 2000.",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "dcterms:title": "Gateway attB1",
+      "rdfs:label": "Gateway attB1",
+      "sbol:displayId": "Gateway_attB1",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:Gateway_attB1_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "Gateway_attB1",
+        "attB1",
+        "Gateway attB1"
+      ]
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"primer_tail\": \"GGGGACAAGTTTGTACAAAAAAGCAGGCT\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB1_claim_application_provenance"
+      },
+      "rdfs:label": "Added as a primer tail when amplifying a gene for Gateway entry: 5'-GGGGACAAGTTTGTACAAAAAAGCAGGCT-[gene]; the 5' GGGG clamp protects the site during the recombination reaction."
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"length_bp\": 25, \"reaction\": \"attB1 x attP1 -> attL1 + attR1\", \"reaction_name\": \"BP\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB1_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Gateway attB1 is the minimal (~25 bp) specificity-1 attachment site appended to a PCR product via the attB1 primer tail; it recombines with attP1 (BP reaction, lambda Int + IHF) to insert the product into a pDONR entry vector."
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_specificity",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "sequence_feature",
+      "cat:claimValue": "{\"overlap\": \"GTACAAA\", \"specificity\": \"1\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB1_claim_specificity_provenance"
+      },
+      "rdfs:label": "attB1 carries the specificity-1 central overlap and recombines only with the cognate attP1, giving the orthogonality that makes Gateway cloning directional."
+    },
+    {
+      "@id": "part:Gateway_attB1_claim_specificity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB1_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "Gateway_attB1_sequence",
+      "sbol:elements": "ACAAGTTTGTACAAAAAAGCAGGCT",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:Gateway_attB2",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:Gateway_attB2_claim_mechanism"
+        },
+        {
+          "@id": "part:Gateway_attB2_claim_specificity"
+        },
+        {
+          "@id": "part:Gateway_attB2_claim_application"
+        }
+      ],
+      "cat:slug": "Gateway_attB2",
+      "dcterms:description": "Gateway recombinational-cloning attB site, specificity 2; 25 bp minimal attachment site appended to a DNA fragment via the attB2 PCR primer tail. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to insert the fragment into a pDONR entry vector. Engineered lambda-derived site; canonical sequence per Hartley, Temple & Brasch 2000.",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "dcterms:title": "Gateway attB2",
+      "rdfs:label": "Gateway attB2",
+      "sbol:displayId": "Gateway_attB2",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:Gateway_attB2_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "Gateway_attB2",
+        "attB2",
+        "Gateway attB2"
+      ]
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"primer_tail\": \"GGGGACCACTTTGTACAAGAAAGCTGGGT\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB2_claim_application_provenance"
+      },
+      "rdfs:label": "Added as a primer tail when amplifying a gene for Gateway entry: 5'-GGGGACCACTTTGTACAAGAAAGCTGGGT-[gene]; the 5' GGGG clamp protects the site during the recombination reaction."
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"length_bp\": 25, \"reaction\": \"attB2 x attP2 -> attL2 + attR2\", \"reaction_name\": \"BP\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB2_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Gateway attB2 is the minimal (~25 bp) specificity-2 attachment site appended to a PCR product via the attB2 primer tail; it recombines with attP2 (BP reaction, lambda Int + IHF) to insert the product into a pDONR entry vector."
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_specificity",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "sequence_feature",
+      "cat:claimValue": "{\"overlap\": \"GTACAAG\", \"specificity\": \"2\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attB2_claim_specificity_provenance"
+      },
+      "rdfs:label": "attB2 carries the specificity-2 central overlap and recombines only with the cognate attP2, giving the orthogonality that makes Gateway cloning directional."
+    },
+    {
+      "@id": "part:Gateway_attB2_claim_specificity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attB2_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "Gateway_attB2_sequence",
+      "sbol:elements": "ACCACTTTGTACAAGAAAGCTGGGT",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:Gateway_attP1",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:Gateway_attP1_claim_mechanism"
+        },
+        {
+          "@id": "part:Gateway_attP1_claim_specificity"
+        },
+        {
+          "@id": "part:Gateway_attP1_claim_derivation"
+        },
+        {
+          "@id": "part:Gateway_attP1_claim_application"
+        }
+      ],
+      "cat:slug": "Gateway_attP1",
+      "dcterms:description": "Gateway recombinational-cloning attP site, specificity 1; 232 bp donor-vector attachment site. Engineered, lambda-derived attP site: it keeps the bacteriophage lambda attP architecture (P and P' arm Int-binding sites and IHF sites flanking the common core) with a central 7 bp overlap modified to set its recombination specificity. The BP reaction (lambda Int + IHF) recombines attB1 with attP1 to give attL1 + attR1. Source: pDONR221 positions 570-801 (+ strand).",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:11076863"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2528323"
+        }
+      ],
+      "dcterms:title": "Gateway attP1",
+      "rdfs:label": "Gateway attP1",
+      "sbol:displayId": "Gateway_attP1",
+      "sbol:hasFeature": {
+        "@id": "part:Gateway_attP1_feature_0"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:Gateway_attP1_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "Gateway_attP1",
+        "attP1",
+        "Gateway attP1",
+        "lambda-derived attP (specificity 1)"
+      ]
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"role\": \"donor-vector (pDONR) site\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP1_claim_application_provenance"
+      },
+      "rdfs:label": "Used as the donor (pDONR) site in Gateway cloning: a gene amplified with attB primer tails is captured by BP recombination into a pDONR vector (which carries attP1 and attP2) to make a reusable entry clone."
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_derivation",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"parent_system\": \"bacteriophage lambda att/Int\"}",
+      "cat:confidence": "medium",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2528323"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:2528323"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP1_claim_derivation_provenance"
+      },
+      "rdfs:label": "Gateway att sites are engineered derivatives of the bacteriophage lambda att/Int system; attP1 retains the lambda attP arm-type Int sites and IHF sites flanking the common core, with the central overlap altered to set specificity."
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_derivation_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"host_factor\": \"IHF\", \"reaction\": \"attB1 x attP1 -> attL1 + attR1\", \"reaction_name\": \"BP\", \"recombinase\": \"lambda Int (tyrosine recombinase)\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP1_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Gateway attP1 is the donor-vector attachment site for in vitro lambda-integrase (Int + IHF) site-specific recombination; the BP reaction recombines attB1 with attP1 to give attL1 + attR1, capturing an attB1-flanked DNA into the donor backbone as an entry clone."
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_specificity",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "sequence_feature",
+      "cat:claimValue": "{\"overlap\": \"GTACAAA\", \"specificity\": \"1\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP1_claim_specificity_provenance"
+      },
+      "rdfs:label": "The attP1 central 7 bp overlap (specificity 1) recombines only with the cognate attB1; this engineered orthogonality between specificity-1 and specificity-2 sites enforces directional, ordered Gateway cloning."
+    },
+    {
+      "@id": "part:Gateway_attP1_claim_specificity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "dcterms:title": "att core / 7 bp overlap (specificity 1)",
+      "sbol:displayId": "Gateway_attP1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:Gateway_attP1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:Gateway_attP1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 94,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:Gateway_attP1_sequence"
+      },
+      "sbol:start": 80
+    },
+    {
+      "@id": "part:Gateway_attP1_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "Gateway_attP1_sequence",
+      "sbol:elements": "AAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATGAGCAATGCTTTTTTATAATGCCAACTTTGTACAAAAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATCCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTA",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
+      "@id": "part:Gateway_attP2",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": [
+        {
+          "@id": "part:Gateway_attP2_claim_mechanism"
+        },
+        {
+          "@id": "part:Gateway_attP2_claim_specificity"
+        },
+        {
+          "@id": "part:Gateway_attP2_claim_derivation"
+        },
+        {
+          "@id": "part:Gateway_attP2_claim_application"
+        }
+      ],
+      "cat:slug": "Gateway_attP2",
+      "dcterms:description": "Gateway recombinational-cloning attP site, specificity 2; 232 bp donor-vector attachment site. Engineered, lambda-derived attP site: it keeps the bacteriophage lambda attP architecture (P and P' arm Int-binding sites and IHF sites flanking the common core) with a central 7 bp overlap modified to set its recombination specificity. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to give attL2 + attR2. Source: pDONR221 positions 2753-2984 (- strand).",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:11076863"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2528323"
+        }
+      ],
+      "dcterms:title": "Gateway attP2",
+      "rdfs:label": "Gateway attP2",
+      "sbol:displayId": "Gateway_attP2",
+      "sbol:hasFeature": {
+        "@id": "part:Gateway_attP2_feature_0"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:Gateway_attP2_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "Gateway_attP2",
+        "attP2",
+        "Gateway attP2",
+        "lambda-derived attP (specificity 2)"
+      ]
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_application",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "application",
+      "cat:claimValue": "{\"role\": \"donor-vector (pDONR) site\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP2_claim_application_provenance"
+      },
+      "rdfs:label": "Used as the donor (pDONR) site in Gateway cloning: a gene amplified with attB primer tails is captured by BP recombination into a pDONR vector (which carries attP1 and attP2) to make a reusable entry clone."
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_application_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_derivation",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"parent_system\": \"bacteriophage lambda att/Int\"}",
+      "cat:confidence": "medium",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2528323"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:2528323"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP2_claim_derivation_provenance"
+      },
+      "rdfs:label": "Gateway att sites are engineered derivatives of the bacteriophage lambda att/Int system; attP2 retains the lambda attP arm-type Int sites and IHF sites flanking the common core, with the central overlap altered to set specificity."
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_derivation_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_mechanism",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "mechanism",
+      "cat:claimValue": "{\"host_factor\": \"IHF\", \"reaction\": \"attB2 x attP2 -> attL2 + attR2\", \"reaction_name\": \"BP\", \"recombinase\": \"lambda Int (tyrosine recombinase)\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP2_claim_mechanism_provenance"
+      },
+      "rdfs:label": "Gateway attP2 is the donor-vector attachment site for in vitro lambda-integrase (Int + IHF) site-specific recombination; the BP reaction recombines attB2 with attP2 to give attL2 + attR2, capturing an attB2-flanked DNA into the donor backbone as an entry clone."
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_mechanism_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_specificity",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "sequence_feature",
+      "cat:claimValue": "{\"overlap\": \"GTACAAG\", \"specificity\": \"2\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:Gateway_attP2_claim_specificity_provenance"
+      },
+      "rdfs:label": "The attP2 central 7 bp overlap (specificity 2) recombines only with the cognate attB2; this engineered orthogonality between specificity-1 and specificity-2 sites enforces directional, ordered Gateway cloning."
+    },
+    {
+      "@id": "part:Gateway_attP2_claim_specificity_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "add-part",
+      "cat:fromDoc": "secondary",
+      "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Gateway_attP2_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11076863"
+      },
+      "dcterms:title": "att core / 7 bp overlap (specificity 2)",
+      "sbol:displayId": "Gateway_attP2_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:Gateway_attP2_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:Gateway_attP2_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 94,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:Gateway_attP2_sequence"
+      },
+      "sbol:start": 80
+    },
+    {
+      "@id": "part:Gateway_attP2_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "Gateway_attP2_sequence",
+      "sbol:elements": "AAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTCTTATAATGCCAACTTTGTACAAGAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATCCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTA",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -23458,76 +24154,6 @@
       "sbol:elements": "MAEAQNDPLLPGYSFNAHLVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQIINAGQGEGRYSELLAINLLEQLLLRRMEAINESLHPPMDNRVREACQYISDHLADSNFDIASVAQHVCLSPSRLSHLFRQQLGISVLSWREDQRISQAKLLLSTTRMPIATVGRNVGFDDQLYFSRVFKKCTGASPSEFRAGCEEKVNDVAVKLS",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
-    },
-    {
-      "@id": "part:attP1",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "attP1",
-      "dcterms:title": "attP1",
-      "rdfs:label": "attP1",
-      "sbol:displayId": "attP1",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:attP1_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000410"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000251"
-      },
-      "skos:altLabel": "attP1"
-    },
-    {
-      "@id": "part:attP1_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "attP1_sequence",
-      "sbol:elements": "GTTCAGCTTTTTTGTACAAAGTTGG",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1207"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
-    },
-    {
-      "@id": "part:attP2",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "attP2",
-      "dcterms:title": "attP2",
-      "rdfs:label": "attP2",
-      "sbol:displayId": "attP2",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:attP2_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000410"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000251"
-      },
-      "skos:altLabel": "attP2"
-    },
-    {
-      "@id": "part:attP2_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "attP2_sequence",
-      "sbol:elements": "CCAACTTTGTACAAGAAAGCTGAAC",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

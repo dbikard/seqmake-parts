@@ -289,5 +289,36 @@
         "url": "http://sequenceontology.org/browser/current_release/term/SO:0000417"
       }
     ]
+  },
+  "gateway-att-sites": {
+    "name": "Gateway (lambda-derived) recombinational-cloning att sites",
+    "description": "The att recombination sites of the Gateway cloning system: engineered derivatives of the bacteriophage lambda att/Int system in which the central 7 bp overlap was altered to create two mutually orthogonal specificities (1 and 2). attB x attP (the BP reaction, lambda Int + IHF) gives attL + attR, and attL x attR (LR) regenerates attB + attP; using distinct specificities at the two ends of a fragment makes the reactions directional. attP1/attP2 are the ~232 bp donor-vector (pDONR) sites; attB1/attB2 are the 25 bp minimal sites added to a fragment by PCR primer tails. Each attP is cross-linked to its cognate attB.",
+    "source": "Gateway recombinational cloning (in vitro lambda site-specific recombination)",
+    "references": [
+      {
+        "authors": "Hartley JL, Temple GF, Brasch MA",
+        "title": "DNA cloning using in vitro site-specific recombination",
+        "journal": "Genome Res",
+        "pubmed_id": "11076863",
+        "comment": "doi:10.1101/gr.143000"
+      },
+      {
+        "authors": "Landy A",
+        "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+        "journal": "Annu Rev Biochem",
+        "pubmed_id": "2528323",
+        "comment": "doi:10.1146/annurev.bi.58.070189.004405"
+      }
+    ],
+    "resources": [
+      {
+        "title": "pDONR221 (Gateway donor vector) sequence + map",
+        "url": "https://www.snapgene.com/plasmids/gateway_cloning_vectors/pDONR221"
+      },
+      {
+        "title": "Hartley, Temple & Brasch 2000 — Gateway att site definition",
+        "url": "https://doi.org/10.1101/gr.143000"
+      }
+    ]
   }
 }

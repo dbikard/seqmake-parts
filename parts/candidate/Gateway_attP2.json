@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "slug": "Gateway_attP2",
+  "locus": "Gateway_attP2",
+  "id": "Gateway_attP2",
+  "description": "Gateway (lambda-derived) attP2 attachment site; 232 bp, the specificity-2 donor-vector recombination site from pDONR221. The BP reaction (lambda Int + IHF) recombines it only with the cognate attB2 to give attL2 + attR2, enforcing directional recombinational cloning.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "AAATAATGATTTTATTTTGACTGATAGTGACCTGTTCGTTGCAACAAATTGATAAGCAATGCTTTCTTATAATGCCAACTTTGTACAAGAAAGCTGAACGAGAAACGTAAAATGATATAAATATCAATATATTAAATTAGATTTTGCATAAAAAACAGACTACATAATACTGTAAAACACAACATATCCAGTCACTATGAATCAACTACTTAGATGGTATTAGTGACCTGTA",
+  "references": [
+    {
+      "authors": "Hartley JL, Temple GF, Brasch MA",
+      "title": "DNA cloning using in vitro site-specific recombination",
+      "journal": "Genome Res",
+      "pubmed_id": "11076863",
+      "comment": "doi:10.1101/gr.143000"
+    },
+    {
+      "authors": "Landy A",
+      "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+      "journal": "Annu Rev Biochem",
+      "pubmed_id": "2528323",
+      "comment": "doi:10.1146/annurev.bi.58.070189.004405"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 232,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Gateway attP2"
+        ],
+        "synonym": [
+          "Gateway_attP2",
+          "attP2",
+          "Gateway attP2",
+          "lambda-derived attP (specificity 2)"
+        ],
+        "note": [
+          "Gateway recombinational-cloning attP site, specificity 2; 232 bp donor-vector attachment site. Engineered, lambda-derived attP site: it keeps the bacteriophage lambda attP architecture (P and P' arm Int-binding sites and IHF sites flanking the common core) with a central 7 bp overlap modified to set its recombination specificity. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to give attL2 + attR2. Source: pDONR221 positions 2753-2984 (- strand)."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ],
+        "collection": [
+          "gateway-att-sites"
+        ],
+        "cognate": [
+          "Gateway_attB2"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 79,
+      "end": 94,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "att core / 7 bp overlap (specificity 2)"
+        ],
+        "parent": [
+          "Gateway_attP2"
+        ],
+        "note": [
+          "Common-core crossover region carrying the specificity-2 7 bp overlap (GTACAAGA...); strand exchange by lambda Int occurs across this overlap, and its sequence makes attP2 recombine only with the cognate attB2."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "sequence_source": "pDONR221 (Gateway donor vector; SnapGene map in the local sequence store), positions 2753-2984 (- strand), 100% identity over 232 bp; byte-verified via tools/source_finder.py --carrier-name pDONR221",
+    "asserting_agent": "add-part"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Gateway attP2 is the donor-vector attachment site for in vitro lambda-integrase (Int + IHF) site-specific recombination; the BP reaction recombines attB2 with attP2 to give attL2 + attR2, capturing an attB2-flanked DNA into the donor backbone as an entry clone.",
+      "value": {
+        "recombinase": "lambda Int (tyrosine recombinase)",
+        "host_factor": "IHF",
+        "reaction": "attB2 x attP2 -> attL2 + attR2",
+        "reaction_name": "BP"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "specificity",
+      "type": "sequence_feature",
+      "label": "The attP2 central 7 bp overlap (specificity 2) recombines only with the cognate attB2; this engineered orthogonality between specificity-1 and specificity-2 sites enforces directional, ordered Gateway cloning.",
+      "value": {
+        "specificity": "2",
+        "overlap": "GTACAAG"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "derivation",
+      "type": "mechanism",
+      "label": "Gateway att sites are engineered derivatives of the bacteriophage lambda att/Int system; attP2 retains the lambda attP arm-type Int sites and IHF sites flanking the common core, with the central overlap altered to set specificity.",
+      "value": {
+        "parent_system": "bacteriophage lambda att/Int"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "2528323",
+        "doi": "10.1146/annurev.bi.58.070189.004405",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Used as the donor (pDONR) site in Gateway cloning: a gene amplified with attB primer tails is captured by BP recombination into a pDONR vector (which carries attP1 and attP2) to make a reusable entry clone.",
+      "value": {
+        "role": "donor-vector (pDONR) site"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

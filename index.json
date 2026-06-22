@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 273,
+  "n_parts": 275,
   "n_validated": 75,
-  "n_candidate": 198,
-  "n_functional_claims": 331,
+  "n_candidate": 200,
+  "n_functional_claims": 345,
   "parts": [
     {
       "slug": "186_integrase",
@@ -272,32 +272,6 @@
       "synonyms": [
         "araC",
         "arabinose operon regulatory protein"
-      ]
-    },
-    {
-      "slug": "attP1",
-      "name": "attP1",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "attP1"
-      ]
-    },
-    {
-      "slug": "attP2",
-      "name": "attP2",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "attP2"
       ]
     },
     {
@@ -1087,6 +1061,68 @@
       "synonyms": [
         "gam",
         "gam protein"
+      ]
+    },
+    {
+      "slug": "Gateway_attB1",
+      "name": "Gateway attB1",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 3,
+      "synonyms": [
+        "Gateway_attB1",
+        "attB1",
+        "Gateway attB1"
+      ]
+    },
+    {
+      "slug": "Gateway_attB2",
+      "name": "Gateway attB2",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 3,
+      "synonyms": [
+        "Gateway_attB2",
+        "attB2",
+        "Gateway attB2"
+      ]
+    },
+    {
+      "slug": "Gateway_attP1",
+      "name": "Gateway attP1",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 4,
+      "synonyms": [
+        "Gateway_attP1",
+        "attP1",
+        "Gateway attP1",
+        "lambda-derived attP (specificity 1)"
+      ]
+    },
+    {
+      "slug": "Gateway_attP2",
+      "name": "Gateway attP2",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "n_claims": 4,
+      "synonyms": [
+        "Gateway_attP2",
+        "attP2",
+        "Gateway attP2",
+        "lambda-derived attP (specificity 2)"
       ]
     },
     {
@@ -4197,6 +4233,11 @@
       "id": "epitope-tags",
       "name": "Epitope / detection tags",
       "n_parts": 10
+    },
+    {
+      "id": "gateway-att-sites",
+      "name": "Gateway (lambda-derived) recombinational-cloning att sites",
+      "n_parts": 4
     },
     {
       "id": "phage-att-sites",

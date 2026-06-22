@@ -1,0 +1,40 @@
+LOCUS       Gateway_attB2             25 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Gateway attB2 minimal attachment site; 25 bp, the specificity-2 attB
+            recombination site appended to a DNA fragment through the attB2 PCR
+            primer tail. It recombines with attP2 (BP reaction) to move the
+            fragment into a pDONR entry vector. An engineered lambda-derived
+            site; the canonical sequence is from Hartley, Temple & Brasch 2000..
+ACCESSION   Gateway_attB2
+VERSION     Gateway_attB2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Hartley JL, Temple GF, Brasch MA
+  TITLE     DNA cloning using in vitro site-specific recombination
+  JOURNAL   Genome Res
+   PUBMED   11076863
+  REMARK    doi:10.1101/gr.143000
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Gateway_attB2
+FEATURES             Location/Qualifiers
+     protein_bind    1..25
+                     /label="Gateway attB2"
+                     /synonym="Gateway_attB2"
+                     /synonym="attB2"
+                     /synonym="Gateway attB2"
+                     /note="Gateway recombinational-cloning attB site,
+                     specificity 2; 25 bp minimal attachment site appended to a
+                     DNA fragment via the attB2 PCR primer tail. The BP reaction
+                     (lambda Int + IHF) recombines attB2 with attP2 to insert
+                     the fragment into a pDONR entry vector. Engineered
+                     lambda-derived site; canonical sequence per Hartley, Temple
+                     & Brasch 2000."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /collection="gateway-att-sites"
+                     /cognate="Gateway_attP2"
+ORIGIN
+        1 accactttgt acaagaaagc tgggt
+//

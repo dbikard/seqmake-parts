@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "slug": "Gateway_attB2",
+  "locus": "Gateway_attB2",
+  "id": "Gateway_attB2",
+  "description": "Gateway attB2 minimal attachment site; 25 bp, the specificity-2 attB recombination site appended to a DNA fragment through the attB2 PCR primer tail. It recombines with attP2 (BP reaction) to move the fragment into a pDONR entry vector. An engineered lambda-derived site; the canonical sequence is from Hartley, Temple & Brasch 2000.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "data_file_division": "UNK",
+    "date": "01-JAN-1980"
+  },
+  "sequence": "ACCACTTTGTACAAGAAAGCTGGGT",
+  "references": [
+    {
+      "authors": "Hartley JL, Temple GF, Brasch MA",
+      "title": "DNA cloning using in vitro site-specific recombination",
+      "journal": "Genome Res",
+      "pubmed_id": "11076863",
+      "comment": "doi:10.1101/gr.143000"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_bind",
+      "start": 0,
+      "end": 25,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Gateway attB2"
+        ],
+        "synonym": [
+          "Gateway_attB2",
+          "attB2",
+          "Gateway attB2"
+        ],
+        "note": [
+          "Gateway recombinational-cloning attB site, specificity 2; 25 bp minimal attachment site appended to a DNA fragment via the attB2 PCR primer tail. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to insert the fragment into a pDONR entry vector. Engineered lambda-derived site; canonical sequence per Hartley, Temple & Brasch 2000."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "collection": [
+          "gateway-att-sites"
+        ],
+        "cognate": [
+          "Gateway_attP2"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "sequence_source": "Gateway attB2 minimal recombination site as defined in Hartley, Temple & Brasch 2000 (PMID 11076863) and the Gateway cloning manual; engineered site (no natural deposit) - sequence from the defining publication",
+    "asserting_agent": "add-part"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Gateway attB2 is the minimal (~25 bp) specificity-2 attachment site appended to a PCR product via the attB2 primer tail; it recombines with attP2 (BP reaction, lambda Int + IHF) to insert the product into a pDONR entry vector.",
+      "value": {
+        "reaction": "attB2 x attP2 -> attL2 + attR2",
+        "reaction_name": "BP",
+        "length_bp": 25
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "specificity",
+      "type": "sequence_feature",
+      "label": "attB2 carries the specificity-2 central overlap and recombines only with the cognate attP2, giving the orthogonality that makes Gateway cloning directional.",
+      "value": {
+        "specificity": "2",
+        "overlap": "GTACAAG"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Added as a primer tail when amplifying a gene for Gateway entry: 5'-GGGGACCACTTTGTACAAGAAAGCTGGGT-[gene]; the 5' GGGG clamp protects the site during the recombination reaction.",
+      "value": {
+        "primer_tail": "GGGGACCACTTTGTACAAGAAAGCTGGGT"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11076863",
+        "doi": "10.1101/gr.143000",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "add-part"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

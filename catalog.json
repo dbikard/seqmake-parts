@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 273,
+  "n_parts": 275,
   "n_validated": 75,
-  "n_candidate": 198,
+  "n_candidate": 200,
   "n_documented": 75,
-  "n_functional_claims": 331,
+  "n_functional_claims": 345,
   "parts": [
     {
       "name": "186 integrase",
@@ -1245,54 +1245,6 @@
           "documented": false
         }
       ],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
-      "name": "attP1",
-      "slug": "attP1",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "attP1"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 25,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
-      "name": "attP2",
-      "slug": "attP2",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000410",
-      "so_name": "protein_binding_site",
-      "synonyms": [
-        "attP2"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 25,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
@@ -6274,6 +6226,548 @@
       "references": [],
       "main_citations": [],
       "functional_claims": []
+    },
+    {
+      "name": "Gateway attB1",
+      "slug": "Gateway_attB1",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "Gateway_attB1",
+        "attB1",
+        "Gateway attB1"
+      ],
+      "collections": [
+        "gateway-att-sites"
+      ],
+      "description": "Gateway recombinational-cloning attB site, specificity 1; 25 bp minimal attachment site appended to a DNA fragment via the attB1 PCR primer tail. The BP reaction (lambda Int + IHF) recombines attB1 with attP1 to insert the fragment into a pDONR entry vector. Engineered lambda-derived site; canonical sequence per Hartley, Temple & Brasch 2000.",
+      "length": 25,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Hartley JL, Temple GF, Brasch MA",
+          "title": "DNA cloning using in vitro site-specific recombination",
+          "journal": "Genome Res",
+          "pmid": "11076863",
+          "doi": "10.1101/gr.143000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11076863/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Gateway attB1 is the minimal (~25 bp) specificity-1 attachment site appended to a PCR product via the attB1 primer tail; it recombines with attP1 (BP reaction, lambda Int + IHF) to insert the product into a pDONR entry vector.",
+          "value": {
+            "reaction": "attB1 x attP1 -> attL1 + attR1",
+            "reaction_name": "BP",
+            "length_bp": 25
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "sequence_feature",
+          "label": "attB1 carries the specificity-1 central overlap and recombines only with the cognate attP1, giving the orthogonality that makes Gateway cloning directional.",
+          "value": {
+            "specificity": "1",
+            "overlap": "GTACAAA"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "application",
+          "type": "application",
+          "label": "Added as a primer tail when amplifying a gene for Gateway entry: 5'-GGGGACAAGTTTGTACAAAAAAGCAGGCT-[gene]; the 5' GGGG clamp protects the site during the recombination reaction.",
+          "value": {
+            "primer_tail": "GGGGACAAGTTTGTACAAAAAAGCAGGCT"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "Gateway attB2",
+      "slug": "Gateway_attB2",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "Gateway_attB2",
+        "attB2",
+        "Gateway attB2"
+      ],
+      "collections": [
+        "gateway-att-sites"
+      ],
+      "description": "Gateway recombinational-cloning attB site, specificity 2; 25 bp minimal attachment site appended to a DNA fragment via the attB2 PCR primer tail. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to insert the fragment into a pDONR entry vector. Engineered lambda-derived site; canonical sequence per Hartley, Temple & Brasch 2000.",
+      "length": 25,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Hartley JL, Temple GF, Brasch MA",
+          "title": "DNA cloning using in vitro site-specific recombination",
+          "journal": "Genome Res",
+          "pmid": "11076863",
+          "doi": "10.1101/gr.143000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11076863/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Gateway attB2 is the minimal (~25 bp) specificity-2 attachment site appended to a PCR product via the attB2 primer tail; it recombines with attP2 (BP reaction, lambda Int + IHF) to insert the product into a pDONR entry vector.",
+          "value": {
+            "reaction": "attB2 x attP2 -> attL2 + attR2",
+            "reaction_name": "BP",
+            "length_bp": 25
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "sequence_feature",
+          "label": "attB2 carries the specificity-2 central overlap and recombines only with the cognate attP2, giving the orthogonality that makes Gateway cloning directional.",
+          "value": {
+            "specificity": "2",
+            "overlap": "GTACAAG"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "application",
+          "type": "application",
+          "label": "Added as a primer tail when amplifying a gene for Gateway entry: 5'-GGGGACCACTTTGTACAAGAAAGCTGGGT-[gene]; the 5' GGGG clamp protects the site during the recombination reaction.",
+          "value": {
+            "primer_tail": "GGGGACCACTTTGTACAAGAAAGCTGGGT"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "Gateway attP1",
+      "slug": "Gateway_attP1",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "Gateway_attP1",
+        "attP1",
+        "Gateway attP1",
+        "lambda-derived attP (specificity 1)"
+      ],
+      "collections": [
+        "gateway-att-sites"
+      ],
+      "description": "Gateway recombinational-cloning attP site, specificity 1; 232 bp donor-vector attachment site. Engineered, lambda-derived attP site: it keeps the bacteriophage lambda attP architecture (P and P' arm Int-binding sites and IHF sites flanking the common core) with a central 7 bp overlap modified to set its recombination specificity. The BP reaction (lambda Int + IHF) recombines attB1 with attP1 to give attL1 + attR1. Source: pDONR221 positions 570-801 (+ strand).",
+      "length": 232,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "att core / 7 bp overlap (specificity 1)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 79,
+          "end": 94,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Hartley JL, Temple GF, Brasch MA",
+          "title": "DNA cloning using in vitro site-specific recombination",
+          "journal": "Genome Res",
+          "pmid": "11076863",
+          "doi": "10.1101/gr.143000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11076863/"
+        },
+        {
+          "authors": "Landy A",
+          "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+          "journal": "Annu Rev Biochem",
+          "pmid": "2528323",
+          "doi": "10.1146/annurev.bi.58.070189.004405",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2528323/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Gateway attP1 is the donor-vector attachment site for in vitro lambda-integrase (Int + IHF) site-specific recombination; the BP reaction recombines attB1 with attP1 to give attL1 + attR1, capturing an attB1-flanked DNA into the donor backbone as an entry clone.",
+          "value": {
+            "recombinase": "lambda Int (tyrosine recombinase)",
+            "host_factor": "IHF",
+            "reaction": "attB1 x attP1 -> attL1 + attR1",
+            "reaction_name": "BP"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "sequence_feature",
+          "label": "The attP1 central 7 bp overlap (specificity 1) recombines only with the cognate attB1; this engineered orthogonality between specificity-1 and specificity-2 sites enforces directional, ordered Gateway cloning.",
+          "value": {
+            "specificity": "1",
+            "overlap": "GTACAAA"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "derivation",
+          "type": "mechanism",
+          "label": "Gateway att sites are engineered derivatives of the bacteriophage lambda att/Int system; attP1 retains the lambda attP arm-type Int sites and IHF sites flanking the common core, with the central overlap altered to set specificity.",
+          "value": {
+            "parent_system": "bacteriophage lambda att/Int"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2528323",
+            "doi": "10.1146/annurev.bi.58.070189.004405",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "application",
+          "type": "application",
+          "label": "Used as the donor (pDONR) site in Gateway cloning: a gene amplified with attB primer tails is captured by BP recombination into a pDONR vector (which carries attP1 and attP2) to make a reusable entry clone.",
+          "value": {
+            "role": "donor-vector (pDONR) site"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "Gateway attP2",
+      "slug": "Gateway_attP2",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "synonyms": [
+        "Gateway_attP2",
+        "attP2",
+        "Gateway attP2",
+        "lambda-derived attP (specificity 2)"
+      ],
+      "collections": [
+        "gateway-att-sites"
+      ],
+      "description": "Gateway recombinational-cloning attP site, specificity 2; 232 bp donor-vector attachment site. Engineered, lambda-derived attP site: it keeps the bacteriophage lambda attP architecture (P and P' arm Int-binding sites and IHF sites flanking the common core) with a central 7 bp overlap modified to set its recombination specificity. The BP reaction (lambda Int + IHF) recombines attB2 with attP2 to give attL2 + attR2. Source: pDONR221 positions 2753-2984 (- strand).",
+      "length": 232,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "att core / 7 bp overlap (specificity 2)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 79,
+          "end": 94,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Hartley JL, Temple GF, Brasch MA",
+          "title": "DNA cloning using in vitro site-specific recombination",
+          "journal": "Genome Res",
+          "pmid": "11076863",
+          "doi": "10.1101/gr.143000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11076863/"
+        },
+        {
+          "authors": "Landy A",
+          "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+          "journal": "Annu Rev Biochem",
+          "pmid": "2528323",
+          "doi": "10.1146/annurev.bi.58.070189.004405",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2528323/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "mechanism",
+          "type": "mechanism",
+          "label": "Gateway attP2 is the donor-vector attachment site for in vitro lambda-integrase (Int + IHF) site-specific recombination; the BP reaction recombines attB2 with attP2 to give attL2 + attR2, capturing an attB2-flanked DNA into the donor backbone as an entry clone.",
+          "value": {
+            "recombinase": "lambda Int (tyrosine recombinase)",
+            "host_factor": "IHF",
+            "reaction": "attB2 x attP2 -> attL2 + attR2",
+            "reaction_name": "BP"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "specificity",
+          "type": "sequence_feature",
+          "label": "The attP2 central 7 bp overlap (specificity 2) recombines only with the cognate attB2; this engineered orthogonality between specificity-1 and specificity-2 sites enforces directional, ordered Gateway cloning.",
+          "value": {
+            "specificity": "2",
+            "overlap": "GTACAAG"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "derivation",
+          "type": "mechanism",
+          "label": "Gateway att sites are engineered derivatives of the bacteriophage lambda att/Int system; attP2 retains the lambda attP arm-type Int sites and IHF sites flanking the common core, with the central overlap altered to set specificity.",
+          "value": {
+            "parent_system": "bacteriophage lambda att/Int"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2528323",
+            "doi": "10.1146/annurev.bi.58.070189.004405",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "application",
+          "type": "application",
+          "label": "Used as the donor (pDONR) site in Gateway cloning: a gene amplified with attB primer tails is captured by BP recombination into a pDONR vector (which carries attP1 and attP2) to make a reusable entry clone.",
+          "value": {
+            "role": "donor-vector (pDONR) site"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "11076863",
+            "doi": "10.1101/gr.143000",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "secondary",
+            "agent": "add-part"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "GFP",
@@ -23978,6 +24472,45 @@
         "T7_tag",
         "V5_tag",
         "VSVG_tag"
+      ]
+    },
+    {
+      "id": "gateway-att-sites",
+      "name": "Gateway (lambda-derived) recombinational-cloning att sites",
+      "source": "Gateway recombinational cloning (in vitro lambda site-specific recombination)",
+      "references": [
+        {
+          "authors": "Hartley JL, Temple GF, Brasch MA",
+          "title": "DNA cloning using in vitro site-specific recombination",
+          "journal": "Genome Res",
+          "pubmed_id": "11076863",
+          "comment": "doi:10.1101/gr.143000"
+        },
+        {
+          "authors": "Landy A",
+          "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+          "journal": "Annu Rev Biochem",
+          "pubmed_id": "2528323",
+          "comment": "doi:10.1146/annurev.bi.58.070189.004405"
+        }
+      ],
+      "resources": [
+        {
+          "title": "pDONR221 (Gateway donor vector) sequence + map",
+          "url": "https://www.snapgene.com/plasmids/gateway_cloning_vectors/pDONR221"
+        },
+        {
+          "title": "Hartley, Temple & Brasch 2000 \u2014 Gateway att site definition",
+          "url": "https://doi.org/10.1101/gr.143000"
+        }
+      ],
+      "n_parts": 4,
+      "n_validated": 0,
+      "members": [
+        "Gateway_attB1",
+        "Gateway_attB2",
+        "Gateway_attP1",
+        "Gateway_attP2"
       ]
     },
     {

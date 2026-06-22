@@ -10,11 +10,11 @@
 > rather than assert it.
 
 CAVEAT: this is an AI-generated knowledge base under active development. Most of
-the 273 records' claims are analysis_status = "pending" (authored, not
+the 275 records' claims are analysis_status = "pending" (authored, not
 yet independently cross-checked). Prefer "verified" claims, and VERIFY against
 the cited primary literature before relying on any of them.
 
-Contents: 273 parts (75 validated, 198 candidate) carrying 331 functional claims.
+Contents: 275 parts (75 validated, 200 candidate) carrying 345 functional claims.
 
 ## For agents: where to start
 
