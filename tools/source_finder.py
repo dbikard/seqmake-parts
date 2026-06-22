@@ -114,6 +114,67 @@ def divergence(query: str, subject: str, edge_margin: int = 12) -> dict:
     return best
 
 
+def locate_in_carrier(part_seq: str, carrier_seq: str, carrier_name: str,
+                      circular: bool = False) -> dict:
+    """Find where a part sits **inside a local carrier** (a plasmid/map that contains it),
+    and produce the ``provenance.sequence_source`` string the add-part Source phase needs.
+
+    This is the local-file counterpart of the NCBI ``_fetch`` + ``divergence`` path: the part
+    is the query, the carrier is the subject. Local-aligns on both strands (doubling a circular
+    carrier so an origin-spanning part is still found) and returns the match span **in carrier
+    coordinates** (1-based, inclusive), the strand, identity, and an ``exact`` flag (full-length,
+    zero-mismatch byte match). Pure; unit-tested."""
+    from Bio import Align
+    from Bio.Seq import Seq
+
+    q = part_seq.upper()
+    qlen = len(q)
+    base = carrier_seq.upper()
+    clen = len(base)
+    if qlen == 0 or clen == 0:
+        return {"found": False}
+    subject = (base + base) if circular else base
+
+    aligner = Align.PairwiseAligner()
+    aligner.mode = "local"
+    aligner.match_score, aligner.mismatch_score = 2, -3
+    aligner.open_gap_score, aligner.extend_gap_score = -5, -2
+
+    best = None
+    for strand, query in (("+", q), ("-", str(Seq(q).reverse_complement()))):
+        try:
+            aln = aligner.align(subject, query)[0]
+        except (ValueError, IndexError):
+            continue
+        sblocks, qblocks = aln.aligned[0], aln.aligned[1]
+        cov, mism = 0, 0
+        for (ss, se), (qs, qe) in zip(sblocks, qblocks):
+            cov += int(qe - qs)
+            for i in range(int(qe - qs)):
+                if query[qs + i] != subject[ss + i]:
+                    mism += 1
+        sstart, send = int(sblocks[0][0]), int(sblocks[-1][1])  # forward subject coords
+        score = cov - mism
+        if best is None or score > best["_score"]:
+            best = {"_score": score, "strand": strand, "coverage_bp": cov,
+                    "n_mismatch": mism, "sstart": sstart, "send": send}
+    if best is None:
+        return {"found": False}
+
+    span = best["send"] - best["sstart"]
+    start0 = best["sstart"] % clen                 # 0-based start in carrier coords
+    wraps = circular and (best["sstart"] < clen <= best["send"])
+    start1, end1 = start0 + 1, start0 + span       # 1-based inclusive (may exceed clen if wraps)
+    exact = best["coverage_bp"] == qlen and best["n_mismatch"] == 0
+    identity_pct = round(100 * (best["coverage_bp"] - best["n_mismatch"]) / qlen, 2)
+    src = (f"{carrier_name} positions {start1}-{end1} ({best['strand']} strand"
+           + (", origin-spanning" if wraps else "") + ")")
+    return {"found": True, "carrier": carrier_name, "strand": best["strand"],
+            "start": start1, "end": end1, "coverage_bp": best["coverage_bp"],
+            "qlen": qlen, "n_mismatch": best["n_mismatch"], "identity_pct": identity_pct,
+            "exact": exact, "wraps": wraps, "sequence_source": src}
+
+
 _NAMED = re.compile(r"\bp[A-Z][A-Za-z0-9._-]{1,}\b")
 
 
@@ -180,6 +241,10 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Find the best 100%-identity deposited source for a part.")
     ap.add_argument("--slug")
     ap.add_argument("--seq")
+    ap.add_argument("--carrier", help="path to a LOCAL carrier map (.dna/.gb/.gbk/.fasta) that "
+                    "contains the part — byte-verify + locate the part within it instead of BLAST")
+    ap.add_argument("--carrier-name", help="name of a carrier already in the sequence store "
+                    "(tools/sequences.py); resolved to its local file")
     ap.add_argument("--refs", default="", help="comma-separated reference accessions to diverge against (e.g. J01749,L08752)")
     ap.add_argument("--window", default="1980:2010", help="ENTREZ deposit-date window for the oldest-source search")
     ap.add_argument("--rid", help="re-fetch a finished BLAST RID")
@@ -194,6 +259,29 @@ def main() -> None:
         sys.exit("need --slug, --seq, or --rid")
 
     out: dict = {"slug": a.slug, "qlen": len(seq)}
+
+    # local carrier: byte-verify + locate the part inside a deposited map (no BLAST).
+    # This is the local-file ingest path for non-refetchable carriers (e.g. pDONR221).
+    if a.carrier or a.carrier_name:
+        import sequences
+        if a.carrier:
+            carrier_path = Path(a.carrier).expanduser()
+        else:
+            hit = sequences._resolve(a.carrier_name, None)
+            if not hit:
+                sys.exit(f"carrier {a.carrier_name!r} not in the sequence store "
+                         f"(deposit it: python tools/sequences.py add <file> --name {a.carrier_name})")
+            carrier_path = sequences.STORE / hit["file"]
+        if not carrier_path.exists():
+            sys.exit(f"carrier file not found: {carrier_path}")
+        carrier = sequences.read_sequence_file(carrier_path)
+        loc = locate_in_carrier(seq, carrier["sequence"],
+                                a.carrier_name or carrier["name"],
+                                circular=carrier["topology"] == "circular")
+        out["carrier_source"] = loc
+        out["verified"] = bool(loc.get("exact"))
+        print(json.dumps(out, indent=2))
+        return
 
     # protein: the source is the UniProt accession, no BLAST
     if part and part.get("molecule_type") == "protein":

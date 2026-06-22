@@ -8,7 +8,8 @@ from Bio.Seq import Seq
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
 from source_finder import (  # noqa: E402
-    classify_location, divergence, looks_named, pick_best, protein_source)
+    classify_location, divergence, locate_in_carrier, looks_named, pick_best,
+    protein_source)
 
 Q = "ATGCAGTTCGGATCCGAATTCAAAGGTCTAGACCATGGCT"  # 40 bp, low internal repeat
 
@@ -53,6 +54,41 @@ def test_divergence_circular_wrap():
 def test_divergence_reverse_complement():
     d = divergence(Q, str(Seq(Q).reverse_complement()))
     assert d["location"] == "exact" and d["strand"] == "-"
+
+
+def test_locate_in_carrier_forward_exact():
+    carrier = "TTACGCGTACGT" + Q + "CCGGTTAACC"   # part embedded at 1-based 13
+    loc = locate_in_carrier(Q, carrier, "pTEST")
+    assert loc["found"] and loc["exact"] and loc["strand"] == "+"
+    assert (loc["start"], loc["end"]) == (13, 13 + len(Q) - 1)
+    assert loc["sequence_source"] == f"pTEST positions 13-{12 + len(Q)} (+ strand)"
+
+
+def test_locate_in_carrier_reverse_strand():
+    carrier = "GGGGCC" + str(Seq(Q).reverse_complement()) + "TTAAACC"  # part on - strand at 7
+    loc = locate_in_carrier(Q, carrier, "pTEST")
+    assert loc["found"] and loc["exact"] and loc["strand"] == "-"
+    assert (loc["start"], loc["end"]) == (7, 6 + len(Q))
+
+
+def test_locate_in_carrier_mismatch_is_not_exact():
+    b = "A" if Q[20] != "A" else "C"
+    carrier = "TTTTT" + _mut(Q, 20, b) + "GGGGG"
+    loc = locate_in_carrier(Q, carrier, "pTEST")
+    assert loc["found"] and not loc["exact"]
+    assert loc["n_mismatch"] == 1 and 95 < loc["identity_pct"] < 100
+
+
+def test_locate_in_carrier_circular_origin_spanning():
+    half = len(Q) // 2
+    circ = Q[half:] + "ACGTACGTACGTACGT" + Q[:half]   # part wraps the origin
+    loc = locate_in_carrier(Q, circ, "pCIRC", circular=True)
+    assert loc["found"] and loc["exact"] and loc["wraps"]
+    # truncated-core signal: a sub-region of the part is found, not the whole, when only
+    # part of it is present (the redelimit-up case — 25 bp core inside a longer carrier).
+    core = Q[8:33]                                    # a 25 bp core
+    sub = locate_in_carrier(core, "TT" + Q + "AA", "pFULL")
+    assert sub["exact"] and sub["coverage_bp"] == len(core) < len(Q)
 
 
 def test_looks_named():

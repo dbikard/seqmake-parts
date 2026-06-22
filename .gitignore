@@ -18,6 +18,12 @@
 # cache; copyrighted full text is never committed.
 /sourcing/papers/
 
+# Local sequence-provenance store (tools/sequences.py) — NON-publicly-refetchable
+# carrier maps (commercial/unpublished plasmids, e.g. pDONR221) keyed by name/accession,
+# so the add-part Source phase can byte-verify a part against them. Only the resulting
+# provenance.sequence_source string is committed; the carriers themselves stay local.
+/sourcing/sequences/
+
 # Python
 __pycache__/
 *.pyc

@@ -39,6 +39,14 @@ Two kinds of request belong here:
   [`tools/papers.py`](../tools/papers.py). **Gitignored** (a personal reference cache; copyrighted
   full text is never committed). Keyed by the PMID/DOI that every `functional_claims[].source`
   and `references[]` already carries, so it answers "do we hold the paper this claim cites?".
+- **`sequences/`** — local **sequence-provenance store** for non-publicly-refetchable **carrier**
+  maps (commercial/unpublished plasmids that *contain* a part as a sub-region, e.g. `pDONR221`),
+  managed by [`tools/sequences.py`](../tools/sequences.py). **Gitignored** — only the resulting
+  `provenance.sequence_source` string is committed. It is the **sequence** axis of the same handoff
+  that `papers/` is the **claim-evidence** axis of: keyed by carrier name/accession, it lets the
+  add-part Source phase byte-verify a part against a map you can't re-download
+  (`source_finder.py --carrier-name <name>`). Public NCBI/UniProt accessions are NOT stored — they
+  are cited and re-fetched on demand.
 
 ## Full-text paper store (`papers/`)
 
