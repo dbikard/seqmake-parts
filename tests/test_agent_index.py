@@ -60,4 +60,4 @@ def test_llms_txt_carries_live_counts_and_entry_urls():
                 f"{INDEX['base_iri']}/schema/part.schema.json"):
         assert url in LLMS, url
     # The trust caveat is the contract with consumers -- it must stay present.
-    assert "ai-generated" in LLMS and "VERIFY" in LLMS
+    assert "pending" in LLMS and "VERIFY" in LLMS

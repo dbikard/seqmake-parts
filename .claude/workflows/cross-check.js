@@ -1,7 +1,7 @@
 export const meta = {
   name: 'cross-check',
-  description: 'Independently re-verify each functional_claim against its cited source; emit a fresh, skeptical verdict (confidence + status + uncertainty note). Earns the ai-cross-checked tier instead of asserting it.',
-  whenToUse: 'To turn ai-cross-checked into a tier that is earned: run over a part\'s (or several parts\') functional_claims to test whether each is actually supported by the primary source it cites. args = array of part slugs (defaults to a built-in sample).',
+  description: 'Independently re-verify each functional_claim against its cited source; emit a fresh, skeptical verdict (confidence + status + uncertainty note). Earns the "verified" analysis_status (cross_checked) instead of asserting it.',
+  whenToUse: 'To turn "verified" into a status that is earned: run over a part\'s (or several parts\') functional_claims to test whether each is actually supported by the primary source it cites. args = array of part slugs (defaults to a built-in sample). COMPLETE LOOP: after this returns, save the verdicts to a file and apply them autonomously — `python tools/apply_cross_check.py --verdicts <file> --write` — then regenerate + gate (`python tools/check_all.py`). Any unreachable source becomes analysis_status=sources-pending with a sourcing/REQUESTS.md entry; fetch those via /open-requests -> /incoming, then re-run. No human input is needed except fetching paywalled PDFs.',
   phases: [
     { title: 'Extract', detail: 'read each part, emit its claims blind to original confidence/status' },
     { title: 'Cross-check', detail: 'one independent verifier per claim' },
@@ -16,7 +16,7 @@ const slugs = (Array.isArray(raw) && raw.length && raw.every((s) => typeof s ===
   ? raw
   : DEFAULT_SLUGS
 
-// ---- Stage 1 schema: the stripped, agent-facing claim payload (NO confidence/review_status) ----
+// ---- Stage 1 schema: the stripped, agent-facing claim payload (NO confidence/usefulness/analysis_status/cross_checked) ----
 const CLAIMS_SCHEMA = {
   type: 'object',
   additionalProperties: false,
@@ -92,8 +92,9 @@ const LISTER_PROMPT = (slug) => `Read the file parts/validated/${slug}.json. Ret
 as a payload for downstream verification. For each claim emit ONLY: claim_id, claim_type (its "type"),
 claim_label (its "label"), claim_value (its "value"), and asserted_source (its "source" object verbatim —
 keep pmid/doi/url/quote/quote_source/figure/table/page/section).
-CRITICAL: DO NOT include the claim's "confidence" or "review_status" — downstream verifiers must judge
-blind to what the authoring pass already decided. Also set part="${slug}". Do not read the .md file.`
+CRITICAL: DO NOT include the claim's "confidence", "usefulness", "analysis_status", or "cross_checked" —
+downstream verifiers must judge blind to what any prior pass already decided. Also set part="${slug}".
+Do not read the .md file.`
 
 const VERIFY_PROMPT = (c, slug) => `You are an INDEPENDENT verifier for a DNA/protein parts catalog. A prior AI pass
 asserted the functional claim below and attached a source. Decide, from scratch, whether the cited PRIMARY
@@ -168,6 +169,9 @@ const results = await pipeline(
 
 const verdicts = results.flat().filter(Boolean)
 const tally = (key) => verdicts.reduce((m, v) => ((m[v[key]] = (m[v[key]] || 0) + 1), m), {})
+log(`Next: save these verdicts to a file and apply them autonomously — ` +
+    `python tools/apply_cross_check.py --verdicts <file> --write — then python tools/check_all.py. ` +
+    `Unreachable sources become sources-pending + a REQUESTS.md entry (fetch via /open-requests).`)
 return {
   parts: slugs,
   n_verdicts: verdicts.length,
@@ -180,5 +184,6 @@ return {
   retyped: verdicts.filter((v) => v.claim_type_changed).length,
   low_usefulness: verdicts.filter((v) => v.usefulness === 'low').length,
   corrections_proposed: verdicts.filter((v) => v.correction_action !== 'none').length,
+  next_step: 'python tools/apply_cross_check.py --verdicts <verdicts.json> --write ; python tools/check_all.py',
   verdicts,
 }

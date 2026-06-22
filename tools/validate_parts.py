@@ -95,29 +95,63 @@ def _so_coverage_problems(name: str, data: dict) -> list[str]:
     return out
 
 
-def _claim_tier_problems(name: str, data: dict) -> list[str]:
-    """The review tier must be *earned*: a claim may only be ``ai-cross-checked``
-    or ``expert-reviewed`` if its evidence quote actually comes from the primary
-    source (``source.quote_source == "primary"``) and it cites that source. Until
-    then it stays ``ai-generated`` -- so the tier (and the site's trust marker)
-    means a real verification happened, not just a label. Applies to every part."""
+_ANALYSIS_STATES = ("pending", "verified", "sources-pending", "flagged")
+_LEVELS = ("low", "medium", "high")
+
+
+def _claim_verification_problems(name: str, data: dict) -> list[str]:
+    """The verification lifecycle must be *coherent and earned* (replaces the old
+    review-tier gate; see proposals/cross-check/CLAIM-MODEL.md):
+
+    * ``analysis_status`` is one of pending/verified/sources-pending/flagged and
+      ``cross_checked`` is a bool; the two agree (``cross_checked`` iff verified).
+    * ``verified`` must be earned: the claim's evidence quote actually comes from the
+      primary source (``source.quote_source == 'primary'`` with a verbatim quote) and it
+      cites that source -- so the site's trust marker means a real verification happened.
+    * ``sources-pending`` (the source could not be reached) must cite a source to fetch,
+      and a sourcing/REQUESTS.md entry should exist for it (warned, not failed -- the
+      handoff is checked by tools/check_requests.py).
+    * once a claim has been analysed (status != pending) it carries a ``usefulness``
+      score (low/medium/high) -- the cross-check pass always scores it.
+
+    Applies to every part."""
     out: list[str] = []
     for c in data.get("functional_claims") or []:
-        rs = c.get("review_status")
-        if rs not in ("ai-cross-checked", "expert-reviewed"):
-            continue
         cid = c.get("id")
+        status = c.get("analysis_status")
+        xc = c.get("cross_checked")
+        if status not in _ANALYSIS_STATES:
+            out.append(f"{name}: claim {cid!r} has analysis_status {status!r} "
+                       f"(not one of {'/'.join(_ANALYSIS_STATES)})")
+        if not isinstance(xc, bool):
+            out.append(f"{name}: claim {cid!r} cross_checked must be a boolean "
+                       f"(got {xc!r})")
+        elif (status == "verified") != xc:
+            out.append(f"{name}: claim {cid!r} cross_checked={xc} contradicts "
+                       f"analysis_status={status!r} (verified iff cross_checked)")
+
         src = c.get("source") or {}
-        if src.get("quote_source") != "primary":
-            out.append(f"{name}: claim {cid!r} is '{rs}' but its quote is not from "
-                       f"the primary source (set quote_source to 'primary' after "
-                       f"checking the paper, or keep review_status 'ai-generated')")
-        elif not src.get("quote"):
-            out.append(f"{name}: claim {cid!r} is '{rs}' but carries no verbatim "
-                       f"source quote")
-        if not (src.get("pmid") or src.get("doi") or src.get("url")):
-            out.append(f"{name}: claim {cid!r} is '{rs}' but cites no source "
-                       f"(pmid/doi/url)")
+        if status == "verified":
+            if src.get("quote_source") != "primary":
+                out.append(f"{name}: claim {cid!r} is 'verified' but its quote is not "
+                           f"from the primary source (set quote_source to 'primary' after "
+                           f"checking the paper, or use a non-verified status)")
+            elif not src.get("quote"):
+                out.append(f"{name}: claim {cid!r} is 'verified' but carries no verbatim "
+                           f"source quote")
+            if not (src.get("pmid") or src.get("doi") or src.get("url")):
+                out.append(f"{name}: claim {cid!r} is 'verified' but cites no source "
+                           f"(pmid/doi/url)")
+        if status == "sources-pending" and not (src.get("pmid") or src.get("doi")
+                                                or src.get("url")):
+            out.append(f"{name}: claim {cid!r} is 'sources-pending' but cites no source "
+                       f"to fetch (pmid/doi/url)")
+
+        if status and status != "pending":
+            u = c.get("usefulness")
+            if u not in _LEVELS:
+                out.append(f"{name}: claim {cid!r} is analysed ({status}) but has no "
+                           f"valid usefulness score (low/medium/high; got {u!r})")
     return out
 
 
@@ -170,10 +204,11 @@ def problems() -> list[str]:
                 out.append(f"{jf.name}: {err.message}")
             if data.get("slug") != jf.stem:
                 out.append(f"{jf.name}: slug {data.get('slug')!r} != filename")
-            # Enforced for every part: coordinates in-bounds, earned review
-            # tier, and full SO coverage of the features the .gb will carry.
+            # Enforced for every part: coordinates in-bounds, a coherent +
+            # earned claim verification lifecycle, and full SO coverage of the
+            # features the .gb will carry.
             out.extend(_coordinate_problems(jf.name, data))
-            out.extend(_claim_tier_problems(jf.name, data))
+            out.extend(_claim_verification_problems(jf.name, data))
             out.extend(_claim_type_problems(jf.name, data))
             out.extend(_so_coverage_problems(jf.name, data))
             md = jf.with_suffix(".md")

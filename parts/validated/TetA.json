@@ -82,7 +82,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
@@ -109,7 +108,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ],

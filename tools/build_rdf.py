@@ -282,8 +282,9 @@ def _claim_source_uri(source: dict) -> URIRef | None:
 def add_functional_claims(g: Graph, part: dict) -> int:
     """Project a part's functional_claims (from its canonical JSON) into the graph
     in the nanopublication shape: each claim is an assertion node carrying its own
-    source + extraction provenance + confidence + review status, so the knowledge
-    base self-describes its trust. Returns the number of claims emitted."""
+    source + extraction provenance + the orthogonal trust axes (confidence,
+    usefulness) + its verification lifecycle (analysis_status / cross_checked), so
+    the knowledge base self-describes its trust. Returns the number of claims emitted."""
     json_path = ROOT / "parts" / part["status"] / f"{part['slug']}.json"
     if not json_path.exists():
         return 0
@@ -296,7 +297,21 @@ def add_functional_claims(g: Graph, part: dict) -> int:
         g.add((cu, CAT.claimType, Literal(c["type"])))
         g.add((cu, RDFS.label, Literal(c["label"])))
         g.add((cu, CAT.confidence, Literal(c["confidence"])))
-        g.add((cu, CAT.reviewStatus, Literal(c["review_status"])))
+        # Verification lifecycle + the orthogonal usefulness axis (CLAIM-MODEL.md).
+        g.add((cu, CAT.analysisStatus, Literal(c["analysis_status"])))
+        g.add((cu, CAT.crossChecked,
+               Literal(bool(c["cross_checked"]), datatype=XSD.boolean)))
+        if c.get("usefulness"):
+            g.add((cu, CAT.usefulness, Literal(c["usefulness"])))
+        if c.get("usefulness_rationale"):
+            g.add((cu, CAT.usefulnessRationale, Literal(c["usefulness_rationale"])))
+        if c.get("last_checked"):
+            g.add((cu, CAT.lastChecked, Literal(c["last_checked"], datatype=XSD.date)))
+        if c.get("comment"):
+            g.add((cu, RDFS.comment, Literal(c["comment"])))
+        if c.get("supersedes"):
+            g.add((cu, CAT.supersedes,
+                   PART[f"{part['slug']}_claim_{c['supersedes']}"]))
         val = c.get("value") or {}
         # Lossless value + typed convenience predicates for the common kinds.
         g.add((cu, CAT.claimValue, Literal(json.dumps(val, sort_keys=True))))

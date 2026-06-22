@@ -3,7 +3,7 @@
   "slug": "MBP",
   "locus": "MBP",
   "id": "MBP",
-  "description": "MBP (E. coli K12 malE / MalE) — 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+  "description": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
   "molecule_type": "protein",
   "locus_annotations": {
     "topology": "linear"
@@ -99,11 +99,14 @@
         "db_xref": [
           "SO:0000316",
           "UniProt:P0AEX9"
+        ],
+        "collection": [
+          "affinity-tags",
+          "solubility-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "UniProt:P0AEX9 (Maltose/maltodextrin-binding periplasmic protein, MALE_ECOLI, Escherichia coli K12; Swiss-Prot reviewed, SV=1, entry v183), 396 aa, 100% identity over full length, independently fetched and compared"
@@ -131,7 +134,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -155,7 +159,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -181,7 +186,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -207,7 +213,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -233,7 +240,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -257,7 +265,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -283,13 +292,14 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
       "id": "dimerization_caution",
       "type": "biophysics",
-      "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant — a caution for structural studies of MBP fusions",
+      "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant \u2014 a caution for structural studies of MBP fusions",
       "value": {
         "phenomenon": "passenger-promoted interlaced dimerization",
         "context": "observed in a common engineered MBP variant (MBPeng)",
@@ -308,7 +318,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -334,7 +345,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ],

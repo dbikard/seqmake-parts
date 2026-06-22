@@ -40,7 +40,9 @@ def norm_claim(c):
                        "from": "primary" if q == "primary" else "secondary",
                        "agent": "annotate-part-engine"},
         "confidence": c.get("confidence", "medium"),
-        "review_status": "ai-generated", "supersedes": None,
+        # new claim model (proposals/cross-check/CLAIM-MODEL.md): authored claims start
+        # unverified; the cross-check pass later sets verified/usefulness.
+        "analysis_status": "pending", "cross_checked": False, "supersedes": None,
     }
 
 
@@ -94,7 +96,7 @@ def main():
                            "db_xref": db_xref}}
     proposed = {"description": r["description"], "features": [feat], "references": refs,
                 "provenance": {"sequence_source": r["provenance"]["sequence_source"]},
-                "functional_claims": claims, "review_status": "ai-generated"}
+                "functional_claims": claims}
     pj = ROOT / f"/tmp/{slug}.proposed.json"
     pj = Path(f"/tmp/{slug}.proposed.json")
     json.dump(proposed, open(pj, "w"), indent=2)

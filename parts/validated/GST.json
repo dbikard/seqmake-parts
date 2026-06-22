@@ -69,11 +69,14 @@
         "db_xref": [
           "SO:0000316",
           "UniProt:P08515"
+        ],
+        "collection": [
+          "affinity-tags",
+          "solubility-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "UniProt:P08515 (Glutathione S-transferase class-mu 26 kDa isozyme, Schistosoma japonicum; Swiss-Prot reviewed, SV=3), 218 aa, 100% identity over full length, independently fetched and compared"
@@ -103,7 +106,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -127,7 +131,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -155,7 +160,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -181,7 +187,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -208,7 +215,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ],

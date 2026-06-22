@@ -55,9 +55,11 @@ feature, ≥1 cited reference, ≥1 functional_claim with a cited source, and a
 non-empty `.md`. Located sub-features are an authoring expectation, not gated.
 The authoring agent writes that `.md`, so a full `/add-part` run yields a validated
 part directly; a part dropped in with only a sequence stays a candidate. Independently,
-every `functional_claim` (and the record) carries a `review_status` (`ai-generated` →
-`ai-cross-checked` → `expert-reviewed`): a part can be validated yet still
-`ai-generated`.
+every `functional_claim` carries a verification lifecycle — `analysis_status`
+(`pending` → `verified`, or `sources-pending` / `flagged`) plus a `cross_checked`
+flag — alongside its orthogonal `confidence` and `usefulness` scores: a part can be
+validated yet have every claim still `pending` (authored, not yet independently
+cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-check/CLAIM-MODEL.md).
 
 ## Hard rules
 
@@ -241,7 +243,9 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
 5. **Set provenance.** Replace `provenance.sequence_source` with the real source.
 6. **Add functional knowledge.** For any inducer / dynamic range / strength /
    host range claim, append a `functional_claims[]` entry with `type`, `label`,
-   `value`, `source` (+ `quote`/`figure`), `confidence`, and `review_status`.
+   `value`, `source` (+ `quote`/`figure`), `confidence`, and the verification
+   lifecycle (`analysis_status` + `cross_checked`; a freshly authored claim is
+   `pending`/`false`, or `sources-pending` if its primary source was inaccessible).
 7. **Validate it (candidate).** Run the full gate suite in one command — this
    mirrors CI exactly, so passing locally means passing CI:
    ```bash
@@ -261,8 +265,9 @@ every `functional_claim` (and the record) carries a `review_status` (`ai-generat
    Re-run step 7 (`validate_parts.py` enforces the bar). Leave a part in
    `candidate/` only when it is genuinely bare (sequence + minimal info).
 9. **Commit + open a PR** with the `<slug>.json`, the generated `.gb`,
-   `catalog.json`, and `catalog.ttl`/`.jsonld`. An expert review promotes claims
-   to `review_status: expert-reviewed`.
+   `catalog.json`, and `catalog.ttl`/`.jsonld`. The independent `cross-check` pass
+   later promotes claims to `analysis_status: verified` (earned by reading the
+   primary source) — see the cross-check skill / `tools/apply_cross_check.py`.
 
 ## Autonomy — auto-apply vs human review
 
@@ -278,7 +283,7 @@ classify each proposed change after the merge dry-run + gates.
   adversarial citation checks.
 - **Non-destructive merge**: `tools/merge_part.py` reports **no `flagged_superseding`** and
   **no `flags`** — it only adds claims / references / provenance / synonyms or overwrites
-  an `ai-generated` claim; it never alters an `ai-cross-checked` / `expert-reviewed` claim
+  a not-yet-`cross_checked` claim; it never alters a verified (`cross_checked`) claim
   or a validated `.md`.
 - **No structural decision**: no `redelimit` / `split` / `merge`-or-`compose` /
   `new_part`-extract / `rename` recommendation is being applied — only `metadata` / `note`
@@ -331,7 +336,6 @@ failures need a human.
                       "regulatory_class": ["minus_35_signal"],
                       "db_xref": ["SO:0000175"], "citation": ["[1]"] } }
   ],
-  "review_status": "ai-generated",
   "provenance": { "sequence_source": "Doe 2020, Fig 1 (PMID 12345)" },
   "functional_claims": [
     { "id": "inducer", "type": "inducer",
@@ -339,7 +343,7 @@ failures need a human.
       "ontology": { "inducer_chebi": null },
       "source": { "pmid": "12345", "quote": "...", "quote_source": "primary", "figure": "Fig 2" },
       "provenance": { "method": "ai-extraction", "from": "primary", "agent": "ai-assistant" },
-      "confidence": "medium", "review_status": "ai-generated", "supersedes": null }
+      "confidence": "medium", "analysis_status": "pending", "cross_checked": false, "supersedes": null }
   ]
 }
 ```

@@ -149,11 +149,13 @@
         "db_xref": [
           "SO:0000316",
           "UniProt:P06709"
+        ],
+        "collection": [
+          "conjugation-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "UniProt P06709 (BIRA_ECOLI, Bifunctional ligase/repressor BirA, E. coli K12, reviewed/Swiss-Prot), 100% identity over all 321 aa"
@@ -179,9 +181,14 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Describes the core catalytic mechanism of BirA, which is essential for understanding how the part functions in biotinylation applications (AviTag, BioID, TurboID) — directly operationally relevant to anyone designing with this enzyme.",
+      "last_checked": "2026-06-22",
+      "comment": "The two-step reaction and biotinoyl-5'-AMP intermediate formation are fully supported. However, the claim's second component — that bio-5'-AMP is the corepressor of the biotin operon — is NOT addressed in the Roux 2012 paper. The paper notes BirA's repressor function but does not discuss the mechanistic role of bio-5'-AMP in repression. This claim likely draws on earlier primary literature (Barker & Campbell, or others cited in the part's references), not from Roux 2012."
     },
     {
       "id": "structure",
@@ -206,8 +213,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "medium",
+      "usefulness_rationale": "Describes operationally relevant domain architecture (DNA-binding vs catalytic domains) useful for understanding BirA variants like BioID/TurboID, but somewhat redundant with the feature note in the part description.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "host_range",
@@ -229,16 +240,21 @@
         "doi": "10.1083/jcb.201112098",
         "quote": "Because biotinylation is a rare modification, in mammalian cells it is restricted primarily to only a few carboxylases; BAT-independent binding is minimal.",
         "quote_source": "primary",
-        "section": "Introduction"
+        "section": "Results"
       },
       "provenance": {
         "method": "ai-extraction",
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Directly addresses a critical selection parameter for BioID/BirA deployment: explains the mechanistic basis for low background biotinylation in eukaryotes (rare natural modification, restricted to carboxylases), which is operationally actionable for anyone choosing this system for proximity labeling in non-E. coli hosts.",
+      "last_checked": "2026-06-22",
+      "comment": "The asserted host list (yeast, Drosophila, C. elegans, bacteria) is NOT validated in this paper—only mammalian cells (HEK293, HeLa) are experimentally tested. The discussion section speculates BioID should work in \"essentially any accessible cell type, mammalian or otherwise\" but provides no experimental evidence for non-mammalian hosts; this is theoretical extrapolation, not empirical validation."
     },
     {
       "id": "application",
@@ -252,8 +268,8 @@
       "source": {
         "pmid": "18323822",
         "doi": "10.1038/nprot.2008.20",
-        "quote": "Established BirA + AviTag (GLNDIFEAQKIEWHE) system for site-specific biotinylation of cell-surface proteins; defines paired use of BirA enzyme with AviTag substrate",
-        "quote_source": "catalog-doc"
+        "quote": "Cell surface proteins tagged with a 15-amino acid peptide are biotinylated by Escherichia coli biotin ligase (BirA), whereas endogenous proteins are not modified. The biotin group then allows sensitive and stable binding by streptavidin conjugates. This protocol describes the optimal use of BirA and streptavidin for site-specific labeling.",
+        "quote_source": "primary"
       },
       "provenance": {
         "method": "ai-extraction",
@@ -261,8 +277,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Specifies the paired use (BirA + AviTag), exact substrate sequence, operational details (in vivo/in vitro), and downstream applications (capture, detection, immobilization)—directly actionable for part selection and use in biotechnology workflows.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "sequence_variant",
@@ -278,7 +298,7 @@
       "source": {
         "pmid": "22412018",
         "doi": "10.1083/jcb.201112098",
-        "quote": "One such BirA mutant (R118G, hereafter called BirA*), which is defective in both self-association and DNA binding, displays an affinity for bioAMP two orders of magnitude less than that of the wild-type enzyme... roughly 50% of detected proteins likely reside within ~20-30 nm of the nearest LaA molecule.",
+        "quote": "One such BirA mutant (R118G, hereafter called BirA*), which is defective in both self-association and DNA binding, displays an affinity for bioAMP two orders of magnitude less than that of the wild-type enzyme... roughly 50% of detected proteins likely reside within ∼20–30 nm of the nearest LaA molecule.",
         "quote_source": "primary",
         "section": "Introduction / Discussion"
       },
@@ -288,8 +308,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Selection-relevant variant with operationally actionable parameters: specifies the ~20-30 nm proximity-labeling radius (critical design specification), quantifies bio-5'-AMP affinity loss (100-fold), and explains functional consequence (promiscuous neighbor biotinylation) that directly guides experimental use of BioID.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "sequence_variant_turboid",
@@ -320,9 +344,14 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "sources-pending",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Provides specific, quantitative parameters (size, mutation count, deletion range, labeling time) that directly inform design choices and help users select between TurboID/miniTurbo variants for experimental applications",
+      "last_checked": "2026-06-22",
+      "comment": "Could not access full primary text to verify exact mutation counts; Addgene plasmid databases (derivative sources of the original work) consistently list 14 TurboID mutations and 12 miniTurbo mutations, not 15 and 13 as claimed."
     },
     {
       "id": "regulation",
@@ -335,17 +364,21 @@
       },
       "source": {
         "pmid": "10529178",
-        "quote": "Eisenstein & Beckett (1999): Bio-5'-AMP drives BirA homodimerization; dimerization is prerequisite for DNA operator binding; Abbott & Beckett (1993): cooperative binding of two holoBirA monomers to the 40-bp bioO operator palindrome.",
-        "quote_source": "catalog-doc"
+        "quote": "Eisenstein & Beckett (1999): the adenylate-bound protein assembles into dimers with an equilibrium constant of 11 microM; site-specific DNA binding and protein dimerization are obligatorily linked in the system. Abbott & Beckett (1993): the BirA-biotin operator (bioO) complex consists of two holo-repressor monomers per operator site; the operator is a 40 base pair imperfect inverted palindrome.",
+        "quote_source": "primary"
       },
       "provenance": {
         "method": "ai-extraction",
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Directly specifies the control logic (repressible regulation), the corepressor molecule (bio-5'-AMP) at physiologically relevant concentrations, the target operator (bioO with precise 40 bp size and binding stoichiometry), and the molecular prerequisite (homodimerization). This is essential operational knowledge for designers selecting or deploying BirA as a regulated transcriptional repressor.",
+      "last_checked": "2026-06-22"
     }
   ],
   "uniprot_features": [

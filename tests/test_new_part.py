@@ -24,7 +24,7 @@ def test_skeleton_is_schema_valid_and_typed():
     assert main["qualifiers"]["db_xref"] == ["SO:0000167"]  # promoter SO term
     assert main["qualifiers"]["regulated_by"] == ["SomeTF"]
     assert data["molecule_type"] == "DNA"
-    assert data["review_status"] == "ai-generated"
+    assert "review_status" not in data                       # retired trust field
     assert "sequence_source" in data["provenance"]          # forces a citation
 
 

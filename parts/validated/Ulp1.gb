@@ -1,0 +1,97 @@
+LOCUS       Ulp1                     219 aa            linear   UNK 01-JAN-1980
+DEFINITION  Catalytic domain (residues 403-621) of S. cerevisiae Ulp1 (UniProt
+            Q02724), the SUMO/Smt3-specific cysteine protease that cleaves after
+            the SUMO C-terminal di-glycine to release a native N-terminus;
+            cognate protease of the SUMO fusion tag..
+ACCESSION   Ulp1
+VERSION     Ulp1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Mossessova E, Lima CD
+  TITLE     Ulp1-SUMO crystal structure and genetic analysis reveal conserved
+            interactions and a regulatory element essential for cell growth in
+            yeast
+  JOURNAL   Molecular Cell (2000)
+   PUBMED   10882122
+  REMARK    doi:10.1016/s1097-2765(00)80326-3
+REFERENCE   2
+  AUTHORS   Malakhov MP, Mattern MR, Malakhova OA, Drinker M, Weeks SD, Butt TR
+  TITLE     SUMO fusions and SUMO-specific protease for efficient expression and
+            purification of proteins
+  JOURNAL   Journal of Structural and Functional Genomics (2004)
+   PUBMED   15263846
+  REMARK    doi:10.1023/B:JSFG.0000029237.70316.52
+REFERENCE   3
+  AUTHORS   Li SJ, Hochstrasser M
+  TITLE     The Ulp1 SUMO isopeptidase: distinct domains required for viability,
+            nuclear envelope localization, and substrate specificity
+  JOURNAL   Journal of Cell Biology (2003)
+   PUBMED   12654900
+  REMARK    doi:10.1083/jcb.200212052
+REFERENCE   4
+  AUTHORS   Lau YK, Baytshtok V, Howard TA, Fiala BM, Johnson JM, Carter LP,
+            Baker D, Lima CD, Bahl CD
+  TITLE     Discovery and engineering of enhanced SUMO protease enzymes
+  JOURNAL   Journal of Biological Chemistry (2018)
+   PUBMED   29976752
+  REMARK    doi:10.1074/jbc.RA118.004146
+REFERENCE   5
+  AUTHORS   Zhang F, Zheng H, Xian Y, Song H, Wang S, Yun Y, Yi L, Zhang G
+  TITLE     Profiling Substrate Specificity of the SUMO Protease Ulp1 by the
+            YESS-PSSC System to Advance the Conserved Mechanism for Substrate
+            Cleavage
+  JOURNAL   International Journal of Molecular Sciences (2022)
+   PUBMED   36293045
+  REMARK    doi:10.3390/ijms232012188
+REFERENCE   6
+  AUTHORS   Linova MY, Risør MW, Jørgensen SE, Mansour Z, Kaya J, Sigurdarson
+            JJ, Enghild JJ, Karring H
+  TITLE     A novel approach for production of an active N-terminally truncated
+            Ulp1 (SUMO protease 1) catalytic domain from Escherichia coli
+            inclusion bodies
+  JOURNAL   Protein Expression and Purification (2020)
+   PUBMED   31586598
+  REMARK    doi:10.1016/j.pep.2019.105507
+REFERENCE   7
+  AUTHORS   Marblestone JG, Edavettal SC, Lim Y, Lim P, Zuo X, Butt TR
+  TITLE     Comparison of SUMO fusion technology with traditional gene fusion
+            systems: enhanced expression and solubility with SUMO
+  JOURNAL   Protein Science (2006)
+   PUBMED   16322573
+  REMARK    doi:10.1110/ps.051812706
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/Ulp1
+FEATURES             Location/Qualifiers
+     CDS             1..219
+                     /label="Ulp1"
+                     /synonym="Ulp1 protease"
+                     /synonym="SUMO protease"
+                     /synonym="Smt3-specific protease"
+                     /note="Catalytic (UD/Ulp) domain of Saccharomyces
+                     cerevisiae Ulp1, residues 403-621 of the 621-aa UniProt
+                     Q02724 (ULP1_YEAST). SUMO/Smt3-specific cysteine protease
+                     (clan CE, SENP/Ulp family) that cleaves after the SUMO
+                     C-terminal Gly-Gly to release a passenger with a native
+                     (scarless) N-terminus. This minimal catalytic fragment is
+                     the canonical 403-621 crystallography/expression construct
+                     (PDB 1EUV) and is sufficient for the essential
+                     SUMO-deconjugation function in vivo."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q02724"
+                     /collection="protease-cleavage-sites"
+ORIGIN
+        1 lvpelnekdd dqvqkalasr entqlmnrdn ieitvrdfkt laprrwlndt iieffmkyie
+       61 kstpntvafn sffytnlser gyqgvrrwmk rkktqidkld kiftpinlnq shwalgiidl
+      121 kkktigyvds lsngpnamsf ailtdlqkyv meeskhtige dfdlihldcp qqpngydcgi
+      181 yvcmntlygs adapldfdyk dairmrrfia hliltdalk
+//

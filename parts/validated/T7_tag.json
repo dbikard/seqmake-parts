@@ -86,11 +86,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "epitope-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "UniProt:P19726 (CAPSA_BPT7, Major capsid protein / Gene product 10A, Escherichia phage T7; Swiss-Prot reviewed), positions 1\u201311 = MASMTGGQQMG; 100% identity over 11/11 aa, verified by direct efetch from rest.uniprot.org"
@@ -123,7 +125,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -150,7 +153,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -178,7 +182,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -202,7 +207,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

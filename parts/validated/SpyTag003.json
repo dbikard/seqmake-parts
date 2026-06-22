@@ -1,0 +1,432 @@
+{
+  "schema_version": "1.0",
+  "slug": "SpyTag003",
+  "locus": "SpyTag003",
+  "id": "SpyTag003",
+  "description": "SpyTag003 - 16-aa peptide (RGVPHIVMVDAYKRYK), third-generation reactive Spy peptide that forms a spontaneous, irreversible isopeptide bond to SpyCatcher003 at near-diffusion-limited speed (~5.5e5 M-1 s-1).",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "RGVPHIVMVDAYKRYK",
+  "references": [
+    {
+      "authors": "Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R, Hytonen VP, Howarth M",
+      "title": "Approaching infinite affinity through engineering of peptide-protein interaction",
+      "journal": "Proc Natl Acad Sci U S A (2019)",
+      "pubmed_id": "31822621",
+      "comment": "doi:10.1073/pnas.1909653116"
+    },
+    {
+      "authors": "Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT, Howarth M",
+      "title": "Peptide tag forming a rapid covalent bond to a protein, through engineering a bacterial adhesin",
+      "journal": "Proc Natl Acad Sci U S A (2012)",
+      "pubmed_id": "22366317",
+      "comment": "doi:10.1073/pnas.1115485109"
+    },
+    {
+      "authors": "Li L, Fierer JO, Rapoport TA, Howarth M",
+      "title": "Structural analysis and optimization of the covalent association between SpyCatcher and a peptide tag",
+      "journal": "J Mol Biol (2014)",
+      "pubmed_id": "24161952",
+      "comment": "doi:10.1016/j.jmb.2013.10.021"
+    },
+    {
+      "authors": "Keeble AH, Banerjee A, Ferla MP, Reddington SC, Khairil Anuar INA, Howarth M",
+      "title": "Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze Membrane Dynamics",
+      "journal": "Angew Chem Int Ed Engl (2017)",
+      "pubmed_id": "29024296",
+      "comment": "doi:10.1002/anie.201707623"
+    },
+    {
+      "authors": "Khairil Anuar INA, Banerjee A, Keeble AH, Carella A, Nikov GI, Howarth M",
+      "title": "Spy&Go purification of SpyTag-proteins using pseudo-SpyCatcher to access an oligomerization toolbox",
+      "journal": "Proc Natl Acad Sci U S A (2019)",
+      "pubmed_id": "30988307",
+      "comment": "doi:10.1073/pnas.1901876116"
+    },
+    {
+      "authors": "Tan TK, Rijal P, Rahikainen R, Keeble AH, et al., Howarth M, Townsend AR",
+      "title": "A COVID-19 vaccine candidate using SpyCatcher multimerization of the SARS-CoV-2 spike protein receptor-binding domain induces potent neutralising antibody responses",
+      "journal": "Nat Commun (2021)",
+      "pubmed_id": "33431871",
+      "comment": "doi:10.1038/s41467-020-20654-7"
+    },
+    {
+      "authors": "Keeble AH, Howarth M",
+      "title": "Power to the protein: enhancing and combining activities using the Spy toolbox",
+      "journal": "Chem Sci (2020)",
+      "pubmed_id": "",
+      "comment": "doi:10.1039/D0SC01878C"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 16,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SpyTag003"
+        ],
+        "synonym": [
+          "SpyTag 003",
+          "SpyTag003"
+        ],
+        "note": [
+          "16-aa third-generation Spy peptide tag (RGVPHIVMVDAYKRYK). Engineered from SpyTag002 by appending an N-terminal Arg-Gly (RG) dipeptide and introducing the T112H mutation (CnaB2 numbering), descended from the CnaB2 domain of Streptococcus pyogenes FbaB. On mixing with its 116-aa partner SpyCatcher003 it forms a spontaneous, irreversible intermolecular isopeptide (amide) bond between its reactive Asp (CnaB2 Asp117) and Lys31 of SpyCatcher003, catalysed by SpyCatcher Glu77 - reaction approaches the diffusion limit. Fusable at N-terminus, C-terminus or internally. Contains no Cys."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "QGX07220.1 (SpyTag003-MBP, synthetic construct; Keeble et al. 2019, PNAS, PMID 31822621, DOI 10.1073/pnas.1909653116), SpyTag003 domain at residues 20-35, 100% identity over all 16 aa; independently verified by fetching QGX07220.1 from NCBI protein and confirming RGVPHIVMVDAYKRYK at annotated feature 'SpyTag003 peptide' (Region 20..35)"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Spontaneous, irreversible isopeptide bond to SpyCatcher003 approaching the diffusion limit",
+      "value": {
+        "mechanism": "intermolecular isopeptide (amide) bond formation on reconstitution of a split CnaB2-derived domain",
+        "reactive_residue": "reactive Asp (CnaB2 Asp117) of SpyTag003",
+        "partner_residue": "Lys31 of SpyCatcher003",
+        "catalytic_residue": "Glu77 of SpyCatcher003 (E77A abolishes reaction)",
+        "reversibility": "irreversible; no detectable side reactions and no self-reactivity",
+        "partner": "SpyCatcher003 (116 aa)",
+        "no_cysteine": true
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "Amide bond formation between an amine and a carboxylic acid here occurs without any activating groups, and half-time for reaction is less than 30 s with 10 microM of each partner... Other important features of our reactive pair include the absence of Cys in either partner, lack of side reactions, and specificity in a range of cellular systems.",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "Covalent (effectively infinite affinity); non-reactive SpyTag003 DA binds SpyCatcher003 with Kd ~21 nM",
+      "value": {
+        "covalent": true,
+        "noncovalent_Kd_nM_SPR": 21,
+        "noncovalent_Kd_error_nM": 4,
+        "method": "surface plasmon resonance on non-reactive SpyTag003 DA (D-to-A) variant; isotherm too tight to measure by ITC",
+        "kinetic_Kd_estimates_nM": [
+          3,
+          13
+        ],
+        "note": "the reactive SpyTag003/SpyCatcher003 pair forms a covalent bond (no equilibrium dissociation); 21 nM is the noncovalent docking affinity of the reaction-dead DA variant"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "SpyTag003 DA:SpyCatcher003 still represents a high-affinity interaction: its affinity was too strong to measure by ITC, so we used surface plasmon resonance (SPR) to obtain a Kd = 21 +/- 4 nM",
+        "quote_source": "primary",
+        "section": "Results - Intracellular Coupling of Split Talin Fragments"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "induction_kinetics",
+      "type": "induction_kinetics",
+      "label": "Second-order rate constant 5.5e5 M-1 s-1 (~400-fold over SpyTag, 28-fold over SpyTag002)",
+      "value": {
+        "rate_constant_M-1_s-1": 550000,
+        "rate_constant_error_M-1_s-1": 60000,
+        "fold_over_SpyTag": 400,
+        "fold_over_SpyTag002": 28,
+        "half_time_s_at_10uM": "<30",
+        "completion_at_10nM": ">90% in 15 min",
+        "reaction": "covalent isopeptide bond formation with SpyCatcher003",
+        "interpretation": "within the 10^5 to 10^6 M-1 s-1 onset of diffusion-controlled protein-protein interaction"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "The second-order rate constant for SpyTag003/SpyCatcher003 was 5.5 +/- 0.6 x 10[5] M[-1]s[-1] (mean +/- 1 SD, n = 3), ~400-fold faster than the 1.4 x 10[3] M[-1]s[-1] previously shown for SpyTag/SpyCatcher, and 28-fold faster than the 2.0 x 10[4] M[-1]s[-1] for SpyTag002/SpyCatcher002... SpyTag003/SpyCatcher003 reaction went to >90% completion in 15 min",
+        "quote_source": "primary",
+        "section": "Results - Engineering Toward Diffusion-Controlled Protein Coupling"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "expression_yield",
+      "type": "expression_yield",
+      "label": "Reaction reaches >99% completion when one partner is in excess",
+      "value": {
+        "completion": ">99%",
+        "condition": "one partner in small excess, 1.5 h, 25 C, pH 7.0",
+        "side_products": "none detected (no self-reactivity)"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "This analysis showed >99% completion for SpyTag003 with SpyCatcher003 in excess. Similarly, we found >99% completion for SpyCatcher003 with SpyTag003 in excess.",
+        "quote_source": "primary",
+        "section": "Results - Analysis of the SpyTag003/SpyCatcher003 System"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "affinity_matrix",
+      "type": "affinity_matrix",
+      "label": "Spy&Go (immobilised non-reactive SpyDock) affinity purification of SpyTag003 fusions",
+      "value": {
+        "matrix": "immobilised non-reactive SpyCatcher variant (SpyDock / pseudo-SpyCatcher)",
+        "purity_pct": 92,
+        "basis": "exploits the strong noncovalent SpyTag003:SpyDock interaction",
+        "elution_note": "SpyTag003 binds SpyDock more tightly than earlier generations and reportedly needs harsher elution; the precise elution condition is described in the dedicated Spy&Go report (PMID 30988307) which was only available at abstract level"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "We took advantage of the strong noncovalent interaction between SpyTag003 and a nonreactive SpyCatcher variant (SpyDock) for affinity purification using the Spy&Go system. This enabled purification of SpyTag003 fusions from cell lysate with 92% purity.",
+        "quote_source": "primary",
+        "section": "Results - Analysis of the SpyTag003/SpyCatcher003 System"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Specific reaction/detection across diverse model organisms and on live mammalian cells",
+      "value": {
+        "validated_in": [
+          "Escherichia coli",
+          "human cells (Expi293, cell surface and cytoplasm)",
+          "additional model-organism lysates by Western blot"
+        ],
+        "context": "cell-surface labelling in 1 min on live mammalian cells; specific Western-blot detection with minimal cross-reactivity to endogenous proteins; intracellular split-protein (talin) reconstitution in mammalian cytoplasm"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "We applied this reactive pair for specific labeling of a plasma membrane target in 1 min on live mammalian cells. Sensitive and specific detection was also confirmed by Western blot in a range of model organisms.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "conditions",
+      "type": "conditions",
+      "label": "Reacts efficiently at low nanomolar concentration; functions intracellularly and on cell surfaces",
+      "value": {
+        "reference_buffer": "succinate-phosphate-glycine or PBS, pH 7.0-7.4, 25 C",
+        "low_concentration_performance": "half-time <5 min with both partners ~10 nM",
+        "compartments": [
+          "extracellular / cell surface",
+          "cytoplasm"
+        ],
+        "note": "earlier Spy generations show broad tolerance of pH, temperature and buffer and versatile fusion sites; the 003 pair inherits this robustness"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "even with each partner at a thousand-fold lower concentration, the reaction half-time is less than 5 min. Therefore, this covalent reactivity can be harnessed for the study of proteins over a range of cellular concentrations... Previous iterations have shown broad tolerance of reaction conditions and versatility in the sites of fusion.",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "Fusable at N-terminus, C-terminus or internally",
+      "value": {
+        "positions": [
+          "N-terminal",
+          "C-terminal",
+          "internal"
+        ],
+        "note": "the engineered N-terminal Arg-Gly extension is part of SpyTag003 and contributes to its reactivity; like earlier Spy peptides the tag tolerates terminal or internal fusion"
+      },
+      "source": {
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109",
+        "quote": "SpyTag could be fused at either terminus or internally and reacted specifically at the mammalian cell surface.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Third-generation tag: N-terminal RG dipeptide + T112H over SpyTag002; pairs with SpyCatcher003",
+      "value": {
+        "parent": "SpyTag002",
+        "mutations_from_parent": [
+          "N-terminal Arg-Gly (RG) dipeptide addition",
+          "T112H (CnaB2 numbering)"
+        ],
+        "cognate_partner": "SpyCatcher003 (mutations A89P/T91E/Q97D/N103D/K108E over SpyCatcher002)",
+        "lineage": [
+          "SpyTag (AHIVMVDAYKPTK)",
+          "SpyTag002",
+          "SpyTag003 (RGVPHIVMVDAYKRYK)"
+        ],
+        "back_compatible": "reacts with earlier-generation SpyCatcher partners (back-compatible), though optimally paired with SpyCatcher003"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "we made the T112H mutation, which enhanced reaction rate... Appending the RG dipeptide at the N terminus of the Tag also caused a substantial improvement in reaction rate, giving us SpyTag003... We further characterized that SpyTag003 and SpyCatcher003 were back-compatible with previous SpyTag/SpyCatcher generations.",
+        "quote_source": "primary",
+        "section": "Results - Engineering Toward Diffusion-Controlled Protein Coupling"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Engineered descendant of the S. pyogenes FbaB CnaB2 domain (Spy lineage)",
+      "value": {
+        "parent_protein": "fibronectin-binding protein FbaB",
+        "organism": "Streptococcus pyogenes (ancestral domain)",
+        "domain": "CnaB2 (immunoglobulin-like adhesin domain with spontaneous Lys-Asp isopeptide bond)",
+        "design": "library-based evolution + rational/computational design of the split CnaB2 (SpyTag/SpyCatcher) system through generations 001, 002, 003",
+        "deposit": "QGX07220.1 protein / MN433888.1 nucleotide (Keeble & Howarth 2019)"
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "The fibronectin binding protein, FbaB, from [S. pyogenes] contains a CnaB2 adhesin domain. CnaB2 is stabilized by a spontaneous reaction of Lys and Asp side chains to form an isopeptide bond... We previously achieved genetically encoded and covalent peptide-protein interaction by splitting CnaB2 into the 13-residue SpyTag peptide and the 116-residue SpyCatcher protein.",
+        "quote_source": "primary",
+        "section": "Results - Engineering Toward Diffusion-Controlled Protein Coupling"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Rapid covalent module for protein assembly, detection, anchoring, vaccines and split-protein reconstitution",
+      "value": {
+        "applications": [
+          "rapid, sensitive detection (flow cytometry, Western blot)",
+          "fast cell-surface labelling on live cells",
+          "intracellular split-protein reconstitution (e.g. talin)",
+          "irreversible anchoring on beads / biomaterials",
+          "oligomerisation and plug-and-display vaccine scaffolds",
+          "Spy&Go affinity purification of SpyTag003 fusions"
+        ]
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "This work also supports the use of SpyTag003 to enhance the range of applications of a fused protein. Proteins linked to SpyTag and its variants are empowered for Spy&Go affinity purification, irreversible anchoring (on magnetic beads or biomaterials), or oligomerization (on coiled-coils or vaccine scaffolds).",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

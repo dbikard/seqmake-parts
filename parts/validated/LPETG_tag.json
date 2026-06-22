@@ -3,7 +3,7 @@
   "slug": "LPETG_tag",
   "locus": "LPETG_tag",
   "id": "LPETG_tag",
-  "description": "LPETG \u2014 the canonical sortase A (SrtA) recognition motif (a single instance of the Gram-positive LPXTG cell-wall sorting signal); SrtA cleaves between the Thr and Gly (LPET|G), forming an acyl-enzyme thioester that is resolved by transpeptidation onto an N-terminal oligoglycine acceptor, making LPETG the standard C-terminal handle for site-specific protein ligation (sortagging) and conjugation.",
+  "description": "LPETG — the canonical sortase A (SrtA) recognition motif (a single instance of the Gram-positive LPXTG cell-wall sorting signal); SrtA cleaves between the Thr and Gly (LPET|G), forming an acyl-enzyme thioester that is resolved by transpeptidation onto an N-terminal oligoglycine acceptor, making LPETG the standard C-terminal handle for site-specific protein ligation (sortagging) and conjugation.",
   "molecule_type": "protein",
   "locus_annotations": {
     "topology": "linear"
@@ -98,11 +98,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "UniProt P02976 (SPA_STAA8, Immunoglobulin G-binding protein A, S. aureus NCTC 8325, Swiss-Prot PE=1 reviewed), positions 482-486 (1-based), explicit Motif annotation 'LPXTG sorting signal'; sequence LPETG independently fetched and confirmed exact 5/5 match"
@@ -123,7 +125,7 @@
       "source": {
         "pmid": "10535938",
         "doi": "10.1073/pnas.96.22.12424",
-        "quote": "Purification and characterization of sortase, the transpeptidase that cleaves surface proteins of Staphylococcus aureus at the LPXTG motif",
+        "quote": "Cleavage between the threonine and the glycine of the LPXTG motif liberates the carboxyl of threonine to form an amide bond with the amino group of the pentaglycine crossbridge (2, 3), thereby tethering the C terminus end of surface proteins to the bacterial peptidoglycan (4–7). [Lines 25-28]. Additionally: Staphylococcal extracts, as well as purified sortase, catalyze the hydroxylaminolysis of peptides bearing an LPXTG motif [lines 14-15]. And: Purified SrtADN was incubated with the LPXTG peptide Dabcyl-QALPETGEE-Edans, and cleavage was monitored [lines 179-188], demonstrating LPETG as an active substrate for SrtA-mediated cleavage.",
         "quote_source": "primary",
         "section": "title and abstract"
       },
@@ -132,9 +134,13 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Directly actionable for designers: specifies exact enzyme (SrtA), recognition sequence (LPETG), and scissile bond position (Thr|Gly). This information discriminates LPETG from other tags and determines whether a protein construct will be efficiently processed.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "mechanism",
@@ -150,7 +156,7 @@
       "source": {
         "pmid": "10427003",
         "doi": "10.1126/science.285.5428.760",
-        "quote": "Staphylococcus aureus sortase, an enzyme that anchors surface proteins to the cell wall",
+        "quote": "Protein A is cleaved by a transpeptidase, sortase, between the threonine and the glycine of a conserved LPXTG motif (5). The carboxyl group of threonine is amide-linked to the amino group of the pentaglycine cross-bridge, thereby tethering the COOH-terminal end of protein A to the bacterial cell wall (6). [Lines 211-217]. The srtA gene specifies a protein of 206 amino acids with a potential NH2-terminal signal peptide/membrane anchor sequence and a presumed active-site cysteine at position 184, consistent with the observation that the cell wall sorting reaction is sensitive to reagents that modify sulfhydryl groups. [Lines 418-424]. Together, our data reveal that srtA encodes sortase, the transpeptidase that anchors surface proteins to the bacterial cell wall (24). [Lines 450-452]",
         "quote_source": "primary",
         "section": "title and abstract"
       },
@@ -159,9 +165,13 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Explains the molecular mechanism of sortase-mediated ligation, critical for understanding how LPETG functions operationally and how it differs from passive affinity/detection tags; directly guides use (cysteine-dependent, requires oligoglycine acceptor, results in covalent ligation)",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "natural_origin",
@@ -185,9 +195,15 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "low",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "low",
+      "usefulness_rationale": "Tautological — restates that the part IS the native LPXTG sorting signal from S. aureus Protein A, a fact already evident from the part's name and description; provides no actionable design information, comparative discrimination, or failure-mode knowledge that an engineer would consult when choosing or operating this part.",
+      "last_checked": "2026-06-22",
+      "superseded_by": "natural_origin__v2",
+      "comment": "superseded by natural_origin__v2: The asserted residue positions (482-486) are factually incorrect per the primary source, which states the sorting signal spans residues 474-508 with the LPETG motif at positions 470-474. The origin claim itself (that LPETG is native to SpA) is supported, but the positional coordinates must be corrected."
     },
     {
       "id": "application",
@@ -218,8 +234,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "sources-pending",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Specifies the operational method (sortase-mediated ligation), the binding partners (C-terminal LPETG + N-terminal Gly), and concrete applications (bioconjugation, immobilization, labeling); enables direct selection and use of this part over alternatives",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "placement",
@@ -233,7 +253,7 @@
       "source": {
         "pmid": "23989673",
         "doi": "10.1038/nprot.2013.101",
-        "quote": "Site-specific C-terminal and internal loop labeling of proteins using sortase-mediated reactions",
+        "quote": "The sortase-recognition sequence is usually engineered at the C terminus of the protein to be modified, with the G or A residue in amide linkage, followed by an affinity purification handle (e.g., His6) that is lost upon reaction. The efficiency of the sortase-mediated reaction depends on the flexibility and accessibility of the region comprising the sortase A-recognition motif. As long as the LPXTG/A motif is introduced in an unstructured segment of the substrate protein, sortase can recognize the sequence. An LPXTG motif that is highly structured is usually a poor sortase substrate.",
         "quote_source": "primary",
         "section": "title and abstract"
       },
@@ -242,9 +262,13 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Actionable constraints on C-terminal placement, accessibility requirements, linker design strategy, and junction composition are essential design parameters for successful sortagging applications",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "host_range",
@@ -258,7 +282,7 @@
       "source": {
         "pmid": "14995162",
         "doi": "10.1021/ja039915e",
-        "quote": "Sortase-mediated protein ligation: a new method for protein engineering",
+        "quote": "Sortase (SrtA), a transpeptidase from Staphylococcus aureus, catalyzes a cell-wall sorting reaction at an LPXTG motif by cleaving between threonine and glycine and subsequently joining the carboxyl group of threonine to an amino group of pentaglycine. We have applied this transpeptidyl activity of sortase to in vitro protein ligation. We found that in the presence of sortase, protein/peptide with an LPXTG motif can be specifically ligated to an aminoglycine protein/peptide via an amide bond. Additionally, sortase can even conjugate substrates such as (d)-peptides, synthetic branched peptides, and aminoglycine-derivatized small molecules to the C terminus of a recombinant protein.",
         "quote_source": "primary",
         "section": "title and abstract"
       },
@@ -267,9 +291,13 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Datasheet_slot claim: directly influences designer choice of expression system; explains why any organism/context works (motif is sequence + separate enzyme)",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "sequence_variant",
@@ -294,8 +322,44 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "low",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Discriminates LPETG from engineered variants, provides quantitative enzyme performance data (fold activity improvement), and specifies which evolved sortase (pentamutant) to use — directly operational for a designer choosing between WT and evolved SrtA.",
+      "last_checked": "2026-06-22",
+      "comment": "The \"orthogonal_motifs\" clause (LAXTG/LPXSG recognition by engineered sortases) is not discussed in the cited paper (Chen et al. 2011); it appears to conflate two separate publications. The pentamutant's actual 120-fold activity (not 140-fold) is documented in Table 1 line 791 of Chen et al."
+    },
+    {
+      "id": "natural_origin__v2",
+      "type": "origin",
+      "label": "LPETG is the native LPXTG sorting signal of S. aureus Protein A (SpA); native SpA carries the exact LPETG sequence in its precursor",
+      "value": {
+        "origin_protein": "Immunoglobulin G-binding protein A (Protein A / SpA), Staphylococcus aureus (UniProt P02976)",
+        "residues": "470-474 (LPETG), or more broadly 474-508 for the complete sorting signal",
+        "also_present_in": "FnbA (UniProt P14738) at positions 982-986, and many other Gram-positive surface proteins as the conserved LPXTG class signal",
+        "biological_context": "C-terminal cell-wall sorting signal directing SrtA-mediated covalent anchoring to peptidoglycan"
+      },
+      "source": {
+        "pmid": "25644005",
+        "doi": "10.1128/IAI.03122-14",
+        "quote": "The paper states: \"DNA encoding the SpA sorting signal (residues 474 to 508)\" and identifies the LPETG motif in peptides at positions 470-484 (Table 2, peptide \"KAQALPETGEENPFI\").",
+        "quote_source": "primary",
+        "section": "title and abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "low",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": "natural_origin",
+      "usefulness": "low",
+      "usefulness_rationale": "Tautological — restates that the part IS the native LPXTG sorting signal from S. aureus Protein A, a fact already evident from the part's name and description; provides no actionable design information, comparative discrimination, or failure-mode knowledge that an engineer would consult when choosing or operating this part.",
+      "last_checked": "2026-06-22",
+      "superseded_by": null
     }
   ]
 }

@@ -23,8 +23,10 @@ schema-validated `parts/<status>/<slug>.json`; the `.gb` is *generated* from it
 Parts are split by **curation tier**: a **candidate** (`parts/candidate/`) is a
 bare sourced sequence; a **validated** part (`parts/validated/`) clears the
 completeness bar *and* carries a curated `<slug>.md`. The exact bar, the tiers, and
-the separate `review_status` axis (`ai-generated → ai-cross-checked →
-expert-reviewed`) are defined in [`AUTHORING.md`](AUTHORING.md);
+the separate per-claim **verification lifecycle** (`analysis_status`:
+`pending → verified`, or `sources-pending` / `flagged`; plus `cross_checked`,
+`confidence`, `usefulness`) are defined in [`AUTHORING.md`](AUTHORING.md) and
+[`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-check/CLAIM-MODEL.md);
 `tools/validate_parts.py` enforces the machine-checkable part of it. A `.gb` in
 `parts/validated/` **must** have a `.md`; one in `parts/candidate/` **must not** —
 the build flags misplaced files.
@@ -35,8 +37,8 @@ Commit the `<slug>.json`, its generated `.gb`, the curated `<slug>.md` (for a
 validated part), and the regenerated `catalog.json` + `catalog.ttl` / `.jsonld`
 together. CI validates the JSON against the schema, regenerates the `.gb` / catalog
 / RDF and fails if any committed artifact is stale, checks the SHACL shapes, and
-runs the content + requests guards. An expert review promotes claims to
-`review_status: expert-reviewed`.
+runs the content + requests guards. The independent `cross-check` pass later
+promotes claims to `analysis_status: verified` once their primary source is read.
 
 ## Regenerate locally
 

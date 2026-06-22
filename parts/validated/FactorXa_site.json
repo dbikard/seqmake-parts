@@ -97,11 +97,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "protease-cleavage-sites"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "UniProt P00734 (THRB_HUMAN, Prothrombin, Homo sapiens; reviewed Swiss-Prot), residues 311-314 (1-based, canonical isoform), 100% identity over 4 aa; IEGR is the Factor Xa P4-P1 recognition tetrapeptide immediately preceding the documented cleavage site at Arg-314. Independently fetched via https://rest.uniprot.org/uniprotkb/P00734.fasta and confirmed by direct substring alignment (BioPython PairwiseAligner local mode, score=8.0, 4/4 matches)."
@@ -131,7 +133,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -157,7 +160,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -182,7 +186,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -210,7 +215,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -235,7 +241,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

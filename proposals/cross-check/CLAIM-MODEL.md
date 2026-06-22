@@ -15,12 +15,34 @@ orthogonal things and depended on a human tier nobody would fill. We're dropping
 | **usefulness** | How much does it help a designer choose/operate this part? | low / medium / high |
 | **claim_type** | What *kind* of assertion is it? | controlled vocabulary (`schema/claim_types.json`) |
 
-`review_status` is **retired**. A claim instead carries `cross_checked` (verified against a read source,
-with a timestamp) + `confidence` + `usefulness` + an optional `comment`. There is no expert stamp.
+`review_status` is **retired** (removed from `schema/part.schema.json`, all 273 records, the RDF
+projection, SHACL, the site, and the merge ladder — `tools/migrate_claim_model.py`). A claim instead
+carries `cross_checked` + `confidence` + `usefulness` + an optional `comment`, plus the verification
+**lifecycle** below. There is no expert stamp.
 
 These axes are genuinely orthogonal: a claim can be **true-but-useless** (`"MBP is a maltose-binding
 protein"` — certain, zero information) or **useful-but-shaky** (a quantitative caveat from one paper).
 Folding usefulness into confidence would destroy both signals.
+
+## Verification lifecycle — `analysis_status`
+
+`cross_checked` is a boolean, but a claim's *state* needs four values — crucially one for "a pass ran
+but couldn't reach the source yet", which is distinct from "verified false" and from "not looked at".
+Every claim carries `analysis_status` (with `cross_checked` = `analysis_status == "verified"`) and a
+`last_checked` date:
+
+| `analysis_status` | Meaning | Set by |
+|---|---|---|
+| `pending` | authored, source was reachable, **not yet independently cross-checked** | annotate-part (fresh claim) |
+| `verified` | cross-checked against the **primary** source and supported (earns the trust marker) | cross-check |
+| `sources-pending` | a pass needed the primary source but **couldn't access it** → a `sourcing/REQUESTS.md` entry is filed | annotate-part **or** cross-check |
+| `flagged` | source was read but the claim is partially-supported, downgraded, or superseded (see `comment` / `supersedes`) | cross-check |
+
+`sources-pending` is **shared by both engines** — a freshly authored claim whose paywalled primary
+annotate-part couldn't read, and a claim cross-check couldn't reach, are the same state and unblock by
+the same `/open-requests` → `/incoming` → re-run loop. The request is filed through `tools/papers.py
+request` (store-aware + self-pruning), so the **only** human step in the whole pipeline is fetching a
+paywalled PDF.
 
 ## Usefulness — anchored in the part datasheet
 
@@ -82,11 +104,30 @@ Three properties keep it safe:
 | `downgrade_comment` | suspected problem, can't confidently rewrite | keep claim, lower `confidence`, attach the `uncertainty_note` as a comment |
 
 The cross-check engine (`.claude/workflows/cross-check.js`) emits `correction_action` + `proposed_change`
-per claim. The **applier** (`tools/apply_cross_check.py`, next build) executes them against the part JSONs,
-then runs the standard gates (`validate_parts` · `build_*` · `pyshacl` · `pytest`).
+per claim. The **applier** (`tools/apply_cross_check.py`) executes them against the part JSONs:
+`fix_metadata` upgrades a self-referential quote to the verbatim primary one and re-points wrong
+citations; `supersede` writes the corrected `<id>__v2` (carrying its own primary quote, `supersedes` the
+old) and flags the old as `superseded_by`; `downgrade_comment` lowers confidence + attaches the note; an
+unreachable source routes to `sources-pending` + a filed request. A supersede whose correction can't be
+parsed cleanly **falls back to `downgrade_comment`** rather than write a guess. Dry-run by default;
+`--write` applies, then the caller regenerates artifacts + runs the gates (`tools/check_all.py`).
+
+## The autonomous loop
+
+```
+/cross-check <slugs>                      # workflow → verdicts (read-only, blind to prior scores)
+python tools/apply_cross_check.py --verdicts <file> --write   # verdicts → claims (verified / supersede / flagged / sources-pending)
+python tools/check_all.py                 # validate · build_* · pyshacl · pytest
+# any sources-pending → /open-requests → human fetches the PDF → /incoming → re-run /cross-check
+```
+
+The only human action is fetching paywalled PDFs; everything else is mechanical and gated.
 
 ## Status
 
 - **Built:** controlled vocabulary + validator enforcement; cross-check engine scores all three axes and
-  proposes corrections; local paper store (`tools/papers.py`) so paywalled full text + figures are verifiable.
-- **Next:** `tools/apply_cross_check.py` (the autonomous applier), then a full-corpus pass.
+  proposes corrections; local paper store (`tools/papers.py`); `review_status` fully retired and migrated
+  to the `analysis_status` lifecycle; **`tools/apply_cross_check.py`** (the autonomous applier) + tests;
+  the loop above wired into the cross-check workflow. First real pass applied over AviTag / birA /
+  LPETG_tag / SnoopTag.
+- **Next:** a full-corpus cross-check + apply pass; promote `claim_types` to a published SKOS scheme.

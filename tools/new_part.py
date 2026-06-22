@@ -82,7 +82,6 @@ def build_skeleton(name: str, feature_type: str, sequence: str, *,
             "strand": 1,
             "qualifiers": q,
         }],
-        "review_status": "ai-generated",
         "provenance": {
             "created_by": "add-part",
             "sequence_source": "FILL IN: cite the primary/registry source the sequence is from",

@@ -65,7 +65,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), 3′ end of yciI (b1251), adjacent to tonB, positions 1310549..1310602 (+ strand), 100% identity over 54 bp",
     "asserting_agent": "attB-research-agent + local genome verification"

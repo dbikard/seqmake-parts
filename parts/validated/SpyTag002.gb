@@ -1,0 +1,71 @@
+LOCUS       SpyTag002                 14 aa            linear   UNK 01-JAN-1980
+DEFINITION  SpyTag002 — second-generation 14-aa peptide tag (VPTIVMVDAYKRYK)
+            that forms a spontaneous, irreversible isopeptide bond to
+            SpyCatcher002, reacting ~12x faster than the original SpyTag..
+ACCESSION   SpyTag002
+VERSION     SpyTag002
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Keeble AH, Banerjee A, Ferla MP, Reddington SC, Khairil Anuar INA,
+            Howarth M
+  TITLE     Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze
+            Membrane Dynamics
+  JOURNAL   Angew Chem Int Ed Engl (2017)
+   PUBMED   29024296
+  REMARK    doi:10.1002/anie.201707623
+REFERENCE   2
+  AUTHORS   Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT,
+            Howarth M
+  TITLE     Peptide tag forming a rapid covalent bond to a protein, through
+            engineering a bacterial adhesin
+  JOURNAL   Proc Natl Acad Sci U S A (2012)
+   PUBMED   22366317
+  REMARK    doi:10.1073/pnas.1115485109
+REFERENCE   3
+  AUTHORS   Khairil Anuar INA, Banerjee A, Keeble AH, Carrington L, Bhatt D,
+            Howarth M
+  TITLE     Spy&Go purification of SpyTag-proteins using pseudo-SpyCatcher to
+            access an oligomerization toolbox
+  JOURNAL   Nat Commun (2019)
+   PUBMED   30988307
+  REMARK    doi:10.1038/s41467-019-09678-w
+REFERENCE   4
+  AUTHORS   Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R,
+            Hytonen VP, Howarth M
+  TITLE     Approaching infinite affinity through engineering of peptide-protein
+            interaction
+  JOURNAL   Proc Natl Acad Sci U S A (2019)
+   PUBMED   31822621
+  REMARK    doi:10.1073/pnas.1909653116
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SpyTag002
+FEATURES             Location/Qualifiers
+     protein_domain  1..14
+                     /label="SpyTag002"
+                     /synonym="SpyTag 002"
+                     /synonym="SpyTag002"
+                     /note="Second-generation 14-aa peptide tag (VPTIVMVDAYKRYK)
+                     derived from the CnaB2 immunoglobulin-like domain of
+                     Streptococcus pyogenes fibronectin-binding protein FbaB,
+                     evolved from the original SpyTag (AHIVMVDAYKPTK) by
+                     phage-display selection plus rational design. SpyTag002
+                     differs from SpyTag at 4/13 shared residues and carries one
+                     extra N-terminal residue. On mixing with its protein
+                     partner SpyCatcher002 it forms a spontaneous, irreversible
+                     intermolecular isopeptide (amide) bond (reactive Asp;
+                     partner Lys; catalysed by SpyCatcher Glu77); single
+                     Asp->Ala (DA) mutation abolishes the reaction. Fusable at
+                     the N-terminus or C-terminus. Backwards-compatible with the
+                     parental SpyCatcher."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /db_xref="SO:0000417"
+                     /collection="conjugation-tags"
+ORIGIN
+        1 vptivmvday kryk
+//

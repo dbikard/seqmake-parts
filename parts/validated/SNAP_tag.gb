@@ -1,0 +1,111 @@
+LOCUS       SNAP_tag                 179 aa            linear   UNK 01-JAN-1980
+DEFINITION  SNAP-tag — ~179-aa self-labeling protein tag engineered by directed
+            evolution from human O6-alkylguanine-DNA alkyltransferase
+            (hAGT/MGMT); covalently and irreversibly transfers the benzyl group
+            of O6-benzylguanine (BG) substrates to its active-site cysteine,
+            labeling the fusion protein with the appended probe..
+ACCESSION   SNAP_tag
+VERSION     SNAP_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Keppler A, Gendreizig S, Gronemeyer T, Pick H, Vogel H, Johnsson K
+  TITLE     A general method for the covalent labeling of fusion proteins with
+            small molecules in vivo.
+  JOURNAL   Nature Biotechnology (2003)
+   PUBMED   12469133
+  REMARK    doi:10.1038/nbt765
+REFERENCE   2
+  AUTHORS   Juillerat A, Gronemeyer T, Keppler A, Gendreizig S, Pick H, Vogel H,
+            Johnsson K
+  TITLE     Directed evolution of O6-alkylguanine-DNA alkyltransferase for
+            efficient labeling of fusion proteins with small molecules in vivo.
+  JOURNAL   Chemistry & Biology (2003)
+   PUBMED   12725859
+  REMARK    doi:10.1016/S1074-5521(03)00068-1
+REFERENCE   3
+  AUTHORS   Keppler A, Kindermann M, Gendreizig S, Pick H, Vogel H, Johnsson K
+  TITLE     Labeling of fusion proteins of O6-alkylguanine-DNA alkyltransferase
+            with small molecules in vivo and in vitro.
+  JOURNAL   Methods (2004)
+   PUBMED   15003606
+  REMARK    doi:10.1016/j.ymeth.2003.10.007
+REFERENCE   4
+  AUTHORS   Keppler A, Pick H, Arrivoli C, Vogel H, Johnsson K
+  TITLE     Labeling of fusion proteins with synthetic fluorophores in live
+            cells.
+  JOURNAL   PNAS (2004)
+   PUBMED   15226507
+  REMARK    doi:10.1073/pnas.0401923101
+REFERENCE   5
+  AUTHORS   Gautier A, Juillerat A, Heinis C, Corrêa IR Jr, Kindermann M,
+            Beaufils F, Johnsson K
+  TITLE     An engineered protein tag for multiprotein labeling in living cells.
+  JOURNAL   Chemistry & Biology (2008)
+   PUBMED   18291317
+  REMARK    doi:10.1016/j.chembiol.2008.01.007
+REFERENCE   6
+  AUTHORS   Edara S, Kanugula S, Pegg AE
+  TITLE     Expression of the inactive C145A mutant human O6-alkylguanine-DNA
+            alkyltransferase in E.coli increases cell killing and mutations by
+            N-methyl-N'-nitro-N-nitrosoguanidine.
+  JOURNAL   Carcinogenesis (1999)
+   PUBMED   9934856
+  REMARK    doi:10.1093/carcin/20.1.103
+REFERENCE   7
+  AUTHORS   Erdmann RS, Baguley SW, Richens JH, et al.
+  TITLE     Labeling Strategies Matter for Super-Resolution Microscopy: A
+            Comparison between HaloTags and SNAP-tags.
+  JOURNAL   Cell Chemical Biology (2019)
+   PUBMED   30745239
+  REMARK    doi:10.1016/j.chembiol.2019.01.003
+REFERENCE   8
+  AUTHORS   Kühn S, Nasufovic V, Wilhelm J, Kompa J, de Lange EMF, Lin YH,
+            Egoldt C, Fischer J, Lennoi A, Tarnawski M, Reinstein J, Vlijm R,
+            Hiblot J, Johnsson K
+  TITLE     SNAP-tag2 for faster and brighter protein labeling.
+  JOURNAL   Nature Chemical Biology (2025)
+   PUBMED   40610720
+  REMARK    doi:10.1038/s41589-025-01942-z
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SNAP_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..179
+                     /label="SNAP_tag"
+                     /synonym="SNAP"
+                     /synonym="hAGT-derived self-labeling tag"
+                     /synonym="SNAP tag"
+                     /synonym="benzylguanine self-labeling tag"
+                     /note="SNAP-tag self-labeling protein domain (179 aa),
+                     engineered by directed evolution from human
+                     O6-alkylguanine-DNA alkyltransferase (hAGT/MGMT, P16455).
+                     Covalently and irreversibly transfers the benzyl group of
+                     O6-benzylguanine (BG) substrates to its active-site
+                     cysteine (the I-P-C-H-R active-site motif; reactive Cys at
+                     residue 144 in this stored numbering, equivalent to
+                     canonical hAGT Cys145), thereby self-labeling the fusion
+                     protein with whatever chemical probe is appended to the BG.
+                     The 178-aa core (residues 2-179) is a 100% exact match to
+                     UniProt E5BBQ0 (182 aa, derived from PDB 3KZY) and PDB 3KZY
+                     chain A. The functional M-start ORF (179 aa) is used here;
+                     the deposited crystallography construct (E5BBQ0/3KZY, 182
+                     aa) instead carries a GPGS cloning prefix in place of the
+                     initiator Met. Closest canonical reference: UniProt E5BBQ0
+                     (unreviewed TrEMBL)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000417"
+                     /collection="conjugation-tags"
+ORIGIN
+        1 mdkdcemkrt tldsplgkle lsgceqglhe iiflgkgtsa adavevpapa avlggpeplm
+       61 qatawlnayf hqpeaieefp vpalhhpvfq qesftrqvlw kllkvvkfge visyshlaal
+      121 agnpaataav ktalsgnpvp ilipchrvvq gdldvggyeg glavkewlla heghrlgkr
+//

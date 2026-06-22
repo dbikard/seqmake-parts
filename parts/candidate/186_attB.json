@@ -67,7 +67,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), tRNA-Ile gene (NCBI ileX b3069; the 186 literature calls this locus ileY), minus strand positions 3215628..3215673, 100% identity over 46 bp",
     "asserting_agent": "attB-research-agent + local genome verification"

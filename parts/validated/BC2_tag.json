@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "slug": "BC2_tag",
+  "locus": "BC2_tag",
+  "id": "BC2_tag",
+  "description": "BC2_tag \u2014 a 12-aa linear epitope tag (PDRKAAVSHWQQ) from the N-terminal region of human beta-catenin, bound by the BC2 nanobody (Kd ~1.4 nM) for protein purification, immunodetection, and super-resolution imaging.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "PDRKAAVSHWQQ",
+  "references": [
+    {
+      "authors": "Braun MB, Traenkle B, Koch PA, Emele F, Weiss F, Poetz O, Stehle T, Rothbauer U",
+      "title": "Peptides in headlock \u2013 a novel high-affinity and versatile peptide-binding nanobody for proteomics and microscopy",
+      "journal": "Scientific Reports (2016)",
+      "pubmed_id": "26791954",
+      "comment": "doi:10.1038/srep19211"
+    },
+    {
+      "authors": "Virant D, Traenkle B, Maier J, Kaiser PD, Bodenh\u00f6fer M, Schmees C, Vojnovic I, Pisak-Luk\u00e1ts B, Endesfelder U, Rothbauer U",
+      "title": "A peptide tag-specific nanobody enables high-quality labeling for dSTORM imaging",
+      "journal": "Nature Communications (2018)",
+      "pubmed_id": "29500346",
+      "comment": "doi:10.1038/s41467-018-03191-2"
+    },
+    {
+      "authors": "Traenkle B, Emele F, Anton R, Poetz O, Haeussler RS, Maier J, Kaiser PD, Scholz AM, Nueske S, Buchfellner A, Romer T, Rothbauer U",
+      "title": "Monitoring Interactions and Dynamics of Endogenous Beta-catenin With Intracellular Nanobodies in Living Cells",
+      "journal": "Molecular & Cellular Proteomics (2015)",
+      "pubmed_id": "25595278",
+      "comment": "doi:10.1074/mcp.M114.044016"
+    },
+    {
+      "authors": "Ren J, Xiong H, Huang C, Ji F, Jia L",
+      "title": "An engineered peptide tag-specific nanobody for immunoaffinity chromatography application enabling efficient product recovery at mild conditions",
+      "journal": "Journal of Chromatography A (2022)",
+      "pubmed_id": "35780707",
+      "comment": "doi:10.1016/j.chroma.2022.463274"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 12,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "BC2_tag"
+        ],
+        "synonym": [
+          "BC2T",
+          "BC2 tag",
+          "beta-catenin epitope"
+        ],
+        "note": [
+          "12-aa linear epitope tag PDRKAAVSHWQQ (BC2T), corresponding to residues 16\u201327 of human beta-catenin (UniProt P35222). Bound by the BC2 nanobody (BC2-Nb) with Kd ~1.4 nM via a 'headlock' binding mode: the peptide adopts a beta-strand that integrates into a beta-sheet of the nanobody, providing affinity through backbone hydrogen bonds. Specificity is set by only four side chains (R3, A6, S8, W10, with W10 invariable); the other eight positions tolerate substitution, allowing the tag to be re-engineered. Functions as a single binding epitope with no independently used internal sub-elements."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "epitope-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt P35222 (CTNB1_HUMAN, Catenin beta-1, Homo sapiens), residues 16\u201327, 100% identity over 12 aa"
+  },
+  "functional_claims": [
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "The BC2 tag (PDRKAAVSHWQQ) is bound by the BC2 nanobody (BC2-Nb) with a dissociation constant of ~1.4 nM, measured by surface plasmon resonance.",
+      "value": {
+        "binder": "BC2-Nb",
+        "binder_type": "nanobody",
+        "Kd": "~1.4 nM",
+        "measurement_method": "surface plasmon resonance"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "We have shown that the BC2-Nb binds BC2-epitope-tagged proteins with a K of ~1.4 nM",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "BC2-Nb binds BC2T in an extended beta-strand conformation that becomes part of a beta-sheet in the nanobody ('headlock' binding): affinity comes from many backbone hydrogen bonds, while a salt bridge (Nb Arg106\u2013Glu44) clamps the bound peptide in place.",
+      "value": {
+        "binding_mode": "headlock \u2014 peptide forms a beta-strand integrated into the nanobody beta-sheet",
+        "affinity_source": "backbone hydrogen bonds (sequence-independent)",
+        "clamp": "Arg106 (CDR3)\u2013Glu44 (FR2) salt bridge over the bound peptide",
+        "structures": "crystal structures of BC2-Nb (2.0 A) and BC2-Nb/BC2T complex (1.0 A)"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "the BC2 peptide adopts a \u03b2-strand conformation that is part of a \u03b2-sheet structure formed by the CDR3 and the framework regions. Numerous backbone hydrogen bonds provide affinity, and a salt bridge between Arg106 of CDR3 and Glu44 of FR2 embraces the bound peptide in a headlock-like fashion.",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_feature",
+      "type": "sequence_feature",
+      "label": "Specificity for BC2-Nb is determined by only four BC2T side chains \u2014 R3, A6, S8 and W10 (W10 invariable and most critical); the other eight positions can be substituted without loss of binding, making the tag re-engineerable.",
+      "value": {
+        "specificity_determining_residues": [
+          "R3",
+          "A6",
+          "S8",
+          "W10"
+        ],
+        "most_critical_residue": "W10",
+        "tolerant_positions": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11,
+          12
+        ],
+        "method": "positional scanning peptide library immunoprecipitation + LC-MS"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "BC2T residues at positions 1, 2, 4, 5, 7, 9, 11, and 12 can be replaced without affecting the epitope binding properties ... The tryptophan at position 10 appears to be an invariable specificity-determining amino acid",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "affinity_matrix",
+      "type": "affinity_matrix",
+      "label": "BC2-tagged proteins can be purified in one step on a BC2-Nb affinity matrix and gently eluted in natively folded form by competition with free BC2 peptide (~60\u201380% recovery at 0.1\u20131 mM); capture also tolerates harsh conditions (2% SDS, 4 M urea, 1.5 M GdmCl).",
+      "value": {
+        "matrix": "BC2-Nb covalently coupled to a solid support",
+        "elution": "competitive elution with free BC2 peptide (PDRKAAVSHWQQ), 0.1\u20131 mM",
+        "recovery": "~60% at 0.1 mM, ~80% at 1 mM peptide; eluted protein retains native fold",
+        "robustness": "binding tolerant to 2% SDS, 4 M urea, up to 1.5 M GdmCl, various detergents and salt"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "competitive elution was highly efficient as ~60% and ~80% of GFP were detected in elution fractions after addition of 0.1 mM and 1 mM BC2 peptide, respectively ... the BC2 peptide can efficiently displace BC2-bound proteins in their natively folded state",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "The BC2 tag is recognized equally well at the N- or C-terminus of a fusion protein; N-terminal placement can be susceptible to partial proteolytic removal during lysis.",
+      "value": {
+        "positions_tested": [
+          "N-terminal",
+          "C-terminal"
+        ],
+        "position_dependence": "none for recognition; both work",
+        "caveat": "N-terminal tag can be partially proteolyzed on cell lysis"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "the N- or the C-terminally localized BC2 tag is equally well recognized by the BC2 nanotrap. For N-terminally BC2-tagged GFP we observed an additional band in the non-bound fraction. This indicates that the BC2 tag might be proteolytically removed upon cellular lysis",
+        "quote_source": "primary",
+        "section": "Discussion"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Fluorescently labeled BC2-Nb detects BC2-tagged proteins directly in Western blot (no secondary antibody) and visualizes BC2-tagged subcellular structures by immunofluorescence.",
+      "value": {
+        "applications": [
+          "direct Western blot detection",
+          "immunofluorescence / immunocytochemistry"
+        ],
+        "reagent": "BC2-Nb conjugated to an organic dye",
+        "advantage": "minimal epitope and small binder reduce steric hindrance and linkage error"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "the fluorescently modified BC2-Nb directly detects BC2-tagged proteins in Western blots without the need of a secondary antibody ... the fluorescently labeled BC2-Nb specifically binds to ectopically expressed BC2T fusion proteins and can therefore be applied for direct antigen detection in immunocytochemistry.",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "post_translational",
+      "type": "post_translational",
+      "label": "Because BC2T derives from beta-catenin, phosphorylation of Ser23 (position 8 of the tag, S8) by the canonical destruction complex disfavors BC2-Nb binding; the nanobody preferentially recognizes the non-/hypo-phosphorylated form.",
+      "value": {
+        "modification": "phosphorylation of Ser23 (S8 of BC2T)",
+        "consequence": "reduced BC2-Nb binding; preference for non-phosphorylated peptide",
+        "relevance": "matters mainly when tagging endogenous beta-catenin; the S8 hydroxyl is one of the four specificity-determining contacts"
+      },
+      "source": {
+        "pmid": "25595278",
+        "doi": "10.1074/mcp.M114.044016",
+        "quote": "the chromobody signal allowed us to trace the accumulation of diffusible, hypo-phosphorylated \u03b2-catenin",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application_dstorm",
+      "type": "application",
+      "label": "A bivalent BC2-Nb (bivBC2-Nb) enables dense, low-linkage-error fluorophore labeling of BC2-tagged targets for dSTORM super-resolution imaging in mammalian and yeast cells, including endogenous, CRISPR-tagged loci.",
+      "value": {
+        "application": "dSTORM super-resolution microscopy",
+        "reagent": "bivalent BC2-Nb (bivBC2-Nb)",
+        "hosts": [
+          "mammalian cells",
+          "yeast (S. pombe)"
+        ],
+        "feature": "minimal linkage error; demonstrated on endogenous CRISPR-tagged proteins"
+      },
+      "source": {
+        "pmid": "29500346",
+        "doi": "10.1038/s41467-018-03191-2",
+        "quote": "a short peptide tag-specific nanobody (BC2-tag/bivBC2-Nb) ... bivBC2-Nb staining results in a close-grained fluorophore labeling with minimal linkage errors. This allowed us to perform high-quality dSTORM imaging of various targets in mammalian and yeast cells.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "An engineered, re-surfaced variant of BC2T named Spot-tag (PDRVRAVSHWSS; four substitutions K4V, A5R, Q11S, Q12S) is recognized by the same BC2-Nb lineage and is optimized for dSTORM labeling; it is held as a separate catalog part (Spot_tag).",
+      "value": {
+        "variant_name": "Spot-tag",
+        "variant_sequence": "PDRVRAVSHWSS",
+        "substitutions_vs_BC2T": [
+          "K4V",
+          "A5R",
+          "Q11S",
+          "Q12S"
+        ],
+        "shared_binder": "BC2 nanobody lineage",
+        "catalog_part": "Spot_tag"
+      },
+      "source": {
+        "pmid": "29500346",
+        "doi": "10.1038/s41467-018-03191-2",
+        "quote": "a short peptide tag-specific nanobody (BC2-tag/bivBC2-Nb)",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant_44d",
+      "type": "sequence_variant",
+      "label": "Engineering the BC2 nanobody (not the tag) \u2014 e.g. the 44D variant \u2014 lowers affinity for BC2T ~100-fold (Kd ~1.4\u00d710\u207b\u2077 M), allowing one-step immunoaffinity purification of BC2T-tagged proteins with product recovery up to ~94\u201395% under mild elution.",
+      "value": {
+        "engineered_element": "BC2-Nb (binder), variant 44D",
+        "Kd_44D": "~1.4e-7 M (vs ~1.4e-9 M wild type)",
+        "outcome": "mild elution (pH 3.5 or neutral arginine/propylene-glycol buffer), ~94\u201395% recovery, >90% purity in one step",
+        "note": "the tag sequence is unchanged; this variant is on the binder side"
+      },
+      "source": {
+        "pmid": "35780707",
+        "doi": "10.1016/j.chroma.2022.463274",
+        "quote": "The site-directed mutation led to the equilibrium dissociation constant (K) of BC2-Nb changing from 1.4 \u00d7 10M to 1.4 \u00d7 10M (44D) ... Protein recovery reached 94% at pH 3.5 for 44D-based resin",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "BC2T is a natural linear epitope corresponding to residues 16\u201327 of human beta-catenin (UniProt P35222), repurposed as a minimal affinity/detection tag.",
+      "value": {
+        "source_protein": "human beta-catenin (CTNB1)",
+        "uniprot": "P35222",
+        "residues": "16\u201327",
+        "sequence": "PDRKAAVSHWQQ"
+      },
+      "source": {
+        "pmid": "26791954",
+        "doi": "10.1038/srep19211",
+        "quote": "BC2-Nb, recognizes a short linear epitope corresponding to residues 16\u201327 of \u03b2-catenin ... the peptide epitope, hereafter referred to as BC2 tag (BC2T)",
+        "quote_source": "primary",
+        "section": "Introduction"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

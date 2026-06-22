@@ -1,0 +1,71 @@
+LOCUS       BC2_tag                   12 aa            linear   UNK 01-JAN-1980
+DEFINITION  BC2_tag — a 12-aa linear epitope tag (PDRKAAVSHWQQ) from the
+            N-terminal region of human beta-catenin, bound by the BC2 nanobody
+            (Kd ~1.4 nM) for protein purification, immunodetection, and
+            super-resolution imaging..
+ACCESSION   BC2_tag
+VERSION     BC2_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Braun MB, Traenkle B, Koch PA, Emele F, Weiss F, Poetz O, Stehle T,
+            Rothbauer U
+  TITLE     Peptides in headlock – a novel high-affinity and versatile
+            peptide-binding nanobody for proteomics and microscopy
+  JOURNAL   Scientific Reports (2016)
+   PUBMED   26791954
+  REMARK    doi:10.1038/srep19211
+REFERENCE   2
+  AUTHORS   Virant D, Traenkle B, Maier J, Kaiser PD, Bodenhöfer M, Schmees C,
+            Vojnovic I, Pisak-Lukáts B, Endesfelder U, Rothbauer U
+  TITLE     A peptide tag-specific nanobody enables high-quality labeling for
+            dSTORM imaging
+  JOURNAL   Nature Communications (2018)
+   PUBMED   29500346
+  REMARK    doi:10.1038/s41467-018-03191-2
+REFERENCE   3
+  AUTHORS   Traenkle B, Emele F, Anton R, Poetz O, Haeussler RS, Maier J, Kaiser
+            PD, Scholz AM, Nueske S, Buchfellner A, Romer T, Rothbauer U
+  TITLE     Monitoring Interactions and Dynamics of Endogenous Beta-catenin With
+            Intracellular Nanobodies in Living Cells
+  JOURNAL   Molecular & Cellular Proteomics (2015)
+   PUBMED   25595278
+  REMARK    doi:10.1074/mcp.M114.044016
+REFERENCE   4
+  AUTHORS   Ren J, Xiong H, Huang C, Ji F, Jia L
+  TITLE     An engineered peptide tag-specific nanobody for immunoaffinity
+            chromatography application enabling efficient product recovery at
+            mild conditions
+  JOURNAL   Journal of Chromatography A (2022)
+   PUBMED   35780707
+  REMARK    doi:10.1016/j.chroma.2022.463274
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/BC2_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..12
+                     /label="BC2_tag"
+                     /synonym="BC2T"
+                     /synonym="BC2 tag"
+                     /synonym="beta-catenin epitope"
+                     /note="12-aa linear epitope tag PDRKAAVSHWQQ (BC2T),
+                     corresponding to residues 16–27 of human beta-catenin
+                     (UniProt P35222). Bound by the BC2 nanobody (BC2-Nb) with
+                     Kd ~1.4 nM via a 'headlock' binding mode: the peptide
+                     adopts a beta-strand that integrates into a beta-sheet of
+                     the nanobody, providing affinity through backbone hydrogen
+                     bonds. Specificity is set by only four side chains (R3, A6,
+                     S8, W10, with W10 invariable); the other eight positions
+                     tolerate substitution, allowing the tag to be
+                     re-engineered. Functions as a single binding epitope with
+                     no independently used internal sub-elements."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /db_xref="SO:0000417"
+                     /collection="epitope-tags"
+ORIGIN
+        1 pdrkaavshw qq
+//

@@ -8,10 +8,10 @@
 
 > [!WARNING]
 > **Work in progress — use at your own risk.** This is an experimental,
-> **AI-generated** knowledge base under active development. Nothing here has been
-> fully expert-reviewed and it may contain errors. What we offer instead of
-> guarantees is transparency: every claim carries its source, confidence, and a
-> review status — check those, and verify against the cited primary literature,
+> **AI-generated** knowledge base under active development and it may contain
+> errors. What we offer instead of guarantees is transparency: every claim carries
+> its source, confidence, usefulness, and a verification status (`pending` →
+> `verified`) — check those, and verify against the cited primary literature,
 > before relying on anything.
 
 A machine-readable, provenance-tracked **knowledge base of standard biological

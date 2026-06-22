@@ -85,11 +85,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "protease-cleavage-sites"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "Engineered P1'-Gly variant of the Tobacco Etch Virus NIa protease cleavage site. ENLYFQG is the de-facto standard recombinant tag-removal TEV site (single non-native Gly scar). Defining literature: Parks et al. 1994 (Anal Biochem, PMID 8179197; founding use of the TEV site for fusion-tag removal) and Kapust et al. 2002 (Biochem Biophys Res Commun, PMID 12074568; P1' specificity characterizing the Gly form). The natural NIb|CP junction is ENLYFQS (UniProt P04517 aa 2786-2792); ENLYFQG differs only at P1' (S->G), captured in the sequence_variant claim."
@@ -119,7 +121,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -147,7 +150,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -182,7 +186,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -209,7 +214,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -234,7 +240,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -259,7 +266,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

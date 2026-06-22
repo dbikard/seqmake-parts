@@ -1,0 +1,91 @@
+LOCUS       SpyCatcher               116 aa            linear   UNK 01-JAN-1980
+DEFINITION  SpyCatcher — 116-aa protein partner (engineered from the CnaB2
+            domain of S. pyogenes FbaB) that forms a spontaneous, irreversible
+            isopeptide bond to its cognate peptide SpyTag..
+ACCESSION   SpyCatcher
+VERSION     SpyCatcher
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT,
+            Howarth M
+  TITLE     Peptide tag forming a rapid covalent bond to a protein, through
+            engineering a bacterial adhesin
+  JOURNAL   Proc Natl Acad Sci U S A (2012)
+   PUBMED   22366317
+  REMARK    doi:10.1073/pnas.1115485109
+REFERENCE   2
+  AUTHORS   Li L, Fierer JO, Rapoport TA, Howarth M
+  TITLE     Structural analysis and optimization of the covalent association
+            between SpyCatcher and a peptide Tag
+  JOURNAL   Journal of Molecular Biology (2014)
+   PUBMED   24161952
+  REMARK    doi:10.1016/j.jmb.2013.10.021
+REFERENCE   3
+  AUTHORS   Keeble AH, Banerjee A, Ferla MP, Reddington SC, Anuar INAK, Howarth
+            M
+  TITLE     Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze
+            Membrane Dynamics
+  JOURNAL   Angewandte Chemie International Edition (2017)
+   PUBMED   29024296
+  REMARK    doi:10.1002/anie.201707623
+REFERENCE   4
+  AUTHORS   Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R,
+            Hytönen VP, Howarth M
+  TITLE     Approaching infinite affinity through engineering of peptide-protein
+            interaction
+  JOURNAL   Proc Natl Acad Sci U S A (2019)
+   PUBMED   31822621
+  REMARK    doi:10.1073/pnas.1909653116
+REFERENCE   5
+  AUTHORS   Hatlem D, Trunk T, Linke D, Leo JC
+  TITLE     Catching a SPY: Using the SpyCatcher-SpyTag and Related Systems for
+            Labeling and Localizing Bacterial Proteins
+  JOURNAL   International Journal of Molecular Sciences (2019)
+   PUBMED   31052154
+  REMARK    doi:10.3390/ijms20092129
+REFERENCE   6
+  AUTHORS   Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang
+            J, Bon RS, Howarth M
+  TITLE     DogCatcher allows loop-friendly protein-protein ligation
+  JOURNAL   Cell Chemical Biology (2021)
+   PUBMED   34324879
+  REMARK    doi:10.1016/j.chembiol.2021.07.005
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SpyCatcher
+FEATURES             Location/Qualifiers
+     protein_domain  1..116
+                     /label="SpyCatcher"
+                     /synonym="SpyCatcher001"
+                     /synonym="Spy Catcher"
+                     /note="116-aa protein partner of the SpyTag/SpyCatcher
+                     covalent-conjugation system, engineered by splitting the
+                     CnaB2 immunoglobulin-like collagen-adhesion domain of
+                     Streptococcus pyogenes fibronectin-binding protein FbaB
+                     into a protein fragment (SpyCatcher, contains the reactive
+                     Lys31) and a 13-aa peptide (SpyTag, contains the reactive
+                     Asp). On mixing with SpyTag, the side-chain amine of
+                     SpyCatcher Lys31 spontaneously and irreversibly forms an
+                     intermolecular isopeptide (amide) bond to SpyTag Asp7,
+                     catalysed by SpyCatcher Glu77; the linkage resists boiling
+                     in SDS and forces up to ~1 nN. As stored the domain begins
+                     with a vector-derived Gly-Ala-Met (residues 24-139 of
+                     AFD50637.1, the standard post-TEV-cleavage product) and is
+                     fusable at a protein N- or C-terminus. Structural and
+                     biochemical work shows the N-terminal ~23 and C-terminal ~9
+                     residues are dispensable, defining a minimized 84-aa core
+                     (original residues 21-104)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+                     /collection="conjugation-tags"
+ORIGIN
+        1 gamvdtlsgl sseqgqsgdm tieedsathi kfskrdedgk elagatmelr dssgktistw
+       61 isdgqvkdfy lypgkytfve taapdgyeva taitftvneq gqvtvngkat kgdahi
+//

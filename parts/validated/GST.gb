@@ -57,6 +57,8 @@ FEATURES             Location/Qualifiers
                      /citation=[4]
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P08515"
+                     /collection="affinity-tags"
+                     /collection="solubility-tags"
      protein_domain  2..83
                      /label="GST N-terminal"
                      /parent="GST"

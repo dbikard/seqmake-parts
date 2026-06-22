@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "slug": "SnoopCatcher",
+  "locus": "SnoopCatcher",
+  "id": "SnoopCatcher",
+  "description": "SnoopCatcher: a ~112-aa protein partner split from the D4 domain of S. pneumoniae RrgA that forms a spontaneous covalent isopeptide bond with SnoopTag; this instance is the G848D variant (AMK38054.1).",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "KPLRGAVFSLQKQHPDYPDIYGAIDQNGTYQNVRTGEDGKLTFKNLSDGKYRLFENSEPAGYKPVQNKPIVAFQIVNGEVRDVTSIVPQDIPATYEFTNGKHYITNEPIPPK",
+  "references": [
+    {
+      "authors": "Veggiani G, Nakamura T, Brenner MD, Gayet RV, Yan J, Robinson CV, Howarth M",
+      "title": "Programmable polyproteams built using twin peptide superglues",
+      "journal": "Proc Natl Acad Sci U S A (2016)",
+      "pubmed_id": "26787909",
+      "comment": "doi:10.1073/pnas.1519214113"
+    },
+    {
+      "authors": "Buldun CM, Jean JX, Bedford MR, Howarth M",
+      "title": "SnoopLigase Catalyzes Peptide-Peptide Locking and Enables Solid-Phase Conjugate Isolation",
+      "journal": "J Am Chem Soc (2018)",
+      "pubmed_id": "29402082",
+      "comment": "doi:10.1021/jacs.7b13237"
+    },
+    {
+      "authors": "Keeble AH, Yadav VK, Ferla MP, Bauer CC, Chuntharpursat-Bon E, Huang J, Bon RS, Howarth M",
+      "title": "DogCatcher allows loop-friendly protein-protein ligation",
+      "journal": "Cell Chem Biol (2021)",
+      "pubmed_id": "34324879",
+      "comment": "doi:10.1016/j.chembiol.2021.07.005"
+    },
+    {
+      "authors": "Bruun TUJ, Andersson AC, Draper SJ, Howarth M",
+      "title": "Engineering a Rugged Nanoscaffold To Enhance Plug-and-Display Vaccination",
+      "journal": "ACS Nano (2018)",
+      "pubmed_id": "30028591",
+      "comment": "doi:10.1021/acsnano.8b02805"
+    },
+    {
+      "authors": "Keeble AH, Wood DP, Howarth M",
+      "title": "Design and Evolution of Enhanced Peptide-Peptide Ligation for Modular Transglutaminase Assembly",
+      "journal": "Bioconjug Chem (2023)",
+      "pubmed_id": "37289810",
+      "comment": "doi:10.1021/acs.bioconjchem.3c00122"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 112,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SnoopCatcher"
+        ],
+        "synonym": [
+          "Snoop Catcher"
+        ],
+        "note": [
+          "Protein partner (~112 aa) split from the D4 (CnaA-like) domain of Streptococcus pneumoniae RrgA pilus adhesin (residues 749-860). On mixing with the peptide SnoopTag it reconstitutes the split domain and forms a spontaneous, covalent intermolecular isopeptide bond (its reactive Asn854 to the reactive Lys742 of SnoopTag), irreversibly locking the two units together. Orthogonal to the SpyTag/SpyCatcher pair. Canonical Veggiani 2016 engineered form (G842T + D848G stabilizing mutations), deposit AMD39965.1."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "AMD39965.1 (SnoopCatcher [synthetic construct], Veggiani et al. 2016 PNAS 113:1202-1207, PMID 26787909 \u2014 the canonical engineered form carrying G842T + D848G), 112 aa; independently fetched via NCBI efetch and byte-compared (100% identity). Biological origin: S. pneumoniae RrgA D4 domain (UniProt A7KT94, residues 749-860)."
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Spontaneous covalent isopeptide-bond formation with SnoopTag",
+      "value": {
+        "mechanism": "Protein partner split from the RrgA D4 domain; on mixing with the peptide SnoopTag it reconstitutes the split domain and forms a spontaneous intermolecular isopeptide (amide) bond between the reactive Asn854 of SnoopCatcher and the reactive Lys742 of SnoopTag, covalently and irreversibly locking the two units together with release of ammonia.",
+        "partner": "SnoopTag",
+        "reactive_residue": "Asn854",
+        "partner_reactive_residue": "Lys742",
+        "bond_type": "isopeptide"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "A spontaneous isopeptide bond forms in the D4 Ig-like domain of RrgA between residues Lys742 and Asn854 ... we split the D4 domain ... settled on the peptide tag we termed SnoopTag (residues 734-745) and the protein partner we named SnoopCatcher (residues 749-860)",
+        "quote_source": "primary",
+        "section": "Results (Design of an Orthogonal Covalent Peptide-Protein Interaction)",
+        "figure": "Fig 1A,B"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "expression_yield",
+      "type": "expression_yield",
+      "label": "SnoopTag + SnoopCatcher react to >99% yield",
+      "value": {
+        "yield": ">99%",
+        "condition": "with a twofold excess of SnoopCatcher, SnoopTag-MBP reacted quantitatively; with excess SnoopTag-MBP, SnoopCatcher was ~100% consumed",
+        "readout": "isopeptide bond (SDS-stable complex) by SDS-PAGE"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "However, with a twofold excess of SnoopCatcher, SnoopTag-MBP reacted quantitatively (Fig 1E and Fig S1B). Similarly with an excess of SnoopTag-MBP, SnoopCatcher was ~100% consumed",
+        "quote_source": "primary",
+        "section": "Results",
+        "figure": "Fig 1E,F"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "orthogonality",
+      "type": "orthogonality",
+      "label": "Orthogonal to SpyTag/SpyCatcher (no cross-reaction)",
+      "value": {
+        "orthogonal_to": [
+          "SpyTag",
+          "SpyCatcher"
+        ],
+        "cross_reaction": "none detected even after overnight incubation"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "Each partner reacted efficiently with its cognate pair, but we found no trace of cross-reaction, even after overnight incubation (Fig 2C)",
+        "quote_source": "primary",
+        "section": "Results",
+        "figure": "Fig 2C"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "conditions",
+      "type": "conditions",
+      "label": "Reaction robust over pH 6-9 and 4-37 C, redox-independent, no specific buffer required",
+      "value": {
+        "pH_range": "6-9",
+        "temperature_range_C": "4-37",
+        "redox": "insensitive to DTT (no cysteine in SnoopTag/SnoopCatcher)",
+        "buffer": "no specific component required; works in PBS, with Triton X-100/Tween-20, or 1 M NaCl; modestly enhanced by 1.5 M TMAO"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "We established that reaction proceeded efficiently from pH 6-9 (Fig 2A) and 4-37 C (Fig 2B). Cysteine is absent from SnoopTag and SnoopCatcher, so, as expected, the reaction was insensitive to DTT ... No specific buffer component was required",
+        "quote_source": "primary",
+        "section": "Results",
+        "figure": "Fig 2A,B"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Engineered split-domain partner from the RrgA D4 domain of S. pneumoniae",
+      "value": {
+        "organism": "Streptococcus pneumoniae",
+        "parent_protein": "RrgA pilus adhesin",
+        "parent_region": "D4 (Ig-like / CnaA-like) domain, residues 749-860",
+        "engineered_mutations": [
+          "G842T (stabilize a beta-strand)",
+          "D848G (stabilize a hairpin turn near the reaction site)"
+        ],
+        "derivation": "split-domain engineering of the RrgA isopeptide-bond-forming D4 domain into a peptide (SnoopTag) and a protein partner (SnoopCatcher)"
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "To optimize reaction, SnoopCatcher included the mutations G842T, designed to stabilize a beta-strand, and D848G, designed to stabilize a hairpin turn close to the reaction site (Fig S1A)",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Programmable irreversible protein-protein conjugation, polyproteam assembly, and plug-and-display",
+      "value": {
+        "applications": [
+          "covalent capture of a SnoopTagged protein module",
+          "sequential / programmable polyprotein ('polyproteam') assembly when combined orthogonally with SpyTag/SpyCatcher",
+          "modular plug-and-display of antigens on multivalent nanoparticle/VLP scaffolds"
+        ]
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "Solid-phase attachment followed by sequential SpyTag or SnoopTag reaction between building-blocks enabled iterative extension. Linear, branched, and combinatorial polyproteins were synthesized",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Expressed solubly in the E. coli cytosol",
+      "value": {
+        "hosts": [
+          "Escherichia coli"
+        ],
+        "note": "SnoopCatcher was expressed efficiently as a soluble protein in the E. coli cytosol and purified by Ni-NTA affinity chromatography."
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "SnoopTag fused to maltose-binding protein (MBP) and SnoopCatcher were expressed efficiently as soluble proteins in the cytosol of Escherichia coli and purified by nickel-nitrilotriacetic acid (Ni-NTA) affinity chromatography",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

@@ -150,6 +150,7 @@ FEATURES             Location/Qualifiers
                      /citation=[14]
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P06709"
+                     /collection="conjugation-tags"
      protein_domain  67..254
                      /label="BPL/LPL catalytic"
                      /parent="birA"

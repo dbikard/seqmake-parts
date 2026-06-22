@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
 from validate_parts import (  # noqa: E402
-    _claim_tier_problems, _completeness_problems, _coordinate_problems,
+    _claim_verification_problems, _completeness_problems, _coordinate_problems,
     _so_coverage_problems)
 
 
@@ -37,7 +37,8 @@ def _complete():
         "references": [{"pubmed_id": "1"}],
         "functional_claims": [{"id": "inducer", "type": "inducer", "label": "L",
                                "source": {"pmid": "1"}, "provenance": {},
-                               "confidence": "low", "review_status": "ai-generated"}],
+                               "confidence": "low", "analysis_status": "pending",
+                               "cross_checked": False}],
         "provenance": {"sequence_source": "Doe 2020 (PMID 1)"},
     }
 
@@ -98,25 +99,39 @@ def test_content_free_reference_or_claim_does_not_pass():
     assert any("reference" in p for p in _completeness_problems("X.json", d))
     d = _complete(); d["functional_claims"] = [{"id": "x", "type": "t", "label": "L",
         "source": {}, "provenance": {}, "confidence": "low",
-        "review_status": "ai-generated"}]
+        "analysis_status": "pending", "cross_checked": False}]
     assert any("functional_claim" in p for p in _completeness_problems("X.json", d))
 
 
-def test_review_tier_must_be_earned():
-    # ai-generated needs nothing extra.
-    assert _claim_tier_problems("X.json", _complete()) == []
-    # ai-cross-checked with a catalog-doc quote is rejected.
+def test_verified_status_must_be_earned():
+    # a pending claim needs nothing extra.
+    assert _claim_verification_problems("X.json", _complete()) == []
+    # verified with a catalog-doc quote is rejected.
     d = _complete()
-    d["functional_claims"][0]["review_status"] = "ai-cross-checked"
-    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
-                                           "quote_source": "catalog-doc"}
-    assert any("primary source" in p for p in _claim_tier_problems("X.json", d))
-    # ...but a primary-sourced, quoted, cited claim is accepted at the higher tier.
-    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
-                                           "quote_source": "primary"}
-    assert _claim_tier_problems("X.json", d) == []
-    # expert-reviewed is held to the same bar.
-    d["functional_claims"][0]["review_status"] = "expert-reviewed"
-    d["functional_claims"][0]["source"] = {"pmid": "1", "quote": "q",
-                                           "quote_source": "catalog-doc"}
-    assert _claim_tier_problems("X.json", d)
+    c = d["functional_claims"][0]
+    c["analysis_status"] = "verified"
+    c["cross_checked"] = True
+    c["usefulness"] = "high"
+    c["source"] = {"pmid": "1", "quote": "q", "quote_source": "catalog-doc"}
+    assert any("primary source" in p for p in _claim_verification_problems("X.json", d))
+    # ...but a primary-sourced, quoted, cited, useful claim is accepted as verified.
+    c["source"] = {"pmid": "1", "quote": "q", "quote_source": "primary"}
+    assert _claim_verification_problems("X.json", d) == []
+    # cross_checked must agree with analysis_status (verified iff cross_checked).
+    c["cross_checked"] = False
+    assert any("cross_checked" in p for p in _claim_verification_problems("X.json", d))
+
+
+def test_analysed_claim_needs_usefulness_and_sources_pending_needs_a_source():
+    # an analysed (non-pending) claim must carry a usefulness score.
+    d = _complete()
+    c = d["functional_claims"][0]
+    c["analysis_status"] = "flagged"  # cross_checked stays False -> agrees
+    assert any("usefulness" in p for p in _claim_verification_problems("X.json", d))
+    # sources-pending must cite a source to fetch.
+    d2 = _complete()
+    c2 = d2["functional_claims"][0]
+    c2["analysis_status"] = "sources-pending"
+    c2["usefulness"] = "high"
+    c2["source"] = {}
+    assert any("sources-pending" in p for p in _claim_verification_problems("X.json", d2))

@@ -1,0 +1,18 @@
+# SpyTag002
+
+SpyTag002 is a second-generation 14-aa peptide tag (VPTIVMVDAYKRYK) that forms a spontaneous, irreversible isopeptide bond to its protein partner SpyCatcher002, reacting about 12-fold faster than the original SpyTag.
+
+## Origin
+SpyTag002 was evolved from the original SpyTag (AHIVMVDAYKPTK), itself a fragment of the CnaB2 immunoglobulin-like domain of the *Streptococcus pyogenes* fibronectin-binding protein FbaB. Faster-reacting variants were obtained by phage-display selection of N- and C-terminal SpyTag libraries combined with rational design (an undesirable cysteine was reverted to alanine to avoid dimerization, and a terminal lysine was added). The resulting tag differs from SpyTag at 4 of 13 shared residues and carries one extra N-terminal residue (14 aa total). Its cognate partner SpyCatcher002 differs from SpyCatcher at 8 of 116 residues — seven selected for rate and one (GAMVDT to GAMVTT) to remove a SpyTag-like self-reactivity motif (PMID 29024296; parent system PMID 22366317).
+
+## Properties
+On mixing with SpyCatcher002, SpyTag002 forms a covalent intermolecular isopeptide (amide) bond with loss of water, following second-order kinetics. A single Asp-to-Ala (DA) substitution in the tag, or Glu77-to-Gln (EQ) in the catcher, abolishes the reaction. At 25 C and pH 7.0 the SpyTag002-MBP/SpyCatcher002 reaction proceeds at 2.0 x 10^4 M^-1 s^-1, about 12-fold faster than the original SpyTag/SpyCatcher (1.7 x 10^3 M^-1 s^-1); the pair remains backwards-compatible with the parental partners. The reaction is robust over a wide range of pH and temperature, is relatively insensitive to buffer salts, and tolerates common non-ionic detergents and over 3 M urea, reaching 97-99% completion (PMID 29024296). The non-covalent SpyTag002:SpyCatcher complex is also tight: SpyTag002 binds the non-reactive SpyCatcher variant SpyDock with a dissociation constant of about 73 nM by ITC (1:1 stoichiometry), roughly 10-fold tighter than the original SpyTag (PMID 30988307). A later successor, SpyTag003 (RGVPHIVMVDAYKRYK), reacts a further ~28-fold faster (PMID 31822621).
+
+## Use
+SpyTag002 is a genetically encoded covalent module that can be fused at either the N- or C-terminus of a protein of interest. It is used for irreversible protein-protein conjugation, for specific covalent pulse-labeling and fluorescence imaging of surface proteins on living cells (demonstrated for bacterial outer-membrane dynamics via an intimin fusion), and for non-covalent affinity purification of tagged fusion proteins on immobilized SpyDock with imidazole elution. For affinity capture the tag must not have already reacted covalently with a SpyCatcher partner, which would make it unavailable for SpyDock binding (PMID 29024296; PMID 30988307).
+
+## References
+- Keeble et al. 2017, *Angew Chem Int Ed Engl* — PMID [29024296](https://pubmed.ncbi.nlm.nih.gov/29024296/), DOI [10.1002/anie.201707623](https://doi.org/10.1002/anie.201707623)
+- Zakeri et al. 2012, *Proc Natl Acad Sci U S A* — PMID [22366317](https://pubmed.ncbi.nlm.nih.gov/22366317/), DOI [10.1073/pnas.1115485109](https://doi.org/10.1073/pnas.1115485109)
+- Khairil Anuar et al. 2019, *Nat Commun* — PMID [30988307](https://pubmed.ncbi.nlm.nih.gov/30988307/), DOI [10.1038/s41467-019-09678-w](https://doi.org/10.1038/s41467-019-09678-w)
+- Keeble et al. 2019, *Proc Natl Acad Sci U S A* — PMID [31822621](https://pubmed.ncbi.nlm.nih.gov/31822621/), DOI [10.1073/pnas.1909653116](https://doi.org/10.1073/pnas.1909653116)

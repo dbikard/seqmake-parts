@@ -312,8 +312,10 @@ h1.title em{font-style:italic;font-weight:500;color:var(--madder)}
 .claim .clb{font-size:13.5px;line-height:1.5}
 .review{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:10px;
   letter-spacing:.05em;border-radius:20px;padding:1px 8px;margin-top:7px;border:1px solid var(--line)}
-.review.gen{color:var(--ink-faint)} .review.cross{color:var(--gold);border-color:var(--gold)}
-.review.expert{color:var(--moss);border-color:var(--moss)}
+.review.pending{color:var(--ink-faint)}
+.review.verified{color:var(--moss);border-color:var(--moss)}
+.review.srcpending{color:var(--gold);border-color:var(--gold)}
+.review.flagged{color:#c2683a;border-color:#c2683a}
 .dlbtns{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
 .dlbtn{font-family:var(--font-mono);font-size:12px;text-decoration:none;border:1px solid var(--line);
   border-radius:8px;padding:8px 13px;color:var(--ink-soft);transition:.18s;display:inline-flex;gap:7px;align-items:center}
@@ -654,8 +656,8 @@ const SIZE_BUCKETS = [
   {id:"m",label:"201 – 1000",test:p=>p.len>200&&p.len<=1000},
   {id:"l",label:"> 1000",test:p=>p.len>1000},
 ];
-const REVIEW_LABEL={"ai-generated":"AI-generated","ai-cross-checked":"AI cross-checked","expert-reviewed":"Expert-reviewed"};
-const REVIEW_CLASS={"ai-generated":"gen","ai-cross-checked":"cross","expert-reviewed":"expert"};
+const STATUS_LABEL={"pending":"pending","verified":"✓ verified","sources-pending":"source pending","flagged":"⚠ flagged"};
+const STATUS_CLASS={"pending":"pending","verified":"verified","sources-pending":"srcpending","flagged":"flagged"};
 
 /* ===================================================== state */
 const state = {
@@ -969,7 +971,7 @@ function openDrawer(slug){
   const claims=p.nclaims?`<div class="drow"><div class="dlabel">Sourced claims · ${p.nclaims}</div>
      ${p.claim_types.map(ct=>`<div class="claim"><div class="ct">${esc(ct.replace(/_/g," "))}</div>
         <div class="clb">${esc(claimBlurb(ct,p))}</div>
-        ${(p.review||[]).map(r=>`<span class="review ${REVIEW_CLASS[r]||""}">${esc(REVIEW_LABEL[r]||r)}</span>`).join(" ")}
+        ${(p.status||[]).map(r=>`<span class="review ${STATUS_CLASS[r]||""}">${esc(STATUS_LABEL[r]||r)}</span>`).join(" ")}
       </div>`).join("")}</div>`
    :`<div class="drow"><div class="dlabel">Sourced claims</div>
      <div class="dvalue" style="color:var(--ink-faint);font-style:italic">No structured functional claims yet — see the cited references for this part.</div></div>`;

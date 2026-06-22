@@ -94,6 +94,8 @@ FEATURES             Location/Qualifiers
                      /citation=[8]
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P0AEX9"
+                     /collection="affinity-tags"
+                     /collection="solubility-tags"
      sig_peptide     1..26
                      /label="Signal"
                      /parent="MBP"

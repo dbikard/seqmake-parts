@@ -96,6 +96,7 @@ FEATURES             Location/Qualifiers
                      /citation=[8]
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:P0AFF6"
+                     /collection="solubility-tags"
      protein_domain  135..200
                      /label="S1 motif"
                      /parent="NusA"

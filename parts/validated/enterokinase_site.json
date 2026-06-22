@@ -125,11 +125,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "protease-cleavage-sites"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "UniProt:P00760 (TRY1_BOVIN, Bos taurus trypsinogen-1, Swiss-Prot reviewed PE=1 SV=3) \u2014 DDDDK is an exact 100% match to residues 19\u201323 of the 247-aa precursor, within the activation propeptide (annotated positions 18\u201323). Verified by independent FASTA fetch and Python substring search."
@@ -159,7 +161,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -185,7 +188,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -210,7 +214,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -236,7 +241,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -262,7 +268,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

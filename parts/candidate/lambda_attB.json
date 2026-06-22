@@ -59,7 +59,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "NC_000913.3 (E. coli K-12 MG1655), attλ locus between the gal and bio operons, positions 807326..807346 (+ strand), 100% identity over 21 bp",
     "asserting_agent": "attB-research-agent + local genome verification"

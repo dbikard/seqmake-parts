@@ -175,7 +175,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "X57036.1 (Bacteriophage Phi-C31 attP phage attachment site crossover region and 3 ORF's), reverse complement of positions 1590-1689, 100% identity over 100 bp",
@@ -207,7 +206,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -233,7 +233,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -260,7 +261,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

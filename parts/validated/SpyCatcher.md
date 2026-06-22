@@ -1,0 +1,20 @@
+# SpyCatcher
+
+SpyCatcher is a 116-aa protein domain that forms a spontaneous, irreversible isopeptide bond to its cognate 13-aa peptide SpyTag, providing a genetically encoded covalent "molecular superglue".
+
+## Origin
+SpyCatcher was engineered by splitting the CnaB2 immunoglobulin-like collagen-adhesion domain of the fibronectin-binding protein FbaB from *Streptococcus pyogenes*. The native domain harbours an internal isopeptide bond between a Lys and an Asp; splitting it yields a protein fragment carrying the reactive lysine (SpyCatcher) and a short peptide carrying the reactive aspartate (SpyTag), with a few rational mutations making the spontaneous reaction efficient (PMID 22366317). The stored sequence corresponds to the standard recombinant form (residues 24-139 of the deposited construct, the product after removal of an N-terminal His6 + protease cleavage tag); it begins with a vector-derived Gly-Ala-Met.
+
+## Properties
+On mixing with SpyTag, the side-chain amine of SpyCatcher Lys31 attacks SpyTag Asp7 to form an intermolecular isopeptide (amide) bond, catalysed by SpyCatcher Glu77; mutating this residue to Ala abolishes the reaction (PMID 22366317, PMID 31822621). The two partners reconstitute a compact beta-sandwich fold (crystal structure at 2.1 A, PDB 4MLI), with SpyTag completing the last strand of the reformed CnaB2 domain (PMID 24161952). The reaction is second-order with a half-time of ~74 s at 10 uM (k ~1.4 x 10^3 M^-1 s^-1) and proceeds in high yield across a wide range of pH, temperature and buffer; the resulting covalent complex resists boiling in SDS and ruptures only above ~1 nN of force (PMID 22366317, PMID 24161952). Structural and biochemical analysis shows the N-terminal ~23 and C-terminal ~9 residues are dispensable, defining a minimized 84-aa core (original residues 21-104) with comparable reactivity (PMID 24161952). Engineered descendants react far faster: SpyCatcher003 (mutations A89P, T91E, Q97D, N103D, K108E) paired with SpyTag003 reaches k = 5.5 x 10^5 M^-1 s^-1, ~400-fold over the original pair and within the diffusion-controlled regime, and remains back-compatible with earlier generations (PMID 31822621).
+
+## Use
+SpyCatcher is deployed as an N- or C-terminal fusion partner that covalently captures any SpyTag-bearing protein. Because the linkage is irreversible and forms simply on mixing, it is used for protein-protein conjugation, modular assembly of protein architectures, hydrogels and other biomaterials, antigen display on virus-like particles and outer-membrane vesicles for vaccines, cell-surface and bacterial-protein labelling and imaging, and stringent covalent affinity capture or immobilization (PMID 31052154). It functions as recombinant fusions in bacteria and is reactive when displayed at the mammalian cell surface (PMID 31822621). An orthogonal SnoopTag/SnoopCatcher system enables two covalent handles to be used in parallel (PMID 31052154).
+
+## References
+- [PMID 22366317](https://pubmed.ncbi.nlm.nih.gov/22366317/) — Zakeri et al. 2012, *PNAS* — [doi:10.1073/pnas.1115485109](https://doi.org/10.1073/pnas.1115485109)
+- [PMID 24161952](https://pubmed.ncbi.nlm.nih.gov/24161952/) — Li et al. 2014, *J Mol Biol* — [doi:10.1016/j.jmb.2013.10.021](https://doi.org/10.1016/j.jmb.2013.10.021)
+- [PMID 29024296](https://pubmed.ncbi.nlm.nih.gov/29024296/) — Keeble et al. 2017, *Angew Chem Int Ed* — [doi:10.1002/anie.201707623](https://doi.org/10.1002/anie.201707623)
+- [PMID 31822621](https://pubmed.ncbi.nlm.nih.gov/31822621/) — Keeble et al. 2019, *PNAS* — [doi:10.1073/pnas.1909653116](https://doi.org/10.1073/pnas.1909653116)
+- [PMID 31052154](https://pubmed.ncbi.nlm.nih.gov/31052154/) — Hatlem et al. 2019, *Int J Mol Sci* — [doi:10.3390/ijms20092129](https://doi.org/10.3390/ijms20092129)
+- [PMID 34324879](https://pubmed.ncbi.nlm.nih.gov/34324879/) — Keeble et al. 2021, *Cell Chem Biol* — [doi:10.1016/j.chembiol.2021.07.005](https://doi.org/10.1016/j.chembiol.2021.07.005)

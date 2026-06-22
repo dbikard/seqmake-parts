@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "SeqMake Parts -- agent discovery index",
-  "description": "One compact line per part: enough to find and filter. Fetch full detail from each part's `record` URL (canonical JSON: sequence, located sub-features, functional claims with source/confidence/review_status, references) or the whole `catalog` at once. ALL records are currently review_status='ai-generated' and not yet expert-reviewed -- treat claims as a grounded starting point and verify against the cited primary literature.",
+  "description": "One compact line per part: enough to find and filter. Fetch full detail from each part's `record` URL (canonical JSON: sequence, located sub-features, functional claims with source/confidence/usefulness/analysis_status, references) or the whole `catalog` at once. Most claims are analysis_status='pending' (authored, not yet independently cross-checked); prefer 'verified' claims and always verify against the cited primary literature before relying on one.",
   "base_iri": "https://w3id.org/seqmake/parts",
   "site": "https://dbikard.github.io/seqmake-parts",
   "catalog": "https://dbikard.github.io/seqmake-parts/catalog.json",
@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 264,
-  "n_validated": 66,
+  "n_parts": 273,
+  "n_validated": 75,
   "n_candidate": 198,
-  "n_functional_claims": 235,
+  "n_functional_claims": 331,
   "parts": [
     {
       "slug": "186_integrase",
@@ -308,7 +308,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
-      "n_claims": 9,
+      "n_claims": 10,
       "synonyms": [
         "AviTag\u2122",
         "BAP",
@@ -359,6 +359,21 @@
         "BBa_B0034",
         "B0034",
         "BioBrick RBS"
+      ]
+    },
+    {
+      "slug": "BC2_tag",
+      "name": "BC2_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 11,
+      "synonyms": [
+        "BC2T",
+        "BC2 tag",
+        "beta-catenin epitope"
       ]
     },
     {
@@ -547,6 +562,21 @@
       "n_claims": 0,
       "synonyms": [
         "catP"
+      ]
+    },
+    {
+      "slug": "CBP_tag",
+      "name": "CBP_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 12,
+      "synonyms": [
+        "calmodulin-binding peptide",
+        "CBP",
+        "calmodulin binding peptide"
       ]
     },
     {
@@ -1732,7 +1762,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 4,
       "synonyms": [
         "lambda_attP",
         "lambda attP",
@@ -1763,7 +1793,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
-      "n_claims": 7,
+      "n_claims": 8,
       "synonyms": [
         "sortase A recognition motif",
         "LPXTG motif",
@@ -2280,7 +2310,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 4,
       "synonyms": [
         "phi80_attP",
         "phi80 attP",
@@ -3309,6 +3339,22 @@
       ]
     },
     {
+      "slug": "SBP_tag",
+      "name": "SBP_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 7,
+      "synonyms": [
+        "streptavidin-binding peptide",
+        "SBP",
+        "SBP-Tag",
+        "streptavidin binding peptide"
+      ]
+    },
+    {
       "slug": "SEVA_tir",
       "name": "SEVA tir",
       "feature_type": "RBS",
@@ -3359,6 +3405,35 @@
       ]
     },
     {
+      "slug": "SNAP_tag",
+      "name": "SNAP_tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 8,
+      "synonyms": [
+        "SNAP",
+        "hAGT-derived self-labeling tag",
+        "SNAP tag",
+        "benzylguanine self-labeling tag"
+      ]
+    },
+    {
+      "slug": "SnoopCatcher",
+      "name": "SnoopCatcher",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 7,
+      "synonyms": [
+        "Snoop Catcher"
+      ]
+    },
+    {
       "slug": "SnoopTag",
       "name": "SnoopTag",
       "feature_type": "protein_domain",
@@ -3366,7 +3441,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
-      "n_claims": 6,
+      "n_claims": 8,
       "synonyms": [
         "Snoop tag",
         "KLGDIEFIKVNK"
@@ -3431,6 +3506,20 @@
       ]
     },
     {
+      "slug": "SpyCatcher",
+      "name": "SpyCatcher",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 10,
+      "synonyms": [
+        "SpyCatcher001",
+        "Spy Catcher"
+      ]
+    },
+    {
       "slug": "SpyTag",
       "name": "SpyTag",
       "feature_type": "protein_domain",
@@ -3442,6 +3531,34 @@
       "synonyms": [
         "SpyTag001",
         "AHIVMVDAYKPTK"
+      ]
+    },
+    {
+      "slug": "SpyTag002",
+      "name": "SpyTag002",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 10,
+      "synonyms": [
+        "SpyTag 002",
+        "SpyTag002"
+      ]
+    },
+    {
+      "slug": "SpyTag003",
+      "name": "SpyTag003",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "n_claims": 11,
+      "synonyms": [
+        "SpyTag 003",
+        "SpyTag003"
       ]
     },
     {
@@ -3925,6 +4042,21 @@
       ]
     },
     {
+      "slug": "Ulp1",
+      "name": "Ulp1",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "n_claims": 8,
+      "synonyms": [
+        "Ulp1 protease",
+        "SUMO protease",
+        "Smt3-specific protease"
+      ]
+    },
+    {
       "slug": "UnaG",
       "name": "UnaG",
       "feature_type": "CDS",
@@ -4047,14 +4179,39 @@
   ],
   "collections": [
     {
+      "id": "affinity-tags",
+      "name": "Affinity purification tags",
+      "n_parts": 10
+    },
+    {
       "id": "anderson-promoters",
       "name": "Anderson promoters",
       "n_parts": 13
     },
     {
+      "id": "conjugation-tags",
+      "name": "Conjugation & self-labeling systems",
+      "n_parts": 10
+    },
+    {
+      "id": "epitope-tags",
+      "name": "Epitope / detection tags",
+      "n_parts": 10
+    },
+    {
       "id": "phage-att-sites",
       "name": "Phage attachment sites for chromosomal integration",
       "n_parts": 10
+    },
+    {
+      "id": "protease-cleavage-sites",
+      "name": "Protease cleavage sites for tag removal",
+      "n_parts": 6
+    },
+    {
+      "id": "solubility-tags",
+      "name": "Solubility-enhancing fusion partners",
+      "n_parts": 5
     }
   ]
 }

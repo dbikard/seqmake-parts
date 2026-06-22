@@ -28,19 +28,19 @@ SCHEMA_VERSION = "1.0"
 
 # Shown at the top of the site index and every part page. Own it plainly: this
 # is an experimental, AI-generated WIP — use at your own risk. What we offer in
-# place of guarantees is transparency: per-claim provenance + review tiers +
-# machine validation. The honest signal is a claim's review status, not
-# "human vs AI".
+# place of guarantees is transparency: per-claim provenance + a verification
+# lifecycle + machine validation. The honest signal is a claim's verification
+# status, not "human vs AI".
 AI_WIP_WARNING = (
     '!!! warning "Work in progress — use at your own risk"\n\n'
     "    This is an experimental, **AI-generated** knowledge base under active "
-    "development — **use at your own risk**. Nothing here has been fully "
-    "expert-reviewed. What we offer instead is transparency: each functional "
-    "claim carries its **source, confidence, and review status** "
-    "(`ai-generated` → `ai-cross-checked` → `expert-reviewed`), structure is "
-    "schema- and SHACL-validated, and sequences trace to deposited sources. "
-    "Check a claim's status and source — and verify against the primary "
-    "literature — before relying on it.\n"
+    "development — **use at your own risk**. What we offer instead is "
+    "transparency: each functional claim carries its **source, confidence, "
+    "usefulness, and a verification status** (`pending` → `verified`, or "
+    "`source pending` / `flagged`), structure is schema- and SHACL-validated, "
+    "and sequences trace to deposited sources. Check a claim's status and "
+    "source — and verify against the primary literature — before relying on "
+    "it.\n"
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -380,23 +380,40 @@ def _load_claims(part: dict) -> list[dict]:
     return json.loads(json_path.read_text(encoding="utf-8")).get("functional_claims", [])
 
 
+# Display labels for the claim verification lifecycle (CLAIM-MODEL.md).
+STATUS_LABELS = {
+    "pending": "pending",
+    "verified": "✓ verified",
+    "sources-pending": "source pending",
+    "flagged": "⚠ flagged",
+}
+
+
+def _status_label(status: str | None) -> str:
+    return STATUS_LABELS.get(status or "", status or "—")
+
+
 def _functional_knowledge(part: dict) -> str:
     """The functional-knowledge section: prose-derived claims (from the canonical
-    JSON), each shown with its granular source (quote/figure), confidence and
-    review status -- the human view of the nanopublication-shaped layer."""
+    JSON), each shown with its granular source (quote/figure), confidence,
+    usefulness and verification status -- the human view of the
+    nanopublication-shaped layer."""
     claims = _load_claims(part)
     if not claims:
         return ""
     lines = ["## Functional knowledge\n",
              "*Each claim is a nanopublication-shaped assertion carrying its "
-             "source, the model's confidence, and a review status "
-             "(`ai-generated` → `ai-cross-checked` → `expert-reviewed`). A quote "
-             "marked `(catalog-doc)` is the catalog's own AI prose, not yet "
-             "checked against the cited paper; its confidence is then the model's "
-             "self-assessment (†). Verify against the cited source before relying "
-             "on a claim.*\n",
-             "| Claim | Source | Confidence | Review |",
-             "|---|---|---|---|"]
+             "source, the model's `confidence` that the source supports it, a "
+             "`usefulness` score, and a verification `status`. Status is "
+             "`pending` (authored, not yet independently cross-checked) → "
+             "`verified` (checked against the primary source) — or "
+             "`source pending` (the cited paper still needs fetching) / "
+             "`flagged` (partially supported, downgraded, or superseded; see the "
+             "claim's comment). A quote marked `(catalog-doc)` is the catalog's "
+             "own AI prose, not the paper's, so its confidence is the model's "
+             "self-assessment (†).*\n",
+             "| Claim | Source | Confidence | Usefulness | Status |",
+             "|---|---|---|---|---|"]
     for c in claims:
         src = c.get("source") or {}
         bits = []
@@ -419,8 +436,12 @@ def _functional_knowledge(part: dict) -> str:
         from_primary = src.get("quote_source") == "primary"
         conf = c.get("confidence", "—")
         conf_cell = conf if from_primary or conf == "—" else f"{conf} †"
-        lines.append(f"| {_short(c.get('label', ''), 140)} | {cell or '—'} | "
-                     f"{conf_cell} | {c.get('review_status', '—')} |")
+        label_cell = _short(c.get("label", ""), 140)
+        if c.get("comment"):
+            label_cell += f"<br><sub>⚠ {_short(c['comment'], 140)}</sub>"
+        lines.append(f"| {label_cell} | {cell or '—'} | "
+                     f"{conf_cell} | {c.get('usefulness', '—')} | "
+                     f"{_status_label(c.get('analysis_status'))} |")
     return "\n".join(lines) + "\n"
 
 
@@ -847,10 +868,10 @@ def build_agent_index(manifest: dict) -> dict:
             "One compact line per part: enough to find and filter. Fetch full "
             "detail from each part's `record` URL (canonical JSON: sequence, "
             "located sub-features, functional claims with source/confidence/"
-            "review_status, references) or the whole `catalog` at once. ALL "
-            "records are currently review_status='ai-generated' and not yet "
-            "expert-reviewed -- treat claims as a grounded starting point and "
-            "verify against the cited primary literature."),
+            "usefulness/analysis_status, references) or the whole `catalog` at "
+            "once. Most claims are analysis_status='pending' (authored, not yet "
+            "independently cross-checked); prefer 'verified' claims and always "
+            "verify against the cited primary literature before relying on one."),
         "base_iri": BASE_IRI,
         "site": SITE_URL,
         "catalog": f"{SITE_URL}/catalog.json",
@@ -912,8 +933,11 @@ def build_parts_index(manifest: dict) -> dict:
             "tf": _names(p.get("regulated_by")), "regs": _names(p.get("regulates")),
             "nclaims": len(fcs),
             "claim_types": sorted({fc.get("type") for fc in fcs if fc.get("type")}),
-            "review": sorted({fc.get("review_status") for fc in fcs
-                              if fc.get("review_status")}),
+            # Verification lifecycle roll-up for the home page (CLAIM-MODEL.md):
+            # the distinct per-claim analysis_status values + a verified count.
+            "status": sorted({fc.get("analysis_status") for fc in fcs
+                              if fc.get("analysis_status")}),
+            "nverified": sum(1 for fc in fcs if fc.get("cross_checked")),
             "nrefs": len(p.get("references") or []),
             "uniprot": (p.get("uniprot_import") or {}).get("accession"),
         })
@@ -956,13 +980,14 @@ def render_llms_txt(manifest: dict) -> str:
 > markers, regulators, and more. Each part is an annotated record with Sequence
 > Ontology typing, located sub-features, literature references, and
 > prose-derived functional claims. Every functional claim carries its source
-> (PMID + verbatim quote / figure), a confidence, and a review_status, so an
-> agent can weigh and cite it rather than assert it.
+> (PMID + verbatim quote / figure), a confidence, a usefulness score, and a
+> verification status (analysis_status), so an agent can weigh and cite it
+> rather than assert it.
 
-CAVEAT: this is an AI-generated knowledge base under active development. All
-{n['n_parts']} records are currently review_status = "ai-generated" and have not
-been expert-reviewed. Treat claims as a grounded starting point and VERIFY
-against the cited primary literature before relying on them.
+CAVEAT: this is an AI-generated knowledge base under active development. Most of
+the {n['n_parts']} records' claims are analysis_status = "pending" (authored, not
+yet independently cross-checked). Prefer "verified" claims, and VERIFY against
+the cited primary literature before relying on any of them.
 
 Contents: {n['n_parts']} parts ({n['n_validated']} validated, {n['n_candidate']} \
 candidate) carrying {n['n_functional_claims']} functional claims.
@@ -994,8 +1019,10 @@ candidate) carrying {n['n_functional_claims']} functional claims.
 Each claim has: a `type` (inducer / induction_dynamic_range /
 repression_dynamic_range / strength_class / host_range / mechanism / ...), a
 structured `value`, a `source` (pmid/doi + a verbatim quote and/or figure), a
-`confidence` (low | medium | high), and a `review_status`. Prefer higher
-confidence, and surface the source + review_status whenever you use a claim.
+`confidence` (low | medium | high), a `usefulness` (low | medium | high), and an
+`analysis_status` (pending | verified | sources-pending | flagged) with a
+`cross_checked` flag. Prefer verified, higher-confidence claims, and surface the
+source + status whenever you use a claim.
 
 Repository: {REPO_URL}
 """

@@ -30,7 +30,7 @@ graph, and `tools/shapes.ttl` + the tests pin the same IRIs.
 The authored source of truth for each part is `parts/<status>/<slug>.json` — a
 full-fidelity record (every GenBank feature + qualifier verbatim, all references,
 the sequence) plus the home for the functional-knowledge layer
-(`functional_claims` / `provenance` / `review_status`). It is validated against
+(`functional_claims` with their verification lifecycle / `provenance`). It is validated against
 `schema/part.schema.json`. The `.gb` is a *generated* projection (still a
 first-class, downloadable bench artifact); the existing readers consume it
 unchanged:
@@ -168,9 +168,10 @@ The richest knowledge lives in the `.md` prose, not the GenBank: PphlF's `.md`
 records ~80× fold repression, inducer = DAPG, the J23119 scaffold, the
 mechanism. These become typed claims in each part's canonical JSON
 (`functional_claims`), each carrying **source** (PMID/DOI), **extraction
-provenance** (method, asserting agent, source doc), **confidence**, and
-**review_status** (`ai-generated` → `ai-cross-checked` → `expert-reviewed`), plus
-a **supersedes** pointer for corrections. `tools/build_rdf.py` projects them into
+provenance** (method, asserting agent, source doc), **confidence**, **usefulness**,
+and a **verification lifecycle** — `analysis_status` (`pending` → `verified`, or
+`sources-pending` / `flagged`) with a `cross_checked` flag — plus a **supersedes**
+pointer for corrections. `tools/build_rdf.py` projects them into
 RDF in the **nanopublication shape** — each claim an assertion node with
 `prov:wasDerivedFrom` its source and `prov:wasGeneratedBy` its extraction
 activity — queryable alongside Layer 1 and SHACL-validated. They stay mutable in

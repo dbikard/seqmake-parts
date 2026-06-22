@@ -1,0 +1,100 @@
+LOCUS       CBP_tag                   26 aa            linear   UNK 01-JAN-1980
+DEFINITION  26-aa calmodulin-binding peptide (CBP) from the C-terminus of rabbit
+            skeletal/cardiac myosin light-chain kinase; binds calmodulin
+            Ca2+-dependently (nanomolar Kd), purified on calmodulin resin and
+            eluted with EGTA; the C-terminal affinity handle of the TAP /
+            InterPlay tandem-affinity systems..
+ACCESSION   CBP_tag
+VERSION     CBP_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Blumenthal DK, Takio K, Edelman AM, Charbonneau H, Titani K, Walsh
+            KA, Krebs EG
+  TITLE     Identification of the calmodulin-binding domain of skeletal muscle
+            myosin light chain kinase
+  JOURNAL   Proc Natl Acad Sci USA (1985)
+   PUBMED   3858814
+  REMARK    doi:10.1073/pnas.82.10.3187
+REFERENCE   2
+  AUTHORS   Klevit RE, Blumenthal DK, Wemmer DE, Krebs EG
+  TITLE     Interaction of calmodulin and a calmodulin-binding peptide from
+            myosin light chain kinase: major spectral changes in both occur as
+            the result of complex formation
+  JOURNAL   Biochemistry (1985)
+   PUBMED   3841496
+  REMARK    doi:10.1021/bi00348a047
+REFERENCE   3
+  AUTHORS   Stofko-Hahn RE, Carr DW, Scott JD
+  TITLE     A single step purification for recombinant proteins.
+            Characterization of a microtubule associated protein (MAP 2)
+            fragment which associates with the type II cAMP-dependent protein
+            kinase
+  JOURNAL   FEBS Lett (1992)
+   PUBMED   1318232
+  REMARK    doi:10.1016/0014-5793(92)80458-s
+REFERENCE   4
+  AUTHORS   Zheng CF, Simcox T, Xu L, Vaillancourt P
+  TITLE     A new expression vector for high level protein production, one step
+            purification and direct isotopic labeling of calmodulin-binding
+            peptide fusion proteins
+  JOURNAL   Gene (1997)
+   PUBMED   9047344
+  REMARK    doi:10.1016/s0378-1119(96)00680-4
+REFERENCE   5
+  AUTHORS   Rigaut G, Shevchenko A, Rutz B, Wilm M, Mann M, Seraphin B
+  TITLE     A generic protein purification method for protein complex
+            characterization and proteome exploration
+  JOURNAL   Nat Biotechnol (1999)
+   PUBMED   10504710
+  REMARK    doi:10.1038/13732
+REFERENCE   6
+  AUTHORS   Vaillancourt P, Zheng CF, Hoang DQ, Breister L
+  TITLE     Affinity purification of recombinant proteins fused to calmodulin or
+            to calmodulin-binding peptides
+  JOURNAL   Methods Enzymol (2000)
+   PUBMED   11036652
+  REMARK    doi:10.1016/s0076-6879(00)26062-8
+REFERENCE   7
+  AUTHORS   Mukherjee S, Ura M, Hoey RJ, Kossiakoff AA
+  TITLE     A New Versatile Immobilization Tag Based on the Ultra High Affinity
+            and Reversibility of the Calmodulin-Calmodulin Binding Peptide
+            Interaction
+  JOURNAL   J Mol Biol (2015)
+   PUBMED   26159704
+  REMARK    doi:10.1016/j.jmb.2015.06.018
+REFERENCE   8
+  AUTHORS   Khoo C, Blanchard HL, Reategui P, et al.
+  TITLE     Tandem Affinity Purification of SBP-CBP-tagged Type Three Secretion
+            System Effectors
+  JOURNAL   J Vis Exp (2021)
+   PUBMED   33654794
+  REMARK    doi:10.3791/61937
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/CBP_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..26
+                     /label="CBP_tag"
+                     /synonym="calmodulin-binding peptide"
+                     /synonym="CBP"
+                     /synonym="calmodulin binding peptide"
+                     /note="26-aa calmodulin-binding peptide (CBP) from the
+                     C-terminus of myosin light-chain kinase (UniProt P07313
+                     residues 578-603); binds calmodulin in a Ca2+-dependent
+                     manner and is eluted with EGTA; second/C-terminal affinity
+                     handle of the TAP and InterPlay tandem-affinity tags."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /citation=[8]
+                     /db_xref="SO:0000417"
+                     /collection="affinity-tags"
+ORIGIN
+        1 krrwkknfia vsaanrfkki sssgal
+//

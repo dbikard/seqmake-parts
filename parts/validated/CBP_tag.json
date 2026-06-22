@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0",
+  "slug": "CBP_tag",
+  "locus": "CBP_tag",
+  "id": "CBP_tag",
+  "description": "26-aa calmodulin-binding peptide (CBP) from the C-terminus of rabbit skeletal/cardiac myosin light-chain kinase; binds calmodulin Ca2+-dependently (nanomolar Kd), purified on calmodulin resin and eluted with EGTA; the C-terminal affinity handle of the TAP / InterPlay tandem-affinity systems.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "KRRWKKNFIAVSAANRFKKISSSGAL",
+  "references": [
+    {
+      "authors": "Blumenthal DK, Takio K, Edelman AM, Charbonneau H, Titani K, Walsh KA, Krebs EG",
+      "title": "Identification of the calmodulin-binding domain of skeletal muscle myosin light chain kinase",
+      "journal": "Proc Natl Acad Sci USA (1985)",
+      "pubmed_id": "3858814",
+      "comment": "doi:10.1073/pnas.82.10.3187"
+    },
+    {
+      "authors": "Klevit RE, Blumenthal DK, Wemmer DE, Krebs EG",
+      "title": "Interaction of calmodulin and a calmodulin-binding peptide from myosin light chain kinase: major spectral changes in both occur as the result of complex formation",
+      "journal": "Biochemistry (1985)",
+      "pubmed_id": "3841496",
+      "comment": "doi:10.1021/bi00348a047"
+    },
+    {
+      "authors": "Stofko-Hahn RE, Carr DW, Scott JD",
+      "title": "A single step purification for recombinant proteins. Characterization of a microtubule associated protein (MAP 2) fragment which associates with the type II cAMP-dependent protein kinase",
+      "journal": "FEBS Lett (1992)",
+      "pubmed_id": "1318232",
+      "comment": "doi:10.1016/0014-5793(92)80458-s"
+    },
+    {
+      "authors": "Zheng CF, Simcox T, Xu L, Vaillancourt P",
+      "title": "A new expression vector for high level protein production, one step purification and direct isotopic labeling of calmodulin-binding peptide fusion proteins",
+      "journal": "Gene (1997)",
+      "pubmed_id": "9047344",
+      "comment": "doi:10.1016/s0378-1119(96)00680-4"
+    },
+    {
+      "authors": "Rigaut G, Shevchenko A, Rutz B, Wilm M, Mann M, Seraphin B",
+      "title": "A generic protein purification method for protein complex characterization and proteome exploration",
+      "journal": "Nat Biotechnol (1999)",
+      "pubmed_id": "10504710",
+      "comment": "doi:10.1038/13732"
+    },
+    {
+      "authors": "Vaillancourt P, Zheng CF, Hoang DQ, Breister L",
+      "title": "Affinity purification of recombinant proteins fused to calmodulin or to calmodulin-binding peptides",
+      "journal": "Methods Enzymol (2000)",
+      "pubmed_id": "11036652",
+      "comment": "doi:10.1016/s0076-6879(00)26062-8"
+    },
+    {
+      "authors": "Mukherjee S, Ura M, Hoey RJ, Kossiakoff AA",
+      "title": "A New Versatile Immobilization Tag Based on the Ultra High Affinity and Reversibility of the Calmodulin-Calmodulin Binding Peptide Interaction",
+      "journal": "J Mol Biol (2015)",
+      "pubmed_id": "26159704",
+      "comment": "doi:10.1016/j.jmb.2015.06.018"
+    },
+    {
+      "authors": "Khoo C, Blanchard HL, Reategui P, et al.",
+      "title": "Tandem Affinity Purification of SBP-CBP-tagged Type Three Secretion System Effectors",
+      "journal": "J Vis Exp (2021)",
+      "pubmed_id": "33654794",
+      "comment": "doi:10.3791/61937"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 26,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "CBP_tag"
+        ],
+        "synonym": [
+          "calmodulin-binding peptide",
+          "CBP",
+          "calmodulin binding peptide"
+        ],
+        "note": [
+          "26-aa calmodulin-binding peptide (CBP) from the C-terminus of myosin light-chain kinase (UniProt P07313 residues 578-603); binds calmodulin in a Ca2+-dependent manner and is eluted with EGTA; second/C-terminal affinity handle of the TAP and InterPlay tandem-affinity tags."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "affinity-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "UniProt:P07313 (MYLK2_RABIT, Swiss-Prot reviewed; Oryctolagus cuniculus skeletal/cardiac MLCK2), residues 578-603, 100% identity over 26 aa \u2014 independently fetched and compared 2026-06-22"
+  },
+  "functional_claims": [
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Derived from the C-terminal calmodulin-binding domain of rabbit skeletal/cardiac myosin light-chain kinase",
+      "value": {
+        "source_protein": "myosin light-chain kinase (MLCK)",
+        "organism": "Oryctolagus cuniculus",
+        "uniprot": "P07313",
+        "residues": "578-603",
+        "length_aa": 26
+      },
+      "source": {
+        "pmid": "3858814",
+        "doi": "10.1073/pnas.82.10.3187",
+        "quote": "The peptide is 27 residues in length and represents the carboxyl terminus of MLCK. ... A chemically synthesized peptide has been prepared to study the interactions of the peptide and calmodulin in more detail.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "ligand",
+      "type": "ligand",
+      "label": "Binds calmodulin in a Ca2+-dependent manner",
+      "value": {
+        "ligand": "calmodulin",
+        "cofactor_required": "Ca2+",
+        "stoichiometry": "1:1"
+      },
+      "source": {
+        "pmid": "3858814",
+        "doi": "10.1073/pnas.82.10.3187",
+        "quote": "fluorescence enhancement is maximal at a peptide:calmodulin stoichiometry of 1:1. Calmodulin-Sepharose affinity chromatography in the presence of 2 M urea indicates that the interaction of peptide and calmodulin is Ca2+-dependent.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Ca2+-switchable calmodulin binding enables capture on Ca2+-loaded calmodulin and release with a Ca2+ chelator",
+      "value": {
+        "capture": "Ca2+-dependent binding to calmodulin",
+        "release": "Ca2+ chelation (EGTA)"
+      },
+      "source": {
+        "pmid": "1318232",
+        "doi": "10.1016/0014-5793(92)80458-s",
+        "quote": "Expressed kfc fusion proteins can be purified from bacterial lysates in one step by affinity chromatography on calmodulin-agarose using EGTA as eluant.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "affinity_matrix",
+      "type": "affinity_matrix",
+      "label": "Purified on immobilized calmodulin (calmodulin-agarose) and eluted with EGTA",
+      "value": {
+        "matrix": "calmodulin-agarose / calmodulin resin",
+        "binding_condition": "Ca2+ present",
+        "elution": "EGTA (~2 mM)"
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "Because the binding between CBP and calmodulin is calcium-dependent, the fusion protein can be eluted from the resin with virtually any buffer containing EGTA (2 mM) and used directly for many applications.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "Binds calmodulin with nanomolar affinity (wild-type Kd ~0.2 nM)",
+      "value": {
+        "partner": "calmodulin",
+        "Kd_qualitative": "nanomolar",
+        "Kd_wild_type_approx_nM": 0.2,
+        "note": "Wild-type Kd ~0.2 nM is stated in the body of Mukherjee et al. 2015; the abstract only quotes the N5A variant Kd (~2 pM). The ~0.2 nM figure was not read in primary full text."
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "Calmodulin-binding peptide (CBP), a peptide of 26 amino acids derived from muscle myosin light chain kinase (MLCK), binds to calmodulin with nanomolar affinity.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "low",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "tag_removal",
+      "type": "tag_removal",
+      "label": "Removable by site-specific protease cleavage (Factor Xa or thrombin) at a site engineered between passenger and tag",
+      "value": {
+        "proteases": [
+          "Factor Xa",
+          "thrombin"
+        ],
+        "note": "Cleavage site is supplied by the host cassette/vector adjacent to CBP, not by the CBP peptide itself."
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "Purified CBP-JNK is fully active, and the CBP peptide tag can be removed by cleavage with thrombin.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "post_translational",
+      "type": "post_translational",
+      "label": "Can be phosphorylated by cAMP-dependent protein kinase (PKA) for direct 32P isotopic labeling",
+      "value": {
+        "enzyme": "cAMP-dependent protein kinase (PKA)",
+        "use": "direct labeling with [gamma-32P]ATP"
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "We also show that CBP can be efficiently phosphorylated by cAMP-dependent protein kinase. Hence, the purified fusion proteins can be labeled directly with [gamma-32P]ATP and used to probe protein-protein or protein-nucleic acid interactions.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "expression_yield",
+      "type": "expression_yield",
+      "label": "Supports high-level fusion-protein expression in E. coli (15-20 mg/L for a CBP-JNK fusion)",
+      "value": {
+        "host": "Escherichia coli",
+        "example_yield_mg_per_L": "15-20",
+        "example_fusion": "CBP-JNK",
+        "note": "Yield is for one example N-terminal CBP fusion; quoted from the abstract, not from an independently read figure/table."
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "the resulting fusion protein CBP-JNK synthesized in E. coli cells at 15-20 mg/1 culture. CBP-JNK was purified to near homogeneity in one step with calmodulin affinity resin.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "Used at either terminus; N-terminal placement gives efficient translation initiation and high yield",
+      "value": {
+        "positions": [
+          "N-terminal",
+          "C-terminal"
+        ],
+        "note": "N-terminal CBP (pCAL-type) ensures efficient translation; CBP is the C-terminal handle in TAP."
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "The CBP coding sequence was positioned for fusion at the N-terminus, an advantage that ensures consistent high level synthesis of fusion proteins due to the efficient translation of the CBP in E. coli.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Validated in E. coli (recombinant production) and in eukaryotic TAP workflows",
+      "value": {
+        "hosts": [
+          "Escherichia coli",
+          "Saccharomyces cerevisiae / eukaryotic cells (TAP)"
+        ],
+        "note": "E. coli use supported by abstract; eukaryotic/TAP use inferred from the TAP method (CBP is the second TAP handle), a detail residing in the Rigaut 1999 full text."
+      },
+      "source": {
+        "pmid": "9047344",
+        "doi": "10.1016/s0378-1119(96)00680-4",
+        "quote": "Proteins fused in frame with CBP can be purified from crude E. coli lysates in a single step using calmodulin affinity chromatography",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Second affinity handle of tandem-affinity purification (TAP / InterPlay) for protein-complex isolation",
+      "value": {
+        "use": "tandem affinity purification of native protein complexes",
+        "tag_architecture": "ProteinA-TEV-CBP (TAP); SBP-CBP (InterPlay)",
+        "note": "That the TAP tag uses CBP as its second handle is stated in the body of Rigaut et al. 1999, not in its abstract (the abstract describes the TAP method without naming CBP); capped at medium pending primary full text."
+      },
+      "source": {
+        "pmid": "10504710",
+        "doi": "10.1038/13732",
+        "quote": "We have developed a generic procedure to purify proteins expressed at their natural level under native conditions using a novel tandem affinity purification (TAP) tag.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "N5A high-affinity variant (RWKKNFIAVSAANRFKKIS) binds calmodulin with Kd ~2 pM",
+      "value": {
+        "variant": "N5A",
+        "variant_sequence": "RWKKNFIAVSAANRFKKIS",
+        "maps_to_part_positions": "2-21 with an N->A substitution",
+        "Kd_pM": 2,
+        "cofactor_required": "Ca2+",
+        "reversal": "EDTA"
+      },
+      "source": {
+        "pmid": "26159704",
+        "doi": "10.1016/j.jmb.2015.06.018",
+        "quote": "The immobilization relies on the ultra high affinity of calmodulin to N5A mutant CBP (RWKKNFIAVSAANRFKKIS) in presence of calcium (KD~2 pM), which can be reversed by EDTA",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

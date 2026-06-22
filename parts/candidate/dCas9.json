@@ -34,7 +34,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
   "provenance": {
     "migrated_from": "genbank",

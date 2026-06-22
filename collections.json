@@ -160,5 +160,134 @@
         "url": "http://www.sequenceontology.org/browser/current_release/term/SO:0001797"
       }
     ]
+  },
+  "affinity-tags": {
+    "name": "Affinity purification tags",
+    "description": "Peptide and protein tags that give a recombinant protein a defined, reversible binding handle for single-step affinity capture. The set spans the small metal-chelation peptide 6xHis (IMAC), the streptavidin/Strep-Tactin–binding Strep-tag II and Twin-Strep-tag, the FLAG octapeptide (anti-FLAG resin), the S-protein–binding S-tag, the calmodulin-binding peptide (CBP) and streptavidin-binding peptide (SBP) used in tandem-affinity workflows, and the larger fusion-protein handles GST (glutathione resin) and MBP (amylose resin), which double as solubility partners. Each is captured on an immobilised cognate ligand and released under mild, tag-specific conditions (imidazole, desthiobiotin/biotin, competing peptide, glutathione, maltose, or EGTA).",
+    "source": "Recombinant-protein affinity-tag systems",
+    "references": [
+      {
+        "title": "Overview of tag protein fusions: from molecular and biochemical fundamentals to commercial systems",
+        "authors": "Terpe K",
+        "journal": "Appl Microbiol Biotechnol",
+        "year": 2003,
+        "pmid": "12536251",
+        "doi": "10.1007/s00253-002-1158-6"
+      },
+      {
+        "title": "Overview of affinity tags for protein purification",
+        "authors": "Kimple ME, Brill AL, Pasker RL",
+        "journal": "Curr Protoc Protein Sci",
+        "year": 2013,
+        "pmid": "24510596",
+        "doi": "10.1002/0471140864.ps0909s73"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Sequence Ontology: polypeptide_domain (SO:0000417)",
+        "url": "http://sequenceontology.org/browser/current_release/term/SO:0000417"
+      }
+    ]
+  },
+  "epitope-tags": {
+    "name": "Epitope / detection tags",
+    "description": "Short linear peptide epitopes recognised by a well-characterised monoclonal antibody or nanobody, used to detect, localise, or immunoprecipitate a tagged protein without a native antibody. The collection includes the classical antibody epitopes HA, Myc, FLAG, T7, V5 and VSV-G, the bacteriophage-derived E-tag, and the modern high-affinity nanobody epitopes ALFA-tag, Spot-tag and BC2-tag, several of which support super-resolution imaging through small, single-domain binders with low linkage error. Detection is via the cognate antibody/nanobody; many double as affinity handles on an immobilised binder.",
+    "source": "Epitope-tagging / immunodetection systems",
+    "references": [
+      {
+        "title": "Overview of tag protein fusions: from molecular and biochemical fundamentals to commercial systems",
+        "authors": "Terpe K",
+        "journal": "Appl Microbiol Biotechnol",
+        "year": 2003,
+        "pmid": "12536251",
+        "doi": "10.1007/s00253-002-1158-6"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Sequence Ontology: polypeptide_domain (SO:0000417)",
+        "url": "http://sequenceontology.org/browser/current_release/term/SO:0000417"
+      }
+    ]
+  },
+  "solubility-tags": {
+    "name": "Solubility-enhancing fusion partners",
+    "description": "Larger protein fusion partners that promote the soluble, correctly folded expression of an otherwise aggregation-prone passenger, typically as an N-terminal fusion later removed by a site-specific protease. The set comprises the E. coli proteins MBP (maltose-binding protein), thioredoxin (Trx), and NusA, the Schistosoma GST, and the ubiquitin-like SUMO (yeast Smt3), whose cognate protease Ulp1 cleaves at the folded SUMO domain to release a native N-terminus. Several of these (MBP, GST) are also affinity handles.",
+    "source": "Solubility-enhancing fusion-tag systems",
+    "references": [
+      {
+        "title": "Overview of tag protein fusions: from molecular and biochemical fundamentals to commercial systems",
+        "authors": "Terpe K",
+        "journal": "Appl Microbiol Biotechnol",
+        "year": 2003,
+        "pmid": "12536251",
+        "doi": "10.1007/s00253-002-1158-6"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Sequence Ontology: CDS (SO:0000316)",
+        "url": "http://sequenceontology.org/browser/current_release/term/SO:0000316"
+      }
+    ]
+  },
+  "protease-cleavage-sites": {
+    "name": "Protease cleavage sites for tag removal",
+    "description": "Short recognition sequences engineered into the linker between an affinity/solubility tag and the protein of interest so the tag can be removed by a sequence-specific protease after purification, plus the SUMO-specific protease Ulp1. The cleavage sites include TEV (ENLYFQG), HRV 3C/PreScission (LEVLFQGP), thrombin (LVPRGS), enterokinase (DDDDK) and Factor Xa (IEGR); they differ in specificity, the residual N-terminal scar, and off-target propensity. Ulp1 instead recognises the folded SUMO domain rather than a linear motif and cleaves scarlessly.",
+    "source": "Site-specific protease tag-removal systems",
+    "references": [
+      {
+        "title": "An overview of enzymatic reagents for the removal of affinity tags",
+        "authors": "Waugh DS",
+        "journal": "Protein Expr Purif",
+        "year": 2011,
+        "pmid": "21871965",
+        "doi": "10.1016/j.pep.2011.08.005"
+      },
+      {
+        "title": "A critical review of the methods for cleavage of fusion proteins with thrombin and factor Xa",
+        "authors": "Jenny RJ, Mann KG, Lundblad RL",
+        "journal": "Protein Expr Purif",
+        "year": 2003,
+        "pmid": "12963335",
+        "doi": "10.1016/s1046-5928(03)00168-2"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Sequence Ontology: polypeptide_domain (SO:0000417)",
+        "url": "http://sequenceontology.org/browser/current_release/term/SO:0000417"
+      }
+    ]
+  },
+  "conjugation-tags": {
+    "name": "Conjugation & self-labeling systems",
+    "description": "Tags that form a covalent or enzyme-mediated link to a partner, for irreversible bioconjugation, site-specific labelling, or modular protein assembly. The collection covers the spontaneous isopeptide 'superglue' pairs SpyTag/SpyCatcher (and the faster SpyTag002/003) and the orthogonal SnoopTag/SnoopCatcher; the enzymatic systems AviTag (site-specifically biotinylated by the biotin ligase BirA) and the sortase-A LPETG motif (transpeptidation onto an N-terminal oligoglycine); and the self-labeling protein tag SNAP-tag, which covalently captures O6-benzylguanine–linked probes. These parts are deployed as cognate pairs (tag + catcher/enzyme/substrate).",
+    "source": "Covalent / enzymatic protein conjugation & self-labeling systems",
+    "references": [
+      {
+        "title": "Peptide tag forming a rapid covalent bond to a protein, through engineering a bacterial adhesin",
+        "authors": "Zakeri B, Fierer JO, Celik E, et al.",
+        "journal": "Proc Natl Acad Sci USA",
+        "year": 2012,
+        "pmid": "22366317",
+        "doi": "10.1073/pnas.1115485109"
+      },
+      {
+        "title": "A general method for the covalent labeling of fusion proteins with small molecules in vivo",
+        "authors": "Keppler A, Gendreizig S, Gronemeyer T, et al.",
+        "journal": "Nat Biotechnol",
+        "year": 2003,
+        "pmid": "12469133",
+        "doi": "10.1038/nbt765"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Sequence Ontology: polypeptide_domain (SO:0000417)",
+        "url": "http://sequenceontology.org/browser/current_release/term/SO:0000417"
+      }
+    ]
   }
 }

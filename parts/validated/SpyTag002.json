@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "slug": "SpyTag002",
+  "locus": "SpyTag002",
+  "id": "SpyTag002",
+  "description": "SpyTag002 \u2014 second-generation 14-aa peptide tag (VPTIVMVDAYKRYK) that forms a spontaneous, irreversible isopeptide bond to SpyCatcher002, reacting ~12x faster than the original SpyTag.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "VPTIVMVDAYKRYK",
+  "references": [
+    {
+      "authors": "Keeble AH, Banerjee A, Ferla MP, Reddington SC, Khairil Anuar INA, Howarth M",
+      "title": "Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze Membrane Dynamics",
+      "journal": "Angew Chem Int Ed Engl (2017)",
+      "pubmed_id": "29024296",
+      "comment": "doi:10.1002/anie.201707623"
+    },
+    {
+      "authors": "Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT, Howarth M",
+      "title": "Peptide tag forming a rapid covalent bond to a protein, through engineering a bacterial adhesin",
+      "journal": "Proc Natl Acad Sci U S A (2012)",
+      "pubmed_id": "22366317",
+      "comment": "doi:10.1073/pnas.1115485109"
+    },
+    {
+      "authors": "Khairil Anuar INA, Banerjee A, Keeble AH, Carrington L, Bhatt D, Howarth M",
+      "title": "Spy&Go purification of SpyTag-proteins using pseudo-SpyCatcher to access an oligomerization toolbox",
+      "journal": "Nat Commun (2019)",
+      "pubmed_id": "30988307",
+      "comment": "doi:10.1038/s41467-019-09678-w"
+    },
+    {
+      "authors": "Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R, Hytonen VP, Howarth M",
+      "title": "Approaching infinite affinity through engineering of peptide-protein interaction",
+      "journal": "Proc Natl Acad Sci U S A (2019)",
+      "pubmed_id": "31822621",
+      "comment": "doi:10.1073/pnas.1909653116"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 14,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SpyTag002"
+        ],
+        "synonym": [
+          "SpyTag 002",
+          "SpyTag002"
+        ],
+        "note": [
+          "Second-generation 14-aa peptide tag (VPTIVMVDAYKRYK) derived from the CnaB2 immunoglobulin-like domain of Streptococcus pyogenes fibronectin-binding protein FbaB, evolved from the original SpyTag (AHIVMVDAYKPTK) by phage-display selection plus rational design. SpyTag002 differs from SpyTag at 4/13 shared residues and carries one extra N-terminal residue. On mixing with its protein partner SpyCatcher002 it forms a spontaneous, irreversible intermolecular isopeptide (amide) bond (reactive Asp; partner Lys; catalysed by SpyCatcher Glu77); single Asp->Ala (DA) mutation abolishes the reaction. Fusable at the N-terminus or C-terminus. Backwards-compatible with the parental SpyCatcher."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "ATN39889.1 (SpyTag002-MBP fusion, Keeble et al. 2017, Angew. Chem. Int. Ed. \u2014 PMID 29024296; SpyTag002 = residues 19\u201332, 100% identity over 14 aa, independently fetched and aligned)"
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Spontaneous, irreversible isopeptide (amide) bond to SpyCatcher002; second-order kinetics; DA mutation abolishes reaction",
+      "value": {
+        "mechanism": "intermolecular isopeptide (amide) bond formation with loss of water",
+        "partner": "SpyCatcher002 (also backwards-compatible with parental SpyCatcher)",
+        "reactive_residue": "SpyTag002 Asp (DA mutation abolishes reaction)",
+        "catalytic_residue": "SpyCatcher Glu77 (EQ mutation abolishes reaction)",
+        "kinetics": "second-order",
+        "reversibility": "irreversible (covalent)"
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "we confirmed the role of the putative reactive residues: single mutation in SpyTag002 (DA) or SpyCatcher002 (EQ) abolished reaction ... following second-order kinetics ... Loss of water upon SpyTag002/SpyCatcher002 reaction was confirmed by mass spectrometry",
+        "quote_source": "primary",
+        "section": "Characterization of spontaneous amidation between SpyCatcher002 and SpyTag002"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "induction_kinetics",
+      "type": "induction_kinetics",
+      "label": "Reacts with SpyCatcher002 at 2.0e4 M-1 s-1 (25 C, pH 7.0), ~12x faster than original SpyTag/SpyCatcher",
+      "value": {
+        "rate_constant_M-1_s-1": 20000,
+        "rate_constant_sd": "0.2e4",
+        "temperature_C": 25,
+        "pH": 7,
+        "fold_over_SpyTag": 12,
+        "parent_rate_M-1_s-1": 1700,
+        "backwards_compatible_rates_M-1_s-1": {
+          "SpyTag002+SpyCatcher": 1000,
+          "SpyTag+SpyCatcher002": 5500
+        },
+        "format": "measured as SpyTag002-MBP reacting with SpyCatcher002"
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "At 25 \u00b0C at pH 7.0, SpyTag002-MBP reacted with SpyCatcher002 with a rate constant of 2.0\u00b10.2\u00d710[4] M[-1]s[-1] (12 times faster than SpyTag-MBP reacting with SpyCatcher: 1.7\u00b10.4\u00d710[3] M[-1]s[-1]).",
+        "quote_source": "primary",
+        "section": "Results (rate constants)"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "conditions",
+      "type": "conditions",
+      "label": "Reaction is robust across a wide pH and temperature range and tolerates detergents and >3 M urea",
+      "value": {
+        "pH_range": "wide (succinate/phosphate/glycine buffer)",
+        "temperature_range": "wide",
+        "buffer_tolerance": "relatively independent of buffer salts; tolerates common non-ionic detergents and over 3 M urea",
+        "completion": "99% (SpyCatcher002 with excess SpyTag002-MBP); 97% (SpyTag002-MBP with excess SpyCatcher002)"
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "SpyTag002 and SpyCatcher002 reacted under a wide range of pH and temperature conditions ... Reaction was relatively independent of buffer salts, tolerating common non-ionic detergents and over 3 urea. SpyCatcher002 reacted to 99 % completion with a small excess of SpyTag002-MBP. Conversely, SpyTag002-MBP reacted to 97 % completion with an excess of SpyCatcher002",
+        "quote_source": "primary",
+        "section": "Characterization of spontaneous amidation between SpyCatcher002 and SpyTag002"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "placement",
+      "type": "placement",
+      "label": "Fusable at either the N- or C-terminus",
+      "value": {
+        "positions": [
+          "N-terminal",
+          "C-terminal"
+        ]
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "SpyTag002 reacted efficiently when fused either to the N terminus as SpyTag002-MBP or to the C terminus as AffiEGFR-SpyTag002",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "Binds the non-reactive SpyCatcher variant SpyDock with Kd ~73 nM (ITC), ~10x tighter than original SpyTag",
+      "value": {
+        "Kd_nM": 73,
+        "Kd_uM": 0.073,
+        "partner": "SpyDock (SpyCatcher2.1 S49C E77A, a non-reactive SpyCatcher variant)",
+        "method": "isothermal titration calorimetry (ITC)",
+        "stoichiometry": "1:1",
+        "fold_tighter_than_SpyTag": 10,
+        "SpyTag_Kd_uM": 0.75
+      },
+      "source": {
+        "pmid": "30988307",
+        "doi": "10.1038/s41467-019-09678-w",
+        "quote": "we used isothermal titration calorimetry (ITC) to measure the dissociation constant for SpyDock's interaction with SpyTag-MBP or SpyTag002-MBP. Both proteins bound with 1:1 stoichiometry. SpyTag002-MBP (Kd = 0.073 \u03bcM) bound ~10-fold tighter than SpyTag-MBP (Kd = 0.75 \u03bcM)",
+        "quote_source": "primary",
+        "section": "Results (SpyDock binding)"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "affinity_matrix",
+      "type": "affinity_matrix",
+      "label": "Enables non-covalent affinity capture on immobilized SpyDock with imidazole elution (Spy&Go)",
+      "value": {
+        "matrix": "immobilized SpyDock (non-reactive SpyCatcher2.1 S49C E77A)",
+        "elution": "2.5 M imidazole at neutral pH",
+        "caveat": "the tag must not have already reacted covalently with SpyCatcher/SpyCatcher002, which would render it unavailable for SpyDock binding"
+      },
+      "source": {
+        "pmid": "30988307",
+        "doi": "10.1038/s41467-019-09678-w",
+        "quote": "A series of optimizations established that 2.5 M imidazole at neutral pH was efficient at eluting SpyTag from SpyDock, with lower imidazole concentrations used in the wash buffer.",
+        "quote_source": "primary",
+        "section": "Results / Methods"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "Covalent module for live-cell surface labeling/imaging and for affinity purification of fusion proteins",
+      "value": {
+        "applications": [
+          "specific covalent pulse-labeling and fluorescence imaging of surface proteins on living cells",
+          "irreversible protein-protein conjugation as a faster protein superglue",
+          "affinity purification of tagged fusion proteins via SpyDock (Spy&Go)"
+        ]
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "SpyTag002/SpyCatcher002 allowed specific covalent pulse-labeling of surface proteins on living cells and represents the fastest currently available Tag/Catcher pair.",
+        "quote_source": "primary",
+        "section": "Summary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Validated for recombinant fusions and for covalent labeling at the bacterial cell surface",
+      "value": {
+        "validated_in": [
+          "Escherichia coli (recombinant fusions)",
+          "bacterial outer-membrane surface (intimin display in E. coli)"
+        ]
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "SpyTag002 reaction enabled specific and covalent decoration of intimin for live cell fluorescent imaging of the dynamics of the bacterial outer membrane as cells divide.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "Evolved from SpyTag by phage display plus rational design; differs at 4/13 residues with an extra N-terminal residue",
+      "value": {
+        "parent": "SpyTag (AHIVMVDAYKPTK)",
+        "parent_source": "CnaB2 domain of Streptococcus pyogenes fibronectin-binding protein FbaB",
+        "engineering": "phage-display selection (N- and C-terminal libraries) plus rational design; Cys reverted to Ala to avoid dimerization; terminal Lys added",
+        "differences_from_SpyTag": "4 of 13 shared residues changed plus one extra N-terminal residue (14 aa total)"
+      },
+      "source": {
+        "pmid": "29024296",
+        "doi": "10.1002/anie.201707623",
+        "quote": "SpyTag002 has 4/13 residues that are different to those in SpyTag and an extra residue at the N-terminus.",
+        "quote_source": "primary",
+        "section": "Summary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Faster successor SpyTag003 (RG-extended) reacts 28x faster than SpyTag002",
+      "value": {
+        "variant": "SpyTag003",
+        "sequence": "RGVPHIVMVDAYKRYK",
+        "relationship_to_SpyTag002": "N-terminal RG dipeptide appended plus further engineering",
+        "SpyTag003_rate_M-1_s-1": 550000,
+        "fold_over_SpyTag002": 28,
+        "fold_over_SpyTag": 400,
+        "SpyTag002_rate_M-1_s-1": 20000
+      },
+      "source": {
+        "pmid": "31822621",
+        "doi": "10.1073/pnas.1909653116",
+        "quote": "5.5 \u00b1 0.6 \u00d7 10[5] M[-1]s[-1] (mean \u00b1 1 SD, n = 3), \u223c400-fold faster than the 1.4 \u00d7 10[3] M[-1]s[-1] previously shown for SpyTag/SpyCatcher, and 28-fold faster than the 2.0 \u00d7 10[4] M[-1]s[-1] for SpyTag002/SpyCatcher002.",
+        "quote_source": "primary",
+        "section": "Results"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

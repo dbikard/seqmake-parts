@@ -55,11 +55,10 @@ feed it to the Source phase. Never make the contributor write JSON.
   features with **Sequence Ontology** terms; **carry all synonyms**; **protein/CDS parts
   defer biology to UniProt** (`tools/import_uniprot_features.py`, no hand-authored
   residue features).
-- **Never clobber human-reviewed knowledge.** Merges are additive and monotonic in
-  `review_status`: an `ai-generated` claim may be overwritten, but an
-  `ai-cross-checked`/`expert-reviewed` claim is immutable (a differing proposal is
-  appended as a flagged `<id>__v2` that supersedes it) and a validated `.md` is never
-  touched. `tools/merge_part.py` enforces this.
+- **Never clobber verified knowledge.** Merges are additive: a not-yet-`cross_checked`
+  claim may be overwritten, but a verified (`cross_checked`) claim is immutable (a
+  differing proposal is appended as a flagged `<id>__v2` that supersedes it) and a
+  validated `.md` is never touched. `tools/merge_part.py` enforces this.
 
 ## Procedure
 

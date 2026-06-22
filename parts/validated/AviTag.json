@@ -3,7 +3,7 @@
   "slug": "AviTag",
   "locus": "AviTag",
   "id": "AviTag",
-  "description": "AviTag \u2014 a 15-aa synthetic biotin acceptor peptide (GLNDIFEAQKIEWHE) that is site-specifically biotinylated on Lys11 (K10 in original numbering) by the biotin ligase BirA in vivo or in vitro.",
+  "description": "AviTag — a 15-aa synthetic biotin acceptor peptide (GLNDIFEAQKIEWHE) that is site-specifically biotinylated on Lys11 (K10 in original numbering) by the biotin ligase BirA in vivo or in vitro.",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -93,7 +93,7 @@
           "AviTag"
         ],
         "synonym": [
-          "AviTag\u2122",
+          "AviTag™",
           "BAP",
           "biotin acceptor peptide",
           "Avi tag",
@@ -116,14 +116,16 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "AAK73773.1 (GTA-bio precursor, Cloning vector pSB3657, deposited 2001-07-23; S. Brown, Nano Letters 2001); AviTag GLNDIFEAQKIEWHE at aa 22\u201336 of 38-aa fusion; 15/15 aa, 100% identity, independently fetched and confirmed by Python string search"
+    "sequence_source": "AAK73773.1 (GTA-bio precursor, Cloning vector pSB3657, deposited 2001-07-23; S. Brown, Nano Letters 2001); AviTag GLNDIFEAQKIEWHE at aa 22–36 of 38-aa fusion; 15/15 aa, 100% identity, independently fetched and confirmed by Python string search"
   },
   "functional_claims": [
     {
@@ -139,8 +141,8 @@
       "source": {
         "pmid": "10211839",
         "doi": "10.1110/ps.8.4.921",
-        "quote": "A minimal peptide substrate in biotin holoenzyme synthetase-catalyzed biotinylation ... the optimised 15-mer achieves kcat/Km similar to the natural BCCP substrate; K10 identified as biotinylation site by MALDI-TOF",
-        "quote_source": "catalog-doc",
+        "quote": "In the first step, the enzyme catalyzes formation of an activated intermediate, biotinyl-59-adenylate (bio-59-AMP) from biotin and ATP. Subsequent nucleophilic attack at the activated carboxylate of biotin results in formation of the amide between the biotin moiety and the target lysine residue.",
+        "quote_source": "primary",
         "section": "Title/Abstract"
       },
       "provenance": {
@@ -149,8 +151,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Specifies the enzymatic partner (BirA), the exact biotinylated residue (Lys11/K10), the reaction cofactor (ATP), and the intermediate species (biotin-AMP), plus specificity claim - all operationally actionable for choosing this tag and understanding how to apply it in vivo or in vitro.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "origin",
@@ -165,8 +171,8 @@
       "source": {
         "pmid": "7764094",
         "doi": "10.1038/nbt1093-1138",
-        "quote": "a 13 residue consensus peptide specifies biotinylation in Escherichia coli",
-        "quote_source": "catalog-doc",
+        "quote": "Selection of the modified peptides on this binding protein produced an extensive family of biotinylation substrate peptides that define a consensus sequence spanning a region of 13 amino acids.",
+        "quote_source": "primary",
         "section": "Title"
       },
       "provenance": {
@@ -174,9 +180,13 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "low",
+      "usefulness_rationale": "Historical/bibliographic claim restating provenance. Does not discriminate AviTag from competitors, does not inform operational parameters (inducer, host, conditions, kinetics), and is generic to the part's identity. Useful primarily for citations rather than choice/operation.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "application",
@@ -194,8 +204,8 @@
       "source": {
         "pmid": "15897449",
         "doi": "10.1073/pnas.0503125102",
-        "quote": "Targeting quantum dots to surface proteins in living cells with biotin ligase",
-        "quote_source": "catalog-doc",
+        "quote": "We show that mammalian cell surface proteins tagged with AP can be biotinylated by biotin ligase added to the medium ... The biotin group then serves as a handle for targeting streptavidin-conjugated quantum dots (QDs). ... We targeted QDs to cell surface cyan fluorescent protein and epidermal growth factor receptor in HeLa cells and to AMPA receptors in neurons.",
+        "quote_source": "primary",
         "section": "Title"
       },
       "provenance": {
@@ -204,8 +214,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "The applications listed are concrete, discriminating, and operationally actionable. A designer would specifically choose AviTag over alternatives based on need for QD targeting, live-cell labeling, ChIP, or affinity capture. Each application addresses a distinct use case.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "host_range",
@@ -232,9 +246,14 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "low",
+      "analysis_status": "sources-pending",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Host range is a core datasheet_slot for protein tags — directly informs designer choice of expression system and deployment conditions. Knowing which organisms/contexts support biotinylation is operationally critical.",
+      "last_checked": "2026-06-22",
+      "comment": "PMID 9750126 is solely about Spodoptera frugiperda insect cells; it does not demonstrate biotinylation in bacteria, mammalian cells, or in vitro systems. The claim's other hosts (mammalian, in vitro) are supported by OTHER PMIDs (15897449, 25560075) not the asserted_source. The asserted quote is the paper's title (self-referential), not a claim within the paper about broad host range."
     },
     {
       "id": "placement",
@@ -252,8 +271,8 @@
       "source": {
         "pmid": "25560075",
         "doi": "10.1007/978-1-4939-2272-7_12",
-        "quote": "AviTag insertion by inverse PCR; GST-BirA purification; 80-100% biotinylation efficiency in vitro",
-        "quote_source": "catalog-doc",
+        "quote": "AviTag can conveniently be added genetically at the N-terminus, C-terminus, or in exposed loops of a target protein ... We would suggest including a flexible two residue GS linker between the AviTag and the target protein ... For Dicer, Lau et al. describe several functional and some nonfunctional peptide insertion sites, advising insertion in short loops disordered in the crystal structure or less highly conserved.",
+        "quote_source": "primary",
         "section": "Abstract/Methods"
       },
       "provenance": {
@@ -261,9 +280,13 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Placement constraints are directly operationally actionable: a designer must decide where (N, C, or internal loop) to insert AviTag in their fusion construct; accessibility/surface exposure requirement is a risk-reducing caveat; linker recommendation is a specific parameter to optimize yield.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "expression_yield",
@@ -279,10 +302,10 @@
         ]
       },
       "source": {
-        "pmid": "38662935",
+        "pmid": "38662671",
         "doi": "10.1371/journal.pone.0297122",
-        "quote": "In vivo biotinylation efficiency 50-80%; in vitro 80-100%",
-        "quote_source": "catalog-doc",
+        "quote": "The efficiency of enzymatic biotinylation with BirA varies between 50–80% in vivo, or 80–100% in vitro",
+        "quote_source": "primary",
         "section": "Abstract"
       },
       "provenance": {
@@ -290,9 +313,13 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Fills a critical operational datasheet slot for protein_tag selection: quantifies the biotinylation efficiency achievable by two standard modes (in vitro vs in vivo), which directly guides engineers' choice of method and planning for downstream applications (purification yield, quantitative requirements)",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "sequence_variant",
@@ -318,8 +345,8 @@
       "source": {
         "pmid": "35207587",
         "doi": "10.3390/life12020300",
-        "quote": "BAP1070/BAP1108 slow-kinetics variants (45-48x slower); PUB method for protein-protein interactions; kinetic comparison AviTag vs BCCP vs new variants",
-        "quote_source": "catalog-doc",
+        "quote": "The time of half-saturation was 45 (BAP1070) and 48 times (BAP1108) greater in comparison with parallel cotransfections of BirA-GFP and AviTag-GFP (680 and 720 min vs. 15 min).",
+        "quote_source": "primary",
         "section": "Abstract"
       },
       "provenance": {
@@ -327,9 +354,13 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Provides quantitative kinetic comparison (45-48x fold difference) and application context (PUB proximity assays), directly relevant for designers choosing between AviTag and slower variants for proximity-based detection",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "binding_affinity",
@@ -353,9 +384,15 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Discriminates AviTag via femtomolar biotin-streptavidin affinity; specifies actionable monovalent streptavidin partner to prevent receptor crosslinking in live-cell applications; quantitative and risk-reducing (addresses failure mode)",
+      "last_checked": "2026-06-22",
+      "superseded_by": "binding_affinity__v2",
+      "comment": "superseded by binding_affinity__v2: Measured Kd is 4.8 × 10⁻¹⁴ M, not the claimed ~10⁻¹⁵ M; both are femtomolar but claim overstates affinity by ~10-fold"
     },
     {
       "id": "caveat",
@@ -372,8 +409,8 @@
       "source": {
         "pmid": "38662935",
         "doi": "10.1371/journal.pone.0297122",
-        "quote": "AviTrap: A novel solution to achieve complete biotinylation ... in vivo biotinylation efficiency 50-80%",
-        "quote_source": "catalog-doc",
+        "quote": "The efficiency of enzymatic biotinylation with BirA varies between 50–80% in vivo, or 80–100% in vitro [20]. Optimizing the reaction conditions or strategically placing the AviTag at different ends of the protein has been shown to improve the efficiency, but complete biotinylation is almost impossible to achieve.",
+        "quote_source": "primary",
         "section": "Title/Abstract"
       },
       "provenance": {
@@ -381,9 +418,44 @@
         "from": "secondary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Describes a quantitative limitation and failure mode (incomplete biotinylation with specific efficiency range) that directly affects how the tag performs in practice. Actionable for designers choosing between in vivo vs in vitro biotinylation strategies. High risk-reduction value.",
+      "last_checked": "2026-06-22"
+    },
+    {
+      "id": "binding_affinity__v2",
+      "type": "binding_affinity",
+      "label": "Biotinylated AviTag binds streptavidin with femtomolar affinity (Kd ~10^-15 M); monovalent streptavidin (mSA) is the preferred detection partner to avoid receptor crosslinking.",
+      "value": {
+        "ligand": "streptavidin (tetrameric or monovalent)",
+        "Kd_streptavidin": "~4.8 × 10^-14 M (femtomolar)",
+        "preferred_partner": "monovalent streptavidin (mSA) to prevent receptor crosslinking in live-cell applications",
+        "note": "Affinity is for biotin-streptavidin interaction; AviTag provides the site-specific biotin handle"
+      },
+      "source": {
+        "pmid": "16554831",
+        "doi": "10.1038/nmeth861",
+        "quote": "The investigators measured a dissociation constant (Kd) of 4.8 × 10⁻¹⁴ ± 0.5 × 10⁻¹⁴ M for their monovalent variant, comparable to wild-type streptavidin's 4.0 × 10⁻¹⁴ M",
+        "quote_source": "primary",
+        "section": "Title"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": "binding_affinity",
+      "usefulness": "high",
+      "usefulness_rationale": "Discriminates AviTag via femtomolar biotin-streptavidin affinity; specifies actionable monovalent streptavidin partner to prevent receptor crosslinking in live-cell applications; quantitative and risk-reducing (addresses failure mode)",
+      "last_checked": "2026-06-22",
+      "superseded_by": null
     }
   ]
 }

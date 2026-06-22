@@ -5,15 +5,16 @@
 > markers, regulators, and more. Each part is an annotated record with Sequence
 > Ontology typing, located sub-features, literature references, and
 > prose-derived functional claims. Every functional claim carries its source
-> (PMID + verbatim quote / figure), a confidence, and a review_status, so an
-> agent can weigh and cite it rather than assert it.
+> (PMID + verbatim quote / figure), a confidence, a usefulness score, and a
+> verification status (analysis_status), so an agent can weigh and cite it
+> rather than assert it.
 
-CAVEAT: this is an AI-generated knowledge base under active development. All
-264 records are currently review_status = "ai-generated" and have not
-been expert-reviewed. Treat claims as a grounded starting point and VERIFY
-against the cited primary literature before relying on them.
+CAVEAT: this is an AI-generated knowledge base under active development. Most of
+the 273 records' claims are analysis_status = "pending" (authored, not
+yet independently cross-checked). Prefer "verified" claims, and VERIFY against
+the cited primary literature before relying on any of them.
 
-Contents: 264 parts (66 validated, 198 candidate) carrying 235 functional claims.
+Contents: 273 parts (75 validated, 198 candidate) carrying 331 functional claims.
 
 ## For agents: where to start
 
@@ -42,7 +43,9 @@ Contents: 264 parts (66 validated, 198 candidate) carrying 235 functional claims
 Each claim has: a `type` (inducer / induction_dynamic_range /
 repression_dynamic_range / strength_class / host_range / mechanism / ...), a
 structured `value`, a `source` (pmid/doi + a verbatim quote and/or figure), a
-`confidence` (low | medium | high), and a `review_status`. Prefer higher
-confidence, and surface the source + review_status whenever you use a claim.
+`confidence` (low | medium | high), a `usefulness` (low | medium | high), and an
+`analysis_status` (pending | verified | sources-pending | flagged) with a
+`cross_checked` flag. Prefer verified, higher-confidence claims, and surface the
+source + status whenever you use a claim.
 
 Repository: https://github.com/dbikard/seqmake-parts

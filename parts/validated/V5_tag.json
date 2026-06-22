@@ -84,11 +84,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "epitope-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "UniProt:P11208 (PHOSP_PIV5, Parainfluenza virus 5 strain W3 phosphoprotein, Swiss-Prot reviewed), residues 95\u2013108 (GKPIPNPLLGLDST), 100% identity over 14 aa; independently re-fetched from rest.uniprot.org/uniprotkb/P11208.fasta and compared byte-for-byte \u2014 exact match confirmed"
@@ -116,7 +118,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -141,7 +144,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -166,7 +170,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -191,7 +196,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -216,7 +222,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -244,7 +251,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

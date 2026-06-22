@@ -184,7 +184,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "PCymRC promoter (90 bp), as annotated in GenBank MH101728 (cloning vector pAJM.657; Meyer, Segall-Shapiro, Voigt 2018), bases 73-162. The identical 90-bp sequence is also present in Addgene pAJM.712 (#108513, PCymRC-YFP), fetched via tools/addgene.py. The sequence and the -35/-10/operator/+1 coordinates are byte- and coordinate-exact to the MH101728 annotation.",
@@ -197,7 +196,10 @@
       "label": "Repression by CymR is relieved by the inducer p-cumate (p-isopropylbenzoate): CymR binds the CuO operators to repress, and p-cumate de-represses.",
       "value": {
         "inducer": "p-cumate",
-        "inducer_synonyms": ["cumate", "p-isopropylbenzoate"],
+        "inducer_synonyms": [
+          "cumate",
+          "p-isopropylbenzoate"
+        ],
         "repressor": "CymR",
         "mode": "de-repression"
       },
@@ -215,7 +217,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -224,7 +227,11 @@
       "label": "Characterized in Escherichia coli (the sensor was integrated into the E. coli MG1655, DH10B and BL21 genomes).",
       "value": {
         "host": "Escherichia coli",
-        "strains": ["MG1655", "DH10B", "BL21"]
+        "strains": [
+          "MG1655",
+          "DH10B",
+          "BL21"
+        ]
       },
       "source": {
         "pmid": "30478458",
@@ -237,7 +244,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -264,7 +272,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "low",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

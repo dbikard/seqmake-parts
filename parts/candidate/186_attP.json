@@ -330,7 +330,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "NC_001317.1 (Escherichia phage 186, complete genome), positions 20867-21173, 100% identity over 307 bp",
@@ -362,7 +361,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -389,7 +389,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -415,7 +416,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

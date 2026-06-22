@@ -92,11 +92,14 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "affinity-tags",
+          "epitope-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "PDB 8RMO chain F (entity 1, \"FLAG-tag\", synthetic polypeptide, Beugelink et al. J.Mol.Biol. 2024 doi:10.1016/j.jmb.2024.168649), 100% identity over 8 aa; canonical original reference: Hopp TP et al. Bio/Technology 6:1204-1210 (1988) doi:10.1038/nbt1088-1204"
@@ -125,7 +128,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -160,7 +164,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -186,7 +191,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -220,7 +226,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -250,7 +257,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

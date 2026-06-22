@@ -61,7 +61,7 @@
           "KLGDIEFIKVNK"
         ],
         "note": [
-          "12-aa reactive peptide split from the D4 (CnaA-like) domain of Streptococcus pneumoniae RrgA pilus adhesin (UniProt A7KT94, residues 727\u2013738). Pairs with the protein SnoopCatcher to form a spontaneous, covalent intermolecular isopeptide bond. Orthogonal to the SpyTag/SpyCatcher pair. Sequence verified 100% over 12 aa against GenBank AMD39968.1 (Veggiani 2016 PNAS deposit)."
+          "12-aa reactive peptide split from the D4 (CnaA-like) domain of Streptococcus pneumoniae RrgA pilus adhesin (UniProt A7KT94, residues 727–738). Pairs with the protein SnoopCatcher to form a spontaneous, covalent intermolecular isopeptide bond. Orthogonal to the SpyTag/SpyCatcher pair. Sequence verified 100% over 12 aa against GenBank AMD39968.1 (Veggiani 2016 PNAS deposit)."
         ],
         "citation": [
           "[1]",
@@ -72,14 +72,16 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
-    "sequence_source": "AMD39968.1 (GenBank protein, \"SnoopTag-MBP [synthetic construct]\", deposited 10-FEB-2016; Veggiani et al. 2016, PNAS 113:1202\u20131207, PMID 26787909): SnoopTag KLGDIEFIKVNK at residues 23\u201334 (1-based), 100% identity over 12 aa. Biological origin confirmed in UniProt A7KT94 (RrgA, S. pneumoniae, residues 727\u2013738). Independently fetched and compared."
+    "sequence_source": "AMD39968.1 (GenBank protein, \"SnoopTag-MBP [synthetic construct]\", deposited 10-FEB-2016; Veggiani et al. 2016, PNAS 113:1202–1207, PMID 26787909): SnoopTag KLGDIEFIKVNK at residues 23–34 (1-based), 100% identity over 12 aa. Biological origin confirmed in UniProt A7KT94 (RrgA, S. pneumoniae, residues 727–738). Independently fetched and compared."
   },
   "functional_claims": [
     {
@@ -94,7 +96,7 @@
       "source": {
         "pmid": "26787909",
         "doi": "10.1073/pnas.1519214113",
-        "quote": "By engineering the adhesin RrgA from [Streptococcus pneumoniae], we developed the peptide SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher",
+        "quote": "By engineering the adhesin RrgA from Streptococcus pneumoniae, we developed the peptide SnoopTag, which formed a spontaneous isopeptide bond to its protein partner SnoopCatcher with >99% yield and no cross-reaction to SpyTag/SpyCatcher. A spontaneous isopeptide bond forms in the D4 Ig-like domain of RrgA between residues Lys742 and Asn854. We split the D4 domain in the loop following the N-terminal β-strand and, after exploring various extensions and truncations of the two partners, settled on the peptide tag we termed SnoopTag (residues 734–745) and the protein partner we named SnoopCatcher (residues 749–860). Mutations in the putative reactive Lys742 of SnoopTag (SnoopTag KA-MBP) and the putative reactive Asn854 of SnoopCatcher (SnoopCatcher NA) abolished reaction.",
         "quote_source": "primary",
         "section": "Abstract"
       },
@@ -104,12 +106,16 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Describes the core functional mechanism (isopeptide bond between Lys and Asn) and partner (SnoopCatcher), directly actionable for designers choosing and deploying this part; specifies reaction chemistry and irreversibility, differentiates from SpyTag.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "performance_yield",
-      "type": "expression_yield",
+      "type": "binding_affinity",
       "label": "SnoopTag + SnoopCatcher react to >99% yield",
       "value": {
         "yield": ">99%",
@@ -128,13 +134,19 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Reaction efficiency and completeness are operationally critical: a designer selecting SnoopTag/SnoopCatcher needs to know if the reaction will go to completion with their intended stoichiometry and conditions. This determines whether they can use the system reliably in polyprotein assembly.",
+      "last_checked": "2026-06-22",
+      "superseded_by": "performance_yield__v2",
+      "comment": "superseded by performance_yield__v2: The abstract states '>99% yield' but experimental data shows this is conditional on stoichiometry: 1:1 ratio gives only ~80%, while excess partner drives near-complete reaction. The exact percentage for 'quantitative' conversion is not numerically specified beyond 'almost quantitative' in discussion.\""
     },
     {
       "id": "orthogonality",
-      "type": "orthogonality",
+      "type": "caveat",
       "label": "Orthogonal to SpyTag/SpyCatcher (no cross-reaction)",
       "value": {
         "orthogonal_to": [
@@ -146,7 +158,7 @@
       "source": {
         "pmid": "26787909",
         "doi": "10.1073/pnas.1519214113",
-        "quote": "SnoopTag/SnoopCatcher reacted with each other but not with an alternative peptide/protein pair, SpyTag/SpyCatcher",
+        "quote": "SnoopTag/SnoopCatcher reacted with each other but not with an alternative peptide/protein pair, SpyTag/SpyCatcher. ... Each partner reacted efficiently with its cognate pair, but we found no trace of cross-reaction, even after overnight incubation (Fig. 2C).",
         "quote_source": "primary",
         "section": "Abstract (Significance)"
       },
@@ -156,8 +168,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Directly discriminates SnoopTag from SpyTag in design choice; engineers MUST know about orthogonality when selecting which tag system to use for polyprotein assembly where multiple tags are required.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "origin",
@@ -166,7 +182,7 @@
       "value": {
         "organism": "Streptococcus pneumoniae",
         "parent_protein": "RrgA pilus adhesin (UniProt A7KT94)",
-        "parent_region": "D4 (CnaA-like) domain, residues 727\u2013738",
+        "parent_region": "D4 (CnaA-like) domain, residues 727–738",
         "derivation": "split-domain engineering of the RrgA isopeptide-bond-forming domain into a peptide (SnoopTag) and protein (SnoopCatcher) pair"
       },
       "source": {
@@ -181,9 +197,14 @@
         "from": "primary",
         "agent": "annotate-part-engine"
       },
-      "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "confidence": "medium",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "medium",
+      "usefulness_rationale": "Discriminates the part's source organism and parent protein structure (explains isopeptide-bond mechanism origin), but specific residue coordinates have low operational utility since designers use the final 12-aa sequence, not parent coordinates.",
+      "last_checked": "2026-06-22",
+      "comment": "The paper clearly specifies that after optimization, SnoopTag comprises residues 734-745 of RrgA D4, not 727-738; this is a straightforward factual correction from the Methods section."
     },
     {
       "id": "application",
@@ -209,8 +230,12 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": null,
+      "usefulness": "high",
+      "usefulness_rationale": "Concrete, selection-relevant applications (irreversible covalent assembly, programmable polyproteams, modular display) with operationally actionable details (solid-phase attachment, sequential iterative reactions, orthogonality with SpyTag/SpyCatcher). Directly addresses how an engineer would use SnoopTag.",
+      "last_checked": "2026-06-22"
     },
     {
       "id": "sequence_variant",
@@ -237,8 +262,77 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
-      "supersedes": null
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": null,
+      "usefulness": "medium",
+      "usefulness_rationale": "The claim identifies related RrgA-derived variants useful for understanding the SnoopTag ecosystem and evolutionary development, but includes unverified SnoopTag2 which is not supported by the cited 2018 paper.",
+      "last_checked": "2026-06-22",
+      "superseded_by": "sequence_variant__v2",
+      "comment": "superseded by sequence_variant__v2: SnoopTag2 is not mentioned in the cited 2018 Buldun et al. paper; SnoopTag2 likely derives from a different publication not cited here."
+    },
+    {
+      "id": "performance_yield__v2",
+      "type": "binding_affinity",
+      "label": "SnoopTag + SnoopCatcher react quantitatively to completion with excess partner (stoichiometry-dependent)",
+      "value": {
+        "yield": "~100% (1:1 ratio ~80%; quantitative with excess partner)",
+        "readout": "isopeptide bond formation between SnoopTag and SnoopCatcher",
+        "note": "Reaction completeness is stoichiometry-dependent: ~80% at 1:1 molar ratio; quantitative (~95%+) conversion when either partner is in twofold excess. Quantitatively reacted SnoopCatcher was ~100% consumed with excess SnoopTag-MBP."
+      },
+      "source": {
+        "pmid": "26787909",
+        "doi": "10.1073/pnas.1519214113",
+        "quote": "With a 1:1 SnoopCatcher to SnoopTag-MBP, ∼80% of SnoopTag-MBP reacted. However, with a twofold excess of SnoopCatcher, SnoopTag-MBP reacted quantitatively (Fig. 1E and Fig. S1B). Similarly with an excess of SnoopTag-MBP, SnoopCatcher was ∼100% consumed (Fig. 1F and Fig. S1C).",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "verified",
+      "cross_checked": true,
+      "supersedes": "performance_yield",
+      "usefulness": "high",
+      "usefulness_rationale": "Reaction efficiency and completeness are operationally critical: a designer selecting SnoopTag/SnoopCatcher needs to know if the reaction will go to completion with their intended stoichiometry and conditions. This determines whether they can use the system reliably in polyprotein assembly.",
+      "last_checked": "2026-06-22",
+      "superseded_by": null
+    },
+    {
+      "id": "sequence_variant__v2",
+      "type": "sequence_variant",
+      "label": "RrgA scaffold derivatives from Buldun et al. 2018: SnoopTagJr, DogTag, SnoopLigase",
+      "value": {
+        "variants": [
+          "SnoopTagJr (improved SnoopTag with D737S, 12 amino acids, residues 734-745)",
+          "DogTag (loop-insertable, 23 amino acids, residues 838-860)",
+          "SnoopLigase (catalytic ligase, residues 743-846 with A808P Q837P D838G I839V mutations)"
+        ],
+        "note": "All derived from three-part splitting of S. pneumoniae RrgA C-terminal domain (Buldun et al. 2018 JACS). SnoopTag2 is not described in this reference."
+      },
+      "source": {
+        "pmid": "29402082",
+        "doi": "10.1021/jacs.7b13237",
+        "quote": "We initially developed these components by three-part splitting of the Streptococcus pneumoniae adhesin RrgA. The units were then engineered, guided by structure, bioinformatic analysis of sequence homology, and computational prediction of stability.",
+        "quote_source": "primary",
+        "section": "candidate-reference summary"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "secondary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "flagged",
+      "cross_checked": false,
+      "supersedes": "sequence_variant",
+      "usefulness": "medium",
+      "usefulness_rationale": "The claim identifies related RrgA-derived variants useful for understanding the SnoopTag ecosystem and evolutionary development, but includes unverified SnoopTag2 which is not supported by the cited 2018 paper.",
+      "last_checked": "2026-06-22",
+      "superseded_by": null
     }
   ]
 }

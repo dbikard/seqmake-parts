@@ -59,7 +59,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "NC_003888.3 (Streptomyces coelicolor A3(2) chromosome), natural phiC31 attB, positions ~4178705..4178738 (+ strand), 100% identity over 34 bp",
     "asserting_agent": "attB-research-agent + local genome verification"

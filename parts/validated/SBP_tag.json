@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "slug": "SBP_tag",
+  "locus": "SBP_tag",
+  "id": "SBP_tag",
+  "description": "Streptavidin-binding peptide (SBP-Tag) \u2014 a 38-aa synthetic peptide selected by mRNA display that binds streptavidin with nanomolar affinity (Kd ~2.5 nM) for mild, single-step affinity purification and detection, eluted competitively with biotin.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "MDEKTTGWRGGHVVEGLAGELEQLRARLEHHPQGQREP",
+  "references": [
+    {
+      "authors": "Wilson DS, Keefe AD, Szostak JW",
+      "title": "The use of mRNA display to select high-affinity protein-binding peptides",
+      "journal": "Proc Natl Acad Sci USA (2001)",
+      "pubmed_id": "11274392",
+      "comment": "doi:10.1073/pnas.061028198"
+    },
+    {
+      "authors": "Keefe AD, Wilson DS, Seelig B, Szostak JW",
+      "title": "One-step purification of recombinant proteins using a nanomolar-affinity streptavidin-binding peptide, the SBP-Tag",
+      "journal": "Protein Expr Purif (2001)",
+      "pubmed_id": "11722181",
+      "comment": "doi:10.1006/prep.2001.1515"
+    },
+    {
+      "authors": "Barrette-Ng IH, Wu SC, Tjia WM, Wong SL, Ng KKS",
+      "title": "The structure of the SBP-Tag-streptavidin complex reveals a novel helical scaffold bridging binding pockets on separate subunits",
+      "journal": "Acta Crystallogr D Biol Crystallogr (2013)",
+      "pubmed_id": "23633599",
+      "comment": "doi:10.1107/S0907444913002576"
+    },
+    {
+      "authors": "Kim JH, Chang TM, Graham AN, Choo KHA, Kalitsis P, Hudson DF",
+      "title": "Streptavidin-Binding Peptide (SBP)-tagged SMC2 allows single-step affinity fluorescence, blotting or purification of the condensin complex",
+      "journal": "BMC Biochemistry (2010)",
+      "pubmed_id": "21194474",
+      "comment": "doi:10.1186/1471-2091-11-50"
+    },
+    {
+      "authors": "Burckstummer T, Bennett KL, Preradovic A, et al.",
+      "title": "An efficient tandem affinity purification procedure for interaction proteomics in mammalian cells",
+      "journal": "Nat Methods (2006)",
+      "pubmed_id": "17060908",
+      "comment": "doi:10.1038/nmeth968"
+    },
+    {
+      "authors": "Yang L, Veraksa A",
+      "title": "Single-Step Affinity Purification of ERK Signaling Complexes Using the Streptavidin-Binding Peptide (SBP) Tag",
+      "journal": "Methods Mol Biol (2017)",
+      "pubmed_id": "27924562",
+      "comment": "doi:10.1007/978-1-4939-6424-6_8"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 38,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SBP_tag"
+        ],
+        "synonym": [
+          "streptavidin-binding peptide",
+          "SBP",
+          "SBP-Tag",
+          "streptavidin binding peptide"
+        ],
+        "note": [
+          "Streptavidin-binding peptide (SBP-Tag), 38 aa (MDEKTTGWRGGHVVEGLAGELEQLRARLEHHPQGQREP). Synthetic peptide isolated by mRNA display that binds streptavidin with Kd ~2.5 nM; used for one-step affinity purification with mild competitive elution by biotin. Verified to 100% identity over all 38 residues against PDB 4JO6 chain Z. The peptide binds bivalently, contacting the biotin-binding pockets of two separate streptavidin subunits via an N-terminal HVV motif (residues 12-14) and a C-terminal HPQ motif (residues 31-33) bridged by a central alpha-helix (residues 17-28)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "affinity-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "4JO6_Z (PDB/NCBI protein, Chain Z \"SBP-Tag\", deposited 2013-03-17), 100% identity over 38 aa (full length); cross-checked against AAK55118.1 (pTAG2K fusion, Keefe et al. 2001, PMID 11722181) which embeds the same 38-aa SBP sequence at residues 373-410"
+  },
+  "functional_claims": [
+    {
+      "id": "binding_affinity",
+      "type": "binding_affinity",
+      "label": "The SBP-Tag binds streptavidin with an equilibrium dissociation constant of about 2.5 nM.",
+      "value": {
+        "Kd": "2.5 nM",
+        "target": "streptavidin"
+      },
+      "source": {
+        "pmid": "11722181",
+        "doi": "10.1006/prep.2001.1515",
+        "quote": "The tag binds to streptavidin with an equilibrium dissociation constant of 2.5 nM.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "affinity_matrix",
+      "type": "affinity_matrix",
+      "label": "SBP-tagged proteins are purified in a single step on immobilised streptavidin and eluted under very mild, specific conditions with biotin in the wash buffer; the matrix capacity is about 0.5 mg of tagged protein per mL.",
+      "value": {
+        "matrix": "immobilised streptavidin",
+        "elution": "biotin (in wash buffer)",
+        "conditions": "mild / physiological",
+        "capacity": "~0.5 mg per mL of matrix"
+      },
+      "source": {
+        "pmid": "11722181",
+        "doi": "10.1006/prep.2001.1515",
+        "quote": "The elution conditions from the streptavidin column are very mild and specific, consisting of the wash buffer plus biotin... The capacity of the immobilized streptavidin used to purify SBP-tagged proteins is about 0.5 mg per milliliter of matrix.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "A single-step purification of SBP-tagged proteins from bacterial extract yields preparations of higher purity than maltose-binding-protein (MBP) or His-tag purification, suiting it to high-throughput protein purification.",
+      "value": {
+        "application": "one-step affinity purification",
+        "comparison": "purer than MBP- or His-tag single-step purification",
+        "context": "high-throughput / automatable"
+      },
+      "source": {
+        "pmid": "11722181",
+        "doi": "10.1006/prep.2001.1515",
+        "quote": "A single-step purification of SBP-tagged proteins from bacterial extract yields samples that are more pure than those purified using maltose-binding protein or the His-tag.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "The 38-aa peptide binds streptavidin bivalently, simultaneously occupying biotin-binding pockets on two separate streptavidin subunits; an N-terminal HVV motif (residues 12-14) and a C-terminal HPQ motif (residues 31-33) each engage a pocket, bridged by a central alpha-helix (residues 17-28) that projects three leucine side chains into a groove between protomers.",
+      "value": {
+        "mechanism": "bivalent binding to two streptavidin subunits",
+        "n_terminal_motif": "HVV (residues 12-14)",
+        "c_terminal_motif": "HPQ (residues 31-33)",
+        "scaffold": "central alpha-helix (residues 17-28), three leucine contacts",
+        "structure": "PDB 4JO6 (SBP-Tag:streptavidin complex, 1.75 A)"
+      },
+      "source": {
+        "pmid": "23633599",
+        "doi": "10.1107/S0907444913002576",
+        "quote": "The structure of the SBP-Tag-streptavidin complex reveals a novel helical scaffold bridging binding pockets on separate subunits... simultaneously interacting with biotin-binding pockets from two separate subunits... N-terminal HVV sequence at residues 12-14... C-terminal HPQ sequence at residues 31-33... residues 17-28 adopt an alpha-helical structure projecting three leucine side chains.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "A minimal variant, SBP-Tag2 (residues 11-34 of the full SBP-Tag, 24-25 aa), retains streptavidin binding comparable to the full-length tag; terminal residues 1-10 and 35-38 do not contact streptavidin and are dispensable.",
+      "value": {
+        "this_variant": "SBP-Tag (38 aa, full length)",
+        "minimal_variant": "SBP-Tag2 (residues 11-34)",
+        "dispensable_residues": "1-10 and 35-38",
+        "binding": "SBP-Tag2 binding affinity comparable to full-length"
+      },
+      "source": {
+        "pmid": "23633599",
+        "doi": "10.1107/S0907444913002576",
+        "quote": "Residues 1-10 and 35-38 of the original SBP-Tag... do not appear to contact streptavidin... SBP-Tag2 minimal variant residue range 11-34... binding affinity comparable to full-length SBP-Tag.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "The SBP-Tag derives from a streptavidin-binding peptide selected from a large random peptide library by mRNA display (lead clone SB19, Kd ~10 nM; deletion-refined high-affinity derivative SB19-C4, Kd ~2.4 nM); the 38-aa tag was defined from this lineage.",
+      "value": {
+        "method": "mRNA display selection from a random peptide library",
+        "lead": "SB19 (Kd ~10 nM)",
+        "refined": "SB19-C4 (Kd ~2.4 nM)",
+        "final_tag": "38-aa SBP-Tag"
+      },
+      "source": {
+        "pmid": "11274392",
+        "doi": "10.1073/pnas.061028198",
+        "quote": "high-affinity aptamers can be obtained even from random nonconstrained peptide libraries... SB19... KD = 10 +/- 1.8 nM... SB19-C4-FLAG... a KD of 2.4 nM.",
+        "quote_source": "primary",
+        "section": "Abstract / Figures 3C, 4"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "The small (4 kDa) peptide functions as an N-terminal, C-terminal, or internal fusion across bacterial and mammalian systems, supporting single-step purification, streptavidin-conjugate fluorescence imaging and immunoblot detection of recombinant proteins and endogenous protein complexes.",
+      "value": {
+        "host_range": "broad (bacterial to mammalian)",
+        "position": [
+          "N-terminal",
+          "C-terminal",
+          "internal"
+        ],
+        "size": "~4 kDa (38 aa)",
+        "uses": [
+          "affinity purification",
+          "streptavidin-conjugate fluorescence",
+          "immunoblot detection",
+          "tandem affinity purification component"
+        ]
+      },
+      "source": {
+        "pmid": "21194474",
+        "doi": "10.1186/1471-2091-11-50",
+        "quote": "Streptavidin-Binding Peptide (SBP)-tagged SMC2 allows single-step affinity fluorescence, blotting or purification of the condensin complex",
+        "quote_source": "primary",
+        "section": "Title / Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

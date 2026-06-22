@@ -285,7 +285,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "J01695 (E. coli rrnB operon, Brosius et al.), rrnB T1+T2 terminator cluster, positions 6362–6578 (1-based), 100% over 217 bp",
     "asserting_agent": "annotate-part-workflow"
@@ -316,7 +315,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -343,7 +343,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -369,7 +370,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -394,7 +396,8 @@
         "agent": "annotate-part-workflow"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

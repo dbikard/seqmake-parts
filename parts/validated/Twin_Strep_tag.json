@@ -74,11 +74,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "affinity-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "PDB 6SOS chain R (Schmidt, Eichinger, Schneider, Bonet, Carl, Karthaus, Theobald, Skerra; J.Mol.Biol. 2021, PMID 33639211, DOI 10.1016/j.jmb.2021.166893), \"Twin-Strep-tag peptide\", synthetic construct (taxon:32630), sequence SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK, 100% identity over 30 aa; independently fetched via RCSB FASTA API (https://www.rcsb.org/fasta/entry/6SOS/display) and compared byte-for-byte to the canonical IBA Twin-Strep-tag sequence."
@@ -108,7 +110,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -136,7 +139,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -161,7 +165,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -188,7 +193,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

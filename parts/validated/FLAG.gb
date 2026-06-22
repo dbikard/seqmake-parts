@@ -81,6 +81,8 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
                      /citation=[7]
                      /db_xref="SO:0000417"
+                     /collection="affinity-tags"
+                     /collection="epitope-tags"
 ORIGIN
         1 dykddddk
 //

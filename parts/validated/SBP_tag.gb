@@ -1,0 +1,84 @@
+LOCUS       SBP_tag                   38 aa            linear   UNK 01-JAN-1980
+DEFINITION  Streptavidin-binding peptide (SBP-Tag) — a 38-aa synthetic peptide
+            selected by mRNA display that binds streptavidin with nanomolar
+            affinity (Kd ~2.5 nM) for mild, single-step affinity purification
+            and detection, eluted competitively with biotin..
+ACCESSION   SBP_tag
+VERSION     SBP_tag
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Wilson DS, Keefe AD, Szostak JW
+  TITLE     The use of mRNA display to select high-affinity protein-binding
+            peptides
+  JOURNAL   Proc Natl Acad Sci USA (2001)
+   PUBMED   11274392
+  REMARK    doi:10.1073/pnas.061028198
+REFERENCE   2
+  AUTHORS   Keefe AD, Wilson DS, Seelig B, Szostak JW
+  TITLE     One-step purification of recombinant proteins using a
+            nanomolar-affinity streptavidin-binding peptide, the SBP-Tag
+  JOURNAL   Protein Expr Purif (2001)
+   PUBMED   11722181
+  REMARK    doi:10.1006/prep.2001.1515
+REFERENCE   3
+  AUTHORS   Barrette-Ng IH, Wu SC, Tjia WM, Wong SL, Ng KKS
+  TITLE     The structure of the SBP-Tag-streptavidin complex reveals a novel
+            helical scaffold bridging binding pockets on separate subunits
+  JOURNAL   Acta Crystallogr D Biol Crystallogr (2013)
+   PUBMED   23633599
+  REMARK    doi:10.1107/S0907444913002576
+REFERENCE   4
+  AUTHORS   Kim JH, Chang TM, Graham AN, Choo KHA, Kalitsis P, Hudson DF
+  TITLE     Streptavidin-Binding Peptide (SBP)-tagged SMC2 allows single-step
+            affinity fluorescence, blotting or purification of the condensin
+            complex
+  JOURNAL   BMC Biochemistry (2010)
+   PUBMED   21194474
+  REMARK    doi:10.1186/1471-2091-11-50
+REFERENCE   5
+  AUTHORS   Burckstummer T, Bennett KL, Preradovic A, et al.
+  TITLE     An efficient tandem affinity purification procedure for interaction
+            proteomics in mammalian cells
+  JOURNAL   Nat Methods (2006)
+   PUBMED   17060908
+  REMARK    doi:10.1038/nmeth968
+REFERENCE   6
+  AUTHORS   Yang L, Veraksa A
+  TITLE     Single-Step Affinity Purification of ERK Signaling Complexes Using
+            the Streptavidin-Binding Peptide (SBP) Tag
+  JOURNAL   Methods Mol Biol (2017)
+   PUBMED   27924562
+  REMARK    doi:10.1007/978-1-4939-6424-6_8
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SBP_tag
+FEATURES             Location/Qualifiers
+     protein_domain  1..38
+                     /label="SBP_tag"
+                     /synonym="streptavidin-binding peptide"
+                     /synonym="SBP"
+                     /synonym="SBP-Tag"
+                     /synonym="streptavidin binding peptide"
+                     /note="Streptavidin-binding peptide (SBP-Tag), 38 aa
+                     (MDEKTTGWRGGHVVEGLAGELEQLRARLEHHPQGQREP). Synthetic peptide
+                     isolated by mRNA display that binds streptavidin with Kd
+                     ~2.5 nM; used for one-step affinity purification with mild
+                     competitive elution by biotin. Verified to 100% identity
+                     over all 38 residues against PDB 4JO6 chain Z. The peptide
+                     binds bivalently, contacting the biotin-binding pockets of
+                     two separate streptavidin subunits via an N-terminal HVV
+                     motif (residues 12-14) and a C-terminal HPQ motif (residues
+                     31-33) bridged by a central alpha-helix (residues 17-28)."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /db_xref="SO:0000417"
+                     /collection="affinity-tags"
+ORIGIN
+        1 mdekttgwrg ghvveglage leqlrarleh hpqgqrep
+//

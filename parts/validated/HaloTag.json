@@ -3,7 +3,7 @@
   "slug": "HaloTag",
   "locus": "HaloTag",
   "id": "HaloTag",
-  "description": "HaloTag7 self-labeling protein tag (297 aa) \u2014 an engineered monomeric haloalkane dehalogenase (from Rhodococcus DhaA) that forms an irreversible covalent ester bond with synthetic chloroalkane ligands.",
+  "description": "HaloTag7 self-labeling protein tag (297 aa) — an engineered monomeric haloalkane dehalogenase (from Rhodococcus DhaA) that forms an irreversible covalent ester bond with synthetic chloroalkane ligands.",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -107,7 +107,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "sequence_source": "ADN27525.1 (HaloTag protein, Promega Corporation submission 28-APR-2010, 297 aa, 100% identity full-length, encoded by HM157289.1:191..1084)"
@@ -138,7 +137,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -164,7 +164,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -193,7 +194,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -218,7 +220,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -246,7 +249,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -271,7 +275,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

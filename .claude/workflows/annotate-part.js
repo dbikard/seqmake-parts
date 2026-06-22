@@ -339,7 +339,7 @@ const FINAL_SCHEMA = {
     },
     functional_claims: {
       type: 'array',
-      description: 'nanopub-shaped claims (regulation / inducer / strength / host_range / sequence_variant / ...). Each cites its evidence; review_status is ai-generated; confidence is honest.',
+      description: 'nanopub-shaped claims (regulation / inducer / strength / host_range / sequence_variant / ...). Each cites its evidence; confidence is honest. The verification lifecycle (analysis_status / cross_checked) is stamped deterministically after synthesis — authored claims are "pending" (awaiting the independent cross-check pass), or "sources-pending" when their primary source was inaccessible — so DO NOT emit those fields here.',
       items: {
         type: 'object',
         properties: {
@@ -825,6 +825,24 @@ async function annotateOne(part) {
     proposal.warnings = [...(proposal.warnings || []), `sequence NOT source-verified (${src.blocked ? 'access-blocked -> sourcing/REQUESTS.md' : 'no 100% deposit found'}); do not promote until resolved`]
     proposal.ready_to_apply = false
   }
+
+  // ---- Stamp the claim verification lifecycle deterministically (CLAIM-MODEL.md) ----
+  // A freshly authored claim is 'pending' (awaits the independent cross-check pass); one
+  // whose primary source was inaccessible (it is in requested_papers) is 'sources-pending'
+  // so the same /open-requests -> /incoming loop unblocks it. cross_checked is NEVER set by
+  // the authoring pass — only the blind cross-check pass earns 'verified'.
+  const blockedClaimIds = new Set()
+  for (const rp of proposal.requested_papers || []) {
+    for (const tok of String(rp.unblocks || '').split(/[\s,;]+/)) {
+      const id = tok.includes(':') ? tok.split(':').pop() : tok
+      if (id) blockedClaimIds.add(id)
+    }
+  }
+  for (const c of proposal.functional_claims || []) {
+    c.cross_checked = false
+    c.analysis_status = blockedClaimIds.has(c.id) ? 'sources-pending' : 'pending'
+  }
+
   log(`[${part.name}] proposal: ${(proposal.features || []).length} feature(s), ${(proposal.functional_claims || []).length} claim(s), ${(proposal.references || []).length} ref(s), confidence=${proposal.confidence}, ready=${proposal.ready_to_apply}`)
 
   // ---- Verify recs ----
@@ -896,7 +914,7 @@ if (!single && proposals.length) {
 }
 
 // PROPOSAL-ONLY: the /add-part command merges each proposal via tools/merge_part.py
-// (which protects ai-cross-checked/expert-reviewed claims and the curated .md) and
+// (which protects verified (cross_checked) claims and the curated .md) and
 // runs the gates. This engine never writes a part file.
 return single
   ? (proposals[0] || { error: `Failed to annotate "${parts[0].name}".` })

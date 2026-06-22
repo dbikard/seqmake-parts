@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "slug": "SNAP_tag",
+  "locus": "SNAP_tag",
+  "id": "SNAP_tag",
+  "description": "SNAP-tag \u2014 ~179-aa self-labeling protein tag engineered by directed evolution from human O6-alkylguanine-DNA alkyltransferase (hAGT/MGMT); covalently and irreversibly transfers the benzyl group of O6-benzylguanine (BG) substrates to its active-site cysteine, labeling the fusion protein with the appended probe.",
+  "molecule_type": "protein",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "MDKDCEMKRTTLDSPLGKLELSGCEQGLHEIIFLGKGTSAADAVEVPAPAAVLGGPEPLMQATAWLNAYFHQPEAIEEFPVPALHHPVFQQESFTRQVLWKLLKVVKFGEVISYSHLAALAGNPAATAAVKTALSGNPVPILIPCHRVVQGDLDVGGYEGGLAVKEWLLAHEGHRLGKR",
+  "references": [
+    {
+      "authors": "Keppler A, Gendreizig S, Gronemeyer T, Pick H, Vogel H, Johnsson K",
+      "title": "A general method for the covalent labeling of fusion proteins with small molecules in vivo.",
+      "journal": "Nature Biotechnology (2003)",
+      "pubmed_id": "12469133",
+      "comment": "doi:10.1038/nbt765"
+    },
+    {
+      "authors": "Juillerat A, Gronemeyer T, Keppler A, Gendreizig S, Pick H, Vogel H, Johnsson K",
+      "title": "Directed evolution of O6-alkylguanine-DNA alkyltransferase for efficient labeling of fusion proteins with small molecules in vivo.",
+      "journal": "Chemistry & Biology (2003)",
+      "pubmed_id": "12725859",
+      "comment": "doi:10.1016/S1074-5521(03)00068-1"
+    },
+    {
+      "authors": "Keppler A, Kindermann M, Gendreizig S, Pick H, Vogel H, Johnsson K",
+      "title": "Labeling of fusion proteins of O6-alkylguanine-DNA alkyltransferase with small molecules in vivo and in vitro.",
+      "journal": "Methods (2004)",
+      "pubmed_id": "15003606",
+      "comment": "doi:10.1016/j.ymeth.2003.10.007"
+    },
+    {
+      "authors": "Keppler A, Pick H, Arrivoli C, Vogel H, Johnsson K",
+      "title": "Labeling of fusion proteins with synthetic fluorophores in live cells.",
+      "journal": "PNAS (2004)",
+      "pubmed_id": "15226507",
+      "comment": "doi:10.1073/pnas.0401923101"
+    },
+    {
+      "authors": "Gautier A, Juillerat A, Heinis C, Corr\u00eaa IR Jr, Kindermann M, Beaufils F, Johnsson K",
+      "title": "An engineered protein tag for multiprotein labeling in living cells.",
+      "journal": "Chemistry & Biology (2008)",
+      "pubmed_id": "18291317",
+      "comment": "doi:10.1016/j.chembiol.2008.01.007"
+    },
+    {
+      "authors": "Edara S, Kanugula S, Pegg AE",
+      "title": "Expression of the inactive C145A mutant human O6-alkylguanine-DNA alkyltransferase in E.coli increases cell killing and mutations by N-methyl-N'-nitro-N-nitrosoguanidine.",
+      "journal": "Carcinogenesis (1999)",
+      "pubmed_id": "9934856",
+      "comment": "doi:10.1093/carcin/20.1.103"
+    },
+    {
+      "authors": "Erdmann RS, Baguley SW, Richens JH, et al.",
+      "title": "Labeling Strategies Matter for Super-Resolution Microscopy: A Comparison between HaloTags and SNAP-tags.",
+      "journal": "Cell Chemical Biology (2019)",
+      "pubmed_id": "30745239",
+      "comment": "doi:10.1016/j.chembiol.2019.01.003"
+    },
+    {
+      "authors": "K\u00fchn S, Nasufovic V, Wilhelm J, Kompa J, de Lange EMF, Lin YH, Egoldt C, Fischer J, Lennoi A, Tarnawski M, Reinstein J, Vlijm R, Hiblot J, Johnsson K",
+      "title": "SNAP-tag2 for faster and brighter protein labeling.",
+      "journal": "Nature Chemical Biology (2025)",
+      "pubmed_id": "40610720",
+      "comment": "doi:10.1038/s41589-025-01942-z"
+    }
+  ],
+  "features": [
+    {
+      "type": "protein_domain",
+      "start": 0,
+      "end": 179,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "SNAP_tag"
+        ],
+        "synonym": [
+          "SNAP",
+          "hAGT-derived self-labeling tag",
+          "SNAP tag",
+          "benzylguanine self-labeling tag"
+        ],
+        "note": [
+          "SNAP-tag self-labeling protein domain (179 aa), engineered by directed evolution from human O6-alkylguanine-DNA alkyltransferase (hAGT/MGMT, P16455). Covalently and irreversibly transfers the benzyl group of O6-benzylguanine (BG) substrates to its active-site cysteine (the I-P-C-H-R active-site motif; reactive Cys at residue 144 in this stored numbering, equivalent to canonical hAGT Cys145), thereby self-labeling the fusion protein with whatever chemical probe is appended to the BG. The 178-aa core (residues 2-179) is a 100% exact match to UniProt E5BBQ0 (182 aa, derived from PDB 3KZY) and PDB 3KZY chain A. The functional M-start ORF (179 aa) is used here; the deposited crystallography construct (E5BBQ0/3KZY, 182 aa) instead carries a GPGS cloning prefix in place of the initiator Met. Closest canonical reference: UniProt E5BBQ0 (unreviewed TrEMBL)."
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ],
+        "db_xref": [
+          "SO:0000417"
+        ],
+        "collection": [
+          "conjugation-tags"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "created_by": "add-part",
+    "sequence_source": "Functional M-start SNAP-tag ORF (179 aa). The 178-aa engineered hAGT body (residues 2-179) is a 100% match to UniProt E5BBQ0 / PDB 3KZY chain A (the deposited SNAP-tag, residues 5-182); the deposited crystallography construct instead carries an N-terminal GPGS cloning prefix in place of the initiator Met. Residue 1 (Met) is the natural human O6-alkylguanine-DNA alkyltransferase initiator (UniProt P16455 Met1). Independently fetched (RCSB 3KZY, UniProt) and byte-compared. Engineered by directed evolution from hAGT (Keppler 2003, PMID 12469133)."
+  },
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "SNAP-tag covalently and irreversibly transfers the benzyl group of O6-benzylguanine substrates to its active-site cysteine, self-labeling the fusion protein with the appended probe",
+      "value": {
+        "reaction": "self-alkylation",
+        "substrate_class": "O6-benzylguanine (BG) derivatives",
+        "acceptor": "active-site cysteine (catalytic nucleophile)",
+        "bond": "covalent, irreversible",
+        "leaving_group": "guanine",
+        "origin_enzyme": "human O6-alkylguanine-DNA alkyltransferase (hAGT/AGT/MGMT)"
+      },
+      "source": {
+        "pmid": "12725859",
+        "doi": "10.1016/S1074-5521(03)00068-1",
+        "quote": "mutants capable of efficiently reacting with the inhibitor O(6)-benzylguanine were selected based on their ability to irreversibly transfer the benzyl group to a reactive cysteine residue",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "origin",
+      "type": "origin",
+      "label": "SNAP-tag was generated by directed evolution (phage-display selection) of human O6-alkylguanine-DNA alkyltransferase (hAGT) for efficient reaction with O6-benzylguanine",
+      "value": {
+        "parent_protein": "human O6-alkylguanine-DNA alkyltransferase (hAGT / AGT / MGMT)",
+        "engineering": "directed evolution / phage-display selection of hAGT mutant libraries",
+        "selected_for": "efficient covalent reaction with O6-benzylguanine substrates",
+        "canonical_reference_record": "UniProt E5BBQ0 (derived from PDB 3KZY)"
+      },
+      "source": {
+        "pmid": "12725859",
+        "doi": "10.1016/S1074-5521(03)00068-1",
+        "quote": "We report here the generation of mutants of the human O(6)-alkylguanine-DNA alkyltransferase (hAGT) for the efficient in vivo labeling of fusion proteins with synthetic reporter molecules. Libraries of hAGT were displayed on phage, and mutants capable of efficiently reacting with the inhibitor O(6)-benzylguanine were selected",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "ligand",
+      "type": "ligand",
+      "label": "The reactive substrate (ligand) of SNAP-tag is O6-benzylguanine (BG); the probe is appended to the benzyl group and becomes covalently attached to the tag",
+      "value": {
+        "ligand": "O6-benzylguanine (BG) and its derivatives",
+        "role": "suicide substrate; the appended chemical probe (fluorophore, affinity handle, solid support) is delivered to the active-site cysteine",
+        "derivatized": "any small-molecule probe conjugated to the BG scaffold"
+      },
+      "source": {
+        "pmid": "18291317",
+        "doi": "10.1016/j.chembiol.2008.01.007",
+        "quote": "The SNAP-tag is derived from the human DNA repair protein O6-alkylguanine-DNA alkyltransferase (AGT) and can be covalently labeled in living cells using O6-benzylguanine derivatives bearing a chemical probe.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "label": "SNAP-tag enables specific covalent labeling of fusion proteins with synthetic small-molecule probes (e.g. fluorophores) in living cells, for imaging and protein-function studies",
+      "value": {
+        "applications": [
+          "live-cell protein labeling",
+          "fluorescence imaging",
+          "pulse-chase tracking of protein generations"
+        ],
+        "modularity": "a single genetic fusion can be decorated with diverse probes by changing the molecule appended to the BG substrate"
+      },
+      "source": {
+        "pmid": "12469133",
+        "doi": "10.1038/nbt765",
+        "quote": "Here we describe a general method for the covalent labeling of fusion proteins in vivo that complements existing methods for noncovalent labeling of proteins and that may open up new ways of studying proteins in living cells.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "orthogonality",
+      "type": "orthogonality",
+      "label": "SNAP-tag (O6-benzylguanine substrates) is orthogonal to the AGT-derived CLIP-tag (O2-benzylcytosine substrates), so SNAP and CLIP fusions can be labeled simultaneously and specifically with different probes",
+      "value": {
+        "orthogonal_partner": "CLIP-tag",
+        "snap_substrate": "O6-benzylguanine derivatives",
+        "clip_substrate": "O2-benzylcytosine derivatives",
+        "use": "simultaneous two-color labeling of two distinct fusion proteins in living cells"
+      },
+      "source": {
+        "pmid": "18291317",
+        "doi": "10.1016/j.chembiol.2008.01.007",
+        "quote": "Because SNAP-tag and CLIP-tag possess orthogonal substrate specificities, SNAP and CLIP fusion proteins can be labeled simultaneously and specifically with different molecular probes in living cells.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_feature",
+      "type": "domain_function",
+      "label": "Catalysis depends on a single active-site cysteine (the AGT reactive Cys, canonically Cys145); its mutation to alanine abolishes alkyltransferase activity",
+      "value": {
+        "active_site_residue": "active-site cysteine",
+        "canonical_position": "Cys145 (hAGT numbering)",
+        "position_in_stored_sequence": 144,
+        "inactivating_mutation": "C145A abolishes catalytic alkyl-transfer activity",
+        "motif": "I-P-C-H-R active-site motif"
+      },
+      "source": {
+        "pmid": "9934856",
+        "doi": "10.1093/carcin/20.1.103",
+        "quote": "The methyl group is transferred to a cysteine acceptor residue in the AGT protein, which is located at residue 145. The C145A mutant of AGT in which this cysteine is converted to an alanine residue is therefore inactive.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "SNAP-tag functions in both mammalian (live-cell) and in vitro / bacterial contexts; demonstrated covalent labeling in living cells and in vitro",
+      "value": {
+        "hosts": [
+          "mammalian cells (e.g. CHO)",
+          "in vitro",
+          "Escherichia coli (parent hAGT expression context)"
+        ],
+        "validated_in": "living cells and in vitro covalent labeling"
+      },
+      "source": {
+        "pmid": "12725859",
+        "doi": "10.1016/S1074-5521(03)00068-1",
+        "quote": "the selected mutant proteins allow for a highly efficient covalent labeling of hAGT fusion proteins in vivo and in vitro with small molecules",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "SNAP-tag2 is an engineered SNAP-tag variant with ~100-fold faster labeling kinetics and ~5-fold higher brightness with optimized substrates",
+      "value": {
+        "variant": "SNAP-tag2",
+        "kinetics": "second-order rate constant approaching 10^7 M^-1 s^-1 with rhodamine substrates, ~100-fold faster than SNAP-tag",
+        "brightness": "~5-fold increase in fluorescence brightness with fluorogenic dyes",
+        "relation_to_this_part": "engineered descendant of SNAP-tag; not the stored sequence"
+      },
+      "source": {
+        "pmid": "40610720",
+        "doi": "10.1038/s41589-025-01942-z",
+        "quote": "SNAP-tag2 presents a second-order rate constant with rhodamine substrates that approaches 10 s M, a 100-fold improvement over the corresponding SNAP-tag-substrate pairs. When labeled with highly fluorogenic dyes, SNAP-tag2 also shows a fivefold increase in fluorescence brightness relative to currently used SNAP-tag.",
+        "quote_source": "primary",
+        "section": "abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-engine"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
+}

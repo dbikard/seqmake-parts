@@ -63,11 +63,6 @@
         }
       }
     },
-    "review_status": {
-      "type": "string",
-      "description": "Trust level of this record's content as it self-corrects over time.",
-      "enum": ["ai-generated", "ai-cross-checked", "expert-reviewed"]
-    },
     "provenance": {
       "type": "object",
       "description": "How this record was produced (free-form; e.g. migrated_from, asserting agent/model).",
@@ -75,11 +70,11 @@
     },
     "functional_claims": {
       "type": "array",
-      "description": "Prose-derived functional knowledge (inducer, dynamic range, host range, ...). Each claim is self-describing: its source, extraction provenance, confidence, and review_status travel with it so the knowledge base can self-correct (a nanopublication shape, kept mutable in git).",
+      "description": "Prose-derived functional knowledge (inducer, dynamic range, host range, ...). Each claim is self-describing: its source, extraction provenance, and the orthogonal trust axes (confidence, usefulness, claim type) plus its verification lifecycle (analysis_status / cross_checked) travel with it so the knowledge base can self-correct (a nanopublication shape, kept mutable in git). See proposals/cross-check/CLAIM-MODEL.md.",
       "items": {
         "type": "object",
         "required": ["id", "type", "label", "source", "provenance",
-                     "confidence", "review_status"],
+                     "confidence", "analysis_status", "cross_checked"],
         "additionalProperties": false,
         "properties": {
           "id": {"type": "string", "description": "stable id unique within the part"},
@@ -113,11 +108,25 @@
             "additionalProperties": true,
             "description": "how the claim was produced: method, asserting agent/model, source doc, timestamp"
           },
-          "confidence": {"type": "string", "enum": ["low", "medium", "high"]},
-          "review_status": {"type": "string",
-            "enum": ["ai-generated", "ai-cross-checked", "expert-reviewed"]},
+          "confidence": {"type": "string", "enum": ["low", "medium", "high"],
+            "description": "how well the cited primary source supports the claim"},
+          "usefulness": {"type": "string", "enum": ["low", "medium", "high"],
+            "description": "how much the claim helps a designer choose/operate the part (orthogonal to truth); scored by the cross-check pass, so absent until a claim has been analyzed"},
+          "usefulness_rationale": {"type": "string",
+            "description": "one line: which datasheet slot it fills, or which anti-pattern makes it low"},
+          "analysis_status": {"type": "string",
+            "enum": ["pending", "verified", "sources-pending", "flagged"],
+            "description": "verification lifecycle: pending=authored, not yet independently cross-checked; verified=cross-checked against the primary source and supported (implies cross_checked=true); sources-pending=a pass needed the primary source but could not access it (a sourcing/REQUESTS.md entry is filed); flagged=source was read but the claim is only partially supported, was downgraded, or has been superseded (see comment / supersedes)"},
+          "cross_checked": {"type": "boolean",
+            "description": "true iff this claim has been independently verified against its cited primary source (analysis_status=verified)"},
+          "last_checked": {"type": "string",
+            "description": "ISO-8601 date (YYYY-MM-DD) of the last analysis pass over this claim"},
+          "comment": {"type": ["string", "null"],
+            "description": "verification caveat / uncertainty note attached by a downgrade or supersede"},
           "supersedes": {"type": ["string", "null"],
-            "description": "id of a prior claim this one corrects"}
+            "description": "id of a prior claim this one corrects"},
+          "superseded_by": {"type": ["string", "null"],
+            "description": "id of the corrected claim that supersedes this one (set on the retained, flagged original)"}
         }
       }
     },

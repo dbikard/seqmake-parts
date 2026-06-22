@@ -166,7 +166,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "sequence_source": "ColE1/pMB1 origin, common cloning-vector form: 100% identical to GenBank X03174 (cloning vector pEX2, 1986) and present in 140+ deposited vectors; the earliest occurrence found is X01803 (Nov 1985, a P-element transformation vector). Differs from the canonical pMB1 origin (pBR322 J01749 / pUC18 L08752) by 2 bp at positions 412-413 in the RNA I/RNA II control region. Identified by date-bracketed BLAST vs NCBI nt (tools/blast.py): 142 perfect full-length carriers in 1985-1996."
   },
@@ -191,7 +190,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -218,7 +218,8 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

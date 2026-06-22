@@ -65,11 +65,13 @@
         ],
         "db_xref": [
           "SO:0000417"
+        ],
+        "collection": [
+          "epitope-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
     "sequence_source": "US20170137467A1 (patent: \"Epitope tag and method for detection and/or purification of tagged polypeptides\", Rothbauer et al., ChromoTek GmbH; filed 2016-11-16, published 2017-05-18), SEQ ID NO:33 (pTag1) = PDRVRAVSHWSS, 100% identity over 12 aa; independently fetched from https://patents.google.com/patent/US20170137467A1/en and sequence confirmed. Parent epitope BC2T (PDRKAAVSHWQQ) is residues 16-27 of human \u03b2-catenin (UniProt P35222), originally described in Braun et al. 2016 (PMID 26791954, doi:10.1038/srep19211)."
@@ -96,7 +98,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -119,7 +122,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -150,7 +154,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -176,7 +181,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -200,7 +206,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -231,7 +238,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

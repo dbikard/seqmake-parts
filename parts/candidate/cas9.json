@@ -33,7 +33,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank",
     "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"

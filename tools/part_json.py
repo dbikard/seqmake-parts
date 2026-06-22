@@ -10,9 +10,9 @@ existing readers (``build_catalog.py`` / ``build_rdf.py``) keep consuming the
 
 The JSON captures the GenBank record losslessly (every feature + qualifier
 verbatim, all references, the sequence) plus the home for the
-functional-knowledge layer (``functional_claims`` / ``provenance`` /
-``review_status``), which has no place in GenBank. Prose stays in the sibling
-``<slug>.md`` (authored markdown), not duplicated into the JSON.
+functional-knowledge layer (``functional_claims`` with their verification
+lifecycle / ``provenance``), which has no place in GenBank. Prose stays in the
+sibling ``<slug>.md`` (authored markdown), not duplicated into the JSON.
 
 Pure BioPython (shared with publish_part / build_catalog); no other deps.
 """
@@ -89,7 +89,6 @@ def record_to_json(rec: SeqRecord, slug: str) -> dict:
         "features": feats,
         # Functional-knowledge layer (Phase 2) -- the home for prose-derived
         # claims that do not fit GenBank. Empty at migration time.
-        "review_status": "ai-generated",
         "provenance": {"migrated_from": "genbank"},
         "functional_claims": [],
     }

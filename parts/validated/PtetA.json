@@ -145,7 +145,6 @@
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "migrated_from": "genbank"
   },
@@ -154,12 +153,26 @@
       "id": "inducer",
       "type": "inducer",
       "label": "TetR repression at the tetO1 operator is relieved by tetracycline / anhydrotetracycline (aTc).",
-      "value": {"inducer": "tetracycline / anhydrotetracycline (aTc)", "mode": "de-repression"},
-      "ontology": {"inducer_chebi": null},
-      "source": {"pmid": "9092630", "quote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.", "quote_source": "catalog-doc"},
-      "provenance": {"method": "transcribed-from-doc", "from": "PtetA.md", "agent": "ai-assistant"},
+      "value": {
+        "inducer": "tetracycline / anhydrotetracycline (aTc)",
+        "mode": "de-repression"
+      },
+      "ontology": {
+        "inducer_chebi": null
+      },
+      "source": {
+        "pmid": "9092630",
+        "quote": "Bound by TetR; binding is relieved by tetracycline/anhydrotetracycline.",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "transcribed-from-doc",
+        "from": "PtetA.md",
+        "agent": "ai-assistant"
+      },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ]

@@ -45,15 +45,20 @@ cat:ParticipationShape a sh:NodeShape ;
     sh:property [ sh:path sbol:role ; sh:minCount 1 ] ;
     sh:property [ sh:path sbol:participant ; sh:minCount 1 ] .
 
-# A functional claim is self-describing: kind, confidence, review status, and a
-# source it was derived from (the nanopublication shape).
+# A functional claim is self-describing: kind, confidence, verification
+# lifecycle (analysis_status + cross_checked), and a source it was derived from
+# (the nanopublication shape). usefulness is optional (scored once analysed).
 cat:FunctionalClaimShape a sh:NodeShape ;
     sh:targetClass cat:FunctionalClaim ;
     sh:property [ sh:path cat:claimType ; sh:minCount 1 ] ;
     sh:property [ sh:path cat:confidence ; sh:minCount 1 ;
                   sh:in ( "low" "medium" "high" ) ] ;
-    sh:property [ sh:path cat:reviewStatus ; sh:minCount 1 ;
-                  sh:in ( "ai-generated" "ai-cross-checked" "expert-reviewed" ) ] ;
+    sh:property [ sh:path cat:analysisStatus ; sh:minCount 1 ;
+                  sh:in ( "pending" "verified" "sources-pending" "flagged" ) ] ;
+    sh:property [ sh:path cat:crossChecked ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:datatype xsd:boolean ] ;
+    sh:property [ sh:path cat:usefulness ; sh:maxCount 1 ;
+                  sh:in ( "low" "medium" "high" ) ] ;
     sh:property [ sh:path <http://www.w3.org/ns/prov#wasDerivedFrom> ;
                   sh:minCount 1 ;
                   sh:message "a functional claim must cite a source" ] .
@@ -84,19 +89,31 @@ cat:RegulatedByResolvesShape a sh:NodeShape ;
             }
         """ ] .
 
-# The review tier must be earned: a claim may only be ai-cross-checked /
-# expert-reviewed if its quote comes from the primary source (quote_source =
-# "primary"). Mirrors the write-side gate in tools/validate_parts.py.
-cat:ClaimTierShape a sh:NodeShape ;
+# "verified" must be earned: a claim may only carry analysis_status="verified"
+# if its quote comes from the primary source (quote_source = "primary"). Mirrors
+# the write-side gate in tools/validate_parts.py.
+cat:VerifiedClaimQuoteShape a sh:NodeShape ;
     sh:targetClass cat:FunctionalClaim ;
     sh:sparql [
-        sh:message "claim is ai-cross-checked/expert-reviewed but its quote is not from the primary source (quote_source must be 'primary')" ;
+        sh:message "claim is analysis_status=verified but its quote is not from the primary source (quote_source must be 'primary')" ;
         sh:select """
             SELECT $this WHERE {
-                $this <https://w3id.org/seqmake/parts/ns#reviewStatus> ?rs .
-                FILTER (?rs IN ("ai-cross-checked", "expert-reviewed"))
+                $this <https://w3id.org/seqmake/parts/ns#analysisStatus> "verified" .
                 FILTER NOT EXISTS {
                     $this <https://w3id.org/seqmake/parts/ns#sourceQuoteFrom> "primary" .
                 }
+            }
+        """ ] .
+
+# cross_checked and analysis_status must agree: cross_checked=true iff verified.
+cat:CrossCheckedAgreesShape a sh:NodeShape ;
+    sh:targetClass cat:FunctionalClaim ;
+    sh:sparql [
+        sh:message "cross_checked=true must coincide with analysis_status='verified'" ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://w3id.org/seqmake/parts/ns#crossChecked> ?xc ;
+                      <https://w3id.org/seqmake/parts/ns#analysisStatus> ?st .
+                FILTER ( (?xc = true) != (?st = "verified") )
             }
         """ ] .

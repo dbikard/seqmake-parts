@@ -83,7 +83,7 @@
           "transcription termination/antitermination protein NusA"
         ],
         "note": [
-          "E. coli K-12 NusA (N-utilization substance protein A), 495 aa, UniProt P0AFF6. Essential transcription elongation factor that enhances transcriptional pausing and intrinsic termination; displaced from RNAP by sigma at initiation. Multi-domain architecture: NTD (aa 1–137, interacts with RNAP beta-flap tip helix), S1 RNA-binding domain, KH RNA-binding domain, AR1 (interacts with bacteriophage lambda N antiterminator), AR2 (autoinhibitory). Also widely deployed as an N-terminal solubility-enhancing fusion tag in recombinant protein expression."
+          "E. coli K-12 NusA (N-utilization substance protein A), 495 aa, UniProt P0AFF6. Essential transcription elongation factor that enhances transcriptional pausing and intrinsic termination; displaced from RNAP by sigma at initiation. Multi-domain architecture: NTD (aa 1\u2013137, interacts with RNAP beta-flap tip helix), S1 RNA-binding domain, KH RNA-binding domain, AR1 (interacts with bacteriophage lambda N antiterminator), AR2 (autoinhibitory). Also widely deployed as an N-terminal solubility-enhancing fusion tag in recombinant protein expression."
         ],
         "citation": [
           "[1]",
@@ -98,14 +98,16 @@
         "db_xref": [
           "SO:0000316",
           "UniProt:P0AFF6"
+        ],
+        "collection": [
+          "solubility-tags"
         ]
       }
     }
   ],
-  "review_status": "ai-generated",
   "provenance": {
     "created_by": "add-part",
-    "sequence_source": "UniProt:P0AFF6 (NUSA_ECOLI, Swiss-Prot reviewed, E. coli K12 NusA, 495 aa), independently fetched via both FASTA and JSON REST endpoints — sequences identical, 100% match over full 495 aa"
+    "sequence_source": "UniProt:P0AFF6 (NUSA_ECOLI, Swiss-Prot reviewed, E. coli K12 NusA, 495 aa), independently fetched via both FASTA and JSON REST endpoints \u2014 sequences identical, 100% match over full 495 aa"
   },
   "functional_claims": [
     {
@@ -131,7 +133,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -157,13 +160,14 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
       "id": "solubility_mechanism",
       "type": "mechanism",
-      "label": "NusA acts as a passive holdase — it prevents aggregation of the fused partner during synthesis but does not actively refold misfolded partners",
+      "label": "NusA acts as a passive holdase \u2014 it prevents aggregation of the fused partner during synthesis but does not actively refold misfolded partners",
       "value": {
         "mechanism": "passive holdase",
         "active_refolding": false,
@@ -182,13 +186,14 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
       "id": "ntd_pausing_function",
       "type": "domain_function",
-      "label": "The NusA NTD (aa 1–137) is necessary and sufficient for pausing enhancement via interaction with the RNAP beta-flap tip helix / RNA exit channel",
+      "label": "The NusA NTD (aa 1\u2013137) is necessary and sufficient for pausing enhancement via interaction with the RNAP beta-flap tip helix / RNA exit channel",
       "value": {
         "domain": "NTD",
         "residues": "1-137",
@@ -209,7 +214,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -235,7 +241,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -263,7 +270,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "high",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     },
     {
@@ -293,7 +301,8 @@
         "agent": "annotate-part-engine"
       },
       "confidence": "medium",
-      "review_status": "ai-generated",
+      "analysis_status": "pending",
+      "cross_checked": false,
       "supersedes": null
     }
   ],

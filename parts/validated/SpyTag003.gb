@@ -1,0 +1,95 @@
+LOCUS       SpyTag003                 16 aa            linear   UNK 01-JAN-1980
+DEFINITION  SpyTag003 - 16-aa peptide (RGVPHIVMVDAYKRYK), third-generation
+            reactive Spy peptide that forms a spontaneous, irreversible
+            isopeptide bond to SpyCatcher003 at near-diffusion-limited speed
+            (~5.5e5 M-1 s-1)..
+ACCESSION   SpyTag003
+VERSION     SpyTag003
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Keeble AH, Turkki P, Stokes S, Khairil Anuar INA, Rahikainen R,
+            Hytonen VP, Howarth M
+  TITLE     Approaching infinite affinity through engineering of peptide-protein
+            interaction
+  JOURNAL   Proc Natl Acad Sci U S A (2019)
+   PUBMED   31822621
+  REMARK    doi:10.1073/pnas.1909653116
+REFERENCE   2
+  AUTHORS   Zakeri B, Fierer JO, Celik E, Chittock EC, Schwarz-Linek U, Moy VT,
+            Howarth M
+  TITLE     Peptide tag forming a rapid covalent bond to a protein, through
+            engineering a bacterial adhesin
+  JOURNAL   Proc Natl Acad Sci U S A (2012)
+   PUBMED   22366317
+  REMARK    doi:10.1073/pnas.1115485109
+REFERENCE   3
+  AUTHORS   Li L, Fierer JO, Rapoport TA, Howarth M
+  TITLE     Structural analysis and optimization of the covalent association
+            between SpyCatcher and a peptide tag
+  JOURNAL   J Mol Biol (2014)
+   PUBMED   24161952
+  REMARK    doi:10.1016/j.jmb.2013.10.021
+REFERENCE   4
+  AUTHORS   Keeble AH, Banerjee A, Ferla MP, Reddington SC, Khairil Anuar INA,
+            Howarth M
+  TITLE     Evolving Accelerated Amidation by SpyTag/SpyCatcher to Analyze
+            Membrane Dynamics
+  JOURNAL   Angew Chem Int Ed Engl (2017)
+   PUBMED   29024296
+  REMARK    doi:10.1002/anie.201707623
+REFERENCE   5
+  AUTHORS   Khairil Anuar INA, Banerjee A, Keeble AH, Carella A, Nikov GI,
+            Howarth M
+  TITLE     Spy&Go purification of SpyTag-proteins using pseudo-SpyCatcher to
+            access an oligomerization toolbox
+  JOURNAL   Proc Natl Acad Sci U S A (2019)
+   PUBMED   30988307
+  REMARK    doi:10.1073/pnas.1901876116
+REFERENCE   6
+  AUTHORS   Tan TK, Rijal P, Rahikainen R, Keeble AH, et al., Howarth M,
+            Townsend AR
+  TITLE     A COVID-19 vaccine candidate using SpyCatcher multimerization of the
+            SARS-CoV-2 spike protein receptor-binding domain induces potent
+            neutralising antibody responses
+  JOURNAL   Nat Commun (2021)
+   PUBMED   33431871
+  REMARK    doi:10.1038/s41467-020-20654-7
+REFERENCE   7
+  AUTHORS   Keeble AH, Howarth M
+  TITLE     Power to the protein: enhancing and combining activities using the
+            Spy toolbox
+  JOURNAL   Chem Sci (2020)
+  REMARK    doi:10.1039/D0SC01878C
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/SpyTag003
+FEATURES             Location/Qualifiers
+     protein_domain  1..16
+                     /label="SpyTag003"
+                     /synonym="SpyTag 003"
+                     /synonym="SpyTag003"
+                     /note="16-aa third-generation Spy peptide tag
+                     (RGVPHIVMVDAYKRYK). Engineered from SpyTag002 by appending
+                     an N-terminal Arg-Gly (RG) dipeptide and introducing the
+                     T112H mutation (CnaB2 numbering), descended from the CnaB2
+                     domain of Streptococcus pyogenes FbaB. On mixing with its
+                     116-aa partner SpyCatcher003 it forms a spontaneous,
+                     irreversible intermolecular isopeptide (amide) bond between
+                     its reactive Asp (CnaB2 Asp117) and Lys31 of SpyCatcher003,
+                     catalysed by SpyCatcher Glu77 - reaction approaches the
+                     diffusion limit. Fusable at N-terminus, C-terminus or
+                     internally. Contains no Cys."
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /citation=[7]
+                     /db_xref="SO:0000417"
+                     /collection="conjugation-tags"
+ORIGIN
+        1 rgvphivmvd aykryk
+//

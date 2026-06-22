@@ -8,25 +8,27 @@ machine pass can silently destroy human-reviewed knowledge, so the merge policy 
 specified once -- here -- and this is the only thing that writes claims into an
 existing record.
 
-Policy (full text in the proposal):
+Policy (full text in the proposal; trust model: proposals/cross-check/CLAIM-MODEL.md):
 
-* Trust order: ``ai-generated (0) < ai-cross-checked (1) < expert-reviewed (2)``.
+* Protection axis: a claim is **protected** once it has been independently verified
+  (``cross_checked == true``). Verified knowledge is what a machine merge must never
+  silently destroy.
 * ``functional_claims`` merge by stable ``id``; two claims are *content-equal* when
   ``(type, label, value, source)`` match. Per proposed claim P matched to existing E:
 
   - no E                       -> add (unless P duplicates an existing claim's content)
-  - E is ``ai-generated``      -> overwrite in place (the fresh extraction wins)
-  - E is reviewed (rank >= 1)  -> E is IMMUTABLE; a *differing* P is appended as a new
+  - E is not cross_checked      -> overwrite in place (the fresh extraction wins)
+  - E is cross_checked          -> E is IMMUTABLE; a *differing* P is appended as a new
                                   claim (fresh id ``<id>__v2``) that ``supersedes`` E
                                   and is flagged; an *identical* P is dropped.
 
-  So a machine merge only ever overwrites an ``ai-generated`` claim.
+  So a machine merge only ever overwrites a claim that has not been verified.
 * ``sequence`` must match (a mismatch is a hard ``MergeError`` -- the Source phase,
   not a merge, changes sequences).
 * ``provenance.sequence_source`` is never silently overwritten (a differing value is
   parked under ``sequence_source_proposed`` and flagged).
 * ``references`` are unioned; ``features`` are kept by default
-  (``replace_features=True`` to apply); record ``review_status`` is never downgraded.
+  (``replace_features=True`` to apply).
 
 Pure ``merge_records()`` + a dry-run-by-default CLI. Stdlib only.
 """
@@ -39,15 +41,26 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-REVIEW_RANK = {"ai-generated": 0, "ai-cross-checked": 1, "expert-reviewed": 2}
-
 
 class MergeError(ValueError):
     """A merge that must not proceed silently (e.g. a sequence mismatch)."""
 
 
-def _rank(status: str | None) -> int:
-    return REVIEW_RANK.get(status or "ai-generated", 0)
+def _is_protected(claim: dict) -> bool:
+    """A claim is protected from in-place overwrite once it has been independently
+    verified against its primary source (the new trust model: CLAIM-MODEL.md)."""
+    return bool(claim.get("cross_checked"))
+
+
+def _with_lifecycle(claim: dict) -> dict:
+    """Ensure an incoming (proposed) claim carries the required verification-lifecycle
+    fields. A freshly authored claim is ``pending`` / not ``cross_checked`` -- only the
+    independent cross-check pass earns ``verified``. Non-destructive: respects any status
+    the producer already set (e.g. annotate-part stamps ``sources-pending``)."""
+    c = _copy(claim)
+    c.setdefault("analysis_status", "pending")
+    c.setdefault("cross_checked", False)
+    return c
 
 
 def _assertion(claim: dict) -> str:
@@ -87,9 +100,9 @@ def merge_records(existing: dict, proposed: dict, *,
     """Merge ``proposed`` into ``existing``; return ``(merged, report)``.
 
     ``existing`` is the on-disk canonical record; ``proposed`` is the workflow's
-    schema-shaped output for the same slug. The merge is additive and monotonic in
-    ``review_status`` (see the module docstring / the proposal). Neither input is
-    mutated. Raises ``MergeError`` on a sequence mismatch."""
+    schema-shaped output for the same slug. The merge is additive and protects
+    verified (``cross_checked``) claims (see the module docstring / the proposal).
+    Neither input is mutated. Raises ``MergeError`` on a sequence mismatch."""
     merged = _copy(existing)
     report: dict = {
         "slug": existing.get("slug"),
@@ -115,6 +128,7 @@ def merge_records(existing: dict, proposed: dict, *,
     taken_ids = {c.get("id") for c in out_claims}
 
     for p in (proposed.get("functional_claims") or []):
+        p = _with_lifecycle(p)
         pid = p.get("id")
         e = by_id.get(pid)
         if e is None:
@@ -127,12 +141,12 @@ def merge_records(existing: dict, proposed: dict, *,
             taken_ids.add(pid)
             report["claims"]["added"].append(pid)
             continue
-        if _rank(e.get("review_status")) == 0:        # machine-only -> overwrite
+        if not _is_protected(e):                       # not yet verified -> overwrite
             idx = next(i for i, c in enumerate(out_claims) if c.get("id") == pid)
             out_claims[idx] = _copy(p)
             report["claims"]["overwritten"].append(pid)
             continue
-        # existing claim is human-reviewed -> immutable
+        # existing claim is cross_checked -> immutable
         if _assertion(p) == _assertion(e):
             report["claims"]["preserved"].append(pid)  # identical, drop the proposal
             continue
@@ -145,8 +159,8 @@ def merge_records(existing: dict, proposed: dict, *,
         report["claims"]["flagged_superseding"].append(
             {"id": new_id, "supersedes": e.get("id")})
         report["flags"].append(
-            f"claim {new_id!r} proposes a correction to reviewed claim "
-            f"{e.get('id')!r} ({e.get('review_status')}); needs human review")
+            f"claim {new_id!r} proposes a correction to a verified (cross_checked) "
+            f"claim {e.get('id')!r}; needs human review")
 
     if out_claims:
         merged["functional_claims"] = out_claims
@@ -185,10 +199,6 @@ def merge_records(existing: dict, proposed: dict, *,
             report["features"] = "kept (proposed differs; pass --replace-features to apply)"
             report["flags"].append(
                 "proposed features differ from the stored annotation; kept existing")
-
-    # ---- record-level review_status: never downgrade ----
-    if _rank(proposed.get("review_status")) > _rank(merged.get("review_status")):
-        merged["review_status"] = proposed["review_status"]
 
     return merged, report
 
