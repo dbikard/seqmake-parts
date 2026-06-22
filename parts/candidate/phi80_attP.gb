@@ -30,6 +30,68 @@ REFERENCE   3
   JOURNAL   EMBO J
    PUBMED   3011407
   REMARK    doi:10.1002/j.1460-2075.1986.tb04229.x
+REFERENCE   4
+  AUTHORS   Leong JM, Nunes-Duby S, Lesser CF, Youderian P, Susskind MM, Landy A
+  TITLE     The phi 80 and P22 attachment sites. Primary structure and
+            interaction with Escherichia coli integration host factor
+  JOURNAL   J Biol Chem
+   PUBMED   2984205
+  REMARK    doi:10.1074/jbc.260.7.4468
+REFERENCE   5
+  AUTHORS   Rotman E, Kouzminova E, Plunkett G 3rd, Kuzminov A
+  TITLE     Genome of Enterobacteriophage Lula/phi80 and insights into its
+            ability to spread in the laboratory environment
+  JOURNAL   J Bacteriol
+   PUBMED   23042999
+  REMARK    doi:10.1128/JB.01353-12
+REFERENCE   6
+  AUTHORS   Ross W, Landy A
+  TITLE     Bacteriophage lambda int protein recognizes two classes of sequence
+            in the phage att site: characterization of arm-type sites
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   6218502
+  REMARK    doi:10.1073/pnas.79.24.7724
+REFERENCE   7
+  AUTHORS   Landy A
+  TITLE     Dynamic, structural, and regulatory aspects of lambda site-specific
+            recombination
+  JOURNAL   Annu Rev Biochem
+   PUBMED   2528323
+  REMARK    doi:10.1146/annurev.bi.58.070189.004405
+REFERENCE   8
+  AUTHORS   Craig NL, Nash HA
+  TITLE     E. coli integration host factor binds to specific sites in DNA
+  JOURNAL   Cell
+   PUBMED   6096022
+  REMARK    doi:10.1016/0092-8674(84)90478-1
+REFERENCE   9
+  AUTHORS   Hales LM, Gumport RI, Gardner JF
+  TITLE     Determining the DNA sequence elements required for binding
+            integration host factor to two different target sites
+  JOURNAL   J Bacteriol
+   PUBMED   8188600
+  REMARK    doi:10.1128/jb.176.10.2999-3006.1994
+REFERENCE   10
+  AUTHORS   Rice PA, Yang S, Mizuuchi K, Nash HA
+  TITLE     Crystal structure of an IHF-DNA complex: a protein-induced DNA
+            U-turn
+  JOURNAL   Cell
+   PUBMED   8980235
+  REMARK    doi:10.1016/s0092-8674(00)81824-3
+REFERENCE   11
+  AUTHORS   Robertson CA, Nash HA
+  TITLE     Bending of the bacteriophage lambda attachment site by Escherichia
+            coli integration host factor
+  JOURNAL   J Biol Chem
+   PUBMED   2831189
+  REMARK    doi:10.1016/S0021-9258(18)68960-4
+REFERENCE   12
+  AUTHORS   Mizuuchi M, Mizuuchi K
+  TITLE     Integrative recombination of bacteriophage lambda: extent of the DNA
+            sequence involved in attachment site function
+  JOURNAL   Proc Natl Acad Sci USA
+   PUBMED   6251450
+  REMARK    doi:10.1073/pnas.77.6.3220
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/phi80_attP
 FEATURES             Location/Qualifiers
@@ -39,15 +101,91 @@ FEATURES             Location/Qualifiers
                      /synonym="phi80 attP"
                      /synonym="phi-80 attP"
                      /synonym="phage phi80 attP"
-                     /collection="phage-att-sites"
+                     /note="Bacteriophage phi80 phage attachment site (attP),
+                     480 bp. Recombination substrate for the phi80 tyrosine
+                     integrase (Int) acting with E. coli integration host factor
+                     (IHF); recombines with the chromosomal attB site in the E.
+                     coli thrW/yciI region to integrate the phi80 prophage (and,
+                     in the CRIM system, an attP-bearing plasmid). The 17 bp
+                     common core lies near the centre; the flanking P (positions
+                     ~279-480) and P' (positions ~0-262) arms carry the Int
+                     arm-type and IHF binding sites. Source AY048738.1 is the
+                     CRIM integration plasmid pAH162, which carries the phage
+                     attP."
                      /db_xref="SO:0000057"
-                     /note="Bacteriophage phi80 phage attachment site (attP).
-                     Identified as attP (NOT bacterial attB) — its source
-                     AY048738.1 is a CRIM integration plasmid (pAH162), which
-                     carries the phage attP. Detailed sub-feature annotation and
-                     functional_claims pending a re-run under the corrected attP
-                     identity."
+                     /citation=[4]
+                     /citation=[1]
+                     /citation=[2]
+                     /collection="phage-att-sites"
                      /cognate="phi80_attB"
+     misc_feature    complement(263..279)
+                     /label="phi80 crossover (common core)"
+                     /parent="phi80_attP"
+                     /note="17 bp phi80 common core / crossover region, the
+                     segment shared identically between phi80 attP and the
+                     chromosomal attB and across which Int catalyses strand
+                     exchange. Read on the minus strand the core is
+                     ACACTTTCTTAAATTGT (the plus-strand bases at these
+                     coordinates are ACAATTTAAGAAAGTGT). Leong et al. 1985
+                     established the 17 bp core by sequencing phi80 attP and
+                     attB; Rotman et al. 2012 independently report the identical
+                     17 bp core (ACACTTTCTTAAATTGT) in the phi80 genome.
+                     Experimentally grounded core sequence; the catalog assigns
+                     strand -1 to reflect the canonical minus-strand reading."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+                     /citation=[5]
+     protein_bind    84..92
+                     /label="phi80 Int arm-binding site P'1 (candidate)"
+                     /parent="phi80_attP"
+                     /note="Candidate arm-type integrase binding site in the P'
+                     arm. The 9 bp element TGGGTACAC recurs at 83-92 and 103-112
+                     (20 bp centre-to-centre, ~2 helical turns), matching the
+                     tandem arm-type architecture of lambda-family attP arms.
+                     Assignment rests on sequence inspection plus analogy to
+                     lambda arm-type sites (Ross & Landy 1982) and on
+                     phi80/lambda arm sequence homology (Leong et al. 1985); NO
+                     published phi80 Int footprint exists at these specific
+                     coordinates. PROVISIONAL — extent and identity rest on
+                     consensus/analogy alone, not direct phi80 evidence."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+                     /citation=[6]
+     protein_bind    104..112
+                     /label="phi80 Int arm-binding site P'2 (candidate)"
+                     /parent="phi80_attP"
+                     /note="Second candidate arm-type integrase binding site in
+                     the P' arm, 20 bp downstream of P'1 (one full repeat unit).
+                     Same TGGGTACAC element. Assignment rests on the
+                     tandem-repeat structure plus analogy to lambda arm-type
+                     sites (Ross & Landy 1982; Landy 1989) and phi80/lambda arm
+                     homology (Leong et al. 1985); NO direct phi80 Int footprint
+                     at these coordinates is published. PROVISIONAL — extent and
+                     identity rest on consensus/analogy alone."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+                     /citation=[6]
+                     /citation=[7]
+     protein_bind    306..318
+                     /label="IHF binding site (H2 analog)"
+                     /parent="phi80_attP"
+                     /note="E. coli integration host factor (IHF) binding site
+                     in the P arm, the phi80 analog of the lambda H2 site. Leong
+                     et al. 1985 demonstrated by DNase I footprinting with
+                     purified IHF that phi80 attP carries a single IHF site in
+                     the P arm, left of the core in phage convention — so IHF
+                     binding in this region is EXPERIMENTAL. The 13 bp window
+                     AATCAAAAAGTTA satisfies the IHF consensus WATCAANNNNTTR
+                     (Hales et al. 1994); IHF bends the bound DNA >160 degrees
+                     via indirect readout (Rice et al. 1996; Robertson & Nash
+                     1988). PROVISIONAL applies only to the precise 13 bp
+                     boundaries, which are assigned from consensus matching, not
+                     from a published phi80 footprint coordinate."
+                     /db_xref="SO:0000057"
+                     /citation=[4]
+                     /citation=[8]
+                     /citation=[9]
+                     /citation=[10]
 ORIGIN
         1 gcccgtgcga atcagaaata atctcgatat catctctttt cttgccgagc gccttcctga
        61 gctttgtgtc ggtgatcatt gaatgggtac acatttttgt ttttgggtac acaaaagtgt

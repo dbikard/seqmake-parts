@@ -45,6 +45,76 @@
       "journal": "Mol Microbiol",
       "pubmed_id": "38372210",
       "comment": "doi:10.1111/mmi.15241"
+    },
+    {
+      "authors": "Ross W, Landy A",
+      "title": "Bacteriophage lambda int protein recognizes two classes of sequence in the phage att site: characterization of arm-type sites",
+      "journal": "Proc Natl Acad Sci U S A",
+      "pubmed_id": "6218502",
+      "comment": "doi:10.1073/pnas.79.24.7724"
+    },
+    {
+      "authors": "Craig NL, Nash HA",
+      "title": "E. coli integration host factor binds to specific sites in DNA",
+      "journal": "Cell",
+      "pubmed_id": "6096022",
+      "comment": "doi:10.1016/0092-8674(84)90478-1"
+    },
+    {
+      "authors": "Leong JM, Nunes-Duby S, Lesser CF, Youderian P, Susskind MM, Landy A",
+      "title": "The phi 80 and P22 attachment sites. Primary structure and interaction with Escherichia coli integration host factor",
+      "journal": "J Biol Chem",
+      "pubmed_id": "2984205",
+      "comment": "doi:10.1016/S0021-9258(18)89288-2"
+    },
+    {
+      "authors": "Gardner JF, Nash HA",
+      "title": "Role of Escherichia coli IHF protein in lambda site-specific recombination. A mutational analysis of binding sites",
+      "journal": "J Mol Biol",
+      "pubmed_id": "2949082",
+      "comment": "doi:10.1016/0022-2836(86)90255-x"
+    },
+    {
+      "authors": "Landy A",
+      "title": "Dynamic, structural, and regulatory aspects of lambda site-specific recombination",
+      "journal": "Annu Rev Biochem",
+      "pubmed_id": "2528323",
+      "comment": "doi:10.1146/annurev.bi.58.070189.004405"
+    },
+    {
+      "authors": "Hales LM, Gumport RI, Gardner JF",
+      "title": "Determining the DNA sequence elements required for binding integration host factor to two different target sites",
+      "journal": "J Bacteriol",
+      "pubmed_id": "8188600",
+      "comment": "doi:10.1128/jb.176.10.2999-3006.1994"
+    },
+    {
+      "authors": "Rice PA, Yang S, Mizuuchi K, Nash HA",
+      "title": "Crystal structure of an IHF-DNA complex: a protein-induced DNA U-turn",
+      "journal": "Cell",
+      "pubmed_id": "8980235",
+      "comment": "doi:10.1016/s0092-8674(00)81824-3"
+    },
+    {
+      "authors": "Wojciak JM, Sarkar D, Landy A, Clubb RT",
+      "title": "Arm-site binding by lambda-integrase: solution structure and functional characterization of its amino-terminal domain",
+      "journal": "Proc Natl Acad Sci U S A",
+      "pubmed_id": "11904406",
+      "comment": "doi:10.1073/pnas.052017999"
+    },
+    {
+      "authors": "Fadeev EA, Sam MD, Clubb RT",
+      "title": "NMR structure of the amino-terminal domain of the lambda integrase protein in complex with DNA: immobilization of a flexible tail facilitates beta-sheet recognition of the major groove",
+      "journal": "J Mol Biol",
+      "pubmed_id": "19324050",
+      "comment": "doi:10.1016/j.jmb.2009.03.041"
+    },
+    {
+      "authors": "Landy A",
+      "title": "The lambda Integrase Site-specific Recombination Pathway",
+      "journal": "Microbiol Spectr",
+      "pubmed_id": "26104711",
+      "comment": "doi:10.1128/microbiolspec.MDNA3-0051-2014"
     }
   ],
   "features": [
@@ -63,17 +133,170 @@
           "phage lambda attP",
           "lambda POP'"
         ],
-        "collection": [
-          "phage-att-sites"
+        "note": [
+          "Bacteriophage lambda phage attachment site (attP, P-O-P'): the Int/IHF recombination substrate that carries the P and P' arms (arm-type and core-type Int-binding sites, three IHF sites, Xis and Fis sites) flanking the 15 bp common core. Recombines with the bacterial attB by lambda Int + IHF to integrate the phage (or a CRIM plasmid) into the host chromosome. 387 bp as cloned in AY048716.1; the functional minimal attP is ~240-250 bp around the core."
         ],
         "db_xref": [
           "SO:0000057"
         ],
-        "note": [
-          "Bacteriophage lambda phage attachment site (attP, P-O-P'), the Int/IHF recombination substrate carrying the P and P' arms flanking the 15 bp common core. Identified as attP (NOT bacterial attB) — its source AY048716.1 is a CRIM integration plasmid (which carries attP), and it shares 192 bp of the P/P' arm region with the genomic lambda attP (a true attB would share only the ~15 bp core). Detailed sub-feature annotation (Int arm/core sites, IHF H/H1/H2, Xis) and functional_claims pending a re-run under the corrected attP identity."
+        "collection": [
+          "phage-att-sites"
         ],
         "cognate": [
           "lambda_attB"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 62,
+      "end": 73,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "P'2 arm-type Int binding site"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "P' arm-type lambda Int binding site (minus strand 5'-CAGTCAAAAT-3'). Arm-type sites are bound by the N-terminal domain of Int distant from the crossover region; the P'1/P'2/P'3 cluster in the P' arm is recognized cooperatively. Matches the arm-type consensus of Ross & Landy 1982; the P'2 site sequence 5'-GCAGTCAAAAT-3' was used in the Fadeev et al. 2009 NMR co-complex with Int(N)."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[6]",
+          "[13]",
+          "[14]",
+          "[10]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 83,
+      "end": 118,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "IHF H' binding site"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "Integration host factor (IHF) binding site H' in the P' arm (35 bp DNase I footprint). Binding bends the DNA by >160 degrees (DNA U-turn), a sharp bend required to assemble the recombinogenic attP intasome. This exact 35 bp duplex (GTTCGTTGCAACAAATTGATAAGCAATGCTTTTTT) was co-crystallized with IHF in the Rice et al. 1996 structure (PDB 1IHF). H' requires both the WATCAANNNNTTR core consensus and an upstream AT-rich element (Hales et al. 1994)."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[7]",
+          "[9]",
+          "[11]",
+          "[12]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 129,
+      "end": 144,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "common core O (15 bp crossover)"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "The 15 bp common core (minus strand 5'-GCTTTTTTATACTAA-3') shared identically by attP, attB, attL and attR. The two pairs of core-type (junction-type) Int cleavage sites (C/C' and B/B') flank this core; strand exchange occurs here."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[1]",
+          "[2]",
+          "[3]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 132,
+      "end": 139,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "O region (7 bp crossover overlap)"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "The 7 bp staggered overlap (minus strand 5'-TTTATAC-3') between the two Int cleavage sites, within the 15 bp common core. Strand exchange requires sequence identity between partners across this overlap; it is the conserved crossover region of all lambda att sites."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[3]",
+          "[10]",
+          "[15]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 170,
+      "end": 184,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "IHF H1 binding site"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "IHF binding site H1 in the P arm (minus strand 5'-TAATATATTGATAT-3'), matching the IHF consensus. Unlike H', the WATCAANNNNTTR core consensus alone is sufficient for IHF binding at H1 (Hales et al. 1994). 4 bp changes to the consensus strongly depress recombination (Gardner & Nash 1986)."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[7]",
+          "[9]",
+          "[11]",
+          "[8]"
+        ]
+      }
+    },
+    {
+      "type": "protein_bind",
+      "start": 251,
+      "end": 264,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "IHF H2 binding site"
+        ],
+        "parent": [
+          "lambda_attP"
+        ],
+        "note": [
+          "IHF binding site H2 in the P arm (plus strand 5'-AATCAACTACTTA-3'), matching the IHF consensus WATCAANNNNTTR. 4 bp substitutions depress recombination (Gardner & Nash 1986). An IHF site analogous to lambda H2 is also present in phi80 and P22 attP, supporting cross-phage conservation (Leong et al. 1985)."
+        ],
+        "db_xref": [
+          "SO:0000057"
+        ],
+        "citation": [
+          "[7]",
+          "[9]",
+          "[8]"
         ]
       }
     }
@@ -84,5 +307,125 @@
     "sequence_source": "AY048716.1 (CRIM plasmid pAH63, complete sequence; Haldimann & Wanner 2001 J Bacteriol 183:6384), complement strand positions 1545–1931, 100% identity over 387 bp",
     "asserting_agent": "annotate-part-workflow"
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "label": "Recombination substrate for bacteriophage lambda integrase (Int), a tyrosine recombinase. Int plus the host bending protein IHF assemble an intasome on attP that recombines with attB; the ~240 bp attP encodes 16 protein-binding sites (arm-type and core-type Int sites, three IHF sites, Xis and Fis sites) that drive a highly directional, tightly regulated integration reaction via a Holliday-junction intermediate.",
+      "value": {
+        "recombinase_family": "tyrosine recombinase (lambda Int family)",
+        "cognate_protein": "lambda Int",
+        "accessory_factors": [
+          "IHF",
+          "Xis (excision/directionality)",
+          "Fis (excision)"
+        ],
+        "binding_sites": 16,
+        "functional_length_bp": 240,
+        "common_core": "15 bp (overlap TTTATAC)",
+        "cognate_site": "lambda_attB"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "26104711",
+        "doi": "10.1128/microbiolspec.MDNA3-0051-2014",
+        "quote": "Int carries out a reaction that is highly directional, tightly regulated, and depends upon an ensemble of accessory DNA bending proteins acting on 240 bp of DNA encoding 16 protein binding sites.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "sequence_feature",
+      "type": "sequence_feature",
+      "label": "Functional attP requires about 250 bp of phage sequence around the common core; deletion mapping bounds the essential sequence to beyond 106 (not beyond 152) bp left of the core center and beyond 68 (not beyond 99) bp to the right. This 387 bp clone therefore comfortably contains the minimal functional attP.",
+      "value": {
+        "minimal_attP_bp": 250,
+        "left_boundary_from_core_center_bp": "between 106 and 152",
+        "right_boundary_from_core_center_bp": "between 68 and 99",
+        "clone_length_bp": 387
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6251450",
+        "doi": "10.1073/pnas.77.6.3220",
+        "quote": "In order to recombine with the bacterial attachment site (attB), the phage attachment site must retain about 250 base pairs of its original sequence. On the left side, the essential sequence extends beyond 106 base pairs from the center of the 15-base-pair common core sequence but not beyond 152 base pairs. On the right side the required sequence extends beyond 68 base pairs but not beyond 99 base pairs from the center of the core.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "host_range",
+      "type": "host_range",
+      "label": "Functions as a single-copy chromosomal integration site in Escherichia coli and related bacteria when supplied with lambda Int: a CRIM plasmid carrying this attP integrates at the chromosomal lambda attB by site-specific recombination and is stably maintained without selection; Xis-mediated excision is reversible.",
+      "value": {
+        "host": "Escherichia coli and related bacteria",
+        "integration": "single-copy at chromosomal lambda attB",
+        "requires": "lambda Int (IHF host-supplied; Xis for excision)",
+        "stability": "stable without antibiotic selection after integration"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "11591683",
+        "doi": "10.1128/JB.183.21.6384-6393.2001",
+        "quote": "They can be integrated in single copies into the chromosomes of Escherichia coli and related bacteria ... CRIM plasmids are integrated into the chromosome by site-specific recombination at one of five different phage attachment sites ... Following integration, integrants are stably maintained in the absence of antibiotic selection.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "high",
+      "review_status": "ai-generated",
+      "supersedes": null
+    },
+    {
+      "id": "mechanism_ihf_bend",
+      "type": "mechanism",
+      "label": "The three IHF sites (H', H1, H2) impose sharp protein-induced DNA bends that condense attP into the recombinogenic intasome. IHF bound at H' bends DNA by >160 degrees (a DNA U-turn), contacting only the minor groove and phosphate backbone and relying on indirect readout of an A-tract.",
+      "value": {
+        "ihf_sites": [
+          "H'",
+          "H1",
+          "H2"
+        ],
+        "bend_angle_deg": ">160",
+        "structure": "PDB 1IHF (IHF + 35 bp lambda H' DNA)",
+        "readout": "indirect (minor groove / A-tract)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "8980235",
+        "doi": "10.1016/s0092-8674(00)81824-3",
+        "quote": "Here, we report the crystal structure of IHF complexed with 35 bp of DNA. The DNA is wrapped around the protein and bent by >160 degrees ... IHF contacts the DNA exclusively via the phosphodiester backbone and the minor groove and relies heavily on indirect readout to recognize its binding sequence.",
+        "quote_source": "primary",
+        "section": "Abstract"
+      },
+      "provenance": {
+        "method": "ai-extraction",
+        "from": "primary",
+        "agent": "annotate-part-workflow"
+      },
+      "confidence": "medium",
+      "review_status": "ai-generated",
+      "supersedes": null
+    }
+  ]
 }

@@ -40,6 +40,75 @@ REFERENCE   5
   JOURNAL   Mol Microbiol
    PUBMED   38372210
   REMARK    doi:10.1111/mmi.15241
+REFERENCE   6
+  AUTHORS   Ross W, Landy A
+  TITLE     Bacteriophage lambda int protein recognizes two classes of sequence
+            in the phage att site: characterization of arm-type sites
+  JOURNAL   Proc Natl Acad Sci U S A
+   PUBMED   6218502
+  REMARK    doi:10.1073/pnas.79.24.7724
+REFERENCE   7
+  AUTHORS   Craig NL, Nash HA
+  TITLE     E. coli integration host factor binds to specific sites in DNA
+  JOURNAL   Cell
+   PUBMED   6096022
+  REMARK    doi:10.1016/0092-8674(84)90478-1
+REFERENCE   8
+  AUTHORS   Leong JM, Nunes-Duby S, Lesser CF, Youderian P, Susskind MM, Landy A
+  TITLE     The phi 80 and P22 attachment sites. Primary structure and
+            interaction with Escherichia coli integration host factor
+  JOURNAL   J Biol Chem
+   PUBMED   2984205
+  REMARK    doi:10.1016/S0021-9258(18)89288-2
+REFERENCE   9
+  AUTHORS   Gardner JF, Nash HA
+  TITLE     Role of Escherichia coli IHF protein in lambda site-specific
+            recombination. A mutational analysis of binding sites
+  JOURNAL   J Mol Biol
+   PUBMED   2949082
+  REMARK    doi:10.1016/0022-2836(86)90255-x
+REFERENCE   10
+  AUTHORS   Landy A
+  TITLE     Dynamic, structural, and regulatory aspects of lambda site-specific
+            recombination
+  JOURNAL   Annu Rev Biochem
+   PUBMED   2528323
+  REMARK    doi:10.1146/annurev.bi.58.070189.004405
+REFERENCE   11
+  AUTHORS   Hales LM, Gumport RI, Gardner JF
+  TITLE     Determining the DNA sequence elements required for binding
+            integration host factor to two different target sites
+  JOURNAL   J Bacteriol
+   PUBMED   8188600
+  REMARK    doi:10.1128/jb.176.10.2999-3006.1994
+REFERENCE   12
+  AUTHORS   Rice PA, Yang S, Mizuuchi K, Nash HA
+  TITLE     Crystal structure of an IHF-DNA complex: a protein-induced DNA
+            U-turn
+  JOURNAL   Cell
+   PUBMED   8980235
+  REMARK    doi:10.1016/s0092-8674(00)81824-3
+REFERENCE   13
+  AUTHORS   Wojciak JM, Sarkar D, Landy A, Clubb RT
+  TITLE     Arm-site binding by lambda-integrase: solution structure and
+            functional characterization of its amino-terminal domain
+  JOURNAL   Proc Natl Acad Sci U S A
+   PUBMED   11904406
+  REMARK    doi:10.1073/pnas.052017999
+REFERENCE   14
+  AUTHORS   Fadeev EA, Sam MD, Clubb RT
+  TITLE     NMR structure of the amino-terminal domain of the lambda integrase
+            protein in complex with DNA: immobilization of a flexible tail
+            facilitates beta-sheet recognition of the major groove
+  JOURNAL   J Mol Biol
+   PUBMED   19324050
+  REMARK    doi:10.1016/j.jmb.2009.03.041
+REFERENCE   15
+  AUTHORS   Landy A
+  TITLE     The lambda Integrase Site-specific Recombination Pathway
+  JOURNAL   Microbiol Spectr
+   PUBMED   26104711
+  REMARK    doi:10.1128/microbiolspec.MDNA3-0051-2014
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_attP
 FEATURES             Location/Qualifiers
@@ -49,19 +118,101 @@ FEATURES             Location/Qualifiers
                      /synonym="lambda attP"
                      /synonym="phage lambda attP"
                      /synonym="lambda POP'"
-                     /collection="phage-att-sites"
-                     /db_xref="SO:0000057"
                      /note="Bacteriophage lambda phage attachment site (attP,
-                     P-O-P'), the Int/IHF recombination substrate carrying the P
-                     and P' arms flanking the 15 bp common core. Identified as
-                     attP (NOT bacterial attB) — its source AY048716.1 is a CRIM
-                     integration plasmid (which carries attP), and it shares 192
-                     bp of the P/P' arm region with the genomic lambda attP (a
-                     true attB would share only the ~15 bp core). Detailed
-                     sub-feature annotation (Int arm/core sites, IHF H/H1/H2,
-                     Xis) and functional_claims pending a re-run under the
-                     corrected attP identity."
+                     P-O-P'): the Int/IHF recombination substrate that carries
+                     the P and P' arms (arm-type and core-type Int-binding
+                     sites, three IHF sites, Xis and Fis sites) flanking the 15
+                     bp common core. Recombines with the bacterial attB by
+                     lambda Int + IHF to integrate the phage (or a CRIM plasmid)
+                     into the host chromosome. 387 bp as cloned in AY048716.1;
+                     the functional minimal attP is ~240-250 bp around the
+                     core."
+                     /db_xref="SO:0000057"
+                     /collection="phage-att-sites"
                      /cognate="lambda_attB"
+     protein_bind    complement(63..73)
+                     /label="P'2 arm-type Int binding site"
+                     /parent="lambda_attP"
+                     /note="P' arm-type lambda Int binding site (minus strand
+                     5'-CAGTCAAAAT-3'). Arm-type sites are bound by the
+                     N-terminal domain of Int distant from the crossover region;
+                     the P'1/P'2/P'3 cluster in the P' arm is recognized
+                     cooperatively. Matches the arm-type consensus of Ross &
+                     Landy 1982; the P'2 site sequence 5'-GCAGTCAAAAT-3' was
+                     used in the Fadeev et al. 2009 NMR co-complex with Int(N)."
+                     /db_xref="SO:0000057"
+                     /citation=[6]
+                     /citation=[13]
+                     /citation=[14]
+                     /citation=[10]
+     protein_bind    84..118
+                     /label="IHF H' binding site"
+                     /parent="lambda_attP"
+                     /note="Integration host factor (IHF) binding site H' in the
+                     P' arm (35 bp DNase I footprint). Binding bends the DNA by
+                     >160 degrees (DNA U-turn), a sharp bend required to
+                     assemble the recombinogenic attP intasome. This exact 35 bp
+                     duplex (GTTCGTTGCAACAAATTGATAAGCAATGCTTTTTT) was
+                     co-crystallized with IHF in the Rice et al. 1996 structure
+                     (PDB 1IHF). H' requires both the WATCAANNNNTTR core
+                     consensus and an upstream AT-rich element (Hales et al.
+                     1994)."
+                     /db_xref="SO:0000057"
+                     /citation=[7]
+                     /citation=[9]
+                     /citation=[11]
+                     /citation=[12]
+     misc_feature    complement(130..144)
+                     /label="common core O (15 bp crossover)"
+                     /parent="lambda_attP"
+                     /note="The 15 bp common core (minus strand
+                     5'-GCTTTTTTATACTAA-3') shared identically by attP, attB,
+                     attL and attR. The two pairs of core-type (junction-type)
+                     Int cleavage sites (C/C' and B/B') flank this core; strand
+                     exchange occurs here."
+                     /db_xref="SO:0000057"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+     misc_feature    complement(133..139)
+                     /label="O region (7 bp crossover overlap)"
+                     /parent="lambda_attP"
+                     /note="The 7 bp staggered overlap (minus strand
+                     5'-TTTATAC-3') between the two Int cleavage sites, within
+                     the 15 bp common core. Strand exchange requires sequence
+                     identity between partners across this overlap; it is the
+                     conserved crossover region of all lambda att sites."
+                     /db_xref="SO:0000057"
+                     /citation=[3]
+                     /citation=[10]
+                     /citation=[15]
+     protein_bind    complement(171..184)
+                     /label="IHF H1 binding site"
+                     /parent="lambda_attP"
+                     /note="IHF binding site H1 in the P arm (minus strand
+                     5'-TAATATATTGATAT-3'), matching the IHF consensus. Unlike
+                     H', the WATCAANNNNTTR core consensus alone is sufficient
+                     for IHF binding at H1 (Hales et al. 1994). 4 bp changes to
+                     the consensus strongly depress recombination (Gardner &
+                     Nash 1986)."
+                     /db_xref="SO:0000057"
+                     /citation=[7]
+                     /citation=[9]
+                     /citation=[11]
+                     /citation=[8]
+     protein_bind    252..264
+                     /label="IHF H2 binding site"
+                     /parent="lambda_attP"
+                     /note="IHF binding site H2 in the P arm (plus strand
+                     5'-AATCAACTACTTA-3'), matching the IHF consensus
+                     WATCAANNNNTTR. 4 bp substitutions depress recombination
+                     (Gardner & Nash 1986). An IHF site analogous to lambda H2
+                     is also present in phi80 and P22 attP, supporting
+                     cross-phage conservation (Leong et al. 1985)."
+                     /db_xref="SO:0000057"
+                     /citation=[7]
+                     /citation=[9]
+                     /citation=[8]
 ORIGIN
         1 catcacagta tcgtgatgac agaggcaggg agtgggacaa aattgaaatc aaataatgat
        61 tttattttga ctgatagtga cctgttcgtt gcaacaaatt gataagcaat gcttttttat
