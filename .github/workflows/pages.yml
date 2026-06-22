@@ -30,9 +30,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python tools/build_catalog.py
-      - run: python tools/build_rdf.py
-      - run: mkdocs build
+      - run: python tools/build_catalog.py   # manifest, agent layer (catalog/index.json/llms.txt), per-part downloads
+      - run: python tools/build_rdf.py       # catalog.ttl / catalog.jsonld
+      - run: python tools/build_site.py      # static site/: SPA index + per-part pages (replaces mkdocs)
       - name: Publish machine artifacts + schema next to the site
         run: |
           cp catalog.ttl catalog.jsonld catalog.json index.json llms.txt site/
