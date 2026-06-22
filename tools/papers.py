@@ -60,6 +60,7 @@ def norm_doi(doi: str | None) -> str | None:
         return None
     doi = doi.strip().lower()
     doi = re.sub(r"^(https?://(dx\.)?doi\.org/|doi:)", "", doi)
+    doi = re.sub(r"[*\s>).,]+$", "", doi)  # strip trailing markdown/punctuation (e.g. **)
     return doi or None
 
 
@@ -159,7 +160,19 @@ def cmd_add(args) -> int:
         "pages": pages, "sha256": sha256(dest), "added_utc": _now(),
     })
     save_index(idx)
-    print(f"added {dest.name}" + (f" (+{txt_name}, {pages} pp)" if txt_name else ""))
+    pruned = _prune_satisfied_requests()  # depositing a paper clears its request
+    moved = False
+    if getattr(args, "move", False):
+        # The copy is checksummed + indexed above, so the source is now redundant.
+        try:
+            if src.resolve() != dest.resolve():
+                src.unlink()
+                moved = True
+        except OSError:
+            pass
+    print(f"added {dest.name}" + (f" (+{txt_name}, {pages} pp)" if txt_name else "")
+          + (f" — cleared {pruned} request(s)" if pruned else "")
+          + (" — removed source from incoming/" if moved else ""))
     return 0
 
 
@@ -357,7 +370,7 @@ def _parse_request_entries(tail: list[str]) -> list[dict]:
             if cur:
                 entries.append(cur)
             mp = re.search(r"PMID\s+(\d+)", l)
-            md = re.search(r"doi:([^\s)]+)", l)
+            md = re.search(r"doi:([^\s)*]+)", l)
             cur = {"pmid": mp.group(1) if mp else None,
                    "doi": norm_doi(md.group(1)) if md else None, "lines": [l]}
         elif cur is not None and s and s != SENTINEL:
@@ -409,6 +422,83 @@ def cmd_request(args) -> int:
     return 0
 
 
+def _prune_satisfied_requests() -> int:
+    """Drop REQUESTS.md entries whose paper is now in the store. Returns count pruned."""
+    if not REQUESTS.exists():
+        return 0
+    head, tail = _split_requests(REQUESTS.read_text(encoding="utf-8"))
+    entries = _parse_request_entries(tail)
+    kept = [e for e in entries if not _resolve(e["pmid"], e["doi"])]
+    pruned = len(entries) - len(kept)
+    if pruned:
+        body_lines: list[str] = []
+        for e in kept:
+            body_lines += e["lines"]
+        body = "\n".join(body_lines) if body_lines else SENTINEL
+        REQUESTS.write_text(head + "\n\n" + body + "\n", encoding="utf-8")
+    return pruned
+
+
+def cmd_prune(args) -> int:
+    n = _prune_satisfied_requests()
+    print(f"pruned {n} satisfied request(s) from sourcing/REQUESTS.md")
+    return 0
+
+
+def _request_url(pmid: str | None, doi: str | None) -> str | None:
+    """A resolvable URL to fetch a paper: DOI (-> publisher) preferred, else PubMed."""
+    if doi:
+        return f"https://doi.org/{doi}"
+    if pmid:
+        return f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+    return None
+
+
+def cmd_requests(args) -> int:
+    """List requested papers (and optionally every claim-backing paper not in the store).
+    With --urls, print one resolvable URL per line (for an opener to fetch)."""
+    items: list[dict] = []
+    seen = set()
+
+    def add(pmid, doi, unblocks):
+        pmid = str(pmid).strip() if pmid else None
+        doi = norm_doi(doi)
+        key = f"pmid:{pmid}" if pmid else (f"doi:{doi}" if doi else None)
+        if not key or key in seen or _resolve(pmid, doi):
+            return
+        seen.add(key)
+        items.append({"pmid": pmid, "doi": doi, "unblocks": unblocks,
+                      "url": _request_url(pmid, doi)})
+
+    if REQUESTS.exists():
+        _, tail = _split_requests(REQUESTS.read_text(encoding="utf-8"))
+        for e in _parse_request_entries(tail):
+            add(e["pmid"], e["doi"], "REQUESTS.md")
+
+    if args.all:  # every paper a functional_claim cites that we don't yet hold
+        for pf in _iter_part_files(args.candidate):
+            d = json.loads(pf.read_text())
+            slug = d.get("slug", pf.stem)
+            for cl in d.get("functional_claims", []):
+                s = cl.get("source", {})
+                add(s.get("pmid"), s.get("doi"), f"{slug}/claim:{cl.get('id')}")
+
+    items = [it for it in items if it["url"]]
+    if args.urls:
+        for it in items:
+            print(it["url"])
+        return 0
+    if not items:
+        print("no outstanding paper requests")
+        return 0
+    print(f"{len(items)} requested paper(s) not in the store:")
+    for it in items:
+        ident = " ".join(x for x in (f"PMID {it['pmid']}" if it["pmid"] else "",
+                                     f"doi:{it['doi']}" if it["doi"] else "") if x)
+        print(f"  - {ident}  ({it['unblocks']})  ->  {it['url']}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Local full-text paper store for cross-check / verification.")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -418,6 +508,8 @@ def main() -> int:
     a.add_argument("--pmid")
     a.add_argument("--doi")
     a.add_argument("--title")
+    a.add_argument("--move", action="store_true",
+                   help="delete the source file after it's safely stored (use for sourcing/incoming/)")
     a.set_defaults(func=cmd_add)
 
     r = sub.add_parser("resolve", help="print local path for a cited PMID/DOI (exit 1 if absent)")
@@ -449,6 +541,15 @@ def main() -> int:
     q.add_argument("--unblocks", help="what this paper would unblock, e.g. 'MBP/claim:ligand'")
     q.add_argument("--barrier", help="paywall | not-in-pmc | login | 403 | other")
     q.set_defaults(func=cmd_request)
+
+    ls = sub.add_parser("requests", help="list requested papers (not yet in the store) + resolvable URLs")
+    ls.add_argument("--urls", action="store_true", help="print one fetch URL per line (for an opener)")
+    ls.add_argument("--all", action="store_true", help="include every claim-cited paper not in the store, not just REQUESTS.md")
+    ls.add_argument("--candidate", action="store_true", help="with --all, also scan parts/candidate/")
+    ls.set_defaults(func=cmd_requests)
+
+    pr = sub.add_parser("prune", help="drop REQUESTS.md entries whose paper is now in the store")
+    pr.set_defaults(func=cmd_prune)
 
     args = ap.parse_args()
     return args.func(args)
