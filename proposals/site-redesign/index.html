@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SeqMake Parts — a knowledge base of standard biological parts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================= TOKENS */
+:root{
+  --paper:#F4EFE3; --paper-2:#ECE5D2; --panel:#FBF8F0; --ink:#211C16;
+  --ink-soft:#5F564A; --ink-faint:#8A8070; --line:#DBD2BC; --line-2:#E7DFCB;
+  --madder:#A8341F; --madder-deep:#8A2817; --moss:#3B6B4A; --gold:#B0822B;
+  --shadow:18,14,8;
+  /* per-type signature hues (the base-pair color system) */
+  --c-promoter:#B5471F; --c-RBS:#B0822B; --c-operator:#7A4FA0;
+  --c-CDS:#3B6B4A; --c-polypeptide_domain:#2E7D7A; --c-terminator:#3A5A93;
+  --c-origin_of_replication:#3E4FA0; --c-oriT:#9A4070;
+  --c-protein_bind:#A86A1F; --c-protein_binding_site:#A86A1F;
+  --c-ncRNA:#B24E6B; --c-misc_feature:#7C7464; --c-sequence_feature:#7C7464;
+  --c-misc_RNA:#B24E6B; --c-oriT:#9A4070;
+  --bg:var(--paper); --fg:var(--ink); --card:var(--panel);
+  --font-display:"Fraunces",Georgia,serif;
+  --font-ui:"Hanken Grotesk",system-ui,sans-serif;
+  --font-mono:"Spline Sans Mono",ui-monospace,monospace;
+  --maxw:1320px;
+}
+html[data-theme="dark"]{
+  --paper:#16140F; --paper-2:#1E1B14; --panel:#1C1913; --ink:#EDE6D6;
+  --ink-soft:#B3AB98; --ink-faint:#8A8070; --line:#332E22; --line-2:#2A261C;
+  --madder:#E07A52; --madder-deep:#E8916E; --moss:#7FB58E; --gold:#D9AE5A;
+  --shadow:0,0,0;
+  --c-promoter:#E0875A; --c-RBS:#D9AE5A; --c-operator:#B79AD8;
+  --c-CDS:#7FB58E; --c-polypeptide_domain:#6FCFC9; --c-terminator:#86A6E0;
+  --c-origin_of_replication:#8E9CE8; --c-oriT:#DE8FB6;
+  --c-protein_bind:#E0AE6A; --c-protein_binding_site:#E0AE6A;
+  --c-ncRNA:#E58AA3; --c-misc_feature:#A89E88; --c-sequence_feature:#A89E88;
+  --c-misc_RNA:#E58AA3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:var(--font-ui); font-size:15px; line-height:1.5;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  transition:background .4s ease,color .4s ease;
+}
+a{color:inherit}
+::selection{background:var(--madder);color:#fff}
+button{font-family:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:2px solid var(--madder);outline-offset:2px;border-radius:3px}
+
+/* =================================================== BASE-PAIR COORDINATE RULE */
+.ladder{height:7px;width:100%;background:
+  repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 7px);
+  opacity:.32}
+.ladder.thin{height:5px;background:
+  repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 9px);opacity:1}
+
+/* ============================================================= MASTHEAD */
+.masthead{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px) saturate(1.2);border-bottom:1px solid var(--line)}
+.masthead .row{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;
+  gap:18px;padding:13px 26px}
+.wordmark{display:flex;align-items:baseline;gap:9px;text-decoration:none;white-space:nowrap}
+.wordmark b{font-family:var(--font-display);font-weight:600;font-size:20px;letter-spacing:.01em}
+.wordmark .div{width:1px;height:18px;background:var(--line);transform:skewX(-12deg)}
+.wordmark small{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.spacer{flex:1}
+.searchbtn{display:flex;align-items:center;gap:10px;min-width:300px;padding:9px 12px;
+  background:var(--card);border:1px solid var(--line);border-radius:9px;color:var(--ink-soft);
+  font-size:13.5px;transition:border-color .2s,box-shadow .2s}
+.searchbtn:hover{border-color:var(--madder);box-shadow:0 1px 0 var(--madder)}
+.searchbtn .mag{color:var(--madder);font-size:14px}
+.searchbtn .txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.searchbtn .kbd{margin-left:auto;font-family:var(--font-mono);font-size:11px;
+  border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--ink-faint)}
+.iconbtn{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);
+  border-radius:9px;background:var(--card);transition:border-color .2s,color .2s,transform .2s}
+.iconbtn:hover{border-color:var(--madder);color:var(--madder);transform:rotate(-8deg)}
+.navlink{font-size:13.5px;color:var(--ink-soft);text-decoration:none;padding:6px 2px;
+  border-bottom:1.5px solid transparent;transition:.2s}
+.navlink:hover{color:var(--madder);border-color:var(--madder)}
+
+/* ============================================================= HERO */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .watermark{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.hero .watermark svg{width:100%;height:100%}
+.hero .inner{max-width:var(--maxw);margin:0 auto;padding:64px 26px 40px;position:relative;z-index:2}
+.eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--madder);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line);max-width:120px}
+h1.title{font-family:var(--font-display);font-weight:600;font-optical-sizing:auto;
+  font-size:clamp(38px,7vw,94px);line-height:.94;letter-spacing:-.015em;margin:0;
+  max-width:18ch}
+h1.title em{font-style:italic;font-weight:500;color:var(--madder)}
+.lede{max-width:60ch;margin:24px 0 0;font-size:17px;line-height:1.62;color:var(--ink-soft)}
+.lede b{color:var(--fg);font-weight:600}
+/* provenance: AI-authored + the per-claim trust pipeline (the hero motif) */
+.prov{margin-top:30px;max-width:64ch}
+.pipeline{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.pipeline .stage{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11.5px;
+  letter-spacing:.02em;color:var(--ink-soft);padding:7px 13px;border:1px solid var(--line);
+  background:var(--card);border-radius:20px}
+.pipeline .stage .pip{width:8px;height:8px;border-radius:50%;flex:none}
+.pipeline .stage.s1 .pip{background:var(--ink-faint)}
+.pipeline .stage.s2 .pip{background:var(--gold)}
+.pipeline .stage.s3 .pip{background:var(--moss)}
+.pipeline .arrow{color:var(--ink-faint);font-family:var(--font-mono);padding:0 9px;font-size:13px}
+.prov .note{margin:14px 0 0;font-size:13px;line-height:1.55;color:var(--ink-soft)}
+.prov .note b{color:var(--fg);font-weight:600}
+.prov .note .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--madder);border:1px solid color-mix(in srgb,var(--madder) 40%,var(--line));
+  border-radius:5px;padding:1px 7px;margin-right:8px;white-space:nowrap}
+
+/* stat ribbon */
+.ribbon{display:flex;flex-wrap:wrap;gap:0;margin-top:40px;border:1px solid var(--line);
+  border-radius:8px;overflow:hidden;background:var(--card);max-width:760px}
+.ribbon .stat{flex:1;min-width:130px;padding:16px 20px;border-right:1px solid var(--line)}
+.ribbon .stat:last-child{border-right:0}
+.ribbon .n{font-family:var(--font-display);font-size:34px;font-weight:600;line-height:1;
+  letter-spacing:-.02em}
+.ribbon .l{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint);margin-top:7px}
+
+/* ============================================================= LAYOUT */
+.shell{max-width:var(--maxw);margin:0 auto;padding:30px 26px 90px;
+  display:grid;grid-template-columns:248px 1fr;gap:34px;align-items:start;position:relative;z-index:2}
+@media(max-width:920px){.shell{grid-template-columns:1fr}.rail{position:static!important}}
+@media(max-width:760px){
+  .masthead .row{gap:10px;padding:11px 16px}
+  .masthead .navlink{display:none}
+  .searchbtn{min-width:0;flex:1}
+  .searchbtn .kbd{display:none}
+  .hero .inner{padding:44px 18px 32px}
+  .shell{padding:24px 16px 70px}
+}
+
+/* ---------- facet rail ---------- */
+.rail{position:sticky;top:78px;max-height:calc(100vh - 96px);overflow-y:auto;padding-right:4px;
+  scrollbar-width:thin}
+.rail h2{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.rail h2::before{content:"";width:14px;height:1px;background:var(--madder)}
+.facetgroup{margin-bottom:26px}
+.facet{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;
+  border:0;padding:5px 6px;border-radius:6px;font-size:13.5px;color:var(--ink-soft);
+  transition:background .15s,color .15s}
+.facet:hover{background:var(--paper-2);color:var(--fg)}
+.facet .dot{width:9px;height:9px;border-radius:2px;flex:none;background:var(--ink-faint)}
+.facet .nm{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.facet .ct{font-family:var(--font-mono);font-size:11px;color:var(--ink-faint)}
+.facet[aria-pressed="true"]{background:color-mix(in srgb,var(--madder) 12%,transparent);color:var(--fg);font-weight:600}
+.facet[aria-pressed="true"] .ct{color:var(--madder)}
+.facet .box{width:14px;height:14px;border:1.5px solid var(--line);border-radius:4px;flex:none;
+  display:grid;place-content:center;font-size:10px;color:#fff}
+.facet[aria-pressed="true"] .box{background:var(--madder);border-color:var(--madder)}
+.clearbtn{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--madder);
+  background:none;border:0;text-decoration:underline;text-underline-offset:3px;padding:0;margin-left:auto}
+
+/* ---------- results column ---------- */
+.toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.count{font-family:var(--font-display);font-size:22px;font-weight:600}
+.count em{font-style:normal;color:var(--madder)}
+.count small{font-family:var(--font-ui);font-size:13px;font-weight:400;color:var(--ink-faint);margin-left:8px}
+.tbspacer{flex:1}
+.filterbox{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);
+  border-radius:8px;padding:7px 11px;min-width:210px}
+.filterbox input{border:0;background:none;outline:none;font:inherit;font-size:13.5px;color:inherit;width:100%}
+.filterbox .mag{color:var(--ink-faint);font-size:13px}
+.select{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 11px;
+  font:inherit;font-size:13px;color:var(--ink-soft)}
+.viewtoggle{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.viewtoggle button{padding:8px 11px;background:var(--card);border:0;font-size:13px;color:var(--ink-faint)}
+.viewtoggle button[aria-pressed="true"]{background:var(--madder);color:#fff}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;min-height:0}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:12px;padding:5px 9px;
+  border:1px solid var(--line);border-radius:20px;background:var(--card);color:var(--ink-soft)}
+.chip .x{cursor:pointer;color:var(--madder);font-weight:700;line-height:1}
+.chip .k{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-faint)}
+
+/* ---------- part cards grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:0 0 15px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;
+  transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s,border-color .22s;
+  animation:rise .5s both}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--type) 55%,var(--line));
+  box-shadow:0 14px 30px -16px rgba(var(--shadow),.55)}
+.tape{height:6px;width:100%;background:
+  linear-gradient(90deg,var(--type) 0,var(--type) 100%);position:relative;overflow:hidden}
+.tape::after{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 2px,transparent 2px 7px);
+  transform:translateX(-100%);transition:transform .6s ease}
+.card:hover .tape::after{transform:translateX(0)}
+.card .body{padding:14px 16px 0;flex:1;display:flex;flex-direction:column}
+.cardtop{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.typechip{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--type);border:1px solid color-mix(in srgb,var(--type) 40%,var(--line));
+  background:color-mix(in srgb,var(--type) 9%,transparent);border-radius:5px;padding:2px 7px;white-space:nowrap}
+.kindmark{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-left:auto}
+.card h3{font-family:var(--font-display);font-weight:600;font-size:23px;line-height:1.05;margin:0;
+  letter-spacing:-.01em;word-break:break-word}
+.syn{font-size:12px;color:var(--ink-faint);margin:5px 0 0;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;font-style:italic}
+.desc{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:11px 0 0;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.desc.empty{color:var(--ink-faint);font-style:italic;opacity:.7}
+.cardfoot{display:flex;align-items:center;gap:13px;padding:13px 16px 0;margin-top:13px;
+  border-top:1px solid var(--line-2);font-size:11.5px;color:var(--ink-faint)}
+.cardfoot .len{font-family:var(--font-mono);color:var(--ink-soft)}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-family:var(--font-mono);
+  letter-spacing:.04em;text-transform:uppercase}
+.badge .seal{width:14px;height:14px;border-radius:50%;display:grid;place-content:center;font-size:9px;line-height:1}
+.badge.val{color:var(--moss)}
+.badge.val .seal{background:color-mix(in srgb,var(--moss) 16%,transparent);color:var(--moss);font-weight:700}
+.badge.cand .seal{background:transparent;border:1.5px solid var(--ink-faint);width:11px;height:11px}
+.claimpill{margin-left:auto;font-family:var(--font-mono);font-size:10.5px;color:var(--moss);
+  border:1px solid color-mix(in srgb,var(--moss) 40%,var(--line));border-radius:20px;padding:1px 8px}
+
+/* ---------- compact table view ---------- */
+.tableview{width:100%;border-collapse:collapse;font-size:13.5px}
+.tableview th{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-faint);text-align:left;padding:9px 12px;border-bottom:1.5px solid var(--line)}
+.tableview td{padding:11px 12px;border-bottom:1px solid var(--line-2)}
+.tableview tr{cursor:pointer;transition:background .12s}
+.tableview tbody tr:hover{background:var(--paper-2)}
+.tableview .tname{font-family:var(--font-display);font-weight:600;font-size:16px}
+.tableview .tlen{font-family:var(--font-mono);color:var(--ink-soft)}
+
+.empty-state{text-align:center;padding:70px 20px;color:var(--ink-faint)}
+.empty-state .big{font-family:var(--font-display);font-size:28px;color:var(--ink-soft);margin-bottom:8px}
+
+/* ============================================================= COMMAND PALETTE */
+.scrim{position:fixed;inset:0;z-index:90;background:color-mix(in srgb,var(--ink) 40%,transparent);
+  backdrop-filter:blur(6px);display:none;opacity:0;transition:opacity .2s}
+.scrim.open{display:block;opacity:1}
+.palette{position:fixed;z-index:91;top:14vh;left:50%;transform:translateX(-50%) scale(.97);
+  width:min(640px,92vw);background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 40px 80px -28px rgba(var(--shadow),.7);display:none;opacity:0;overflow:hidden;
+  transition:opacity .2s,transform .2s}
+.palette.open{display:block;opacity:1;transform:translateX(-50%) scale(1)}
+.palette .pin{display:flex;align-items:center;gap:12px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.palette .pin .mag{color:var(--madder);font-size:18px}
+.palette .pin input{flex:1;border:0;background:none;outline:none;font-family:var(--font-display);
+  font-size:22px;font-weight:500;color:var(--fg)}
+.palette .pin input::placeholder{color:var(--ink-faint);font-weight:400}
+.palette .pin .esc{font-family:var(--font-mono);font-size:10px;border:1px solid var(--line);
+  border-radius:5px;padding:2px 7px;color:var(--ink-faint)}
+.presets{display:flex;gap:7px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line-2)}
+.preset{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:20px;
+  padding:4px 11px;background:none;color:var(--ink-soft);transition:.15s}
+.preset:hover{border-color:var(--madder);color:var(--madder)}
+.presults{max-height:46vh;overflow-y:auto;padding:8px}
+.pgroup{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);padding:12px 14px 6px}
+.presult{display:flex;align-items:center;gap:13px;padding:10px 14px;border-radius:9px;
+  text-decoration:none;color:inherit}
+.presult.active{background:color-mix(in srgb,var(--madder) 12%,transparent)}
+.presult .pdot{width:10px;height:10px;border-radius:3px;flex:none}
+.presult .pname{font-family:var(--font-display);font-weight:600;font-size:16px}
+.presult .pmeta{font-size:12px;color:var(--ink-faint);white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis}
+.presult .ptype{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-left:auto;
+  white-space:nowrap}
+.presult mark{background:color-mix(in srgb,var(--gold) 38%,transparent);color:inherit;border-radius:2px}
+.pnohits{padding:34px 20px;text-align:center;color:var(--ink-faint)}
+
+/* ============================================================= DETAIL DRAWER */
+.drawer-scrim{position:fixed;inset:0;z-index:70;background:color-mix(in srgb,var(--ink) 38%,transparent);
+  backdrop-filter:blur(3px);display:none;opacity:0;transition:opacity .25s}
+.drawer-scrim.open{display:block;opacity:1}
+.drawer{position:fixed;z-index:71;top:0;right:0;height:100vh;width:min(520px,94vw);
+  background:var(--panel);border-left:1px solid var(--line);box-shadow:-30px 0 60px -30px rgba(var(--shadow),.6);
+  transform:translateX(100%);transition:transform .32s cubic-bezier(.3,.8,.3,1);
+  display:flex;flex-direction:column;overflow:hidden}
+.drawer.open{transform:translateX(0)}
+.drawer .dhead{padding:24px 26px 18px;border-bottom:1px solid var(--line);position:relative}
+.drawer .dclose{position:absolute;top:18px;right:20px;width:32px;height:32px;border:1px solid var(--line);
+  border-radius:8px;background:var(--card);display:grid;place-content:center;font-size:15px}
+.drawer .dclose:hover{border-color:var(--madder);color:var(--madder)}
+.drawer h2{font-family:var(--font-display);font-weight:600;font-size:38px;line-height:1;margin:14px 0 0;
+  letter-spacing:-.02em}
+.drawer .druler{height:22px;margin-top:16px;position:relative;border-bottom:1px solid var(--line)}
+.drawer .druler .tick{position:absolute;bottom:0;width:1px;background:var(--ink-faint);height:6px}
+.drawer .druler .tick.major{height:11px;background:var(--ink-soft)}
+.drawer .druler .tlabel{position:absolute;bottom:11px;font-family:var(--font-mono);font-size:9px;
+  color:var(--ink-faint);transform:translateX(-50%)}
+.drawer .dbody{flex:1;overflow-y:auto;padding:22px 26px 40px}
+.drow{margin-bottom:22px}
+.dlabel{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:8px}
+.dvalue{font-size:14.5px;line-height:1.6;color:var(--fg)}
+.synlist{display:flex;flex-wrap:wrap;gap:6px}
+.synlist span{font-family:var(--font-mono);font-size:12px;background:var(--paper-2);border:1px solid var(--line-2);
+  border-radius:5px;padding:2px 8px;color:var(--ink-soft)}
+.metagrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.metacell{border:1px solid var(--line-2);border-radius:8px;padding:11px 13px;background:var(--card)}
+.metacell .mk{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-faint)}
+.metacell .mv{font-family:var(--font-display);font-size:20px;font-weight:600;margin-top:4px;line-height:1}
+.claim{border:1px solid var(--line-2);border-left:3px solid var(--moss);border-radius:6px;
+  padding:11px 13px;margin-bottom:9px;background:var(--card)}
+.claim .ct{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--moss);margin-bottom:5px}
+.claim .clb{font-size:13.5px;line-height:1.5}
+.review{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:10px;
+  letter-spacing:.05em;border-radius:20px;padding:1px 8px;margin-top:7px;border:1px solid var(--line)}
+.review.gen{color:var(--ink-faint)} .review.cross{color:var(--gold);border-color:var(--gold)}
+.review.expert{color:var(--moss);border-color:var(--moss)}
+.dlbtns{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+.dlbtn{font-family:var(--font-mono);font-size:12px;text-decoration:none;border:1px solid var(--line);
+  border-radius:8px;padding:8px 13px;color:var(--ink-soft);transition:.18s;display:inline-flex;gap:7px;align-items:center}
+.dlbtn:hover{border-color:var(--madder);color:var(--madder)}
+.dlbtn.primary{background:var(--madder);border-color:var(--madder);color:#fff}
+.dlbtn.primary:hover{background:var(--madder-deep);color:#fff}
+
+/* ============================================================= CONTRIBUTE */
+.contribute{border-top:1px solid var(--line);background:
+  linear-gradient(180deg,color-mix(in srgb,var(--madder) 4%,var(--bg)),var(--bg));
+  position:relative;z-index:2}
+.cinner{max-width:var(--maxw);margin:0 auto;padding:64px 26px 72px}
+.contribute .eyebrow{margin-bottom:14px}
+.contribute h2{font-family:var(--font-display);font-weight:600;font-size:clamp(32px,5vw,56px);
+  line-height:1;letter-spacing:-.02em;margin:0;max-width:18ch}
+.contribute h2 em{font-style:italic;color:var(--madder)}
+.csub{max-width:66ch;margin:20px 0 0;font-size:16px;line-height:1.6;color:var(--ink-soft)}
+.csub b{color:var(--fg);font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:40px 0 0}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 22px 20px;
+  position:relative;overflow:hidden}
+.step::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--c-CDS),var(--c-promoter))}
+.step .num{font-family:var(--font-display);font-size:46px;font-weight:600;line-height:.8;
+  color:color-mix(in srgb,var(--madder) 30%,var(--line));letter-spacing:-.02em}
+.step h3{font-family:var(--font-display);font-weight:600;font-size:20px;margin:12px 0 8px;line-height:1.1}
+.step p{font-size:13.5px;line-height:1.55;color:var(--ink-soft);margin:0}
+.step p code{font-family:var(--font-mono);font-size:12px;background:var(--paper-2);
+  border:1px solid var(--line-2);border-radius:4px;padding:1px 5px;color:var(--madder)}
+.step .prereq{font-size:11.5px;color:var(--ink-faint);margin-top:11px;line-height:1.45}
+/* code block */
+.code{display:flex;align-items:center;gap:12px;margin:14px 0 0;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-family:var(--font-mono);
+  font-size:13px;overflow-x:auto}
+.code .prompt{color:var(--madder);font-weight:600;flex:none;user-select:none}
+.code .cmd{color:var(--fg);white-space:nowrap}
+.code .copy{margin-left:auto;flex:none;border:1px solid var(--line);background:var(--card);
+  border-radius:6px;padding:3px 9px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-faint);transition:.15s}
+.code .copy:hover{border-color:var(--madder);color:var(--madder)}
+.code .copy.done{color:var(--moss);border-color:var(--moss)}
+/* input + does panels */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+@media(max-width:820px){.cgrid{grid-template-columns:1fr}}
+.cpanel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.cpanel h4{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 14px;display:flex;align-items:center;gap:8px}
+.cpanel h4::before{content:"";width:14px;height:1px;background:var(--madder)}
+.cpanel .cintro{font-size:13px;color:var(--ink-soft);margin:0 0 16px;line-height:1.5}
+.cpanel .tip{font-size:12px;color:var(--ink-faint);line-height:1.55;margin:16px 0 0;padding-top:15px;
+  border-top:1px solid var(--line-2)}
+.cpanel .tip b{color:var(--ink-soft);font-weight:600}
+.cpanel .tip code{font-family:var(--font-mono);font-size:11px;background:var(--paper-2);
+  border:1px solid var(--line-2);border-radius:4px;padding:1px 5px;color:var(--madder)}
+.inputrow{margin-bottom:15px}
+.inputrow:last-child{margin-bottom:0}
+.inputrow .lbl{font-size:13px;color:var(--ink-soft);margin-bottom:6px}
+.inputrow .lbl b{color:var(--fg);font-weight:600}
+.does{list-style:none;margin:0;padding:0}
+.does li{position:relative;padding:0 0 13px 26px;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.does li:last-child{padding-bottom:0}
+.does li::before{content:"";position:absolute;left:6px;top:7px;width:7px;height:7px;border-radius:2px;
+  background:var(--moss)}
+.does li b{color:var(--fg);font-weight:600}
+.does li code{font-family:var(--font-mono);font-size:12px;color:var(--madder)}
+.clinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}
+.clinks .lead{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-faint);margin-right:4px}
+.clink{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:8px;
+  padding:8px 13px;color:var(--ink-soft);transition:.18s;background:var(--card)}
+.clink:hover{border-color:var(--madder);color:var(--madder)}
+.cnote{margin-top:22px;display:flex;align-items:flex-start;gap:13px;max-width:70ch;
+  padding:13px 16px;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;
+  background:color-mix(in srgb,var(--gold) 6%,var(--card));font-size:13px;line-height:1.55;color:var(--ink-soft)}
+.cnote b{color:var(--fg);font-weight:600}
+.cnote .pip{flex:none;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 7px;margin-top:1px}
+
+footer{border-top:1px solid var(--line);position:relative;z-index:2}
+footer .inner{max-width:var(--maxw);margin:0 auto;padding:34px 26px;display:flex;
+  flex-wrap:wrap;gap:24px;align-items:center;font-size:12.5px;color:var(--ink-faint)}
+footer a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line)}
+footer a:hover{color:var(--madder);border-color:var(--madder)}
+
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes heroIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero .inner>*{animation:heroIn .7s both}
+.hero .eyebrow{animation-delay:.05s}.hero h1{animation-delay:.12s}
+.hero .lede{animation-delay:.22s}.hero .prov{animation-delay:.3s}.hero .ribbon{animation-delay:.38s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ===== full-page part detail (replaces the slide-over drawer) ===== */
+.detail{min-height:100vh;background:var(--bg);animation:heroIn .45s both}
+.detail .dwrap{max-width:920px;margin:0 auto;padding:32px 24px 96px}
+.backbtn{appearance:none;background:none;border:1px solid var(--line);border-radius:999px;
+  font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);padding:7px 15px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:7px;margin-bottom:24px}
+.backbtn:hover{border-color:var(--madder);color:var(--madder)}
+.detail .dtop{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.detail .dt{font-family:var(--font-display);font-weight:600;font-size:clamp(34px,6vw,56px);line-height:1.02;margin:16px 0 0}
+.detail .dmeta{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-faint);margin-top:13px;
+  display:flex;flex-wrap:wrap;gap:5px 16px}
+.detail .dlede{font-size:17px;line-height:1.55;color:var(--ink-soft);margin:18px 0 2px;max-width:72ch}
+.partview{margin:24px 0 4px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.dsec{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint);margin:36px 0 15px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.drow2{margin:15px 0}
+.drow2 .dk{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
+.claimcard{border:1px solid var(--line-2);border-left:3px solid var(--type,var(--moss));border-radius:9px;
+  padding:15px 17px;margin-bottom:12px;background:var(--card)}
+.claimcard .cl-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:9px}
+.claimcard .cl-label{font-size:15px;line-height:1.5;color:var(--fg);margin:0}
+.claimcard .cl-quote{font-size:13px;line-height:1.5;color:var(--ink-soft);font-style:italic;
+  border-left:2px solid var(--line);padding-left:12px;margin:10px 0}
+.claimcard .cl-src{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-faint);margin-top:9px}
+.claimcard .cl-src a{color:var(--madder);text-decoration:none}
+.claimcard .cl-src a:hover{text-decoration:underline}
+.cbadge{font-family:var(--font-mono);font-size:10px;letter-spacing:.03em;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
+.cbadge.cf-high{color:var(--moss);border-color:color-mix(in srgb,var(--moss) 42%,var(--line))}
+.cbadge.cf-medium{color:var(--gold);border-color:color-mix(in srgb,var(--gold) 42%,var(--line))}
+.cbadge.cf-low{color:var(--ink-faint)}
+.cbadge.us{color:var(--ink-soft)}
+.cbadge.cc{color:var(--moss);border-color:color-mix(in srgb,var(--moss) 42%,var(--line))}
+.refitem{font-size:13.5px;line-height:1.5;color:var(--ink-soft);padding:10px 0;border-bottom:1px solid var(--line-2)}
+.refitem .rt{color:var(--fg)}
+.refitem a{color:var(--madder);text-decoration:none;font-family:var(--font-mono);font-size:11.5px}
+.refitem a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="row">
+    <a class="wordmark" href="#top">
+      <b>SeqMake</b><span class="div"></span><small>Parts&nbsp;·&nbsp;Knowledge&nbsp;Base</small>
+    </a>
+    <div class="spacer"></div>
+    <button class="searchbtn" id="openPalette" aria-label="Search the catalog">
+      <span class="mag">⌕</span><span class="txt">Search 246 parts, synonyms, claims…</span>
+      <span class="kbd">⌘K</span>
+    </button>
+    <a class="navlink" href="#contribute">Contribute</a>
+    <a class="navlink" href="https://github.com/dbikard/seqmake-parts/blob/main/catalog.json">Data</a>
+    <a class="navlink" href="https://github.com/dbikard/seqmake-parts/blob/main/QUERIES.md">SPARQL</a>
+    <button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◑</button>
+  </div>
+  <div class="ladder"></div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="watermark" aria-hidden="true">
+    <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice">
+      <g id="helix"></g>
+    </svg>
+  </div>
+  <div class="inner">
+    <p class="eyebrow">AI-authored · independently cross-checked · for synthetic biology</p>
+    <h1 class="title">Knowledge&nbsp;Base&nbsp;of<br><em>Biological&nbsp;parts</em></h1>
+    <p class="lede">Promoters, coding sequences, terminators, origins and regulators —
+      each with its <b>sequence source</b> recorded and functional claims cited to the
+      primary literature, then <b>independently cross-checked against that source</b> and scored
+      for confidence and usefulness. One canonical,
+      Sequence&nbsp;Ontology-typed record; three machine-readable forms, linked into UniProt.</p>
+    <div class="prov">
+      <div class="pipeline">
+        <span class="stage s1"><span class="pip"></span>AI-authored, sourced</span>
+        <span class="arrow">→</span>
+        <span class="stage s2"><span class="pip"></span>cross-checked vs. source</span>
+        <span class="arrow">→</span>
+        <span class="stage s3"><span class="pip"></span>confidence + usefulness</span>
+      </div>
+      <p class="note"><span class="tag">AI-authored</span>This knowledge base is machine-generated and
+        self-correcting: every claim is sourced, then an independent agent <b>cross-checks it against the
+        cited paper</b> and scores it for <b>confidence</b> and <b>usefulness</b>. No human sign-off gates a
+        claim — <b>trust is per claim</b>, carried in the data. Verify against the cited literature before you rely on it.</p>
+    </div>
+    <div class="ribbon" id="ribbon"></div>
+  </div>
+</section>
+
+<!-- ============ MAIN ============ -->
+<div class="shell" id="catalog">
+  <!-- facet rail -->
+  <aside class="rail" id="rail">
+    <div class="facetgroup">
+      <h2>Browse by type</h2>
+      <div id="typeFacets"></div>
+    </div>
+    <div class="facetgroup">
+      <h2>Curation</h2>
+      <div id="statusFacets"></div>
+    </div>
+    <div class="facetgroup">
+      <h2>Molecule</h2>
+      <div id="kindFacets"></div>
+    </div>
+    <div class="facetgroup">
+      <h2>Knowledge</h2>
+      <div id="knowledgeFacets"></div>
+    </div>
+    <div class="facetgroup">
+      <h2>Size</h2>
+      <div id="sizeFacets"></div>
+    </div>
+    <div class="facetgroup" id="colGroup">
+      <h2>Collections</h2>
+      <div id="colFacets"></div>
+    </div>
+  </aside>
+
+  <!-- results -->
+  <main>
+    <div class="toolbar">
+      <div class="count" id="count"></div>
+      <div class="tbspacer"></div>
+      <label class="filterbox">
+        <span class="mag">⌕</span>
+        <input id="quickFilter" type="search" placeholder="Filter results…" aria-label="Filter results">
+      </label>
+      <select class="select" id="sort" aria-label="Sort">
+        <option value="rel">Sort: Relevance</option>
+        <option value="name">Name A→Z</option>
+        <option value="len-d">Largest first</option>
+        <option value="len-a">Smallest first</option>
+        <option value="claims">Most claims</option>
+        <option value="status">Validated first</option>
+      </select>
+      <div class="viewtoggle" role="group" aria-label="View">
+        <button id="viewGrid" aria-pressed="true" title="Grid">▦</button>
+        <button id="viewTable" aria-pressed="false" title="Table">≡</button>
+      </div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div id="results"></div>
+  </main>
+</div>
+
+<!-- ============ COMMAND PALETTE ============ -->
+<div class="scrim" id="scrim"></div>
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Search catalog">
+  <div class="pin">
+    <span class="mag">⌕</span>
+    <input id="pinput" type="text" placeholder="Search parts, synonyms, regulators, accessions…" autocomplete="off" spellcheck="false">
+    <span class="esc">ESC</span>
+  </div>
+  <div class="presets" id="presets"></div>
+  <div class="presults" id="presults"></div>
+</div>
+
+<!-- ============ PART DETAIL (full page) ============ -->
+<section class="detail" id="detail" role="region" aria-label="Part detail" hidden></section>
+
+<!-- ============ CONTRIBUTE ============ -->
+<section class="contribute" id="contribute">
+  <div class="cinner">
+    <p class="eyebrow">Contribute a part</p>
+    <h2>Add a part in <em>one command</em>.</h2>
+    <p class="csub">The catalog is AI-authored end&#8209;to&#8209;end — so contributing is too.
+      Point an agent at the repository and run a single command with your part. It
+      <b>sources the sequence from a cited deposit</b> (independent re-fetch + compare, never
+      from memory), researches the literature, annotates sub-features with Sequence Ontology,
+      and drafts functional claims — each carrying its source, confidence, and usefulness, then
+      independently cross-checked against the cited paper — runs every validation gate and opens a
+      pull request from your fork. It is
+      <b>proposal-only</b>: nothing lands until you review it.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Fork the catalog &amp; open it</h3>
+        <p>You don't need write access — you work from <b>your own fork</b>. The GitHub&nbsp;CLI
+          forks, clones, and wires up <code>upstream</code> in one line; then open
+          <b>Claude&nbsp;Code</b>. (Repo developers can <code>git clone</code> directly.)</p>
+        <div class="code"><span class="prompt">$</span><span class="cmd">gh repo fork dbikard/seqmake-parts --clone &amp;&amp; cd seqmake-parts &amp;&amp; claude</span><button class="copy" data-copy="gh repo fork dbikard/seqmake-parts --clone && cd seqmake-parts && claude">Copy</button></div>
+        <p class="prereq">One-time setup: a GitHub account, <code>gh auth login</code>, and Claude&nbsp;Code.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Run one command — it does the rest</h3>
+        <p>Describe your part in plain words. The engine sources, researches, annotates and
+          verifies, runs every gate, then <b>pushes a branch to your fork and opens the pull
+          request</b> to the catalog. It's <b>proposal-only</b> — you review before it lands.</p>
+        <div class="code"><span class="prompt">/</span><span class="cmd">add-part GFPmut3</span><button class="copy" data-copy="/add-part GFPmut3">Copy</button></div>
+        <div class="code" style="margin-top:9px"><span class="prompt">→</span><span class="cmd">sourced · verified · gates green · PR → dbikard/seqmake-parts</span></div>
+      </div>
+    </div>
+
+    <div class="cgrid">
+      <div class="cpanel">
+        <h4>What counts as proper input</h4>
+        <p class="cintro">Just describe it in plain words — the agent figures out the rest. No special format.</p>
+        <div class="inputrow">
+          <div class="lbl">Just the <b>part name</b> — the engine finds the canonical source:</div>
+          <div class="code"><span class="prompt">/</span><span class="cmd">add-part T7lac</span><button class="copy" data-copy="/add-part T7lac">Copy</button></div>
+        </div>
+        <div class="inputrow">
+          <div class="lbl">Name + its <b>source or paper</b> — an accession, PMID or DOI, however you'd say it (most robust):</div>
+          <div class="code"><span class="prompt">/</span><span class="cmd">add-part aadA, from UniProt P0AG05 (see PMID 26527143)</span><button class="copy" data-copy="/add-part aadA, from UniProt P0AG05 (see PMID 26527143)">Copy</button></div>
+        </div>
+        <div class="inputrow">
+          <div class="lbl">A whole <b>related family</b> at once — researched once, grouped together:</div>
+          <div class="code"><span class="prompt">/</span><span class="cmd">add-part the Anderson promoters J23100, J23101, J23102</span><button class="copy" data-copy="/add-part the Anderson promoters J23100, J23101, J23102">Copy</button></div>
+        </div>
+        <p class="tip"><b>Helpful, never required —</b> more provenance means a better, less-provisional
+          result. If the defining paper is <b>paywalled</b>, drop the PDF in <code>sourcing/incoming/</code>
+          and re-run: the agent verifies and cites boundaries from it, and the PDF stays local
+          (it's gitignored — never committed; only the citation lands).</p>
+      </div>
+      <div class="cpanel">
+        <h4>What the agent does for you</h4>
+        <ul class="does">
+          <li><b>Sources the sequence</b> by independent re-fetch + byte/alignment compare against the deposited record — flags any divergence, never trusts memory.</li>
+          <li><b>Types every feature</b> with Sequence Ontology and locates sub-features (−35/−10, operator, RBS, domains) on the real sequence, then adversarially verifies the coordinates.</li>
+          <li><b>Drafts literature-cited functional claims</b>, scored for confidence and usefulness, then <b>independently cross-checked</b> against the cited source.</li>
+          <li><b>Runs every gate</b> — schema, GenBank/catalog/RDF rebuild, SHACL, content guard, tests — then pushes to your fork and opens the PR to the catalog only when they are green.</li>
+        </ul>
+        <div class="pipeline" style="margin-top:18px">
+          <span class="stage s1"><span class="pip"></span>AI-authored, sourced</span>
+          <span class="arrow">→</span>
+          <span class="stage s2"><span class="pip"></span>cross-checked vs. source</span>
+          <span class="arrow">→</span>
+          <span class="stage s3"><span class="pip"></span>confidence + usefulness</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cnote">
+      <span class="pip">Trust</span>
+      <span>Every claim carries its source, confidence and usefulness, and is <b>independently
+        cross-checked against the cited paper</b> — no expert sign-off required. Prefer to author by hand?
+        <code style="font-family:var(--font-mono);font-size:12px">tools/new_part.py</code> scaffolds
+        a schema-valid skeleton, and the same gates apply. Everything is <b>CC&nbsp;BY&nbsp;4.0</b>;
+        contribute only sequences you may share.</span>
+    </div>
+
+    <div class="clinks">
+      <span class="lead">Read the rules</span>
+      <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/CONTRIBUTING.md">CONTRIBUTING.md →</a>
+      <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/AUTHORING.md">AUTHORING.md — the SOP</a>
+      <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/schema/part.schema.json">part.schema.json</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ladder thin"></div>
+  <div class="inner">
+    <span>SeqMake&nbsp;Parts — CC&nbsp;BY&nbsp;4.0. A standalone, reusable dataset.</span>
+    <span style="flex:1"></span>
+    <a href="https://github.com/dbikard/seqmake-parts">GitHub</a>
+    <a href="https://github.com/dbikard/seqmake-parts/blob/main/RDF.md">Data model</a>
+    <a href="https://w3id.org/seqmake/parts">w3id.org/seqmake/parts</a>
+  </div>
+</footer>
+
+<script src="../../docs/assets/seqmake-part-view.js"></script>
+<script src="data.js"></script>
+<script>
+/* ===================================================== data + helpers */
+const DATA = window.CATALOG;
+const PARTS = DATA.parts;
+const TYPES = DATA.types;
+const TYPE_LABEL = {
+  promoter:"Promoter", ribosome_entry_site:"RBS", RBS:"RBS", operator:"Operator",
+  CDS:"CDS", polypeptide_domain:"Protein domain", protein_domain:"Protein domain",
+  terminator:"Terminator", origin_of_replication:"Origin", rep_origin:"Origin",
+  oriT:"oriT", protein_binding_site:"Binding site", protein_bind:"Binding site",
+  ncRNA:"ncRNA", misc_RNA:"ncRNA", sequence_feature:"Feature", misc_feature:"Feature",
+};
+const tlabel = t => TYPE_LABEL[t] || t;
+const cvar = t => `var(--c-${t})`;
+const esc = s => (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const SIZE_BUCKETS = [
+  {id:"xs",label:"≤ 50",test:p=>p.len!=null&&p.len<=50},
+  {id:"s",label:"51 – 200",test:p=>p.len>50&&p.len<=200},
+  {id:"m",label:"201 – 1000",test:p=>p.len>200&&p.len<=1000},
+  {id:"l",label:"> 1000",test:p=>p.len>1000},
+];
+const CONF_LABEL={low:"low confidence",medium:"medium confidence",high:"high confidence"};
+const USE_LABEL={low:"low usefulness",medium:"medium usefulness",high:"high usefulness"};
+
+/* ===================================================== state */
+const state = {
+  q:"",            // free-text (quick filter + palette feed grid)
+  types:new Set(), status:new Set(), kind:new Set(),
+  knowledge:new Set(), size:new Set(), cols:new Set(),
+  sort:"rel", view:"grid",
+};
+
+/* ---- URL hash (shareable) ---- */
+function writeHash(){
+  const p=new URLSearchParams();
+  if(state.q) p.set("q",state.q);
+  const enc=(k,set)=>{if(set.size)p.set(k,[...set].join(","));};
+  enc("type",state.types);enc("status",state.status);enc("kind",state.kind);
+  enc("k",state.knowledge);enc("size",state.size);enc("col",state.cols);
+  if(state.sort!=="rel")p.set("sort",state.sort);
+  if(state.view!=="grid")p.set("view",state.view);
+  const s=p.toString();
+  history.replaceState(null,"",s?("#"+s):location.pathname+location.search);
+}
+function readHash(){
+  const p=new URLSearchParams(location.hash.slice(1));
+  state.q=p.get("q")||"";
+  const dec=(k,set)=>{const v=p.get(k);if(v)v.split(",").forEach(x=>set.add(x));};
+  dec("type",state.types);dec("status",state.status);dec("kind",state.kind);
+  dec("k",state.knowledge);dec("size",state.size);dec("col",state.cols);
+  state.sort=p.get("sort")||"rel";state.view=p.get("view")||"grid";
+}
+
+/* ===================================================== search scoring */
+function score(p,q){
+  if(!q) return 1;
+  const ql=q.toLowerCase(), toks=ql.split(/\s+/).filter(Boolean);
+  let s=0;
+  const name=p.name.toLowerCase(), slug=p.slug.toLowerCase();
+  const hay=[p.desc,...(p.syn||[]),...(p.tf||[]),...(p.regs||[]),p.acc,p.uniprot||"",tlabel(p.type),p.so_name||""].join(" ").toLowerCase();
+  for(const t of toks){
+    if(name===t) s+=120;
+    else if(name.startsWith(t)) s+=70;
+    else if(name.includes(t)) s+=45;
+    else if(slug.includes(t)) s+=40;
+    else if((p.syn||[]).some(x=>x.toLowerCase().includes(t))) s+=30;
+    else if(hay.includes(t)) s+=14;
+    else return 0; // every token must hit somewhere
+  }
+  if(p.status==="validated") s+=4;
+  s+=Math.min(p.nclaims,6);
+  return s;
+}
+
+/* ===================================================== filtering */
+function passFacets(p){
+  if(state.types.size && !state.types.has(p.type)) return false;
+  if(state.status.size && !state.status.has(p.status)) return false;
+  if(state.kind.size && !state.kind.has(p.kind)) return false;
+  if(state.size.size && !SIZE_BUCKETS.some(b=>state.size.has(b.id)&&b.test(p))) return false;
+  if(state.cols.size && !(p.cols||[]).some(c=>state.cols.has(c))) return false;
+  if(state.knowledge.size){
+    for(const k of state.knowledge){
+      if(k==="claims" && !p.nclaims) return false;
+      if(k==="regulated" && !(p.tf&&p.tf.length)) return false;
+      if(k==="uniprot" && !p.uniprot) return false;
+      if(k==="documented" && !p.documented) return false;
+    }
+  }
+  return true;
+}
+function currentResults(){
+  let r=PARTS.filter(passFacets);
+  const q=state.q.trim();
+  if(q){ r=r.map(p=>[p,score(p,q)]).filter(x=>x[1]>0); }
+  else { r=r.map(p=>[p,0]); }
+  const by={
+    rel:(a,b)=> q ? b[1]-a[1] : a[0].name.localeCompare(b[0].name),
+    name:(a,b)=>a[0].name.localeCompare(b[0].name),
+    "len-d":(a,b)=>(b[0].len||0)-(a[0].len||0),
+    "len-a":(a,b)=>(a[0].len||0)-(b[0].len||0),
+    claims:(a,b)=>b[0].nclaims-a[0].nclaims||a[0].name.localeCompare(b[0].name),
+    status:(a,b)=>(a[0].status==="validated"?0:1)-(b[0].status==="validated"?0:1)||a[0].name.localeCompare(b[0].name),
+  };
+  r.sort(by[state.sort]||by.rel);
+  return r.map(x=>x[0]);
+}
+
+/* ===================================================== rendering */
+function cardHTML(p,i){
+  const syn=(p.syn||[]).slice(0,4).join(" · ");
+  const desc=p.desc?esc(p.desc):"No description yet — candidate record.";
+  const len=p.len!=null?(p.len+(p.kind==="protein"?" aa":" bp")):"—";
+  const status=p.status==="validated"
+    ?`<span class="badge val"><span class="seal">✓</span>Validated</span>`
+    :`<span class="badge cand"><span class="seal"></span>Candidate</span>`;
+  const claim=p.nclaims?`<span class="claimpill" title="Functional claims, each with source, confidence + usefulness">◆ ${p.nclaims} sourced</span>`:"";
+  return `<a class="card" href="#" data-slug="${p.slug}" style="--type:${cvar(p.type)};animation-delay:${Math.min(i*22,360)}ms">
+    <div class="tape"></div>
+    <div class="body">
+      <div class="cardtop">
+        <span class="typechip">${esc(tlabel(p.type))}</span>
+        <span class="kindmark">${p.kind==="protein"?"⬡ protein":"⊟ ds-DNA"}</span>
+      </div>
+      <h3>${esc(p.name)}</h3>
+      ${syn?`<div class="syn">${esc(syn)}</div>`:""}
+      <p class="desc${p.desc?"":" empty"}">${desc}</p>
+    </div>
+    <div class="cardfoot">
+      <span class="len">${len}</span>${status}${claim}
+    </div>
+  </a>`;
+}
+function tableHTML(rows){
+  const body=rows.map(p=>`<tr data-slug="${p.slug}">
+    <td><span class="tname">${esc(p.name)}</span></td>
+    <td><span class="typechip" style="--type:${cvar(p.type)}">${esc(tlabel(p.type))}</span></td>
+    <td class="tlen">${p.len!=null?p.len+(p.kind==="protein"?" aa":" bp"):"—"}</td>
+    <td>${p.status==="validated"?'<span class="badge val"><span class="seal">✓</span>Validated</span>':'<span class="badge cand"><span class="seal"></span>Candidate</span>'}</td>
+    <td>${p.nclaims||"—"}</td>
+    <td style="color:var(--ink-faint);font-size:12.5px">${esc((p.syn||[]).slice(0,3).join(" · "))}</td>
+  </tr>`).join("");
+  return `<table class="tableview"><thead><tr>
+    <th>Part</th><th>Type</th><th>Size</th><th>Status</th><th>Claims</th><th>Synonyms</th>
+  </tr></thead><tbody>${body}</tbody></table>`;
+}
+function renderResults(){
+  const rows=currentResults();
+  const el=document.getElementById("results");
+  document.getElementById("count").innerHTML=
+    `<em>${rows.length}</em> part${rows.length!==1?"s":""}<small>of ${PARTS.length} in the knowledge base</small>`;
+  if(!rows.length){
+    el.innerHTML=`<div class="empty-state"><div class="big">No parts match.</div>
+      <div>Try removing a filter, or search by synonym or regulator.</div></div>`;
+  } else if(state.view==="grid"){
+    el.innerHTML=`<div class="grid">${rows.map(cardHTML).join("")}</div>`;
+  } else {
+    el.innerHTML=tableHTML(rows);
+  }
+  renderChips();
+  writeHash();
+}
+
+/* ---- active filter chips ---- */
+function renderChips(){
+  const out=[];
+  const add=(kind,set,k,lbl)=>{[...set].forEach(v=>out.push(
+    `<span class="chip"><span class="k">${kind}</span>${esc(lbl?lbl(v):v)}<span class="x" data-rm="${k}" data-v="${esc(v)}">✕</span></span>`));};
+  if(state.q) out.push(`<span class="chip"><span class="k">search</span>“${esc(state.q)}”<span class="x" data-rm="q">✕</span></span>`);
+  add("type",state.types,"type",tlabel);
+  add("status",state.status,"status");
+  add("molecule",state.kind,"kind");
+  add("size",state.size,"size",id=>(SIZE_BUCKETS.find(b=>b.id===id)||{}).label||id);
+  add("knowledge",state.knowledge,"k",v=>({claims:"Has claims",regulated:"TF-regulated",uniprot:"In UniProt",documented:"Curated page"}[v]||v));
+  add("collection",state.cols,"col");
+  const box=document.getElementById("chips");
+  box.innerHTML=out.length?out.join("")+`<button class="clearbtn" id="clearAll">clear all</button>`:"";
+}
+
+/* ===================================================== facet rail build */
+function facetRow({dot,name,count,active,onclick,checkbox}){
+  const b=document.createElement("button");
+  b.className="facet";b.setAttribute("aria-pressed",active?"true":"false");
+  b.innerHTML=(checkbox?`<span class="box">${active?"✓":""}</span>`
+    :`<span class="dot" style="background:${dot||"var(--ink-faint)"}"></span>`)
+    +`<span class="nm">${esc(name)}</span>`+(count!=null?`<span class="ct">${count}</span>`:"");
+  b.onclick=onclick;
+  return b;
+}
+function buildRail(){
+  // types
+  const tf=document.getElementById("typeFacets");tf.innerHTML="";
+  TYPES.forEach(t=>{
+    tf.appendChild(facetRow({dot:cvar(t.type),name:tlabel(t.type),
+      count:`${t.validated?t.validated+"✓ ":""}${t.total}`,
+      active:state.types.has(t.type),
+      onclick:()=>toggle(state.types,t.type)}));
+  });
+  // status
+  const sf=document.getElementById("statusFacets");sf.innerHTML="";
+  [["validated","Validated",DATA.meta.n_validated],["candidate","Candidate",DATA.meta.n_candidate]].forEach(([v,l,c])=>
+    sf.appendChild(facetRow({checkbox:true,name:l,count:c,active:state.status.has(v),onclick:()=>toggle(state.status,v)})));
+  // kind
+  const kf=document.getElementById("kindFacets");kf.innerHTML="";
+  const nDNA=PARTS.filter(p=>p.kind==="dna").length,nP=PARTS.length-nDNA;
+  [["dna","DNA",nDNA],["protein","Protein",nP]].forEach(([v,l,c])=>
+    kf.appendChild(facetRow({checkbox:true,name:l,count:c,active:state.kind.has(v),onclick:()=>toggle(state.kind,v)})));
+  // knowledge
+  const knf=document.getElementById("knowledgeFacets");knf.innerHTML="";
+  const cClaims=PARTS.filter(p=>p.nclaims).length,
+        cReg=PARTS.filter(p=>p.tf&&p.tf.length).length,
+        cUni=PARTS.filter(p=>p.uniprot).length,
+        cDoc=PARTS.filter(p=>p.documented).length;
+  [["claims","Has functional claims",cClaims],["regulated","TF-regulated",cReg],
+   ["uniprot","Linked to UniProt",cUni],["documented","Has curated page",cDoc]].forEach(([v,l,c])=>
+    knf.appendChild(facetRow({checkbox:true,name:l,count:c,active:state.knowledge.has(v),onclick:()=>toggle(state.knowledge,v)})));
+  // size
+  const zf=document.getElementById("sizeFacets");zf.innerHTML="";
+  SIZE_BUCKETS.forEach(b=>{
+    const c=PARTS.filter(b.test).length;
+    zf.appendChild(facetRow({checkbox:true,name:b.label+" bp/aa",count:c,active:state.size.has(b.id),onclick:()=>toggle(state.size,b.id)}));
+  });
+  // collections
+  const allCols=[...new Set(PARTS.flatMap(p=>p.cols||[]))].sort();
+  const cf=document.getElementById("colFacets");cf.innerHTML="";
+  if(!allCols.length){document.getElementById("colGroup").style.display="none";}
+  allCols.forEach(c=>{
+    const ct=PARTS.filter(p=>(p.cols||[]).includes(c)).length;
+    cf.appendChild(facetRow({checkbox:true,name:c,count:ct,active:state.cols.has(c),onclick:()=>toggle(state.cols,c)}));
+  });
+}
+function toggle(set,v){set.has(v)?set.delete(v):set.add(v);buildRail();renderResults();}
+
+/* ===================================================== ribbon + helix */
+function buildRibbon(){
+  const m=DATA.meta;
+  const stats=[[m.n_parts,"parts"],[m.n_validated,"curated · validated"],
+    [m.n_claims,"sourced claims"],[TYPES.length,"part types"]];
+  document.getElementById("ribbon").innerHTML=stats.map(([n,l])=>
+    `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+}
+function buildHelix(){
+  // decorative base-pair helix watermark
+  const g=document.getElementById("helix");if(!g)return;
+  const baseColors=["var(--c-CDS)","var(--c-promoter)","var(--c-terminator)","var(--c-RBS)"];
+  let s="";
+  for(let i=0;i<60;i++){
+    const x=i*20+10, y1=180+Math.sin(i*0.4)*90, y2=180-Math.sin(i*0.4)*90;
+    const op=(0.10+Math.abs(Math.cos(i*0.4))*0.16).toFixed(2);
+    const col=baseColors[i%4];
+    s+=`<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}" stroke="${col}" stroke-width="2.4" opacity="${op}"/>`;
+    s+=`<circle cx="${x}" cy="${y1}" r="3" fill="${col}" opacity="${op}"/>`;
+    s+=`<circle cx="${x}" cy="${y2}" r="3" fill="${col}" opacity="${op}"/>`;
+  }
+  g.innerHTML=s;
+}
+
+/* ===================================================== command palette */
+const palette=document.getElementById("palette"), scrim=document.getElementById("scrim"),
+      pinput=document.getElementById("pinput");
+let pIndex=0, pHits=[];
+const PRESETS=[
+  {l:"Validated promoters",fn:()=>{state.types=new Set(["promoter"]);state.status=new Set(["validated"]);}},
+  {l:"Inducible / TF-regulated",fn:()=>{state.knowledge=new Set(["regulated"]);}},
+  {l:"Selection markers",fn:()=>{pinput.value="resistance";}},
+  {l:"Origins of replication",fn:()=>{state.types=new Set(["rep_origin"]);}},
+  {l:"Has functional claims",fn:()=>{state.knowledge=new Set(["claims"]);}},
+];
+function openPalette(){
+  scrim.classList.add("open");palette.classList.add("open");
+  pinput.value="";pinput.focus();runPalette("");
+  document.body.style.overflow="hidden";
+}
+function closePalette(){
+  scrim.classList.remove("open");palette.classList.remove("open");
+  document.body.style.overflow="";
+}
+function hl(text,q){
+  if(!q)return esc(text);
+  const i=text.toLowerCase().indexOf(q.toLowerCase());
+  if(i<0)return esc(text);
+  return esc(text.slice(0,i))+"<mark>"+esc(text.slice(i,i+q.length))+"</mark>"+esc(text.slice(i+q.length));
+}
+function runPalette(q){
+  document.getElementById("presets").style.display=q?"none":"flex";
+  if(!q){
+    pHits=[...PARTS].sort((a,b)=>(b.status==="validated")-(a.status==="validated")||b.nclaims-a.nclaims).slice(0,8);
+  } else {
+    pHits=PARTS.map(p=>[p,score(p,q)]).filter(x=>x[1]>0)
+      .sort((a,b)=>b[1]-a[1]).slice(0,30).map(x=>x[0]);
+  }
+  pIndex=0;
+  const box=document.getElementById("presults");
+  if(!pHits.length){box.innerHTML=`<div class="pnohits">No parts match “${esc(q)}”.</div>`;return;}
+  const head=q?`<div class="pgroup">${pHits.length} match${pHits.length>1?"es":""}</div>`
+               :`<div class="pgroup">Suggested — curated & claim-rich</div>`;
+  box.innerHTML=head+pHits.map((p,i)=>{
+    const why=(p.syn||[]).find(s=>q&&s.toLowerCase().includes(q.toLowerCase()));
+    const meta=why?("alias: "+why):(p.desc||((p.tf&&p.tf.length)?("regulated by "+p.tf.join(", ")):tlabel(p.type)));
+    return `<a class="presult${i===0?" active":""}" href="#" data-slug="${p.slug}" data-i="${i}">
+      <span class="pdot" style="background:${cvar(p.type)}"></span>
+      <span style="min-width:0">
+        <span class="pname">${hl(p.name,q)}</span>
+        <div class="pmeta">${esc(meta).slice(0,80)}</div>
+      </span>
+      <span class="ptype">${esc(tlabel(p.type))} · ${p.len!=null?p.len+(p.kind==="protein"?"aa":"bp"):""}</span>
+    </a>`;
+  }).join("");
+}
+function moveP(d){
+  const items=[...document.querySelectorAll(".presult")];if(!items.length)return;
+  items[pIndex]?.classList.remove("active");
+  pIndex=(pIndex+d+items.length)%items.length;
+  items[pIndex].classList.add("active");
+  items[pIndex].scrollIntoView({block:"nearest"});
+}
+
+/* ===================================================== full-page part detail */
+const WIDGET_SRC="../../docs/assets/seqmake-part-view.js";
+const detail=document.getElementById("detail");
+const CATALOG_SECTIONS=["top","catalog","contribute"];
+
+function srcLink(s){
+  if(!s) return "";
+  const url=s.pmid?`https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/`:s.doi?`https://doi.org/${s.doi}`:(s.url||"");
+  const lab=s.pmid?`PMID ${s.pmid}`:s.doi?`doi:${s.doi}`:"source";
+  const loc=[s.figure,s.table,s.page].filter(Boolean).join(", ");
+  const a=url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(lab)}</a>`:esc(lab);
+  return a+(loc?` · ${esc(loc)}`:"");
+}
+function claimCard(c){
+  const cf=c.confidence?`<span class="cbadge cf-${esc(c.confidence)}">${esc(CONF_LABEL[c.confidence]||c.confidence)}</span>`:"";
+  const us=c.usefulness?`<span class="cbadge us">★ ${esc(USE_LABEL[c.usefulness]||c.usefulness)}</span>`:"";
+  const cc=c.cross_checked?`<span class="cbadge cc" title="independently verified against the cited source">✓ cross-checked</span>`:"";
+  const q=(c.source&&c.source.quote)?`<div class="cl-quote">“${esc(c.source.quote)}”</div>`:"";
+  const cm=c.comment?`<div class="cl-quote" style="font-style:normal;border-color:var(--gold)">⚠ ${esc(c.comment)}</div>`:"";
+  return `<div class="claimcard">
+    <div class="cl-top"><span class="typechip">${esc((c.type||"").replace(/_/g," "))}</span>${cf}${us}${cc}</div>
+    <p class="cl-label">${esc(c.label||"")}</p>${q}${cm}
+    <div class="cl-src">${srcLink(c.source)}</div>
+  </div>`;
+}
+function molMount(p){
+  if(!p.mol) return "";
+  const json=JSON.stringify(p.mol).replace(/</g,"\\u003c");
+  return `<div class="partview"><div data-part-view data-height="380"><script type="application/json">${json}<\/script></div></div>`;
+}
+function openPart(slug,push){
+  const p=PARTS.find(x=>x.slug===slug);if(!p)return;
+  const base=`https://dbikard.github.io/seqmake-parts/parts/${p.slug}/`;
+  const gh=`https://github.com/dbikard/seqmake-parts/blob/main/parts/${p.status==="validated"?"validated":"candidate"}/${p.slug}.json`;
+  const len=p.len!=null?p.len+(p.kind==="protein"?" aa":" bp"):"—";
+  const meta=[`<span>${esc(tlabel(p.type))}</span>`,p.so_term?`<span>${esc(p.so_term)}</span>`:"",
+    `<span>${len}</span>`,`<span>${p.kind==="protein"?"protein":"dsDNA"}</span>`,
+    p.acc?`<span>${esc(p.acc)}</span>`:"",`<span>${p.nrefs||0} refs</span>`].filter(Boolean).join("");
+  const status=p.status==="validated"?'<span class="badge val"><span class="seal">✓</span>Validated</span>':'<span class="badge cand"><span class="seal"></span>Candidate</span>';
+  const row=(k,v)=>v?`<div class="drow2"><div class="dk">${k}</div><div>${v}</div></div>`:"";
+  const syn=(p.syn||[]).length?`<div class="drow2"><div class="dk">Synonyms</div><div class="synlist">${p.syn.map(s=>`<span>${esc(s)}</span>`).join("")}</div></div>`:"";
+  const claims=(p.claims&&p.claims.length)
+    ?`<div class="dsec">Sourced claims · ${p.claims.length}</div>${p.claims.map(claimCard).join("")}`
+    :`<div class="dsec">Sourced claims</div><p style="color:var(--ink-faint);font-style:italic">No structured functional claims yet — see the references below.</p>`;
+  const refs=(p.refs&&p.refs.length)
+    ?`<div class="dsec">References</div>${p.refs.map(r=>{
+        const u=r.pmid?`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`:r.doi?`https://doi.org/${r.doi}`:"";
+        const link=u?` <a href="${esc(u)}" target="_blank" rel="noopener">${r.pmid?("PMID "+esc(r.pmid)):"link"}</a>`:"";
+        return `<div class="refitem"><span class="rt">${esc(r.title||"")}</span>${r.authors?" — "+esc(r.authors):""}${r.journal?" · "+esc(r.journal):""}${link}</div>`;
+      }).join("")}`:"";
+  detail.innerHTML=`<div class="dwrap" style="--type:${cvar(p.type)}">
+    <button class="backbtn" id="dback">← Back to catalog</button>
+    <div class="dtop"><span class="typechip">${esc(tlabel(p.type))}</span>${status}</div>
+    <h1 class="dt">${esc(p.name)}</h1>
+    <div class="dmeta">${meta}</div>
+    ${p.desc?`<p class="dlede">${esc(p.desc)}</p>`:""}
+    ${molMount(p)}
+    ${syn}${row("Regulated by",(p.tf||[]).map(esc).join(", "))}${row("Regulates",(p.regs||[]).map(esc).join(", "))}
+    ${claims}${refs}
+    <div class="dsec">Get this part</div>
+    <div class="dlbtns">
+      <a class="dlbtn primary" href="${base}" target="_blank" rel="noopener">Open on the live site →</a>
+      <a class="dlbtn" href="${base}files/${p.slug}.gb" target="_blank" rel="noopener">⬇ GenBank</a>
+      <a class="dlbtn" href="${base}files/${p.slug}.fasta" target="_blank" rel="noopener">⬇ FASTA</a>
+      <a class="dlbtn" href="${base}files/${p.slug}.ttl" target="_blank" rel="noopener">⬇ RDF</a>
+      ${p.uniprot?`<a class="dlbtn" href="https://www.uniprot.org/uniprotkb/${esc(p.uniprot.replace('UniProt:',''))}" target="_blank" rel="noopener">↗ UniProt</a>`:""}
+      <a class="dlbtn" href="${gh}" target="_blank" rel="noopener">↗ JSON record</a>
+    </div></div>`;
+  detail.hidden=false;
+  CATALOG_SECTIONS.forEach(id=>{const e=document.getElementById(id);if(e)e.style.display="none";});
+  document.getElementById("dback").onclick=()=>{ if(history.length>1) history.back(); else { location.hash=""; } };
+  window.scrollTo(0,0);
+  hydratePartView();
+  if(push) history.pushState({part:slug},"","#part="+encodeURIComponent(slug));
+}
+function hydratePartView(){
+  try{ if(window.SeqmakePartView&&typeof window.SeqmakePartView.init==="function"){window.SeqmakePartView.init();return;} }catch(e){}
+  const s=document.createElement("script");s.src=WIDGET_SRC;document.body.appendChild(s); // bundle scans on load
+}
+function showCatalog(){
+  detail.hidden=true;detail.innerHTML="";
+  CATALOG_SECTIONS.forEach(id=>{const e=document.getElementById(id);if(e)e.style.display="";});
+}
+function route(){
+  const m=/(?:^|[#&])part=([^&]+)/.exec(location.hash);
+  if(m) openPart(decodeURIComponent(m[1]),false); else showCatalog();
+}
+window.addEventListener("popstate",route);
+
+/* ===================================================== wiring */
+function applyView(){
+  document.getElementById("viewGrid").setAttribute("aria-pressed",state.view==="grid");
+  document.getElementById("viewTable").setAttribute("aria-pressed",state.view==="table");
+}
+document.addEventListener("click",e=>{
+  const card=e.target.closest(".card,[data-slug]");
+  if(card&&card.dataset.slug){
+    e.preventDefault();
+    if(palette.classList.contains("open"))closePalette();
+    openPart(card.dataset.slug,true);return;
+  }
+  const rm=e.target.closest("[data-rm]");
+  if(rm){
+    const k=rm.dataset.rm,v=rm.dataset.v;
+    if(k==="q"){state.q="";document.getElementById("quickFilter").value="";}
+    else{({type:state.types,status:state.status,kind:state.kind,k:state.knowledge,size:state.size,col:state.cols})[k]?.delete(v);}
+    buildRail();renderResults();return;
+  }
+  if(e.target.id==="clearAll"){
+    state.q="";["types","status","kind","knowledge","size","cols"].forEach(s=>state[s].clear());
+    document.getElementById("quickFilter").value="";buildRail();renderResults();return;
+  }
+});
+document.getElementById("openPalette").onclick=openPalette;
+scrim.onclick=closePalette;
+// copy-to-clipboard for contribute commands
+document.addEventListener("click",e=>{
+  const btn=e.target.closest(".copy");if(!btn)return;
+  const txt=btn.getAttribute("data-copy");
+  const done=()=>{const o=btn.textContent;btn.textContent="Copied";btn.classList.add("done");
+    setTimeout(()=>{btn.textContent=o;btn.classList.remove("done");},1400);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(()=>{});}
+  else{const t=document.createElement("textarea");t.value=txt;document.body.appendChild(t);t.select();
+    try{document.execCommand("copy");}catch(_){}t.remove();done();}
+});
+pinput.addEventListener("input",()=>runPalette(pinput.value.trim()));
+pinput.addEventListener("keydown",e=>{
+  if(e.key==="ArrowDown"){e.preventDefault();moveP(1);}
+  else if(e.key==="ArrowUp"){e.preventDefault();moveP(-1);}
+  else if(e.key==="Enter"){e.preventDefault();const a=document.querySelectorAll(".presult")[pIndex];
+    if(a){closePalette();openPart(a.dataset.slug,true);}}
+});
+document.getElementById("presets").addEventListener("click",e=>{
+  const i=[...e.currentTarget.children].indexOf(e.target.closest(".preset"));
+  if(i>-1){PRESETS[i].fn();closePalette();buildRail();renderResults();
+    document.querySelector(".shell").scrollIntoView({behavior:"smooth"});}
+});
+document.getElementById("quickFilter").addEventListener("input",e=>{state.q=e.target.value;renderResults();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;renderResults();});
+document.getElementById("viewGrid").onclick=()=>{state.view="grid";applyView();renderResults();};
+document.getElementById("viewTable").onclick=()=>{state.view="table";applyView();renderResults();};
+document.getElementById("themeToggle").onclick=()=>{
+  const cur=document.documentElement.getAttribute("data-theme");
+  const next=cur==="dark"?"light":"dark";
+  document.documentElement.setAttribute("data-theme",next);
+  try{localStorage.setItem("seqmake-parts-theme",next);}catch(e){}
+};
+document.addEventListener("keydown",e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();
+    palette.classList.contains("open")?closePalette():openPalette();}
+  else if(e.key==="Escape"){closePalette();if(!detail.hidden){if(history.length>1)history.back();else{location.hash="";showCatalog();}}}
+  else if(e.key==="/"&&!/input|textarea/i.test(document.activeElement.tagName)){e.preventDefault();openPalette();}
+});
+
+/* ===================================================== init */
+(function init(){
+  try{const t=localStorage.getItem("seqmake-parts-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}
+  readHash();
+  document.getElementById("quickFilter").value=state.q;
+  document.getElementById("sort").value=state.sort;
+  buildRibbon();buildHelix();buildRail();applyView();
+  document.getElementById("presets").innerHTML=PRESETS.map(p=>`<button class="preset">${esc(p.l)}</button>`).join("");
+  renderResults();
+  route();   // open a part directly if the URL is #part=<slug>
+})();
+</script>
+</body>
+</html>
