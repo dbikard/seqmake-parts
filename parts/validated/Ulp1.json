@@ -46,7 +46,7 @@
       "comment": "doi:10.3390/ijms232012188"
     },
     {
-      "authors": "Linova MY, Ris\u00f8r MW, J\u00f8rgensen SE, Mansour Z, Kaya J, Sigurdarson JJ, Enghild JJ, Karring H",
+      "authors": "Linova MY, Risør MW, Jørgensen SE, Mansour Z, Kaya J, Sigurdarson JJ, Enghild JJ, Karring H",
       "title": "A novel approach for production of an active N-terminally truncated Ulp1 (SUMO protease 1) catalytic domain from Escherichia coli inclusion bodies",
       "journal": "Protein Expression and Purification (2020)",
       "pubmed_id": "31586598",
@@ -327,7 +327,7 @@
   ],
   "uniprot_import": {
     "accession": "UniProt:Q02724",
-    "fetched": "2026-06-22",
+    "fetched": "2026-07-01",
     "uniprot_entry_version": 201,
     "status": "length_variant",
     "identity": 1.0,

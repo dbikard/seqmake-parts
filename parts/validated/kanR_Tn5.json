@@ -117,7 +117,7 @@
       "start": 194,
       "end": 195,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -126,13 +126,13 @@
       "start": 207,
       "end": 208,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P00552",
     "status": "match",
     "identity": 1.0,

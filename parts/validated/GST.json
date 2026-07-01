@@ -3,7 +3,7 @@
   "slug": "GST",
   "locus": "GST",
   "id": "GST",
-  "description": "GST affinity/solubility tag \u2014 218 aa Schistosoma japonicum Sj26 glutathione S-transferase, the canonical pGEX-family fusion partner for one-step glutathione-resin purification",
+  "description": "GST affinity/solubility tag — 218 aa Schistosoma japonicum Sj26 glutathione S-transferase, the canonical pGEX-family fusion partner for one-step glutathione-resin purification",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -244,7 +244,7 @@
       "start": 6,
       "end": 8,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -253,7 +253,7 @@
       "start": 40,
       "end": 45,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -262,7 +262,7 @@
       "start": 53,
       "end": 55,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -271,7 +271,7 @@
       "start": 66,
       "end": 68,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -280,13 +280,13 @@
       "start": 110,
       "end": 111,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-18",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P08515",
     "status": "match",
     "identity": 1.0,

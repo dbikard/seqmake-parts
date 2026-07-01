@@ -42,7 +42,7 @@
       "start": 78,
       "end": 90,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -51,7 +51,7 @@
       "start": 96,
       "end": 97,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -60,7 +60,7 @@
       "start": 106,
       "end": 107,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -69,7 +69,7 @@
       "start": 135,
       "end": 136,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -78,7 +78,7 @@
       "start": 224,
       "end": 225,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -87,7 +87,7 @@
       "start": 224,
       "end": 225,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -96,7 +96,7 @@
       "start": 249,
       "end": 250,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -105,7 +105,7 @@
       "start": 253,
       "end": 254,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -114,7 +114,7 @@
       "start": 288,
       "end": 300,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -138,7 +138,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P04173",
     "status": "match",
     "identity": 1.0,

@@ -111,7 +111,7 @@
       "start": 9,
       "end": 10,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -120,7 +120,7 @@
       "start": 11,
       "end": 12,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -129,7 +129,7 @@
       "start": 36,
       "end": 37,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -138,7 +138,7 @@
       "start": 57,
       "end": 58,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -147,7 +147,7 @@
       "start": 82,
       "end": 83,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -156,29 +156,17 @@
       "start": 99,
       "end": 100,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P21236",
-    "status": "normalized_to_canonical",
-    "identity": 0.9918,
+    "status": "match",
+    "identity": 1.0,
     "sequence_match": true,
-    "normalized_substitutions": [
-      {
-        "pos": 75,
-        "part": "T",
-        "uniprot": "I"
-      },
-      {
-        "pos": 226,
-        "part": "V",
-        "uniprot": "I"
-      }
-    ],
     "uniprot_entry_version": 114
   }
 }

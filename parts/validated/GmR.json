@@ -112,7 +112,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P23181",
     "status": "match",
     "identity": 1.0,

@@ -42,7 +42,7 @@
       "start": 13,
       "end": 14,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -51,7 +51,7 @@
       "start": 63,
       "end": 72,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -60,7 +60,7 @@
       "start": 63,
       "end": 64,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -69,7 +69,7 @@
       "start": 89,
       "end": 94,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -78,7 +78,7 @@
       "start": 89,
       "end": 90,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -87,7 +87,7 @@
       "start": 90,
       "end": 91,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -96,7 +96,7 @@
       "start": 93,
       "end": 94,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -105,7 +105,7 @@
       "start": 115,
       "end": 116,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -114,7 +114,7 @@
       "start": 137,
       "end": 138,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -123,7 +123,7 @@
       "start": 161,
       "end": 162,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -132,7 +132,7 @@
       "start": 185,
       "end": 194,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -141,7 +141,7 @@
       "start": 185,
       "end": 186,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -150,7 +150,7 @@
       "start": 186,
       "end": 187,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -159,7 +159,7 @@
       "start": 189,
       "end": 190,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -168,13 +168,13 @@
       "start": 213,
       "end": 216,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P06633",
     "status": "match",
     "identity": 1.0,

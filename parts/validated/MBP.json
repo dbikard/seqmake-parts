@@ -3,7 +3,7 @@
   "slug": "MBP",
   "locus": "MBP",
   "id": "MBP",
-  "description": "MBP (E. coli K12 malE / MalE) \u2014 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
+  "description": "MBP (E. coli K12 malE / MalE) — 396 aa maltose/maltodextrin-binding periplasmic protein precursor; canonical high-efficiency solubility-enhancing and amylose-affinity fusion partner",
   "molecule_type": "protein",
   "locus_annotations": {
     "topology": "linear"
@@ -299,7 +299,7 @@
     {
       "id": "dimerization_caution",
       "type": "biophysics",
-      "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant \u2014 a caution for structural studies of MBP fusions",
+      "label": "Passenger sequences can promote interlaced (domain-swapped) dimers in a common MBP variant — a caution for structural studies of MBP fusions",
       "value": {
         "phenomenon": "passenger-promoted interlaced dimerization",
         "context": "observed in a common engineered MBP variant (MBPeng)",
@@ -362,7 +362,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-19",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P0AEX9",
     "status": "match",
     "identity": 1.0,

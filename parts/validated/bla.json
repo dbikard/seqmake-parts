@@ -156,7 +156,7 @@
       "start": 231,
       "end": 234,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -165,24 +165,17 @@
       "start": 74,
       "end": 121,
       "label": "Disulfide bond",
-      "so_term": null,
+      "so_term": "SO:0001088",
       "description": "",
       "uniprot_type": "Disulfide bond"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P62593",
-    "status": "normalized_to_canonical",
-    "identity": 0.9965,
+    "status": "match",
+    "identity": 1.0,
     "sequence_match": true,
-    "normalized_substitutions": [
-      {
-        "pos": 182,
-        "part": "V",
-        "uniprot": "A"
-      }
-    ],
     "uniprot_entry_version": 155
   }
 }

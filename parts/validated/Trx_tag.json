@@ -3,7 +3,7 @@
   "slug": "Trx_tag",
   "locus": "Trx_tag",
   "id": "Trx_tag",
-  "description": "Trx_tag \u2014 E. coli thioredoxin-1 (trxA, 109 aa) used as a N-terminal fusion partner to promote solubility of recombinant proteins in the bacterial cytoplasm.",
+  "description": "Trx_tag — E. coli thioredoxin-1 (trxA, 109 aa) used as a N-terminal fusion partner to promote solubility of recombinant proteins in the bacterial cytoplasm.",
   "molecule_type": "protein",
   "locus_annotations": {
     "topology": "linear"
@@ -99,7 +99,7 @@
           "Trx-tag"
         ],
         "note": [
-          "E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109 aa. Widely used as a N-terminal fusion partner to enhance solubility of recombinant proteins in the E. coli cytoplasm. Thermostable (Tm ~85 \u00b0C). Released from the periplasm-adjacent fraction by osmotic shock."
+          "E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109 aa. Widely used as a N-terminal fusion partner to enhance solubility of recombinant proteins in the E. coli cytoplasm. Thermostable (Tm ~85 °C). Released from the periplasm-adjacent fraction by osmotic shock."
         ],
         "citation": [
           "[1]",
@@ -158,10 +158,10 @@
     {
       "id": "thermostability",
       "type": "mechanism",
-      "label": "Thioredoxin-1 is exceptionally thermostable (Tm ~85 \u00b0C), enabling a heat-treatment step (65\u201380 \u00b0C) to selectively denature most co-purifying E. coli host proteins while the Trx fusion remains soluble, increasing purity.",
+      "label": "Thioredoxin-1 is exceptionally thermostable (Tm ~85 °C), enabling a heat-treatment step (65–80 °C) to selectively denature most co-purifying E. coli host proteins while the Trx fusion remains soluble, increasing purity.",
       "value": {
         "Tm_celsius": 85,
-        "purification_strategy": "heat-step (65\u201380 \u00b0C) after cell lysis",
+        "purification_strategy": "heat-step (65–80 °C) after cell lysis",
         "advantage": "selective denaturation of host proteins"
       },
       "source": {
@@ -209,10 +209,10 @@
     {
       "id": "redox_active_site",
       "type": "mechanism",
-      "label": "The WCGPCK active site (residues 32\u201337) contains the Cys33/Cys36 redox-active disulfide; this site enables Trx to reduce protein disulfide bonds as part of the thioredoxin/thioredoxin-reductase electron-relay system.",
+      "label": "The WCGPCK active site (residues 32–37) contains the Cys33/Cys36 redox-active disulfide; this site enables Trx to reduce protein disulfide bonds as part of the thioredoxin/thioredoxin-reductase electron-relay system.",
       "value": {
         "active_site_motif": "WCGPCK",
-        "active_site_residues_1based": "32\u201337",
+        "active_site_residues_1based": "32–37",
         "catalytic_cysteines": [
           "Cys33",
           "Cys36"
@@ -391,7 +391,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-19",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P0AA25",
     "status": "match",
     "identity": 1.0,

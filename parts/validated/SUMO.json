@@ -3,7 +3,7 @@
   "slug": "SUMO",
   "locus": "SUMO",
   "id": "SUMO",
-  "description": "SUMO (yeast Smt3, S. cerevisiae) \u2014 98-aa ubiquitin-like beta-grasp protein ending in the conserved C-terminal diglycine; canonical N-terminal SUMO-fusion solubility/expression tag cleaved at the Gly-Gly by the SUMO protease Ulp1 to release a native N-terminus.",
+  "description": "SUMO (yeast Smt3, S. cerevisiae) — 98-aa ubiquitin-like beta-grasp protein ending in the conserved C-terminal diglycine; canonical N-terminal SUMO-fusion solubility/expression tag cleaved at the Gly-Gly by the SUMO protease Ulp1 to release a native N-terminus.",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -73,7 +73,7 @@
           "Smt3p"
         ],
         "note": [
-          "Small ubiquitin-related modifier (Smt3 / SUMO), Saccharomyces cerevisiae SMT3; UniProt Q12306, residues 1\u201398. Ubiquitin-like (UBL) protein with a beta-grasp fold. As stored this is the mature/processed form retaining the initiator Met (M1) for use as a recombinant N-terminal fusion tag and ending at the conserved C-terminal Gly-Gly (G97-G98), the Ulp1 cleavage site. The full precursor is 101 aa; the C-terminal propeptide (residues 99\u2013101, ATY) is removed by the SUMO protease Ulp1 to expose the Gly-Gly. Widely deployed as a SUMO-fusion partner that enhances soluble expression of difficult passengers and, upon Ulp1 cleavage at the Gly-Gly, releases the passenger with a native N-terminus."
+          "Small ubiquitin-related modifier (Smt3 / SUMO), Saccharomyces cerevisiae SMT3; UniProt Q12306, residues 1–98. Ubiquitin-like (UBL) protein with a beta-grasp fold. As stored this is the mature/processed form retaining the initiator Met (M1) for use as a recombinant N-terminal fusion tag and ending at the conserved C-terminal Gly-Gly (G97-G98), the Ulp1 cleavage site. The full precursor is 101 aa; the C-terminal propeptide (residues 99–101, ATY) is removed by the SUMO protease Ulp1 to expose the Gly-Gly. Widely deployed as a SUMO-fusion partner that enhances soluble expression of difficult passengers and, upon Ulp1 cleavage at the Gly-Gly, releases the passenger with a native N-terminus."
         ],
         "citation": [
           "[1]",
@@ -95,7 +95,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "UniProt:Q12306 (SUMO_YEAST / SMT3, S. cerevisiae), residues 1\u201398 of 101; the stored 98-aa sequence is 100% identical to Q12306[1:98] \u2014 independently fetched via https://rest.uniprot.org/uniprotkb/Q12306.fasta and compared byte-for-byte (0 mismatches). Residues 99\u2013101 (ATY) are the annotated C-terminal propeptide (FT PROPEP 99..101) cleaved by Ulp1; the part correctly ends at G98, the Ulp1 cleavage site."
+    "sequence_source": "UniProt:Q12306 (SUMO_YEAST / SMT3, S. cerevisiae), residues 1–98 of 101; the stored 98-aa sequence is 100% identical to Q12306[1:98] — independently fetched via https://rest.uniprot.org/uniprotkb/Q12306.fasta and compared byte-for-byte (0 mismatches). Residues 99–101 (ATY) are the annotated C-terminal propeptide (FT PROPEP 99..101) cleaved by Ulp1; the part correctly ends at G98, the Ulp1 cleavage site."
   },
   "functional_claims": [
     {
@@ -237,7 +237,7 @@
   ],
   "uniprot_import": {
     "accession": "UniProt:Q12306",
-    "fetched": "2026-06-20",
+    "fetched": "2026-07-01",
     "uniprot_entry_version": 215,
     "status": "length_variant",
     "identity": 1.0,

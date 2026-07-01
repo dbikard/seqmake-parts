@@ -123,7 +123,7 @@
       "start": 27,
       "end": 28,
       "label": "Binding site: in other chain",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "in other chain",
       "uniprot_type": "Binding site"
     },
@@ -132,7 +132,7 @@
       "start": 53,
       "end": 54,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -141,7 +141,7 @@
       "start": 81,
       "end": 82,
       "label": "Binding site: in other chain",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "in other chain",
       "uniprot_type": "Binding site"
     },
@@ -150,7 +150,7 @@
       "start": 87,
       "end": 88,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -159,7 +159,7 @@
       "start": 90,
       "end": 91,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -168,7 +168,7 @@
       "start": 125,
       "end": 126,
       "label": "Binding site",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "",
       "uniprot_type": "Binding site"
     },
@@ -177,13 +177,13 @@
       "start": 127,
       "end": 128,
       "label": "Binding site: in other chain",
-      "so_term": null,
+      "so_term": "SO:0000409",
       "description": "in other chain",
       "uniprot_type": "Binding site"
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-06-14",
+    "fetched": "2026-07-01",
     "accession": "UniProt:P0C2P0",
     "status": "match",
     "identity": 1.0,
