@@ -362,11 +362,11 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-09-01",
+    "fetched": "2026-10-01",
     "accession": "UniProt:P0AEX9",
     "status": "match",
     "identity": 1.0,
     "sequence_match": true,
-    "uniprot_entry_version": 183
+    "uniprot_entry_version": 184
   }
 }

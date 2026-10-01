@@ -115,11 +115,11 @@
   ],
   "uniprot_features": [],
   "uniprot_import": {
-    "fetched": "2026-09-01",
+    "fetched": "2026-10-01",
     "accession": "UniProt:P02981",
     "status": "match",
     "identity": 1.0,
     "sequence_match": true,
-    "uniprot_entry_version": 104
+    "uniprot_entry_version": 105
   }
 }

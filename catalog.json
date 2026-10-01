@@ -688,12 +688,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P0AG05",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 102
+        "uniprot_entry_version": 103
       }
     },
     {
@@ -2625,12 +2625,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P06709",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 210
+        "uniprot_entry_version": 211
       }
     },
     {
@@ -2798,12 +2798,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P62593",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 155
+        "uniprot_entry_version": 156
       }
     },
     {
@@ -2983,12 +2983,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P0C2P0",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 78
+        "uniprot_entry_version": 79
       }
     },
     {
@@ -3287,12 +3287,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:Q99ZW2",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 147
+        "uniprot_entry_version": 148
       }
     },
     {
@@ -4073,12 +4073,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P62577",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 117
+        "uniprot_entry_version": 118
       }
     },
     {
@@ -4599,7 +4599,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:Q99ZW2",
         "status": "variant",
         "identity": 0.9985,
@@ -4617,7 +4617,7 @@
           }
         ],
         "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
-        "uniprot_entry_version": 147
+        "uniprot_entry_version": 148
       }
     },
     {
@@ -4710,12 +4710,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P00382",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 145
+        "uniprot_entry_version": 146
       }
     },
     {
@@ -5519,12 +5519,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P21236",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 114
+        "uniprot_entry_version": 115
       }
     },
     {
@@ -6867,12 +6867,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P23181",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 90
+        "uniprot_entry_version": 91
       }
     },
     {
@@ -7153,12 +7153,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P08515",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 152
+        "uniprot_entry_version": 153
       }
     },
     {
@@ -7761,12 +7761,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P06633",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 186
+        "uniprot_entry_version": 187
       }
     },
     {
@@ -8511,12 +8511,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P00557",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 123
+        "uniprot_entry_version": 124
       }
     },
     {
@@ -9031,12 +9031,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P00552",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 119
+        "uniprot_entry_version": 120
       }
     },
     {
@@ -9990,12 +9990,12 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P04173",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 199
+        "uniprot_entry_version": 200
       }
     },
     {
@@ -10856,12 +10856,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P0AEX9",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 183
+        "uniprot_entry_version": 184
       }
     },
     {
@@ -11540,12 +11540,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P0AFF6",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 160
+        "uniprot_entry_version": 161
       }
     },
     {
@@ -15604,12 +15604,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P13249",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 93
+        "uniprot_entry_version": 94
       }
     },
     {
@@ -16265,12 +16265,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P03051",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 141
+        "uniprot_entry_version": 142
       }
     },
     {
@@ -20920,8 +20920,8 @@
       ],
       "uniprot_import": {
         "accession": "UniProt:Q12306",
-        "fetched": "2026-09-01",
-        "uniprot_entry_version": 215,
+        "fetched": "2026-10-01",
+        "uniprot_entry_version": 216,
         "status": "length_variant",
         "identity": 1.0,
         "part_len": 98,
@@ -21640,12 +21640,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P02981",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 104
+        "uniprot_entry_version": 105
       }
     },
     {
@@ -22588,7 +22588,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P00912",
         "status": "match",
         "identity": 1.0,
@@ -22987,12 +22987,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P0AA25",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 174
+        "uniprot_entry_version": 175
       }
     },
     {
@@ -23550,8 +23550,8 @@
       ],
       "uniprot_import": {
         "accession": "UniProt:Q02724",
-        "fetched": "2026-09-01",
-        "uniprot_entry_version": 201,
+        "fetched": "2026-10-01",
+        "uniprot_entry_version": 202,
         "status": "length_variant",
         "identity": 1.0,
         "part_len": 219,
@@ -24275,12 +24275,12 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-09-01",
+        "fetched": "2026-10-01",
         "accession": "UniProt:P17493",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 91
+        "uniprot_entry_version": 92
       }
     }
   ],
