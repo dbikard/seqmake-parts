@@ -336,7 +336,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-10-01",
+    "fetched": "2026-11-01",
     "accession": "UniProt:P0AFF6",
     "status": "match",
     "identity": 1.0,

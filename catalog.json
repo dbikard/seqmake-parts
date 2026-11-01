@@ -688,7 +688,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P0AG05",
         "status": "match",
         "identity": 1.0,
@@ -2625,7 +2625,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P06709",
         "status": "match",
         "identity": 1.0,
@@ -2798,7 +2798,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P62593",
         "status": "match",
         "identity": 1.0,
@@ -2983,7 +2983,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P0C2P0",
         "status": "match",
         "identity": 1.0,
@@ -3287,7 +3287,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:Q99ZW2",
         "status": "match",
         "identity": 1.0,
@@ -4073,7 +4073,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P62577",
         "status": "match",
         "identity": 1.0,
@@ -4599,7 +4599,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:Q99ZW2",
         "status": "variant",
         "identity": 0.9985,
@@ -4710,7 +4710,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P00382",
         "status": "match",
         "identity": 1.0,
@@ -5519,7 +5519,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P21236",
         "status": "match",
         "identity": 1.0,
@@ -6867,7 +6867,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P23181",
         "status": "match",
         "identity": 1.0,
@@ -7153,7 +7153,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P08515",
         "status": "match",
         "identity": 1.0,
@@ -7761,7 +7761,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P06633",
         "status": "match",
         "identity": 1.0,
@@ -8511,7 +8511,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P00557",
         "status": "match",
         "identity": 1.0,
@@ -9031,7 +9031,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P00552",
         "status": "match",
         "identity": 1.0,
@@ -9990,7 +9990,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P04173",
         "status": "match",
         "identity": 1.0,
@@ -10856,7 +10856,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P0AEX9",
         "status": "match",
         "identity": 1.0,
@@ -11540,7 +11540,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P0AFF6",
         "status": "match",
         "identity": 1.0,
@@ -15604,7 +15604,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P13249",
         "status": "match",
         "identity": 1.0,
@@ -16265,7 +16265,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P03051",
         "status": "match",
         "identity": 1.0,
@@ -20920,7 +20920,7 @@
       ],
       "uniprot_import": {
         "accession": "UniProt:Q12306",
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "uniprot_entry_version": 216,
         "status": "length_variant",
         "identity": 1.0,
@@ -21640,7 +21640,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P02981",
         "status": "match",
         "identity": 1.0,
@@ -22588,7 +22588,7 @@
       "main_citations": [],
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P00912",
         "status": "match",
         "identity": 1.0,
@@ -22987,7 +22987,7 @@
         }
       ],
       "uniprot_import": {
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "accession": "UniProt:P0AA25",
         "status": "match",
         "identity": 1.0,
@@ -23550,7 +23550,7 @@
       ],
       "uniprot_import": {
         "accession": "UniProt:Q02724",
-        "fetched": "2026-10-01",
+        "fetched": "2026-11-01",
         "uniprot_entry_version": 202,
         "status": "length_variant",
         "identity": 1.0,

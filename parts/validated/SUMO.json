@@ -237,7 +237,7 @@
   ],
   "uniprot_import": {
     "accession": "UniProt:Q12306",
-    "fetched": "2026-10-01",
+    "fetched": "2026-11-01",
     "uniprot_entry_version": 216,
     "status": "length_variant",
     "identity": 1.0,

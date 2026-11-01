@@ -151,7 +151,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-10-01",
+    "fetched": "2026-11-01",
     "accession": "UniProt:Q99ZW2",
     "status": "variant",
     "identity": 0.9985,
