@@ -14,7 +14,7 @@ the 275 records' claims are analysis_status = "pending" (authored, not
 yet independently cross-checked). Prefer "verified" claims, and VERIFY against
 the cited primary literature before relying on any of them.
 
-Contents: 275 parts (75 validated, 200 candidate) carrying 345 functional claims.
+Contents: 275 parts (75 validated, 200 candidate) carrying 346 functional claims.
 
 ## For agents: where to start
 

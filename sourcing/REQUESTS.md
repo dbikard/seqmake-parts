@@ -39,3 +39,5 @@ access barrier, and the **exact filename** to save it as in `sourcing/incoming/`
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 14995162 --doi 10.1021/ja039915e`
 - [ ] **PMID 30125270 / doi:10.1038/nbt.4201** — unblocks: birA/sequence_variant_turboid — barrier: abstract_only
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 30125270 --doi 10.1038/nbt.4201`
+- [ ] **PMID 6759660 / doi:10.1016/0022-2836(82)90276-5** — Plasmid R6K DNA replication. I. Complete nucleotide sequence of an autonomously replicating segment — unblocks: R6Kgamma_ori/boundaries — barrier: not-in-pmc
+      full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 6759660 --doi 10.1016/0022-2836(82)90276-5`

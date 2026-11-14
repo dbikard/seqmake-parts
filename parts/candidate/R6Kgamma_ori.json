@@ -3,32 +3,89 @@
   "slug": "R6Kgamma_ori",
   "locus": "R6Kgamma_ori",
   "id": "R6Kgamma_ori",
-  "description": "R6Kgamma ori",
+  "description": "The R6K gamma origin of replication: the 389 bp segment from base 1 of the sequenced autonomously replicating R6K segment, carrying the seven 22-bp pi iterons; replicates only where the R6K pi protein (pir) is supplied in trans.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "AAGATCCGGCCACGATGCGTCCGGCGTAGAGGATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACATGGGAATTAG",
-  "references": [],
+  "sequence": "GATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACA",
+  "references": [
+    {
+      "authors": "Stalker DM, Kolter R, Helinski DR",
+      "title": "Plasmid R6K DNA replication. I. Complete nucleotide sequence of an autonomously replicating segment.",
+      "journal": "J Mol Biol. 1982;161(1):33-43",
+      "pubmed_id": "6759660",
+      "comment": "doi:10.1016/0022-2836(82)90276-5"
+    },
+    {
+      "authors": "McEachern MJ, Filutowicz M, Helinski DR",
+      "title": "Mutations in direct repeat sequences and in a conserved sequence adjacent to the repeats result in a defective replication origin in plasmid R6K.",
+      "journal": "Proc Natl Acad Sci U S A. 1985;82(5):1480-4",
+      "pubmed_id": "3883361",
+      "comment": "doi:10.1073/pnas.82.5.1480"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
       "start": 0,
-      "end": 430,
+      "end": 389,
       "strand": 1,
       "qualifiers": {
         "label": [
           "R6Kgamma ori"
         ],
         "synonym": [
-          "R6Kgamma ori"
+          "R6Kgamma ori",
+          "R6K gamma ori",
+          "R6K γ ori"
+        ],
+        "note": [
+          "The R6K gamma origin of replication: the 389 bp segment from base 1 of the sequenced autonomously replicating R6K segment, carrying the seven 22-bp pi iterons; replicates only where the R6K pi protein (pir) is supplied in trans."
+        ],
+        "db_xref": [
+          "SO:0000296",
+          "GenBank:LT827129",
+          "GenBank:V00320"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "R6K gamma origin; 100% identical to R6K plasmid GenBank LT827129 (complement of 26034-26422) and to bases 1-389 of GenBank V00320 (Stalker et al. 1982; reverse complement) except V00320 base 30 (G; C here). Contains 281 of the 282 bp of the gamma origin deposited as GenBank M11000 (McEachern et al. 1985). Re-delimited (2026-11) from a 430 bp record whose first 31 bp were pBR322 tet DNA (bases 3-31 = pBR322 380-409, inside tet) and whose last 10 bp were 3 further R6K bases and 7 bp that do not continue the R6K sequence."
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "boundaries",
+      "type": "origin",
+      "label": "Spans bases 1-389 of the sequenced autonomously replicating R6K segment (V00320); contains the seven 22-bp direct repeats (pi-binding iterons) and the region adjacent to them that McEachern et al. found required for origin function. The boundary is the conventional span; no truncation series defining its ends was consulted.",
+      "value": {
+        "reference": "GenBank V00320",
+        "span": "1-389 (reverse complement)",
+        "length_bp": 389,
+        "iterons": "7 x 22 bp"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "3883361",
+        "quote": "Members of this bank contain single or multiple mutations in the seven direct repeats and the flanking sequences in the gamma origin.",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment to GenBank V00320, M11000, LT827129",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
 }

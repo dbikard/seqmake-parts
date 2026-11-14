@@ -16473,9 +16473,25 @@
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
       "cat:documented": false,
+      "cat:hasFunctionalClaim": {
+        "@id": "part:R6Kgamma_ori_claim_boundaries"
+      },
       "cat:slug": "R6Kgamma_ori",
+      "cat:sourceAccession": "GenBank:LT827129",
+      "dcterms:description": "The R6K gamma origin of replication: the 389 bp segment from base 1 of the sequenced autonomously replicating R6K segment, carrying the seven 22-bp pi iterons; replicates only where the R6K pi protein (pir) is supplied in trans.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:6759660"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:3883361"
+        }
+      ],
       "dcterms:title": "R6Kgamma ori",
       "rdfs:label": "R6Kgamma ori",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/LT827129"
+      },
       "sbol:displayId": "R6Kgamma_ori",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -16489,13 +16505,45 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": "R6Kgamma ori"
+      "skos:altLabel": [
+        "R6Kgamma ori",
+        "R6K gamma ori",
+        "R6K \u03b3 ori"
+      ]
+    },
+    {
+      "@id": "part:R6Kgamma_ori_claim_boundaries",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "origin",
+      "cat:claimValue": "{\"iterons\": \"7 x 22 bp\", \"length_bp\": 389, \"reference\": \"GenBank V00320\", \"span\": \"1-389 (reverse complement)\"}",
+      "cat:confidence": "medium",
+      "cat:crossChecked": false,
+      "cat:sourceQuote": "Members of this bank contain single or multiple mutations in the seven direct repeats and the flanking sequences in the gamma origin.",
+      "cat:sourceQuoteFrom": "primary",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:3883361"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:3883361"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:R6Kgamma_ori_claim_boundaries_provenance"
+      },
+      "rdfs:label": "Spans bases 1-389 of the sequenced autonomously replicating R6K segment (V00320); contains the seven 22-bp direct repeats (pi-binding iterons) and the region adjacent to them that McEachern et al. found required for origin function. The boundary is the conventional span; no truncation series defining its ends was consulted."
+    },
+    {
+      "@id": "part:R6Kgamma_ori_claim_boundaries_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "pairwise alignment to GenBank V00320, M11000, LT827129",
+      "cat:method": "bioinformatic-alignment"
     },
     {
       "@id": "part:R6Kgamma_ori_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "R6Kgamma_ori_sequence",
-      "sbol:elements": "AAGATCCGGCCACGATGCGTCCGGCGTAGAGGATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACATGGGAATTAG",
+      "sbol:elements": "GATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
