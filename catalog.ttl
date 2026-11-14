@@ -1609,16 +1609,24 @@ part:Pxyl_tet a sbol:Component ;
 
 part:R6Kgamma_ori a sbol:Component ;
     rdfs:label "R6Kgamma ori" ;
+    dcterms:description "The R6K gamma origin of replication: the 389 bp segment from base 1 of the sequenced autonomously replicating R6K segment, carrying the seven 22-bp pi iterons; replicates only where the R6K pi protein (pir) is supplied in trans." ;
+    dcterms:references pubmed:3883361,
+        pubmed:6759660 ;
     dcterms:title "R6Kgamma ori" ;
     sbol:displayId "R6Kgamma_ori" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:R6Kgamma_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "R6Kgamma ori" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/LT827129> ;
+    skos:altLabel "R6K gamma ori",
+        "R6K γ ori",
+        "R6Kgamma ori" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "R6Kgamma_ori" .
+    cat:hasFunctionalClaim part:R6Kgamma_ori_claim_boundaries ;
+    cat:slug "R6Kgamma_ori" ;
+    cat:sourceAccession "GenBank:LT827129" .
 
 part:RBS_23400 a sbol:Component ;
     rdfs:label "RBS 23400" ;
@@ -9911,9 +9919,27 @@ part:Pxyl_tet_feature_4_range a sbol:Range ;
     sbol:sequence part:Pxyl_tet_sequence ;
     sbol:start 40 .
 
+part:R6Kgamma_ori_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans bases 1-389 of the sequenced autonomously replicating R6K segment (V00320); contains the seven 22-bp direct repeats (pi-binding iterons) and the region adjacent to them that McEachern et al. found required for origin function. The boundary is the conventional span; no truncation series defining its ends was consulted." ;
+    dcterms:references pubmed:3883361 ;
+    prov:wasDerivedFrom pubmed:3883361 ;
+    prov:wasGeneratedBy part:R6Kgamma_ori_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"iterons\": \"7 x 22 bp\", \"length_bp\": 389, \"reference\": \"GenBank V00320\", \"span\": \"1-389 (reverse complement)\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "Members of this bank contain single or multiple mutations in the seven direct repeats and the flanking sequences in the gamma origin." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:R6Kgamma_ori_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank V00320, M11000, LT827129" ;
+    cat:method "bioinformatic-alignment" .
+
 part:R6Kgamma_ori_sequence a sbol:Sequence ;
     sbol:displayId "R6Kgamma_ori_sequence" ;
-    sbol:elements "AAGATCCGGCCACGATGCGTCCGGCGTAGAGGATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACATGGGAATTAG" ;
+    sbol:elements "GATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 

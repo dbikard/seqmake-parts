@@ -4,7 +4,7 @@
   "n_validated": 75,
   "n_candidate": 200,
   "n_documented": 75,
-  "n_functional_claims": 345,
+  "n_functional_claims": 346,
   "parts": [
     {
       "name": "186 integrase",
@@ -15803,24 +15803,73 @@
       "slug": "R6Kgamma_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:LT827129",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "R6Kgamma ori"
+        "R6Kgamma ori",
+        "R6K gamma ori",
+        "R6K \u03b3 ori"
       ],
       "collections": [],
-      "description": "",
-      "length": 430,
+      "description": "The R6K gamma origin of replication: the 389 bp segment from base 1 of the sequenced autonomously replicating R6K segment, carrying the seven 22-bp pi iterons; replicates only where the R6K pi protein (pir) is supplied in trans.",
+      "length": 389,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Stalker DM, Kolter R, Helinski DR",
+          "title": "Plasmid R6K DNA replication. I. Complete nucleotide sequence of an autonomously replicating segment.",
+          "journal": "J Mol Biol. 1982;161(1):33-43",
+          "pmid": "6759660",
+          "doi": "10.1016/0022-2836(82)90276-5",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6759660/"
+        },
+        {
+          "authors": "McEachern MJ, Filutowicz M, Helinski DR",
+          "title": "Mutations in direct repeat sequences and in a conserved sequence adjacent to the repeats result in a defective replication origin in plasmid R6K.",
+          "journal": "Proc Natl Acad Sci U S A. 1985;82(5):1480-4",
+          "pmid": "3883361",
+          "doi": "10.1073/pnas.82.5.1480",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3883361/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans bases 1-389 of the sequenced autonomously replicating R6K segment (V00320); contains the seven 22-bp direct repeats (pi-binding iterons) and the region adjacent to them that McEachern et al. found required for origin function. The boundary is the conventional span; no truncation series defining its ends was consulted.",
+          "value": {
+            "reference": "GenBank V00320",
+            "span": "1-389 (reverse complement)",
+            "length_bp": 389,
+            "iterons": "7 x 22 bp"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3883361",
+            "quote": "Members of this bank contain single or multiple mutations in the seven direct repeats and the flanking sequences in the gamma origin.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank V00320, M11000, LT827129",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "RBS 23400",

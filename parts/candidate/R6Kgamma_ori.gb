@@ -1,25 +1,53 @@
-LOCUS       R6Kgamma_ori             430 bp    DNA              UNK 01-JAN-1980
-DEFINITION  R6Kgamma ori.
+LOCUS       R6Kgamma_ori             389 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The R6K gamma origin of replication: the 389 bp segment from base 1
+            of the sequenced autonomously replicating R6K segment, carrying the
+            seven 22-bp pi iterons; replicates only where the R6K pi protein
+            (pir) is supplied in trans..
 ACCESSION   R6Kgamma_ori
 VERSION     R6Kgamma_ori
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Stalker DM, Kolter R, Helinski DR
+  TITLE     Plasmid R6K DNA replication. I. Complete nucleotide sequence of an
+            autonomously replicating segment.
+  JOURNAL   J Mol Biol. 1982;161(1):33-43
+   PUBMED   6759660
+  REMARK    doi:10.1016/0022-2836(82)90276-5
+REFERENCE   2
+  AUTHORS   McEachern MJ, Filutowicz M, Helinski DR
+  TITLE     Mutations in direct repeat sequences and in a conserved sequence
+            adjacent to the repeats result in a defective replication origin in
+            plasmid R6K.
+  JOURNAL   Proc Natl Acad Sci U S A. 1985;82(5):1480-4
+   PUBMED   3883361
+  REMARK    doi:10.1073/pnas.82.5.1480
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/R6Kgamma_ori
 FEATURES             Location/Qualifiers
-     rep_origin      1..430
+     rep_origin      1..389
                      /label="R6Kgamma ori"
                      /synonym="R6Kgamma ori"
+                     /synonym="R6K gamma ori"
+                     /synonym="R6K γ ori"
+                     /note="The R6K gamma origin of replication: the 389 bp
+                     segment from base 1 of the sequenced autonomously
+                     replicating R6K segment, carrying the seven 22-bp pi
+                     iterons; replicates only where the R6K pi protein (pir) is
+                     supplied in trans."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:LT827129"
+                     /db_xref="GenBank:V00320"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
-        1 aagatccggc cacgatgcgt ccggcgtaga ggatctgaag atcagcagtt caacctgttg
-       61 atagtacgta ctaagctctc atgtttcacg tactaagctc tcatgtttaa cgtactaagc
-      121 tctcatgttt aacgaactaa accctcatgg ctaacgtact aagctctcat ggctaacgta
-      181 ctaagctctc atgtttcacg tactaagctc tcatgtttga acaataaaat taatataaat
-      241 cagcaactta aatagcctct aaggttttaa gttttataag aaaaaaaaga atatataagg
-      301 cttttaaagc ttttaaggtt taacggttgt ggacaacaag ccagggatgt aacgcactga
-      361 gaagccctta gagcctctca aagcaatttt gagtgacaca ggaacactta acggctgaca
-      421 tgggaattag
+        1 gatctgaaga tcagcagttc aacctgttga tagtacgtac taagctctca tgtttcacgt
+       61 actaagctct catgtttaac gtactaagct ctcatgttta acgaactaaa ccctcatggc
+      121 taacgtacta agctctcatg gctaacgtac taagctctca tgtttcacgt actaagctct
+      181 catgtttgaa caataaaatt aatataaatc agcaacttaa atagcctcta aggttttaag
+      241 ttttataaga aaaaaaagaa tatataaggc ttttaaagct tttaaggttt aacggttgtg
+      301 gacaacaagc cagggatgta acgcactgag aagcccttag agcctctcaa agcaattttg
+      361 agtgacacag gaacacttaa cggctgaca
 //

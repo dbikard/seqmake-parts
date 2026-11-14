@@ -19,7 +19,7 @@
   "n_parts": 275,
   "n_validated": 75,
   "n_candidate": 200,
-  "n_functional_claims": 345,
+  "n_functional_claims": 346,
   "parts": [
     {
       "slug": "186_integrase",
@@ -3011,9 +3011,11 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
-        "R6Kgamma ori"
+        "R6Kgamma ori",
+        "R6K gamma ori",
+        "R6K \u03b3 ori"
       ]
     },
     {
