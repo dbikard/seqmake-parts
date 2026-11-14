@@ -3,7 +3,7 @@
   "slug": "p15A",
   "locus": "p15A",
   "id": "p15A",
-  "description": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+  "description": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system. Open question: base 69 is C here, as in the p15A and pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most pACYC-type plasmids of a 1,390-plasmid lab collection; which one the vectors really carry is not settled.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -31,6 +31,13 @@
       "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
       "pubmed_id": "325558",
       "comment": "doi:10.1073/pnas.74.5.1865"
+    },
+    {
+      "authors": "Bartolomé B, Jubete Y, Martínez E, de la Cruz F",
+      "title": "Construction and properties of a family of pACYC184-derived cloning vectors compatible with pBR322 and its derivatives.",
+      "journal": "Gene. 1991;102(1):75-8",
+      "pubmed_id": "1840539",
+      "comment": "doi:10.1016/0378-1119(91)90541-i"
     }
   ],
   "features": [
@@ -44,10 +51,14 @@
           "p15A"
         ],
         "synonym": [
-          "p15A"
+          "p15A",
+          "p15A origin",
+          "P15A rep",
+          "p15A ori (pSU38)",
+          "p15A origin (pSU38)"
         ],
         "note": [
-          "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system."
+          "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system. Open question: base 69 is C here, as in the p15A and pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most pACYC-type plasmids of a 1,390-plasmid lab collection; which one the vectors really carry is not settled."
         ],
         "db_xref": [
           "SO:0000296",
@@ -137,7 +148,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "p15A origin; bases V00309 218-763 (Selzer et al. 1983), reverse complement, identical over this span; = pACYC184 (X06403) 848-1393 except the base at V00309 662, which the deposit itself flags as a conflict. Re-delimited (2026-11) from 562 bp (V00309 206-767): the old part also carried 12 bp upstream of the RNA II -35 and 4 bp past the RNA-to-DNA transition (V00309 764-767, which include the DNA start nucleotides)."
+    "sequence_source": "p15A origin; bases V00309 218-763 (Selzer et al. 1983), reverse complement, identical over this span; = pACYC184 (X06403) 848-1393 except the base at V00309 662, which the deposit itself flags as a conflict. Re-delimited (2026-11) from 562 bp (V00309 206-767): the old part also carried 12 bp upstream of the RNA II -35 and 4 bp past the RNA-to-DNA transition (V00309 764-767, which include the DNA start nucleotides). Two former candidate parts were retired into this one (2026-11): p15A_ori, the same 546 bp with T at base 69 (the form most pACYC-type plasmids of a 1,390-plasmid lab collection carry), and p15A_ori_pSU38, the p15A fragment of the pSU vectors (Bartolome et al. 1991) = bases 1-525 of this part without base 102 (V00309 662, a base the V00309 deposit itself flags as a conflict); in pSU38 the -35 is vector DNA."
   },
   "functional_claims": [
     {
@@ -151,7 +162,7 @@
       "ontology": {},
       "source": {
         "pmid": "6186390",
-        "quote": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+        "quote": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system. Open question: base 69 is C here, as in the p15A and pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most pACYC-type plasmids of a 1,390-plasmid lab collection; which one the vectors really carry is not settled.",
         "quote_source": "catalog-doc"
       },
       "provenance": {
@@ -187,6 +198,32 @@
         "agent": "ai-assistant"
       },
       "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "sequence_variant",
+      "type": "sequence_variant",
+      "label": "Base 69 (V00309 695) is C/G in the p15A and pACYC184 deposits but T/A in most pACYC-type plasmids of a 1,390-plasmid lab collection (about 170, 2026-11); the pSU-vector form lacks base 102 (V00309 662, flagged as a conflict in V00309). Which base 69 the common vectors carry is an open question.",
+      "value": {
+        "positions": "69",
+        "deposit": "C (V00309/X06403 695 G)",
+        "lab_plasmids": "T",
+        "open_question": true
+      },
+      "ontology": {},
+      "source": {
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/V00309",
+        "quote": "V00309 and X06403 read G at V00309 695; the retired p15A_ori record and most pACYC-type plasmids of a 1,390-plasmid lab collection read A there",
+        "quote_source": "catalog-doc"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment of the retired p15A_ori record and a lab plasmid collection to GenBank V00309 and X06403",
+        "agent": "ai-assistant"
+      },
+      "confidence": "low",
       "analysis_status": "pending",
       "cross_checked": false,
       "supersedes": null

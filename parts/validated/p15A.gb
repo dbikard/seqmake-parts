@@ -2,7 +2,10 @@ LOCUS       p15A                     546 bp    DNA              UNK 01-JAN-1980
 DEFINITION  The p15A origin: the 546 bp natural ColE1-type replication origin
             from the RNA II promoter -35 to the RNA-to-DNA transition, whose
             copy number is controlled by the divergent RNA I / RNA II antisense
-            system..
+            system. Open question: base 69 is C here, as in the p15A and
+            pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most
+            pACYC-type plasmids of a 1,390-plasmid lab collection; which one the
+            vectors really carry is not settled..
 ACCESSION   p15A
 VERSION     p15A
 KEYWORDS    .
@@ -29,16 +32,31 @@ REFERENCE   3
   JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
    PUBMED   325558
   REMARK    doi:10.1073/pnas.74.5.1865
+REFERENCE   4
+  AUTHORS   Bartolomé B, Jubete Y, Martínez E, de la Cruz F
+  TITLE     Construction and properties of a family of pACYC184-derived cloning
+            vectors compatible with pBR322 and its derivatives.
+  JOURNAL   Gene. 1991;102(1):75-8
+   PUBMED   1840539
+  REMARK    doi:10.1016/0378-1119(91)90541-i
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/p15A
 FEATURES             Location/Qualifiers
      rep_origin      1..546
                      /label="p15A"
                      /synonym="p15A"
+                     /synonym="p15A origin"
+                     /synonym="P15A rep"
+                     /synonym="p15A ori (pSU38)"
+                     /synonym="p15A origin (pSU38)"
                      /note="The p15A origin: the 546 bp natural ColE1-type
                      replication origin from the RNA II promoter -35 to the
                      RNA-to-DNA transition, whose copy number is controlled by
-                     the divergent RNA I / RNA II antisense system."
+                     the divergent RNA I / RNA II antisense system. Open
+                     question: base 69 is C here, as in the p15A and pACYC184
+                     deposits (V00309 / X06403 base 695 = G), but T in most
+                     pACYC-type plasmids of a 1,390-plasmid lab collection;
+                     which one the vectors really carry is not settled."
                      /db_xref="SO:0000296"
                      /db_xref="GenBank:V00309"
                      /db_xref="GenBank:X06403"

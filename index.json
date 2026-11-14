@@ -16,9 +16,9 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 275,
+  "n_parts": 273,
   "n_validated": 75,
-  "n_candidate": 200,
+  "n_candidate": 198,
   "n_functional_claims": 353,
   "parts": [
     {
@@ -2080,37 +2080,12 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 2,
+      "n_claims": 3,
       "synonyms": [
-        "p15A"
-      ]
-    },
-    {
-      "slug": "p15A_ori",
-      "name": "p15A ori",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "origin",
-        "p15A ori"
-      ]
-    },
-    {
-      "slug": "p15A_ori_pSU38",
-      "name": "p15A ori (pSU38)",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "status": "candidate",
-      "n_claims": 1,
-      "synonyms": [
-        "p15A ori",
+        "p15A",
+        "p15A origin",
         "P15A rep",
+        "p15A ori (pSU38)",
         "p15A origin (pSU38)"
       ]
     },

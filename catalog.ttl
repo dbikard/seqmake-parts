@@ -2815,8 +2815,9 @@ part:oriT a sbol:Component ;
 
 part:p15A a sbol:Component ;
     rdfs:label "p15A" ;
-    dcterms:description "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
-    dcterms:references pubmed:325558,
+    dcterms:description "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system. Open question: base 69 is C here, as in the p15A and pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most pACYC-type plasmids of a 1,390-plasmid lab collection; which one the vectors really carry is not settled." ;
+    dcterms:references pubmed:1840539,
+        pubmed:325558,
         pubmed:6165011,
         pubmed:6186390 ;
     dcterms:title "p15A" ;
@@ -2829,48 +2830,17 @@ part:p15A a sbol:Component ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
     rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
-    skos:altLabel "p15A" ;
+    skos:altLabel "P15A rep",
+        "p15A",
+        "p15A ori (pSU38)",
+        "p15A origin",
+        "p15A origin (pSU38)" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:p15A_claim_boundaries,
-        part:p15A_claim_copy_number ;
+        part:p15A_claim_copy_number,
+        part:p15A_claim_sequence_variant ;
     cat:slug "p15A" ;
-    cat:sourceAccession "GenBank:V00309" .
-
-part:p15A_ori a sbol:Component ;
-    rdfs:label "p15A ori" ;
-    dcterms:title "p15A ori" ;
-    sbol:displayId "p15A_ori" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:p15A_ori_sequence ;
-    sbol:role so:0000296 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "origin",
-        "p15A ori" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "p15A_ori" .
-
-part:p15A_ori_pSU38 a sbol:Component ;
-    rdfs:label "p15A ori (pSU38)" ;
-    dcterms:description "p15A origin as carried by the pSU vectors (pSU38 family): the 524 bp from the RNA II promoter -10 to the RNA-to-DNA transition. The p15A fragment of these vectors starts 21 bp into the RNA II promoter, so the -35 comes from vector DNA. Otherwise identical to the p15A part, except that it lacks the base V00309 flags as a conflict (662)." ;
-    dcterms:references pubmed:1840539,
-        pubmed:325558,
-        pubmed:6186390 ;
-    dcterms:title "p15A ori (pSU38)" ;
-    sbol:displayId "p15A_ori_pSU38" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:p15A_ori_pSU38_sequence ;
-    sbol:role so:0000296 ;
-    sbol:type sbo:0000251 ;
-    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
-    skos:altLabel "P15A rep",
-        "p15A ori",
-        "p15A origin (pSU38)" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:hasFunctionalClaim part:p15A_ori_pSU38_claim_boundaries ;
-    cat:slug "p15A_ori_pSU38" ;
     cat:sourceAccession "GenBank:V00309" .
 
 part:pBBR1_Rep a sbol:Component ;
@@ -15164,13 +15134,31 @@ part:p15A_claim_copy_number a cat:FunctionalClaim ;
     cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"medium\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
-    cat:sourceQuote "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
+    cat:sourceQuote "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system. Open question: base 69 is C here, as in the p15A and pACYC184 deposits (V00309 / X06403 base 695 = G), but T in most pACYC-type plasmids of a 1,390-plasmid lab collection; which one the vectors really carry is not settled." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:p15A_claim_copy_number_provenance a prov:Activity ;
     cat:agent "ai-assistant" ;
     cat:fromDoc "p15A.md" ;
     cat:method "transcribed-from-doc" .
+
+part:p15A_claim_sequence_variant a cat:FunctionalClaim ;
+    rdfs:label "Base 69 (V00309 695) is C/G in the p15A and pACYC184 deposits but T/A in most pACYC-type plasmids of a 1,390-plasmid lab collection (about 170, 2026-11); the pSU-vector form lacks base 102 (V00309 662, flagged as a conflict in V00309). Which base 69 the common vectors carry is an open question." ;
+    dcterms:references <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
+    prov:wasDerivedFrom <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
+    prov:wasGeneratedBy part:p15A_claim_sequence_variant_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"deposit\": \"C (V00309/X06403 695 G)\", \"lab_plasmids\": \"T\", \"open_question\": true, \"positions\": \"69\"}" ;
+    cat:confidence "low" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "V00309 and X06403 read G at V00309 695; the retired p15A_ori record and most pACYC-type plasmids of a 1,390-plasmid lab collection read A there" ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:p15A_claim_sequence_variant_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment of the retired p15A_ori record and a lab plasmid collection to GenBank V00309 and X06403" ;
+    cat:method "bioinformatic-alignment" .
 
 part:p15A_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:6165011,
@@ -15213,36 +15201,6 @@ part:p15A_feature_2_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:p15A_sequence ;
     sbol:start 481 .
-
-part:p15A_ori_pSU38_claim_boundaries a cat:FunctionalClaim ;
-    rdfs:label "Spans V00309 239-763: from the RNA II promoter -10 (the pSU38 fragment's own 5' end; its -35 is vector DNA) to the RNA-to-DNA transition, the base before the three replication start nucleotides V00309 764-766 (Selzer et al. 1983), as for the p15A part." ;
-    dcterms:references pubmed:6186390 ;
-    prov:wasDerivedFrom pubmed:6186390 ;
-    prov:wasGeneratedBy part:p15A_ori_pSU38_claim_boundaries_provenance ;
-    cat:analysisStatus "pending" ;
-    cat:claimType "origin" ;
-    cat:claimValue "{\"end\": \"RNA-to-DNA transition (before V00309 764-766)\", \"length_bp\": 524, \"reference\": \"GenBank V00309\", \"span\": \"239-763\", \"start\": \"RNA II promoter -10 (end of the pSU38 p15A fragment)\"}" ;
-    cat:confidence "medium" ;
-    cat:crossChecked false ;
-    cat:sourceQuote "In each system, replication initiates at any of three consecutive nucleotides located at a unique site." ;
-    cat:sourceQuoteFrom "primary" .
-
-part:p15A_ori_pSU38_claim_boundaries_provenance a prov:Activity ;
-    cat:agent "ai-assistant" ;
-    cat:fromDoc "pairwise alignment to GenBank V00309, X06403 and the lab's pSU38Delta map" ;
-    cat:method "bioinformatic-alignment" .
-
-part:p15A_ori_pSU38_sequence a sbol:Sequence ;
-    sbol:displayId "p15A_ori_pSU38_sequence" ;
-    sbol:elements "CGTAATCTCTTGCTCTGAAAACGAAAAAACCGCCTTGCAGGGCGGTTTTTCGAAGGTTCTCTGAGCTACCAACTCTTTGAACCGAGGTAACTGGCTTGGAGGAGCGCAGTCACCAAAACTTGTCCTTTCAGTTTAGCCTTAACCGGCGCATGACTTCAAGACTAACTCCTCTAAATCAATTACCAGTGGCTGCTGCCAGTGGTGCTTTTGCATGTCTTTCCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGACTGAACGGGGGGTTCGTGCATACAGTCCAGCTTGGAGCGAACTGCCTACCCGGAACTGAGTGTCAGGCGTGGAATGAGACAAACGCGGCCATAACAGCGGAATGACACCGGTAAACCGAAAGGCAGGAACAGGAGAGCGCACGAGGGAGCCGCCAGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCACTGATTTGAGCGTCAGATTTCGTGATGCTTGTCAGGGGGGCGGAGCCTATGGAAA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
-part:p15A_ori_sequence a sbol:Sequence ;
-    sbol:displayId "p15A_ori_sequence" ;
-    sbol:elements "TTGAGATCGTTTTGGTCTGCGCGTAATCTCTTGCTCTGAAAACGAAAAAACCGCCTTGCAGGGCGGTTTTTCGAAGGTTCTCTGAGCTACCAACTCTTTGAACCGAGGTAACTGGCTTGGAGGAGCGCAGTCACCAAAACTTGTCCTTTCAGTTTAGCCTTAACCGGCGCATGACTTCAAGACTAACTCCTCTAAATCAATTACCAGTGGCTGCTGCCAGTGGTGCTTTTGCATGTCTTTCCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGACTGAACGGGGGGTTCGTGCATACAGTCCAGCTTGGAGCGAACTGCCTACCCGGAACTGAGTGTCAGGCGTGGAATGAGACAAACGCGGCCATAACAGCGGAATGACACCGGTAAACCGAAAGGCAGGAACAGGAGAGCGCACGAGGGAGCCGCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCAGGTTTCGCCACCACTGATTTGAGCGTCAGATTTCGTGATGCTTGTCAGGGGGGCGGAGCCTATGGAAA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:pBBR1_Rep_sequence a sbol:Sequence ;
     sbol:displayId "pBBR1_Rep_sequence" ;
