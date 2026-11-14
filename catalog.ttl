@@ -426,16 +426,26 @@ part:CYC1_terminator a sbol:Component ;
 
 part:CloDF13_ori a sbol:Component ;
     rdfs:label "CloDF13 ori" ;
+    dcterms:description "The CloDF13 (ColE1-family) origin of replication: the 630 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; the origin of the pCDF/CDFDuet vectors, compatible with ColE1/pMB1 and p15A origins." ;
+    dcterms:references pubmed:325558,
+        pubmed:3749334,
+        pubmed:6186390,
+        pubmed:6253936 ;
     dcterms:title "CloDF13 ori" ;
     sbol:displayId "CloDF13_ori" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:CloDF13_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "CloDF13 ori" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/X04466> ;
+    skos:altLabel "CDF ori",
+        "CloDF13 ori",
+        "CloDF13 origin" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "CloDF13_ori" .
+    cat:hasFunctionalClaim part:CloDF13_ori_claim_boundaries ;
+    cat:slug "CloDF13_ori" ;
+    cat:sourceAccession "GenBank:X04466" .
 
 part:CmR a sbol:Component ;
     rdfs:label "CmR" ;
@@ -464,10 +474,12 @@ part:CmR a sbol:Component ;
 
 part:ColE1 a sbol:Component ;
     rdfs:label "ColE1" ;
-    dcterms:description "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
+    dcterms:description "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
     dcterms:references pubmed:2434459,
+        pubmed:325558,
         pubmed:6156450,
-        pubmed:6165011 ;
+        pubmed:6165011,
+        pubmed:6279609 ;
     dcterms:title "ColE1" ;
     sbol:displayId "ColE1" ;
     sbol:hasFeature part:ColE1_feature_0,
@@ -488,16 +500,19 @@ part:ColE1 a sbol:Component ;
         "pUC ori" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
-    cat:hasFunctionalClaim part:ColE1_claim_copy_number ;
+    cat:hasFunctionalClaim part:ColE1_claim_boundaries,
+        part:ColE1_claim_copy_number ;
     cat:slug "ColE1" ;
     cat:sourceAccession "GenBank:J01749" .
 
 part:ColE1_AT a sbol:Component ;
     rdfs:label "ColE1_AT" ;
-    dcterms:description "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985." ;
+    dcterms:description "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical 589 bp pMB1 origin except a benign 2-bp difference (positions 393-394 (1-based)) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985." ;
     dcterms:references pubmed:2434459,
+        pubmed:325558,
         pubmed:6156450,
-        pubmed:6165011 ;
+        pubmed:6165011,
+        pubmed:6279609 ;
     dcterms:title "ColE1_AT" ;
     sbol:displayId "ColE1_AT" ;
     sbol:hasFeature part:ColE1_AT_feature_0,
@@ -514,7 +529,8 @@ part:ColE1_AT a sbol:Component ;
         "pMB1 (vector form)" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
-    cat:hasFunctionalClaim part:ColE1_AT_claim_copy_number,
+    cat:hasFunctionalClaim part:ColE1_AT_claim_boundaries,
+        part:ColE1_AT_claim_copy_number,
         part:ColE1_AT_claim_sequence_variant ;
     cat:slug "ColE1_AT" ;
     cat:sourceAccession "GenBank:X03174" .
@@ -1728,16 +1744,25 @@ part:RSF1010_oriV a sbol:Component ;
 
 part:RSF_ori a sbol:Component ;
     rdfs:label "RSF ori" ;
+    dcterms:description "The RSF1030 (ColE1-family) origin of replication: the 563 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; compatible with ColE1/pMB1 and p15A origins." ;
+    dcterms:references pubmed:325558,
+        pubmed:6186390,
+        pubmed:6294468 ;
     dcterms:title "RSF ori" ;
     sbol:displayId "RSF_ori" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:RSF_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "RSF ori" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J01784> ;
+    skos:altLabel "RSF ori",
+        "RSF1030 ori",
+        "RSF1030 origin" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RSF_ori" .
+    cat:hasFunctionalClaim part:RSF_ori_claim_boundaries ;
+    cat:slug "RSF_ori" ;
+    cat:sourceAccession "GenBank:J01784" .
 
 part:RepC a sbol:Component ;
     rdfs:label "RepC" ;
@@ -2790,8 +2815,9 @@ part:oriT a sbol:Component ;
 
 part:p15A a sbol:Component ;
     rdfs:label "p15A" ;
-    dcterms:description "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
-    dcterms:references pubmed:6165011,
+    dcterms:description "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
+    dcterms:references pubmed:325558,
+        pubmed:6165011,
         pubmed:6186390 ;
     dcterms:title "p15A" ;
     sbol:displayId "p15A" ;
@@ -2802,11 +2828,14 @@ part:p15A a sbol:Component ;
     sbol:hasSequence part:p15A_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
     skos:altLabel "p15A" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
-    cat:hasFunctionalClaim part:p15A_claim_copy_number ;
-    cat:slug "p15A" .
+    cat:hasFunctionalClaim part:p15A_claim_boundaries,
+        part:p15A_claim_copy_number ;
+    cat:slug "p15A" ;
+    cat:sourceAccession "GenBank:V00309" .
 
 part:p15A_ori a sbol:Component ;
     rdfs:label "p15A ori" ;
@@ -2824,19 +2853,25 @@ part:p15A_ori a sbol:Component ;
 
 part:p15A_ori_pSU38 a sbol:Component ;
     rdfs:label "p15A ori (pSU38)" ;
-    dcterms:description "p15A origin variant from pSU38 family; differs from canonical p15A ori by several point mutations and extended flanking sequence." ;
+    dcterms:description "p15A origin as carried by the pSU vectors (pSU38 family): the 524 bp from the RNA II promoter -10 to the RNA-to-DNA transition. The p15A fragment of these vectors starts 21 bp into the RNA II promoter, so the -35 comes from vector DNA. Otherwise identical to the p15A part, except that it lacks the base V00309 flags as a conflict (662)." ;
+    dcterms:references pubmed:1840539,
+        pubmed:325558,
+        pubmed:6186390 ;
     dcterms:title "p15A ori (pSU38)" ;
     sbol:displayId "p15A_ori_pSU38" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:p15A_ori_pSU38_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V00309> ;
     skos:altLabel "P15A rep",
         "p15A ori",
         "p15A origin (pSU38)" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "p15A_ori_pSU38" .
+    cat:hasFunctionalClaim part:p15A_ori_pSU38_claim_boundaries ;
+    cat:slug "p15A_ori_pSU38" ;
+    cat:sourceAccession "GenBank:V00309" .
 
 part:pBBR1_Rep a sbol:Component ;
     rdfs:label "pBBR1 Rep" ;
@@ -3281,17 +3316,26 @@ part:sopB a sbol:Component ;
 
 part:tL3 a sbol:Component ;
     rdfs:label "tL3" ;
+    dcterms:description "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end." ;
+    dcterms:references pubmed:6213446 ;
     dcterms:title "tL3" ;
     sbol:displayId "tL3" ;
+    sbol:hasFeature part:tL3_feature_0,
+        part:tL3_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tL3_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "tL3",
-        "tL3 terminator" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J02459> ;
+    skos:altLabel "lambda tL3 terminator",
+        "tL3",
+        "tL3 terminator",
+        "λ tL3 terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "tL3" .
+    cat:hasFunctionalClaim part:tL3_claim_boundaries ;
+    cat:slug "tL3" ;
+    cat:sourceAccession "GenBank:J02459" .
 
 part:tetAC a sbol:Component ;
     rdfs:label "tetAC" ;
@@ -4970,9 +5014,27 @@ part:ChnR_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:CloDF13_ori_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans CloDF13 X04466 284-913 (minus strand): from the RNA II promoter -35, annotated in the CloDF13 deposit at complement(908..913), to the RNA-to-DNA transition. The origin sequence is conserved with ColE1 (Stuitje et al. 1980) and X04466 marks the origin at 282 (= pBR322 2532, one of the three ColE1 start nucleotides); the part ends at the ColE1 part's end by alignment (X04466 284 = pBR322 2534)." ;
+    dcterms:references pubmed:6253936 ;
+    prov:wasDerivedFrom pubmed:6253936 ;
+    prov:wasGeneratedBy part:CloDF13_ori_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition (pBR322 2534 equivalent)\", \"length_bp\": 630, \"reference\": \"GenBank X04466\", \"span\": \"284-913 (complement)\", \"start\": \"RNA II promoter -35 (X04466 908-913, deposit annotation)\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The sequence at the origin of replication is conserved. There are large differences in the nucleotide sequence downstream the replication origin" ;
+    cat:sourceQuoteFrom "primary" .
+
+part:CloDF13_ori_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank X04466 and J01749 + PMID 6253936 abstract" ;
+    cat:method "bioinformatic-alignment" .
+
 part:CloDF13_ori_sequence a sbol:Sequence ;
     sbol:displayId "CloDF13_ori_sequence" ;
-    sbol:elements "GATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTTTTGCCCTGTAAACGAAAAAACCACCTGGGGAGGTGGTTTGATCGAAGGTTAAGTCAGTTGGGGAACTGCTTAACCGTGGTAACTGGCTTTCGCAGAGCACAGCAACCAAATCTGTCCTTCCAGTGTAGCCGGACTTTGGCGCACACTTCAAGAGCAACCGCGTGTTTAGCTAAACAAATCCTCTGCGAACTCCCAGTTACCAATGGCTGCTGCCAGTGGCGTTTTACCGTGCTTTTCCGGGTTGGACTCAAGTGAACAGTTACCGGATAAGGCGCAGCAGTCGGGCTGAACGGGGAGTTCTTGCTTACAGCCCAGCTTGGAGCGAACGACCTACACCGAGCCGAGATACCAGTGTGTGAGCTATGAGAAAGCGCCACACTTCCCGTAAGGGAGAAAGGCGGAACAGGTATCCGGTAAACGGCAGGGTCGGAACAGGAGAGCGCAAGAGGGAGCGACCCGCCGGAAACGGTGGGGATCTTTAAGTCCTGTCGGGTTTCGCCCGTACTGTCAGATTCATGGTTGAGCCTCACGGCTCCCACAGATGCACCGGAAAAGCGTCTGTTTATGTGAACTCTGGCAGGAGGGCGGAGCCTATGGAAAAACGCCACCGGCGCGGCCCTGCTGTTTTGCCTCACATGTTAGTCCCCTGCTTATCCACGGAATCTGTGGGTAACTTTGTATGTGTCCGCAGCGC" ;
+    sbol:elements "TTGAGATCCTTTTTTTCTGCGCGTAATCTTTTGCCCTGTAAACGAAAAAACCACCTGGGGAGGTGGTTTGATCGAAGGTTAAGTCAGTTGGGGAACTGCTTAACCGTGGTAACTGGCTTTCGCAGAGCACAGCAACCAAATCTGTCCTTCCAGTGTAGCCGGACTTTGGCGCACACTTCAAGAGCAACCGCGTGTTTAGCTAAACAAATCCTCTGCGAACTCCCAGTTACCAATGGCTGCTGCCAGTGGCGTTTTACCGTGCTTTTCCGGGTTGGACTCAAGTGAACAGTTACCGGATAAGGCGCAGCAGTCGGGCTGAACGGGGAGTTCTTGCTTACAGCCCAGCTTGGAGCGAACGACCTACACCGAGCCGAGATACCAGTGTGTGAGCTATGAGAAAGCGCCACACTTCCCGTAAGGGAGAAAGGCGGAACAGGTATCCGGTAAACGGCAGGGTCGGAACAGGAGAGCGCAAGAGGGAGCGACCCGCCGGAAACGGTGGGGATCTTTAAGTCCTGTCGGGTTTCGCCCGTACTGTCAGATTCATGGTTGAGCCTCACGGCTCCCACAGATGCACCGGAAAAGCGTCTGTTTATGTGAACTCTGGCAGGAGGGCGGAGCCTATGGAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -5006,6 +5068,24 @@ part:CmR_feature_0_range a sbol:Range ;
     sbol:sequence part:CmR_sequence ;
     sbol:start 193 .
 
+part:ColE1_AT_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans pBR322 2534-3122 (minus strand): from the RNA II promoter -35 to the RNA-to-DNA transition. The part ends at pBR322 2534, inside the run of five A residues where the primer RNA turns into DNA, one base before the three consecutive nucleotides (dA, dA, dC; pBR322 2533-2531) at which DNA synthesis starts. The ColE1 deposit J01566 marks this start at its base 1197 (+/- 1), = pBR322 2532; J01749's uncited rep_origin at 2535 is 2 bp upstream." ;
+    dcterms:references pubmed:325558 ;
+    prov:wasDerivedFrom pubmed:325558 ;
+    prov:wasGeneratedBy part:ColE1_AT_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition: the base before the DNA start nucleotides (pBR322 2533-2531)\", \"length_bp\": 589, \"reference\": \"GenBank J01749\", \"span\": \"2534-3122 (complement)\", \"start\": \"RNA II promoter -35\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The site is one of three consecutive nucleotides, dA, dA, and dC, located at a unique position. ... The transition from the primer RNA to DNA occurs in a region consisting of a segment of five A residues." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:ColE1_AT_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank J01749 and J01566 (rep_origin 1197) + PMID 325558 and 6156450 abstracts" ;
+    cat:method "bioinformatic-alignment" .
+
 part:ColE1_AT_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
     dcterms:references pubmed:6156450 ;
@@ -5016,7 +5096,7 @@ part:ColE1_AT_claim_copy_number a cat:FunctionalClaim ;
     cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"high\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
-    cat:sourceQuote "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
+    cat:sourceQuote "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:ColE1_AT_claim_copy_number_provenance a prov:Activity ;
@@ -5025,13 +5105,13 @@ part:ColE1_AT_claim_copy_number_provenance a prov:Activity ;
     cat:method "transcribed-from-doc" .
 
 part:ColE1_AT_claim_sequence_variant a cat:FunctionalClaim ;
-    rdfs:label "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 412-413 in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication." ;
+    rdfs:label "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 393-394 (1-based) in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication." ;
     dcterms:references <https://www.ncbi.nlm.nih.gov/nuccore/X03174> ;
     prov:wasDerivedFrom <https://www.ncbi.nlm.nih.gov/nuccore/X03174> ;
     prov:wasGeneratedBy part:ColE1_AT_claim_sequence_variant_provenance ;
     cat:analysisStatus "pending" ;
     cat:claimType "sequence_variant" ;
-    cat:claimValue "{\"differences_bp\": 2, \"earliest_deposit\": \"X01803 (1985)\", \"interpretation\": \"benign (ubiquitous in widely-used vectors)\", \"n_carriers_pre1997\": 142, \"positions\": \"412-413\", \"vs_canonical\": \"ColE1 (pBR322 J01749 / pUC18 L08752)\"}" ;
+    cat:claimValue "{\"differences_bp\": 2, \"earliest_deposit\": \"X01803 (1985)\", \"interpretation\": \"benign (ubiquitous in widely-used vectors)\", \"n_carriers_pre1997\": 142, \"positions\": \"393-394 (1-based)\", \"vs_canonical\": \"ColE1 (pBR322 J01749 / pUC18 L08752)\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
     cat:sourceQuote "100% identity to GenBank X03174 (cloning vector pEX2, 1986) and 142 pre-1997 deposited vectors; earliest X01803 (Nov 1985)" ;
@@ -5051,10 +5131,10 @@ part:ColE1_AT_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000175 .
 
 part:ColE1_AT_feature_0_range a sbol:Range ;
-    sbol:end 26 ;
+    sbol:end 6 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:ColE1_AT_sequence ;
-    sbol:start 21 .
+    sbol:start 1 .
 
 part:ColE1_AT_feature_1 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5065,10 +5145,10 @@ part:ColE1_AT_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000176 .
 
 part:ColE1_AT_feature_1_range a sbol:Range ;
-    sbol:end 47 ;
+    sbol:end 27 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:ColE1_AT_sequence ;
-    sbol:start 42 .
+    sbol:start 22 .
 
 part:ColE1_AT_feature_2 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5079,10 +5159,10 @@ part:ColE1_AT_feature_2 a sbol:SequenceFeature ;
     sbol:role so:0000175 .
 
 part:ColE1_AT_feature_2_range a sbol:Range ;
-    sbol:end 203 ;
+    sbol:end 183 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:ColE1_AT_sequence ;
-    sbol:start 198 .
+    sbol:start 178 .
 
 part:ColE1_AT_feature_3 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5093,10 +5173,28 @@ part:ColE1_AT_feature_3 a sbol:SequenceFeature ;
     sbol:role so:0000176 .
 
 part:ColE1_AT_feature_3_range a sbol:Range ;
-    sbol:end 181 ;
+    sbol:end 161 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:ColE1_AT_sequence ;
-    sbol:start 176 .
+    sbol:start 156 .
+
+part:ColE1_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans pBR322 2534-3122 (minus strand): from the RNA II promoter -35 to the RNA-to-DNA transition. The part ends at pBR322 2534, inside the run of five A residues where the primer RNA turns into DNA, one base before the three consecutive nucleotides (dA, dA, dC; pBR322 2533-2531) at which DNA synthesis starts. The ColE1 deposit J01566 marks this start at its base 1197 (+/- 1), = pBR322 2532; J01749's uncited rep_origin at 2535 is 2 bp upstream." ;
+    dcterms:references pubmed:325558 ;
+    prov:wasDerivedFrom pubmed:325558 ;
+    prov:wasGeneratedBy part:ColE1_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition: the base before the DNA start nucleotides (pBR322 2533-2531)\", \"length_bp\": 589, \"reference\": \"GenBank J01749\", \"span\": \"2534-3122 (complement)\", \"start\": \"RNA II promoter -35\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The site is one of three consecutive nucleotides, dA, dA, and dC, located at a unique position. ... The transition from the primer RNA to DNA occurs in a region consisting of a segment of five A residues." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:ColE1_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank J01749 and J01566 (rep_origin 1197) + PMID 325558 and 6156450 abstracts" ;
+    cat:method "bioinformatic-alignment" .
 
 part:ColE1_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "High-copy ColE1/pMB1 origin; copy number set by the RNA I/RNA II antisense system." ;
@@ -5108,7 +5206,7 @@ part:ColE1_claim_copy_number a cat:FunctionalClaim ;
     cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"high\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
-    cat:sourceQuote "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
+    cat:sourceQuote "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:ColE1_claim_copy_number_provenance a prov:Activity ;
@@ -5125,10 +5223,10 @@ part:ColE1_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000175 .
 
 part:ColE1_feature_0_range a sbol:Range ;
-    sbol:end 26 ;
+    sbol:end 6 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:ColE1_sequence ;
-    sbol:start 21 .
+    sbol:start 1 .
 
 part:ColE1_feature_1 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5139,10 +5237,10 @@ part:ColE1_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000176 .
 
 part:ColE1_feature_1_range a sbol:Range ;
-    sbol:end 47 ;
+    sbol:end 27 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:ColE1_sequence ;
-    sbol:start 42 .
+    sbol:start 22 .
 
 part:ColE1_feature_2 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5153,10 +5251,10 @@ part:ColE1_feature_2 a sbol:SequenceFeature ;
     sbol:role so:0000175 .
 
 part:ColE1_feature_2_range a sbol:Range ;
-    sbol:end 203 ;
+    sbol:end 183 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:ColE1_sequence ;
-    sbol:start 198 .
+    sbol:start 178 .
 
 part:ColE1_feature_3 a sbol:SequenceFeature ;
     dcterms:references pubmed:2434459,
@@ -5167,10 +5265,10 @@ part:ColE1_feature_3 a sbol:SequenceFeature ;
     sbol:role so:0000176 .
 
 part:ColE1_feature_3_range a sbol:Range ;
-    sbol:end 181 ;
+    sbol:end 161 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:ColE1_sequence ;
-    sbol:start 176 .
+    sbol:start 156 .
 
 part:CspRecT_sequence a sbol:Sequence ;
     sbol:displayId "CspRecT_sequence" ;
@@ -9985,9 +10083,27 @@ part:RSF1010_oriV_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:RSF_ori_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans RSF1030 J01784 121-683: from the RNA II promoter -35 to the RNA-to-DNA transition. End: replication starts in a stretch identical to the ColE1 origin (Som & Tomizawa 1982), so the part ends at the ColE1 part's end by alignment (J01784 683 = pBR322 2534); the primer is about 530 nt and J01784 maps its precursor's 5' end at 155, which places the transition near 684. Start: the RNA II -35 is not mapped; the part starts at TTGACT (J01784 121-126), the hexamer 34 bp upstream of the mapped RNA II 5' end, the same distance as ColE1's -35 (alignment and promoter geometry only)." ;
+    dcterms:references pubmed:6294468 ;
+    prov:wasDerivedFrom pubmed:6294468 ;
+    prov:wasGeneratedBy part:RSF_ori_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition (pBR322 2534 equivalent)\", \"length_bp\": 563, \"reference\": \"GenBank J01784\", \"span\": \"121-683 (reverse complement)\", \"start\": \"RNA II promoter -35 (TTGACT, inferred)\"}" ;
+    cat:confidence "low" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "Replication of pST19 starts at one of three consecutive nucleotides (dA, dA or dC) located at a unique position in the region where the nucleotide sequence is identical to that of the ColE1 origin." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:RSF_ori_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank J01784 and J01749 + PMID 6294468 abstract" ;
+    cat:method "bioinformatic-alignment" .
+
 part:RSF_ori_sequence a sbol:Sequence ;
     sbol:displayId "RSF_ori_sequence" ;
-    sbol:elements "CTTCCGCTTCCTCGCTCACTGACTCGCTACGCTCGGTCGTTCGACTGCGGCGAGCGGTGTCAGCTCACTCAAAAGCGGTAATACGGTTATCCACAGAATCAGGGGATAAAGCCGGAAAGAACATGTGAGCAAAAAGCAAAGCACCGGAAGAAGCCAACGCCGCAGGCGTTTTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGCCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTTGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCATTGGTAACTGATTTAGAGGACTTTGTCTTGAAGTTATGCACCTGTTAAGGCTAAACTGAAAGAACAGATTTTGGTGAGTGCGGTCCTCCAACCCACTTACCTTGGTTCAAAGAGTTGGTAGCTCAGCGAACCTTGAGAAAACCACCGTTGGTAGCGGTGGTTTTTCTTTATTTATGAGATGATGAATCAATCGGTCTATCAAGTCAACGAACAGCTATTCCGTT" ;
+    sbol:elements "TTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGCCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTTGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCATTGGTAACTGATTTAGAGGACTTTGTCTTGAAGTTATGCACCTGTTAAGGCTAAACTGAAAGAACAGATTTTGGTGAGTGCGGTCCTCCAACCCACTTACCTTGGTTCAAAGAGTTGGTAGCTCAGCGAACCTTGAGAAAACCACCGTTGGTAGCGGTGGTTTTTCTTTATTTATGAGATGATGAATCAATCGGTCTATCAAGTCAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -15020,6 +15136,24 @@ part:oriT_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:p15A_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans p15A V00309 218-763 (minus strand): from the RNA II promoter -35 (TTGAGA, the ColE1 -35 conserved) to the RNA-to-DNA transition. Selzer et al. map the replication start to three consecutive nucleotides, deposited as V00309 rep_origin 764..766; the part ends at the base before them, the ColE1 part's end by alignment (pBR322 2534). This is the 546 bp span conventionally annotated as \"p15A ori\"." ;
+    dcterms:references pubmed:6186390 ;
+    prov:wasDerivedFrom pubmed:6186390 ;
+    prov:wasGeneratedBy part:p15A_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition (before V00309 764-766)\", \"length_bp\": 546, \"reference\": \"GenBank V00309\", \"span\": \"218-763 (complement)\", \"start\": \"RNA II promoter -35\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "In each system, replication initiates at any of three consecutive nucleotides located at a unique site. Primer transcription starts 508 bp upstream of the replication origin." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:p15A_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank V00309, X06403 and J01749 + PMID 6186390 abstract" ;
+    cat:method "bioinformatic-alignment" .
+
 part:p15A_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "Medium-copy ColE1-type (p15A) origin; copy number set by the RNA I/RNA II antisense system." ;
     dcterms:references pubmed:6186390 ;
@@ -15030,7 +15164,7 @@ part:p15A_claim_copy_number a cat:FunctionalClaim ;
     cat:claimValue "{\"control\": \"RNA I / RNA II antisense\", \"copy_number\": \"medium\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
-    cat:sourceQuote "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
+    cat:sourceQuote "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:p15A_claim_copy_number_provenance a prov:Activity ;
@@ -15047,10 +15181,10 @@ part:p15A_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000175 .
 
 part:p15A_feature_0_range a sbol:Range ;
-    sbol:end 550 ;
+    sbol:end 546 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:p15A_sequence ;
-    sbol:start 545 .
+    sbol:start 541 .
 
 part:p15A_feature_1 a sbol:SequenceFeature ;
     dcterms:references pubmed:6165011,
@@ -15061,10 +15195,10 @@ part:p15A_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000176 .
 
 part:p15A_feature_1_range a sbol:Range ;
-    sbol:end 527 ;
+    sbol:end 523 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:p15A_sequence ;
-    sbol:start 522 .
+    sbol:start 518 .
 
 part:p15A_feature_2 a sbol:SequenceFeature ;
     dcterms:references pubmed:6165011,
@@ -15075,14 +15209,32 @@ part:p15A_feature_2 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:p15A_feature_2_range a sbol:Range ;
-    sbol:end 506 ;
+    sbol:end 502 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:p15A_sequence ;
-    sbol:start 485 .
+    sbol:start 481 .
+
+part:p15A_ori_pSU38_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans V00309 239-763: from the RNA II promoter -10 (the pSU38 fragment's own 5' end; its -35 is vector DNA) to the RNA-to-DNA transition, the base before the three replication start nucleotides V00309 764-766 (Selzer et al. 1983), as for the p15A part." ;
+    dcterms:references pubmed:6186390 ;
+    prov:wasDerivedFrom pubmed:6186390 ;
+    prov:wasGeneratedBy part:p15A_ori_pSU38_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"RNA-to-DNA transition (before V00309 764-766)\", \"length_bp\": 524, \"reference\": \"GenBank V00309\", \"span\": \"239-763\", \"start\": \"RNA II promoter -10 (end of the pSU38 p15A fragment)\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "In each system, replication initiates at any of three consecutive nucleotides located at a unique site." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:p15A_ori_pSU38_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank V00309, X06403 and the lab's pSU38Delta map" ;
+    cat:method "bioinformatic-alignment" .
 
 part:p15A_ori_pSU38_sequence a sbol:Sequence ;
     sbol:displayId "p15A_ori_pSU38_sequence" ;
-    sbol:elements "CGTAATCTCTTGCTCTGAAAACGAAAAAACCGCCTTGCAGGGCGGTTTTTCGAAGGTTCTCTGAGCTACCAACTCTTTGAACCGAGGTAACTGGCTTGGAGGAGCGCAGTCACCAAAACTTGTCCTTTCAGTTTAGCCTTAACCGGCGCATGACTTCAAGACTAACTCCTCTAAATCAATTACCAGTGGCTGCTGCCAGTGGTGCTTTTGCATGTCTTTCCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGACTGAACGGGGGGTTCGTGCATACAGTCCAGCTTGGAGCGAACTGCCTACCCGGAACTGAGTGTCAGGCGTGGAATGAGACAAACGCGGCCATAACAGCGGAATGACACCGGTAAACCGAAAGGCAGGAACAGGAGAGCGCACGAGGGAGCCGCCAGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCACTGATTTGAGCGTCAGATTTCGTGATGCTTGTCAGGGGGGCGGAGCCTATGGAAAAACGGCTTTGCCGCGGCCCTCTCACTTCCCTGTTAAGTATCTTCCTGGCATCTTCCAGGAAATCTCCGCCCCGTTCGTAAGCCATTTCCGCTCGCCGCAGTCGAACGACCGAGCGTAGCGAGTCAGTGAGCGAGGAAGCGGAATATATCCTGTATCACATATTCTGCTGACGCACCGGTGCAGCCTTTTTTCTCCTGCCACATGAAGCACTTCACTGACACCCTCATCAGTGCCAACATAGTAAGCCAGTATATACACTCCGCTA" ;
+    sbol:elements "CGTAATCTCTTGCTCTGAAAACGAAAAAACCGCCTTGCAGGGCGGTTTTTCGAAGGTTCTCTGAGCTACCAACTCTTTGAACCGAGGTAACTGGCTTGGAGGAGCGCAGTCACCAAAACTTGTCCTTTCAGTTTAGCCTTAACCGGCGCATGACTTCAAGACTAACTCCTCTAAATCAATTACCAGTGGCTGCTGCCAGTGGTGCTTTTGCATGTCTTTCCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGACTGAACGGGGGGTTCGTGCATACAGTCCAGCTTGGAGCGAACTGCCTACCCGGAACTGAGTGTCAGGCGTGGAATGAGACAAACGCGGCCATAACAGCGGAATGACACCGGTAAACCGAAAGGCAGGAACAGGAGAGCGCACGAGGGAGCCGCCAGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCACTGATTTGAGCGTCAGATTTCGTGATGCTTGTCAGGGGGGCGGAGCCTATGGAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -16031,11 +16183,49 @@ part:sopB_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:tL3_sequence a sbol:Sequence ;
-    sbol:displayId "tL3_sequence" ;
-    sbol:elements "AATGGCGATGACGCATCCTCACGATAATATCCGGGTAGGCGCAATCACTTTCGTCTCTACTCCGTTACAAAGCGAGGCTGGGTATTTCCCGGCCTTTCTGTTATCCGAAATCCACTGAAAGCACAGCGGCTGGCTGAGGAGATAAATAATAAACGAGGGGCTGTATGCACAAAGCATCTTCTGTTGAGTTAAGAACGAGTATCGAGATGGCACATAGCCTTGCTCAAATTGGAATCAGGTTTGTGCCAATACCAGTAGAAACAGACGAAGAA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:tL3_claim_boundaries a cat:FunctionalClaim ;
+    rdfs:label "Spans lambda 31262-31347 (minus strand): from the base after the exo stop codon to the termination point after the CCUUUCU 3' end, which Luk & Szybalski mapped by S1 nuclease (the end is experimental). The start is not mapped by truncation: it is where the conventional \"lambda tL3 terminator\" annotation starts, 63 bp upstream of the hairpin (provisional)." ;
+    dcterms:references pubmed:6213446 ;
+    prov:wasDerivedFrom pubmed:6213446 ;
+    prov:wasGeneratedBy part:tL3_claim_boundaries_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "origin" ;
+    cat:claimValue "{\"end\": \"termination point (S1-mapped)\", \"length_bp\": 88, \"reference\": \"GenBank J02459\", \"span\": \"31262-31347 (complement)\", \"start\": \"after the exo stop codon\"}" ;
+    cat:confidence "medium" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "an 81% G+C-rich region of 2X8-bp symmetry (\"stem\") with a 5-bp intervening \"loop\", partially overlapping and followed by a sequence transcribed into the pyrimidine-rich CCUUUCU-OH 3' terminus of the RNA. The termination point that follows the last U was determined by the S1 mapping technique." ;
+    cat:sourceQuoteFrom "primary" .
+
+part:tL3_claim_boundaries_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pairwise alignment to GenBank NC_001416 + PMID 6213446 abstract" ;
+    cat:method "bioinformatic-alignment" .
+
+part:tL3_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:6213446 ;
+    dcterms:title "tL3 hairpin" ;
+    sbol:displayId "tL3_feature_0" ;
+    sbol:hasLocation part:tL3_feature_0_range ;
+    sbol:role so:0000313 .
+
+part:tL3_feature_0_range a sbol:Range ;
+    sbol:end 84 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:tL3_sequence ;
+    sbol:start 64 .
+
+part:tL3_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:6213446 ;
+    dcterms:title "tL3 3' end (CCUUUCU)" ;
+    sbol:displayId "tL3_feature_1" ;
+    sbol:hasLocation part:tL3_feature_1_range ;
+    sbol:role so:0000110 .
+
+part:tL3_feature_1_range a sbol:Range ;
+    sbol:end 88 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:tL3_sequence ;
+    sbol:start 82 .
 
 part:tetAC_sequence a sbol:Sequence ;
     sbol:displayId "tetAC_sequence" ;
@@ -16829,6 +17019,12 @@ part:Ptrc_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:tL3_sequence a sbol:Sequence ;
+    sbol:displayId "tL3_sequence" ;
+    sbol:elements "CGCATCCTCACGATAATATCCGGGTAGGCGCAATCACTTTCGTCTCTACTCCGTTACAAAGCGAGGCTGGGTATTTCCCGGCCTTTCT" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:NusA_sequence a sbol:Sequence ;
     sbol:displayId "NusA_sequence" ;
     sbol:elements "MNKEILAVVEAVSNEKALPREKIFEALESALATATKKKYEQEIDVRVQIDRKSGDFDTFRRWLVVDEVTQPTKEITLEAARYEDESLNLGDYVEDQIESVTFDRITTQTAKQVIVQKVREAERAMVVDQFREHEGEIITGVVKKVNRDNISLDLGNNAEAVILREDMLPRENFRPGDRVRGVLYSVRPEARGAQLFVTRSKPEMLIELFRIEVPEIGEEVIEIKAAARDPGSRAKIAVKTNDKRIDPVGACVGMRGARVQAVSTELGGERIDIVLWDDNPAQFVINAMAPADVASIVVDEDKHTMDIAVEAGNLAQAIGRNGQNVRLASQLSGWELNVMTVDDLQAKHQAEAHAAIDTFTKYLDIDEDFATVLVEEGFSTLEELAYVPMKELLEIEGLDEPTVEALRERAKNALATIAQAQEESLGDNKPADDLLNLEGVDRDLAFKLAARGVCTLEDLAEQGIDDLADIEGLTDEKAGALIMAARNICWFGDEA" ;
@@ -16855,7 +17051,7 @@ part:kanR_Tn5_sequence a sbol:Sequence ;
 
 part:p15A_sequence a sbol:Sequence ;
     sbol:displayId "p15A_sequence" ;
-    sbol:elements "CGTTTTTCCATAGGCTCCGCCCCCCTGACAAGCATCACGAAATCTGACGCTCAAATCAGTGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGCGGCTCCCTCGTGCGCTCTCCTGTTCCTGCCTTTCGGTTTACCGGTGTCATTCCGCTGTTATGGCCGCGTTTGTCTCATTCCACGCCTGACACTCAGTTCCGGGTAGGCAGTTCGCTCCAAGCTGGACTGTATGCACGAACCCCCCGTTCAGTCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGAAAGACATGCAAAAGCACCACTGGCAGCAGCCACTGGTAATTGATTTAGAGGAGTTAGTCTTGAAGTCATGCGCCGGTTAAGGCTAAACTGAAAGGACAAGTTTTGGTGACTGCGCTCCTCCAAGCCAGTTACCTCGGTTCAAAGAGTTGGTAGCTCAGAGAACCTTCGAAAAACCGCCCTGCAAGGCGGTTTTTTCGTTTTCAGAGCAAGAGATTACGCGCAGACCAAAACGATCTCAAGAAGATCATCTT" ;
+    sbol:elements "TTTCCATAGGCTCCGCCCCCCTGACAAGCATCACGAAATCTGACGCTCAAATCAGTGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGCGGCTCCCTCGTGCGCTCTCCTGTTCCTGCCTTTCGGTTTACCGGTGTCATTCCGCTGTTATGGCCGCGTTTGTCTCATTCCACGCCTGACACTCAGTTCCGGGTAGGCAGTTCGCTCCAAGCTGGACTGTATGCACGAACCCCCCGTTCAGTCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGAAAGACATGCAAAAGCACCACTGGCAGCAGCCACTGGTAATTGATTTAGAGGAGTTAGTCTTGAAGTCATGCGCCGGTTAAGGCTAAACTGAAAGGACAAGTTTTGGTGACTGCGCTCCTCCAAGCCAGTTACCTCGGTTCAAAGAGTTGGTAGCTCAGAGAACCTTCGAAAAACCGCCCTGCAAGGCGGTTTTTTCGTTTTCAGAGCAAGAGATTACGCGCAGACCAAAACGATCTCAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -16885,13 +17081,13 @@ part:tetR a sbol:Component ;
 
 part:ColE1_AT_sequence a sbol:Sequence ;
     sbol:displayId "ColE1_AT_sequence" ;
-    sbol:elements "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCATTGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
+    sbol:elements "TTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCATTGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:ColE1_sequence a sbol:Sequence ;
     sbol:displayId "ColE1_sequence" ;
-    sbol:elements "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
+    sbol:elements "TTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 

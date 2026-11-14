@@ -19,7 +19,7 @@
   "n_parts": 275,
   "n_validated": 75,
   "n_candidate": 200,
-  "n_functional_claims": 346,
+  "n_functional_claims": 353,
   "parts": [
     {
       "slug": "186_integrase",
@@ -636,9 +636,11 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
-        "CloDF13 ori"
+        "CloDF13 ori",
+        "CDF ori",
+        "CloDF13 origin"
       ]
     },
     {
@@ -681,7 +683,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 1,
+      "n_claims": 2,
       "synonyms": [
         "ColE1",
         "ColE1 ori",
@@ -700,7 +702,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 2,
+      "n_claims": 3,
       "synonyms": [
         "ColE1_AT",
         "ColE1 ori (cloning-vector form)",
@@ -2078,7 +2080,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 1,
+      "n_claims": 2,
       "synonyms": [
         "p15A"
       ]
@@ -2105,7 +2107,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
         "p15A ori",
         "P15A rep",
@@ -3298,9 +3300,11 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
-        "RSF ori"
+        "RSF ori",
+        "RSF1030 ori",
+        "RSF1030 origin"
       ]
     },
     {
@@ -3956,10 +3960,12 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
         "tL3",
-        "tL3 terminator"
+        "tL3 terminator",
+        "lambda tL3 terminator",
+        "\u03bb tL3 terminator"
       ]
     },
     {

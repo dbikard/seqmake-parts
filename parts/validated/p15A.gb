@@ -1,7 +1,8 @@
-LOCUS       p15A                     562 bp    DNA              UNK 01-JAN-1980
-DEFINITION  The p15A origin: a ~562 bp natural ColE1-type replication origin
-            whose copy number is controlled by the divergent RNA I / RNA II
-            antisense system..
+LOCUS       p15A                     546 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The p15A origin: the 546 bp natural ColE1-type replication origin
+            from the RNA II promoter -35 to the RNA-to-DNA transition, whose
+            copy number is controlled by the divergent RNA I / RNA II antisense
+            system..
 ACCESSION   p15A
 VERSION     p15A
 KEYWORDS    .
@@ -22,17 +23,26 @@ REFERENCE   2
   JOURNAL   Proc Natl Acad Sci USA 78(3):1421-1425 (1981)
    PUBMED   6165011
   REMARK    doi:10.1073/pnas.78.3.1421
+REFERENCE   3
+  AUTHORS   Tomizawa JI, Ohmori H, Bird RE
+  TITLE     Origin of replication of colicin E1 plasmid DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
+   PUBMED   325558
+  REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/p15A
 FEATURES             Location/Qualifiers
-     rep_origin      1..562
+     rep_origin      1..546
                      /label="p15A"
                      /synonym="p15A"
-                     /note="The p15A origin: a ~562 bp natural ColE1-type
-                     replication origin whose copy number is controlled by the
-                     divergent RNA I / RNA II antisense system."
+                     /note="The p15A origin: the 546 bp natural ColE1-type
+                     replication origin from the RNA II promoter -35 to the
+                     RNA-to-DNA transition, whose copy number is controlled by
+                     the divergent RNA I / RNA II antisense system."
                      /db_xref="SO:0000296"
-     regulatory      complement(545..550)
+                     /db_xref="GenBank:V00309"
+                     /db_xref="GenBank:X06403"
+     regulatory      complement(541..546)
                      /label="RNA II primer promoter -35"
                      /parent="p15A"
                      /regulatory_class="minus_35_signal"
@@ -40,7 +50,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000175"
                      /citation=[1]
                      /citation=[2]
-     regulatory      complement(522..527)
+     regulatory      complement(518..523)
                      /label="RNA II primer promoter -10"
                      /parent="p15A"
                      /regulatory_class="minus_10_signal"
@@ -48,7 +58,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000176"
                      /citation=[1]
                      /citation=[2]
-     misc_feature    485..506
+     misc_feature    481..502
                      /label="RNA I terminator"
                      /parent="p15A"
                      /note="Rho-independent terminator on the plus (RNA I)
@@ -58,14 +68,14 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /citation=[1]
 ORIGIN
-        1 cgtttttcca taggctccgc ccccctgaca agcatcacga aatctgacgc tcaaatcagt
-       61 ggtggcgaaa cccgacagga ctataaagat accaggcgtt tccccctggc ggctccctcg
-      121 tgcgctctcc tgttcctgcc tttcggttta ccggtgtcat tccgctgtta tggccgcgtt
-      181 tgtctcattc cacgcctgac actcagttcc gggtaggcag ttcgctccaa gctggactgt
-      241 atgcacgaac cccccgttca gtccgaccgc tgcgccttat ccggtaacta tcgtcttgag
-      301 tccaacccgg aaagacatgc aaaagcacca ctggcagcag ccactggtaa ttgatttaga
-      361 ggagttagtc ttgaagtcat gcgccggtta aggctaaact gaaaggacaa gttttggtga
-      421 ctgcgctcct ccaagccagt tacctcggtt caaagagttg gtagctcaga gaaccttcga
-      481 aaaaccgccc tgcaaggcgg ttttttcgtt ttcagagcaa gagattacgc gcagaccaaa
-      541 acgatctcaa gaagatcatc tt
+        1 tttccatagg ctccgccccc ctgacaagca tcacgaaatc tgacgctcaa atcagtggtg
+       61 gcgaaacccg acaggactat aaagatacca ggcgtttccc cctggcggct ccctcgtgcg
+      121 ctctcctgtt cctgcctttc ggtttaccgg tgtcattccg ctgttatggc cgcgtttgtc
+      181 tcattccacg cctgacactc agttccgggt aggcagttcg ctccaagctg gactgtatgc
+      241 acgaaccccc cgttcagtcc gaccgctgcg ccttatccgg taactatcgt cttgagtcca
+      301 acccggaaag acatgcaaaa gcaccactgg cagcagccac tggtaattga tttagaggag
+      361 ttagtcttga agtcatgcgc cggttaaggc taaactgaaa ggacaagttt tggtgactgc
+      421 gctcctccaa gccagttacc tcggttcaaa gagttggtag ctcagagaac cttcgaaaaa
+      481 ccgccctgca aggcggtttt ttcgttttca gagcaagaga ttacgcgcag accaaaacga
+      541 tctcaa
 //

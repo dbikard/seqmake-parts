@@ -3,32 +3,103 @@
   "slug": "CloDF13_ori",
   "locus": "CloDF13_ori",
   "id": "CloDF13_ori",
-  "description": "CloDF13 ori",
+  "description": "The CloDF13 (ColE1-family) origin of replication: the 630 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; the origin of the pCDF/CDFDuet vectors, compatible with ColE1/pMB1 and p15A origins.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "GATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTTTTGCCCTGTAAACGAAAAAACCACCTGGGGAGGTGGTTTGATCGAAGGTTAAGTCAGTTGGGGAACTGCTTAACCGTGGTAACTGGCTTTCGCAGAGCACAGCAACCAAATCTGTCCTTCCAGTGTAGCCGGACTTTGGCGCACACTTCAAGAGCAACCGCGTGTTTAGCTAAACAAATCCTCTGCGAACTCCCAGTTACCAATGGCTGCTGCCAGTGGCGTTTTACCGTGCTTTTCCGGGTTGGACTCAAGTGAACAGTTACCGGATAAGGCGCAGCAGTCGGGCTGAACGGGGAGTTCTTGCTTACAGCCCAGCTTGGAGCGAACGACCTACACCGAGCCGAGATACCAGTGTGTGAGCTATGAGAAAGCGCCACACTTCCCGTAAGGGAGAAAGGCGGAACAGGTATCCGGTAAACGGCAGGGTCGGAACAGGAGAGCGCAAGAGGGAGCGACCCGCCGGAAACGGTGGGGATCTTTAAGTCCTGTCGGGTTTCGCCCGTACTGTCAGATTCATGGTTGAGCCTCACGGCTCCCACAGATGCACCGGAAAAGCGTCTGTTTATGTGAACTCTGGCAGGAGGGCGGAGCCTATGGAAAAACGCCACCGGCGCGGCCCTGCTGTTTTGCCTCACATGTTAGTCCCCTGCTTATCCACGGAATCTGTGGGTAACTTTGTATGTGTCCGCAGCGC",
-  "references": [],
+  "sequence": "TTGAGATCCTTTTTTTCTGCGCGTAATCTTTTGCCCTGTAAACGAAAAAACCACCTGGGGAGGTGGTTTGATCGAAGGTTAAGTCAGTTGGGGAACTGCTTAACCGTGGTAACTGGCTTTCGCAGAGCACAGCAACCAAATCTGTCCTTCCAGTGTAGCCGGACTTTGGCGCACACTTCAAGAGCAACCGCGTGTTTAGCTAAACAAATCCTCTGCGAACTCCCAGTTACCAATGGCTGCTGCCAGTGGCGTTTTACCGTGCTTTTCCGGGTTGGACTCAAGTGAACAGTTACCGGATAAGGCGCAGCAGTCGGGCTGAACGGGGAGTTCTTGCTTACAGCCCAGCTTGGAGCGAACGACCTACACCGAGCCGAGATACCAGTGTGTGAGCTATGAGAAAGCGCCACACTTCCCGTAAGGGAGAAAGGCGGAACAGGTATCCGGTAAACGGCAGGGTCGGAACAGGAGAGCGCAAGAGGGAGCGACCCGCCGGAAACGGTGGGGATCTTTAAGTCCTGTCGGGTTTCGCCCGTACTGTCAGATTCATGGTTGAGCCTCACGGCTCCCACAGATGCACCGGAAAAGCGTCTGTTTATGTGAACTCTGGCAGGAGGGCGGAGCCTATGGAAA",
+  "references": [
+    {
+      "authors": "Stuitje AR, Veltkamp E, Maat J, Heyneker HL",
+      "title": "The nucleotide sequence surrounding the replication origin of the cop3 mutant of the bacteriocinogenic plasmid Clo DF13.",
+      "journal": "Nucleic Acids Res. 1980;8(7):1459-73",
+      "pubmed_id": "6253936",
+      "comment": "doi:10.1093/nar/8.7.1459"
+    },
+    {
+      "authors": "Nijkamp HJ, de Lang R, Stuitje AR, van den Elzen PJ, Veltkamp E, van Putten AJ",
+      "title": "The complete nucleotide sequence of the bacteriocinogenic plasmid CloDF13.",
+      "journal": "Plasmid. 1986;16(2):135-60",
+      "pubmed_id": "3749334",
+      "comment": "doi:10.1016/0147-619x(86)90072-7"
+    },
+    {
+      "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+      "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+      "journal": "Cell. 1983;32(1):119-29",
+      "pubmed_id": "6186390",
+      "comment": "doi:10.1016/0092-8674(83)90502-0"
+    },
+    {
+      "authors": "Tomizawa JI, Ohmori H, Bird RE",
+      "title": "Origin of replication of colicin E1 plasmid DNA.",
+      "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+      "pubmed_id": "325558",
+      "comment": "doi:10.1073/pnas.74.5.1865"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
       "start": 0,
-      "end": 739,
+      "end": 630,
       "strand": 1,
       "qualifiers": {
         "label": [
           "CloDF13 ori"
         ],
         "synonym": [
-          "CloDF13 ori"
+          "CloDF13 ori",
+          "CDF ori",
+          "CloDF13 origin"
+        ],
+        "note": [
+          "The CloDF13 (ColE1-family) origin of replication: the 630 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; the origin of the pCDF/CDFDuet vectors, compatible with ColE1/pMB1 and p15A origins."
+        ],
+        "db_xref": [
+          "SO:0000296",
+          "GenBank:X04466"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "CloDF13 origin; bases X04466 284-913 (CloDF13 complete sequence, Nijkamp et al. 1986), reverse complement. Re-delimited (2026-11) from a 739 bp record (X04466 190-928, 1 mismatch): the old part also carried 15 bp upstream of the RNA II -35 (X04466 914-928, identical to pBR322 3123-3137) and the 94 bp past the RNA-to-DNA transition (X04466 190-283)."
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "boundaries",
+      "type": "origin",
+      "label": "Spans CloDF13 X04466 284-913 (minus strand): from the RNA II promoter -35, annotated in the CloDF13 deposit at complement(908..913), to the RNA-to-DNA transition. The origin sequence is conserved with ColE1 (Stuitje et al. 1980) and X04466 marks the origin at 282 (= pBR322 2532, one of the three ColE1 start nucleotides); the part ends at the ColE1 part's end by alignment (X04466 284 = pBR322 2534).",
+      "value": {
+        "reference": "GenBank X04466",
+        "span": "284-913 (complement)",
+        "length_bp": 630,
+        "start": "RNA II promoter -35 (X04466 908-913, deposit annotation)",
+        "end": "RNA-to-DNA transition (pBR322 2534 equivalent)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6253936",
+        "quote": "The sequence at the origin of replication is conserved. There are large differences in the nucleotide sequence downstream the replication origin",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment to GenBank X04466 and J01749 + PMID 6253936 abstract",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
 }

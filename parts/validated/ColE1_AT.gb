@@ -1,8 +1,8 @@
-LOCUS       ColE1_AT                 792 bp    DNA              UNK 01-JAN-1980
+LOCUS       ColE1_AT                 589 bp    DNA              UNK 01-JAN-1980
 DEFINITION  ColE1/pMB1 origin, common cloning-vector form: identical to the
-            canonical pMB1 origin except a benign 2-bp difference (positions
-            412-413) in the RNA I/RNA II control region; carried by 140+
-            deposited vectors since 1985..
+            canonical 589 bp pMB1 origin except a benign 2-bp difference
+            (positions 393-394 (1-based)) in the RNA I/RNA II control region;
+            carried by 140+ deposited vectors since 1985..
 ACCESSION   ColE1_AT
 VERSION     ColE1_AT
 KEYWORDS    .
@@ -29,21 +29,35 @@ REFERENCE   3
   JOURNAL   Proc Natl Acad Sci U S A. 1981;78(3):1421-5
    PUBMED   6165011
   REMARK    doi:10.1073/pnas.78.3.1421
+REFERENCE   4
+  AUTHORS   Marians KJ, Soeller W, Zipursky SL
+  TITLE     Maximal limits of the Escherichia coli replication factor Y effector
+            site sequences in pBR322 DNA.
+  JOURNAL   J Biol Chem. 1982;257(10):5656-62
+   PUBMED   6279609
+  REMARK    doi:10.1016/S0021-9258(19)83828-0
+REFERENCE   5
+  AUTHORS   Tomizawa JI, Ohmori H, Bird RE
+  TITLE     Origin of replication of colicin E1 plasmid DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
+   PUBMED   325558
+  REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ColE1_AT
 FEATURES             Location/Qualifiers
-     rep_origin      1..792
+     rep_origin      1..589
                      /label="ColE1_AT"
                      /synonym="ColE1_AT"
                      /synonym="ColE1 ori (cloning-vector form)"
                      /synonym="pMB1 (vector form)"
                      /note="ColE1/pMB1 origin, common cloning-vector form:
-                     identical to the canonical pMB1 origin except a benign 2-bp
-                     difference (positions 412-413) in the RNA I/RNA II control
-                     region; carried by 140+ deposited vectors since 1985."
+                     identical to the canonical 589 bp pMB1 origin except a
+                     benign 2-bp difference (positions 393-394 (1-based)) in the
+                     RNA I/RNA II control region; carried by 140+ deposited
+                     vectors since 1985."
                      /db_xref="SO:0000296"
                      /db_xref="GenBank:X03174"
-     regulatory      21..26
+     regulatory      1..6
                      /label="RNA II promoter -35"
                      /parent="ColE1_AT"
                      /regulatory_class="minus_35_signal"
@@ -53,7 +67,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000175"
                      /citation=[1]
                      /citation=[2]
-     regulatory      42..47
+     regulatory      22..27
                      /label="RNA II promoter -10"
                      /parent="ColE1_AT"
                      /regulatory_class="minus_10_signal"
@@ -62,7 +76,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000176"
                      /citation=[1]
                      /citation=[2]
-     regulatory      complement(198..203)
+     regulatory      complement(178..183)
                      /label="RNA I promoter -35"
                      /parent="ColE1_AT"
                      /regulatory_class="minus_35_signal"
@@ -71,7 +85,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000175"
                      /citation=[3]
                      /citation=[2]
-     regulatory      complement(176..181)
+     regulatory      complement(156..161)
                      /label="RNA I promoter -10"
                      /parent="ColE1_AT"
                      /regulatory_class="minus_10_signal"
@@ -81,18 +95,14 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
                      /citation=[2]
 ORIGIN
-        1 gaaaagatca aaggatcttc ttgagatcct ttttttctgc gcgtaatctg ctgcttgcaa
-       61 acaaaaaaac caccgctacc agcggtggtt tgtttgccgg atcaagagct accaactctt
-      121 tttccgaagg taactggctt cagcagagcg cagataccaa atactgtcct tctagtgtag
-      181 ccgtagttag gccaccactt caagaactct gtagcaccgc ctacatacct cgctctgcta
-      241 atcctgttac cagtggctgc tgccagtggc gataagtcgt gtcttaccgg gttggactca
-      301 agacgatagt taccggataa ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag
-      361 cccagcttgg agcgaacgac ctacaccgaa ctgagatacc tacagcgtga gcattgagaa
-      421 agcgccacgc ttcccgaagg gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga
-      481 acaggagagc gcacgaggga gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc
-      541 gggtttcgcc acctctgact tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc
-      601 ctatggaaaa acgccagcaa cgcggccttt ttacggttcc tggccttttg ctggcctttt
-      661 gctcacatgt tctttcctgc gttatcccct gattctgtgg ataaccgtat taccgccttt
-      721 gagtgagctg ataccgctcg ccgcagccga acgaccgagc gcagcgagtc agtgagcgag
-      781 gaagcggaag ag
+        1 ttgagatcct ttttttctgc gcgtaatctg ctgcttgcaa acaaaaaaac caccgctacc
+       61 agcggtggtt tgtttgccgg atcaagagct accaactctt tttccgaagg taactggctt
+      121 cagcagagcg cagataccaa atactgtcct tctagtgtag ccgtagttag gccaccactt
+      181 caagaactct gtagcaccgc ctacatacct cgctctgcta atcctgttac cagtggctgc
+      241 tgccagtggc gataagtcgt gtcttaccgg gttggactca agacgatagt taccggataa
+      301 ggcgcagcgg tcgggctgaa cggggggttc gtgcacacag cccagcttgg agcgaacgac
+      361 ctacaccgaa ctgagatacc tacagcgtga gcattgagaa agcgccacgc ttcccgaagg
+      421 gagaaaggcg gacaggtatc cggtaagcgg cagggtcgga acaggagagc gcacgaggga
+      481 gcttccaggg ggaaacgcct ggtatcttta tagtcctgtc gggtttcgcc acctctgact
+      541 tgagcgtcga tttttgtgat gctcgtcagg ggggcggagc ctatggaaa
 //

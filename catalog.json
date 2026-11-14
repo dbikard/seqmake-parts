@@ -4,7 +4,7 @@
   "n_validated": 75,
   "n_candidate": 200,
   "n_documented": 75,
-  "n_functional_claims": 346,
+  "n_functional_claims": 353,
   "parts": [
     {
       "name": "186 integrase",
@@ -3948,24 +3948,90 @@
       "slug": "CloDF13_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:X04466",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "CloDF13 ori"
+        "CloDF13 ori",
+        "CDF ori",
+        "CloDF13 origin"
       ],
       "collections": [],
-      "description": "",
-      "length": 739,
+      "description": "The CloDF13 (ColE1-family) origin of replication: the 630 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; the origin of the pCDF/CDFDuet vectors, compatible with ColE1/pMB1 and p15A origins.",
+      "length": 630,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Stuitje AR, Veltkamp E, Maat J, Heyneker HL",
+          "title": "The nucleotide sequence surrounding the replication origin of the cop3 mutant of the bacteriocinogenic plasmid Clo DF13.",
+          "journal": "Nucleic Acids Res. 1980;8(7):1459-73",
+          "pmid": "6253936",
+          "doi": "10.1093/nar/8.7.1459",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6253936/"
+        },
+        {
+          "authors": "Nijkamp HJ, de Lang R, Stuitje AR, van den Elzen PJ, Veltkamp E, van Putten AJ",
+          "title": "The complete nucleotide sequence of the bacteriocinogenic plasmid CloDF13.",
+          "journal": "Plasmid. 1986;16(2):135-60",
+          "pmid": "3749334",
+          "doi": "10.1016/0147-619x(86)90072-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3749334/"
+        },
+        {
+          "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+          "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+          "journal": "Cell. 1983;32(1):119-29",
+          "pmid": "6186390",
+          "doi": "10.1016/0092-8674(83)90502-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6186390/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans CloDF13 X04466 284-913 (minus strand): from the RNA II promoter -35, annotated in the CloDF13 deposit at complement(908..913), to the RNA-to-DNA transition. The origin sequence is conserved with ColE1 (Stuitje et al. 1980) and X04466 marks the origin at 282 (= pBR322 2532, one of the three ColE1 start nucleotides); the part ends at the ColE1 part's end by alignment (X04466 284 = pBR322 2534).",
+          "value": {
+            "reference": "GenBank X04466",
+            "span": "284-913 (complement)",
+            "length_bp": 630,
+            "start": "RNA II promoter -35 (X04466 908-913, deposit annotation)",
+            "end": "RNA-to-DNA transition (pBR322 2534 equivalent)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6253936",
+            "quote": "The sequence at the origin of replication is conserved. There are large differences in the nucleotide sequence downstream the replication origin",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank X04466 and J01749 + PMID 6253936 abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "CmR",
@@ -4127,8 +4193,8 @@
         "ColE1-derived ori"
       ],
       "collections": [],
-      "description": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
-      "length": 792,
+      "description": "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+      "length": 589,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
@@ -4140,8 +4206,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
-          "start": 20,
-          "end": 26,
+          "start": 0,
+          "end": 6,
           "strand": 1,
           "citations": [
             1,
@@ -4153,8 +4219,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
-          "start": 41,
-          "end": 47,
+          "start": 21,
+          "end": 27,
           "strand": 1,
           "citations": [
             1,
@@ -4166,8 +4232,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
-          "start": 197,
-          "end": 203,
+          "start": 177,
+          "end": 183,
           "strand": -1,
           "citations": [
             3,
@@ -4179,8 +4245,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
-          "start": 175,
-          "end": 181,
+          "start": 155,
+          "end": 161,
           "strand": -1,
           "citations": [
             3,
@@ -4212,6 +4278,22 @@
           "pmid": "6165011",
           "doi": "10.1073/pnas.78.3.1421",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
+        },
+        {
+          "authors": "Marians KJ, Soeller W, Zipursky SL",
+          "title": "Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA.",
+          "journal": "J Biol Chem. 1982;257(10):5656-62",
+          "pmid": "6279609",
+          "doi": "10.1016/S0021-9258(19)83828-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6279609/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
         }
       ],
       "main_citations": [],
@@ -4227,7 +4309,7 @@
           "ontology": {},
           "source": {
             "pmid": "6156450",
-            "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+            "quote": "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -4236,6 +4318,33 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans pBR322 2534-3122 (minus strand): from the RNA II promoter -35 to the RNA-to-DNA transition. The part ends at pBR322 2534, inside the run of five A residues where the primer RNA turns into DNA, one base before the three consecutive nucleotides (dA, dA, dC; pBR322 2533-2531) at which DNA synthesis starts. The ColE1 deposit J01566 marks this start at its base 1197 (+/- 1), = pBR322 2532; J01749's uncited rep_origin at 2535 is 2 bp upstream.",
+          "value": {
+            "reference": "GenBank J01749",
+            "span": "2534-3122 (complement)",
+            "length_bp": 589,
+            "start": "RNA II promoter -35",
+            "end": "RNA-to-DNA transition: the base before the DNA start nucleotides (pBR322 2533-2531)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "325558",
+            "quote": "The site is one of three consecutive nucleotides, dA, dA, and dC, located at a unique position. ... The transition from the primer RNA to DNA occurs in a region consisting of a segment of five A residues.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank J01749 and J01566 (rep_origin 1197) + PMID 325558 and 6156450 abstracts",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
           "analysis_status": "pending",
           "cross_checked": false,
           "supersedes": null
@@ -4256,8 +4365,8 @@
         "pMB1 (vector form)"
       ],
       "collections": [],
-      "description": "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical pMB1 origin except a benign 2-bp difference (positions 412-413) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985.",
-      "length": 792,
+      "description": "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical 589 bp pMB1 origin except a benign 2-bp difference (positions 393-394 (1-based)) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985.",
+      "length": 589,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
@@ -4269,8 +4378,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
-          "start": 20,
-          "end": 26,
+          "start": 0,
+          "end": 6,
           "strand": 1,
           "citations": [
             1,
@@ -4282,8 +4391,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
-          "start": 41,
-          "end": 47,
+          "start": 21,
+          "end": 27,
           "strand": 1,
           "citations": [
             1,
@@ -4295,8 +4404,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
-          "start": 197,
-          "end": 203,
+          "start": 177,
+          "end": 183,
           "strand": -1,
           "citations": [
             3,
@@ -4308,8 +4417,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
-          "start": 175,
-          "end": 181,
+          "start": 155,
+          "end": 161,
           "strand": -1,
           "citations": [
             3,
@@ -4341,6 +4450,22 @@
           "pmid": "6165011",
           "doi": "10.1073/pnas.78.3.1421",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
+        },
+        {
+          "authors": "Marians KJ, Soeller W, Zipursky SL",
+          "title": "Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA.",
+          "journal": "J Biol Chem. 1982;257(10):5656-62",
+          "pmid": "6279609",
+          "doi": "10.1016/S0021-9258(19)83828-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6279609/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
         }
       ],
       "main_citations": [],
@@ -4356,7 +4481,7 @@
           "ontology": {},
           "source": {
             "pmid": "6156450",
-            "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+            "quote": "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -4372,11 +4497,11 @@
         {
           "id": "sequence_variant",
           "type": "sequence_variant",
-          "label": "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 412-413 in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication.",
+          "label": "Differs from the canonical pMB1 origin (pBR322/pUC) by 2 bp at positions 393-394 (1-based) in the RNA I/RNA II control region; a long-established, benign cloning-vector form present in 140+ deposited vectors since 1985, so the difference does not impair replication.",
           "value": {
             "vs_canonical": "ColE1 (pBR322 J01749 / pUC18 L08752)",
             "differences_bp": 2,
-            "positions": "412-413",
+            "positions": "393-394 (1-based)",
             "earliest_deposit": "X01803 (1985)",
             "n_carriers_pre1997": 142,
             "interpretation": "benign (ubiquitous in widely-used vectors)"
@@ -4393,6 +4518,33 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans pBR322 2534-3122 (minus strand): from the RNA II promoter -35 to the RNA-to-DNA transition. The part ends at pBR322 2534, inside the run of five A residues where the primer RNA turns into DNA, one base before the three consecutive nucleotides (dA, dA, dC; pBR322 2533-2531) at which DNA synthesis starts. The ColE1 deposit J01566 marks this start at its base 1197 (+/- 1), = pBR322 2532; J01749's uncited rep_origin at 2535 is 2 bp upstream.",
+          "value": {
+            "reference": "GenBank J01749",
+            "span": "2534-3122 (complement)",
+            "length_bp": 589,
+            "start": "RNA II promoter -35",
+            "end": "RNA-to-DNA transition: the base before the DNA start nucleotides (pBR322 2533-2531)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "325558",
+            "quote": "The site is one of three consecutive nucleotides, dA, dA, and dC, located at a unique position. ... The transition from the primer RNA to DNA occurs in a region consisting of a segment of five A residues.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank J01749 and J01566 (rep_origin 1197) + PMID 325558 and 6156450 abstracts",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
           "analysis_status": "pending",
           "cross_checked": false,
           "supersedes": null
@@ -11601,15 +11753,15 @@
       "slug": "p15A",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:V00309",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
         "p15A"
       ],
       "collections": [],
-      "description": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
-      "length": 562,
+      "description": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+      "length": 546,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
@@ -11621,8 +11773,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000175",
           "so_name": "minus_35_signal",
-          "start": 544,
-          "end": 550,
+          "start": 540,
+          "end": 546,
           "strand": -1,
           "citations": [
             1,
@@ -11634,8 +11786,8 @@
           "feature_type": "regulatory",
           "so_term": "SO:0000176",
           "so_name": "minus_10_signal",
-          "start": 521,
-          "end": 527,
+          "start": 517,
+          "end": 523,
           "strand": -1,
           "citations": [
             1,
@@ -11647,8 +11799,8 @@
           "feature_type": "misc_feature",
           "so_term": "SO:0000110",
           "so_name": "sequence_feature",
-          "start": 484,
-          "end": 506,
+          "start": 480,
+          "end": 502,
           "strand": 1,
           "citations": [
             2,
@@ -11672,6 +11824,14 @@
           "pmid": "6165011",
           "doi": "10.1073/pnas.78.3.1421",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6165011/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
         }
       ],
       "main_citations": [],
@@ -11687,7 +11847,7 @@
           "ontology": {},
           "source": {
             "pmid": "6186390",
-            "quote": "The p15A origin: a ~562 bp natural ColE1-type replication origin whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
+            "quote": "The p15A origin: the 546 bp natural ColE1-type replication origin from the RNA II promoter -35 to the RNA-to-DNA transition, whose copy number is controlled by the divergent RNA I / RNA II antisense system.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -11696,6 +11856,33 @@
             "agent": "ai-assistant"
           },
           "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans p15A V00309 218-763 (minus strand): from the RNA II promoter -35 (TTGAGA, the ColE1 -35 conserved) to the RNA-to-DNA transition. Selzer et al. map the replication start to three consecutive nucleotides, deposited as V00309 rep_origin 764..766; the part ends at the base before them, the ColE1 part's end by alignment (pBR322 2534). This is the 546 bp span conventionally annotated as \"p15A ori\".",
+          "value": {
+            "reference": "GenBank V00309",
+            "span": "218-763 (complement)",
+            "length_bp": 546,
+            "start": "RNA II promoter -35",
+            "end": "RNA-to-DNA transition (before V00309 764-766)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6186390",
+            "quote": "In each system, replication initiates at any of three consecutive nucleotides located at a unique site. Primer transcription starts 508 bp upstream of the replication origin.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank V00309, X06403 and J01749 + PMID 6186390 abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
           "analysis_status": "pending",
           "cross_checked": false,
           "supersedes": null
@@ -11732,7 +11919,7 @@
       "slug": "p15A_ori_pSU38",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:V00309",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -11741,17 +11928,73 @@
         "p15A origin (pSU38)"
       ],
       "collections": [],
-      "description": "p15A origin variant from pSU38 family; differs from canonical p15A ori by several point mutations and extended flanking sequence.",
-      "length": 789,
+      "description": "p15A origin as carried by the pSU vectors (pSU38 family): the 524 bp from the RNA II promoter -10 to the RNA-to-DNA transition. The p15A fragment of these vectors starts 21 bp into the RNA II promoter, so the -35 comes from vector DNA. Otherwise identical to the p15A part, except that it lacks the base V00309 flags as a conflict (662).",
+      "length": 524,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+          "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+          "journal": "Cell. 1983;32(1):119-29",
+          "pmid": "6186390",
+          "doi": "10.1016/0092-8674(83)90502-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6186390/"
+        },
+        {
+          "authors": "Bartolom\u00e9 B, Jubete Y, Mart\u00ednez E, de la Cruz F",
+          "title": "Construction and properties of a family of pACYC184-derived cloning vectors compatible with pBR322 and its derivatives.",
+          "journal": "Gene. 1991;102(1):75-8",
+          "pmid": "1840539",
+          "doi": "10.1016/0378-1119(91)90541-i",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1840539/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans V00309 239-763: from the RNA II promoter -10 (the pSU38 fragment's own 5' end; its -35 is vector DNA) to the RNA-to-DNA transition, the base before the three replication start nucleotides V00309 764-766 (Selzer et al. 1983), as for the p15A part.",
+          "value": {
+            "reference": "GenBank V00309",
+            "span": "239-763",
+            "length_bp": 524,
+            "start": "RNA II promoter -10 (end of the pSU38 p15A fragment)",
+            "end": "RNA-to-DNA transition (before V00309 764-766)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6186390",
+            "quote": "In each system, replication initiates at any of three consecutive nucleotides located at a unique site.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank V00309, X06403 and the lab's pSU38Delta map",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "P2",
@@ -16968,24 +17211,82 @@
       "slug": "RSF_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01784",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "RSF ori"
+        "RSF ori",
+        "RSF1030 ori",
+        "RSF1030 origin"
       ],
       "collections": [],
-      "description": "",
-      "length": 750,
+      "description": "The RSF1030 (ColE1-family) origin of replication: the 563 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; compatible with ColE1/pMB1 and p15A origins.",
+      "length": 563,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Som T, Tomizawa J",
+          "title": "Origin of replication of Escherichia coli plasmid RSF 1030.",
+          "journal": "Mol Gen Genet. 1982;187(3):375-83",
+          "pmid": "6294468",
+          "doi": "10.1007/BF00332615",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6294468/"
+        },
+        {
+          "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+          "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+          "journal": "Cell. 1983;32(1):119-29",
+          "pmid": "6186390",
+          "doi": "10.1016/0092-8674(83)90502-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6186390/"
+        },
+        {
+          "authors": "Tomizawa JI, Ohmori H, Bird RE",
+          "title": "Origin of replication of colicin E1 plasmid DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+          "pmid": "325558",
+          "doi": "10.1073/pnas.74.5.1865",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/325558/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "functional_claims": [
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans RSF1030 J01784 121-683: from the RNA II promoter -35 to the RNA-to-DNA transition. End: replication starts in a stretch identical to the ColE1 origin (Som & Tomizawa 1982), so the part ends at the ColE1 part's end by alignment (J01784 683 = pBR322 2534); the primer is about 530 nt and J01784 maps its precursor's 5' end at 155, which places the transition near 684. Start: the RNA II -35 is not mapped; the part starts at TTGACT (J01784 121-126), the hexamer 34 bp upstream of the mapped RNA II 5' end, the same distance as ColE1's -35 (alignment and promoter geometry only).",
+          "value": {
+            "reference": "GenBank J01784",
+            "span": "121-683 (reverse complement)",
+            "length_bp": 563,
+            "start": "RNA II promoter -35 (TTGACT, inferred)",
+            "end": "RNA-to-DNA transition (pBR322 2534 equivalent)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6294468",
+            "quote": "Replication of pST19 starts at one of three consecutive nucleotides (dA, dA or dC) located at a unique position in the region where the nucleotide sequence is identical to that of the ColE1 origin.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank J01784 and J01749 + PMID 6294468 abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "low",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "RSF1010 oriV",
@@ -22517,25 +22818,91 @@
       "slug": "tL3",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J02459",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
         "tL3",
-        "tL3 terminator"
+        "tL3 terminator",
+        "lambda tL3 terminator",
+        "\u03bb tL3 terminator"
       ],
       "collections": [],
-      "description": "",
-      "length": 272,
+      "description": "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end.",
+      "length": 88,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
+      "children": [
+        {
+          "label": "tL3 hairpin",
+          "feature_type": "stem_loop",
+          "so_term": "SO:0000313",
+          "so_name": "stem_loop",
+          "start": 63,
+          "end": 84,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "tL3 3' end (CCUUUCU)",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 81,
+          "end": 88,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Luk KC, Szybalski W",
+          "title": "Transcription termination: sequence and function of the rho-independent tL3 terminator in the major leftward operon of bacteriophage lambda.",
+          "journal": "Gene. 1982;17(3):247-58",
+          "pmid": "6213446",
+          "doi": "10.1016/0378-1119(82)90140-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6213446/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "functional_claims": [
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans lambda 31262-31347 (minus strand): from the base after the exo stop codon to the termination point after the CCUUUCU 3' end, which Luk & Szybalski mapped by S1 nuclease (the end is experimental). The start is not mapped by truncation: it is where the conventional \"lambda tL3 terminator\" annotation starts, 63 bp upstream of the hairpin (provisional).",
+          "value": {
+            "reference": "GenBank J02459",
+            "span": "31262-31347 (complement)",
+            "length_bp": 88,
+            "start": "after the exo stop codon",
+            "end": "termination point (S1-mapped)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6213446",
+            "quote": "an 81% G+C-rich region of 2X8-bp symmetry (\"stem\") with a 5-bp intervening \"loop\", partially overlapping and followed by a sequence transcribed into the pyrimidine-rich CCUUUCU-OH 3' terminus of the RNA. The termination point that follows the last U was determined by the S1 mapping technique.",
+            "quote_source": "primary"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "pairwise alignment to GenBank NC_001416 + PMID 6213446 abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "tonB",

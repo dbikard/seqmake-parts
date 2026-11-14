@@ -3,32 +3,96 @@
   "slug": "RSF_ori",
   "locus": "RSF_ori",
   "id": "RSF_ori",
-  "description": "RSF ori",
+  "description": "The RSF1030 (ColE1-family) origin of replication: the 563 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; compatible with ColE1/pMB1 and p15A origins.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "CTTCCGCTTCCTCGCTCACTGACTCGCTACGCTCGGTCGTTCGACTGCGGCGAGCGGTGTCAGCTCACTCAAAAGCGGTAATACGGTTATCCACAGAATCAGGGGATAAAGCCGGAAAGAACATGTGAGCAAAAAGCAAAGCACCGGAAGAAGCCAACGCCGCAGGCGTTTTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGCCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTTGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCATTGGTAACTGATTTAGAGGACTTTGTCTTGAAGTTATGCACCTGTTAAGGCTAAACTGAAAGAACAGATTTTGGTGAGTGCGGTCCTCCAACCCACTTACCTTGGTTCAAAGAGTTGGTAGCTCAGCGAACCTTGAGAAAACCACCGTTGGTAGCGGTGGTTTTTCTTTATTTATGAGATGATGAATCAATCGGTCTATCAAGTCAACGAACAGCTATTCCGTT",
-  "references": [],
+  "sequence": "TTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGCCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTTGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCATTGGTAACTGATTTAGAGGACTTTGTCTTGAAGTTATGCACCTGTTAAGGCTAAACTGAAAGAACAGATTTTGGTGAGTGCGGTCCTCCAACCCACTTACCTTGGTTCAAAGAGTTGGTAGCTCAGCGAACCTTGAGAAAACCACCGTTGGTAGCGGTGGTTTTTCTTTATTTATGAGATGATGAATCAATCGGTCTATCAAGTCAA",
+  "references": [
+    {
+      "authors": "Som T, Tomizawa J",
+      "title": "Origin of replication of Escherichia coli plasmid RSF 1030.",
+      "journal": "Mol Gen Genet. 1982;187(3):375-83",
+      "pubmed_id": "6294468",
+      "comment": "doi:10.1007/BF00332615"
+    },
+    {
+      "authors": "Selzer G, Som T, Itoh T, Tomizawa J",
+      "title": "The origin of replication of plasmid p15A and comparative studies on the nucleotide sequences around the origin of related plasmids.",
+      "journal": "Cell. 1983;32(1):119-29",
+      "pubmed_id": "6186390",
+      "comment": "doi:10.1016/0092-8674(83)90502-0"
+    },
+    {
+      "authors": "Tomizawa JI, Ohmori H, Bird RE",
+      "title": "Origin of replication of colicin E1 plasmid DNA.",
+      "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+      "pubmed_id": "325558",
+      "comment": "doi:10.1073/pnas.74.5.1865"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
       "start": 0,
-      "end": 750,
+      "end": 563,
       "strand": 1,
       "qualifiers": {
         "label": [
           "RSF ori"
         ],
         "synonym": [
-          "RSF ori"
+          "RSF ori",
+          "RSF1030 ori",
+          "RSF1030 origin"
+        ],
+        "note": [
+          "The RSF1030 (ColE1-family) origin of replication: the 563 bp region from the RNA II promoter -35 to the RNA-to-DNA transition, with the RNA I / RNA II antisense pair that sets copy number; compatible with ColE1/pMB1 and p15A origins."
+        ],
+        "db_xref": [
+          "SO:0000296",
+          "GenBank:J01784"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "RSF1030 origin; bases J01784 121-683 (Som & Tomizawa 1982), reverse complement, with 5 G/C swaps against J01784 (bases 232, 236, 245, 250, 307), all kept in the new span. Re-delimited (2026-11) from a 750 bp record (J01784 104-853): the old part also carried the 170 bp past the RNA-to-DNA transition (J01784 684-853), the RSF1030 counterpart of the pBR322 2351-2533 flank (primosome assembly site region) that the ColE1 part dropped, and 17 bp upstream of the RNA II -35."
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "boundaries",
+      "type": "origin",
+      "label": "Spans RSF1030 J01784 121-683: from the RNA II promoter -35 to the RNA-to-DNA transition. End: replication starts in a stretch identical to the ColE1 origin (Som & Tomizawa 1982), so the part ends at the ColE1 part's end by alignment (J01784 683 = pBR322 2534); the primer is about 530 nt and J01784 maps its precursor's 5' end at 155, which places the transition near 684. Start: the RNA II -35 is not mapped; the part starts at TTGACT (J01784 121-126), the hexamer 34 bp upstream of the mapped RNA II 5' end, the same distance as ColE1's -35 (alignment and promoter geometry only).",
+      "value": {
+        "reference": "GenBank J01784",
+        "span": "121-683 (reverse complement)",
+        "length_bp": 563,
+        "start": "RNA II promoter -35 (TTGACT, inferred)",
+        "end": "RNA-to-DNA transition (pBR322 2534 equivalent)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6294468",
+        "quote": "Replication of pST19 starts at one of three consecutive nucleotides (dA, dA or dC) located at a unique position in the region where the nucleotide sequence is identical to that of the ColE1 origin.",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment to GenBank J01784 and J01749 + PMID 6294468 abstract",
+        "agent": "ai-assistant"
+      },
+      "confidence": "low",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
 }

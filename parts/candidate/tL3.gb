@@ -1,23 +1,61 @@
-LOCUS       tL3                      272 bp    DNA              UNK 01-JAN-1980
-DEFINITION  tL3.
+LOCUS       tL3                       88 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Bacteriophage lambda tL3, the rho-independent terminator of the
+            major leftward (pL) operon just downstream of exo: 88 bp from the
+            exo stop codon to the mapped termination point, carrying a GC-rich
+            8-bp-stem / 5-nt-loop hairpin followed by the sequence of the
+            CCUUUCU 3' end..
 ACCESSION   tL3
 VERSION     tL3
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Luk KC, Szybalski W
+  TITLE     Transcription termination: sequence and function of the
+            rho-independent tL3 terminator in the major leftward operon of
+            bacteriophage lambda.
+  JOURNAL   Gene. 1982;17(3):247-58
+   PUBMED   6213446
+  REMARK    doi:10.1016/0378-1119(82)90140-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tL3
 FEATURES             Location/Qualifiers
-     terminator      1..272
+     terminator      1..88
                      /label="tL3"
                      /synonym="tL3"
                      /synonym="tL3 terminator"
+                     /synonym="lambda tL3 terminator"
+                     /synonym="λ tL3 terminator"
+                     /note="Bacteriophage lambda tL3, the rho-independent
+                     terminator of the major leftward (pL) operon just
+                     downstream of exo: 88 bp from the exo stop codon to the
+                     mapped termination point, carrying a GC-rich 8-bp-stem /
+                     5-nt-loop hairpin followed by the sequence of the CCUUUCU
+                     3' end."
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:J02459"
+                     /citation=[1]
+     stem_loop       64..84
+                     /label="tL3 hairpin"
+                     /parent="tL3"
+                     /note="GC-rich hairpin of tL3: two 8-bp arms (AGGCUGGG /
+                     CCCGGCCU, one G-U pair) around a 5-nt loop (UAUUU), as
+                     described by Luk & Szybalski 1982 (""2X8-bp symmetry ...
+                     with a 5-bp intervening loop""). Arms located on the
+                     sequence by that description."
+                     /db_xref="SO:0000313"
+                     /citation=[1]
+     misc_feature    82..88
+                     /label="tL3 3' end (CCUUUCU)"
+                     /parent="tL3"
+                     /note="Pyrimidine-rich tract transcribed into the
+                     CCUUUCU-OH 3' end of the terminated RNA; the termination
+                     point follows the last U (S1-mapped, Luk & Szybalski 1982).
+                     It overlaps the hairpin's second arm by 3 bp."
+                     /db_xref="SO:0000110"
+                     /citation=[1]
 ORIGIN
-        1 aatggcgatg acgcatcctc acgataatat ccgggtaggc gcaatcactt tcgtctctac
-       61 tccgttacaa agcgaggctg ggtatttccc ggcctttctg ttatccgaaa tccactgaaa
-      121 gcacagcggc tggctgagga gataaataat aaacgagggg ctgtatgcac aaagcatctt
-      181 ctgttgagtt aagaacgagt atcgagatgg cacatagcct tgctcaaatt ggaatcaggt
-      241 ttgtgccaat accagtagaa acagacgaag aa
+        1 cgcatcctca cgataatatc cgggtaggcg caatcacttt cgtctctact ccgttacaaa
+       61 gcgaggctgg gtatttcccg gcctttct
 //

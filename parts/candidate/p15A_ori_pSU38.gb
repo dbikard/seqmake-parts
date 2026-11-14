@@ -1,24 +1,54 @@
-LOCUS       p15A_ori_pSU38           789 bp    DNA              UNK 01-JAN-1980
-DEFINITION  p15A origin variant from pSU38 family; differs from canonical p15A
-            ori by several point mutations and extended flanking sequence..
+LOCUS       p15A_ori_pSU38           524 bp    DNA              UNK 01-JAN-1980
+DEFINITION  p15A origin as carried by the pSU vectors (pSU38 family): the 524 bp
+            from the RNA II promoter -10 to the RNA-to-DNA transition. The p15A
+            fragment of these vectors starts 21 bp into the RNA II promoter, so
+            the -35 comes from vector DNA. Otherwise identical to the p15A part,
+            except that it lacks the base V00309 flags as a conflict (662)..
 ACCESSION   p15A_ori_pSU38
 VERSION     p15A_ori_pSU38
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Selzer G, Som T, Itoh T, Tomizawa J
+  TITLE     The origin of replication of plasmid p15A and comparative studies on
+            the nucleotide sequences around the origin of related plasmids.
+  JOURNAL   Cell. 1983;32(1):119-29
+   PUBMED   6186390
+  REMARK    doi:10.1016/0092-8674(83)90502-0
+REFERENCE   2
+  AUTHORS   Bartolomé B, Jubete Y, Martínez E, de la Cruz F
+  TITLE     Construction and properties of a family of pACYC184-derived cloning
+            vectors compatible with pBR322 and its derivatives.
+  JOURNAL   Gene. 1991;102(1):75-8
+   PUBMED   1840539
+  REMARK    doi:10.1016/0378-1119(91)90541-i
+REFERENCE   3
+  AUTHORS   Tomizawa JI, Ohmori H, Bird RE
+  TITLE     Origin of replication of colicin E1 plasmid DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
+   PUBMED   325558
+  REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/p15A_ori_pSU38
 FEATURES             Location/Qualifiers
-     rep_origin      1..789
+     rep_origin      1..524
                      /label="p15A ori (pSU38)"
                      /synonym="p15A ori"
                      /synonym="P15A rep"
                      /synonym="p15A origin (pSU38)"
-                     /note="p15A origin variant from pSU38 family; differs from
-                     canonical p15A ori by several point mutations and extended
-                     flanking sequence."
+                     /note="p15A origin as carried by the pSU vectors (pSU38
+                     family): the 524 bp from the RNA II promoter -10 to the
+                     RNA-to-DNA transition. The p15A fragment of these vectors
+                     starts 21 bp into the RNA II promoter, so the -35 comes
+                     from vector DNA. Otherwise identical to the p15A part,
+                     except that it lacks the base V00309 flags as a conflict
+                     (662)."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:V00309"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 cgtaatctct tgctctgaaa acgaaaaaac cgccttgcag ggcggttttt cgaaggttct
        61 ctgagctacc aactctttga accgaggtaa ctggcttgga ggagcgcagt caccaaaact
@@ -28,10 +58,5 @@ ORIGIN
       301 tggagcgaac tgcctacccg gaactgagtg tcaggcgtgg aatgagacaa acgcggccat
       361 aacagcggaa tgacaccggt aaaccgaaag gcaggaacag gagagcgcac gagggagccg
       421 ccaggggaaa cgcctggtat ctttatagtc ctgtcgggtt tcgccaccac tgatttgagc
-      481 gtcagatttc gtgatgcttg tcaggggggc ggagcctatg gaaaaacggc tttgccgcgg
-      541 ccctctcact tccctgttaa gtatcttcct ggcatcttcc aggaaatctc cgccccgttc
-      601 gtaagccatt tccgctcgcc gcagtcgaac gaccgagcgt agcgagtcag tgagcgagga
-      661 agcggaatat atcctgtatc acatattctg ctgacgcacc ggtgcagcct tttttctcct
-      721 gccacatgaa gcacttcact gacaccctca tcagtgccaa catagtaagc cagtatatac
-      781 actccgcta
+      481 gtcagatttc gtgatgcttg tcaggggggc ggagcctatg gaaa
 //
