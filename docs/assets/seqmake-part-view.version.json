@@ -1,8 +1,8 @@
 {
   "source": "git@gitlab.pasteur.fr:dbikard/seqmake",
   "path": "assets/seqmake-part-view.js",
-  "version": "v0.4.0-251-gd3e4fa4-dirty",
-  "commit": "d3e4fa4edd5a37c301aabd4487f5f4f51f6a050f",
-  "built": "2026-06-16T08:22:45Z",
-  "sha256": "d64ba321ec5a2b535768354c803cea7ee2a043a20e655d73343eb4af74c44ac3"
+  "version": "v0.4.180",
+  "commit": "f2bc2ba0fb88605ae72ccf0b6315bc68221dbbdd",
+  "built": "2026-11-16T13:16:55Z",
+  "sha256": "89c5e0e874c1ba45d90398fdce6398af1573b0f22a33e3421ee49de90044e64d"
 }
