@@ -30,6 +30,7 @@ SO_BY_REG: dict[str, tuple[str, str]] = {
     "silencer": ("SO:0000625", "silencer"),
     "attenuator": ("SO:0000140", "attenuator"),
     "polyA_signal_sequence": ("SO:0000551", "polyA_signal_sequence"),
+    "replication_regulatory_region": ("SO:0001682", "replication_regulatory_region"),
 }
 
 # feature type -> (SO accession, SO name)

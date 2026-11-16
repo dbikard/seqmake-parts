@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 273,
-  "n_validated": 75,
+  "n_parts": 274,
+  "n_validated": 76,
   "n_candidate": 198,
-  "n_functional_claims": 353,
+  "n_functional_claims": 359,
   "parts": [
     {
       "slug": "186_integrase",
@@ -2209,6 +2209,16 @@
         "P3",
         "beta-lactamase promoter"
       ]
+    },
+    {
+      "slug": "pBR322_pas_DnaA",
+      "name": "pBR322 pas/DnaA",
+      "feature_type": "regulatory",
+      "kind": "dna",
+      "so_term": "SO:0001682",
+      "so_name": "replication_regulatory_region",
+      "status": "validated",
+      "n_claims": 6
     },
     {
       "slug": "Pcat",

@@ -186,7 +186,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "ColE1/pMB1-family origin; 100% identical to GenBank J01749 (pBR322; Sutcliffe 1979) and L08752 (pUC18; Yanisch-Perron 1985). Refined 2 bp (positions 393-394 (1-based)) to these canonical deposits. The pUC- and pBR322-type origins are sequence-identical across this fragment; the high- vs medium-copy difference is set by the separate rop part, not this sequence. Re-delimited (2026-11) from a 792 bp fragment to pBR322 (J01749) 2534-3122, minus strand: the old fragment also carried 20 bp of backbone on the bla side and the 183 bp past the RNA-to-DNA transition (pBR322 2351-2533, carrying the L-strand primosome assembly site), which is not part of the origin as conventionally annotated."
+    "sequence_source": "ColE1/pMB1-family origin; 100% identical to GenBank J01749 (pBR322; Sutcliffe 1979) and L08752 (pUC18; Yanisch-Perron 1985). Refined 2 bp (positions 393-394 (1-based)) to these canonical deposits. The pUC- and pBR322-type origins are sequence-identical across this fragment; the high- vs medium-copy difference is set by the separate rop part, not this sequence. Re-delimited (2026-11) from a 792 bp fragment to pBR322 (J01749) 2534-3122, minus strand: the old fragment also carried 20 bp of backbone on the bla side and the 183 bp past the RNA-to-DNA transition (pBR322 2351-2533, carrying the L-strand primosome assembly site and a DnaA box), now the separate part pBR322_pas_DnaA."
   },
   "functional_claims": [
     {

@@ -6,6 +6,10 @@ RNA I / RNA II control region. This is the version that a large fraction of ever
 cloning vectors actually carry, so it is documented in its own right rather than treated
 as an error in the canonical sequence.
 
+Like `ColE1`, the part ends at the RNA-to-DNA transition. pBR322's lagging-strand priming
+signals (a primosome assembly site and a DnaA box) lie just past its 3' end and are a separate part,
+[`pBR322_pas_DnaA`](pBR322_pas_DnaA.md); many vectors carry only part of them or none.
+
 ## Origin
 
 ColE1/pMB1-family origins set plasmid copy number through a pair of convergent transcripts

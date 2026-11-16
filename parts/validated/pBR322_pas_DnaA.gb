@@ -1,0 +1,123 @@
+LOCUS       pBR322_pas_DnaA          183 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  The pBR322 region just past the ColE1-family DNA replication start
+            (pBR322 2351-2533), carrying the lagging-strand primosome assembly
+            site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin
+            in pBR322 and pUC vectors..
+ACCESSION   pBR322_pas_DnaA
+VERSION     pBR322_pas_DnaA
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Marians KJ, Soeller W, Zipursky SL
+  TITLE     Maximal limits of the Escherichia coli replication factor Y effector
+            site sequences in pBR322 DNA.
+  JOURNAL   J Biol Chem. 1982;257(10):5656-62
+   PUBMED   6279609
+  REMARK    doi:10.1016/S0021-9258(19)83828-0
+REFERENCE   2
+  AUTHORS   Zipursky SL, Marians KJ
+  TITLE     Identification of two Escherichia coli factor Y effector sites near
+            the origins of replication of the plasmids ColE1 and pBR322.
+  JOURNAL   Proc Natl Acad Sci U S A. 1980;77(11):6521-5
+   PUBMED   6109282
+  REMARK    doi:10.1073/pnas.77.11.6521
+REFERENCE   3
+  AUTHORS   Fuller RS, Funnell BE, Kornberg A
+  TITLE     The dnaA protein complex with the E. coli chromosomal replication
+            origin (oriC) and other DNA sites.
+  JOURNAL   Cell. 1984;38(3):889-900
+   PUBMED   6091903
+  REMARK    doi:10.1016/0092-8674(84)90284-8
+REFERENCE   4
+  AUTHORS   Seufert W, Messer W
+  TITLE     DnaA protein binding to the plasmid origin region can substitute for
+            primosome assembly during replication of pBR322 in vitro.
+  JOURNAL   Cell. 1987;48(1):73-8
+   PUBMED   3791416
+  REMARK    doi:10.1016/0092-8674(87)90357-6
+REFERENCE   5
+  AUTHORS   Masai H, Arai K
+  TITLE     Initiation of lagging-strand synthesis for pBR322 plasmid DNA
+            replication in vitro is dependent on primosomal protein i encoded by
+            dnaT.
+  JOURNAL   J Biol Chem. 1988;263(29):15016-23
+   PUBMED   2844795
+  REMARK    doi:10.1016/S0021-9258(18)68140-2
+REFERENCE   6
+  AUTHORS   Ma D, Campbell JL
+  TITLE     The effect of dnaA protein and n' sites on the replication of
+            plasmid ColE1.
+  JOURNAL   J Biol Chem. 1988;263(29):15008-15
+   PUBMED   2844794
+  REMARK    doi:10.1016/S0021-9258(18)68139-6
+REFERENCE   7
+  AUTHORS   Chiang CS, Xu YC, Bremer H
+  TITLE     Role of DnaA protein during replication of plasmid pBR322 in
+            Escherichia coli.
+  JOURNAL   Mol Gen Genet. 1991;225(3):435-42
+   PUBMED   1708087
+  REMARK    doi:10.1007/BF00261684
+REFERENCE   8
+  AUTHORS   Soeller WC, Marians KJ
+  TITLE     Deletion mutants defining the Escherichia coli replication factor Y
+            effector site sequences in pBR322 DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1982;79(23):7253-7
+   PUBMED   6130524
+  REMARK    doi:10.1073/pnas.79.23.7253
+REFERENCE   9
+  AUTHORS   Peden KW
+  TITLE     Revised sequence of the tetracycline-resistance gene of pBR322.
+  JOURNAL   Gene. 1983;22(2-3):277-80
+   PUBMED   6307828
+  REMARK    doi:10.1016/0378-1119(83)90112-9
+REFERENCE   10
+  AUTHORS   Watson N
+  TITLE     A new revision of the sequence of plasmid pBR322.
+  JOURNAL   Gene. 1988;70(2):399-403
+   PUBMED   3063608
+  REMARK    doi:10.1016/0378-1119(88)90212-0
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/pBR322_pas_DnaA
+FEATURES             Location/Qualifiers
+     regulatory      1..183
+                     /label="pBR322 pas/DnaA"
+                     /regulatory_class="replication_regulatory_region"
+                     /note="The pBR322 region just past the ColE1-family DNA
+                     replication start (pBR322 2351-2533), carrying the
+                     lagging-strand primosome assembly site (pas) and a DnaA
+                     box; it lies directly 3' of the ColE1 origin in pBR322 and
+                     pUC vectors."
+                     /db_xref="SO:0001682"
+                     /db_xref="GenBank:J01749"
+                     /citation=[1]
+                     /citation=[3]
+     protein_bind    complement(87..95)
+                     /label="DnaA box"
+                     /parent="pBR322 pas/DnaA"
+                     /note="9 bp DnaA box TTATCCACA (pBR322 2439-2447, top
+                     strand), a perfect match to the DnaA-box consensus
+                     TTAT(C/A)CA(C/A)A; DnaA binds the pBR322 origin region
+                     here."
+                     /db_xref="SO:0000410"
+                     /citation=[3]
+                     /citation=[4]
+     protein_bind    119..182
+                     /label="pas (L strand)"
+                     /parent="pBR322 pas/DnaA"
+                     /note="Primosome assembly site on the L strand (factor Y /
+                     PriA effector site, n' site), active in single-stranded
+                     form on the lagging-strand template: pBR322 2352-2415, the
+                     maximal limits mapped by Marians et al. (their 2353-2416,
+                     on the 1979 numbering)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[8]
+ORIGIN
+        1 aacgccagca acgcggcctt tttacggttc ctggcctttt gctggccttt tgctcacatg
+       61 ttctttcctg cgttatcccc tgattctgtg gataaccgta ttaccgcctt tgagtgagct
+      121 gataccgctc gccgcagccg aacgaccgag cgcagcgagt cagtgagcga ggaagcggaa
+      181 gag
+//

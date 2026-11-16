@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 273,
-  "n_validated": 75,
+  "n_parts": 274,
+  "n_validated": 76,
   "n_candidate": 198,
-  "n_documented": 75,
-  "n_functional_claims": 353,
+  "n_documented": 76,
+  "n_functional_claims": 359,
   "parts": [
     {
       "name": "186 integrase",
@@ -12524,6 +12524,298 @@
           "analysis_status": "pending",
           "cross_checked": false,
           "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "pBR322 pas/DnaA",
+      "slug": "pBR322_pas_DnaA",
+      "feature_type": "regulatory",
+      "kind": "dna",
+      "source_accession": "GenBank:J01749",
+      "so_term": "SO:0001682",
+      "so_name": "replication_regulatory_region",
+      "synonyms": [],
+      "collections": [],
+      "description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
+      "length": 183,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "DnaA box",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 86,
+          "end": 95,
+          "strand": -1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "pas (L strand)",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 118,
+          "end": 182,
+          "strand": 1,
+          "citations": [
+            1,
+            2,
+            8
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Marians KJ, Soeller W, Zipursky SL",
+          "title": "Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA.",
+          "journal": "J Biol Chem. 1982;257(10):5656-62",
+          "pmid": "6279609",
+          "doi": "10.1016/S0021-9258(19)83828-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6279609/"
+        },
+        {
+          "authors": "Zipursky SL, Marians KJ",
+          "title": "Identification of two Escherichia coli factor Y effector sites near the origins of replication of the plasmids ColE1 and pBR322.",
+          "journal": "Proc Natl Acad Sci U S A. 1980;77(11):6521-5",
+          "pmid": "6109282",
+          "doi": "10.1073/pnas.77.11.6521",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6109282/"
+        },
+        {
+          "authors": "Fuller RS, Funnell BE, Kornberg A",
+          "title": "The dnaA protein complex with the E. coli chromosomal replication origin (oriC) and other DNA sites.",
+          "journal": "Cell. 1984;38(3):889-900",
+          "pmid": "6091903",
+          "doi": "10.1016/0092-8674(84)90284-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6091903/"
+        },
+        {
+          "authors": "Seufert W, Messer W",
+          "title": "DnaA protein binding to the plasmid origin region can substitute for primosome assembly during replication of pBR322 in vitro.",
+          "journal": "Cell. 1987;48(1):73-8",
+          "pmid": "3791416",
+          "doi": "10.1016/0092-8674(87)90357-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3791416/"
+        },
+        {
+          "authors": "Masai H, Arai K",
+          "title": "Initiation of lagging-strand synthesis for pBR322 plasmid DNA replication in vitro is dependent on primosomal protein i encoded by dnaT.",
+          "journal": "J Biol Chem. 1988;263(29):15016-23",
+          "pmid": "2844795",
+          "doi": "10.1016/S0021-9258(18)68140-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2844795/"
+        },
+        {
+          "authors": "Ma D, Campbell JL",
+          "title": "The effect of dnaA protein and n' sites on the replication of plasmid ColE1.",
+          "journal": "J Biol Chem. 1988;263(29):15008-15",
+          "pmid": "2844794",
+          "doi": "10.1016/S0021-9258(18)68139-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2844794/"
+        },
+        {
+          "authors": "Chiang CS, Xu YC, Bremer H",
+          "title": "Role of DnaA protein during replication of plasmid pBR322 in Escherichia coli.",
+          "journal": "Mol Gen Genet. 1991;225(3):435-42",
+          "pmid": "1708087",
+          "doi": "10.1007/BF00261684",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1708087/"
+        },
+        {
+          "authors": "Soeller WC, Marians KJ",
+          "title": "Deletion mutants defining the Escherichia coli replication factor Y effector site sequences in pBR322 DNA.",
+          "journal": "Proc Natl Acad Sci U S A. 1982;79(23):7253-7",
+          "pmid": "6130524",
+          "doi": "10.1073/pnas.79.23.7253",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6130524/"
+        },
+        {
+          "authors": "Peden KW",
+          "title": "Revised sequence of the tetracycline-resistance gene of pBR322.",
+          "journal": "Gene. 1983;22(2-3):277-80",
+          "pmid": "6307828",
+          "doi": "10.1016/0378-1119(83)90112-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6307828/"
+        },
+        {
+          "authors": "Watson N",
+          "title": "A new revision of the sequence of plasmid pBR322.",
+          "journal": "Gene. 1988;70(2):399-403",
+          "pmid": "3063608",
+          "doi": "10.1016/0378-1119(88)90212-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3063608/"
+        }
+      ],
+      "main_citations": [
+        1,
+        3
+      ],
+      "functional_claims": [
+        {
+          "id": "pas_factor_y",
+          "type": "mechanism",
+          "label": "The L-strand site is a primosome assembly site: in single-stranded form it is an effector for the ATPase of replication factor Y (PriA) and, cloned into an f1 phage vector, a dnaB-, dnaC- and dnaG-dependent origin of complementary-strand synthesis.",
+          "value": {
+            "element": "pas",
+            "strand": "L (lagging-strand template)",
+            "protein": "factor Y (PriA)"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6279609",
+            "quote": "pBR322 DNA contains two separate regions on opposite strands and close to the origin of replication which, when in single-stranded form, can act as effectors for the ATPase activity of Escherichia coli replication factor Y. Small fragments of DNA containing these sites when cloned into an fl phage vector act as origins of DNA replication allowing the formation of complementary double-stranded DNA in a rifampicin-resistant, dnaB-, dnaG-, and dnaC-dependent fashion in vitro.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "lagging_strand_in_vitro",
+          "type": "mechanism",
+          "label": "In vitro, efficient pBR322 replication needs a primosome assembly (n') site on the lagging strand, not on the leading strand; plasmids lacking it accumulate early intermediates with only the leading strand made, and the phiX174 n' site restores replication.",
+          "value": {
+            "requirement": "in vitro",
+            "strand": "lagging"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2844795",
+            "quote": "an n' site on the lagging strand, but not on the leading strand, is required for efficient replication of the plasmid in vitro.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "pas_deletion_in_vitro",
+          "type": "mechanism",
+          "label": "Deleting the lagging-strand n' site of pBR322 (together with the DnaA site) cuts in vitro synthesis to under 10% of the intact template.",
+          "value": {
+            "requirement": "in vitro",
+            "effect": "<10% synthesis without the lagging-strand n' site and DnaA site"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "2844794",
+            "quote": "When the n' site on the lagging strand of pBR322 was deleted, synthesis in the in vitro replication system was reduced to less than 10% of levels seen with intact templates. dnaA-overproducing extract did not restore activity since the dnaA site was also deleted on these plasmids.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "dnaA_substitutes",
+          "type": "mechanism",
+          "label": "In vitro, DnaA bound to its site in this region can stand in for the primosome assembly site: pBR322 lacking the pas sites replicates efficiently when DnaA and its binding site are present.",
+          "value": {
+            "element": "DnaA box",
+            "requirement": "in vitro"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "3791416",
+            "quote": "We constructed pBR322 deletion derivatives missing the primosome assembly sites. Efficient replication of these deletion plasmids was dependent on the presence of DnaA protein and its binding site, but independent of protein i activity.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        },
+        {
+          "id": "in_vivo_dispensable",
+          "type": "caveat",
+          "label": "In vivo the region is dispensable for copy number: deleting the DnaA site and the primosome assembly sites next to the pBR322 origin did not change plasmid copy number in E. coli, so its in vitro requirement does not translate into a copy-number effect.",
+          "value": {
+            "requirement": "in vivo",
+            "effect_on_copy_number": "none detected",
+            "host": "Escherichia coli"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "1708087",
+            "quote": "Deletion of the DnaA binding site and the primosome assembly sites (pas, rri) downstream of the replication origin did not affect the plasmid copy number during exponential growth at 30 degrees C, or after inactivation of DnaA by a shift to 42 degrees C in a dnaA46 host, or after oversupply of DnaA, indicating that these sites are not involved in a rate-limiting step for replication in vivo.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "ai-extraction",
+            "from": "abstract",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null,
+          "comment": "One in vivo study (pBR322, rom+ and rom- derivatives); copy number measured during exponential growth."
+        },
+        {
+          "id": "boundaries",
+          "type": "origin",
+          "label": "Spans pBR322 (J01749) 2351-2533, minus strand: from the base after the ColE1 part's 3' end (the RNA-to-DNA transition, pBR322 2534) to pBR322 2351, so ColE1 followed by this part is pBR322 2351-3122 read on the minus strand. The pas sub-feature is 2352-2415, the maximal limits reported as 2353-2416 on the original 4362 bp pBR322 sequence (1979); the 1983 (+1 bp at 526) and 1988 (-2 bp at 1893 and 1915) revisions shift positions past 1915 by -1 on the J01749 numbering, and 2352-2415 is exactly the HaeII-AluI fragment. The DnaA box (2439-2447) is the only DnaA-box consensus match in the region.",
+          "value": {
+            "reference": "GenBank J01749",
+            "span": "2351-2533 (complement)",
+            "length_bp": 183,
+            "pas": "2352-2415",
+            "dnaA_box": "2439-2447"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "6279609",
+            "quote": "The H and L strand sites lie within nucleotides 2144-2185 and 2353-2416, respectively, of pBR322 DNA.",
+            "quote_source": "primary",
+            "section": "Abstract"
+          },
+          "provenance": {
+            "method": "bioinformatic-alignment",
+            "from": "J01749 sequence and annotation; PMID 6279609, 3063608 and 6307828 abstracts",
+            "agent": "ai-assistant"
+          },
+          "confidence": "medium",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null,
+          "comment": "The pas limits are maximal (outer) limits, not a minimal site. The J01749 record annotates the L-strand site at complement(2351..2414), 1 bp off: it applies the -2 shift of the 4363 bp (1983) numbering to a 1982 coordinate. The numbering the paper used is inferred from its date and the restriction-fragment match, not read from its figures."
         }
       ]
     },
