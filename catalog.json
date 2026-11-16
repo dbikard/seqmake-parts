@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 274,
+  "n_parts": 270,
   "n_validated": 76,
-  "n_candidate": 198,
+  "n_candidate": 194,
   "n_documented": 76,
   "n_functional_claims": 359,
   "parts": [
@@ -28,6 +28,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -84,6 +85,7 @@
         2,
         3
       ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -297,6 +299,7 @@
         2,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -410,6 +413,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -494,6 +498,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -627,10 +632,7 @@
         "ANT(3'')(9)",
         "AadA",
         "SmR",
-        "SpR",
-        "SpecR",
         "aadA1",
-        "spectinomycin adenyltransferase",
         "streptomycin 3''-adenylyltransferase"
       ],
       "collections": [],
@@ -661,6 +663,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -720,33 +723,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "functional_claims": []
-    },
-    {
-      "name": "Acc3",
-      "slug": "Acc3",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "Acc3",
-        "acc3",
-        "gentamicin 3-N-acetyltransferase",
-        "GmR (SEVA)"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 177,
-      "protein_length_aa": 177,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -771,6 +748,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -798,6 +776,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -825,6 +804,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -851,6 +831,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -944,6 +925,7 @@
         6,
         7
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "affinity_binding",
@@ -1195,6 +1177,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1219,6 +1202,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1250,6 +1234,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1372,6 +1357,7 @@
         9,
         10
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -1726,9 +1712,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "T7Te",
+          "feature_type": "terminator",
+          "so_term": "SO:0000141",
+          "so_name": "terminator",
+          "start": 88,
+          "end": 128,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1753,6 +1751,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1779,6 +1778,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -1845,6 +1845,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "binding_affinity",
@@ -2194,6 +2195,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -2403,6 +2405,7 @@
         13,
         14
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -2771,6 +2774,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -2956,6 +2960,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -3013,6 +3018,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3039,6 +3045,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3063,6 +3070,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3088,6 +3096,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3112,6 +3121,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3137,6 +3147,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3285,6 +3296,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": [],
       "uniprot_import": {
         "fetched": "2026-11-01",
@@ -3318,6 +3330,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3342,6 +3355,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3444,6 +3458,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "origin",
@@ -3793,6 +3808,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3820,6 +3836,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3846,6 +3863,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -3888,6 +3906,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -3941,6 +3960,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -4003,6 +4023,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "boundaries",
@@ -4112,6 +4133,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -4173,6 +4195,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -4297,6 +4320,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "copy_number",
@@ -4469,6 +4493,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "copy_number",
@@ -4573,6 +4598,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -4600,6 +4626,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -4749,6 +4776,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": [],
       "uniprot_import": {
         "fetched": "2026-11-01",
@@ -4835,6 +4863,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -4894,6 +4923,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -4982,6 +5012,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "epitope_detection",
@@ -5117,6 +5148,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5142,6 +5174,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5167,6 +5200,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5192,6 +5226,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5221,6 +5256,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5234,8 +5270,7 @@
       "synonyms": [
         "EGFP",
         "eGFP",
-        "Enhanced GFP",
-        "GFP"
+        "Enhanced GFP"
       ],
       "collections": [],
       "description": "",
@@ -5248,6 +5283,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5379,6 +5415,7 @@
         10,
         11
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -5644,6 +5681,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -5705,6 +5743,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5730,6 +5769,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5756,6 +5796,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -5858,6 +5899,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "recognition_specificity",
@@ -6020,6 +6062,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -6048,7 +6091,18 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "enterokinase cleavage site",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 3,
+          "end": 8,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Hopp TP, Prickett KS, Price VL, Libby RT, March CJ, Cerretti DP, Urdal DL, Conlon PJ",
@@ -6116,6 +6170,7 @@
         6,
         7
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -6299,6 +6354,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -6326,6 +6382,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -6351,6 +6408,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -6390,6 +6448,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -6502,6 +6561,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -6637,6 +6697,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -6796,6 +6857,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -6919,6 +6981,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -6933,7 +6996,9 @@
         "GentR",
         "Gentamicin R",
         "aacC1",
-        "gentamicin acetyltransferase"
+        "gentamicin acetyltransferase",
+        "Acc3",
+        "gentamicin 3-N-acetyltransferase"
       ],
       "collections": [],
       "description": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
@@ -6992,6 +7057,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -7165,6 +7231,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "affinity_purification",
@@ -7372,6 +7439,7 @@
         2,
         3
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "epitope_detection",
@@ -7566,6 +7634,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -7911,6 +7980,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": [],
       "uniprot_import": {
         "fetched": "2026-11-01",
@@ -7943,6 +8013,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -7999,10 +8070,11 @@
         2,
         3
       ],
+      "sourced": true,
       "functional_claims": []
     },
     {
-      "name": "HK022_attB",
+      "name": "HK022_attP",
       "slug": "HK022_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -8018,7 +8090,7 @@
       "collections": [
         "phage-att-sites"
       ],
-      "description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations.",
+      "description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core.",
       "length": 258,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -8066,6 +8138,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -8212,6 +8285,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8315,6 +8389,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -8571,6 +8646,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8636,6 +8712,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -8696,6 +8773,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8708,7 +8786,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23100",
-        "Anderson constitutive promoter",
         "J23100 promoter"
       ],
       "collections": [
@@ -8724,6 +8801,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8736,7 +8814,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23101",
-        "Anderson constitutive promoter",
         "J23101 promoter"
       ],
       "collections": [
@@ -8752,6 +8829,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8764,7 +8842,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23102",
-        "Anderson constitutive promoter",
         "J23102 promoter"
       ],
       "collections": [
@@ -8780,6 +8857,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8809,6 +8887,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8821,7 +8900,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23106",
-        "Anderson constitutive promoter",
         "J23106 promoter"
       ],
       "collections": [
@@ -8837,6 +8915,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8866,6 +8945,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8893,6 +8973,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8905,7 +8986,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23109",
-        "Anderson constitutive promoter",
         "J23109 promoter"
       ],
       "collections": [
@@ -8921,6 +9001,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8948,6 +9029,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8960,7 +9042,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23114",
-        "Anderson constitutive promoter",
         "J23114 promoter"
       ],
       "collections": [
@@ -8976,6 +9057,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -8988,7 +9070,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23116",
-        "Anderson constitutive promoter",
         "J23116 promoter"
       ],
       "collections": [
@@ -9004,6 +9085,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9016,7 +9098,6 @@
       "so_name": "promoter",
       "synonyms": [
         "BBa_J23117",
-        "Anderson constitutive promoter",
         "J23117 promoter"
       ],
       "collections": [
@@ -9032,6 +9113,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9060,6 +9142,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9074,7 +9157,6 @@
         "APH(3')-II",
         "NeoR",
         "NeoR/KanR",
-        "kanR",
         "neo",
         "nptII"
       ],
@@ -9156,6 +9238,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -9200,7 +9283,6 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "KanR",
         "KmR",
         "KanR2",
         "APH(3')-Ia",
@@ -9218,6 +9300,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9242,6 +9325,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9267,6 +9351,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9291,6 +9376,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9317,6 +9403,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9368,6 +9455,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9379,7 +9467,9 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "lacO"
+        "lacO",
+        "lac operator",
+        "lac operator O1"
       ],
       "collections": [],
       "description": "",
@@ -9392,6 +9482,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9418,6 +9509,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9443,6 +9535,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9469,6 +9562,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9493,6 +9587,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9506,7 +9601,8 @@
       "synonyms": [
         "lambda cos",
         "Minimal lambda cos sequence",
-        "cos site"
+        "cos site",
+        "cos"
       ],
       "collections": [],
       "description": "",
@@ -9519,10 +9615,11 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
-      "name": "lambda cos",
+      "name": "lambda cos region",
       "slug": "lambda_cos_1",
       "feature_type": "misc_feature",
       "kind": "dna",
@@ -9530,7 +9627,6 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "synonyms": [
-        "cos",
         "lambda cos region",
         "cos site (SEVA)"
       ],
@@ -9542,9 +9638,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "lambda cos",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 351,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9569,6 +9677,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9594,6 +9703,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -9641,6 +9751,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9879,6 +9990,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -10140,6 +10252,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": [],
       "uniprot_import": {
         "fetched": "2026-11-01",
@@ -10251,6 +10364,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "recognition_specificity",
@@ -10528,6 +10642,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10553,6 +10668,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10578,6 +10694,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10603,6 +10720,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10628,6 +10746,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10653,6 +10772,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -10768,6 +10888,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "solubility_partner",
@@ -11039,6 +11160,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11065,6 +11187,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11091,6 +11214,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11161,6 +11285,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -11335,6 +11460,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11361,6 +11487,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11494,6 +11621,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "transcription_elongation_factor",
@@ -11722,6 +11850,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11746,6 +11875,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -11847,6 +11977,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "copy_number",
@@ -11937,7 +12068,7 @@
       "so_name": "promoter",
       "synonyms": [
         "Ptet2",
-        "tet promoter"
+        "pBR322 tet promoter"
       ],
       "collections": [],
       "description": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
@@ -12013,6 +12144,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -12061,6 +12193,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12167,6 +12300,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -12217,9 +12351,31 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "lacO",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 25,
+          "end": 42,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "lacO",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 58,
+          "end": 75,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12311,6 +12467,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12335,6 +12492,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12359,6 +12517,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12449,6 +12608,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -12659,6 +12819,7 @@
         1,
         3
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "pas_factor_y",
@@ -12842,6 +13003,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -12925,6 +13087,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -13064,6 +13227,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "inducer",
@@ -13178,6 +13342,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -13206,6 +13371,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -13262,6 +13428,7 @@
         2,
         3
       ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -13448,6 +13615,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -13609,6 +13777,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -13733,6 +13902,7 @@
         2,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -13848,6 +14018,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -13872,9 +14043,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "rep (pIJ101)",
+          "feature_type": "CDS",
+          "so_term": "SO:0000316",
+          "so_name": "CDS",
+          "start": 8,
+          "end": 1379,
+          "strand": -1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -13902,6 +14085,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -13929,6 +14113,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14026,6 +14211,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14076,9 +14262,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "lacO",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 76,
+          "end": 93,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14104,6 +14302,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14129,6 +14328,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14204,6 +14404,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14254,8 +14455,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14279,8 +14492,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14304,8 +14529,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14329,8 +14566,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14354,8 +14603,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14379,8 +14640,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
+      "references": [
+        {
+          "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+          "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+          "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+          "pmid": "33783967",
+          "doi": "10.1111/1751-7915.13808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33783967/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14405,9 +14678,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "lacO",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000057",
+          "so_name": "operator",
+          "start": 26,
+          "end": 43,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14517,6 +14802,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14689,6 +14975,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14742,6 +15029,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14768,6 +15056,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14865,6 +15154,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "inducer",
@@ -14944,6 +15234,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14969,6 +15260,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -14993,6 +15285,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15107,6 +15400,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "copy_number",
@@ -15135,32 +15429,6 @@
       ]
     },
     {
-      "name": "pSC101 ori (SEVA)",
-      "slug": "pSC101_ori_SEVA",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "synonyms": [
-        "pSC101",
-        "pSC101 ori (SEVA)",
-        "pSC101 origin"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 951,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "pSH71 ori",
       "slug": "pSH71_ori",
       "feature_type": "rep_origin",
@@ -15181,9 +15449,21 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
+      "children": [
+        {
+          "label": "pSH71 ori (core)",
+          "feature_type": "rep_origin",
+          "so_term": "SO:0000296",
+          "so_name": "origin_of_replication",
+          "start": 300,
+          "end": 813,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15209,6 +15489,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15234,6 +15515,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15259,6 +15541,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15323,7 +15606,7 @@
           ]
         },
         {
-          "label": "lac operator (downstream)",
+          "label": "lac operator",
           "feature_type": "protein_bind",
           "so_term": "SO:0000057",
           "so_name": "operator",
@@ -15381,6 +15664,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15442,6 +15726,7 @@
       ],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -15547,6 +15832,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15586,7 +15872,7 @@
       "so_name": "promoter",
       "synonyms": [
         "ptet",
-        "tet promoter"
+        "Tn10 tetA promoter"
       ],
       "collections": [],
       "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
@@ -15679,6 +15965,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "inducer",
@@ -15797,6 +16084,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15848,6 +16136,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16043,6 +16332,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -16103,6 +16393,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16116,8 +16407,7 @@
       "synonyms": [
         "Pxyl/tet",
         "Pxyl/tetO",
-        "ptet_full",
-        "Tn10 tetA promoter"
+        "ptet_full"
       ],
       "collections": [],
       "description": "Pxyl/tet: the TetR-repressible / anhydrotetracycline (aTc)-inducible promoter of the Staphylococcus aureus pRAB expression vectors (Helle et al. 2011). A consensus sigma-70/sigma-A -35 (TTGACA) / -10 (TATAAT) promoter carrying two Tn10 tet operators (the O2/O1 tandem) - one in the -35/-10 spacer and one downstream of the -10 - so bound TetR occludes RNA polymerase until aTc relieves repression. Sequence of record: pRAB11 (GenBank JN635500.1).",
@@ -16236,6 +16526,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -16308,6 +16599,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "boundaries",
@@ -16361,6 +16653,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16386,6 +16679,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16410,6 +16704,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16434,6 +16729,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16446,8 +16742,7 @@
       "so_name": "CDS",
       "synonyms": [
         "Replication protein",
-        "rep pSC101",
-        "repA101 ts"
+        "rep pSC101"
       ],
       "collections": [],
       "description": "",
@@ -16460,6 +16755,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16484,6 +16780,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16494,9 +16791,7 @@
       "source_accession": null,
       "so_term": "SO:0000316",
       "so_name": "CDS",
-      "synonyms": [
-        "repA"
-      ],
+      "synonyms": [],
       "collections": [],
       "description": "",
       "length": 545,
@@ -16508,6 +16803,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16518,9 +16814,7 @@
       "source_accession": null,
       "so_term": "SO:0000316",
       "so_name": "CDS",
-      "synonyms": [
-        "repA"
-      ],
+      "synonyms": [],
       "collections": [],
       "description": "",
       "length": 351,
@@ -16532,6 +16826,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16557,6 +16852,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16568,7 +16864,6 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
-        "RepC",
         "repC (RSF1010)",
         "RSF1010 RepC",
         "replication protein C"
@@ -16584,6 +16879,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16608,6 +16904,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16632,6 +16929,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16656,6 +16954,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16682,6 +16981,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16729,6 +17029,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -16812,6 +17113,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -16952,6 +17254,7 @@
         5,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -17291,6 +17594,7 @@
         5,
         9
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -17427,6 +17731,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -17481,6 +17786,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "boundaries",
@@ -17533,6 +17839,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -17557,6 +17864,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -17581,6 +17889,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -17661,6 +17970,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "binding_affinity",
@@ -17839,6 +18149,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -17924,6 +18235,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "binding_affinity",
@@ -18147,6 +18459,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -18162,8 +18475,7 @@
         "Superfolder",
         "sfGFP",
         "msfGFP",
-        "GFP (superfolder)",
-        "GFP"
+        "GFP (superfolder)"
       ],
       "collections": [],
       "description": "",
@@ -18176,6 +18488,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -18204,6 +18517,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -18307,6 +18621,7 @@
         7,
         8
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -18603,6 +18918,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -18877,6 +19193,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -19152,6 +19469,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -19176,6 +19494,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -19188,7 +19507,6 @@
       "so_name": "CDS",
       "synonyms": [
         "SpecR",
-        "SmR",
         "spec",
         "aad9",
         "spectinomycin adenyltransferase"
@@ -19204,6 +19522,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -19270,6 +19589,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "affinity_tag",
@@ -19519,6 +19839,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -19901,6 +20222,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -20257,6 +20579,7 @@
         3,
         4
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -20635,6 +20958,7 @@
         6,
         7
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -20990,6 +21314,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21130,6 +21455,7 @@
         11,
         12
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -21353,6 +21679,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "solubility_partner",
@@ -21525,6 +21852,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21549,6 +21877,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21573,6 +21902,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21601,6 +21931,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21628,6 +21959,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21653,6 +21985,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21680,6 +22013,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -21768,6 +22102,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -21999,6 +22334,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -22051,6 +22387,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -22081,6 +22418,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -22108,6 +22446,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -22121,7 +22460,8 @@
       "synonyms": [
         "tetA",
         "tetracycline efflux pump",
-        "tetracycline resistance protein"
+        "tetracycline resistance protein",
+        "tetAC"
       ],
       "collections": [],
       "description": "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro...",
@@ -22186,6 +22526,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -22222,30 +22563,6 @@
       }
     },
     {
-      "name": "tetAC",
-      "slug": "tetAC",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "tetAC"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 396,
-      "protein_length_aa": 396,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "tetO",
       "slug": "tetO",
       "feature_type": "protein_bind",
@@ -22267,6 +22584,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -22305,6 +22623,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -22494,6 +22813,7 @@
         }
       ],
       "main_citations": [],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -22607,6 +22927,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "recognition_specificity",
@@ -22867,6 +23188,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",
@@ -23097,6 +23419,7 @@
       "main_citations": [
         1
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "boundaries",
@@ -23150,6 +23473,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -23175,6 +23499,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -23199,6 +23524,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -23225,6 +23551,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": [],
       "uniprot_import": {
         "fetched": "2026-11-01",
@@ -23436,6 +23763,7 @@
         9,
         10
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "solubility_partner",
@@ -23635,31 +23963,6 @@
       }
     },
     {
-      "name": "ts ori101",
-      "slug": "ts_ori101",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "synonyms": [
-        "oriR101",
-        "ts ori101"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 741,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "functional_claims": []
-    },
-    {
       "name": "Twin_Strep_tag",
       "slug": "Twin_Strep_tag",
       "feature_type": "protein_domain",
@@ -23683,7 +23986,28 @@
       "regulates": [],
       "documented": true,
       "status": "validated",
-      "children": [],
+      "children": [
+        {
+          "label": "Strep-tag II",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 2,
+          "end": 10,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Strep-tag II",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 22,
+          "end": 30,
+          "strand": 1,
+          "citations": []
+        }
+      ],
       "references": [
         {
           "authors": "Schmidt TGM, Batz L, Bonet L, Carl U, Holzapfel G, Kiem K, Matulewicz K, Niermeier D, Schuchardt I, Stanar K",
@@ -23733,6 +24057,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -23870,6 +24195,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -23963,6 +24289,7 @@
         6,
         7
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -24219,6 +24546,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -24244,6 +24572,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -24331,6 +24660,7 @@
         5,
         6
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "affinity_binding",
@@ -24567,6 +24897,7 @@
         4,
         5
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -24765,6 +25096,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -24795,6 +25127,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -24821,6 +25154,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
+      "sourced": false,
       "functional_claims": []
     },
     {
@@ -24887,6 +25221,7 @@
         1,
         2
       ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "function",

@@ -61,6 +61,7 @@ REFERENCE   7
   REMARK    doi:10.1038/s41589-025-02019-7
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ALFA_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..13
                      /label="ALFA_tag"

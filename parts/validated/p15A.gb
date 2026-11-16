@@ -41,6 +41,7 @@ REFERENCE   4
   REMARK    doi:10.1016/0378-1119(91)90541-i
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/p15A
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..546
                      /label="p15A"

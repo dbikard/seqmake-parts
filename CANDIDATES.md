@@ -23,7 +23,7 @@ CloDF13), all 6 markers (Ap/Km/Cm/Sm-Sp/Tc/Gm), T0/T1 terminators, RP4 *oriT*,
 SEVA *tir*, Pm/XylS are all present. No gaps.
 
 ## pZ (Lutz & Bujard 1997, *NAR* 25:1203; Expressys)
-Present: PLtetO-1✓, PA1/O4/O3✓, origins pMB1/p15A/pSC101/ts-ori101✓, tetR/lacI/araC✓.
+Present: PLtetO-1✓, PA1/O4/O3✓, origins pMB1/p15A/pSC101✓, tetR/lacI/araC✓.
 
 | Part | Type | What it is | Sequence source |
 |---|---|---|---|

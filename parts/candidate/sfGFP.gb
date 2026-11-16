@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/sfGFP
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..238
                      /label="sfGFP"
@@ -16,7 +17,6 @@ FEATURES             Location/Qualifiers
                      /synonym="sfGFP"
                      /synonym="msfGFP"
                      /synonym="GFP (superfolder)"
-                     /synonym="GFP"
                      /db_xref="SO:0000316"
 ORIGIN
         1 mskgeelftg vvpilveldg dvnghkfsvr gegegdatng kltlkfictt gklpvpwptl

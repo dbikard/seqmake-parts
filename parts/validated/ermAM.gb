@@ -48,6 +48,7 @@ REFERENCE   5
   REMARK    doi:10.1016/S0022-2836(03)00863-5
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ermAM
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..245
                      /label="ermAM"

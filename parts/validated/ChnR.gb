@@ -17,6 +17,7 @@ REFERENCE   1
   REMARK    doi:10.1128/jb.170.2.781-789.1988
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ChnR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..313
                      /label="ChnR"

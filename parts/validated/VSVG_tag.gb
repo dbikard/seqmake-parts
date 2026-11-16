@@ -48,6 +48,7 @@ REFERENCE   5
   REMARK    doi:10.1128/JVI.00900-18
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/VSVG_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..11
                      /label="VSVG_tag"

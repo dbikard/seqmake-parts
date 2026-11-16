@@ -124,6 +124,21 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
   the inverse ("regulates") on the TF's page, so the link is authored once and
   shown both ways. Composition cross-links (`component` ↔ `sub_region_of`, step 4)
   work the same way.
+- **One name, one part; declare every overlap.** Parts are matched against
+  plasmids, so a library defect becomes a wrong name on every plasmid that
+  carries the span. A name or synonym belongs to one part only. A part that
+  holds another part's whole sequence declares it: a sub-feature labelled with
+  that part's name (or a synonym) over the copy, or a `component` /
+  `sub_region_of` link. Two parts at >= 98% identity over the shorter are one
+  part, or one declares the other a variant with `variant_of="<name>"` on its
+  main feature (`ColE1_AT` is a `variant_of` `ColE1`). A non-coding part holds
+  no gene (no >= 300 bp ORF over 80% of it), a DNA part is >= 20 bp unless it is
+  a real short element (an RBS, an operator), and a part holds only its element.
+  `tools/check_library.py` checks all of this; a part kept on purpose despite a
+  finding goes in its allow-list with the reason. A part with neither a
+  `provenance.sequence_source` nor a reference is **unsourced**: `catalog.json`
+  and `index.json` carry `"sourced": false` and its `.gb` COMMENT reads
+  `Catalog status: candidate, unsourced`.
 - **Declare collection membership on the part.** A part joins a family (a vector
   series, a promoter set, an inducible-sensor kit) with a repeatable
   `collection="<id>"` qualifier on its main feature — membership always lives on
@@ -254,7 +269,8 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
    It runs, in order: the content / requests / link guards, JSON-schema
    validation (`validate_parts.py`), regeneration of every generated artifact
    (`build_gb.py` → `build_catalog.py` → `build_rdf.py`) with a staleness check,
-   the SHACL shapes (`pyshacl`), and the tests (`pytest`). Run any one directly
+   the library quality gate (`check_library.py`), the SHACL shapes (`pyshacl`),
+   and the tests (`pytest`). Run any one directly
    while iterating; run `check_all.py` before you commit.
 8. **Promote to validated.** When the record clears the completeness bar (sourced
    provenance, SO-typed main feature, located sub-features where the part has

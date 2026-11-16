@@ -79,6 +79,40 @@
           "affinity-tags"
         ]
       }
+    },
+    {
+      "type": "protein_domain",
+      "start": 2,
+      "end": 10,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Strep-tag II"
+        ],
+        "parent": [
+          "Twin_Strep_tag"
+        ],
+        "note": [
+          "WSHPQFEK, one Strep-tag II copy (the catalog part Strep_tag)."
+        ]
+      }
+    },
+    {
+      "type": "protein_domain",
+      "start": 22,
+      "end": 30,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "Strep-tag II"
+        ],
+        "parent": [
+          "Twin_Strep_tag"
+        ],
+        "note": [
+          "WSHPQFEK, one Strep-tag II copy (the catalog part Strep_tag)."
+        ]
+      }
     }
   ],
   "provenance": {

@@ -67,6 +67,7 @@ REFERENCE   8
   REMARK    doi:10.1038/s41598-019-56718-y
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/MBP
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..396
                      /label="MBP"

@@ -8,11 +8,13 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PlacIq
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..78
                      /label="PlacIq"
                      /synonym="PlacIq"
                      /synonym="lacIq promoter"
+                     /variant_of="PlacI"
                      /db_xref="SO:0000167"
 ORIGIN
         1 gacaccatcg aatggtgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt

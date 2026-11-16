@@ -51,6 +51,7 @@ REFERENCE   6
   REMARK    doi:10.1016/0003-2697(92)90108-j
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/thrombin_site
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..6
                      /label="thrombin_site"

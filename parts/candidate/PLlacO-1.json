@@ -32,6 +32,23 @@
           "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35 TTGACA / -10 GATACT) with two natural lac operators (LacI-repressible, IPTG-inducible)."
         ]
       }
+    },
+    {
+      "type": "protein_bind",
+      "start": 26,
+      "end": 43,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lacO"
+        ],
+        "parent": [
+          "PLlacO-1"
+        ],
+        "note": [
+          "17 bp lac operator O1 core, identical to the catalog part lacO."
+        ]
+      }
     }
   ],
   "provenance": {

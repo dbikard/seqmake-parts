@@ -80,6 +80,7 @@ REFERENCE   10
   REMARK    doi:10.1016/0378-1119(88)90212-0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pBR322_pas_DnaA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      regulatory      1..183
                      /label="pBR322 pas/DnaA"

@@ -33,6 +33,7 @@ REFERENCE   3
   REMARK    doi:10.1038/s41598-021-84551-9
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PuroR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..199
                      /label="PuroR"

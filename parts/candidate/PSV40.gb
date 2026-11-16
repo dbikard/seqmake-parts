@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PSV40
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..330
                      /label="PSV40"

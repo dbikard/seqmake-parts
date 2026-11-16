@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GATGTCATTATATTGTCACCGCGGCCAGGTATAATTGCACGA",
-  "references": [],
+  "references": [
+    {
+      "authors": "Torres-Bacete J, Lu\u00eds Garc\u00eda J, Nogales J",
+      "title": "A portable library of phosphate-depletion based synthetic promoters for customable and automata control of gene expression in bacteria.",
+      "journal": "Microb Biotechnol. 2021;14(6):2643-2658",
+      "pubmed_id": "33783967",
+      "comment": "doi:10.1111/1751-7915.13808"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -24,12 +32,16 @@
         "synonym": [
           "Pliar17",
           "synthetic Pliar17 promoter"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "Torres-Bacete et al. 2021, Supplementary Figure S8 (sequence in pSEVA2137 vectors): the Pliar 17 variable region plus the shared core, 100% over 42 bp; the first base (G) is the last base of the flanking PacI site"
   },
   "functional_claims": []
 }

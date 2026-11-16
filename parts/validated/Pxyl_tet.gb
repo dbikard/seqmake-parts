@@ -43,13 +43,13 @@ REFERENCE   5
   REMARK    doi:10.1111/1751-7915.13926
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pxyl_tet
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..58
                      /label="Pxyl/tet"
                      /synonym="Pxyl/tet"
                      /synonym="Pxyl/tetO"
                      /synonym="ptet_full"
-                     /synonym="Tn10 tetA promoter"
                      /note="Pxyl/tet: the TetR-repressible / anhydrotetracycline
                      (aTc)-inducible promoter of the Staphylococcus aureus pRAB
                      expression vectors (Helle et al. 2011). A consensus

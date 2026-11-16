@@ -40,6 +40,7 @@ REFERENCE   4
   REMARK    doi:10.1515/hsz-2021-0405
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Myc
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..10
                      /label="Myc"

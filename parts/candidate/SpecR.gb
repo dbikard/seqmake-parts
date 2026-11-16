@@ -8,11 +8,11 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SpecR
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..224
                      /label="SpecR"
                      /synonym="SpecR"
-                     /synonym="SmR"
                      /synonym="spec"
                      /synonym="aad9"
                      /synonym="spectinomycin adenyltransferase"

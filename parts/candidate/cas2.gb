@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/cas2
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..113
                      /label="cas2"

@@ -44,6 +44,7 @@ REFERENCE   5
   REMARK    doi:10.1016/j.jim.2005.01.020
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/S-tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..15
                      /label="S-tag"

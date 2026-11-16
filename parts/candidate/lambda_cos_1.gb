@@ -8,12 +8,18 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_cos_1
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      misc_feature    1..403
-                     /label="lambda cos"
-                     /synonym="cos"
+                     /label="lambda cos region"
                      /synonym="lambda cos region"
                      /synonym="cos site (SEVA)"
+                     /db_xref="SO:0000110"
+     misc_feature    128..351
+                     /label="lambda cos"
+                     /parent="lambda cos region"
+                     /note="The whole of the catalog part lambda cos (224 bp),
+                     identical."
                      /db_xref="SO:0000110"
 ORIGIN
         1 gacatgaggt tgccccgtat tcagtgtcgc tgatttgtat tgtctgaagt tgtttttacg

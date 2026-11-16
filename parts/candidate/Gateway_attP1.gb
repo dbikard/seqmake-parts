@@ -25,6 +25,7 @@ REFERENCE   2
   REMARK    doi:10.1146/annurev.bi.58.070189.004405
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Gateway_attP1
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..232
                      /label="Gateway attP1"
@@ -46,9 +47,10 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /collection="gateway-att-sites"
                      /cognate="Gateway_attB1"
+                     /variant_of="lambda_attP"
      misc_feature    80..94
                      /label="att core / 7 bp overlap (specificity 1)"
-                     /parent="Gateway_attP1"
+                     /parent="Gateway attP1"
                      /note="Common-core crossover region carrying the
                      specificity-1 7 bp overlap (GTACAAAA...); strand exchange
                      by lambda Int occurs across this overlap, and its sequence

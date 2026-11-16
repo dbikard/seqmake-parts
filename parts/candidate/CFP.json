@@ -25,6 +25,9 @@
           "CFP",
           "cyan fluorescent protein",
           "ECFP"
+        ],
+        "variant_of": [
+          "EGFP"
         ]
       }
     }

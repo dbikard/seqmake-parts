@@ -46,6 +46,7 @@ REFERENCE   5
   REMARK    doi:10.1021/acsnano.8b02805
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SnoopTag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..12
                      /label="SnoopTag"

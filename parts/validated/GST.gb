@@ -37,6 +37,7 @@ REFERENCE   4
   REMARK    doi:10.1007/978-1-60761-913-0_14
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/GST
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..218
                      /label="GST"

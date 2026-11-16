@@ -28,6 +28,23 @@
           "B0010-B0012"
         ]
       }
+    },
+    {
+      "type": "terminator",
+      "start": 88,
+      "end": 128,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "T7Te"
+        ],
+        "parent": [
+          "B0015_terminator"
+        ],
+        "note": [
+          "The T7 early terminator TE (catalog part T7Te), identical: the 3' terminator of this B0010-B0012 double terminator."
+        ]
+      }
     }
   ],
   "provenance": {

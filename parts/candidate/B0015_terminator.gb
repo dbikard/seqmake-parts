@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/B0015_terminator
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      terminator      1..129
                      /label="B0015_terminator"
@@ -15,6 +16,13 @@ FEATURES             Location/Qualifiers
                      /synonym="B0015"
                      /synonym="double terminator"
                      /synonym="B0010-B0012"
+                     /db_xref="SO:0000141"
+     terminator      89..128
+                     /label="T7Te"
+                     /parent="B0015_terminator"
+                     /note="The T7 early terminator TE (catalog part T7Te),
+                     identical: the 3' terminator of this B0010-B0012 double
+                     terminator."
                      /db_xref="SO:0000141"
 ORIGIN
         1 ccaggcatca aataaaacga aaggctcagt cgaaagactg ggcctttcgt tttatctgtt

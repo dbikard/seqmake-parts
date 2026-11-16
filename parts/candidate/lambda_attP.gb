@@ -111,6 +111,7 @@ REFERENCE   15
   REMARK    doi:10.1128/microbiolspec.MDNA3-0051-2014
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_attP
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..387
                      /label="lambda_attP"

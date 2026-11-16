@@ -30,6 +30,9 @@
         ],
         "db_xref": [
           "UniProt:Q99ZW2"
+        ],
+        "variant_of": [
+          "cas9"
         ]
       }
     }

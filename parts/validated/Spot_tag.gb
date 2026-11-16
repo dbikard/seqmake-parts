@@ -38,6 +38,7 @@ REFERENCE   4
   REMARK    doi:US20170137467A1
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Spot_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..12
                      /label="Spot_tag"

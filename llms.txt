@@ -10,16 +10,16 @@
 > rather than assert it.
 
 CAVEAT: this is an AI-generated knowledge base under active development. Most of
-the 274 records' claims are analysis_status = "pending" (authored, not
+the 270 records' claims are analysis_status = "pending" (authored, not
 yet independently cross-checked). Prefer "verified" claims, and VERIFY against
 the cited primary literature before relying on any of them.
 
-Contents: 274 parts (76 validated, 198 candidate) carrying 359 functional claims.
+Contents: 270 parts (76 validated, 194 candidate) carrying 359 functional claims.
 
 ## For agents: where to start
 
 1. Discovery index -- one compact line per part (slug, name, synonyms, type, SO
-   role, status, claim count, cognate TFs). Narrow here first:
+   role, status, sourced, claim count, cognate TFs). Narrow here first:
      https://w3id.org/seqmake/parts/index.json
 2. Full manifest -- every part with its sub-features, functional claims, and
    references (no nucleotide sequence; large):

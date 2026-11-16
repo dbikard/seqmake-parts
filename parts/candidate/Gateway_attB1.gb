@@ -18,6 +18,7 @@ REFERENCE   1
   REMARK    doi:10.1101/gr.143000
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Gateway_attB1
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..25
                      /label="Gateway attB1"

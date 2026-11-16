@@ -20,6 +20,7 @@ REFERENCE   1
   REMARK    doi:10.1016/0378-1119(82)90140-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tL3
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..88
                      /label="tL3"

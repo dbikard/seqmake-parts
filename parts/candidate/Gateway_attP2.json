@@ -57,6 +57,9 @@
         ],
         "cognate": [
           "Gateway_attB2"
+        ],
+        "variant_of": [
+          "lambda_attP"
         ]
       }
     },
@@ -70,7 +73,7 @@
           "att core / 7 bp overlap (specificity 2)"
         ],
         "parent": [
-          "Gateway_attP2"
+          "Gateway attP2"
         ],
         "note": [
           "Common-core crossover region carrying the specificity-2 7 bp overlap (GTACAAGA...); strand exchange by lambda Int occurs across this overlap, and its sequence makes attP2 recombine only with the cognate attB2."

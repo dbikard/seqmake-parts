@@ -74,6 +74,7 @@ REFERENCE   8
   REMARK    doi:10.3791/61937
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CBP_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..26
                      /label="CBP_tag"

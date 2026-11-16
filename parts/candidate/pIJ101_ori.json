@@ -28,6 +28,26 @@
           "pIJ101 origin"
         ]
       }
+    },
+    {
+      "type": "CDS",
+      "start": 8,
+      "end": 1379,
+      "strand": -1,
+      "qualifiers": {
+        "label": [
+          "rep (pIJ101)"
+        ],
+        "parent": [
+          "pIJ101 ori"
+        ],
+        "db_xref": [
+          "UniProt:P22406"
+        ],
+        "note": [
+          "The pIJ101 replication initiator Rep: this 1,371 bp ORF (with stop) translates 100% identical to UniProt P22406 (456 aa). It is 61% of the part, which is the pIJ101 replicon (rep plus its origin) rather than the origin alone."
+        ]
+      }
     }
   ],
   "provenance": {

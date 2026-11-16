@@ -24,6 +24,7 @@ REFERENCE   2
   REMARK    doi:10.1016/0092-8674(84)90282-4
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/rop
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..63
                      /label="rop"

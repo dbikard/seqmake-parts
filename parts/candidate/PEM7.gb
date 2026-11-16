@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PEM7
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..67
                      /label="PEM7"

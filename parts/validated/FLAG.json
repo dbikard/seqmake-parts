@@ -98,6 +98,23 @@
           "epitope-tags"
         ]
       }
+    },
+    {
+      "type": "protein_domain",
+      "start": 3,
+      "end": 8,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "enterokinase cleavage site"
+        ],
+        "parent": [
+          "FLAG"
+        ],
+        "note": [
+          "DDDDK, the enterokinase (enteropeptidase) recognition site: the whole of the catalog part enterokinase_site."
+        ]
+      }
     }
   ],
   "provenance": {

@@ -6,13 +6,22 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Torres-Bacete J, Luís García J, Nogales J
+  TITLE     A portable library of phosphate-depletion based synthetic promoters
+            for customable and automata control of gene expression in bacteria.
+  JOURNAL   Microb Biotechnol. 2021;14(6):2643-2658
+   PUBMED   33783967
+  REMARK    doi:10.1111/1751-7915.13808
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pliar17
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..42
                      /label="Pliar17"
                      /synonym="Pliar17"
                      /synonym="synthetic Pliar17 promoter"
+                     /citation=[1]
                      /db_xref="SO:0000167"
 ORIGIN
         1 gatgtcatta tattgtcacc gcggccaggt ataattgcac ga

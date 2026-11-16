@@ -6,8 +6,8 @@
 
 Mirrors ``.github/workflows/validate.yml``: the content / requests / link guards,
 JSON-schema validation, regeneration of every generated artifact (``.gb``,
-``catalog.json``, the RDF) with a staleness check, the SHACL shapes, and the test
-suite. This is the single definition of "the gates" — keep CI in step with it.
+``catalog.json``, the RDF) with a staleness check, the library quality gate, the
+SHACL shapes, and the test suite. This is the single definition of "the gates" — keep CI in step with it.
 """
 from __future__ import annotations
 
@@ -48,6 +48,7 @@ def main() -> int:
         subprocess.run(["git", "diff", "--stat", "--", *GENERATED], cwd=ROOT)
         ok = False
 
+    ok &= run("library quality gate", [PY, "tools/check_library.py"])
     ok &= run("SHACL shapes", ["pyshacl", "-s", "tools/shapes.ttl", "-i", "rdfs", "catalog.ttl"])
     ok &= run("tests", [PY, "-m", "pytest", "tests/", "-q"])
 

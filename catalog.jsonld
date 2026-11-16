@@ -1664,46 +1664,6 @@
       }
     },
     {
-      "@id": "part:Acc3",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "Acc3",
-      "dcterms:title": "Acc3",
-      "rdfs:label": "Acc3",
-      "sbol:displayId": "Acc3",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:Acc3_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000316"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000252"
-      },
-      "skos:altLabel": [
-        "Acc3",
-        "acc3",
-        "gentamicin 3-N-acetyltransferase",
-        "GmR (SEVA)"
-      ]
-    },
-    {
-      "@id": "part:Acc3_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "Acc3_sequence",
-      "sbol:elements": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1208"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
-    },
-    {
       "@id": "part:AlkS",
       "@type": "sbol:Component",
       "cat:curationStatus": "candidate",
@@ -2213,6 +2173,9 @@
       "dcterms:title": "B0015_terminator",
       "rdfs:label": "B0015_terminator",
       "sbol:displayId": "B0015_terminator",
+      "sbol:hasFeature": {
+        "@id": "part:B0015_terminator_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -2231,6 +2194,30 @@
         "double terminator",
         "B0010-B0012"
       ]
+    },
+    {
+      "@id": "part:B0015_terminator_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "T7Te",
+      "sbol:displayId": "B0015_terminator_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:B0015_terminator_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000141"
+      }
+    },
+    {
+      "@id": "part:B0015_terminator_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 128,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:B0015_terminator_sequence"
+      },
+      "sbol:start": 89
     },
     {
       "@id": "part:B0015_terminator_sequence",
@@ -5131,8 +5118,7 @@
       "skos:altLabel": [
         "EGFP",
         "eGFP",
-        "Enhanced GFP",
-        "GFP"
+        "Enhanced GFP"
       ]
     },
     {
@@ -5237,6 +5223,9 @@
       "dcterms:title": "FLAG",
       "rdfs:label": "FLAG",
       "sbol:displayId": "FLAG",
+      "sbol:hasFeature": {
+        "@id": "part:FLAG_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -5401,6 +5390,30 @@
       "cat:agent": "annotate-part-engine",
       "cat:fromDoc": "primary",
       "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:FLAG_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "enterokinase cleavage site",
+      "sbol:displayId": "FLAG_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:FLAG_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:FLAG_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 8,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:FLAG_sequence"
+      },
+      "sbol:start": 4
     },
     {
       "@id": "part:FLAG_sequence",
@@ -6896,7 +6909,9 @@
         "GentR",
         "Gentamicin R",
         "aacC1",
-        "gentamicin acetyltransferase"
+        "gentamicin acetyltransferase",
+        "Acc3",
+        "gentamicin 3-N-acetyltransferase"
       ]
     },
     {
@@ -7633,7 +7648,7 @@
         }
       ],
       "cat:slug": "HK022_attP",
-      "dcterms:description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations.",
+      "dcterms:description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core.",
       "dcterms:references": [
         {
           "@id": "https://identifiers.org/pubmed:2547971"
@@ -7648,8 +7663,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "HK022_attB",
-      "rdfs:label": "HK022_attB",
+      "dcterms:title": "HK022_attP",
+      "rdfs:label": "HK022_attP",
       "sbol:displayId": "HK022_attP",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -8603,7 +8618,6 @@
       },
       "skos:altLabel": [
         "BBa_J23100",
-        "Anderson constitutive promoter",
         "J23100 promoter"
       ]
     },
@@ -8642,7 +8656,6 @@
       },
       "skos:altLabel": [
         "BBa_J23101",
-        "Anderson constitutive promoter",
         "J23101 promoter"
       ]
     },
@@ -8681,7 +8694,6 @@
       },
       "skos:altLabel": [
         "BBa_J23102",
-        "Anderson constitutive promoter",
         "J23102 promoter"
       ]
     },
@@ -8760,7 +8772,6 @@
       },
       "skos:altLabel": [
         "BBa_J23106",
-        "Anderson constitutive promoter",
         "J23106 promoter"
       ]
     },
@@ -8877,7 +8888,6 @@
       },
       "skos:altLabel": [
         "BBa_J23109",
-        "Anderson constitutive promoter",
         "J23109 promoter"
       ]
     },
@@ -8954,7 +8964,6 @@
       },
       "skos:altLabel": [
         "BBa_J23114",
-        "Anderson constitutive promoter",
         "J23114 promoter"
       ]
     },
@@ -8993,7 +9002,6 @@
       },
       "skos:altLabel": [
         "BBa_J23116",
-        "Anderson constitutive promoter",
         "J23116 promoter"
       ]
     },
@@ -9032,7 +9040,6 @@
       },
       "skos:altLabel": [
         "BBa_J23117",
-        "Anderson constitutive promoter",
         "J23117 promoter"
       ]
     },
@@ -11296,7 +11303,7 @@
       },
       "skos:altLabel": [
         "Ptet2",
-        "tet promoter"
+        "pBR322 tet promoter"
       ]
     },
     {
@@ -11681,6 +11688,14 @@
       "dcterms:title": "PA1lacO-1",
       "rdfs:label": "PA1lacO-1",
       "sbol:displayId": "PA1lacO-1",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:PA1lacO-1_feature_0"
+        },
+        {
+          "@id": "part:PA1lacO-1_feature_1"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -11699,6 +11714,54 @@
         "PA1lacO1",
         "A1/lacO-1 promoter"
       ]
+    },
+    {
+      "@id": "part:PA1lacO-1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "lacO",
+      "sbol:displayId": "PA1lacO-1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:PA1lacO-1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:PA1lacO-1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 42,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PA1lacO-1_sequence"
+      },
+      "sbol:start": 26
+    },
+    {
+      "@id": "part:PA1lacO-1_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "lacO",
+      "sbol:displayId": "PA1lacO-1_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:PA1lacO-1_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:PA1lacO-1_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 75,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PA1lacO-1_sequence"
+      },
+      "sbol:start": 59
     },
     {
       "@id": "part:PA1lacO-1_sequence",
@@ -12153,6 +12216,9 @@
       "dcterms:title": "PLlacO-1",
       "rdfs:label": "PLlacO-1",
       "sbol:displayId": "PLlacO-1",
+      "sbol:hasFeature": {
+        "@id": "part:PLlacO-1_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -12171,6 +12237,30 @@
         "PLlacO1",
         "lac/PL hybrid promoter"
       ]
+    },
+    {
+      "@id": "part:PLlacO-1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "lacO",
+      "sbol:displayId": "PLlacO-1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:PLlacO-1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:PLlacO-1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 43,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PLlacO-1_sequence"
+      },
+      "sbol:start": 27
     },
     {
       "@id": "part:PLlacO-1_sequence",
@@ -12727,7 +12817,7 @@
           "@id": "https://identifiers.org/pubmed:3015603"
         }
       ],
-      "dcterms:title": "lac operator (downstream)",
+      "dcterms:title": "lac operator",
       "sbol:displayId": "PT5_lacO_feature_3",
       "sbol:hasLocation": {
         "@id": "part:PT5_lacO_feature_3_range"
@@ -14050,6 +14140,9 @@
       "dcterms:title": "Plac/ara-1",
       "rdfs:label": "Plac/ara-1",
       "sbol:displayId": "Plac_ara-1",
+      "sbol:hasFeature": {
+        "@id": "part:Plac_ara-1_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -14068,6 +14161,30 @@
         "lac/ara-1 promoter",
         "lac/ara hybrid promoter"
       ]
+    },
+    {
+      "@id": "part:Plac_ara-1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "lacO",
+      "sbol:displayId": "Plac_ara-1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:Plac_ara-1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000057"
+      }
+    },
+    {
+      "@id": "part:Plac_ara-1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 93,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:Plac_ara-1_sequence"
+      },
+      "sbol:start": 77
     },
     {
       "@id": "part:Plac_ara-1_sequence",
@@ -14286,6 +14403,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar1",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar1",
       "rdfs:label": "Pliar1",
       "sbol:displayId": "Pliar1",
@@ -14312,6 +14432,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar15",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar15",
       "rdfs:label": "Pliar15",
       "sbol:displayId": "Pliar15",
@@ -14350,6 +14473,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar17",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar17",
       "rdfs:label": "Pliar17",
       "sbol:displayId": "Pliar17",
@@ -14386,7 +14512,7 @@
       "@id": "part:Pliar1_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "Pliar1_sequence",
-      "sbol:elements": "GGTGTCACTAACCGGTCATCGCGGCCAGGTATAATTGCACGA",
+      "sbol:elements": "GCTGTCACTTTCTGGTAACCGCGGCCAGGTATAATTGCACGA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -14400,6 +14526,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar51",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar51",
       "rdfs:label": "Pliar51",
       "sbol:displayId": "Pliar51",
@@ -14438,6 +14567,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar53",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar53",
       "rdfs:label": "Pliar53",
       "sbol:displayId": "Pliar53",
@@ -14476,6 +14608,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pliar70",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:33783967"
+      },
       "dcterms:title": "Pliar70",
       "rdfs:label": "Pliar70",
       "sbol:displayId": "Pliar70",
@@ -15471,7 +15606,7 @@
       },
       "skos:altLabel": [
         "ptet",
-        "tet promoter"
+        "Tn10 tetA promoter"
       ]
     },
     {
@@ -16401,8 +16536,7 @@
       "skos:altLabel": [
         "Pxyl/tet",
         "Pxyl/tetO",
-        "ptet_full",
-        "Tn10 tetA promoter"
+        "ptet_full"
       ]
     },
     {
@@ -17075,7 +17209,6 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "RepC",
         "repC (RSF1010)",
         "RSF1010 RepC",
         "replication protein C"
@@ -19024,7 +19157,6 @@
       },
       "skos:altLabel": [
         "SpecR",
-        "SmR",
         "spec",
         "aad9",
         "spectinomycin adenyltransferase"
@@ -22295,7 +22427,8 @@
       "skos:altLabel": [
         "tetA",
         "tetracycline efflux pump",
-        "tetracycline resistance protein"
+        "tetracycline resistance protein",
+        "tetAC"
       ]
     },
     {
@@ -22901,6 +23034,14 @@
       "dcterms:title": "Twin_Strep_tag",
       "rdfs:label": "Twin_Strep_tag",
       "sbol:displayId": "Twin_Strep_tag",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:Twin_Strep_tag_feature_0"
+        },
+        {
+          "@id": "part:Twin_Strep_tag_feature_1"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -23035,6 +23176,54 @@
       "cat:agent": "annotate-part-engine",
       "cat:fromDoc": "secondary",
       "cat:method": "ai-extraction"
+    },
+    {
+      "@id": "part:Twin_Strep_tag_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Strep-tag II",
+      "sbol:displayId": "Twin_Strep_tag_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:Twin_Strep_tag_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:Twin_Strep_tag_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 10,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:Twin_Strep_tag_sequence"
+      },
+      "sbol:start": 3
+    },
+    {
+      "@id": "part:Twin_Strep_tag_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Strep-tag II",
+      "sbol:displayId": "Twin_Strep_tag_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:Twin_Strep_tag_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:Twin_Strep_tag_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 30,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:Twin_Strep_tag_sequence"
+      },
+      "sbol:start": 23
     },
     {
       "@id": "part:Twin_Strep_tag_sequence",
@@ -24265,10 +24454,7 @@
         "ANT(3'')(9)",
         "AadA",
         "SmR",
-        "SpR",
-        "SpecR",
         "aadA1",
-        "spectinomycin adenyltransferase",
         "streptomycin 3''-adenylyltransferase"
       ]
     },
@@ -27104,7 +27290,6 @@
         "APH(3')-II",
         "NeoR",
         "NeoR/KanR",
-        "kanR",
         "neo",
         "nptII"
       ]
@@ -27243,7 +27428,6 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "KanR",
         "KmR",
         "KanR2",
         "APH(3')-Ia",
@@ -27339,7 +27523,11 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": "lacO"
+      "skos:altLabel": [
+        "lacO",
+        "lac operator",
+        "lac operator O1"
+      ]
     },
     {
       "@id": "part:lacO3",
@@ -28032,7 +28220,8 @@
       "skos:altLabel": [
         "lambda cos",
         "Minimal lambda cos sequence",
-        "cos site"
+        "cos site",
+        "cos"
       ]
     },
     {
@@ -28041,9 +28230,12 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "lambda_cos_1",
-      "dcterms:title": "lambda cos",
-      "rdfs:label": "lambda cos",
+      "dcterms:title": "lambda cos region",
+      "rdfs:label": "lambda cos region",
       "sbol:displayId": "lambda_cos_1",
+      "sbol:hasFeature": {
+        "@id": "part:lambda_cos_1_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -28057,10 +28249,33 @@
         "@id": "https://identifiers.org/SBO:0000251"
       },
       "skos:altLabel": [
-        "cos",
         "lambda cos region",
         "cos site (SEVA)"
       ]
+    },
+    {
+      "@id": "part:lambda_cos_1_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "lambda cos",
+      "sbol:displayId": "lambda_cos_1_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:lambda_cos_1_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:lambda_cos_1_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 351,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:lambda_cos_1_sequence"
+      },
+      "sbol:start": 128
     },
     {
       "@id": "part:lambda_cos_1_sequence",
@@ -29028,6 +29243,9 @@
       "dcterms:title": "pIJ101 ori",
       "rdfs:label": "pIJ101 ori",
       "sbol:displayId": "pIJ101_ori",
+      "sbol:hasFeature": {
+        "@id": "part:pIJ101_ori_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -29046,6 +29264,30 @@
         "Streptomyces ori",
         "pIJ101 origin"
       ]
+    },
+    {
+      "@id": "part:pIJ101_ori_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "rep (pIJ101)",
+      "sbol:displayId": "pIJ101_ori_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:pIJ101_ori_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000316"
+      }
+    },
+    {
+      "@id": "part:pIJ101_ori_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 1379,
+      "sbol:orientation": {
+        "@id": "sbol:reverseComplement"
+      },
+      "sbol:sequence": {
+        "@id": "part:pIJ101_ori_sequence"
+      },
+      "sbol:start": 9
     },
     {
       "@id": "part:pIJ101_ori_sequence",
@@ -29224,45 +29466,6 @@
         "@id": "https://identifiers.org/SBO:0000251"
       },
       "skos:altLabel": "pSC101 ori"
-    },
-    {
-      "@id": "part:pSC101_ori_SEVA",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "pSC101_ori_SEVA",
-      "dcterms:title": "pSC101 ori (SEVA)",
-      "rdfs:label": "pSC101 ori (SEVA)",
-      "sbol:displayId": "pSC101_ori_SEVA",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:pSC101_ori_SEVA_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000296"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000251"
-      },
-      "skos:altLabel": [
-        "pSC101",
-        "pSC101 ori (SEVA)",
-        "pSC101 origin"
-      ]
-    },
-    {
-      "@id": "part:pSC101_ori_SEVA_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "pSC101_ori_SEVA_sequence",
-      "sbol:elements": "ATGTCTGAATTAGTTGTTTTCAAAGCAAATGAACTAGCGATTAGTCGCTATGACTTAACGGAGCATGAAACCAAGCTAATTTTATGCTGTGTGGCACTACTCAACCCCACGATTGAAAACCCTACAAGGAAAGAACGGACGGTATCGTTCACTTATAACCAATACGCTCAGATGATGAACATCAGTAGGGAAAATGCTTATGGTGTATTAGCTAAAGCAACCAGAGAGCTGATGACGAGAACTGTGGAAATCAGGAATCCTTTGGTTAAAGGCTTTGAGATTTTCCAGTGGACAAACTATGCCAAGTTCTCAAGCGAAAAATTAGAATTAGTTTTTAGTGAAGAGATATTGCCTTATCTTTTCCAGTTAAAAAAATTCATAAAATATAATCTGGAACATGTTAAGTCTTTTGAAAACAAATACTCTATGAGGATTTATGAGTGGTTATTAAAAGAACTAACACAAAAGAAAACTCACAAGGCAAATATAGAGATTAGCCTTGATGAATTTAAGTTCATGTTAATGCTTGAAAATAACTACCATGAGTTTAAAAGGCTTAACCAATGGGTTTTGAAACCAATAAGTAAAGATTTAAACACTTACAGCAATATGAAATTGGTGGTTGATAAGCGAGGCCGCCCGACTGATACGTTGATTTTCCAAGTTGAACTAGATAGACAAATGGATCTCGTAACCGAACTTGAGAACAACCAGATAAAAATGAATGGTGACAAAATACCAACAACCATTACATCAGATTCCTACCTACATAACGGACTAAGAAAAACACTACACGATGCTTTAACTGCAAAAATTCAGCTCACCAGTTTTGAGGCAAAATTTTTGAGTGACATGCAAAGTAAGTATGATCTCAATGGTTCGTTCTCATGGCTCACGCAAAAACAACGAACCACACTAGAGAACATACTGGCTAAATACGGAAGGATCTGA",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1207"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
     },
     {
       "@id": "part:pSC101_ori_claim_copy_number",
@@ -29469,6 +29672,9 @@
       "dcterms:title": "pSH71 ori",
       "rdfs:label": "pSH71 ori",
       "sbol:displayId": "pSH71_ori",
+      "sbol:hasFeature": {
+        "@id": "part:pSH71_ori_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -29525,6 +29731,30 @@
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       }
+    },
+    {
+      "@id": "part:pSH71_ori_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "pSH71 ori (core)",
+      "sbol:displayId": "pSH71_ori_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:pSH71_ori_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000296"
+      }
+    },
+    {
+      "@id": "part:pSH71_ori_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 813,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSH71_ori_sequence"
+      },
+      "sbol:start": 301
     },
     {
       "@id": "part:pSH71_ori_sequence",
@@ -30390,8 +30620,7 @@
       },
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000252"
-      },
-      "skos:altLabel": "repA"
+      }
     },
     {
       "@id": "part:repA_IncFII_sequence",
@@ -30425,8 +30654,7 @@
       },
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000252"
-      },
-      "skos:altLabel": "repA"
+      }
     },
     {
       "@id": "part:repA_R6K_sequence",
@@ -30580,8 +30808,7 @@
       },
       "skos:altLabel": [
         "Replication protein",
-        "rep pSC101",
-        "repA101 ts"
+        "rep pSC101"
       ]
     },
     {
@@ -31582,8 +31809,7 @@
         "Superfolder",
         "sfGFP",
         "msfGFP",
-        "GFP (superfolder)",
-        "GFP"
+        "GFP (superfolder)"
       ]
     },
     {
@@ -31845,41 +32071,6 @@
       "sbol:elements": "CGCATCCTCACGATAATATCCGGGTAGGCGCAATCACTTTCGTCTCTACTCCGTTACAAAGCGAGGCTGGGTATTTCCCGGCCTTTCT",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
-    },
-    {
-      "@id": "part:tetAC",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "tetAC",
-      "dcterms:title": "tetAC",
-      "rdfs:label": "tetAC",
-      "sbol:displayId": "tetAC",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:tetAC_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000316"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000252"
-      },
-      "skos:altLabel": "tetAC"
-    },
-    {
-      "@id": "part:tetAC_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "tetAC_sequence",
-      "sbol:elements": "MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHYGVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRIVAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPFLAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSIIGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1208"
       },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32675,44 +32866,6 @@
       "sbol:elements": "MNRTFDRKAYRQELIDAGFSAEDAETIASRTVMRAPRETFQSVGSIVQQATAKIERDSVQLAPPALPAPSAAVERSRRLEQEAAGLAKSMTIDTRGTMTTKKRKTAGEDLAKQVSEAKQAALLKHTKQQIKEMQLSLFDIAPWPDTMRAMPNDTARSALFTTRNKKIPREALQNKVIFHVNKDVKITYTGVELRADDDELVWQQVLEYAKRTPIGEPITFTFYELCQDLGWSINGRYYTKAEECLSRLQATAMGFTSDRVGHLESVSLLHRFRVLDRGKKTSRCQVLIDEEIVVLFAGDHYTKFIWEKYRKLSPTARRMFDYFSSHREPYPLKLETFRLMCGSDSTRVKKWREQVGEACEELRGSGLVEHAWVNDDLVHCKR",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
-      },
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      }
-    },
-    {
-      "@id": "part:ts_ori101",
-      "@type": "sbol:Component",
-      "cat:curationStatus": "candidate",
-      "cat:documented": false,
-      "cat:slug": "ts_ori101",
-      "dcterms:title": "ts ori101",
-      "rdfs:label": "ts ori101",
-      "sbol:displayId": "ts_ori101",
-      "sbol:hasNamespace": {
-        "@id": "https://w3id.org/seqmake/parts/"
-      },
-      "sbol:hasSequence": {
-        "@id": "part:ts_ori101_sequence"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000296"
-      },
-      "sbol:type": {
-        "@id": "https://identifiers.org/SBO:0000251"
-      },
-      "skos:altLabel": [
-        "oriR101",
-        "ts ori101"
-      ]
-    },
-    {
-      "@id": "part:ts_ori101_sequence",
-      "@type": "sbol:Sequence",
-      "sbol:displayId": "ts_ori101_sequence",
-      "sbol:elements": "TCTCAATTGGTCTAGGTGATTTTAATCACTATACCAATTGAGATGGGCTAGTCAATGATAATTACTAGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTCACTACTTTAGTCAGTTCCGCAGTATTACAAAAGGATGTCGCAAACGCTGTTTGCTCCTCTACAAAACAGACCTTAAAACCCTAAAGGCTTAAGTAGCACCCTCGCAAGCTCGGTTGCGGCCGCAATCGGGCAAATCGCTGAATATTCCTTTTGTCTCCGACCATCAGGCACCTGAGTCGCTGTCTTTTTCGTGACATTCAGTTCGCTGCGCTCACGGCTCTGGCAGTGAATGGGGGTAAATGGCACTACAGGCGCCTTTTATGGATTCATGCAAGGAAACTACCCATAATACAAGAAAAGCCCGTCACGGGCTTCTCAGGGCGTTTTATGGCGGGTCTGCTATGTGGTGCTATCTGACTTTTTGCTGTTCAGCAGTTCCTGCCCTCTGATTTTCCAGTCTGACCACTTCGGATTATCCCGTGACAGGTCATTCAGACTGGCTAATGCACCCAGTAAGGCAGCGGTATCATCAAC",
-      "sbol:encoding": {
-        "@id": "https://identifiers.org/edam:format_1207"
       },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

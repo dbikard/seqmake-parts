@@ -8,10 +8,10 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RepC_RSF1010
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..316
                      /label="RepC (RSF1010)"
-                     /synonym="RepC"
                      /synonym="repC (RSF1010)"
                      /synonym="RSF1010 RepC"
                      /synonym="replication protein C"

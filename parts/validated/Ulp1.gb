@@ -64,6 +64,7 @@ REFERENCE   7
   REMARK    doi:10.1110/ps.051812706
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Ulp1
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..219
                      /label="Ulp1"

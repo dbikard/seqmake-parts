@@ -66,6 +66,7 @@ REFERENCE   8
   REMARK    doi:10.1021/bi00004a001
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/FactorXa_site
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..4
                      /label="FactorXa_site"

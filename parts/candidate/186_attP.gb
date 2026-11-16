@@ -55,6 +55,7 @@ REFERENCE   6
   REMARK    doi:10.1093/nar/gkaa655
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/186_attP
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..307
                      /label="186_attP"

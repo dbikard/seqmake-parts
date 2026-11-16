@@ -59,6 +59,7 @@ REFERENCE   7
   REMARK    doi:10.1016/0378-1119(92)90713-y
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tetR_tetA_promoters
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..56
                      /label="tetR/tetA promoters"

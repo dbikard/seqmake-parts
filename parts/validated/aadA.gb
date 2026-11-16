@@ -25,16 +25,14 @@ REFERENCE   2
   REMARK    doi:10.1074/jbc.RA118.003989
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/aadA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..263
                      /label="aadA"
                      /synonym="ANT(3'')(9)"
                      /synonym="AadA"
                      /synonym="SmR"
-                     /synonym="SpR"
-                     /synonym="SpecR"
                      /synonym="aadA1"
-                     /synonym="spectinomycin adenyltransferase"
                      /synonym="streptomycin 3''-adenylyltransferase"
                      /note="aadA is the streptomycin/spectinomycin resistance
                      marker - an aminoglycoside (3'')(9) adenylyltransferase,

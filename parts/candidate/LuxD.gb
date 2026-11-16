@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/LuxD
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..307
                      /label="LuxD"

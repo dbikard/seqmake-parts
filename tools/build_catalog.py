@@ -22,6 +22,7 @@ from pathlib import Path
 from Bio import SeqIO
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from part_json import is_sourced  # noqa: E402
 from so_terms import SO_BY_REG, SO_BY_TYPE, so_for  # noqa: E402
 
 SCHEMA_VERSION = "1.0"
@@ -854,6 +855,7 @@ def build_agent_index(manifest: dict) -> dict:
             "so_term": p["so_term"],
             "so_name": p["so_name"],
             "status": p["status"],
+            "sourced": p["sourced"],
             "n_claims": len(p.get("functional_claims", [])),
         }
         if p.get("synonyms"):
@@ -995,7 +997,7 @@ candidate) carrying {n['n_functional_claims']} functional claims.
 ## For agents: where to start
 
 1. Discovery index -- one compact line per part (slug, name, synonyms, type, SO
-   role, status, claim count, cognate TFs). Narrow here first:
+   role, status, sourced, claim count, cognate TFs). Narrow here first:
      {BASE_IRI}/index.json
 2. Full manifest -- every part with its sub-features, functional claims, and
    references (no nucleotide sequence; large):
@@ -1074,6 +1076,8 @@ def main() -> None:
     # the manifest carries it too -- parity with the RDF graph, for non-RDF
     # programmatic consumers.
     for p in parts:
+        json_path = PARTS_DIR / p["status"] / f"{p['slug']}.json"
+        p["sourced"] = is_sourced(json.loads(json_path.read_text(encoding="utf-8")))
         p["functional_claims"] = _load_claims(p)
         imp = _load_uniprot_import(p)
         if imp:

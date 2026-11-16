@@ -48,6 +48,7 @@ REFERENCE   6
    PUBMED   1820210
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/T7_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..11
                      /label="T7_tag"

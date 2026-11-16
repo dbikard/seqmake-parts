@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/St1Cas9
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..1388
                      /label="St1Cas9"

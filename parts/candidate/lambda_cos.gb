@@ -8,12 +8,14 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_cos
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      misc_feature    1..224
                      /label="lambda cos"
                      /synonym="lambda cos"
                      /synonym="Minimal lambda cos sequence"
                      /synonym="cos site"
+                     /synonym="cos"
                      /db_xref="SO:0000110"
 ORIGIN
         1 cctccacgca cgttgtgata tgtagatgat aatcattatc actttacggg tcctttccgg

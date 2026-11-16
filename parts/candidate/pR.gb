@@ -7,6 +7,7 @@ SOURCE      .
   ORGANISM  .
             .
 COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/pR
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..29
                      /label="pR"

@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/186_integrase
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..336
                      /label="186 integrase"

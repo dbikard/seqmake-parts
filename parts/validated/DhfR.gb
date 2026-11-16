@@ -34,6 +34,7 @@ REFERENCE   3
   REMARK    doi:10.1093/nar/11.15.5147
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/DhfR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..157
                      /label="DhfR"

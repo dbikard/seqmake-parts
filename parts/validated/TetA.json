@@ -66,7 +66,8 @@
         "synonym": [
           "tetA",
           "tetracycline efflux pump",
-          "tetracycline resistance protein"
+          "tetracycline resistance protein",
+          "tetAC"
         ],
         "note": [
           "TetA is the pBR322 class C tetracycline efflux pump, a 396-aa, 12-helix MFS antiporter that confers tetracycline resistance by exporting a tetracycline-divalent-cation complex in exchange for a pro..."

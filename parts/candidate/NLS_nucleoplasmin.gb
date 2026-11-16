@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/NLS_nucleoplasmin
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      protein_domain  1..16
                      /label="NLS (nucleoplasmin)"

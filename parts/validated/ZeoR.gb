@@ -30,6 +30,7 @@ REFERENCE   3
   REMARK    doi:10.1002/j.1460-2075.1994.tb06535.x
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ZeoR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..124
                      /label="ZeoR"

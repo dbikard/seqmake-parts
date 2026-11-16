@@ -33,6 +33,7 @@ REFERENCE   3
   REMARK    doi:10.1126/science.8153629
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PLtetO-1
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..74
                      /label="PLtetO-1"

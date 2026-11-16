@@ -39,11 +39,12 @@ REFERENCE   4
   REMARK    doi:10.1093/nar/25.6.1203
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PtetA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..29
                      /label="PtetA"
                      /synonym="ptet"
-                     /synonym="tet promoter"
+                     /synonym="Tn10 tetA promoter"
                      /note="Natural 29 bp Tn10 PtetA promoter: a sigma-70
                      -35/-10 promoter whose spacer holds the central 17 bp of
                      the tetO1 operator, making transcription

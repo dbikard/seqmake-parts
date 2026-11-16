@@ -8,12 +8,12 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/rep_pSC101
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..316
                      /label="rep pSC101"
                      /synonym="Replication protein"
                      /synonym="rep pSC101"
-                     /synonym="repA101 ts"
                      /db_xref="SO:0000316"
 ORIGIN
         1 mselvvfkan elaisrydlt ehetklilcc vallnptien ptrkertvsf tynqyaqmmn

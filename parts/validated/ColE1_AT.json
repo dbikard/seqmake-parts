@@ -68,6 +68,9 @@
         "db_xref": [
           "SO:0000296",
           "GenBank:X03174"
+        ],
+        "variant_of": [
+          "ColE1"
         ]
       }
     },

@@ -9,6 +9,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pSH71_ori
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      rep_origin      1..813
                      /label="pSH71 ori"
@@ -18,6 +19,12 @@ FEATURES             Location/Qualifiers
                      /note="Origin of replication from Lactococcus plasmid pSH71
                      (also in pLZ12/pWV01 family). Rolling-circle replication,
                      requires RepA."
+                     /db_xref="SO:0000296"
+     rep_origin      301..813
+                     /label="pSH71 ori (core)"
+                     /parent="pSH71 ori"
+                     /note="The whole of the catalog part pSH71 ori (core),
+                     identical."
                      /db_xref="SO:0000296"
 ORIGIN
         1 tcgatttttt attaaaacgt ctcaaaatcg tttctgagac gttttagcgt ttatttcgtt

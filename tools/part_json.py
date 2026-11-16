@@ -162,21 +162,40 @@ def json_to_record(data: dict) -> SeqRecord:
     return rec
 
 
-def gb_text_from_json(data: dict) -> str:
+def is_sourced(data: dict) -> bool:
+    """A part is *sourced* when its record names where its sequence comes from
+    (``provenance.sequence_source``) or cites a reference. An unsourced part is a
+    bare candidate sequence: usable to find a span, not authoritative for its name."""
+    src = str((data.get("provenance") or {}).get("sequence_source") or "")
+    refs = [r for r in data.get("references") or []
+            if r.get("title") or r.get("pubmed_id") or r.get("authors")]
+    return bool(src and not src.startswith("FILL IN")) or bool(refs)
+
+
+def gb_text_from_json(data: dict, status: str | None = None) -> str:
     """The GenBank text for a part-JSON dict (with the catalog SOURCE convention).
 
     Stamps the part's permanent catalog IRI into the record COMMENT so the
     downloadable .gb is self-identifying. The IRI is derived from the slug (so it
-    is not stored in the JSON spine, only projected here)."""
+    is not stored in the JSON spine, only projected here). With ``status`` (the
+    part's directory, ``validated`` or ``candidate``) a second COMMENT line
+    carries the curation status and whether the sequence is sourced, e.g.
+    ``Catalog status: candidate, unsourced``, so a consumer of the .gb alone
+    can tell a curated part from a bare candidate."""
     rec = json_to_record(data)
     slug = data.get("slug") or rec.id or rec.name
     if slug:
-        rec.annotations["comment"] = (
-            f"Permanent catalog identifier: {PART_IRI_BASE}{slug}")
+        lines = [f"Permanent catalog identifier: {PART_IRI_BASE}{slug}"]
+        if status:
+            lines.append(f"Catalog status: {status}, "
+                         f"{'sourced' if is_sourced(data) else 'unsourced'}")
+        rec.annotations["comment"] = "\n".join(lines)
     buf = io.StringIO()
     SeqIO.write([rec], buf, "genbank")
     return buf.getvalue().replace(_BIO_SOURCE, _CANON_SOURCE)
 
 
 def write_gb_from_json(data: dict, path: Path) -> None:
-    path.write_text(gb_text_from_json(data), encoding="utf-8")
+    """Write the .gb; the status is the part's directory (validated/candidate)."""
+    status = path.parent.name if path.parent.name in ("validated", "candidate") else None
+    path.write_text(gb_text_from_json(data, status), encoding="utf-8")

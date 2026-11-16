@@ -21,6 +21,7 @@ REFERENCE   2
   REMARK    doi:10.1073/pnas.70.12.3581
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Plac
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..57
                      /label="Plac"
