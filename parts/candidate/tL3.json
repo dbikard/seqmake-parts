@@ -3,19 +3,27 @@
   "slug": "tL3",
   "locus": "tL3",
   "id": "tL3",
-  "description": "tL3",
+  "description": "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "AATGGCGATGACGCATCCTCACGATAATATCCGGGTAGGCGCAATCACTTTCGTCTCTACTCCGTTACAAAGCGAGGCTGGGTATTTCCCGGCCTTTCTGTTATCCGAAATCCACTGAAAGCACAGCGGCTGGCTGAGGAGATAAATAATAAACGAGGGGCTGTATGCACAAAGCATCTTCTGTTGAGTTAAGAACGAGTATCGAGATGGCACATAGCCTTGCTCAAATTGGAATCAGGTTTGTGCCAATACCAGTAGAAACAGACGAAGAA",
-  "references": [],
+  "sequence": "CGCATCCTCACGATAATATCCGGGTAGGCGCAATCACTTTCGTCTCTACTCCGTTACAAAGCGAGGCTGGGTATTTCCCGGCCTTTCT",
+  "references": [
+    {
+      "authors": "Luk KC, Szybalski W",
+      "title": "Transcription termination: sequence and function of the rho-independent tL3 terminator in the major leftward operon of bacteriophage lambda.",
+      "journal": "Gene. 1982;17(3):247-58",
+      "pubmed_id": "6213446",
+      "comment": "doi:10.1016/0378-1119(82)90140-8"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
       "start": 0,
-      "end": 272,
+      "end": 88,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -23,13 +31,100 @@
         ],
         "synonym": [
           "tL3",
-          "tL3 terminator"
+          "tL3 terminator",
+          "lambda tL3 terminator",
+          "λ tL3 terminator"
+        ],
+        "note": [
+          "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end."
+        ],
+        "db_xref": [
+          "SO:0000141",
+          "GenBank:J02459"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "stem_loop",
+      "start": 63,
+      "end": 84,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tL3 hairpin"
+        ],
+        "parent": [
+          "tL3"
+        ],
+        "note": [
+          "GC-rich hairpin of tL3: two 8-bp arms (AGGCUGGG / CCCGGCCU, one G-U pair) around a 5-nt loop (UAUUU), as described by Luk & Szybalski 1982 (\"2X8-bp symmetry ... with a 5-bp intervening loop\"). Arms located on the sequence by that description."
+        ],
+        "db_xref": [
+          "SO:0000313"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 81,
+      "end": 88,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "tL3 3' end (CCUUUCU)"
+        ],
+        "parent": [
+          "tL3"
+        ],
+        "note": [
+          "Pyrimidine-rich tract transcribed into the CCUUUCU-OH 3' end of the terminated RNA; the termination point follows the last U (S1-mapped, Luk & Szybalski 1982). It overlaps the hairpin's second arm by 3 bp."
+        ],
+        "db_xref": [
+          "SO:0000110"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "Bacteriophage lambda tL3; lambda (J02459 / NC_001416) 31262-31347, complement, plus 2 bp (part 43-44) not in the lambda reference but present in the lab's tL3-carrying plasmids. The 3' end is base 31262, where NC_001416 ends the tL3-terminated pL mRNA. Re-delimited (2026-11) from a 272 bp record (lambda 31089-31358): the old part also carried the last 11 bp of exo (with its stop codon) and the 173 bp past the termination point (lambda 31089-31261, coding DNA of orf60a/orf63)."
   },
-  "functional_claims": []
+  "functional_claims": [
+    {
+      "id": "boundaries",
+      "type": "origin",
+      "label": "Spans lambda 31262-31347 (minus strand): from the base after the exo stop codon to the termination point after the CCUUUCU 3' end, which Luk & Szybalski mapped by S1 nuclease (the end is experimental). The start is not mapped by truncation: it is where the conventional \"lambda tL3 terminator\" annotation starts, 63 bp upstream of the hairpin (provisional).",
+      "value": {
+        "reference": "GenBank J02459",
+        "span": "31262-31347 (complement)",
+        "length_bp": 88,
+        "start": "after the exo stop codon",
+        "end": "termination point (S1-mapped)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "6213446",
+        "quote": "an 81% G+C-rich region of 2X8-bp symmetry (\"stem\") with a 5-bp intervening \"loop\", partially overlapping and followed by a sequence transcribed into the pyrimidine-rich CCUUUCU-OH 3' terminus of the RNA. The termination point that follows the last U was determined by the S1 mapping technique.",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment to GenBank NC_001416 + PMID 6213446 abstract",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    }
+  ]
 }

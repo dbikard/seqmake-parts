@@ -41,3 +41,5 @@ access barrier, and the **exact filename** to save it as in `sourcing/incoming/`
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 30125270 --doi 10.1038/nbt.4201`
 - [ ] **PMID 6759660 / doi:10.1016/0022-2836(82)90276-5** — Plasmid R6K DNA replication. I. Complete nucleotide sequence of an autonomously replicating segment — unblocks: R6Kgamma_ori/boundaries — barrier: not-in-pmc
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 6759660 --doi 10.1016/0022-2836(82)90276-5`
+- [ ] **PMID 6279609 / doi:10.1016/s0021-9258(19)83828-0** — Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA — unblocks: pBR322_pas_DnaA/boundaries (confirm the pBR322 numbering of the 2353-2416 pas limits) — barrier: not-in-pmc
+      full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 6279609 --doi 10.1016/s0021-9258(19)83828-0`

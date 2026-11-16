@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 275,
-  "n_validated": 75,
-  "n_candidate": 200,
-  "n_functional_claims": 346,
+  "n_parts": 274,
+  "n_validated": 76,
+  "n_candidate": 198,
+  "n_functional_claims": 359,
   "parts": [
     {
       "slug": "186_integrase",
@@ -636,9 +636,11 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
-        "CloDF13 ori"
+        "CloDF13 ori",
+        "CDF ori",
+        "CloDF13 origin"
       ]
     },
     {
@@ -681,7 +683,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 1,
+      "n_claims": 2,
       "synonyms": [
         "ColE1",
         "ColE1 ori",
@@ -700,7 +702,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 2,
+      "n_claims": 3,
       "synonyms": [
         "ColE1_AT",
         "ColE1 ori (cloning-vector form)",
@@ -2078,37 +2080,12 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
-      "n_claims": 1,
+      "n_claims": 3,
       "synonyms": [
-        "p15A"
-      ]
-    },
-    {
-      "slug": "p15A_ori",
-      "name": "p15A ori",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "origin",
-        "p15A ori"
-      ]
-    },
-    {
-      "slug": "p15A_ori_pSU38",
-      "name": "p15A ori (pSU38)",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "p15A ori",
+        "p15A",
+        "p15A origin",
         "P15A rep",
+        "p15A ori (pSU38)",
         "p15A origin (pSU38)"
       ]
     },
@@ -2232,6 +2209,16 @@
         "P3",
         "beta-lactamase promoter"
       ]
+    },
+    {
+      "slug": "pBR322_pas_DnaA",
+      "name": "pBR322 pas/DnaA",
+      "feature_type": "regulatory",
+      "kind": "dna",
+      "so_term": "SO:0001682",
+      "so_name": "replication_regulatory_region",
+      "status": "validated",
+      "n_claims": 6
     },
     {
       "slug": "Pcat",
@@ -3298,9 +3285,11 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
-        "RSF ori"
+        "RSF ori",
+        "RSF1030 ori",
+        "RSF1030 origin"
       ]
     },
     {
@@ -3956,10 +3945,12 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "n_claims": 0,
+      "n_claims": 1,
       "synonyms": [
         "tL3",
-        "tL3 terminator"
+        "tL3 terminator",
+        "lambda tL3 terminator",
+        "\u03bb tL3 terminator"
       ]
     },
     {

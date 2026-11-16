@@ -1,30 +1,70 @@
-LOCUS       CloDF13_ori              739 bp    DNA              UNK 01-JAN-1980
-DEFINITION  CloDF13 ori.
+LOCUS       CloDF13_ori              630 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The CloDF13 (ColE1-family) origin of replication: the 630 bp region
+            from the RNA II promoter -35 to the RNA-to-DNA transition, with the
+            RNA I / RNA II antisense pair that sets copy number; the origin of
+            the pCDF/CDFDuet vectors, compatible with ColE1/pMB1 and p15A
+            origins..
 ACCESSION   CloDF13_ori
 VERSION     CloDF13_ori
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Stuitje AR, Veltkamp E, Maat J, Heyneker HL
+  TITLE     The nucleotide sequence surrounding the replication origin of the
+            cop3 mutant of the bacteriocinogenic plasmid Clo DF13.
+  JOURNAL   Nucleic Acids Res. 1980;8(7):1459-73
+   PUBMED   6253936
+  REMARK    doi:10.1093/nar/8.7.1459
+REFERENCE   2
+  AUTHORS   Nijkamp HJ, de Lang R, Stuitje AR, van den Elzen PJ, Veltkamp E, van
+            Putten AJ
+  TITLE     The complete nucleotide sequence of the bacteriocinogenic plasmid
+            CloDF13.
+  JOURNAL   Plasmid. 1986;16(2):135-60
+   PUBMED   3749334
+  REMARK    doi:10.1016/0147-619x(86)90072-7
+REFERENCE   3
+  AUTHORS   Selzer G, Som T, Itoh T, Tomizawa J
+  TITLE     The origin of replication of plasmid p15A and comparative studies on
+            the nucleotide sequences around the origin of related plasmids.
+  JOURNAL   Cell. 1983;32(1):119-29
+   PUBMED   6186390
+  REMARK    doi:10.1016/0092-8674(83)90502-0
+REFERENCE   4
+  AUTHORS   Tomizawa JI, Ohmori H, Bird RE
+  TITLE     Origin of replication of colicin E1 plasmid DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
+   PUBMED   325558
+  REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CloDF13_ori
 FEATURES             Location/Qualifiers
-     rep_origin      1..739
+     rep_origin      1..630
                      /label="CloDF13 ori"
                      /synonym="CloDF13 ori"
+                     /synonym="CDF ori"
+                     /synonym="CloDF13 origin"
+                     /note="The CloDF13 (ColE1-family) origin of replication:
+                     the 630 bp region from the RNA II promoter -35 to the
+                     RNA-to-DNA transition, with the RNA I / RNA II antisense
+                     pair that sets copy number; the origin of the pCDF/CDFDuet
+                     vectors, compatible with ColE1/pMB1 and p15A origins."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:X04466"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
-        1 gatcaaagga tcttcttgag atcctttttt tctgcgcgta atcttttgcc ctgtaaacga
-       61 aaaaaccacc tggggaggtg gtttgatcga aggttaagtc agttggggaa ctgcttaacc
-      121 gtggtaactg gctttcgcag agcacagcaa ccaaatctgt ccttccagtg tagccggact
-      181 ttggcgcaca cttcaagagc aaccgcgtgt ttagctaaac aaatcctctg cgaactccca
-      241 gttaccaatg gctgctgcca gtggcgtttt accgtgcttt tccgggttgg actcaagtga
-      301 acagttaccg gataaggcgc agcagtcggg ctgaacgggg agttcttgct tacagcccag
-      361 cttggagcga acgacctaca ccgagccgag ataccagtgt gtgagctatg agaaagcgcc
-      421 acacttcccg taagggagaa aggcggaaca ggtatccggt aaacggcagg gtcggaacag
-      481 gagagcgcaa gagggagcga cccgccggaa acggtgggga tctttaagtc ctgtcgggtt
-      541 tcgcccgtac tgtcagattc atggttgagc ctcacggctc ccacagatgc accggaaaag
-      601 cgtctgttta tgtgaactct ggcaggaggg cggagcctat ggaaaaacgc caccggcgcg
-      661 gccctgctgt tttgcctcac atgttagtcc cctgcttatc cacggaatct gtgggtaact
-      721 ttgtatgtgt ccgcagcgc
+        1 ttgagatcct ttttttctgc gcgtaatctt ttgccctgta aacgaaaaaa ccacctgggg
+       61 aggtggtttg atcgaaggtt aagtcagttg gggaactgct taaccgtggt aactggcttt
+      121 cgcagagcac agcaaccaaa tctgtccttc cagtgtagcc ggactttggc gcacacttca
+      181 agagcaaccg cgtgtttagc taaacaaatc ctctgcgaac tcccagttac caatggctgc
+      241 tgccagtggc gttttaccgt gcttttccgg gttggactca agtgaacagt taccggataa
+      301 ggcgcagcag tcgggctgaa cggggagttc ttgcttacag cccagcttgg agcgaacgac
+      361 ctacaccgag ccgagatacc agtgtgtgag ctatgagaaa gcgccacact tcccgtaagg
+      421 gagaaaggcg gaacaggtat ccggtaaacg gcagggtcgg aacaggagag cgcaagaggg
+      481 agcgacccgc cggaaacggt ggggatcttt aagtcctgtc gggtttcgcc cgtactgtca
+      541 gattcatggt tgagcctcac ggctcccaca gatgcaccgg aaaagcgtct gtttatgtga
+      601 actctggcag gagggcggag cctatggaaa
 //

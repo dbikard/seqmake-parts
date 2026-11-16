@@ -3,13 +3,13 @@
   "slug": "ColE1",
   "locus": "ColE1",
   "id": "ColE1",
-  "description": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+  "description": "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "GAAAAGATCAAAGGATCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG",
+  "sequence": "TTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGCTTGCAAACAAAAAAACCACCGCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAACTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGCCACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCCTGTTACCAGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGTTACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCCAGCTTGGAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCACGCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAGAGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTTCGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATGGAAA",
   "references": [
     {
       "authors": "Itoh T, Tomizawa J",
@@ -31,13 +31,27 @@
       "journal": "Proc Natl Acad Sci U S A. 1981;78(3):1421-5",
       "pubmed_id": "6165011",
       "comment": "doi:10.1073/pnas.78.3.1421"
+    },
+    {
+      "authors": "Marians KJ, Soeller W, Zipursky SL",
+      "title": "Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA.",
+      "journal": "J Biol Chem. 1982;257(10):5656-62",
+      "pubmed_id": "6279609",
+      "comment": "doi:10.1016/S0021-9258(19)83828-0"
+    },
+    {
+      "authors": "Tomizawa JI, Ohmori H, Bird RE",
+      "title": "Origin of replication of colicin E1 plasmid DNA.",
+      "journal": "Proc Natl Acad Sci U S A. 1977;74(5):1865-9",
+      "pubmed_id": "325558",
+      "comment": "doi:10.1073/pnas.74.5.1865"
     }
   ],
   "features": [
     {
       "type": "rep_origin",
       "start": 0,
-      "end": 792,
+      "end": 589,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -53,7 +67,7 @@
           "ColE1-derived ori"
         ],
         "note": [
-          "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number."
+          "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number."
         ],
         "db_xref": [
           "SO:0000296",
@@ -63,8 +77,8 @@
     },
     {
       "type": "regulatory",
-      "start": 20,
-      "end": 26,
+      "start": 0,
+      "end": 6,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -90,8 +104,8 @@
     },
     {
       "type": "regulatory",
-      "start": 41,
-      "end": 47,
+      "start": 21,
+      "end": 27,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -117,8 +131,8 @@
     },
     {
       "type": "regulatory",
-      "start": 197,
-      "end": 203,
+      "start": 177,
+      "end": 183,
       "strand": -1,
       "qualifiers": {
         "label": [
@@ -144,8 +158,8 @@
     },
     {
       "type": "regulatory",
-      "start": 175,
-      "end": 181,
+      "start": 155,
+      "end": 161,
       "strand": -1,
       "qualifiers": {
         "label": [
@@ -172,7 +186,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "ColE1/pMB1-family origin; 100% identical to GenBank J01749 (pBR322; Sutcliffe 1979) and L08752 (pUC18; Yanisch-Perron 1985). Refined 2 bp (positions 412-413) to these canonical deposits. The pUC- and pBR322-type origins are sequence-identical across this fragment; the high- vs medium-copy difference is set by the separate rop part, not this sequence."
+    "sequence_source": "ColE1/pMB1-family origin; 100% identical to GenBank J01749 (pBR322; Sutcliffe 1979) and L08752 (pUC18; Yanisch-Perron 1985). Refined 2 bp (positions 393-394 (1-based)) to these canonical deposits. The pUC- and pBR322-type origins are sequence-identical across this fragment; the high- vs medium-copy difference is set by the separate rop part, not this sequence. Re-delimited (2026-11) from a 792 bp fragment to pBR322 (J01749) 2534-3122, minus strand: the old fragment also carried 20 bp of backbone on the bla side and the 183 bp past the RNA-to-DNA transition (pBR322 2351-2533, carrying the L-strand primosome assembly site and a DnaA box), now the separate part pBR322_pas_DnaA."
   },
   "functional_claims": [
     {
@@ -186,7 +200,7 @@
       "ontology": {},
       "source": {
         "pmid": "6156450",
-        "quote": "The ColE1/pMB1-family origin-of-replication control region: a 792 bp fragment carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
+        "quote": "The ColE1/pMB1-family origin of replication: the 589 bp region from the RNA II promoter -35 to the DNA replication start, carrying the convergent RNA I / RNA II promoter pair that sets plasmid copy number.",
         "quote_source": "catalog-doc"
       },
       "provenance": {
@@ -195,6 +209,33 @@
         "agent": "ai-assistant"
       },
       "confidence": "high",
+      "analysis_status": "pending",
+      "cross_checked": false,
+      "supersedes": null
+    },
+    {
+      "id": "boundaries",
+      "type": "origin",
+      "label": "Spans pBR322 2534-3122 (minus strand): from the RNA II promoter -35 to the RNA-to-DNA transition. The part ends at pBR322 2534, inside the run of five A residues where the primer RNA turns into DNA, one base before the three consecutive nucleotides (dA, dA, dC; pBR322 2533-2531) at which DNA synthesis starts. The ColE1 deposit J01566 marks this start at its base 1197 (+/- 1), = pBR322 2532; J01749's uncited rep_origin at 2535 is 2 bp upstream.",
+      "value": {
+        "reference": "GenBank J01749",
+        "span": "2534-3122 (complement)",
+        "length_bp": 589,
+        "start": "RNA II promoter -35",
+        "end": "RNA-to-DNA transition: the base before the DNA start nucleotides (pBR322 2533-2531)"
+      },
+      "ontology": {},
+      "source": {
+        "pmid": "325558",
+        "quote": "The site is one of three consecutive nucleotides, dA, dA, and dC, located at a unique position. ... The transition from the primer RNA to DNA occurs in a region consisting of a segment of five A residues.",
+        "quote_source": "primary"
+      },
+      "provenance": {
+        "method": "bioinformatic-alignment",
+        "from": "pairwise alignment to GenBank J01749 and J01566 (rep_origin 1197) + PMID 325558 and 6156450 abstracts",
+        "agent": "ai-assistant"
+      },
+      "confidence": "medium",
       "analysis_status": "pending",
       "cross_checked": false,
       "supersedes": null

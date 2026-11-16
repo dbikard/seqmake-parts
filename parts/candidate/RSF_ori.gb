@@ -1,30 +1,59 @@
-LOCUS       RSF_ori                  750 bp    DNA              UNK 01-JAN-1980
-DEFINITION  RSF ori.
+LOCUS       RSF_ori                  563 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The RSF1030 (ColE1-family) origin of replication: the 563 bp region
+            from the RNA II promoter -35 to the RNA-to-DNA transition, with the
+            RNA I / RNA II antisense pair that sets copy number; compatible with
+            ColE1/pMB1 and p15A origins..
 ACCESSION   RSF_ori
 VERSION     RSF_ori
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Som T, Tomizawa J
+  TITLE     Origin of replication of Escherichia coli plasmid RSF 1030.
+  JOURNAL   Mol Gen Genet. 1982;187(3):375-83
+   PUBMED   6294468
+  REMARK    doi:10.1007/BF00332615
+REFERENCE   2
+  AUTHORS   Selzer G, Som T, Itoh T, Tomizawa J
+  TITLE     The origin of replication of plasmid p15A and comparative studies on
+            the nucleotide sequences around the origin of related plasmids.
+  JOURNAL   Cell. 1983;32(1):119-29
+   PUBMED   6186390
+  REMARK    doi:10.1016/0092-8674(83)90502-0
+REFERENCE   3
+  AUTHORS   Tomizawa JI, Ohmori H, Bird RE
+  TITLE     Origin of replication of colicin E1 plasmid DNA.
+  JOURNAL   Proc Natl Acad Sci U S A. 1977;74(5):1865-9
+   PUBMED   325558
+  REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RSF_ori
 FEATURES             Location/Qualifiers
-     rep_origin      1..750
+     rep_origin      1..563
                      /label="RSF ori"
                      /synonym="RSF ori"
+                     /synonym="RSF1030 ori"
+                     /synonym="RSF1030 origin"
+                     /note="The RSF1030 (ColE1-family) origin of replication:
+                     the 563 bp region from the RNA II promoter -35 to the
+                     RNA-to-DNA transition, with the RNA I / RNA II antisense
+                     pair that sets copy number; compatible with ColE1/pMB1 and
+                     p15A origins."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:J01784"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
-        1 cttccgcttc ctcgctcact gactcgctac gctcggtcgt tcgactgcgg cgagcggtgt
-       61 cagctcactc aaaagcggta atacggttat ccacagaatc aggggataaa gccggaaaga
-      121 acatgtgagc aaaaagcaaa gcaccggaag aagccaacgc cgcaggcgtt tttccatagg
-      181 ctccgccccc ctgacgagca tcacaaaaat cgacgctcaa gccagaggtg gcgaaacccg
-      241 acaggactat aaagatacca ggcgtttccc cctggaagct ccctcgtgcg ctctcctgtt
-      301 ccgaccctgc cgcttaccgg atacctgtcc gcctttctcc cttcgggaag cgtggcgctt
-      361 tctcatagct cacgctgttg gtatctcagt tcggtgtagg tcgttcgctc caagctgggc
-      421 tgtgtgcacg aaccccccgt tcagcccgac cgctgcgcct tatccggtaa ctatcgtctt
-      481 gagtccaacc cggtaagaca cgacttatcg ccactggcag cagccattgg taactgattt
-      541 agaggacttt gtcttgaagt tatgcacctg ttaaggctaa actgaaagaa cagattttgg
-      601 tgagtgcggt cctccaaccc acttaccttg gttcaaagag ttggtagctc agcgaacctt
-      661 gagaaaacca ccgttggtag cggtggtttt tctttattta tgagatgatg aatcaatcgg
-      721 tctatcaagt caacgaacag ctattccgtt
+        1 tttccatagg ctccgccccc ctgacgagca tcacaaaaat cgacgctcaa gccagaggtg
+       61 gcgaaacccg acaggactat aaagatacca ggcgtttccc cctggaagct ccctcgtgcg
+      121 ctctcctgtt ccgaccctgc cgcttaccgg atacctgtcc gcctttctcc cttcgggaag
+      181 cgtggcgctt tctcatagct cacgctgttg gtatctcagt tcggtgtagg tcgttcgctc
+      241 caagctgggc tgtgtgcacg aaccccccgt tcagcccgac cgctgcgcct tatccggtaa
+      301 ctatcgtctt gagtccaacc cggtaagaca cgacttatcg ccactggcag cagccattgg
+      361 taactgattt agaggacttt gtcttgaagt tatgcacctg ttaaggctaa actgaaagaa
+      421 cagattttgg tgagtgcggt cctccaaccc acttaccttg gttcaaagag ttggtagctc
+      481 agcgaacctt gagaaaacca ccgttggtag cggtggtttt tctttattta tgagatgatg
+      541 aatcaatcgg tctatcaagt caa
 //

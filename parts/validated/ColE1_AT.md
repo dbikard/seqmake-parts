@@ -1,10 +1,14 @@
 # ColE1_AT
 
 The common **cloning-vector form** of the ColE1/pMB1 origin: identical to the canonical
-pMB1 replication origin except for a benign 2-bp difference (positions 412–413) in the
+589 bp pMB1 replication origin except for a benign 2-bp difference (positions 393–394) in the
 RNA I / RNA II control region. This is the version that a large fraction of everyday
 cloning vectors actually carry, so it is documented in its own right rather than treated
 as an error in the canonical sequence.
+
+Like `ColE1`, the part ends at the RNA-to-DNA transition. pBR322's lagging-strand priming
+signals (a primosome assembly site and a DnaA box) lie just past its 3' end and are a separate part,
+[`pBR322_pas_DnaA`](pBR322_pas_DnaA.md); many vectors carry only part of them or none.
 
 ## Origin
 
@@ -12,7 +16,7 @@ ColE1/pMB1-family origins set plasmid copy number through a pair of convergent t
 — the RNA II pre-primer and the antisense RNA I (see the [`ColE1`](ColE1.md) part for the
 canonical sequence and the control mechanism). The `AT` form here differs from the
 canonical pBR322 (GenBank J01749, 1981) / pUC18 (L08752, 1985) origin by 2 bp at
-positions 412–413. A date-bracketed search of deposited sequences finds this exact form in
+positions 393–394. A date-bracketed search of deposited sequences finds this exact form in
 **140+ vectors going back to at least 1985** — the earliest being a P-element
 transformation vector (GenBank X01803, Nov 1985), and the oldest cleanly-named cloning
 vector being **pEX2** (X03174, 1986).
