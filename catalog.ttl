@@ -1359,13 +1359,11 @@ part:Pbla a sbol:Component ;
 
 part:Pcat a sbol:Component ;
     rdfs:label "Pcat" ;
-    dcterms:description "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps the transcription start or the -35/-10 of this promoter. The 5' end is set one base earlier than the window this part carried before, so that the TTGACA-like hexamer TTGATC at V00622 140-145 — a -35 by consensus, not by mapping — is whole. The 3' end stops 27 bp before the cat start codon: González-Prieto et al. 2015 report an IS10 target (TACCGGGCG, bases 52-60 here) 22 bp downstream of the promoter's -10 element and 53 bp upstream of the cat ATG, which places the -10 around V00622 163-169 and leaves the Shine-Dalgarno region, and the catalog part RBS 23400, outside this window. The 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. The -35 and -10 boxes below are the pair that carries the canonical 17 bp spacing (ACGTAA at 10-15, CATAAT at 33-38, 1-based), which is also the pair older automated annotations mark on cat-carrying vectors. They are placed by consensus, not mapped: a second reading of the distance González-Prieto et al. report would put the -10 nine bases earlier, with TTGATC at 1-6 as the -35. Both readings are provisional." ;
+    dcterms:description "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region and the catalog part RBS 23400; the 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part." ;
     dcterms:references pubmed:26375469,
         pubmed:390403 ;
     dcterms:title "Pcat" ;
     sbol:displayId "Pcat" ;
-    sbol:hasFeature part:Pcat_feature_0,
-        part:Pcat_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Pcat_sequence ;
     sbol:role so:0000167 ;
@@ -3115,7 +3113,7 @@ part:repA a sbol:Component ;
 
 part:repA101ts a sbol:Component ;
     rdfs:label "repA101ts" ;
-    dcterms:description "repA101ts: the pSC101 replication initiation protein as carried by the curable Red helper plasmid pKD46 — the canonical rep allele with H289Y. Sequence of record: AY048746 (pKD46, Datsenko & Wanner 2000) CDS complement(3496..4446), protein AAL02049.1. It differs from the catalog's rep pSC101 (the native pSC101 allele of NC_002056) at exactly one residue, H289Y, and from UniProt P22308 at H257R. This is the allele of the pSC101 replicons that are grown at 30 degrees and cured at 37; which residue causes that temperature sensitivity is NOT established here. Armstrong et al. 1984 located pSC101's temperature-sensitive, copy-number and replication-deficient mutations inside rep101 rather than in the origin, but give no residue, and the GenBank record names this CDS repA101 without stating a phenotype. No origin part in this catalog carries a temperature-sensitivity claim." ;
+    dcterms:description "repA101ts: the pSC101 replication initiation protein as carried by the curable Red helper plasmid pKD46 — the canonical rep allele with H289Y. Sequence of record: AY048746 (pKD46, Datsenko & Wanner 2000) CDS complement(3496..4446), protein AAL02049.1. It differs from the catalog's rep pSC101 (the native pSC101 allele of NC_002056) at exactly one residue, H289Y, and from UniProt P22308 at H257R. Datsenko & Wanner 2000 describe pKD46 as \"an easily curable, low copy number plasmid\" (abstract; the full text, with the growth and curing temperatures, was not accessible to verify here). Which residue makes pKD46's replication temperature-sensitive is NOT established here. Armstrong et al. 1984 located pSC101's temperature-sensitive, copy-number and replication-deficient mutations inside rep101 rather than in the origin, but give no residue, and the GenBank record names this CDS repA101 without stating a phenotype. No origin part in this catalog carries a temperature-sensitivity claim." ;
     dcterms:references pubmed:10829079,
         pubmed:6327996 ;
     dcterms:title "repA101ts" ;
@@ -8968,31 +8966,11 @@ part:Pbla_feature_1_range a sbol:Range ;
     sbol:sequence part:Pbla_sequence ;
     sbol:start 59 .
 
-part:Pcat_feature_0 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26375469 ;
-    dcterms:title "Pcat -35" ;
-    sbol:displayId "Pcat_feature_0" ;
-    sbol:hasLocation part:Pcat_feature_0_range ;
-    sbol:role so:0000175 .
-
-part:Pcat_feature_0_range a sbol:Range ;
-    sbol:end 15 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:Pcat_sequence ;
-    sbol:start 10 .
-
-part:Pcat_feature_1 a sbol:SequenceFeature ;
-    dcterms:references pubmed:26375469 ;
-    dcterms:title "Pcat -10" ;
-    sbol:displayId "Pcat_feature_1" ;
-    sbol:hasLocation part:Pcat_feature_1_range ;
-    sbol:role so:0000176 .
-
-part:Pcat_feature_1_range a sbol:Range ;
-    sbol:end 38 ;
-    sbol:orientation sbol:inline ;
-    sbol:sequence part:Pcat_sequence ;
-    sbol:start 33 .
+part:Pcat_sequence a sbol:Sequence ;
+    sbol:displayId "Pcat_sequence" ;
+    sbol:elements "TTGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:PchnB a sbol:Component ;
     rdfs:label "PchnB" ;
@@ -17504,12 +17482,6 @@ part:PA1lacO-1_sequence a sbol:Sequence ;
 part:Pbla_sequence a sbol:Sequence ;
     sbol:displayId "Pbla_sequence" ;
     sbol:elements "CGCGGAACCCCTATTTGTTTATTTTTCTAAATACATTCAAATATGTATCCGCTCATGAGACAATAACCCT" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
-part:Pcat_sequence a sbol:Sequence ;
-    sbol:displayId "Pcat_sequence" ;
-    sbol:elements "TTGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 

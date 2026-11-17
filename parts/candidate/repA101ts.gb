@@ -42,10 +42,12 @@ FEATURES             Location/Qualifiers
                      complement(3496..4446), protein AAL02049.1. It differs from
                      the catalog's rep pSC101 (the native pSC101 allele of
                      NC_002056) at exactly one residue, H289Y, and from UniProt
-                     P22308 at H257R. This is the allele of the pSC101 replicons
-                     that are grown at 30 degrees and cured at 37; which residue
-                     causes that temperature sensitivity is NOT established
-                     here. Armstrong et al. 1984 located pSC101's
+                     P22308 at H257R. Datsenko & Wanner 2000 describe pKD46 as
+                     ""an easily curable, low copy number plasmid"" (abstract;
+                     the full text, with the growth and curing temperatures, was
+                     not accessible to verify here). Which residue makes pKD46's
+                     replication temperature-sensitive is NOT established here.
+                     Armstrong et al. 1984 located pSC101's
                      temperature-sensitive, copy-number and
                      replication-deficient mutations inside rep101 rather than
                      in the origin, but give no residue, and the GenBank record
