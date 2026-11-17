@@ -296,7 +296,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "BBa_B0015",
@@ -313,7 +313,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "B0030 RBS"
@@ -327,7 +327,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "BBa_B0034",
@@ -1776,22 +1776,6 @@
       ]
     },
     {
-      "slug": "lacZ_alpha",
-      "name": "lacZ alpha",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "status": "candidate",
-      "sourced": false,
-      "n_claims": 0,
-      "synonyms": [
-        "lacZ alpha",
-        "lacZa",
-        "beta-galactosidase alpha subunit"
-      ]
-    },
-    {
       "slug": "lacZ",
       "name": "lacZ\u03b1",
       "feature_type": "CDS",
@@ -1799,10 +1783,24 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lacZ\u03b1"
+      ]
+    },
+    {
+      "slug": "lacZ_alpha",
+      "name": "lacZ\u03b1 (pMTL80000)",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 0,
+      "synonyms": [
+        "lacZ\u03b1 (pMTL80000)"
       ]
     },
     {
@@ -2254,7 +2252,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "araBAD promoter"
@@ -2332,7 +2330,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pcat",
@@ -2798,7 +2796,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pneo",
@@ -3280,6 +3278,23 @@
       "status": "candidate",
       "sourced": false,
       "n_claims": 0
+    },
+    {
+      "slug": "repA101ts",
+      "name": "repA101ts",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "rep pSC101 [ts]",
+        "repA101 ts",
+        "Rep101 (Ts)",
+        "repA101ts protein"
+      ]
     },
     {
       "slug": "RepC",
@@ -4001,7 +4016,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "T7Te",
@@ -4379,7 +4394,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "XylS"

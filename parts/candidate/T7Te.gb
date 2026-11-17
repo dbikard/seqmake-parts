@@ -6,15 +6,24 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Dunn JJ, Studier FW
+  TITLE     Complete nucleotide sequence of bacteriophage T7 DNA and the
+            locations of T7 genetic elements.
+  JOURNAL   J Mol Biol. 1983;166(4):477-535
+   PUBMED   6864790
+  REMARK    doi:10.1016/s0022-2836(83)80282-4
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/T7Te
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..40
                      /label="T7Te"
                      /synonym="T7Te"
                      /synonym="T7Te Terminator"
+                     /citation=[1]
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:V01146"
 ORIGIN
         1 tcacactggc tcaccttcgg gtgggccttt ctgcgtttat
 //

@@ -1726,7 +1726,7 @@
       ],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -1751,7 +1751,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -1778,7 +1778,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9550,33 +9550,6 @@
       "functional_claims": []
     },
     {
-      "name": "lacZ alpha",
-      "slug": "lacZ_alpha",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "lacZ alpha",
-        "lacZa",
-        "beta-galactosidase alpha subunit"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 87,
-      "protein_length_aa": 87,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
       "name": "lacZ\u03b1",
       "slug": "lacZ",
       "feature_type": "CDS",
@@ -9598,7 +9571,43 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
+      "functional_claims": []
+    },
+    {
+      "name": "lacZ\u03b1 (pMTL80000)",
+      "slug": "lacZ_alpha",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "GenBank:FJ797651",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "lacZ\u03b1 (pMTL80000)"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 87,
+      "protein_length_aa": 87,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Heap JT, Pennington OJ, Cartman ST, Minton NP",
+          "title": "A modular system for Clostridium shuttle plasmids.",
+          "journal": "J Microbiol Methods. 2009;78(1):79-85",
+          "pmid": "19445976",
+          "doi": "10.1016/j.mimet.2009.05.004",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19445976/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -12369,7 +12378,7 @@
       "slug": "ParaBAD",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01641",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -12451,9 +12460,20 @@
           "citations": []
         }
       ],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Smith BR, Schleif R",
+          "title": "Nucleotide sequence of the L-arabinose regulatory region of Escherichia coli K12.",
+          "journal": "J Biol Chem. 1978;253(19):6931-6933",
+          "pmid": "357433",
+          "doi": "10.1016/s0021-9258(17)38009-2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/357433/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -12683,8 +12703,8 @@
       "so_name": "replication_regulatory_region",
       "synonyms": [],
       "collections": [],
-      "description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
-      "length": 183,
+      "description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2352-2447), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
+      "length": 96,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
@@ -12696,8 +12716,8 @@
           "feature_type": "protein_bind",
           "so_term": "SO:0000410",
           "so_name": "protein_binding_site",
-          "start": 86,
-          "end": 95,
+          "start": 0,
+          "end": 9,
           "strand": -1,
           "citations": [
             3,
@@ -12709,8 +12729,8 @@
           "feature_type": "protein_bind",
           "so_term": "SO:0000410",
           "so_name": "protein_binding_site",
-          "start": 118,
-          "end": 182,
+          "start": 32,
+          "end": 96,
           "strand": 1,
           "citations": [
             1,
@@ -12938,7 +12958,7 @@
         {
           "id": "boundaries",
           "type": "origin",
-          "label": "Spans pBR322 (J01749) 2351-2533, minus strand: from the base after the ColE1 part's 3' end (the RNA-to-DNA transition, pBR322 2534) to pBR322 2351, so ColE1 followed by this part is pBR322 2351-3122 read on the minus strand. The pas sub-feature is 2352-2415, the maximal limits reported as 2353-2416 on the original 4362 bp pBR322 sequence (1979); the 1983 (+1 bp at 526) and 1988 (-2 bp at 1893 and 1915) revisions shift positions past 1915 by -1 on the J01749 numbering, and 2352-2415 is exactly the HaeII-AluI fragment. The DnaA box (2439-2447) is the only DnaA-box consensus match in the region.",
+          "label": "Spans pBR322 (J01749) 2352-2447, minus strand: from the DnaA box to the far end of the lagging-strand pas (Marians et al. maximal limits).",
           "value": {
             "reference": "GenBank J01749",
             "span": "2351-2533 (complement)",
@@ -12979,17 +12999,62 @@
         "cat promoter"
       ],
       "collections": [],
-      "description": "",
-      "length": 103,
+      "description": "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps the transcription start or the -35/-10 of this promoter. The 5' end is set one base earlier than the window this part carried before, so that the TTGACA-like hexamer TTGATC at V00622 140-145 \u2014 a -35 by consensus, not by mapping \u2014 is whole. The 3' end stops 27 bp before the cat start codon: Gonz\u00e1lez-Prieto et al. 2015 report an IS10 target (TACCGGGCG, bases 52-60 here) 22 bp downstream of the promoter's -10 element and 53 bp upstream of the cat ATG, which places the -10 around V00622 163-169 and leaves the Shine-Dalgarno region, and the catalog part RBS 23400, outside this window. The 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. The -35 and -10 boxes below are the pair that carries the canonical 17 bp spacing (ACGTAA at 10-15, CATAAT at 33-38, 1-based), which is also the pair older automated annotations mark on cat-carrying vectors. They are placed by consensus, not mapped: a second reading of the distance Gonz\u00e1lez-Prieto et al. report would put the -10 nine bases earlier, with TTGATC at 1-6 as the -35. Both readings are provisional.",
+      "length": 78,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "children": [
+        {
+          "label": "Pcat -35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 9,
+          "end": 15,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        },
+        {
+          "label": "Pcat -10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 32,
+          "end": 38,
+          "strand": 1,
+          "citations": [
+            2
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Alton NK, Vapnek D",
+          "title": "Nucleotide sequence analysis of the chloramphenicol resistance transposon Tn9.",
+          "journal": "Nature. 1979;282(5741):864-9",
+          "pmid": "390403",
+          "doi": "10.1038/282864a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/390403/"
+        },
+        {
+          "authors": "Gonz\u00e1lez-Prieto C, Ag\u00fandez L, Llosa M",
+          "title": "Chloramphenicol Selection of IS10 Transposition in the cat Promoter Region of Widely Used Cloning Vectors.",
+          "journal": "PLoS One. 2015;10(9):e0138615",
+          "pmid": "26375469",
+          "doi": "10.1371/journal.pone.0138615",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26375469/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -15004,17 +15069,28 @@
         "kanamycin promoter (SEVA)"
       ],
       "collections": [],
-      "description": "",
-      "length": 170,
+      "description": "Promoter of the Tn5 neo (nptII) kanamycin-resistance gene: the 50 bp that the Tn5 record U00004 annotates as the aminoglycoside phosphotransferase promoter region (1413-1462, experimental evidence). Rothstein and Reznikoff (1981) found that the one base differing between IS50L and IS50R (U00004 1442, base 30 here) makes a better promoter. The -35, -10 and start are not placed: provisional boundaries. The 120 bp this part carried before were 12 bp of Tn5 upstream of this window (U00004 1401-1412), 57 bp of Tn5 downstream of it (1463-1519), and 51 bp of linker and ribosome binding site that Tn5 does not carry at all.",
+      "length": 50,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Rothstein SJ, Reznikoff WS",
+          "title": "The functional differences in the inverted repeats of Tn5 are caused by a single base pair nonhomology.",
+          "journal": "Cell. 1981;23(1):191-9",
+          "pmid": "6260374",
+          "doi": "10.1016/0092-8674(81)90284-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6260374/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -17185,6 +17261,81 @@
       "main_citations": [],
       "sourced": false,
       "functional_claims": []
+    },
+    {
+      "name": "repA101ts",
+      "slug": "repA101ts",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "NCBI:AAL02049.1",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "rep pSC101 [ts]",
+        "repA101 ts",
+        "Rep101 (Ts)",
+        "repA101ts protein"
+      ],
+      "collections": [],
+      "description": "repA101ts: the pSC101 replication initiation protein as carried by the curable Red helper plasmid pKD46 \u2014 the canonical rep allele with H289Y. Sequence of record: AY048746 (pKD46, Datsenko & Wanner 2000) CDS complement(3496..4446), protein AAL02049.1. It differs from the catalog's rep pSC101 (the native pSC101 allele of NC_002056) at exactly one residue, H289Y, and from UniProt P22308 at H257R. This is the allele of the pSC101 replicons that are grown at 30 degrees and cured at 37; which residue causes that temperature sensitivity is NOT established here. Armstrong et al. 1984 located pSC101's temperature-sensitive, copy-number and replication-deficient mutations inside rep101 rather than in the origin, but give no residue, and the GenBank record names this CDS repA101 without stating a phenotype. No origin part in this catalog carries a temperature-sensitivity claim.",
+      "length": 316,
+      "protein_length_aa": 316,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [
+        {
+          "authors": "Datsenko KA, Wanner BL",
+          "title": "One-step inactivation of chromosomal genes in Escherichia coli K-12 using PCR products.",
+          "journal": "Proc Natl Acad Sci U S A. 2000;97(12):6640-6645",
+          "pmid": "10829079",
+          "doi": "10.1073/pnas.120163297",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10829079/"
+        },
+        {
+          "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+          "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+          "journal": "J Mol Biol. 1984;175(3):331-348",
+          "pmid": "6327996",
+          "doi": "10.1016/0022-2836(84)90352-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327996/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
+      "functional_claims": [
+        {
+          "id": "sequence_variant",
+          "type": "sequence_variant",
+          "label": "Differs from the native pSC101 rep protein (NC_002056, catalog part rep pSC101) at one residue, H289Y; and from UniProt P22308 at H257R.",
+          "value": {
+            "differs_from": "rep pSC101",
+            "changes": [
+              "H289Y"
+            ]
+          },
+          "source": {
+            "pmid": "10829079",
+            "url": "https://www.ncbi.nlm.nih.gov/nuccore/AY048746",
+            "quote_source": "primary",
+            "section": "AY048746 CDS complement(3496..4446), protein AAL02049.1"
+          },
+          "provenance": {
+            "method": "record comparison",
+            "from": "primary",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
     },
     {
       "name": "RepC",
@@ -22739,7 +22890,7 @@
       "slug": "T7Te",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:V01146",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -22755,9 +22906,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Dunn JJ, Studier FW",
+          "title": "Complete nucleotide sequence of bacteriophage T7 DNA and the locations of T7 genetic elements.",
+          "journal": "J Mol Biol. 1983;166(4):477-535",
+          "pmid": "6864790",
+          "doi": "10.1016/s0022-2836(83)80282-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6864790/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -25488,7 +25650,7 @@
       "slug": "XylS",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P07859",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -25511,7 +25673,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {

@@ -1,21 +1,80 @@
-LOCUS       Pcat                     103 bp    DNA              UNK 01-JAN-1980
-DEFINITION  Pcat.
+LOCUS       Pcat                      78 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pcat: the Tn9 cat (chloramphenicol acetyltransferase) promoter, 78
+            bp (V00622 140-217)..
 ACCESSION   Pcat
 VERSION     Pcat
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Alton NK, Vapnek D
+  TITLE     Nucleotide sequence analysis of the chloramphenicol resistance
+            transposon Tn9.
+  JOURNAL   Nature. 1979;282(5741):864-9
+   PUBMED   390403
+  REMARK    doi:10.1038/282864a0
+REFERENCE   2
+  AUTHORS   González-Prieto C, Agúndez L, Llosa M
+  TITLE     Chloramphenicol Selection of IS10 Transposition in the cat Promoter
+            Region of Widely Used Cloning Vectors.
+  JOURNAL   PLoS One. 2015;10(9):e0138615
+   PUBMED   26375469
+  REMARK    doi:10.1371/journal.pone.0138615
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pcat
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
-     promoter        1..103
+     promoter        1..78
                      /label="Pcat"
                      /synonym="Pcat"
                      /synonym="cat promoter"
+                     /note="Promoter of the Tn9 cat gene, taken from V00622
+                     (Alton and Vapnek 1979) 140-217. Both ends are provisional:
+                     no accessible source maps the transcription start or the
+                     -35/-10 of this promoter. The 5' end is set one base
+                     earlier than the window this part carried before, so that
+                     the TTGACA-like hexamer TTGATC at V00622 140-145 — a -35 by
+                     consensus, not by mapping — is whole. The 3' end stops 27
+                     bp before the cat start codon: González-Prieto et al. 2015
+                     report an IS10 target (TACCGGGCG, bases 52-60 here) 22 bp
+                     downstream of the promoter's -10 element and 53 bp upstream
+                     of the cat ATG, which places the -10 around V00622 163-169
+                     and leaves the Shine-Dalgarno region, and the catalog part
+                     RBS 23400, outside this window. The 103 bp this part
+                     carried before ran to the ATG and overlapped RBS 23400 on
+                     228 plasmids of a 1,390-plasmid collection. The -35 and -10
+                     boxes below are the pair that carries the canonical 17 bp
+                     spacing (ACGTAA at 10-15, CATAAT at 33-38, 1-based), which
+                     is also the pair older automated annotations mark on
+                     cat-carrying vectors. They are placed by consensus, not
+                     mapped: a second reading of the distance González-Prieto et
+                     al. report would put the -10 nine bases earlier, with
+                     TTGATC at 1-6 as the -35. Both readings are provisional."
+                     /citation=[1]
+                     /citation=[2]
                      /db_xref="SO:0000167"
+     regulatory      10..15
+                     /label="Pcat -35"
+                     /parent="Pcat"
+                     /regulatory_class="minus_35_signal"
+                     /note="Sigma-70 -35 box (ACGTAA), 17 bp upstream of the -10
+                     below. Placed by consensus and by the annotation that
+                     circulates on cat-carrying vectors; not mapped
+                     experimentally in an accessible source."
+                     /citation=[2]
+                     /db_xref="SO:0000175"
+     regulatory      33..38
+                     /label="Pcat -10"
+                     /parent="Pcat"
+                     /regulatory_class="minus_10_signal"
+                     /note="Sigma-70 -10 box (CATAAT), the better consensus
+                     match of the two candidate pairs in this window. Placed by
+                     consensus; not mapped experimentally in an accessible
+                     source."
+                     /citation=[2]
+                     /db_xref="SO:0000176"
 ORIGIN
-        1 tgatcggcac gtaagaggtt ccaactttca ccataatgaa ataagatcac taccgggcgt
-       61 attttttgag ttatcgagat tttcaggagc taaggaagct aaa
+        1 ttgatcggca cgtaagaggt tccaactttc accataatga aataagatca ctaccgggcg
+       61 tattttttga gttatcga
 //

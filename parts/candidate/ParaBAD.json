@@ -11,7 +11,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "AAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCAT",
-  "references": [],
+  "references": [
+    {
+      "authors": "Smith BR, Schleif R",
+      "title": "Nucleotide sequence of the L-arabinose regulatory region of Escherichia coli K12.",
+      "journal": "J Biol Chem. 1978;253(19):6931-6933",
+      "pubmed_id": "357433",
+      "comment": "doi:10.1016/s0021-9258(17)38009-2"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -27,6 +35,12 @@
         ],
         "regulated_by": [
           "AraC"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "GenBank:J01641"
         ]
       }
     },
@@ -137,7 +151,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01641 (E. coli araBAD promoter region and araC), positions 1004-1288, 100% over 285 bp"
   },
   "functional_claims": []
 }

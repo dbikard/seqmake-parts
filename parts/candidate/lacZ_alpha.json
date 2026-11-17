@@ -3,14 +3,22 @@
   "slug": "lacZ_alpha",
   "locus": "lacZ_alpha",
   "id": "lacZ_alpha",
-  "description": "lacZ alpha",
+  "description": "lacZ alpha peptide as encoded by the pMTL80000 modular shuttle vectors (87 aa; its N-terminal residues come from their MCS).",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
   "sequence": "MTMITNSSSVPGDPLESTSRVHGDLEACRHASLALAVVLQRRDWENPGVTQLNRLAAHPPFASWRNSEEARTDRPSQQLRSLNGEWR",
-  "references": [],
+  "references": [
+    {
+      "authors": "Heap JT, Pennington OJ, Cartman ST, Minton NP",
+      "title": "A modular system for Clostridium shuttle plasmids.",
+      "journal": "J Microbiol Methods. 2009;78(1):79-85",
+      "pubmed_id": "19445976",
+      "comment": "doi:10.1016/j.mimet.2009.05.004"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -19,18 +27,23 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "lacZ alpha"
+          "lacZ\u03b1 (pMTL80000)"
         ],
         "synonym": [
-          "lacZ alpha",
-          "lacZa",
-          "beta-galactosidase alpha subunit"
+          "lacZ\u03b1 (pMTL80000)"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "db_xref": [
+          "GenBank:FJ797651"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "FJ797651 (shuttle vector pMTL85141, Heap et al. 2009), 98..358 on the plus strand: the 87 aa are that reading frame's translation, identical"
   },
   "functional_claims": []
 }

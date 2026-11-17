@@ -6,15 +6,24 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Smith BR, Schleif R
+  TITLE     Nucleotide sequence of the L-arabinose regulatory region of
+            Escherichia coli K12.
+  JOURNAL   J Biol Chem. 1978;253(19):6931-6933
+   PUBMED   357433
+  REMARK    doi:10.1016/s0021-9258(17)38009-2
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ParaBAD
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..285
                      /label="ParaBAD"
                      /synonym="araBAD promoter"
                      /regulated_by="AraC"
+                     /citation=[1]
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:J01641"
      protein_bind    3..20
                      /label="O2"
                      /parent="ParaBAD"

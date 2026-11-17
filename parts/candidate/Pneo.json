@@ -3,19 +3,27 @@
   "slug": "Pneo",
   "locus": "Pneo",
   "id": "Pneo",
-  "description": "Pneo",
+  "description": "Pneo: the Tn5 neo (nptII, kanR) promoter region, 50 bp (U00004 1413-1462).",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "ACAGCAAGCGAACCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAAAGTAAACTGGATGGCTTTCTTGCCGCCAAGGATCTGATGGCGCAGGGGATCAAGATCGACGGATCGATCCGGGGAATTAATTCCGGGGCAATCCCGCAAGGAGGGTGA",
-  "references": [],
+  "sequence": "CCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAA",
+  "references": [
+    {
+      "authors": "Rothstein SJ, Reznikoff WS",
+      "title": "The functional differences in the inverted repeats of Tn5 are caused by a single base pair nonhomology.",
+      "journal": "Cell. 1981;23(1):191-9",
+      "pubmed_id": "6260374",
+      "comment": "doi:10.1016/0092-8674(81)90284-1"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
       "start": 0,
-      "end": 170,
+      "end": 50,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -26,12 +34,19 @@
           "neo promoter",
           "neomycin promoter",
           "kanamycin promoter (SEVA)"
+        ],
+        "note": [
+          "Promoter of the Tn5 neo (nptII) kanamycin-resistance gene: the 50 bp that the Tn5 record U00004 annotates as the aminoglycoside phosphotransferase promoter region (1413-1462, experimental evidence). Rothstein and Reznikoff (1981) found that the one base differing between IS50L and IS50R (U00004 1442, base 30 here) makes a better promoter. The -35, -10 and start are not placed: provisional boundaries. The 120 bp this part carried before were 12 bp of Tn5 upstream of this window (U00004 1401-1412), 57 bp of Tn5 downstream of it (1463-1519), and 51 bp of linker and ribosome binding site that Tn5 does not carry at all."
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "U00004 (transposon Tn5), positions 1413-1462, 100% over 50 bp; the record's annotated promoter region"
   },
   "functional_claims": []
 }

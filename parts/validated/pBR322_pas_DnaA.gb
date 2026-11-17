@@ -1,6 +1,6 @@
-LOCUS       pBR322_pas_DnaA          183 bp    DNA     linear   UNK 01-JAN-1980
+LOCUS       pBR322_pas_DnaA           96 bp    DNA     linear   UNK 01-JAN-1980
 DEFINITION  The pBR322 region just past the ColE1-family DNA replication start
-            (pBR322 2351-2533), carrying the lagging-strand primosome assembly
+            (pBR322 2352-2447), carrying the lagging-strand primosome assembly
             site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin
             in pBR322 and pUC vectors..
 ACCESSION   pBR322_pas_DnaA
@@ -82,11 +82,11 @@ COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pBR322_pas_DnaA
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
-     regulatory      1..183
+     regulatory      1..96
                      /label="pBR322 pas/DnaA"
                      /regulatory_class="replication_regulatory_region"
                      /note="The pBR322 region just past the ColE1-family DNA
-                     replication start (pBR322 2351-2533), carrying the
+                     replication start (pBR322 2352-2447), carrying the
                      lagging-strand primosome assembly site (pas) and a DnaA
                      box; it lies directly 3' of the ColE1 origin in pBR322 and
                      pUC vectors."
@@ -94,7 +94,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GenBank:J01749"
                      /citation=[1]
                      /citation=[3]
-     protein_bind    complement(87..95)
+     protein_bind    complement(1..9)
                      /label="DnaA box"
                      /parent="pBR322 pas/DnaA"
                      /note="9 bp DnaA box TTATCCACA (pBR322 2439-2447, top
@@ -104,7 +104,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000410"
                      /citation=[3]
                      /citation=[4]
-     protein_bind    119..182
+     protein_bind    33..96
                      /label="pas (L strand)"
                      /parent="pBR322 pas/DnaA"
                      /note="Primosome assembly site on the L strand (factor Y /
@@ -117,8 +117,6 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
                      /citation=[8]
 ORIGIN
-        1 aacgccagca acgcggcctt tttacggttc ctggcctttt gctggccttt tgctcacatg
-       61 ttctttcctg cgttatcccc tgattctgtg gataaccgta ttaccgcctt tgagtgagct
-      121 gataccgctc gccgcagccg aacgaccgag cgcagcgagt cagtgagcga ggaagcggaa
-      181 gag
+        1 tgtggataac cgtattaccg cctttgagtg agctgatacc gctcgccgca gccgaacgac
+       61 cgagcgcagc gagtcagtga gcgaggaagc ggaaga
 //

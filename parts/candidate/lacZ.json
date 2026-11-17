@@ -3,7 +3,7 @@
   "slug": "lacZ",
   "locus": "lacZ",
   "id": "lacZ",
-  "description": "lacZα",
+  "description": "lacZ alpha peptide as encoded by pBeloBAC11-type vectors (97 aa; its N-terminal residues come from their MCS).",
   "molecule_type": "protein",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -28,7 +28,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "U51113 (cloning vector pBeloBAC11), complement(146..436): the 97 aa are that reading frame's translation, identical; the ORF runs on past the part's end, so no stop codon bounds it there"
   },
   "functional_claims": []
 }

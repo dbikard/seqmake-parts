@@ -8,12 +8,13 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/XylS
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..321
                      /label="XylS"
                      /synonym="XylS"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:P07859"
 ORIGIN
         1 mdfcllneks qifvhaepya vsdyvnqyvg thsirlpkgg rpagrlhhri fgcldlcris
        61 yggsvrvisp gletcyhlqi ilkghclwrg hgqehyfapg ellllnpddq adltysedce

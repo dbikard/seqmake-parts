@@ -30,7 +30,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "iGEM Registry of Standard Biological Parts, BBa_B0034 'RBS (Elowitz 1999)' (parts.igem.org; created 2003), 100% over 12 bp"
   },
   "functional_claims": []
 }
