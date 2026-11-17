@@ -23,12 +23,16 @@
         ],
         "synonym": [
           "XylS"
+        ],
+        "db_xref": [
+          "UniProt:P07859"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "UniProt:P07859 (XYLS_PSEPU, Pseudomonas putida TOL plasmid XylS), identical over 321 aa"
   },
   "functional_claims": []
 }

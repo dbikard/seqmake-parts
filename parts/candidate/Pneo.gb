@@ -1,24 +1,42 @@
-LOCUS       Pneo                     170 bp    DNA              UNK 01-JAN-1980
-DEFINITION  Pneo.
+LOCUS       Pneo                      50 bp    DNA              UNK 01-JAN-1980
+DEFINITION  Pneo: the Tn5 neo (nptII, kanR) promoter region, 50 bp (U00004
+            1413-1462)..
 ACCESSION   Pneo
 VERSION     Pneo
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Rothstein SJ, Reznikoff WS
+  TITLE     The functional differences in the inverted repeats of Tn5 are caused
+            by a single base pair nonhomology.
+  JOURNAL   Cell. 1981;23(1):191-9
+   PUBMED   6260374
+  REMARK    doi:10.1016/0092-8674(81)90284-1
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pneo
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
-     promoter        1..170
+     promoter        1..50
                      /label="Pneo"
                      /synonym="Pneo"
                      /synonym="neo promoter"
                      /synonym="neomycin promoter"
                      /synonym="kanamycin promoter (SEVA)"
+                     /note="Promoter of the Tn5 neo (nptII) kanamycin-resistance
+                     gene: the 50 bp that the Tn5 record U00004 annotates as the
+                     aminoglycoside phosphotransferase promoter region
+                     (1413-1462, experimental evidence). Rothstein and Reznikoff
+                     (1981) found that the one base differing between IS50L and
+                     IS50R (U00004 1442, base 30 here) makes a better promoter.
+                     The -35, -10 and start are not placed: provisional
+                     boundaries. The 120 bp this part carried before were 12 bp
+                     of Tn5 upstream of this window (U00004 1401-1412), 57 bp of
+                     Tn5 downstream of it (1463-1519), and 51 bp of linker and
+                     ribosome binding site that Tn5 does not carry at all."
+                     /citation=[1]
                      /db_xref="SO:0000167"
 ORIGIN
-        1 acagcaagcg aaccggaatt gccagctggg gcgccctctg gtaaggttgg gaagccctgc
-       61 aaagtaaact ggatggcttt cttgccgcca aggatctgat ggcgcagggg atcaagatcg
-      121 acggatcgat ccggggaatt aattccgggg caatcccgca aggagggtga
+        1 ccggaattgc cagctggggc gccctctggt aaggttggga agccctgcaa
 //

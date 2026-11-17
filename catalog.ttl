@@ -1359,6 +1359,9 @@ part:Pbla a sbol:Component ;
 
 part:Pcat a sbol:Component ;
     rdfs:label "Pcat" ;
+    dcterms:description "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region and the catalog part RBS 23400; the 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part." ;
+    dcterms:references pubmed:26375469,
+        pubmed:390403 ;
     dcterms:title "Pcat" ;
     sbol:displayId "Pcat" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1525,6 +1528,8 @@ part:Pliar70 a sbol:Component ;
 
 part:Pneo a sbol:Component ;
     rdfs:label "Pneo" ;
+    dcterms:description "Promoter of the Tn5 neo (nptII) kanamycin-resistance gene: the 50 bp that the Tn5 record U00004 annotates as the aminoglycoside phosphotransferase promoter region (1413-1462, experimental evidence). Rothstein and Reznikoff (1981) found that the one base differing between IS50L and IS50R (U00004 1442, base 30 here) makes a better promoter. The -35, -10 and start are not placed: provisional boundaries. The 120 bp this part carried before were 12 bp of Tn5 upstream of this window (U00004 1401-1412), 57 bp of Tn5 downstream of it (1463-1519), and 51 bp of linker and ribosome binding site that Tn5 does not carry at all." ;
+    dcterms:references pubmed:6260374 ;
     dcterms:title "Pneo" ;
     sbol:displayId "Pneo" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1914,17 +1919,20 @@ part:T7-Ocr a sbol:Component ;
 
 part:T7Te a sbol:Component ;
     rdfs:label "T7Te" ;
+    dcterms:references pubmed:6864790 ;
     dcterms:title "T7Te" ;
     sbol:displayId "T7Te" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:T7Te_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V01146> ;
     skos:altLabel "T7Te",
         "T7Te Terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "T7Te" .
+    cat:slug "T7Te" ;
+    cat:sourceAccession "GenBank:V01146" .
 
 part:T7_RNAP a sbol:Component ;
     rdfs:label "T7 RNAP" ;
@@ -2671,19 +2679,20 @@ part:lacZ_1 a sbol:Component ;
     cat:slug "lacZ_1" .
 
 part:lacZ_alpha a sbol:Component ;
-    rdfs:label "lacZ alpha" ;
-    dcterms:title "lacZ alpha" ;
+    rdfs:label "lacZα (pMTL80000)" ;
+    dcterms:references pubmed:19445976 ;
+    dcterms:title "lacZα (pMTL80000)" ;
     sbol:displayId "lacZ_alpha" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lacZ_alpha_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "beta-galactosidase alpha subunit",
-        "lacZ alpha",
-        "lacZa" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/FJ797651> ;
+    skos:altLabel "lacZα (pMTL80000)" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "lacZ_alpha" .
+    cat:slug "lacZ_alpha" ;
+    cat:sourceAccession "GenBank:FJ797651" .
 
 part:lambda_cos a sbol:Component ;
     rdfs:label "lambda cos" ;
@@ -2858,7 +2867,7 @@ part:pBBR1_oriV a sbol:Component ;
 
 part:pBR322_pas_DnaA a sbol:Component ;
     rdfs:label "pBR322 pas/DnaA" ;
-    dcterms:description "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors." ;
+    dcterms:description "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2352-2447), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors." ;
     dcterms:references pubmed:1708087,
         pubmed:2844794,
         pubmed:2844795,
@@ -3101,6 +3110,28 @@ part:repA a sbol:Component ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "repA" .
+
+part:repA101ts a sbol:Component ;
+    rdfs:label "repA101ts" ;
+    dcterms:description "repA101ts: the pSC101 replication initiation protein as carried by the curable Red helper plasmid pKD46 — the canonical rep allele with H289Y. Sequence of record: AY048746 (pKD46, Datsenko & Wanner 2000) CDS complement(3496..4446), protein AAL02049.1. It differs from the catalog's rep pSC101 (the native pSC101 allele of NC_002056) at exactly one residue, H289Y, and from UniProt P22308 at H257R. Datsenko & Wanner 2000 describe pKD46 as \"an easily curable, low copy number plasmid\" (abstract; the full text, with the growth and curing temperatures, was not accessible to verify here). Which residue makes pKD46's replication temperature-sensitive is NOT established here. Armstrong et al. 1984 located pSC101's temperature-sensitive, copy-number and replication-deficient mutations inside rep101 rather than in the origin, but give no residue, and the GenBank record names this CDS repA101 without stating a phenotype. No origin part in this catalog carries a temperature-sensitivity claim." ;
+    dcterms:references pubmed:10829079,
+        pubmed:6327996 ;
+    dcterms:title "repA101ts" ;
+    sbol:displayId "repA101ts" ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:repA101ts_sequence ;
+    sbol:role so:0000316 ;
+    sbol:type sbo:0000252 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/protein/AAL02049.1> ;
+    skos:altLabel "Rep101 (Ts)",
+        "rep pSC101 [ts]",
+        "repA101 ts",
+        "repA101ts protein" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:repA101ts_claim_sequence_variant ;
+    cat:slug "repA101ts" ;
+    cat:sourceAccession "NCBI:AAL02049.1" .
 
 part:repA_IncFII a sbol:Component ;
     rdfs:label "repA (IncFII)" ;
@@ -8740,6 +8771,7 @@ part:PVeg_sequence a sbol:Sequence ;
 
 part:ParaBAD a sbol:Component ;
     rdfs:label "ParaBAD" ;
+    dcterms:references pubmed:357433 ;
     dcterms:title "ParaBAD" ;
     sbol:displayId "ParaBAD" ;
     sbol:hasFeature part:ParaBAD_feature_0,
@@ -8755,11 +8787,13 @@ part:ParaBAD a sbol:Component ;
     sbol:hasSequence part:ParaBAD_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J01641> ;
     skos:altLabel "araBAD promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:regulatedBy part:araC ;
-    cat:slug "ParaBAD" .
+    cat:slug "ParaBAD" ;
+    cat:sourceAccession "GenBank:J01641" .
 
 part:ParaBAD_feature_0 a sbol:SequenceFeature ;
     dcterms:title "O2" ;
@@ -8934,7 +8968,7 @@ part:Pbla_feature_1_range a sbol:Range ;
 
 part:Pcat_sequence a sbol:Sequence ;
     sbol:displayId "Pcat_sequence" ;
-    sbol:elements "TGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGAGATTTTCAGGAGCTAAGGAAGCTAAA" ;
+    sbol:elements "TTGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -9389,7 +9423,7 @@ part:Pm_interaction_XylS_p_target a sbol:Participation ;
 
 part:Pneo_sequence a sbol:Sequence ;
     sbol:displayId "Pneo_sequence" ;
-    sbol:elements "ACAGCAAGCGAACCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAAAGTAAACTGGATGGCTTTCTTGCCGCCAAGGATCTGATGGCGCAGGGGATCAAGATCGACGGATCGATCCGGGGAATTAATTCCGGGGCAATCCCGCAAGGAGGGTGA" ;
+    sbol:elements "CCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -15313,7 +15347,7 @@ part:pBBR1_oriV_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:pBR322_pas_DnaA_claim_boundaries a cat:FunctionalClaim ;
-    rdfs:label "Spans pBR322 (J01749) 2351-2533, minus strand: from the base after the ColE1 part's 3' end (the RNA-to-DNA transition, pBR322 2534) to pBR322 2351, so ColE1 followed by this part is pBR322 2351-3122 read on the minus strand. The pas sub-feature is 2352-2415, the maximal limits reported as 2353-2416 on the original 4362 bp pBR322 sequence (1979); the 1983 (+1 bp at 526) and 1988 (-2 bp at 1893 and 1915) revisions shift positions past 1915 by -1 on the J01749 numbering, and 2352-2415 is exactly the HaeII-AluI fragment. The DnaA box (2439-2447) is the only DnaA-box consensus match in the region." ;
+    rdfs:label "Spans pBR322 (J01749) 2352-2447, minus strand: from the DnaA box to the far end of the lagging-strand pas (Marians et al. maximal limits)." ;
     dcterms:references pubmed:6279609 ;
     rdfs:comment "The pas limits are maximal (outer) limits, not a minimal site. The J01749 record annotates the L-strand site at complement(2351..2414), 1 bp off: it applies the -2 shift of the 4363 bp (1983) numbering to a 1982 coordinate. The numbering the paper used is inferred from its date and the restriction-fragment match, not read from its figures." ;
     prov:wasDerivedFrom pubmed:6279609 ;
@@ -15437,10 +15471,10 @@ part:pBR322_pas_DnaA_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000410 .
 
 part:pBR322_pas_DnaA_feature_0_range a sbol:Range ;
-    sbol:end 95 ;
+    sbol:end 9 ;
     sbol:orientation sbol:reverseComplement ;
     sbol:sequence part:pBR322_pas_DnaA_sequence ;
-    sbol:start 87 .
+    sbol:start 1 .
 
 part:pBR322_pas_DnaA_feature_1 a sbol:SequenceFeature ;
     dcterms:references pubmed:6109282,
@@ -15452,10 +15486,10 @@ part:pBR322_pas_DnaA_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000410 .
 
 part:pBR322_pas_DnaA_feature_1_range a sbol:Range ;
-    sbol:end 182 ;
+    sbol:end 96 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:pBR322_pas_DnaA_sequence ;
-    sbol:start 119 .
+    sbol:start 33 .
 
 part:pIJ101_ori_feature_0 a sbol:SequenceFeature ;
     dcterms:title "rep (pIJ101)" ;
@@ -16132,6 +16166,30 @@ part:recE_sequence a sbol:Sequence ;
 part:recT_sequence a sbol:Sequence ;
     sbol:displayId "recT_sequence" ;
     sbol:elements "MNGQLLRHYHCPAGLRNMQMTKQPPIAKADLQKTQGNRAPAAVKNSDVISFINQPSMKEQLAAALPRHMTAERMIRIATTEIRKVPALGNCDTMSFVSAIVQCSQLGLEPGSALGHAYLLPFGNKNEKSGKKNVQLIIGYRGMIDLARRSGQIASLSARVVREGDEFSFEFGLDEKLIHRPGENEDAPVTHVYAVARLKDGGTQFEVMTRKQIELVRSLSKAGNNGPWVTHWEEMAKKTAIRRLFKYLPVSIEIQRAVSMDEKEPLTIDPADSSVLTGEYSVIDNSEE" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:repA101ts_claim_sequence_variant a cat:FunctionalClaim ;
+    rdfs:label "Differs from the native pSC101 rep protein (NC_002056, catalog part rep pSC101) at one residue, H289Y; and from UniProt P22308 at H257R." ;
+    dcterms:references pubmed:10829079 ;
+    prov:wasDerivedFrom pubmed:10829079 ;
+    prov:wasGeneratedBy part:repA101ts_claim_sequence_variant_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "sequence_variant" ;
+    cat:claimValue "{\"changes\": [\"H289Y\"], \"differs_from\": \"rep pSC101\"}" ;
+    cat:confidence "high" ;
+    cat:crossChecked false ;
+    cat:sourceQuoteFrom "primary" ;
+    cat:sourceSection "AY048746 CDS complement(3496..4446), protein AAL02049.1" .
+
+part:repA101ts_claim_sequence_variant_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "primary" ;
+    cat:method "record comparison" .
+
+part:repA101ts_sequence a sbol:Sequence ;
+    sbol:displayId "repA101ts_sequence" ;
+    sbol:elements "MSELVVFKANELAISRYDLTEHETKLILCCVALLNPTIENPTRKERTVSFTYNQYAQMMNISRENAYGVLAKATRELMTRTVEIRNPLVKGFEIFQWTNYAKFSSEKLELVFSEEILPYLFQLKKFIKYNLEHVKSFENKYSMRIYEWLLKELTQKKTHKANIEISLDEFKFMLMLENNYHEFKRLNQWVLKPISKDLNTYSNMKLVVDKRGRPTDTLIFQVELDRQMDLVTELENNQIKMNGDKIPTTITSDSYLRNGLRKTLHDALTAKIQLTSFEAKFLSDMQSKYDLNGSFSWLTQKQRTTLENILAKYGRI" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -17362,11 +17420,13 @@ part:XylS a sbol:Component ;
     sbol:hasSequence part:XylS_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P07859> ;
     skos:altLabel "XylS" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:regulates part:Pm ;
-    cat:slug "XylS" .
+    cat:slug "XylS" ;
+    cat:sourceAccession "UniProt:P07859" .
 
 part:ZeoR_sequence a sbol:Sequence ;
     sbol:displayId "ZeoR_sequence" ;
@@ -17445,7 +17505,7 @@ part:Twin_Strep_tag_sequence a sbol:Sequence ;
 
 part:pBR322_pas_DnaA_sequence a sbol:Sequence ;
     sbol:displayId "pBR322_pas_DnaA_sequence" ;
-    sbol:elements "AACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG" ;
+    sbol:elements "TGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 

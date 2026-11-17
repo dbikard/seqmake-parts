@@ -48,7 +48,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "iGEM Registry of Standard Biological Parts, BBa_B0015 'double terminator (B0010-B0012)' (parts.igem.org; created 2003), 100% over 129 bp"
   },
   "functional_claims": []
 }

@@ -1,21 +1,28 @@
 LOCUS       lacZ_alpha                87 aa                     UNK 01-JAN-1980
-DEFINITION  lacZ alpha.
+DEFINITION  lacZ alpha peptide as encoded by the pMTL80000 modular shuttle
+            vectors (87 aa; its N-terminal residues come from their MCS)..
 ACCESSION   lacZ_alpha
 VERSION     lacZ_alpha
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Heap JT, Pennington OJ, Cartman ST, Minton NP
+  TITLE     A modular system for Clostridium shuttle plasmids.
+  JOURNAL   J Microbiol Methods. 2009;78(1):79-85
+   PUBMED   19445976
+  REMARK    doi:10.1016/j.mimet.2009.05.004
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lacZ_alpha
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..87
-                     /label="lacZ alpha"
-                     /synonym="lacZ alpha"
-                     /synonym="lacZa"
-                     /synonym="beta-galactosidase alpha subunit"
+                     /label="lacZα (pMTL80000)"
+                     /synonym="lacZα (pMTL80000)"
+                     /citation=[1]
                      /db_xref="SO:0000316"
+                     /db_xref="GenBank:FJ797651"
 ORIGIN
         1 mtmitnsssv pgdplestsr vhgdleacrh aslalavvlq rrdwenpgvt qlnrlaahpp
        61 faswrnseea rtdrpsqqlr slngewr

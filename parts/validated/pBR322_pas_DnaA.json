@@ -3,12 +3,12 @@
   "slug": "pBR322_pas_DnaA",
   "locus": "pBR322_pas_DnaA",
   "id": "pBR322_pas_DnaA",
-  "description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
+  "description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2352-2447), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "topology": "linear"
   },
-  "sequence": "AACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG",
+  "sequence": "TGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGA",
   "references": [
     {
       "authors": "Marians KJ, Soeller W, Zipursky SL",
@@ -85,7 +85,7 @@
     {
       "type": "regulatory",
       "start": 0,
-      "end": 183,
+      "end": 96,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -95,7 +95,7 @@
           "replication_regulatory_region"
         ],
         "note": [
-          "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors."
+          "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2352-2447), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors."
         ],
         "db_xref": [
           "SO:0001682",
@@ -109,8 +109,8 @@
     },
     {
       "type": "protein_bind",
-      "start": 86,
-      "end": 95,
+      "start": 0,
+      "end": 9,
       "strand": -1,
       "qualifiers": {
         "label": [
@@ -133,8 +133,8 @@
     },
     {
       "type": "protein_bind",
-      "start": 118,
-      "end": 182,
+      "start": 32,
+      "end": 96,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -158,7 +158,7 @@
     }
   ],
   "provenance": {
-    "sequence_source": "pBR322, GenBank J01749 (Sutcliffe 1979; 4361 bp revision, Watson 1988), bases 2351-2533, reverse complement; byte-verified against the J01749 record fetched from NCBI (2026-11-16) and 100% identical to pUC19 (GenBank L09137) over this span. It abuts the ColE1 part (pBR322 2534-3122, minus strand): ColE1 followed by this part equals J01749 2351-3122 reverse complement.",
+    "sequence_source": "pBR322, GenBank J01749 (Sutcliffe 1979; 4361 bp revision, Watson 1988), bases 2352-2447, reverse complement, 100% over 96 bp: from the DnaA box (2439-2447) to the end of the lagging-strand pas (2352). The 86 bp between the DnaA box and the ColE1 part's 3' end (2448-2533) carry no mapped element and are no longer part of it.",
     "created_by": "add-part"
   },
   "functional_claims": [
@@ -293,7 +293,7 @@
     {
       "id": "boundaries",
       "type": "origin",
-      "label": "Spans pBR322 (J01749) 2351-2533, minus strand: from the base after the ColE1 part's 3' end (the RNA-to-DNA transition, pBR322 2534) to pBR322 2351, so ColE1 followed by this part is pBR322 2351-3122 read on the minus strand. The pas sub-feature is 2352-2415, the maximal limits reported as 2353-2416 on the original 4362 bp pBR322 sequence (1979); the 1983 (+1 bp at 526) and 1988 (-2 bp at 1893 and 1915) revisions shift positions past 1915 by -1 on the J01749 numbering, and 2352-2415 is exactly the HaeII-AluI fragment. The DnaA box (2439-2447) is the only DnaA-box consensus match in the region.",
+      "label": "Spans pBR322 (J01749) 2352-2447, minus strand: from the DnaA box to the far end of the lagging-strand pas (Marians et al. maximal limits).",
       "value": {
         "reference": "GenBank J01749",
         "span": "2351-2533 (complement)",

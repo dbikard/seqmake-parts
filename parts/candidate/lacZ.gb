@@ -1,5 +1,6 @@
 LOCUS       lacZ                      97 aa                     UNK 01-JAN-1980
-DEFINITION  lacZα.
+DEFINITION  lacZ alpha peptide as encoded by pBeloBAC11-type vectors (97 aa; its
+            N-terminal residues come from their MCS)..
 ACCESSION   lacZ
 VERSION     lacZ
 KEYWORDS    .
@@ -8,7 +9,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lacZ
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..97
                      /label="lacZα"

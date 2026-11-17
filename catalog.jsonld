@@ -13000,8 +13000,15 @@
         "@id": "part:araC"
       },
       "cat:slug": "ParaBAD",
+      "cat:sourceAccession": "GenBank:J01641",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:357433"
+      },
       "dcterms:title": "ParaBAD",
       "rdfs:label": "ParaBAD",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J01641"
+      },
       "sbol:displayId": "ParaBAD",
       "sbol:hasFeature": [
         {
@@ -13486,6 +13493,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pcat",
+      "dcterms:description": "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region and the catalog part RBS 23400; the 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:390403"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:26375469"
+        }
+      ],
       "dcterms:title": "Pcat",
       "rdfs:label": "Pcat",
       "sbol:displayId": "Pcat",
@@ -13510,7 +13526,7 @@
       "@id": "part:Pcat_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "Pcat_sequence",
-      "sbol:elements": "TGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGAGATTTTCAGGAGCTAAGGAAGCTAAA",
+      "sbol:elements": "TTGATCGGCACGTAAGAGGTTCCAACTTTCACCATAATGAAATAAGATCACTACCGGGCGTATTTTTTGAGTTATCGA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -14944,6 +14960,10 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pneo",
+      "dcterms:description": "Promoter of the Tn5 neo (nptII) kanamycin-resistance gene: the 50 bp that the Tn5 record U00004 annotates as the aminoglycoside phosphotransferase promoter region (1413-1462, experimental evidence). Rothstein and Reznikoff (1981) found that the one base differing between IS50L and IS50R (U00004 1442, base 30 here) makes a better promoter. The -35, -10 and start are not placed: provisional boundaries. The 120 bp this part carried before were 12 bp of Tn5 upstream of this window (U00004 1401-1412), 57 bp of Tn5 downstream of it (1463-1519), and 51 bp of linker and ribosome binding site that Tn5 does not carry at all.",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6260374"
+      },
       "dcterms:title": "Pneo",
       "rdfs:label": "Pneo",
       "sbol:displayId": "Pneo",
@@ -14970,7 +14990,7 @@
       "@id": "part:Pneo_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "Pneo_sequence",
-      "sbol:elements": "ACAGCAAGCGAACCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAAAGTAAACTGGATGGCTTTCTTGCCGCCAAGGATCTGATGGCGCAGGGGATCAAGATCGACGGATCGATCCGGGGAATTAATTCCGGGGCAATCCCGCAAGGAGGGTGA",
+      "sbol:elements": "CCGGAATTGCCAGCTGGGGCGCCCTCTGGTAAGGTTGGGAAGCCCTGCAA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -21339,8 +21359,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "T7Te",
+      "cat:sourceAccession": "GenBank:V01146",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6864790"
+      },
       "dcterms:title": "T7Te",
       "rdfs:label": "T7Te",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/V01146"
+      },
       "sbol:displayId": "T7Te",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -24239,8 +24266,12 @@
         "@id": "part:Pm"
       },
       "cat:slug": "XylS",
+      "cat:sourceAccession": "UniProt:P07859",
       "dcterms:title": "XylS",
       "rdfs:label": "XylS",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P07859"
+      },
       "sbol:displayId": "XylS",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -27658,8 +27689,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "lacZ_alpha",
-      "dcterms:title": "lacZ alpha",
-      "rdfs:label": "lacZ alpha",
+      "cat:sourceAccession": "GenBank:FJ797651",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:19445976"
+      },
+      "dcterms:title": "lacZ\u03b1 (pMTL80000)",
+      "rdfs:label": "lacZ\u03b1 (pMTL80000)",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/FJ797651"
+      },
       "sbol:displayId": "lacZ_alpha",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -27673,11 +27711,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000252"
       },
-      "skos:altLabel": [
-        "lacZ alpha",
-        "lacZa",
-        "beta-galactosidase alpha subunit"
-      ]
+      "skos:altLabel": "lacZ\u03b1 (pMTL80000)"
     },
     {
       "@id": "part:lacZ_alpha_sequence",
@@ -28895,7 +28929,7 @@
       ],
       "cat:slug": "pBR322_pas_DnaA",
       "cat:sourceAccession": "GenBank:J01749",
-      "dcterms:description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2351-2533), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
+      "dcterms:description": "The pBR322 region just past the ColE1-family DNA replication start (pBR322 2352-2447), carrying the lagging-strand primosome assembly site (pas) and a DnaA box; it lies directly 3' of the ColE1 origin in pBR322 and pUC vectors.",
       "dcterms:references": [
         {
           "@id": "https://identifiers.org/pubmed:6279609"
@@ -28976,7 +29010,7 @@
         "@id": "part:pBR322_pas_DnaA_claim_boundaries_provenance"
       },
       "rdfs:comment": "The pas limits are maximal (outer) limits, not a minimal site. The J01749 record annotates the L-strand site at complement(2351..2414), 1 bp off: it applies the -2 shift of the 4363 bp (1983) numbering to a 1982 coordinate. The numbering the paper used is inferred from its date and the restriction-fragment match, not read from its figures.",
-      "rdfs:label": "Spans pBR322 (J01749) 2351-2533, minus strand: from the base after the ColE1 part's 3' end (the RNA-to-DNA transition, pBR322 2534) to pBR322 2351, so ColE1 followed by this part is pBR322 2351-3122 read on the minus strand. The pas sub-feature is 2352-2415, the maximal limits reported as 2353-2416 on the original 4362 bp pBR322 sequence (1979); the 1983 (+1 bp at 526) and 1988 (-2 bp at 1893 and 1915) revisions shift positions past 1915 by -1 on the J01749 numbering, and 2352-2415 is exactly the HaeII-AluI fragment. The DnaA box (2439-2447) is the only DnaA-box consensus match in the region."
+      "rdfs:label": "Spans pBR322 (J01749) 2352-2447, minus strand: from the DnaA box to the far end of the lagging-strand pas (Marians et al. maximal limits)."
     },
     {
       "@id": "part:pBR322_pas_DnaA_claim_boundaries_provenance",
@@ -29154,14 +29188,14 @@
     {
       "@id": "part:pBR322_pas_DnaA_feature_0_range",
       "@type": "sbol:Range",
-      "sbol:end": 95,
+      "sbol:end": 9,
       "sbol:orientation": {
         "@id": "sbol:reverseComplement"
       },
       "sbol:sequence": {
         "@id": "part:pBR322_pas_DnaA_sequence"
       },
-      "sbol:start": 87
+      "sbol:start": 1
     },
     {
       "@id": "part:pBR322_pas_DnaA_feature_1",
@@ -29189,20 +29223,20 @@
     {
       "@id": "part:pBR322_pas_DnaA_feature_1_range",
       "@type": "sbol:Range",
-      "sbol:end": 182,
+      "sbol:end": 96,
       "sbol:orientation": {
         "@id": "sbol:inline"
       },
       "sbol:sequence": {
         "@id": "part:pBR322_pas_DnaA_sequence"
       },
-      "sbol:start": 119
+      "sbol:start": 33
     },
     {
       "@id": "part:pBR322_pas_DnaA_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "pBR322_pas_DnaA_sequence",
-      "sbol:elements": "AACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTCACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGAG",
+      "sbol:elements": "TGTGGATAACCGTATTACCGCCTTTGAGTGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGAAGCGGAAGA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -31114,6 +31148,90 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": "repA"
+    },
+    {
+      "@id": "part:repA101ts",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": {
+        "@id": "part:repA101ts_claim_sequence_variant"
+      },
+      "cat:slug": "repA101ts",
+      "cat:sourceAccession": "NCBI:AAL02049.1",
+      "dcterms:description": "repA101ts: the pSC101 replication initiation protein as carried by the curable Red helper plasmid pKD46 \u2014 the canonical rep allele with H289Y. Sequence of record: AY048746 (pKD46, Datsenko & Wanner 2000) CDS complement(3496..4446), protein AAL02049.1. It differs from the catalog's rep pSC101 (the native pSC101 allele of NC_002056) at exactly one residue, H289Y, and from UniProt P22308 at H257R. Datsenko & Wanner 2000 describe pKD46 as \"an easily curable, low copy number plasmid\" (abstract; the full text, with the growth and curing temperatures, was not accessible to verify here). Which residue makes pKD46's replication temperature-sensitive is NOT established here. Armstrong et al. 1984 located pSC101's temperature-sensitive, copy-number and replication-deficient mutations inside rep101 rather than in the origin, but give no residue, and the GenBank record names this CDS repA101 without stating a phenotype. No origin part in this catalog carries a temperature-sensitivity claim.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:10829079"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6327996"
+        }
+      ],
+      "dcterms:title": "repA101ts",
+      "rdfs:label": "repA101ts",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/protein/AAL02049.1"
+      },
+      "sbol:displayId": "repA101ts",
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:repA101ts_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000316"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000252"
+      },
+      "skos:altLabel": [
+        "rep pSC101 [ts]",
+        "repA101 ts",
+        "Rep101 (Ts)",
+        "repA101ts protein"
+      ]
+    },
+    {
+      "@id": "part:repA101ts_claim_sequence_variant",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "sequence_variant",
+      "cat:claimValue": "{\"changes\": [\"H289Y\"], \"differs_from\": \"rep pSC101\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuoteFrom": "primary",
+      "cat:sourceSection": "AY048746 CDS complement(3496..4446), protein AAL02049.1",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10829079"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:10829079"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:repA101ts_claim_sequence_variant_provenance"
+      },
+      "rdfs:label": "Differs from the native pSC101 rep protein (NC_002056, catalog part rep pSC101) at one residue, H289Y; and from UniProt P22308 at H257R."
+    },
+    {
+      "@id": "part:repA101ts_claim_sequence_variant_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "primary",
+      "cat:method": "record comparison"
+    },
+    {
+      "@id": "part:repA101ts_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "repA101ts_sequence",
+      "sbol:elements": "MSELVVFKANELAISRYDLTEHETKLILCCVALLNPTIENPTRKERTVSFTYNQYAQMMNISRENAYGVLAKATRELMTRTVEIRNPLVKGFEIFQWTNYAKFSSEKLELVFSEEILPYLFQLKKFIKYNLEHVKSFENKYSMRIYEWLLKELTQKKTHKANIEISLDEFKFMLMLENNYHEFKRLNQWVLKPISKDLNTYSNMKLVVDKRGRPTDTLIFQVELDRQMDLVTELENNQIKMNGDKIPTTITSDSYLRNGLRKTLHDALTAKIQLTSFEAKFLSDMQSKYDLNGSFSWLTQKQRTTLENILAKYGRI",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1208"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
     },
     {
       "@id": "part:repA_IncFII",
