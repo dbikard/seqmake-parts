@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "slug": "PtetR_pRAB",
+  "locus": "PtetR_pRAB",
+  "id": "PtetR_pRAB",
+  "description": "PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'.",
+  "molecule_type": "DNA",
+  "locus_annotations": {
+    "topology": "linear"
+  },
+  "sequence": "GGATCCAAATAAAAAACTAGTTTGACAAATAACTCTATCAATGATATAATGTCAAC",
+  "references": [
+    {
+      "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+      "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
+      "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
+      "pubmed_id": "21921101",
+      "comment": "doi:10.1099/mic.0.052548-0"
+    }
+  ],
+  "features": [
+    {
+      "type": "promoter",
+      "start": 0,
+      "end": 56,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "PtetR* (pRAB)"
+        ],
+        "synonym": [
+          "pR* w/o tetO",
+          "tetR promoter (pRAB)"
+        ],
+        "note": [
+          "PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'. It overlaps a modified copy of the Tn10 tet control region: its 3' half is J01830 1545-1574 read on the tetR strand, with two substitutions (J01830 1552 C>T and 1554 C>A on the tetA strand) that turn the Tn10 sequence there into the consensus -10 TATAAT; its -35, TTGACA, lies in vector sequence upstream of the Tn10 homology. The same two changes fall in the Tn10 operator O1 that the region overlaps, which the record marks 'w/o tetO'. The -35 and -10 below are predicted by the catalog's criteria (tools/promoter_boxes.py), not mapped; no transcription start is mapped for this promoter. On the opposite strand the same bases read as the -35 and operator of a tetA-type promoter with two changes, which is why partial tet-promoter hits used to land here."
+        ],
+        "db_xref": [
+          "SO:0000167",
+          "GenBank:JN635500"
+        ],
+        "citation": [
+          "[1]"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 21,
+      "end": 27,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-35 (predicted)"
+        ],
+        "parent": [
+          "PtetR* (pRAB)"
+        ],
+        "regulatory_class": [
+          "minus_35_signal"
+        ],
+        "evidence": [
+          "predicted"
+        ],
+        "note": [
+          "-35 hexamer TTGACA. Predicted, not mapped: both hexamers at full consensus (12 of 12 bases), 17 bp spacer, the -10's A2 and T6 present, no competing reading in the part (the next best scores 8 of 12), no positional source. Criteria: AUTHORING.md, 'Evidence for a sub-feature'."
+        ],
+        "db_xref": [
+          "SO:0000175"
+        ]
+      }
+    },
+    {
+      "type": "regulatory",
+      "start": 44,
+      "end": 50,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "-10 (predicted)"
+        ],
+        "parent": [
+          "PtetR* (pRAB)"
+        ],
+        "regulatory_class": [
+          "minus_10_signal"
+        ],
+        "evidence": [
+          "predicted"
+        ],
+        "note": [
+          "-10 hexamer TATAAT. Predicted, not mapped: both hexamers at full consensus (12 of 12 bases), 17 bp spacer, the -10's A2 and T6 present, no competing reading in the part (the next best scores 8 of 12), no positional source. Criteria: AUTHORING.md, 'Evidence for a sub-feature'."
+        ],
+        "db_xref": [
+          "SO:0000176"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "sequence_source": "JN635500 (cloning vector pRAB11, Helle et al. 2011), complement(4010..4065), the record's own 'pR* w/o tetO' feature, 100% over 56 bp",
+    "created_by": "add-part"
+  },
+  "functional_claims": []
+}
