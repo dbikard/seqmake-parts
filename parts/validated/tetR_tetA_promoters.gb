@@ -68,7 +68,23 @@ FEATURES             Location/Qualifiers
                      /synonym="tetA/tetR control region"
                      /note="The Tn10 divergent tetA/tetR control region: 56 bp
                      carrying the PtetA promoter, the overlapping PtetR
-                     promoter, and the two TetR operators tetO1 and tetO2."
+                     promoter, and the two TetR operators tetO1 and tetO2. The
+                     tetR promoters are not declared as sub-features. Daniels &
+                     Bertrand 1985 describe two, tetPR1 and tetPR2; Gulland &
+                     Hillen 1992 find that more than 95% of tetR mRNA in vivo
+                     starts at PR2, at a run of five A's, and the J01830 record
+                     places the tetR mRNA 5' end at 1544 -- that run (J01830
+                     1540-1544 on the tetR strand), one base outside this 56 bp
+                     window. No accessible source gives the -35/-10 positions of
+                     either promoter. The reading consistent with the PR2 start
+                     (-35 TGGTAA at J01830 1574-1579, -10 TAGAGT at 1551-1556 on
+                     the tetR strand, 17 bp spacer, +1 7 bases on) has 7 of 12
+                     consensus bases, too few to predict. Sub-features this part
+                     carried before put the tetR +1 at J01830 1564, inside
+                     tetO1, which the record and the five-A start contradict for
+                     PR2; whether they described PR1 is not established. The
+                     pRAB vectors' tetR promoter, a modified form of this
+                     region, is the catalog part PtetR* (pRAB)."
                      /db_xref="SO:0000167"
                      /db_xref="GenBank:J01830"
      regulatory      2..7
@@ -80,6 +96,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0005836"
+                     /evidence="experimental"
      regulatory      25..30
                      /label="PtetA -10"
                      /parent="tetR/tetA promoters"
@@ -90,6 +107,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
                      /citation=[2]
                      /db_xref="SO:0005836"
+                     /evidence="experimental"
      protein_bind    6..24
                      /label="tetO1"
                      /parent="tetR/tetA promoters"
@@ -100,6 +118,7 @@ FEATURES             Location/Qualifiers
                      /citation=[4]
                      /citation=[5]
                      /db_xref="SO:0000057"
+                     /evidence="experimental"
      protein_bind    37..55
                      /label="tetO2"
                      /parent="tetR/tetA promoters"
@@ -111,48 +130,18 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
                      /citation=[6]
                      /db_xref="SO:0000057"
-     misc_feature    38
+                     /evidence="experimental"
+     misc_feature    37
                      /label="PtetA +1"
                      /parent="tetR/tetA promoters"
-                     /note="tetA transcription start site (+1), ~7 nt downstream
-                     of the PtetA -10; the divergent tetA/tetR start sites were
-                     mapped by S1 analysis of tet mRNA 5' ends."
+                     /note="tetA transcription start site (+1): J01830 1581, the
+                     5' end of the record's tetA mRNA, mapped by S1 analysis of
+                     tet mRNA 5' ends (Bertrand et al. 1983); 7 bases after the
+                     PtetA -10."
                      /citation=[1]
                      /citation=[2]
                      /db_xref="SO:0000315"
-     regulatory      complement(51..56)
-                     /label="PtetR -35"
-                     /parent="tetR/tetA promoters"
-                     /regulatory_class="other"
-                     /note="Sigma-70 -35 hexamer of PtetR (bottom strand reads
-                     TTCTCT), the divergent promoter that transcribes tetR
-                     leftward; PtetR corresponds to the dominant tetR promoter
-                     (P_R2)."
-                     /citation=[2]
-                     /citation=[7]
-                     /db_xref="SO:0005836"
-     regulatory      complement(27..32)
-                     /label="PtetR -10"
-                     /parent="tetR/tetA promoters"
-                     /regulatory_class="other"
-                     /note="Sigma-70 -10 hexamer of PtetR (bottom strand reads
-                     TAAAAT), ~18 bp downstream of the PtetR -35; it overlaps
-                     the PtetA -10 on the opposite strand in the divergent
-                     arrangement."
-                     /citation=[2]
-                     /citation=[7]
-                     /db_xref="SO:0005836"
-     misc_feature    complement(20)
-                     /label="PtetR +1"
-                     /parent="tetR/tetA promoters"
-                     /note="tetR transcription start site (+1) of PtetR (P_R2),
-                     the promoter producing >95% of tetR mRNA in vivo; the start
-                     shows length heterogeneity from reiterative copying of a
-                     short run of A residues."
-                     /citation=[1]
-                     /citation=[2]
-                     /citation=[7]
-                     /db_xref="SO:0000315"
+                     /evidence="experimental"
 ORIGIN
         1 gttgacactc tatcattgat agagttattt taccactccc tatcagtgat agagaa
 //

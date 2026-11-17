@@ -1559,6 +1559,26 @@ part:PpflB a sbol:Component ;
     cat:documented false ;
     cat:slug "PpflB" .
 
+part:PtetR_pRAB a sbol:Component ;
+    rdfs:label "PtetR* (pRAB)" ;
+    dcterms:description "PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'. It overlaps a modified copy of the Tn10 tet control region: its 3' half is J01830 1545-1574 read on the tetR strand, with two substitutions (J01830 1552 C>T and 1554 C>A on the tetA strand) that turn the Tn10 sequence there into the consensus -10 TATAAT; its -35, TTGACA, lies in vector sequence upstream of the Tn10 homology. The same two changes fall in the Tn10 operator O1 that the region overlaps, which the record marks 'w/o tetO'. The -35 and -10 below are predicted by the catalog's criteria (tools/promoter_boxes.py), not mapped; no transcription start is mapped for this promoter. On the opposite strand the same bases read as the -35 and operator of a tetA-type promoter with two changes, which is why partial tet-promoter hits used to land here." ;
+    dcterms:references pubmed:21921101 ;
+    dcterms:title "PtetR* (pRAB)" ;
+    sbol:displayId "PtetR_pRAB" ;
+    sbol:hasFeature part:PtetR_pRAB_feature_0,
+        part:PtetR_pRAB_feature_1 ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:PtetR_pRAB_sequence ;
+    sbol:role so:0000167 ;
+    sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/JN635500> ;
+    skos:altLabel "pR* w/o tetO",
+        "tetR promoter (pRAB)" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:slug "PtetR_pRAB" ;
+    cat:sourceAccession "GenBank:JN635500" .
+
 part:PuroR a sbol:Component ;
     rdfs:label "PuroR" ;
     dcterms:description "PuroR is the Streptomyces alboniger puromycin N-acetyltransferase (PAC), a 199-aa GNAT-family enzyme that inactivates puromycin by N-acetylation and serves as a dominant selectable marker." ;
@@ -3427,7 +3447,7 @@ part:tetO a sbol:Component ;
 
 part:tetR_tetA_promoters a sbol:Component ;
     rdfs:label "tetR/tetA promoters" ;
-    dcterms:description "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2." ;
+    dcterms:description "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2. The tetR promoters are not declared as sub-features. Daniels & Bertrand 1985 describe two, tetPR1 and tetPR2; Gulland & Hillen 1992 find that more than 95% of tetR mRNA in vivo starts at PR2, at a run of five A's, and the J01830 record places the tetR mRNA 5' end at 1544 -- that run (J01830 1540-1544 on the tetR strand), one base outside this 56 bp window. No accessible source gives the -35/-10 positions of either promoter. The reading consistent with the PR2 start (-35 TGGTAA at J01830 1574-1579, -10 TAGAGT at 1551-1556 on the tetR strand, 17 bp spacer, +1 7 bases on) has 7 of 12 consensus bases, too few to predict. Sub-features this part carried before put the tetR +1 at J01830 1564, inside tetO1, which the record and the five-A start contradict for PR2; whether they described PR1 is not established. The pRAB vectors' tetR promoter, a modified form of this region, is the catalog part PtetR* (pRAB)." ;
     dcterms:references pubmed:1316869,
         pubmed:2835235,
         pubmed:2995683,
@@ -3441,10 +3461,7 @@ part:tetR_tetA_promoters a sbol:Component ;
         part:tetR_tetA_promoters_feature_1,
         part:tetR_tetA_promoters_feature_2,
         part:tetR_tetA_promoters_feature_3,
-        part:tetR_tetA_promoters_feature_4,
-        part:tetR_tetA_promoters_feature_5,
-        part:tetR_tetA_promoters_feature_6,
-        part:tetR_tetA_promoters_feature_7 ;
+        part:tetR_tetA_promoters_feature_4 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tetR_tetA_promoters_sequence ;
     sbol:role so:0000167 ;
@@ -9738,6 +9755,30 @@ part:PtetA_interaction_tetR_p_agent a sbol:Participation ;
 part:PtetA_interaction_tetR_p_target a sbol:Participation ;
     sbol:participant part:PtetA_feature_1 ;
     sbol:role sbo:0000642 .
+
+part:PtetR_pRAB_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "-35 (predicted)" ;
+    sbol:displayId "PtetR_pRAB_feature_0" ;
+    sbol:hasLocation part:PtetR_pRAB_feature_0_range ;
+    sbol:role so:0000175 .
+
+part:PtetR_pRAB_feature_0_range a sbol:Range ;
+    sbol:end 27 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PtetR_pRAB_sequence ;
+    sbol:start 22 .
+
+part:PtetR_pRAB_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "-10 (predicted)" ;
+    sbol:displayId "PtetR_pRAB_feature_1" ;
+    sbol:hasLocation part:PtetR_pRAB_feature_1_range ;
+    sbol:role so:0000176 .
+
+part:PtetR_pRAB_feature_1_range a sbol:Range ;
+    sbol:end 50 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PtetR_pRAB_sequence ;
+    sbol:start 45 .
 
 part:Ptrc a sbol:Component ;
     rdfs:label "Ptrc" ;
@@ -16765,53 +16806,10 @@ part:tetR_tetA_promoters_feature_4 a sbol:SequenceFeature ;
     sbol:role so:0000315 .
 
 part:tetR_tetA_promoters_feature_4_range a sbol:Range ;
-    sbol:end 38 ;
+    sbol:end 37 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:tetR_tetA_promoters_sequence ;
-    sbol:start 38 .
-
-part:tetR_tetA_promoters_feature_5 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1316869,
-        pubmed:2995683 ;
-    dcterms:title "PtetR -35" ;
-    sbol:displayId "tetR_tetA_promoters_feature_5" ;
-    sbol:hasLocation part:tetR_tetA_promoters_feature_5_range ;
-    sbol:role so:0005836 .
-
-part:tetR_tetA_promoters_feature_5_range a sbol:Range ;
-    sbol:end 56 ;
-    sbol:orientation sbol:reverseComplement ;
-    sbol:sequence part:tetR_tetA_promoters_sequence ;
-    sbol:start 51 .
-
-part:tetR_tetA_promoters_feature_6 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1316869,
-        pubmed:2995683 ;
-    dcterms:title "PtetR -10" ;
-    sbol:displayId "tetR_tetA_promoters_feature_6" ;
-    sbol:hasLocation part:tetR_tetA_promoters_feature_6_range ;
-    sbol:role so:0005836 .
-
-part:tetR_tetA_promoters_feature_6_range a sbol:Range ;
-    sbol:end 32 ;
-    sbol:orientation sbol:reverseComplement ;
-    sbol:sequence part:tetR_tetA_promoters_sequence ;
-    sbol:start 27 .
-
-part:tetR_tetA_promoters_feature_7 a sbol:SequenceFeature ;
-    dcterms:references pubmed:1316869,
-        pubmed:2995683,
-        pubmed:6311683 ;
-    dcterms:title "PtetR +1" ;
-    sbol:displayId "tetR_tetA_promoters_feature_7" ;
-    sbol:hasLocation part:tetR_tetA_promoters_feature_7_range ;
-    sbol:role so:0000315 .
-
-part:tetR_tetA_promoters_feature_7_range a sbol:Range ;
-    sbol:end 20 ;
-    sbol:orientation sbol:reverseComplement ;
-    sbol:sequence part:tetR_tetA_promoters_sequence ;
-    sbol:start 20 .
+    sbol:start 37 .
 
 part:thrombin_site a sbol:Component ;
     rdfs:label "thrombin_site" ;
@@ -17491,6 +17489,12 @@ part:PlacUV5_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:PtetR_pRAB_sequence a sbol:Sequence ;
+    sbol:displayId "PtetR_pRAB_sequence" ;
+    sbol:elements "GGATCCAAATAAAAAACTAGTTTGACAAATAACTCTATCAATGATATAATGTCAAC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:Ptrc_sequence a sbol:Sequence ;
     sbol:displayId "Ptrc_sequence" ;
     sbol:elements "TTGACAATTAATCATCCGGCTCGTATAATG" ;
@@ -17671,6 +17675,12 @@ part:pSC101_ori_vector_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:tetR_tetA_promoters_sequence a sbol:Sequence ;
+    sbol:displayId "tetR_tetA_promoters_sequence" ;
+    sbol:elements "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:ParaBAD_sequence a sbol:Sequence ;
     sbol:displayId "ParaBAD_sequence" ;
     sbol:elements "AAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCAT" ;
@@ -17711,12 +17721,6 @@ part:Trx_tag_sequence a sbol:Sequence ;
     sbol:displayId "Trx_tag_sequence" ;
     sbol:elements "MSDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPCKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
-part:tetR_tetA_promoters_sequence a sbol:Sequence ;
-    sbol:displayId "tetR_tetA_promoters_sequence" ;
-    sbol:elements "GTTGACACTCTATCATTGATAGAGTTATTTTACCACTCCCTATCAGTGATAGAGAA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:BlastR_sequence a sbol:Sequence ;

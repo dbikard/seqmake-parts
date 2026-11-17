@@ -127,3 +127,29 @@ def test_manifest_and_status_fail(tmp_path):
     out = _catalog(tmp_path, _part("Pa", PROMOTER, status="validated"),
                    _part("Pb", OPERATOR + "GGCC"), manifest=False)
     assert _kinds(out) == ["[manifest]", "[status]"]
+
+
+def test_predicted_boxes_must_be_what_the_criteria_give(tmp_path):
+    """A predicted -35/-10 is re-derived from the sequence; a shifted or
+    weak one, an unlabelled one, or an uncited experimental one fails."""
+    seq = "GGATCCAAATAAAAAACTAGTTTGACAAATAACTCTATCAATGATATAATGTCAAC"   # 56 bp
+
+    def promoter(boxes, label_suffix=" (predicted)", ev="predicted"):
+        status, d = _part("Ptest", seq)
+        for lab, start, kind in boxes:
+            d["features"].append({"type": "regulatory", "start": start, "end": start + 6,
+                                  "strand": 1, "qualifiers": {
+                                      "label": [lab + label_suffix], "parent": ["Ptest"],
+                                      "regulatory_class": [kind], "evidence": [ev]}})
+        return status, d
+
+    good = [("-35", 21, "minus_35_signal"), ("-10", 44, "minus_10_signal")]
+    assert _catalog(tmp_path, promoter(good)) == []
+    shifted = [("-35", 20, "minus_35_signal"), ("-10", 44, "minus_10_signal")]
+    assert _kinds(_catalog(tmp_path / "a", promoter(shifted))) == ["[evidence]"]
+    assert _kinds(_catalog(tmp_path / "b", promoter(good, label_suffix=""))) == ["[evidence]"]
+    assert _kinds(_catalog(tmp_path / "c", promoter(good, ev="experimental"))) == ["[evidence]"]
+    weak = "A" * 21 + "TTGTCC" + seq[27:44] + "TAGAGT" + seq[50:]          # 3/6 and 4/6
+    status, d = promoter(good)
+    d["sequence"] = weak
+    assert _kinds(_catalog(tmp_path / "d", (status, d))) == ["[evidence]"]

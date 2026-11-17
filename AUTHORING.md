@@ -150,6 +150,27 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
   consensus site) says so in `sequence_source`. A deposit that matches the part only
   nearly (a few substitutions, extra bases) goes in `provenance.closest_deposit`, with
   the differences: it documents the part without making it sourced.
+- **Evidence for a sub-feature.** A sub-feature (a -35, a -10, a +1, an operator)
+  carries `evidence="experimental"` when a primary source gives its position — and
+  then cites it — or `evidence="predicted"` when it is the curator's reading of the
+  sequence with no positional source. A predicted box is allowed only when these
+  criteria pick exactly one reading, applied mechanically by
+  `tools/promoter_boxes.py` (owner's rule, 2026-11-17; spacing and start distance
+  after Harley & Reynolds 1987, where 92% of 263 *E. coli* promoters had a
+  17 ± 1 bp spacer and 75% of starts lay 7 ± 1 bases after the -10):
+  1. a -35 and a -10 hexamer with a 16-18 bp spacer;
+  2. at least 4 of 6 consensus bases in each (TTGACA, TATAAT) and 9 of 12 together;
+  3. the -10's A at position 2 and T at position 6 (TAtaaT);
+  4. if a transcription start is mapped, it lies 5-9 bases after the -10's last base;
+  5. no other reading on the same strand of the part scores as well or better;
+  6. no positional source contradicts it (say so in the part's note).
+
+  If any criterion fails, declare no box: the candidate readings go in the part's
+  note as an open question. A predicted box ends its label in `(predicted)`
+  (`-10 (predicted)`), because a sub-feature's qualifiers do not yet reach the
+  annotated feature; `check_library.py` re-derives every predicted box and fails
+  when it differs from what the criteria give. `python tools/promoter_boxes.py
+  --scan` lists the promoter parts that would gain predicted boxes.
 - **The curation status travels with the `.gb`.** Every generated `.gb` carries,
   in its `COMMENT`, a line of exactly this shape, which consumers parse:
 
