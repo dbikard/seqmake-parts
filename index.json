@@ -16,9 +16,9 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 272,
+  "n_parts": 273,
   "n_validated": 76,
-  "n_candidate": 196,
+  "n_candidate": 197,
   "n_functional_claims": 362,
   "parts": [
     {
@@ -3065,6 +3065,21 @@
           "slug": "tetR",
           "documented": false
         }
+      ]
+    },
+    {
+      "slug": "PtetR_pRAB",
+      "name": "PtetR* (pRAB)",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 0,
+      "synonyms": [
+        "pR* w/o tetO",
+        "tetR promoter (pRAB)"
       ]
     },
     {

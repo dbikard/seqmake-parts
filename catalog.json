@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "n_parts": 272,
+  "n_parts": 273,
   "n_validated": 76,
-  "n_candidate": 196,
+  "n_candidate": 197,
   "n_documented": 76,
   "n_functional_claims": 362,
   "parts": [
@@ -16394,6 +16394,64 @@
       ]
     },
     {
+      "name": "PtetR* (pRAB)",
+      "slug": "PtetR_pRAB",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": "GenBank:JN635500",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "pR* w/o tetO",
+        "tetR promoter (pRAB)"
+      ],
+      "collections": [],
+      "description": "PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'. It overlaps a modified copy of the Tn10 tet control region: its 3' half is J01830 1545-1574 read on the tetR strand, with two substitutions (J01830 1552 C>T and 1554 C>A on the tetA strand) that turn the Tn10 sequence there into the consensus -10 TATAAT; its -35, TTGACA, lies in vector sequence upstream of the Tn10 homology. The same two changes fall in the Tn10 operator O1 that the region overlaps, which the record marks 'w/o tetO'. The -35 and -10 below are predicted by the catalog's criteria (tools/promoter_boxes.py), not mapped; no transcription start is mapped for this promoter. On the opposite strand the same bases read as the -35 and operator of a tetA-type promoter with two changes, which is why partial tet-promoter hits used to land here.",
+      "length": 56,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "-35 (predicted)",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 21,
+          "end": 27,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "-10 (predicted)",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 44,
+          "end": 50,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+          "title": "Vectors for improved Tet repressor-dependent gradual gene induction or silencing in Staphylococcus aureus",
+          "journal": "Microbiology (Reading) 157(Pt 12):3314-3323",
+          "pmid": "21921101",
+          "doi": "10.1099/mic.0.052548-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21921101/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": []
+    },
+    {
       "name": "Ptrc",
       "slug": "Ptrc",
       "feature_type": "promoter",
@@ -23170,7 +23228,7 @@
         "tetA/tetR control region"
       ],
       "collections": [],
-      "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+      "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2. The tetR promoters are not declared as sub-features. Daniels & Bertrand 1985 describe two, tetPR1 and tetPR2; Gulland & Hillen 1992 find that more than 95% of tetR mRNA in vivo starts at PR2, at a run of five A's, and the J01830 record places the tetR mRNA 5' end at 1544 -- that run (J01830 1540-1544 on the tetR strand), one base outside this 56 bp window. No accessible source gives the -35/-10 positions of either promoter. The reading consistent with the PR2 start (-35 TGGTAA at J01830 1574-1579, -10 TAGAGT at 1551-1556 on the tetR strand, 17 bp spacer, +1 7 bases on) has 7 of 12 consensus bases, too few to predict. Sub-features this part carried before put the tetR +1 at J01830 1564, inside tetO1, which the record and the five-A start contradict for PR2; whether they described PR1 is not established. The pRAB vectors' tetR promoter, a modified form of this region, is the catalog part PtetR* (pRAB).",
       "length": 56,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -23237,52 +23295,12 @@
           "feature_type": "misc_feature",
           "so_term": "SO:0000315",
           "so_name": "TSS",
-          "start": 37,
-          "end": 38,
+          "start": 36,
+          "end": 37,
           "strand": 1,
           "citations": [
             1,
             2
-          ]
-        },
-        {
-          "label": "PtetR -35",
-          "feature_type": "regulatory",
-          "so_term": "SO:0005836",
-          "so_name": "regulatory_region",
-          "start": 50,
-          "end": 56,
-          "strand": -1,
-          "citations": [
-            2,
-            7
-          ]
-        },
-        {
-          "label": "PtetR -10",
-          "feature_type": "regulatory",
-          "so_term": "SO:0005836",
-          "so_name": "regulatory_region",
-          "start": 26,
-          "end": 32,
-          "strand": -1,
-          "citations": [
-            2,
-            7
-          ]
-        },
-        {
-          "label": "PtetR +1",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000315",
-          "so_name": "TSS",
-          "start": 19,
-          "end": 20,
-          "strand": -1,
-          "citations": [
-            1,
-            2,
-            7
           ]
         }
       ],
