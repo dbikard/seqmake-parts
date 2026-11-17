@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 271,
+  "n_parts": 272,
   "n_validated": 76,
-  "n_candidate": 195,
+  "n_candidate": 196,
   "n_documented": 76,
-  "n_functional_claims": 361,
+  "n_functional_claims": 362,
   "parts": [
     {
       "name": "186 integrase",

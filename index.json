@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 271,
+  "n_parts": 272,
   "n_validated": 76,
-  "n_candidate": 195,
-  "n_functional_claims": 361,
+  "n_candidate": 196,
+  "n_functional_claims": 362,
   "parts": [
     {
       "slug": "186_integrase",
