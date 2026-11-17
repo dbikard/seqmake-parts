@@ -45,6 +45,23 @@
           "The T7 early terminator TE (catalog part T7Te), identical: the 3' terminator of this B0010-B0012 double terminator."
         ]
       }
+    },
+    {
+      "type": "terminator",
+      "start": 8,
+      "end": 80,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "rrnBT1"
+        ],
+        "parent": [
+          "B0015_terminator"
+        ],
+        "note": [
+          "The rrnB T1 terminator (catalog part rrnBT1), identical: inside the B0010 half of this B0010-B0012 double terminator."
+        ]
+      }
     }
   ],
   "provenance": {

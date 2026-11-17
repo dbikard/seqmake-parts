@@ -1,7 +1,6 @@
-LOCUS       rrnBT1                   169 bp    DNA              UNK 01-JAN-1980
+LOCUS       rrnBT1                    72 bp    DNA              UNK 01-JAN-1980
 DEFINITION  rrnBT1 — the E. coli rrnB operon T1 intrinsic (Rho-independent)
-            transcription terminator; 169 bp from J01695, >97% termination
-            efficiency..
+            transcription terminator; 72 bp (J01695 6366-6437)..
 ACCESSION   rrnBT1
 VERSION     rrnBT1
 KEYWORDS    .
@@ -68,7 +67,7 @@ COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/rrnBT1
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
-     terminator      1..169
+     terminator      1..72
                      /label="rrnBT1"
                      /synonym="rrnBT1"
                      /synonym="rrnBT1 terminator"
@@ -79,10 +78,23 @@ FEATURES             Location/Qualifiers
                      /note="rrnB T1, the strong intrinsic (Rho-independent)
                      transcription terminator from the T1-T2 terminator cluster
                      downstream of the 5S rRNA gene in the E. coli rrnB
-                     ribosomal RNA operon; 169 bp taken at 100% identity from
-                     the canonical rrnB operon sequence J01695 (Brosius et al.
-                     1981). Terminates host (E. coli sigma-70) RNA polymerase
-                     via a GC-rich hairpin followed by a short U-tract; >97%
+                     ribosomal RNA operon; 72 bp from the canonical rrnB operon
+                     sequence J01695 (6366-6437; Brosius et al. 1981): from the
+                     base after the 5S rRNA, which the record ends at 6365, to
+                     the 3' end of the iGEM registry's T1 (BBa_B0010, 'T1 from
+                     E. coli rrnB', J01695 6358-6437 plus two cloning bases). It
+                     holds the A-rich stretch, the GC-rich hairpin, the U-tract
+                     and the class II sequence. Cambray et al. 2013 (Suppl.
+                     Table 1) measured T1 twice: the 31 bp hairpin and U-tract
+                     alone ('rrnB T1 [min]', NC_000913.2 4169794-4169824, here
+                     bases 15-45) at 74.3% termination, and T1 with its native
+                     flanks ('rrnB T1', NC_000913.2 4169764-4169854, which holds
+                     all of this part plus 16 bp of the 5S rRNA and 3 bp
+                     downstream) at 97.3%. The 91 bases this part carried before
+                     (J01695 6438-6528, toward T2) and the 6 bases of 5S rRNA at
+                     its 5' end are documented by no source as part of T1.
+                     Terminates host (E. coli sigma-70) RNA polymerase via a
+                     GC-rich hairpin followed by a short U-tract; >97%
                      termination efficiency (Cambray et al. 2013). The element
                      additionally carries a class II conserved sequence
                      (TATCTGTT) that triggers termination by phage (T7/SP6) RNA
@@ -91,7 +103,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[5]
                      /citation=[8]
-     stem_loop       25..47
+     stem_loop       19..41
                      /label="T1 GC-rich hairpin (class I intrinsic terminator
                      stem-loop)"
                      /parent="rrnBT1"
@@ -108,13 +120,13 @@ FEATURES             Location/Qualifiers
                      the canonical intrinsic-terminator architecture rather than
                      directly mapped here. The hairpin is immediately followed
                      by the U-tract. Coordinates confirmed by exact sequence
-                     match at 24-47."
+                     match at 18-41."
                      /db_xref="SO:0000313"
                      /citation=[1]
                      /citation=[5]
                      /citation=[6]
                      /citation=[8]
-     misc_feature    48..51
+     misc_feature    42..45
                      /label="poly-U tract (rrnB T1)"
                      /parent="rrnBT1"
                      /note="Four-uridine (UUUU) run in the transcript,
@@ -124,12 +136,12 @@ FEATURES             Location/Qualifiers
                      Chamberlin 1987 showed NusA enhances rrnB T1 termination in
                      vitro to in-vivo-equivalent levels, and Orosz et al. 1991
                      confirmed T1 acts as an efficient standalone terminator in
-                     a reporter assay. TTTT confirmed at 47-51."
+                     a reporter assay. TTTT confirmed at 41-45."
                      /db_xref="SO:0000110"
                      /citation=[1]
                      /citation=[3]
                      /citation=[4]
-     misc_feature    51..58
+     misc_feature    45..52
                      /label="class II conserved sequence (TATCTGTT) — phage RNAP
                      termination signal"
                      /parent="rrnBT1"
@@ -142,12 +154,11 @@ FEATURES             Location/Qualifiers
                      characterized it mechanistically (sequential conformational
                      changes in T7 RNAP, no hairpin required). Not required for
                      E. coli RNAP intrinsic termination. TATCTGTT confirmed at
-                     50-58."
+                     44-52."
                      /db_xref="SO:0000110"
                      /citation=[5]
                      /citation=[7]
 ORIGIN
-        1 aggcatcaaa taaaacgaaa ggctcagtcg aaagactggg cctttcgttt tatctgttgt
-       61 ttgtcggtga acgctctcct gagtaggaca aatccgccgg gagcggattt gaacgttgcg
-      121 aagcaacggc ccggagggtg gcgggcagga cgcccgccat aaactgcca
+        1 caaataaaac gaaaggctca gtcgaaagac tgggcctttc gttttatctg ttgtttgtcg
+       61 gtgaacgctc tc
 //
