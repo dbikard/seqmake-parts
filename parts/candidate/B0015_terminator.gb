@@ -24,6 +24,13 @@ FEATURES             Location/Qualifiers
                      identical: the 3' terminator of this B0010-B0012 double
                      terminator."
                      /db_xref="SO:0000141"
+     terminator      9..80
+                     /label="rrnBT1"
+                     /parent="B0015_terminator"
+                     /note="The rrnB T1 terminator (catalog part rrnBT1),
+                     identical: inside the B0010 half of this B0010-B0012 double
+                     terminator."
+                     /db_xref="SO:0000141"
 ORIGIN
         1 ccaggcatca aataaaacga aaggctcagt cgaaagactg ggcctttcgt tttatctgtt
        61 gtttgtcggt gaacgctctc tactagagtc acactggctc accttcgggt gggcctttct

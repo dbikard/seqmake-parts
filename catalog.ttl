@@ -255,7 +255,8 @@ part:B0015_terminator a sbol:Component ;
     rdfs:label "B0015_terminator" ;
     dcterms:title "B0015_terminator" ;
     sbol:displayId "B0015_terminator" ;
-    sbol:hasFeature part:B0015_terminator_feature_0 ;
+    sbol:hasFeature part:B0015_terminator_feature_0,
+        part:B0015_terminator_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:B0015_terminator_sequence ;
     sbol:role so:0000141 ;
@@ -3240,7 +3241,7 @@ part:rop a sbol:Component ;
 
 part:rrnBT1 a sbol:Component ;
     rdfs:label "rrnBT1" ;
-    dcterms:description "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 169 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (Brosius et al. 1981). Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin." ;
+    dcterms:description "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 72 bp from the canonical rrnB operon sequence J01695 (6366-6437; Brosius et al. 1981): from the base after the 5S rRNA, which the record ends at 6365, to the 3' end of the iGEM registry's T1 (BBa_B0010, 'T1 from E. coli rrnB', J01695 6358-6437 plus two cloning bases). It holds the A-rich stretch, the GC-rich hairpin, the U-tract and the class II sequence. Cambray et al. 2013 (Suppl. Table 1) measured T1 twice: the 31 bp hairpin and U-tract alone ('rrnB T1 [min]', NC_000913.2 4169794-4169824, here bases 15-45) at 74.3% termination, and T1 with its native flanks ('rrnB T1', NC_000913.2 4169764-4169854, which holds all of this part plus 16 bp of the 5S rRNA and 3 bp downstream) at 97.3%. The 91 bases this part carried before (J01695 6438-6528, toward T2) and the 6 bases of 5S rRNA at its 5' end are documented by no source as part of T1. Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin." ;
     dcterms:references pubmed:12840000,
         pubmed:15615852,
         pubmed:1718749,
@@ -3274,7 +3275,7 @@ part:rrnBT1 a sbol:Component ;
 
 part:rrnBT1T2 a sbol:Component ;
     rdfs:label "rrnBT1T2" ;
-    dcterms:description "rrnB T1+T2 tandem double terminator: the complete T1-T2 intrinsic (Rho-independent) transcription terminator cluster located downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon. 217 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (positions 6362–6578, 1-based; Brosius et al. 1981). bp 1–169 are the T1 terminator (catalog part rrnBT1); bp 170–217 are the 3' portion of the T2 terminator region (overlapping the 3' end of catalog part rrnBT2). The two terminators function as a tandem unit that strongly and bidirectionally insulates downstream sequence from upstream transcription; both terminate host (E. coli sigma-70) RNA polymerase. Composite of catalog atoms rrnBT1 + rrnBT2; sourced fresh from J01695, not assembled by concatenation." ;
+    dcterms:description "rrnB T1+T2 tandem double terminator: the complete T1-T2 intrinsic (Rho-independent) transcription terminator cluster located downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon. 211 bp from the canonical rrnB operon sequence J01695 (6366-6576; Brosius et al. 1981), starting at the base after the 5S rRNA. bp 1-72 are the T1 terminator (catalog part rrnBT1); bp 164-211 are the 3' portion of the T2 terminator region (overlapping the 3' end of catalog part rrnBT2). The two terminators function as a tandem unit that strongly and bidirectionally insulates downstream sequence from upstream transcription; both terminate host (E. coli sigma-70) RNA polymerase. Composite of catalog atoms rrnBT1 + rrnBT2; sourced fresh from J01695, not assembled by concatenation." ;
     dcterms:references pubmed:12840000,
         pubmed:15615852,
         pubmed:1718749,
@@ -4356,6 +4357,18 @@ part:B0015_terminator_feature_0_range a sbol:Range ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:B0015_terminator_sequence ;
     sbol:start 89 .
+
+part:B0015_terminator_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "rrnBT1" ;
+    sbol:displayId "B0015_terminator_feature_1" ;
+    sbol:hasLocation part:B0015_terminator_feature_1_range ;
+    sbol:role so:0000141 .
+
+part:B0015_terminator_feature_1_range a sbol:Range ;
+    sbol:end 80 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:B0015_terminator_sequence ;
+    sbol:start 9 .
 
 part:B0030_RBS_sequence a sbol:Sequence ;
     sbol:displayId "B0030_RBS_sequence" ;
@@ -16363,7 +16376,7 @@ part:rrnBT1T2_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000141 .
 
 part:rrnBT1T2_feature_0_range a sbol:Range ;
-    sbol:end 169 ;
+    sbol:end 72 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
     sbol:start 1 .
@@ -16378,10 +16391,10 @@ part:rrnBT1T2_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000141 .
 
 part:rrnBT1T2_feature_1_range a sbol:Range ;
-    sbol:end 217 ;
+    sbol:end 211 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 169 .
+    sbol:start 163 .
 
 part:rrnBT1T2_feature_2 a sbol:SequenceFeature ;
     dcterms:references pubmed:12840000,
@@ -16393,10 +16406,10 @@ part:rrnBT1T2_feature_2 a sbol:SequenceFeature ;
     sbol:role so:0000313 .
 
 part:rrnBT1T2_feature_2_range a sbol:Range ;
-    sbol:end 47 ;
+    sbol:end 41 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 25 .
+    sbol:start 19 .
 
 part:rrnBT1T2_feature_3 a sbol:SequenceFeature ;
     dcterms:references pubmed:2821282,
@@ -16407,10 +16420,10 @@ part:rrnBT1T2_feature_3 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:rrnBT1T2_feature_3_range a sbol:Range ;
-    sbol:end 51 ;
+    sbol:end 45 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 48 .
+    sbol:start 42 .
 
 part:rrnBT1T2_feature_4 a sbol:SequenceFeature ;
     dcterms:references pubmed:15615852,
@@ -16421,10 +16434,10 @@ part:rrnBT1T2_feature_4 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:rrnBT1T2_feature_4_range a sbol:Range ;
-    sbol:end 58 ;
+    sbol:end 52 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 51 .
+    sbol:start 45 .
 
 part:rrnBT1T2_feature_5 a sbol:SequenceFeature ;
     dcterms:references pubmed:1718749,
@@ -16436,10 +16449,10 @@ part:rrnBT1T2_feature_5 a sbol:SequenceFeature ;
     sbol:role so:0000313 .
 
 part:rrnBT1T2_feature_5_range a sbol:Range ;
-    sbol:end 210 ;
+    sbol:end 204 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 187 .
+    sbol:start 181 .
 
 part:rrnBT1T2_feature_6 a sbol:SequenceFeature ;
     dcterms:references pubmed:23511967,
@@ -16450,10 +16463,10 @@ part:rrnBT1T2_feature_6 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:rrnBT1T2_feature_6_range a sbol:Range ;
-    sbol:end 213 ;
+    sbol:end 207 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1T2_sequence ;
-    sbol:start 209 .
+    sbol:start 203 .
 
 part:rrnBT1_claim_factor_enhancement a cat:FunctionalClaim ;
     rdfs:label "NusA enhances rrnB T1 termination in vitro to levels matching in-vivo estimates, consistent with the short (4-nt) U-tract being partly rate-limiting in isolation." ;
@@ -16529,13 +16542,13 @@ part:rrnBT1_claim_phage_rnap_termination_provenance a prov:Activity ;
     cat:method "ai-extraction" .
 
 part:rrnBT1_claim_strength_class a cat:FunctionalClaim ;
-    rdfs:label "Strong terminator: >97% termination efficiency for host RNA polymerase, above the >95% strong-terminator threshold." ;
+    rdfs:label "Strong terminator: Cambray et al. 2013 measured 97.3% termination for T1 in its native context (a 91 bp window holding this part) and 74.3% for its 31 bp hairpin and U-tract alone." ;
     dcterms:references pubmed:23511967 ;
     prov:wasDerivedFrom pubmed:23511967 ;
     prov:wasGeneratedBy part:rrnBT1_claim_strength_class_provenance ;
     cat:analysisStatus "pending" ;
     cat:claimType "strength_class" ;
-    cat:claimValue "{\"comparator\": \">95% threshold\", \"strength\": \"strong\", \"termination_efficiency_pct\": 97}" ;
+    cat:claimValue "{\"core_only_pct\": 74.3, \"strength\": \"strong\", \"termination_efficiency_pct\": 97.3, \"window\": \"NC_000913.2 4169764-4169854\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
     cat:sourceQuote "rrnB T1 measured at greater than 97% termination efficiency in a systematic measurement of intrinsic terminators in E. coli" ;
@@ -16558,10 +16571,10 @@ part:rrnBT1_feature_0 a sbol:SequenceFeature ;
     sbol:role so:0000313 .
 
 part:rrnBT1_feature_0_range a sbol:Range ;
-    sbol:end 47 ;
+    sbol:end 41 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1_sequence ;
-    sbol:start 25 .
+    sbol:start 19 .
 
 part:rrnBT1_feature_1 a sbol:SequenceFeature ;
     dcterms:references pubmed:1718749,
@@ -16573,10 +16586,10 @@ part:rrnBT1_feature_1 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:rrnBT1_feature_1_range a sbol:Range ;
-    sbol:end 51 ;
+    sbol:end 45 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1_sequence ;
-    sbol:start 48 .
+    sbol:start 42 .
 
 part:rrnBT1_feature_2 a sbol:SequenceFeature ;
     dcterms:references pubmed:15615852,
@@ -16587,10 +16600,10 @@ part:rrnBT1_feature_2 a sbol:SequenceFeature ;
     sbol:role so:0000110 .
 
 part:rrnBT1_feature_2_range a sbol:Range ;
-    sbol:end 58 ;
+    sbol:end 52 ;
     sbol:orientation sbol:inline ;
     sbol:sequence part:rrnBT1_sequence ;
-    sbol:start 51 .
+    sbol:start 45 .
 
 part:rrnBT2_sequence a sbol:Sequence ;
     sbol:displayId "rrnBT2_sequence" ;
@@ -16992,12 +17005,6 @@ part:AviTag_claim_binding_affinity a cat:FunctionalClaim ;
     cat:sourceSection "Title" ;
     cat:usefulness "high" ;
     cat:usefulnessRationale "Discriminates AviTag via femtomolar biotin-streptavidin affinity; specifies actionable monovalent streptavidin partner to prevent receptor crosslinking in live-cell applications; quantitative and risk-reducing (addresses failure mode)" .
-
-part:B0015_terminator_sequence a sbol:Sequence ;
-    sbol:displayId "B0015_terminator_sequence" ;
-    sbol:elements "CCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCTACTAGAGTCACACTGGCTCACCTTCGGGTGGGCCTTTCTGCGTTTATA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:ChnR a sbol:Component ;
     rdfs:label "ChnR" ;
@@ -17467,6 +17474,12 @@ part:pSH71_ori_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:B0015_terminator_sequence a sbol:Sequence ;
+    sbol:displayId "B0015_terminator_sequence" ;
+    sbol:elements "CCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCTACTAGAGTCACACTGGCTCACCTTCGGGTGGGCCTTTCTGCGTTTATA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:P2_sequence a sbol:Sequence ;
     sbol:displayId "P2_sequence" ;
     sbol:elements "TTGACAGCTTATCATCGATAAGCTTTAAT" ;
@@ -17547,7 +17560,7 @@ part:p15A_sequence a sbol:Sequence ;
 
 part:rrnBT1_sequence a sbol:Sequence ;
     sbol:displayId "rrnBT1_sequence" ;
-    sbol:elements "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCA" ;
+    sbol:elements "CAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -17703,7 +17716,7 @@ part:bla_sequence a sbol:Sequence ;
 
 part:rrnBT1T2_sequence a sbol:Sequence ;
     sbol:displayId "rrnBT1T2_sequence" ;
-    sbol:elements "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCAGGCATCAAATTAAGCAGAAGGCCATCCTGACGGATGGCCTTTTTGCGT" ;
+    sbol:elements "CAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCAGGCATCAAATTAAGCAGAAGGCCATCCTGACGGATGGCCTTTTTGCGT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
