@@ -34,7 +34,7 @@
           "tet operator"
         ],
         "note": [
-          "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not either Tn10 operator window: the Tn10 control region (J01830) carries CACTCTATCATTGATAGAG and TCCCTATCAGTGATAGAGA, which differ from this one at one and at four positions."
+          "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not a Tn10 operator window: compared base for base with the Tn10 control region (J01830), it differs at one position from J01830 1551-1569 (ACTCTATCATTGATAGAGT, around tetO1) and at three from 1581-1599 (TCCCTATCAGTGATAGAGA, tetO2)."
         ],
         "db_xref": [
           "GenBank:JN635500"

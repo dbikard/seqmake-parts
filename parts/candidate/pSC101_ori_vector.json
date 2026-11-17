@@ -209,7 +209,7 @@
     }
   ],
   "provenance": {
-    "sequence_source": "U66313 (expression vector pUHS*2Plac/ara-1 MCS1, Lutz & Bujard 1997), 2235..2457, 100% over 223 bp; the oldest 100% carrier a date-bracketed BLAST (1980-2005) returns."
+    "sequence_source": "U66313 (expression vector pUHS*2Plac/ara-1 MCS1, Lutz & Bujard 1997), 2235..2457, 100% over 223 bp: the earliest deposit found that carries this form (the oldest 100% carrier a date-bracketed BLAST, 1980-2005, returns)"
   },
   "functional_claims": [
     {
@@ -223,7 +223,7 @@
       "ontology": {},
       "source": {
         "pmid": "8376344",
-        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
         "quote_source": "catalog-doc"
       },
       "provenance": {

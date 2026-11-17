@@ -1,7 +1,7 @@
 The wild-type *E. coli* lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp.
 
 ## Origin
-Plac is the natural *E. coli* lac control region. This 55-bp part spans the lac core promoter from the -35 hexamel through a partial O1 operator, mapped in the classic lac control-region work ([PMID 1088926](https://pubmed.ncbi.nlm.nih.gov/1088926/)). It carries the wild-type, non-consensus -10 (TATGTT) rather than the lacUV5 up-mutation (TATAAT), so it is the native (catabolite-sensitive) promoter rather than the lacUV5 derivative.
+Plac is the natural *E. coli* lac control region. This 57-bp part (E. coli MG1655, U00096 complement(366323..366379)) spans the lac core promoter from the -35 hexamer through the complete O1 operator, mapped in the classic lac control-region work ([PMID 1088926](https://pubmed.ncbi.nlm.nih.gov/1088926/)). It carries the wild-type, non-consensus -10 (TATGTT) rather than the lacUV5 up-mutation (TATAAT), so it is the native (catabolite-sensitive) promoter rather than the lacUV5 derivative.
 
 ## Properties
 - **-35** TTTACA (seq[0:6]), wild-type lac hexamer.

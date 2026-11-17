@@ -23,13 +23,11 @@
         ],
         "synonym": [
           "pIJ101 ori",
-          "pIJ101",
           "pIJ101 origin",
-          "Streptomyces ori",
           "pIJ101 replicon"
         ],
         "note": [
-          "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and this record's own sequence source is unknown (migrated from a GenBank file, no deposit recorded): both of its ends are unverified. Split it once the replicon is re-sourced from a deposit."
+          "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and no deposit contains it exactly: it matches the complete pIJ101 sequence M21778 at 99.55% (2,229 of 2,239 bases, 10 mismatches, no gaps) over 8570->1978 across that record's origin of numbering. Both of its ends are unverified. Split it once the replicon is re-sourced from a deposit."
         ]
       }
     },
@@ -55,7 +53,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "M21778 (Streptomyces plasmid pIJ101, complete sequence), 8570..8830 + 1..1978, 99.55% identity over 2,239 bp (10 mismatches, no gaps); not 100%, so not a sequence_source"
   },
   "functional_claims": []
 }

@@ -211,7 +211,7 @@
       "ontology": {},
       "source": {
         "pmid": "8376344",
-        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
         "quote_source": "catalog-doc"
       },
       "provenance": {

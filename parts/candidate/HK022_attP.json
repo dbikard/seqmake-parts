@@ -79,7 +79,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "X51962 (Coliphage HK022 int and xis genes, Yoshida et al. 1990), complement strand positions 229..486, 100% identity over 258 bp",
+    "sequence_source": "X51962 (Coliphage HK022 int and xis genes, Yagil et al. 1989), complement strand positions 229..486, 100% identity over 258 bp",
     "asserting_agent": "annotate-part-workflow"
   },
   "functional_claims": [

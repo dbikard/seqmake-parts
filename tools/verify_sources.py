@@ -9,7 +9,11 @@ protein for a protein part, and, for a protein part cited to a nucleotide
 record, as a substring of that record's six-frame translation.
 
 It needs the network, so it is **not** part of ``check_library.py`` / CI: run it
-when sourcing a part, and when reviewing a change to sourcing.
+when sourcing a part, and when reviewing a change to sourcing. Only
+``sequence_source`` and the main feature's ``db_xref`` are read: a related record
+named for context (the natural protein a designed tag comes from) belongs in
+``provenance.derived_from``, and a near-but-not-exact deposit in
+``provenance.closest_deposit``; neither makes a part sourced.
 
 Usage::
 
@@ -34,7 +38,7 @@ TOOL = "seqmake-parts"
 
 # Accessions as they appear in a provenance string or a db_xref.
 NUC = re.compile(r"\b(?:[A-Z]{1}\d{5}|[A-Z]{2}\d{6}|[A-Z]{2}_\d{6,9}|[A-Z]{4}\d{8})(?:\.\d+)?\b")
-PROT = re.compile(r"\b(?:WP|NP|YP|AP|CAA|CAB|AAA|AAB)_?\d{5,9}(?:\.\d+)?\b")
+PROT = re.compile(r"\b(?:(?:WP|NP|YP|XP|AP)_\d{6,9}|[A-Z]{3}\d{5,7})(?:\.\d+)?\b")
 UNIPROT = re.compile(r"\b(?:UniProt:)?([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9](?:[A-Z][A-Z0-9]{2}[0-9]){1,2})\b")
 IGEM = re.compile(r"\bBBa_[A-Za-z0-9]+\b")
 _COMP = str.maketrans("ACGTacgt", "TGCAtgca")

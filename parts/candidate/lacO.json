@@ -35,7 +35,7 @@
           "lacO"
         ],
         "note": [
-          "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. The 24 bp form is annotated on the catalog's Plac as 'lac operator O1', the 21 bp form on Ptac and T7lac."
+          "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. In the catalog's promoters the operator is annotated under several windows and names: Plac carries the published 24 bp as 'lac operator O1'; T7lac a 21 bp window as 'lac operator O1' and Ptac the same 21 bp as 'lac operator'; PT5/lacO two 17 bp windows one base downstream of this one as 'lac operator', and PA1/O4/O3 the same as 'lac operator O4' and 'O3'; PA1lacO-1, PLlacO-1 and Plac/ara-1 carry this part's own window as 'lacO'."
         ],
         "citation": [
           "[1]"

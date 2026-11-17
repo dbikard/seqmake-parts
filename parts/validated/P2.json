@@ -122,7 +122,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01749 (pBR322, complete sequence), 10..38, 100% over 29 bp"
   },
   "functional_claims": [
     {

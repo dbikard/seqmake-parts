@@ -77,12 +77,22 @@ ALLOW_ORF = {
     "WPRE": "post-transcriptional RNA element whose sequence spans part of the "
             "woodchuck hepatitis virus X gene; used and typed as an RNA element",
 }
-# Validated before a sourced record was required: each cites the literature for
-# its element but names no deposit for its bases. They keep their status and are
-# re-sourced on the next touch (the same grandfathering `validate_parts` applies).
+# Validated parts awaiting a deposit. Each was validated before a sourced record
+# was required: it cites the literature for its element but names no deposit that
+# contains its bases. Each entry says what it needs; source it and delete the line.
 GRANDFATHERED_UNSOURCED = {
-    "P2", "PA1/O4/O3", "PLtetO-1", "PT5/lacO", "PchnB", "Plac", "PlacUV5", "Pm",
-    "PphlF", "PtetA", "Ptac", "Ptrc", "Pxyl/tet", "T7lac",
+    "PA1/O4/O3": "a deposit containing its 56 bp (Lanzer & Bujard 1988 give the promoter, no accession)",
+    "PLtetO-1": "a deposit containing its 74 bp (a pZ vector record from Lutz & Bujard 1997)",
+    "PT5/lacO": "a deposit containing its 81 bp (a pQE / T5 promoter vector record)",
+    "PchnB": "a deposit containing its 396 bp (the Acinetobacter chn cluster record of Iwaki et al.)",
+    "PlacUV5": "a deposit containing its 30 bp lacUV5 core (a lacUV5 vector or strain record)",
+    "Pm": "a deposit containing its 81 bp (a TOL plasmid xylS/Pm or pJB vector record)",
+    "PphlF": "a deposit containing its 51 bp (a Stanton et al. 2014 / Marionette plasmid record)",
+    "PtetA": "the deposit its 29 bp come from: they match Tn10 (J01830) over the first 23 bp only",
+    "Ptac": "a deposit containing its 55 bp (a pKK223-3 / tac vector record)",
+    "Ptrc": "a deposit containing its 30 bp (a pTrc99A vector record)",
+    "T7lac": "a deposit containing its 67 bp (a pET T7lac vector record)",
+    "SNAP_tag": "a record of the M-start 179 aa form: UniProt E5BBQ0 / PDB 3KZY hold residues 2-179 only",
 }
 # Pairs found by `duplicate`/`contains` that are deliberately left undeclared,
 # each until the question in its reason is settled from the literature.
@@ -105,8 +115,8 @@ ALLOW_PAIRS: dict[frozenset, str] = {
         "of the other, so there is no true component/variant link to declare",
     frozenset(("tetR/tetA promoters", "tetO")):
         "two operator forms, neither composed of the other: tetO is the pRAB vectors' "
-        "operator (JN635500 4135-4153) and the Tn10 control region's own tetO1 window "
-        "(J01830) differs from it at one base",
+        "operator (JN635500 4135-4153); base for base it differs from J01830 1551-1569 "
+        "(around Tn10 tetO1) at one position and from 1581-1599 (tetO2) at three",
     frozenset(("GFP", "YFP")):
         "two distinct published Aequorea GFP variants (GFP here is gfpmut2; YFP is "
         "EYFP, a variant_of EGFP): 98.3% identical, neither derived from the other",

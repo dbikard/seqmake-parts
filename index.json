@@ -2192,7 +2192,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "Ptet2",
@@ -2510,9 +2510,7 @@
       "n_claims": 0,
       "synonyms": [
         "pIJ101 ori",
-        "pIJ101",
         "pIJ101 origin",
-        "Streptomyces ori",
         "pIJ101 replicon"
       ]
     },
@@ -2558,7 +2556,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "lac promoter"
@@ -3149,7 +3147,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "Pxyl/tet",
@@ -3466,7 +3464,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "RSF ori",
@@ -3629,7 +3627,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 8,
       "synonyms": [
         "SNAP",
@@ -4157,7 +4155,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "tL3",

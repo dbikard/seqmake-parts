@@ -147,7 +147,9 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
   re-fetches each cited accession and checks it really contains the part's
   sequence — run it when you source a part; it needs the network, so CI does not.
   An engineered part that its cited record cannot contain (a designed tag, a
-  consensus site) says so in `sequence_source`.
+  consensus site) says so in `sequence_source`. A deposit that matches the part only
+  nearly (a few substitutions, extra bases) goes in `provenance.closest_deposit`, with
+  the differences: it documents the part without making it sourced.
 - **The curation status travels with the `.gb`.** Every generated `.gb` carries,
   in its `COMMENT`, a line of exactly this shape, which consumers parse:
 

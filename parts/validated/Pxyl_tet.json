@@ -201,7 +201,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "JN635500 (cloning vector pRAB11, Helle et al. 2011), 4096..4153, 100% over 58 bp"
   },
   "functional_claims": [
     {

@@ -9472,7 +9472,7 @@
         "lacO"
       ],
       "collections": [],
-      "description": "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. The 24 bp form is annotated on the catalog's Plac as 'lac operator O1', the 21 bp form on Ptac and T7lac.",
+      "description": "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. In the catalog's promoters the operator is annotated under several windows and names: Plac carries the published 24 bp as 'lac operator O1'; T7lac a 21 bp window as 'lac operator O1' and Ptac the same 21 bp as 'lac operator'; PT5/lacO two 17 bp windows one base downstream of this one as 'lac operator', and PA1/O4/O3 the same as 'lac operator O4' and 'O3'; PA1lacO-1, PLlacO-1 and Plac/ara-1 carry this part's own window as 'lacO'.",
       "length": 17,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -12130,7 +12130,7 @@
         1,
         2
       ],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14017,13 +14017,11 @@
       "so_name": "origin_of_replication",
       "synonyms": [
         "pIJ101 ori",
-        "pIJ101",
         "pIJ101 origin",
-        "Streptomyces ori",
         "pIJ101 replicon"
       ],
       "collections": [],
-      "description": "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and this record's own sequence source is unknown (migrated from a GenBank file, no deposit recorded): both of its ends are unverified. Split it once the replicon is re-sourced from a deposit.",
+      "description": "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and no deposit contains it exactly: it matches the complete pIJ101 sequence M21778 at 99.55% (2,229 of 2,239 bases, 10 mismatches, no gaps) over 8570->1978 across that record's origin of numbering. Both of its ends are unverified. Split it once the replicon is re-sourced from a deposit.",
       "length": 2239,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -14115,7 +14113,7 @@
         "lac promoter"
       ],
       "collections": [],
-      "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+      "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp.",
       "length": 57,
       "protein_length_aa": null,
       "regulated_by": [
@@ -14198,7 +14196,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14212,7 +14210,7 @@
           "ontology": {},
           "source": {
             "pmid": "1088926",
-            "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+            "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -15421,7 +15419,7 @@
           "ontology": {},
           "source": {
             "pmid": "8376344",
-            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -15593,7 +15591,7 @@
           "ontology": {},
           "source": {
             "pmid": "8376344",
-            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -15753,7 +15751,7 @@
           "ontology": {},
           "source": {
             "pmid": "8376344",
-            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
             "quote_source": "catalog-doc"
           },
           "provenance": {
@@ -16214,7 +16212,7 @@
         "ptet"
       ],
       "collections": [],
-      "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable. Its -10 reads CATAAT; the Tn10 tetA promoter of J01830 reads TTATTT there, and this 29 bp matches J01830 only over its first 23 bp, so the sequence is a tetA-promoter form of record for the pZ/pASK vectors rather than the Tn10 one. Its deposit of origin is not established.",
+      "description": "29 bp PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of a tet operator, making transcription TetR/anhydrotetracycline-controllable. Its first 23 bp are the Tn10 tetA promoter (J01830); its -10, CATAAT, is not (Tn10 reads TTATTT there). The deposit this 29 bp was taken from is not established.",
       "length": 29,
       "protein_length_aa": null,
       "regulated_by": [
@@ -16865,7 +16863,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -18158,7 +18156,7 @@
         1,
         2
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "boundaries",
@@ -18993,7 +18991,7 @@
         7,
         8
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "mechanism",
@@ -22947,7 +22945,7 @@
         "tet operator"
       ],
       "collections": [],
-      "description": "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not either Tn10 operator window: the Tn10 control region (J01830) carries CACTCTATCATTGATAGAG and TCCCTATCAGTGATAGAGA, which differ from this one at one and at four positions.",
+      "description": "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not a Tn10 operator window: compared base for base with the Tn10 control region (J01830), it differs at one position from J01830 1551-1569 (ACTCTATCATTGATAGAGT, around tetO1) and at three from 1581-1599 (TCCCTATCAGTGATAGAGA, tetO2).",
       "length": 19,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -23805,7 +23803,7 @@
       "main_citations": [
         1
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "boundaries",

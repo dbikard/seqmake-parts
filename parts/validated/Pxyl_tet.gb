@@ -43,7 +43,7 @@ REFERENCE   5
   REMARK    doi:10.1111/1751-7915.13926
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pxyl_tet
-            Catalog status: validated, unsourced
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..58
                      /label="Pxyl/tet"

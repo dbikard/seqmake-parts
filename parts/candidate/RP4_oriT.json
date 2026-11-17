@@ -50,7 +50,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "X54459 (RP4 transfer region, Ziegelin et al. 1991), 4636..4845, 100% over 210 bp; identical in the IncP-alpha plasmid sequence L27758 (51128..51337)"
+    "sequence_source": "X54459 (RP4 transfer region, Ziegelin et al. 1991), complement(4636..4845), 100% over 210 bp; identical in the IncP-alpha plasmid sequence L27758, complement(51128..51337)"
   },
   "functional_claims": []
 }
