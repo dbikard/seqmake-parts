@@ -29460,6 +29460,265 @@
       ]
     },
     {
+      "@id": "part:pSC101_ori_biobrick",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:hasFunctionalClaim": {
+        "@id": "part:pSC101_ori_biobrick_claim_copy_number"
+      },
+      "cat:slug": "pSC101_ori_biobrick",
+      "dcterms:description": "The SpeI-free BioBrick form of the pSC101 origin: the native origin with two changes (T22A, A23T) that remove the ACTAGT SpeI site at its bases 20-25. The iGEM Registry record of the pSC101 origin (BBa_I50042) describes it as carrying \"mutations introduced to eliminate a SpeI site\" and as \"the origin of replication in pSB4* series plasmids\"; the pSB4A5 backbone carries the same 223 bp. That record calls the origin \"supposed to have low copy number\", and the pSB4A5 record gives the plasmid's copy number as ~10-12 (citing Lutz & Bujard 1997). Copy-number mutations of pSC101 map in the rep101 gene, not in the origin (Armstrong et al. 1984); no source checked here ties a copy-number phenotype to these two bases, and none ties a temperature sensitivity to any form of this origin.",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:8376344"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12501319"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2041467"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6096829"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6327996"
+        }
+      ],
+      "dcterms:title": "pSC101 ori (SpeI-free BioBrick form)",
+      "rdfs:label": "pSC101 ori (SpeI-free BioBrick form)",
+      "sbol:displayId": "pSC101_ori_biobrick",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:pSC101_ori_biobrick_feature_0"
+        },
+        {
+          "@id": "part:pSC101_ori_biobrick_feature_1"
+        },
+        {
+          "@id": "part:pSC101_ori_biobrick_feature_2"
+        },
+        {
+          "@id": "part:pSC101_ori_biobrick_feature_3"
+        },
+        {
+          "@id": "part:pSC101_ori_biobrick_feature_4"
+        }
+      ],
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000296"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "pSC101 ori (pSB4 form)",
+        "pSC101 ori (BioBrick form)"
+      ]
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_claim_copy_number",
+      "@type": "cat:FunctionalClaim",
+      "cat:analysisStatus": "pending",
+      "cat:claimType": "copy_number",
+      "cat:claimValue": "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}",
+      "cat:confidence": "high",
+      "cat:crossChecked": false,
+      "cat:sourceQuote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+      "cat:sourceQuoteFrom": "catalog-doc",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:8376344"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://identifiers.org/pubmed:8376344"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "part:pSC101_ori_biobrick_claim_copy_number_provenance"
+      },
+      "rdfs:label": "Low-copy origin; RepA/iteron-controlled replication."
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_claim_copy_number_provenance",
+      "@type": "prov:Activity",
+      "cat:agent": "ai-assistant",
+      "cat:fromDoc": "pSC101_ori.md",
+      "cat:method": "transcribed-from-doc"
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:8376344"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12501319"
+        }
+      ],
+      "dcterms:title": "RepA iteron 1",
+      "sbol:displayId": "pSC101_ori_biobrick_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:pSC101_ori_biobrick_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000410"
+      }
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 67,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:start": 50
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:8376344"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:12501319"
+        }
+      ],
+      "dcterms:title": "RepA iteron 2",
+      "sbol:displayId": "pSC101_ori_biobrick_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:pSC101_ori_biobrick_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000410"
+      }
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 99,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:start": 82
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:8376344"
+      },
+      "dcterms:title": "RepA iteron 3",
+      "sbol:displayId": "pSC101_ori_biobrick_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:pSC101_ori_biobrick_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000410"
+      }
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 120,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:start": 103
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:12501319"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:8376344"
+        }
+      ],
+      "dcterms:title": "AT-rich bending region",
+      "sbol:displayId": "pSC101_ori_biobrick_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:pSC101_ori_biobrick_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 183,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:start": 150
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:8376344"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:2041467"
+        }
+      ],
+      "dcterms:title": "DnaA",
+      "sbol:displayId": "pSC101_ori_biobrick_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:pSC101_ori_biobrick_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000410"
+      }
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 220,
+      "sbol:orientation": {
+        "@id": "sbol:reverseComplement"
+      },
+      "sbol:sequence": {
+        "@id": "part:pSC101_ori_biobrick_sequence"
+      },
+      "sbol:start": 212
+    },
+    {
+      "@id": "part:pSC101_ori_biobrick_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "pSC101_ori_biobrick_sequence",
+      "sbol:elements": "GGGCTAGTCAATGATAATTACATGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:pSC101_ori_claim_copy_number",
       "@type": "cat:FunctionalClaim",
       "cat:analysisStatus": "pending",

@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 270,
+  "n_parts": 271,
   "n_validated": 76,
-  "n_candidate": 194,
-  "n_functional_claims": 360,
+  "n_candidate": 195,
+  "n_functional_claims": 361,
   "parts": [
     {
       "slug": "186_integrase",
@@ -2920,6 +2920,21 @@
       "synonyms": [
         "pSC101 ori (vector form)",
         "pSC101 ori (SmaI/BglII)"
+      ]
+    },
+    {
+      "slug": "pSC101_ori_biobrick",
+      "name": "pSC101 ori (SpeI-free BioBrick form)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "pSC101 ori (pSB4 form)",
+        "pSC101 ori (BioBrick form)"
       ]
     },
     {

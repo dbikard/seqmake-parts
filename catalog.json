@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "n_parts": 270,
+  "n_parts": 271,
   "n_validated": 76,
-  "n_candidate": 194,
+  "n_candidate": 195,
   "n_documented": 76,
-  "n_functional_claims": 360,
+  "n_functional_claims": 361,
   "parts": [
     {
       "name": "186 integrase",
@@ -15579,6 +15579,166 @@
         4,
         5,
         6
+      ],
+      "sourced": true,
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "Low-copy origin; RepA/iteron-controlled replication.",
+          "value": {
+            "copy_number": "low",
+            "control": "RepA / iterons"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "8376344",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "pSC101_ori.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "pSC101 ori (SpeI-free BioBrick form)",
+      "slug": "pSC101_ori_biobrick",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "synonyms": [
+        "pSC101 ori (pSB4 form)",
+        "pSC101 ori (BioBrick form)"
+      ],
+      "collections": [],
+      "description": "The SpeI-free BioBrick form of the pSC101 origin: the native origin with two changes (T22A, A23T) that remove the ACTAGT SpeI site at its bases 20-25. The iGEM Registry record of the pSC101 origin (BBa_I50042) describes it as carrying \"mutations introduced to eliminate a SpeI site\" and as \"the origin of replication in pSB4* series plasmids\"; the pSB4A5 backbone carries the same 223 bp. That record calls the origin \"supposed to have low copy number\", and the pSB4A5 record gives the plasmid's copy number as ~10-12 (citing Lutz & Bujard 1997). Copy-number mutations of pSC101 map in the rep101 gene, not in the origin (Armstrong et al. 1984); no source checked here ties a copy-number phenotype to these two bases, and none ties a temperature sensitivity to any form of this origin.",
+      "length": 223,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "RepA iteron 1",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 49,
+          "end": 67,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RepA iteron 2",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 81,
+          "end": 99,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RepA iteron 3",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 102,
+          "end": 120,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "AT-rich bending region",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 149,
+          "end": 183,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "DnaA",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 211,
+          "end": 220,
+          "strand": -1,
+          "citations": [
+            1,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sugiura S, Ohkubo S, Yamaguchi K",
+          "title": "Minimal essential origin of plasmid pSC101 replication: requirement of a region downstream of iterons",
+          "journal": "J Bacteriol 175(18):5993-6001 (1993)",
+          "pmid": "8376344",
+          "doi": "10.1128/jb.175.18.5993-6001.1993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8376344/"
+        },
+        {
+          "authors": "Murakami A, Sugiura S, Yamaguchi K",
+          "title": "DNA bending of pSC101 ori induced by Rep, a replication initiator protein and IHF",
+          "journal": "J Gen Appl Microbiol 43(4):189-197 (1997)",
+          "pmid": "12501319",
+          "doi": "10.2323/jgam.43.189",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12501319/"
+        },
+        {
+          "authors": "Manen D, Caro L",
+          "title": "The replication of plasmid pSC101",
+          "journal": "Mol Microbiol 5(2):233-237 (1991)",
+          "pmid": "2041467",
+          "doi": "10.1111/j.1365-2958.1991.tb02103.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2041467/"
+        },
+        {
+          "authors": "Bernardi A, Bernardi F",
+          "title": "Complete sequence of pSC101.",
+          "journal": "Nucleic Acids Res. 1984;12(24):9415-9426",
+          "pmid": "6096829",
+          "doi": "10.1093/nar/12.24.9415",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6096829/"
+        },
+        {
+          "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+          "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+          "journal": "J Mol Biol. 1984;175(3):331-348",
+          "pmid": "6327996",
+          "doi": "10.1016/0022-2836(84)90352-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327996/"
+        }
+      ],
+      "main_citations": [
+        4,
+        5
       ],
       "sourced": true,
       "functional_claims": [

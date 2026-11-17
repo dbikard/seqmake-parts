@@ -2978,6 +2978,32 @@ part:pSC101_ori a sbol:Component ;
     cat:slug "pSC101_ori" ;
     cat:sourceAccession "GenBank:NC_002056" .
 
+part:pSC101_ori_biobrick a sbol:Component ;
+    rdfs:label "pSC101 ori (SpeI-free BioBrick form)" ;
+    dcterms:description "The SpeI-free BioBrick form of the pSC101 origin: the native origin with two changes (T22A, A23T) that remove the ACTAGT SpeI site at its bases 20-25. The iGEM Registry record of the pSC101 origin (BBa_I50042) describes it as carrying \"mutations introduced to eliminate a SpeI site\" and as \"the origin of replication in pSB4* series plasmids\"; the pSB4A5 backbone carries the same 223 bp. That record calls the origin \"supposed to have low copy number\", and the pSB4A5 record gives the plasmid's copy number as ~10-12 (citing Lutz & Bujard 1997). Copy-number mutations of pSC101 map in the rep101 gene, not in the origin (Armstrong et al. 1984); no source checked here ties a copy-number phenotype to these two bases, and none ties a temperature sensitivity to any form of this origin." ;
+    dcterms:references pubmed:12501319,
+        pubmed:2041467,
+        pubmed:6096829,
+        pubmed:6327996,
+        pubmed:8376344 ;
+    dcterms:title "pSC101 ori (SpeI-free BioBrick form)" ;
+    sbol:displayId "pSC101_ori_biobrick" ;
+    sbol:hasFeature part:pSC101_ori_biobrick_feature_0,
+        part:pSC101_ori_biobrick_feature_1,
+        part:pSC101_ori_biobrick_feature_2,
+        part:pSC101_ori_biobrick_feature_3,
+        part:pSC101_ori_biobrick_feature_4 ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:pSC101_ori_biobrick_sequence ;
+    sbol:role so:0000296 ;
+    sbol:type sbo:0000251 ;
+    skos:altLabel "pSC101 ori (BioBrick form)",
+        "pSC101 ori (pSB4 form)" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:pSC101_ori_biobrick_claim_copy_number ;
+    cat:slug "pSC101_ori_biobrick" .
+
 part:pSC101_ori_vector a sbol:Component ;
     rdfs:label "pSC101 ori (SmaI/BglII vector form)" ;
     dcterms:description "The SmaI/BglII cloning-vector form of the pSC101 origin: the native origin with CCCGGGAGATCT (SmaI + BglII) in place of its bases 32-43. Carried by the pZ expression vectors (Lutz & Bujard 1997) and by many later pSC101 vectors; 224 of a 1,390-plasmid collection carry this form and 44 the native one. The two differ only over bases 32-43, outside every annotated sub-element of the origin. Like the native form, it carries no temperature-sensitivity claim: that phenotype maps to the rep101 gene (Armstrong et al. 1984)." ;
@@ -15463,6 +15489,93 @@ part:pR_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:pSC101_ori_biobrick_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
+    dcterms:references pubmed:8376344 ;
+    prov:wasDerivedFrom pubmed:8376344 ;
+    prov:wasGeneratedBy part:pSC101_ori_biobrick_claim_copy_number_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}" ;
+    cat:confidence "high" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:pSC101_ori_biobrick_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pSC101_ori.md" ;
+    cat:method "transcribed-from-doc" .
+
+part:pSC101_ori_biobrick_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 1" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_0" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_0_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_0_range a sbol:Range ;
+    sbol:end 67 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 50 .
+
+part:pSC101_ori_biobrick_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 2" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_1" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_1_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_1_range a sbol:Range ;
+    sbol:end 99 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 82 .
+
+part:pSC101_ori_biobrick_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:8376344 ;
+    dcterms:title "RepA iteron 3" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_2" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_2_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_2_range a sbol:Range ;
+    sbol:end 120 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 103 .
+
+part:pSC101_ori_biobrick_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "AT-rich bending region" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_3" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:pSC101_ori_biobrick_feature_3_range a sbol:Range ;
+    sbol:end 183 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 150 .
+
+part:pSC101_ori_biobrick_feature_4 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2041467,
+        pubmed:8376344 ;
+    dcterms:title "DnaA" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_4" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_4_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_4_range a sbol:Range ;
+    sbol:end 220 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 212 .
+
 part:pSC101_ori_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
     dcterms:references pubmed:8376344 ;
@@ -17480,6 +17593,12 @@ part:birA_sequence a sbol:Sequence ;
     sbol:displayId "birA_sequence" ;
     sbol:elements "MKDNTVPLKLIALLANGEFHSGEQLGETLGMSRAAINKHIQTLRDWGVDVFTVPGKGYSLPEPIQLLNAKQILGQLDGGSVAVLPVIDSTNQYLLDRIGELKSGDACIAEYQQAGRGRRGRKWFSPFGANLYLSMFWRLEQGPAAAIGLSLVIGIVMAEVLRKLGADKVRVKWPNDLYLQDRKLAGILVELTGKTGDAAQIVIGAGINMAMRRVEESVVNQGWITLQEAGINLDRNTLAAMLIRELRAALELFEQEGLAPYLSRWEKLDNFINRPVKLIIGDKEIFGISRGIDKQGALLLEQDGIIKPWMGGEISLRSAEK" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:pSC101_ori_biobrick_sequence a sbol:Sequence ;
+    sbol:displayId "pSC101_ori_biobrick_sequence" ;
+    sbol:elements "GGGCTAGTCAATGATAATTACATGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:pSC101_ori_sequence a sbol:Sequence ;
