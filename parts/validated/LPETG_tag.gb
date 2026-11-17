@@ -71,6 +71,7 @@ REFERENCE   8
   REMARK    doi:10.1128/IAI.03122-14
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/LPETG_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..5
                      /label="LPETG_tag"

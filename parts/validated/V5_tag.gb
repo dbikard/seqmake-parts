@@ -59,6 +59,7 @@ REFERENCE   6
   REMARK    doi:10.1099/jgv.0.002061
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/V5_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..14
                      /label="V5_tag"

@@ -45,6 +45,7 @@ REFERENCE   5
   REMARK    doi:10.1042/bj3210413
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/bla
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..286
                      /label="bla"

@@ -24,6 +24,9 @@
         "synonym": [
           "PlacIq",
           "lacIq promoter"
+        ],
+        "variant_of": [
+          "PlacI"
         ]
       }
     }

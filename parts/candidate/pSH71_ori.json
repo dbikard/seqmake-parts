@@ -30,6 +30,23 @@
           "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA."
         ]
       }
+    },
+    {
+      "type": "rep_origin",
+      "start": 300,
+      "end": 813,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "pSH71 ori (core)"
+        ],
+        "parent": [
+          "pSH71 ori"
+        ],
+        "note": [
+          "The whole of the catalog part pSH71 ori (core), identical."
+        ]
+      }
     }
   ],
   "provenance": {

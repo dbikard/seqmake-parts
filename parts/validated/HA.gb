@@ -31,6 +31,7 @@ REFERENCE   3
    PUBMED   17264856
   REMARK    doi:10.1038/nmeth0207-107
 COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/HA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..9
                      /label="HA"

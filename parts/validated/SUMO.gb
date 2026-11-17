@@ -55,6 +55,7 @@ REFERENCE   6
   REMARK    doi:10.3390/ijms232012188
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SUMO
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..98
                      /label="SUMO"

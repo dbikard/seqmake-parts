@@ -32,6 +32,23 @@
           "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator; AraC- and LacI-controlled (arabinose + IPTG)."
         ]
       }
+    },
+    {
+      "type": "protein_bind",
+      "start": 76,
+      "end": 93,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lacO"
+        ],
+        "parent": [
+          "Plac/ara-1"
+        ],
+        "note": [
+          "17 bp lac operator O1 core, identical to the catalog part lacO."
+        ]
+      }
     }
   ],
   "provenance": {

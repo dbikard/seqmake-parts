@@ -41,6 +41,7 @@ REFERENCE   4
   REMARK    doi:10.1007/BF02464882
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/GmR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..177
                      /label="GmR"
@@ -48,6 +49,9 @@ FEATURES             Location/Qualifiers
                      /synonym="Gentamicin R"
                      /synonym="aacC1"
                      /synonym="gentamicin acetyltransferase"
+                     /synonym="Acc3"
+                     /synonym="gentamicin 3-N-acetyltransferase"
+                     /synonym="GmR (SEVA)"
                      /note="GmR (aacC1 / AAC(3)-Ia) — gentamicin
                      3-N-acetyltransferase that confers gentamicin resistance by
                      acetyl-CoA-dependent N-acetylation of aminoglycosides;

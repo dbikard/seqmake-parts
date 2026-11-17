@@ -26,6 +26,7 @@ REFERENCE   2
   REMARK    doi:10.1073/pnas.82.5.1480
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/R6Kgamma_ori
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..389
                      /label="R6Kgamma ori"

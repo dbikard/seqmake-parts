@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/P2A
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      protein_domain  1..19
                      /label="P2A"

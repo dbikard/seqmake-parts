@@ -8,10 +8,10 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/repA_IncFII
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..545
                      /label="repA (IncFII)"
-                     /synonym="repA"
                      /db_xref="SO:0000316"
 ORIGIN
         1 meqldskykl kkflmavfrd gigqgnnlid neyvrvfqnn ksnskqlelg eefkeysktt

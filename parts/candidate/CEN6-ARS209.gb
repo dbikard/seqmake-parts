@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CEN6-ARS209
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      misc_feature    1..510
                      /label="CEN6-ARS209"

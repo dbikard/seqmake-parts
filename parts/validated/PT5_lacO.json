@@ -158,7 +158,7 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "lac operator (downstream)"
+          "lac operator"
         ],
         "parent": [
           "PT5/lacO"

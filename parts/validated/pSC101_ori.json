@@ -3,13 +3,13 @@
   "slug": "pSC101_ori",
   "locus": "pSC101_ori",
   "id": "pSC101_ori",
-  "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+  "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "GGGCTAGTCAATGATAATTACTAGTCCTTTTCCCGGGAGATCTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC",
+  "sequence": "GGGCTAGTCAATGATAATTACTAGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC",
   "references": [
     {
       "authors": "Sugiura S, Ohkubo S, Yamaguchi K",
@@ -31,6 +31,20 @@
       "journal": "Mol Microbiol 5(2):233-237 (1991)",
       "pubmed_id": "2041467",
       "comment": "doi:10.1111/j.1365-2958.1991.tb02103.x"
+    },
+    {
+      "authors": "Bernardi A, Bernardi F",
+      "title": "Complete sequence of pSC101.",
+      "journal": "Nucleic Acids Res. 1984;12(24):9415-9426",
+      "pubmed_id": "6096829",
+      "comment": "doi:10.1093/nar/12.24.9415"
+    },
+    {
+      "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+      "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+      "journal": "J Mol Biol. 1984;175(3):331-348",
+      "pubmed_id": "6327996",
+      "comment": "doi:10.1016/0022-2836(84)90352-8"
     }
   ],
   "features": [
@@ -44,13 +58,20 @@
           "pSC101 ori"
         ],
         "synonym": [
-          "pSC101 ori"
+          "pSC101 ori",
+          "pSC101 origin",
+          "oriV pSC101"
         ],
         "note": [
-          "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101."
+          "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101. Temperature sensitivity of pSC101 replication maps to the rep101 gene, not to this origin (Armstrong et al. 1984), so no form of this origin carries a 'ts' claim."
         ],
         "db_xref": [
-          "SO:0000296"
+          "SO:0000296",
+          "GenBank:NC_002056"
+        ],
+        "citation": [
+          "[4]",
+          "[5]"
         ]
       }
     },
@@ -175,7 +196,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "NC_002056 (Salmonella plasmid pSC101, complete sequence; Bernardi & Bernardi 1984), complement(5003..5225), 100% over 223 bp; identical in K00042 complement(480..702). This is the native pSC101 sequence; many cloning vectors carry a variant with SmaI and BglII sites in place of bases 32-43 (catalog part 'pSC101 ori (SmaI/BglII vector form)')."
   },
   "functional_claims": [
     {
@@ -189,7 +211,7 @@
       "ontology": {},
       "source": {
         "pmid": "8376344",
-        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+        "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101.",
         "quote_source": "catalog-doc"
       },
       "provenance": {

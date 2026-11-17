@@ -39,6 +39,8 @@ jobs:
             echo "::error::catalog.json / index.json / llms.txt are stale. Run 'python tools/build_catalog.py' and commit them."
             exit 1
           fi
+      - name: Library quality gate (unique names, no undeclared duplicates or containment, types, sub-features, manifest)
+        run: python tools/check_library.py
       - name: Rebuild RDF (catalog.ttl + catalog.jsonld)
         run: python tools/build_rdf.py
       - name: catalog RDF must be up to date

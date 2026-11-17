@@ -80,6 +80,7 @@ REFERENCE   10
   REMARK    doi:10.1371/journal.pone.0297122
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/AviTag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..15
                      /label="AviTag"

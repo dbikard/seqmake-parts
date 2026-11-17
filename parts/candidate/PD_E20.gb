@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PD_E20
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..75
                      /label="PD/E20"

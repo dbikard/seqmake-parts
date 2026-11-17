@@ -36,11 +36,12 @@ REFERENCE   4
    PUBMED   9092630
   REMARK    doi:10.1093/nar/25.6.1203
 COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/P2
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..29
                      /label="P2"
                      /synonym="Ptet2"
-                     /synonym="tet promoter"
+                     /synonym="pBR322 tet promoter"
                      /note="P2 is a 29-bp sigma70 promoter fragment that is, by
                      exact sequence, the pBR322 tet (P2) constitutive promoter
                      (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning

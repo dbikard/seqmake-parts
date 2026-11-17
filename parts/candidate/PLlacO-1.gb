@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PLlacO-1
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..75
                      /label="PLlacO-1"
@@ -20,6 +21,12 @@ FEATURES             Location/Qualifiers
                      TTGACA / -10 GATACT) with two natural lac operators
                      (LacI-repressible, IPTG-inducible)."
                      /db_xref="SO:0000167"
+     protein_bind    27..43
+                     /label="lacO"
+                     /parent="PLlacO-1"
+                     /note="17 bp lac operator O1 core, identical to the catalog
+                     part lacO."
+                     /db_xref="SO:0000057"
 ORIGIN
         1 ataaatgtga gcggataaca ttgacattgt gagcggataa caagatactg agcacatcag
        61 caggacgcac tgacc

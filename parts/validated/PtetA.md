@@ -1,7 +1,7 @@
-Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.
+29 bp PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of a tet operator, making transcription TetR/anhydrotetracycline-controllable. Its first 23 bp are the Tn10 tetA promoter (J01830); its -10, CATAAT, is not (Tn10 reads TTATTT there).
 
 ## Origin
-Derived from the Tn10 tetracycline-resistance determinant, where two overlapping divergent promoters (PtetA and PtetR) share an intergenic region and are controlled by tandem tet operators. This part is the PtetA arm, which drives the tetA efflux gene. Promoter start points and operator architecture were mapped by Bertrand et al. 1983 ([PMID 6311683](https://pubmed.ncbi.nlm.nih.gov/6311683/)); the broader TetR/tetO/tetracycline regulatory mechanism is reviewed by Bertram & Hillen 2008 ([PMID 21261817](https://pubmed.ncbi.nlm.nih.gov/21261817/)).
+Derived from the Tn10 tetracycline-resistance determinant, where two overlapping divergent promoters (PtetA and PtetR) share an intergenic region and are controlled by tandem tet operators. This part is a PtetA, the arm that drives the tetA efflux gene. Its first 23 bp match the Tn10 sequence (J01830); its -10, CATAAT, does not (Tn10 reads TTATTT), and the deposit the 29 bp were taken from is not established. Promoter start points and operator architecture were mapped by Bertrand et al. 1983 ([PMID 6311683](https://pubmed.ncbi.nlm.nih.gov/6311683/)); the broader TetR/tetO/tetracycline regulatory mechanism is reviewed by Bertram & Hillen 2008 ([PMID 21261817](https://pubmed.ncbi.nlm.nih.gov/21261817/)).
 
 ## Properties
 - **-35 box** [0,6): `TTGACA` — perfect sigma-70 consensus.

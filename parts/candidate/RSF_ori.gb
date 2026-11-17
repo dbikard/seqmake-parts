@@ -30,6 +30,7 @@ REFERENCE   3
   REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RSF_ori
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      rep_origin      1..563
                      /label="RSF ori"

@@ -25,6 +25,9 @@
           "YFP",
           "yellow fluorescent protein",
           "EYFP"
+        ],
+        "variant_of": [
+          "EGFP"
         ]
       }
     }

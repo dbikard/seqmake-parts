@@ -22,6 +22,7 @@ REFERENCE   2
   REMARK    doi:10.1073/pnas.66.3.773
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PlacUV5
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..30
                      /label="PlacUV5"
@@ -34,6 +35,7 @@ FEATURES             Location/Qualifiers
                      promoter-up UV5 allele."
                      /db_xref="SO:0000167"
                      /regulated_by="LacI"
+                     /variant_of="Plac"
      regulatory      1..6
                      /label="-35"
                      /parent="PlacUV5"

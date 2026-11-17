@@ -42,7 +42,11 @@ def _completeness_problems(name: str, data: dict) -> list[str]:
     out: list[str] = []
     prov = data.get("provenance") or {}
     ss = str(prov.get("sequence_source") or "")
-    grandfathered = bool(prov.get("migrated_from")) and not ss
+    # A part whose closest deposit only nearly matches it records that deposit in
+    # ``closest_deposit`` instead; it is listed by name, with what it needs, in
+    # check_library.GRANDFATHERED_UNSOURCED (validated parts awaiting a deposit).
+    grandfathered = (bool(prov.get("migrated_from")) or bool(prov.get("closest_deposit"))) \
+        and not ss
     if (not ss or ss.startswith("FILL IN")) and not grandfathered:
         out.append(f"{name}: validated part needs a real provenance.sequence_source")
     # Require *substantive* records, not just non-empty lists: a reference must

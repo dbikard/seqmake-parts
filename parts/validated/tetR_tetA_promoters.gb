@@ -59,14 +59,18 @@ REFERENCE   7
   REMARK    doi:10.1016/0378-1119(92)90713-y
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tetR_tetA_promoters
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..56
                      /label="tetR/tetA promoters"
                      /synonym="tetR/tetA promoters"
+                     /synonym="Tn10 tetA promoter"
+                     /synonym="tetA/tetR control region"
                      /note="The Tn10 divergent tetA/tetR control region: 56 bp
                      carrying the PtetA promoter, the overlapping PtetR
                      promoter, and the two TetR operators tetO1 and tetO2."
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:J01830"
      regulatory      2..7
                      /label="PtetA -35"
                      /parent="tetR/tetA promoters"

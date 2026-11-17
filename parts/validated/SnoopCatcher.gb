@@ -45,6 +45,7 @@ REFERENCE   5
   REMARK    doi:10.1021/acs.bioconjchem.3c00122
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SnoopCatcher
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..112
                      /label="SnoopCatcher"

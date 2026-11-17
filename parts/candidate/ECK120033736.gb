@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ECK120033736
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      terminator      1..52
                      /label="ECK120033736"

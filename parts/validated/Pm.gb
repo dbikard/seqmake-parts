@@ -61,6 +61,7 @@ REFERENCE   7
    PUBMED   10096078
   REMARK    doi:10.1046/j.1365-2958.1999.01249.x
 COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/Pm
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..81
                      /label="Pm"

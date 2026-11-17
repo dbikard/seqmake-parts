@@ -1,5 +1,6 @@
 LOCUS       pIJ101_ori              2239 bp    DNA              UNK 01-JAN-1980
-DEFINITION  pIJ101 ori.
+DEFINITION  The pIJ101 replicon: the Streptomyces rolling-circle replication
+            region carrying the rep gene and its origin (2,239 bp)..
 ACCESSION   pIJ101_ori
 VERSION     pIJ101_ori
 KEYWORDS    .
@@ -8,14 +9,36 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pIJ101_ori
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      rep_origin      1..2239
-                     /label="pIJ101 ori"
-                     /synonym="pIJ101"
+                     /label="pIJ101 replicon"
                      /synonym="pIJ101 ori"
-                     /synonym="Streptomyces ori"
                      /synonym="pIJ101 origin"
+                     /synonym="pIJ101 replicon"
+                     /note="The pIJ101 replicon: the Streptomyces rolling-circle
+                     replication region carrying the rep gene and its origin
+                     (2,239 bp). It is not one element: 1,371 bp of it (61%) are
+                     the rep coding sequence, declared as a sub-feature. It is
+                     kept whole, and not split into a rep part plus an origin
+                     part, because no accessible source delimits the pIJ101
+                     origin itself, and no deposit contains it exactly: it
+                     matches the complete pIJ101 sequence M21778 at 99.55%
+                     (2,229 of 2,239 bases, 10 mismatches, no gaps) over
+                     8570->1978 across that record's origin of numbering. Both
+                     of its ends are unverified. Split it once the replicon is
+                     re-sourced from a deposit."
                      /db_xref="SO:0000296"
+     CDS             complement(9..1379)
+                     /label="rep (pIJ101)"
+                     /parent="pIJ101 replicon"
+                     /db_xref="SO:0000316"
+                     /db_xref="UniProt:P22406"
+                     /note="The pIJ101 replication initiator Rep: this 1,371 bp
+                     ORF (with stop) translates 100% identical to UniProt P22406
+                     (456 aa). It is 61% of the part, which is the pIJ101
+                     replicon (rep plus its origin) rather than the origin
+                     alone."
 ORIGIN
         1 ggagcgagtt agtgcgaagt gggcccactt gcgagccggg cgatgtgccg ggcggcccgc
        61 tcctggcggt cgtcggcgtc gtcgtcctgg tcgtcgtcct gctctcgccg tcggcgtgca

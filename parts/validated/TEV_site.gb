@@ -53,6 +53,7 @@ REFERENCE   6
   REMARK    doi:10.1074/jbc.M207895200
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/TEV_site
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..7
                      /label="TEV_site"

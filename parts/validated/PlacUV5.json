@@ -49,6 +49,9 @@
         ],
         "regulated_by": [
           "LacI"
+        ],
+        "variant_of": [
+          "Plac"
         ]
       }
     },

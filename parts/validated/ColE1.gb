@@ -44,6 +44,7 @@ REFERENCE   5
   REMARK    doi:10.1073/pnas.74.5.1865
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ColE1
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..589
                      /label="ColE1"

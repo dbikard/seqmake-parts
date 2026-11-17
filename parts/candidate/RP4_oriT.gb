@@ -1,24 +1,45 @@
-LOCUS       RP4_oriT                 257 bp    DNA              UNK 01-JAN-1980
-DEFINITION  RP4 oriT.
+LOCUS       RP4_oriT                 210 bp    DNA              UNK 01-JAN-1980
+DEFINITION  RP4 oriT: the origin of conjugative transfer of the IncP-alpha
+            plasmid RP4 (210 bp)..
 ACCESSION   RP4_oriT
 VERSION     RP4_oriT
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Ziegelin G, Pansegrau W, Strack B, Balzer D, Kröger M, Kruft V,
+            Lanka E
+  TITLE     Nucleotide sequence and organization of genes flanking the transfer
+            origin of promiscuous plasmid RP4.
+  JOURNAL   DNA Seq. 1991;1(5):303-327
+   PUBMED   1665997
+  REMARK    doi:10.3109/10425179109020786
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RP4_oriT
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
-     oriT            1..257
+     oriT            1..210
                      /label="RP4 oriT"
                      /synonym="RP4 oriT"
                      /synonym="RP4 transfer origin"
                      /synonym="oriT RP4"
+                     /synonym="oriT"
+                     /synonym="OriT"
+                     /note="RP4 oriT: the origin of conjugative transfer of the
+                     IncP-alpha plasmid RP4 (210 bp). The bases are the region
+                     two deposited oriT windows agree on (X54459 4636-4845); the
+                     element's own ends are unverified, as no accessible source
+                     maps them. The catalog carried two overlapping windows of
+                     this locus, under the names 'oriT' (228 bp) and 'RP4 oriT'
+                     (257 bp, with 6 bases of a cloning junction); both names
+                     now belong to this part."
                      /db_xref="SO:0000724"
+                     /db_xref="GenBank:X54459"
+                     /citation=[1]
 ORIGIN
-        1 ggtaccagcg cttttccgct gcataaccct gcttcggggt cattatagcg attttttcgg
-       61 tatatccatc ctttttcgca cgatatacag gattttgcca aagggttcgt gtagactttc
-      121 cttggtgtat ccaacggcgt cagccgggca ggataggtga agtaggccca cccgcgagcg
-      181 ggtgttcctt cttcactgtc ccttattcgc acctggcggt gctcaacggg aatcctgctc
-      241 tgcgaggctg gccggcg
+        1 agcgattttt tcggtatatc catccttttt cgcacgatat acaggatttt gccaaagggt
+       61 tcgtgtagac tttccttggt gtatccaacg gcgtcagccg ggcaggatag gtgaagtagg
+      121 cccacccgcg agcgggtgtt ccttcttcac tgtcccttat tcgcacctgg cggtgctcaa
+      181 cgggaatcct gctctgcgag gctggccggc
 //

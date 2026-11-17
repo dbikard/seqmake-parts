@@ -45,6 +45,7 @@ REFERENCE   5
   REMARK    doi:10.1002/j.1460-2075.1986.tb04369.x
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PT5_lacO
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..81
                      /label="PT5/lacO"
@@ -85,7 +86,7 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
                      /db_xref="SO:0000057"
      protein_bind    57..73
-                     /label="lac operator (downstream)"
+                     /label="lac operator"
                      /parent="PT5/lacO"
                      /note="Second lac repressor (lacI) binding site, core
                      TGTGAGCGGATAACAAT (seq[56:73]), positioned 3' of the

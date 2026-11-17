@@ -1,0 +1,128 @@
+LOCUS       pSC101_ori_vector        223 bp    DNA              UNK 01-JAN-1980
+DEFINITION  The SmaI/BglII cloning-vector form of the pSC101 origin: the native
+            origin with CCCGGGAGATCT (SmaI + BglII) in place of its bases
+            32-43..
+ACCESSION   pSC101_ori_vector
+VERSION     pSC101_ori_vector
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Sugiura S, Ohkubo S, Yamaguchi K
+  TITLE     Minimal essential origin of plasmid pSC101 replication: requirement
+            of a region downstream of iterons
+  JOURNAL   J Bacteriol 175(18):5993-6001 (1993)
+   PUBMED   8376344
+  REMARK    doi:10.1128/jb.175.18.5993-6001.1993
+REFERENCE   2
+  AUTHORS   Murakami A, Sugiura S, Yamaguchi K
+  TITLE     DNA bending of pSC101 ori induced by Rep, a replication initiator
+            protein and IHF
+  JOURNAL   J Gen Appl Microbiol 43(4):189-197 (1997)
+   PUBMED   12501319
+  REMARK    doi:10.2323/jgam.43.189
+REFERENCE   3
+  AUTHORS   Manen D, Caro L
+  TITLE     The replication of plasmid pSC101
+  JOURNAL   Mol Microbiol 5(2):233-237 (1991)
+   PUBMED   2041467
+  REMARK    doi:10.1111/j.1365-2958.1991.tb02103.x
+REFERENCE   4
+  AUTHORS   Bernardi A, Bernardi F
+  TITLE     Complete sequence of pSC101.
+  JOURNAL   Nucleic Acids Res. 1984;12(24):9415-9426
+   PUBMED   6096829
+  REMARK    doi:10.1093/nar/12.24.9415
+REFERENCE   5
+  AUTHORS   Lutz R, Bujard H
+  TITLE     Independent and tight regulation of transcriptional units in
+            Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2
+            regulatory elements
+  JOURNAL   Nucleic Acids Research 1997;25(6):1203-1210
+   PUBMED   9092630
+  REMARK    doi:10.1093/nar/25.6.1203
+REFERENCE   6
+  AUTHORS   Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick
+            M, Ohtsubo H, Ohtsubo E
+  TITLE     A 37 x 10(3) molecular weight plasmid-encoded protein is required
+            for replication and copy number control in the plasmid pSC101 and
+            its temperature-sensitive derivative pHS1.
+  JOURNAL   J Mol Biol. 1984;175(3):331-348
+   PUBMED   6327996
+  REMARK    doi:10.1016/0022-2836(84)90352-8
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/pSC101_ori_vector
+            Catalog status: candidate, sourced
+FEATURES             Location/Qualifiers
+     rep_origin      1..223
+                     /label="pSC101 ori (SmaI/BglII vector form)"
+                     /synonym="pSC101 ori (vector form)"
+                     /synonym="pSC101 ori (SmaI/BglII)"
+                     /note="The SmaI/BglII cloning-vector form of the pSC101
+                     origin: the native origin with CCCGGGAGATCT (SmaI + BglII)
+                     in place of its bases 32-43. Carried by the pZ expression
+                     vectors (Lutz & Bujard 1997) and by many later pSC101
+                     vectors; 224 of a 1,390-plasmid collection carry this form
+                     and 44 the native one. The two differ only over bases
+                     32-43, outside every annotated sub-element of the origin.
+                     Like the native form, it carries no temperature-sensitivity
+                     claim: that phenotype maps to the rep101 gene (Armstrong et
+                     al. 1984)."
+                     /db_xref="SO:0000296"
+                     /db_xref="GenBank:U66313"
+                     /citation=[1]
+                     /citation=[2]
+                     /citation=[3]
+                     /citation=[4]
+                     /citation=[5]
+                     /citation=[6]
+                     /variant_of="pSC101 ori"
+     protein_bind    50..67
+                     /label="RepA iteron 1"
+                     /parent="pSC101 ori (SmaI/BglII vector form)"
+                     /note="First of three tandem ~18 bp direct-repeat iterons
+                     (shared 17 bp core TGTAAATTCTGCTAGAC)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    82..99
+                     /label="RepA iteron 2"
+                     /parent="pSC101 ori (SmaI/BglII vector form)"
+                     /note="Second RepA-binding iteron; identical 17 bp core
+                     (TGTAAATTCTGCTAGAC) to iteron 1, differing only in the
+                     leading base (C->T)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[2]
+     protein_bind    103..120
+                     /label="RepA iteron 3"
+                     /parent="pSC101 ori (SmaI/BglII vector form)"
+                     /note="Third (innermost) RepA-binding iteron; differs from
+                     iterons 1/2 by a single central base (T->C, core
+                     CCGCTAGAC)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+     misc_feature    150..183
+                     /label="AT-rich bending region"
+                     /parent="pSC101 ori (SmaI/BglII vector form)"
+                     /note="AT-rich tract (82.4% AT) lying between the iterons
+                     and the DnaA box."
+                     /db_xref="SO:0000110"
+                     /citation=[2]
+                     /citation=[1]
+     protein_bind    complement(212..220)
+                     /label="DnaA"
+                     /parent="pSC101 ori (SmaI/BglII vector form)"
+                     /note="DnaA-box-like motif on the reverse strand (revcomp
+                     of seq[211:220] = TTATACACA; near the DnaA consensus
+                     TTAT[C/A]CACA)."
+                     /db_xref="SO:0000410"
+                     /citation=[1]
+                     /citation=[3]
+ORIGIN
+        1 gggctagtca atgataatta ctagtccttt tcccgggaga tctgggtatc tgtaaattct
+       61 gctagacctt tgctggaaaa cttgtaaatt ctgctagacc ctctgtaaat tccgctagac
+      121 ctttgtgtgt tttttttgtt tatattcaag tggttataat ttatagaata aagaaagaat
+      181 aaaaaaagat aaaaagaata gatcccagcc ctgtgtataa ctc
+//

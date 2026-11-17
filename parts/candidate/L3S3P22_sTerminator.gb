@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/L3S3P22_sTerminator
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      terminator      1..49
                      /label="L3S3P22 sTerminator"

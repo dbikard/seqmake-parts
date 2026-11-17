@@ -110,6 +110,7 @@ REFERENCE   14
   REMARK    doi:10.1128/jb.06549-11
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/birA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..321
                      /label="birA"

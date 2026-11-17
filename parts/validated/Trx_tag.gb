@@ -80,6 +80,7 @@ REFERENCE   10
   REMARK    doi:10.3389/fmicb.2014.00063
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Trx_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..109
                      /label="Trx_tag"

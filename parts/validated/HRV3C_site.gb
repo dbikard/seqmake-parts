@@ -71,6 +71,7 @@ REFERENCE   8
   REMARK    doi:10.1006/abbi.1997.0291
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/HRV3C_site
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..8
                      /label="HRV3C_site"

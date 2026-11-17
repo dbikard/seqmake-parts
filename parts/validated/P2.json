@@ -52,7 +52,7 @@
         ],
         "synonym": [
           "Ptet2",
-          "tet promoter"
+          "pBR322 tet promoter"
         ],
         "note": [
           "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no..."
@@ -122,7 +122,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01749 (pBR322, complete sequence), 10..38, 100% over 29 bp"
   },
   "functional_claims": [
     {

@@ -16,10 +16,10 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 274,
+  "n_parts": 271,
   "n_validated": 76,
-  "n_candidate": 198,
-  "n_functional_claims": 359,
+  "n_candidate": 195,
+  "n_functional_claims": 361,
   "parts": [
     {
       "slug": "186_integrase",
@@ -29,6 +29,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "186 integrase"
@@ -42,6 +43,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "186_attB",
@@ -56,6 +58,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "186_attP",
@@ -72,6 +75,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "2u ori",
@@ -89,6 +93,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "6xHis",
@@ -113,15 +118,13 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "ANT(3'')(9)",
         "AadA",
         "SmR",
-        "SpR",
-        "SpecR",
         "aadA1",
-        "spectinomycin adenyltransferase",
         "streptomycin 3''-adenylyltransferase"
       ]
     },
@@ -133,27 +136,12 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "AAV deg tag",
         "AAVDeg_Tag(medium speed)",
         "AAV degradation tag"
-      ]
-    },
-    {
-      "slug": "Acc3",
-      "name": "Acc3",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "Acc3",
-        "acc3",
-        "gentamicin 3-N-acetyltransferase",
-        "GmR (SEVA)"
       ]
     },
     {
@@ -164,6 +152,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "acrII4A"
@@ -177,6 +166,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ADH1 promoter",
@@ -193,6 +183,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ADH1 terminator",
@@ -209,6 +200,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "AID",
@@ -224,6 +216,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 8,
       "synonyms": [
         "ALFA-tag",
@@ -239,6 +232,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "AlkS",
@@ -255,6 +249,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "APH-3"
@@ -268,6 +263,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "araC",
@@ -282,6 +278,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 10,
       "synonyms": [
         "AviTag\u2122",
@@ -299,6 +296,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_B0015",
@@ -315,6 +313,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "B0030 RBS"
@@ -328,6 +327,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_B0034",
@@ -343,6 +343,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 11,
       "synonyms": [
         "BC2T",
@@ -358,6 +359,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "bet",
@@ -372,6 +374,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 7,
       "synonyms": [
         "BirA",
@@ -389,6 +392,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "AmpR",
@@ -406,6 +410,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "BSD",
@@ -421,6 +426,7 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "bom"
@@ -434,6 +440,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CAG",
@@ -449,6 +456,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Cas1"
@@ -462,6 +470,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "cas1 (Nme)",
@@ -476,6 +485,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Cas2"
@@ -489,6 +499,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "cas2 (Nme)",
@@ -503,6 +514,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SpCas9",
@@ -519,6 +531,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "cat (Gram+)",
@@ -533,6 +546,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "catP"
@@ -546,6 +560,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 12,
       "synonyms": [
         "calmodulin-binding peptide",
@@ -561,6 +576,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ccdB",
@@ -575,6 +591,7 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CEN6-ARS209",
@@ -591,6 +608,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CFP",
@@ -606,6 +624,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "chnR",
@@ -620,6 +639,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "cI857",
@@ -636,6 +656,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "CloDF13 ori",
@@ -651,6 +672,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "CAT",
@@ -666,6 +688,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CMV promoter",
@@ -683,6 +706,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
+      "sourced": true,
       "n_claims": 2,
       "synonyms": [
         "ColE1",
@@ -702,6 +726,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "ColE1_AT",
@@ -717,6 +742,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CspRecT"
@@ -730,6 +756,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "CYC1 terminator",
@@ -746,6 +773,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "dCas9",
@@ -763,6 +791,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "DHFR",
@@ -781,6 +810,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "DsRed2",
@@ -796,6 +826,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "E-tag",
@@ -814,6 +845,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "EcFbFP",
@@ -830,6 +862,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ECK120010818",
@@ -844,6 +877,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ECK120033736",
@@ -858,6 +892,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ECK120033737",
@@ -872,6 +907,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "EF1alpha",
@@ -890,12 +926,12 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "EGFP",
         "eGFP",
-        "Enhanced GFP",
-        "GFP"
+        "Enhanced GFP"
       ]
     },
     {
@@ -906,6 +942,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "enterokinase",
@@ -923,6 +960,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "ermB"
@@ -936,6 +974,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ErmR",
@@ -953,6 +992,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "exo",
@@ -967,6 +1007,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "M13 origin",
@@ -982,6 +1023,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "Factor Xa cleavage site",
@@ -997,6 +1039,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "fd",
@@ -1011,6 +1054,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "FLAG",
@@ -1028,6 +1072,7 @@
       "so_term": "SO:0000410",
       "so_name": "protein_binding_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "FRT",
@@ -1043,6 +1088,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "GAL1 promoter",
@@ -1059,6 +1105,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "gam",
@@ -1073,6 +1120,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "Gateway_attB1",
@@ -1088,6 +1136,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "Gateway_attB2",
@@ -1103,6 +1152,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "Gateway_attP1",
@@ -1119,6 +1169,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "Gateway_attP2",
@@ -1135,6 +1186,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "GFP",
@@ -1150,12 +1202,16 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "GentR",
         "Gentamicin R",
         "aacC1",
-        "gentamicin acetyltransferase"
+        "gentamicin acetyltransferase",
+        "Acc3",
+        "gentamicin 3-N-acetyltransferase",
+        "GmR (SEVA)"
       ]
     },
     {
@@ -1166,6 +1222,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "glutathione S-transferase",
@@ -1183,6 +1240,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "HA",
@@ -1202,6 +1260,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "HaloTag",
@@ -1221,6 +1280,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "His3",
@@ -1236,6 +1296,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "HK022 integrase"
@@ -1249,6 +1310,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "HK022_attB",
@@ -1257,12 +1319,13 @@
     },
     {
       "slug": "HK022_attP",
-      "name": "HK022_attB",
+      "name": "HK022_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "HK022_attP",
@@ -1279,6 +1342,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PGK",
@@ -1296,6 +1360,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 8,
       "synonyms": [
         "PreScission protease site",
@@ -1312,6 +1377,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "hU6",
@@ -1327,6 +1393,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "APH(4)-Ia",
@@ -1343,6 +1410,7 @@
       "so_term": "SO:0000410",
       "so_name": "protein_binding_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "I-SceI",
@@ -1359,10 +1427,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23100",
-        "Anderson constitutive promoter",
         "J23100 promoter"
       ]
     },
@@ -1374,10 +1442,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23101",
-        "Anderson constitutive promoter",
         "J23101 promoter"
       ]
     },
@@ -1389,10 +1457,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23102",
-        "Anderson constitutive promoter",
         "J23102 promoter"
       ]
     },
@@ -1404,6 +1472,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "J23104",
@@ -1420,10 +1489,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23106",
-        "Anderson constitutive promoter",
         "J23106 promoter"
       ]
     },
@@ -1435,6 +1504,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "J23107",
@@ -1451,6 +1521,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "J23108",
@@ -1465,10 +1536,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23109",
-        "Anderson constitutive promoter",
         "J23109 promoter"
       ]
     },
@@ -1480,6 +1551,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "J23110",
@@ -1494,10 +1566,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23114",
-        "Anderson constitutive promoter",
         "J23114 promoter"
       ]
     },
@@ -1509,10 +1581,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23116",
-        "Anderson constitutive promoter",
         "J23116 promoter"
       ]
     },
@@ -1524,10 +1596,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "BBa_J23117",
-        "Anderson constitutive promoter",
         "J23117 promoter"
       ]
     },
@@ -1539,6 +1611,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "J23119",
@@ -1554,12 +1627,12 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "APH(3')-II",
         "NeoR",
         "NeoR/KanR",
-        "kanR",
         "neo",
         "nptII"
       ]
@@ -1572,9 +1645,9 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
-        "KanR",
         "KmR",
         "KanR2",
         "APH(3')-Ia",
@@ -1590,6 +1663,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "L3S1P13"
@@ -1603,6 +1677,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "L3S2P11",
@@ -1617,6 +1692,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "L3S3P22 sTerminator"
@@ -1630,6 +1706,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LAA deg tag",
@@ -1645,6 +1722,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lacI",
@@ -1659,8 +1737,10 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
+        "lac operator",
         "lacO"
       ]
     },
@@ -1672,6 +1752,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lacO3",
@@ -1687,6 +1768,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lacZ",
@@ -1701,6 +1783,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lacZ alpha",
@@ -1716,6 +1799,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lacZ\u03b1"
@@ -1729,24 +1813,26 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lambda cos",
         "Minimal lambda cos sequence",
-        "cos site"
+        "cos site",
+        "cos"
       ]
     },
     {
       "slug": "lambda_cos_1",
-      "name": "lambda cos",
+      "name": "lambda cos region",
       "feature_type": "misc_feature",
       "kind": "dna",
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
-        "cos",
         "lambda cos region",
         "cos site (SEVA)"
       ]
@@ -1759,6 +1845,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lambda integrase"
@@ -1772,6 +1859,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "lambda t0",
@@ -1786,6 +1874,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lambda_attB",
@@ -1800,6 +1889,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "lambda_attP",
@@ -1816,6 +1906,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Leu2",
@@ -1831,6 +1922,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 8,
       "synonyms": [
         "sortase A recognition motif",
@@ -1847,6 +1939,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxA",
@@ -1861,6 +1954,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxB",
@@ -1875,6 +1969,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxC",
@@ -1889,6 +1984,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxD",
@@ -1903,6 +1999,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxE",
@@ -1917,6 +2014,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "LuxIA terminator",
@@ -1931,6 +2029,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 9,
       "synonyms": [
         "malE",
@@ -1947,6 +2046,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "mCherry",
@@ -1961,6 +2061,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "mRFP1",
@@ -1976,6 +2077,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "mTurquoise2",
@@ -1991,6 +2093,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "Myc",
@@ -2010,6 +2113,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "NLS (nucleoplasmin)",
@@ -2024,6 +2128,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Nme2Cas9",
@@ -2039,6 +2144,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 7,
       "synonyms": [
         "nusA",
@@ -2054,22 +2160,10 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "ori2"
-      ]
-    },
-    {
-      "slug": "oriT",
-      "name": "oriT",
-      "feature_type": "oriT",
-      "kind": "dna",
-      "so_term": "SO:0000724",
-      "so_name": "oriT",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "OriT"
       ]
     },
     {
@@ -2080,6 +2174,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "p15A",
@@ -2097,10 +2192,11 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "Ptet2",
-        "tet promoter"
+        "pBR322 tet promoter"
       ]
     },
     {
@@ -2111,6 +2207,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "P2A"
@@ -2124,6 +2221,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PA1/O4/O3",
@@ -2139,6 +2237,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PA1lacO-1 promoter",
@@ -2155,6 +2254,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "araBAD promoter"
@@ -2175,6 +2275,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pBBR1 oriV"
@@ -2188,6 +2289,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pBBR1 Rep"
@@ -2201,6 +2303,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "Pbla",
@@ -2218,6 +2321,7 @@
       "so_term": "SO:0001682",
       "so_name": "replication_regulatory_region",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6
     },
     {
@@ -2228,6 +2332,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Pcat",
@@ -2242,6 +2347,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PchnB",
@@ -2265,6 +2371,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "Pcym",
@@ -2286,6 +2393,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PD/E20",
@@ -2302,6 +2410,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PEM7",
@@ -2319,6 +2428,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "phi80_attB",
@@ -2333,6 +2443,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "phi80_attP",
@@ -2349,6 +2460,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "phiC31_attB",
@@ -2363,6 +2475,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 3,
       "synonyms": [
         "phiC31_attP",
@@ -2379,6 +2492,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PhlF"
@@ -2386,18 +2500,18 @@
     },
     {
       "slug": "pIJ101_ori",
-      "name": "pIJ101 ori",
+      "name": "pIJ101 replicon",
       "feature_type": "rep_origin",
       "kind": "dna",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
-        "pIJ101",
         "pIJ101 ori",
-        "Streptomyces ori",
-        "pIJ101 origin"
+        "pIJ101 origin",
+        "pIJ101 replicon"
       ]
     },
     {
@@ -2408,6 +2522,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Pkan",
@@ -2424,6 +2539,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PL",
@@ -2440,6 +2556,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "lac promoter"
@@ -2460,6 +2577,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Plac/ara-1 promoter",
@@ -2476,6 +2594,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PlacI",
@@ -2490,6 +2609,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PlacIq",
@@ -2504,6 +2624,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PlacUV5",
@@ -2526,6 +2647,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar1",
@@ -2540,6 +2662,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar15",
@@ -2554,6 +2677,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar17",
@@ -2568,6 +2692,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar51",
@@ -2582,6 +2707,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar53",
@@ -2596,6 +2722,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Pliar70",
@@ -2610,6 +2737,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PLlacO-1 promoter",
@@ -2626,6 +2754,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PLtetO-1",
@@ -2647,6 +2776,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Pm",
@@ -2668,6 +2798,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Pneo",
@@ -2684,6 +2815,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PpflB",
@@ -2699,6 +2831,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 2,
       "synonyms": [
         "PphlF",
@@ -2720,6 +2853,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pR",
@@ -2734,6 +2868,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pRM",
@@ -2748,6 +2883,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pRO1600 oriV"
@@ -2761,24 +2897,42 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
-        "pSC101 ori"
+        "pSC101 ori",
+        "pSC101 origin",
+        "oriV pSC101"
       ]
     },
     {
-      "slug": "pSC101_ori_SEVA",
-      "name": "pSC101 ori (SEVA)",
+      "slug": "pSC101_ori_vector",
+      "name": "pSC101 ori (SmaI/BglII vector form)",
       "feature_type": "rep_origin",
       "kind": "dna",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "n_claims": 0,
+      "sourced": true,
+      "n_claims": 1,
       "synonyms": [
-        "pSC101",
-        "pSC101 ori (SEVA)",
-        "pSC101 origin"
+        "pSC101 ori (vector form)",
+        "pSC101 ori (SmaI/BglII)"
+      ]
+    },
+    {
+      "slug": "pSC101_ori_biobrick",
+      "name": "pSC101 ori (SpeI-free BioBrick form)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "pSC101 ori (pSB4 form)",
+        "pSC101 ori (BioBrick form)"
       ]
     },
     {
@@ -2789,6 +2943,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pSH71 ori",
@@ -2804,6 +2959,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "pSH71 ori core",
@@ -2818,6 +2974,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PSV40",
@@ -2832,6 +2989,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PT3",
@@ -2846,6 +3004,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PT5/lacO",
@@ -2862,6 +3021,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T7 promoter"
@@ -2875,6 +3035,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "tac promoter"
@@ -2895,10 +3056,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
-        "ptet",
-        "tet promoter"
+        "ptet"
       ],
       "regulated_by": [
         {
@@ -2916,6 +3077,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Ptrc",
@@ -2937,6 +3099,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PURA3",
@@ -2951,6 +3114,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "PAC",
@@ -2966,6 +3130,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "PVeg",
@@ -2982,12 +3147,12 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "Pxyl/tet",
         "Pxyl/tetO",
-        "ptet_full",
-        "Tn10 tetA promoter"
+        "ptet_full"
       ]
     },
     {
@@ -2998,6 +3163,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "R6Kgamma ori",
@@ -3013,6 +3179,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RBS 23400",
@@ -3028,6 +3195,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RBS 7300",
@@ -3042,6 +3210,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "recE"
@@ -3055,6 +3224,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "recT"
@@ -3068,11 +3238,11 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Replication protein",
-        "rep pSC101",
-        "repA101 ts"
+        "rep pSC101"
       ]
     },
     {
@@ -3083,6 +3253,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "repA"
@@ -3096,10 +3267,8 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "repA"
-      ]
+      "sourced": false,
+      "n_claims": 0
     },
     {
       "slug": "repA_R6K",
@@ -3109,10 +3278,8 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "repA"
-      ]
+      "sourced": false,
+      "n_claims": 0
     },
     {
       "slug": "RepC",
@@ -3122,6 +3289,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RepC",
@@ -3136,9 +3304,9 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
-        "RepC",
         "repC (RSF1010)",
         "RSF1010 RepC",
         "replication protein C"
@@ -3152,6 +3320,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "repE"
@@ -3165,6 +3334,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "repH"
@@ -3178,6 +3348,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "repL"
@@ -3191,6 +3362,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RK2 oriV",
@@ -3206,6 +3378,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 2,
       "synonyms": [
         "rom",
@@ -3222,11 +3395,14 @@
       "so_term": "SO:0000724",
       "so_name": "oriT",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RP4 oriT",
         "RP4 transfer origin",
-        "oriT RP4"
+        "oriT RP4",
+        "oriT",
+        "OriT"
       ]
     },
     {
@@ -3237,6 +3413,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "rrnBT1",
@@ -3254,6 +3431,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "validated",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "rrnBT1T2",
@@ -3271,6 +3449,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "rrnBT2",
@@ -3285,6 +3464,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "RSF ori",
@@ -3300,6 +3480,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 oriV"
@@ -3313,6 +3494,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 RepA"
@@ -3326,6 +3508,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 RepB"
@@ -3339,6 +3522,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "S tag",
@@ -3359,6 +3543,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SacB",
@@ -3373,6 +3558,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 7,
       "synonyms": [
         "streptavidin-binding peptide",
@@ -3389,6 +3575,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SEVA tir",
@@ -3404,14 +3591,14 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Superfolder GFP",
         "Superfolder",
         "sfGFP",
         "msfGFP",
-        "GFP (superfolder)",
-        "GFP"
+        "GFP (superfolder)"
       ]
     },
     {
@@ -3422,6 +3609,7 @@
       "so_term": "SO:0000655",
       "so_name": "ncRNA",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "sgRNA scaffold",
@@ -3439,6 +3627,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": false,
       "n_claims": 8,
       "synonyms": [
         "SNAP",
@@ -3455,6 +3644,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 7,
       "synonyms": [
         "Snoop Catcher"
@@ -3468,6 +3658,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 8,
       "synonyms": [
         "Snoop tag",
@@ -3482,6 +3673,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "sopA"
@@ -3495,6 +3687,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "sopB"
@@ -3508,10 +3701,10 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SpecR",
-        "SmR",
         "spec",
         "aad9",
         "spectinomycin adenyltransferase"
@@ -3525,6 +3718,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "Spot-tag",
@@ -3540,6 +3734,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 10,
       "synonyms": [
         "SpyCatcher001",
@@ -3554,6 +3749,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 10,
       "synonyms": [
         "SpyTag001",
@@ -3568,6 +3764,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 10,
       "synonyms": [
         "SpyTag 002",
@@ -3582,6 +3779,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 11,
       "synonyms": [
         "SpyTag 003",
@@ -3596,6 +3794,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "St1Cas9",
@@ -3611,6 +3810,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "Strep-tag II",
@@ -3628,6 +3828,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 5,
       "synonyms": [
         "SUMO",
@@ -3646,6 +3847,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SV40 NLS",
@@ -3661,6 +3863,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "SV40_PA_terminator"
@@ -3674,6 +3877,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T2A"
@@ -3687,6 +3891,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "g10 leader RBS",
@@ -3704,6 +3909,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T7 RNAP",
@@ -3720,6 +3926,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T7 terminator",
@@ -3734,6 +3941,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T7-Ocr",
@@ -3750,6 +3958,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "T7 tag",
@@ -3769,6 +3978,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PT7/lacO",
@@ -3791,6 +4001,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "T7Te",
@@ -3805,6 +4016,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "GPD",
@@ -3824,6 +4036,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "TEF1 promoter",
@@ -3840,23 +4053,12 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "tetA",
         "tetracycline efflux pump",
-        "tetracycline resistance protein"
-      ]
-    },
-    {
-      "slug": "tetAC",
-      "name": "tetAC",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
+        "tetracycline resistance protein",
         "tetAC"
       ]
     },
@@ -3868,9 +4070,11 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
-        "tetO"
+        "tetO",
+        "tet operator"
       ]
     },
     {
@@ -3881,6 +4085,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "TetR",
@@ -3897,9 +4102,12 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
-        "tetR/tetA promoters"
+        "tetR/tetA promoters",
+        "Tn10 tetA promoter",
+        "tetA/tetR control region"
       ]
     },
     {
@@ -3910,6 +4118,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "TEV site",
@@ -3928,6 +4137,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "thrombin site",
@@ -3945,6 +4155,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "tL3",
@@ -3961,6 +4172,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "tonB",
@@ -3975,6 +4187,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "TRE3GV",
@@ -3989,6 +4202,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "trfA"
@@ -4002,6 +4216,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "Trp1",
@@ -4017,6 +4232,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 7,
       "synonyms": [
         "trxA",
@@ -4027,20 +4243,6 @@
       ]
     },
     {
-      "slug": "ts_ori101",
-      "name": "ts ori101",
-      "feature_type": "rep_origin",
-      "kind": "dna",
-      "so_term": "SO:0000296",
-      "so_name": "origin_of_replication",
-      "status": "candidate",
-      "n_claims": 0,
-      "synonyms": [
-        "oriR101",
-        "ts ori101"
-      ]
-    },
-    {
       "slug": "Twin_Strep_tag",
       "name": "Twin_Strep_tag",
       "feature_type": "protein_domain",
@@ -4048,6 +4250,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 4,
       "synonyms": [
         "Twin-Strep-tag",
@@ -4064,6 +4267,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "UGI",
@@ -4078,6 +4282,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 8,
       "synonyms": [
         "Ulp1 protease",
@@ -4093,6 +4298,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "UnaG"
@@ -4106,6 +4312,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "URA3",
@@ -4120,6 +4327,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "V5 tag",
@@ -4138,6 +4346,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "status": "validated",
+      "sourced": true,
       "n_claims": 6,
       "synonyms": [
         "VSV-G tag",
@@ -4154,6 +4363,7 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "woodchuck hepatitis virus posttranscriptional regulatory element",
@@ -4169,6 +4379,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "XylS"
@@ -4182,6 +4393,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
+      "sourced": false,
       "n_claims": 0,
       "synonyms": [
         "YFP",
@@ -4197,6 +4409,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "validated",
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "BleoR",

@@ -19,12 +19,28 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "lambda cos"
+          "lambda cos region"
         ],
         "synonym": [
-          "cos",
           "lambda cos region",
           "cos site (SEVA)"
+        ]
+      }
+    },
+    {
+      "type": "misc_feature",
+      "start": 127,
+      "end": 351,
+      "strand": 1,
+      "qualifiers": {
+        "label": [
+          "lambda cos"
+        ],
+        "parent": [
+          "lambda cos region"
+        ],
+        "note": [
+          "The whole of the catalog part lambda cos (224 bp), identical."
         ]
       }
     }

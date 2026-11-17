@@ -43,6 +43,7 @@ REFERENCE   4
   REMARK    doi:10.1016/j.chroma.2022.463274
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/BC2_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..12
                      /label="BC2_tag"

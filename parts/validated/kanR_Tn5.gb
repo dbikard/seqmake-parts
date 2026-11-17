@@ -39,13 +39,13 @@ REFERENCE   4
   REMARK    doi:10.1021/acs.jpcb.0c01604
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/kanR_Tn5
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..264
                      /label="kanR (Tn5)"
                      /synonym="APH(3')-II"
                      /synonym="NeoR"
                      /synonym="NeoR/KanR"
-                     /synonym="kanR"
                      /synonym="neo"
                      /synonym="nptII"
                      /note="Tn5 aminoglycoside 3'-phosphotransferase type II

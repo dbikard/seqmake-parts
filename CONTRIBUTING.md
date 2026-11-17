@@ -122,7 +122,7 @@ viewer ships as an npm package this becomes a CDN/package reference instead.)
       "feature_type": "promoter", "so_term": "SO:0000167", "so_name": "promoter",
       "synonyms": ["PhlF promoter"], "collections": [],
       "description": "…", "length": 51,
-      "documented": true, "status": "validated",
+      "documented": true, "status": "validated", "sourced": true,
       "children": [
         {"label": "-35", "feature_type": "regulatory",
          "so_term": "SO:0000175", "so_name": "minus_35_signal",

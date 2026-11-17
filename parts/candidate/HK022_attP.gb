@@ -38,9 +38,10 @@ REFERENCE   4
   REMARK    doi:10.1021/sb400021j
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/HK022_attP
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..258
-                     /label="HK022_attB"
+                     /label="HK022_attP"
                      /synonym="HK022_attP"
                      /synonym="HK022 attP"
                      /synonym="phage HK022 attP"
@@ -50,13 +51,10 @@ FEATURES             Location/Qualifiers
                      arm-type and core-type Int-binding sites flanking the
                      crossover overlap (O) region. Source-verified against
                      X51962 (complement strand 229..486, 100% identity over 258
-                     bp). The 27 bp O-region (overlap/core) lies at positions
-                     203..230 on the plus strand and is conserved with the
-                     lambda att core. NOTE: although the catalog slug is 'attB',
-                     this exact sequence is the phage attP region of X51962
-                     (annotated [242:469] on the plus strand of the deposit);
-                     the bacterial attB proper lies in the E. coli leuX tRNA-Leu
-                     gene. See recommendations."
+                     bp). The crossover (overlap) region's exact boundaries
+                     inside this window are not pinned to a primary figure and
+                     are left unstated; the window is conserved with the lambda
+                     att core."
                      /db_xref="SO:0000057"
                      /citation=[1]
                      /citation=[2]

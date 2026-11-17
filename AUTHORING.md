@@ -124,6 +124,43 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
   the inverse ("regulates") on the TF's page, so the link is authored once and
   shown both ways. Composition cross-links (`component` ↔ `sub_region_of`, step 4)
   work the same way.
+- **One name, one part; declare every overlap.** Parts are matched against
+  plasmids, so a library defect becomes a wrong name on every plasmid that
+  carries the span. A name or synonym belongs to one part only. A part that
+  holds another part's whole sequence declares it: a sub-feature labelled with
+  that part's name (or a synonym) over the copy, or a `component` /
+  `sub_region_of` link. Two parts at >= 98% identity over the shorter are one
+  part, or one declares the other a variant with `variant_of="<name>"` on its
+  main feature (`ColE1_AT` is a `variant_of` `ColE1`). A non-coding part holds
+  no gene (no >= 300 bp ORF over 80% of it), a DNA part is >= 20 bp unless it is
+  a real short element (an RBS, an operator), and a part holds only its element.
+  `tools/check_library.py` checks all of this; a part kept on purpose despite a
+  finding goes in its allow-list with the reason. Declare a contained part by a
+  link on the main feature (`component="<name>"`, or `variant_of` / `sub_region_of`)
+  or by a sub-feature labelled with that part's name over the copy — use the link
+  when the sub-feature's label carries position information worth keeping
+  (`lac operator O4`, `tetO2`).
+- **Sourced means the record names where the bases came from.** A part is
+  **sourced** when `provenance.sequence_source` names the deposit its sequence
+  was taken from; references alone are not enough (three papers about the native
+  pSC101 origin sat under a cloning-vector variant of it). `tools/verify_sources.py`
+  re-fetches each cited accession and checks it really contains the part's
+  sequence — run it when you source a part; it needs the network, so CI does not.
+  An engineered part that its cited record cannot contain (a designed tag, a
+  consensus site) says so in `sequence_source`. A deposit that matches the part only
+  nearly (a few substitutions, extra bases) goes in `provenance.closest_deposit`, with
+  the differences: it documents the part without making it sourced.
+- **The curation status travels with the `.gb`.** Every generated `.gb` carries,
+  in its `COMMENT`, a line of exactly this shape, which consumers parse:
+
+  ```
+  Catalog status: <validated|candidate>, <sourced|unsourced>
+  ```
+
+  It follows the permanent-identifier line. `catalog.json` and `index.json` carry
+  the same two fields as `status` and `sourced`; the `.gb` is the only one of the
+  three that a consumer copying part files alone receives, so keep the wording
+  stable.
 - **Declare collection membership on the part.** A part joins a family (a vector
   series, a promoter set, an inducible-sensor kit) with a repeatable
   `collection="<id>"` qualifier on its main feature — membership always lives on
@@ -254,7 +291,8 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
    It runs, in order: the content / requests / link guards, JSON-schema
    validation (`validate_parts.py`), regeneration of every generated artifact
    (`build_gb.py` → `build_catalog.py` → `build_rdf.py`) with a staleness check,
-   the SHACL shapes (`pyshacl`), and the tests (`pytest`). Run any one directly
+   the library quality gate (`check_library.py`), the SHACL shapes (`pyshacl`),
+   and the tests (`pytest`). Run any one directly
    while iterating; run `check_all.py` before you commit.
 8. **Promote to validated.** When the record clears the completeness bar (sourced
    provenance, SO-typed main feature, located sub-features where the part has

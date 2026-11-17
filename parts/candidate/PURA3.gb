@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PURA3
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..216
                      /label="PURA3"

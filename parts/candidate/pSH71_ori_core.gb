@@ -9,6 +9,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pSH71_ori_core
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      rep_origin      1..513
                      /label="pSH71 ori (core)"

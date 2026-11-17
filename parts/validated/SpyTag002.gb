@@ -42,6 +42,7 @@ REFERENCE   4
   REMARK    doi:10.1073/pnas.1909653116
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SpyTag002
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..14
                      /label="SpyTag002"

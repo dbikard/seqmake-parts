@@ -93,6 +93,7 @@ REFERENCE   12
   REMARK    doi:10.1016/j.jmb.2021.166893
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Strep_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..8
                      /label="Strep_tag"

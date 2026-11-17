@@ -37,6 +37,7 @@ REFERENCE   4
    PUBMED   2579077
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Ptrc
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..30
                      /label="Ptrc"

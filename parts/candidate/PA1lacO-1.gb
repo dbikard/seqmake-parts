@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PA1lacO-1
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..84
                      /label="PA1lacO-1"
@@ -22,6 +23,18 @@ FEATURES             Location/Qualifiers
                      Distinct from the already-present PA1/O4/O3 (different
                      operator placement)."
                      /db_xref="SO:0000167"
+     protein_bind    26..42
+                     /label="lacO"
+                     /parent="PA1lacO-1"
+                     /note="17 bp lac operator O1 core, identical to the catalog
+                     part lacO."
+                     /db_xref="SO:0000057"
+     protein_bind    59..75
+                     /label="lacO"
+                     /parent="PA1lacO-1"
+                     /note="17 bp lac operator O1 core, identical to the catalog
+                     part lacO."
+                     /db_xref="SO:0000057"
 ORIGIN
         1 aaaatttatc aaaaagagtg ttgacttgtg agcggataac aatgatactt agattcaatt
        61 gtgagcggat aacaatttca caca

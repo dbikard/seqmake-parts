@@ -43,6 +43,7 @@ REFERENCE   5
   REMARK    doi:10.1021/sb400021j
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/phiC31_attP
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..100
                      /label="phiC31_attP"

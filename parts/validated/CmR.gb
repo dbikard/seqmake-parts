@@ -44,6 +44,7 @@ REFERENCE   5
   REMARK    doi:10.1021/bi00460a016
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CmR
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..219
                      /label="CmR"

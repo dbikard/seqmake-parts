@@ -1,7 +1,7 @@
 LOCUS       pSC101_ori               223 bp    DNA              UNK 01-JAN-1980
 DEFINITION  The pSC101 origin of replication: the ~220 bp low-copy,
             iteron-driven cis origin that controls RepA-initiated replication of
-            the broad-host-range plasmid pSC101..
+            the narrow-host-range plasmid pSC101..
 ACCESSION   pSC101_ori
 VERSION     pSC101_ori
 KEYWORDS    .
@@ -28,17 +28,40 @@ REFERENCE   3
   JOURNAL   Mol Microbiol 5(2):233-237 (1991)
    PUBMED   2041467
   REMARK    doi:10.1111/j.1365-2958.1991.tb02103.x
+REFERENCE   4
+  AUTHORS   Bernardi A, Bernardi F
+  TITLE     Complete sequence of pSC101.
+  JOURNAL   Nucleic Acids Res. 1984;12(24):9415-9426
+   PUBMED   6096829
+  REMARK    doi:10.1093/nar/12.24.9415
+REFERENCE   5
+  AUTHORS   Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick
+            M, Ohtsubo H, Ohtsubo E
+  TITLE     A 37 x 10(3) molecular weight plasmid-encoded protein is required
+            for replication and copy number control in the plasmid pSC101 and
+            its temperature-sensitive derivative pHS1.
+  JOURNAL   J Mol Biol. 1984;175(3):331-348
+   PUBMED   6327996
+  REMARK    doi:10.1016/0022-2836(84)90352-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pSC101_ori
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..223
                      /label="pSC101 ori"
                      /synonym="pSC101 ori"
+                     /synonym="pSC101 origin"
+                     /synonym="oriV pSC101"
                      /note="The pSC101 origin of replication: the ~220 bp
                      low-copy, iteron-driven cis origin that controls
-                     RepA-initiated replication of the broad-host-range plasmid
-                     pSC101."
+                     RepA-initiated replication of the narrow-host-range plasmid
+                     pSC101. Temperature sensitivity of pSC101 replication maps
+                     to the rep101 gene, not to this origin (Armstrong et al.
+                     1984), so no form of this origin carries a 'ts' claim."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:NC_002056"
+                     /citation=[4]
+                     /citation=[5]
      protein_bind    50..67
                      /label="RepA iteron 1"
                      /parent="pSC101 ori"
@@ -82,7 +105,7 @@ FEATURES             Location/Qualifiers
                      /citation=[1]
                      /citation=[3]
 ORIGIN
-        1 gggctagtca atgataatta ctagtccttt tcccgggaga tctgggtatc tgtaaattct
+        1 gggctagtca atgataatta ctagtccttt tcctttgagt tgtgggtatc tgtaaattct
        61 gctagacctt tgctggaaaa cttgtaaatt ctgctagacc ctctgtaaat tccgctagac
       121 ctttgtgtgt tttttttgtt tatattcaag tggttataat ttatagaata aagaaagaat
       181 aaaaaaagat aaaaagaata gatcccagcc ctgtgtataa ctc

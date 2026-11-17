@@ -8,11 +8,11 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/J23117
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..35
                      /label="J23117"
                      /synonym="BBa_J23117"
-                     /synonym="Anderson constitutive promoter"
                      /synonym="J23117 promoter"
                      /collection="anderson-promoters"
                      /db_xref="SO:0000167"

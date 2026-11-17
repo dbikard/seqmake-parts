@@ -87,6 +87,7 @@ REFERENCE   11
   REMARK    doi:10.1002/bit.10082
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/enterokinase_site
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..5
                      /label="enterokinase_site"

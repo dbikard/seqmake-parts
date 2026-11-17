@@ -8,12 +8,14 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CFP
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..239
                      /label="CFP"
                      /synonym="CFP"
                      /synonym="cyan fluorescent protein"
                      /synonym="ECFP"
+                     /variant_of="EGFP"
                      /db_xref="SO:0000316"
 ORIGIN
         1 mvskgeelft gvvpilveld gdvnghkfsv sgegegdaty gkltlkfict tgklpvpwpt

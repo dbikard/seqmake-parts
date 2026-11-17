@@ -54,6 +54,7 @@ REFERENCE   6
   REMARK    doi:10.1016/j.jtbi.2016.04.016
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/E-tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..13
                      /label="E-tag"

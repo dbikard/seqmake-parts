@@ -71,6 +71,7 @@ REFERENCE   8
   REMARK    doi:10.2174/1875397301206010008
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/HaloTag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..297
                      /label="HaloTag"

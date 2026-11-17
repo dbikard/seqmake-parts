@@ -8,10 +8,10 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/kanR_Tn903
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      CDS             1..271
                      /label="kanR (Tn903)"
-                     /synonym="KanR"
                      /synonym="KmR"
                      /synonym="KanR2"
                      /synonym="APH(3')-Ia"

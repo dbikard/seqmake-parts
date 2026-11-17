@@ -3,7 +3,7 @@
   "slug": "Plac",
   "locus": "Plac",
   "id": "Plac",
-  "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+  "description": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -40,13 +40,16 @@
           "lac promoter"
         ],
         "note": [
-          "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp."
+          "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp."
         ],
         "db_xref": [
           "SO:0000167"
         ],
         "regulated_by": [
           "LacI"
+        ],
+        "component": [
+          "lacO"
         ]
       }
     },
@@ -151,7 +154,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "U00096 (E. coli K-12 MG1655 genome), complement(366323..366379), 100% over 57 bp"
   },
   "functional_claims": [
     {
@@ -166,7 +170,7 @@
       "ontology": {},
       "source": {
         "pmid": "1088926",
-        "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp.",
+        "quote": "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp.",
         "quote_source": "catalog-doc"
       },
       "provenance": {

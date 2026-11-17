@@ -235,22 +235,6 @@ part:APH-3 a sbol:Component ;
     cat:documented false ;
     cat:slug "APH-3" .
 
-part:Acc3 a sbol:Component ;
-    rdfs:label "Acc3" ;
-    dcterms:title "Acc3" ;
-    sbol:displayId "Acc3" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:Acc3_sequence ;
-    sbol:role so:0000316 ;
-    sbol:type sbo:0000252 ;
-    skos:altLabel "Acc3",
-        "GmR (SEVA)",
-        "acc3",
-        "gentamicin 3-N-acetyltransferase" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "Acc3" .
-
 part:AlkS a sbol:Component ;
     rdfs:label "AlkS" ;
     dcterms:title "AlkS" ;
@@ -271,6 +255,7 @@ part:B0015_terminator a sbol:Component ;
     rdfs:label "B0015_terminator" ;
     dcterms:title "B0015_terminator" ;
     sbol:displayId "B0015_terminator" ;
+    sbol:hasFeature part:B0015_terminator_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:B0015_terminator_sequence ;
     sbol:role so:0000141 ;
@@ -660,7 +645,6 @@ part:EGFP a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "EGFP",
         "Enhanced GFP",
-        "GFP",
         "eGFP" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -744,9 +728,12 @@ part:GmR a sbol:Component ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
     rdfs:seeAlso <http://purl.uniprot.org/uniprot/P23181> ;
-    skos:altLabel "GentR",
+    skos:altLabel "Acc3",
+        "GentR",
         "Gentamicin R",
+        "GmR (SEVA)",
         "aacC1",
+        "gentamicin 3-N-acetyltransferase",
         "gentamicin acetyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -1087,7 +1074,7 @@ part:P2 a sbol:Component ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
     skos:altLabel "Ptet2",
-        "tet promoter" ;
+        "pBR322 tet promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:P2_claim_regulation ;
@@ -1135,6 +1122,8 @@ part:PA1lacO-1 a sbol:Component ;
     dcterms:description "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Coliphage T7 A1 promoter (-35 TTGACT / -10 GATACT) with two lac operators (O1 in the spacer + downstream O1); LacI-repressible, IPTG-inducible. Distinct from the already-present PA1/O4/O3 (different operator placement)." ;
     dcterms:title "PA1lacO-1" ;
     sbol:displayId "PA1lacO-1" ;
+    sbol:hasFeature part:PA1lacO-1_feature_0,
+        part:PA1lacO-1_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:PA1lacO-1_sequence ;
     sbol:role so:0000167 ;
@@ -1229,6 +1218,7 @@ part:PLlacO-1 a sbol:Component ;
     dcterms:description "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. Lambda PL scaffold (-35 TTGACA / -10 GATACT) with two natural lac operators (LacI-repressible, IPTG-inducible)." ;
     dcterms:title "PLlacO-1" ;
     sbol:displayId "PLlacO-1" ;
+    sbol:hasFeature part:PLlacO-1_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:PLlacO-1_sequence ;
     sbol:role so:0000167 ;
@@ -1430,6 +1420,7 @@ part:Plac_ara-1 a sbol:Component ;
     dcterms:description "Sequence from Lutz & Bujard 1997 (Nucleic Acids Res 25:1203, PMID 9092630), Figure 1. lac/ara hybrid core: araI1/araI2 + Os operator, hybrid -35 (TTTACA) / -10 (TATGAT), downstream lac operator; AraC- and LacI-controlled (arabinose + IPTG)." ;
     dcterms:title "Plac/ara-1" ;
     sbol:displayId "Plac_ara-1" ;
+    sbol:hasFeature part:Plac_ara-1_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Plac_ara-1_sequence ;
     sbol:role so:0000167 ;
@@ -1444,6 +1435,7 @@ part:Plac_ara-1 a sbol:Component ;
 
 part:Pliar1 a sbol:Component ;
     rdfs:label "Pliar1" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar1" ;
     sbol:displayId "Pliar1" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1458,6 +1450,7 @@ part:Pliar1 a sbol:Component ;
 
 part:Pliar15 a sbol:Component ;
     rdfs:label "Pliar15" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar15" ;
     sbol:displayId "Pliar15" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1472,6 +1465,7 @@ part:Pliar15 a sbol:Component ;
 
 part:Pliar17 a sbol:Component ;
     rdfs:label "Pliar17" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar17" ;
     sbol:displayId "Pliar17" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1486,6 +1480,7 @@ part:Pliar17 a sbol:Component ;
 
 part:Pliar51 a sbol:Component ;
     rdfs:label "Pliar51" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar51" ;
     sbol:displayId "Pliar51" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1500,6 +1495,7 @@ part:Pliar51 a sbol:Component ;
 
 part:Pliar53 a sbol:Component ;
     rdfs:label "Pliar53" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar53" ;
     sbol:displayId "Pliar53" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1514,6 +1510,7 @@ part:Pliar53 a sbol:Component ;
 
 part:Pliar70 a sbol:Component ;
     rdfs:label "Pliar70" ;
+    dcterms:references pubmed:33783967 ;
     dcterms:title "Pliar70" ;
     sbol:displayId "Pliar70" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
@@ -1615,7 +1612,6 @@ part:Pxyl_tet a sbol:Component ;
     rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/JN635500.1> ;
     skos:altLabel "Pxyl/tet",
         "Pxyl/tetO",
-        "Tn10 tetA promoter",
         "ptet_full" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -1690,18 +1686,24 @@ part:RK2_oriV a sbol:Component ;
 
 part:RP4_oriT a sbol:Component ;
     rdfs:label "RP4 oriT" ;
+    dcterms:description "RP4 oriT: the origin of conjugative transfer of the IncP-alpha plasmid RP4 (210 bp). The bases are the region two deposited oriT windows agree on (X54459 4636-4845); the element's own ends are unverified, as no accessible source maps them. The catalog carried two overlapping windows of this locus, under the names 'oriT' (228 bp) and 'RP4 oriT' (257 bp, with 6 bases of a cloning junction); both names now belong to this part." ;
+    dcterms:references pubmed:1665997 ;
     dcterms:title "RP4 oriT" ;
     sbol:displayId "RP4_oriT" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:RP4_oriT_sequence ;
     sbol:role so:0000724 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "RP4 oriT",
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/X54459> ;
+    skos:altLabel "OriT",
+        "RP4 oriT",
         "RP4 transfer origin",
+        "oriT",
         "oriT RP4" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RP4_oriT" .
+    cat:slug "RP4_oriT" ;
+    cat:sourceAccession "GenBank:X54459" .
 
 part:RSF1010_RepA a sbol:Component ;
     rdfs:label "RSF1010 RepA" ;
@@ -1787,7 +1789,6 @@ part:RepC_RSF1010 a sbol:Component ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "RSF1010 RepC",
-        "RepC",
         "repC (RSF1010)",
         "replication protein C" ;
     cat:curationStatus "candidate" ;
@@ -1859,8 +1860,7 @@ part:SpecR a sbol:Component ;
     sbol:hasSequence part:SpecR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "SmR",
-        "SpecR",
+    skos:altLabel "SpecR",
         "aad9",
         "spec",
         "spectinomycin adenyltransferase" ;
@@ -2059,6 +2059,7 @@ part:TetA a sbol:Component ;
     sbol:type sbo:0000252 ;
     rdfs:seeAlso <http://purl.uniprot.org/uniprot/P02981> ;
     skos:altLabel "tetA",
+        "tetAC",
         "tetracycline efflux pump",
         "tetracycline resistance protein" ;
     cat:curationStatus "validated" ;
@@ -2178,10 +2179,7 @@ part:aadA a sbol:Component ;
     skos:altLabel "ANT(3'')(9)",
         "AadA",
         "SmR",
-        "SpR",
-        "SpecR",
         "aadA1",
-        "spectinomycin adenyltransferase",
         "streptomycin 3''-adenylyltransferase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -2589,7 +2587,6 @@ part:kanR_Tn5 a sbol:Component ;
     skos:altLabel "APH(3')-II",
         "NeoR",
         "NeoR/KanR",
-        "kanR",
         "neo",
         "nptII" ;
     cat:curationStatus "validated" ;
@@ -2607,7 +2604,6 @@ part:kanR_Tn903 a sbol:Component ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "APH(3')-Ia",
-        "KanR",
         "KanR2",
         "KmR",
         "aphA1",
@@ -2618,13 +2614,16 @@ part:kanR_Tn903 a sbol:Component ;
 
 part:lacO a sbol:Component ;
     rdfs:label "lacO" ;
+    dcterms:description "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. In the catalog's promoters the operator is annotated under several windows and names: Plac carries the published 24 bp as 'lac operator O1'; T7lac a 21 bp window as 'lac operator O1' and Ptac the same 21 bp as 'lac operator'; PT5/lacO two 17 bp windows one base downstream of this one as 'lac operator', and PA1/O4/O3 the same as 'lac operator O4' and 'O3'; PA1lacO-1, PLlacO-1 and Plac/ara-1 carry this part's own window as 'lacO'." ;
+    dcterms:references pubmed:4587255 ;
     dcterms:title "lacO" ;
     sbol:displayId "lacO" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lacO_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "lacO" ;
+    skos:altLabel "lac operator",
+        "lacO" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "lacO" .
@@ -2695,6 +2694,7 @@ part:lambda_cos a sbol:Component ;
     sbol:role so:0000110 ;
     sbol:type sbo:0000251 ;
     skos:altLabel "Minimal lambda cos sequence",
+        "cos",
         "cos site",
         "lambda cos" ;
     cat:curationStatus "candidate" ;
@@ -2702,15 +2702,15 @@ part:lambda_cos a sbol:Component ;
     cat:slug "lambda_cos" .
 
 part:lambda_cos_1 a sbol:Component ;
-    rdfs:label "lambda cos" ;
-    dcterms:title "lambda cos" ;
+    rdfs:label "lambda cos region" ;
+    dcterms:title "lambda cos region" ;
     sbol:displayId "lambda_cos_1" ;
+    sbol:hasFeature part:lambda_cos_1_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lambda_cos_1_sequence ;
     sbol:role so:0000110 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "cos",
-        "cos site (SEVA)",
+    skos:altLabel "cos site (SEVA)",
         "lambda cos region" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -2799,19 +2799,6 @@ part:ori2 a sbol:Component ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "ori2" .
-
-part:oriT a sbol:Component ;
-    rdfs:label "oriT" ;
-    dcterms:title "oriT" ;
-    sbol:displayId "oriT" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:oriT_sequence ;
-    sbol:role so:0000724 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "OriT" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "oriT" .
 
 part:p15A a sbol:Component ;
     rdfs:label "p15A" ;
@@ -2903,17 +2890,18 @@ part:pBR322_pas_DnaA a sbol:Component ;
     cat:sourceAccession "GenBank:J01749" .
 
 part:pIJ101_ori a sbol:Component ;
-    rdfs:label "pIJ101 ori" ;
-    dcterms:title "pIJ101 ori" ;
+    rdfs:label "pIJ101 replicon" ;
+    dcterms:description "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and no deposit contains it exactly: it matches the complete pIJ101 sequence M21778 at 99.55% (2,229 of 2,239 bases, 10 mismatches, no gaps) over 8570->1978 across that record's origin of numbering. Both of its ends are unverified. Split it once the replicon is re-sourced from a deposit." ;
+    dcterms:title "pIJ101 replicon" ;
     sbol:displayId "pIJ101_ori" ;
+    sbol:hasFeature part:pIJ101_ori_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:pIJ101_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Streptomyces ori",
-        "pIJ101",
-        "pIJ101 ori",
-        "pIJ101 origin" ;
+    skos:altLabel "pIJ101 ori",
+        "pIJ101 origin",
+        "pIJ101 replicon" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "pIJ101_ori" .
@@ -2961,9 +2949,11 @@ part:pRO1600_oriV a sbol:Component ;
 
 part:pSC101_ori a sbol:Component ;
     rdfs:label "pSC101 ori" ;
-    dcterms:description "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101." ;
+    dcterms:description "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101. Temperature sensitivity of pSC101 replication maps to the rep101 gene, not to this origin (Armstrong et al. 1984), so no form of this origin carries a 'ts' claim." ;
     dcterms:references pubmed:12501319,
         pubmed:2041467,
+        pubmed:6096829,
+        pubmed:6327996,
         pubmed:8376344 ;
     dcterms:title "pSC101 ori" ;
     sbol:displayId "pSC101_ori" ;
@@ -2976,32 +2966,77 @@ part:pSC101_ori a sbol:Component ;
     sbol:hasSequence part:pSC101_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "pSC101 ori" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/NC_002056> ;
+    skos:altLabel "oriV pSC101",
+        "pSC101 ori",
+        "pSC101 origin" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:pSC101_ori_claim_copy_number ;
-    cat:slug "pSC101_ori" .
+    cat:slug "pSC101_ori" ;
+    cat:sourceAccession "GenBank:NC_002056" .
 
-part:pSC101_ori_SEVA a sbol:Component ;
-    rdfs:label "pSC101 ori (SEVA)" ;
-    dcterms:title "pSC101 ori (SEVA)" ;
-    sbol:displayId "pSC101_ori_SEVA" ;
+part:pSC101_ori_biobrick a sbol:Component ;
+    rdfs:label "pSC101 ori (SpeI-free BioBrick form)" ;
+    dcterms:description "The SpeI-free BioBrick form of the pSC101 origin: the native origin with two changes (T22A, A23T) that remove the ACTAGT SpeI site at its bases 20-25. The iGEM Registry record of the pSC101 origin (BBa_I50042) describes it as carrying \"mutations introduced to eliminate a SpeI site\" and as \"the origin of replication in pSB4* series plasmids\"; the pSB4A5 backbone carries the same 223 bp. That record calls the origin \"supposed to have low copy number\", and the pSB4A5 record gives the plasmid's copy number as ~10-12 (citing Lutz & Bujard 1997). Copy-number mutations of pSC101 map in the rep101 gene, not in the origin (Armstrong et al. 1984); no source checked here ties a copy-number phenotype to these two bases, and none ties a temperature sensitivity to any form of this origin." ;
+    dcterms:references pubmed:12501319,
+        pubmed:2041467,
+        pubmed:6096829,
+        pubmed:6327996,
+        pubmed:8376344 ;
+    dcterms:title "pSC101 ori (SpeI-free BioBrick form)" ;
+    sbol:displayId "pSC101_ori_biobrick" ;
+    sbol:hasFeature part:pSC101_ori_biobrick_feature_0,
+        part:pSC101_ori_biobrick_feature_1,
+        part:pSC101_ori_biobrick_feature_2,
+        part:pSC101_ori_biobrick_feature_3,
+        part:pSC101_ori_biobrick_feature_4 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:pSC101_ori_SEVA_sequence ;
+    sbol:hasSequence part:pSC101_ori_biobrick_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "pSC101",
-        "pSC101 ori (SEVA)",
-        "pSC101 origin" ;
+    skos:altLabel "pSC101 ori (BioBrick form)",
+        "pSC101 ori (pSB4 form)" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "pSC101_ori_SEVA" .
+    cat:hasFunctionalClaim part:pSC101_ori_biobrick_claim_copy_number ;
+    cat:slug "pSC101_ori_biobrick" .
+
+part:pSC101_ori_vector a sbol:Component ;
+    rdfs:label "pSC101 ori (SmaI/BglII vector form)" ;
+    dcterms:description "The SmaI/BglII cloning-vector form of the pSC101 origin: the native origin with CCCGGGAGATCT (SmaI + BglII) in place of its bases 32-43. Carried by the pZ expression vectors (Lutz & Bujard 1997) and by many later pSC101 vectors; 224 of a 1,390-plasmid collection carry this form and 44 the native one. The two differ only over bases 32-43, outside every annotated sub-element of the origin. Like the native form, it carries no temperature-sensitivity claim: that phenotype maps to the rep101 gene (Armstrong et al. 1984)." ;
+    dcterms:references pubmed:12501319,
+        pubmed:2041467,
+        pubmed:6096829,
+        pubmed:6327996,
+        pubmed:8376344,
+        pubmed:9092630 ;
+    dcterms:title "pSC101 ori (SmaI/BglII vector form)" ;
+    sbol:displayId "pSC101_ori_vector" ;
+    sbol:hasFeature part:pSC101_ori_vector_feature_0,
+        part:pSC101_ori_vector_feature_1,
+        part:pSC101_ori_vector_feature_2,
+        part:pSC101_ori_vector_feature_3,
+        part:pSC101_ori_vector_feature_4 ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
+    sbol:hasSequence part:pSC101_ori_vector_sequence ;
+    sbol:role so:0000296 ;
+    sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U66313> ;
+    skos:altLabel "pSC101 ori (SmaI/BglII)",
+        "pSC101 ori (vector form)" ;
+    cat:curationStatus "candidate" ;
+    cat:documented false ;
+    cat:hasFunctionalClaim part:pSC101_ori_vector_claim_copy_number ;
+    cat:slug "pSC101_ori_vector" ;
+    cat:sourceAccession "GenBank:U66313" .
 
 part:pSH71_ori a sbol:Component ;
     rdfs:label "pSH71 ori" ;
     dcterms:description "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA." ;
     dcterms:title "pSH71 ori" ;
     sbol:displayId "pSH71_ori" ;
+    sbol:hasFeature part:pSH71_ori_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:pSH71_ori_sequence ;
     sbol:role so:0000296 ;
@@ -3075,7 +3110,6 @@ part:repA_IncFII a sbol:Component ;
     sbol:hasSequence part:repA_IncFII_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "repA" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "repA_IncFII" .
@@ -3088,7 +3122,6 @@ part:repA_R6K a sbol:Component ;
     sbol:hasSequence part:repA_R6K_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "repA" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "repA_R6K" .
@@ -3134,18 +3167,22 @@ part:repL a sbol:Component ;
 
 part:rep_pSC101 a sbol:Component ;
     rdfs:label "rep pSC101" ;
+    dcterms:description "rep pSC101 (RepA): the 316 aa replication initiation protein that binds the pSC101 origin iterons and is required in trans for replication. The allele here is the one encoded by the pSC101 reference sequence NC_002056 (CDS 5273..6223, protein WP_010891056.1). It differs from UniProt P22308 at two residues (P22308 reads H257 and Y289 where this one reads R257 and H289). Replication-deficient, increased-copy-number and temperature-sensitive mutations of pSC101 all map inside this gene, not in the origin (Armstrong et al. 1984, which reports seven replication-deficient insertions, four copy-number mutants and one temperature-sensitive replication mutant within rep101). That paper does not give the residue of the temperature-sensitive allele, and no accessible source checked here does, so this part claims no temperature sensitivity for its own allele or for the two-residue variant: the residue is unverified." ;
+    dcterms:references pubmed:6096829,
+        pubmed:6327996 ;
     dcterms:title "rep pSC101" ;
     sbol:displayId "rep_pSC101" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:rep_pSC101_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/protein/WP_010891056.1> ;
     skos:altLabel "Replication protein",
-        "rep pSC101",
-        "repA101 ts" ;
+        "rep pSC101" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "rep_pSC101" .
+    cat:slug "rep_pSC101" ;
+    cat:sourceAccession "NCBI:WP_010891056.1" .
 
 part:rop a sbol:Component ;
     rdfs:label "rop" ;
@@ -3264,8 +3301,7 @@ part:sfGFP a sbol:Component ;
     sbol:hasSequence part:sfGFP_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "GFP",
-        "GFP (superfolder)",
+    skos:altLabel "GFP (superfolder)",
         "Superfolder",
         "Superfolder GFP",
         "msfGFP",
@@ -3340,31 +3376,23 @@ part:tL3 a sbol:Component ;
     cat:slug "tL3" ;
     cat:sourceAccession "GenBank:J02459" .
 
-part:tetAC a sbol:Component ;
-    rdfs:label "tetAC" ;
-    dcterms:title "tetAC" ;
-    sbol:displayId "tetAC" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:tetAC_sequence ;
-    sbol:role so:0000316 ;
-    sbol:type sbo:0000252 ;
-    skos:altLabel "tetAC" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "tetAC" .
-
 part:tetO a sbol:Component ;
     rdfs:label "tetO" ;
+    dcterms:description "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not a Tn10 operator window: compared base for base with the Tn10 control region (J01830), it differs at one position from J01830 1551-1569 (ACTCTATCATTGATAGAGT, around tetO1) and at three from 1581-1599 (TCCCTATCAGTGATAGAGA, tetO2)." ;
+    dcterms:references pubmed:21921101 ;
     dcterms:title "tetO" ;
     sbol:displayId "tetO" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tetO_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "tetO" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/JN635500> ;
+    skos:altLabel "tet operator",
+        "tetO" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "tetO" .
+    cat:slug "tetO" ;
+    cat:sourceAccession "GenBank:JN635500" .
 
 part:tetR_tetA_promoters a sbol:Component ;
     rdfs:label "tetR/tetA promoters" ;
@@ -3390,11 +3418,15 @@ part:tetR_tetA_promoters a sbol:Component ;
     sbol:hasSequence part:tetR_tetA_promoters_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "tetR/tetA promoters" ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J01830> ;
+    skos:altLabel "Tn10 tetA promoter",
+        "tetA/tetR control region",
+        "tetR/tetA promoters" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:tetR_tetA_promoters_claim_regulation ;
-    cat:slug "tetR_tetA_promoters" .
+    cat:slug "tetR_tetA_promoters" ;
+    cat:sourceAccession "GenBank:J01830" .
 
 part:tonB a sbol:Component ;
     rdfs:label "tonB" ;
@@ -3422,20 +3454,6 @@ part:trfA a sbol:Component ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "trfA" .
-
-part:ts_ori101 a sbol:Component ;
-    rdfs:label "ts ori101" ;
-    dcterms:title "ts ori101" ;
-    sbol:displayId "ts_ori101" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:ts_ori101_sequence ;
-    sbol:role so:0000296 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "oriR101",
-        "ts ori101" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "ts_ori101" .
 
 part:186_attB a sbol:Component ;
     rdfs:label "186_attB" ;
@@ -4041,12 +4059,6 @@ part:APH-3_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:Acc3_sequence a sbol:Sequence ;
-    sbol:displayId "Acc3_sequence" ;
-    sbol:elements "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
 part:AlkS_sequence a sbol:Sequence ;
     sbol:displayId "AlkS_sequence" ;
     sbol:elements "MGMKIKIINNDFPVAKIGLDRITTLVSAKVHNCIYRPRLSIADGTAPRVCLYRAPPGYGKTVALAFEWLRHRTTGRPAVWISLRASSYSEFDICAEIIEQLEAFELVTFSHVREGVSKPTLLRDLASSLWQSTSSNEIETLICLDNINQGLGLPLLHALMEFMLETPKSIRFAVAGNTIKGFSRLKLAGAMQEHTEKDLAFSADEAVALVEAEAVLGVSEVQIEALVQEMEGWPVLIGFLLKCELPAKSISTVVEIDNYFNDEIFEALPERYRVFLVNSSLLDVVTPDGYNYVFKCVNAASCIKYLSTNYMLLRHVEGEPAQFTLHPVLRDFLQGIAWAENPAKRSYLLKRAAFWHWRRGEYQYAIRIALRANDCRWAVGMSEGIILDLSFRQGEIDTLRHWLSELPVKDLHKNPIVLICFAWVLYFSQQSARAEKLLKDLITPPDKKNKWQEKGWPQLVFAIGKATNDEMLLSEELCNKWISLFGDSNAVGKGAALTCLAFIFASEYRFAELEKVLAQAQAVNKFAKQDFAFGWLYVAKLQQALASGKMSWARQLITQARTDSGAQIMETAFTSKMLDALELESNYELCRLDTSEEKFSEILEFIANHGVTDVFFSVCRVVSAWRLGRNDLNGSIEILEWAKAYAAEKNLPRLEVMSQIEIYQRLLFQGVTYINTLQAFEDRKIFSGPHSAPLKARLLLVQSLALSRDQNFHLAAHRALLAIQQARKISAGQLEVRGLLYLAGAQAGGGTLKKAQHNIAYALEMAKQLQCFQTVLDEIRLIKRLIPTSCEVFAAVNLDQAIGAFSLPQMVEIRKSAENKAGDFLTLKQVSVLKLVKEGCSNKQIATKMYVTEDAIKWHMRKIFTILNVKSRTQAIIEAERQGVI" ;
@@ -4302,11 +4314,17 @@ part:AviTag_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:B0015_terminator_sequence a sbol:Sequence ;
-    sbol:displayId "B0015_terminator_sequence" ;
-    sbol:elements "CCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCTACTAGAGTCACACTGGCTCACCTTCGGGTGGGCCTTTCTGCGTTTATA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:B0015_terminator_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "T7Te" ;
+    sbol:displayId "B0015_terminator_feature_0" ;
+    sbol:hasLocation part:B0015_terminator_feature_0_range ;
+    sbol:role so:0000141 .
+
+part:B0015_terminator_feature_0_range a sbol:Range ;
+    sbol:end 128 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:B0015_terminator_sequence ;
+    sbol:start 89 .
 
 part:B0030_RBS_sequence a sbol:Sequence ;
     sbol:displayId "B0030_RBS_sequence" ;
@@ -5524,11 +5542,17 @@ part:FLAG_claim_sulfation_caveat_provenance a prov:Activity ;
     cat:fromDoc "primary" ;
     cat:method "ai-extraction" .
 
-part:FLAG_sequence a sbol:Sequence ;
-    sbol:displayId "FLAG_sequence" ;
-    sbol:elements "DYKDDDDK" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:FLAG_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "enterokinase cleavage site" ;
+    sbol:displayId "FLAG_feature_0" ;
+    sbol:hasLocation part:FLAG_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:FLAG_feature_0_range a sbol:Range ;
+    sbol:end 8 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:FLAG_sequence ;
+    sbol:start 4 .
 
 part:FRT_sequence a sbol:Sequence ;
     sbol:displayId "FRT_sequence" ;
@@ -6542,13 +6566,13 @@ part:HK022_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:HK022_attP a sbol:Component ;
-    rdfs:label "HK022_attB" ;
-    dcterms:description "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core. NOTE: although the catalog slug is 'attB', this exact sequence is the phage attP region of X51962 (annotated [242:469] on the plus strand of the deposit); the bacterial attB proper lies in the E. coli leuX tRNA-Leu gene. See recommendations." ;
+    rdfs:label "HK022_attP" ;
+    dcterms:description "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The crossover (overlap) region's exact boundaries inside this window are not pinned to a primary figure and are left unstated; the window is conserved with the lambda att core." ;
     dcterms:references pubmed:11591683,
         pubmed:2146253,
         pubmed:24050148,
         pubmed:2547971 ;
-    dcterms:title "HK022_attB" ;
+    dcterms:title "HK022_attP" ;
     sbol:displayId "HK022_attP" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:HK022_attP_sequence ;
@@ -7009,8 +7033,7 @@ part:J23100 a sbol:Component ;
     sbol:hasSequence part:J23100_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23100",
+    skos:altLabel "BBa_J23100",
         "J23100 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7030,8 +7053,7 @@ part:J23101 a sbol:Component ;
     sbol:hasSequence part:J23101_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23101",
+    skos:altLabel "BBa_J23101",
         "J23101 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7051,8 +7073,7 @@ part:J23102 a sbol:Component ;
     sbol:hasSequence part:J23102_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23102",
+    skos:altLabel "BBa_J23102",
         "J23102 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7094,8 +7115,7 @@ part:J23106 a sbol:Component ;
     sbol:hasSequence part:J23106_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23106",
+    skos:altLabel "BBa_J23106",
         "J23106 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7157,8 +7177,7 @@ part:J23109 a sbol:Component ;
     sbol:hasSequence part:J23109_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23109",
+    skos:altLabel "BBa_J23109",
         "J23109 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7198,8 +7217,7 @@ part:J23114 a sbol:Component ;
     sbol:hasSequence part:J23114_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23114",
+    skos:altLabel "BBa_J23114",
         "J23114 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7219,8 +7237,7 @@ part:J23116 a sbol:Component ;
     sbol:hasSequence part:J23116_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23116",
+    skos:altLabel "BBa_J23116",
         "J23116 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -7240,8 +7257,7 @@ part:J23117 a sbol:Component ;
     sbol:hasSequence part:J23117_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Anderson constitutive promoter",
-        "BBa_J23117",
+    skos:altLabel "BBa_J23117",
         "J23117 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -8328,11 +8344,29 @@ part:PA1_O4_O3_feature_3_range a sbol:Range ;
     sbol:sequence part:PA1_O4_O3_sequence ;
     sbol:start 40 .
 
-part:PA1lacO-1_sequence a sbol:Sequence ;
-    sbol:displayId "PA1lacO-1_sequence" ;
-    sbol:elements "AAAATTTATCAAAAAGAGTGTTGACTTGTGAGCGGATAACAATGATACTTAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:PA1lacO-1_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "lacO" ;
+    sbol:displayId "PA1lacO-1_feature_0" ;
+    sbol:hasLocation part:PA1lacO-1_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:PA1lacO-1_feature_0_range a sbol:Range ;
+    sbol:end 42 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PA1lacO-1_sequence ;
+    sbol:start 26 .
+
+part:PA1lacO-1_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "lacO" ;
+    sbol:displayId "PA1lacO-1_feature_1" ;
+    sbol:hasLocation part:PA1lacO-1_feature_1_range ;
+    sbol:role so:0000057 .
+
+part:PA1lacO-1_feature_1_range a sbol:Range ;
+    sbol:end 75 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PA1lacO-1_sequence ;
+    sbol:start 59 .
 
 part:PCymRC_claim_host_range a cat:FunctionalClaim ;
     rdfs:label "Characterized in Escherichia coli (the sensor was integrated into the E. coli MG1655, DH10B and BL21 genomes)." ;
@@ -8474,11 +8508,17 @@ part:PL_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:PLlacO-1_sequence a sbol:Sequence ;
-    sbol:displayId "PLlacO-1_sequence" ;
-    sbol:elements "ATAAATGTGAGCGGATAACATTGACATTGTGAGCGGATAACAAGATACTGAGCACATCAGCAGGACGCACTGACC" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:PLlacO-1_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "lacO" ;
+    sbol:displayId "PLlacO-1_feature_0" ;
+    sbol:hasLocation part:PLlacO-1_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:PLlacO-1_feature_0_range a sbol:Range ;
+    sbol:end 43 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PLlacO-1_sequence ;
+    sbol:start 27 .
 
 part:PLtetO-1 a sbol:Component ;
     rdfs:label "PLtetO-1" ;
@@ -8663,7 +8703,7 @@ part:PT5_lacO_feature_2_range a sbol:Range ;
 part:PT5_lacO_feature_3 a sbol:SequenceFeature ;
     dcterms:references pubmed:3015603,
         pubmed:4587255 ;
-    dcterms:title "lac operator (downstream)" ;
+    dcterms:title "lac operator" ;
     sbol:displayId "PT5_lacO_feature_3" ;
     sbol:hasLocation part:PT5_lacO_feature_3_range ;
     sbol:role so:0000057 .
@@ -8987,7 +9027,7 @@ part:Pkan_sequence a sbol:Sequence ;
 
 part:Plac a sbol:Component ;
     rdfs:label "Plac" ;
-    dcterms:description "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp." ;
+    dcterms:description "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp." ;
     dcterms:references pubmed:1088926,
         pubmed:4587255 ;
     dcterms:title "Plac" ;
@@ -9107,11 +9147,17 @@ part:PlacUV5_interaction_lacI_p_target a sbol:Participation ;
     sbol:participant part:PlacUV5_regulated_region ;
     sbol:role sbo:0000642 .
 
-part:Plac_ara-1_sequence a sbol:Sequence ;
-    sbol:displayId "Plac_ara-1_sequence" ;
-    sbol:elements "CATAGCATTTTTATCCATAAGATTAGCGGATCCTAAGCTTTACAATTGTGAGCGCTCACAATTATGATAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:Plac_ara-1_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "lacO" ;
+    sbol:displayId "Plac_ara-1_feature_0" ;
+    sbol:hasLocation part:Plac_ara-1_feature_0_range ;
+    sbol:role so:0000057 .
+
+part:Plac_ara-1_feature_0_range a sbol:Range ;
+    sbol:end 93 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:Plac_ara-1_sequence ;
+    sbol:start 77 .
 
 part:Plac_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "LacI-repressible / IPTG-inducible lac core promoter." ;
@@ -9125,7 +9171,7 @@ part:Plac_claim_regulation a cat:FunctionalClaim ;
     cat:crossChecked false ;
     cat:inducer "IPTG" ;
     cat:regulation "inducible" ;
-    cat:sourceQuote "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp." ;
+    cat:sourceQuote "The wild-type E. coli lac core promoter (Plac): -35/-10/+1 plus the complete LacI operator O1, in 57 bp." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:Plac_claim_regulation_provenance a prov:Activity ;
@@ -9206,7 +9252,7 @@ part:Pliar17_sequence a sbol:Sequence ;
 
 part:Pliar1_sequence a sbol:Sequence ;
     sbol:displayId "Pliar1_sequence" ;
-    sbol:elements "GGTGTCACTAACCGGTCATCGCGGCCAGGTATAATTGCACGA" ;
+    sbol:elements "GCTGTCACTTTCTGGTAACCGCGGCCAGGTATAATTGCACGA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -9569,7 +9615,7 @@ part:Ptac_interaction_lacI_p_target a sbol:Participation ;
 
 part:PtetA a sbol:Component ;
     rdfs:label "PtetA" ;
-    dcterms:description "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable." ;
+    dcterms:description "29 bp PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of a tet operator, making transcription TetR/anhydrotetracycline-controllable. Its first 23 bp are the Tn10 tetA promoter (J01830); its -10, CATAAT, is not (Tn10 reads TTATTT there). The deposit this 29 bp was taken from is not established." ;
     dcterms:references pubmed:21261817,
         pubmed:2835235,
         pubmed:6311683,
@@ -9585,8 +9631,7 @@ part:PtetA a sbol:Component ;
     sbol:hasSequence part:PtetA_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "ptet",
-        "tet promoter" ;
+    skos:altLabel "ptet" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:PtetA_claim_inducer ;
@@ -10064,7 +10109,7 @@ part:RK2_oriV_sequence a sbol:Sequence ;
 
 part:RP4_oriT_sequence a sbol:Sequence ;
     sbol:displayId "RP4_oriT_sequence" ;
-    sbol:elements "GGTACCAGCGCTTTTCCGCTGCATAACCCTGCTTCGGGGTCATTATAGCGATTTTTTCGGTATATCCATCCTTTTTCGCACGATATACAGGATTTTGCCAAAGGGTTCGTGTAGACTTTCCTTGGTGTATCCAACGGCGTCAGCCGGGCAGGATAGGTGAAGTAGGCCCACCCGCGAGCGGGTGTTCCTTCTTCACTGTCCCTTATTCGCACCTGGCGGTGCTCAACGGGAATCCTGCTCTGCGAGGCTGGCCGGCG" ;
+    sbol:elements "AGCGATTTTTTCGGTATATCCATCCTTTTTCGCACGATATACAGGATTTTGCCAAAGGGTTCGTGTAGACTTTCCTTGGTGTATCCAACGGCGTCAGCCGGGCAGGATAGGTGAAGTAGGCCCACCCGCGAGCGGGTGTTCCTTCTTCACTGTCCCTTATTCGCACCTGGCGGTGCTCAACGGGAATCCTGCTCTGCGAGGCTGGCCGGC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -13087,6 +13132,8 @@ part:Twin_Strep_tag a sbol:Component ;
         pubmed:8636976 ;
     dcterms:title "Twin_Strep_tag" ;
     sbol:displayId "Twin_Strep_tag" ;
+    sbol:hasFeature part:Twin_Strep_tag_feature_0,
+        part:Twin_Strep_tag_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Twin_Strep_tag_sequence ;
     sbol:role so:0000417 ;
@@ -13179,11 +13226,29 @@ part:Twin_Strep_tag_claim_strength_affinity_provenance a prov:Activity ;
     cat:fromDoc "secondary" ;
     cat:method "ai-extraction" .
 
-part:Twin_Strep_tag_sequence a sbol:Sequence ;
-    sbol:displayId "Twin_Strep_tag_sequence" ;
-    sbol:elements "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:Twin_Strep_tag_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Strep-tag II" ;
+    sbol:displayId "Twin_Strep_tag_feature_0" ;
+    sbol:hasLocation part:Twin_Strep_tag_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:Twin_Strep_tag_feature_0_range a sbol:Range ;
+    sbol:end 10 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:Twin_Strep_tag_sequence ;
+    sbol:start 3 .
+
+part:Twin_Strep_tag_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Strep-tag II" ;
+    sbol:displayId "Twin_Strep_tag_feature_1" ;
+    sbol:hasLocation part:Twin_Strep_tag_feature_1_range ;
+    sbol:role so:0000417 .
+
+part:Twin_Strep_tag_feature_1_range a sbol:Range ;
+    sbol:end 30 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:Twin_Strep_tag_sequence ;
+    sbol:start 23 .
 
 part:UGI_sequence a sbol:Sequence ;
     sbol:displayId "UGI_sequence" ;
@@ -15085,11 +15150,17 @@ part:lambda_attP_feature_5_range a sbol:Range ;
     sbol:sequence part:lambda_attP_sequence ;
     sbol:start 252 .
 
-part:lambda_cos_1_sequence a sbol:Sequence ;
-    sbol:displayId "lambda_cos_1_sequence" ;
-    sbol:elements "GACATGAGGTTGCCCCGTATTCAGTGTCGCTGATTTGTATTGTCTGAAGTTGTTTTTACGTTAAGTTGATGCAGATCAATTAATACGATACCTGCGTCATAATTGATTATTTGACGTGGTTTGATGGCCTCCACGCACGTTGTGATATGTAGATGATAATCATTATCACTTTACGGGTCCTTTCCGGTGATCCGACAGGTTACGGGGCGGCGACCTCGCGGGTTTTCGCTATTTATGAAAATTTTCCGGTTTAAGGCGTTTCCGTTCTTCTTCGTCATAACTTAATGTTTTTATTTAAAATACCCTCTGAAAAGAAAGGAAACGACAGGTGCTGAAAGCGAGGCTTTTTGGCCTCTGTCGTTTCCTTTCTCTGTTTTTGTCCGTGGAATGAACAATGGAAGTC" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:lambda_cos_1_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "lambda cos" ;
+    sbol:displayId "lambda_cos_1_feature_0" ;
+    sbol:hasLocation part:lambda_cos_1_feature_0_range ;
+    sbol:role so:0000110 .
+
+part:lambda_cos_1_feature_0_range a sbol:Range ;
+    sbol:end 351 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:lambda_cos_1_sequence ;
+    sbol:start 128 .
 
 part:lambda_cos_sequence a sbol:Sequence ;
     sbol:displayId "lambda_cos_sequence" ;
@@ -15130,12 +15201,6 @@ part:mTurquoise2_sequence a sbol:Sequence ;
 part:ori2_sequence a sbol:Sequence ;
     sbol:displayId "ori2_sequence" ;
     sbol:elements "CTTCTTCTGAGGGCAATTTGTCACAGGGTTAAGGGCAATTTGTCACAGACAGGACTGTCATTTGAGGGTGATTTGTCACACTGAAAGGGCAATTTGTCACAACACCTTCTCTAGAACCAGCATGGATAAAGGCCTACAAGGCGCTCTAAAAAAGAAGATCTAAAAACTATAAAAAAAATAATTATAAAAATATCCCCGTGGATAAGTGGATAACCCCAAGGGAAGTTTTTTCAGGCATCGTGTGTAAGCAGAATATATAAGTGCTGTTCCCTGGTGCTTCCTCGCTCACTCGAGGGCTTCGCCCT" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
-part:oriT_sequence a sbol:Sequence ;
-    sbol:displayId "oriT_sequence" ;
-    sbol:elements "TCTGTTACGCCGGCGGTAGCCGGCCAGCCTCGCAGAGCAGGATTCCCGTTGAGCACCGCCAGGTGCGAATAAGGGACAGTGAAGAAGGAACACCCGCTCGCGGGTGGGCCTACTTCACCTATCCTGCCCGGCTGACGCCGTTGGATACACCAAGGAAAGTCTACACGAACCCTTTGGCAAAATCCTGTATATCGTGCGAAAAAGGATGGATATACCGAAAAAATCGCT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -15392,11 +15457,17 @@ part:pBR322_pas_DnaA_feature_1_range a sbol:Range ;
     sbol:sequence part:pBR322_pas_DnaA_sequence ;
     sbol:start 119 .
 
-part:pIJ101_ori_sequence a sbol:Sequence ;
-    sbol:displayId "pIJ101_ori_sequence" ;
-    sbol:elements "GGAGCGAGTTAGTGCGAAGTGGGCCCACTTGCGAGCCGGGCGATGTGCCGGGCGGCCCGCTCCTGGCGGTCGTCGGCGTCGTCGTCCTGGTCGTCGTCCTGCTCTCGCCGTCGGCGTGCAGTTGCTTCCTCGCGGCGCTGGGCGAGGGCGGCGAGCATGTCGGCGTACGCCTCGGCCACCTCCCCCGCCGTGAGCACCACCACTGTGTCGGCCGCGTCCGCCAGCGCCAGGACCTCCCGCACCCGTTCGCCCACGGCCGCCGGGTCCTCGTTGCCGTCCTTGCCTTCGGCGGCCCGCGTCGCCTCGAGGTCGAGGGCGCGGCGGGTGACCGCGTGCCATCCGTCCTCGGTCACGGCGACCCCGGCCCGCAGCTCCCCGCCGTCGGCGTCGGCCGCCAGGAGCAGATCGAGGTCGTCGGCCTCGGTGTCGCCGCCGTCGAGCCCGAGCATCTGCCGCAGGTAGCGGGTCCATTCGATGGCCCGGCGTCCCCGCGTTGCCCGCTCGTACTCGTGCCAGCGCGAGAGGTTCCACTCCAGCGAGCCGACCCCGGCGGCGTCGTCCTCGGTCATGCCGCCGGTCAGGTCCCCGATCCGTCCGAGGAGTTCGAACGGGGCGACGTTCCCGCCGGTCGCCGTCTTGAGGTCGGCGCGGGCGAGTTCGAGGGCGGGCGCCTTCCCGTCCTGGGTCTTGGCGATGTACTCGGCGAGGTCGTTGGCGTCGCGCTCGGTCTCCAGCCGCTTGAAGTCCACGCCGTGCCGGTCGTCGGGCGTGAAGGCGGGGTTGACCTTGCGCAGGGCGGCGGTCCACACGGACCGCCAGTGCCCCTGCCACTCGTCGAGCGCGGCGCCGGTCGGCTCGAAGGTGGCGACGATCTGCTTCGCGGACCGCTCCCCCTCGGTCCGGCCGCCGACCAGGACGATCGCGTGGATGTGCGGGTGCCAGCCGTTGATCTGCCCCACGGTCACCTCGGTCGCGCGGATCATGCCGACGTACCCGATCCGGTCTCGGATGCCCTCGCGGTCGGCGGCCCGGTGCCCGTCCTTGGCCCGGCGTCCGGCCCACGTGCCGCCCGTGATCAGTCGCTGGTAGGCGCCCGGCCGCCGGGGGCTGTCCGGCGTCTTCCGGGTGCCCTGGAGGGCGTCCATGAGGTCCGCGAGCCGGTCCGTGTGCCCATGGCGGGCCGTGAAGGTGACCAGGTAGGCGGTCCCCCCGCGCTTGATCCACTCGACCACGGCGGCGGTGATCTCCTCGGCCCGCTTGTGCCGGATCGTGGCGGCGCAGACCGGGCAGAGCCAGATCCGCCCGCACCGCATCAGGCCCAGGACCACGGACGTTCCGGCCGCCGTCTGGGCGACGATCACGCCGGAGGCAGGGTCCATCAGGGCCCGGCCGCAGCCCTTGCACGCGGCGTCCCCGCTGATCCGCCACAGCGTCCGGCGGCGGCTGTACCGGGCGGCTTTCCGCAGTCGGGCAGCCTCGGTCCGCGACGTGCTTCCTACTTCCCAGAGGCTGTCGCCTCTCGGGCTCTCCCCATCCACCCCGTCCGGAGAAACCGCAGGTCGGAGGGGTGCGGGAAACTCTGTTGTTTCTTTCCCAAGGTGTTCGCTTTTGCCTCGGGCGGCATCTCGCGTCACACGCGCGTTCGCCCGCTTCGCTGCCATCCGGCAGCGGTCTGAGCAGTAGATACGCGGCCGTTTGCCCGGTGTGTGGGCAATTGCGGTCCCGCAGTGGCAGCGGGGCCCGGCGGCCCGATCTGGCAATGCCTCGGCATCGCTCCGTACTCTGGGCACGAGCAACGTTCCTGTCTCGCCCGGCTAAGGGGCGCGAGTCTGGGAGCGGACGGGTCGGAGGTGCGAAGTCCGGCCCGTTGCTCTTTGGTCTGGTGGGAATCCTGGCACCAATCGGGCCAGAGGTTCCCTCCGCCACTCCCGACGCCCCTTGGGGCTGGTGTGACTTGGAGGGCCGAAGAGAGCCCCGCCGGGTATCCGGCGGGGCTTTGACGTGCGGTCAGTGCGTGTGTCGGCGAGCGATGGCCACGAGGCCCTGGAAGCCGAGCGGTCCGGCGAAGTCGGCCCAGTCGCAACCGGGCTCAGCGCAGTGGGCGGACCAGCCACCGCCGTTGGGGTCCTGGACCAGGTTCACGGTCCCCTCGGTCAGGCGTCCGTCGAAGTCGGTCATGGTCGGTCTCCTGGTGGGTGGGGGCGGGGCGCCAGCACGAAGTGCCGGCGCCCCGCGGGGG" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:pIJ101_ori_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "rep (pIJ101)" ;
+    sbol:displayId "pIJ101_ori_feature_0" ;
+    sbol:hasLocation part:pIJ101_ori_feature_0_range ;
+    sbol:role so:0000316 .
+
+part:pIJ101_ori_feature_0_range a sbol:Range ;
+    sbol:end 1379 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:pIJ101_ori_sequence ;
+    sbol:start 9 .
 
 part:pRM_sequence a sbol:Sequence ;
     sbol:displayId "pRM_sequence" ;
@@ -15416,11 +15487,92 @@ part:pR_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:pSC101_ori_SEVA_sequence a sbol:Sequence ;
-    sbol:displayId "pSC101_ori_SEVA_sequence" ;
-    sbol:elements "ATGTCTGAATTAGTTGTTTTCAAAGCAAATGAACTAGCGATTAGTCGCTATGACTTAACGGAGCATGAAACCAAGCTAATTTTATGCTGTGTGGCACTACTCAACCCCACGATTGAAAACCCTACAAGGAAAGAACGGACGGTATCGTTCACTTATAACCAATACGCTCAGATGATGAACATCAGTAGGGAAAATGCTTATGGTGTATTAGCTAAAGCAACCAGAGAGCTGATGACGAGAACTGTGGAAATCAGGAATCCTTTGGTTAAAGGCTTTGAGATTTTCCAGTGGACAAACTATGCCAAGTTCTCAAGCGAAAAATTAGAATTAGTTTTTAGTGAAGAGATATTGCCTTATCTTTTCCAGTTAAAAAAATTCATAAAATATAATCTGGAACATGTTAAGTCTTTTGAAAACAAATACTCTATGAGGATTTATGAGTGGTTATTAAAAGAACTAACACAAAAGAAAACTCACAAGGCAAATATAGAGATTAGCCTTGATGAATTTAAGTTCATGTTAATGCTTGAAAATAACTACCATGAGTTTAAAAGGCTTAACCAATGGGTTTTGAAACCAATAAGTAAAGATTTAAACACTTACAGCAATATGAAATTGGTGGTTGATAAGCGAGGCCGCCCGACTGATACGTTGATTTTCCAAGTTGAACTAGATAGACAAATGGATCTCGTAACCGAACTTGAGAACAACCAGATAAAAATGAATGGTGACAAAATACCAACAACCATTACATCAGATTCCTACCTACATAACGGACTAAGAAAAACACTACACGATGCTTTAACTGCAAAAATTCAGCTCACCAGTTTTGAGGCAAAATTTTTGAGTGACATGCAAAGTAAGTATGATCTCAATGGTTCGTTCTCATGGCTCACGCAAAAACAACGAACCACACTAGAGAACATACTGGCTAAATACGGAAGGATCTGA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:pSC101_ori_biobrick_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
+    dcterms:references pubmed:8376344 ;
+    prov:wasDerivedFrom pubmed:8376344 ;
+    prov:wasGeneratedBy part:pSC101_ori_biobrick_claim_copy_number_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}" ;
+    cat:confidence "high" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:pSC101_ori_biobrick_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pSC101_ori.md" ;
+    cat:method "transcribed-from-doc" .
+
+part:pSC101_ori_biobrick_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 1" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_0" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_0_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_0_range a sbol:Range ;
+    sbol:end 67 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 50 .
+
+part:pSC101_ori_biobrick_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 2" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_1" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_1_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_1_range a sbol:Range ;
+    sbol:end 99 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 82 .
+
+part:pSC101_ori_biobrick_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:8376344 ;
+    dcterms:title "RepA iteron 3" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_2" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_2_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_2_range a sbol:Range ;
+    sbol:end 120 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 103 .
+
+part:pSC101_ori_biobrick_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "AT-rich bending region" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_3" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:pSC101_ori_biobrick_feature_3_range a sbol:Range ;
+    sbol:end 183 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 150 .
+
+part:pSC101_ori_biobrick_feature_4 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2041467,
+        pubmed:8376344 ;
+    dcterms:title "DnaA" ;
+    sbol:displayId "pSC101_ori_biobrick_feature_4" ;
+    sbol:hasLocation part:pSC101_ori_biobrick_feature_4_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_biobrick_feature_4_range a sbol:Range ;
+    sbol:end 220 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:pSC101_ori_biobrick_sequence ;
+    sbol:start 212 .
 
 part:pSC101_ori_claim_copy_number a cat:FunctionalClaim ;
     rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
@@ -15432,7 +15584,7 @@ part:pSC101_ori_claim_copy_number a cat:FunctionalClaim ;
     cat:claimValue "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}" ;
     cat:confidence "high" ;
     cat:crossChecked false ;
-    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101." ;
+    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101." ;
     cat:sourceQuoteFrom "catalog-doc" .
 
 part:pSC101_ori_claim_copy_number_provenance a prov:Activity ;
@@ -15509,17 +15661,110 @@ part:pSC101_ori_feature_4_range a sbol:Range ;
     sbol:sequence part:pSC101_ori_sequence ;
     sbol:start 212 .
 
+part:pSC101_ori_vector_claim_copy_number a cat:FunctionalClaim ;
+    rdfs:label "Low-copy origin; RepA/iteron-controlled replication." ;
+    dcterms:references pubmed:8376344 ;
+    prov:wasDerivedFrom pubmed:8376344 ;
+    prov:wasGeneratedBy part:pSC101_ori_vector_claim_copy_number_provenance ;
+    cat:analysisStatus "pending" ;
+    cat:claimType "copy_number" ;
+    cat:claimValue "{\"control\": \"RepA / iterons\", \"copy_number\": \"low\"}" ;
+    cat:confidence "high" ;
+    cat:crossChecked false ;
+    cat:sourceQuote "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101." ;
+    cat:sourceQuoteFrom "catalog-doc" .
+
+part:pSC101_ori_vector_claim_copy_number_provenance a prov:Activity ;
+    cat:agent "ai-assistant" ;
+    cat:fromDoc "pSC101_ori.md" ;
+    cat:method "transcribed-from-doc" .
+
+part:pSC101_ori_vector_feature_0 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 1" ;
+    sbol:displayId "pSC101_ori_vector_feature_0" ;
+    sbol:hasLocation part:pSC101_ori_vector_feature_0_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_vector_feature_0_range a sbol:Range ;
+    sbol:end 67 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_vector_sequence ;
+    sbol:start 50 .
+
+part:pSC101_ori_vector_feature_1 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "RepA iteron 2" ;
+    sbol:displayId "pSC101_ori_vector_feature_1" ;
+    sbol:hasLocation part:pSC101_ori_vector_feature_1_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_vector_feature_1_range a sbol:Range ;
+    sbol:end 99 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_vector_sequence ;
+    sbol:start 82 .
+
+part:pSC101_ori_vector_feature_2 a sbol:SequenceFeature ;
+    dcterms:references pubmed:8376344 ;
+    dcterms:title "RepA iteron 3" ;
+    sbol:displayId "pSC101_ori_vector_feature_2" ;
+    sbol:hasLocation part:pSC101_ori_vector_feature_2_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_vector_feature_2_range a sbol:Range ;
+    sbol:end 120 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_vector_sequence ;
+    sbol:start 103 .
+
+part:pSC101_ori_vector_feature_3 a sbol:SequenceFeature ;
+    dcterms:references pubmed:12501319,
+        pubmed:8376344 ;
+    dcterms:title "AT-rich bending region" ;
+    sbol:displayId "pSC101_ori_vector_feature_3" ;
+    sbol:hasLocation part:pSC101_ori_vector_feature_3_range ;
+    sbol:role so:0000110 .
+
+part:pSC101_ori_vector_feature_3_range a sbol:Range ;
+    sbol:end 183 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSC101_ori_vector_sequence ;
+    sbol:start 150 .
+
+part:pSC101_ori_vector_feature_4 a sbol:SequenceFeature ;
+    dcterms:references pubmed:2041467,
+        pubmed:8376344 ;
+    dcterms:title "DnaA" ;
+    sbol:displayId "pSC101_ori_vector_feature_4" ;
+    sbol:hasLocation part:pSC101_ori_vector_feature_4_range ;
+    sbol:role so:0000410 .
+
+part:pSC101_ori_vector_feature_4_range a sbol:Range ;
+    sbol:end 220 ;
+    sbol:orientation sbol:reverseComplement ;
+    sbol:sequence part:pSC101_ori_vector_sequence ;
+    sbol:start 212 .
+
 part:pSH71_ori_core_sequence a sbol:Sequence ;
     sbol:displayId "pSH71_ori_core_sequence" ;
     sbol:elements "AAAATTTTTGAAAAAAATTTGGAATTTGGAAAAAAATGGGGGGAAAGGAAGCGAATTTTGCTTCCGTACTACGACCCCCCATTAAGTGCCGAGTGCCAATTTTTGTGCCAAAAACGCTCTATCCCAACTGGCTCAAGGGTTTGAGGGGTTTTTCAATCGCCAACGAATCGCCAACGTTTTCGCCAACGTTTTTTATAAATCTATATTTAAGTAGCTTTATTGTTGTTTTTATGATTACAAAGTGATACACTAATTTTATAAAATTATTTGATTGGAGTTTTTTAAATGGTGATTTCAGAATCGAAAAAAAGAGTTATGATTTCTCTGACAAAAGAGCAAGATAAAAAATTAACAGATATGGCGAAACAAAAAGGTTTTTCAAAATCTGCGGTTGCGGCGTTAGCTATAGAAGAATATGCAAGAAAGGAATCAGAACAAAAAAAATAAGCGAAAGCTCGCGTTTTTAGAAGGATACGAGTTTTCGCTACTTGTTTTTGATAAGGTAATTATATC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:pSH71_ori_sequence a sbol:Sequence ;
-    sbol:displayId "pSH71_ori_sequence" ;
-    sbol:elements "TCGATTTTTTATTAAAACGTCTCAAAATCGTTTCTGAGACGTTTTAGCGTTTATTTCGTTTAGTTATCGGCATAATCGTTAAAACAGGCGTTATCGTAGCGTAAAAGCCCTTGAGCGTAGCGTGGCTTTGCAGCGAAGATGTTGTCTGTTAGATTATGAAAGCCGATGACTGAATGAAATAATAAGCGCAGCGTCCTTCTATTTCGGTTGGAGGAGGCTCAAGGGAGTTTGAGGGAATGAAATTCCCTCATGGGTTTGATTTTAAAAATTGCTTGCAATTTTGCCGAGCGGTAGCGCTGGAAAATTTTTGAAAAAAATTTGGAATTTGGAAAAAAATGGGGGGAAAGGAAGCGAATTTTGCTTCCGTACTACGACCCCCCATTAAGTGCCGAGTGCCAATTTTTGTGCCAAAAACGCTCTATCCCAACTGGCTCAAGGGTTTGAGGGGTTTTTCAATCGCCAACGAATCGCCAACGTTTTCGCCAACGTTTTTTATAAATCTATATTTAAGTAGCTTTATTGTTGTTTTTATGATTACAAAGTGATACACTAATTTTATAAAATTATTTGATTGGAGTTTTTTAAATGGTGATTTCAGAATCGAAAAAAAGAGTTATGATTTCTCTGACAAAAGAGCAAGATAAAAAATTAACAGATATGGCGAAACAAAAAGGTTTTTCAAAATCTGCGGTTGCGGCGTTAGCTATAGAAGAATATGCAAGAAAGGAATCAGAACAAAAAAAATAAGCGAAAGCTCGCGTTTTTAGAAGGATACGAGTTTTCGCTACTTGTTTTTGATAAGGTAATTATATC" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:pSH71_ori_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "pSH71 ori (core)" ;
+    sbol:displayId "pSH71_ori_feature_0" ;
+    sbol:hasLocation part:pSH71_ori_feature_0_range ;
+    sbol:role so:0000296 .
+
+part:pSH71_ori_feature_0_range a sbol:Range ;
+    sbol:end 813 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:pSH71_ori_sequence ;
+    sbol:start 301 .
 
 part:phi80_attB a sbol:Component ;
     rdfs:label "phi80_attB" ;
@@ -16363,12 +16608,6 @@ part:tL3_feature_1_range a sbol:Range ;
     sbol:sequence part:tL3_sequence ;
     sbol:start 82 .
 
-part:tetAC_sequence a sbol:Sequence ;
-    sbol:displayId "tetAC_sequence" ;
-    sbol:elements "MKSNNALIVILGTVTLDAVGIGLVMPVLPGLLRDIVHSDSIASHYGVLLALYALMQFLCAPVLGALSDRFGRRPVLLASLLGATIDYAIMATTPVLWILYAGRIVAGITGATGAVAGAYIADITDGEDRARHFGLMSACFGVGMVAGPVAGGLLGAISLHAPFLAAAVLNGLNLLLGCFLMQESHKGERRPMPLRAFNPVSSFRWARGMTIVAALMTVFFIMQLVGQVPAALWVIFGEDRFRWSATMIGLSLAVFGILHALAQAFVTGPATKRFGEKQAIIAGMAADALGYVLLAFATRGWMAFPIMILLASGGIGMPALQAMLSRQVDDDHQGQLQGSLAALTSLTSIIGPLIVTAIYAASASTWNGLAWIVGAALYLVCLPALRRGAWSRATST" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
 part:tetO_sequence a sbol:Sequence ;
     sbol:displayId "tetO_sequence" ;
     sbol:elements "TCTCTATCATTGATAGAGT" ;
@@ -16678,12 +16917,6 @@ part:trfA_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:ts_ori101_sequence a sbol:Sequence ;
-    sbol:displayId "ts_ori101_sequence" ;
-    sbol:elements "TCTCAATTGGTCTAGGTGATTTTAATCACTATACCAATTGAGATGGGCTAGTCAATGATAATTACTAGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTCACTACTTTAGTCAGTTCCGCAGTATTACAAAAGGATGTCGCAAACGCTGTTTGCTCCTCTACAAAACAGACCTTAAAACCCTAAAGGCTTAAGTAGCACCCTCGCAAGCTCGGTTGCGGCCGCAATCGGGCAAATCGCTGAATATTCCTTTTGTCTCCGACCATCAGGCACCTGAGTCGCTGTCTTTTTCGTGACATTCAGTTCGCTGCGCTCACGGCTCTGGCAGTGAATGGGGGTAAATGGCACTACAGGCGCCTTTTATGGATTCATGCAAGGAAACTACCCATAATACAAGAAAAGCCCGTCACGGGCTTCTCAGGGCGTTTTATGGCGGGTCTGCTATGTGGTGCTATCTGACTTTTTGCTGTTCAGCAGTTCCTGCCCTCTGATTTTCCAGTCTGACCACTTCGGATTATCCCGTGACAGGTCATTCAGACTGGCTAATGCACCCAGTAAGGCAGCGGTATCATCAAC" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
 part:AviTag_claim_binding_affinity a cat:FunctionalClaim ;
     rdfs:label "Biotinylated AviTag binds streptavidin with femtomolar affinity (Kd ~10^-15 M); monovalent streptavidin (mSA) is the preferred detection partner to avoid receptor crosslinking." ;
     dcterms:references pubmed:16554831 ;
@@ -16701,6 +16934,12 @@ part:AviTag_claim_binding_affinity a cat:FunctionalClaim ;
     cat:sourceSection "Title" ;
     cat:usefulness "high" ;
     cat:usefulnessRationale "Discriminates AviTag via femtomolar biotin-streptavidin affinity; specifies actionable monovalent streptavidin partner to prevent receptor crosslinking in live-cell applications; quantitative and risk-reducing (addresses failure mode)" .
+
+part:B0015_terminator_sequence a sbol:Sequence ;
+    sbol:displayId "B0015_terminator_sequence" ;
+    sbol:elements "CCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCTACTAGAGTCACACTGGCTCACCTTCGGGTGGGCCTTTCTGCGTTTATA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:ChnR a sbol:Component ;
     rdfs:label "ChnR" ;
@@ -16775,6 +17014,7 @@ part:FLAG a sbol:Component ;
         pubmed:8024796 ;
     dcterms:title "FLAG" ;
     sbol:displayId "FLAG" ;
+    sbol:hasFeature part:FLAG_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:FLAG_sequence ;
     sbol:role so:0000417 ;
@@ -16792,6 +17032,12 @@ part:FLAG a sbol:Component ;
         part:FLAG_claim_minimal_epitope,
         part:FLAG_claim_sulfation_caveat ;
     cat:slug "FLAG" .
+
+part:FLAG_sequence a sbol:Sequence ;
+    sbol:displayId "FLAG_sequence" ;
+    sbol:elements "DYKDDDDK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:GST a sbol:Component ;
     rdfs:label "GST" ;
@@ -16914,6 +17160,12 @@ part:MBP_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:PLlacO-1_sequence a sbol:Sequence ;
+    sbol:displayId "PLlacO-1_sequence" ;
+    sbol:elements "ATAAATGTGAGCGGATAACATTGACATTGTGAGCGGATAACAAGATACTGAGCACATCAGCAGGACGCACTGACC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:PLtetO-1_feature_0 a sbol:SequenceFeature ;
     dcterms:references pubmed:2835082,
         pubmed:8153629,
@@ -16976,6 +17228,12 @@ part:PlacUV5_regulated_region a sbol:SequenceFeature ;
 part:PlacUV5_sub_lacI a sbol:SubComponent ;
     sbol:displayId "PlacUV5_sub_lacI" ;
     sbol:instanceOf part:lacI .
+
+part:Plac_ara-1_sequence a sbol:Sequence ;
+    sbol:displayId "Plac_ara-1_sequence" ;
+    sbol:elements "CATAGCATTTTTATCCATAAGATTAGCGGATCCTAAGCTTTACAATTGTGAGCGCTCACAATTATGATAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:Plac_feature_3 a sbol:SequenceFeature ;
     dcterms:references pubmed:1088926,
@@ -17131,9 +17389,33 @@ part:araC a sbol:Component ;
     cat:regulates part:ParaBAD ;
     cat:slug "araC" .
 
+part:lambda_cos_1_sequence a sbol:Sequence ;
+    sbol:displayId "lambda_cos_1_sequence" ;
+    sbol:elements "GACATGAGGTTGCCCCGTATTCAGTGTCGCTGATTTGTATTGTCTGAAGTTGTTTTTACGTTAAGTTGATGCAGATCAATTAATACGATACCTGCGTCATAATTGATTATTTGACGTGGTTTGATGGCCTCCACGCACGTTGTGATATGTAGATGATAATCATTATCACTTTACGGGTCCTTTCCGGTGATCCGACAGGTTACGGGGCGGCGACCTCGCGGGTTTTCGCTATTTATGAAAATTTTCCGGTTTAAGGCGTTTCCGTTCTTCTTCGTCATAACTTAATGTTTTTATTTAAAATACCCTCTGAAAAGAAAGGAAACGACAGGTGCTGAAAGCGAGGCTTTTTGGCCTCTGTCGTTTCCTTTCTCTGTTTTTGTCCGTGGAATGAACAATGGAAGTC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:pIJ101_ori_sequence a sbol:Sequence ;
+    sbol:displayId "pIJ101_ori_sequence" ;
+    sbol:elements "GGAGCGAGTTAGTGCGAAGTGGGCCCACTTGCGAGCCGGGCGATGTGCCGGGCGGCCCGCTCCTGGCGGTCGTCGGCGTCGTCGTCCTGGTCGTCGTCCTGCTCTCGCCGTCGGCGTGCAGTTGCTTCCTCGCGGCGCTGGGCGAGGGCGGCGAGCATGTCGGCGTACGCCTCGGCCACCTCCCCCGCCGTGAGCACCACCACTGTGTCGGCCGCGTCCGCCAGCGCCAGGACCTCCCGCACCCGTTCGCCCACGGCCGCCGGGTCCTCGTTGCCGTCCTTGCCTTCGGCGGCCCGCGTCGCCTCGAGGTCGAGGGCGCGGCGGGTGACCGCGTGCCATCCGTCCTCGGTCACGGCGACCCCGGCCCGCAGCTCCCCGCCGTCGGCGTCGGCCGCCAGGAGCAGATCGAGGTCGTCGGCCTCGGTGTCGCCGCCGTCGAGCCCGAGCATCTGCCGCAGGTAGCGGGTCCATTCGATGGCCCGGCGTCCCCGCGTTGCCCGCTCGTACTCGTGCCAGCGCGAGAGGTTCCACTCCAGCGAGCCGACCCCGGCGGCGTCGTCCTCGGTCATGCCGCCGGTCAGGTCCCCGATCCGTCCGAGGAGTTCGAACGGGGCGACGTTCCCGCCGGTCGCCGTCTTGAGGTCGGCGCGGGCGAGTTCGAGGGCGGGCGCCTTCCCGTCCTGGGTCTTGGCGATGTACTCGGCGAGGTCGTTGGCGTCGCGCTCGGTCTCCAGCCGCTTGAAGTCCACGCCGTGCCGGTCGTCGGGCGTGAAGGCGGGGTTGACCTTGCGCAGGGCGGCGGTCCACACGGACCGCCAGTGCCCCTGCCACTCGTCGAGCGCGGCGCCGGTCGGCTCGAAGGTGGCGACGATCTGCTTCGCGGACCGCTCCCCCTCGGTCCGGCCGCCGACCAGGACGATCGCGTGGATGTGCGGGTGCCAGCCGTTGATCTGCCCCACGGTCACCTCGGTCGCGCGGATCATGCCGACGTACCCGATCCGGTCTCGGATGCCCTCGCGGTCGGCGGCCCGGTGCCCGTCCTTGGCCCGGCGTCCGGCCCACGTGCCGCCCGTGATCAGTCGCTGGTAGGCGCCCGGCCGCCGGGGGCTGTCCGGCGTCTTCCGGGTGCCCTGGAGGGCGTCCATGAGGTCCGCGAGCCGGTCCGTGTGCCCATGGCGGGCCGTGAAGGTGACCAGGTAGGCGGTCCCCCCGCGCTTGATCCACTCGACCACGGCGGCGGTGATCTCCTCGGCCCGCTTGTGCCGGATCGTGGCGGCGCAGACCGGGCAGAGCCAGATCCGCCCGCACCGCATCAGGCCCAGGACCACGGACGTTCCGGCCGCCGTCTGGGCGACGATCACGCCGGAGGCAGGGTCCATCAGGGCCCGGCCGCAGCCCTTGCACGCGGCGTCCCCGCTGATCCGCCACAGCGTCCGGCGGCGGCTGTACCGGGCGGCTTTCCGCAGTCGGGCAGCCTCGGTCCGCGACGTGCTTCCTACTTCCCAGAGGCTGTCGCCTCTCGGGCTCTCCCCATCCACCCCGTCCGGAGAAACCGCAGGTCGGAGGGGTGCGGGAAACTCTGTTGTTTCTTTCCCAAGGTGTTCGCTTTTGCCTCGGGCGGCATCTCGCGTCACACGCGCGTTCGCCCGCTTCGCTGCCATCCGGCAGCGGTCTGAGCAGTAGATACGCGGCCGTTTGCCCGGTGTGTGGGCAATTGCGGTCCCGCAGTGGCAGCGGGGCCCGGCGGCCCGATCTGGCAATGCCTCGGCATCGCTCCGTACTCTGGGCACGAGCAACGTTCCTGTCTCGCCCGGCTAAGGGGCGCGAGTCTGGGAGCGGACGGGTCGGAGGTGCGAAGTCCGGCCCGTTGCTCTTTGGTCTGGTGGGAATCCTGGCACCAATCGGGCCAGAGGTTCCCTCCGCCACTCCCGACGCCCCTTGGGGCTGGTGTGACTTGGAGGGCCGAAGAGAGCCCCGCCGGGTATCCGGCGGGGCTTTGACGTGCGGTCAGTGCGTGTGTCGGCGAGCGATGGCCACGAGGCCCTGGAAGCCGAGCGGTCCGGCGAAGTCGGCCCAGTCGCAACCGGGCTCAGCGCAGTGGGCGGACCAGCCACCGCCGTTGGGGTCCTGGACCAGGTTCACGGTCCCCTCGGTCAGGCGTCCGTCGAAGTCGGTCATGGTCGGTCTCCTGGTGGGTGGGGGCGGGGCGCCAGCACGAAGTGCCGGCGCCCCGCGGGGG" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:pSH71_ori_sequence a sbol:Sequence ;
+    sbol:displayId "pSH71_ori_sequence" ;
+    sbol:elements "TCGATTTTTTATTAAAACGTCTCAAAATCGTTTCTGAGACGTTTTAGCGTTTATTTCGTTTAGTTATCGGCATAATCGTTAAAACAGGCGTTATCGTAGCGTAAAAGCCCTTGAGCGTAGCGTGGCTTTGCAGCGAAGATGTTGTCTGTTAGATTATGAAAGCCGATGACTGAATGAAATAATAAGCGCAGCGTCCTTCTATTTCGGTTGGAGGAGGCTCAAGGGAGTTTGAGGGAATGAAATTCCCTCATGGGTTTGATTTTAAAAATTGCTTGCAATTTTGCCGAGCGGTAGCGCTGGAAAATTTTTGAAAAAAATTTGGAATTTGGAAAAAAATGGGGGGAAAGGAAGCGAATTTTGCTTCCGTACTACGACCCCCCATTAAGTGCCGAGTGCCAATTTTTGTGCCAAAAACGCTCTATCCCAACTGGCTCAAGGGTTTGAGGGGTTTTTCAATCGCCAACGAATCGCCAACGTTTTCGCCAACGTTTTTTATAAATCTATATTTAAGTAGCTTTATTGTTGTTTTTATGATTACAAAGTGATACACTAATTTTATAAAATTATTTGATTGGAGTTTTTTAAATGGTGATTTCAGAATCGAAAAAAAGAGTTATGATTTCTCTGACAAAAGAGCAAGATAAAAAATTAACAGATATGGCGAAACAAAAAGGTTTTTCAAAATCTGCGGTTGCGGCGTTAGCTATAGAAGAATATGCAAGAAAGGAATCAGAACAAAAAAAATAAGCGAAAGCTCGCGTTTTTAGAAGGATACGAGTTTTCGCTACTTGTTTTTGATAAGGTAATTATATC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:P2_sequence a sbol:Sequence ;
     sbol:displayId "P2_sequence" ;
     sbol:elements "TTGACAGCTTATCATCGATAAGCTTTAAT" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:PA1lacO-1_sequence a sbol:Sequence ;
+    sbol:displayId "PA1lacO-1_sequence" ;
+    sbol:elements "AAAATTTATCAAAAAGAGTGTTGACTTGTGAGCGGATAACAATGATACTTAGATTCAATTGTGAGCGGATAACAATTTCACACA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -17153,6 +17435,12 @@ part:Ptrc_sequence a sbol:Sequence ;
     sbol:displayId "Ptrc_sequence" ;
     sbol:elements "TTGACAATTAATCATCCGGCTCGTATAATG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:Twin_Strep_tag_sequence a sbol:Sequence ;
+    sbol:displayId "Twin_Strep_tag_sequence" ;
+    sbol:elements "SAWSHPQFEKGGGSGGGSGGSAWSHPQFEK" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:pBR322_pas_DnaA_sequence a sbol:Sequence ;
@@ -17305,8 +17593,20 @@ part:birA_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
+part:pSC101_ori_biobrick_sequence a sbol:Sequence ;
+    sbol:displayId "pSC101_ori_biobrick_sequence" ;
+    sbol:elements "GGGCTAGTCAATGATAATTACATGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
 part:pSC101_ori_sequence a sbol:Sequence ;
     sbol:displayId "pSC101_ori_sequence" ;
+    sbol:elements "GGGCTAGTCAATGATAATTACTAGTCCTTTTCCTTTGAGTTGTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC" ;
+    sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:pSC101_ori_vector_sequence a sbol:Sequence ;
+    sbol:displayId "pSC101_ori_vector_sequence" ;
     sbol:elements "GGGCTAGTCAATGATAATTACTAGTCCTTTTCCCGGGAGATCTGGGTATCTGTAAATTCTGCTAGACCTTTGCTGGAAAACTTGTAAATTCTGCTAGACCCTCTGTAAATTCCGCTAGACCTTTGTGTGTTTTTTTTGTTTATATTCAAGTGGTTATAATTTATAGAATAAAGAAAGAATAAAAAAAGATAAAAAGAATAGATCCCAGCCCTGTGTATAACTC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .

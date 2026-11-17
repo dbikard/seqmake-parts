@@ -47,6 +47,7 @@ REFERENCE   5
   REMARK    doi:10.1007/978-1-4939-2447-9_8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Twin_Strep_tag
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..30
                      /label="Twin_Strep_tag"
@@ -68,6 +69,18 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
                      /db_xref="SO:0000417"
                      /collection="affinity-tags"
+     protein_domain  3..10
+                     /label="Strep-tag II"
+                     /parent="Twin_Strep_tag"
+                     /note="WSHPQFEK, one Strep-tag II copy (the catalog part
+                     Strep_tag)."
+                     /db_xref="SO:0000417"
+     protein_domain  23..30
+                     /label="Strep-tag II"
+                     /parent="Twin_Strep_tag"
+                     /note="WSHPQFEK, one Strep-tag II copy (the catalog part
+                     Strep_tag)."
+                     /db_xref="SO:0000417"
 ORIGIN
         1 sawshpqfek gggsgggsgg sawshpqfek
 //

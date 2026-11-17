@@ -162,21 +162,45 @@ def json_to_record(data: dict) -> SeqRecord:
     return rec
 
 
-def gb_text_from_json(data: dict) -> str:
+def is_sourced(data: dict) -> bool:
+    """A part is *sourced* when its record names the deposit its sequence was taken
+    from, in ``provenance.sequence_source``. An unsourced part is a bare sequence:
+    usable to find a span, not authoritative for its name.
+
+    References alone do not make a part sourced. A part can cite the papers that
+    describe an element and still carry a sequence nobody checked against a
+    deposit -- which is how a cloning-vector variant of the pSC101 origin sat
+    under three papers about the native one. ``tools/verify_sources.py`` goes the
+    step further and re-fetches each cited record to check it really contains the
+    part's sequence."""
+    src = str((data.get("provenance") or {}).get("sequence_source") or "")
+    return bool(src and not src.startswith("FILL IN"))
+
+
+def gb_text_from_json(data: dict, status: str | None = None) -> str:
     """The GenBank text for a part-JSON dict (with the catalog SOURCE convention).
 
     Stamps the part's permanent catalog IRI into the record COMMENT so the
     downloadable .gb is self-identifying. The IRI is derived from the slug (so it
-    is not stored in the JSON spine, only projected here)."""
+    is not stored in the JSON spine, only projected here). With ``status`` (the
+    part's directory, ``validated`` or ``candidate``) a second COMMENT line
+    carries the curation status and whether the sequence is sourced, e.g.
+    ``Catalog status: candidate, unsourced``, so a consumer of the .gb alone
+    can tell a curated part from a bare candidate."""
     rec = json_to_record(data)
     slug = data.get("slug") or rec.id or rec.name
     if slug:
-        rec.annotations["comment"] = (
-            f"Permanent catalog identifier: {PART_IRI_BASE}{slug}")
+        lines = [f"Permanent catalog identifier: {PART_IRI_BASE}{slug}"]
+        if status:
+            lines.append(f"Catalog status: {status}, "
+                         f"{'sourced' if is_sourced(data) else 'unsourced'}")
+        rec.annotations["comment"] = "\n".join(lines)
     buf = io.StringIO()
     SeqIO.write([rec], buf, "genbank")
     return buf.getvalue().replace(_BIO_SOURCE, _CANON_SOURCE)
 
 
 def write_gb_from_json(data: dict, path: Path) -> None:
-    path.write_text(gb_text_from_json(data), encoding="utf-8")
+    """Write the .gb; the status is the part's directory (validated/candidate)."""
+    status = path.parent.name if path.parent.name in ("validated", "candidate") else None
+    path.write_text(gb_text_from_json(data, status), encoding="utf-8")

@@ -59,6 +59,7 @@ REFERENCE   7
   REMARK    doi:10.1007/s12010-013-0326-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/FLAG
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..8
                      /label="FLAG"
@@ -83,6 +84,13 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000417"
                      /collection="affinity-tags"
                      /collection="epitope-tags"
+     protein_domain  4..8
+                     /label="enterokinase cleavage site"
+                     /parent="FLAG"
+                     /note="DDDDK, the enterokinase (enteropeptidase)
+                     recognition site: the whole of the catalog part
+                     enterokinase_site."
+                     /db_xref="SO:0000417"
 ORIGIN
         1 dykddddk
 //

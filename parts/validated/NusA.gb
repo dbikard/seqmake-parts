@@ -68,6 +68,7 @@ REFERENCE   8
   REMARK    doi:10.4161/trns.2.3.15671
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/NusA
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..495
                      /label="NusA"

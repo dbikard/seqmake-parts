@@ -96,7 +96,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "Bacteriophage lambda tL3; lambda (J02459 / NC_001416) 31262-31347, complement, plus 2 bp (part 43-44) not in the lambda reference but present in the lab's tL3-carrying plasmids. The 3' end is base 31262, where NC_001416 ends the tL3-terminated pL mRNA. Re-delimited (2026-11) from a 272 bp record (lambda 31089-31358): the old part also carried the last 11 bp of exo (with its stop codon) and the 173 bp past the termination point (lambda 31089-31261, coding DNA of orf60a/orf63)."
+    "closest_deposit": "Bacteriophage lambda tL3; lambda (J02459 / NC_001416) 31262-31347, complement, plus 2 bp (part 43-44) not in the lambda reference but present in the lab's tL3-carrying plasmids. The 3' end is base 31262, where NC_001416 ends the tL3-terminated pL mRNA. Re-delimited (2026-11) from a 272 bp record (lambda 31089-31358): the old part also carried the last 11 bp of exo (with its stop codon) and the 173 bp past the termination point (lambda 31089-31261, coding DNA of orf60a/orf63)."
   },
   "functional_claims": [
     {

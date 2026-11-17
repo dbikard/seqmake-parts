@@ -8,6 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/LAA_deg_tag
+            Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      protein_domain  1..11
                      /label="LAA deg tag"

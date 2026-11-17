@@ -3,7 +3,7 @@
   "slug": "lacO",
   "locus": "lacO",
   "id": "lacO",
-  "description": "lacO",
+  "description": "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter.",
   "molecule_type": "DNA",
   "locus_annotations": {
     "topology": "linear",
@@ -11,7 +11,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "TTGTGAGCGGATAACAA",
-  "references": [],
+  "references": [
+    {
+      "authors": "Gilbert W, Maxam A",
+      "title": "The nucleotide sequence of the lac operator.",
+      "journal": "Proc Natl Acad Sci U S A. 1973;70(12):3581-3584",
+      "pubmed_id": "4587255",
+      "comment": "doi:10.1073/pnas.70.12.3581"
+    }
+  ],
   "features": [
     {
       "type": "protein_bind",
@@ -23,13 +31,21 @@
           "lacO"
         ],
         "synonym": [
+          "lac operator",
           "lacO"
+        ],
+        "note": [
+          "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. In the catalog's promoters the operator is annotated under several windows and names: Plac carries the published 24 bp as 'lac operator O1'; T7lac a 21 bp window as 'lac operator O1' and Ptac the same 21 bp as 'lac operator'; PT5/lacO two 17 bp windows one base downstream of this one as 'lac operator', and PA1/O4/O3 the same as 'lac operator O4' and 'O3'; PA1lacO-1, PLlacO-1 and Plac/ara-1 carry this part's own window as 'lacO'."
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "Gilbert & Maxam 1973 (PMID 4587255): an interior 17 bp window of the 24 bp lac operator sequence they report (TGGAATTGTGAGCGGATAACAATT); the window's own ends are unverified"
   },
   "functional_claims": []
 }

@@ -3,7 +3,7 @@
   "slug": "PtetA",
   "locus": "PtetA",
   "id": "PtetA",
-  "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
+  "description": "29 bp PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of a tet operator, making transcription TetR/anhydrotetracycline-controllable. Its first 23 bp are the Tn10 tetA promoter (J01830); its -10, CATAAT, is not (Tn10 reads TTATTT there).",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -51,11 +51,10 @@
           "PtetA"
         ],
         "synonym": [
-          "ptet",
-          "tet promoter"
+          "ptet"
         ],
         "note": [
-          "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable."
+          "29 bp PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of a tet operator, making transcription TetR/anhydrotetracycline-controllable. Its first 23 bp are the Tn10 tetA promoter (J01830); its -10, CATAAT, is not (Tn10 reads TTATTT there). The deposit this 29 bp was taken from is not established."
         ],
         "db_xref": [
           "SO:0000167"
@@ -81,7 +80,7 @@
           "minus_35_signal"
         ],
         "note": [
-          "5' -35 hexamer of the natural Tn10 PtetA promoter; perfect sigma-70 -35 consensus TTGACA."
+          "5' -35 hexamer of this promoter; perfect sigma-70 -35 consensus TTGACA, as in Tn10."
         ],
         "citation": [
           "[1]",
@@ -105,7 +104,7 @@
           "PtetA"
         ],
         "note": [
-          "Tn10 tet operator (tetO1) occupying the -35/-10 spacer and abutting the -10."
+          "Tet operator (the Tn10 tetO1 sequence, inside the 23 bp this part shares with J01830) occupying the -35/-10 spacer and abutting the -10."
         ],
         "citation": [
           "[1]",
@@ -133,7 +132,7 @@
           "minus_10_signal"
         ],
         "note": [
-          "3' -10 (Pribnow) hexamer of the natural Tn10 PtetA promoter; non-consensus CATAAT, matching the sigma-70 -10 consensus TATAAT at 5/6 positions (C instead of ..."
+          "3' -10 (Pribnow) hexamer of this promoter; non-consensus CATAAT, matching the sigma-70 -10 consensus TATAAT at 5/6 positions (C instead of ... Tn10 (J01830) reads TTATTT at this position."
         ],
         "citation": [
           "[1]",

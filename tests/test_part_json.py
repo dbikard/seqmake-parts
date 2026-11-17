@@ -1,6 +1,7 @@
 """The canonical part-JSON spine: lossless round-trip to .gb + schema validity."""
 import glob
 import io
+import json
 import sys
 from pathlib import Path
 
@@ -27,7 +28,7 @@ def test_json_round_trips_to_committed_gb():
     mismatched = []
     for gb in GB_FILES:
         data = json.loads(Path(gb).with_suffix(".json").read_text(encoding="utf-8"))
-        if gb_text_from_json(data) != Path(gb).read_text(encoding="utf-8"):
+        if gb_text_from_json(data, Path(gb).parent.name) != Path(gb).read_text(encoding="utf-8"):
             mismatched.append(gb)
     assert not mismatched, f"JSON->.gb drift: {mismatched[:5]}"
 
@@ -37,9 +38,12 @@ def test_record_json_record_is_faithful():
     for gb in GB_FILES[:20]:
         rec = SeqIO.read(gb, "genbank")
         data = record_to_json(rec, Path(gb).stem)
+        # provenance is not in the .gb; the status line reads it from the JSON
+        data["provenance"] = json.loads(Path(gb).with_suffix(".json").read_text(
+            encoding="utf-8")).get("provenance", {})
         buf = io.StringIO(); SeqIO.write([rec], buf, "genbank")
         # the regenerated text matches a plain SeqIO write (modulo SOURCE dot)
-        assert gb_text_from_json(data) == buf.getvalue().replace(
+        assert gb_text_from_json(data, Path(gb).parent.name) == buf.getvalue().replace(
             "SOURCE      \n", "SOURCE      .\n")
 
 

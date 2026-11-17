@@ -85,7 +85,7 @@ HTTP — no plugin required. An agent should **narrow, then fetch**:
   entry point: what this is, the trust caveat, and where to start.
 - **[`index.json`](https://w3id.org/seqmake/parts/index.json)** — a token-cheap
   discovery index: one compact line per part (slug, name, synonyms, type, SO
-  role, status, claim count, cognate TFs), plus URL templates for the artifacts
+  role, status, sourced, claim count, cognate TFs), plus URL templates for the artifacts
   below. Filter here first.
 - **Per-part record** `…/parts/files/<slug>.json` — one part's full canonical
   detail (sequence + located sub-features + functional claims + provenance +

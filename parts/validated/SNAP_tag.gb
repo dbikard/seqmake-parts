@@ -71,6 +71,7 @@ REFERENCE   8
   REMARK    doi:10.1038/s41589-025-01942-z
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SNAP_tag
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      protein_domain  1..179
                      /label="SNAP_tag"
