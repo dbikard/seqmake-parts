@@ -135,10 +135,30 @@ cross-checked). See [`proposals/cross-check/CLAIM-MODEL.md`](proposals/cross-che
   no gene (no >= 300 bp ORF over 80% of it), a DNA part is >= 20 bp unless it is
   a real short element (an RBS, an operator), and a part holds only its element.
   `tools/check_library.py` checks all of this; a part kept on purpose despite a
-  finding goes in its allow-list with the reason. A part with neither a
-  `provenance.sequence_source` nor a reference is **unsourced**: `catalog.json`
-  and `index.json` carry `"sourced": false` and its `.gb` COMMENT reads
-  `Catalog status: candidate, unsourced`.
+  finding goes in its allow-list with the reason. Declare a contained part by a
+  link on the main feature (`component="<name>"`, or `variant_of` / `sub_region_of`)
+  or by a sub-feature labelled with that part's name over the copy — use the link
+  when the sub-feature's label carries position information worth keeping
+  (`lac operator O4`, `tetO2`).
+- **Sourced means the record names where the bases came from.** A part is
+  **sourced** when `provenance.sequence_source` names the deposit its sequence
+  was taken from; references alone are not enough (three papers about the native
+  pSC101 origin sat under a cloning-vector variant of it). `tools/verify_sources.py`
+  re-fetches each cited accession and checks it really contains the part's
+  sequence — run it when you source a part; it needs the network, so CI does not.
+  An engineered part that its cited record cannot contain (a designed tag, a
+  consensus site) says so in `sequence_source`.
+- **The curation status travels with the `.gb`.** Every generated `.gb` carries,
+  in its `COMMENT`, a line of exactly this shape, which consumers parse:
+
+  ```
+  Catalog status: <validated|candidate>, <sourced|unsourced>
+  ```
+
+  It follows the permanent-identifier line. `catalog.json` and `index.json` carry
+  the same two fields as `status` and `sourced`; the `.gb` is the only one of the
+  three that a consumer copying part files alone receives, so keep the wording
+  stable.
 - **Declare collection membership on the part.** A part joins a family (a vector
   series, a promoter set, an inducible-sensor kit) with a repeatable
   `collection="<id>"` qualifier on its main feature — membership always lives on

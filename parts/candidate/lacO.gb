@@ -1,20 +1,36 @@
 LOCUS       lacO                      17 bp    DNA     linear   UNK 01-JAN-1980
-DEFINITION  lacO.
+DEFINITION  lacO: the 17 bp core of the lac operator O1, the LacI binding site
+            of the E. coli lac promoter..
 ACCESSION   lacO
 VERSION     lacO
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Gilbert W, Maxam A
+  TITLE     The nucleotide sequence of the lac operator.
+  JOURNAL   Proc Natl Acad Sci U S A. 1973;70(12):3581-3584
+   PUBMED   4587255
+  REMARK    doi:10.1073/pnas.70.12.3581
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lacO
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..17
                      /label="lacO"
-                     /synonym="lacO"
                      /synonym="lac operator"
-                     /synonym="lac operator O1"
+                     /synonym="lacO"
+                     /note="lacO: the 17 bp core of the lac operator O1, the
+                     LacI binding site of the E. coli lac promoter. Gilbert &
+                     Maxam 1973 sequenced the repressor-protected fragment,
+                     about 27 bp long, and published 24 bp of it:
+                     TGGAATTGTGAGCGGATAACAATT. This part is an interior window
+                     of that sequence; its own ends are not the ones the paper
+                     reports and are unverified. The 24 bp form is annotated on
+                     the catalog's Plac as 'lac operator O1', the 21 bp form on
+                     Ptac and T7lac."
+                     /citation=[1]
                      /db_xref="SO:0000057"
 ORIGIN
         1 ttgtgagcgg ataacaa

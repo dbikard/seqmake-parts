@@ -72,13 +72,16 @@
           "tetR/tetA promoters"
         ],
         "synonym": [
-          "tetR/tetA promoters"
+          "tetR/tetA promoters",
+          "Tn10 tetA promoter",
+          "tetA/tetR control region"
         ],
         "note": [
           "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2."
         ],
         "db_xref": [
-          "SO:0000167"
+          "SO:0000167",
+          "GenBank:J01830"
         ]
       }
     },
@@ -291,7 +294,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01830 (transposon Tn10 tetA/tetR control region), 1545..1600, 100% over 56 bp"
   },
   "functional_claims": [
     {

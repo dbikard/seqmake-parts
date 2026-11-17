@@ -1,20 +1,57 @@
 LOCUS       rep_pSC101               316 aa                     UNK 01-JAN-1980
-DEFINITION  rep pSC101.
+DEFINITION  rep pSC101 (RepA): the 316 aa replication initiation protein that
+            binds the pSC101 origin iterons and is required in trans for
+            replication..
 ACCESSION   rep_pSC101
 VERSION     rep_pSC101
 KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Bernardi A, Bernardi F
+  TITLE     Complete sequence of pSC101.
+  JOURNAL   Nucleic Acids Res. 1984;12(24):9415-9426
+   PUBMED   6096829
+  REMARK    doi:10.1093/nar/12.24.9415
+REFERENCE   2
+  AUTHORS   Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick
+            M, Ohtsubo H, Ohtsubo E
+  TITLE     A 37 x 10(3) molecular weight plasmid-encoded protein is required
+            for replication and copy number control in the plasmid pSC101 and
+            its temperature-sensitive derivative pHS1.
+  JOURNAL   J Mol Biol. 1984;175(3):331-348
+   PUBMED   6327996
+  REMARK    doi:10.1016/0022-2836(84)90352-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/rep_pSC101
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..316
                      /label="rep pSC101"
                      /synonym="Replication protein"
                      /synonym="rep pSC101"
+                     /note="rep pSC101 (RepA): the 316 aa replication initiation
+                     protein that binds the pSC101 origin iterons and is
+                     required in trans for replication. The allele here is the
+                     one encoded by the pSC101 reference sequence NC_002056 (CDS
+                     5273..6223, protein WP_010891056.1). It differs from
+                     UniProt P22308 at two residues (P22308 reads H257 and Y289
+                     where this one reads R257 and H289). Replication-deficient,
+                     increased-copy-number and temperature-sensitive mutations
+                     of pSC101 all map inside this gene, not in the origin
+                     (Armstrong et al. 1984, which reports seven
+                     replication-deficient insertions, four copy-number mutants
+                     and one temperature-sensitive replication mutant within
+                     rep101). That paper does not give the residue of the
+                     temperature-sensitive allele, and no accessible source
+                     checked here does, so this part claims no temperature
+                     sensitivity for its own allele or for the two-residue
+                     variant: the residue is unverified."
                      /db_xref="SO:0000316"
+                     /db_xref="NCBI:WP_010891056.1"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 mselvvfkan elaisrydlt ehetklilcc vallnptien ptrkertvsf tynqyaqmmn
        61 isrenaygvl akatrelmtr tveirnplvk gfeifqwtny akfsseklel vfseeilpyl

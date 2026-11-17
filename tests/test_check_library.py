@@ -78,6 +78,41 @@ def test_containment_needs_a_child_or_link(tmp_path):
     assert _kinds(out) == ["[contains]"]
 
 
+def test_near_containment_fails_unless_declared(tmp_path):
+    """The ts_ori101 shape: a part almost inside a longer one, under the
+    duplicate threshold and not an exact containment."""
+    inner = PROMOTER * 3                                   # 138 bp
+    flank = "GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGG"
+    mutated = inner[:40] + "A" + inner[41:60] + "T" + inner[61:]   # 2 of 138 = 98.6%
+    out = _catalog(tmp_path, _part("ori", flank + mutated + flank, ftype="rep_origin"),
+                   _part("core", inner, ftype="rep_origin"))
+    assert _kinds(out) == ["[near]"]
+    # a link, or a child carrying the part's name, declares it
+    out = _catalog(tmp_path / "x", _part("ori", flank + mutated + flank, ftype="rep_origin",
+                                         variant_of="core"),
+                   _part("core", inner, ftype="rep_origin"))
+    assert out == []
+    out = _catalog(tmp_path / "y",
+                   _part("ori", flank + mutated + flank, ftype="rep_origin",
+                         children=[("core", len(flank), len(flank) + len(inner), None)]),
+                   _part("core", inner, ftype="rep_origin"))
+    assert out == []
+    # half of the part inside the longer one is neither a near-containment nor a duplicate
+    out = _catalog(tmp_path / "z", _part("ori", flank + inner[:69] + flank, ftype="rep_origin"),
+                   _part("core", inner, ftype="rep_origin"))
+    assert out == []
+
+
+def test_names_ignore_case_spaces_and_punctuation(tmp_path):
+    out = _catalog(tmp_path, _part("Pcat", PROMOTER), _part("Pb", OPERATOR + "GGCC",
+                                                            synonyms=["P-cat"]))
+    assert _kinds(out) == ["[names]"]
+    assert "'P-cat'" in out[0] and "'Pcat'" in out[0]
+    # letters still count: a Greek suffix is a different name
+    assert _catalog(tmp_path / "x", _part("lacZ", PROMOTER),
+                    _part("lacZ\u03b1", OPERATOR + "GGCC")) == []
+
+
 def test_orf_short_and_subfeature_fail(tmp_path):
     gene = "ATG" + "GCT" * 110 + "TAA"                           # 336 bp, one ORF
     assert longest_orf(gene) == len(gene)

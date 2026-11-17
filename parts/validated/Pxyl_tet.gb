@@ -43,7 +43,7 @@ REFERENCE   5
   REMARK    doi:10.1111/1751-7915.13926
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pxyl_tet
-            Catalog status: validated, sourced
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..58
                      /label="Pxyl/tet"
@@ -60,6 +60,7 @@ FEATURES             Location/Qualifiers
                      Sequence of record: pRAB11 (GenBank JN635500.1)."
                      /db_xref="SO:0000167"
                      /db_xref="GenBank:JN635500.1"
+                     /component="tetO"
      regulatory      1..6
                      /label="-35"
                      /parent="Pxyl/tet"

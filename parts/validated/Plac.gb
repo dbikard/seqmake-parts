@@ -21,7 +21,7 @@ REFERENCE   2
   REMARK    doi:10.1073/pnas.70.12.3581
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Plac
-            Catalog status: validated, sourced
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..57
                      /label="Plac"
@@ -30,6 +30,7 @@ FEATURES             Location/Qualifiers
                      -35/-10/+1 plus a 3'-truncated LacI operator O1, in 55 bp."
                      /db_xref="SO:0000167"
                      /regulated_by="LacI"
+                     /component="lacO"
      regulatory      1..6
                      /label="-35"
                      /parent="Plac"

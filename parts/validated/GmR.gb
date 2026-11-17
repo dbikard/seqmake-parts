@@ -51,6 +51,7 @@ FEATURES             Location/Qualifiers
                      /synonym="gentamicin acetyltransferase"
                      /synonym="Acc3"
                      /synonym="gentamicin 3-N-acetyltransferase"
+                     /synonym="GmR (SEVA)"
                      /note="GmR (aacC1 / AAC(3)-Ia) — gentamicin
                      3-N-acetyltransferase that confers gentamicin resistance by
                      acetyl-CoA-dependent N-acetylation of aminoglycosides;

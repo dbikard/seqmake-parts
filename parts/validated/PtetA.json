@@ -51,11 +51,10 @@
           "PtetA"
         ],
         "synonym": [
-          "ptet",
-          "Tn10 tetA promoter"
+          "ptet"
         ],
         "note": [
-          "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable."
+          "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable. Its -10 reads CATAAT; the Tn10 tetA promoter of J01830 reads TTATTT there, and this 29 bp matches J01830 only over its first 23 bp, so the sequence is a tetA-promoter form of record for the pZ/pASK vectors rather than the Tn10 one. Its deposit of origin is not established."
         ],
         "db_xref": [
           "SO:0000167"

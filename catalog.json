@@ -4,7 +4,7 @@
   "n_validated": 76,
   "n_candidate": 194,
   "n_documented": 76,
-  "n_functional_claims": 359,
+  "n_functional_claims": 360,
   "parts": [
     {
       "name": "186 integrase",
@@ -6998,7 +6998,8 @@
         "aacC1",
         "gentamicin acetyltransferase",
         "Acc3",
-        "gentamicin 3-N-acetyltransferase"
+        "gentamicin 3-N-acetyltransferase",
+        "GmR (SEVA)"
       ],
       "collections": [],
       "description": "GmR (aacC1 / AAC(3)-Ia) \u2014 gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181.",
@@ -8090,7 +8091,7 @@
       "collections": [
         "phage-att-sites"
       ],
-      "description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The 27 bp O-region (overlap/core) lies at positions 203..230 on the plus strand and is conserved with the lambda att core.",
+      "description": "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The crossover (overlap) region's exact boundaries inside this window are not pinned to a primary figure and are left unstated; the window is conserved with the lambda att core.",
       "length": 258,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -9467,12 +9468,11 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "lacO",
         "lac operator",
-        "lac operator O1"
+        "lacO"
       ],
       "collections": [],
-      "description": "",
+      "description": "lacO: the 17 bp core of the lac operator O1, the LacI binding site of the E. coli lac promoter. Gilbert & Maxam 1973 sequenced the repressor-protected fragment, about 27 bp long, and published 24 bp of it: TGGAATTGTGAGCGGATAACAATT. This part is an interior window of that sequence; its own ends are not the ones the paper reports and are unverified. The 24 bp form is annotated on the catalog's Plac as 'lac operator O1', the 21 bp form on Ptac and T7lac.",
       "length": 17,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -9480,9 +9480,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Gilbert W, Maxam A",
+          "title": "The nucleotide sequence of the lac operator.",
+          "journal": "Proc Natl Acad Sci U S A. 1973;70(12):3581-3584",
+          "pmid": "4587255",
+          "doi": "10.1073/pnas.70.12.3581",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4587255/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -11854,31 +11865,6 @@
       "functional_claims": []
     },
     {
-      "name": "oriT",
-      "slug": "oriT",
-      "feature_type": "oriT",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000724",
-      "so_name": "oriT",
-      "synonyms": [
-        "OriT"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 228,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
       "name": "p15A",
       "slug": "p15A",
       "feature_type": "rep_origin",
@@ -12144,7 +12130,7 @@
         1,
         2
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -12300,7 +12286,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -13087,7 +13073,7 @@
         1,
         2
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14022,7 +14008,7 @@
       "functional_claims": []
     },
     {
-      "name": "pIJ101 ori",
+      "name": "pIJ101 replicon",
       "slug": "pIJ101_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
@@ -14030,13 +14016,14 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "pIJ101",
         "pIJ101 ori",
+        "pIJ101",
+        "pIJ101 origin",
         "Streptomyces ori",
-        "pIJ101 origin"
+        "pIJ101 replicon"
       ],
       "collections": [],
-      "description": "",
+      "description": "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and this record's own sequence source is unknown (migrated from a GenBank file, no deposit recorded): both of its ends are unverified. Split it once the replicon is re-sourced from a deposit.",
       "length": 2239,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -14211,7 +14198,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14404,7 +14391,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14802,7 +14789,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -14975,7 +14962,7 @@
         1,
         2
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15154,7 +15141,7 @@
         1,
         2
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "inducer",
@@ -15293,14 +15280,16 @@
       "slug": "pSC101_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:NC_002056",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
-        "pSC101 ori"
+        "pSC101 ori",
+        "pSC101 origin",
+        "oriV pSC101"
       ],
       "collections": [],
-      "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+      "description": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the narrow-host-range plasmid pSC101. Temperature sensitivity of pSC101 replication maps to the rep101 gene, not to this origin (Armstrong et al. 1984), so no form of this origin carries a 'ts' claim.",
       "length": 223,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -15397,9 +15386,200 @@
           "pmid": "2041467",
           "doi": "10.1111/j.1365-2958.1991.tb02103.x",
           "url": "https://pubmed.ncbi.nlm.nih.gov/2041467/"
+        },
+        {
+          "authors": "Bernardi A, Bernardi F",
+          "title": "Complete sequence of pSC101.",
+          "journal": "Nucleic Acids Res. 1984;12(24):9415-9426",
+          "pmid": "6096829",
+          "doi": "10.1093/nar/12.24.9415",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6096829/"
+        },
+        {
+          "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+          "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+          "journal": "J Mol Biol. 1984;175(3):331-348",
+          "pmid": "6327996",
+          "doi": "10.1016/0022-2836(84)90352-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327996/"
         }
       ],
-      "main_citations": [],
+      "main_citations": [
+        4,
+        5
+      ],
+      "sourced": true,
+      "functional_claims": [
+        {
+          "id": "copy_number",
+          "type": "copy_number",
+          "label": "Low-copy origin; RepA/iteron-controlled replication.",
+          "value": {
+            "copy_number": "low",
+            "control": "RepA / iterons"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "8376344",
+            "quote": "The pSC101 origin of replication: the ~220 bp low-copy, iteron-driven cis origin that controls RepA-initiated replication of the broad-host-range plasmid pSC101.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "pSC101_ori.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "pSC101 ori (SmaI/BglII vector form)",
+      "slug": "pSC101_ori_vector",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "source_accession": "GenBank:U66313",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "synonyms": [
+        "pSC101 ori (vector form)",
+        "pSC101 ori (SmaI/BglII)"
+      ],
+      "collections": [],
+      "description": "The SmaI/BglII cloning-vector form of the pSC101 origin: the native origin with CCCGGGAGATCT (SmaI + BglII) in place of its bases 32-43. Carried by the pZ expression vectors (Lutz & Bujard 1997) and by many later pSC101 vectors; 224 of a 1,390-plasmid collection carry this form and 44 the native one. The two differ only over bases 32-43, outside every annotated sub-element of the origin. Like the native form, it carries no temperature-sensitivity claim: that phenotype maps to the rep101 gene (Armstrong et al. 1984).",
+      "length": 223,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "RepA iteron 1",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 49,
+          "end": 67,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RepA iteron 2",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 81,
+          "end": 99,
+          "strand": 1,
+          "citations": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "RepA iteron 3",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 102,
+          "end": 120,
+          "strand": 1,
+          "citations": [
+            1
+          ]
+        },
+        {
+          "label": "AT-rich bending region",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 149,
+          "end": 183,
+          "strand": 1,
+          "citations": [
+            2,
+            1
+          ]
+        },
+        {
+          "label": "DnaA",
+          "feature_type": "protein_bind",
+          "so_term": "SO:0000410",
+          "so_name": "protein_binding_site",
+          "start": 211,
+          "end": 220,
+          "strand": -1,
+          "citations": [
+            1,
+            3
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sugiura S, Ohkubo S, Yamaguchi K",
+          "title": "Minimal essential origin of plasmid pSC101 replication: requirement of a region downstream of iterons",
+          "journal": "J Bacteriol 175(18):5993-6001 (1993)",
+          "pmid": "8376344",
+          "doi": "10.1128/jb.175.18.5993-6001.1993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8376344/"
+        },
+        {
+          "authors": "Murakami A, Sugiura S, Yamaguchi K",
+          "title": "DNA bending of pSC101 ori induced by Rep, a replication initiator protein and IHF",
+          "journal": "J Gen Appl Microbiol 43(4):189-197 (1997)",
+          "pmid": "12501319",
+          "doi": "10.2323/jgam.43.189",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12501319/"
+        },
+        {
+          "authors": "Manen D, Caro L",
+          "title": "The replication of plasmid pSC101",
+          "journal": "Mol Microbiol 5(2):233-237 (1991)",
+          "pmid": "2041467",
+          "doi": "10.1111/j.1365-2958.1991.tb02103.x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2041467/"
+        },
+        {
+          "authors": "Bernardi A, Bernardi F",
+          "title": "Complete sequence of pSC101.",
+          "journal": "Nucleic Acids Res. 1984;12(24):9415-9426",
+          "pmid": "6096829",
+          "doi": "10.1093/nar/12.24.9415",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6096829/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        },
+        {
+          "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+          "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+          "journal": "J Mol Biol. 1984;175(3):331-348",
+          "pmid": "6327996",
+          "doi": "10.1016/0022-2836(84)90352-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327996/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
       "sourced": true,
       "functional_claims": [
         {
@@ -15664,7 +15844,7 @@
       "main_citations": [
         1
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15832,7 +16012,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15871,11 +16051,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
-        "ptet",
-        "Tn10 tetA promoter"
+        "ptet"
       ],
       "collections": [],
-      "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable.",
+      "description": "Natural 29 bp Tn10 PtetA promoter: a sigma-70 -35/-10 promoter whose spacer holds the central 17 bp of the tetO1 operator, making transcription TetR/anhydrotetracycline-controllable. Its -10 reads CATAAT; the Tn10 tetA promoter of J01830 reads TTATTT there, and this 29 bp matches J01830 only over its first 23 bp, so the sequence is a tetA-promoter form of record for the pZ/pASK vectors rather than the Tn10 one. Its deposit of origin is not established.",
       "length": 29,
       "protein_length_aa": null,
       "regulated_by": [
@@ -15965,7 +16144,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "inducer",
@@ -16084,7 +16263,7 @@
       "main_citations": [
         1
       ],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -16526,7 +16705,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -16737,7 +16916,7 @@
       "slug": "rep_pSC101",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "NCBI:WP_010891056.1",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -16745,7 +16924,7 @@
         "rep pSC101"
       ],
       "collections": [],
-      "description": "",
+      "description": "rep pSC101 (RepA): the 316 aa replication initiation protein that binds the pSC101 origin iterons and is required in trans for replication. The allele here is the one encoded by the pSC101 reference sequence NC_002056 (CDS 5273..6223, protein WP_010891056.1). It differs from UniProt P22308 at two residues (P22308 reads H257 and Y289 where this one reads R257 and H289). Replication-deficient, increased-copy-number and temperature-sensitive mutations of pSC101 all map inside this gene, not in the origin (Armstrong et al. 1984, which reports seven replication-deficient insertions, four copy-number mutants and one temperature-sensitive replication mutant within rep101). That paper does not give the residue of the temperature-sensitive allele, and no accessible source checked here does, so this part claims no temperature sensitivity for its own allele or for the two-residue variant: the residue is unverified.",
       "length": 316,
       "protein_length_aa": 316,
       "regulated_by": [],
@@ -16753,9 +16932,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Bernardi A, Bernardi F",
+          "title": "Complete sequence of pSC101.",
+          "journal": "Nucleic Acids Res. 1984;12(24):9415-9426",
+          "pmid": "6096829",
+          "doi": "10.1093/nar/12.24.9415",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6096829/"
+        },
+        {
+          "authors": "Armstrong KA, Acosta R, Ledner E, Machida Y, Pancotto M, McCormick M, Ohtsubo H, Ohtsubo E",
+          "title": "A 37 x 10(3) molecular weight plasmid-encoded protein is required for replication and copy number control in the plasmid pSC101 and its temperature-sensitive derivative pHS1.",
+          "journal": "J Mol Biol. 1984;175(3):331-348",
+          "pmid": "6327996",
+          "doi": "10.1016/0022-2836(84)90352-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327996/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -17094,26 +17293,39 @@
       "slug": "RP4_oriT",
       "feature_type": "oriT",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:X54459",
       "so_term": "SO:0000724",
       "so_name": "oriT",
       "synonyms": [
         "RP4 oriT",
         "RP4 transfer origin",
-        "oriT RP4"
+        "oriT RP4",
+        "oriT",
+        "OriT"
       ],
       "collections": [],
-      "description": "",
-      "length": 257,
+      "description": "RP4 oriT: the origin of conjugative transfer of the IncP-alpha plasmid RP4 (210 bp). The bases are the region two deposited oriT windows agree on (X54459 4636-4845); the element's own ends are unverified, as no accessible source maps them. The catalog carried two overlapping windows of this locus, under the names 'oriT' (228 bp) and 'RP4 oriT' (257 bp, with 6 bases of a cloning junction); both names now belong to this part.",
+      "length": 210,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Ziegelin G, Pansegrau W, Strack B, Balzer D, Kr\u00f6ger M, Kruft V, Lanka E",
+          "title": "Nucleotide sequence and organization of genes flanking the transfer origin of promiscuous plasmid RP4.",
+          "journal": "DNA Seq. 1991;1(5):303-327",
+          "pmid": "1665997",
+          "doi": "10.3109/10425179109020786",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1665997/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -22334,7 +22546,7 @@
         }
       ],
       "main_citations": [],
-      "sourced": true,
+      "sourced": false,
       "functional_claims": [
         {
           "id": "regulation",
@@ -22567,14 +22779,15 @@
       "slug": "tetO",
       "feature_type": "protein_bind",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:JN635500",
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "tetO"
+        "tetO",
+        "tet operator"
       ],
       "collections": [],
-      "description": "",
+      "description": "tetO: the 19 bp tet operator of the pRAB expression vectors, the TetR binding site that makes Pxyl/tet anhydrotetracycline-inducible. Sequence of record: pRAB11 (JN635500) 4135..4153, which is the downstream operator (tetO2) of the catalog's Pxyl/tet. It is not either Tn10 operator window: the Tn10 control region (J01830) carries CACTCTATCATTGATAGAG and TCCCTATCAGTGATAGAGA, which differ from this one at one and at four positions.",
       "length": 19,
       "protein_length_aa": null,
       "regulated_by": [],
@@ -22582,9 +22795,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C, Bertram R",
+          "title": "Vectors for improved Tet repressor-dependent gradual gene induction in Staphylococcus aureus.",
+          "journal": "Microbiology. 2011;157(Pt 12):3314-3323",
+          "pmid": "21921101",
+          "doi": "10.1099/mic.0.052548-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21921101/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -22631,11 +22855,13 @@
       "slug": "tetR_tetA_promoters",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01830",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
-        "tetR/tetA promoters"
+        "tetR/tetA promoters",
+        "Tn10 tetA promoter",
+        "tetA/tetR control region"
       ],
       "collections": [],
       "description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",

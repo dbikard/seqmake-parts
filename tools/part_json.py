@@ -163,13 +163,18 @@ def json_to_record(data: dict) -> SeqRecord:
 
 
 def is_sourced(data: dict) -> bool:
-    """A part is *sourced* when its record names where its sequence comes from
-    (``provenance.sequence_source``) or cites a reference. An unsourced part is a
-    bare candidate sequence: usable to find a span, not authoritative for its name."""
+    """A part is *sourced* when its record names the deposit its sequence was taken
+    from, in ``provenance.sequence_source``. An unsourced part is a bare sequence:
+    usable to find a span, not authoritative for its name.
+
+    References alone do not make a part sourced. A part can cite the papers that
+    describe an element and still carry a sequence nobody checked against a
+    deposit -- which is how a cloning-vector variant of the pSC101 origin sat
+    under three papers about the native one. ``tools/verify_sources.py`` goes the
+    step further and re-fetches each cited record to check it really contains the
+    part's sequence."""
     src = str((data.get("provenance") or {}).get("sequence_source") or "")
-    refs = [r for r in data.get("references") or []
-            if r.get("title") or r.get("pubmed_id") or r.get("authors")]
-    return bool(src and not src.startswith("FILL IN")) or bool(refs)
+    return bool(src and not src.startswith("FILL IN"))
 
 
 def gb_text_from_json(data: dict, status: str | None = None) -> str:

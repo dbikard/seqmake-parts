@@ -3,7 +3,7 @@
   "slug": "pIJ101_ori",
   "locus": "pIJ101_ori",
   "id": "pIJ101_ori",
-  "description": "pIJ101 ori",
+  "description": "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp).",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
@@ -19,13 +19,17 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "pIJ101 ori"
+          "pIJ101 replicon"
         ],
         "synonym": [
-          "pIJ101",
           "pIJ101 ori",
+          "pIJ101",
+          "pIJ101 origin",
           "Streptomyces ori",
-          "pIJ101 origin"
+          "pIJ101 replicon"
+        ],
+        "note": [
+          "The pIJ101 replicon: the Streptomyces rolling-circle replication region carrying the rep gene and its origin (2,239 bp). It is not one element: 1,371 bp of it (61%) are the rep coding sequence, declared as a sub-feature. It is kept whole, and not split into a rep part plus an origin part, because no accessible source delimits the pIJ101 origin itself, and this record's own sequence source is unknown (migrated from a GenBank file, no deposit recorded): both of its ends are unverified. Split it once the replicon is re-sourced from a deposit."
         ]
       }
     },
@@ -39,7 +43,7 @@
           "rep (pIJ101)"
         ],
         "parent": [
-          "pIJ101 ori"
+          "pIJ101 replicon"
         ],
         "db_xref": [
           "UniProt:P22406"

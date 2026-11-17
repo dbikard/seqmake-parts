@@ -45,7 +45,7 @@ REFERENCE   5
   REMARK    doi:10.1002/j.1460-2075.1986.tb04369.x
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PT5_lacO
-            Catalog status: validated, sourced
+            Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      promoter        1..81
                      /label="PT5/lacO"

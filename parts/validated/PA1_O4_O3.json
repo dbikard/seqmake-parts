@@ -53,6 +53,9 @@
         ],
         "db_xref": [
           "SO:0000167"
+        ],
+        "component": [
+          "lacO"
         ]
       }
     },

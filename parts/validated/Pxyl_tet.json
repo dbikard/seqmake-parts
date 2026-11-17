@@ -68,6 +68,9 @@
         "db_xref": [
           "SO:0000167",
           "GenBank:JN635500.1"
+        ],
+        "component": [
+          "tetO"
         ]
       }
     },

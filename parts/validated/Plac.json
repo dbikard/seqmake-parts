@@ -47,6 +47,9 @@
         ],
         "regulated_by": [
           "LacI"
+        ],
+        "component": [
+          "lacO"
         ]
       }
     },

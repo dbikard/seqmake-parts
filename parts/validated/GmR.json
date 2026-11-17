@@ -56,7 +56,8 @@
           "aacC1",
           "gentamicin acetyltransferase",
           "Acc3",
-          "gentamicin 3-N-acetyltransferase"
+          "gentamicin 3-N-acetyltransferase",
+          "GmR (SEVA)"
         ],
         "note": [
           "GmR (aacC1 / AAC(3)-Ia) — gentamicin 3-N-acetyltransferase that confers gentamicin resistance by acetyl-CoA-dependent N-acetylation of aminoglycosides; full-length 177-aa match to UniProt P23181."

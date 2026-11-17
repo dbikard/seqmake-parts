@@ -41,7 +41,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "Torres-Bacete et al. 2021, Supplementary Figure S8 (sequence in pSEVA2137 vectors): the Pliar 51 variable region plus the shared core, 100% over 42 bp; the first base (G) is the last base of the flanking PacI site"
+    "sequence_source": "Torres-Bacete et al. 2021, Supplementary Figure S8 (sequence in pSEVA2137 vectors): the Pliar 51 variable region plus the shared core, 100% over 42 bp; the leading G is the vector base between the flanking PacI site (ttaattaa) and the promoter's variable region"
   },
   "functional_claims": []
 }

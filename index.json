@@ -19,7 +19,7 @@
   "n_parts": 270,
   "n_validated": 76,
   "n_candidate": 194,
-  "n_functional_claims": 359,
+  "n_functional_claims": 360,
   "parts": [
     {
       "slug": "186_integrase",
@@ -1210,7 +1210,8 @@
         "aacC1",
         "gentamicin acetyltransferase",
         "Acc3",
-        "gentamicin 3-N-acetyltransferase"
+        "gentamicin 3-N-acetyltransferase",
+        "GmR (SEVA)"
       ]
     },
     {
@@ -1736,12 +1737,11 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
-        "lacO",
         "lac operator",
-        "lac operator O1"
+        "lacO"
       ]
     },
     {
@@ -2167,20 +2167,6 @@
       ]
     },
     {
-      "slug": "oriT",
-      "name": "oriT",
-      "feature_type": "oriT",
-      "kind": "dna",
-      "so_term": "SO:0000724",
-      "so_name": "oriT",
-      "status": "candidate",
-      "sourced": false,
-      "n_claims": 0,
-      "synonyms": [
-        "OriT"
-      ]
-    },
-    {
       "slug": "p15A",
       "name": "p15A",
       "feature_type": "rep_origin",
@@ -2206,7 +2192,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Ptet2",
@@ -2235,7 +2221,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PA1/O4/O3",
@@ -2361,7 +2347,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PchnB",
@@ -2514,7 +2500,7 @@
     },
     {
       "slug": "pIJ101_ori",
-      "name": "pIJ101 ori",
+      "name": "pIJ101 replicon",
       "feature_type": "rep_origin",
       "kind": "dna",
       "so_term": "SO:0000296",
@@ -2523,10 +2509,11 @@
       "sourced": false,
       "n_claims": 0,
       "synonyms": [
-        "pIJ101",
         "pIJ101 ori",
+        "pIJ101",
+        "pIJ101 origin",
         "Streptomyces ori",
-        "pIJ101 origin"
+        "pIJ101 replicon"
       ]
     },
     {
@@ -2571,7 +2558,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "lac promoter"
@@ -2639,7 +2626,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PlacUV5",
@@ -2769,7 +2756,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PLtetO-1",
@@ -2791,7 +2778,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Pm",
@@ -2846,7 +2833,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 2,
       "synonyms": [
         "PphlF",
@@ -2915,7 +2902,24 @@
       "sourced": true,
       "n_claims": 1,
       "synonyms": [
-        "pSC101 ori"
+        "pSC101 ori",
+        "pSC101 origin",
+        "oriV pSC101"
+      ]
+    },
+    {
+      "slug": "pSC101_ori_vector",
+      "name": "pSC101 ori (SmaI/BglII vector form)",
+      "feature_type": "rep_origin",
+      "kind": "dna",
+      "so_term": "SO:0000296",
+      "so_name": "origin_of_replication",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "pSC101 ori (vector form)",
+        "pSC101 ori (SmaI/BglII)"
       ]
     },
     {
@@ -2987,7 +2991,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PT5/lacO",
@@ -3018,7 +3022,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "tac promoter"
@@ -3039,11 +3043,10 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
-        "ptet",
-        "Tn10 tetA promoter"
+        "ptet"
       ],
       "regulated_by": [
         {
@@ -3061,7 +3064,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Ptrc",
@@ -3131,7 +3134,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "Pxyl/tet",
@@ -3222,7 +3225,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "Replication protein",
@@ -3379,12 +3382,14 @@
       "so_term": "SO:0000724",
       "so_name": "oriT",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RP4 oriT",
         "RP4 transfer origin",
-        "oriT RP4"
+        "oriT RP4",
+        "oriT",
+        "OriT"
       ]
     },
     {
@@ -3960,7 +3965,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": true,
+      "sourced": false,
       "n_claims": 1,
       "synonyms": [
         "PT7/lacO",
@@ -4052,10 +4057,11 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
-        "tetO"
+        "tetO",
+        "tet operator"
       ]
     },
     {
@@ -4086,7 +4092,9 @@
       "sourced": true,
       "n_claims": 1,
       "synonyms": [
-        "tetR/tetA promoters"
+        "tetR/tetA promoters",
+        "Tn10 tetA promoter",
+        "tetA/tetR control region"
       ]
     },
     {
