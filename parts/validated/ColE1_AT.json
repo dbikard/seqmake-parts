@@ -55,7 +55,7 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "ColE1_AT"
+          "ColE1 (vector form)"
         ],
         "synonym": [
           "ColE1_AT",
@@ -84,7 +84,7 @@
           "RNA II promoter -35"
         ],
         "parent": [
-          "ColE1_AT"
+          "ColE1 (vector form)"
         ],
         "regulatory_class": [
           "minus_35_signal"
@@ -111,7 +111,7 @@
           "RNA II promoter -10"
         ],
         "parent": [
-          "ColE1_AT"
+          "ColE1 (vector form)"
         ],
         "regulatory_class": [
           "minus_10_signal"
@@ -138,7 +138,7 @@
           "RNA I promoter -35"
         ],
         "parent": [
-          "ColE1_AT"
+          "ColE1 (vector form)"
         ],
         "regulatory_class": [
           "minus_35_signal"
@@ -165,7 +165,7 @@
           "RNA I promoter -10"
         ],
         "parent": [
-          "ColE1_AT"
+          "ColE1 (vector form)"
         ],
         "regulatory_class": [
           "minus_10_signal"
