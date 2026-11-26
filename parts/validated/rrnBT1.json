@@ -3,13 +3,13 @@
   "slug": "rrnBT1",
   "locus": "rrnBT1",
   "id": "rrnBT1",
-  "description": "rrnBT1 — the E. coli rrnB operon T1 intrinsic (Rho-independent) transcription terminator; 169 bp from J01695, >97% termination efficiency.",
+  "description": "rrnBT1 — the E. coli rrnB operon T1 intrinsic (Rho-independent) transcription terminator; 72 bp (J01695 6366-6437).",
   "molecule_type": "DNA",
   "locus_annotations": {
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "AGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCCTGAGTAGGACAAATCCGCCGGGAGCGGATTTGAACGTTGCGAAGCAACGGCCCGGAGGGTGGCGGGCAGGACGCCCGCCATAAACTGCCA",
+  "sequence": "CAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTC",
   "references": [
     {
       "authors": "Brosius J, Dull TJ, Sleeter DD, Noller HF",
@@ -72,7 +72,7 @@
     {
       "type": "terminator",
       "start": 0,
-      "end": 169,
+      "end": 72,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -89,7 +89,7 @@
           "rrnBT1T2"
         ],
         "note": [
-          "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 169 bp taken at 100% identity from the canonical rrnB operon sequence J01695 (Brosius et al. 1981). Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin."
+          "rrnB T1, the strong intrinsic (Rho-independent) transcription terminator from the T1-T2 terminator cluster downstream of the 5S rRNA gene in the E. coli rrnB ribosomal RNA operon; 72 bp from the canonical rrnB operon sequence J01695 (6366-6437; Brosius et al. 1981): from the base after the 5S rRNA, which the record ends at 6365, to the 3' end of the iGEM registry's T1 (BBa_B0010, 'T1 from E. coli rrnB', J01695 6358-6437 plus two cloning bases). It holds the A-rich stretch, the GC-rich hairpin, the U-tract and the class II sequence. Cambray et al. 2013 (Suppl. Table 1) measured T1 twice: the 31 bp hairpin and U-tract alone ('rrnB T1 [min]', NC_000913.2 4169794-4169824, here bases 15-45) at 74.3% termination, and T1 with its native flanks ('rrnB T1', NC_000913.2 4169764-4169854, which holds all of this part plus 16 bp of the 5S rRNA and 3 bp downstream) at 97.3%. The 91 bases this part carried before (J01695 6438-6528, toward T2) and the 6 bases of 5S rRNA at its 5' end are documented by no source as part of T1. Terminates host (E. coli sigma-70) RNA polymerase via a GC-rich hairpin followed by a short U-tract; >97% termination efficiency (Cambray et al. 2013). The element additionally carries a class II conserved sequence (TATCTGTT) that triggers termination by phage (T7/SP6) RNA polymerases independently of the hairpin."
         ],
         "db_xref": [
           "SO:0000141"
@@ -103,8 +103,8 @@
     },
     {
       "type": "stem_loop",
-      "start": 24,
-      "end": 47,
+      "start": 18,
+      "end": 41,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -114,7 +114,7 @@
           "rrnBT1"
         ],
         "note": [
-          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3'), the class I (hairpin-dependent) intrinsic-termination signal of rrnB T1. Lyakhov et al. 1997 defined the class I vs class II signals of T1 and showed that disrupting this hairpin abolishes class I termination — in the context of phage T7 RNA polymerase; Schwartz, Rahmouni & Boudvillain 2003 anatomized intrinsic-terminator hairpin contacts by NAIM more generally. The hairpin's role in host E. coli RNAP intrinsic termination at this exact stem is inferred from the canonical intrinsic-terminator architecture rather than directly mapped here. The hairpin is immediately followed by the U-tract. Coordinates confirmed by exact sequence match at 24-47."
+          "23-nt GC-rich hairpin (transcript RNA 5'-CAGUCGAAAGACUGGGCCUUUCG-3'), the class I (hairpin-dependent) intrinsic-termination signal of rrnB T1. Lyakhov et al. 1997 defined the class I vs class II signals of T1 and showed that disrupting this hairpin abolishes class I termination — in the context of phage T7 RNA polymerase; Schwartz, Rahmouni & Boudvillain 2003 anatomized intrinsic-terminator hairpin contacts by NAIM more generally. The hairpin's role in host E. coli RNAP intrinsic termination at this exact stem is inferred from the canonical intrinsic-terminator architecture rather than directly mapped here. The hairpin is immediately followed by the U-tract. Coordinates confirmed by exact sequence match at 18-41."
         ],
         "db_xref": [
           "SO:0000313"
@@ -129,8 +129,8 @@
     },
     {
       "type": "misc_feature",
-      "start": 47,
-      "end": 51,
+      "start": 41,
+      "end": 45,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -140,7 +140,7 @@
           "rrnBT1"
         ],
         "note": [
-          "Four-uridine (UUUU) run in the transcript, immediately 3' of the T1 hairpin, that destabilizes the RNA:DNA hybrid to release the polymerase. The U-run is unusually short (4 nt vs the 6-8 nt consensus); Schmidt & Chamberlin 1987 showed NusA enhances rrnB T1 termination in vitro to in-vivo-equivalent levels, and Orosz et al. 1991 confirmed T1 acts as an efficient standalone terminator in a reporter assay. TTTT confirmed at 47-51."
+          "Four-uridine (UUUU) run in the transcript, immediately 3' of the T1 hairpin, that destabilizes the RNA:DNA hybrid to release the polymerase. The U-run is unusually short (4 nt vs the 6-8 nt consensus); Schmidt & Chamberlin 1987 showed NusA enhances rrnB T1 termination in vitro to in-vivo-equivalent levels, and Orosz et al. 1991 confirmed T1 acts as an efficient standalone terminator in a reporter assay. TTTT confirmed at 41-45."
         ],
         "db_xref": [
           "SO:0000110"
@@ -154,8 +154,8 @@
     },
     {
       "type": "misc_feature",
-      "start": 50,
-      "end": 58,
+      "start": 44,
+      "end": 52,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -165,7 +165,7 @@
           "rrnBT1"
         ],
         "note": [
-          "8-bp conserved sequence (CS) TATCTGTT that is the class II termination signal of rrnB T1, acting independently of the upstream hairpin and relevant only for phage RNA polymerases (T7, SP6). Lyakhov et al. 1997 showed T7 RNAP mutants that fail at the class I hairpin still terminate at this class II CS; Sohn & Kang 2004 characterized it mechanistically (sequential conformational changes in T7 RNAP, no hairpin required). Not required for E. coli RNAP intrinsic termination. TATCTGTT confirmed at 50-58."
+          "8-bp conserved sequence (CS) TATCTGTT that is the class II termination signal of rrnB T1, acting independently of the upstream hairpin and relevant only for phage RNA polymerases (T7, SP6). Lyakhov et al. 1997 showed T7 RNAP mutants that fail at the class I hairpin still terminate at this class II CS; Sohn & Kang 2004 characterized it mechanistically (sequential conformational changes in T7 RNAP, no hairpin required). Not required for E. coli RNAP intrinsic termination. TATCTGTT confirmed at 44-52."
         ],
         "db_xref": [
           "SO:0000110"
@@ -179,7 +179,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "J01695 (E.coli rrnB operon, Brosius et al.), rrnBT1 terminator region, 100% over 169 bp"
+    "sequence_source": "J01695 (E. coli rrnB operon, Brosius et al. 1981), 6366..6437, 100% over 72 bp"
   },
   "functional_claims": [
     {
@@ -214,11 +214,12 @@
     {
       "id": "strength_class",
       "type": "strength_class",
-      "label": "Strong terminator: >97% termination efficiency for host RNA polymerase, above the >95% strong-terminator threshold.",
+      "label": "Strong terminator: Cambray et al. 2013 measured 97.3% termination for T1 in its native context (a 91 bp window holding this part) and 74.3% for its 31 bp hairpin and U-tract alone.",
       "value": {
         "strength": "strong",
-        "termination_efficiency_pct": 97,
-        "comparator": ">95% threshold"
+        "termination_efficiency_pct": 97.3,
+        "window": "NC_000913.2 4169764-4169854",
+        "core_only_pct": 74.3
       },
       "ontology": {},
       "source": {
