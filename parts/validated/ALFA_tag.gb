@@ -64,7 +64,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..13
-                     /label="ALFA_tag"
+                     /label="ALFA tag"
+                     /synonym="ALFA_tag"
                      /synonym="ALFA-tag"
                      /synonym="ALFA epitope"
                      /synonym="SRLEEELRRRLTE"

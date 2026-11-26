@@ -62,8 +62,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..14
-                     /label="V5_tag"
-                     /synonym="V5 tag"
+                     /label="V5 tag"
+                     /synonym="V5_tag"
                      /synonym="V5 epitope"
                      /synonym="Pk-tag"
                      /synonym="Pk tag"

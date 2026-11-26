@@ -74,10 +74,10 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..8
-                     /label="HRV3C_site"
+                     /label="HRV 3C site"
+                     /synonym="HRV3C_site"
                      /synonym="PreScission protease site"
                      /synonym="3C protease cleavage site"
-                     /synonym="HRV 3C site"
                      /synonym="LEVLFQGP"
                      /note="Human rhinovirus 3C protease recognition and
                      cleavage site (LEVLFQGP; Leu-Glu-Val-Leu-Phe-Gln-Gly-Pro).

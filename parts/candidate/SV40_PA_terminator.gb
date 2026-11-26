@@ -11,7 +11,7 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, unsourced
 FEATURES             Location/Qualifiers
      terminator      1..120
-                     /label="SV40_PA_terminator"
+                     /label="SV40 polyA terminator"
                      /synonym="SV40_PA_terminator"
                      /db_xref="SO:0000141"
 ORIGIN

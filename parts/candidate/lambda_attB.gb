@@ -26,9 +26,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..21
-                     /label="lambda_attB"
+                     /label="lambda attB"
                      /synonym="lambda_attB"
-                     /synonym="lambda attB"
                      /collection="phage-att-sites"
                      /cognate="lambda_attP"
                      /db_xref="SO:0000057"

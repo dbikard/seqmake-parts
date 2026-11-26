@@ -39,7 +39,8 @@ COMMENT     Permanent catalog identifier: https://w3id.org/seqmake/parts/part/P2
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..29
-                     /label="P2"
+                     /label="Ptet (pBR322)"
+                     /synonym="P2"
                      /synonym="Ptet2"
                      /synonym="pBR322 tet promoter"
                      /note="P2 is a 29-bp sigma70 promoter fragment that is, by
@@ -51,7 +52,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000167"
      regulatory      1..6
                      /label="-35"
-                     /parent="P2"
+                     /parent="Ptet (pBR322)"
                      /regulatory_class="minus_35_signal"
                      /note="Perfect match to the canonical sigma70 -35 consensus
                      TTGACA (minus35_score=1.0 at pos 0)."
@@ -60,7 +61,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000175"
      regulatory      24..29
                      /label="-10"
-                     /parent="P2"
+                     /parent="Ptet (pBR322)"
                      /regulatory_class="minus_10_signal"
                      /note="TTTAAT, a strong sigma70 -10 variant (5/6 to TATAAT
                      consensus; minus10_pos=23, spacer_len=17, optimal

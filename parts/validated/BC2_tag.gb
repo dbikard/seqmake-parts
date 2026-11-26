@@ -46,9 +46,9 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..12
-                     /label="BC2_tag"
+                     /label="BC2 tag"
+                     /synonym="BC2_tag"
                      /synonym="BC2T"
-                     /synonym="BC2 tag"
                      /synonym="beta-catenin epitope"
                      /note="12-aa linear epitope tag PDRKAAVSHWQQ (BC2T),
                      corresponding to residues 16–27 of human beta-catenin

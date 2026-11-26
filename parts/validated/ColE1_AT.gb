@@ -47,7 +47,7 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..589
-                     /label="ColE1_AT"
+                     /label="ColE1 (vector form)"
                      /synonym="ColE1_AT"
                      /synonym="ColE1 ori (cloning-vector form)"
                      /synonym="pMB1 (vector form)"
@@ -61,7 +61,7 @@ FEATURES             Location/Qualifiers
                      /variant_of="ColE1"
      regulatory      1..6
                      /label="RNA II promoter -35"
-                     /parent="ColE1_AT"
+                     /parent="ColE1 (vector form)"
                      /regulatory_class="minus_35_signal"
                      /note="Top-strand -35 hexamer (TTGAGA) of the RNA II
                      promoter, which drives the ColE1/pMB1 replication
@@ -71,7 +71,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      22..27
                      /label="RNA II promoter -10"
-                     /parent="ColE1_AT"
+                     /parent="ColE1 (vector form)"
                      /regulatory_class="minus_10_signal"
                      /note="Top-strand -10 hexamer (CGTAAT) of the RNA II
                      promoter, 15 bp downstream of the -35."
@@ -80,7 +80,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      complement(178..183)
                      /label="RNA I promoter -35"
-                     /parent="ColE1_AT"
+                     /parent="ColE1 (vector form)"
                      /regulatory_class="minus_35_signal"
                      /note="-35 hexamer of the convergent RNA I promoter on the
                      bottom strand."
@@ -89,7 +89,7 @@ FEATURES             Location/Qualifiers
                      /citation=[2]
      regulatory      complement(156..161)
                      /label="RNA I promoter -10"
-                     /parent="ColE1_AT"
+                     /parent="ColE1 (vector form)"
                      /regulatory_class="minus_10_signal"
                      /note="-10 hexamer of the RNA I promoter on the bottom
                      strand."

@@ -58,9 +58,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..307
-                     /label="186_attP"
+                     /label="186 attP"
                      /synonym="186_attP"
-                     /synonym="186 attP"
                      /synonym="phage 186 attP"
                      /synonym="186 attachment site"
                      /note="Bacteriophage 186 phage attachment site (attP) for
@@ -82,7 +81,7 @@ FEATURES             Location/Qualifiers
                      /cognate="186_attB"
      protein_bind    complement(13..23)
                      /label="Int arm-type site 1 (P arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted Int arm-type recognition sequence. The arm
                      motif (consensus YAYCGCCAYTY) lies on the minus strand
                      here: reverse complement of the [12,23) forward sequence
@@ -99,7 +98,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
      protein_bind    31..41
                      /label="Int arm-type site 2 (P arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted Int arm-type recognition sequence
                      (CACCGCCATTC), matching the YAYCGCCAYTY consensus on the
                      plus strand. Within GenBank NC_001317.1 protein_bind
@@ -110,7 +109,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
      protein_bind    42..52
                      /label="Int arm-type site 3 (P arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted Int arm-type recognition sequence
                      (TATCGCCACTC), matching the YAYCGCCAYTY consensus on the
                      plus strand. Within GenBank NC_001317.1 protein_bind
@@ -121,7 +120,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
      protein_bind    93..119
                      /label="IHF site H1 (P arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Integration host factor (IHF) binding site on the P
                      (left) arm, between the core and the P-arm Int sites (27
                      bp). GenBank NC_001317.1 annotates protein_bind here with
@@ -135,7 +134,7 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
      misc_feature    119..164
                      /label="tRNA-Ile / attB common core (BOB')"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="BOB' core region shared between phage attP and the
                      host attB, overlapping a (truncated) tRNA-Ile gene;
                      integration occurs within the E. coli ileY tRNA-Ile locus.
@@ -149,7 +148,7 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
      misc_feature    157..163
                      /label="attP crossover (O region, 7-bp overlap)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted 7-bp staggered-cut overlap (O region) at
                      which the 186 tyrosine integrase exchanges strands; lies
                      inside the attB-common core. GenBank NC_001317.1
@@ -162,7 +161,7 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
      protein_bind    191..220
                      /label="IHF site H2 (P' arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Candidate second IHF binding site on the P' (right)
                      arm, between the crossover core and the Apl operators (30
                      bp). GenBank NC_001317.1 annotates protein_bind here with
@@ -177,7 +176,7 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
      protein_bind    209..256
                      /label="Apl operators (5x, P' arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Region containing five Apl operator sites. Apl is
                      the 186 recombination directionality factor (RDF; the 186
                      homolog of P2 Cox / HP1 Cox), a cooperatively-binding HTH
@@ -195,7 +194,7 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
      protein_bind    260..270
                      /label="Int arm-type site 4 (P' arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted Int arm-type recognition sequence
                      (TACCGCCACTT), matching the YAYCGCCAYTY consensus on the
                      plus strand. GenBank NC_001317.1 protein_bind
@@ -207,7 +206,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
      protein_bind    271..281
                      /label="Int arm-type site 5 (P' arm)"
-                     /parent="186_attP"
+                     /parent="186 attP"
                      /note="Predicted Int arm-type recognition sequence
                      (TATCGCCATTC), matching the YAYCGCCAYTY consensus on the
                      plus strand. GenBank NC_001317.1 protein_bind

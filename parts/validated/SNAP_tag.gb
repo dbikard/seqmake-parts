@@ -74,10 +74,10 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, unsourced
 FEATURES             Location/Qualifiers
      protein_domain  1..179
-                     /label="SNAP_tag"
+                     /label="SNAP tag"
+                     /synonym="SNAP_tag"
                      /synonym="SNAP"
                      /synonym="hAGT-derived self-labeling tag"
-                     /synonym="SNAP tag"
                      /synonym="benzylguanine self-labeling tag"
                      /note="SNAP-tag self-labeling protein domain (179 aa),
                      engineered by directed evolution from human

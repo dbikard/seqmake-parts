@@ -77,7 +77,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..26
-                     /label="CBP_tag"
+                     /label="CBP tag"
+                     /synonym="CBP_tag"
                      /synonym="calmodulin-binding peptide"
                      /synonym="CBP"
                      /synonym="calmodulin binding peptide"

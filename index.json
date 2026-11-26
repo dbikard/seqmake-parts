@@ -22,6 +22,36 @@
   "n_functional_claims": 362,
   "parts": [
     {
+      "slug": "186_attB",
+      "name": "186 attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 0,
+      "synonyms": [
+        "186_attB"
+      ]
+    },
+    {
+      "slug": "186_attP",
+      "name": "186 attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 3,
+      "synonyms": [
+        "186_attP",
+        "phage 186 attP",
+        "186 attachment site"
+      ]
+    },
+    {
       "slug": "186_integrase",
       "name": "186 integrase",
       "feature_type": "CDS",
@@ -33,38 +63,6 @@
       "n_claims": 0,
       "synonyms": [
         "186 integrase"
-      ]
-    },
-    {
-      "slug": "186_attB",
-      "name": "186_attB",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 0,
-      "synonyms": [
-        "186_attB",
-        "186 attB"
-      ]
-    },
-    {
-      "slug": "186_attP",
-      "name": "186_attP",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 3,
-      "synonyms": [
-        "186_attP",
-        "186 attP",
-        "phage 186 attP",
-        "186 attachment site"
       ]
     },
     {
@@ -210,7 +208,7 @@
     },
     {
       "slug": "ALFA_tag",
-      "name": "ALFA_tag",
+      "name": "ALFA tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -219,6 +217,7 @@
       "sourced": true,
       "n_claims": 8,
       "synonyms": [
+        "ALFA_tag",
         "ALFA-tag",
         "ALFA epitope",
         "SRLEEELRRRLTE"
@@ -239,6 +238,24 @@
         "alkS",
         "alkane-responsive regulator",
         "alkS crc-mut"
+      ]
+    },
+    {
+      "slug": "bla",
+      "name": "AmpR",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "status": "validated",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "bla",
+        "TEM-1",
+        "amp",
+        "beta-lactamase",
+        "penicillinase"
       ]
     },
     {
@@ -290,7 +307,7 @@
     },
     {
       "slug": "B0015_terminator",
-      "name": "B0015_terminator",
+      "name": "B0015 terminator",
       "feature_type": "terminator",
       "kind": "dna",
       "so_term": "SO:0000141",
@@ -299,6 +316,7 @@
       "sourced": true,
       "n_claims": 0,
       "synonyms": [
+        "B0015_terminator",
         "BBa_B0015",
         "B0015",
         "double terminator",
@@ -321,7 +339,7 @@
     },
     {
       "slug": "B0034_RBS",
-      "name": "B0034_RBS",
+      "name": "B0034 RBS",
       "feature_type": "RBS",
       "kind": "dna",
       "so_term": "SO:0000139",
@@ -330,6 +348,7 @@
       "sourced": true,
       "n_claims": 0,
       "synonyms": [
+        "B0034_RBS",
         "BBa_B0034",
         "B0034",
         "BioBrick RBS"
@@ -337,7 +356,7 @@
     },
     {
       "slug": "BC2_tag",
-      "name": "BC2_tag",
+      "name": "BC2 tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -346,8 +365,8 @@
       "sourced": true,
       "n_claims": 11,
       "synonyms": [
+        "BC2_tag",
         "BC2T",
-        "BC2 tag",
         "beta-catenin epitope"
       ]
     },
@@ -382,24 +401,6 @@
         "biotin protein ligase",
         "biotin ligase",
         "BPL"
-      ]
-    },
-    {
-      "slug": "bla",
-      "name": "bla",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "status": "validated",
-      "sourced": true,
-      "n_claims": 1,
-      "synonyms": [
-        "AmpR",
-        "TEM-1",
-        "amp",
-        "beta-lactamase",
-        "penicillinase"
       ]
     },
     {
@@ -554,7 +555,7 @@
     },
     {
       "slug": "CBP_tag",
-      "name": "CBP_tag",
+      "name": "CBP tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -563,6 +564,7 @@
       "sourced": true,
       "n_claims": 12,
       "synonyms": [
+        "CBP_tag",
         "calmodulin-binding peptide",
         "CBP",
         "calmodulin binding peptide"
@@ -720,7 +722,7 @@
     },
     {
       "slug": "ColE1_AT",
-      "name": "ColE1_AT",
+      "name": "ColE1 (vector form)",
       "feature_type": "rep_origin",
       "kind": "dna",
       "so_term": "SO:0000296",
@@ -936,7 +938,7 @@
     },
     {
       "slug": "enterokinase_site",
-      "name": "enterokinase_site",
+      "name": "enterokinase site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -945,6 +947,7 @@
       "sourced": true,
       "n_claims": 5,
       "synonyms": [
+        "enterokinase_site",
         "enterokinase",
         "enterokinase cleavage site",
         "EK site",
@@ -1017,7 +1020,7 @@
     },
     {
       "slug": "FactorXa_site",
-      "name": "FactorXa_site",
+      "name": "Factor Xa site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -1026,6 +1029,7 @@
       "sourced": true,
       "n_claims": 5,
       "synonyms": [
+        "FactorXa_site",
         "Factor Xa cleavage site",
         "FXa site",
         "IEGR"
@@ -1289,6 +1293,36 @@
       ]
     },
     {
+      "slug": "HK022_attB",
+      "name": "HK022 attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 0,
+      "synonyms": [
+        "HK022_attB"
+      ]
+    },
+    {
+      "slug": "HK022_attP",
+      "name": "HK022 attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 4,
+      "synonyms": [
+        "HK022_attP",
+        "phage HK022 attP",
+        "HK022 attachment site (phage)"
+      ]
+    },
+    {
       "slug": "HK022_integrase",
       "name": "HK022 integrase",
       "feature_type": "CDS",
@@ -1300,38 +1334,6 @@
       "n_claims": 0,
       "synonyms": [
         "HK022 integrase"
-      ]
-    },
-    {
-      "slug": "HK022_attB",
-      "name": "HK022_attB",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 0,
-      "synonyms": [
-        "HK022_attB",
-        "HK022 attB"
-      ]
-    },
-    {
-      "slug": "HK022_attP",
-      "name": "HK022_attP",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 4,
-      "synonyms": [
-        "HK022_attP",
-        "HK022 attP",
-        "phage HK022 attP",
-        "HK022 attachment site (phage)"
       ]
     },
     {
@@ -1354,7 +1356,7 @@
     },
     {
       "slug": "HRV3C_site",
-      "name": "HRV3C_site",
+      "name": "HRV 3C site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -1363,9 +1365,9 @@
       "sourced": true,
       "n_claims": 8,
       "synonyms": [
+        "HRV3C_site",
         "PreScission protease site",
         "3C protease cleavage site",
-        "HRV 3C site",
         "LEVLFQGP"
       ]
     },
@@ -1804,6 +1806,36 @@
       ]
     },
     {
+      "slug": "lambda_attB",
+      "name": "lambda attB",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 0,
+      "synonyms": [
+        "lambda_attB"
+      ]
+    },
+    {
+      "slug": "lambda_attP",
+      "name": "lambda attP",
+      "feature_type": "protein_bind",
+      "kind": "dna",
+      "so_term": "SO:0000057",
+      "so_name": "operator",
+      "status": "candidate",
+      "sourced": true,
+      "n_claims": 4,
+      "synonyms": [
+        "lambda_attP",
+        "phage lambda attP",
+        "lambda POP'"
+      ]
+    },
+    {
       "slug": "lambda_cos",
       "name": "lambda cos",
       "feature_type": "misc_feature",
@@ -1865,38 +1897,6 @@
       ]
     },
     {
-      "slug": "lambda_attB",
-      "name": "lambda_attB",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 0,
-      "synonyms": [
-        "lambda_attB",
-        "lambda attB"
-      ]
-    },
-    {
-      "slug": "lambda_attP",
-      "name": "lambda_attP",
-      "feature_type": "protein_bind",
-      "kind": "dna",
-      "so_term": "SO:0000057",
-      "so_name": "operator",
-      "status": "candidate",
-      "sourced": true,
-      "n_claims": 4,
-      "synonyms": [
-        "lambda_attP",
-        "lambda attP",
-        "phage lambda attP",
-        "lambda POP'"
-      ]
-    },
-    {
       "slug": "LEU2",
       "name": "LEU2",
       "feature_type": "CDS",
@@ -1914,7 +1914,7 @@
     },
     {
       "slug": "LPETG_tag",
-      "name": "LPETG_tag",
+      "name": "LPETG tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -1923,6 +1923,7 @@
       "sourced": true,
       "n_claims": 8,
       "synonyms": [
+        "LPETG_tag",
         "sortase A recognition motif",
         "LPXTG motif",
         "sortag",
@@ -2183,21 +2184,6 @@
       ]
     },
     {
-      "slug": "P2",
-      "name": "P2",
-      "feature_type": "promoter",
-      "kind": "dna",
-      "so_term": "SO:0000167",
-      "so_name": "promoter",
-      "status": "validated",
-      "sourced": true,
-      "n_claims": 1,
-      "synonyms": [
-        "Ptet2",
-        "pBR322 tet promoter"
-      ]
-    },
-    {
       "slug": "P2A",
       "name": "P2A",
       "feature_type": "protein_domain",
@@ -2420,7 +2406,7 @@
     },
     {
       "slug": "phi80_attB",
-      "name": "phi80_attB",
+      "name": "phi80 attB",
       "feature_type": "protein_bind",
       "kind": "dna",
       "so_term": "SO:0000057",
@@ -2429,13 +2415,12 @@
       "sourced": true,
       "n_claims": 0,
       "synonyms": [
-        "phi80_attB",
-        "phi80 attB"
+        "phi80_attB"
       ]
     },
     {
       "slug": "phi80_attP",
-      "name": "phi80_attP",
+      "name": "phi80 attP",
       "feature_type": "protein_bind",
       "kind": "dna",
       "so_term": "SO:0000057",
@@ -2445,14 +2430,13 @@
       "n_claims": 4,
       "synonyms": [
         "phi80_attP",
-        "phi80 attP",
         "phi-80 attP",
         "phage phi80 attP"
       ]
     },
     {
       "slug": "phiC31_attB",
-      "name": "phiC31_attB",
+      "name": "phiC31 attB",
       "feature_type": "protein_bind",
       "kind": "dna",
       "so_term": "SO:0000057",
@@ -2461,13 +2445,12 @@
       "sourced": true,
       "n_claims": 0,
       "synonyms": [
-        "phiC31_attB",
-        "phiC31 attB"
+        "phiC31_attB"
       ]
     },
     {
       "slug": "phiC31_attP",
-      "name": "phiC31_attP",
+      "name": "phiC31 attP",
       "feature_type": "protein_bind",
       "kind": "dna",
       "so_term": "SO:0000057",
@@ -2477,7 +2460,6 @@
       "n_claims": 3,
       "synonyms": [
         "phiC31_attP",
-        "phiC31 attP",
         "phi-C31 attP",
         "phiC31 attachment site"
       ]
@@ -3047,6 +3029,22 @@
       ]
     },
     {
+      "slug": "P2",
+      "name": "Ptet (pBR322)",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "status": "validated",
+      "sourced": true,
+      "n_claims": 1,
+      "synonyms": [
+        "P2",
+        "Ptet2",
+        "pBR322 tet promoter"
+      ]
+    },
+    {
       "slug": "PtetA",
       "name": "PtetA",
       "feature_type": "promoter",
@@ -3582,7 +3580,7 @@
     },
     {
       "slug": "SBP_tag",
-      "name": "SBP_tag",
+      "name": "SBP tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -3591,6 +3589,7 @@
       "sourced": true,
       "n_claims": 7,
       "synonyms": [
+        "SBP_tag",
         "streptavidin-binding peptide",
         "SBP",
         "SBP-Tag",
@@ -3651,7 +3650,7 @@
     },
     {
       "slug": "SNAP_tag",
-      "name": "SNAP_tag",
+      "name": "SNAP tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -3660,9 +3659,9 @@
       "sourced": false,
       "n_claims": 8,
       "synonyms": [
+        "SNAP_tag",
         "SNAP",
         "hAGT-derived self-labeling tag",
-        "SNAP tag",
         "benzylguanine self-labeling tag"
       ]
     },
@@ -3742,7 +3741,7 @@
     },
     {
       "slug": "Spot_tag",
-      "name": "Spot_tag",
+      "name": "Spot tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -3751,6 +3750,7 @@
       "sourced": true,
       "n_claims": 6,
       "synonyms": [
+        "Spot_tag",
         "Spot-tag",
         "SPOT-tag",
         "PDRVRAVSHWSS"
@@ -3834,7 +3834,7 @@
     },
     {
       "slug": "Strep_tag",
-      "name": "Strep_tag",
+      "name": "Strep tag II",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -3843,6 +3843,7 @@
       "sourced": true,
       "n_claims": 5,
       "synonyms": [
+        "Strep_tag",
         "Strep-tag II",
         "Strep tag",
         "Strep-tag",
@@ -3887,7 +3888,7 @@
     },
     {
       "slug": "SV40_PA_terminator",
-      "name": "SV40_PA_terminator",
+      "name": "SV40 polyA terminator",
       "feature_type": "terminator",
       "kind": "dna",
       "so_term": "SO:0000141",
@@ -3949,6 +3950,26 @@
       ]
     },
     {
+      "slug": "T7_tag",
+      "name": "T7 tag",
+      "feature_type": "protein_domain",
+      "kind": "protein",
+      "so_term": "SO:0000417",
+      "so_name": "polypeptide_domain",
+      "status": "validated",
+      "sourced": true,
+      "n_claims": 4,
+      "synonyms": [
+        "T7_tag",
+        "T7-tag",
+        "T7 tag (gene 10 leader)",
+        "gene 10 leader",
+        "T7 epitope",
+        "gene 10 leader peptide",
+        "MASMTGGQQMG"
+      ]
+    },
+    {
       "slug": "T7_terminator",
       "name": "T7 terminator",
       "feature_type": "terminator",
@@ -3978,26 +3999,6 @@
         "T7p01",
         "Ocr",
         "gene 0.3 protein"
-      ]
-    },
-    {
-      "slug": "T7_tag",
-      "name": "T7_tag",
-      "feature_type": "protein_domain",
-      "kind": "protein",
-      "so_term": "SO:0000417",
-      "so_name": "polypeptide_domain",
-      "status": "validated",
-      "sourced": true,
-      "n_claims": 4,
-      "synonyms": [
-        "T7 tag",
-        "T7-tag",
-        "T7 tag (gene 10 leader)",
-        "gene 10 leader",
-        "T7 epitope",
-        "gene 10 leader peptide",
-        "MASMTGGQQMG"
       ]
     },
     {
@@ -4142,7 +4143,7 @@
     },
     {
       "slug": "TEV_site",
-      "name": "TEV_site",
+      "name": "TEV site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -4151,7 +4152,7 @@
       "sourced": true,
       "n_claims": 6,
       "synonyms": [
-        "TEV site",
+        "TEV_site",
         "TEV",
         "TEV cleavage site",
         "TEV protease site",
@@ -4161,7 +4162,7 @@
     },
     {
       "slug": "thrombin_site",
-      "name": "thrombin_site",
+      "name": "thrombin site",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -4170,7 +4171,7 @@
       "sourced": true,
       "n_claims": 6,
       "synonyms": [
-        "thrombin site",
+        "thrombin_site",
         "thrombin",
         "thrombin cleavage site",
         "thrombin recognition site",
@@ -4256,7 +4257,7 @@
     },
     {
       "slug": "Trx_tag",
-      "name": "Trx_tag",
+      "name": "Trx tag",
       "feature_type": "CDS",
       "kind": "protein",
       "so_term": "SO:0000316",
@@ -4265,6 +4266,7 @@
       "sourced": true,
       "n_claims": 7,
       "synonyms": [
+        "Trx_tag",
         "trxA",
         "thioredoxin",
         "thioredoxin-1",
@@ -4274,7 +4276,7 @@
     },
     {
       "slug": "Twin_Strep_tag",
-      "name": "Twin_Strep_tag",
+      "name": "Twin Strep tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -4283,10 +4285,10 @@
       "sourced": true,
       "n_claims": 4,
       "synonyms": [
+        "Twin_Strep_tag",
         "Twin-Strep-tag",
         "Twin-Strep",
-        "Strep-tag II tandem",
-        "Twin Strep tag"
+        "Strep-tag II tandem"
       ]
     },
     {
@@ -4351,7 +4353,7 @@
     },
     {
       "slug": "V5_tag",
-      "name": "V5_tag",
+      "name": "V5 tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -4360,7 +4362,7 @@
       "sourced": true,
       "n_claims": 6,
       "synonyms": [
-        "V5 tag",
+        "V5_tag",
         "V5 epitope",
         "Pk-tag",
         "Pk tag",
@@ -4370,7 +4372,7 @@
     },
     {
       "slug": "VSVG_tag",
-      "name": "VSVG_tag",
+      "name": "VSV G tag",
       "feature_type": "protein_domain",
       "kind": "protein",
       "so_term": "SO:0000417",
@@ -4379,6 +4381,7 @@
       "sourced": true,
       "n_claims": 6,
       "synonyms": [
+        "VSVG_tag",
         "VSV-G tag",
         "VSV-G epitope",
         "VSVG epitope",

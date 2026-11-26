@@ -252,8 +252,8 @@ part:AlkS a sbol:Component ;
     cat:slug "AlkS" .
 
 part:B0015_terminator a sbol:Component ;
-    rdfs:label "B0015_terminator" ;
-    dcterms:title "B0015_terminator" ;
+    rdfs:label "B0015 terminator" ;
+    dcterms:title "B0015 terminator" ;
     sbol:displayId "B0015_terminator" ;
     sbol:hasFeature part:B0015_terminator_feature_0,
         part:B0015_terminator_feature_1 ;
@@ -263,6 +263,7 @@ part:B0015_terminator a sbol:Component ;
     sbol:type sbo:0000251 ;
     skos:altLabel "B0010-B0012",
         "B0015",
+        "B0015_terminator",
         "BBa_B0015",
         "double terminator" ;
     cat:curationStatus "candidate" ;
@@ -283,14 +284,15 @@ part:B0030_RBS a sbol:Component ;
     cat:slug "B0030_RBS" .
 
 part:B0034_RBS a sbol:Component ;
-    rdfs:label "B0034_RBS" ;
-    dcterms:title "B0034_RBS" ;
+    rdfs:label "B0034 RBS" ;
+    dcterms:title "B0034 RBS" ;
     sbol:displayId "B0034_RBS" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:B0034_RBS_sequence ;
     sbol:role so:0000139 ;
     sbol:type sbo:0000251 ;
     skos:altLabel "B0034",
+        "B0034_RBS",
         "BBa_B0034",
         "BioBrick RBS" ;
     cat:curationStatus "candidate" ;
@@ -492,14 +494,14 @@ part:ColE1 a sbol:Component ;
     cat:sourceAccession "GenBank:J01749" .
 
 part:ColE1_AT a sbol:Component ;
-    rdfs:label "ColE1_AT" ;
+    rdfs:label "ColE1 (vector form)" ;
     dcterms:description "ColE1/pMB1 origin, common cloning-vector form: identical to the canonical 589 bp pMB1 origin except a benign 2-bp difference (positions 393-394 (1-based)) in the RNA I/RNA II control region; carried by 140+ deposited vectors since 1985." ;
     dcterms:references pubmed:2434459,
         pubmed:325558,
         pubmed:6156450,
         pubmed:6165011,
         pubmed:6279609 ;
-    dcterms:title "ColE1_AT" ;
+    dcterms:title "ColE1 (vector form)" ;
     sbol:displayId "ColE1_AT" ;
     sbol:hasFeature part:ColE1_AT_feature_0,
         part:ColE1_AT_feature_1,
@@ -1060,13 +1062,13 @@ part:Nme2Cas9 a sbol:Component ;
     cat:slug "Nme2Cas9" .
 
 part:P2 a sbol:Component ;
-    rdfs:label "P2" ;
+    rdfs:label "Ptet (pBR322)" ;
     dcterms:description "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no..." ;
     dcterms:references pubmed:3045754,
         pubmed:383387,
         pubmed:7826010,
         pubmed:9092630 ;
-    dcterms:title "P2" ;
+    dcterms:title "Ptet (pBR322)" ;
     sbol:displayId "P2" ;
     sbol:hasFeature part:P2_feature_0,
         part:P2_feature_1 ;
@@ -1074,7 +1076,8 @@ part:P2 a sbol:Component ;
     sbol:hasSequence part:P2_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "Ptet2",
+    skos:altLabel "P2",
+        "Ptet2",
         "pBR322 tet promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -1852,8 +1855,8 @@ part:SV40_NLS a sbol:Component ;
     cat:slug "SV40_NLS" .
 
 part:SV40_PA_terminator a sbol:Component ;
-    rdfs:label "SV40_PA_terminator" ;
-    dcterms:title "SV40_PA_terminator" ;
+    rdfs:label "SV40 polyA terminator" ;
+    dcterms:title "SV40 polyA terminator" ;
     sbol:displayId "SV40_PA_terminator" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:SV40_PA_terminator_sequence ;
@@ -2244,14 +2247,14 @@ part:bet a sbol:Component ;
     cat:slug "bet" .
 
 part:bla a sbol:Component ;
-    rdfs:label "bla" ;
+    rdfs:label "AmpR" ;
     dcterms:description "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker." ;
     dcterms:references pubmed:2039479,
         pubmed:31835662,
         pubmed:383387,
         pubmed:8356032,
         pubmed:9020874 ;
-    dcterms:title "bla" ;
+    dcterms:title "AmpR" ;
     sbol:displayId "bla" ;
     sbol:hasFeature part:bla_feature_0,
         part:bla_feature_1,
@@ -2265,10 +2268,10 @@ part:bla a sbol:Component ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
     rdfs:seeAlso <http://purl.uniprot.org/uniprot/P62593> ;
-    skos:altLabel "AmpR",
-        "TEM-1",
+    skos:altLabel "TEM-1",
         "amp",
         "beta-lactamase",
+        "bla",
         "penicillinase" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -3505,19 +3508,18 @@ part:trfA a sbol:Component ;
     cat:slug "trfA" .
 
 part:186_attB a sbol:Component ;
-    rdfs:label "186_attB" ;
+    rdfs:label "186 attB" ;
     dcterms:description "Phage 186 bacterial attachment site attB, overlapping the 3′ half of the tRNA-Ile gene (preserved on integration). 46 bp shared core (identical to the 186_attP core), read 5′->3′ on the minus strand of NC_000913.3 at the tRNA-Ile locus. NCBI annotates the gene as ileX (b3069); the phage/pOSIP literature names the site ileY (distinct from NCBI ileY b2652 — a nomenclature caveat). Cognate phage site: 186_attP." ;
     dcterms:references pubmed:11591683,
         pubmed:24050148,
         pubmed:3806670 ;
-    dcterms:title "186_attB" ;
+    dcterms:title "186 attB" ;
     sbol:displayId "186_attB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:186_attB_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "186 attB",
-        "186_attB" ;
+    skos:altLabel "186_attB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "186_attB" .
@@ -3529,7 +3531,7 @@ part:186_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:186_attP a sbol:Component ;
-    rdfs:label "186_attP" ;
+    rdfs:label "186 attP" ;
     dcterms:description "Bacteriophage 186 phage attachment site (attP) for the 186 tyrosine integrase. 307 bp spanning the full attP functional region: Int arm-type recognition sequences on the P (left) and P' (right) arms, a single P-arm IHF site, the tRNA-Ile/attB common core (BOB') with the predicted 7-bp staggered crossover, a right-arm IHF site, and five Apl (recombination directionality factor) operators. 186 is a P2-family lambdoid coliphage; integration into the host chromosome (within the ileY tRNA-Ile locus) requires 186 Int + IHF, while Apl directs excision. Source: NC_001317.1 positions 20867-21173." ;
     dcterms:references pubmed:15661160,
         pubmed:3011407,
@@ -3537,7 +3539,7 @@ part:186_attP a sbol:Component ;
         pubmed:3806670,
         pubmed:7997180,
         pubmed:8444786 ;
-    dcterms:title "186_attP" ;
+    dcterms:title "186 attP" ;
     sbol:displayId "186_attP" ;
     sbol:hasFeature part:186_attP_feature_0,
         part:186_attP_feature_1,
@@ -3553,8 +3555,7 @@ part:186_attP a sbol:Component ;
     sbol:hasSequence part:186_attP_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "186 attP",
-        "186 attachment site",
+    skos:altLabel "186 attachment site",
         "186_attP",
         "phage 186 attP" ;
     cat:curationStatus "candidate" ;
@@ -3914,7 +3915,7 @@ part:AID_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:ALFA_tag a sbol:Component ;
-    rdfs:label "ALFA_tag" ;
+    rdfs:label "ALFA tag" ;
     dcterms:description "13-aa synthetic epitope tag SRLEEELRRRLTE. Recognized with sub-nanomolar affinity by NbALFA (Kd = 26 pM). No internal functional sub-elements; the tag acts as a single binding epitope." ;
     dcterms:references pubmed:31562305,
         pubmed:33718340,
@@ -3923,7 +3924,7 @@ part:ALFA_tag a sbol:Component ;
         pubmed:36497133,
         pubmed:40196699,
         pubmed:40883491 ;
-    dcterms:title "ALFA_tag" ;
+    dcterms:title "ALFA tag" ;
     sbol:displayId "ALFA_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:ALFA_tag_sequence ;
@@ -3931,6 +3932,7 @@ part:ALFA_tag a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "ALFA epitope",
         "ALFA-tag",
+        "ALFA_tag",
         "SRLEEELRRRLTE" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -4400,20 +4402,20 @@ part:B0034_RBS_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:BC2_tag a sbol:Component ;
-    rdfs:label "BC2_tag" ;
+    rdfs:label "BC2 tag" ;
     dcterms:description "12-aa linear epitope tag PDRKAAVSHWQQ (BC2T), corresponding to residues 16–27 of human beta-catenin (UniProt P35222). Bound by the BC2 nanobody (BC2-Nb) with Kd ~1.4 nM via a 'headlock' binding mode: the peptide adopts a beta-strand that integrates into a beta-sheet of the nanobody, providing affinity through backbone hydrogen bonds. Specificity is set by only four side chains (R3, A6, S8, W10, with W10 invariable); the other eight positions tolerate substitution, allowing the tag to be re-engineered. Functions as a single binding epitope with no independently used internal sub-elements." ;
     dcterms:references pubmed:25595278,
         pubmed:26791954,
         pubmed:29500346,
         pubmed:35780707 ;
-    dcterms:title "BC2_tag" ;
+    dcterms:title "BC2 tag" ;
     sbol:displayId "BC2_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:BC2_tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
-    skos:altLabel "BC2 tag",
-        "BC2T",
+    skos:altLabel "BC2T",
+        "BC2_tag",
         "beta-catenin epitope" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -4778,7 +4780,7 @@ part:CAG_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:CBP_tag a sbol:Component ;
-    rdfs:label "CBP_tag" ;
+    rdfs:label "CBP tag" ;
     dcterms:description "26-aa calmodulin-binding peptide (CBP) from the C-terminus of myosin light-chain kinase (UniProt P07313 residues 578-603); binds calmodulin in a Ca2+-dependent manner and is eluted with EGTA; second/C-terminal affinity handle of the TAP and InterPlay tandem-affinity tags." ;
     dcterms:references pubmed:10504710,
         pubmed:11036652,
@@ -4788,13 +4790,14 @@ part:CBP_tag a sbol:Component ;
         pubmed:3841496,
         pubmed:3858814,
         pubmed:9047344 ;
-    dcterms:title "CBP_tag" ;
+    dcterms:title "CBP tag" ;
     sbol:displayId "CBP_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:CBP_tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "CBP",
+        "CBP_tag",
         "calmodulin binding peptide",
         "calmodulin-binding peptide" ;
     cat:curationStatus "validated" ;
@@ -5622,7 +5625,7 @@ part:FRT_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:FactorXa_site a sbol:Component ;
-    rdfs:label "FactorXa_site" ;
+    rdfs:label "Factor Xa site" ;
     dcterms:description "Coagulation Factor Xa protease recognition site (IEGR; Ile-Glu-Gly-Arg). Factor Xa cleaves the peptide bond on the C-terminal (carboxyl) side of the P1 Arg, i.e. after the terminal R (IEGR|...). Whole-part feature spanning all 4 residues; this is a single atomic functional element and has no functional sub-features." ;
     dcterms:references pubmed:12963335,
         pubmed:18296445,
@@ -5632,7 +5635,7 @@ part:FactorXa_site a sbol:Component ;
         pubmed:6330564,
         pubmed:7827058,
         pubmed:8427626 ;
-    dcterms:title "FactorXa_site" ;
+    dcterms:title "Factor Xa site" ;
     sbol:displayId "FactorXa_site" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:FactorXa_site_sequence ;
@@ -5640,6 +5643,7 @@ part:FactorXa_site a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "FXa site",
         "Factor Xa cleavage site",
+        "FactorXa_site",
         "IEGR" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -6603,19 +6607,18 @@ part:HIS3_feature_9_range a sbol:Range ;
     sbol:start 162 .
 
 part:HK022_attB a sbol:Component ;
-    rdfs:label "HK022_attB" ;
+    rdfs:label "HK022 attB" ;
     dcterms:description "Phage HK022 bacterial attachment site attB. HK022 (a lambdoid coliphage with altered att specificity vs lambda) integrates in the torS-torT intergenic region — NOT leuX. 44 bp window from NC_000913.3 containing the 7 bp common-core overlap AGGTGAA (the solid, source-verified element); the exact minimal BOB′ boundaries are not pinned to a primary figure and are PROVISIONAL. Cognate phage site: HK022_attP." ;
     dcterms:references pubmed:11591683,
         pubmed:2146253,
         pubmed:24050148 ;
-    dcterms:title "HK022_attB" ;
+    dcterms:title "HK022 attB" ;
     sbol:displayId "HK022_attB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:HK022_attB_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "HK022 attB",
-        "HK022_attB" ;
+    skos:altLabel "HK022_attB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "HK022_attB" .
@@ -6627,20 +6630,19 @@ part:HK022_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:HK022_attP a sbol:Component ;
-    rdfs:label "HK022_attP" ;
+    rdfs:label "HK022 attP" ;
     dcterms:description "HK022 phage attachment (att) site: the Int (tyrosine recombinase) recombination substrate that carries the arm-type and core-type Int-binding sites flanking the crossover overlap (O) region. Source-verified against X51962 (complement strand 229..486, 100% identity over 258 bp). The crossover (overlap) region's exact boundaries inside this window are not pinned to a primary figure and are left unstated; the window is conserved with the lambda att core." ;
     dcterms:references pubmed:11591683,
         pubmed:2146253,
         pubmed:24050148,
         pubmed:2547971 ;
-    dcterms:title "HK022_attP" ;
+    dcterms:title "HK022 attP" ;
     sbol:displayId "HK022_attP" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:HK022_attP_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "HK022 attP",
-        "HK022 attachment site (phage)",
+    skos:altLabel "HK022 attachment site (phage)",
         "HK022_attP",
         "phage HK022 attP" ;
     cat:curationStatus "candidate" ;
@@ -6740,7 +6742,7 @@ part:HK022_integrase_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:HRV3C_site a sbol:Component ;
-    rdfs:label "HRV3C_site" ;
+    rdfs:label "HRV 3C site" ;
     dcterms:description "Human rhinovirus 3C protease recognition and cleavage site (LEVLFQGP; Leu-Glu-Val-Leu-Phe-Gln-Gly-Pro). The 3C cysteine protease cleaves the peptide bond between Q (P1) and G (P1'), i.e. LEVLFQ|GP, leaving a Gly-Pro N-terminal scar on the downstream protein. The site derives from the natural HRV polyprotein processing sequence at residues 1423-1430 of HRV3 (UniProt Q82081). It is the recognition sequence used in the PreScission protease reagent (a GST-HRV3C fusion). Source-verified to UniProt Q82081 (POLG_HRV3) at 100% identity over all 8 aa. No functional sub-features are present: this is a single atomic cleavage-site element." ;
     dcterms:references pubmed:2160953,
         pubmed:21871965,
@@ -6750,14 +6752,14 @@ part:HRV3C_site a sbol:Component ;
         pubmed:35642592,
         pubmed:38521339,
         pubmed:9328292 ;
-    dcterms:title "HRV3C_site" ;
+    dcterms:title "HRV 3C site" ;
     sbol:displayId "HRV3C_site" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:HRV3C_site_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "3C protease cleavage site",
-        "HRV 3C site",
+        "HRV3C_site",
         "LEVLFQGP",
         "PreScission protease site" ;
     cat:curationStatus "validated" ;
@@ -7508,7 +7510,7 @@ part:LEU2_feature_9_range a sbol:Range ;
     sbol:start 143 .
 
 part:LPETG_tag a sbol:Component ;
-    rdfs:label "LPETG_tag" ;
+    rdfs:label "LPETG tag" ;
     dcterms:description "Sortase A (SrtA) recognition motif and a single instance of the Gram-positive LPXTG cell-wall sorting signal (Leu-Pro-Glu-Thr-Gly). SrtA cleaves the scissile peptide bond between the P1 Thr and the P1' Gly (LPET|G), forming a covalent acyl-enzyme thioester intermediate at the active-site Cys; this intermediate is resolved by nucleophilic attack of an N-terminal oligoglycine (Gly-n, typically GGG/GGGGG) acceptor, ligating the upstream protein to the acceptor and regenerating an LPETGG... junction. Whole-part feature spanning all 5 residues; this is a single atomic functional element with no functional sub-features. The X position of the LPXTG consensus is most commonly Glu (E) in efficient engineering substrates. Source-verified to UniProt P02976 (Protein A) Motif 'LPXTG sorting signal' at positions 482-486, 5/5 identity." ;
     dcterms:references <https://doi.org/10.1073/pnas.1411179111>,
         pubmed:10427003,
@@ -7518,13 +7520,14 @@ part:LPETG_tag a sbol:Component ;
         pubmed:23989673,
         pubmed:24586638,
         pubmed:25644005 ;
-    dcterms:title "LPETG_tag" ;
+    dcterms:title "LPETG tag" ;
     sbol:displayId "LPETG_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:LPETG_tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "LPETG",
+        "LPETG_tag",
         "LPXTG motif",
         "sortag",
         "sortase A recognition motif" ;
@@ -10402,7 +10405,7 @@ part:S-tag_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:SBP_tag a sbol:Component ;
-    rdfs:label "SBP_tag" ;
+    rdfs:label "SBP tag" ;
     dcterms:description "Streptavidin-binding peptide (SBP-Tag), 38 aa (MDEKTTGWRGGHVVEGLAGELEQLRARLEHHPQGQREP). Synthetic peptide isolated by mRNA display that binds streptavidin with Kd ~2.5 nM; used for one-step affinity purification with mild competitive elution by biotin. Verified to 100% identity over all 38 residues against PDB 4JO6 chain Z. The peptide binds bivalently, contacting the biotin-binding pockets of two separate streptavidin subunits via an N-terminal HVV motif (residues 12-14) and a C-terminal HPQ motif (residues 31-33) bridged by a central alpha-helix (residues 17-28)." ;
     dcterms:references pubmed:11274392,
         pubmed:11722181,
@@ -10410,7 +10413,7 @@ part:SBP_tag a sbol:Component ;
         pubmed:21194474,
         pubmed:23633599,
         pubmed:27924562 ;
-    dcterms:title "SBP_tag" ;
+    dcterms:title "SBP tag" ;
     sbol:displayId "SBP_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:SBP_tag_sequence ;
@@ -10418,6 +10421,7 @@ part:SBP_tag a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "SBP",
         "SBP-Tag",
+        "SBP_tag",
         "streptavidin binding peptide",
         "streptavidin-binding peptide" ;
     cat:curationStatus "validated" ;
@@ -10577,7 +10581,7 @@ part:SEVA_tir_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:SNAP_tag a sbol:Component ;
-    rdfs:label "SNAP_tag" ;
+    rdfs:label "SNAP tag" ;
     dcterms:description "SNAP-tag self-labeling protein domain (179 aa), engineered by directed evolution from human O6-alkylguanine-DNA alkyltransferase (hAGT/MGMT, P16455). Covalently and irreversibly transfers the benzyl group of O6-benzylguanine (BG) substrates to its active-site cysteine (the I-P-C-H-R active-site motif; reactive Cys at residue 144 in this stored numbering, equivalent to canonical hAGT Cys145), thereby self-labeling the fusion protein with whatever chemical probe is appended to the BG. The 178-aa core (residues 2-179) is a 100% exact match to UniProt E5BBQ0 (182 aa, derived from PDB 3KZY) and PDB 3KZY chain A. The functional M-start ORF (179 aa) is used here; the deposited crystallography construct (E5BBQ0/3KZY, 182 aa) instead carries a GPGS cloning prefix in place of the initiator Met. Closest canonical reference: UniProt E5BBQ0 (unreviewed TrEMBL)." ;
     dcterms:references pubmed:12469133,
         pubmed:12725859,
@@ -10587,14 +10591,14 @@ part:SNAP_tag a sbol:Component ;
         pubmed:30745239,
         pubmed:40610720,
         pubmed:9934856 ;
-    dcterms:title "SNAP_tag" ;
+    dcterms:title "SNAP tag" ;
     sbol:displayId "SNAP_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:SNAP_tag_sequence ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "SNAP",
-        "SNAP tag",
+        "SNAP_tag",
         "benzylguanine self-labeling tag",
         "hAGT-derived self-labeling tag" ;
     cat:curationStatus "validated" ;
@@ -11273,13 +11277,13 @@ part:SpecR_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:Spot_tag a sbol:Component ;
-    rdfs:label "Spot_tag" ;
+    rdfs:label "Spot tag" ;
     dcterms:description "12-aa affinity/epitope tag (PDRVRAVSHWSS); affinity-optimized variant of the BC2-tag (PDRKAAVSHWQQ, residues 16-27 of human β-catenin P35222). Four substitutions relative to BC2T: K4V, A5R, Q11S, Q12S. Sequence first publicly disclosed as SEQ ID NO:33 (pTag1) in patent US20170137467A1." ;
     dcterms:references <https://doi.org/US20170137467A1>,
         pubmed:26791954,
         pubmed:29500346,
         pubmed:38779764 ;
-    dcterms:title "Spot_tag" ;
+    dcterms:title "Spot tag" ;
     sbol:displayId "Spot_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Spot_tag_sequence ;
@@ -11287,7 +11291,8 @@ part:Spot_tag a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "PDRVRAVSHWSS",
         "SPOT-tag",
-        "Spot-tag" ;
+        "Spot-tag",
+        "Spot_tag" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:Spot_tag_claim_affinity_kd,
@@ -12346,7 +12351,7 @@ part:St1Cas9_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:Strep_tag a sbol:Component ;
-    rdfs:label "Strep_tag" ;
+    rdfs:label "Strep tag II" ;
     dcterms:description "Strep-tag II core affinity peptide, WSHPQFEK (8 aa). Synthetic engineered peptide that binds the biotin-binding pocket of streptavidin and of engineered high-affinity streptavidin (Strep-Tactin) in a 3-10-helical conformation; eluted competitively by desthiobiotin or biotin. Atomic part: the 8 residues are the functional unit and carry no internal functional sub-elements. Verified to 100% identity over all 8 residues against PDB 1RSU chain P (positions 3-10)." ;
     dcterms:references <https://doi.org/10.1016/j.jmb.2021.166893>,
         <https://doi.org/10.1093/protein/6.1.109>,
@@ -12360,7 +12365,7 @@ part:Strep_tag a sbol:Component ;
         pubmed:7921186,
         pubmed:8636976,
         pubmed:9415448 ;
-    dcterms:title "Strep_tag" ;
+    dcterms:title "Strep tag II" ;
     sbol:displayId "Strep_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Strep_tag_sequence ;
@@ -12370,6 +12375,7 @@ part:Strep_tag a sbol:Component ;
         "Strep-tag",
         "Strep-tag II",
         "Strep-tag II peptide",
+        "Strep_tag",
         "WSHPQFEK" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -12512,7 +12518,7 @@ part:T7_g10_leader_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:T7_tag a sbol:Component ;
-    rdfs:label "T7_tag" ;
+    rdfs:label "T7 tag" ;
     dcterms:description "T7 tag (gene 10 leader peptide): the N-terminal 11-residue epitope MASMTGGQQMG of bacteriophage T7 Gene product 10A (major capsid protein). Functions both as a translational leader in T7-based expression vectors and as a short immunological epitope tag recognised by anti-T7 monoclonal antibodies. Atomic: the 11 aa are the complete functional unit with no internal sub-features. Distinct from the upstream DNA 5' UTR RBS element (T7_g10_leader)." ;
     dcterms:references pubmed:1820210,
         pubmed:1938901,
@@ -12520,7 +12526,7 @@ part:T7_tag a sbol:Component ;
         pubmed:3537305,
         pubmed:8840785,
         pubmed:9591127 ;
-    dcterms:title "T7_tag" ;
+    dcterms:title "T7 tag" ;
     sbol:displayId "T7_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:T7_tag_sequence ;
@@ -12528,9 +12534,9 @@ part:T7_tag a sbol:Component ;
     sbol:type sbo:0000252 ;
     skos:altLabel "MASMTGGQQMG",
         "T7 epitope",
-        "T7 tag",
         "T7 tag (gene 10 leader)",
         "T7-tag",
+        "T7_tag",
         "gene 10 leader",
         "gene 10 leader peptide" ;
     cat:curationStatus "validated" ;
@@ -12750,7 +12756,7 @@ part:TEF1_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:TEV_site a sbol:Component ;
-    rdfs:label "TEV_site" ;
+    rdfs:label "TEV site" ;
     dcterms:description "Tobacco Etch Virus (TEV) NIa protease recognition site, engineered form ENLYFQG (Glu-Asn-Leu-Tyr-Phe-Gln-Gly). TEV protease cleaves the scissile peptide bond between the P1 Gln and the P1' residue, i.e. after the Q (ENLYFQ|G), leaving a single non-native Gly on the released downstream product. Whole-part feature spanning all 7 residues; this is a single atomic functional element with no functional sub-features. P1'=Gly is an engineered variant of the natural NIb|CP junction sequence ENLYFQS (P1'=Ser)." ;
     dcterms:references pubmed:11809930,
         pubmed:12074568,
@@ -12758,7 +12764,7 @@ part:TEV_site a sbol:Component ;
         pubmed:3285343,
         pubmed:3409865,
         pubmed:8179197 ;
-    dcterms:title "TEV_site" ;
+    dcterms:title "TEV site" ;
     sbol:displayId "TEV_site" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:TEV_site_sequence ;
@@ -12769,7 +12775,7 @@ part:TEV_site a sbol:Component ;
         "TEV",
         "TEV cleavage site",
         "TEV protease site",
-        "TEV site" ;
+        "TEV_site" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:TEV_site_claim_function,
@@ -12937,7 +12943,7 @@ part:TetA_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:Trx_tag a sbol:Component ;
-    rdfs:label "Trx_tag" ;
+    rdfs:label "Trx tag" ;
     dcterms:description "E. coli thioredoxin-1 (trxA, UniProt P0AA25), 109 aa. Widely used as a N-terminal fusion partner to enhance solubility of recombinant proteins in the E. coli cytoplasm. Thermostable (Tm ~85 °C). Released from the periplasm-adjacent fraction by osmotic shock." ;
     dcterms:references pubmed:10489448,
         pubmed:10947986,
@@ -12949,7 +12955,7 @@ part:Trx_tag a sbol:Component ;
         pubmed:3896121,
         pubmed:4883076,
         pubmed:7763371 ;
-    dcterms:title "Trx_tag" ;
+    dcterms:title "Trx tag" ;
     sbol:displayId "Trx_tag" ;
     sbol:hasFeature part:Trx_tag_feature_0,
         part:Trx_tag_feature_1,
@@ -12966,6 +12972,7 @@ part:Trx_tag a sbol:Component ;
     rdfs:seeAlso <http://purl.uniprot.org/uniprot/P0AA25> ;
     skos:altLabel "Trx",
         "Trx-tag",
+        "Trx_tag",
         "thioredoxin",
         "thioredoxin-1",
         "trxA" ;
@@ -13211,14 +13218,14 @@ part:Trx_tag_feature_7_range a sbol:Range ;
     sbol:start 33 .
 
 part:Twin_Strep_tag a sbol:Component ;
-    rdfs:label "Twin_Strep_tag" ;
+    rdfs:label "Twin Strep tag" ;
     dcterms:description "Tandem affinity tag: two Strep-tag II (WSHPQFEK) units connected by a GGGSGGGSGGS flexible linker, with an N-terminal Ser-Ala. Bivalency lowers the off-rate from Strep-Tactin/Strep-Tactin XT, giving picomolar-range avidity and enabling near-irreversible capture with mild competitive (biotin/desthiobiotin) elution. Sequence confirmed 100% over 30 aa against PDB 6SOS chain R." ;
     dcterms:references pubmed:17571060,
         pubmed:24012791,
         pubmed:25749948,
         pubmed:33639211,
         pubmed:8636976 ;
-    dcterms:title "Twin_Strep_tag" ;
+    dcterms:title "Twin Strep tag" ;
     sbol:displayId "Twin_Strep_tag" ;
     sbol:hasFeature part:Twin_Strep_tag_feature_0,
         part:Twin_Strep_tag_feature_1 ;
@@ -13227,9 +13234,9 @@ part:Twin_Strep_tag a sbol:Component ;
     sbol:role so:0000417 ;
     sbol:type sbo:0000252 ;
     skos:altLabel "Strep-tag II tandem",
-        "Twin Strep tag",
         "Twin-Strep",
-        "Twin-Strep-tag" ;
+        "Twin-Strep-tag",
+        "Twin_Strep_tag" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:Twin_Strep_tag_claim_host_range,
@@ -13548,7 +13555,7 @@ part:UnaG_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:V5_tag a sbol:Component ;
-    rdfs:label "V5_tag" ;
+    rdfs:label "V5 tag" ;
     dcterms:description "14-aa epitope tag GKPIPNPLLGLDST derived from residues 95–108 of the Parainfluenza virus 5 / Simian virus 5 (PIV5/SV5) phosphoprotein (P/V protein; UniProt P11208). Recognized by the SV5-Pk1 (Pk) monoclonal antibody. Also known as the Pk tag or V5 epitope." ;
     dcterms:references pubmed:1372038,
         pubmed:1713260,
@@ -13556,7 +13563,7 @@ part:V5_tag a sbol:Component ;
         pubmed:39786361,
         pubmed:40723447,
         pubmed:7504859 ;
-    dcterms:title "V5_tag" ;
+    dcterms:title "V5 tag" ;
     sbol:displayId "V5_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:V5_tag_sequence ;
@@ -13567,7 +13574,7 @@ part:V5_tag a sbol:Component ;
         "Pk tag",
         "Pk-tag",
         "V5 epitope",
-        "V5 tag" ;
+        "V5_tag" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:V5_tag_claim_affinity_binding,
@@ -13699,14 +13706,14 @@ part:V5_tag_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:VSVG_tag a sbol:Component ;
-    rdfs:label "VSVG_tag" ;
+    rdfs:label "VSV G tag" ;
     dcterms:description "11-aa epitope tag YTDIEMNRLGK, derived from the cytoplasmic tail (C-terminal residues 501–511) of Vesicular stomatitis Indiana virus glycoprotein (VSV-G). Recognised by the P5D4 monoclonal antibody, widely used for protein detection, immunoprecipitation, and affinity purification. The tag acts as a single binding epitope with no functional sub-elements." ;
     dcterms:references pubmed:16630044,
         pubmed:19243080,
         pubmed:3013626,
         pubmed:30232190,
         pubmed:6352053 ;
-    dcterms:title "VSVG_tag" ;
+    dcterms:title "VSV G tag" ;
     sbol:displayId "VSVG_tag" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:VSVG_tag_sequence ;
@@ -13715,6 +13722,7 @@ part:VSVG_tag a sbol:Component ;
     skos:altLabel "VSV-G epitope",
         "VSV-G tag",
         "VSVG epitope",
+        "VSVG_tag",
         "YTDIEMNRLGK" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -14642,7 +14650,7 @@ part:dCas9_feature_9_range a sbol:Range ;
     sbol:start 983 .
 
 part:enterokinase_site a sbol:Component ;
-    rdfs:label "enterokinase_site" ;
+    rdfs:label "enterokinase site" ;
     dcterms:description "Enterokinase (enteropeptidase) recognition/cleavage site (Asp-Asp-Asp-Asp-Lys). The protease cleaves on the C-terminal side of the Lys (after K), releasing a downstream protein with no residual vector-derived residues — hence its wide use for tag removal from fusion proteins. The acidic (Asp)4 tetrad and the P1 Lys are recognized by the enterokinase light-chain S1–S5 basic substrate pocket. Sequence DDDDK is a 100%-identity match to residues 19–23 of the trypsinogen-1 activation propeptide (UniProt:P00760), the canonical natural occurrence of the motif. This part covers a 5-aa sub-span of that 247-aa precursor (full_length_match=false), which is expected for a short recognition motif and is not a sequence defect." ;
     dcterms:references pubmed:11745150,
         pubmed:16672368,
@@ -14655,7 +14663,7 @@ part:enterokinase_site a sbol:Component ;
         pubmed:8226855,
         pubmed:9395456,
         pubmed:9636275 ;
-    dcterms:title "enterokinase_site" ;
+    dcterms:title "enterokinase site" ;
     sbol:displayId "enterokinase_site" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:enterokinase_site_sequence ;
@@ -14665,6 +14673,7 @@ part:enterokinase_site a sbol:Component ;
         "EK site",
         "enterokinase",
         "enterokinase cleavage site",
+        "enterokinase_site",
         "enteropeptidase site" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
@@ -15005,18 +15014,17 @@ part:lacZ_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:lambda_attB a sbol:Component ;
-    rdfs:label "lambda_attB" ;
+    rdfs:label "lambda attB" ;
     dcterms:description "Lambda bacterial attachment site attB (B-O-B′), the chromosomal target recombined with phage attP (lambda_attP) by lambda tyrosine integrase + IHF (Xis/Fis for excision). 21 bp minimal attB from NC_000913.3 (attλ, between gal and bio); 15 bp common core O = GCTTTTTTATACTAA, with the 7 bp crossover overlap TTTATAC at which Int makes the staggered cut. Source-verified 100%. Cognate phage site: lambda_attP." ;
     dcterms:references pubmed:11591683,
         pubmed:24050148 ;
-    dcterms:title "lambda_attB" ;
+    dcterms:title "lambda attB" ;
     sbol:displayId "lambda_attB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lambda_attB_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "lambda attB",
-        "lambda_attB" ;
+    skos:altLabel "lambda_attB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "lambda_attB" .
@@ -15028,7 +15036,7 @@ part:lambda_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:lambda_attP a sbol:Component ;
-    rdfs:label "lambda_attP" ;
+    rdfs:label "lambda attP" ;
     dcterms:description "Bacteriophage lambda phage attachment site (attP, P-O-P'): the Int/IHF recombination substrate that carries the P and P' arms (arm-type and core-type Int-binding sites, three IHF sites, Xis and Fis sites) flanking the 15 bp common core. Recombines with the bacterial attB by lambda Int + IHF to integrate the phage (or a CRIM plasmid) into the host chromosome. 387 bp as cloned in AY048716.1; the functional minimal attP is ~240-250 bp around the core." ;
     dcterms:references pubmed:11591683,
         pubmed:11904406,
@@ -15045,7 +15053,7 @@ part:lambda_attP a sbol:Component ;
         pubmed:6251450,
         pubmed:8188600,
         pubmed:8980235 ;
-    dcterms:title "lambda_attP" ;
+    dcterms:title "lambda attP" ;
     sbol:displayId "lambda_attP" ;
     sbol:hasFeature part:lambda_attP_feature_0,
         part:lambda_attP_feature_1,
@@ -15058,7 +15066,6 @@ part:lambda_attP a sbol:Component ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
     skos:altLabel "lambda POP'",
-        "lambda attP",
         "lambda_attP",
         "phage lambda attP" ;
     cat:curationStatus "candidate" ;
@@ -15855,19 +15862,18 @@ part:pSH71_ori_feature_0_range a sbol:Range ;
     sbol:start 301 .
 
 part:phi80_attB a sbol:Component ;
-    rdfs:label "phi80_attB" ;
+    rdfs:label "phi80 attB" ;
     dcterms:description "Phage phi80 bacterial attachment site attB, within the 3′ end of gene yciI (b1251), divergent from and adjacent to tonB — reconciling the historical 'tonB region / ~28 min' lore (beside tonB, not in it; not a tRNA gene). 54 bp window from NC_000913.3 containing the 15 bp core consensus AACACTTTCTTAAAT; the exact 17 bp common core and crossover (Leong et al. 1985) are behind paywalls and the precise boundaries are PROVISIONAL. Cognate phage site: phi80_attP." ;
     dcterms:references pubmed:11591683,
         pubmed:24050148,
         pubmed:2984205 ;
-    dcterms:title "phi80_attB" ;
+    dcterms:title "phi80 attB" ;
     sbol:displayId "phi80_attB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:phi80_attB_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "phi80 attB",
-        "phi80_attB" ;
+    skos:altLabel "phi80_attB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "phi80_attB" .
@@ -15879,7 +15885,7 @@ part:phi80_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:phi80_attP a sbol:Component ;
-    rdfs:label "phi80_attP" ;
+    rdfs:label "phi80 attP" ;
     dcterms:description "Bacteriophage phi80 phage attachment site (attP), 480 bp. Recombination substrate for the phi80 tyrosine integrase (Int) acting with E. coli integration host factor (IHF); recombines with the chromosomal attB site in the E. coli thrW/yciI region to integrate the phi80 prophage (and, in the CRIM system, an attP-bearing plasmid). The 17 bp common core lies near the centre; the flanking P (positions ~279-480) and P' (positions ~0-262) arms carry the Int arm-type and IHF binding sites. Source AY048738.1 is the CRIM integration plasmid pAH162, which carries the phage attP." ;
     dcterms:references pubmed:11591683,
         pubmed:23042999,
@@ -15893,7 +15899,7 @@ part:phi80_attP a sbol:Component ;
         pubmed:6251450,
         pubmed:8188600,
         pubmed:8980235 ;
-    dcterms:title "phi80_attP" ;
+    dcterms:title "phi80 attP" ;
     sbol:displayId "phi80_attP" ;
     sbol:hasFeature part:phi80_attP_feature_0,
         part:phi80_attP_feature_1,
@@ -15905,7 +15911,6 @@ part:phi80_attP a sbol:Component ;
     sbol:type sbo:0000251 ;
     skos:altLabel "phage phi80 attP",
         "phi-80 attP",
-        "phi80 attP",
         "phi80_attP" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
@@ -16051,18 +16056,17 @@ part:phi80_attP_feature_3_range a sbol:Range ;
     sbol:start 306 .
 
 part:phiC31_attB a sbol:Component ;
-    rdfs:label "phiC31_attB" ;
+    rdfs:label "phiC31 attB" ;
     dcterms:description "phiC31 bacterial attachment site attB, the 34 bp natural target in the Streptomyces coelicolor chromosome recognized by the phiC31 large serine integrase (unidirectional; no host cofactors; cannot excise without an RDF). Central TT crossover dinucleotide; attB and attP share only a very short central core (~39% overall identity), the basis of the reaction directionality. In non-native hosts (human/other) phiC31 Int also recombines with degenerate genomic pseudo-attP sites; there is no single canonical pseudo-attB. Cognate phage site: phiC31_attP." ;
     dcterms:references pubmed:10801973,
         pubmed:9576912 ;
-    dcterms:title "phiC31_attB" ;
+    dcterms:title "phiC31 attB" ;
     sbol:displayId "phiC31_attB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:phiC31_attB_sequence ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "phiC31 attB",
-        "phiC31_attB" ;
+    skos:altLabel "phiC31_attB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "phiC31_attB" .
@@ -16074,14 +16078,14 @@ part:phiC31_attB_sequence a sbol:Sequence ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:phiC31_attP a sbol:Component ;
-    rdfs:label "phiC31_attP" ;
+    rdfs:label "phiC31 attP" ;
     dcterms:description "Phage attachment site (attP) of Streptomyces temperate phage phiC31, the DNA target recognized by the phiC31 large serine integrase. 100 bp spanning the attP crossover region; exact reverse complement of X57036.1 positions 1590-1689. The phiC31 integrase recombines this attP with a chromosomal attB to integrate DNA irreversibly and unidirectionally, with no required host accessory factors. Widely used as a chromosomal landing pad in heterologous hosts including mammalian cells. The functional center comprises two 9 bp imperfect inverted-repeat integrase half-sites flanking a spacer that carries the central TT crossover dinucleotide." ;
     dcterms:references pubmed:10219087,
         pubmed:10801973,
         pubmed:1656389,
         pubmed:24050148,
         pubmed:9576912 ;
-    dcterms:title "phiC31_attP" ;
+    dcterms:title "phiC31 attP" ;
     sbol:displayId "phiC31_attP" ;
     sbol:hasFeature part:phiC31_attP_feature_0,
         part:phiC31_attP_feature_1,
@@ -16092,7 +16096,6 @@ part:phiC31_attP a sbol:Component ;
     sbol:role so:0000057 ;
     sbol:type sbo:0000251 ;
     skos:altLabel "phi-C31 attP",
-        "phiC31 attP",
         "phiC31 attachment site",
         "phiC31_attP" ;
     cat:curationStatus "candidate" ;
@@ -16825,7 +16828,7 @@ part:tetR_tetA_promoters_feature_4_range a sbol:Range ;
     sbol:start 37 .
 
 part:thrombin_site a sbol:Component ;
-    rdfs:label "thrombin_site" ;
+    rdfs:label "thrombin site" ;
     dcterms:description "Engineered 6-aa thrombin (factor IIa) recognition/cleavage site Leu-Val-Pro-Arg-Gly-Ser. Thrombin hydrolyses the peptide bond after the Arg (LVPR | GS), releasing the downstream protein with an N-terminal Gly-Ser scar. Derived from the natural human factor VIII thrombin site LVPRGF by a Phe->Ser substitution that creates a BamHI (GGATCC) cloning site; the canonical site of the pGEX-2T GST-fusion expression system. Source-verified to U13850.1 misc_feature 918..935 at 100% identity over all 6 residues." ;
     dcterms:references pubmed:12963335,
         pubmed:1519755,
@@ -16833,7 +16836,7 @@ part:thrombin_site a sbol:Component ;
         pubmed:21871965,
         pubmed:22384068,
         pubmed:3047011 ;
-    dcterms:title "thrombin_site" ;
+    dcterms:title "thrombin site" ;
     sbol:displayId "thrombin_site" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:thrombin_site_sequence ;
@@ -16843,7 +16846,7 @@ part:thrombin_site a sbol:Component ;
         "thrombin",
         "thrombin cleavage site",
         "thrombin recognition site",
-        "thrombin site" ;
+        "thrombin_site" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:thrombin_site_claim_extended_specificity,

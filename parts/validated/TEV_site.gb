@@ -56,8 +56,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..7
-                     /label="TEV_site"
-                     /synonym="TEV site"
+                     /label="TEV site"
+                     /synonym="TEV_site"
                      /synonym="TEV"
                      /synonym="TEV cleavage site"
                      /synonym="TEV protease site"

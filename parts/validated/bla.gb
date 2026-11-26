@@ -48,8 +48,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..286
-                     /label="bla"
-                     /synonym="AmpR"
+                     /label="AmpR"
+                     /synonym="bla"
                      /synonym="TEM-1"
                      /synonym="amp"
                      /synonym="beta-lactamase"
@@ -62,37 +62,37 @@ FEATURES             Location/Qualifiers
                      /db_xref="UniProt:P62593"
      sig_peptide     1..23
                      /label="Signal"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000418"
      misc_feature    68
                      /label="Active site: Nucleophile; acyl-ester intermediate"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000110"
      misc_feature    71
                      /label="Active site: Proton acceptor"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000110"
      misc_feature    128
                      /label="Active site: Proton donor"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000110"
      misc_feature    164
                      /label="Active site: Proton acceptor"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000110"
      binding         232..234
                      /label="Binding site"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0000409"
      disulfide_bond  75..121
                      /label="Disulfide bond"
-                     /parent="bla"
+                     /parent="AmpR"
                      /note="source: UniProt:P62593"
                      /db_xref="SO:0001088"
 ORIGIN

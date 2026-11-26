@@ -33,9 +33,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..44
-                     /label="HK022_attB"
+                     /label="HK022 attB"
                      /synonym="HK022_attB"
-                     /synonym="HK022 attB"
                      /collection="phage-att-sites"
                      /cognate="HK022_attP"
                      /db_xref="SO:0000057"
