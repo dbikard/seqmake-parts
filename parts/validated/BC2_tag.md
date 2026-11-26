@@ -1,4 +1,4 @@
-# BC2_tag
+# BC2 tag
 
 BC2_tag is a 12-aa linear epitope tag (PDRKAAVSHWQQ) from the N-terminal region of human beta-catenin that is bound by the BC2 nanobody with low-nanomolar affinity for protein purification, immunodetection, and super-resolution imaging.
 

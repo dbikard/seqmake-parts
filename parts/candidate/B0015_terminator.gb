@@ -11,7 +11,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..129
-                     /label="B0015_terminator"
+                     /label="B0015 terminator"
+                     /synonym="B0015_terminator"
                      /synonym="BBa_B0015"
                      /synonym="B0015"
                      /synonym="double terminator"
@@ -19,14 +20,14 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000141"
      terminator      89..128
                      /label="T7Te"
-                     /parent="B0015_terminator"
+                     /parent="B0015 terminator"
                      /note="The T7 early terminator TE (catalog part T7Te),
                      identical: the 3' terminator of this B0010-B0012 double
                      terminator."
                      /db_xref="SO:0000141"
      terminator      9..80
                      /label="rrnBT1"
-                     /parent="B0015_terminator"
+                     /parent="B0015 terminator"
                      /note="The rrnB T1 terminator (catalog part rrnBT1),
                      identical: inside the B0010 half of this B0010-B0012 double
                      terminator."

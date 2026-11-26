@@ -125,11 +125,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "synonym": [
           "lambda_attP",
-          "lambda attP",
           "phage lambda attP",
           "lambda POP'"
         ],
@@ -157,7 +156,7 @@
           "P'2 arm-type Int binding site"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "P' arm-type lambda Int binding site (minus strand 5'-CAGTCAAAAT-3'). Arm-type sites are bound by the N-terminal domain of Int distant from the crossover region; the P'1/P'2/P'3 cluster in the P' arm is recognized cooperatively. Matches the arm-type consensus of Ross & Landy 1982; the P'2 site sequence 5'-GCAGTCAAAAT-3' was used in the Fadeev et al. 2009 NMR co-complex with Int(N)."
@@ -183,7 +182,7 @@
           "IHF H' binding site"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "Integration host factor (IHF) binding site H' in the P' arm (35 bp DNase I footprint). Binding bends the DNA by >160 degrees (DNA U-turn), a sharp bend required to assemble the recombinogenic attP intasome. This exact 35 bp duplex (GTTCGTTGCAACAAATTGATAAGCAATGCTTTTTT) was co-crystallized with IHF in the Rice et al. 1996 structure (PDB 1IHF). H' requires both the WATCAANNNNTTR core consensus and an upstream AT-rich element (Hales et al. 1994)."
@@ -209,7 +208,7 @@
           "common core O (15 bp crossover)"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "The 15 bp common core (minus strand 5'-GCTTTTTTATACTAA-3') shared identically by attP, attB, attL and attR. The two pairs of core-type (junction-type) Int cleavage sites (C/C' and B/B') flank this core; strand exchange occurs here."
@@ -234,7 +233,7 @@
           "O region (7 bp crossover overlap)"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "The 7 bp staggered overlap (minus strand 5'-TTTATAC-3') between the two Int cleavage sites, within the 15 bp common core. Strand exchange requires sequence identity between partners across this overlap; it is the conserved crossover region of all lambda att sites."
@@ -259,7 +258,7 @@
           "IHF H1 binding site"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "IHF binding site H1 in the P arm (minus strand 5'-TAATATATTGATAT-3'), matching the IHF consensus. Unlike H', the WATCAANNNNTTR core consensus alone is sufficient for IHF binding at H1 (Hales et al. 1994). 4 bp changes to the consensus strongly depress recombination (Gardner & Nash 1986)."
@@ -285,7 +284,7 @@
           "IHF H2 binding site"
         ],
         "parent": [
-          "lambda_attP"
+          "lambda attP"
         ],
         "note": [
           "IHF binding site H2 in the P arm (plus strand 5'-AATCAACTACTTA-3'), matching the IHF consensus WATCAANNNNTTR. 4 bp substitutions depress recombination (Gardner & Nash 1986). An IHF site analogous to lambda H2 is also present in phi80 and P22 attP, supporting cross-phage conservation (Leong et al. 1985)."

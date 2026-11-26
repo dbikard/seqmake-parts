@@ -55,10 +55,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "bla"
+          "AmpR"
         ],
         "synonym": [
-          "AmpR",
+          "bla",
           "TEM-1",
           "amp",
           "beta-lactamase",

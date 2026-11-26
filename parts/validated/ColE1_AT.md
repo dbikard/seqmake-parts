@@ -1,4 +1,4 @@
-# ColE1_AT
+# ColE1 (vector form)
 
 The common **cloning-vector form** of the ColE1/pMB1 origin: identical to the canonical
 589 bp pMB1 replication origin except for a benign 2-bp difference (positions 393–394) in the

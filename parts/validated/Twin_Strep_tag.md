@@ -1,4 +1,4 @@
-# Twin_Strep_tag
+# Twin Strep tag
 
 Twin-Strep-tag: two tandem Strep-tag II (WSHPQFEK) units joined by a GGGSGGGSGGS linker, giving bivalent high-avidity binding to engineered streptavidin for one-step affinity purification and detection.
 

@@ -89,9 +89,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "Trx_tag"
+          "Trx tag"
         ],
         "synonym": [
+          "Trx_tag",
           "trxA",
           "thioredoxin",
           "thioredoxin-1",

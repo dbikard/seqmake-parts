@@ -331,8 +331,8 @@
           "@id": "https://identifiers.org/pubmed:3806670"
         }
       ],
-      "dcterms:title": "186_attB",
-      "rdfs:label": "186_attB",
+      "dcterms:title": "186 attB",
+      "rdfs:label": "186 attB",
       "sbol:displayId": "186_attB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -346,10 +346,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "186_attB",
-        "186 attB"
-      ]
+      "skos:altLabel": "186_attB"
     },
     {
       "@id": "part:186_attB_sequence",
@@ -401,8 +398,8 @@
           "@id": "https://identifiers.org/pubmed:32789491"
         }
       ],
-      "dcterms:title": "186_attP",
-      "rdfs:label": "186_attP",
+      "dcterms:title": "186 attP",
+      "rdfs:label": "186 attP",
       "sbol:displayId": "186_attP",
       "sbol:hasFeature": [
         {
@@ -450,7 +447,6 @@
       },
       "skos:altLabel": [
         "186_attP",
-        "186 attP",
         "phage 186 attP",
         "186 attachment site"
       ]
@@ -1363,8 +1359,8 @@
           "@id": "https://identifiers.org/pubmed:40883491"
         }
       ],
-      "dcterms:title": "ALFA_tag",
-      "rdfs:label": "ALFA_tag",
+      "dcterms:title": "ALFA tag",
+      "rdfs:label": "ALFA tag",
       "sbol:displayId": "ALFA_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -1379,6 +1375,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "ALFA_tag",
         "ALFA-tag",
         "ALFA epitope",
         "SRLEEELRRRLTE"
@@ -2170,8 +2167,8 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "B0015_terminator",
-      "dcterms:title": "B0015_terminator",
-      "rdfs:label": "B0015_terminator",
+      "dcterms:title": "B0015 terminator",
+      "rdfs:label": "B0015 terminator",
       "sbol:displayId": "B0015_terminator",
       "sbol:hasFeature": [
         {
@@ -2194,6 +2191,7 @@
         "@id": "https://identifiers.org/SBO:0000251"
       },
       "skos:altLabel": [
+        "B0015_terminator",
         "BBa_B0015",
         "B0015",
         "double terminator",
@@ -2301,8 +2299,8 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "B0034_RBS",
-      "dcterms:title": "B0034_RBS",
-      "rdfs:label": "B0034_RBS",
+      "dcterms:title": "B0034 RBS",
+      "rdfs:label": "B0034 RBS",
       "sbol:displayId": "B0034_RBS",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -2317,6 +2315,7 @@
         "@id": "https://identifiers.org/SBO:0000251"
       },
       "skos:altLabel": [
+        "B0034_RBS",
         "BBa_B0034",
         "B0034",
         "BioBrick RBS"
@@ -2390,8 +2389,8 @@
           "@id": "https://identifiers.org/pubmed:35780707"
         }
       ],
-      "dcterms:title": "BC2_tag",
-      "rdfs:label": "BC2_tag",
+      "dcterms:title": "BC2 tag",
+      "rdfs:label": "BC2 tag",
       "sbol:displayId": "BC2_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -2406,8 +2405,8 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "BC2_tag",
         "BC2T",
-        "BC2 tag",
         "beta-catenin epitope"
       ]
     },
@@ -3186,8 +3185,8 @@
           "@id": "https://identifiers.org/pubmed:33654794"
         }
       ],
-      "dcterms:title": "CBP_tag",
-      "rdfs:label": "CBP_tag",
+      "dcterms:title": "CBP tag",
+      "rdfs:label": "CBP tag",
       "sbol:displayId": "CBP_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -3202,6 +3201,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "CBP_tag",
         "calmodulin-binding peptide",
         "CBP",
         "calmodulin binding peptide"
@@ -4129,8 +4129,8 @@
           "@id": "https://identifiers.org/pubmed:325558"
         }
       ],
-      "dcterms:title": "ColE1_AT",
-      "rdfs:label": "ColE1_AT",
+      "dcterms:title": "ColE1 (vector form)",
+      "rdfs:label": "ColE1 (vector form)",
       "rdfs:seeAlso": {
         "@id": "https://www.ncbi.nlm.nih.gov/nuccore/X03174"
       },
@@ -5545,8 +5545,8 @@
           "@id": "https://identifiers.org/pubmed:7827058"
         }
       ],
-      "dcterms:title": "FactorXa_site",
-      "rdfs:label": "FactorXa_site",
+      "dcterms:title": "Factor Xa site",
+      "rdfs:label": "Factor Xa site",
       "sbol:displayId": "FactorXa_site",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -5561,6 +5561,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "FactorXa_site",
         "Factor Xa cleavage site",
         "FXa site",
         "IEGR"
@@ -7626,8 +7627,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "HK022_attB",
-      "rdfs:label": "HK022_attB",
+      "dcterms:title": "HK022 attB",
+      "rdfs:label": "HK022 attB",
       "sbol:displayId": "HK022_attB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -7641,10 +7642,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "HK022_attB",
-        "HK022 attB"
-      ]
+      "skos:altLabel": "HK022_attB"
     },
     {
       "@id": "part:HK022_attB_sequence",
@@ -7693,8 +7691,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "HK022_attP",
-      "rdfs:label": "HK022_attP",
+      "dcterms:title": "HK022 attP",
+      "rdfs:label": "HK022 attP",
       "sbol:displayId": "HK022_attP",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -7710,7 +7708,6 @@
       },
       "skos:altLabel": [
         "HK022_attP",
-        "HK022 attP",
         "phage HK022 attP",
         "HK022 attachment site (phage)"
       ]
@@ -7937,8 +7934,8 @@
           "@id": "https://identifiers.org/pubmed:9328292"
         }
       ],
-      "dcterms:title": "HRV3C_site",
-      "rdfs:label": "HRV3C_site",
+      "dcterms:title": "HRV 3C site",
+      "rdfs:label": "HRV 3C site",
       "sbol:displayId": "HRV3C_site",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -7953,9 +7950,9 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "HRV3C_site",
         "PreScission protease site",
         "3C protease cleavage site",
-        "HRV 3C site",
         "LEVLFQGP"
       ]
     },
@@ -9672,8 +9669,8 @@
           "@id": "https://identifiers.org/pubmed:25644005"
         }
       ],
-      "dcterms:title": "LPETG_tag",
-      "rdfs:label": "LPETG_tag",
+      "dcterms:title": "LPETG tag",
+      "rdfs:label": "LPETG tag",
       "sbol:displayId": "LPETG_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -9688,6 +9685,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "LPETG_tag",
         "sortase A recognition motif",
         "LPXTG motif",
         "sortag",
@@ -11308,8 +11306,8 @@
           "@id": "https://identifiers.org/pubmed:9092630"
         }
       ],
-      "dcterms:title": "P2",
-      "rdfs:label": "P2",
+      "dcterms:title": "Ptet (pBR322)",
+      "rdfs:label": "Ptet (pBR322)",
       "sbol:displayId": "P2",
       "sbol:hasFeature": [
         {
@@ -11332,6 +11330,7 @@
         "@id": "https://identifiers.org/SBO:0000251"
       },
       "skos:altLabel": [
+        "P2",
         "Ptet2",
         "pBR322 tet promoter"
       ]
@@ -17697,8 +17696,8 @@
           "@id": "https://identifiers.org/pubmed:27924562"
         }
       ],
-      "dcterms:title": "SBP_tag",
-      "rdfs:label": "SBP_tag",
+      "dcterms:title": "SBP tag",
+      "rdfs:label": "SBP tag",
       "sbol:displayId": "SBP_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -17713,6 +17712,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "SBP_tag",
         "streptavidin-binding peptide",
         "SBP",
         "SBP-Tag",
@@ -18032,8 +18032,8 @@
           "@id": "https://identifiers.org/pubmed:40610720"
         }
       ],
-      "dcterms:title": "SNAP_tag",
-      "rdfs:label": "SNAP_tag",
+      "dcterms:title": "SNAP tag",
+      "rdfs:label": "SNAP tag",
       "sbol:displayId": "SNAP_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -18048,9 +18048,9 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "SNAP_tag",
         "SNAP",
         "hAGT-derived self-labeling tag",
-        "SNAP tag",
         "benzylguanine self-labeling tag"
       ]
     },
@@ -18572,8 +18572,8 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "SV40_PA_terminator",
-      "dcterms:title": "SV40_PA_terminator",
-      "rdfs:label": "SV40_PA_terminator",
+      "dcterms:title": "SV40 polyA terminator",
+      "rdfs:label": "SV40 polyA terminator",
       "sbol:displayId": "SV40_PA_terminator",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -19374,8 +19374,8 @@
           "@id": "https://doi.org/US20170137467A1"
         }
       ],
-      "dcterms:title": "Spot_tag",
-      "rdfs:label": "Spot_tag",
+      "dcterms:title": "Spot tag",
+      "rdfs:label": "Spot tag",
       "sbol:displayId": "Spot_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -19390,6 +19390,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "Spot_tag",
         "Spot-tag",
         "SPOT-tag",
         "PDRVRAVSHWSS"
@@ -21229,8 +21230,8 @@
           "@id": "https://doi.org/10.1016/j.jmb.2021.166893"
         }
       ],
-      "dcterms:title": "Strep_tag",
-      "rdfs:label": "Strep_tag",
+      "dcterms:title": "Strep tag II",
+      "rdfs:label": "Strep tag II",
       "sbol:displayId": "Strep_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -21245,6 +21246,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "Strep_tag",
         "Strep-tag II",
         "Strep tag",
         "Strep-tag",
@@ -21652,8 +21654,8 @@
           "@id": "https://identifiers.org/pubmed:1820210"
         }
       ],
-      "dcterms:title": "T7_tag",
-      "rdfs:label": "T7_tag",
+      "dcterms:title": "T7 tag",
+      "rdfs:label": "T7 tag",
       "sbol:displayId": "T7_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -21668,7 +21670,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "T7 tag",
+        "T7_tag",
         "T7-tag",
         "T7 tag (gene 10 leader)",
         "gene 10 leader",
@@ -22250,8 +22252,8 @@
           "@id": "https://identifiers.org/pubmed:12377789"
         }
       ],
-      "dcterms:title": "TEV_site",
-      "rdfs:label": "TEV_site",
+      "dcterms:title": "TEV site",
+      "rdfs:label": "TEV site",
       "sbol:displayId": "TEV_site",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -22266,7 +22268,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "TEV site",
+        "TEV_site",
         "TEV",
         "TEV cleavage site",
         "TEV protease site",
@@ -22700,8 +22702,8 @@
           "@id": "https://identifiers.org/pubmed:24600443"
         }
       ],
-      "dcterms:title": "Trx_tag",
-      "rdfs:label": "Trx_tag",
+      "dcterms:title": "Trx tag",
+      "rdfs:label": "Trx tag",
       "rdfs:seeAlso": {
         "@id": "http://purl.uniprot.org/uniprot/P0AA25"
       },
@@ -22745,6 +22747,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "Trx_tag",
         "trxA",
         "thioredoxin",
         "thioredoxin-1",
@@ -23197,8 +23200,8 @@
           "@id": "https://identifiers.org/pubmed:25749948"
         }
       ],
-      "dcterms:title": "Twin_Strep_tag",
-      "rdfs:label": "Twin_Strep_tag",
+      "dcterms:title": "Twin Strep tag",
+      "rdfs:label": "Twin Strep tag",
       "sbol:displayId": "Twin_Strep_tag",
       "sbol:hasFeature": [
         {
@@ -23221,10 +23224,10 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "Twin_Strep_tag",
         "Twin-Strep-tag",
         "Twin-Strep",
-        "Strep-tag II tandem",
-        "Twin Strep tag"
+        "Strep-tag II tandem"
       ]
     },
     {
@@ -23886,8 +23889,8 @@
           "@id": "https://identifiers.org/pubmed:39786361"
         }
       ],
-      "dcterms:title": "V5_tag",
-      "rdfs:label": "V5_tag",
+      "dcterms:title": "V5 tag",
+      "rdfs:label": "V5 tag",
       "sbol:displayId": "V5_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -23902,7 +23905,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "V5 tag",
+        "V5_tag",
         "V5 epitope",
         "Pk-tag",
         "Pk tag",
@@ -24140,8 +24143,8 @@
           "@id": "https://identifiers.org/pubmed:30232190"
         }
       ],
-      "dcterms:title": "VSVG_tag",
-      "rdfs:label": "VSVG_tag",
+      "dcterms:title": "VSV G tag",
+      "rdfs:label": "VSV G tag",
       "sbol:displayId": "VSVG_tag",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -24156,6 +24159,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "VSVG_tag",
         "VSV-G tag",
         "VSV-G epitope",
         "VSVG epitope",
@@ -25306,8 +25310,8 @@
           "@id": "https://identifiers.org/pubmed:9020874"
         }
       ],
-      "dcterms:title": "bla",
-      "rdfs:label": "bla",
+      "dcterms:title": "AmpR",
+      "rdfs:label": "AmpR",
       "rdfs:seeAlso": {
         "@id": "http://purl.uniprot.org/uniprot/P62593"
       },
@@ -25348,7 +25352,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "AmpR",
+        "bla",
         "TEM-1",
         "amp",
         "beta-lactamase",
@@ -26695,8 +26699,8 @@
           "@id": "https://identifiers.org/pubmed:11745150"
         }
       ],
-      "dcterms:title": "enterokinase_site",
-      "rdfs:label": "enterokinase_site",
+      "dcterms:title": "enterokinase site",
+      "rdfs:label": "enterokinase site",
       "sbol:displayId": "enterokinase_site",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -26711,6 +26715,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
+        "enterokinase_site",
         "enterokinase",
         "enterokinase cleavage site",
         "EK site",
@@ -27883,8 +27888,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "lambda_attB",
-      "rdfs:label": "lambda_attB",
+      "dcterms:title": "lambda attB",
+      "rdfs:label": "lambda attB",
       "sbol:displayId": "lambda_attB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -27898,10 +27903,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "lambda_attB",
-        "lambda attB"
-      ]
+      "skos:altLabel": "lambda_attB"
     },
     {
       "@id": "part:lambda_attB_sequence",
@@ -27983,8 +27985,8 @@
           "@id": "https://identifiers.org/pubmed:26104711"
         }
       ],
-      "dcterms:title": "lambda_attP",
-      "rdfs:label": "lambda_attP",
+      "dcterms:title": "lambda attP",
+      "rdfs:label": "lambda attP",
       "sbol:displayId": "lambda_attP",
       "sbol:hasFeature": [
         {
@@ -28020,7 +28022,6 @@
       },
       "skos:altLabel": [
         "lambda_attP",
-        "lambda attP",
         "phage lambda attP",
         "lambda POP'"
       ]
@@ -30466,8 +30467,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "phi80_attB",
-      "rdfs:label": "phi80_attB",
+      "dcterms:title": "phi80 attB",
+      "rdfs:label": "phi80 attB",
       "sbol:displayId": "phi80_attB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -30481,10 +30482,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "phi80_attB",
-        "phi80 attB"
-      ]
+      "skos:altLabel": "phi80_attB"
     },
     {
       "@id": "part:phi80_attB_sequence",
@@ -30557,8 +30555,8 @@
           "@id": "https://identifiers.org/pubmed:6251450"
         }
       ],
-      "dcterms:title": "phi80_attP",
-      "rdfs:label": "phi80_attP",
+      "dcterms:title": "phi80 attP",
+      "rdfs:label": "phi80 attP",
       "sbol:displayId": "phi80_attP",
       "sbol:hasFeature": [
         {
@@ -30588,7 +30586,6 @@
       },
       "skos:altLabel": [
         "phi80_attP",
-        "phi80 attP",
         "phi-80 attP",
         "phage phi80 attP"
       ]
@@ -30873,8 +30870,8 @@
           "@id": "https://identifiers.org/pubmed:10801973"
         }
       ],
-      "dcterms:title": "phiC31_attB",
-      "rdfs:label": "phiC31_attB",
+      "dcterms:title": "phiC31 attB",
+      "rdfs:label": "phiC31 attB",
       "sbol:displayId": "phiC31_attB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -30888,10 +30885,7 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "phiC31_attB",
-        "phiC31 attB"
-      ]
+      "skos:altLabel": "phiC31_attB"
     },
     {
       "@id": "part:phiC31_attB_sequence",
@@ -30940,8 +30934,8 @@
           "@id": "https://identifiers.org/pubmed:24050148"
         }
       ],
-      "dcterms:title": "phiC31_attP",
-      "rdfs:label": "phiC31_attP",
+      "dcterms:title": "phiC31 attP",
+      "rdfs:label": "phiC31 attP",
       "sbol:displayId": "phiC31_attP",
       "sbol:hasFeature": [
         {
@@ -30971,7 +30965,6 @@
       },
       "skos:altLabel": [
         "phiC31_attP",
-        "phiC31 attP",
         "phi-C31 attP",
         "phiC31 attachment site"
       ]
@@ -33277,8 +33270,8 @@
           "@id": "https://identifiers.org/pubmed:1519755"
         }
       ],
-      "dcterms:title": "thrombin_site",
-      "rdfs:label": "thrombin_site",
+      "dcterms:title": "thrombin site",
+      "rdfs:label": "thrombin site",
       "sbol:displayId": "thrombin_site",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -33293,7 +33286,7 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": [
-        "thrombin site",
+        "thrombin_site",
         "thrombin",
         "thrombin cleavage site",
         "thrombin recognition site",

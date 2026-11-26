@@ -1,4 +1,4 @@
-# HRV3C_site
+# HRV 3C site
 
 8-residue Human Rhinovirus 3C protease recognition and cleavage site (LEVLFQGP); the 3C cysteine protease (EC 3.4.22.28) cleaves between Gln (P1) and Gly (P1') — notation LEVLFQ|GP — leaving a Gly-Pro dipeptide scar on the released downstream protein.
 

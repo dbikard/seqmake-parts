@@ -97,9 +97,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..480
-                     /label="phi80_attP"
+                     /label="phi80 attP"
                      /synonym="phi80_attP"
-                     /synonym="phi80 attP"
                      /synonym="phi-80 attP"
                      /synonym="phage phi80 attP"
                      /note="Bacteriophage phi80 phage attachment site (attP),
@@ -121,7 +120,7 @@ FEATURES             Location/Qualifiers
                      /cognate="phi80_attB"
      misc_feature    complement(263..279)
                      /label="phi80 crossover (common core)"
-                     /parent="phi80_attP"
+                     /parent="phi80 attP"
                      /note="17 bp phi80 common core / crossover region, the
                      segment shared identically between phi80 attP and the
                      chromosomal attB and across which Int catalyses strand
@@ -138,7 +137,7 @@ FEATURES             Location/Qualifiers
                      /citation=[5]
      protein_bind    84..92
                      /label="phi80 Int arm-binding site P'1 (candidate)"
-                     /parent="phi80_attP"
+                     /parent="phi80 attP"
                      /note="Candidate arm-type integrase binding site in the P'
                      arm. The 9 bp element TGGGTACAC recurs at 83-92 and 103-112
                      (20 bp centre-to-centre, ~2 helical turns), matching the
@@ -154,7 +153,7 @@ FEATURES             Location/Qualifiers
                      /citation=[6]
      protein_bind    104..112
                      /label="phi80 Int arm-binding site P'2 (candidate)"
-                     /parent="phi80_attP"
+                     /parent="phi80 attP"
                      /note="Second candidate arm-type integrase binding site in
                      the P' arm, 20 bp downstream of P'1 (one full repeat unit).
                      Same TGGGTACAC element. Assignment rests on the
@@ -169,7 +168,7 @@ FEATURES             Location/Qualifiers
                      /citation=[7]
      protein_bind    306..318
                      /label="IHF binding site (H2 analog)"
-                     /parent="phi80_attP"
+                     /parent="phi80 attP"
                      /note="E. coli integration host factor (IHF) binding site
                      in the P arm, the phi80 analog of the lambda H2 site. Leong
                      et al. 1985 demonstrated by DNase I footprinting with

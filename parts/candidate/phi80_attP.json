@@ -104,11 +104,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "phi80_attP"
+          "phi80 attP"
         ],
         "synonym": [
           "phi80_attP",
-          "phi80 attP",
           "phi-80 attP",
           "phage phi80 attP"
         ],
@@ -141,7 +140,7 @@
           "phi80 crossover (common core)"
         ],
         "parent": [
-          "phi80_attP"
+          "phi80 attP"
         ],
         "note": [
           "17 bp phi80 common core / crossover region, the segment shared identically between phi80 attP and the chromosomal attB and across which Int catalyses strand exchange. Read on the minus strand the core is ACACTTTCTTAAATTGT (the plus-strand bases at these coordinates are ACAATTTAAGAAAGTGT). Leong et al. 1985 established the 17 bp core by sequencing phi80 attP and attB; Rotman et al. 2012 independently report the identical 17 bp core (ACACTTTCTTAAATTGT) in the phi80 genome. Experimentally grounded core sequence; the catalog assigns strand -1 to reflect the canonical minus-strand reading."
@@ -165,7 +164,7 @@
           "phi80 Int arm-binding site P'1 (candidate)"
         ],
         "parent": [
-          "phi80_attP"
+          "phi80 attP"
         ],
         "note": [
           "Candidate arm-type integrase binding site in the P' arm. The 9 bp element TGGGTACAC recurs at 83-92 and 103-112 (20 bp centre-to-centre, ~2 helical turns), matching the tandem arm-type architecture of lambda-family attP arms. Assignment rests on sequence inspection plus analogy to lambda arm-type sites (Ross & Landy 1982) and on phi80/lambda arm sequence homology (Leong et al. 1985); NO published phi80 Int footprint exists at these specific coordinates. PROVISIONAL — extent and identity rest on consensus/analogy alone, not direct phi80 evidence."
@@ -189,7 +188,7 @@
           "phi80 Int arm-binding site P'2 (candidate)"
         ],
         "parent": [
-          "phi80_attP"
+          "phi80 attP"
         ],
         "note": [
           "Second candidate arm-type integrase binding site in the P' arm, 20 bp downstream of P'1 (one full repeat unit). Same TGGGTACAC element. Assignment rests on the tandem-repeat structure plus analogy to lambda arm-type sites (Ross & Landy 1982; Landy 1989) and phi80/lambda arm homology (Leong et al. 1985); NO direct phi80 Int footprint at these coordinates is published. PROVISIONAL — extent and identity rest on consensus/analogy alone."
@@ -214,7 +213,7 @@
           "IHF binding site (H2 analog)"
         ],
         "parent": [
-          "phi80_attP"
+          "phi80 attP"
         ],
         "note": [
           "E. coli integration host factor (IHF) binding site in the P arm, the phi80 analog of the lambda H2 site. Leong et al. 1985 demonstrated by DNase I footprinting with purified IHF that phi80 attP carries a single IHF site in the P arm, left of the core in phage convention — so IHF binding in this region is EXPERIMENTAL. The 13 bp window AATCAAAAAGTTA satisfies the IHF consensus WATCAANNNNTTR (Hales et al. 1994); IHF bends the bound DNA >160 degrees via indirect readout (Rice et al. 1996; Robertson & Nash 1988). PROVISIONAL applies only to the precise 13 bp boundaries, which are assigned from consensus matching, not from a published phi80 footprint coordinate."

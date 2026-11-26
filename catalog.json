@@ -7,32 +7,7 @@
   "n_functional_claims": 362,
   "parts": [
     {
-      "name": "186 integrase",
-      "slug": "186_integrase",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "186 integrase"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 336,
-      "protein_length_aa": 336,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "186_attB",
+      "name": "186 attB",
       "slug": "186_attB",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -40,8 +15,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "186_attB",
-        "186 attB"
+        "186_attB"
       ],
       "collections": [
         "phage-att-sites"
@@ -89,7 +63,7 @@
       "functional_claims": []
     },
     {
-      "name": "186_attP",
+      "name": "186 attP",
       "slug": "186_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -98,7 +72,6 @@
       "so_name": "operator",
       "synonyms": [
         "186_attP",
-        "186 attP",
         "phage 186 attP",
         "186 attachment site"
       ],
@@ -386,6 +359,31 @@
           "supersedes": null
         }
       ]
+    },
+    {
+      "name": "186 integrase",
+      "slug": "186_integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "186 integrase"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 336,
+      "protein_length_aa": 336,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
     },
     {
       "name": "2micron ori",
@@ -835,7 +833,7 @@
       "functional_claims": []
     },
     {
-      "name": "ALFA_tag",
+      "name": "ALFA tag",
       "slug": "ALFA_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -843,6 +841,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "ALFA_tag",
         "ALFA-tag",
         "ALFA epitope",
         "SRLEEELRRRLTE"
@@ -1179,6 +1178,180 @@
       "main_citations": [],
       "sourced": false,
       "functional_claims": []
+    },
+    {
+      "name": "AmpR",
+      "slug": "bla",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": "UniProt:P62593",
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "bla",
+        "TEM-1",
+        "amp",
+        "beta-lactamase",
+        "penicillinase"
+      ],
+      "collections": [],
+      "description": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
+      "length": 286,
+      "protein_length_aa": 286,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "Signal",
+          "feature_type": "sig_peptide",
+          "so_term": "SO:0000418",
+          "so_name": "signal_peptide",
+          "start": 0,
+          "end": 23,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Nucleophile; acyl-ester intermediate",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 67,
+          "end": 68,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 70,
+          "end": 71,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton donor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 128,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 163,
+          "end": 164,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 231,
+          "end": 234,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Disulfide bond",
+          "feature_type": "disulfide_bond",
+          "so_term": "SO:0001088",
+          "so_name": "disulfide_bond",
+          "start": 74,
+          "end": 121,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+          "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
+          "pmid": "383387",
+          "doi": "10.1101/sqb.1979.043.01.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
+        },
+        {
+          "authors": "Ambler RP, Coulson AF, Frere JM, Ghuysen JM, Joris B, Forsman M, Levesque RC, Tiraby G, Waley SG",
+          "title": "A standard numbering scheme for the class A beta-lactamases",
+          "journal": "Biochemical Journal",
+          "pmid": "2039479",
+          "doi": "10.1042/bj2760269",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2039479/"
+        },
+        {
+          "authors": "Jelsch C, Mourey L, Masson JM, Samama JP",
+          "title": "Crystal structure of Escherichia coli TEM1 beta-lactamase at 1.8 A resolution",
+          "journal": "Proteins",
+          "pmid": "8356032",
+          "doi": "10.1002/prot.340160406",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8356032/"
+        },
+        {
+          "authors": "Egorov A, Rubtsova M, Grigorenko V, Uporov I, Veselovsky A",
+          "title": "The Role of the Omega-Loop in Regulation of the Catalytic Activity of TEM-Type beta-Lactamases",
+          "journal": "Biomolecules",
+          "pmid": "31835662",
+          "doi": "10.3390/biom9120854",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31835662/"
+        },
+        {
+          "authors": "Vanhove M, Guillaume G, Ledent P, Richards JH, Pain RH, Frere JM",
+          "title": "Kinetic and thermodynamic consequences of the removal of the Cys-77-Cys-123 disulphide bond for the folding of TEM-1 beta-lactamase",
+          "journal": "Biochemical Journal",
+          "pmid": "9020874",
+          "doi": "10.1042/bj3210413",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9020874/"
+        }
+      ],
+      "main_citations": [],
+      "sourced": true,
+      "functional_claims": [
+        {
+          "id": "function",
+          "type": "function",
+          "label": "Confers ampicillin (beta-lactam) resistance (TEM-1 class A serine beta-lactamase).",
+          "value": {
+            "function": "antibiotic resistance",
+            "resists": "ampicillin / beta-lactams"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "383387",
+            "quote": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "bla.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ],
+      "uniprot_import": {
+        "fetched": "2026-11-01",
+        "accession": "UniProt:P62593",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 156
+      }
     },
     {
       "name": "APH-3",
@@ -1691,7 +1864,7 @@
       ]
     },
     {
-      "name": "B0015_terminator",
+      "name": "B0015 terminator",
       "slug": "B0015_terminator",
       "feature_type": "terminator",
       "kind": "dna",
@@ -1699,6 +1872,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
+        "B0015_terminator",
         "BBa_B0015",
         "B0015",
         "double terminator",
@@ -1765,7 +1939,7 @@
       "functional_claims": []
     },
     {
-      "name": "B0034_RBS",
+      "name": "B0034 RBS",
       "slug": "B0034_RBS",
       "feature_type": "RBS",
       "kind": "dna",
@@ -1773,6 +1947,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "synonyms": [
+        "B0034_RBS",
         "BBa_B0034",
         "B0034",
         "BioBrick RBS"
@@ -1792,7 +1967,7 @@
       "functional_claims": []
     },
     {
-      "name": "BC2_tag",
+      "name": "BC2 tag",
       "slug": "BC2_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -1800,8 +1975,8 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "BC2_tag",
         "BC2T",
-        "BC2 tag",
         "beta-catenin epitope"
       ],
       "collections": [
@@ -2647,180 +2822,6 @@
       }
     },
     {
-      "name": "bla",
-      "slug": "bla",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": "UniProt:P62593",
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "AmpR",
-        "TEM-1",
-        "amp",
-        "beta-lactamase",
-        "penicillinase"
-      ],
-      "collections": [],
-      "description": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
-      "length": 286,
-      "protein_length_aa": 286,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": true,
-      "status": "validated",
-      "children": [
-        {
-          "label": "Signal",
-          "feature_type": "sig_peptide",
-          "so_term": "SO:0000418",
-          "so_name": "signal_peptide",
-          "start": 0,
-          "end": 23,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Active site: Nucleophile; acyl-ester intermediate",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 67,
-          "end": 68,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Active site: Proton acceptor",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 70,
-          "end": 71,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Active site: Proton donor",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 127,
-          "end": 128,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Active site: Proton acceptor",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 163,
-          "end": 164,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Binding site",
-          "feature_type": "binding",
-          "so_term": "SO:0000409",
-          "so_name": "binding_site",
-          "start": 231,
-          "end": 234,
-          "strand": 1,
-          "citations": []
-        },
-        {
-          "label": "Disulfide bond",
-          "feature_type": "disulfide_bond",
-          "so_term": "SO:0001088",
-          "so_name": "disulfide_bond",
-          "start": 74,
-          "end": 121,
-          "strand": 1,
-          "citations": []
-        }
-      ],
-      "references": [
-        {
-          "authors": "Sutcliffe JG",
-          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
-          "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
-          "pmid": "383387",
-          "doi": "10.1101/sqb.1979.043.01.013",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
-        },
-        {
-          "authors": "Ambler RP, Coulson AF, Frere JM, Ghuysen JM, Joris B, Forsman M, Levesque RC, Tiraby G, Waley SG",
-          "title": "A standard numbering scheme for the class A beta-lactamases",
-          "journal": "Biochemical Journal",
-          "pmid": "2039479",
-          "doi": "10.1042/bj2760269",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/2039479/"
-        },
-        {
-          "authors": "Jelsch C, Mourey L, Masson JM, Samama JP",
-          "title": "Crystal structure of Escherichia coli TEM1 beta-lactamase at 1.8 A resolution",
-          "journal": "Proteins",
-          "pmid": "8356032",
-          "doi": "10.1002/prot.340160406",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/8356032/"
-        },
-        {
-          "authors": "Egorov A, Rubtsova M, Grigorenko V, Uporov I, Veselovsky A",
-          "title": "The Role of the Omega-Loop in Regulation of the Catalytic Activity of TEM-Type beta-Lactamases",
-          "journal": "Biomolecules",
-          "pmid": "31835662",
-          "doi": "10.3390/biom9120854",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/31835662/"
-        },
-        {
-          "authors": "Vanhove M, Guillaume G, Ledent P, Richards JH, Pain RH, Frere JM",
-          "title": "Kinetic and thermodynamic consequences of the removal of the Cys-77-Cys-123 disulphide bond for the folding of TEM-1 beta-lactamase",
-          "journal": "Biochemical Journal",
-          "pmid": "9020874",
-          "doi": "10.1042/bj3210413",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/9020874/"
-        }
-      ],
-      "main_citations": [],
-      "sourced": true,
-      "functional_claims": [
-        {
-          "id": "function",
-          "type": "function",
-          "label": "Confers ampicillin (beta-lactam) resistance (TEM-1 class A serine beta-lactamase).",
-          "value": {
-            "function": "antibiotic resistance",
-            "resists": "ampicillin / beta-lactams"
-          },
-          "ontology": {},
-          "source": {
-            "pmid": "383387",
-            "quote": "TEM-1 beta-lactamase (gene bla, UniProt P62593) -- the 286-aa class A serine beta-lactamase precursor that confers ampicillin resistance, the canonical AmpR selection marker.",
-            "quote_source": "catalog-doc"
-          },
-          "provenance": {
-            "method": "transcribed-from-doc",
-            "from": "bla.md",
-            "agent": "ai-assistant"
-          },
-          "confidence": "high",
-          "analysis_status": "pending",
-          "cross_checked": false,
-          "supersedes": null
-        }
-      ],
-      "uniprot_import": {
-        "fetched": "2026-11-01",
-        "accession": "UniProt:P62593",
-        "status": "match",
-        "identity": 1.0,
-        "sequence_match": true,
-        "uniprot_entry_version": 156
-      }
-    },
-    {
       "name": "BlastR",
       "slug": "BlastR",
       "feature_type": "CDS",
@@ -3369,7 +3370,7 @@
       "functional_claims": []
     },
     {
-      "name": "CBP_tag",
+      "name": "CBP tag",
       "slug": "CBP_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -3377,6 +3378,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "CBP_tag",
         "calmodulin-binding peptide",
         "CBP",
         "calmodulin binding peptide"
@@ -4386,7 +4388,7 @@
       ]
     },
     {
-      "name": "ColE1_AT",
+      "name": "ColE1 (vector form)",
       "slug": "ColE1_AT",
       "feature_type": "rep_origin",
       "kind": "dna",
@@ -5297,7 +5299,7 @@
       "functional_claims": []
     },
     {
-      "name": "enterokinase_site",
+      "name": "enterokinase site",
       "slug": "enterokinase_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -5305,6 +5307,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "enterokinase_site",
         "enterokinase",
         "enterokinase cleavage site",
         "EK site",
@@ -5810,7 +5813,7 @@
       "functional_claims": []
     },
     {
-      "name": "FactorXa_site",
+      "name": "Factor Xa site",
       "slug": "FactorXa_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -5818,6 +5821,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "FactorXa_site",
         "Factor Xa cleavage site",
         "FXa site",
         "IEGR"
@@ -8003,32 +8007,7 @@
       }
     },
     {
-      "name": "HK022 integrase",
-      "slug": "HK022_integrase",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "HK022 integrase"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 357,
-      "protein_length_aa": 357,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "HK022_attB",
+      "name": "HK022 attB",
       "slug": "HK022_attB",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -8036,8 +8015,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "HK022_attB",
-        "HK022 attB"
+        "HK022_attB"
       ],
       "collections": [
         "phage-att-sites"
@@ -8085,7 +8063,7 @@
       "functional_claims": []
     },
     {
-      "name": "HK022_attP",
+      "name": "HK022 attP",
       "slug": "HK022_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -8094,7 +8072,6 @@
       "so_name": "operator",
       "synonyms": [
         "HK022_attP",
-        "HK022 attP",
         "phage HK022 attP",
         "HK022 attachment site (phage)"
       ],
@@ -8271,6 +8248,31 @@
       ]
     },
     {
+      "name": "HK022 integrase",
+      "slug": "HK022_integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "HK022 integrase"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 357,
+      "protein_length_aa": 357,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
       "name": "hPGK",
       "slug": "hPGK",
       "feature_type": "promoter",
@@ -8300,7 +8302,7 @@
       "functional_claims": []
     },
     {
-      "name": "HRV3C_site",
+      "name": "HRV 3C site",
       "slug": "HRV3C_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -8308,9 +8310,9 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "HRV3C_site",
         "PreScission protease site",
         "3C protease cleavage site",
-        "HRV 3C site",
         "LEVLFQGP"
       ],
       "collections": [
@@ -9621,123 +9623,7 @@
       "functional_claims": []
     },
     {
-      "name": "lambda cos",
-      "slug": "lambda_cos",
-      "feature_type": "misc_feature",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000110",
-      "so_name": "sequence_feature",
-      "synonyms": [
-        "lambda cos",
-        "Minimal lambda cos sequence",
-        "cos site",
-        "cos"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 224,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "lambda cos region",
-      "slug": "lambda_cos_1",
-      "feature_type": "misc_feature",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000110",
-      "so_name": "sequence_feature",
-      "synonyms": [
-        "lambda cos region",
-        "cos site (SEVA)"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 403,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [
-        {
-          "label": "lambda cos",
-          "feature_type": "misc_feature",
-          "so_term": "SO:0000110",
-          "so_name": "sequence_feature",
-          "start": 127,
-          "end": 351,
-          "strand": 1,
-          "citations": []
-        }
-      ],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "lambda integrase",
-      "slug": "lambda_integrase",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "lambda integrase"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 356,
-      "protein_length_aa": 356,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "lambda t0",
-      "slug": "lambda_t0",
-      "feature_type": "terminator",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000141",
-      "so_name": "terminator",
-      "synonyms": [
-        "lambda t0",
-        "lambda t0 terminator"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 95,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "lambda_attB",
+      "name": "lambda attB",
       "slug": "lambda_attB",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -9745,8 +9631,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "lambda_attB",
-        "lambda attB"
+        "lambda_attB"
       ],
       "collections": [
         "phage-att-sites"
@@ -9785,7 +9670,7 @@
       "functional_claims": []
     },
     {
-      "name": "lambda_attP",
+      "name": "lambda attP",
       "slug": "lambda_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -9794,7 +9679,6 @@
       "so_name": "operator",
       "synonyms": [
         "lambda_attP",
-        "lambda attP",
         "phage lambda attP",
         "lambda POP'"
       ],
@@ -10148,6 +10032,122 @@
       ]
     },
     {
+      "name": "lambda cos",
+      "slug": "lambda_cos",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "synonyms": [
+        "lambda cos",
+        "Minimal lambda cos sequence",
+        "cos site",
+        "cos"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 224,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
+      "name": "lambda cos region",
+      "slug": "lambda_cos_1",
+      "feature_type": "misc_feature",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000110",
+      "so_name": "sequence_feature",
+      "synonyms": [
+        "lambda cos region",
+        "cos site (SEVA)"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 403,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [
+        {
+          "label": "lambda cos",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 127,
+          "end": 351,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
+      "name": "lambda integrase",
+      "slug": "lambda_integrase",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "lambda integrase"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 356,
+      "protein_length_aa": 356,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
+      "name": "lambda t0",
+      "slug": "lambda_t0",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "synonyms": [
+        "lambda t0",
+        "lambda t0 terminator"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 95,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
       "name": "LEU2",
       "slug": "LEU2",
       "feature_type": "CDS",
@@ -10294,7 +10294,7 @@
       }
     },
     {
-      "name": "LPETG_tag",
+      "name": "LPETG tag",
       "slug": "LPETG_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -10302,6 +10302,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "LPETG_tag",
         "sortase A recognition motif",
         "LPXTG motif",
         "sortag",
@@ -12064,119 +12065,6 @@
       ]
     },
     {
-      "name": "P2",
-      "slug": "P2",
-      "feature_type": "promoter",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000167",
-      "so_name": "promoter",
-      "synonyms": [
-        "Ptet2",
-        "pBR322 tet promoter"
-      ],
-      "collections": [],
-      "description": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
-      "length": 29,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": true,
-      "status": "validated",
-      "children": [
-        {
-          "label": "-35",
-          "feature_type": "regulatory",
-          "so_term": "SO:0000175",
-          "so_name": "minus_35_signal",
-          "start": 0,
-          "end": 6,
-          "strand": 1,
-          "citations": [
-            3,
-            4
-          ]
-        },
-        {
-          "label": "-10",
-          "feature_type": "regulatory",
-          "so_term": "SO:0000176",
-          "so_name": "minus_10_signal",
-          "start": 23,
-          "end": 29,
-          "strand": 1,
-          "citations": [
-            3,
-            4
-          ]
-        }
-      ],
-      "references": [
-        {
-          "authors": "Sutcliffe JG",
-          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
-          "journal": "Cold Spring Harbor Symposia on Quantitative Biology 1979;43:77-90",
-          "pmid": "383387",
-          "doi": "10.1101/sqb.1979.043.01.013",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
-        },
-        {
-          "authors": "Hillen W, Berens C",
-          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
-          "journal": "Annual Review of Microbiology 1994;48:345-369",
-          "pmid": "7826010",
-          "doi": "10.1146/annurev.mi.48.100194.002021",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
-        },
-        {
-          "authors": "Harley CB, Lawrie J, Betlach M, Crea R, Boyer HW, Hedgpeth J",
-          "title": "Transcription initiation at the tet promoter and effect of mutations",
-          "journal": "Nucleic Acids Research 1988;16(15):7269-7285",
-          "pmid": "3045754",
-          "doi": "10.1093/nar/16.15.7269",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/3045754/"
-        },
-        {
-          "authors": "Lutz R, Bujard H",
-          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
-          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
-          "pmid": "9092630",
-          "doi": "10.1093/nar/25.6.1203",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
-        }
-      ],
-      "main_citations": [
-        1,
-        2
-      ],
-      "sourced": true,
-      "functional_claims": [
-        {
-          "id": "regulation",
-          "type": "regulation",
-          "label": "Constitutive sigma70 promoter (pBR322 tet P2).",
-          "value": {
-            "regulation": "constitutive"
-          },
-          "ontology": {},
-          "source": {
-            "pmid": "383387",
-            "quote": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
-            "quote_source": "catalog-doc"
-          },
-          "provenance": {
-            "method": "transcribed-from-doc",
-            "from": "P2.md",
-            "agent": "ai-assistant"
-          },
-          "confidence": "high",
-          "analysis_status": "pending",
-          "cross_checked": false,
-          "supersedes": null
-        }
-      ]
-    },
-    {
       "name": "P2A",
       "slug": "P2A",
       "feature_type": "protein_domain",
@@ -13411,7 +13299,7 @@
       "functional_claims": []
     },
     {
-      "name": "phi80_attB",
+      "name": "phi80 attB",
       "slug": "phi80_attB",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -13419,8 +13307,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "phi80_attB",
-        "phi80 attB"
+        "phi80_attB"
       ],
       "collections": [
         "phage-att-sites"
@@ -13468,7 +13355,7 @@
       "functional_claims": []
     },
     {
-      "name": "phi80_attP",
+      "name": "phi80 attP",
       "slug": "phi80_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -13477,7 +13364,6 @@
       "so_name": "operator",
       "synonyms": [
         "phi80_attP",
-        "phi80 attP",
         "phi-80 attP",
         "phage phi80 attP"
       ],
@@ -13769,7 +13655,7 @@
       ]
     },
     {
-      "name": "phiC31_attB",
+      "name": "phiC31 attB",
       "slug": "phiC31_attB",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -13777,8 +13663,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
-        "phiC31_attB",
-        "phiC31 attB"
+        "phiC31_attB"
       ],
       "collections": [
         "phage-att-sites"
@@ -13817,7 +13702,7 @@
       "functional_claims": []
     },
     {
-      "name": "phiC31_attP",
+      "name": "phiC31 attP",
       "slug": "phiC31_attP",
       "feature_type": "protein_bind",
       "kind": "dna",
@@ -13826,7 +13711,6 @@
       "so_name": "operator",
       "synonyms": [
         "phiC31_attP",
-        "phiC31 attP",
         "phi-C31 attP",
         "phiC31 attachment site"
       ],
@@ -16252,6 +16136,120 @@
           "provenance": {
             "method": "transcribed-from-doc",
             "from": "Ptac.md",
+            "agent": "ai-assistant"
+          },
+          "confidence": "high",
+          "analysis_status": "pending",
+          "cross_checked": false,
+          "supersedes": null
+        }
+      ]
+    },
+    {
+      "name": "Ptet (pBR322)",
+      "slug": "P2",
+      "feature_type": "promoter",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000167",
+      "so_name": "promoter",
+      "synonyms": [
+        "P2",
+        "Ptet2",
+        "pBR322 tet promoter"
+      ],
+      "collections": [],
+      "description": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+      "length": 29,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": true,
+      "status": "validated",
+      "children": [
+        {
+          "label": "-35",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000175",
+          "so_name": "minus_35_signal",
+          "start": 0,
+          "end": 6,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        },
+        {
+          "label": "-10",
+          "feature_type": "regulatory",
+          "so_term": "SO:0000176",
+          "so_name": "minus_10_signal",
+          "start": 23,
+          "end": 29,
+          "strand": 1,
+          "citations": [
+            3,
+            4
+          ]
+        }
+      ],
+      "references": [
+        {
+          "authors": "Sutcliffe JG",
+          "title": "Complete nucleotide sequence of the Escherichia coli plasmid pBR322",
+          "journal": "Cold Spring Harbor Symposia on Quantitative Biology 1979;43:77-90",
+          "pmid": "383387",
+          "doi": "10.1101/sqb.1979.043.01.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/383387/"
+        },
+        {
+          "authors": "Hillen W, Berens C",
+          "title": "Mechanisms underlying expression of Tn10 encoded tetracycline resistance",
+          "journal": "Annual Review of Microbiology 1994;48:345-369",
+          "pmid": "7826010",
+          "doi": "10.1146/annurev.mi.48.100194.002021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7826010/"
+        },
+        {
+          "authors": "Harley CB, Lawrie J, Betlach M, Crea R, Boyer HW, Hedgpeth J",
+          "title": "Transcription initiation at the tet promoter and effect of mutations",
+          "journal": "Nucleic Acids Research 1988;16(15):7269-7285",
+          "pmid": "3045754",
+          "doi": "10.1093/nar/16.15.7269",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3045754/"
+        },
+        {
+          "authors": "Lutz R, Bujard H",
+          "title": "Independent and tight regulation of transcriptional units in Escherichia coli via the LacR/O, the TetR/O and AraC/I1-I2 regulatory elements",
+          "journal": "Nucleic Acids Research 1997;25(6):1203-1210",
+          "pmid": "9092630",
+          "doi": "10.1093/nar/25.6.1203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9092630/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
+      "functional_claims": [
+        {
+          "id": "regulation",
+          "type": "regulation",
+          "label": "Constitutive sigma70 promoter (pBR322 tet P2).",
+          "value": {
+            "regulation": "constitutive"
+          },
+          "ontology": {},
+          "source": {
+            "pmid": "383387",
+            "quote": "P2 is a 29-bp sigma70 promoter fragment that is, by exact sequence, the pBR322 tet (P2) constitutive promoter (-35 + 17-bp spacer + -10), with ClaI and HindIII cloning sites in the spacer and no...",
+            "quote_source": "catalog-doc"
+          },
+          "provenance": {
+            "method": "transcribed-from-doc",
+            "from": "P2.md",
             "agent": "ai-assistant"
           },
           "confidence": "high",
@@ -18718,7 +18716,7 @@
       "functional_claims": []
     },
     {
-      "name": "SBP_tag",
+      "name": "SBP tag",
       "slug": "SBP_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -18726,6 +18724,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "SBP_tag",
         "streptavidin-binding peptide",
         "SBP",
         "SBP-Tag",
@@ -19086,7 +19085,7 @@
       "functional_claims": []
     },
     {
-      "name": "SNAP_tag",
+      "name": "SNAP tag",
       "slug": "SNAP_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -19094,9 +19093,9 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "SNAP_tag",
         "SNAP",
         "hAGT-derived self-labeling tag",
-        "SNAP tag",
         "benzylguanine self-labeling tag"
       ],
       "collections": [
@@ -20091,7 +20090,7 @@
       "functional_claims": []
     },
     {
-      "name": "Spot_tag",
+      "name": "Spot tag",
       "slug": "Spot_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -20099,6 +20098,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "Spot_tag",
         "Spot-tag",
         "SPOT-tag",
         "PDRVRAVSHWSS"
@@ -21883,7 +21883,7 @@
       "functional_claims": []
     },
     {
-      "name": "Strep_tag",
+      "name": "Strep tag II",
       "slug": "Strep_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -21891,6 +21891,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "Strep_tag",
         "Strep-tag II",
         "Strep tag",
         "Strep-tag",
@@ -22421,7 +22422,7 @@
       "functional_claims": []
     },
     {
-      "name": "SV40_PA_terminator",
+      "name": "SV40 polyA terminator",
       "slug": "SV40_PA_terminator",
       "feature_type": "terminator",
       "kind": "dna",
@@ -22528,61 +22529,7 @@
       "functional_claims": []
     },
     {
-      "name": "T7 terminator",
-      "slug": "T7_terminator",
-      "feature_type": "terminator",
-      "kind": "dna",
-      "source_accession": null,
-      "so_term": "SO:0000141",
-      "so_name": "terminator",
-      "synonyms": [
-        "T7 terminator",
-        "T7 Terminator"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 48,
-      "protein_length_aa": null,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "T7-Ocr",
-      "slug": "T7-Ocr",
-      "feature_type": "CDS",
-      "kind": "protein",
-      "source_accession": null,
-      "so_term": "SO:0000316",
-      "so_name": "CDS",
-      "synonyms": [
-        "T7-Ocr",
-        "T7p01",
-        "Ocr",
-        "gene 0.3 protein"
-      ],
-      "collections": [],
-      "description": "",
-      "length": 117,
-      "protein_length_aa": 117,
-      "regulated_by": [],
-      "regulates": [],
-      "documented": false,
-      "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
-    },
-    {
-      "name": "T7_tag",
+      "name": "T7 tag",
       "slug": "T7_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -22590,7 +22537,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
-        "T7 tag",
+        "T7_tag",
         "T7-tag",
         "T7 tag (gene 10 leader)",
         "gene 10 leader",
@@ -22783,6 +22730,60 @@
           "supersedes": null
         }
       ]
+    },
+    {
+      "name": "T7 terminator",
+      "slug": "T7_terminator",
+      "feature_type": "terminator",
+      "kind": "dna",
+      "source_accession": null,
+      "so_term": "SO:0000141",
+      "so_name": "terminator",
+      "synonyms": [
+        "T7 terminator",
+        "T7 Terminator"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 48,
+      "protein_length_aa": null,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
+    },
+    {
+      "name": "T7-Ocr",
+      "slug": "T7-Ocr",
+      "feature_type": "CDS",
+      "kind": "protein",
+      "source_accession": null,
+      "so_term": "SO:0000316",
+      "so_name": "CDS",
+      "synonyms": [
+        "T7-Ocr",
+        "T7p01",
+        "Ocr",
+        "gene 0.3 protein"
+      ],
+      "collections": [],
+      "description": "",
+      "length": 117,
+      "protein_length_aa": 117,
+      "regulated_by": [],
+      "regulates": [],
+      "documented": false,
+      "status": "candidate",
+      "children": [],
+      "references": [],
+      "main_citations": [],
+      "sourced": false,
+      "functional_claims": []
     },
     {
       "name": "T7lac",
@@ -23393,7 +23394,7 @@
       ]
     },
     {
-      "name": "TEV_site",
+      "name": "TEV site",
       "slug": "TEV_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -23401,7 +23402,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
-        "TEV site",
+        "TEV_site",
         "TEV",
         "TEV cleavage site",
         "TEV protease site",
@@ -23655,7 +23656,7 @@
       ]
     },
     {
-      "name": "thrombin_site",
+      "name": "thrombin site",
       "slug": "thrombin_site",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -23663,7 +23664,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
-        "thrombin site",
+        "thrombin_site",
         "thrombin",
         "thrombin cleavage site",
         "thrombin recognition site",
@@ -24113,7 +24114,7 @@
       }
     },
     {
-      "name": "Trx_tag",
+      "name": "Trx tag",
       "slug": "Trx_tag",
       "feature_type": "CDS",
       "kind": "protein",
@@ -24121,6 +24122,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
+        "Trx_tag",
         "trxA",
         "thioredoxin",
         "thioredoxin-1",
@@ -24513,7 +24515,7 @@
       }
     },
     {
-      "name": "Twin_Strep_tag",
+      "name": "Twin Strep tag",
       "slug": "Twin_Strep_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -24521,10 +24523,10 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "Twin_Strep_tag",
         "Twin-Strep-tag",
         "Twin-Strep",
-        "Strep-tag II tandem",
-        "Twin Strep tag"
+        "Strep-tag II tandem"
       ],
       "collections": [
         "affinity-tags"
@@ -25126,7 +25128,7 @@
       "functional_claims": []
     },
     {
-      "name": "V5_tag",
+      "name": "V5 tag",
       "slug": "V5_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -25134,7 +25136,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
-        "V5 tag",
+        "V5_tag",
         "V5 epitope",
         "Pk-tag",
         "Pk tag",
@@ -25374,7 +25376,7 @@
       ]
     },
     {
-      "name": "VSVG_tag",
+      "name": "VSV G tag",
       "slug": "VSVG_tag",
       "feature_type": "protein_domain",
       "kind": "protein",
@@ -25382,6 +25384,7 @@
       "so_term": "SO:0000417",
       "so_name": "polypeptide_domain",
       "synonyms": [
+        "VSVG_tag",
         "VSV-G tag",
         "VSV-G epitope",
         "VSVG epitope",

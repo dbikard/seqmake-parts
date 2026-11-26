@@ -1,4 +1,4 @@
-# VSVG_tag
+# VSV G tag
 
 11-aa epitope tag (YTDIEMNRLGK) from the cytoplasmic tail of Vesicular stomatitis Indiana virus (VSVind) glycoprotein (VSV-G), detected by the P5D4 monoclonal antibody; used for protein detection, immunoprecipitation, and affinity purification across diverse expression hosts.
 

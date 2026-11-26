@@ -33,9 +33,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..46
-                     /label="186_attB"
+                     /label="186 attB"
                      /synonym="186_attB"
-                     /synonym="186 attB"
                      /collection="phage-att-sites"
                      /cognate="186_attP"
                      /db_xref="SO:0000057"

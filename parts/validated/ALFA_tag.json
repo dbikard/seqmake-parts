@@ -68,9 +68,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "ALFA_tag"
+          "ALFA tag"
         ],
         "synonym": [
+          "ALFA_tag",
           "ALFA-tag",
           "ALFA epitope",
           "SRLEEELRRRLTE"

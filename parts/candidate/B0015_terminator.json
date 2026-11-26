@@ -19,9 +19,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "B0015_terminator"
+          "B0015 terminator"
         ],
         "synonym": [
+          "B0015_terminator",
           "BBa_B0015",
           "B0015",
           "double terminator",
@@ -39,7 +40,7 @@
           "T7Te"
         ],
         "parent": [
-          "B0015_terminator"
+          "B0015 terminator"
         ],
         "note": [
           "The T7 early terminator TE (catalog part T7Te), identical: the 3' terminator of this B0010-B0012 double terminator."
@@ -56,7 +57,7 @@
           "rrnBT1"
         ],
         "parent": [
-          "B0015_terminator"
+          "B0015 terminator"
         ],
         "note": [
           "The rrnB T1 terminator (catalog part rrnBT1), identical: inside the B0010 half of this B0010-B0012 double terminator."

@@ -75,12 +75,12 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "HRV3C_site"
+          "HRV 3C site"
         ],
         "synonym": [
+          "HRV3C_site",
           "PreScission protease site",
           "3C protease cleavage site",
-          "HRV 3C site",
           "LEVLFQGP"
         ],
         "note": [

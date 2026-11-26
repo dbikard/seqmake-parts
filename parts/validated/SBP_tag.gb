@@ -57,7 +57,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..38
-                     /label="SBP_tag"
+                     /label="SBP tag"
+                     /synonym="SBP_tag"
                      /synonym="streptavidin-binding peptide"
                      /synonym="SBP"
                      /synonym="SBP-Tag"

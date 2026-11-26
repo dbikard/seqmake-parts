@@ -11,7 +11,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      RBS             1..12
-                     /label="B0034_RBS"
+                     /label="B0034 RBS"
+                     /synonym="B0034_RBS"
                      /synonym="BBa_B0034"
                      /synonym="B0034"
                      /synonym="BioBrick RBS"

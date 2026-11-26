@@ -41,9 +41,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..258
-                     /label="HK022_attP"
+                     /label="HK022 attP"
                      /synonym="HK022_attP"
-                     /synonym="HK022 attP"
                      /synonym="phage HK022 attP"
                      /synonym="HK022 attachment site (phage)"
                      /note="HK022 phage attachment (att) site: the Int (tyrosine

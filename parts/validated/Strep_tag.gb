@@ -96,7 +96,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..8
-                     /label="Strep_tag"
+                     /label="Strep tag II"
+                     /synonym="Strep_tag"
                      /synonym="Strep-tag II"
                      /synonym="Strep tag"
                      /synonym="Strep-tag"

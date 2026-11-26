@@ -83,7 +83,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      CDS             1..109
-                     /label="Trx_tag"
+                     /label="Trx tag"
+                     /synonym="Trx_tag"
                      /synonym="trxA"
                      /synonym="thioredoxin"
                      /synonym="thioredoxin-1"
@@ -109,42 +110,42 @@ FEATURES             Location/Qualifiers
                      /collection="solubility-tags"
      protein_domain  2..109
                      /label="Thioredoxin"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000417"
      misc_feature    33
                      /label="Active site: Nucleophile"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000110"
      misc_feature    36
                      /label="Active site: Nucleophile"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000110"
      misc_feature    27
                      /label="Site: Deprotonates C-terminal active site Cys"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000110"
      misc_feature    34
                      /label="Site: Contributes to redox potential value"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000110"
      misc_feature    35
                      /label="Site: Contributes to redox potential value"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0000110"
      modified_residue70
                      /label="Modified residue: N6-acetyllysine"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0001089"
      disulfide_bond  33..36
                      /label="Disulfide bond: Redox-active"
-                     /parent="Trx_tag"
+                     /parent="Trx tag"
                      /note="source: UniProt:P0AA25"
                      /db_xref="SO:0001088"
 ORIGIN

@@ -71,7 +71,7 @@ MIN_DNA_BP = 20
 
 # Real elements shorter than MIN_DNA_BP: an operator or an RBS is this short.
 ALLOW_SHORT = {
-    "B0034_RBS": "12 bp iGEM RBS (BBa_B0034); an RBS is this short",
+    "B0034 RBS": "12 bp iGEM RBS (BBa_B0034); an RBS is this short",
     "B0030 RBS": "15 bp iGEM RBS (BBa_B0030); an RBS is this short",
     "lacO": "17 bp core of the lac operator O1 (Gilbert & Maxam 1973 publish 24 bp); an operator is this short",
     "I-SceI site": "18 bp homing-endonuclease recognition site",
@@ -97,7 +97,7 @@ GRANDFATHERED_UNSOURCED = {
     "Ptac": "a deposit containing its 55 bp (a pKK223-3 / tac vector record)",
     "Ptrc": "a deposit containing its 30 bp (a pTrc99A vector record)",
     "T7lac": "a deposit containing its 67 bp (a pET T7lac vector record)",
-    "SNAP_tag": "a record of the M-start 179 aa form: UniProt E5BBQ0 / PDB 3KZY hold residues 2-179 only",
+    "SNAP tag": "a record of the M-start 179 aa form: UniProt E5BBQ0 / PDB 3KZY hold residues 2-179 only",
 }
 # Pairs found by `duplicate`/`contains` that are deliberately left undeclared,
 # each until the question in its reason is settled from the literature.
@@ -109,7 +109,7 @@ ALLOW_PAIRS: dict[frozenset, str] = {
     frozenset(("PA1/O4/O3", "lacO")):
         "PA1/O4/O3 names its operators by position ('lac operator O4', 'O3'); its "
         "O4 child sits 1 bp off the exact 17 bp lacO copy: needs Lanzer & Bujard 1988",
-    frozenset(("B0030 RBS", "B0034_RBS")):
+    frozenset(("B0030 RBS", "B0034 RBS")):
         "B0034's 12 bp are the 3' end of B0030 (both iGEM RBSs). Declared as a child, "
         "the annotator replaced whole B0030 matches with B0034 on 72 plasmids and "
         "renamed 200 more (measured on a 1,390-plasmid collection), so it stays "

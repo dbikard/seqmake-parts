@@ -54,11 +54,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "phiC31_attP"
+          "phiC31 attP"
         ],
         "synonym": [
           "phiC31_attP",
-          "phiC31 attP",
           "phi-C31 attP",
           "phiC31 attachment site"
         ],
@@ -91,7 +90,7 @@
           "phiC31 attP minimal core (39 bp)"
         ],
         "parent": [
-          "phiC31_attP"
+          "phiC31 attP"
         ],
         "note": [
           "Minimal functional phiC31 attP defined as 39 bp by systematic truncation assay (Groth et al. 2000, PMID 10801973). Spans positions 31-70 of the 100 bp part and contains both 9 bp inverted-repeat integrase half-sites plus the central TT crossover; the ~31 bp flanking the core on each side lie outside the minimal functional site."
@@ -114,7 +113,7 @@
           "phiC31 Int binding -- left half-site"
         ],
         "parent": [
-          "phiC31_attP"
+          "phiC31 attP"
         ],
         "note": [
           "9 bp imperfect inverted-repeat left half-site (CCCCAACTG), one of the two integrase binding determinants of phiC31 attP (Groth et al. 2000, PMID 10801973). The left and right half-sites are in inverted orientation flanking the spacer that carries the TT crossover. Half-site boundary is a figure-level detail in the source; sequence and coordinates verified against the stored part."
@@ -137,7 +136,7 @@
           "phiC31 Int binding -- right half-site"
         ],
         "parent": [
-          "phiC31_attP"
+          "phiC31 attP"
         ],
         "note": [
           "9 bp imperfect inverted-repeat right half-site (Groth et al. 2000, PMID 10801973). On the plus strand reads CAGTTGGGG; its reverse complement is CCCCAACTG, the mirror of the left half-site, confirming the inverted-repeat architecture. Annotated on the minus strand to reflect its inverted orientation relative to the left half-site. Half-site boundary is a figure-level detail in the source; sequence and coordinates verified against the stored part."
@@ -160,7 +159,7 @@
           "TT crossover dinucleotide"
         ],
         "parent": [
-          "phiC31_attP"
+          "phiC31 attP"
         ],
         "note": [
           "Central TT overlap dinucleotide at the recombination crossover point of phiC31 attP, shared with attB; lies near the center of the minimal 39 bp core. phiC31 integrase is a large serine recombinase of the resolvase/invertase family (Thorpe & Smith 1998, PMID 9576912), a family that makes staggered double-strand cuts leaving a short central overlap, so the 2 bp stagger is mechanistically expected. The specific TT identity at this position is consistent with the X57036.1 crossover annotation (attP crossover at X57036 positions 1639-1641) but is not explicitly attributed to a single primary reference here; treat the exact 2 bp identity as consensus/inferred pending a junction-sequencing primary source."

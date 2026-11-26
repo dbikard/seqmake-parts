@@ -30,9 +30,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..54
-                     /label="phi80_attB"
+                     /label="phi80 attB"
                      /synonym="phi80_attB"
-                     /synonym="phi80 attB"
                      /collection="phage-att-sites"
                      /cognate="phi80_attP"
                      /db_xref="SO:0000057"

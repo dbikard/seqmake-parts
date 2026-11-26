@@ -61,9 +61,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "SBP_tag"
+          "SBP tag"
         ],
         "synonym": [
+          "SBP_tag",
           "streptavidin-binding peptide",
           "SBP",
           "SBP-Tag",

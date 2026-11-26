@@ -50,11 +50,11 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..30
-                     /label="Twin_Strep_tag"
+                     /label="Twin Strep tag"
+                     /synonym="Twin_Strep_tag"
                      /synonym="Twin-Strep-tag"
                      /synonym="Twin-Strep"
                      /synonym="Strep-tag II tandem"
-                     /synonym="Twin Strep tag"
                      /note="Tandem affinity tag: two Strep-tag II (WSHPQFEK)
                      units connected by a GGGSGGGSGGS flexible linker, with an
                      N-terminal Ser-Ala. Bivalency lowers the off-rate from
@@ -71,13 +71,13 @@ FEATURES             Location/Qualifiers
                      /collection="affinity-tags"
      protein_domain  3..10
                      /label="Strep-tag II"
-                     /parent="Twin_Strep_tag"
+                     /parent="Twin Strep tag"
                      /note="WSHPQFEK, one Strep-tag II copy (the catalog part
                      Strep_tag)."
                      /db_xref="SO:0000417"
      protein_domain  23..30
                      /label="Strep-tag II"
-                     /parent="Twin_Strep_tag"
+                     /parent="Twin Strep tag"
                      /note="WSHPQFEK, one Strep-tag II copy (the catalog part
                      Strep_tag)."
                      /db_xref="SO:0000417"

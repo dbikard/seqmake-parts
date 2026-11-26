@@ -47,9 +47,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "Spot_tag"
+          "Spot tag"
         ],
         "synonym": [
+          "Spot_tag",
           "Spot-tag",
           "SPOT-tag",
           "PDRVRAVSHWSS"

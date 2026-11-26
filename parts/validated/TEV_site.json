@@ -62,10 +62,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "TEV_site"
+          "TEV site"
         ],
         "synonym": [
-          "TEV site",
+          "TEV_site",
           "TEV",
           "TEV cleavage site",
           "TEV protease site",

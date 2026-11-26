@@ -114,9 +114,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..387
-                     /label="lambda_attP"
+                     /label="lambda attP"
                      /synonym="lambda_attP"
-                     /synonym="lambda attP"
                      /synonym="phage lambda attP"
                      /synonym="lambda POP'"
                      /note="Bacteriophage lambda phage attachment site (attP,
@@ -133,7 +132,7 @@ FEATURES             Location/Qualifiers
                      /cognate="lambda_attB"
      protein_bind    complement(63..73)
                      /label="P'2 arm-type Int binding site"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="P' arm-type lambda Int binding site (minus strand
                      5'-CAGTCAAAAT-3'). Arm-type sites are bound by the
                      N-terminal domain of Int distant from the crossover region;
@@ -148,7 +147,7 @@ FEATURES             Location/Qualifiers
                      /citation=[10]
      protein_bind    84..118
                      /label="IHF H' binding site"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="Integration host factor (IHF) binding site H' in the
                      P' arm (35 bp DNase I footprint). Binding bends the DNA by
                      >160 degrees (DNA U-turn), a sharp bend required to
@@ -165,7 +164,7 @@ FEATURES             Location/Qualifiers
                      /citation=[12]
      misc_feature    complement(130..144)
                      /label="common core O (15 bp crossover)"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="The 15 bp common core (minus strand
                      5'-GCTTTTTTATACTAA-3') shared identically by attP, attB,
                      attL and attR. The two pairs of core-type (junction-type)
@@ -177,7 +176,7 @@ FEATURES             Location/Qualifiers
                      /citation=[3]
      misc_feature    complement(133..139)
                      /label="O region (7 bp crossover overlap)"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="The 7 bp staggered overlap (minus strand
                      5'-TTTATAC-3') between the two Int cleavage sites, within
                      the 15 bp common core. Strand exchange requires sequence
@@ -189,7 +188,7 @@ FEATURES             Location/Qualifiers
                      /citation=[15]
      protein_bind    complement(171..184)
                      /label="IHF H1 binding site"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="IHF binding site H1 in the P arm (minus strand
                      5'-TAATATATTGATAT-3'), matching the IHF consensus. Unlike
                      H', the WATCAANNNNTTR core consensus alone is sufficient
@@ -203,7 +202,7 @@ FEATURES             Location/Qualifiers
                      /citation=[8]
      protein_bind    252..264
                      /label="IHF H2 binding site"
-                     /parent="lambda_attP"
+                     /parent="lambda attP"
                      /note="IHF binding site H2 in the P arm (plus strand
                      5'-AATCAACTACTTA-3'), matching the IHF consensus
                      WATCAANNNNTTR. 4 bp substitutions depress recombination

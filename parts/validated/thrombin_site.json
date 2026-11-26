@@ -62,10 +62,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "thrombin_site"
+          "thrombin site"
         ],
         "synonym": [
-          "thrombin site",
+          "thrombin_site",
           "thrombin",
           "thrombin cleavage site",
           "thrombin recognition site",

@@ -1,4 +1,4 @@
-# FactorXa_site
+# Factor Xa site
 
 FactorXa_site is the IEGR (Ile-Glu-Gly-Arg) tetrapeptide that coagulation Factor Xa recognizes as its P4-P1 site and cleaves after the terminal arginine — the canonical engineered site for site-specific release of a passenger protein from its fusion tag.
 

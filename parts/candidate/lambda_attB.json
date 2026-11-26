@@ -34,11 +34,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "lambda_attB"
+          "lambda attB"
         ],
         "synonym": [
-          "lambda_attB",
-          "lambda attB"
+          "lambda_attB"
         ],
         "collection": [
           "phage-att-sites"

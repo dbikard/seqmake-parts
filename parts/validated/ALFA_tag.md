@@ -1,4 +1,4 @@
-# ALFA_tag
+# ALFA tag
 
 A 13-amino-acid synthetic epitope tag (SRLEEELRRRLTE) designed to form a stable alpha-helical structure and recognized by the NbALFA nanobody with sub-nanomolar affinity (Kd = 26 pM).
 

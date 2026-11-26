@@ -104,9 +104,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "Strep_tag"
+          "Strep tag II"
         ],
         "synonym": [
+          "Strep_tag",
           "Strep-tag II",
           "Strep tag",
           "Strep-tag",

@@ -1,4 +1,4 @@
-# enterokinase_site
+# enterokinase site
 
 Enterokinase (enteropeptidase) recognition/cleavage site DDDDK — a 5-residue protease site cleaved on the C-terminal side of the Lys, leaving no residual residues on the downstream protein, widely used to remove an N-terminal fusion tag.
 

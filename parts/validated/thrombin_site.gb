@@ -54,8 +54,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..6
-                     /label="thrombin_site"
-                     /synonym="thrombin site"
+                     /label="thrombin site"
+                     /synonym="thrombin_site"
                      /synonym="thrombin"
                      /synonym="thrombin cleavage site"
                      /synonym="thrombin recognition site"

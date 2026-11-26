@@ -75,12 +75,12 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "SNAP_tag"
+          "SNAP tag"
         ],
         "synonym": [
+          "SNAP_tag",
           "SNAP",
           "hAGT-derived self-labeling tag",
-          "SNAP tag",
           "benzylguanine self-labeling tag"
         ],
         "note": [

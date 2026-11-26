@@ -48,11 +48,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "HK022_attP"
+          "HK022 attP"
         ],
         "synonym": [
           "HK022_attP",
-          "HK022 attP",
           "phage HK022 attP",
           "HK022 attachment site (phage)"
         ],

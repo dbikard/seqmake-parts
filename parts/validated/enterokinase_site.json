@@ -98,9 +98,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "enterokinase_site"
+          "enterokinase site"
         ],
         "synonym": [
+          "enterokinase_site",
           "enterokinase",
           "enterokinase cleavage site",
           "EK site",

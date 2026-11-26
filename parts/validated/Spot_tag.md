@@ -1,4 +1,4 @@
-# Spot_tag
+# Spot tag
 
 12-aa affinity/epitope tag (PDRVRAVSHWSS) recognized with sub-nanomolar affinity by the BC2 nanobody; enables immunodetection, affinity purification, and super-resolution microscopy labeling across diverse cell types.
 

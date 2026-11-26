@@ -74,7 +74,8 @@ COMMENT     Permanent catalog identifier:
             Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      protein_domain  1..5
-                     /label="LPETG_tag"
+                     /label="LPETG tag"
+                     /synonym="LPETG_tag"
                      /synonym="sortase A recognition motif"
                      /synonym="LPXTG motif"
                      /synonym="sortag"
