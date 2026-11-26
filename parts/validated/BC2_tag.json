@@ -47,11 +47,11 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "BC2_tag"
+          "BC2 tag"
         ],
         "synonym": [
+          "BC2_tag",
           "BC2T",
-          "BC2 tag",
           "beta-catenin epitope"
         ],
         "note": [

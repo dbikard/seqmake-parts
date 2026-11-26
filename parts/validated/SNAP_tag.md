@@ -1,4 +1,4 @@
-# SNAP_tag
+# SNAP tag
 
 SNAP-tag is a ~182-amino-acid self-labeling protein tag engineered by directed evolution from human O6-alkylguanine-DNA alkyltransferase; it forms a covalent, irreversible bond with O6-benzylguanine (BG) substrates through its active-site cysteine, so a fusion protein is decorated with whatever synthetic probe is appended to the BG.
 

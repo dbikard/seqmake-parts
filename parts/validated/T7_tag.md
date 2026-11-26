@@ -1,4 +1,4 @@
-# T7_tag
+# T7 tag
 
 N-terminal 11-residue epitope tag (MASMTGGQQMG) derived from bacteriophage T7 Gene product 10A (major capsid protein); widely used as a fusion tag for immunodetection and immunoaffinity purification of recombinant proteins.
 

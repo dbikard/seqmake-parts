@@ -1,4 +1,4 @@
-# Trx_tag
+# Trx tag
 
 E. coli thioredoxin-1 (trxA, UniProt P0AA25, 109 aa) used as a N-terminal fusion partner to promote solubility of recombinant proteins expressed in the bacterial cytoplasm.
 

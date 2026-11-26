@@ -1,4 +1,4 @@
-# thrombin_site
+# thrombin site
 
 Engineered 6-residue thrombin (factor IIa) recognition/cleavage site (LVPRGS) used to proteolytically remove affinity or solubility tags from recombinant fusion proteins.
 

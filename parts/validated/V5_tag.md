@@ -1,4 +1,4 @@
-# V5_tag
+# V5 tag
 
 A 14-amino-acid epitope tag (GKPIPNPLLGLDST) derived from the phosphoprotein of Parainfluenza virus 5 / Simian virus 5 (PIV5/SV5), recognized with sub-nanomolar affinity by the SV5-Pk1 (Pk) monoclonal antibody and widely used for protein detection, purification, and imaging.
 

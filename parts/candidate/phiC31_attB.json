@@ -34,11 +34,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "phiC31_attB"
+          "phiC31 attB"
         ],
         "synonym": [
-          "phiC31_attB",
-          "phiC31 attB"
+          "phiC31_attB"
         ],
         "collection": [
           "phage-att-sites"

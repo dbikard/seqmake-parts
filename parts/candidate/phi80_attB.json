@@ -39,11 +39,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "phi80_attB"
+          "phi80 attB"
         ],
         "synonym": [
-          "phi80_attB",
-          "phi80 attB"
+          "phi80_attB"
         ],
         "collection": [
           "phage-att-sites"

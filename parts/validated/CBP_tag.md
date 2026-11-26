@@ -1,4 +1,4 @@
-# CBP_tag
+# CBP tag
 
 CBP_tag is a 26-aa calmodulin-binding peptide from the C-terminus of myosin light-chain kinase that binds calmodulin in a Ca2+-dependent manner and is released with EGTA, serving as a reversible affinity handle.
 

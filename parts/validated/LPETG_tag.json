@@ -75,9 +75,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "LPETG_tag"
+          "LPETG tag"
         ],
         "synonym": [
+          "LPETG_tag",
           "sortase A recognition motif",
           "LPXTG motif",
           "sortag",

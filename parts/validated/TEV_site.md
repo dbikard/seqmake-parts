@@ -1,4 +1,4 @@
-# TEV_site
+# TEV site
 
 TEV_site is the engineered ENLYFQG (Glu-Asn-Leu-Tyr-Phe-Gln-Gly) heptapeptide recognized by Tobacco Etch Virus (TEV) NIa protease, which cleaves between the P1 Gln and the P1' Gly (ENLYFQ|G) — a highly specific, minimal-scar site for releasing a passenger protein from its fusion tag.
 

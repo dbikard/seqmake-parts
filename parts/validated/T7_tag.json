@@ -62,10 +62,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "T7_tag"
+          "T7 tag"
         ],
         "synonym": [
-          "T7 tag",
+          "T7_tag",
           "T7-tag",
           "T7 tag (gene 10 leader)",
           "gene 10 leader",

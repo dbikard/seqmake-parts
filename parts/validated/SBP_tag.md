@@ -1,4 +1,4 @@
-# SBP_tag
+# SBP tag
 
 Streptavidin-binding peptide (SBP-Tag) — a 38-aa synthetic peptide that binds streptavidin with ~2.5 nM affinity for mild, single-step affinity purification and detection, eluted competitively with biotin.
 

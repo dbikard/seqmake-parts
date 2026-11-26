@@ -1,4 +1,4 @@
-# LPETG_tag
+# LPETG tag
 
 LPETG is the canonical sortase A recognition motif — a single instance of the Gram-positive LPXTG cell-wall sorting signal — and the standard C-terminal handle for sortase-mediated protein ligation (sortagging).
 

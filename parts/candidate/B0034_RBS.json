@@ -19,9 +19,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "B0034_RBS"
+          "B0034 RBS"
         ],
         "synonym": [
+          "B0034_RBS",
           "BBa_B0034",
           "B0034",
           "BioBrick RBS"

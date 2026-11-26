@@ -75,9 +75,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "CBP_tag"
+          "CBP tag"
         ],
         "synonym": [
+          "CBP_tag",
           "calmodulin-binding peptide",
           "CBP",
           "calmodulin binding peptide"

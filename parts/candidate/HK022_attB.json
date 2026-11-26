@@ -41,11 +41,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "HK022_attB"
+          "HK022 attB"
         ],
         "synonym": [
-          "HK022_attB",
-          "HK022 attB"
+          "HK022_attB"
         ],
         "collection": [
           "phage-att-sites"
