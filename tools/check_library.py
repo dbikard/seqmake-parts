@@ -27,6 +27,10 @@ name on many plasmids. This gate checks, over the canonical ``parts/*/*.json``:
               by ``validate_parts.py``, which CI runs just before this);
   manifest    ``catalog.json`` and ``index.json`` list exactly the part files,
               with the same name, synonyms, status and ``sourced`` flag;
+  evidence    a sub-feature's ``evidence`` is ``experimental`` (and cites a
+              source) or ``predicted``; a predicted -35/-10 pair is exactly the
+              one ``promoter_boxes.py`` derives from the part's sequence, and
+              its labels end in ``(predicted)``;
   status      a validated part is sourced: its record names the deposit the
               sequence came from (``provenance.sequence_source``). Whether that
               deposit really contains the sequence is checked by
@@ -52,6 +56,7 @@ from Bio.Align import PairwiseAligner, substitution_matrices
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from catalog_overlap import _rc  # noqa: E402
 from part_json import is_sourced  # noqa: E402
+from promoter_boxes import predict  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 LINK_KEYS = ("variant_of", "component", "sub_region_of", "cognate")
@@ -371,6 +376,49 @@ def check_manifest(parts: list[dict], root: Path = ROOT) -> list[str]:
     return out
 
 
+def check_evidence(parts: list[dict]) -> list[str]:
+    """Sub-feature evidence levels, and predicted boxes re-derived mechanically."""
+    out = []
+    for p in parts:
+        n = len(p["seq"])
+        boxes: dict[int, dict[str, tuple[int, int]]] = {}
+        tss: dict[int, int] = {}
+        for f in p["features"][1:]:
+            q = f["qualifiers"]
+            label = (q.get("label") or ["?"])[0]
+            ev = (q.get("evidence") or [None])[0]
+            if label.strip() == "+1" or label.endswith(" +1"):
+                if ev == "experimental":
+                    tss[f["strand"]] = f["start"] if f["strand"] == 1 else n - f["end"]
+            if ev is None:
+                continue
+            if ev not in ("experimental", "predicted"):
+                out.append(f"[evidence] {p['name']}: {label!r} has evidence {ev!r} "
+                           f"(experimental or predicted)")
+            elif ev == "experimental" and not q.get("citation"):
+                out.append(f"[evidence] {p['name']}: {label!r} is experimental but cites nothing")
+            elif ev == "predicted":
+                kind = (q.get("regulatory_class") or [""])[0]
+                if kind not in ("minus_35_signal", "minus_10_signal"):
+                    out.append(f"[evidence] {p['name']}: {label!r} is predicted but is not a "
+                               f"-35 or -10 box")
+                    continue
+                if not label.endswith("(predicted)"):
+                    out.append(f"[evidence] {p['name']}: predicted {label!r} must say so in its "
+                               f"label")
+                s0 = f["start"] if f["strand"] == 1 else n - f["end"]
+                boxes.setdefault(f["strand"], {})[kind] = (s0, f["end"] - f["start"])
+        for strand, got in boxes.items():
+            seq = p["seq"] if strand == 1 else _rc(p["seq"])
+            r, why = predict(seq, tss.get(strand))
+            want = {} if r is None else {"minus_35_signal": (r.start35, 6),
+                                         "minus_10_signal": (r.start10, 6)}
+            if got != want:
+                out.append(f"[evidence] {p['name']}: predicted boxes {got} are not what the "
+                           f"criteria give ({why})")
+    return out
+
+
 def check_status(parts: list[dict]) -> list[str]:
     return [f"[status] {p['name']} is validated but unsourced"
             for p in parts if p["status"] == "validated" and not p["sourced"]
@@ -380,7 +428,8 @@ def check_status(parts: list[dict]) -> list[str]:
 def findings(root: Path = ROOT) -> list[str]:
     parts = load_parts(root)
     return (check_names(parts) + check_overlaps(parts) + check_dna_shape(parts)
-            + check_subfeatures(parts) + check_manifest(parts, root) + check_status(parts))
+            + check_subfeatures(parts) + check_evidence(parts) + check_manifest(parts, root)
+            + check_status(parts))
 
 
 def main() -> int:

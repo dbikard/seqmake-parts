@@ -15841,6 +15841,108 @@
       }
     },
     {
+      "@id": "part:PtetR_pRAB",
+      "@type": "sbol:Component",
+      "cat:curationStatus": "candidate",
+      "cat:documented": false,
+      "cat:slug": "PtetR_pRAB",
+      "cat:sourceAccession": "GenBank:JN635500",
+      "dcterms:description": "PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'. It overlaps a modified copy of the Tn10 tet control region: its 3' half is J01830 1545-1574 read on the tetR strand, with two substitutions (J01830 1552 C>T and 1554 C>A on the tetA strand) that turn the Tn10 sequence there into the consensus -10 TATAAT; its -35, TTGACA, lies in vector sequence upstream of the Tn10 homology. The same two changes fall in the Tn10 operator O1 that the region overlaps, which the record marks 'w/o tetO'. The -35 and -10 below are predicted by the catalog's criteria (tools/promoter_boxes.py), not mapped; no transcription start is mapped for this promoter. On the opposite strand the same bases read as the -35 and operator of a tetA-type promoter with two changes, which is why partial tet-promoter hits used to land here.",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:21921101"
+      },
+      "dcterms:title": "PtetR* (pRAB)",
+      "rdfs:label": "PtetR* (pRAB)",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/JN635500"
+      },
+      "sbol:displayId": "PtetR_pRAB",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:PtetR_pRAB_feature_0"
+        },
+        {
+          "@id": "part:PtetR_pRAB_feature_1"
+        }
+      ],
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      },
+      "sbol:hasSequence": {
+        "@id": "part:PtetR_pRAB_sequence"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000167"
+      },
+      "sbol:type": {
+        "@id": "https://identifiers.org/SBO:0000251"
+      },
+      "skos:altLabel": [
+        "pR* w/o tetO",
+        "tetR promoter (pRAB)"
+      ]
+    },
+    {
+      "@id": "part:PtetR_pRAB_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "-35 (predicted)",
+      "sbol:displayId": "PtetR_pRAB_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:PtetR_pRAB_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000175"
+      }
+    },
+    {
+      "@id": "part:PtetR_pRAB_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 27,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PtetR_pRAB_sequence"
+      },
+      "sbol:start": 22
+    },
+    {
+      "@id": "part:PtetR_pRAB_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "-10 (predicted)",
+      "sbol:displayId": "PtetR_pRAB_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:PtetR_pRAB_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000176"
+      }
+    },
+    {
+      "@id": "part:PtetR_pRAB_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 50,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PtetR_pRAB_sequence"
+      },
+      "sbol:start": 45
+    },
+    {
+      "@id": "part:PtetR_pRAB_sequence",
+      "@type": "sbol:Sequence",
+      "sbol:displayId": "PtetR_pRAB_sequence",
+      "sbol:elements": "GGATCCAAATAAAAAACTAGTTTGACAAATAACTCTATCAATGATATAATGTCAAC",
+      "sbol:encoding": {
+        "@id": "https://identifiers.org/edam:format_1207"
+      },
+      "sbol:hasNamespace": {
+        "@id": "https://w3id.org/seqmake/parts/"
+      }
+    },
+    {
       "@id": "part:Ptrc",
       "@type": "sbol:Component",
       "cat:curationStatus": "validated",
@@ -32855,7 +32957,7 @@
       },
       "cat:slug": "tetR_tetA_promoters",
       "cat:sourceAccession": "GenBank:J01830",
-      "dcterms:description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2.",
+      "dcterms:description": "The Tn10 divergent tetA/tetR control region: 56 bp carrying the PtetA promoter, the overlapping PtetR promoter, and the two TetR operators tetO1 and tetO2. The tetR promoters are not declared as sub-features. Daniels & Bertrand 1985 describe two, tetPR1 and tetPR2; Gulland & Hillen 1992 find that more than 95% of tetR mRNA in vivo starts at PR2, at a run of five A's, and the J01830 record places the tetR mRNA 5' end at 1544 -- that run (J01830 1540-1544 on the tetR strand), one base outside this 56 bp window. No accessible source gives the -35/-10 positions of either promoter. The reading consistent with the PR2 start (-35 TGGTAA at J01830 1574-1579, -10 TAGAGT at 1551-1556 on the tetR strand, 17 bp spacer, +1 7 bases on) has 7 of 12 consensus bases, too few to predict. Sub-features this part carried before put the tetR +1 at J01830 1564, inside tetO1, which the record and the five-A start contradict for PR2; whether they described PR1 is not established. The pRAB vectors' tetR promoter, a modified form of this region, is the catalog part PtetR* (pRAB).",
       "dcterms:references": [
         {
           "@id": "https://identifiers.org/pubmed:6311683"
@@ -32900,15 +33002,6 @@
         },
         {
           "@id": "part:tetR_tetA_promoters_feature_4"
-        },
-        {
-          "@id": "part:tetR_tetA_promoters_feature_5"
-        },
-        {
-          "@id": "part:tetR_tetA_promoters_feature_6"
-        },
-        {
-          "@id": "part:tetR_tetA_promoters_feature_7"
         }
       ],
       "sbol:hasNamespace": {
@@ -33116,113 +33209,14 @@
     {
       "@id": "part:tetR_tetA_promoters_feature_4_range",
       "@type": "sbol:Range",
-      "sbol:end": 38,
+      "sbol:end": 37,
       "sbol:orientation": {
         "@id": "sbol:inline"
       },
       "sbol:sequence": {
         "@id": "part:tetR_tetA_promoters_sequence"
       },
-      "sbol:start": 38
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_5",
-      "@type": "sbol:SequenceFeature",
-      "dcterms:references": [
-        {
-          "@id": "https://identifiers.org/pubmed:2995683"
-        },
-        {
-          "@id": "https://identifiers.org/pubmed:1316869"
-        }
-      ],
-      "dcterms:title": "PtetR -35",
-      "sbol:displayId": "tetR_tetA_promoters_feature_5",
-      "sbol:hasLocation": {
-        "@id": "part:tetR_tetA_promoters_feature_5_range"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0005836"
-      }
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_5_range",
-      "@type": "sbol:Range",
-      "sbol:end": 56,
-      "sbol:orientation": {
-        "@id": "sbol:reverseComplement"
-      },
-      "sbol:sequence": {
-        "@id": "part:tetR_tetA_promoters_sequence"
-      },
-      "sbol:start": 51
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_6",
-      "@type": "sbol:SequenceFeature",
-      "dcterms:references": [
-        {
-          "@id": "https://identifiers.org/pubmed:2995683"
-        },
-        {
-          "@id": "https://identifiers.org/pubmed:1316869"
-        }
-      ],
-      "dcterms:title": "PtetR -10",
-      "sbol:displayId": "tetR_tetA_promoters_feature_6",
-      "sbol:hasLocation": {
-        "@id": "part:tetR_tetA_promoters_feature_6_range"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0005836"
-      }
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_6_range",
-      "@type": "sbol:Range",
-      "sbol:end": 32,
-      "sbol:orientation": {
-        "@id": "sbol:reverseComplement"
-      },
-      "sbol:sequence": {
-        "@id": "part:tetR_tetA_promoters_sequence"
-      },
-      "sbol:start": 27
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_7",
-      "@type": "sbol:SequenceFeature",
-      "dcterms:references": [
-        {
-          "@id": "https://identifiers.org/pubmed:6311683"
-        },
-        {
-          "@id": "https://identifiers.org/pubmed:2995683"
-        },
-        {
-          "@id": "https://identifiers.org/pubmed:1316869"
-        }
-      ],
-      "dcterms:title": "PtetR +1",
-      "sbol:displayId": "tetR_tetA_promoters_feature_7",
-      "sbol:hasLocation": {
-        "@id": "part:tetR_tetA_promoters_feature_7_range"
-      },
-      "sbol:role": {
-        "@id": "https://identifiers.org/SO:0000315"
-      }
-    },
-    {
-      "@id": "part:tetR_tetA_promoters_feature_7_range",
-      "@type": "sbol:Range",
-      "sbol:end": 20,
-      "sbol:orientation": {
-        "@id": "sbol:reverseComplement"
-      },
-      "sbol:sequence": {
-        "@id": "part:tetR_tetA_promoters_sequence"
-      },
-      "sbol:start": 20
+      "sbol:start": 37
     },
     {
       "@id": "part:tetR_tetA_promoters_sequence",

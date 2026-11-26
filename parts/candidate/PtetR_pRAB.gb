@@ -1,0 +1,69 @@
+LOCUS       PtetR_pRAB                56 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  PtetR* (pRAB): the tetR promoter of the pRAB Tet vectors, annotated
+            in pRAB11 (JN635500) as 'pR* w/o tetO'..
+ACCESSION   PtetR_pRAB
+VERSION     PtetR_pRAB
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+REFERENCE   1
+  AUTHORS   Helle L, Kull M, Mayer S, Marincola G, Zelder ME, Goerke C, Wolz C,
+            Bertram R
+  TITLE     Vectors for improved Tet repressor-dependent gradual gene induction
+            or silencing in Staphylococcus aureus
+  JOURNAL   Microbiology (Reading) 157(Pt 12):3314-3323
+   PUBMED   21921101
+  REMARK    doi:10.1099/mic.0.052548-0
+COMMENT     Permanent catalog identifier:
+            https://w3id.org/seqmake/parts/part/PtetR_pRAB
+            Catalog status: candidate, sourced
+FEATURES             Location/Qualifiers
+     promoter        1..56
+                     /label="PtetR* (pRAB)"
+                     /synonym="pR* w/o tetO"
+                     /synonym="tetR promoter (pRAB)"
+                     /note="PtetR* (pRAB): the tetR promoter of the pRAB Tet
+                     vectors, annotated in pRAB11 (JN635500) as 'pR* w/o tetO'.
+                     It overlaps a modified copy of the Tn10 tet control region:
+                     its 3' half is J01830 1545-1574 read on the tetR strand,
+                     with two substitutions (J01830 1552 C>T and 1554 C>A on the
+                     tetA strand) that turn the Tn10 sequence there into the
+                     consensus -10 TATAAT; its -35, TTGACA, lies in vector
+                     sequence upstream of the Tn10 homology. The same two
+                     changes fall in the Tn10 operator O1 that the region
+                     overlaps, which the record marks 'w/o tetO'. The -35 and
+                     -10 below are predicted by the catalog's criteria
+                     (tools/promoter_boxes.py), not mapped; no transcription
+                     start is mapped for this promoter. On the opposite strand
+                     the same bases read as the -35 and operator of a tetA-type
+                     promoter with two changes, which is why partial
+                     tet-promoter hits used to land here."
+                     /db_xref="SO:0000167"
+                     /db_xref="GenBank:JN635500"
+                     /citation=[1]
+     regulatory      22..27
+                     /label="-35 (predicted)"
+                     /parent="PtetR* (pRAB)"
+                     /regulatory_class="minus_35_signal"
+                     /evidence="predicted"
+                     /note="-35 hexamer TTGACA. Predicted, not mapped: both
+                     hexamers at full consensus (12 of 12 bases), 17 bp spacer,
+                     the -10's A2 and T6 present, no competing reading in the
+                     part (the next best scores 8 of 12), no positional source.
+                     Criteria: AUTHORING.md, 'Evidence for a sub-feature'."
+                     /db_xref="SO:0000175"
+     regulatory      45..50
+                     /label="-10 (predicted)"
+                     /parent="PtetR* (pRAB)"
+                     /regulatory_class="minus_10_signal"
+                     /evidence="predicted"
+                     /note="-10 hexamer TATAAT. Predicted, not mapped: both
+                     hexamers at full consensus (12 of 12 bases), 17 bp spacer,
+                     the -10's A2 and T6 present, no competing reading in the
+                     part (the next best scores 8 of 12), no positional source.
+                     Criteria: AUTHORING.md, 'Evidence for a sub-feature'."
+                     /db_xref="SO:0000176"
+ORIGIN
+        1 ggatccaaat aaaaaactag tttgacaaat aactctatca atgatataat gtcaac
+//
