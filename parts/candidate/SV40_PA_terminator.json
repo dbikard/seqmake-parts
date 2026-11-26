@@ -19,7 +19,7 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "SV40_PA_terminator"
+          "SV40 polyA terminator"
         ],
         "synonym": [
           "SV40_PA_terminator"

@@ -54,9 +54,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "VSVG_tag"
+          "VSV G tag"
         ],
         "synonym": [
+          "VSVG_tag",
           "VSV-G tag",
           "VSV-G epitope",
           "VSVG epitope",

@@ -1,4 +1,4 @@
-# Strep_tag
+# Strep tag II
 
 Strep-tag II is an engineered 8-residue synthetic affinity peptide (WSHPQFEK) that binds the biotin-binding pocket of streptavidin, enabling mild, highly specific single-step affinity purification and detection of recombinant proteins.
 

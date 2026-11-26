@@ -75,9 +75,10 @@
       "strand": 1,
       "qualifiers": {
         "label": [
-          "FactorXa_site"
+          "Factor Xa site"
         ],
         "synonym": [
+          "FactorXa_site",
           "Factor Xa cleavage site",
           "FXa site",
           "IEGR"
