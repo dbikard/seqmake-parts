@@ -9,8 +9,16 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTGCC",
-  "references": [],
+  "sequence": "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTCCC",
+  "references": [
+    {
+      "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+      "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+      "journal": "Nat Methods. 2013;10(7):659-664",
+      "pubmed_id": "23727987",
+      "comment": "doi:10.1038/nmeth.2515"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -23,12 +31,19 @@
         ],
         "synonym": [
           "L3S3P22 sTerminator"
+        ],
+        "db_xref": [
+          "GenBank:PX209999"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "Chen et al. 2013 (PMID 23727987), Supplementary Table 3 (synthetic terminators), L3S3P22, identical over 49 bp: an engineered terminator, sequence from the defining publication. Deposited exactly in PX209999 (synthetic construct pNA84, 2025) 906..954, reverse strand. The part read G at position 47 until 2026-11, a form in neither source."
   },
   "functional_claims": []
 }

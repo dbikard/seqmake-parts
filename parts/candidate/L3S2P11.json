@@ -9,8 +9,16 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "ATCGCTACCAAATTCCAGAAAACAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCA",
-  "references": [],
+  "sequence": "CTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC",
+  "references": [
+    {
+      "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+      "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+      "journal": "Nat Methods. 2013;10(7):659-664",
+      "pubmed_id": "23727987",
+      "comment": "doi:10.1038/nmeth.2515"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -22,14 +30,18 @@
           "L3S2P11"
         ],
         "synonym": [
-          "L3S2P11",
-          "(modified) RF L3S2P11 terminator"
+          "L3S2P11"
+        ],
+        "db_xref": [],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "Chen et al. 2013 (PMID 23727987), Supplementary Table 3 (synthetic terminators), L3S2P11, identical over 57 bp: an engineered terminator, sequence from the defining publication; no GenBank record was found to carry it. Until 2026-11 the part held a modified form differing at positions 1, 5, 23 and 57 (named '(modified) RF L3S2P11 terminator'); it is now the published design."
   },
   "functional_claims": []
 }

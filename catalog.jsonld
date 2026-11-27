@@ -4972,8 +4972,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "ECK120010818",
+      "cat:sourceAccession": "GenBank:U00096",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:9278503"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23727987"
+        }
+      ],
       "dcterms:title": "ECK120010818",
       "rdfs:label": "ECK120010818",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/U00096"
+      },
       "sbol:displayId": "ECK120010818",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -4996,7 +5008,7 @@
       "@id": "part:ECK120010818_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "ECK120010818_sequence",
-      "sbol:elements": "GTCAGTTTCACCTGTTTTACGTTAAAACCCGCTTCGGCGGGTTTTTACTTTTGG",
+      "sbol:elements": "GTCAGTTTCACCTGTTTTACGTAAAAACCCGCTTCGGCGGGTTTTTACTTTTGG",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -5048,8 +5060,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "ECK120033737",
+      "cat:sourceAccession": "GenBank:U00096",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:9278503"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23727987"
+        }
+      ],
       "dcterms:title": "ECK120033737",
       "rdfs:label": "ECK120033737",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/U00096"
+      },
       "sbol:displayId": "ECK120033737",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -5072,7 +5096,7 @@
       "@id": "part:ECK120033737_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "ECK120033737_sequence",
-      "sbol:elements": "GGAAACACTGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG",
+      "sbol:elements": "GGAAACACAGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -9127,8 +9151,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "L3S1P13",
+      "cat:sourceAccession": "GenBank:KX353595",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:27298256"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23727987"
+        }
+      ],
       "dcterms:title": "L3S1P13",
       "rdfs:label": "L3S1P13",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KX353595"
+      },
       "sbol:displayId": "L3S1P13",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -9162,6 +9198,9 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "L3S2P11",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:23727987"
+      },
       "dcterms:title": "L3S2P11",
       "rdfs:label": "L3S2P11",
       "sbol:displayId": "L3S2P11",
@@ -9177,16 +9216,13 @@
       "sbol:type": {
         "@id": "https://identifiers.org/SBO:0000251"
       },
-      "skos:altLabel": [
-        "L3S2P11",
-        "(modified) RF L3S2P11 terminator"
-      ]
+      "skos:altLabel": "L3S2P11"
     },
     {
       "@id": "part:L3S2P11_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "L3S2P11_sequence",
-      "sbol:elements": "ATCGCTACCAAATTCCAGAAAACAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCA",
+      "sbol:elements": "CTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -9200,8 +9236,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "L3S3P22_sTerminator",
+      "cat:sourceAccession": "GenBank:PX209999",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:23727987"
+      },
       "dcterms:title": "L3S3P22 sTerminator",
       "rdfs:label": "L3S3P22 sTerminator",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/PX209999"
+      },
       "sbol:displayId": "L3S3P22_sTerminator",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -9221,7 +9264,7 @@
       "@id": "part:L3S3P22_sTerminator_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "L3S3P22_sTerminator_sequence",
-      "sbol:elements": "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTGCC",
+      "sbol:elements": "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTCCC",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -32638,8 +32681,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "rrnBT2",
+      "cat:sourceAccession": "GenBank:KF030457",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24050148"
+      },
       "dcterms:title": "rrnBT2",
       "rdfs:label": "rrnBT2",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KF030457"
+      },
       "sbol:displayId": "rrnBT2",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -33602,8 +33652,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "tonB",
+      "cat:sourceAccession": "GenBank:U00096",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9278503"
+      },
       "dcterms:title": "tonB",
       "rdfs:label": "tonB",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/U00096"
+      },
       "sbol:displayId": "tonB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

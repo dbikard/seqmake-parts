@@ -10,7 +10,22 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GACGAACAATAAGGCCTCCCTAACGGGGGGCCTTTTTTATTGATAACAAAA",
-  "references": [],
+  "references": [
+    {
+      "authors": "Fernandez-Rodriguez J, Voigt CA",
+      "title": "Post-translational control of genetic circuits using Potyvirus proteases.",
+      "journal": "Nucleic Acids Res. 2016;44(13):6493-502",
+      "pubmed_id": "27298256",
+      "comment": "doi:10.1093/nar/gkw537"
+    },
+    {
+      "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+      "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+      "journal": "Nat Methods. 2013;10(7):659-664",
+      "pubmed_id": "23727987",
+      "comment": "doi:10.1038/nmeth.2515"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -23,12 +38,20 @@
         ],
         "synonym": [
           "L3S1P13"
+        ],
+        "db_xref": [
+          "GenBank:KX353595"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KX353595 (synthetic plasmid ptevF-PhlF; Fernandez-Rodriguez & Voigt 2016) 3581..3631, identical over 51 bp; the oldest of 25 exact deposits. Identical to the published design, Chen et al. 2013 (PMID 23727987), Supplementary Table 3 (synthetic terminators)."
   },
   "functional_claims": []
 }

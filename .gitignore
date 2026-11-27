@@ -31,3 +31,6 @@ __pycache__/
 
 # Claude Code local (personal) settings
 .claude/settings.local.json
+
+# tools/verify_sources.py record cache (re-fetched deposits)
+/.source-cache/

@@ -579,17 +579,21 @@ part:DsRed2 a sbol:Component ;
 
 part:ECK120010818 a sbol:Component ;
     rdfs:label "ECK120010818" ;
+    dcterms:references pubmed:23727987,
+        pubmed:9278503 ;
     dcterms:title "ECK120010818" ;
     sbol:displayId "ECK120010818" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:ECK120010818_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U00096> ;
     skos:altLabel "ECK120010818",
         "Terminator ECK120010818" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "ECK120010818" .
+    cat:slug "ECK120010818" ;
+    cat:sourceAccession "GenBank:U00096" .
 
 part:ECK120033736 a sbol:Component ;
     rdfs:label "ECK120033736" ;
@@ -607,17 +611,21 @@ part:ECK120033736 a sbol:Component ;
 
 part:ECK120033737 a sbol:Component ;
     rdfs:label "ECK120033737" ;
+    dcterms:references pubmed:23727987,
+        pubmed:9278503 ;
     dcterms:title "ECK120033737" ;
     sbol:displayId "ECK120033737" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:ECK120033737_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U00096> ;
     skos:altLabel "ECK120033737",
         "Terminator ECK120033737" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "ECK120033737" .
+    cat:slug "ECK120033737" ;
+    cat:sourceAccession "GenBank:U00096" .
 
 part:EF1a a sbol:Component ;
     rdfs:label "EF1a" ;
@@ -867,43 +875,50 @@ part:I-SceI_site a sbol:Component ;
 
 part:L3S1P13 a sbol:Component ;
     rdfs:label "L3S1P13" ;
+    dcterms:references pubmed:23727987,
+        pubmed:27298256 ;
     dcterms:title "L3S1P13" ;
     sbol:displayId "L3S1P13" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:L3S1P13_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KX353595> ;
     skos:altLabel "L3S1P13" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "L3S1P13" .
+    cat:slug "L3S1P13" ;
+    cat:sourceAccession "GenBank:KX353595" .
 
 part:L3S2P11 a sbol:Component ;
     rdfs:label "L3S2P11" ;
+    dcterms:references pubmed:23727987 ;
     dcterms:title "L3S2P11" ;
     sbol:displayId "L3S2P11" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:L3S2P11_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
-    skos:altLabel "(modified) RF L3S2P11 terminator",
-        "L3S2P11" ;
+    skos:altLabel "L3S2P11" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:slug "L3S2P11" .
 
 part:L3S3P22_sTerminator a sbol:Component ;
     rdfs:label "L3S3P22 sTerminator" ;
+    dcterms:references pubmed:23727987 ;
     dcterms:title "L3S3P22 sTerminator" ;
     sbol:displayId "L3S3P22_sTerminator" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:L3S3P22_sTerminator_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/PX209999> ;
     skos:altLabel "L3S3P22 sTerminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "L3S3P22_sTerminator" .
+    cat:slug "L3S3P22_sTerminator" ;
+    cat:sourceAccession "GenBank:PX209999" .
 
 part:LAA_deg_tag a sbol:Component ;
     rdfs:label "LAA deg tag" ;
@@ -3343,17 +3358,20 @@ part:rrnBT1T2 a sbol:Component ;
 
 part:rrnBT2 a sbol:Component ;
     rdfs:label "rrnBT2" ;
+    dcterms:references pubmed:24050148 ;
     dcterms:title "rrnBT2" ;
     sbol:displayId "rrnBT2" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:rrnBT2_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KF030457> ;
     skos:altLabel "rrn BT2 terminator",
         "rrnBT2" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "rrnBT2" .
+    cat:slug "rrnBT2" ;
+    cat:sourceAccession "GenBank:KF030457" .
 
 part:sfGFP a sbol:Component ;
     rdfs:label "sfGFP" ;
@@ -3489,17 +3507,20 @@ part:tetR_tetA_promoters a sbol:Component ;
 
 part:tonB a sbol:Component ;
     rdfs:label "tonB" ;
+    dcterms:references pubmed:9278503 ;
     dcterms:title "tonB" ;
     sbol:displayId "tonB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tonB_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U00096> ;
     skos:altLabel "tonB",
         "tonB terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "tonB" .
+    cat:slug "tonB" ;
+    cat:sourceAccession "GenBank:U00096" .
 
 part:trfA a sbol:Component ;
     rdfs:label "trfA" ;
@@ -5484,7 +5505,7 @@ part:E-tag_sequence a sbol:Sequence ;
 
 part:ECK120010818_sequence a sbol:Sequence ;
     sbol:displayId "ECK120010818_sequence" ;
-    sbol:elements "GTCAGTTTCACCTGTTTTACGTTAAAACCCGCTTCGGCGGGTTTTTACTTTTGG" ;
+    sbol:elements "GTCAGTTTCACCTGTTTTACGTAAAAACCCGCTTCGGCGGGTTTTTACTTTTGG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -5496,7 +5517,7 @@ part:ECK120033736_sequence a sbol:Sequence ;
 
 part:ECK120033737_sequence a sbol:Sequence ;
     sbol:displayId "ECK120033737_sequence" ;
-    sbol:elements "GGAAACACTGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG" ;
+    sbol:elements "GGAAACACAGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -7368,13 +7389,13 @@ part:L3S1P13_sequence a sbol:Sequence ;
 
 part:L3S2P11_sequence a sbol:Sequence ;
     sbol:displayId "L3S2P11_sequence" ;
-    sbol:elements "ATCGCTACCAAATTCCAGAAAACAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCA" ;
+    sbol:elements "CTCGGTACCAAATTCCAGAAAAGAGACGCTTTCGAGCGTCTTTTTTCGTTTTGGTCC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:L3S3P22_sTerminator_sequence a sbol:Sequence ;
     sbol:displayId "L3S3P22_sTerminator_sequence" ;
-    sbol:elements "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTGCC" ;
+    sbol:elements "CCAATTATTGAAGGCCGCTAACGCGGCCTTTTTTTGTTTCTGGTCTCCC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
