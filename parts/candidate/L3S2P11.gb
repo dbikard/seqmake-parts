@@ -6,15 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt
+            CA
+  TITLE     Characterization of 582 natural and synthetic terminators and
+            quantification of their design constraints.
+  JOURNAL   Nat Methods. 2013;10(7):659-664
+   PUBMED   23727987
+  REMARK    doi:10.1038/nmeth.2515
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/L3S2P11
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..57
                      /label="L3S2P11"
                      /synonym="L3S2P11"
-                     /synonym="(modified) RF L3S2P11 terminator"
                      /db_xref="SO:0000141"
+                     /citation=[1]
 ORIGIN
-        1 atcgctacca aattccagaa aacagacgct ttcgagcgtc ttttttcgtt ttggtca
+        1 ctcggtacca aattccagaa aagagacgct ttcgagcgtc ttttttcgtt ttggtcc
 //

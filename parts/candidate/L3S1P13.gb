@@ -13,6 +13,14 @@ REFERENCE   1
   JOURNAL   Nucleic Acids Res. 2016;44(13):6493-502
    PUBMED   27298256
   REMARK    doi:10.1093/nar/gkw537
+REFERENCE   2
+  AUTHORS   Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt
+            CA
+  TITLE     Characterization of 582 natural and synthetic terminators and
+            quantification of their design constraints.
+  JOURNAL   Nat Methods. 2013;10(7):659-664
+   PUBMED   23727987
+  REMARK    doi:10.1038/nmeth.2515
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/L3S1P13
             Catalog status: candidate, sourced
@@ -23,6 +31,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="SO:0000141"
                      /db_xref="GenBank:KX353595"
                      /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 gacgaacaat aaggcctccc taacgggggg ccttttttat tgataacaaa a
 //

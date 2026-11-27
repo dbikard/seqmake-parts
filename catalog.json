@@ -5168,7 +5168,7 @@
       "slug": "ECK120010818",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:U00096",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -5184,9 +5184,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Blattner FR, Plunkett G 3rd, Bloch CA, Perna NT, Burland V, Riley M, Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, Gregor J, Davis NW, Kirkpatrick HA, Goeden MA, Rose DJ, Mau B, Shao Y",
+          "title": "The complete genome sequence of Escherichia coli K-12.",
+          "journal": "Science. 1997;277(5331):1453-1462",
+          "pmid": "9278503",
+          "doi": "10.1126/science.277.5331.1453",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9278503/"
+        },
+        {
+          "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+          "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+          "journal": "Nat Methods. 2013;10(7):659-664",
+          "pmid": "23727987",
+          "doi": "10.1038/nmeth.2515",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23727987/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -5220,7 +5240,7 @@
       "slug": "ECK120033737",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:U00096",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -5236,9 +5256,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Blattner FR, Plunkett G 3rd, Bloch CA, Perna NT, Burland V, Riley M, Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, Gregor J, Davis NW, Kirkpatrick HA, Goeden MA, Rose DJ, Mau B, Shao Y",
+          "title": "The complete genome sequence of Escherichia coli K-12.",
+          "journal": "Science. 1997;277(5331):1453-1462",
+          "pmid": "9278503",
+          "doi": "10.1126/science.277.5331.1453",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9278503/"
+        },
+        {
+          "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+          "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+          "journal": "Nat Methods. 2013;10(7):659-664",
+          "pmid": "23727987",
+          "doi": "10.1038/nmeth.2515",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23727987/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9404,10 +9444,19 @@
           "pmid": "27298256",
           "doi": "10.1093/nar/gkw537",
           "url": "https://pubmed.ncbi.nlm.nih.gov/27298256/"
+        },
+        {
+          "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+          "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+          "journal": "Nat Methods. 2013;10(7):659-664",
+          "pmid": "23727987",
+          "doi": "10.1038/nmeth.2515",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23727987/"
         }
       ],
       "main_citations": [
-        1
+        1,
+        2
       ],
       "sourced": true,
       "functional_claims": []
@@ -9421,8 +9470,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
-        "L3S2P11",
-        "(modified) RF L3S2P11 terminator"
+        "L3S2P11"
       ],
       "collections": [],
       "description": "",
@@ -9433,9 +9481,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+          "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+          "journal": "Nat Methods. 2013;10(7):659-664",
+          "pmid": "23727987",
+          "doi": "10.1038/nmeth.2515",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23727987/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9443,7 +9502,7 @@
       "slug": "L3S3P22_sTerminator",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:PX209999",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -9458,9 +9517,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+          "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+          "journal": "Nat Methods. 2013;10(7):659-664",
+          "pmid": "23727987",
+          "doi": "10.1038/nmeth.2515",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23727987/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {

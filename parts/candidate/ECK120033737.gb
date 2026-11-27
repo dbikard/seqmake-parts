@@ -6,15 +6,34 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Blattner FR, Plunkett G 3rd, Bloch CA, Perna NT, Burland V, Riley M,
+            Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, Gregor J, Davis NW,
+            Kirkpatrick HA, Goeden MA, Rose DJ, Mau B, Shao Y
+  TITLE     The complete genome sequence of Escherichia coli K-12.
+  JOURNAL   Science. 1997;277(5331):1453-1462
+   PUBMED   9278503
+  REMARK    doi:10.1126/science.277.5331.1453
+REFERENCE   2
+  AUTHORS   Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt
+            CA
+  TITLE     Characterization of 582 natural and synthetic terminators and
+            quantification of their design constraints.
+  JOURNAL   Nat Methods. 2013;10(7):659-664
+   PUBMED   23727987
+  REMARK    doi:10.1038/nmeth.2515
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ECK120033737
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..57
                      /label="ECK120033737"
                      /synonym="ECK120033737"
                      /synonym="Terminator ECK120033737"
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:U00096"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
-        1 ggaaacactg aaaaaagccc gcacctgaca gtgcgggctt tttttttcga ccaaagg
+        1 ggaaacacag aaaaaagccc gcacctgaca gtgcgggctt tttttttcga ccaaagg
 //
