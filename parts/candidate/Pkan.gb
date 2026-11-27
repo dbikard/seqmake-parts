@@ -6,9 +6,16 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Martínez-García E, Calles B, Arévalo-Rodríguez M, de Lorenzo V
+  TITLE     pBAM1: an all-synthetic genetic tool for analysis and construction
+            of complex bacterial phenotypes.
+  JOURNAL   BMC Microbiol. 2011;11:38
+   PUBMED   21342504
+  REMARK    doi:10.1186/1471-2180-11-38
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/Pkan
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..106
                      /label="Pkan"
@@ -17,7 +24,9 @@ FEATURES             Location/Qualifiers
                      /synonym="kanamycin promoter"
                      /synonym="Km promoter"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:HQ908071"
+                     /citation=[1]
 ORIGIN
-        1 aacacccctt gtattactgt ttatgtaagc agacagtttt attgttcatg atgatatatt
-       61 tttatcttgt gcaatgtaac atcagagatt ttgagacaca agacgt
+        1 acgtcttgtg tctcaaaatc tctgatgtta cattgcacaa gataaaaata tatcatcatg
+       61 aacaataaaa ctgtctgctt acataaacag taatacaagg ggtgtt
 //

@@ -1383,7 +1383,7 @@
       "slug": "araC",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P0A9E0",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -1404,11 +1404,91 @@
       ],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "children": [
+        {
+          "label": "HTH araC/xylS-type",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 179,
+          "end": 279,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 7,
+          "end": 8,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 23,
+          "end": 24,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 37,
+          "end": 38,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 81,
+          "end": 82,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 92,
+          "end": 93,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Wallace RG, Lee N, Fowler AV",
+          "title": "The araC gene of Escherichia coli: transcriptional and translational start-points and complete nucleotide sequence.",
+          "journal": "Gene. 1980;12(3-4):179-190",
+          "pmid": "7019009",
+          "doi": "10.1016/0378-1119(80)90100-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7019009/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:P0A9E0",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 156
+      }
     },
     {
       "name": "AviTag",
@@ -3802,7 +3882,7 @@
       "slug": "ccdB",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P62554",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -3818,10 +3898,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Miki T, Yoshioka K, Horiuchi T",
+          "title": "Control of cell division by sex factor F in Escherichia coli. I. The 42.84-43.6 F segment couples cell division of the host bacteria with replication of plasmid DNA.",
+          "journal": "J Mol Biol. 1984;174(4):605-625",
+          "pmid": "6327993",
+          "doi": "10.1016/0022-2836(84)90086-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6327993/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:P62554",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 117
+      }
     },
     {
       "name": "CEN6-ARS209",
@@ -4593,7 +4692,7 @@
       "slug": "CspRecT",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:B6GAM9",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -4610,8 +4709,16 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:B6GAM9",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 37
+      }
     },
     {
       "name": "CYC1 terminator",
@@ -11233,7 +11340,7 @@
       "slug": "mCherry",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:A0A2U3DNX3",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -11249,10 +11356,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Shaner NC, Campbell RE, Steinbach PA, Giepmans BN, Palmer AE, Tsien RY",
+          "title": "Improved monomeric red, orange and yellow fluorescent proteins derived from Discosoma sp. red fluorescent protein.",
+          "journal": "Nat Biotechnol. 2004;22(12):1567-1572",
+          "pmid": "15558047",
+          "doi": "10.1038/nbt1037",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15558047/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:A0A2U3DNX3",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 21
+      }
     },
     {
       "name": "mRFP1",
@@ -14044,7 +14170,7 @@
       "slug": "Pkan",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:HQ908071",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -14062,9 +14188,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Mart\u00ednez-Garc\u00eda E, Calles B, Ar\u00e9valo-Rodr\u00edguez M, de Lorenzo V",
+          "title": "pBAM1: an all-synthetic genetic tool for analysis and construction of complex bacterial phenotypes.",
+          "journal": "BMC Microbiol. 2011;11:38",
+          "pmid": "21342504",
+          "doi": "10.1186/1471-2180-11-38",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21342504/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -23241,7 +23378,7 @@
       "slug": "tetR",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q9S455",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -23269,11 +23406,41 @@
       ],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "children": [
+        {
+          "label": "HTH tetR-type",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 3,
+          "end": 64,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Lawley TD, Burland V, Taylor DE",
+          "title": "Analysis of the complete nucleotide sequence of the tetracycline-resistance transposon Tn10.",
+          "journal": "Plasmid. 2000;43(3):235-239",
+          "pmid": "10783303",
+          "doi": "10.1006/plas.1999.1458",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10783303/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:Q9S455",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 168
+      }
     },
     {
       "name": "tetR/tetA promoters",

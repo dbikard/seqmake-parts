@@ -6,9 +6,16 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Lawley TD, Burland V, Taylor DE
+  TITLE     Analysis of the complete nucleotide sequence of the
+            tetracycline-resistance transposon Tn10.
+  JOURNAL   Plasmid. 2000;43(3):235-239
+   PUBMED   10783303
+  REMARK    doi:10.1006/plas.1999.1458
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tetR
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..208
                      /label="tetR"
@@ -17,6 +24,14 @@ FEATURES             Location/Qualifiers
                      /synonym="tet repressor"
                      /synonym="tetracycline repressor"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q9S455"
+                     /db_xref="NCBI:AAF68935.1"
+                     /citation=[1]
+     protein_domain  4..64
+                     /label="HTH tetR-type"
+                     /parent="tetR"
+                     /note="source: UniProt:Q9S455"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 mmsrldkskv insalellne vgieglttrk laqklgveqp tlywhvknkr alldalaiem
        61 ldrhhthfcp legeswqdfl rnnaksfrca llshrdgakv hlgtrptekq yetlenqlaf

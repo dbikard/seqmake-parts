@@ -6,15 +6,55 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Wallace RG, Lee N, Fowler AV
+  TITLE     The araC gene of Escherichia coli: transcriptional and translational
+            start-points and complete nucleotide sequence.
+  JOURNAL   Gene. 1980;12(3-4):179-190
+   PUBMED   7019009
+  REMARK    doi:10.1016/0378-1119(80)90100-6
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/araC
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..292
                      /label="araC"
                      /synonym="araC"
                      /synonym="arabinose operon regulatory protein"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:P0A9E0"
+                     /db_xref="NCBI:CAA23507.1"
+                     /citation=[1]
+     protein_domain  180..279
+                     /label="HTH araC/xylS-type"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000417"
+     binding         8
+                     /label="Binding site"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000409"
+     binding         24
+                     /label="Binding site"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000409"
+     binding         38
+                     /label="Binding site"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000409"
+     binding         82
+                     /label="Binding site"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000409"
+     binding         93
+                     /label="Binding site"
+                     /parent="araC"
+                     /note="source: UniProt:P0A9E0"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 maeaqndpll pgysfnahlv agltpieang yldffidrpl gmkgyilnlt irgqgvvknq
        61 grefvcrpgd illfppgeih hygrhpeare wyhqwvyfrp raywhewlnw psifantgff
