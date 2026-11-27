@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF",
-  "references": [],
+  "references": [
+    {
+      "authors": "Oka A, Sugisaki H, Takanami M",
+      "title": "Nucleotide sequence of the kanamycin resistance transposon Tn903.",
+      "journal": "J Mol Biol. 1981;147(2):217-226",
+      "pubmed_id": "6270337",
+      "comment": "doi:10.1016/0022-2836(81)90438-1"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -27,12 +35,66 @@
           "APH(3')-Ia",
           "aphA1",
           "nptI"
+        ],
+        "db_xref": [
+          "UniProt:Q79DX9",
+          "NCBI:CAA23656.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "V00359 (transposon Tn903; Oka et al. 1981) CDS 1162..1977, protein CAA23656.1, identical over 271 aa; UniProt:Q79DX9 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py. The reviewed Tn903 entry, UniProt P00551, reads L at residue 19 and lists this sequence's M19 as a conflict with Oka et al. 1981."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 30,
+      "end": 262,
+      "label": "Aminoglycoside phosphotransferase",
+      "so_term": "SO:0000417",
+      "description": "Aminoglycoside phosphotransferase",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "misc_feature",
+      "start": 197,
+      "end": 198,
+      "label": "Active site: Proton acceptor",
+      "so_term": "SO:0000110",
+      "description": "Proton acceptor",
+      "uniprot_type": "Active site"
+    },
+    {
+      "type": "binding",
+      "start": 202,
+      "end": 203,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 215,
+      "end": 216,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:Q79DX9",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 157
+  }
 }

@@ -6,9 +6,15 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Oka A, Sugisaki H, Takanami M
+  TITLE     Nucleotide sequence of the kanamycin resistance transposon Tn903.
+  JOURNAL   J Mol Biol. 1981;147(2):217-226
+   PUBMED   6270337
+  REMARK    doi:10.1016/0022-2836(81)90438-1
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/kanR_Tn903
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..271
                      /label="kanR (Tn903)"
@@ -18,6 +24,29 @@ FEATURES             Location/Qualifiers
                      /synonym="aphA1"
                      /synonym="nptI"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q79DX9"
+                     /db_xref="NCBI:CAA23656.1"
+                     /citation=[1]
+     protein_domain  31..262
+                     /label="Aminoglycoside phosphotransferase"
+                     /parent="kanR (Tn903)"
+                     /note="source: UniProt:Q79DX9"
+                     /db_xref="SO:0000417"
+     misc_feature    198
+                     /label="Active site: Proton acceptor"
+                     /parent="kanR (Tn903)"
+                     /note="source: UniProt:Q79DX9"
+                     /db_xref="SO:0000110"
+     binding         203
+                     /label="Binding site"
+                     /parent="kanR (Tn903)"
+                     /note="source: UniProt:Q79DX9"
+                     /db_xref="SO:0000409"
+     binding         216
+                     /label="Binding site"
+                     /parent="kanR (Tn903)"
+                     /note="source: UniProt:Q79DX9"
+                     /db_xref="SO:0000409"
 ORIGIN
         1 mshiqretsc srprlnsnmd adlygykwar dnvgqsgati yrlygkpdap elflkhgkgs
        61 vandvtdemv rlnwltefmp lptikhfirt pddawlltta ipgktafqvl eeypdsgeni

@@ -2629,12 +2629,18 @@ part:kanR_Tn5 a sbol:Component ;
 
 part:kanR_Tn903 a sbol:Component ;
     rdfs:label "kanR (Tn903)" ;
+    dcterms:references pubmed:6270337 ;
     dcterms:title "kanR (Tn903)" ;
     sbol:displayId "kanR_Tn903" ;
+    sbol:hasFeature part:kanR_Tn903_feature_0,
+        part:kanR_Tn903_feature_1,
+        part:kanR_Tn903_feature_2,
+        part:kanR_Tn903_feature_3 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:kanR_Tn903_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q79DX9> ;
     skos:altLabel "APH(3')-Ia",
         "KanR2",
         "KmR",
@@ -2642,7 +2648,8 @@ part:kanR_Tn903 a sbol:Component ;
         "nptI" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "kanR_Tn903" .
+    cat:slug "kanR_Tn903" ;
+    cat:sourceAccession "UniProt:Q79DX9" .
 
 part:lacO a sbol:Component ;
     rdfs:label "lacO" ;
@@ -14971,11 +14978,53 @@ part:kanR_Tn5_feature_2_range a sbol:Range ;
     sbol:sequence part:kanR_Tn5_sequence ;
     sbol:start 208 .
 
-part:kanR_Tn903_sequence a sbol:Sequence ;
-    sbol:displayId "kanR_Tn903_sequence" ;
-    sbol:elements "MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:kanR_Tn903_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "Aminoglycoside phosphotransferase" ;
+    sbol:displayId "kanR_Tn903_feature_0" ;
+    sbol:hasLocation part:kanR_Tn903_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:kanR_Tn903_feature_0_range a sbol:Range ;
+    sbol:end 262 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn903_sequence ;
+    sbol:start 31 .
+
+part:kanR_Tn903_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Active site: Proton acceptor" ;
+    sbol:displayId "kanR_Tn903_feature_1" ;
+    sbol:hasLocation part:kanR_Tn903_feature_1_range ;
+    sbol:role so:0000110 .
+
+part:kanR_Tn903_feature_1_range a sbol:Range ;
+    sbol:end 198 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn903_sequence ;
+    sbol:start 198 .
+
+part:kanR_Tn903_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "kanR_Tn903_feature_2" ;
+    sbol:hasLocation part:kanR_Tn903_feature_2_range ;
+    sbol:role so:0000409 .
+
+part:kanR_Tn903_feature_2_range a sbol:Range ;
+    sbol:end 203 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn903_sequence ;
+    sbol:start 203 .
+
+part:kanR_Tn903_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "kanR_Tn903_feature_3" ;
+    sbol:hasLocation part:kanR_Tn903_feature_3_range ;
+    sbol:role so:0000409 .
+
+part:kanR_Tn903_feature_3_range a sbol:Range ;
+    sbol:end 216 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:kanR_Tn903_sequence ;
+    sbol:start 216 .
 
 part:lacI_sequence a sbol:Sequence ;
     sbol:displayId "lacI_sequence" ;
@@ -17641,6 +17690,12 @@ part:T7lac_sequence a sbol:Sequence ;
     sbol:displayId "T7lac_sequence" ;
     sbol:elements "AGATCGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAACAATTC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:kanR_Tn903_sequence a sbol:Sequence ;
+    sbol:displayId "kanR_Tn903_sequence" ;
+    sbol:elements "MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:phi80_attP_sequence a sbol:Sequence ;

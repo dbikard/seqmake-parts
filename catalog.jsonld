@@ -27587,9 +27587,30 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "kanR_Tn903",
+      "cat:sourceAccession": "UniProt:Q79DX9",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6270337"
+      },
       "dcterms:title": "kanR (Tn903)",
       "rdfs:label": "kanR (Tn903)",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/Q79DX9"
+      },
       "sbol:displayId": "kanR_Tn903",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:kanR_Tn903_feature_0"
+        },
+        {
+          "@id": "part:kanR_Tn903_feature_1"
+        },
+        {
+          "@id": "part:kanR_Tn903_feature_2"
+        },
+        {
+          "@id": "part:kanR_Tn903_feature_3"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -27609,6 +27630,102 @@
         "aphA1",
         "nptI"
       ]
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Aminoglycoside phosphotransferase",
+      "sbol:displayId": "kanR_Tn903_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:kanR_Tn903_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 262,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:kanR_Tn903_sequence"
+      },
+      "sbol:start": 31
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Active site: Proton acceptor",
+      "sbol:displayId": "kanR_Tn903_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:kanR_Tn903_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000110"
+      }
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 198,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:kanR_Tn903_sequence"
+      },
+      "sbol:start": 198
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "kanR_Tn903_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:kanR_Tn903_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 203,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:kanR_Tn903_sequence"
+      },
+      "sbol:start": 203
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "kanR_Tn903_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:kanR_Tn903_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:kanR_Tn903_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 216,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:kanR_Tn903_sequence"
+      },
+      "sbol:start": 216
     },
     {
       "@id": "part:kanR_Tn903_sequence",
