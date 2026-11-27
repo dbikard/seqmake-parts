@@ -6,15 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB
+  TITLE     Nucleotide sequence of bacteriophage lambda DNA.
+  JOURNAL   J Mol Biol. 1982;162(4):729-773
+   PUBMED   6221115
+  REMARK    doi:10.1016/0022-2836(82)90546-0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_t0
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..95
                      /label="lambda t0"
                      /synonym="lambda t0"
                      /synonym="lambda t0 terminator"
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:J02459"
+                     /citation=[1]
 ORIGIN
         1 attctcacca ataaaaaacg cccggcggca accgagcgtt ctgaacaaat ccagatggag
        61 ttctgaggtc attactggat ctatcaacag gagtc

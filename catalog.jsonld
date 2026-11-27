@@ -28496,8 +28496,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "lambda_cos",
+      "cat:sourceAccession": "GenBank:J02459",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:6221115"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:666898"
+        }
+      ],
       "dcterms:title": "lambda cos",
       "rdfs:label": "lambda cos",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J02459"
+      },
       "sbol:displayId": "lambda_cos",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -28636,8 +28648,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "lambda_t0",
+      "cat:sourceAccession": "GenBank:J02459",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6221115"
+      },
       "dcterms:title": "lambda t0",
       "rdfs:label": "lambda t0",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J02459"
+      },
       "sbol:displayId": "lambda_t0",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -29566,8 +29585,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "pR",
+      "cat:sourceAccession": "GenBank:J02459",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6221115"
+      },
       "dcterms:title": "pR",
       "rdfs:label": "pR",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J02459"
+      },
       "sbol:displayId": "pR",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32833,9 +32859,14 @@
       "cat:slug": "tL3",
       "cat:sourceAccession": "GenBank:J02459",
       "dcterms:description": "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end.",
-      "dcterms:references": {
-        "@id": "https://identifiers.org/pubmed:6213446"
-      },
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:6213446"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10829079"
+        }
+      ],
       "dcterms:title": "tL3",
       "rdfs:label": "tL3",
       "rdfs:seeAlso": {

@@ -10096,7 +10096,7 @@
       "slug": "lambda_cos",
       "feature_type": "misc_feature",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J02459",
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "synonyms": [
@@ -10114,9 +10114,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB",
+          "title": "Nucleotide sequence of bacteriophage lambda DNA.",
+          "journal": "J Mol Biol. 1982;162(4):729-773",
+          "pmid": "6221115",
+          "doi": "10.1016/0022-2836(82)90546-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6221115/"
+        },
+        {
+          "authors": "Nichols BP, Donelson JE",
+          "title": "178-Nucleotide sequence surrounding the cos site of bacteriophage lambda DNA.",
+          "journal": "J Virol. 1978;26(2):429-434",
+          "pmid": "666898",
+          "doi": "10.1128/JVI.26.2.429-434.1978",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/666898/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -10186,7 +10206,7 @@
       "slug": "lambda_t0",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J02459",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -10202,9 +10222,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB",
+          "title": "Nucleotide sequence of bacteriophage lambda DNA.",
+          "journal": "J Mol Biol. 1982;162(4):729-773",
+          "pmid": "6221115",
+          "doi": "10.1016/0022-2836(82)90546-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6221115/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -15206,7 +15237,7 @@
       "slug": "pR",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J02459",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -15222,9 +15253,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB",
+          "title": "Nucleotide sequence of bacteriophage lambda DNA.",
+          "journal": "J Mol Biol. 1982;162(4):729-773",
+          "pmid": "6221115",
+          "doi": "10.1016/0022-2836(82)90546-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6221115/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -24025,12 +24067,21 @@
           "pmid": "6213446",
           "doi": "10.1016/0378-1119(82)90140-8",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6213446/"
+        },
+        {
+          "authors": "Datsenko KA, Wanner BL",
+          "title": "One-step inactivation of chromosomal genes in Escherichia coli K-12 using PCR products.",
+          "journal": "Proc Natl Acad Sci U S A. 2000;97(12):6640-5",
+          "pmid": "10829079",
+          "doi": "10.1073/pnas.120163297",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10829079/"
         }
       ],
       "main_citations": [
-        1
+        1,
+        2
       ],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "boundaries",

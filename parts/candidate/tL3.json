@@ -17,6 +17,13 @@
       "journal": "Gene. 1982;17(3):247-58",
       "pubmed_id": "6213446",
       "comment": "doi:10.1016/0378-1119(82)90140-8"
+    },
+    {
+      "authors": "Datsenko KA, Wanner BL",
+      "title": "One-step inactivation of chromosomal genes in Escherichia coli K-12 using PCR products.",
+      "journal": "Proc Natl Acad Sci U S A. 2000;97(12):6640-5",
+      "pubmed_id": "10829079",
+      "comment": "doi:10.1073/pnas.120163297"
     }
   ],
   "features": [
@@ -40,10 +47,12 @@
         ],
         "db_xref": [
           "SO:0000141",
-          "GenBank:J02459"
+          "GenBank:J02459",
+          "GenBank:AY048744"
         ],
         "citation": [
-          "[1]"
+          "[1]",
+          "[2]"
         ]
       }
     },
@@ -96,7 +105,8 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "closest_deposit": "Bacteriophage lambda tL3; lambda (J02459 / NC_001416) 31262-31347, complement, plus 2 bp (part 43-44) not in the lambda reference but present in the lab's tL3-carrying plasmids. The 3' end is base 31262, where NC_001416 ends the tL3-terminated pL mRNA. Re-delimited (2026-11) from a 272 bp record (lambda 31089-31358): the old part also carried the last 11 bp of exo (with its stop codon) and the 173 bp past the termination point (lambda 31089-31261, coding DNA of orf60a/orf63)."
+    "closest_deposit": "Bacteriophage lambda tL3; lambda (J02459 / NC_001416) 31262-31347, complement, plus 2 bp (part 43-44) not in the lambda reference but present in the lab's tL3-carrying plasmids. The 3' end is base 31262, where NC_001416 ends the tL3-terminated pL mRNA. Re-delimited (2026-11) from a 272 bp record (lambda 31089-31358): the old part also carried the last 11 bp of exo (with its stop codon) and the 173 bp past the termination point (lambda 31089-31261, coding DNA of orf60a/orf63).",
+    "sequence_source": "AY048744 (template plasmid pKD13; Datsenko & Wanner 2000) 1386..1473, identical over 88 bp, the 2 bp absent from the lambda reference included; the oldest of 86 exact deposits (pKD13 and the CRIM plasmids among them)."
   },
   "functional_claims": [
     {

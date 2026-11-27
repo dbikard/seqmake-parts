@@ -1843,7 +1843,7 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lambda cos",
@@ -1889,7 +1889,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lambda t0",
@@ -2833,7 +2833,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "pR",
@@ -4186,7 +4186,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "tL3",
