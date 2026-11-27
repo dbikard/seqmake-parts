@@ -6,9 +6,16 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Nissim L, Perli SD, Fridkin A, Perez-Pinera P, Lu TK
+  TITLE     Multiplexed and programmable regulation of gene networks with an
+            integrated RNA and CRISPR/Cas toolkit in human cells.
+  JOURNAL   Mol Cell. 2014;54(4):698-710
+   PUBMED   24837679
+  REMARK    doi:10.1016/j.molcel.2014.04.022
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/sgRNA_scaffold
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      misc_RNA        1..76
                      /label="sgRNA scaffold"
@@ -18,6 +25,8 @@ FEATURES             Location/Qualifiers
                      /synonym="chimeric RNA scaffold"
                      /synonym="sgRNA scaffold (SpCas9)"
                      /db_xref="SO:0000655"
+                     /db_xref="GenBank:KJ796499"
+                     /citation=[1]
 ORIGIN
         1 gttttagagc tagaaatagc aagttaaaat aaggctagtc cgttatcaac ttgaaaaagt
        61 ggcaccgagt cggtgc

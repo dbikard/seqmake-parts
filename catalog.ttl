@@ -2364,6 +2364,7 @@ part:cas2_Nme a sbol:Component ;
 
 part:cas9 a sbol:Component ;
     rdfs:label "cas9" ;
+    dcterms:references pubmed:11296296 ;
     dcterms:title "cas9" ;
     sbol:displayId "cas9" ;
     sbol:hasFeature part:cas9_feature_0,
@@ -2435,6 +2436,7 @@ part:ccdB a sbol:Component ;
 
 part:dCas9 a sbol:Component ;
     rdfs:label "dCas9" ;
+    dcterms:references pubmed:25806970 ;
     dcterms:title "dCas9" ;
     sbol:displayId "dCas9" ;
     sbol:hasFeature part:dCas9_feature_0,
@@ -3374,12 +3376,14 @@ part:sfGFP a sbol:Component ;
 
 part:sgRNA_scaffold a sbol:Component ;
     rdfs:label "sgRNA scaffold" ;
+    dcterms:references pubmed:24837679 ;
     dcterms:title "sgRNA scaffold" ;
     sbol:displayId "sgRNA_scaffold" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:sgRNA_scaffold_sequence ;
     sbol:role so:0000655 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KJ796499> ;
     skos:altLabel "chimeric RNA scaffold",
         "gRNA scaffold",
         "guide RNA scaffold",
@@ -3387,7 +3391,8 @@ part:sgRNA_scaffold a sbol:Component ;
         "sgRNA scaffold (SpCas9)" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "sgRNA_scaffold" .
+    cat:slug "sgRNA_scaffold" ;
+    cat:sourceAccession "GenBank:KJ796499" .
 
 part:sopA a sbol:Component ;
     rdfs:label "sopA" ;

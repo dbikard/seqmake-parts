@@ -6,9 +6,15 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Tong Y, Charusanti P, Zhang L, Weber T, Lee SY
+  TITLE     CRISPR-Cas9 Based Engineering of Actinomycetal Genomes.
+  JOURNAL   ACS Synth Biol. 2015;4(9):1020-1029
+   PUBMED   25806970
+  REMARK    doi:10.1021/acssynbio.5b00038
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/dCas9
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..1368
                      /label="dCas9"
@@ -19,7 +25,9 @@ FEATURES             Location/Qualifiers
                      /synonym="nuclease-dead Cas9"
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:Q99ZW2"
+                     /db_xref="NCBI:AKA60242.1"
                      /variant_of="cas9"
+                     /citation=[1]
      protein_domain  770..921
                      /label="HNH Cas9-type"
                      /parent="dCas9"

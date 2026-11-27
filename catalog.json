@@ -3305,17 +3305,28 @@
           "citations": []
         }
       ],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Ferretti JJ, McShan WM, Ajdic D, Savic DJ, Savic G, Lyon K, Primeaux C, Sezate S, Suvorov AN, Kenton S, Lai HS, Lin SP, Qian Y, Jia HG, Najar FZ, Ren Q, Zhu H, Song L, White J, Yuan X, Clifton SW, Roe BA, McLaughlin R",
+          "title": "Complete genome sequence of an M1 strain of Streptococcus pyogenes.",
+          "journal": "Proc Natl Acad Sci U S A. 2001;98(8):4658-4663",
+          "pmid": "11296296",
+          "doi": "10.1073/pnas.071559398",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11296296/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-11-01",
+        "fetched": "2026-11-27",
         "accession": "UniProt:Q99ZW2",
         "status": "match",
         "identity": 1.0,
         "sequence_match": true,
-        "uniprot_entry_version": 148
+        "uniprot_entry_version": 149
       }
     },
     {
@@ -4786,12 +4797,23 @@
           "citations": []
         }
       ],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Tong Y, Charusanti P, Zhang L, Weber T, Lee SY",
+          "title": "CRISPR-Cas9 Based Engineering of Actinomycetal Genomes.",
+          "journal": "ACS Synth Biol. 2015;4(9):1020-1029",
+          "pmid": "25806970",
+          "doi": "10.1021/acssynbio.5b00038",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25806970/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": [],
       "uniprot_import": {
-        "fetched": "2026-11-01",
+        "fetched": "2026-11-27",
         "accession": "UniProt:Q99ZW2",
         "status": "variant",
         "identity": 0.9985,
@@ -4809,7 +4831,7 @@
           }
         ],
         "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
-        "uniprot_entry_version": 148
+        "uniprot_entry_version": 149
       }
     },
     {
@@ -19120,7 +19142,7 @@
       "slug": "sgRNA_scaffold",
       "feature_type": "misc_RNA",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KJ796499",
       "so_term": "SO:0000655",
       "so_name": "ncRNA",
       "synonyms": [
@@ -19139,9 +19161,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Nissim L, Perli SD, Fridkin A, Perez-Pinera P, Lu TK",
+          "title": "Multiplexed and programmable regulation of gene networks with an integrated RNA and CRISPR/Cas toolkit in human cells.",
+          "journal": "Mol Cell. 2014;54(4):698-710",
+          "pmid": "24837679",
+          "doi": "10.1016/j.molcel.2014.04.022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24837679/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
