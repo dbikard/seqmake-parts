@@ -19228,14 +19228,13 @@
       "slug": "sfGFP",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "NCBI:AGT98536.1",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
         "Superfolder GFP",
         "Superfolder",
         "sfGFP",
-        "msfGFP",
         "GFP (superfolder)"
       ],
       "collections": [],
@@ -19247,9 +19246,29 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "P\u00e9delacq JD, Cabantous S, Tran T, Terwilliger TC, Waldo GS",
+          "title": "Engineering and characterization of a superfolder green fluorescent protein.",
+          "journal": "Nat Biotechnol. 2006;24(1):79-88",
+          "pmid": "16369541",
+          "doi": "10.1038/nbt1172",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16369541/"
+        },
+        {
+          "authors": "Overkamp W, Beilharz K, Detert Oude Weme R, Solopova A, Karsens H, Kov\u00e1cs \u00c1, Kok J, Kuipers OP, Veening JW",
+          "title": "Benchmarking various green fluorescent protein variants in Bacillus subtilis, Streptococcus pneumoniae, and Lactococcus lactis for live cell imaging.",
+          "journal": "Appl Environ Microbiol. 2013;79(20):6481-6490",
+          "pmid": "23956387",
+          "doi": "10.1128/AEM.02033-13",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23956387/"
+        }
+      ],
+      "main_citations": [
+        1,
+        2
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {

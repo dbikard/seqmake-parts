@@ -3368,20 +3368,23 @@ part:rrnBT2 a sbol:Component ;
 
 part:sfGFP a sbol:Component ;
     rdfs:label "sfGFP" ;
+    dcterms:references pubmed:16369541,
+        pubmed:23956387 ;
     dcterms:title "sfGFP" ;
     sbol:displayId "sfGFP" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:sfGFP_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/protein/AGT98536.1> ;
     skos:altLabel "GFP (superfolder)",
         "Superfolder",
         "Superfolder GFP",
-        "msfGFP",
         "sfGFP" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "sfGFP" .
+    cat:slug "sfGFP" ;
+    cat:sourceAccession "NCBI:AGT98536.1" .
 
 part:sgRNA_scaffold a sbol:Component ;
     rdfs:label "sgRNA scaffold" ;
@@ -16783,7 +16786,7 @@ part:rrnBT2_sequence a sbol:Sequence ;
 
 part:sfGFP_sequence a sbol:Sequence ;
     sbol:displayId "sfGFP_sequence" ;
-    sbol:elements "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK" ;
+    sbol:elements "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 

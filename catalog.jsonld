@@ -32872,8 +32872,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "sfGFP",
+      "cat:sourceAccession": "NCBI:AGT98536.1",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:16369541"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23956387"
+        }
+      ],
       "dcterms:title": "sfGFP",
       "rdfs:label": "sfGFP",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/protein/AGT98536.1"
+      },
       "sbol:displayId": "sfGFP",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32891,7 +32903,6 @@
         "Superfolder GFP",
         "Superfolder",
         "sfGFP",
-        "msfGFP",
         "GFP (superfolder)"
       ]
     },
@@ -32899,7 +32910,7 @@
       "@id": "part:sfGFP_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "sfGFP_sequence",
-      "sbol:elements": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
+      "sbol:elements": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
       },
