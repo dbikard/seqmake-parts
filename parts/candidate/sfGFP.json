@@ -9,8 +9,23 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
-  "references": [],
+  "sequence": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
+  "references": [
+    {
+      "authors": "Pédelacq JD, Cabantous S, Tran T, Terwilliger TC, Waldo GS",
+      "title": "Engineering and characterization of a superfolder green fluorescent protein.",
+      "journal": "Nat Biotechnol. 2006;24(1):79-88",
+      "pubmed_id": "16369541",
+      "comment": "doi:10.1038/nbt1172"
+    },
+    {
+      "authors": "Overkamp W, Beilharz K, Detert Oude Weme R, Solopova A, Karsens H, Kovács Á, Kok J, Kuipers OP, Veening JW",
+      "title": "Benchmarking various green fluorescent protein variants in Bacillus subtilis, Streptococcus pneumoniae, and Lactococcus lactis for live cell imaging.",
+      "journal": "Appl Environ Microbiol. 2013;79(20):6481-6490",
+      "pubmed_id": "23956387",
+      "comment": "doi:10.1128/AEM.02033-13"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -25,14 +40,22 @@
           "Superfolder GFP",
           "Superfolder",
           "sfGFP",
-          "msfGFP",
           "GFP (superfolder)"
+        ],
+        "db_xref": [
+          "NCBI:AGT98536.1",
+          "NCBI:ASL68970.1"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "FPbase 'Superfolder GFP' (fpbase.org/protein/superfolder-gfp; Pédelacq et al. 2006), identical over 238 aa. Deposited exactly as protein AGT98536.1 (KF410616, sfGFP(Sp); Overkamp et al. 2013), the oldest standalone deposit in its NCBI identical-protein group, and as the first 238 aa of ASL68970.1, the GenBank record FPbase links (249 aa with a C-terminal tag). Until 2026-11 the part read Q80 and K206 (the monomerizing V206K), a combination no deposit carries; it now matches FPbase. No UniProt entry holds sfGFP."
   },
   "functional_claims": []
 }

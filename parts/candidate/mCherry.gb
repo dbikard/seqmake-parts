@@ -6,15 +6,26 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Shaner NC, Campbell RE, Steinbach PA, Giepmans BN, Palmer AE, Tsien
+            RY
+  TITLE     Improved monomeric red, orange and yellow fluorescent proteins
+            derived from Discosoma sp. red fluorescent protein.
+  JOURNAL   Nat Biotechnol. 2004;22(12):1567-1572
+   PUBMED   15558047
+  REMARK    doi:10.1038/nbt1037
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/mCherry
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..236
                      /label="mCherry"
                      /synonym="mCherry"
                      /synonym="mCherry E"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:A0A2U3DNX3"
+                     /db_xref="NCBI:AAV52164.1"
+                     /citation=[1]
 ORIGIN
         1 mvskgeednm aiikefmrfk vhmegsvngh efeiegegeg rpyegtqtak lkvtkggplp
        61 fawdilspqf mygskayvkh padipdylkl sfpegfkwer vmnfedggvv tvtqdsslqd

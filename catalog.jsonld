@@ -4593,8 +4593,12 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "CspRecT",
+      "cat:sourceAccession": "UniProt:B6GAM9",
       "dcterms:title": "CspRecT",
       "rdfs:label": "CspRecT",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/B6GAM9"
+      },
       "sbol:displayId": "CspRecT",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -13795,8 +13799,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "Pkan",
+      "cat:sourceAccession": "GenBank:HQ908071",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:21342504"
+      },
       "dcterms:title": "Pkan",
       "rdfs:label": "Pkan",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/HQ908071"
+      },
       "sbol:displayId": "Pkan",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -13821,7 +13832,7 @@
       "@id": "part:Pkan_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "Pkan_sequence",
-      "sbol:elements": "AACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAAGACGT",
+      "sbol:elements": "ACGTCTTGTGTCTCAAAATCTCTGATGTTACATTGCACAAGATAAAAATATATCATCATGAACAATAAAACTGTCTGCTTACATAAACAGTAATACAAGGGGTGTT",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -24716,9 +24727,36 @@
         "@id": "part:ParaBAD"
       },
       "cat:slug": "araC",
+      "cat:sourceAccession": "UniProt:P0A9E0",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:7019009"
+      },
       "dcterms:title": "araC",
       "rdfs:label": "araC",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P0A9E0"
+      },
       "sbol:displayId": "araC",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:araC_feature_0"
+        },
+        {
+          "@id": "part:araC_feature_1"
+        },
+        {
+          "@id": "part:araC_feature_2"
+        },
+        {
+          "@id": "part:araC_feature_3"
+        },
+        {
+          "@id": "part:araC_feature_4"
+        },
+        {
+          "@id": "part:araC_feature_5"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -24735,6 +24773,150 @@
         "araC",
         "arabinose operon regulatory protein"
       ]
+    },
+    {
+      "@id": "part:araC_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "HTH araC/xylS-type",
+      "sbol:displayId": "araC_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:araC_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 279,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 180
+    },
+    {
+      "@id": "part:araC_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "araC_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:araC_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 8,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 8
+    },
+    {
+      "@id": "part:araC_feature_2",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "araC_feature_2",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_2_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:araC_feature_2_range",
+      "@type": "sbol:Range",
+      "sbol:end": 24,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 24
+    },
+    {
+      "@id": "part:araC_feature_3",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "araC_feature_3",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_3_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:araC_feature_3_range",
+      "@type": "sbol:Range",
+      "sbol:end": 38,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 38
+    },
+    {
+      "@id": "part:araC_feature_4",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "araC_feature_4",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_4_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:araC_feature_4_range",
+      "@type": "sbol:Range",
+      "sbol:end": 82,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 82
+    },
+    {
+      "@id": "part:araC_feature_5",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "Binding site",
+      "sbol:displayId": "araC_feature_5",
+      "sbol:hasLocation": {
+        "@id": "part:araC_feature_5_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000409"
+      }
+    },
+    {
+      "@id": "part:araC_feature_5_range",
+      "@type": "sbol:Range",
+      "sbol:end": 93,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:araC_sequence"
+      },
+      "sbol:start": 93
     },
     {
       "@id": "part:araC_sequence",
@@ -26237,8 +26419,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "ccdB",
+      "cat:sourceAccession": "UniProt:P62554",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6327993"
+      },
       "dcterms:title": "ccdB",
       "rdfs:label": "ccdB",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P62554"
+      },
       "sbol:displayId": "ccdB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -28674,8 +28863,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "mCherry",
+      "cat:sourceAccession": "UniProt:A0A2U3DNX3",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:15558047"
+      },
       "dcterms:title": "mCherry",
       "rdfs:label": "mCherry",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/A0A2U3DNX3"
+      },
       "sbol:displayId": "mCherry",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32676,8 +32872,20 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "sfGFP",
+      "cat:sourceAccession": "NCBI:AGT98536.1",
+      "dcterms:references": [
+        {
+          "@id": "https://identifiers.org/pubmed:16369541"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23956387"
+        }
+      ],
       "dcterms:title": "sfGFP",
       "rdfs:label": "sfGFP",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/protein/AGT98536.1"
+      },
       "sbol:displayId": "sfGFP",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32695,7 +32903,6 @@
         "Superfolder GFP",
         "Superfolder",
         "sfGFP",
-        "msfGFP",
         "GFP (superfolder)"
       ]
     },
@@ -32703,7 +32910,7 @@
       "@id": "part:sfGFP_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "sfGFP_sequence",
-      "sbol:elements": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
+      "sbol:elements": "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
       },
@@ -33023,9 +33230,19 @@
         }
       ],
       "cat:slug": "tetR",
+      "cat:sourceAccession": "UniProt:Q9S455",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10783303"
+      },
       "dcterms:title": "tetR",
       "rdfs:label": "tetR",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/Q9S455"
+      },
       "sbol:displayId": "tetR",
+      "sbol:hasFeature": {
+        "@id": "part:tetR_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -33044,6 +33261,30 @@
         "tet repressor",
         "tetracycline repressor"
       ]
+    },
+    {
+      "@id": "part:tetR_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "HTH tetR-type",
+      "sbol:displayId": "tetR_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:tetR_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:tetR_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 64,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:tetR_sequence"
+      },
+      "sbol:start": 4
     },
     {
       "@id": "part:tetR_sequence",

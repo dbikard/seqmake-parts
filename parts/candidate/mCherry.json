@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
-  "references": [],
+  "references": [
+    {
+      "authors": "Shaner NC, Campbell RE, Steinbach PA, Giepmans BN, Palmer AE, Tsien RY",
+      "title": "Improved monomeric red, orange and yellow fluorescent proteins derived from Discosoma sp. red fluorescent protein.",
+      "journal": "Nat Biotechnol. 2004;22(12):1567-1572",
+      "pubmed_id": "15558047",
+      "comment": "doi:10.1038/nbt1037"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -24,12 +32,29 @@
         "synonym": [
           "mCherry",
           "mCherry E"
+        ],
+        "db_xref": [
+          "UniProt:A0A2U3DNX3",
+          "NCBI:AAV52164.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AY678264 (synthetic construct, monomeric red fluorescent protein mCherry; Shaner et al. 2004), protein AAV52164.1, identical over 236 aa: the oldest deposit in the protein's NCBI identical-protein group. Also UniProt:A0A2U3DNX3 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py. Identical to FPbase 'mCherry' (fpbase.org/protein/mcherry), which links the same GenBank protein."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:A0A2U3DNX3",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 21
+  }
 }

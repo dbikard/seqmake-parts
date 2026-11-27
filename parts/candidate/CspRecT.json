@@ -23,12 +23,26 @@
         ],
         "synonym": [
           "CspRecT"
+        ],
+        "db_xref": [
+          "UniProt:B6GAM9",
+          "NCBI:EEA90665.1"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "ABXJ01000065 (Collinsella stercoris DSM 13279 draft genome, contig Cont2.11; Washington University Genome Sequencing Center, 2008), protein EEA90665.1 (also RefSeq WP_006720782.1), identical over 270 aa: the oldest deposit in the protein's NCBI identical-protein group. UniProt:B6GAM9 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:B6GAM9",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 37
+  }
 }

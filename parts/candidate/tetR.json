@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MMSRLDKSKVINSALELLNEVGIEGLTTRKLAQKLGVEQPTLYWHVKNKRALLDALAIEMLDRHHTHFCPLEGESWQDFLRNNAKSFRCALLSHRDGAKVHLGTRPTEKQYETLENQLAFLCQQGFSLENALYALSAVGHFTLGCVLEDQEHQVAKEERETPTTDSMPPLLRQAIELFDHQGAEPAFLFGLELIICGLEKQLKCESGS",
-  "references": [],
+  "references": [
+    {
+      "authors": "Lawley TD, Burland V, Taylor DE",
+      "title": "Analysis of the complete nucleotide sequence of the tetracycline-resistance transposon Tn10.",
+      "journal": "Plasmid. 2000;43(3):235-239",
+      "pubmed_id": "10783303",
+      "comment": "doi:10.1006/plas.1999.1458"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -26,12 +34,39 @@
           "tetR",
           "tet repressor",
           "tetracycline repressor"
+        ],
+        "db_xref": [
+          "UniProt:Q9S455",
+          "NCBI:AAF68935.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AF223162 (transposon Tn10 from plasmid R27, complete sequence; Lawley et al. 2000), protein AAF68935.1, identical over 208 aa; UniProt:Q9S455 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py. The earlier Tn10 records (J01830 AAB59093.1, X00694 CAA25291.1) annotate the start one codon later (207 aa, MSRLD...); this form starts at the Met before it (MMSRLD...)."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 3,
+      "end": 64,
+      "label": "HTH tetR-type",
+      "so_term": "SO:0000417",
+      "description": "HTH tetR-type",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:Q9S455",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 168
+  }
 }

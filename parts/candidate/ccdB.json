@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MQFKVYTYKRESRYRLFVDVQSDIIDTPGRRMVIPLASARLLSDKVSRELYPVVHIGDESWRMMTTDMASVPVSVIGEEVADLSHRENDIKNAINLMFWGI",
-  "references": [],
+  "references": [
+    {
+      "authors": "Miki T, Yoshioka K, Horiuchi T",
+      "title": "Control of cell division by sex factor F in Escherichia coli. I. The 42.84-43.6 F segment couples cell division of the host bacteria with replication of plasmid DNA.",
+      "journal": "J Mol Biol. 1984;174(4):605-625",
+      "pubmed_id": "6327993",
+      "comment": "doi:10.1016/0022-2836(84)90086-x"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -24,12 +32,29 @@
         "synonym": [
           "ccdB",
           "toxin CcdB"
+        ],
+        "db_xref": [
+          "UniProt:P62554",
+          "NCBI:CAA25244.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "X00594 (F plasmid 42.84-43.6 F segment; Miki et al. 1984), protein CAA25244.1, identical over 101 aa; also the complete F plasmid (AP001918, BAA97913.1). UniProt:P62554 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:P62554",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 117
+  }
 }

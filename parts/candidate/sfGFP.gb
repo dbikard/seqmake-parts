@@ -6,21 +6,40 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Pédelacq JD, Cabantous S, Tran T, Terwilliger TC, Waldo GS
+  TITLE     Engineering and characterization of a superfolder green fluorescent
+            protein.
+  JOURNAL   Nat Biotechnol. 2006;24(1):79-88
+   PUBMED   16369541
+  REMARK    doi:10.1038/nbt1172
+REFERENCE   2
+  AUTHORS   Overkamp W, Beilharz K, Detert Oude Weme R, Solopova A, Karsens H,
+            Kovács Á, Kok J, Kuipers OP, Veening JW
+  TITLE     Benchmarking various green fluorescent protein variants in Bacillus
+            subtilis, Streptococcus pneumoniae, and Lactococcus lactis for live
+            cell imaging.
+  JOURNAL   Appl Environ Microbiol. 2013;79(20):6481-6490
+   PUBMED   23956387
+  REMARK    doi:10.1128/AEM.02033-13
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/sfGFP
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..238
                      /label="sfGFP"
                      /synonym="Superfolder GFP"
                      /synonym="Superfolder"
                      /synonym="sfGFP"
-                     /synonym="msfGFP"
                      /synonym="GFP (superfolder)"
                      /db_xref="SO:0000316"
+                     /db_xref="NCBI:AGT98536.1"
+                     /db_xref="NCBI:ASL68970.1"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 mskgeelftg vvpilveldg dvnghkfsvr gegegdatng kltlkfictt gklpvpwptl
-       61 vttltygvqc fsrypdhmkq hdffksampe gyvqertisf kddgtyktra evkfegdtlv
+       61 vttltygvqc fsrypdhmkr hdffksampe gyvqertisf kddgtyktra evkfegdtlv
       121 nrielkgidf kedgnilghk leynfnshnv yitadkqkng ikanfkirhn vedgsvqlad
-      181 hyqqntpigd gpvllpdnhy lstqsklskd pnekrdhmvl lefvtaagit hgmdelyk
+      181 hyqqntpigd gpvllpdnhy lstqsvlskd pnekrdhmvl lefvtaagit hgmdelyk
 //

@@ -8,12 +8,14 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/CspRecT
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..270
                      /label="CspRecT"
                      /synonym="CspRecT"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:B6GAM9"
+                     /db_xref="NCBI:EEA90665.1"
 ORIGIN
         1 mnqivkftdd sglavqvtpd dvrryicena tekevglflq lcqtqrlnpf vkdaylvkyg
        61 gapasmitsy qvfnrracrd anydgiksgv vvlrdgdvvh krgaacykka geeliggwae

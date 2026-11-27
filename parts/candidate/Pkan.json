@@ -9,8 +9,16 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "AACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAAGACGT",
-  "references": [],
+  "sequence": "ACGTCTTGTGTCTCAAAATCTCTGATGTTACATTGCACAAGATAAAAATATATCATCATGAACAATAAAACTGTCTGCTTACATAAACAGTAATACAAGGGGTGTT",
+  "references": [
+    {
+      "authors": "Martínez-García E, Calles B, Arévalo-Rodríguez M, de Lorenzo V",
+      "title": "pBAM1: an all-synthetic genetic tool for analysis and construction of complex bacterial phenotypes.",
+      "journal": "BMC Microbiol. 2011;11:38",
+      "pubmed_id": "21342504",
+      "comment": "doi:10.1186/1471-2180-11-38"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -26,12 +34,19 @@
           "PKan",
           "kanamycin promoter",
           "Km promoter"
+        ],
+        "db_xref": [
+          "GenBank:HQ908071"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "HQ908071 (cloning vector pBAM1; Martinez-Garcia et al. 2011) 3259..3364, identical over 106 bp, directly upstream of and on the same strand as neo (Tn903 aph, CDS 3365..4180); the oldest of 45 exact deposits. Bases 6-106 are Tn903 (V00359 1061..1161, ending before the aph start codon at 1162); bases 1-5 are vector. The part was stored reverse-complemented until 2026-11 and now reads toward the gene it drives."
   },
   "functional_claims": []
 }

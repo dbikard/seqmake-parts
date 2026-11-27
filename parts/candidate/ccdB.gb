@@ -6,15 +6,26 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Miki T, Yoshioka K, Horiuchi T
+  TITLE     Control of cell division by sex factor F in Escherichia coli. I. The
+            42.84-43.6 F segment couples cell division of the host bacteria with
+            replication of plasmid DNA.
+  JOURNAL   J Mol Biol. 1984;174(4):605-625
+   PUBMED   6327993
+  REMARK    doi:10.1016/0022-2836(84)90086-x
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/ccdB
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..101
                      /label="ccdB"
                      /synonym="ccdB"
                      /synonym="toxin CcdB"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:P62554"
+                     /db_xref="NCBI:CAA25244.1"
+                     /citation=[1]
 ORIGIN
         1 mqfkvytykr esryrlfvdv qsdiidtpgr rmviplasar llsdkvsrel ypvvhigdes
        61 wrmmttdmas vpvsvigeev adlshrendi knainlmfwg i

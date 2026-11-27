@@ -531,10 +531,12 @@ part:CspRecT a sbol:Component ;
     sbol:hasSequence part:CspRecT_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/B6GAM9> ;
     skos:altLabel "CspRecT" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "CspRecT" .
+    cat:slug "CspRecT" ;
+    cat:sourceAccession "UniProt:B6GAM9" .
 
 part:DhfR a sbol:Component ;
     rdfs:label "DhfR" ;
@@ -1380,19 +1382,22 @@ part:Pcat a sbol:Component ;
 
 part:Pkan a sbol:Component ;
     rdfs:label "Pkan" ;
+    dcterms:references pubmed:21342504 ;
     dcterms:title "Pkan" ;
     sbol:displayId "Pkan" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:Pkan_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/HQ908071> ;
     skos:altLabel "Km promoter",
         "PKan",
         "Pkan",
         "kanamycin promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "Pkan" .
+    cat:slug "Pkan" ;
+    cat:sourceAccession "GenBank:HQ908071" .
 
 part:PlacI a sbol:Component ;
     rdfs:label "PlacI" ;
@@ -2421,17 +2426,20 @@ part:cat_Gram a sbol:Component ;
 
 part:ccdB a sbol:Component ;
     rdfs:label "ccdB" ;
+    dcterms:references pubmed:6327993 ;
     dcterms:title "ccdB" ;
     sbol:displayId "ccdB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:ccdB_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P62554> ;
     skos:altLabel "ccdB",
         "toxin CcdB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "ccdB" .
+    cat:slug "ccdB" ;
+    cat:sourceAccession "UniProt:P62554" .
 
 part:dCas9 a sbol:Component ;
     rdfs:label "dCas9" ;
@@ -2785,17 +2793,20 @@ part:lambda_t0 a sbol:Component ;
 
 part:mCherry a sbol:Component ;
     rdfs:label "mCherry" ;
+    dcterms:references pubmed:15558047 ;
     dcterms:title "mCherry" ;
     sbol:displayId "mCherry" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:mCherry_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/A0A2U3DNX3> ;
     skos:altLabel "mCherry",
         "mCherry E" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "mCherry" .
+    cat:slug "mCherry" ;
+    cat:sourceAccession "UniProt:A0A2U3DNX3" .
 
 part:mRFP1 a sbol:Component ;
     rdfs:label "mRFP1" ;
@@ -3357,20 +3368,23 @@ part:rrnBT2 a sbol:Component ;
 
 part:sfGFP a sbol:Component ;
     rdfs:label "sfGFP" ;
+    dcterms:references pubmed:16369541,
+        pubmed:23956387 ;
     dcterms:title "sfGFP" ;
     sbol:displayId "sfGFP" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:sfGFP_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/protein/AGT98536.1> ;
     skos:altLabel "GFP (superfolder)",
         "Superfolder",
         "Superfolder GFP",
-        "msfGFP",
         "sfGFP" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "sfGFP" .
+    cat:slug "sfGFP" ;
+    cat:sourceAccession "NCBI:AGT98536.1" .
 
 part:sgRNA_scaffold a sbol:Component ;
     rdfs:label "sgRNA scaffold" ;
@@ -9095,7 +9109,7 @@ part:PhlF_sequence a sbol:Sequence ;
 
 part:Pkan_sequence a sbol:Sequence ;
     sbol:displayId "Pkan_sequence" ;
-    sbol:elements "AACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAAGACGT" ;
+    sbol:elements "ACGTCTTGTGTCTCAAAATCTCTGATGTTACATTGCACAAGATAAAAATATATCATCATGAACAATAAAACTGTCTGCTTACATAAACAGTAATACAAGGGGTGTT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -13939,11 +13953,77 @@ part:acrII4A_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:araC_sequence a sbol:Sequence ;
-    sbol:displayId "araC_sequence" ;
-    sbol:elements "MAEAQNDPLLPGYSFNAHLVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQIINAGQGEGRYSELLAINLLEQLLLRRMEAINESLHPPMDNRVREACQYISDHLADSNFDIASVAQHVCLSPSRLSHLFRQQLGISVLSWREDQRISQAKLLLSTTRMPIATVGRNVGFDDQLYFSRVFKKCTGASPSEFRAGCEEKVNDVAVKLS" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:araC_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "HTH araC/xylS-type" ;
+    sbol:displayId "araC_feature_0" ;
+    sbol:hasLocation part:araC_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:araC_feature_0_range a sbol:Range ;
+    sbol:end 279 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 180 .
+
+part:araC_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "araC_feature_1" ;
+    sbol:hasLocation part:araC_feature_1_range ;
+    sbol:role so:0000409 .
+
+part:araC_feature_1_range a sbol:Range ;
+    sbol:end 8 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 8 .
+
+part:araC_feature_2 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "araC_feature_2" ;
+    sbol:hasLocation part:araC_feature_2_range ;
+    sbol:role so:0000409 .
+
+part:araC_feature_2_range a sbol:Range ;
+    sbol:end 24 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 24 .
+
+part:araC_feature_3 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "araC_feature_3" ;
+    sbol:hasLocation part:araC_feature_3_range ;
+    sbol:role so:0000409 .
+
+part:araC_feature_3_range a sbol:Range ;
+    sbol:end 38 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 38 .
+
+part:araC_feature_4 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "araC_feature_4" ;
+    sbol:hasLocation part:araC_feature_4_range ;
+    sbol:role so:0000409 .
+
+part:araC_feature_4_range a sbol:Range ;
+    sbol:end 82 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 82 .
+
+part:araC_feature_5 a sbol:SequenceFeature ;
+    dcterms:title "Binding site" ;
+    sbol:displayId "araC_feature_5" ;
+    sbol:hasLocation part:araC_feature_5_range ;
+    sbol:role so:0000409 .
+
+part:araC_feature_5_range a sbol:Range ;
+    sbol:end 93 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:araC_sequence ;
+    sbol:start 93 .
 
 part:bet_sequence a sbol:Sequence ;
     sbol:displayId "bet_sequence" ;
@@ -16706,7 +16786,7 @@ part:rrnBT2_sequence a sbol:Sequence ;
 
 part:sfGFP_sequence a sbol:Sequence ;
     sbol:displayId "sfGFP_sequence" ;
-    sbol:elements "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSKLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK" ;
+    sbol:elements "MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
@@ -16778,11 +16858,17 @@ part:tetO_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:tetR_sequence a sbol:Sequence ;
-    sbol:displayId "tetR_sequence" ;
-    sbol:elements "MMSRLDKSKVINSALELLNEVGIEGLTTRKLAQKLGVEQPTLYWHVKNKRALLDALAIEMLDRHHTHFCPLEGESWQDFLRNNAKSFRCALLSHRDGAKVHLGTRPTEKQYETLENQLAFLCQQGFSLENALYALSAVGHFTLGCVLEDQEHQVAKEERETPTTDSMPPLLRQAIELFDHQGAEPAFLFGLELIICGLEKQLKCESGS" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:tetR_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "HTH tetR-type" ;
+    sbol:displayId "tetR_feature_0" ;
+    sbol:hasLocation part:tetR_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:tetR_feature_0_range a sbol:Range ;
+    sbol:end 64 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:tetR_sequence ;
+    sbol:start 4 .
 
 part:tetR_tetA_promoters_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "Divergent tetA/tetR control region: TetR-repressible / aTc-inducible." ;
@@ -17493,18 +17579,27 @@ part:ZeoR_sequence a sbol:Sequence ;
 
 part:araC a sbol:Component ;
     rdfs:label "araC" ;
+    dcterms:references pubmed:7019009 ;
     dcterms:title "araC" ;
     sbol:displayId "araC" ;
+    sbol:hasFeature part:araC_feature_0,
+        part:araC_feature_1,
+        part:araC_feature_2,
+        part:araC_feature_3,
+        part:araC_feature_4,
+        part:araC_feature_5 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:araC_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P0A9E0> ;
     skos:altLabel "araC",
         "arabinose operon regulatory protein" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:regulates part:ParaBAD ;
-    cat:slug "araC" .
+    cat:slug "araC" ;
+    cat:sourceAccession "UniProt:P0A9E0" .
 
 part:lambda_cos_1_sequence a sbol:Sequence ;
     sbol:displayId "lambda_cos_1_sequence" ;
@@ -17522,6 +17617,12 @@ part:pSH71_ori_sequence a sbol:Sequence ;
     sbol:displayId "pSH71_ori_sequence" ;
     sbol:elements "TCGATTTTTTATTAAAACGTCTCAAAATCGTTTCTGAGACGTTTTAGCGTTTATTTCGTTTAGTTATCGGCATAATCGTTAAAACAGGCGTTATCGTAGCGTAAAAGCCCTTGAGCGTAGCGTGGCTTTGCAGCGAAGATGTTGTCTGTTAGATTATGAAAGCCGATGACTGAATGAAATAATAAGCGCAGCGTCCTTCTATTTCGGTTGGAGGAGGCTCAAGGGAGTTTGAGGGAATGAAATTCCCTCATGGGTTTGATTTTAAAAATTGCTTGCAATTTTGCCGAGCGGTAGCGCTGGAAAATTTTTGAAAAAAATTTGGAATTTGGAAAAAAATGGGGGGAAAGGAAGCGAATTTTGCTTCCGTACTACGACCCCCCATTAAGTGCCGAGTGCCAATTTTTGTGCCAAAAACGCTCTATCCCAACTGGCTCAAGGGTTTGAGGGGTTTTTCAATCGCCAACGAATCGCCAACGTTTTCGCCAACGTTTTTTATAAATCTATATTTAAGTAGCTTTATTGTTGTTTTTATGATTACAAAGTGATACACTAATTTTATAAAATTATTTGATTGGAGTTTTTTAAATGGTGATTTCAGAATCGAAAAAAAGAGTTATGATTTCTCTGACAAAAGAGCAAGATAAAAAATTAACAGATATGGCGAAACAAAAAGGTTTTTCAAAATCTGCGGTTGCGGCGTTAGCTATAGAAGAATATGCAAGAAAGGAATCAGAACAAAAAAAATAAGCGAAAGCTCGCGTTTTTAGAAGGATACGAGTTTTCGCTACTTGTTTTTGATAAGGTAATTATATC" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:tetR_sequence a sbol:Sequence ;
+    sbol:displayId "tetR_sequence" ;
+    sbol:elements "MMSRLDKSKVINSALELLNEVGIEGLTTRKLAQKLGVEQPTLYWHVKNKRALLDALAIEMLDRHHTHFCPLEGESWQDFLRNNAKSFRCALLSHRDGAKVHLGTRPTEKQYETLENQLAFLCQQGFSLENALYALSAVGHFTLGCVLEDQEHQVAKEERETPTTDSMPPLLRQAIELFDHQGAEPAFLFGLELIICGLEKQLKCESGS" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:B0015_terminator_sequence a sbol:Sequence ;
@@ -17622,12 +17723,15 @@ part:rrnBT1_sequence a sbol:Sequence ;
 
 part:tetR a sbol:Component ;
     rdfs:label "tetR" ;
+    dcterms:references pubmed:10783303 ;
     dcterms:title "tetR" ;
     sbol:displayId "tetR" ;
+    sbol:hasFeature part:tetR_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tetR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q9S455> ;
     skos:altLabel "TetR",
         "tet repressor",
         "tetR",
@@ -17636,7 +17740,8 @@ part:tetR a sbol:Component ;
     cat:documented false ;
     cat:regulates part:PLtetO-1,
         part:PtetA ;
-    cat:slug "tetR" .
+    cat:slug "tetR" ;
+    cat:sourceAccession "UniProt:Q9S455" .
 
 part:ColE1_AT_sequence a sbol:Sequence ;
     sbol:displayId "ColE1_AT_sequence" ;
@@ -17756,6 +17861,12 @@ part:ParaBAD_sequence a sbol:Sequence ;
     sbol:displayId "ParaBAD_sequence" ;
     sbol:elements "AAGAAACCAATTGTCCATATTGCATCAGACATTGCCGTCACTGCGTCTTTTACTGGCTCTTCTCGCTAACCAAACCGGTAACCCCGCTTATTAAAAGCATTCTGTAACAAAGCGGGACCAAAGCCATGACAAAAACGCGTAACAAAAGTGTCTATAATCACGGCAGAAAAGTCCACATTGATTATTTGCACGGCGTCACACTTTGCTATGCCATAGCATTTTTATCCATAAGATTAGCGGATCCTACCTGACGCTTTTTATCGCAACTCTCTACTGTTTCTCCAT" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:araC_sequence a sbol:Sequence ;
+    sbol:displayId "araC_sequence" ;
+    sbol:elements "MAEAQNDPLLPGYSFNAHLVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQIINAGQGEGRYSELLAINLLEQLLLRRMEAINESLHPPMDNRVREACQYISDHLADSNFDIASVAQHVCLSPSRLSHLFRQQLGISVLSWREDQRISQAKLLLSTTRMPIATVGRNVGFDDQLYFSRVFKKCTGASPSEFRAGCEEKVNDVAVKLS" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:ermAM_sequence a sbol:Sequence ;
