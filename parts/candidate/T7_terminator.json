@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "CTAGCATAACCCCTTGGGGCCTCTAAACGGGTCTTGAGGGGTTTTTTG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Dunn JJ, Studier FW",
+      "title": "Complete nucleotide sequence of bacteriophage T7 DNA and the locations of T7 genetic elements.",
+      "journal": "J Mol Biol. 1983;166(4):477-535",
+      "pubmed_id": "6864790",
+      "comment": "doi:10.1016/s0022-2836(83)80282-4"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -24,12 +32,19 @@
         "synonym": [
           "T7 terminator",
           "T7 Terminator"
+        ],
+        "db_xref": [
+          "GenBank:V01146"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "V01146 (bacteriophage T7 genome; Dunn & Studier 1983) 24163..24210, ending at the annotated terminator Tphi (24210), identical over 48 bp."
   },
   "functional_claims": []
 }
