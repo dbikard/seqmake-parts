@@ -10,7 +10,22 @@
     "date": "01-JAN-1980"
   },
   "sequence": "CCTCCACGCACGTTGTGATATGTAGATGATAATCATTATCACTTTACGGGTCCTTTCCGGTGATCCGACAGGTTACGGGGCGGCGACCTCGCGGGTTTTCGCTATTTATGAAAATTTTCCGGTTTAAGGCGTTTCCGTTCTTCTTCGTCATAACTTAATGTTTTTATTTAAAATACCCTCTGAAAAGAAAGGAAACGACAGGTGCTGAAAGCGAGGCTTTTTGG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB",
+      "title": "Nucleotide sequence of bacteriophage lambda DNA.",
+      "journal": "J Mol Biol. 1982;162(4):729-773",
+      "pubmed_id": "6221115",
+      "comment": "doi:10.1016/0022-2836(82)90546-0"
+    },
+    {
+      "authors": "Nichols BP, Donelson JE",
+      "title": "178-Nucleotide sequence surrounding the cos site of bacteriophage lambda DNA.",
+      "journal": "J Virol. 1978;26(2):429-434",
+      "pubmed_id": "666898",
+      "comment": "doi:10.1128/JVI.26.2.429-434.1978"
+    }
+  ],
   "features": [
     {
       "type": "misc_feature",
@@ -26,12 +41,20 @@
           "Minimal lambda cos sequence",
           "cos site",
           "cos"
+        ],
+        "db_xref": [
+          "GenBank:J02459"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J02459 (bacteriophage lambda genome; Sanger et al. 1982) 48426..48502 joined to 1..147, the right end annealed to the left end across the 12-nt cohesive end (1..12, GGGCGGCGACCT), identical over 224 bp. The cos region was first sequenced by Nichols & Donelson 1978 (record bases 13-72 and 48391-48502)."
   },
   "functional_claims": []
 }

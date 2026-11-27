@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "ATTCTCACCAATAAAAAACGCCCGGCGGCAACCGAGCGTTCTGAACAAATCCAGATGGAGTTCTGAGGTCATTACTGGATCTATCAACAGGAGTC",
-  "references": [],
+  "references": [
+    {
+      "authors": "Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB",
+      "title": "Nucleotide sequence of bacteriophage lambda DNA.",
+      "journal": "J Mol Biol. 1982;162(4):729-773",
+      "pubmed_id": "6221115",
+      "comment": "doi:10.1016/0022-2836(82)90546-0"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -24,12 +32,19 @@
         "synonym": [
           "lambda t0",
           "lambda t0 terminator"
+        ],
+        "db_xref": [
+          "GenBank:J02459"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J02459 (bacteriophage lambda genome; Sanger et al. 1982) 38588..38682, identical over 95 bp."
   },
   "functional_claims": []
 }
