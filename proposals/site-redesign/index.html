@@ -350,6 +350,7 @@ h1.title em{font-style:italic;font-weight:500;color:var(--madder)}
   font-size:13px;overflow-x:auto}
 .code .prompt{color:var(--madder);font-weight:600;flex:none;user-select:none}
 .code .cmd{color:var(--fg);white-space:nowrap}
+.code .cmt{color:var(--ink-faint);font-size:11px;flex:none}
 .code .copy{margin-left:auto;flex:none;border:1px solid var(--line);background:var(--card);
   border-radius:6px;padding:3px 9px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;
   text-transform:uppercase;color:var(--ink-faint);transition:.15s}
@@ -572,33 +573,35 @@ footer a:hover{color:var(--madder);border-color:var(--madder)}
 <section class="contribute" id="contribute">
   <div class="cinner">
     <p class="eyebrow">Contribute a part</p>
-    <h2>Add a part in <em>one command</em>.</h2>
-    <p class="csub">The catalog is AI-authored end&#8209;to&#8209;end — so contributing is too.
-      Point an agent at the repository and run a single command with your part. It
-      <b>sources the sequence from a cited deposit</b> (independent re-fetch + compare, never
-      from memory), researches the literature, annotates sub-features with Sequence Ontology,
-      and drafts functional claims — each carrying its source, confidence, and usefulness, then
-      independently cross-checked against the cited paper — runs every validation gate and opens a
-      pull request from your fork. It is
-      <b>proposal-only</b>: nothing lands until you review it.</p>
+    <h2>Add a part with <em>your AI agent</em> — or by hand.</h2>
+    <p class="csub">The catalog is plain files + a documented SOP + Python validation gates, so you can
+      contribute with <b>any coding agent — or by hand</b>. The job is the same either way:
+      <b>source the sequence from a cited deposit</b> (never from memory), annotate sub-features with
+      Sequence Ontology, and add functional claims — each with its source, confidence and usefulness,
+      independently cross-checked against the cited paper. Every pull request runs the <b>same
+      validation gates</b>, whoever (or whatever) authored it, and it's <b>proposal-only</b> — nothing
+      lands until it's reviewed.</p>
 
     <div class="steps">
       <div class="step">
         <div class="num">1</div>
         <h3>Fork the catalog &amp; open it</h3>
-        <p>You don't need write access — you work from <b>your own fork</b>. The GitHub&nbsp;CLI
-          forks, clones, and wires up <code>upstream</code> in one line; then open
-          <b>Claude&nbsp;Code</b>. (Repo developers can <code>git clone</code> directly.)</p>
-        <div class="code"><span class="prompt">$</span><span class="cmd">gh repo fork dbikard/seqmake-parts --clone &amp;&amp; cd seqmake-parts &amp;&amp; claude</span><button class="copy" data-copy="gh repo fork dbikard/seqmake-parts --clone && cd seqmake-parts && claude">Copy</button></div>
-        <p class="prereq">One-time setup: a GitHub account, <code>gh auth login</code>, and Claude&nbsp;Code.</p>
+        <p>You don't need write access — you work from <b>your own fork</b>. The GitHub&nbsp;CLI forks,
+          clones, and wires up <code>upstream</code> in one line; then open it in <b>your coding agent</b>
+          (Claude&nbsp;Code, Codex, Cursor, Antigravity, …) or your editor. (Repo developers can
+          <code>git clone</code> directly.)</p>
+        <div class="code"><span class="prompt">$</span><span class="cmd">gh repo fork dbikard/seqmake-parts --clone &amp;&amp; cd seqmake-parts</span><button class="copy" data-copy="gh repo fork dbikard/seqmake-parts --clone && cd seqmake-parts">Copy</button></div>
+        <p class="prereq">One-time setup: a GitHub account, <code>gh auth login</code>, and a coding agent (or just your editor).</p>
       </div>
       <div class="step">
         <div class="num">2</div>
-        <h3>Run one command — it does the rest</h3>
-        <p>Describe your part in plain words. The engine sources, researches, annotates and
-          verifies, runs every gate, then <b>pushes a branch to your fork and opens the pull
-          request</b> to the catalog. It's <b>proposal-only</b> — you review before it lands.</p>
-        <div class="code"><span class="prompt">/</span><span class="cmd">add-part GFPmut3</span><button class="copy" data-copy="/add-part GFPmut3">Copy</button></div>
+        <h3>Add the part — then open a PR</h3>
+        <p><b>Claude&nbsp;Code</b> has a turnkey path: one command sources, researches, verifies, runs
+          every gate, and opens the PR. <b>Any other agent</b> follows the same SOP in
+          <code>AGENTS.md</code> → <code>AUTHORING.md</code> and runs the gates
+          (<code>python&nbsp;tools/validate_parts.py</code>…) before opening the PR — CI enforces the
+          identical bar. Either way it's <b>proposal-only</b>.</p>
+        <div class="code"><span class="prompt">/</span><span class="cmd">add-part GFPmut3</span><span class="cmt">— Claude&nbsp;Code</span><button class="copy" data-copy="/add-part GFPmut3">Copy</button></div>
         <div class="code" style="margin-top:9px"><span class="prompt">→</span><span class="cmd">sourced · verified · gates green · PR → dbikard/seqmake-parts</span></div>
       </div>
     </div>
@@ -606,7 +609,7 @@ footer a:hover{color:var(--madder);border-color:var(--madder)}
     <div class="cgrid">
       <div class="cpanel">
         <h4>What counts as proper input</h4>
-        <p class="cintro">Just describe it in plain words — the agent figures out the rest. No special format.</p>
+        <p class="cintro">Describe it in plain words — with Claude&nbsp;Code's <code>/add-part</code> below, or to any agent. No special format.</p>
         <div class="inputrow">
           <div class="lbl">Just the <b>part name</b> — the engine finds the canonical source:</div>
           <div class="code"><span class="prompt">/</span><span class="cmd">add-part T7lac</span><button class="copy" data-copy="/add-part T7lac">Copy</button></div>
@@ -653,6 +656,7 @@ footer a:hover{color:var(--madder);border-color:var(--madder)}
 
     <div class="clinks">
       <span class="lead">Read the rules</span>
+      <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/AGENTS.md">AGENTS.md — any agent</a>
       <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/CONTRIBUTING.md">CONTRIBUTING.md →</a>
       <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/AUTHORING.md">AUTHORING.md — the SOP</a>
       <a class="clink" href="https://github.com/dbikard/seqmake-parts/blob/main/schema/part.schema.json">part.schema.json</a>
