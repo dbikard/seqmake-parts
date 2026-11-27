@@ -16,9 +16,9 @@
     "fasta": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.fasta",
     "rdf": "https://dbikard.github.io/seqmake-parts/parts/files/{slug}.ttl"
   },
-  "n_parts": 273,
+  "n_parts": 272,
   "n_validated": 76,
-  "n_candidate": 197,
+  "n_candidate": 196,
   "n_functional_claims": 362,
   "parts": [
     {
@@ -3180,22 +3180,6 @@
         "R6Kgamma ori",
         "R6K gamma ori",
         "R6K \u03b3 ori"
-      ]
-    },
-    {
-      "slug": "RBS_23400",
-      "name": "RBS 23400",
-      "feature_type": "RBS",
-      "kind": "dna",
-      "so_term": "SO:0000139",
-      "so_name": "ribosome_entry_site",
-      "status": "candidate",
-      "sourced": false,
-      "n_claims": 0,
-      "synonyms": [
-        "RBS 23400",
-        "Synthetic RBS 23",
-        "400 TIR (NEQ)"
       ]
     },
     {

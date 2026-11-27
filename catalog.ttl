@@ -1363,7 +1363,7 @@ part:Pbla a sbol:Component ;
 
 part:Pcat a sbol:Component ;
     rdfs:label "Pcat" ;
-    dcterms:description "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region and the catalog part RBS 23400; the 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part." ;
+    dcterms:description "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region; the 103 bp this part carried before ran to the ATG and so overlapped the ribosome binding site. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part." ;
     dcterms:references pubmed:26375469,
         pubmed:390403 ;
     dcterms:title "Pcat" ;
@@ -1668,21 +1668,6 @@ part:R6Kgamma_ori a sbol:Component ;
     cat:hasFunctionalClaim part:R6Kgamma_ori_claim_boundaries ;
     cat:slug "R6Kgamma_ori" ;
     cat:sourceAccession "GenBank:LT827129" .
-
-part:RBS_23400 a sbol:Component ;
-    rdfs:label "RBS 23400" ;
-    dcterms:title "RBS 23400" ;
-    sbol:displayId "RBS_23400" ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
-    sbol:hasSequence part:RBS_23400_sequence ;
-    sbol:role so:0000139 ;
-    sbol:type sbo:0000251 ;
-    skos:altLabel "400 TIR (NEQ)",
-        "RBS 23400",
-        "Synthetic RBS 23" ;
-    cat:curationStatus "candidate" ;
-    cat:documented false ;
-    cat:slug "RBS_23400" .
 
 part:RBS_7300 a sbol:Component ;
     rdfs:label "RBS 7300" ;
@@ -10186,12 +10171,6 @@ part:R6Kgamma_ori_claim_boundaries_provenance a prov:Activity ;
 part:R6Kgamma_ori_sequence a sbol:Sequence ;
     sbol:displayId "R6Kgamma_ori_sequence" ;
     sbol:elements "GATCTGAAGATCAGCAGTTCAACCTGTTGATAGTACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTAACGTACTAAGCTCTCATGTTTAACGAACTAAACCCTCATGGCTAACGTACTAAGCTCTCATGGCTAACGTACTAAGCTCTCATGTTTCACGTACTAAGCTCTCATGTTTGAACAATAAAATTAATATAAATCAGCAACTTAAATAGCCTCTAAGGTTTTAAGTTTTATAAGAAAAAAAAGAATATATAAGGCTTTTAAAGCTTTTAAGGTTTAACGGTTGTGGACAACAAGCCAGGGATGTAACGCACTGAGAAGCCCTTAGAGCCTCTCAAAGCAATTTTGAGTGACACAGGAACACTTAACGGCTGACA" ;
-    sbol:encoding <https://identifiers.org/edam:format_1207> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
-
-part:RBS_23400_sequence a sbol:Sequence ;
-    sbol:displayId "RBS_23400_sequence" ;
-    sbol:elements "GATTTCGCAAGCTAAGGAAGCTAAA" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
