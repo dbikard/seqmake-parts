@@ -9,8 +9,23 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "GGAAACACTGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG",
-  "references": [],
+  "sequence": "GGAAACACAGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGG",
+  "references": [
+    {
+      "authors": "Blattner FR, Plunkett G 3rd, Bloch CA, Perna NT, Burland V, Riley M, Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, Gregor J, Davis NW, Kirkpatrick HA, Goeden MA, Rose DJ, Mau B, Shao Y",
+      "title": "The complete genome sequence of Escherichia coli K-12.",
+      "journal": "Science. 1997;277(5331):1453-1462",
+      "pubmed_id": "9278503",
+      "comment": "doi:10.1126/science.277.5331.1453"
+    },
+    {
+      "authors": "Chen YJ, Liu P, Nielsen AA, Brophy JA, Clancy K, Peterson T, Voigt CA",
+      "title": "Characterization of 582 natural and synthetic terminators and quantification of their design constraints.",
+      "journal": "Nat Methods. 2013;10(7):659-664",
+      "pubmed_id": "23727987",
+      "comment": "doi:10.1038/nmeth.2515"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -25,13 +40,19 @@
           "ECK120033737",
           "Terminator ECK120033737"
         ],
-        "db_xref": []
+        "db_xref": [
+          "GenBank:U00096"
+        ],
+        "citation": [
+          "[1]",
+          "[2]"
+        ]
       }
     }
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "closest_deposit": "Escherichia coli K-12 MG1655 genome (U00096) 264..320: identical except part position 9 (T; MG1655 A). The published Chen et al. 2013 sequence (PMID 23727987) is requested to settle which form the terminator set used. Not a sequence_source."
+    "sequence_source": "U00096 (Escherichia coli K-12 MG1655 genome; Blattner et al. 1997) 264..320, identical over 57 bp; identical to the published sequence of Chen et al. 2013 (PMID 23727987, Supplementary Table 2, natural terminators). The part read T at position 9 until 2026-11, a form in neither source."
   },
   "functional_claims": []
 }
