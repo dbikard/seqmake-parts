@@ -8,7 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/J23119
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..35
                      /label="J23119"
@@ -17,6 +17,7 @@ FEATURES             Location/Qualifiers
                      /synonym="J23119(SpeI) promoter"
                      /collection="anderson-promoters"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:MH319949"
 ORIGIN
         1 ttgacagcta gctcagtcct aggtataata ctagt
 //

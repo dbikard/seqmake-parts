@@ -28,12 +28,16 @@
         ],
         "collection": [
           "anderson-promoters"
+        ],
+        "db_xref": [
+          "GenBank:MH319949"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "MH319949 (cloning vector pcas9-sgRNA; unpublished deposit, 2018) 6654..6688, identical over 35 bp; the oldest of 162 exact deposits. This is the SpeI form of J23119: it differs from iGEM BBa_J23119 at two of its last six bases (ACTAGT, a SpeI site, where BBa_J23119 reads GCTAGC)."
   },
   "functional_claims": []
 }
