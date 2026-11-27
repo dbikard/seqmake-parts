@@ -9088,8 +9088,12 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "J23119",
+      "cat:sourceAccession": "GenBank:MH319949",
       "dcterms:title": "J23119",
       "rdfs:label": "J23119",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/MH319949"
+      },
       "sbol:displayId": "J23119",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

@@ -9042,7 +9042,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9070,7 +9070,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9134,7 +9134,7 @@
       "slug": "J23119",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:MH319949",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -9155,7 +9155,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
