@@ -427,7 +427,7 @@
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "bom"
@@ -2923,7 +2923,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "pSH71 ori",
@@ -3390,7 +3390,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RK2 oriV",
@@ -3508,7 +3508,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 oriV"
@@ -3522,7 +3522,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 RepA"
@@ -3536,7 +3536,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "RSF1010 RepB"

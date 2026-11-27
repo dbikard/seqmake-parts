@@ -17046,8 +17046,12 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "RK2_oriV",
+      "cat:sourceAccession": "GenBank:AJ606312",
       "dcterms:title": "RK2 oriV",
       "rdfs:label": "RK2 oriV",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/AJ606312"
+      },
       "sbol:displayId": "RK2_oriV",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -17134,8 +17138,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "RSF1010_RepA",
+      "cat:sourceAccession": "UniProt:P20356",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2653965"
+      },
       "dcterms:title": "RSF1010 RepA",
       "rdfs:label": "RSF1010 RepA",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/P20356"
+      },
       "sbol:displayId": "RSF1010_RepA",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -17169,9 +17180,24 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "RSF1010_RepB",
+      "cat:sourceAccession": "UniProt:Q52349",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2653965"
+      },
       "dcterms:title": "RSF1010 RepB",
       "rdfs:label": "RSF1010 RepB",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/Q52349"
+      },
       "sbol:displayId": "RSF1010_RepB",
+      "sbol:hasFeature": [
+        {
+          "@id": "part:RSF1010_RepB_feature_0"
+        },
+        {
+          "@id": "part:RSF1010_RepB_feature_1"
+        }
+      ],
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -17185,6 +17211,54 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": "RSF1010 RepB"
+    },
+    {
+      "@id": "part:RSF1010_RepB_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "RepB-like DNA primase",
+      "sbol:displayId": "RSF1010_RepB_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:RSF1010_RepB_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:RSF1010_RepB_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 185,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:RSF1010_RepB_sequence"
+      },
+      "sbol:start": 12
+    },
+    {
+      "@id": "part:RSF1010_RepB_feature_1",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "RepB/MobA-like C-terminal",
+      "sbol:displayId": "RSF1010_RepB_feature_1",
+      "sbol:hasLocation": {
+        "@id": "part:RSF1010_RepB_feature_1_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:RSF1010_RepB_feature_1_range",
+      "@type": "sbol:Range",
+      "sbol:end": 289,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:RSF1010_RepB_sequence"
+      },
+      "sbol:start": 237
     },
     {
       "@id": "part:RSF1010_RepB_sequence",
@@ -17204,8 +17278,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "RSF1010_oriV",
+      "cat:sourceAccession": "GenBank:M28829",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:2653965"
+      },
       "dcterms:title": "RSF1010 oriV",
       "rdfs:label": "RSF1010 oriV",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/M28829"
+      },
       "sbol:displayId": "RSF1010_oriV",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -25573,8 +25654,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "bom",
+      "cat:sourceAccession": "GenBank:L20318",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:8112591"
+      },
       "dcterms:title": "bom",
       "rdfs:label": "bom",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/L20318"
+      },
       "sbol:displayId": "bom",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -30466,9 +30554,13 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "pSH71_ori",
+      "cat:sourceAccession": "GenBank:MF948287",
       "dcterms:description": "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA.",
       "dcterms:title": "pSH71 ori",
       "rdfs:label": "pSH71 ori",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/MF948287"
+      },
       "sbol:displayId": "pSH71_ori",
       "sbol:hasFeature": {
         "@id": "part:pSH71_ori_feature_0"

@@ -3012,7 +3012,7 @@
       "slug": "bom",
       "feature_type": "misc_feature",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:L20318",
       "so_term": "SO:0000110",
       "so_name": "sequence_feature",
       "synonyms": [
@@ -3027,9 +3027,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Chen BP, Hai T",
+          "title": "Expression vectors for affinity purification and radiolabeling of proteins using Escherichia coli as host.",
+          "journal": "Gene. 1994;139(1):73-5",
+          "pmid": "8112591",
+          "doi": "10.1016/0378-1119(94)90525-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8112591/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -15776,7 +15787,7 @@
       "slug": "pSH71_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:MF948287",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -15806,7 +15817,7 @@
       ],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -17571,7 +17582,7 @@
       "slug": "RK2_oriV",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:AJ606312",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -17590,7 +17601,7 @@
       "children": [],
       "references": [],
       "main_citations": [],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -18445,7 +18456,7 @@
       "slug": "RSF1010_oriV",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:M28829",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -18460,9 +18471,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+          "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+          "journal": "Gene. 1989;75(2):271-288",
+          "pmid": "2653965",
+          "doi": "10.1016/0378-1119(89)90273-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2653965/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -18470,7 +18492,7 @@
       "slug": "RSF1010_RepA",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:P20356",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -18485,17 +18507,36 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+          "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+          "journal": "Gene. 1989;75(2):271-288",
+          "pmid": "2653965",
+          "doi": "10.1016/0378-1119(89)90273-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2653965/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:P20356",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 101
+      }
     },
     {
       "name": "RSF1010 RepB",
       "slug": "RSF1010_RepB",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q52349",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -18509,11 +18550,51 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "children": [
+        {
+          "label": "RepB-like DNA primase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 11,
+          "end": 185,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "RepB/MobA-like C-terminal",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 236,
+          "end": 289,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+          "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+          "journal": "Gene. 1989;75(2):271-288",
+          "pmid": "2653965",
+          "doi": "10.1016/0378-1119(89)90273-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2653965/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:Q52349",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 96
+      }
     },
     {
       "name": "S-tag",

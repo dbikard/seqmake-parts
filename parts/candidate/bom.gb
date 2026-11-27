@@ -6,14 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Chen BP, Hai T
+  TITLE     Expression vectors for affinity purification and radiolabeling of
+            proteins using Escherichia coli as host.
+  JOURNAL   Gene. 1994;139(1):73-5
+   PUBMED   8112591
+  REMARK    doi:10.1016/0378-1119(94)90525-8
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/bom
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      misc_feature    1..143
                      /label="bom"
                      /synonym="bom"
                      /db_xref="SO:0000110"
+                     /db_xref="GenBank:L20318"
+                     /citation=[1]
 ORIGIN
         1 cctgatgcgg tattttctcc ttacgcatct gtgcggtatt tcacaccgca tatatggtgc
        61 actctcagta caatctgctc tgatgccgca tagttaagcc agtatacact ccgctatcgc

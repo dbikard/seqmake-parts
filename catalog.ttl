@@ -1706,12 +1706,14 @@ part:RK2_oriV a sbol:Component ;
     sbol:hasSequence part:RK2_oriV_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/AJ606312> ;
     skos:altLabel "RK2 oriV",
         "oriV",
         "oriV RK2" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RK2_oriV" .
+    cat:slug "RK2_oriV" ;
+    cat:sourceAccession "GenBank:AJ606312" .
 
 part:RP4_oriT a sbol:Component ;
     rdfs:label "RP4 oriT" ;
@@ -1736,42 +1738,53 @@ part:RP4_oriT a sbol:Component ;
 
 part:RSF1010_RepA a sbol:Component ;
     rdfs:label "RSF1010 RepA" ;
+    dcterms:references pubmed:2653965 ;
     dcterms:title "RSF1010 RepA" ;
     sbol:displayId "RSF1010_RepA" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:RSF1010_RepA_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/P20356> ;
     skos:altLabel "RSF1010 RepA" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RSF1010_RepA" .
+    cat:slug "RSF1010_RepA" ;
+    cat:sourceAccession "UniProt:P20356" .
 
 part:RSF1010_RepB a sbol:Component ;
     rdfs:label "RSF1010 RepB" ;
+    dcterms:references pubmed:2653965 ;
     dcterms:title "RSF1010 RepB" ;
     sbol:displayId "RSF1010_RepB" ;
+    sbol:hasFeature part:RSF1010_RepB_feature_0,
+        part:RSF1010_RepB_feature_1 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:RSF1010_RepB_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q52349> ;
     skos:altLabel "RSF1010 RepB" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RSF1010_RepB" .
+    cat:slug "RSF1010_RepB" ;
+    cat:sourceAccession "UniProt:Q52349" .
 
 part:RSF1010_oriV a sbol:Component ;
     rdfs:label "RSF1010 oriV" ;
+    dcterms:references pubmed:2653965 ;
     dcterms:title "RSF1010 oriV" ;
     sbol:displayId "RSF1010_oriV" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:RSF1010_oriV_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/M28829> ;
     skos:altLabel "RSF1010 oriV" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "RSF1010_oriV" .
+    cat:slug "RSF1010_oriV" ;
+    cat:sourceAccession "GenBank:M28829" .
 
 part:RSF_ori a sbol:Component ;
     rdfs:label "RSF ori" ;
@@ -2281,16 +2294,19 @@ part:bla a sbol:Component ;
 
 part:bom a sbol:Component ;
     rdfs:label "bom" ;
+    dcterms:references pubmed:8112591 ;
     dcterms:title "bom" ;
     sbol:displayId "bom" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:bom_sequence ;
     sbol:role so:0000110 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/L20318> ;
     skos:altLabel "bom" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "bom" .
+    cat:slug "bom" ;
+    cat:sourceAccession "GenBank:L20318" .
 
 part:cI857 a sbol:Component ;
     rdfs:label "cI857" ;
@@ -3081,12 +3097,14 @@ part:pSH71_ori a sbol:Component ;
     sbol:hasSequence part:pSH71_ori_sequence ;
     sbol:role so:0000296 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/MF948287> ;
     skos:altLabel "pLZ12 ori",
         "pSH71 ori",
         "pSH71 origin" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "pSH71_ori" .
+    cat:slug "pSH71_ori" ;
+    cat:sourceAccession "GenBank:MF948287" .
 
 part:pSH71_ori_core a sbol:Component ;
     rdfs:label "pSH71 ori (core)" ;
@@ -10217,11 +10235,29 @@ part:RSF1010_RepA_sequence a sbol:Sequence ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
-part:RSF1010_RepB_sequence a sbol:Sequence ;
-    sbol:displayId "RSF1010_RepB_sequence" ;
-    sbol:elements "MKNDRTLQAIGRQLKAMGCERFDIGVRDATTGQMMNREWSAAEVLQNTPWLKRMNAQGNDVYIRPAEQERHGLVLVDDLSEFDLDDMKAEGREPALVVETSPKNYQAWVKVADAAGGELRGQIARTLASEYDADPASADSRHYGRLAGFTNRKDKHTTRAGYQPWVLLRESKGKTATAGPALVQQAGQQIEQAQRQQEKARRLASLELPERQLSRHRRTALDEYRSEMAGLVKRFGDDLSKCDFIAAQKLASRGRSAEEIGKAMAEASPALAERKPGHEADYIERTVSKVMGLPSVQLARAELARAPAPRQRGMDRGGPDFSM" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:RSF1010_RepB_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "RepB-like DNA primase" ;
+    sbol:displayId "RSF1010_RepB_feature_0" ;
+    sbol:hasLocation part:RSF1010_RepB_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:RSF1010_RepB_feature_0_range a sbol:Range ;
+    sbol:end 185 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:RSF1010_RepB_sequence ;
+    sbol:start 12 .
+
+part:RSF1010_RepB_feature_1 a sbol:SequenceFeature ;
+    dcterms:title "RepB/MobA-like C-terminal" ;
+    sbol:displayId "RSF1010_RepB_feature_1" ;
+    sbol:hasLocation part:RSF1010_RepB_feature_1_range ;
+    sbol:role so:0000417 .
+
+part:RSF1010_RepB_feature_1_range a sbol:Range ;
+    sbol:end 289 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:RSF1010_RepB_sequence ;
+    sbol:start 237 .
 
 part:RSF1010_oriV_sequence a sbol:Sequence ;
     sbol:displayId "RSF1010_oriV_sequence" ;
@@ -17564,6 +17600,12 @@ part:Ptrc_sequence a sbol:Sequence ;
     sbol:displayId "Ptrc_sequence" ;
     sbol:elements "TTGACAATTAATCATCCGGCTCGTATAATG" ;
     sbol:encoding <https://identifiers.org/edam:format_1207> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+
+part:RSF1010_RepB_sequence a sbol:Sequence ;
+    sbol:displayId "RSF1010_RepB_sequence" ;
+    sbol:elements "MKNDRTLQAIGRQLKAMGCERFDIGVRDATTGQMMNREWSAAEVLQNTPWLKRMNAQGNDVYIRPAEQERHGLVLVDDLSEFDLDDMKAEGREPALVVETSPKNYQAWVKVADAAGGELRGQIARTLASEYDADPASADSRHYGRLAGFTNRKDKHTTRAGYQPWVLLRESKGKTATAGPALVQQAGQQIEQAQRQQEKARRLASLELPERQLSRHRRTALDEYRSEMAGLVKRFGDDLSKCDFIAAQKLASRGRSAEEIGKAMAEASPALAERKPGHEADYIERTVSKVMGLPSVQLARAELARAPAPRQRGMDRGGPDFSM" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:Twin_Strep_tag_sequence a sbol:Sequence ;

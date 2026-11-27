@@ -6,14 +6,35 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M,
+            Scherzinger E
+  TITLE     Complete nucleotide sequence and gene organization of the
+            broad-host-range plasmid RSF1010.
+  JOURNAL   Gene. 1989;75(2):271-288
+   PUBMED   2653965
+  REMARK    doi:10.1016/0378-1119(89)90273-4
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RSF1010_RepB
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..323
                      /label="RSF1010 RepB"
                      /synonym="RSF1010 RepB"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q52349"
+                     /db_xref="NCBI:AAA26447.1"
+                     /citation=[1]
+     protein_domain  12..185
+                     /label="RepB-like DNA primase"
+                     /parent="RSF1010 RepB"
+                     /note="source: UniProt:Q52349"
+                     /db_xref="SO:0000417"
+     protein_domain  237..289
+                     /label="RepB/MobA-like C-terminal"
+                     /parent="RSF1010 RepB"
+                     /note="source: UniProt:Q52349"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 mkndrtlqai grqlkamgce rfdigvrdat tgqmmnrews aaevlqntpw lkrmnaqgnd
        61 vyirpaeqer hglvlvddls efdlddmkae grepalvvet spknyqawvk vadaaggelr
