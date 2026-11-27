@@ -18,9 +18,16 @@ REFERENCE   1
   JOURNAL   Gene. 1982;17(3):247-58
    PUBMED   6213446
   REMARK    doi:10.1016/0378-1119(82)90140-8
+REFERENCE   2
+  AUTHORS   Datsenko KA, Wanner BL
+  TITLE     One-step inactivation of chromosomal genes in Escherichia coli K-12
+            using PCR products.
+  JOURNAL   Proc Natl Acad Sci U S A. 2000;97(12):6640-5
+   PUBMED   10829079
+  REMARK    doi:10.1073/pnas.120163297
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/tL3
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..88
                      /label="tL3"
@@ -36,7 +43,9 @@ FEATURES             Location/Qualifiers
                      3' end."
                      /db_xref="SO:0000141"
                      /db_xref="GenBank:J02459"
+                     /db_xref="GenBank:AY048744"
                      /citation=[1]
+                     /citation=[2]
      stem_loop       64..84
                      /label="tL3 hairpin"
                      /parent="tL3"

@@ -6,9 +6,22 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Sanger F, Coulson AR, Hong GF, Hill DF, Petersen GB
+  TITLE     Nucleotide sequence of bacteriophage lambda DNA.
+  JOURNAL   J Mol Biol. 1982;162(4):729-773
+   PUBMED   6221115
+  REMARK    doi:10.1016/0022-2836(82)90546-0
+REFERENCE   2
+  AUTHORS   Nichols BP, Donelson JE
+  TITLE     178-Nucleotide sequence surrounding the cos site of bacteriophage
+            lambda DNA.
+  JOURNAL   J Virol. 1978;26(2):429-434
+   PUBMED   666898
+  REMARK    doi:10.1128/JVI.26.2.429-434.1978
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lambda_cos
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      misc_feature    1..224
                      /label="lambda cos"
@@ -17,6 +30,9 @@ FEATURES             Location/Qualifiers
                      /synonym="cos site"
                      /synonym="cos"
                      /db_xref="SO:0000110"
+                     /db_xref="GenBank:J02459"
+                     /citation=[1]
+                     /citation=[2]
 ORIGIN
         1 cctccacgca cgttgtgata tgtagatgat aatcattatc actttacggg tcctttccgg
        61 tgatccgaca ggttacgggg cggcgacctc gcgggttttc gctatttatg aaaattttcc

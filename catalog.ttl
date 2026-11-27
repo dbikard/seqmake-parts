@@ -2727,19 +2727,23 @@ part:lacZ_alpha a sbol:Component ;
 
 part:lambda_cos a sbol:Component ;
     rdfs:label "lambda cos" ;
+    dcterms:references pubmed:6221115,
+        pubmed:666898 ;
     dcterms:title "lambda cos" ;
     sbol:displayId "lambda_cos" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lambda_cos_sequence ;
     sbol:role so:0000110 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J02459> ;
     skos:altLabel "Minimal lambda cos sequence",
         "cos",
         "cos site",
         "lambda cos" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "lambda_cos" .
+    cat:slug "lambda_cos" ;
+    cat:sourceAccession "GenBank:J02459" .
 
 part:lambda_cos_1 a sbol:Component ;
     rdfs:label "lambda cos region" ;
@@ -2771,17 +2775,20 @@ part:lambda_integrase a sbol:Component ;
 
 part:lambda_t0 a sbol:Component ;
     rdfs:label "lambda t0" ;
+    dcterms:references pubmed:6221115 ;
     dcterms:title "lambda t0" ;
     sbol:displayId "lambda_t0" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:lambda_t0_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J02459> ;
     skos:altLabel "lambda t0",
         "lambda t0 terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "lambda_t0" .
+    cat:slug "lambda_t0" ;
+    cat:sourceAccession "GenBank:J02459" .
 
 part:mCherry a sbol:Component ;
     rdfs:label "mCherry" ;
@@ -2948,17 +2955,20 @@ part:pIJ101_ori a sbol:Component ;
 
 part:pR a sbol:Component ;
     rdfs:label "pR" ;
+    dcterms:references pubmed:6221115 ;
     dcterms:title "pR" ;
     sbol:displayId "pR" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:pR_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/J02459> ;
     skos:altLabel "pR",
         "pR promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "pR" .
+    cat:slug "pR" ;
+    cat:sourceAccession "GenBank:J02459" .
 
 part:pRM a sbol:Component ;
     rdfs:label "pRM" ;
@@ -3418,7 +3428,8 @@ part:sopB a sbol:Component ;
 part:tL3 a sbol:Component ;
     rdfs:label "tL3" ;
     dcterms:description "Bacteriophage lambda tL3, the rho-independent terminator of the major leftward (pL) operon just downstream of exo: 88 bp from the exo stop codon to the mapped termination point, carrying a GC-rich 8-bp-stem / 5-nt-loop hairpin followed by the sequence of the CCUUUCU 3' end." ;
-    dcterms:references pubmed:6213446 ;
+    dcterms:references pubmed:10829079,
+        pubmed:6213446 ;
     dcterms:title "tL3" ;
     sbol:displayId "tL3" ;
     sbol:hasFeature part:tL3_feature_0,
