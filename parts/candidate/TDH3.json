@@ -33,12 +33,14 @@
         ],
         "note": [
           "S. cerevisiae TDH3 (glyceraldehyde-3-phosphate dehydrogenase 3) promoter, commonly called GPD or GAP; strong constitutive. Extracted from a TDH3-driven yeast vector (Addgene 239293), GAP promoter feature (668 bp)."
-        ]
+        ],
+        "db_xref": []
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "No deposit holds the exact 668 bp. The S288C chromosome VII (NC_001139 883811..884477, reverse strand) and vectors such as KR232331 (536..1202) match it except for one extra base in the part (an A in the part's orientation): the part is 668 bp where they hold 667. Not a sequence_source."
   },
   "functional_claims": []
 }

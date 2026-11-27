@@ -11,7 +11,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "ATTGCGAATACCGCTTCCACAAACATTGCTCAAAAGTATCTCTTTGCTATATATCTCTGTGCTATATCCCTATATAACCTACCCATCCACCTTTCGCTCCTTGAACTTGCATCTAAACTCGACCTCTACATTTTTTATGTTTATCTCTAGTATTACTCTTTAGACAAAAAAATTGTAGTAAGAACTATTCATAGAGTGAATCGAAAACAATACGAAAATGTAAACATTTCCTATACGTAGTATATAGAGACAAAATAGAAGAAACCGTTCATAATTTTCTGACCAATGAAGAATCATCAACGCTATCACTTTCTGTTCACAAAGTATGCGCAATCCACATCGGTATAGAATATAATCGGGGATGCCTTTATCTTGAAAAAATGCACCCGCAGCTTCGCTAGTAATCAGTAAACGCGGGAAGTGGAGTCAGGCTTTTTTTATGGAAGAGAAAATAGACACCAAAGTAGCCTTCTTCTAACCTTAACGGACCTACAGTGCAAAAAGTTATCAAGAGACTGCATTATAGAGCGCACAAAGGAGAAAAAAAGTAATCTAAGATGCTTTGTTAGAAAAATAGCGCTCTCGGGATGCATTTTTGTAGAACAAAAAAGAAGTATAGATTCTTTGTTGGTAAAATAGCGCTCTCGCGTTGCATTTCTGTTCTGTAAAAATGCAGCTCAGATTCTTTGTTTGAAAAATTAGCGCTCTCGCGTTGCATTTTTGTTTTACAAAAATGAAGCACAGATTCTTCGTTGGTAAAATAGCGCTTTCGCGTTGCATTTCTGTTCTGTAAAAATGCAGCTCAGATTCTTTGTTTGAAAAATTAGCGCTCTCGCGTTGCATTTTTGTTCTACAAAATGAAGCACAGATGCTTCGTT",
-  "references": [],
+  "references": [
+    {
+      "authors": "Hartley JL, Donelson JE",
+      "title": "Nucleotide sequence of the yeast plasmid.",
+      "journal": "Nature. 1980;286(5776):860-865",
+      "pubmed_id": "6251374",
+      "comment": "doi:10.1038/286860a0"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
@@ -31,12 +39,19 @@
         ],
         "note": [
           "Saccharomyces cerevisiae 2-micron (2u) plasmid origin of replication; confers high-copy episomal maintenance (vs low-copy CEN/ARS). Extracted from pYES2 (Addgene 244550), 2u ori feature (878 bp)."
+        ],
+        "db_xref": [
+          "GenBank:J01347"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01347 (Saccharomyces cerevisiae 2 micron circle plasmid, complete sequence; Hartley & Donelson 1980) 2967..3844, reverse strand, identical over 878 bp; the span runs into inverted repeat IR1 (3714..4312)."
   },
   "functional_claims": []
 }
