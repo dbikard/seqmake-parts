@@ -19,7 +19,7 @@
       "comment": "doi:10.1038/282864a0"
     },
     {
-      "authors": "Gonz\u00e1lez-Prieto C, Ag\u00fandez L, Llosa M",
+      "authors": "González-Prieto C, Agúndez L, Llosa M",
       "title": "Chloramphenicol Selection of IS10 Transposition in the cat Promoter Region of Widely Used Cloning Vectors.",
       "journal": "PLoS One. 2015;10(9):e0138615",
       "pubmed_id": "26375469",
@@ -41,7 +41,7 @@
           "cat promoter"
         ],
         "note": [
-          "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region and the catalog part RBS 23400; the 103 bp this part carried before ran to the ATG and overlapped RBS 23400 on 228 plasmids of a 1,390-plasmid collection. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part."
+          "Promoter of the Tn9 cat gene, taken from V00622 (Alton and Vapnek 1979) 140-217. Both ends are provisional: no accessible source maps its transcription start, -35 or -10. The 3' end leaves 26 bases before the cat start codon (V00622 218-243), outside the Shine-Dalgarno region; the 103 bp this part carried before ran to the ATG and so overlapped the ribosome binding site. Where the -35 and -10 lie is an open question, and the part declares no boxes until a source settles it. Two readings fit a 17 bp spacer. (A) TTGATC at 1-6 (V00622 140-145, which is why the window starts there) with AACTTT at 24-29 (V00622 163-168): this -10 ends 22 bp before the IS10 target TACCGGGCG at 52-60, the distance Gonzalez-Prieto et al. 2015 report between the promoter's -10 element and that target, but it matches the -10 consensus TATAAT at only 2 of 6 bases. (B) ACGTAA at 10-15 with CATAAT at 33-38 (V00622 172-177): the better -10 match (5 of 6) and the pair older automated annotations mark on cat-carrying vectors, but it ends 13 bp before the target, not 22. Positions are 1-based in the part."
         ],
         "citation": [
           "[1]",
