@@ -9,13 +9,21 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "MFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL",
-  "references": [],
+  "sequence": "MRRIYLNTYEQINKVKKILRKHLKNNLIGTYMFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL",
+  "references": [
+    {
+      "authors": "LeBlanc DJ, Lee LN, Inamine JM",
+      "title": "Cloning and nucleotide base sequence analysis of a spectinomycin adenyltransferase AAD(9) determinant from Enterococcus faecalis.",
+      "journal": "Antimicrob Agents Chemother. 1991;35(9):1804-1810",
+      "pubmed_id": "1659306",
+      "comment": "doi:10.1128/AAC.35.9.1804"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
       "start": 0,
-      "end": 224,
+      "end": 255,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -26,13 +34,33 @@
           "spec",
           "aad9",
           "spectinomycin adenyltransferase"
+        ],
+        "db_xref": [
+          "UniProt:Q07448",
+          "NCBI:AAA16527.1",
+          "GenBank:M69221"
+        ],
+        "citation": [
+          "[1]"
+        ],
+        "note": [
+          "Full-length AAD(9) as deposited: translated from a GTG start (as Met) 31 codons upstream of the internal Met32 that many vector maps annotate as the start, giving a 224 aa CDS. UniProt's structure-derived secondary structure places a helix at residues 8-23 and a beta strand at 27-34, so the first 31 residues are part of the fold."
         ]
       }
     }
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "closest_deposit": "M69221 (Enterococcus faecalis aad9/spc; LeBlanc et al. 1991, PMID 1659306), protein AAA16527.1 = UniProt Q07448: the 224 aa are its residues 32-255, identical, but that CDS (271..1038) starts 31 codons upstream at a GTG, so the deposited protein is 255 aa with an N-terminal MRRIYLNTYEQINKVKKILRKHLKNNLIGTY the part lacks. The part begins at that protein's internal Met32. The exact 224 aa are deposited only as cloning-vector CDS annotations (e.g. AAX15693.1, shuttle vector pWW102B, 2005), not as a primary aad9 sequence; not a sequence_source."
+    "sequence_source": "M69221 (Enterococcus faecalis aad9/spc; LeBlanc et al. 1991) CDS 271..1038, GTG start translated as Met, protein AAA16527.1, identical over 255 aa; UniProt:Q07448. This replaces a 224 aa form (residues 32-255, starting at the internal Met32) that is deposited only as cloning-vector CDS annotations; most of those vector records carry the full GTG ORF in frame."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:Q07448",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 70
+  }
 }

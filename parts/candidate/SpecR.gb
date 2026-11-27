@@ -1,4 +1,4 @@
-LOCUS       SpecR                    224 aa                     UNK 01-JAN-1980
+LOCUS       SpecR                    255 aa                     UNK 01-JAN-1980
 DEFINITION  SpecR.
 ACCESSION   SpecR
 VERSION     SpecR
@@ -6,20 +6,38 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   LeBlanc DJ, Lee LN, Inamine JM
+  TITLE     Cloning and nucleotide base sequence analysis of a spectinomycin
+            adenyltransferase AAD(9) determinant from Enterococcus faecalis.
+  JOURNAL   Antimicrob Agents Chemother. 1991;35(9):1804-1810
+   PUBMED   1659306
+  REMARK    doi:10.1128/AAC.35.9.1804
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/SpecR
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
-     CDS             1..224
+     CDS             1..255
                      /label="SpecR"
                      /synonym="SpecR"
                      /synonym="spec"
                      /synonym="aad9"
                      /synonym="spectinomycin adenyltransferase"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q07448"
+                     /db_xref="NCBI:AAA16527.1"
+                     /db_xref="GenBank:M69221"
+                     /citation=[1]
+                     /note="Full-length AAD(9) as deposited: translated from a
+                     GTG start (as Met) 31 codons upstream of the internal Met32
+                     that many vector maps annotate as the start, giving a 224
+                     aa CDS. UniProt's structure-derived secondary structure
+                     places a helix at residues 8-23 and a beta strand at 27-34,
+                     so the first 31 residues are part of the fold."
 ORIGIN
-        1 mfgsgvesgl kpnsdldflv vvsepltdqs keiliqkirp iskkigdksn lryieltiii
-       61 qqemvpwnhp pkqefiygew lqelyeqgyi pqkelnsdlt imlyqakrkn kriygnydle
-      121 ellpdipfsd vrraimdsse elidnyqdde tnsiltlcrm iltmdtgkii pkdiagnava
-      181 essplehrer illavrsylg eniewtnenv nltinylnnr lkkl
+        1 mrriylntye qinkvkkilr khlknnligt ymfgsgvesg lkpnsdldfl vvvsepltdq
+       61 skeiliqkir piskkigdks nlryieltii iqqemvpwnh ppkqefiyge wlqelyeqgy
+      121 ipqkelnsdl timlyqakrk nkriygnydl eellpdipfs dvrraimdss eelidnyqdd
+      181 etnsiltlcr miltmdtgki ipkdiagnav aessplehre rillavrsyl geniewtnen
+      241 vnltinylnn rlkkl
 //

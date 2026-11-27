@@ -1883,19 +1883,23 @@ part:SacB a sbol:Component ;
 
 part:SpecR a sbol:Component ;
     rdfs:label "SpecR" ;
+    dcterms:description "Full-length AAD(9) as deposited: translated from a GTG start (as Met) 31 codons upstream of the internal Met32 that many vector maps annotate as the start, giving a 224 aa CDS. UniProt's structure-derived secondary structure places a helix at residues 8-23 and a beta strand at 27-34, so the first 31 residues are part of the fold." ;
+    dcterms:references pubmed:1659306 ;
     dcterms:title "SpecR" ;
     sbol:displayId "SpecR" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:SpecR_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q07448> ;
     skos:altLabel "SpecR",
         "aad9",
         "spec",
         "spectinomycin adenyltransferase" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "SpecR" .
+    cat:slug "SpecR" ;
+    cat:sourceAccession "UniProt:Q07448" .
 
 part:St1Cas9 a sbol:Component ;
     rdfs:label "St1Cas9" ;
@@ -11279,7 +11283,7 @@ part:SnoopTag_sequence a sbol:Sequence ;
 
 part:SpecR_sequence a sbol:Sequence ;
     sbol:displayId "SpecR_sequence" ;
-    sbol:elements "MFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL" ;
+    sbol:elements "MRRIYLNTYEQINKVKKILRKHLKNNLIGTYMFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL" ;
     sbol:encoding <https://identifiers.org/edam:format_1208> ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
