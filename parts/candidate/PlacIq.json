@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GACACCATCGAATGGTGCAAAACCTTTCGCGGTATGGCATGATAGCGCCCGGAAGAGAGTCAATTCAGGGTGGTGAAT",
-  "references": [],
+  "references": [
+    {
+      "authors": "Morales VM, Bäckman A, Bagdasarian M",
+      "title": "A series of wide-host-range low-copy-number vectors that allow direct screening for recombinants.",
+      "journal": "Gene. 1991;97(1):39-47",
+      "pubmed_id": "1847347",
+      "comment": "doi:10.1016/0378-1119(91)90007-x"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -27,12 +35,19 @@
         ],
         "variant_of": [
           "PlacI"
+        ],
+        "db_xref": [
+          "GenBank:M37846"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "M37846 (cloning vector pMMB190; Morales et al. 1991) 8585..8662, reverse strand, identical over 78 bp; the oldest of 404 exact deposits. It is PlacI (J01636 1..78) with the lacIq 'up' mutation at J01636 base 16 (c in wild type, t in I-Q), recorded as a variation in J01636 after Calos 1978."
   },
   "functional_claims": []
 }
