@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "AATTAACCCTCACTAAAGGG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Pajunen MI, Elizondo MR, Skurnik M, Kieleczawa J, Molineux IJ",
+      "title": "Complete nucleotide sequence and likely recombinatorial origin of bacteriophage T3.",
+      "journal": "J Mol Biol. 2002;319(5):1115-1132",
+      "pubmed_id": "12079351",
+      "comment": "doi:10.1016/S0022-2836(02)00384-4"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -24,12 +32,19 @@
         "synonym": [
           "PT3",
           "T3 promoter"
+        ],
+        "db_xref": [
+          "GenBank:AJ318471"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AJ318471 (bacteriophage T3 genome, strain Luria; Pajunen et al. 2002) 20733..20752, the start of the annotated phi10 promoter (20733..20755), identical over 20 bp. The same 20 bp also open the phi6.5 (17160) and phi13 (25457) promoters."
   },
   "functional_claims": []
 }

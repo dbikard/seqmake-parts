@@ -38,6 +38,13 @@
       "journal": "Science",
       "pubmed_id": "8638105",
       "comment": "doi:10.1126/science.271.5253.1247"
+    },
+    {
+      "authors": "Coy DL, Hancock WO, Wagenbach M, Howard J",
+      "title": "Kinesin's tail domain is an inhibitory regulator of the motor domain.",
+      "journal": "Nat Cell Biol. 1999;1(5):288-92",
+      "pubmed_id": "10559941",
+      "comment": "doi:10.1038/13001"
     }
   ],
   "features": [
@@ -59,13 +66,17 @@
           "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase."
         ],
         "db_xref": [
-          "SO:0000167"
+          "SO:0000167",
+          "GenBank:AF116269"
         ],
         "regulated_by": [
           "LacI"
         ],
         "component": [
           "lacO"
+        ],
+        "citation": [
+          "[5]"
         ]
       }
     },
@@ -172,7 +183,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AF116269 (expression vector p864INS; Coy et al. 1999) 4964..5030, identical over 67 bp; the oldest of 50 exact deposits, all pET-type T7lac vectors."
   },
   "functional_claims": [
     {

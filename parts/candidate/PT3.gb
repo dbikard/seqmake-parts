@@ -6,15 +6,24 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Pajunen MI, Elizondo MR, Skurnik M, Kieleczawa J, Molineux IJ
+  TITLE     Complete nucleotide sequence and likely recombinatorial origin of
+            bacteriophage T3.
+  JOURNAL   J Mol Biol. 2002;319(5):1115-1132
+   PUBMED   12079351
+  REMARK    doi:10.1016/S0022-2836(02)00384-4
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PT3
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..20
                      /label="PT3"
                      /synonym="PT3"
                      /synonym="T3 promoter"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:AJ318471"
+                     /citation=[1]
 ORIGIN
         1 aattaaccct cactaaaggg
 //

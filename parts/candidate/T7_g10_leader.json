@@ -11,7 +11,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "AATAATTTTGTTTAACTTTAAGAAGGAGATATACC",
-  "references": [],
+  "references": [
+    {
+      "authors": "Andreansky M, Hunter E",
+      "title": "Phagemid pSIT permits efficient in vitro mutagenesis and tightly controlled expression in E. coli.",
+      "journal": "Biotechniques. 1994;16(4):626-8, 630-3",
+      "pubmed_id": "8024782",
+      "comment": ""
+    }
+  ],
   "features": [
     {
       "type": "RBS",
@@ -31,12 +39,19 @@
         ],
         "note": [
           "T7 gene-10 (g10) translational leader / RBS: epsilon enhancer + Shine-Dalgarno (AAGGAG) + spacer; drives strong translation in the T7 expression system. Extracted from pET-28a (Addgene 249430), the RBS/leader between the XbaI site and the start ATG (35 bp). DNA 5'UTR element, distinct from the T7-tag peptide (see T7_tag)."
+        ],
+        "db_xref": [
+          "GenBank:U17139"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "U17139 (phagemid cloning vector pSIT; Andreansky & Hunter 1994) 72..106, identical over 35 bp; the oldest of 608 exact deposits. It is the pET-vector form of the T7 gene 10 leader (Studier et al. 1990, cited by the record), ending ATATACC before the vector's start codon."
   },
   "functional_claims": []
 }

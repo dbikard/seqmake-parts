@@ -1251,17 +1251,20 @@ part:PSV40 a sbol:Component ;
 
 part:PT3 a sbol:Component ;
     rdfs:label "PT3" ;
+    dcterms:references pubmed:12079351 ;
     dcterms:title "PT3" ;
     sbol:displayId "PT3" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:PT3_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/AJ318471> ;
     skos:altLabel "PT3",
         "T3 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "PT3" .
+    cat:slug "PT3" ;
+    cat:sourceAccession "GenBank:AJ318471" .
 
 part:PT5_lacO a sbol:Component ;
     rdfs:label "PT5/lacO" ;
@@ -1292,6 +1295,7 @@ part:PT5_lacO a sbol:Component ;
 
 part:PT7 a sbol:Component ;
     rdfs:label "PT7" ;
+    dcterms:references pubmed:6864790 ;
     dcterms:title "PT7" ;
     sbol:displayId "PT7" ;
     sbol:hasFeature part:PT7_feature_0 ;
@@ -1299,10 +1303,12 @@ part:PT7 a sbol:Component ;
     sbol:hasSequence part:PT7_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V01146> ;
     skos:altLabel "T7 promoter" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "PT7" .
+    cat:slug "PT7" ;
+    cat:sourceAccession "GenBank:V01146" .
 
 part:PURA3 a sbol:Component ;
     rdfs:label "PURA3" ;
@@ -1977,12 +1983,14 @@ part:T7_RNAP a sbol:Component ;
 part:T7_g10_leader a sbol:Component ;
     rdfs:label "T7 g10 leader" ;
     dcterms:description "T7 gene-10 (g10) translational leader / RBS: epsilon enhancer + Shine-Dalgarno (AAGGAG) + spacer; drives strong translation in the T7 expression system. Extracted from pET-28a (Addgene 249430), the RBS/leader between the XbaI site and the start ATG (35 bp). DNA 5'UTR element, distinct from the T7-tag peptide (see T7_tag)." ;
+    dcterms:references pubmed:8024782 ;
     dcterms:title "T7 g10 leader" ;
     sbol:displayId "T7_g10_leader" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:T7_g10_leader_sequence ;
     sbol:role so:0000139 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U17139> ;
     skos:altLabel "T7 g10 RBS",
         "T7 gene 10 leader RBS",
         "g10 leader RBS",
@@ -1990,21 +1998,25 @@ part:T7_g10_leader a sbol:Component ;
         "phi10 RBS" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "T7_g10_leader" .
+    cat:slug "T7_g10_leader" ;
+    cat:sourceAccession "GenBank:U17139" .
 
 part:T7_terminator a sbol:Component ;
     rdfs:label "T7 terminator" ;
+    dcterms:references pubmed:6864790 ;
     dcterms:title "T7 terminator" ;
     sbol:displayId "T7_terminator" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:T7_terminator_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/V01146> ;
     skos:altLabel "T7 Terminator",
         "T7 terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "T7_terminator" .
+    cat:slug "T7_terminator" ;
+    cat:sourceAccession "GenBank:V01146" .
 
 part:TDH3 a sbol:Component ;
     rdfs:label "TDH3" ;
@@ -12645,7 +12657,8 @@ part:T7_terminator_sequence a sbol:Sequence ;
 part:T7lac a sbol:Component ;
     rdfs:label "T7lac" ;
     dcterms:description "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase." ;
-    dcterms:references pubmed:10956032,
+    dcterms:references pubmed:10559941,
+        pubmed:10956032,
         pubmed:1902522,
         pubmed:4587255,
         pubmed:8638105 ;
@@ -12661,6 +12674,7 @@ part:T7lac a sbol:Component ;
     sbol:hasSequence part:T7lac_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/AF116269> ;
     skos:altLabel "PT7/lacO",
         "T7 lac operator promoter",
         "T7/lacO promoter" ;
@@ -12668,7 +12682,8 @@ part:T7lac a sbol:Component ;
     cat:documented true ;
     cat:hasFunctionalClaim part:T7lac_claim_regulation ;
     cat:regulatedBy part:lacI ;
-    cat:slug "T7lac" .
+    cat:slug "T7lac" ;
+    cat:sourceAccession "GenBank:AF116269" .
 
 part:T7lac_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "LacI-controllable T7 phi10 promoter (requires T7 RNA polymerase)." ;

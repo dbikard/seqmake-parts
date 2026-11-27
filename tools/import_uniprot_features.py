@@ -58,21 +58,66 @@ def _fetch(accession: str) -> dict:
     return _get_json(f"https://rest.uniprot.org/uniprotkb/{accession}.json")
 
 
-def parse_uniparc(data: dict, seq: str) -> list[tuple[str, bool]]:
-    """From a UniParc search response, the active UniProtKB accessions whose
-    sequence is EXACTLY ``seq`` (reviewed/Swiss-Prot first). Pure / testable."""
-    out: list[tuple[str, bool]] = []
-    seen: set[str] = set()
+def parse_uniparc(data: dict, seq: str) -> list[str]:
+    """From a UniParc search response, the UniParc ids (UPI...) whose sequence is
+    EXACTLY ``seq``. Pure / testable.
+
+    The search response no longer carries each entry's cross-references; they
+    are served per entry by ``/uniparc/<UPI>/databases`` (see
+    ``parse_uniparc_databases``). A hit without a ``uniParcId`` is a response
+    shape this code does not know, so it raises rather than silently finding
+    nothing -- an empty answer here makes the importer fall back to normalizing
+    the part to the assigned entry's residues."""
+    out: list[str] = []
     for r in data.get("results", []):
         if (r.get("sequence") or {}).get("value") != seq:   # guard checksum collisions
             continue
-        for x in r.get("uniParcCrossReferences", []):
-            db, acc = x.get("database", ""), x.get("id", "")
-            if x.get("active") and db.startswith("UniProtKB") and acc not in seen:
-                seen.add(acc)
-                out.append((acc, "Swiss-Prot" in db))
-    out.sort(key=lambda t: (not t[1], t[0]))     # reviewed first, then by accession
+        upi = r.get("uniParcId")
+        if not upi:
+            raise ValueError("UniParc search hit without a uniParcId: "
+                             "the response shape changed")
+        if upi not in out:
+            out.append(upi)
     return out
+
+
+def parse_uniparc_databases(data: dict) -> list[tuple[str, bool, str]]:
+    """From a ``/uniparc/<UPI>/databases`` response, the active UniProtKB
+    accessions as ``(accession, reviewed, created)``. Pure / testable."""
+    out: list[tuple[str, bool, str]] = []
+    seen: set[str] = set()
+    for x in data.get("results", []):
+        db, acc = x.get("database", ""), x.get("id", "")
+        if x.get("active") and db.startswith("UniProtKB") and acc and acc not in seen:
+            seen.add(acc)
+            out.append((acc, "Swiss-Prot" in db, x.get("created") or ""))
+    out.sort(key=_accession_order)
+    return out
+
+
+def _accession_order(hit: tuple[str, bool, str]) -> tuple:
+    """Reviewed first, then the oldest entry (the one most likely made from the
+    primary deposit), then by accession; an entry with no date sorts last."""
+    acc, reviewed, created = hit
+    return (not reviewed, created or "9999", acc)
+
+
+def _next_link(link_header: str | None) -> str | None:
+    """The rel="next" URL of a UniProt REST ``Link`` header, if any."""
+    for part in (link_header or "").split(","):
+        if 'rel="next"' in part:
+            return part[part.index("<") + 1:part.index(">")]
+    return None
+
+
+def _get_json_pages(url: str) -> list[dict]:
+    pages = []
+    while url:
+        req = urllib.request.Request(url, headers={"User-Agent": "seqmake-parts/uniprot-import"})
+        with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310
+            pages.append(json.loads(r.read().decode("utf-8")))
+            url = _next_link(r.headers.get("Link"))
+    return pages
 
 
 def uniparc_exact_accessions(seq: str) -> list[tuple[str, bool]]:
@@ -81,7 +126,14 @@ def uniparc_exact_accessions(seq: str) -> list[tuple[str, bool]]:
     checksum = crc64(seq).removeprefix("CRC-")
     url = ("https://rest.uniprot.org/uniparc/search?"
            f"query=checksum:{checksum}&format=json&size=50")
-    return parse_uniparc(_get_json(url), seq)
+    out: list[tuple[str, bool]] = []
+    for upi in parse_uniparc(_get_json(url), seq):
+        dbs = ("https://rest.uniprot.org/uniparc/" + upi + "/databases?format=json"
+               "&dbTypes=UniProtKB/Swiss-Prot,UniProtKB/TrEMBL&active=true&size=500")
+        for page in _get_json_pages(dbs):
+            out.extend(h for h in parse_uniparc_databases(page) if h not in out)
+    out.sort(key=_accession_order)
+    return [(acc, reviewed) for acc, reviewed, _ in out]
 
 
 def _set_accession(data: dict, new_acc: str) -> None:

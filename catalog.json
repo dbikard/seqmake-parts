@@ -15866,7 +15866,7 @@
       "slug": "PT3",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:AJ318471",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -15882,9 +15882,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Pajunen MI, Elizondo MR, Skurnik M, Kieleczawa J, Molineux IJ",
+          "title": "Complete nucleotide sequence and likely recombinatorial origin of bacteriophage T3.",
+          "journal": "J Mol Biol. 2002;319(5):1115-1132",
+          "pmid": "12079351",
+          "doi": "10.1016/S0022-2836(02)00384-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12079351/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -16041,7 +16052,7 @@
       "slug": "PT7",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:V01146",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -16067,9 +16078,20 @@
           "citations": []
         }
       ],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Dunn JJ, Studier FW",
+          "title": "Complete nucleotide sequence of bacteriophage T7 DNA and the locations of T7 genetic elements.",
+          "journal": "J Mol Biol. 1983;166(4):477-535",
+          "pmid": "6864790",
+          "doi": "10.1016/s0022-2836(83)80282-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6864790/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -22536,7 +22558,7 @@
       "slug": "T7_g10_leader",
       "feature_type": "RBS",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:U17139",
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "synonyms": [
@@ -22555,9 +22577,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Andreansky M, Hunter E",
+          "title": "Phagemid pSIT permits efficient in vitro mutagenesis and tightly controlled expression in E. coli.",
+          "journal": "Biotechniques. 1994;16(4):626-8, 630-3",
+          "pmid": "8024782",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8024782/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -22796,7 +22829,7 @@
       "slug": "T7_terminator",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:V01146",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -22812,9 +22845,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Dunn JJ, Studier FW",
+          "title": "Complete nucleotide sequence of bacteriophage T7 DNA and the locations of T7 genetic elements.",
+          "journal": "J Mol Biol. 1983;166(4):477-535",
+          "pmid": "6864790",
+          "doi": "10.1016/s0022-2836(83)80282-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6864790/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -22850,7 +22894,7 @@
       "slug": "T7lac",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:AF116269",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -22957,10 +23001,20 @@
           "pmid": "8638105",
           "doi": "10.1126/science.271.5253.1247",
           "url": "https://pubmed.ncbi.nlm.nih.gov/8638105/"
+        },
+        {
+          "authors": "Coy DL, Hancock WO, Wagenbach M, Howard J",
+          "title": "Kinesin's tail domain is an inhibitory regulator of the motor domain.",
+          "journal": "Nat Cell Biol. 1999;1(5):288-92",
+          "pmid": "10559941",
+          "doi": "10.1038/13001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10559941/"
         }
       ],
-      "main_citations": [],
-      "sourced": false,
+      "main_citations": [
+        5
+      ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
