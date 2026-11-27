@@ -27,12 +27,14 @@
         ],
         "collection": [
           "anderson-promoters"
-        ]
+        ],
+        "db_xref": []
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "iGEM Registry of Standard Biological Parts, BBa_J23110 'constitutive promoter family member' (Anderson promoter collection; parts.igem.org; created 2006), 100% over 35 bp"
   },
   "functional_claims": []
 }
