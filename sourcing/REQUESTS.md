@@ -43,3 +43,5 @@ access barrier, and the **exact filename** to save it as in `sourcing/incoming/`
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 6759660 --doi 10.1016/0022-2836(82)90276-5`
 - [ ] **PMID 6279609 / doi:10.1016/s0021-9258(19)83828-0** — Maximal limits of the Escherichia coli replication factor Y effector site sequences in pBR322 DNA — unblocks: pBR322_pas_DnaA/boundaries (confirm the pBR322 numbering of the 2353-2416 pas limits) — barrier: not-in-pmc
       full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 6279609 --doi 10.1016/s0021-9258(19)83828-0`
+- [ ] **PMID 23727987 / doi:10.1038/nmeth.2515** — Characterization of 582 natural and synthetic terminators and quantification of their design constraints — unblocks: ECK120033737, ECK120010818, L3S2P11, L3S3P22_sTerminator/sequence_source (the published terminator sequences, Supplementary Table) — barrier: not-in-pmc
+      full-text not machine-accessible; deposit it: `python tools/papers.py add <pdf> --pmid 23727987 --doi 10.1038/nmeth.2515`

@@ -23,12 +23,14 @@
         ],
         "synonym": [
           "L3S3P22 sTerminator"
-        ]
+        ],
+        "db_xref": []
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "No deposit holds the exact 49 bp. Synthetic constructs PX209999-PX210001 (e.g. PX209999 906..954, reverse strand) match all but part position 47 (G; they read C). Not a sequence_source."
   },
   "functional_claims": []
 }

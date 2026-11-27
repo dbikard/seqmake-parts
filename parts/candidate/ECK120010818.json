@@ -24,12 +24,14 @@
         "synonym": [
           "ECK120010818",
           "Terminator ECK120010818"
-        ]
+        ],
+        "db_xref": []
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "Escherichia coli K-12 MG1655 genome (U00096) 3269949..3270002, reverse strand: identical except part position 23 (T; MG1655 A). The published Chen et al. 2013 sequence (PMID 23727987) is requested to settle which form the terminator set used. Not a sequence_source."
   },
   "functional_claims": []
 }

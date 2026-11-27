@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GACGAACAATAAGGCCTCCCTAACGGGGGGCCTTTTTTATTGATAACAAAA",
-  "references": [],
+  "references": [
+    {
+      "authors": "Fernandez-Rodriguez J, Voigt CA",
+      "title": "Post-translational control of genetic circuits using Potyvirus proteases.",
+      "journal": "Nucleic Acids Res. 2016;44(13):6493-502",
+      "pubmed_id": "27298256",
+      "comment": "doi:10.1093/nar/gkw537"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -23,12 +31,19 @@
         ],
         "synonym": [
           "L3S1P13"
+        ],
+        "db_xref": [
+          "GenBank:KX353595"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KX353595 (synthetic plasmid ptevF-PhlF; Fernandez-Rodriguez & Voigt 2016) 3581..3631, identical over 51 bp; the oldest of 25 exact deposits. A synthetic terminator of the Chen et al. 2013 set."
   },
   "functional_claims": []
 }

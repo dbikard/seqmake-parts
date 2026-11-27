@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "TAACCTAAACTGACAGGCATCAAATTAAGCAGAAGGCCATCCTGACGGATGGCCTTTTTGCGT",
-  "references": [],
+  "references": [
+    {
+      "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+      "title": "One-step cloning and chromosomal integration of DNA.",
+      "journal": "ACS Synth Biol. 2013;2(9):537-41",
+      "pubmed_id": "24050148",
+      "comment": "doi:10.1021/sb400021j"
+    }
+  ],
   "features": [
     {
       "type": "terminator",
@@ -24,12 +32,19 @@
         "synonym": [
           "rrnBT2",
           "rrn BT2 terminator"
+        ],
+        "db_xref": [
+          "GenBank:KF030457"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KF030457 (chromosomal integration vector pOSIP-CH; St-Pierre et al. 2013) 1170..1232, identical over 63 bp; the oldest of 23 exact deposits. The native rrnB T2 in MG1655 (U00096 4171910..4171967) matches only part positions 6-63 and differs there at part position 13 (A; MG1655 C)."
   },
   "functional_claims": []
 }
