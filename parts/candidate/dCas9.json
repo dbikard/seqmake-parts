@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MDKKYSIGLAIGTNSVGWAVITDEYKVPSKKFKVLGNTDRHSIKKNLIGALLFDSGETAEATRLKRTARRRYTRRKNRICYLQEIFSNEMAKVDDSFFHRLEESFLVEEDKKHERHPIFGNIVDEVAYHEKYPTIYHLRKKLVDSTDKADLRLIYLALAHMIKFRGHFLIEGDLNPDNSDVDKLFIQLVQTYNQLFEENPINASGVDAKAILSARLSKSRRLENLIAQLPGEKKNGLFGNLIALSLGLTPNFKSNFDLAEDAKLQLSKDTYDDDLDNLLAQIGDQYADLFLAAKNLSDAILLSDILRVNTEITKAPLSASMIKRYDEHHQDLTLLKALVRQQLPEKYKEIFFDQSKNGYAGYIDGGASQEEFYKFIKPILEKMDGTEELLVKLNREDLLRKQRTFDNGSIPHQIHLGELHAILRRQEDFYPFLKDNREKIEKILTFRIPYYVGPLARGNSRFAWMTRKSEETITPWNFEEVVDKGASAQSFIERMTNFDKNLPNEKVLPKHSLLYEYFTVYNELTKVKYVTEGMRKPAFLSGEQKKAIVDLLFKTNRKVTVKQLKEDYFKKIECFDSVEISGVEDRFNASLGTYHDLLKIIKDKDFLDNEENEDILEDIVLTLTLFEDREMIEERLKTYAHLFDDKVMKQLKRRRYTGWGRLSRKLINGIRDKQSGKTILDFLKSDGFANRNFMQLIHDDSLTFKEDIQKAQVSGQGDSLHEHIANLAGSPAIKKGILQTVKVVDELVKVMGRHKPENIVIEMARENQTTQKGQKNSRERMKRIEEGIKELGSQILKEHPVENTQLQNEKLYLYYLQNGRDMYVDQELDINRLSDYDVDAIVPQSFLKDDSIDNKVLTRSDKNRGKSDNVPSEEVVKKMKNYWRQLLNAKLITQRKFDNLTKAERGGLSELDKAGFIKRQLVETRQITKHVAQILDSRMNTKYDENDKLIREVKVITLKSKLVSDFRKDFQFYKVREINNYHHAHDAYLNAVVGTALIKKYPKLESEFVYGDYKVYDVRKMIAKSEQEIGKATAKYFFYSNIMNFFKTEITLANGEIRKRPLIETNGETGEIVWDKGRDFATVRKVLSMPQVNIVKKTEVQTGGFSKESILPKRNSDKLIARKKDWDPKKYGGFDSPTVAYSVLVVAKVEKGKSKKLKSVKELLGITIMERSSFEKNPIDFLEAKGYKEVKKDLIIKLPKYSLFELENGRKRMLASAGELQKGNELALPSKYVNFLYLASHYEKLKGSPEDNEQKQLFVEQHKHYLDEIIEQISEFSKRVILADANLDKVLSAYNKHRDKPIREQAENIIHLFTLTNLGAPAAFKYFDTTIDRKRYTSTKEVLDATLIHQSITGLYETRIDLSQLGGD",
-  "references": [],
+  "references": [
+    {
+      "authors": "Tong Y, Charusanti P, Zhang L, Weber T, Lee SY",
+      "title": "CRISPR-Cas9 Based Engineering of Actinomycetal Genomes.",
+      "journal": "ACS Synth Biol. 2015;4(9):1020-1029",
+      "pubmed_id": "25806970",
+      "comment": "doi:10.1021/acssynbio.5b00038"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -29,10 +37,14 @@
           "nuclease-dead Cas9"
         ],
         "db_xref": [
-          "UniProt:Q99ZW2"
+          "UniProt:Q99ZW2",
+          "NCBI:AKA60242.1"
         ],
         "variant_of": [
           "cas9"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
@@ -40,7 +52,8 @@
   "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
   "provenance": {
     "migrated_from": "genbank",
-    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)"
+    "protein_features": "deferred to UniProt/InterPro/AlphaFold (see source_accession)",
+    "sequence_source": "KR011748 (synthetic construct, codon-optimized dcas9; Tong et al. 2015), protein AKA60242.1, identical over 1368 aa: the oldest nucleotide deposit in the protein's NCBI identical-protein group. It is UniProt Q99ZW2 (S. pyogenes Cas9) with D10A and H840A, the two substitutions the variant_rationale names; the exact sequence is also UniProt A0A386IRG9."
   },
   "functional_claims": [],
   "uniprot_features": [
@@ -154,7 +167,7 @@
     }
   ],
   "uniprot_import": {
-    "fetched": "2026-11-01",
+    "fetched": "2026-11-27",
     "accession": "UniProt:Q99ZW2",
     "status": "variant",
     "identity": 0.9985,
@@ -172,6 +185,6 @@
       }
     ],
     "variant_rationale": "Catalytically-dead SpCas9 (D10A, H840A): binds DNA guided by sgRNA but does not cleave; the defining feature of the part, so the variant sequence is kept rather than normalized to wild-type Cas9.",
-    "uniprot_entry_version": 148
+    "uniprot_entry_version": 149
   }
 }
