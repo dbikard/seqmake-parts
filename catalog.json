@@ -5801,7 +5801,7 @@
       "slug": "f1_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KT033769",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -5818,9 +5818,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Barrett SP, Wang PL, Salzman J",
+          "title": "Circular RNA biogenesis can proceed through an exon-containing lariat precursor.",
+          "journal": "Elife. 2015;4:e07540",
+          "pmid": "26057830",
+          "doi": "10.7554/eLife.07540",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26057830/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
