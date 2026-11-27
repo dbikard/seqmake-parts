@@ -31,7 +31,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "M69221 (Enterococcus faecalis aad9/spc; LeBlanc et al. 1991, PMID 1659306), protein AAA16527.1 = UniProt Q07448: the 224 aa are its residues 32-255, identical, but that CDS (271..1038) starts 31 codons upstream at a GTG, so the deposited protein is 255 aa with an N-terminal MRRIYLNTYEQINKVKKILRKHLKNNLIGTY the part lacks. The part begins at that protein's internal Met32. The exact 224 aa are deposited only as cloning-vector CDS annotations (e.g. AAX15693.1, shuttle vector pWW102B, 2005), not as a primary aad9 sequence; not a sequence_source."
   },
   "functional_claims": []
 }

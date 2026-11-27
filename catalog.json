@@ -9292,7 +9292,7 @@
       "slug": "kanR_Tn903",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q79DX9",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -9310,11 +9310,71 @@
       "regulates": [],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "children": [
+        {
+          "label": "Aminoglycoside phosphotransferase",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 30,
+          "end": 262,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Active site: Proton acceptor",
+          "feature_type": "misc_feature",
+          "so_term": "SO:0000110",
+          "so_name": "sequence_feature",
+          "start": 197,
+          "end": 198,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 202,
+          "end": 203,
+          "strand": 1,
+          "citations": []
+        },
+        {
+          "label": "Binding site",
+          "feature_type": "binding",
+          "so_term": "SO:0000409",
+          "so_name": "binding_site",
+          "start": 215,
+          "end": 216,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Oka A, Sugisaki H, Takanami M",
+          "title": "Nucleotide sequence of the kanamycin resistance transposon Tn903.",
+          "journal": "J Mol Biol. 1981;147(2):217-226",
+          "pmid": "6270337",
+          "doi": "10.1016/0022-2836(81)90438-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6270337/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:Q79DX9",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 157
+      }
     },
     {
       "name": "L3S1P13",
