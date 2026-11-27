@@ -10,13 +10,21 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "TCATTATCAATACTGCCATTTCAAAGAATACGTAAATAATTAATAGTAGTGATTTTCCTAACTTTATTTAGTCAAAAAATTAGCCTTTTAATTCTGCTGTAACCCGTACATGCCCAAAATAGGGGGCGGGTTACACAGAATATATAACATCGTAGGTGTCTGGGTGAACAGTTTATTCCTGGCATCCACTAAATATAATGGAGCCCGCTTTTTAAGCTGGCATCCAGAAAAAAAAAAGAATCCCAGCACCAAAATATTGTTTTCTTCACCAACCATCAGTTCATAGGTCCATTCTCTTAGCGCAACTACAGAGAACAGGGGCACAAACAGGCAAAAAACGGGCACAACCTCAATGGAGTGATGCAACCTGCCTGGAGTAAATGATGACACAAGGCAATTGACCCACGCATGTATCTATCTCATTTTCTTACACCTTCTATTACCTTCTGCTCTCTCTGATTTGGAAAAAGCTGAAAAAAAAGGTTGAAACCAGTTCCCTGAAATTATTCCCCTACTTGACTAATAAGTATATAAAGACGGTAGGTATTGATTGTAATTCTGTAAATCTATTTCTTAAACTTCTTAAATTCTACTTTTATAGTTAGTCTTTTTTTTAGTTTTAAAACACCAAGAACTTAGTTTCGAATAAACACACATAAACAAACAAA",
-  "references": [],
+  "sequence": "TCATTATCAATACTGCCATTTCAAAGAATACGTAAATAATTAATAGTAGTGATTTTCCTAACTTTATTTAGTCAAAAAATTAGCCTTTTAATTCTGCTGTAACCCGTACATGCCCAAAATAGGGGGCGGGTTACACAGAATATATAACATCGTAGGTGTCTGGGTGAACAGTTTATTCCTGGCATCCACTAAATATAATGGAGCCCGCTTTTTAAGCTGGCATCCAGAAAAAAAAAGAATCCCAGCACCAAAATATTGTTTTCTTCACCAACCATCAGTTCATAGGTCCATTCTCTTAGCGCAACTACAGAGAACAGGGGCACAAACAGGCAAAAAACGGGCACAACCTCAATGGAGTGATGCAACCTGCCTGGAGTAAATGATGACACAAGGCAATTGACCCACGCATGTATCTATCTCATTTTCTTACACCTTCTATTACCTTCTGCTCTCTCTGATTTGGAAAAAGCTGAAAAAAAAGGTTGAAACCAGTTCCCTGAAATTATTCCCCTACTTGACTAATAAGTATATAAAGACGGTAGGTATTGATTGTAATTCTGTAAATCTATTTCTTAAACTTCTTAAATTCTACTTTTATAGTTAGTCTTTTTTTTAGTTTTAAAACACCAAGAACTTAGTTTCGAATAAACACACATAAACAAACAAA",
+  "references": [
+    {
+      "authors": "Tettelin H, Agostoni Carbone ML, Albermann K, Albers M, Arroyo J, Backes U, Barreiros T, Bertani I, Bjourson AJ, Brückner M, Bruschi CV, Carignani G, Castagnoli L, Cerdan E, Clemente ML, Coblenz A, Coglievina M, Coissac E, Defoor E, Del Bino S, Delius H, Delneri D, de Wergifosse P, Dujon B, Kleine K",
+      "title": "The nucleotide sequence of Saccharomyces cerevisiae chromosome VII.",
+      "journal": "Nature. 1997;387(6632 Suppl):81-84",
+      "pubmed_id": "9169869",
+      "comment": ""
+    }
+  ],
   "features": [
     {
       "type": "promoter",
       "start": 0,
-      "end": 668,
+      "end": 667,
       "strand": 1,
       "qualifiers": {
         "label": [
@@ -34,13 +42,18 @@
         "note": [
           "S. cerevisiae TDH3 (glyceraldehyde-3-phosphate dehydrogenase 3) promoter, commonly called GPD or GAP; strong constitutive. Extracted from a TDH3-driven yeast vector (Addgene 239293), GAP promoter feature (668 bp)."
         ],
-        "db_xref": []
+        "db_xref": [
+          "GenBank:NC_001139"
+        ],
+        "citation": [
+          "[1]"
+        ]
       }
     }
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "closest_deposit": "No deposit holds the exact 668 bp. The S288C chromosome VII (NC_001139 883811..884477, reverse strand) and vectors such as KR232331 (536..1202) match it except for one extra base in the part (an A in the part's orientation): the part is 668 bp where they hold 667. Not a sequence_source."
+    "sequence_source": "NC_001139.9 (Saccharomyces cerevisiae S288C chromosome VII, SGD-curated RefSeq identical to BK006941; Tettelin et al. 1997) 883811..884477, reverse strand, identical over 667 bp, ending just before the TDH3 (YGR192C) start codon at 883810..883808. The part held one more A in the A-run at its position 228 (668 bp) until 2026-11; no deposit carried that form."
   },
   "functional_claims": []
 }
