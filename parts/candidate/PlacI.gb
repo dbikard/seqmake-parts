@@ -6,15 +6,24 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Calos MP
+  TITLE     DNA sequence for a low-level promoter of the lac repressor gene and
+            an 'up' promoter mutation.
+  JOURNAL   Nature. 1978;274(5673):762-765
+   PUBMED   355890
+  REMARK    doi:10.1038/274762a0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PlacI
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..78
                      /label="PlacI"
                      /synonym="PlacI"
                      /synonym="lacI promoter"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:J01636"
+                     /citation=[1]
 ORIGIN
         1 gacaccatcg aatggcgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
        61 caattcaggg tggtgaat

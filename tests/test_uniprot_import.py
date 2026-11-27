@@ -5,33 +5,65 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 
+import pytest  # noqa: E402
+
 from import_uniprot_features import (  # noqa: E402
     classify_sequences,
+    _next_link,
     parse_uniparc,
+    parse_uniparc_databases,
     variant_disposition,
 )
 
 
-def test_parse_uniparc_returns_exact_active_uniprotkb_accessions_reviewed_first():
+def test_parse_uniparc_returns_the_exact_uniparc_ids():
+    # the search response (2026 shape): no cross-references, only the UPI and
+    # a bare accession list that carries no active flag
     seq = "MKVLAT" * 5
-    data = {"results": [{
-        "sequence": {"value": seq},
-        "uniParcCrossReferences": [
-            {"database": "UniProtKB/TrEMBL", "id": "A0A111", "active": True},
-            {"database": "UniProtKB/Swiss-Prot", "id": "P99999", "active": True},
-            {"database": "UniProtKB/Swiss-Prot", "id": "P00000", "active": False},
-            {"database": "EnsemblBacteria", "id": "X1", "active": True},
-        ],
-    }]}
-    assert parse_uniparc(data, seq) == [("P99999", True), ("A0A111", False)]
+    data = {"results": [
+        {"uniParcId": "UPI0000000001", "sequence": {"value": seq},
+         "uniProtKBAccessions": ["P00000.1", "A0A111.1"]},
+        {"uniParcId": "UPI0000000002", "sequence": {"value": "DIFFERENT"}},
+    ]}
+    assert parse_uniparc(data, seq) == ["UPI0000000001"]
 
 
 def test_parse_uniparc_ignores_non_exact_sequences():
     # a checksum hit whose sequence differs (collision) must be ignored
-    data = {"results": [{"sequence": {"value": "DIFFERENT"},
-                         "uniParcCrossReferences": [
-                             {"database": "UniProtKB/Swiss-Prot", "id": "P1", "active": True}]}]}
+    data = {"results": [{"uniParcId": "UPI0000000002", "sequence": {"value": "DIFFERENT"}}]}
     assert parse_uniparc(data, "MKVLAT" * 5) == []
+
+
+def test_parse_uniparc_raises_on_an_unknown_response_shape():
+    # an exact hit it cannot follow must not read as "no other accession": that
+    # silently sent the importer on to normalize the part's residues
+    seq = "MKVLAT" * 5
+    data = {"results": [{"sequence": {"value": seq},
+                         "uniParcCrossReferences": [
+                             {"database": "UniProtKB/TrEMBL", "id": "A0A111", "active": True}]}]}
+    with pytest.raises(ValueError):
+        parse_uniparc(data, seq)
+
+
+def test_parse_uniparc_databases_returns_active_uniprotkb_reviewed_then_oldest():
+    data = {"results": [
+        {"database": "UniProtKB/TrEMBL", "id": "A0A111", "active": True, "created": "2016-01-20"},
+        {"database": "UniProtKB/Swiss-Prot", "id": "P99999", "active": True, "created": "2020-01-01"},
+        {"database": "UniProtKB/Swiss-Prot", "id": "P00000", "active": False, "created": "1986-07-21"},
+        {"database": "EnsemblBacteria", "id": "X1", "active": True},
+        {"database": "UniProtKB/TrEMBL", "id": "A0A111", "active": True, "created": "2016-01-20"},
+        {"database": "UniProtKB/TrEMBL", "id": "Q79DX9", "active": True, "created": "2004-07-05"},
+        {"database": "UniProtKB/TrEMBL", "id": "Z9Z999", "active": True},
+    ]}
+    assert [h[:2] for h in parse_uniparc_databases(data)] == [
+        ("P99999", True), ("Q79DX9", False), ("A0A111", False), ("Z9Z999", False)]
+
+
+def test_next_link_reads_the_rel_next_url():
+    hdr = '<https://rest.uniprot.org/uniparc/UPI1/databases?cursor=abc&size=500>; rel="next"'
+    assert _next_link(hdr) == "https://rest.uniprot.org/uniparc/UPI1/databases?cursor=abc&size=500"
+    assert _next_link(None) is None
+    assert _next_link("") is None
 
 
 def test_incidental_variant_is_normalized():

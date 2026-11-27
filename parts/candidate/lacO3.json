@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GGCAGTGAGCGCAACGCAATT",
-  "references": [],
+  "references": [
+    {
+      "authors": "Farabaugh PJ",
+      "title": "Sequence of the lacI gene.",
+      "journal": "Nature. 1978;274(5673):765-769",
+      "pubmed_id": "355891",
+      "comment": "doi:10.1038/274765a0"
+    }
+  ],
   "features": [
     {
       "type": "protein_bind",
@@ -25,12 +33,19 @@
           "lacO3",
           "Lac O3 operator",
           "Lac O3"
+        ],
+        "db_xref": [
+          "GenBank:J01636"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01636 (E. coli lac operon) 1154..1174, at the 3' end of lacI (Farabaugh 1978, bases 49-1161), identical over 21 bp; also in MG1655 (U00096), reverse strand."
   },
   "functional_claims": []
 }

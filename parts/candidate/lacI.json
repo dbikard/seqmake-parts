@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAELNYIPNRVAQQLAGKQSLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERSGVEACKAAVHNLLAQRVSGLIINYPLDDQDAIAVEAACTNVPALFLDVSDQTPINSIIFSHEDGTRLGVEHLVALGHQQIALLAGPLSSVSARLRLAGWHKYLTRNQIQPIAEREGDWSAMSGFQQTMQMLNEGIVPTAMLVANDQMALGAMRAITESGLRVGADISVVGYDDTEDSSCYIPPSTTIKQDFRLLGQTSVDRLLQLSQGQAVKGNQLLPVSLVKRKTTLAPNTQTASPRALADSLMQLARQVSRLESGQ",
-  "references": [],
+  "references": [
+    {
+      "authors": "Farabaugh PJ",
+      "title": "Sequence of the lacI gene.",
+      "journal": "Nature. 1978;274(5673):765-769",
+      "pubmed_id": "355891",
+      "comment": "doi:10.1038/274765a0"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -24,12 +32,20 @@
         "synonym": [
           "lacI",
           "lac repressor"
+        ],
+        "db_xref": [
+          "NCBI:AAA24052.1",
+          "GenBank:J01636"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "J01636 (E. coli lac operon) CDS 79..1161, protein AAA24052.1 (Farabaugh 1978), identical over 360 aa. No UniProt entry holds this exact sequence: the reviewed K-12 entry P03023 and the MG1655 genome (U00096, protein AAC73448.1) read L at residue 286 where this deposit reads S."
   },
   "functional_claims": []
 }

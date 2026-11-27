@@ -9484,7 +9484,7 @@
       "slug": "lacI",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "NCBI:AAA24052.1",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -9526,9 +9526,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Farabaugh PJ",
+          "title": "Sequence of the lacI gene.",
+          "journal": "Nature. 1978;274(5673):765-769",
+          "pmid": "355891",
+          "doi": "10.1038/274765a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/355891/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -9573,7 +9584,7 @@
       "slug": "lacO3",
       "feature_type": "protein_bind",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01636",
       "so_term": "SO:0000057",
       "so_name": "operator",
       "synonyms": [
@@ -9590,9 +9601,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Farabaugh PJ",
+          "title": "Sequence of the lacI gene.",
+          "journal": "Nature. 1978;274(5673):765-769",
+          "pmid": "355891",
+          "doi": "10.1038/274765a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/355891/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14263,7 +14285,7 @@
       "slug": "PlacI",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01636",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -14279,9 +14301,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Calos MP",
+          "title": "DNA sequence for a low-level promoter of the lac repressor gene and an 'up' promoter mutation.",
+          "journal": "Nature. 1978;274(5673):762-765",
+          "pmid": "355890",
+          "doi": "10.1038/274762a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/355890/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -14289,7 +14322,7 @@
       "slug": "PlacIq",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:M37846",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -14305,9 +14338,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Morales VM, B\u00e4ckman A, Bagdasarian M",
+          "title": "A series of wide-host-range low-copy-number vectors that allow direct screening for recombinants.",
+          "journal": "Gene. 1991;97(1):39-47",
+          "pmid": "1847347",
+          "doi": "10.1016/0378-1119(91)90007-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1847347/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -16077,7 +16121,7 @@
       "slug": "Ptac",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:K01728",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -16172,10 +16216,20 @@
           "pmid": "3069586",
           "doi": "10.1016/0378-1119(88)90440-4",
           "url": "https://pubmed.ncbi.nlm.nih.gov/3069586/"
+        },
+        {
+          "authors": "Amann E, Brosius J, Ptashne M",
+          "title": "Vectors bearing a hybrid trp-lac promoter useful for regulated expression of cloned genes in Escherichia coli.",
+          "journal": "Gene. 1983;25(2-3):167-78",
+          "pmid": "6363212",
+          "doi": "10.1016/0378-1119(83)90222-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6363212/"
         }
       ],
-      "main_citations": [],
-      "sourced": false,
+      "main_citations": [
+        4
+      ],
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
