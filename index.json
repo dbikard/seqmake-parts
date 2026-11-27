@@ -2472,7 +2472,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "PhlF"
@@ -2756,7 +2756,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "Pm",
@@ -2811,7 +2811,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 2,
       "synonyms": [
         "PphlF",

@@ -13975,7 +13975,7 @@
       "slug": "PhlF",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q9RF02",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -13995,11 +13995,41 @@
       ],
       "documented": false,
       "status": "candidate",
-      "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "children": [
+        {
+          "label": "HTH tetR-type",
+          "feature_type": "protein_domain",
+          "so_term": "SO:0000417",
+          "so_name": "polypeptide_domain",
+          "start": 15,
+          "end": 76,
+          "strand": 1,
+          "citations": []
+        }
+      ],
+      "references": [
+        {
+          "authors": "Schnider-Keel U, Seematter A, Maurhofer M, Blumer C, Duffy B, Gigot-Bonnefoy C, Reimmann C, Notz R, D\u00e9fago G, Haas D, Keel C",
+          "title": "Autoinduction of 2,4-diacetylphloroglucinol biosynthesis in the biocontrol agent Pseudomonas fluorescens CHA0 and repression by the bacterial metabolites salicylate and pyoluteorin.",
+          "journal": "J Bacteriol. 2000;182(5):1215-1225",
+          "pmid": "10671440",
+          "doi": "10.1128/JB.182.5.1215-1225.2000",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10671440/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:Q9RF02",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 97
+      }
     },
     {
       "name": "pIJ101 replicon",
@@ -14815,7 +14845,7 @@
       "slug": "Pm",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:JX560387",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -14948,13 +14978,22 @@
           "pmid": "10096078",
           "doi": "10.1046/j.1365-2958.1999.01249.x",
           "url": "https://pubmed.ncbi.nlm.nih.gov/10096078/"
+        },
+        {
+          "authors": "Silva-Rocha R, Mart\u00ednez-Garc\u00eda E, Calles B, Chavarr\u00eda M, Arce-Rodr\u00edguez A, de Las Heras A, P\u00e1ez-Espino AD, Durante-Rodr\u00edguez G, Kim J, Nikel PI, Platero R, de Lorenzo V",
+          "title": "The Standard European Vector Architecture (SEVA): a coherent platform for the analysis and deployment of complex prokaryotic phenotypes.",
+          "journal": "Nucleic Acids Res. 2013;41(Database issue):D666-75",
+          "pmid": "23180763",
+          "doi": "10.1093/nar/gks1119",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23180763/"
         }
       ],
       "main_citations": [
         1,
-        2
+        2,
+        8
       ],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "regulation",
@@ -15054,7 +15093,7 @@
       "slug": "PphlF",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KX353595",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -15138,13 +15177,22 @@
           "pmid": "12003942",
           "doi": "10.1128/JB.184.11.3008-3016.2002",
           "url": "https://pubmed.ncbi.nlm.nih.gov/12003942/"
+        },
+        {
+          "authors": "Fernandez-Rodriguez J, Voigt CA",
+          "title": "Post-translational control of genetic circuits using Potyvirus proteases.",
+          "journal": "Nucleic Acids Res. 2016;44(13):6493-502",
+          "pmid": "27298256",
+          "doi": "10.1093/nar/gkw537",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27298256/"
         }
       ],
       "main_citations": [
         1,
-        2
+        2,
+        4
       ],
-      "sourced": false,
+      "sourced": true,
       "functional_claims": [
         {
           "id": "inducer",

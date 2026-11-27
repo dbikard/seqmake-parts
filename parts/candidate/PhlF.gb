@@ -6,14 +6,31 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Schnider-Keel U, Seematter A, Maurhofer M, Blumer C, Duffy B,
+            Gigot-Bonnefoy C, Reimmann C, Notz R, Défago G, Haas D, Keel C
+  TITLE     Autoinduction of 2,4-diacetylphloroglucinol biosynthesis in the
+            biocontrol agent Pseudomonas fluorescens CHA0 and repression by the
+            bacterial metabolites salicylate and pyoluteorin.
+  JOURNAL   J Bacteriol. 2000;182(5):1215-1225
+   PUBMED   10671440
+  REMARK    doi:10.1128/JB.182.5.1215-1225.2000
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PhlF
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..200
                      /label="PhlF"
                      /synonym="PhlF"
                      /db_xref="SO:0000316"
+                     /db_xref="UniProt:Q9RF02"
+                     /db_xref="NCBI:AAF20928.1"
+                     /citation=[1]
+     protein_domain  16..76
+                     /label="HTH tetR-type"
+                     /parent="PhlF"
+                     /note="source: UniProt:Q9RF02"
+                     /db_xref="SO:0000417"
 ORIGIN
         1 martpsrssi gslrsphthk ailtstieil kecgysglsi esvarragas kptiyrwwtn
        61 kaaliaevye neseqvrkfp dlgsfkadld fllrnlwkvw reticgeafr cviaeaqldp

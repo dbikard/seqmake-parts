@@ -59,6 +59,13 @@
       "journal": "Molecular Microbiology, 1999;31(4):1105-1113",
       "pubmed_id": "10096078",
       "comment": "doi:10.1046/j.1365-2958.1999.01249.x"
+    },
+    {
+      "authors": "Silva-Rocha R, Martínez-García E, Calles B, Chavarría M, Arce-Rodríguez A, de Las Heras A, Páez-Espino AD, Durante-Rodríguez G, Kim J, Nikel PI, Platero R, de Lorenzo V",
+      "title": "The Standard European Vector Architecture (SEVA): a coherent platform for the analysis and deployment of complex prokaryotic phenotypes.",
+      "journal": "Nucleic Acids Res. 2013;41(Database issue):D666-75",
+      "pubmed_id": "23180763",
+      "comment": "doi:10.1093/nar/gks1119"
     }
   ],
   "features": [
@@ -80,10 +87,12 @@
         ],
         "citation": [
           "[1]",
-          "[2]"
+          "[2]",
+          "[8]"
         ],
         "db_xref": [
-          "SO:0000167"
+          "SO:0000167",
+          "GenBank:JX560387"
         ],
         "regulated_by": [
           "XylS"
@@ -196,7 +205,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "JX560387 (cloning vector pSEVA128, the XylS/Pm expression cargo of the Standard European Vector Architecture; Silva-Rocha et al. 2013) 1884..1964, identical over 81 bp; the oldest of 30 exact deposits, all SEVA x28 vectors. It differs from the native TOL plasmid pWW0 (AJ344068, 56137..56217, reverse strand) at one base: part position 54 is T where pWW0 has A, so the XbaI site TCTAGA of pWW0 reads TCTAGT."
   },
   "functional_claims": [
     {

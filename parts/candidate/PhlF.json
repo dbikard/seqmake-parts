@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MARTPSRSSIGSLRSPHTHKAILTSTIEILKECGYSGLSIESVARRAGASKPTIYRWWTNKAALIAEVYENESEQVRKFPDLGSFKADLDFLLRNLWKVWRETICGEAFRCVIAEAQLDPATLTQLKDQFMERRREMPKKLVENAISNGELPKDTNRELLLDMIFGFCWYRLLTEQLTVEQDIEEFTFLLINGVCPGTQR",
-  "references": [],
+  "references": [
+    {
+      "authors": "Schnider-Keel U, Seematter A, Maurhofer M, Blumer C, Duffy B, Gigot-Bonnefoy C, Reimmann C, Notz R, Défago G, Haas D, Keel C",
+      "title": "Autoinduction of 2,4-diacetylphloroglucinol biosynthesis in the biocontrol agent Pseudomonas fluorescens CHA0 and repression by the bacterial metabolites salicylate and pyoluteorin.",
+      "journal": "J Bacteriol. 2000;182(5):1215-1225",
+      "pubmed_id": "10671440",
+      "comment": "doi:10.1128/JB.182.5.1215-1225.2000"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -23,12 +31,39 @@
         ],
         "synonym": [
           "PhlF"
+        ],
+        "db_xref": [
+          "UniProt:Q9RF02",
+          "NCBI:AAF20928.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AF207529 (Pseudomonas fluorescens CHA0, now P. protegens; phlA-phlF-phlG-phlH region; Schnider-Keel et al. 2000) CDS 1580..2182, protein AAF20928.1, identical over 200 aa; UniProt:Q9RF02 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 15,
+      "end": 76,
+      "label": "HTH tetR-type",
+      "so_term": "SO:0000417",
+      "description": "HTH tetR-type",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:Q9RF02",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 97
+  }
 }

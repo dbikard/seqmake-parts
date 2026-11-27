@@ -9087,11 +9087,17 @@ part:PchnB_interaction_ChnR_p_target a sbol:Participation ;
     sbol:participant part:PchnB_regulated_region ;
     sbol:role sbo:0000643 .
 
-part:PhlF_sequence a sbol:Sequence ;
-    sbol:displayId "PhlF_sequence" ;
-    sbol:elements "MARTPSRSSIGSLRSPHTHKAILTSTIEILKECGYSGLSIESVARRAGASKPTIYRWWTNKAALIAEVYENESEQVRKFPDLGSFKADLDFLLRNLWKVWRETICGEAFRCVIAEAQLDPATLTQLKDQFMERRREMPKKLVENAISNGELPKDTNRELLLDMIFGFCWYRLLTEQLTVEQDIEEFTFLLINGVCPGTQR" ;
-    sbol:encoding <https://identifiers.org/edam:format_1208> ;
-    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
+part:PhlF_feature_0 a sbol:SequenceFeature ;
+    dcterms:title "HTH tetR-type" ;
+    sbol:displayId "PhlF_feature_0" ;
+    sbol:hasLocation part:PhlF_feature_0_range ;
+    sbol:role so:0000417 .
+
+part:PhlF_feature_0_range a sbol:Range ;
+    sbol:end 76 ;
+    sbol:orientation sbol:inline ;
+    sbol:sequence part:PhlF_sequence ;
+    sbol:start 16 .
 
 part:Pkan_sequence a sbol:Sequence ;
     sbol:displayId "Pkan_sequence" ;
@@ -9355,6 +9361,7 @@ part:Pm a sbol:Component ;
         pubmed:12023029,
         pubmed:19201967,
         pubmed:20382764,
+        pubmed:23180763,
         pubmed:28276630,
         pubmed:7969028,
         pubmed:9097427 ;
@@ -9370,13 +9377,15 @@ part:Pm a sbol:Component ;
     sbol:hasSequence part:Pm_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/JX560387> ;
     skos:altLabel "Pm",
         "Pm promoter" ;
     cat:curationStatus "validated" ;
     cat:documented true ;
     cat:hasFunctionalClaim part:Pm_claim_regulation ;
     cat:regulatedBy part:XylS ;
-    cat:slug "Pm" .
+    cat:slug "Pm" ;
+    cat:sourceAccession "GenBank:JX560387" .
 
 part:Pm_claim_regulation a cat:FunctionalClaim ;
     rdfs:label "XylS-dependent; benzoate / m-toluate-inducible (TOL meta-operon promoter)." ;
@@ -9478,7 +9487,8 @@ part:PphlF a sbol:Component ;
     dcterms:description "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription." ;
     dcterms:references pubmed:12003942,
         pubmed:24316737,
-        pubmed:27034378 ;
+        pubmed:27034378,
+        pubmed:27298256 ;
     dcterms:title "PphlF" ;
     sbol:displayId "PphlF" ;
     sbol:hasFeature part:PphlF_feature_0,
@@ -9490,6 +9500,7 @@ part:PphlF a sbol:Component ;
     sbol:hasSequence part:PphlF_sequence ;
     sbol:role so:0000167 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KX353595> ;
     skos:altLabel "PhlF promoter",
         "PphlF" ;
     cat:curationStatus "validated" ;
@@ -9497,7 +9508,8 @@ part:PphlF a sbol:Component ;
     cat:hasFunctionalClaim part:PphlF_claim_inducer,
         part:PphlF_claim_repression_dynamic_range ;
     cat:regulatedBy part:PhlF ;
-    cat:slug "PphlF" .
+    cat:slug "PphlF" ;
+    cat:sourceAccession "GenBank:KX353595" .
 
 part:PphlF_claim_inducer a cat:FunctionalClaim ;
     rdfs:label "PhlF repression of PphlF is relieved by 2,4-diacetylphloroglucinol (DAPG)." ;
@@ -17324,17 +17336,27 @@ part:PchnB_sub_ChnR a sbol:SubComponent ;
 
 part:PhlF a sbol:Component ;
     rdfs:label "PhlF" ;
+    dcterms:references pubmed:10671440 ;
     dcterms:title "PhlF" ;
     sbol:displayId "PhlF" ;
+    sbol:hasFeature part:PhlF_feature_0 ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:PhlF_sequence ;
     sbol:role so:0000316 ;
     sbol:type sbo:0000252 ;
+    rdfs:seeAlso <http://purl.uniprot.org/uniprot/Q9RF02> ;
     skos:altLabel "PhlF" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
     cat:regulates part:PphlF ;
-    cat:slug "PhlF" .
+    cat:slug "PhlF" ;
+    cat:sourceAccession "UniProt:Q9RF02" .
+
+part:PhlF_sequence a sbol:Sequence ;
+    sbol:displayId "PhlF_sequence" ;
+    sbol:elements "MARTPSRSSIGSLRSPHTHKAILTSTIEILKECGYSGLSIESVARRAGASKPTIYRWWTNKAALIAEVYENESEQVRKFPDLGSFKADLDFLLRNLWKVWRETICGEAFRCVIAEAQLDPATLTQLKDQFMERRREMPKKLVENAISNGELPKDTNRELLLDMIFGFCWYRLLTEQLTVEQDIEEFTFLLINGVCPGTQR" ;
+    sbol:encoding <https://identifiers.org/edam:format_1208> ;
+    sbol:hasNamespace <https://w3id.org/seqmake/parts/> .
 
 part:PlacUV5_regulated_region a sbol:SequenceFeature ;
     sbol:displayId "PlacUV5_regulated_region" ;
