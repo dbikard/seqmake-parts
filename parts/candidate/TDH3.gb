@@ -1,4 +1,4 @@
-LOCUS       TDH3                     668 bp    DNA     linear   UNK 01-JAN-1980
+LOCUS       TDH3                     667 bp    DNA     linear   UNK 01-JAN-1980
 DEFINITION  TDH3..
 ACCESSION   TDH3
 VERSION     TDH3
@@ -6,11 +6,20 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Tettelin H, Agostoni Carbone ML, Albermann K, Albers M, Arroyo J,
+            Backes U, Barreiros T, Bertani I, Bjourson AJ, Brückner M, Bruschi
+            CV, Carignani G, Castagnoli L, Cerdan E, Clemente ML, Coblenz A,
+            Coglievina M, Coissac E, Defoor E, Del Bino S, Delius H, Delneri D,
+            de Wergifosse P, Dujon B, Kleine K
+  TITLE     The nucleotide sequence of Saccharomyces cerevisiae chromosome VII.
+  JOURNAL   Nature. 1997;387(6632 Suppl):81-84
+   PUBMED   9169869
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/TDH3
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
-     promoter        1..668
+     promoter        1..667
                      /label="TDH3"
                      /synonym="GPD"
                      /synonym="GPD promoter"
@@ -24,17 +33,19 @@ FEATURES             Location/Qualifiers
                      strong constitutive. Extracted from a TDH3-driven yeast
                      vector (Addgene 239293), GAP promoter feature (668 bp)."
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:NC_001139"
+                     /citation=[1]
 ORIGIN
         1 tcattatcaa tactgccatt tcaaagaata cgtaaataat taatagtagt gattttccta
        61 actttattta gtcaaaaaat tagcctttta attctgctgt aacccgtaca tgcccaaaat
       121 agggggcggg ttacacagaa tatataacat cgtaggtgtc tgggtgaaca gtttattcct
-      181 ggcatccact aaatataatg gagcccgctt tttaagctgg catccagaaa aaaaaaagaa
-      241 tcccagcacc aaaatattgt tttcttcacc aaccatcagt tcataggtcc attctcttag
-      301 cgcaactaca gagaacaggg gcacaaacag gcaaaaaacg ggcacaacct caatggagtg
-      361 atgcaacctg cctggagtaa atgatgacac aaggcaattg acccacgcat gtatctatct
-      421 cattttctta caccttctat taccttctgc tctctctgat ttggaaaaag ctgaaaaaaa
-      481 aggttgaaac cagttccctg aaattattcc cctacttgac taataagtat ataaagacgg
-      541 taggtattga ttgtaattct gtaaatctat ttcttaaact tcttaaattc tacttttata
-      601 gttagtcttt tttttagttt taaaacacca agaacttagt ttcgaataaa cacacataaa
-      661 caaacaaa
+      181 ggcatccact aaatataatg gagcccgctt tttaagctgg catccagaaa aaaaaagaat
+      241 cccagcacca aaatattgtt ttcttcacca accatcagtt cataggtcca ttctcttagc
+      301 gcaactacag agaacagggg cacaaacagg caaaaaacgg gcacaacctc aatggagtga
+      361 tgcaacctgc ctggagtaaa tgatgacaca aggcaattga cccacgcatg tatctatctc
+      421 attttcttac accttctatt accttctgct ctctctgatt tggaaaaagc tgaaaaaaaa
+      481 ggttgaaacc agttccctga aattattccc ctacttgact aataagtata taaagacggt
+      541 aggtattgat tgtaattctg taaatctatt tcttaaactt cttaaattct acttttatag
+      601 ttagtctttt ttttagtttt aaaacaccaa gaacttagtt tcgaataaac acacataaac
+      661 aaacaaa
 //

@@ -23043,7 +23043,7 @@
       "slug": "TDH3",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:NC_001139",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -23057,16 +23057,27 @@
       ],
       "collections": [],
       "description": "S. cerevisiae TDH3 (glyceraldehyde-3-phosphate dehydrogenase 3) promoter, commonly called GPD or GAP; strong constitutive. Extracted from a TDH3-driven yeast vector (Addgene 239293), GAP promoter feature (668 bp).",
-      "length": 668,
+      "length": 667,
       "protein_length_aa": null,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Tettelin H, Agostoni Carbone ML, Albermann K, Albers M, Arroyo J, Backes U, Barreiros T, Bertani I, Bjourson AJ, Br\u00fcckner M, Bruschi CV, Carignani G, Castagnoli L, Cerdan E, Clemente ML, Coblenz A, Coglievina M, Coissac E, Defoor E, Del Bino S, Delius H, Delneri D, de Wergifosse P, Dujon B, Kleine K",
+          "title": "The nucleotide sequence of Saccharomyces cerevisiae chromosome VII.",
+          "journal": "Nature. 1997;387(6632 Suppl):81-84",
+          "pmid": "9169869",
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9169869/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
