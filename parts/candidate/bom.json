@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "CCTGATGCGGTATTTTCTCCTTACGCATCTGTGCGGTATTTCACACCGCATATATGGTGCACTCTCAGTACAATCTGCTCTGATGCCGCATAGTTAAGCCAGTATACACTCCGCTATCGCTACGTGACTGGGTCATGGCTGCG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Chen BP, Hai T",
+      "title": "Expression vectors for affinity purification and radiolabeling of proteins using Escherichia coli as host.",
+      "journal": "Gene. 1994;139(1):73-5",
+      "pubmed_id": "8112591",
+      "comment": "doi:10.1016/0378-1119(94)90525-8"
+    }
+  ],
   "features": [
     {
       "type": "misc_feature",
@@ -23,12 +31,19 @@
         ],
         "synonym": [
           "bom"
+        ],
+        "db_xref": [
+          "GenBank:L20318"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "L20318 (pET-HisK expression vector; Chen & Hai 1994) 2014..2156, identical over 143 bp; the oldest of 412 exact deposits, all pBR322-derived vectors. The pBR322 record J01749 (2208..2348, reverse strand) lacks 2 bp (AT) of it."
   },
   "functional_claims": []
 }

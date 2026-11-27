@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MKNDRTLQAIGRQLKAMGCERFDIGVRDATTGQMMNREWSAAEVLQNTPWLKRMNAQGNDVYIRPAEQERHGLVLVDDLSEFDLDDMKAEGREPALVVETSPKNYQAWVKVADAAGGELRGQIARTLASEYDADPASADSRHYGRLAGFTNRKDKHTTRAGYQPWVLLRESKGKTATAGPALVQQAGQQIEQAQRQQEKARRLASLELPERQLSRHRRTALDEYRSEMAGLVKRFGDDLSKCDFIAAQKLASRGRSAEEIGKAMAEASPALAERKPGHEADYIERTVSKVMGLPSVQLARAELARAPAPRQRGMDRGGPDFSM",
-  "references": [],
+  "references": [
+    {
+      "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+      "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+      "journal": "Gene. 1989;75(2):271-288",
+      "pubmed_id": "2653965",
+      "comment": "doi:10.1016/0378-1119(89)90273-4"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -23,12 +31,48 @@
         ],
         "synonym": [
           "RSF1010 RepB"
+        ],
+        "db_xref": [
+          "UniProt:Q52349",
+          "NCBI:AAA26447.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "M28829 (plasmid RSF1010; Scholz et al. 1989) CDS 4408..5379, protein AAA26447.1 (replication protein B, in frame with the C-terminal part of MobA), identical over 323 aa; UniProt:Q52349 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 11,
+      "end": 185,
+      "label": "RepB-like DNA primase",
+      "so_term": "SO:0000417",
+      "description": "RepB-like DNA primase",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "protein_domain",
+      "start": 236,
+      "end": 289,
+      "label": "RepB/MobA-like C-terminal",
+      "so_term": "SO:0000417",
+      "description": "RepB/MobA-like C-terminal",
+      "uniprot_type": "Domain"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:Q52349",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 96
+  }
 }

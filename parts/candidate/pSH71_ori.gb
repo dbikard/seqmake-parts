@@ -9,7 +9,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/pSH71_ori
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..813
                      /label="pSH71 ori"
@@ -20,6 +20,8 @@ FEATURES             Location/Qualifiers
                      (also in pLZ12/pWV01 family). Rolling-circle replication,
                      requires RepA."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:MF948287"
+                     /db_xref="GenBank:PP589788"
      rep_origin      301..813
                      /label="pSH71 ori (core)"
                      /parent="pSH71 ori"

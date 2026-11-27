@@ -25,12 +25,16 @@
           "RK2 oriV",
           "oriV RK2",
           "oriV"
+        ],
+        "db_xref": [
+          "GenBank:AJ606312"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "AJ606312 (RK2-based low-copy cloning vector pMR10; unpublished deposit, 2003) 6114..6645, reverse strand, identical over 532 bp; the oldest of more than 980 exact deposits found, which include natural genomes (E. coli 042, FN554766). The RK2 assembly BN000925 (12180..12710) differs by a 1 bp indel and two substitutions (part positions 228 and 510)."
   },
   "functional_claims": []
 }

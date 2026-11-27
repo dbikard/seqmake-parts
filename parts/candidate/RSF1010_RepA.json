@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MATHKPINILEAFAAAPPPLDYVLPNMVAGTVGALVSPGGAGKSMLALQLAAQIAGGPDLLEVGELPTGPVIYLPAEDPPTAIHHRLHALGAHLSAEERQAVADGLLIQPLIGSLPNIMAPEWFDGLKRAAEGRRLMVLDTLRRFHIEEENASGPMAQVIGRMEAIAADTGCSIVFLHHASKGAAMMGAGDQQQASRGSSVLVDNIRWQSYLSSMTSAEAEEWGVDDDQRRFFVRFGVSKANYGAPFADRWFRRHDGGVLKPAVLERQRKSKGVPRGEA",
-  "references": [],
+  "references": [
+    {
+      "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+      "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+      "journal": "Gene. 1989;75(2):271-288",
+      "pubmed_id": "2653965",
+      "comment": "doi:10.1016/0378-1119(89)90273-4"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -23,12 +31,29 @@
         ],
         "synonym": [
           "RSF1010 RepA"
+        ],
+        "db_xref": [
+          "UniProt:P20356",
+          "NCBI:AAA26450.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "M28829 (plasmid RSF1010; Scholz et al. 1989) CDS 5890..6729, protein AAA26450.1, identical over 279 aa; UniProt:P20356 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:P20356",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 101
+  }
 }

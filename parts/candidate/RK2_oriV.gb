@@ -8,7 +8,7 @@ SOURCE      .
             .
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/RK2_oriV
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..532
                      /label="RK2 oriV"
@@ -16,6 +16,7 @@ FEATURES             Location/Qualifiers
                      /synonym="oriV RK2"
                      /synonym="oriV"
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:AJ606312"
 ORIGIN
         1 agcgggccgg gagggttcga gaaggggggg cacccccctt cggcgtgcgc ggtcacgcgc
        61 acagggcgca gccctggtta aaaacaaggt ttataaatat tggtttaaaa gcaggttaaa
