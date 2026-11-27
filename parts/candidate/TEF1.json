@@ -11,7 +11,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GATCCCCCACACACCATAGCTTCAAAATGTTTCTACTCCTTTTTTACTCTTCCAGATTTTCTCGGACTCCGCGCATCGCCGTACCACTTCAAAACACCCAAGCACAGCATACTAAATTTCCCCTCTTTCTTCCTCTAGGGTGTCGTTAATTACCCGTACTAAAGGTTTGGAAAAGAAAAAAGACACCGCCTCGTTTCTTTTTCTTCGTCGAAAAAGGCAATAAAAATTTTTATCACGTTTCTTTTTCTTGAAAATTTTTTTTTTTGATTTTTTTCTCTTTCGATGACCTCCCATTGATATTTAAGTTAATAAACGGTCATCAATTTCTCAAGTTTCAGTTTCATTTTTCTTGTTCTATTACAACTTTTTTTACTTCTTGCTCATTAGAAAGAAAGCATAGCAATCTAATCTAAG",
-  "references": [],
+  "references": [
+    {
+      "authors": "DeLoache WC, Russ ZN, Narcross L, Gonzales AM, Martin VJ, Dueber JE",
+      "title": "An enzyme-coupled biosensor enables (S)-reticuline production in yeast from glucose.",
+      "journal": "Nat Chem Biol. 2015;11(7):465-71",
+      "pubmed_id": "25984720",
+      "comment": "doi:10.1038/nchembio.1816"
+    }
+  ],
   "features": [
     {
       "type": "promoter",
@@ -30,12 +38,19 @@
         ],
         "note": [
           "S. cerevisiae TEF1 (translation elongation factor EF-1 alpha) promoter; strong constitutive. Extracted from pJF89 (Addgene 253756), TEF1 promoter feature (414 bp)."
+        ],
+        "db_xref": [
+          "GenBank:KR232300"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KR232300 (expression vector pWCD2353; DeLoache et al. 2015) 6479..6892, identical over 414 bp. The S288C chromosome XVI (NC_001148 700167..700580) differs at part positions 184 (C; S288C G) and 319 (A; S288C T)."
   },
   "functional_claims": []
 }

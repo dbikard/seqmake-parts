@@ -73,7 +73,7 @@
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "2u ori",
@@ -4047,7 +4047,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "GPD",
@@ -4067,7 +4067,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "TEF1 promoter",

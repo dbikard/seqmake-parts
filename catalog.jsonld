@@ -911,9 +911,16 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "2micron_ori",
+      "cat:sourceAccession": "GenBank:J01347",
       "dcterms:description": "Saccharomyces cerevisiae 2-micron (2u) plasmid origin of replication; confers high-copy episomal maintenance (vs low-copy CEN/ARS). Extracted from pYES2 (Addgene 244550), 2u ori feature (878 bp).",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6251374"
+      },
       "dcterms:title": "2micron ori",
       "rdfs:label": "2micron ori",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J01347"
+      },
       "sbol:displayId": "2micron_ori",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -22126,9 +22133,16 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "TDH3",
+      "cat:sourceAccession": "GenBank:NC_001139",
       "dcterms:description": "S. cerevisiae TDH3 (glyceraldehyde-3-phosphate dehydrogenase 3) promoter, commonly called GPD or GAP; strong constitutive. Extracted from a TDH3-driven yeast vector (Addgene 239293), GAP promoter feature (668 bp).",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9169869"
+      },
       "dcterms:title": "TDH3",
       "rdfs:label": "TDH3",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001139"
+      },
       "sbol:displayId": "TDH3",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -22156,7 +22170,7 @@
       "@id": "part:TDH3_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "TDH3_sequence",
-      "sbol:elements": "TCATTATCAATACTGCCATTTCAAAGAATACGTAAATAATTAATAGTAGTGATTTTCCTAACTTTATTTAGTCAAAAAATTAGCCTTTTAATTCTGCTGTAACCCGTACATGCCCAAAATAGGGGGCGGGTTACACAGAATATATAACATCGTAGGTGTCTGGGTGAACAGTTTATTCCTGGCATCCACTAAATATAATGGAGCCCGCTTTTTAAGCTGGCATCCAGAAAAAAAAAAGAATCCCAGCACCAAAATATTGTTTTCTTCACCAACCATCAGTTCATAGGTCCATTCTCTTAGCGCAACTACAGAGAACAGGGGCACAAACAGGCAAAAAACGGGCACAACCTCAATGGAGTGATGCAACCTGCCTGGAGTAAATGATGACACAAGGCAATTGACCCACGCATGTATCTATCTCATTTTCTTACACCTTCTATTACCTTCTGCTCTCTCTGATTTGGAAAAAGCTGAAAAAAAAGGTTGAAACCAGTTCCCTGAAATTATTCCCCTACTTGACTAATAAGTATATAAAGACGGTAGGTATTGATTGTAATTCTGTAAATCTATTTCTTAAACTTCTTAAATTCTACTTTTATAGTTAGTCTTTTTTTTAGTTTTAAAACACCAAGAACTTAGTTTCGAATAAACACACATAAACAAACAAA",
+      "sbol:elements": "TCATTATCAATACTGCCATTTCAAAGAATACGTAAATAATTAATAGTAGTGATTTTCCTAACTTTATTTAGTCAAAAAATTAGCCTTTTAATTCTGCTGTAACCCGTACATGCCCAAAATAGGGGGCGGGTTACACAGAATATATAACATCGTAGGTGTCTGGGTGAACAGTTTATTCCTGGCATCCACTAAATATAATGGAGCCCGCTTTTTAAGCTGGCATCCAGAAAAAAAAAGAATCCCAGCACCAAAATATTGTTTTCTTCACCAACCATCAGTTCATAGGTCCATTCTCTTAGCGCAACTACAGAGAACAGGGGCACAAACAGGCAAAAAACGGGCACAACCTCAATGGAGTGATGCAACCTGCCTGGAGTAAATGATGACACAAGGCAATTGACCCACGCATGTATCTATCTCATTTTCTTACACCTTCTATTACCTTCTGCTCTCTCTGATTTGGAAAAAGCTGAAAAAAAAGGTTGAAACCAGTTCCCTGAAATTATTCCCCTACTTGACTAATAAGTATATAAAGACGGTAGGTATTGATTGTAATTCTGTAAATCTATTTCTTAAACTTCTTAAATTCTACTTTTATAGTTAGTCTTTTTTTTAGTTTTAAAACACCAAGAACTTAGTTTCGAATAAACACACATAAACAAACAAA",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1207"
       },
@@ -22170,9 +22184,16 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "TEF1",
+      "cat:sourceAccession": "GenBank:KR232300",
       "dcterms:description": "S. cerevisiae TEF1 (translation elongation factor EF-1 alpha) promoter; strong constitutive. Extracted from pJF89 (Addgene 253756), TEF1 promoter feature (414 bp).",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:25984720"
+      },
       "dcterms:title": "TEF1",
       "rdfs:label": "TEF1",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KR232300"
+      },
       "sbol:displayId": "TEF1",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

@@ -6,9 +6,15 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Hartley JL, Donelson JE
+  TITLE     Nucleotide sequence of the yeast plasmid.
+  JOURNAL   Nature. 1980;286(5776):860-865
+   PUBMED   6251374
+  REMARK    doi:10.1038/286860a0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/2micron_ori
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      rep_origin      1..878
                      /label="2micron ori"
@@ -22,6 +28,8 @@ FEATURES             Location/Qualifiers
                      maintenance (vs low-copy CEN/ARS). Extracted from pYES2
                      (Addgene 244550), 2u ori feature (878 bp)."
                      /db_xref="SO:0000296"
+                     /db_xref="GenBank:J01347"
+                     /citation=[1]
 ORIGIN
         1 attgcgaata ccgcttccac aaacattgct caaaagtatc tctttgctat atatctctgt
        61 gctatatccc tatataacct acccatccac ctttcgctcc ttgaacttgc atctaaactc
