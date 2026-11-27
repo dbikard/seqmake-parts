@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GGCTGCACACGCGCCCCCACCCTTCGGGTAGGGGGAAAGGCCGCTAAAGCGGCTAAAAGCGCTCCAGCGTATTTCTGCGGGGTTTGGTGTGGGGTTTAGCGGGCTTTGCCCGCCTTTCCCCCTGCCGCGCAGCGGTGGGGCGGTGTGTAGCCTAGCGCAGCGAATAGACCAGCTATCCGGCCTCTGGCCGGGCATATTGGGCAAGGGCAGCAGCGCCCCACAAGGGCGCTGATAACCGCGCCTAGTGGATTATTCTTAGATAATCATGGATGGATTTTTCCAACACCCCGCCAGCCCCCGCCCCTGCTGGGTTTGCAGGTTTGGGGGCGTGACAGTTATTGCAGGGGTTCGTGACAGTTATTGCAGGGGGGCGTGACAGTTATTGCAGGGGTTCG",
-  "references": [],
+  "references": [
+    {
+      "authors": "Scholz P, Haring V, Wittmann-Liebold B, Ashman K, Bagdasarian M, Scherzinger E",
+      "title": "Complete nucleotide sequence and gene organization of the broad-host-range plasmid RSF1010.",
+      "journal": "Gene. 1989;75(2):271-288",
+      "pubmed_id": "2653965",
+      "comment": "doi:10.1016/0378-1119(89)90273-4"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
@@ -23,12 +31,19 @@
         ],
         "synonym": [
           "RSF1010 oriV"
+        ],
+        "db_xref": [
+          "GenBank:M28829"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "M28829 (plasmid RSF1010, complete sequence; Scholz et al. 1989) 2346..2740, reverse strand, identical over 395 bp."
   },
   "functional_claims": []
 }

@@ -25,12 +25,14 @@
           "M13 origin",
           "M13 ori",
           "f1 ori"
-        ]
+        ],
+        "db_xref": []
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "closest_deposit": "No deposit holds the exact 456 bp. Many recent vectors (e.g. PZ512234, 6668..7123, reverse strand) match all but one base: part position 312 is A where they read C. The phage genomes differ more: M13 V00604 5488..5943 at part positions 78, 312, 333 and 382; f1 J02448 5488..5943 at six positions. Not a sequence_source."
   },
   "functional_claims": []
 }

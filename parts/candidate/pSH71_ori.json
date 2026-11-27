@@ -28,6 +28,10 @@
         ],
         "note": [
           "Origin of replication from Lactococcus plasmid pSH71 (also in pLZ12/pWV01 family). Rolling-circle replication, requires RepA."
+        ],
+        "db_xref": [
+          "GenBank:MF948287",
+          "GenBank:PP589788"
         ]
       }
     },
@@ -50,7 +54,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "MF948287 (cloning vector pGR-ermB; Hullahalli et al., bioRxiv 2018) 1377..2189, identical over 813 bp; also contained exactly in the natural Lactococcus plasmids pLLE01H (PP589788, 1148..1960) and pE01H (CP126674, 1250..2062). The pSH71 record A09339 (379..1190) differs by small indels and one substitution (part position 736 C, A09339 T)."
   },
   "functional_claims": []
 }
