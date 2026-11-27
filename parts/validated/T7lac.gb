@@ -37,9 +37,16 @@ REFERENCE   4
   JOURNAL   Science
    PUBMED   8638105
   REMARK    doi:10.1126/science.271.5253.1247
+REFERENCE   5
+  AUTHORS   Coy DL, Hancock WO, Wagenbach M, Howard J
+  TITLE     Kinesin's tail domain is an inhibitory regulator of the motor
+            domain.
+  JOURNAL   Nat Cell Biol. 1999;1(5):288-92
+   PUBMED   10559941
+  REMARK    doi:10.1038/13001
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/T7lac
-            Catalog status: validated, unsourced
+            Catalog status: validated, sourced
 FEATURES             Location/Qualifiers
      promoter        1..67
                      /label="T7lac"
@@ -51,8 +58,10 @@ FEATURES             Location/Qualifiers
                      followed by a lac operator O1, giving LacI-controllable,
                      low-basal expression from T7 RNA polymerase."
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:AF116269"
                      /regulated_by="LacI"
                      /component="lacO"
+                     /citation=[5]
      regulatory      25..42
                      /label="T7 promoter"
                      /parent="T7lac"

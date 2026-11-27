@@ -12621,8 +12621,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "PT3",
+      "cat:sourceAccession": "GenBank:AJ318471",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:12079351"
+      },
       "dcterms:title": "PT3",
       "rdfs:label": "PT3",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/AJ318471"
+      },
       "sbol:displayId": "PT3",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -12885,8 +12892,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "PT7",
+      "cat:sourceAccession": "GenBank:V01146",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6864790"
+      },
       "dcterms:title": "PT7",
       "rdfs:label": "PT7",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/V01146"
+      },
       "sbol:displayId": "PT7",
       "sbol:hasFeature": {
         "@id": "part:PT7_feature_0"
@@ -21577,9 +21591,16 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "T7_g10_leader",
+      "cat:sourceAccession": "GenBank:U17139",
       "dcterms:description": "T7 gene-10 (g10) translational leader / RBS: epsilon enhancer + Shine-Dalgarno (AAGGAG) + spacer; drives strong translation in the T7 expression system. Extracted from pET-28a (Addgene 249430), the RBS/leader between the XbaI site and the start ATG (35 bp). DNA 5'UTR element, distinct from the T7-tag peptide (see T7_tag).",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:8024782"
+      },
       "dcterms:title": "T7 g10 leader",
       "rdfs:label": "T7 g10 leader",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/U17139"
+      },
       "sbol:displayId": "T7_g10_leader",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -21813,8 +21834,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "T7_terminator",
+      "cat:sourceAccession": "GenBank:V01146",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:6864790"
+      },
       "dcterms:title": "T7 terminator",
       "rdfs:label": "T7 terminator",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/V01146"
+      },
       "sbol:displayId": "T7_terminator",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -21857,6 +21885,7 @@
         "@id": "part:lacI"
       },
       "cat:slug": "T7lac",
+      "cat:sourceAccession": "GenBank:AF116269",
       "dcterms:description": "Engineered T7lac regulatory region: the bacteriophage T7 phi10 (class III) promoter immediately followed by a lac operator O1, giving LacI-controllable, low-basal expression from T7 RNA polymerase.",
       "dcterms:references": [
         {
@@ -21870,10 +21899,16 @@
         },
         {
           "@id": "https://identifiers.org/pubmed:8638105"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:10559941"
         }
       ],
       "dcterms:title": "T7lac",
       "rdfs:label": "T7lac",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/AF116269"
+      },
       "sbol:displayId": "T7lac",
       "sbol:hasFeature": [
         {

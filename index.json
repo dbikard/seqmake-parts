@@ -2969,7 +2969,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "PT3",
@@ -3001,7 +3001,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "T7 promoter"
@@ -3922,7 +3922,7 @@
       "so_term": "SO:0000139",
       "so_name": "ribosome_entry_site",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "g10 leader RBS",
@@ -3977,7 +3977,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "T7 terminator",
@@ -4009,7 +4009,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "PT7/lacO",

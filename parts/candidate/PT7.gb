@@ -6,14 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Dunn JJ, Studier FW
+  TITLE     Complete nucleotide sequence of bacteriophage T7 DNA and the
+            locations of T7 genetic elements.
+  JOURNAL   J Mol Biol. 1983;166(4):477-535
+   PUBMED   6864790
+  REMARK    doi:10.1016/s0022-2836(83)80282-4
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PT7
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..20
                      /label="PT7"
                      /synonym="T7 promoter"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:V01146"
+                     /citation=[1]
      misc_feature    18
                      /label="+1"
                      /parent="PT7"

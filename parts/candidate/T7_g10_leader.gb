@@ -6,9 +6,15 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Andreansky M, Hunter E
+  TITLE     Phagemid pSIT permits efficient in vitro mutagenesis and tightly
+            controlled expression in E. coli.
+  JOURNAL   Biotechniques. 1994;16(4):626-8, 630-3
+   PUBMED   8024782
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/T7_g10_leader
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      RBS             1..35
                      /label="T7 g10 leader"
@@ -24,6 +30,8 @@ FEATURES             Location/Qualifiers
                      site and the start ATG (35 bp). DNA 5'UTR element, distinct
                      from the T7-tag peptide (see T7_tag)."
                      /db_xref="SO:0000139"
+                     /db_xref="GenBank:U17139"
+                     /citation=[1]
 ORIGIN
         1 aataattttg tttaacttta agaaggagat atacc
 //
