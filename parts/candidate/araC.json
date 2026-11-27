@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "MAEAQNDPLLPGYSFNAHLVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQIINAGQGEGRYSELLAINLLEQLLLRRMEAINESLHPPMDNRVREACQYISDHLADSNFDIASVAQHVCLSPSRLSHLFRQQLGISVLSWREDQRISQAKLLLSTTRMPIATVGRNVGFDDQLYFSRVFKKCTGASPSEFRAGCEEKVNDVAVKLS",
-  "references": [],
+  "references": [
+    {
+      "authors": "Wallace RG, Lee N, Fowler AV",
+      "title": "The araC gene of Escherichia coli: transcriptional and translational start-points and complete nucleotide sequence.",
+      "journal": "Gene. 1980;12(3-4):179-190",
+      "pubmed_id": "7019009",
+      "comment": "doi:10.1016/0378-1119(80)90100-6"
+    }
+  ],
   "features": [
     {
       "type": "CDS",
@@ -24,12 +32,84 @@
         "synonym": [
           "araC",
           "arabinose operon regulatory protein"
+        ],
+        "db_xref": [
+          "UniProt:P0A9E0",
+          "NCBI:CAA23507.1"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "V00256 (E. coli araC; Wallace et al. 1980), protein CAA23507.1, identical over 292 aa; also the MG1655 genome (U00096, AAC73175.1). UniProt:P0A9E0 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
   },
-  "functional_claims": []
+  "functional_claims": [],
+  "uniprot_features": [
+    {
+      "type": "protein_domain",
+      "start": 179,
+      "end": 279,
+      "label": "HTH araC/xylS-type",
+      "so_term": "SO:0000417",
+      "description": "HTH araC/xylS-type",
+      "uniprot_type": "Domain"
+    },
+    {
+      "type": "binding",
+      "start": 7,
+      "end": 8,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 23,
+      "end": 24,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 37,
+      "end": 38,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 81,
+      "end": 82,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    },
+    {
+      "type": "binding",
+      "start": 92,
+      "end": 93,
+      "label": "Binding site",
+      "so_term": "SO:0000409",
+      "description": "",
+      "uniprot_type": "Binding site"
+    }
+  ],
+  "uniprot_import": {
+    "fetched": "2026-11-27",
+    "accession": "UniProt:P0A9E0",
+    "status": "match",
+    "identity": 1.0,
+    "sequence_match": true,
+    "uniprot_entry_version": 156
+  }
 }
