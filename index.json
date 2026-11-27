@@ -3730,7 +3730,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "SpecR",

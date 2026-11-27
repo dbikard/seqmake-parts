@@ -20126,7 +20126,7 @@
       "slug": "SpecR",
       "feature_type": "CDS",
       "kind": "protein",
-      "source_accession": null,
+      "source_accession": "UniProt:Q07448",
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "synonyms": [
@@ -20136,18 +20136,37 @@
         "spectinomycin adenyltransferase"
       ],
       "collections": [],
-      "description": "",
-      "length": 224,
-      "protein_length_aa": 224,
+      "description": "Full-length AAD(9) as deposited: translated from a GTG start (as Met) 31 codons upstream of the internal Met32 that many vector maps annotate as the start, giving a 224 aa CDS. UniProt's structure-derived secondary structure places a helix at residues 8-23 and a beta strand at 27-34, so the first 31 residues are part of the fold.",
+      "length": 255,
+      "protein_length_aa": 255,
       "regulated_by": [],
       "regulates": [],
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
-      "functional_claims": []
+      "references": [
+        {
+          "authors": "LeBlanc DJ, Lee LN, Inamine JM",
+          "title": "Cloning and nucleotide base sequence analysis of a spectinomycin adenyltransferase AAD(9) determinant from Enterococcus faecalis.",
+          "journal": "Antimicrob Agents Chemother. 1991;35(9):1804-1810",
+          "pmid": "1659306",
+          "doi": "10.1128/AAC.35.9.1804",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1659306/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
+      "functional_claims": [],
+      "uniprot_import": {
+        "fetched": "2026-11-27",
+        "accession": "UniProt:Q07448",
+        "status": "match",
+        "identity": 1.0,
+        "sequence_match": true,
+        "uniprot_entry_version": 70
+      }
     },
     {
       "name": "Spot tag",

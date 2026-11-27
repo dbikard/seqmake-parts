@@ -19299,8 +19299,16 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "SpecR",
+      "cat:sourceAccession": "UniProt:Q07448",
+      "dcterms:description": "Full-length AAD(9) as deposited: translated from a GTG start (as Met) 31 codons upstream of the internal Met32 that many vector maps annotate as the start, giving a 224 aa CDS. UniProt's structure-derived secondary structure places a helix at residues 8-23 and a beta strand at 27-34, so the first 31 residues are part of the fold.",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1659306"
+      },
       "dcterms:title": "SpecR",
       "rdfs:label": "SpecR",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/Q07448"
+      },
       "sbol:displayId": "SpecR",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -19325,7 +19333,7 @@
       "@id": "part:SpecR_sequence",
       "@type": "sbol:Sequence",
       "sbol:displayId": "SpecR_sequence",
-      "sbol:elements": "MFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL",
+      "sbol:elements": "MRRIYLNTYEQINKVKKILRKHLKNNLIGTYMFGSGVESGLKPNSDLDFLVVVSEPLTDQSKEILIQKIRPISKKIGDKSNLRYIELTIIIQQEMVPWNHPPKQEFIYGEWLQELYEQGYIPQKELNSDLTIMLYQAKRKNKRIYGNYDLEELLPDIPFSDVRRAIMDSSEELIDNYQDDETNSILTLCRMILTMDTGKIIPKDIAGNAVAESSPLEHRERILLAVRSYLGENIEWTNENVNLTINYLNNRLKKL",
       "sbol:encoding": {
         "@id": "https://identifiers.org/edam:format_1208"
       },
