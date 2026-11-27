@@ -9,8 +9,16 @@
     "data_file_division": "UNK",
     "date": "01-JAN-1980"
   },
-  "sequence": "ACGCGCCCTGTAGCGGCGCATTAAGCGCGGCGGGTGTGGTGGTTACGCGCAGCGTGACCGCTACACTTGCCAGCGCCTTAGCGCCCGCTCCTTTCGCTTTCTTCCCTTCCTTTCTCGCCACGTTCGCCGGCTTTCCCCGTCAAGCTCTAAATCGGGGGCTCCCTTTAGGGTTCCGATTTAGTGCTTTACGGCACCTCGACCCCAAAAAACTTGATTTGGGTGATGGTTCACGTAGTGGGCCATCGCCCTGATAGACGGTTTTTCGCCCTTTGACGTTGGAGTCCACGTTCTTTAATAGTGGACTCTTGTTCAAAACTGGAACAACACTCAACTCTATCTCGGGCTATTCTTTTGATTTATAAGGGATTTTGCCGATTTCGGTCTATTGGTTAAAAAATGAGCTGATTTAACAAAAATTTAACGCGAATTTTAACAAAATATTAACGTTTACAATTT",
-  "references": [],
+  "sequence": "ACGCGCCCTGTAGCGGCGCATTAAGCGCGGCGGGTGTGGTGGTTACGCGCAGCGTGACCGCTACACTTGCCAGCGCCTTAGCGCCCGCTCCTTTCGCTTTCTTCCCTTCCTTTCTCGCCACGTTCGCCGGCTTTCCCCGTCAAGCTCTAAATCGGGGGCTCCCTTTAGGGTTCCGATTTAGTGCTTTACGGCACCTCGACCCCAAAAAACTTGATTTGGGTGATGGTTCACGTAGTGGGCCATCGCCCTGATAGACGGTTTTTCGCCCTTTGACGTTGGAGTCCACGTTCTTTAATAGTGGACTCTTGTTCCAAACTGGAACAACACTCAACTCTATCTCGGGCTATTCTTTTGATTTATAAGGGATTTTGCCGATTTCGGTCTATTGGTTAAAAAATGAGCTGATTTAACAAAAATTTAACGCGAATTTTAACAAAATATTAACGTTTACAATTT",
+  "references": [
+    {
+      "authors": "Barrett SP, Wang PL, Salzman J",
+      "title": "Circular RNA biogenesis can proceed through an exon-containing lariat precursor.",
+      "journal": "Elife. 2015;4:e07540",
+      "pubmed_id": "26057830",
+      "comment": "doi:10.7554/eLife.07540"
+    }
+  ],
   "features": [
     {
       "type": "rep_origin",
@@ -26,13 +34,18 @@
           "M13 ori",
           "f1 ori"
         ],
-        "db_xref": []
+        "db_xref": [
+          "GenBank:KT033769"
+        ],
+        "citation": [
+          "[1]"
+        ]
       }
     }
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "closest_deposit": "No deposit holds the exact 456 bp. Many recent vectors (e.g. PZ512234, 6668..7123, reverse strand) match all but one base: part position 312 is A where they read C. The phage genomes differ more: M13 V00604 5488..5943 at part positions 78, 312, 333 and 382; f1 J02448 5488..5943 at six positions. Not a sequence_source."
+    "sequence_source": "KT033769 (cloning vector pW1336; Barrett et al. 2015) 1509..1964, identical over 456 bp; the oldest of 39 exact deposits. The part read A at position 312 until 2026-11, a form no deposit carries; it now reads C as these deposits do. It differs from the M13 genome (V00604 5488..5943) at part positions 78, 333 and 382, and from pBluescript II SK(+) (X52328) at six positions."
   },
   "functional_claims": []
 }
