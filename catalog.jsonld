@@ -13760,9 +13760,19 @@
         "@id": "part:PphlF"
       },
       "cat:slug": "PhlF",
+      "cat:sourceAccession": "UniProt:Q9RF02",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:10671440"
+      },
       "dcterms:title": "PhlF",
       "rdfs:label": "PhlF",
+      "rdfs:seeAlso": {
+        "@id": "http://purl.uniprot.org/uniprot/Q9RF02"
+      },
       "sbol:displayId": "PhlF",
+      "sbol:hasFeature": {
+        "@id": "part:PhlF_feature_0"
+      },
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
       },
@@ -13776,6 +13786,30 @@
         "@id": "https://identifiers.org/SBO:0000252"
       },
       "skos:altLabel": "PhlF"
+    },
+    {
+      "@id": "part:PhlF_feature_0",
+      "@type": "sbol:SequenceFeature",
+      "dcterms:title": "HTH tetR-type",
+      "sbol:displayId": "PhlF_feature_0",
+      "sbol:hasLocation": {
+        "@id": "part:PhlF_feature_0_range"
+      },
+      "sbol:role": {
+        "@id": "https://identifiers.org/SO:0000417"
+      }
+    },
+    {
+      "@id": "part:PhlF_feature_0_range",
+      "@type": "sbol:Range",
+      "sbol:end": 76,
+      "sbol:orientation": {
+        "@id": "sbol:inline"
+      },
+      "sbol:sequence": {
+        "@id": "part:PhlF_sequence"
+      },
+      "sbol:start": 16
     },
     {
       "@id": "part:PhlF_sequence",
@@ -14700,6 +14734,7 @@
         "@id": "part:XylS"
       },
       "cat:slug": "Pm",
+      "cat:sourceAccession": "GenBank:JX560387",
       "dcterms:description": "Pm is the XylS-dependent, benzoate/m-toluate-inducible promoter of the TOL (pWW0) plasmid meta-operon, here an 81-bp fragment carrying two tandem XylS operator repeats, a non-canonical -35, and an ...",
       "dcterms:references": [
         {
@@ -14722,10 +14757,16 @@
         },
         {
           "@id": "https://identifiers.org/pubmed:10096078"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:23180763"
         }
       ],
       "dcterms:title": "Pm",
       "rdfs:label": "Pm",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/JX560387"
+      },
       "sbol:displayId": "Pm",
       "sbol:hasFeature": [
         {
@@ -15082,6 +15123,7 @@
         "@id": "part:PhlF"
       },
       "cat:slug": "PphlF",
+      "cat:sourceAccession": "GenBank:KX353595",
       "dcterms:description": "PhlF-repressible promoter: J23119-derived core with the phO operator overlapping the -10, so PhlF binding blocks transcription.",
       "dcterms:references": [
         {
@@ -15092,10 +15134,16 @@
         },
         {
           "@id": "https://identifiers.org/pubmed:12003942"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:27298256"
         }
       ],
       "dcterms:title": "PphlF",
       "rdfs:label": "PphlF",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KX353595"
+      },
       "sbol:displayId": "PphlF",
       "sbol:hasFeature": [
         {
