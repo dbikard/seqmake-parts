@@ -45,7 +45,7 @@
   ],
   "provenance": {
     "migrated_from": "genbank",
-    "sequence_source": "AY678264 (synthetic construct, monomeric red fluorescent protein mCherry; Shaner et al. 2004), protein AAV52164.1, identical over 236 aa: the oldest deposit in the protein's NCBI identical-protein group. Also UniProt:A0A2U3DNX3 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py."
+    "sequence_source": "AY678264 (synthetic construct, monomeric red fluorescent protein mCherry; Shaner et al. 2004), protein AAV52164.1, identical over 236 aa: the oldest deposit in the protein's NCBI identical-protein group. Also UniProt:A0A2U3DNX3 (canonical sequence; match, identity 1.0), verified by tools/import_uniprot_features.py. Identical to FPbase 'mCherry' (fpbase.org/protein/mcherry), which links the same GenBank protein."
   },
   "functional_claims": [],
   "uniprot_features": [],
