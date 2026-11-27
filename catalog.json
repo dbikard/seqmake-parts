@@ -390,7 +390,7 @@
       "slug": "2micron_ori",
       "feature_type": "rep_origin",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:J01347",
       "so_term": "SO:0000296",
       "so_name": "origin_of_replication",
       "synonyms": [
@@ -409,9 +409,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Hartley JL, Donelson JE",
+          "title": "Nucleotide sequence of the yeast plasmid.",
+          "journal": "Nature. 1980;286(5776):860-865",
+          "pmid": "6251374",
+          "doi": "10.1038/286860a0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6251374/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -23063,7 +23074,7 @@
       "slug": "TEF1",
       "feature_type": "promoter",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KR232300",
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "synonyms": [
@@ -23081,9 +23092,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "DeLoache WC, Russ ZN, Narcross L, Gonzales AM, Martin VJ, Dueber JE",
+          "title": "An enzyme-coupled biosensor enables (S)-reticuline production in yeast from glucose.",
+          "journal": "Nat Chem Biol. 2015;11(7):465-71",
+          "pmid": "25984720",
+          "doi": "10.1038/nchembio.1816",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25984720/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {

@@ -6,9 +6,16 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   DeLoache WC, Russ ZN, Narcross L, Gonzales AM, Martin VJ, Dueber JE
+  TITLE     An enzyme-coupled biosensor enables (S)-reticuline production in
+            yeast from glucose.
+  JOURNAL   Nat Chem Biol. 2015;11(7):465-71
+   PUBMED   25984720
+  REMARK    doi:10.1038/nchembio.1816
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/TEF1
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..414
                      /label="TEF1"
@@ -20,6 +27,8 @@ FEATURES             Location/Qualifiers
                      EF-1 alpha) promoter; strong constitutive. Extracted from
                      pJF89 (Addgene 253756), TEF1 promoter feature (414 bp)."
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:KR232300"
+                     /citation=[1]
 ORIGIN
         1 gatcccccac acaccatagc ttcaaaatgt ttctactcct tttttactct tccagatttt
        61 ctcggactcc gcgcatcgcc gtaccacttc aaaacaccca agcacagcat actaaatttc
