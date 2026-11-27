@@ -32,6 +32,13 @@
       "journal": "J Bacteriol 184(11):3008-3016 (2002)",
       "pubmed_id": "12003942",
       "comment": "doi:10.1128/JB.184.11.3008-3016.2002"
+    },
+    {
+      "authors": "Fernandez-Rodriguez J, Voigt CA",
+      "title": "Post-translational control of genetic circuits using Potyvirus proteases.",
+      "journal": "Nucleic Acids Res. 2016;44(13):6493-502",
+      "pubmed_id": "27298256",
+      "comment": "doi:10.1093/nar/gkw537"
     }
   ],
   "features": [
@@ -53,10 +60,12 @@
         ],
         "citation": [
           "[1]",
-          "[2]"
+          "[2]",
+          "[4]"
         ],
         "db_xref": [
-          "SO:0000167"
+          "SO:0000167",
+          "GenBank:KX353595"
         ],
         "regulated_by": [
           "PhlF"
@@ -141,7 +150,8 @@
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KX353595 (synthetic plasmid ptevF-PhlF; Fernandez-Rodriguez & Voigt 2016) 2789..2839, identical over 51 bp; the oldest of 46 exact deposits. An engineered promoter: it is not found in the native phlA-phlF intergenic region of Pseudomonas protegens CHA0 (AF207529), whose phO-like palindrome differs."
   },
   "functional_claims": [
     {
