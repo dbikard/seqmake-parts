@@ -9127,8 +9127,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "L3S1P13",
+      "cat:sourceAccession": "GenBank:KX353595",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:27298256"
+      },
       "dcterms:title": "L3S1P13",
       "rdfs:label": "L3S1P13",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KX353595"
+      },
       "sbol:displayId": "L3S1P13",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -32638,8 +32645,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "rrnBT2",
+      "cat:sourceAccession": "GenBank:KF030457",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24050148"
+      },
       "dcterms:title": "rrnBT2",
       "rdfs:label": "rrnBT2",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KF030457"
+      },
       "sbol:displayId": "rrnBT2",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -33602,8 +33616,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "tonB",
+      "cat:sourceAccession": "GenBank:U00096",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:9278503"
+      },
       "dcterms:title": "tonB",
       "rdfs:label": "tonB",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/U00096"
+      },
       "sbol:displayId": "tonB",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"

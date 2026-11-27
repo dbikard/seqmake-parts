@@ -867,16 +867,19 @@ part:I-SceI_site a sbol:Component ;
 
 part:L3S1P13 a sbol:Component ;
     rdfs:label "L3S1P13" ;
+    dcterms:references pubmed:27298256 ;
     dcterms:title "L3S1P13" ;
     sbol:displayId "L3S1P13" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:L3S1P13_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KX353595> ;
     skos:altLabel "L3S1P13" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "L3S1P13" .
+    cat:slug "L3S1P13" ;
+    cat:sourceAccession "GenBank:KX353595" .
 
 part:L3S2P11 a sbol:Component ;
     rdfs:label "L3S2P11" ;
@@ -3343,17 +3346,20 @@ part:rrnBT1T2 a sbol:Component ;
 
 part:rrnBT2 a sbol:Component ;
     rdfs:label "rrnBT2" ;
+    dcterms:references pubmed:24050148 ;
     dcterms:title "rrnBT2" ;
     sbol:displayId "rrnBT2" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:rrnBT2_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/KF030457> ;
     skos:altLabel "rrn BT2 terminator",
         "rrnBT2" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "rrnBT2" .
+    cat:slug "rrnBT2" ;
+    cat:sourceAccession "GenBank:KF030457" .
 
 part:sfGFP a sbol:Component ;
     rdfs:label "sfGFP" ;
@@ -3489,17 +3495,20 @@ part:tetR_tetA_promoters a sbol:Component ;
 
 part:tonB a sbol:Component ;
     rdfs:label "tonB" ;
+    dcterms:references pubmed:9278503 ;
     dcterms:title "tonB" ;
     sbol:displayId "tonB" ;
     sbol:hasNamespace <https://w3id.org/seqmake/parts/> ;
     sbol:hasSequence part:tonB_sequence ;
     sbol:role so:0000141 ;
     sbol:type sbo:0000251 ;
+    rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/nuccore/U00096> ;
     skos:altLabel "tonB",
         "tonB terminator" ;
     cat:curationStatus "candidate" ;
     cat:documented false ;
-    cat:slug "tonB" .
+    cat:slug "tonB" ;
+    cat:sourceAccession "GenBank:U00096" .
 
 part:trfA a sbol:Component ;
     rdfs:label "trfA" ;

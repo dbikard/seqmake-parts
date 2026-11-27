@@ -6,15 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE
+  TITLE     One-step cloning and chromosomal integration of DNA.
+  JOURNAL   ACS Synth Biol. 2013;2(9):537-41
+   PUBMED   24050148
+  REMARK    doi:10.1021/sb400021j
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/rrnBT2
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..63
                      /label="rrnBT2"
                      /synonym="rrnBT2"
                      /synonym="rrn BT2 terminator"
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:KF030457"
+                     /citation=[1]
 ORIGIN
         1 taacctaaac tgacaggcat caaattaagc agaaggccat cctgacggat ggcctttttg
        61 cgt

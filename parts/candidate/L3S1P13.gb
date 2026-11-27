@@ -6,14 +6,23 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Fernandez-Rodriguez J, Voigt CA
+  TITLE     Post-translational control of genetic circuits using Potyvirus
+            proteases.
+  JOURNAL   Nucleic Acids Res. 2016;44(13):6493-502
+   PUBMED   27298256
+  REMARK    doi:10.1093/nar/gkw537
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/L3S1P13
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      terminator      1..51
                      /label="L3S1P13"
                      /synonym="L3S1P13"
                      /db_xref="SO:0000141"
+                     /db_xref="GenBank:KX353595"
+                     /citation=[1]
 ORIGIN
         1 gacgaacaat aaggcctccc taacgggggg ccttttttat tgataacaaa a
 //

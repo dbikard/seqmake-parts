@@ -9381,7 +9381,7 @@
       "slug": "L3S1P13",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KX353595",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -9396,9 +9396,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Fernandez-Rodriguez J, Voigt CA",
+          "title": "Post-translational control of genetic circuits using Potyvirus proteases.",
+          "journal": "Nucleic Acids Res. 2016;44(13):6493-502",
+          "pmid": "27298256",
+          "doi": "10.1093/nar/gkw537",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27298256/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -18336,7 +18347,7 @@
       "slug": "rrnBT2",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:KF030457",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -18352,9 +18363,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "St-Pierre F, Cui L, Priest DG, Endy D, Dodd IB, Shearwin KE",
+          "title": "One-step cloning and chromosomal integration of DNA.",
+          "journal": "ACS Synth Biol. 2013;2(9):537-41",
+          "pmid": "24050148",
+          "doi": "10.1021/sb400021j",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24050148/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {
@@ -24066,7 +24088,7 @@
       "slug": "tonB",
       "feature_type": "terminator",
       "kind": "dna",
-      "source_accession": null,
+      "source_accession": "GenBank:U00096",
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "synonyms": [
@@ -24082,9 +24104,20 @@
       "documented": false,
       "status": "candidate",
       "children": [],
-      "references": [],
-      "main_citations": [],
-      "sourced": false,
+      "references": [
+        {
+          "authors": "Blattner FR, Plunkett G 3rd, Bloch CA, Perna NT, Burland V, Riley M, Collado-Vides J, Glasner JD, Rode CK, Mayhew GF, Gregor J, Davis NW, Kirkpatrick HA, Goeden MA, Rose DJ, Mau B, Shao Y",
+          "title": "The complete genome sequence of Escherichia coli K-12.",
+          "journal": "Science. 1997;277(5331):1453-1462",
+          "pmid": "9278503",
+          "doi": "10.1126/science.277.5331.1453",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9278503/"
+        }
+      ],
+      "main_citations": [
+        1
+      ],
+      "sourced": true,
       "functional_claims": []
     },
     {

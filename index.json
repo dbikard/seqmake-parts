@@ -1665,7 +1665,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "L3S1P13"
@@ -3477,7 +3477,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "rrnBT2",
@@ -4203,7 +4203,7 @@
       "so_term": "SO:0000141",
       "so_name": "terminator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "tonB",
