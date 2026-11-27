@@ -10,7 +10,15 @@
     "date": "01-JAN-1980"
   },
   "sequence": "GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
-  "references": [],
+  "references": [
+    {
+      "authors": "Nissim L, Perli SD, Fridkin A, Perez-Pinera P, Lu TK",
+      "title": "Multiplexed and programmable regulation of gene networks with an integrated RNA and CRISPR/Cas toolkit in human cells.",
+      "journal": "Mol Cell. 2014;54(4):698-710",
+      "pubmed_id": "24837679",
+      "comment": "doi:10.1016/j.molcel.2014.04.022"
+    }
+  ],
   "features": [
     {
       "type": "misc_RNA",
@@ -27,12 +35,19 @@
           "guide RNA scaffold",
           "chimeric RNA scaffold",
           "sgRNA scaffold (SpCas9)"
+        ],
+        "db_xref": [
+          "GenBank:KJ796499"
+        ],
+        "citation": [
+          "[1]"
         ]
       }
     }
   ],
   "provenance": {
-    "migrated_from": "genbank"
+    "migrated_from": "genbank",
+    "sequence_source": "KJ796499 (cloning vector CMVp-mKate2-Triplex gRNA construct; Nissim et al. 2014) 2803..2878 (a second copy in the same record), identical over 76 bp; the oldest of 640 exact deposits."
   },
   "functional_claims": []
 }

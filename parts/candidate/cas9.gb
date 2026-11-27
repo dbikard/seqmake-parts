@@ -6,9 +6,18 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Ferretti JJ, McShan WM, Ajdic D, Savic DJ, Savic G, Lyon K, Primeaux
+            C, Sezate S, Suvorov AN, Kenton S, Lai HS, Lin SP, Qian Y, Jia HG,
+            Najar FZ, Ren Q, Zhu H, Song L, White J, Yuan X, Clifton SW, Roe BA,
+            McLaughlin R
+  TITLE     Complete genome sequence of an M1 strain of Streptococcus pyogenes.
+  JOURNAL   Proc Natl Acad Sci U S A. 2001;98(8):4658-4663
+   PUBMED   11296296
+  REMARK    doi:10.1073/pnas.071559398
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/cas9
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..1368
                      /label="cas9"
@@ -18,6 +27,8 @@ FEATURES             Location/Qualifiers
                      /synonym="csn1"
                      /db_xref="SO:0000316"
                      /db_xref="UniProt:Q99ZW2"
+                     /db_xref="NCBI:AAK33936.1"
+                     /citation=[1]
      protein_domain  770..921
                      /label="HNH Cas9-type"
                      /parent="cas9"

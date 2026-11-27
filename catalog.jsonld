@@ -25795,6 +25795,9 @@
       "cat:documented": false,
       "cat:slug": "cas9",
       "cat:sourceAccession": "UniProt:Q99ZW2",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:11296296"
+      },
       "dcterms:title": "cas9",
       "rdfs:label": "cas9",
       "rdfs:seeAlso": {
@@ -26276,6 +26279,9 @@
       "cat:documented": false,
       "cat:slug": "dCas9",
       "cat:sourceAccession": "UniProt:Q99ZW2",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:25806970"
+      },
       "dcterms:title": "dCas9",
       "rdfs:label": "dCas9",
       "rdfs:seeAlso": {
@@ -32717,8 +32723,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "sgRNA_scaffold",
+      "cat:sourceAccession": "GenBank:KJ796499",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:24837679"
+      },
       "dcterms:title": "sgRNA scaffold",
       "rdfs:label": "sgRNA scaffold",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/KJ796499"
+      },
       "sbol:displayId": "sgRNA_scaffold",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
