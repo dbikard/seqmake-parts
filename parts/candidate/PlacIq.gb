@@ -6,9 +6,16 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Morales VM, Bäckman A, Bagdasarian M
+  TITLE     A series of wide-host-range low-copy-number vectors that allow
+            direct screening for recombinants.
+  JOURNAL   Gene. 1991;97(1):39-47
+   PUBMED   1847347
+  REMARK    doi:10.1016/0378-1119(91)90007-x
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/PlacIq
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      promoter        1..78
                      /label="PlacIq"
@@ -16,6 +23,8 @@ FEATURES             Location/Qualifiers
                      /synonym="lacIq promoter"
                      /variant_of="PlacI"
                      /db_xref="SO:0000167"
+                     /db_xref="GenBank:M37846"
+                     /citation=[1]
 ORIGIN
         1 gacaccatcg aatggtgcaa aacctttcgc ggtatggcat gatagcgccc ggaagagagt
        61 caattcaggg tggtgaat

@@ -6,15 +6,24 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Farabaugh PJ
+  TITLE     Sequence of the lacI gene.
+  JOURNAL   Nature. 1978;274(5673):765-769
+   PUBMED   355891
+  REMARK    doi:10.1038/274765a0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lacI
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      CDS             1..360
                      /label="lacI"
                      /synonym="lacI"
                      /synonym="lac repressor"
                      /db_xref="SO:0000316"
+                     /db_xref="NCBI:AAA24052.1"
+                     /db_xref="GenBank:J01636"
+                     /citation=[1]
 ORIGIN
         1 mkpvtlydva eyagvsyqtv srvvnqashv saktrekvea amaelnyipn rvaqqlagkq
        61 slligvatss lalhapsqiv aaiksradql gasvvvsmve rsgveackaa vhnllaqrvs

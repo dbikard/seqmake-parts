@@ -1724,7 +1724,7 @@
       "so_term": "SO:0000316",
       "so_name": "CDS",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lacI",
@@ -1754,7 +1754,7 @@
       "so_term": "SO:0000057",
       "so_name": "operator",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "lacO3",
@@ -2574,7 +2574,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "PlacI",
@@ -2589,7 +2589,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "candidate",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 0,
       "synonyms": [
         "PlacIq",
@@ -3015,7 +3015,7 @@
       "so_term": "SO:0000167",
       "so_name": "promoter",
       "status": "validated",
-      "sourced": false,
+      "sourced": true,
       "n_claims": 1,
       "synonyms": [
         "tac promoter"

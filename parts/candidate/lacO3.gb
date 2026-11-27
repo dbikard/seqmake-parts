@@ -6,9 +6,15 @@ KEYWORDS    .
 SOURCE      .
   ORGANISM  .
             .
+REFERENCE   1
+  AUTHORS   Farabaugh PJ
+  TITLE     Sequence of the lacI gene.
+  JOURNAL   Nature. 1978;274(5673):765-769
+   PUBMED   355891
+  REMARK    doi:10.1038/274765a0
 COMMENT     Permanent catalog identifier:
             https://w3id.org/seqmake/parts/part/lacO3
-            Catalog status: candidate, unsourced
+            Catalog status: candidate, sourced
 FEATURES             Location/Qualifiers
      protein_bind    1..21
                      /label="lacO3"
@@ -16,6 +22,8 @@ FEATURES             Location/Qualifiers
                      /synonym="Lac O3 operator"
                      /synonym="Lac O3"
                      /db_xref="SO:0000057"
+                     /db_xref="GenBank:J01636"
+                     /citation=[1]
 ORIGIN
         1 ggcagtgagc gcaacgcaat t
 //

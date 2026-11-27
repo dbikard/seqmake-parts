@@ -13893,8 +13893,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "PlacI",
+      "cat:sourceAccession": "GenBank:J01636",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:355890"
+      },
       "dcterms:title": "PlacI",
       "rdfs:label": "PlacI",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J01636"
+      },
       "sbol:displayId": "PlacI",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -13931,8 +13938,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "PlacIq",
+      "cat:sourceAccession": "GenBank:M37846",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:1847347"
+      },
       "dcterms:title": "PlacIq",
       "rdfs:label": "PlacIq",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/M37846"
+      },
       "sbol:displayId": "PlacIq",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -15346,6 +15360,7 @@
         "@id": "part:lacI"
       },
       "cat:slug": "Ptac",
+      "cat:sourceAccession": "GenBank:K01728",
       "dcterms:description": "Ptac is a synthetic sigma70 promoter combining the trp -35 with the lacUV5 -10 and operator, giving a strong, LacI/IPTG-inducible promoter for E. coli expression.",
       "dcterms:references": [
         {
@@ -15356,10 +15371,16 @@
         },
         {
           "@id": "https://identifiers.org/pubmed:3069586"
+        },
+        {
+          "@id": "https://identifiers.org/pubmed:6363212"
         }
       ],
       "dcterms:title": "Ptac",
       "rdfs:label": "Ptac",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/K01728"
+      },
       "sbol:displayId": "Ptac",
       "sbol:hasFeature": [
         {
@@ -27762,8 +27783,15 @@
         }
       ],
       "cat:slug": "lacI",
+      "cat:sourceAccession": "NCBI:AAA24052.1",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:355891"
+      },
       "dcterms:title": "lacI",
       "rdfs:label": "lacI",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/protein/AAA24052.1"
+      },
       "sbol:displayId": "lacI",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
@@ -27830,8 +27858,15 @@
       "cat:curationStatus": "candidate",
       "cat:documented": false,
       "cat:slug": "lacO3",
+      "cat:sourceAccession": "GenBank:J01636",
+      "dcterms:references": {
+        "@id": "https://identifiers.org/pubmed:355891"
+      },
       "dcterms:title": "lacO3",
       "rdfs:label": "lacO3",
+      "rdfs:seeAlso": {
+        "@id": "https://www.ncbi.nlm.nih.gov/nuccore/J01636"
+      },
       "sbol:displayId": "lacO3",
       "sbol:hasNamespace": {
         "@id": "https://w3id.org/seqmake/parts/"
